@@ -1,0 +1,1791 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRace id="Prot">
+        <StartingUnitArray index="0" Unit="Wraith22">
+            <Flags index="ResourceSetRally" value="0"/>
+            <Offset value="0,0"/>
+        </StartingUnitArray>
+        <StartingUnitArray index="1" Count="1" Unit="OurGodPythonThePylon">
+            <Flags index="ResourceRally" value="0"/>
+            <Offset index="0" value="4,4"/>
+            <Offset index="1" removed="1"/>
+            <Offset index="2" removed="1"/>
+            <Offset index="3" removed="1"/>
+            <Offset index="4" removed="1"/>
+            <Offset index="5" removed="1"/>
+            <Offset index="6" removed="1"/>
+            <Offset index="7" removed="1"/>
+            <Offset index="8" removed="1"/>
+            <Offset index="9" removed="1"/>
+            <Offset index="10" removed="1"/>
+            <Offset index="11" removed="1"/>
+            <Offset index="12" removed="1"/>
+            <Offset index="13" removed="1"/>
+            <Offset index="14" removed="1"/>
+            <Offset index="15" removed="1"/>
+            <Offset index="16" removed="1"/>
+            <Offset index="17" removed="1"/>
+            <Offset index="18" removed="1"/>
+            <Offset index="19" removed="1"/>
+            <Offset index="20" removed="1"/>
+            <Offset index="21" removed="1"/>
+            <Offset index="22" removed="1"/>
+            <Offset index="23" removed="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Offset value="0,0"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+    </CRace>
+    <CRace id="Terr">
+        <StartingUnitArray index="0" Unit="Wraith22">
+            <Flags index="ResourceSetRally" value="0"/>
+            <Offset value="0,0"/>
+        </StartingUnitArray>
+        <StartingUnitArray index="1" Count="1" Unit="OurGodPythonThePylon">
+            <Flags index="ResourceRally" value="0"/>
+            <Offset index="0" value="4,4"/>
+            <Offset index="1" removed="1"/>
+            <Offset index="2" removed="1"/>
+            <Offset index="3" removed="1"/>
+            <Offset index="4" removed="1"/>
+            <Offset index="5" removed="1"/>
+            <Offset index="6" removed="1"/>
+            <Offset index="7" removed="1"/>
+            <Offset index="8" removed="1"/>
+            <Offset index="9" removed="1"/>
+            <Offset index="10" removed="1"/>
+            <Offset index="11" removed="1"/>
+            <Offset index="12" removed="1"/>
+            <Offset index="13" removed="1"/>
+            <Offset index="14" removed="1"/>
+            <Offset index="15" removed="1"/>
+            <Offset index="16" removed="1"/>
+            <Offset index="17" removed="1"/>
+            <Offset index="18" removed="1"/>
+            <Offset index="19" removed="1"/>
+            <Offset index="20" removed="1"/>
+            <Offset index="21" removed="1"/>
+            <Offset index="22" removed="1"/>
+            <Offset index="23" removed="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray>
+            <Offset value="4,4"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Offset value="4,4"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+    </CRace>
+    <CRace id="Terr2">
+        <AttributeId value="Terr"/>
+        <GameMusic value="Music_TerrLow"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="CenterofBasicOperations">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="14" Unit="AdvancedMiner">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="BuilderDrone"/>
+        <StartingUnitArray Unit="Pylon10"/>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,40,172,68"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleProtoss_XelNaga"/>
+        <RaceIcon value="Assets\Textures\decal_terran_0050_02.dds"/>
+    </CRace>
+    <CRace id="Terr22">
+        <AttributeId value="Terr"/>
+        <RaceIcon value="@UI/RaceIcon/Terr2"/>
+        <GameMusic value="Music_TerrLow"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="Nexus8">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="14" Unit="AmerdallianMiner2">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="SacredCore2">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,40,172,68"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleProtoss_Classic"/>
+        <Icon value="Assets\Textures\ui-heroicon-artanis.dds"/>
+    </CRace>
+    <CRace id="Terr222">
+        <AttributeId value="Terr"/>
+        <RaceIcon value="@UI/RaceIcon/Terr2"/>
+        <GameMusic value="Music_TerrLow"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="SpawningPool222">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,40,172,68"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleZerg_Abathur"/>
+        <Icon value="Assets\Textures\overmindportrait_static.dds"/>
+    </CRace>
+    <CRace id="Terr2222">
+        <AttributeId value="Terr"/>
+        <RaceIcon value="@UI/RaceIcon/Terr2"/>
+        <GameMusic value="Music_TerrLow"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="Nexus4">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,40,172,68"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleProtoss_Nerazim"/>
+        <Icon value="Assets\Textures\btn-building-protoss-zeratulnexus.dds"/>
+    </CRace>
+    <CRace id="Terr22222">
+        <AttributeId value="Terr"/>
+        <RaceIcon value="@UI/RaceIcon/Terr2"/>
+        <GameMusic value="Music_TerrLow"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="Hatchery2">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="14" Unit="Drone2">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,40,172,68"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleZerg_Abathur"/>
+        <Icon value="Assets\Textures\btn-building-zerg-virophage.dds"/>
+    </CRace>
+    <CRace id="Terr222222">
+        <AttributeId value="Terr"/>
+        <RaceIcon value="@UI/RaceIcon/Terr2"/>
+        <GameMusic value="Music_TerrLow"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="CommandCenter2">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="14" Unit="ControlledDrone">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="300"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,40,172,68"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleTerran_Silver"/>
+        <Icon value="Assets\Textures\tip_hybridbehemoth.dds"/>
+    </CRace>
+    <CRace id="Terr222223">
+        <AttributeId value="Terr"/>
+        <RaceIcon value="@UI/RaceIcon/Terr2"/>
+        <GameMusic value="Music_TerrLow"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="Hatchery4">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="14" Unit="Drone3">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="2" Unit="Overlord2">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,40,172,68"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleZerg_Mecha"/>
+        <Icon value="Assets\Textures\btn-building-zerg-nydusnetwork-mecha.dds"/>
+    </CRace>
+    <CRace id="Terr2222232">
+        <AttributeId value="Terr"/>
+        <RaceIcon value="@UI/RaceIcon/Terr2"/>
+        <GameMusic value="Music_TerrLow"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="CommandCenter4">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="14" Unit="SCV4">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,40,172,68"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleZerg_Classic"/>
+        <Icon value="Assets\Textures\btn-ability-terran-armnuke.dds"/>
+    </CRace>
+    <CRace id="Terr22222322">
+        <AttributeId value="Terr"/>
+        <RaceIcon value="@UI/RaceIcon/Terr2"/>
+        <GameMusic value="Music_TerrLow"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="Nexus6">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="14" Unit="Probe4">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,40,172,68"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleProtoss_Fenix"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-adeptchampionshadespawn.dds"/>
+    </CRace>
+    <CRace id="Terr222223222">
+        <AttributeId value="Terr"/>
+        <RaceIcon value="@UI/RaceIcon/Terr2"/>
+        <GameMusic value="Music_TerrLow"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="Virophage2">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="14" Unit="SCV8">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="2" Unit="Overlord3">
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,40,172,68"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleZerg_Classic"/>
+        <Icon value="Assets\Textures\btn-ability-stukov- researchicon15infestedcivilians.dds"/>
+    </CRace>
+    <CRace id="Terr2222232222">
+        <AttributeId value="Terr"/>
+        <RaceIcon value="@UI/RaceIcon/Terr2"/>
+        <GameMusic value="Music_TerrLow"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="CommandCenter5">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="14" Unit="SCV6">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,40,172,68"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleTerran_Imperial"/>
+        <Icon value="Assets\Textures\btn-ability-mengsk-commandcenter-drafttroopers.dds"/>
+    </CRace>
+    <CRace id="Terr22222323">
+        <AttributeId value="Terr"/>
+        <RaceIcon value="@UI/RaceIcon/Terr2"/>
+        <GameMusic value="Music_TerrLow"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="Nexus5">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="14" Unit="Probe3">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,40,172,68"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleProtoss_Classic"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-khaydarinamulet.dds"/>
+    </CRace>
+    <CRace id="Terr222223232">
+        <AttributeId value="Terr"/>
+        <RaceIcon value="@UI/RaceIcon/Terr2"/>
+        <GameMusic value="Music_TerrLow"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="CommandCenter9">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="17" Unit="SCV11">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,40,172,68"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleTerran_Swann"/>
+        <Icon value="Assets\Textures\btn-progression-hornerhan-5-fleetcalldown.dds"/>
+    </CRace>
+    <CRace id="Terr2222232322">
+        <AttributeId value="Terr"/>
+        <RaceIcon value="@UI/RaceIcon/Terr2"/>
+        <GameMusic value="Music_TerrLow"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="Nexus2">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="14" Unit="SCV22">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,40,172,68"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleTerran_Nova"/>
+        <Icon value="Assets\Textures\btn-upgrade-nova-tacticalstealthsuit.dds"/>
+    </CRace>
+    <CRace id="Terr22222323222">
+        <AttributeId value="Terr"/>
+        <RaceIcon value="@UI/RaceIcon/Terr2"/>
+        <GameMusic value="Music_TerrLow"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="CommandCenter10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="14" Unit="SCV13">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="BarracksFlying22">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="75"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,40,172,68"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleZerg_RCZ"/>
+        <Icon value="Assets\Textures\btn-ability-mengsk-topbar-dogsofwar-level04.dds"/>
+        <ShowResource index="Terrazine" value="1"/>
+    </CRace>
+    <CRace id="Terr222223232222">
+        <AttributeId value="Terr"/>
+        <RaceIcon value="@UI/RaceIcon/Terr2"/>
+        <GameMusic value="Music_TerrLow"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="Nexus7">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="14" Unit="Collector23">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,40,172,68"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleProtoss_Ihanrii"/>
+        <Icon value="Assets\Textures\btn-unit-protoss-zeratulconstructform.dds"/>
+    </CRace>
+    <CRace id="Terr2222232322222">
+        <AttributeId value="Terr"/>
+        <RaceIcon value="@UI/RaceIcon/Terr2"/>
+        <GameMusic value="Music_TerrLow"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="NexusofAncients">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="14" Unit="ForbiddenOne">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,40,172,68"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleProtoss_Ihanrii"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-hero-purityofwill.dds"/>
+    </CRace>
+    <CRace id="Terr2222233">
+        <AttributeId value="Terr"/>
+        <RaceIcon value="@UI/RaceIcon/Terr2"/>
+        <GameMusic value="Music_TerrLow"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="CenterofBasicOperations2">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="13" Unit="Collector2">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="PointDefenseDrone2222">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,40,172,68"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleTerran_Swann"/>
+        <Icon value="Assets\Textures\btn-top-hornerhan-fleetcalldown.dds"/>
+    </CRace>
+    <CRace id="Terr222224">
+        <AttributeId value="Terr"/>
+        <RaceIcon value="@UI/RaceIcon/Terr2"/>
+        <GameMusic value="Music_TerrLow"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="HoloNexus">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="14" Unit="Administrator">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,40,172,68"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleProtoss_XelNaga"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-hallucination.dds"/>
+    </CRace>
+    <CRace id="Terr2222242">
+        <AttributeId value="Terr"/>
+        <RaceIcon value="@UI/RaceIcon/Terr2"/>
+        <GameMusic value="Music_TerrLow"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="CommandCenter6">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="14" Unit="SCV7">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,40,172,68"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleTerran_Swann"/>
+        <Icon value="Assets\Textures\btn-ability-mengsk-commandcenter-draftlaborers.dds"/>
+    </CRace>
+    <CRace id="Terr22222422">
+        <AttributeId value="Terr"/>
+        <RaceIcon value="@UI/RaceIcon/Terr2"/>
+        <GameMusic value="Music_TerrLow"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="Nexus9">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="14" Unit="Probe5">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,40,172,68"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleProtoss_Forged"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-supplicantarmor.dds"/>
+    </CRace>
+    <CRace id="Terr222224222">
+        <AttributeId value="Terr"/>
+        <RaceIcon value="@UI/RaceIcon/Terr2"/>
+        <GameMusic value="Music_TerrLow"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="CommandCenter11">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="17" Unit="SCV9">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,40,172,68"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleTerran_Horner"/>
+        <Icon value="Assets\Textures\btn-ability-hornerhan-reaper-flightmode.dds"/>
+    </CRace>
+    <CRace id="Terr2222242222">
+        <AttributeId value="Terr"/>
+        <RaceIcon value="@UI/RaceIcon/Terr2"/>
+        <GameMusic value="Music_TerrLow"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="Leviathan3">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="HotSNoxious2">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Overseer2">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,40,172,68"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleZerg_Abathur"/>
+        <Icon value="Assets\Textures\btn-upgrade-zergling-armorshredding.dds"/>
+    </CRace>
+    <CRace id="Terr22222422222">
+        <AttributeId value="Terr"/>
+        <RaceIcon value="@UI/RaceIcon/Terr2"/>
+        <GameMusic value="Music_TerrLow"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="CenterOfCommands2">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="4" Unit="Collector">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="D4DShip">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,40,172,68"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleZerg_ArcadePurple"/>
+        <Icon value="Assets\Textures\btn-ability-tychus-medivac.dds"/>
+    </CRace>
+    <CRace id="Terr222224222222">
+        <AttributeId value="Terr"/>
+        <RaceIcon value="@UI/RaceIcon/Terr2"/>
+        <GameMusic value="Music_TerrLow"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="SacredCore">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="14" Unit="AmerdallianMiner">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,40,172,68"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleProtoss_Ihanrii"/>
+        <Icon value="Assets\Textures\btn-unit-protoss-mothership-ihanrii.dds"/>
+    </CRace>
+    <CRace id="Terr222224223">
+        <AttributeId value="Terr"/>
+        <RaceIcon value="@UI/RaceIcon/Terr2"/>
+        <GameMusic value="Music_TerrLow"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="Nexus3">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="14" Unit="Probe2">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,40,172,68"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleProtoss_Forged"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-darkarchon-maelstrom.dds"/>
+    </CRace>
+    <CRace id="Terr2222242232">
+        <AttributeId value="Terr"/>
+        <RaceIcon value="@UI/RaceIcon/Terr2"/>
+        <GameMusic value="Music_TerrLow"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="Hatchery7">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="14" Unit="Drone7">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Overlord7">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,40,172,68"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleZerg_Zagara"/>
+        <Icon value="Assets\Textures\btn-unit-collection-webby-queen.dds"/>
+    </CRace>
+    <CRace id="Terr22222422322">
+        <AttributeId value="Terr"/>
+        <RaceIcon value="@UI/RaceIcon/Terr2"/>
+        <GameMusic value="Music_TerrLow"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="CommandCenter8">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="8" Unit="SCV10">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="3" Unit="SCV1032">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="3" Unit="SCV102">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingResource index="Minerals" value="150"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,40,172,68"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleTerran_Classic"/>
+        <Icon value="Assets\Textures\btn-ability-hornerhan-fleethyperjump.dds"/>
+    </CRace>
+    <CRace id="Terr2223">
+        <AttributeId value="Terr"/>
+        <RaceIcon value="@UI/RaceIcon/Terr2"/>
+        <GameMusic value="Music_TerrLow"/>
+        <Flags index="TrialAllowed" value="1"/>
+        <StartingUnitArray Unit="Wright2">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Collector24"/>
+        <StartingUnitArray Unit="Pylon10"/>
+        <StartingResource index="Minerals" value="400"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+        <GlossaryTeamColorIndex value="1"/>
+        <MiniMapBorderColor value="100,40,172,68"/>
+        <PlacementGridColorBlindColor value="255,90,255,133"/>
+        <VictorySound value="UI_MissionComplete"/>
+        <DefeatSound value="UI_MissionFailed"/>
+        <ExpansionOrder value="1"/>
+        <LevelAchievementId value="91475320767753"/>
+        <DefaultConsoleSkin value="ConsoleTerran_CovertOps"/>
+        <Icon value="Assets\Textures\btn-ability-mengsk-battlecruiser-decksights.dds"/>
+    </CRace>
+    <CRace id="UnknownRace">
+        <StartingUnitArray Unit="RoachWarren2224">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="14" Unit="Drone5">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Collector24">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <DefaultConsoleSkin value="ConsoleZerg_Dehaka"/>
+    </CRace>
+    <CRace id="UnknownRace2">
+        <StartingUnitArray Unit="CommandCenter13">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Count="14" Unit="SCV14">
+            <Flags index="ResourceRally" value="1"/>
+            <Offset value="0,-3"/>
+            <Offset value="1,-3"/>
+            <Offset value="2,-3"/>
+            <Offset value="3,-3"/>
+            <Offset value="3,-2"/>
+            <Offset value="3,-1"/>
+            <Offset value="3,0"/>
+            <Offset value="3,1"/>
+            <Offset value="3,2"/>
+            <Offset value="3,3"/>
+            <Offset value="2,3"/>
+            <Offset value="1,3"/>
+            <Offset value="0,3"/>
+            <Offset value="-1,3"/>
+            <Offset value="-2,3"/>
+            <Offset value="-3,3"/>
+            <Offset value="-3,2"/>
+            <Offset value="-3,1"/>
+            <Offset value="-3,0"/>
+            <Offset value="-3,-1"/>
+            <Offset value="-3,-2"/>
+            <Offset value="-3,-3"/>
+            <Offset value="-2,-3"/>
+            <Offset value="-1,-3"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10">
+            <Flags index="ResourceSetRally" value="1"/>
+        </StartingUnitArray>
+        <DefaultConsoleSkin value="ConsoleTerran_Swann"/>
+    </CRace>
+    <CRace id="Zerg">
+        <StartingUnitArray index="0" Unit="Wraith22">
+            <Flags index="ResourceSetRally" value="0"/>
+            <Offset value="0,0"/>
+        </StartingUnitArray>
+        <StartingUnitArray index="1" Count="1" Unit="OurGodPythonThePylon">
+            <Flags index="ResourceRally" value="0"/>
+            <Offset index="0" value="4,4"/>
+            <Offset index="1" removed="1"/>
+            <Offset index="2" removed="1"/>
+            <Offset index="3" removed="1"/>
+            <Offset index="4" removed="1"/>
+            <Offset index="5" removed="1"/>
+            <Offset index="6" removed="1"/>
+            <Offset index="7" removed="1"/>
+            <Offset index="8" removed="1"/>
+            <Offset index="9" removed="1"/>
+            <Offset index="10" removed="1"/>
+            <Offset index="11" removed="1"/>
+            <Offset index="12" removed="1"/>
+            <Offset index="13" removed="1"/>
+            <Offset index="14" removed="1"/>
+            <Offset index="15" removed="1"/>
+            <Offset index="16" removed="1"/>
+            <Offset index="17" removed="1"/>
+            <Offset index="18" removed="1"/>
+            <Offset index="19" removed="1"/>
+            <Offset index="20" removed="1"/>
+            <Offset index="21" removed="1"/>
+            <Offset index="22" removed="1"/>
+            <Offset index="23" removed="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray index="2" Unit="">
+            <Offset index="0" value="4,4"/>
+            <Offset index="1" removed="1"/>
+            <Offset index="2" removed="1"/>
+            <Offset index="3" removed="1"/>
+            <Offset index="4" removed="1"/>
+            <Offset index="5" removed="1"/>
+            <Offset index="6" removed="1"/>
+            <Offset index="7" removed="1"/>
+            <Offset index="8" removed="1"/>
+            <Offset index="9" removed="1"/>
+            <Offset index="10" removed="1"/>
+            <Offset index="11" removed="1"/>
+            <Offset index="12" removed="1"/>
+            <Offset index="13" removed="1"/>
+            <Offset index="14" removed="1"/>
+            <Offset index="15" removed="1"/>
+            <Offset index="16" removed="1"/>
+            <Offset index="17" removed="1"/>
+            <Offset index="18" removed="1"/>
+            <Offset index="19" removed="1"/>
+            <Offset index="20" removed="1"/>
+            <Offset index="21" removed="1"/>
+            <Offset index="22" removed="1"/>
+            <Offset index="23" removed="1"/>
+        </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon10"/>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Terrazine" value="50"/>
+    </CRace>
+</Catalog>
