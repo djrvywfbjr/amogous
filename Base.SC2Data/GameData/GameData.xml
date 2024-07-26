@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CGame id="Dflt">
+        <TriggerLibs Id="CD55B2B5"/>
+        <TriggerLibs Id="CE519501"/>
+        <TriggerLibs Id="16F85256"/>
+    </CGame>
+</Catalog>

@@ -1,0 +1,1373 @@
+include "TriggerLibs/NativeLib"
+include "LibCD55B2B5_h"
+
+include "LibCE519501_h"
+
+//--------------------------------------------------------------------------------------------------
+// Library: EventMod2
+//--------------------------------------------------------------------------------------------------
+// External Library Initialization
+void libCE519501_InitLibraries () {
+    libNtve_InitVariables();
+    libCD55B2B5_InitVariables();
+}
+
+// Variable Initialization
+bool libCE519501_InitVariables_completed = false;
+
+void libCE519501_InitVariables () {
+    if (libCE519501_InitVariables_completed) {
+        return;
+    }
+
+    libCE519501_InitVariables_completed = true;
+
+    libCE519501_gv_activePlayer = PlayerGroupEmpty();
+}
+
+// Triggers
+//--------------------------------------------------------------------------------------------------
+// Trigger: BDHgas
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_BDHgas_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((UnitHasBehavior2(EventUnit(), "HarvestableVespeneGeyserGas") == true))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UnitBehaviorRemove(EventUnit(), "HarvestableVespeneGeyserGas", 1);
+    UnitBehaviorAdd(EventUnit(), "HarvestableVespeneGeyserGas2", EventUnit(), 1);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_BDHgas_Init () {
+    libCE519501_gt_BDHgas = TriggerCreate("libCE519501_gt_BDHgas_Func");
+    TriggerEnable(libCE519501_gt_BDHgas, false);
+    TriggerAddEventUnitRegion(libCE519501_gt_BDHgas, null, RegionEntireMap(), true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: BDHgas 2
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_BDHgas2_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((UnitHasBehavior2(EventUnit(), "HarvestableVespeneGeyserGasProtoss") == true))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UnitBehaviorRemove(EventUnit(), "HarvestableVespeneGeyserGasProtoss", 1);
+    UnitBehaviorAdd(EventUnit(), "HarvestableVespeneGeyserGas2", EventUnit(), 1);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_BDHgas2_Init () {
+    libCE519501_gt_BDHgas2 = TriggerCreate("libCE519501_gt_BDHgas2_Func");
+    TriggerEnable(libCE519501_gt_BDHgas2, false);
+    TriggerAddEventUnitRegion(libCE519501_gt_BDHgas2, null, RegionEntireMap(), true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: BDHgas 3
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_BDHgas3_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((UnitHasBehavior2(EventUnit(), "HarvestableVespeneGeyserGasZerg") == true))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UnitBehaviorRemove(EventUnit(), "HarvestableVespeneGeyserGasZerg", 1);
+    UnitBehaviorAdd(EventUnit(), "HarvestableVespeneGeyserGas2", EventUnit(), 1);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_BDHgas3_Init () {
+    libCE519501_gt_BDHgas3 = TriggerCreate("libCE519501_gt_BDHgas3_Func");
+    TriggerEnable(libCE519501_gt_BDHgas3, false);
+    TriggerAddEventUnitRegion(libCE519501_gt_BDHgas3, null, RegionEntireMap(), true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: BDHgas 4
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_BDHgas4_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!(((UnitHasBehavior2(EventUnit(), "AutomaticHarvestableVespene") == true) || (UnitHasBehavior2(EventUnit(), "AutomaticHarvestableVespene2") == true)))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UnitBehaviorAdd(EventUnit(), "LostInTimeStop43", EventUnit(), 1);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_BDHgas4_Init () {
+    libCE519501_gt_BDHgas4 = TriggerCreate("libCE519501_gt_BDHgas4_Func");
+    TriggerEnable(libCE519501_gt_BDHgas4, false);
+    TriggerAddEventUnitRegion(libCE519501_gt_BDHgas4, null, RegionEntireMap(), true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: DefundRefund
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_DefundRefund_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((GameAttributeGameValue("1") == "0010"))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    PlayerModifyPropertyInt(UnitGetOwner(libNtve_gf_KillingUnit()), c_playerPropMinerals, c_playerPropOperAdd, (UnitTypeGetCost(UnitGetType(EventUnit()), c_unitCostMinerals) / 2));
+    PlayerModifyPropertyInt(UnitGetOwner(libNtve_gf_KillingUnit()), c_playerPropMineralsCollected, c_playerPropOperAdd, (UnitTypeGetCost(UnitGetType(EventUnit()), c_unitCostMinerals) / 2));
+    PlayerModifyPropertyInt(UnitGetOwner(libNtve_gf_KillingUnit()), c_playerPropVespene, c_playerPropOperAdd, (UnitTypeGetCost(UnitGetType(EventUnit()), c_unitCostVespene) / 2));
+    PlayerModifyPropertyInt(UnitGetOwner(libNtve_gf_KillingUnit()), c_playerPropVespeneCollected, c_playerPropOperAdd, (UnitTypeGetCost(UnitGetType(EventUnit()), c_unitCostVespene) / 2));
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_DefundRefund_Init () {
+    libCE519501_gt_DefundRefund = TriggerCreate("libCE519501_gt_DefundRefund_Func");
+    TriggerAddEventUnitDied(libCE519501_gt_DefundRefund, null);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: AlmostExtinct
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_AlmostExtinct_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((GameAttributeGameValue("1") == "0011"))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    PlayerModifyPropertyFixed(UnitGetOwner(EventUnit()), c_playerPropSuppliesLimit, c_playerPropOperSubtract, UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropNormal));
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_AlmostExtinct_Init () {
+    libCE519501_gt_AlmostExtinct = TriggerCreate("libCE519501_gt_AlmostExtinct_Func");
+    TriggerAddEventUnitDied(libCE519501_gt_AlmostExtinct, null);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: BigDigHunters
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_BigDigHunters_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    if ((GameAttributeGameValue("1") == "0005")) {
+        TriggerEnable(libCE519501_gt_BDHgas, true);
+        TriggerEnable(libCE519501_gt_BDHgas2, true);
+        TriggerEnable(libCE519501_gt_BDHgas3, true);
+        TriggerEnable(libCE519501_gt_BDHgas4, true);
+        Wait(1.0, c_timeGame);
+        PlayerModifyPropertyFixed(1, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 600.0);
+        PlayerModifyPropertyFixed(2, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 600.0);
+        PlayerModifyPropertyFixed(3, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 600.0);
+        PlayerModifyPropertyFixed(4, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 600.0);
+        PlayerModifyPropertyFixed(5, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 600.0);
+        PlayerModifyPropertyFixed(6, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 600.0);
+        PlayerModifyPropertyFixed(7, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 600.0);
+        PlayerModifyPropertyFixed(8, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 600.0);
+        PlayerModifyPropertyFixed(8, c_playerPropVespene, c_playerPropOperAdd, 2000.0);
+        PlayerModifyPropertyFixed(7, c_playerPropVespene, c_playerPropOperAdd, 2000.0);
+        PlayerModifyPropertyFixed(6, c_playerPropVespene, c_playerPropOperAdd, 2000.0);
+        PlayerModifyPropertyFixed(5, c_playerPropVespene, c_playerPropOperAdd, 2000.0);
+        PlayerModifyPropertyFixed(4, c_playerPropVespene, c_playerPropOperAdd, 2000.0);
+        PlayerModifyPropertyFixed(3, c_playerPropVespene, c_playerPropOperAdd, 2000.0);
+        PlayerModifyPropertyFixed(2, c_playerPropVespene, c_playerPropOperAdd, 2000.0);
+        PlayerModifyPropertyFixed(1, c_playerPropVespene, c_playerPropOperAdd, 2000.0);
+        HelpPanelAddTip(PlayerGroupAll(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/lib_CE519501_6869CF6E"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/lib_CE519501_6C08C230"), StringExternal("Param/Value/lib_CE519501_6490B4C8"), "Assets\\Textures\\btn-tips-richminerals.dds");
+    }
+    else {
+        TriggerEnable(libCE519501_gt_BikDigHuntersFields, false);
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_BigDigHunters_Init () {
+    libCE519501_gt_BigDigHunters = TriggerCreate("libCE519501_gt_BigDigHunters_Func");
+    TriggerAddEventMapInit(libCE519501_gt_BigDigHunters);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: ExtinctStart
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_ExtinctStart_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    if ((GameAttributeGameValue("1") == "0011")) {
+        PlayerModifyPropertyFixed(1, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 400.0);
+        PlayerModifyPropertyFixed(2, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 400.0);
+        PlayerModifyPropertyFixed(3, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 400.0);
+        PlayerModifyPropertyFixed(4, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 400.0);
+        PlayerModifyPropertyFixed(5, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 400.0);
+        PlayerModifyPropertyFixed(6, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 400.0);
+        PlayerModifyPropertyFixed(7, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 400.0);
+        PlayerModifyPropertyFixed(8, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 400.0);
+        HelpPanelAddTip(PlayerGroupAll(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/lib_CE519501_3F0F298A"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/lib_CE519501_C9394312"), StringExternal("Param/Value/lib_CE519501_D4D76123"), "Assets\\Textures\\btn-tips-researchunlocked.dds");
+    }
+
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_ExtinctStart_Init () {
+    libCE519501_gt_ExtinctStart = TriggerCreate("libCE519501_gt_ExtinctStart_Func");
+    TriggerAddEventMapInit(libCE519501_gt_ExtinctStart);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Random
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_Random_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!(((UnitGetType(EventUnit()) == "Wraith22") && (GameAttributeGameValue("1") == "0009")))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UnitIssueOrder(EventUnit(), Order(AbilityCommand("ShieldUp1335", 0)), c_orderQueueReplace);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_Random_Init () {
+    libCE519501_gt_Random = TriggerCreate("libCE519501_gt_Random_Func");
+    TriggerAddEventUnitRegion(libCE519501_gt_Random, null, RegionEntireMap(), true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: TheEternalRewards
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_TheEternalRewards_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    if ((GameAttributeGameValue("1") == "0006")) {
+        TriggerEnable(libCD55B2B5_gt_HeroicUnitsBuff, true);
+        TriggerEnable(libCD55B2B5_gt_MassiveUnitsBuff, true);
+        TriggerEnable(libCD55B2B5_gt_SimpleUnitsBuff, true);
+        HelpPanelAddTip(PlayerGroupAll(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/lib_CE519501_9530E930"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/lib_CE519501_214B2248"), StringExternal("Param/Value/lib_CE519501_F805697D"), "Assets\\Textures\\btn-tips-richminerals.dds");
+    }
+    else {
+        TriggerEnable(libCD55B2B5_gt_HeroicUnitsBuff, false);
+        TriggerEnable(libCD55B2B5_gt_MassiveUnitsBuff, false);
+        TriggerEnable(libCD55B2B5_gt_SimpleUnitsBuff, false);
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_TheEternalRewards_Init () {
+    libCE519501_gt_TheEternalRewards = TriggerCreate("libCE519501_gt_TheEternalRewards_Func");
+    TriggerAddEventMapInit(libCE519501_gt_TheEternalRewards);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Defund
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_Defund_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    if ((GameAttributeGameValue("1") == "0010")) {
+        TriggerEnable(libCE519501_gt_DefundRefund, true);
+        HelpPanelAddTip(PlayerGroupAll(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/lib_CE519501_6F8324EF"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/lib_CE519501_3AB83FCD"), StringExternal("Param/Value/lib_CE519501_8BEE05AD"), "Assets\\Textures\\btn-tips-resourcecaches.dds");
+    }
+    else {
+        TriggerEnable(libCE519501_gt_DefundRefund, false);
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_Defund_Init () {
+    libCE519501_gt_Defund = TriggerCreate("libCE519501_gt_Defund_Func");
+    TriggerAddEventMapInit(libCE519501_gt_Defund);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Amplified
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_Amplified_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    if ((GameAttributeGameValue("1") == "0007")) {
+        TriggerEnable(libCE519501_gt_AmplifiedAdd, true);
+        HelpPanelAddTip(PlayerGroupAll(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/lib_CE519501_A5B79FA2"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/lib_CE519501_D410FB56"), StringExternal("Param/Value/lib_CE519501_92D88C89"), "Assets\\Textures\\btn-tips-richminerals.dds");
+    }
+    else {
+        TriggerEnable(libCE519501_gt_AmplifiedAdd, false);
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_Amplified_Init () {
+    libCE519501_gt_Amplified = TriggerCreate("libCE519501_gt_Amplified_Func");
+    TriggerAddEventMapInit(libCE519501_gt_Amplified);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: ToughAsNails
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_ToughAsNails_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    if ((GameAttributeGameValue("1") == "0008")) {
+        TriggerEnable(libCE519501_gt_ToughAsNailsADd, true);
+        HelpPanelAddTip(PlayerGroupAll(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/lib_CE519501_FA00ED18"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/lib_CE519501_E38655C5"), StringExternal("Param/Value/lib_CE519501_66A04DF5"), "Assets\\Textures\\btn-tips-richminerals.dds");
+    }
+    else {
+        TriggerEnable(libCE519501_gt_ToughAsNailsADd, false);
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_ToughAsNails_Init () {
+    libCE519501_gt_ToughAsNails = TriggerCreate("libCE519501_gt_ToughAsNails_Func");
+    TriggerAddEventMapInit(libCE519501_gt_ToughAsNails);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Celestial Rebirth
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_CelestialRebirth_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((GameAttributeGameValue("1") == "0009"))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    HelpPanelAddTip(PlayerGroupAll(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/lib_CE519501_51E14343"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/lib_CE519501_3577A399"), StringExternal("Param/Value/lib_CE519501_2E65E2BD"), "Assets\\Textures\\btn-hero-kerriganascended.dds");
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_CelestialRebirth_Init () {
+    libCE519501_gt_CelestialRebirth = TriggerCreate("libCE519501_gt_CelestialRebirth_Func");
+    TriggerAddEventMapInit(libCE519501_gt_CelestialRebirth);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: ToughAsNailsADd
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_ToughAsNailsADd_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!(((!((UnitGetType(EventUnit()) == "Wraith22"))) && (GameAttributeGameValue("1") == "0008")))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UnitBehaviorAdd(EventUnit(), "LostInTimeStop42", EventUnit(), 1);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_ToughAsNailsADd_Init () {
+    libCE519501_gt_ToughAsNailsADd = TriggerCreate("libCE519501_gt_ToughAsNailsADd_Func");
+    TriggerAddEventUnitRegion(libCE519501_gt_ToughAsNailsADd, null, RegionEntireMap(), true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: AmplifiedAdd
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_AmplifiedAdd_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    PlayerCreateEffectPoint(15, "AllStrikerTimeSlowSearch4", RegionGetBoundsMin(RegionEntireMap()));
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_AmplifiedAdd_Init () {
+    libCE519501_gt_AmplifiedAdd = TriggerCreate("libCE519501_gt_AmplifiedAdd_Func");
+    TriggerAddEventTimePeriodic(libCE519501_gt_AmplifiedAdd, 0.5, c_timeGame);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: BikDigHuntersFields
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_BikDigHuntersFields_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((((UnitGetType(EventUnit()) == "BattleStationMineralField") || (UnitGetType(EventUnit()) == "BattleStationMineralField750") || (UnitGetType(EventUnit()) == "LabMineralField750") || (UnitGetType(EventUnit()) == "LabMineralField") || (UnitGetType(EventUnit()) == "MineralField") || (UnitGetType(EventUnit()) == "MineralField450") || (UnitGetType(EventUnit()) == "MineralField750") || (UnitGetType(EventUnit()) == "MineralFieldOpaque900") || (UnitGetType(EventUnit()) == "MineralFieldOpaque") || (UnitGetType(EventUnit()) == "PurifierMineralField") || (UnitGetType(EventUnit()) == "PurifierMineralField750") || (UnitGetType(EventUnit()) == "PurifierRichMineralField") || (UnitGetType(EventUnit()) == "PurifierRichMineralField750") || (UnitGetType(EventUnit()) == "RichMineralField") || (UnitGetType(EventUnit()) == "RichMineralField750") || (UnitGetType(EventUnit()) == "UmojanLabMineralField")) && (GameAttributeGameValue("1") == "0005")))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    libNtve_gf_ReplaceUnit(EventUnit(), "RichMineralField2", libNtve_ge_ReplaceUnitOptions_NewUnitssMax);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_BikDigHuntersFields_Init () {
+    libCE519501_gt_BikDigHuntersFields = TriggerCreate("libCE519501_gt_BikDigHuntersFields_Func");
+    TriggerAddEventUnitRegion(libCE519501_gt_BikDigHuntersFields, null, RegionEntireMap(), true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: BikDigHuntersVespene
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_BikDigHuntersVespene_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((((UnitGetType(EventUnit()) == "RichVespeneGeyser") || (UnitGetType(EventUnit()) == "VespeneGeyser") || (UnitGetType(EventUnit()) == "ProtossVespeneGeyser") || (UnitGetType(EventUnit()) == "PurifierVespeneGeyser") || (UnitGetType(EventUnit()) == "ShakurasVespeneGeyser") || (UnitGetType(EventUnit()) == "SpacePlatformGeyser")) && (GameAttributeGameValue("1") == "0005")))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    libNtve_gf_ReplaceUnit(EventUnit(), "VespeneGeyser2", libNtve_ge_ReplaceUnitOptions_NewUnitssMax);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_BikDigHuntersVespene_Init () {
+    libCE519501_gt_BikDigHuntersVespene = TriggerCreate("libCE519501_gt_BikDigHuntersVespene_Func");
+    TriggerAddEventUnitRegion(libCE519501_gt_BikDigHuntersVespene, null, RegionEntireMap(), true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: BikDigHuntersVespeneBuilding
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_BikDigHuntersVespeneBuilding_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((((UnitGetType(EventUnit()) == "RichVespeneGeyser") || (UnitGetType(EventUnit()) == "VespeneGeyser") || (UnitGetType(EventUnit()) == "ProtossVespeneGeyser") || (UnitGetType(EventUnit()) == "PurifierVespeneGeyser") || (UnitGetType(EventUnit()) == "ShakurasVespeneGeyser") || (UnitGetType(EventUnit()) == "SpacePlatformGeyser")) && ((UnitHasBehavior2(EventUnit(), "HarvestableRichVespeneGeyserGasProtoss") == true) || (UnitHasBehavior2(EventUnit(), "HarvestableRichVespeneGeyserGas") == true) || (UnitHasBehavior2(EventUnit(), "HarvestableRichVespeneGeyserGasZerg") == true) || (UnitHasBehavior2(EventUnit(), "HarvestableVespeneGeyserGas") == true) || (UnitHasBehavior2(EventUnit(), "HarvestableVespeneGeyserGasProtoss") == true) || (UnitHasBehavior2(EventUnit(), "HarvestableVespeneGeyserGasZerg") == true))))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UnitBehaviorRemove(EventUnit(), "HarvestableRichVespeneGeyserGas", 1);
+    UnitBehaviorRemove(EventUnit(), "HarvestableRichVespeneGeyserGasProtoss", 1);
+    UnitBehaviorRemove(EventUnit(), "HarvestableRichVespeneGeyserGasZerg", 1);
+    UnitBehaviorRemove(EventUnit(), "HarvestableVespeneGeyserGas", 1);
+    UnitBehaviorRemove(EventUnit(), "HarvestableVespeneGeyserGasProtoss", 1);
+    UnitBehaviorRemove(EventUnit(), "HarvestableVespeneGeyserGasZerg", 1);
+    UnitBehaviorAdd(EventUnit(), "HarvestableVespeneGeyserGas2", EventUnit(), 1);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_BikDigHuntersVespeneBuilding_Init () {
+    libCE519501_gt_BikDigHuntersVespeneBuilding = TriggerCreate("libCE519501_gt_BikDigHuntersVespeneBuilding_Func");
+    TriggerAddEventUnitRegion(libCE519501_gt_BikDigHuntersVespeneBuilding, null, RegionEntireMap(), true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: BikDigHuntersPeriodVEspene
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_BikDigHuntersPeriodVEspene_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    if ((GameAttributeGameValue("1") == "0005")) {
+        PlayerModifyPropertyFixed(8, c_playerPropVespene, c_playerPropOperAdd, 750.0);
+        PlayerModifyPropertyFixed(8, c_playerPropVespeneCollected, c_playerPropOperAdd, 750.0);
+        PlayerModifyPropertyFixed(7, c_playerPropVespeneCollected, c_playerPropOperAdd, 750.0);
+        PlayerModifyPropertyFixed(6, c_playerPropVespeneCollected, c_playerPropOperAdd, 750.0);
+        PlayerModifyPropertyFixed(5, c_playerPropVespeneCollected, c_playerPropOperAdd, 750.0);
+        PlayerModifyPropertyFixed(4, c_playerPropVespeneCollected, c_playerPropOperAdd, 750.0);
+        PlayerModifyPropertyFixed(3, c_playerPropVespeneCollected, c_playerPropOperAdd, 750.0);
+        PlayerModifyPropertyFixed(2, c_playerPropVespeneCollected, c_playerPropOperAdd, 750.0);
+        PlayerModifyPropertyFixed(1, c_playerPropVespeneCollected, c_playerPropOperAdd, 750.0);
+        PlayerModifyPropertyFixed(7, c_playerPropVespene, c_playerPropOperAdd, 750.0);
+        PlayerModifyPropertyFixed(6, c_playerPropVespene, c_playerPropOperAdd, 750.0);
+        PlayerModifyPropertyFixed(5, c_playerPropVespene, c_playerPropOperAdd, 750.0);
+        PlayerModifyPropertyFixed(4, c_playerPropVespene, c_playerPropOperAdd, 750.0);
+        PlayerModifyPropertyFixed(3, c_playerPropVespene, c_playerPropOperAdd, 750.0);
+        PlayerModifyPropertyFixed(2, c_playerPropVespene, c_playerPropOperAdd, 750.0);
+        PlayerModifyPropertyFixed(1, c_playerPropVespene, c_playerPropOperAdd, 750.0);
+    }
+    else {
+        TriggerEnable(libCE519501_gt_BikDigHuntersFields, false);
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_BikDigHuntersPeriodVEspene_Init () {
+    libCE519501_gt_BikDigHuntersPeriodVEspene = TriggerCreate("libCE519501_gt_BikDigHuntersPeriodVEspene_Func");
+    TriggerAddEventTimePeriodic(libCE519501_gt_BikDigHuntersPeriodVEspene, 300.0, c_timeGame);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Ref
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_Ref_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!(((GameAttributeGameValue("2") == "0005") && (UnitGetType(EventUnit()) == "Wraith22")))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    libNtve_gf_SetUpgradeLevelForPlayer(UnitGetOwner(EventUnit()), "CorruptedPlagueSpeedDebuff23222222223", 1);
+    UnitIssueOrder(EventUnit(), Order(AbilityCommand("BarracksTrain42", 6)), c_orderQueueReplace);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_Ref_Init () {
+    libCE519501_gt_Ref = TriggerCreate("libCE519501_gt_Ref_Func");
+    TriggerAddEventUnitRegion(libCE519501_gt_Ref, null, RegionEntireMap(), true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Ref 2
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_Ref2_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((UnitGetType(EventUnit()) == "Pylon10"))) {
+            return false;
+        }
+
+        if (!((GameAttributeGameValue("2") != "0002"))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UnitRemove(EventUnit());
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_Ref2_Init () {
+    libCE519501_gt_Ref2 = TriggerCreate("libCE519501_gt_Ref2_Func");
+    TriggerAddEventUnitRegion(libCE519501_gt_Ref2, null, RegionEntireMap(), true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Halloween Check
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_HalloweenCheck_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((GameAttributeGameValue("2") == "0003"))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TechTreeAbilityAllow(1, AbilityCommand("ShieldUp1335", 0), false);
+    if ((PlayerGroupCount(PlayerGroupActive()) == 2)) {
+        TechTreeUpgradeAddLevel(1, "UmojanBasicUnitUpgrade5222422423222222352222222132", 1);
+    }
+
+    if ((PlayerGroupCount(PlayerGroupActive()) == 3)) {
+        TechTreeUpgradeAddLevel(1, "UmojanBasicUnitUpgrade5222422423222222352222222132", 2);
+    }
+
+    if ((PlayerGroupCount(PlayerGroupActive()) == 4)) {
+        TechTreeUpgradeAddLevel(1, "UmojanBasicUnitUpgrade5222422423222222352222222132", 3);
+    }
+
+    if ((PlayerGroupCount(PlayerGroupActive()) == 5)) {
+        TechTreeUpgradeAddLevel(1, "UmojanBasicUnitUpgrade5222422423222222352222222132", 4);
+    }
+
+    if ((PlayerGroupCount(PlayerGroupActive()) == 6)) {
+        TechTreeUpgradeAddLevel(1, "UmojanBasicUnitUpgrade5222422423222222352222222132", 5);
+    }
+
+    if ((PlayerGroupCount(PlayerGroupActive()) == 7)) {
+        TechTreeUpgradeAddLevel(1, "UmojanBasicUnitUpgrade5222422423222222352222222132", 6);
+    }
+
+    if ((PlayerGroupCount(PlayerGroupActive()) == 8)) {
+        TechTreeUpgradeAddLevel(1, "UmojanBasicUnitUpgrade5222422423222222352222222132", 7);
+    }
+
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_HalloweenCheck_Init () {
+    libCE519501_gt_HalloweenCheck = TriggerCreate("libCE519501_gt_HalloweenCheck_Func");
+    TriggerAddEventMapInit(libCE519501_gt_HalloweenCheck);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Unstoppable
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_Unstoppable_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!(((UnitTypeTestAttribute(UnitGetType(EventUnit()), c_unitAttributeStructure) == false)))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    if ((TechTreeUpgradeCount(1, "UmojanBasicUnitUpgrade5222422423222222352222222132", c_techCountQueuedOrBetter) == 1)) {
+        UnitSetScale(EventUnit(), 135.0, 135.0, 135.0);
+    }
+
+    if ((TechTreeUpgradeCount(1, "UmojanBasicUnitUpgrade5222422423222222352222222132", c_techCountQueuedOrBetter) == 2)) {
+        UnitSetScale(EventUnit(), 140.0, 140.0, 140.0);
+    }
+
+    if ((TechTreeUpgradeCount(1, "UmojanBasicUnitUpgrade5222422423222222352222222132", c_techCountQueuedOrBetter) == 3)) {
+        UnitSetScale(EventUnit(), 145.0, 145.0, 145.0);
+    }
+
+    if ((TechTreeUpgradeCount(1, "UmojanBasicUnitUpgrade5222422423222222352222222132", c_techCountQueuedOrBetter) == 4)) {
+        UnitSetScale(EventUnit(), 150.0, 150.0, 150.0);
+    }
+
+    if ((TechTreeUpgradeCount(1, "UmojanBasicUnitUpgrade5222422423222222352222222132", c_techCountQueuedOrBetter) == 5)) {
+        UnitSetScale(EventUnit(), 155.0, 155.0, 155.0);
+    }
+
+    if ((TechTreeUpgradeCount(1, "UmojanBasicUnitUpgrade5222422423222222352222222132", c_techCountQueuedOrBetter) == 6)) {
+        UnitSetScale(EventUnit(), 160.0, 160.0, 160.0);
+    }
+
+    if ((TechTreeUpgradeCount(1, "UmojanBasicUnitUpgrade5222422423222222352222222132", c_techCountQueuedOrBetter) == 7)) {
+        UnitSetScale(EventUnit(), 165.0, 165.0, 165.0);
+    }
+
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_Unstoppable_Init () {
+    libCE519501_gt_Unstoppable = TriggerCreate("libCE519501_gt_Unstoppable_Func");
+    TriggerAddEventUnitBehaviorChange(libCE519501_gt_Unstoppable, null, "GlazeHolo4", c_unitBehaviorChangeCreate);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: AddHalloween
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_AddHalloween_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!(((UnitGetOwner(EventUnit()) == 1) && (GameAttributeGameValue("2") == "0003")))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UnitBehaviorAdd(EventUnit(), "GlazeHolo4", EventUnit(), 1);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_AddHalloween_Init () {
+    libCE519501_gt_AddHalloween = TriggerCreate("libCE519501_gt_AddHalloween_Func");
+    TriggerAddEventUnitRegion(libCE519501_gt_AddHalloween, null, RegionEntireMap(), true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: HalloweenStart
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_HalloweenStart_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    playergroup auto78E134FA_g;
+    int auto78E134FA_var;
+    playergroup auto96B1AF53_g;
+    int auto96B1AF53_var;
+    playergroup auto436FAFF2_g;
+    int auto436FAFF2_var;
+
+    // Conditions
+    if (testConds) {
+        if (!((GameAttributeGameValue("2") == "0003"))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    auto78E134FA_g = PlayerGroupAll();
+    auto78E134FA_var = -1;
+    while (true) {
+        auto78E134FA_var = PlayerGroupNextPlayer(auto78E134FA_g, auto78E134FA_var);
+        if (auto78E134FA_var < 0) { break; }
+        libNtve_gf_SetUpgradeLevelForPlayer(auto78E134FA_var, "CorruptedPlagueSpeedDebuff232222222222", 1);
+    }
+    GameSetLighting("MeinhoffCampaignNight", 50.0);
+    HelpPanelAddTip(PlayerGroupAll(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/lib_CE519501_5A0AFDEB"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/lib_CE519501_3851C388"), StringExternal("Param/Value/lib_CE519501_A2FD1339"), "Assets\\Textures\\fearex3_coop.dds");
+    HelpPanelAddTip(PlayerGroupAll(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/lib_CE519501_244C2440"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/lib_CE519501_95FD0E81"), StringExternal("Param/Value/lib_CE519501_0D89EE02"), "Assets\\Textures\\btn-ability-spearofadun-temporalfield.dds");
+    auto96B1AF53_g = PlayerGroupAll();
+    auto96B1AF53_var = -1;
+    while (true) {
+        auto96B1AF53_var = PlayerGroupNextPlayer(auto96B1AF53_g, auto96B1AF53_var);
+        if (auto96B1AF53_var < 0) { break; }
+        if (((auto96B1AF53_var != 1) && (auto96B1AF53_var != 0))) {
+            libNtve_gf_SetAlliance(auto96B1AF53_var, 2, libNtve_ge_AllianceSetting_AllyWithSharedVision);
+            libNtve_gf_SetAlliance(auto96B1AF53_var, 3, libNtve_ge_AllianceSetting_AllyWithSharedVision);
+            libNtve_gf_SetAlliance(auto96B1AF53_var, 4, libNtve_ge_AllianceSetting_AllyWithSharedVision);
+            libNtve_gf_SetAlliance(auto96B1AF53_var, 5, libNtve_ge_AllianceSetting_AllyWithSharedVision);
+            libNtve_gf_SetAlliance(auto96B1AF53_var, 6, libNtve_ge_AllianceSetting_AllyWithSharedVision);
+            libNtve_gf_SetAlliance(auto96B1AF53_var, 7, libNtve_ge_AllianceSetting_AllyWithSharedVision);
+            libNtve_gf_SetAlliance(auto96B1AF53_var, 8, libNtve_ge_AllianceSetting_AllyWithSharedVision);
+            libNtve_gf_SetAlliance(auto96B1AF53_var, 1, libNtve_ge_AllianceSetting_Enemy);
+        }
+
+    }
+    Wait(300.0, c_timeGame);
+    auto436FAFF2_g = PlayerGroupAll();
+    auto436FAFF2_var = -1;
+    while (true) {
+        auto436FAFF2_var = PlayerGroupNextPlayer(auto436FAFF2_g, auto436FAFF2_var);
+        if (auto436FAFF2_var < 0) { break; }
+        libNtve_gf_SetUpgradeLevelForPlayer(auto436FAFF2_var, "CorruptedPlagueSpeedDebuff232222222222", 0);
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_HalloweenStart_Init () {
+    libCE519501_gt_HalloweenStart = TriggerCreate("libCE519501_gt_HalloweenStart_Func");
+    TriggerAddEventMapInit(libCE519501_gt_HalloweenStart);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Halloween Triggers
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_HalloweenTriggers_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((PlayerHandle(EventPlayer()) == "1-S2-1-1517100"))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerEnable(TriggerGetCurrent(), false);
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaChat, StringExternal("Param/Value/lib_CE519501_F8B17806"));
+    Wait(6.0, c_timeGame);
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaChat, StringExternal("Param/Value/lib_CE519501_CBF46CE0"));
+    Wait(6.0, c_timeGame);
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaChat, StringExternal("Param/Value/lib_CE519501_558898C7"));
+    GameOver(EventPlayer(), c_gameOverDefeat, true, true);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_HalloweenTriggers_Init () {
+    libCE519501_gt_HalloweenTriggers = TriggerCreate("libCE519501_gt_HalloweenTriggers_Func");
+    TriggerAddEventUnitSelected(libCE519501_gt_HalloweenTriggers, null, c_playerAny, true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: CyrstmasStart
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_CyrstmasStart_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    playergroup auto25C2CD9E_g;
+    int auto25C2CD9E_var;
+    playergroup auto8A66B640_g;
+    int auto8A66B640_var;
+
+    // Conditions
+    if (testConds) {
+        if (!((GameAttributeGameValue("2") == "0004"))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    auto25C2CD9E_g = PlayerGroupAll();
+    auto25C2CD9E_var = -1;
+    while (true) {
+        auto25C2CD9E_var = PlayerGroupNextPlayer(auto25C2CD9E_g, auto25C2CD9E_var);
+        if (auto25C2CD9E_var < 0) { break; }
+        libNtve_gf_SetUpgradeLevelForPlayer(auto25C2CD9E_var, "CorruptedPlagueSpeedDebuff232222222222", 1);
+    }
+    TriggerEnable(libCD55B2B5_gt_Timer5Alt, false);
+    TriggerEnable(libCE519501_gt_Timer5AltCrystmas, false);
+    HelpPanelAddTip(PlayerGroupAll(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/lib_CE519501_9966EB0E"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/lib_CE519501_56AEB9A7"), StringExternal("Param/Value/lib_CE519501_1ED143EF"), "Assets\\Textures\\giftexchange_coop.dds");
+    HelpPanelAddTip(PlayerGroupAll(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/lib_CE519501_971F37DF"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/lib_CE519501_B86335F7"), StringExternal("Param/Value/lib_CE519501_A6F2DD26"), "Assets\\Textures\\btn-ability-spearofadun-temporalfield.dds");
+    Wait(600.0, c_timeGame);
+    auto8A66B640_g = PlayerGroupAll();
+    auto8A66B640_var = -1;
+    while (true) {
+        auto8A66B640_var = PlayerGroupNextPlayer(auto8A66B640_g, auto8A66B640_var);
+        if (auto8A66B640_var < 0) { break; }
+        libNtve_gf_SetUpgradeLevelForPlayer(auto8A66B640_var, "CorruptedPlagueSpeedDebuff232222222222", 0);
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_CyrstmasStart_Init () {
+    libCE519501_gt_CyrstmasStart = TriggerCreate("libCE519501_gt_CyrstmasStart_Func");
+    TriggerAddEventMapInit(libCE519501_gt_CyrstmasStart);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: CrystmasCreate
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_CrystmasCreate_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((GameAttributeGameValue("2") == "0004"))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UnitCreate(1, "PointDefenseDrone4", 0, 0, RegionRandomPoint(RegionEntireMap()), RandomFixed(0.0, 360.0));
+    UnitCreate(1, "PointDefenseDrone4", 0, 0, RegionRandomPoint(RegionEntireMap()), RandomFixed(0.0, 360.0));
+    UnitCreate(1, "PointDefenseDrone4", 0, 0, RegionRandomPoint(RegionEntireMap()), RandomFixed(0.0, 360.0));
+    TriggerEnable(libCE519501_gt_CrystmasCreatePeriod, true);
+    libCD55B2B5_gv_randomPythonLook = RandomInt(1, 5);
+    if ((libCD55B2B5_gv_randomPythonLook == 1)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCD55B2B5_gv_python, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_DA8299A5"), StringExternal("Param/Value/lib_CE519501_653EF14B"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    if ((libCD55B2B5_gv_randomPythonLook == 2)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCD55B2B5_gv_python, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_2EB2C796"), StringExternal("Param/Value/lib_CE519501_E0AE9757"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    if ((libCD55B2B5_gv_randomPythonLook == 3)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCD55B2B5_gv_python, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_C9ED4045"), StringExternal("Param/Value/lib_CE519501_B716ABB2"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    if ((libCD55B2B5_gv_randomPythonLook == 4)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCD55B2B5_gv_python, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_83703477"), StringExternal("Param/Value/lib_CE519501_4B557283"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    if ((libCD55B2B5_gv_randomPythonLook == 5)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCD55B2B5_gv_python, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_F359D308"), StringExternal("Param/Value/lib_CE519501_35D1F34A"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_CrystmasCreate_Init () {
+    libCE519501_gt_CrystmasCreate = TriggerCreate("libCE519501_gt_CrystmasCreate_Func");
+    TriggerAddEventTimeElapsed(libCE519501_gt_CrystmasCreate, 420.0, c_timeGame);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: CrystmasCreatePeriod
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_CrystmasCreatePeriod_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((GameAttributeGameValue("2") == "0004"))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UnitCreate(1, "PointDefenseDrone4", 0, 0, RegionRandomPoint(RegionPlayableMap()), RandomFixed(0.0, 360.0));
+    UnitCreate(1, "PointDefenseDrone4", 0, 0, RegionRandomPoint(RegionPlayableMap()), RandomFixed(0.0, 360.0));
+    UnitCreate(1, "PointDefenseDrone4", 0, 0, RegionRandomPoint(RegionPlayableMap()), RandomFixed(0.0, 360.0));
+    libCD55B2B5_gv_randomPythonLook = RandomInt(1, 10);
+    if ((libCD55B2B5_gv_randomPythonLook == 1)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCD55B2B5_gv_python, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_CC9D2800"), StringExternal("Param/Value/lib_CE519501_DEE97871"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    if ((libCD55B2B5_gv_randomPythonLook == 2)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCD55B2B5_gv_python, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_C82317D9"), StringExternal("Param/Value/lib_CE519501_5F307D93"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    if ((libCD55B2B5_gv_randomPythonLook == 3)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCD55B2B5_gv_python, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_4F94DBE8"), StringExternal("Param/Value/lib_CE519501_EDB72A28"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    if ((libCD55B2B5_gv_randomPythonLook == 4)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCD55B2B5_gv_python, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_0721B637"), StringExternal("Param/Value/lib_CE519501_31F091C7"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    if ((libCD55B2B5_gv_randomPythonLook == 5)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCD55B2B5_gv_python, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_1923E847"), StringExternal("Param/Value/lib_CE519501_E6D44455"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    if ((libCD55B2B5_gv_randomPythonLook == 6)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCD55B2B5_gv_python, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_A2220A00"), StringExternal("Param/Value/lib_CE519501_3154BFC0"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    if ((libCD55B2B5_gv_randomPythonLook == 7)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCD55B2B5_gv_python, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_C2B18256"), StringExternal("Param/Value/lib_CE519501_F833CF6D"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    if ((libCD55B2B5_gv_randomPythonLook == 8)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCD55B2B5_gv_python, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_351DBF1C"), StringExternal("Param/Value/lib_CE519501_3E79DBF7"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    if ((libCD55B2B5_gv_randomPythonLook == 9)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCD55B2B5_gv_python, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_64F9B2EE"), StringExternal("Param/Value/lib_CE519501_6800B8C2"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    if ((libCD55B2B5_gv_randomPythonLook == 10)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCD55B2B5_gv_python, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_E028ED3D"), StringExternal("Param/Value/lib_CE519501_9208F0F8"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_CrystmasCreatePeriod_Init () {
+    libCE519501_gt_CrystmasCreatePeriod = TriggerCreate("libCE519501_gt_CrystmasCreatePeriod_Func");
+    TriggerEnable(libCE519501_gt_CrystmasCreatePeriod, false);
+    TriggerAddEventTimePeriodic(libCE519501_gt_CrystmasCreatePeriod, 150.0, c_timeGame);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Timer5AltCrystmas
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_Timer5AltCrystmas_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    libNtve_gf_UnitCreateFacingPoint(1, "Pylon32", 0, 15, RegionGetCenter(RegionPlayableMap()), UnitGetPosition(EventUnit()));
+    UnitSetTeamColorIndex(UnitLastCreated(), 5);
+    UnitBehaviorAdd(UnitLastCreated(), "Evacuation7", UnitLastCreated(), 1);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_Timer5AltCrystmas_Init () {
+    libCE519501_gt_Timer5AltCrystmas = TriggerCreate("libCE519501_gt_Timer5AltCrystmas_Func");
+    TriggerEnable(libCE519501_gt_Timer5AltCrystmas, false);
+    TriggerAddEventTimeElapsed(libCE519501_gt_Timer5AltCrystmas, 5.0, c_timeGame);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: POTH
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_POTH_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    if ((GameAttributeGameValue("2") == "0002")) {
+        TriggerEnable(libCE519501_gt_SparkOfExistence, false);
+        TriggerEnable(libCD55B2B5_gt_Timer5Alt, false);
+        libNtve_gf_UnitCreateFacingPoint(1, "SacredCore3", 0, 15, RegionGetCenter(RegionPlayableMap()), UnitGetPosition(EventUnit()));
+        libCE519501_gv_sparkOfExistence = UnitLastCreated();
+        libNtve_gf_SetUpgradeLevelForPlayer(2, "CorruptedPlagueSpeedDebuff232222222222", 1);
+        libNtve_gf_SetUpgradeLevelForPlayer(1, "CorruptedPlagueSpeedDebuff232222222222", 1);
+        libNtve_gf_SetUpgradeLevelForPlayer(3, "CorruptedPlagueSpeedDebuff232222222222", 1);
+        libNtve_gf_SetUpgradeLevelForPlayer(4, "CorruptedPlagueSpeedDebuff232222222222", 1);
+        libNtve_gf_SetUpgradeLevelForPlayer(5, "CorruptedPlagueSpeedDebuff232222222222", 1);
+        libNtve_gf_SetUpgradeLevelForPlayer(6, "CorruptedPlagueSpeedDebuff232222222222", 1);
+        libNtve_gf_SetUpgradeLevelForPlayer(7, "CorruptedPlagueSpeedDebuff232222222222", 1);
+        libNtve_gf_SetUpgradeLevelForPlayer(8, "CorruptedPlagueSpeedDebuff232222222222", 1);
+        HelpPanelAddTip(PlayerGroupAll(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/lib_CE519501_D6F32717"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/lib_CE519501_9AACC247"), StringExternal("Param/Value/lib_CE519501_18348770"), "Assets\\Textures\\btn-ability-zeratul-chargedcrystal-psionicwinds.dds");
+        HelpPanelAddTip(PlayerGroupAll(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/lib_CE519501_4775DF33"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/lib_CE519501_65DF154C"), StringExternal("Param/Value/lib_CE519501_C35383FF"), "Assets\\Textures\\btn-ability-spearofadun-temporalfield.dds");
+    }
+
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_POTH_Init () {
+    libCE519501_gt_POTH = TriggerCreate("libCE519501_gt_POTH_Func");
+    TriggerAddEventMapInit(libCE519501_gt_POTH);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Timer400
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_Timer400_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((GameAttributeGameValue("2") == "0002"))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerEnable(libCE519501_gt_SparkOfExistence, true);
+    libCD55B2B5_gv_randomPythonLook = RandomInt(1, 5);
+    if ((libCD55B2B5_gv_randomPythonLook == 1)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCE519501_gv_sparkOfExistence, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_A8CFEC8E"), StringExternal("Param/Value/lib_CE519501_8ACF277A"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    if ((libCD55B2B5_gv_randomPythonLook == 2)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCE519501_gv_sparkOfExistence, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_64FAF8FE"), StringExternal("Param/Value/lib_CE519501_C2B26541"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    if ((libCD55B2B5_gv_randomPythonLook == 3)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCE519501_gv_sparkOfExistence, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_492A58C5"), StringExternal("Param/Value/lib_CE519501_3F209CB1"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    if ((libCD55B2B5_gv_randomPythonLook == 4)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCE519501_gv_sparkOfExistence, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_BB41B5B9"), StringExternal("Param/Value/lib_CE519501_42C41DE2"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    if ((libCD55B2B5_gv_randomPythonLook == 5)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCE519501_gv_sparkOfExistence, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_F2CF90D7"), StringExternal("Param/Value/lib_CE519501_9CAD3BA8"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_Timer400_Init () {
+    libCE519501_gt_Timer400 = TriggerCreate("libCE519501_gt_Timer400_Func");
+    TriggerAddEventTimeElapsed(libCE519501_gt_Timer400, 400.0, c_timeGame);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Victory
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_Victory_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    playergroup auto4C873882_g;
+    int auto4C873882_var;
+    playergroup auto1B2ACFB8_g;
+    int auto1B2ACFB8_var;
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    auto4C873882_g = PlayerGroupAlliance(c_playerGroupAlly, UnitGetOwner(EventUnit()));
+    auto4C873882_var = -1;
+    while (true) {
+        auto4C873882_var = PlayerGroupNextPlayer(auto4C873882_g, auto4C873882_var);
+        if (auto4C873882_var < 0) { break; }
+        GameOver(auto4C873882_var, c_gameOverVictory, true, true);
+    }
+    GameOver(UnitGetOwner(EventUnit()), c_gameOverVictory, true, true);
+    auto1B2ACFB8_g = PlayerGroupAlliance(c_playerGroupEnemy, UnitGetOwner(EventUnit()));
+    auto1B2ACFB8_var = -1;
+    while (true) {
+        auto1B2ACFB8_var = PlayerGroupNextPlayer(auto1B2ACFB8_g, auto1B2ACFB8_var);
+        if (auto1B2ACFB8_var < 0) { break; }
+        GameOver(auto1B2ACFB8_var, c_gameOverDefeat, true, true);
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_Victory_Init () {
+    libCE519501_gt_Victory = TriggerCreate("libCE519501_gt_Victory_Func");
+    TriggerAddEventUnitBehaviorChange(libCE519501_gt_Victory, null, "GlazeHolo2243", c_unitBehaviorChangeCreate);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: VictoryPreparing
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_VictoryPreparing_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    if ((libCD55B2B5_gv_randomPythonLook == 1)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCE519501_gv_sparkOfExistence, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_DDEC7747"), StringExternal("Param/Value/lib_CE519501_856F940F"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    if ((libCD55B2B5_gv_randomPythonLook == 2)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCE519501_gv_sparkOfExistence, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_861FD5E4"), StringExternal("Param/Value/lib_CE519501_0B6A809F"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    if ((libCD55B2B5_gv_randomPythonLook == 3)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCE519501_gv_sparkOfExistence, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_C60AEBB5"), StringExternal("Param/Value/lib_CE519501_E5B699FA"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    if ((libCD55B2B5_gv_randomPythonLook == 4)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCE519501_gv_sparkOfExistence, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_0925A690"), StringExternal("Param/Value/lib_CE519501_8CBAB3C6"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    if ((libCD55B2B5_gv_randomPythonLook == 5)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCE519501_gv_sparkOfExistence, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_2BC69150"), StringExternal("Param/Value/lib_CE519501_BB7A2A36"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_VictoryPreparing_Init () {
+    libCE519501_gt_VictoryPreparing = TriggerCreate("libCE519501_gt_VictoryPreparing_Func");
+    TriggerAddEventUnitAbility(libCE519501_gt_VictoryPreparing, null, AbilityCommand("ShieldUp1338", 0), c_abilEffectStagePrep, false);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: SparkOfExistence
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_SparkOfExistence_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((UnitGetType(EventUnit()) == "SacredCore3"))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UnitSetOwner(EventUnit(), EventUnitDamageSourcePlayer(), true);
+    UnitBehaviorRemove(EventUnit(), "ShieldingEngine938", 1);
+    libCD55B2B5_gv_randomPythonLook = RandomInt(1, 5);
+    if ((libCD55B2B5_gv_randomPythonLook == 1)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCE519501_gv_sparkOfExistence, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_6E0314A5"), StringExternal("Param/Value/lib_CE519501_099E643C"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    if ((libCD55B2B5_gv_randomPythonLook == 2)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCE519501_gv_sparkOfExistence, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_4DAB1E7F"), StringExternal("Param/Value/lib_CE519501_21269752"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    if ((libCD55B2B5_gv_randomPythonLook == 3)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCE519501_gv_sparkOfExistence, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_E46E4783"), StringExternal("Param/Value/lib_CE519501_232F1A34"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    if ((libCD55B2B5_gv_randomPythonLook == 4)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCE519501_gv_sparkOfExistence, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_692EB2C4"), StringExternal("Param/Value/lib_CE519501_91CECFC6"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    if ((libCD55B2B5_gv_randomPythonLook == 5)) {
+        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCE519501_gv_sparkOfExistence, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_BB181153"), StringExternal("Param/Value/lib_CE519501_EA34EBBC"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
+    }
+
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_SparkOfExistence_Init () {
+    libCE519501_gt_SparkOfExistence = TriggerCreate("libCE519501_gt_SparkOfExistence_Func");
+    TriggerAddEventUnitDamaged(libCE519501_gt_SparkOfExistence, null, c_unitDamageTypeAny, c_unitDamageEither, null);
+}
+
+void libCE519501_InitTriggers () {
+    libCE519501_gt_BDHgas_Init();
+    libCE519501_gt_BDHgas2_Init();
+    libCE519501_gt_BDHgas3_Init();
+    libCE519501_gt_BDHgas4_Init();
+    libCE519501_gt_DefundRefund_Init();
+    libCE519501_gt_AlmostExtinct_Init();
+    libCE519501_gt_BigDigHunters_Init();
+    libCE519501_gt_ExtinctStart_Init();
+    libCE519501_gt_Random_Init();
+    libCE519501_gt_TheEternalRewards_Init();
+    libCE519501_gt_Defund_Init();
+    libCE519501_gt_Amplified_Init();
+    libCE519501_gt_ToughAsNails_Init();
+    libCE519501_gt_CelestialRebirth_Init();
+    libCE519501_gt_ToughAsNailsADd_Init();
+    libCE519501_gt_AmplifiedAdd_Init();
+    libCE519501_gt_BikDigHuntersFields_Init();
+    libCE519501_gt_BikDigHuntersVespene_Init();
+    libCE519501_gt_BikDigHuntersVespeneBuilding_Init();
+    libCE519501_gt_BikDigHuntersPeriodVEspene_Init();
+    libCE519501_gt_Ref_Init();
+    libCE519501_gt_Ref2_Init();
+    libCE519501_gt_HalloweenCheck_Init();
+    libCE519501_gt_Unstoppable_Init();
+    libCE519501_gt_AddHalloween_Init();
+    libCE519501_gt_HalloweenStart_Init();
+    libCE519501_gt_HalloweenTriggers_Init();
+    libCE519501_gt_CyrstmasStart_Init();
+    libCE519501_gt_CrystmasCreate_Init();
+    libCE519501_gt_CrystmasCreatePeriod_Init();
+    libCE519501_gt_Timer5AltCrystmas_Init();
+    libCE519501_gt_POTH_Init();
+    libCE519501_gt_Timer400_Init();
+    libCE519501_gt_Victory_Init();
+    libCE519501_gt_VictoryPreparing_Init();
+    libCE519501_gt_SparkOfExistence_Init();
+}
+
+//--------------------------------------------------------------------------------------------------
+// Library Initialization
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_InitLib_completed = false;
+
+void libCE519501_InitLib () {
+    if (libCE519501_InitLib_completed) {
+        return;
+    }
+
+    libCE519501_InitLib_completed = true;
+
+    libCE519501_InitLibraries();
+    libCE519501_InitVariables();
+    libCE519501_InitTriggers();
+}
+
+include "LibCD55B2B5"
+
