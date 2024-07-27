@@ -1810,6 +1810,7 @@ Abil/Name/SalvageBunkerRefund6=Significance Minerals
 Abil/Name/SalvageBunkerRefund62=Significance Vespene
 Abil/Name/SalvageBunkerRefund622=Financial Support
 Abil/Name/SalvageBunkerRefund63=Minerals
+Abil/Name/SalvageBunkerRefund64=Refine Minerals
 Abil/Name/SalvageBunkerRefund7=Salvage Creep Sprinkler
 Abil/Name/SalvageBunkerRefund8=Salvage Alloy Bunker
 Abil/Name/SalvageBunkerRefund82=Salvage Deadeye Turret
@@ -9558,6 +9559,7 @@ Button/Name/Salvage6=Call Back
 Button/Name/Salvage7=Prove Significance By Mineral Resources
 Button/Name/Salvage72=Prove Significance By Vespene Resources
 Button/Name/Salvage722=Pray For Financial Support
+Button/Name/Salvage73=Internal Refinery Cycle
 Button/Name/Salvage8=Self-Destruct
 Button/Name/Salvage9=Salvage
 Button/Name/Scan2=Tassadar's Eye
@@ -17237,6 +17239,7 @@ Button/Tooltip/Salvage6=Orders structure to call back, removing it from the map.
 Button/Tooltip/Salvage7=Sends 400 minerals even during the war to prove economical significance to the umojan government, gaining 40 Significance.
 Button/Tooltip/Salvage72=Sends 250 vespene gas even during the war to prove economical significance to the umojan government, gaining 40 Significance.
 Button/Tooltip/Salvage722=Gain 200 minerals and 100 vespene gas.
+Button/Tooltip/Salvage73=Spend 120 Minerals to gain 50 Vespene.
 Button/Tooltip/Salvage8=Destroys the Creep Sprinkler.
 Button/Tooltip/Salvage9=Salvages the structure, removing it and returning 100% of its mineral and gas value. Salvage takes 5 to finish. Warning: once Salvage is triggered, it cannot be canceled.
 Button/Tooltip/Scan2=Reveal a giant area for 120 seconds.
@@ -19784,6 +19787,8 @@ ConcentratedAnger=Concentrated Anger
 Courageous=Courageous
 Crius=Crius
 Cronus=Cronus
+CyberZergBPlating=<c val="FFFF00">Cyber Zerg Structure Plating</c>
+CyberZergPlating=<c val="FFFF00">Cyber Zerg Plating</c>
 DarkMerge=Dark Merge
 DarkOnes1=Shadow Council Faction
 DarkOnes2=Pure Born Faction
@@ -31742,6 +31747,7 @@ Pounder=Automated Pounding Machine
 PrimalistEN=Essence: 
 PrimalistSH=Pack Limit: 
 ProjectFear=Project Confusion
+ProtonicShield1=<c val="FFFF00">Protonic Shield</c>
 PsionicMisisle=Psionic Shot
 Qwerfaith=<c val="FFFF00">Faith</c>
 Race/Name/Terr2=Blue Intel
@@ -36250,6 +36256,7 @@ Unit/ShieldArmorName/HybridNemesis3Shields=Hybrid Nemesis Shields
 Unit/ShieldArmorName/ProtossPlasmaShields2=<c val="00FF80">Eternal Shields</c>
 Unit/ShieldArmorName/ProtossPlasmaShields21waf21=P3D Concentrated Plasma Shield
 Unit/ShieldArmorName/Tosh2Shields=Psi Shield
+Unit/ShieldArmorName/ZergWildMutation55=Protonic Shielding
 UnitKillRank/Artanis2=Hierarch
 UnitKillRank/Ash=Betrayer
 UnitKillRank/AshWorm2=Subterranean Monster
@@ -37783,6 +37790,7 @@ Upgrade/Name/UnknownUpgrade72=Molten Pack Limit
 Upgrade/Name/UnknownUpgrade73=Juggernaut Plating
 Upgrade/Name/UnknownUpgrade74=Forced Consription
 Upgrade/Name/UnknownUpgrade75=Angelic Shadow Cooldown
+Upgrade/Name/UnknownUpgrade76=Building Queue
 Upgrade/Name/UnknownUpgrade8=Exchanged Genes
 Upgrade/Name/UnknownUpgrade9=Razing Corrosion
 Upgrade/Name/VoidDarkArchonDarkAmulet2=Basic Energy Max Bonus
@@ -37900,7 +37908,7 @@ Weapon/Name/ATALaserBattery42=Eject Cruiser Crew
 Weapon/Name/ATSLaserBattery2=ATS Laser Battery Copy
 Weapon/Name/ATSLaserBattery3=ATV Laser Battery
 Weapon/Name/ATSLaserBattery4=Tsar Laser Battery
-Weapon/Name/ATSLaserBattery42=Rapid Yamato
+Weapon/Name/ATSLaserBattery42=<c val="FFFF00">Rapid Yamato</c>
 Weapon/Name/ATSLaserBattery422=Burning Plasma Launcher
 Weapon/Name/ATSLaserBattery43=Bio-Mechanical Plasma Missile Battery
 Weapon/Name/ATSLaserBattery432=Bio-Mechanical Plasma Missile Battery
@@ -37911,7 +37919,7 @@ Weapon/Name/ATSLaserBattery6=Plasma Battery
 Weapon/Name/AcidSaliva2=Corrosive Salvia
 Weapon/Name/AcidSaliva3=Acid Saliva Copy
 Weapon/Name/AcidSaliva4=Destructive Saliva
-Weapon/Name/AcidSaliva5=Flame-y Spit
+Weapon/Name/AcidSaliva5=<c val="FFFF00">Flame-y Spit</c>
 Weapon/Name/AcidSaliva52=Void Strike
 Weapon/Name/AcidSaliva53=Fire Breath
 Weapon/Name/AcidSaliva532=Fire Wind
@@ -37922,6 +37930,7 @@ Weapon/Name/AcidSaliva5352=Blazing Reach
 Weapon/Name/AcidSaliva536=Fire Spit
 Weapon/Name/AcidSaliva54=Pylonified Bazooka
 Weapon/Name/AcidSaliva55=Molten Biosteel
+Weapon/Name/AcidSaliva56=Magma Sacks
 Weapon/Name/AcidSaliva6=Corrosive Wave
 Weapon/Name/AcidSaliva7=Discharged Saliva
 Weapon/Name/AcidSpew2=Acid Spit
@@ -38005,7 +38014,7 @@ Weapon/Name/Centurion321312312=Dust Blades
 Weapon/Name/Chomp2=Apex Claws
 Weapon/Name/Chomp22=Apex Claws
 Weapon/Name/Claws2=Sharp Claws
-Weapon/Name/Claws3=Cyber Claws
+Weapon/Name/Claws3=<c val="FFFF00">Cyber Claws</c>
 Weapon/Name/Claws4=Vanadium Claws
 Weapon/Name/Claws5=Claws
 Weapon/Name/ColossusTaldarimChargedBeam2=Eclipse Blast
@@ -38036,6 +38045,7 @@ Weapon/Name/Diamondback6=Destroyer-Class Energy Concentrator
 Weapon/Name/Diamondback62=LAER
 Weapon/Name/Diamondback63=Double Surgical Laser
 Weapon/Name/Diamondback7=Interceptor Beam Set-up
+Weapon/Name/Diamondback8=<c val="FFFF00">Eviscerator Rail Gun</c>
 Weapon/Name/Disintegration=Disintegration
 Weapon/Name/DisruptionBeam2=Destruction Beam
 Weapon/Name/DisruptionBeam3=Chronological Failure
@@ -38191,6 +38201,7 @@ Weapon/Name/HellionTank2=Hell Spray
 Weapon/Name/HellionTank3=Napalm Spray Copy
 Weapon/Name/HellionTank4=Inferno Spray
 Weapon/Name/HellionTank5=Napalm Jet Spray
+Weapon/Name/HotSBanelingDummy=<c val="FFFFFF">Volatile Burst</c>
 Weapon/Name/HotSBanelingDummySmall2=Phase Burst
 Weapon/Name/HotSBanelingExplode2=Explode
 Weapon/Name/HotSBanelingExplodeSmall2=Drone Exploderino
@@ -38223,7 +38234,7 @@ Weapon/Name/ImmortalTaldarim3=Scatter Missiles
 Weapon/Name/ImmortalTaldarim4=Omnia Cannon
 Weapon/Name/ImmortalTaldarim5=Scatter Cannon
 Weapon/Name/ImmortalTaldarim6=Botched Disruptor
-Weapon/Name/Impaler2=Piercing Talons
+Weapon/Name/Impaler2=<c val="FFFF00">Piercing Talons</c>
 Weapon/Name/Impaler22=Piercing Tentacle
 Weapon/Name/Impaler3=Conjoined Spike
 Weapon/Name/Impaler4=Mass Resurface
@@ -38232,6 +38243,7 @@ Weapon/Name/Impaler43=Coordinated Resurface
 Weapon/Name/Impaler432=Claw Tentacle
 Weapon/Name/Impaler44=Rapid Resurface
 Weapon/Name/Impaler45=Fiery Spines
+Weapon/Name/ImpalerTentacle2=<c val="FFFF00">CyberneticTentacle</c>
 Weapon/Name/InfernalFlameThrower2=Flamer
 Weapon/Name/InfernalFlameThrower22=Fire
 Weapon/Name/InfernalFlameThrower3=Infernal Flamethrower
@@ -38312,7 +38324,7 @@ Weapon/Name/KaiserBlades10=Malformed Blades
 Weapon/Name/KaiserBlades2=King Blades
 Weapon/Name/KaiserBlades3=Massive Blades
 Weapon/Name/KaiserBlades4=Parasite Blades
-Weapon/Name/KaiserBlades5=Juggernaut Blades
+Weapon/Name/KaiserBlades5=<c val="FFFF00">Juggernaut Blades</c>
 Weapon/Name/KaiserBlades6=Vanadium Monarch Blades
 Weapon/Name/KaiserBlades7=Monstrosity Blades
 Weapon/Name/KaiserBlades8=Kaiser Blades
@@ -38418,7 +38430,7 @@ Weapon/Name/MengskReaperP38ScytheGuassPistol3=P-65 ''Scythe'' Gauss 6 Shooter
 Weapon/Name/MengskSiegeTankSieged2=Thor Shock Cannon
 Weapon/Name/MengskThorJavelinMissileLaunchers2=Drop Missile Launchers
 Weapon/Name/MengskThorJavelinMissileLaunchers3=Javelin Missile Setup
-Weapon/Name/MengskThorJavelinMissileLaunchers32=Multi-Lock Anti-air Missiles
+Weapon/Name/MengskThorJavelinMissileLaunchers32=<c val="FFFF00">Multi-Lock Anti-air Missiles</c>
 Weapon/Name/MengskThorJavelinMissileLaunchers322=God's Hand
 Weapon/Name/MengskThorJavelinMissileLaunchers33=Dispersive Fire
 Weapon/Name/MengskThorsHammer2=Browhammer
@@ -38452,7 +38464,7 @@ Weapon/Name/MutaliskGlaiveWurm3=Pressured Talon
 Weapon/Name/MutaliskGlaiveWurm4=Portable Wurm Cannon
 Weapon/Name/MutaliskGlaiveWurm42=Plasma Wurm Battery
 Weapon/Name/NarudEpilogue2=Omnia Flare
-Weapon/Name/NeedleClaws2=Basic Claws
+Weapon/Name/NeedleClaws2=<c val="FFFF00">Basic Claws</c>
 Weapon/Name/NeedleClaws3=Spine Claws
 Weapon/Name/NeedleClaws4=Massive Claws
 Weapon/Name/NeedleSpines2=Toxic Gland
@@ -38460,7 +38472,7 @@ Weapon/Name/NeedleSpines22=Inner Parasite
 Weapon/Name/NeedleSpines222=Inner Parasites
 Weapon/Name/NeedleSpines2222=Divine Spines
 Weapon/Name/NeedleSpines22222=Divine Spines (Heal, Hidden)
-Weapon/Name/NeedleSpines22223=EMP Spines
+Weapon/Name/NeedleSpines22223=<c val="FFFF00">EMP Spines</c>
 Weapon/Name/NeedleSpines2223=Brooder
 Weapon/Name/NeedleSpines3=Toxic Spines
 Weapon/Name/NeedleSpines4=Anti-Air Spines
@@ -38493,7 +38505,7 @@ Weapon/Name/P38ScytheGuassPistol2=P-66 Gauss Pistols
 Weapon/Name/P38ScytheGuassPistol3=Dual Security Pistols
 Weapon/Name/P38ScytheGuassPistol4=P-55 Gauss Pistol
 Weapon/Name/ParasiteSpore2=Sabotage Spore
-Weapon/Name/ParasiteSpore22=AI Ling Shell
+Weapon/Name/ParasiteSpore22=<c val="FFFF00">AI Ling Shell</c>
 Weapon/Name/ParasiteSpore23=Spore Spray
 Weapon/Name/ParasiteSpore232=Righteous Flame
 Weapon/Name/ParasiteSpore2322=Primal Flame
@@ -38606,7 +38618,7 @@ Weapon/Name/PunisherGrenades8=Tormentor Grenades
 Weapon/Name/PunisherGrenades9=AP Rockets
 Weapon/Name/Ram2=Beam Follow Dummy
 Weapon/Name/RavagerWeapon2=Corrosive Discharge
-Weapon/Name/RavagerWeapon3=Calculate Orbital Strike
+Weapon/Name/RavagerWeapon3=<c val="FFFF00">Calculate Orbital Strike</c>
 Weapon/Name/RavagerWeapon32=Paint Orbital Strike
 Weapon/Name/RavagerWeapon4=Dischargerion
 Weapon/Name/Ravasaur2=Bile Catapult
@@ -38664,7 +38676,7 @@ Weapon/Name/Specter5=AGR-16 Gauss Rifle
 Weapon/Name/SpikeBurst2=Fan Of Knives
 Weapon/Name/Spines2=Cut
 Weapon/Name/Spines22=Apex Weapon
-Weapon/Name/Spines3=Digger Claws
+Weapon/Name/Spines3=<c val="FFFF00">Digger Claws</c>
 Weapon/Name/StoneZealotEyeBlast=Nullity Lance
 Weapon/Name/StukovInfestedTerran2=Organ Relocation
 Weapon/Name/StukovInfestedTerran22=Organ Relocation
@@ -38790,6 +38802,7 @@ Weapon/Name/VoidSeeker2222=Death(Psionic)
 Weapon/Name/VoidSeeker3=Bilge Shadow Cannon
 Weapon/Name/VoidSeeker32=Heavy-Recoil Shadow Cannon
 Weapon/Name/VoidSeeker33=Bilge Shadow Multi-Cannon
+Weapon/Name/VolatileBurstBuilding=<c val="FFFFFF">Volatile Burst</c>
 Weapon/Name/Vulture2=Farnade
 Weapon/Name/Vulture22=Z-20 RPG
 Weapon/Name/Vulture222=Warhead Launcher
@@ -38798,6 +38811,7 @@ Weapon/Name/Vulture3=Scrap Grenade
 Weapon/Name/Vulture32=Scrap Grenade
 Weapon/Name/WarHound2=Fire Laser
 Weapon/Name/WarHound22=Grenade Launcher
+Weapon/Name/WarHound23=<c val="FFFF00">Fire Laser</c>
 Weapon/Name/WarHound3=Missile Battery
 Weapon/Name/WarHoundMelee2=PUNCH IN THE FACE
 Weapon/Name/WarHoundMelee22=Punch
@@ -38811,6 +38825,7 @@ Weapon/Name/WarpBlades42=Warp Blades
 Weapon/Name/WarpBlades42gwagwa=Fractured Blade
 Weapon/Name/WarpBlades5=Warp Blades
 Weapon/Name/WraithA2=Close-Combat Missiles
+Weapon/Name/WraithA22=<c val="FFFF00">Close-Combat Missiles</c>
 Weapon/Name/WraithA3=Gemini Rockets
 Weapon/Name/WraithA4=Gemini Torpedoes
 Weapon/Name/WraithG2=Laser Burst

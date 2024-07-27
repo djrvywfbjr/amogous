@@ -24504,6 +24504,11 @@
         <EditorCategories value="Race:Terran"/>
         <TintRacially value="1"/>
     </CButton>
+    <CButton id="Salvage73">
+        <Icon value="Assets\Textures\btn-progression-stetmann-03-stetelliteovercharge.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-salvage.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
     <CButton id="Salvage8">
         <Icon value="Assets\Textures\btn-ability-terran-salvage.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-salvage.dds"/>

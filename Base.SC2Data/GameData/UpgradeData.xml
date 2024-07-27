@@ -10111,6 +10111,7 @@
         <EffectArray Operation="Set" Reference="Unit,Ultralisk652,ShieldRegenRate" Value="0.398400"/>
         <EffectArray Operation="Set" Reference="Unit,Ultralisk652,ShieldArmor" Value="2"/>
     </CUpgrade>
+    <CUpgrade id="UnknownUpgrade76"/>
     <CUpgrade id="UnknownUpgrade8">
         <EffectArray Operation="Subtract" Reference="Unit,PrimalTownHall222,EnergyMax" Value="1"/>
         <EffectArray Operation="Subtract" Reference="Unit,PrimalTownHall222,EnergyStart" Value="1"/>

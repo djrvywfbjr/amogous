@@ -72876,6 +72876,11 @@
         <ExcludeArray Value="Outer"/>
         <SearchFilters value="Ground,Structure;Self,Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CEffectDamage>
+    <CEffectDamage id="VolatileBurstU2Corrosive">
+        <AttributeBonus index="Light" value="19"/>
+        <AttributeBonus index="Structure" value="64"/>
+        <Amount value="16"/>
+    </CEffectDamage>
     <CEffectDamage id="VolatileBurstU2Corrosive2" parent="DU_WEAP">
         <ValidatorArray value="HasHotSBanelingCorrosiveBile"/>
         <ValidatorArray value="IsStructure"/>
@@ -72914,6 +72919,11 @@
         <AreaArray Radius="2.2" Fraction="1"/>
         <ExcludeArray Value="Outer"/>
         <SearchFilters value="Ground;Player,Ally,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectDamage>
+    <CEffectDamage id="VolatileBurstUCorrosive">
+        <AttributeBonus index="Light" value="19"/>
+        <AttributeBonus index="Structure" value="64"/>
+        <Amount value="16"/>
     </CEffectDamage>
     <CEffectDamage id="VolatileBurstUCorrosive2" parent="DU_WEAP">
         <ValidatorArray value="HasHotSBanelingCorrosiveBile"/>

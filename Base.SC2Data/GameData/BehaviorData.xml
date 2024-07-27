@@ -46476,6 +46476,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification MoveSpeedMultiplier="1.35" AttackSpeedMultiplier="1.4">
             <VitalRegenArray index="Shields" value="3"/>
+            <AbilLinkEnableArray value="BlinkShieldRestore3"/>
             <AbilLinkDisableArray value="Blink"/>
             <WeaponArray Link="ParticleDisruptors8"/>
             <WeaponDisableArray value="ParticleDisruptors"/>
@@ -46488,7 +46489,7 @@
         <PeriodicEffect value="PureBornDeathCReateFanatic322222223332242533522"/>
         <Modification MoveSpeedMultiplier="0.65" AttackSpeedMultiplier="0.75">
             <LifeArmorBonus value="3"/>
-            <VitalMaxAdditiveMultiplierArray index="Life" value="35"/>
+            <VitalMaxArray index="Life" value="35"/>
             <VitalRegenArray index="Life" value="2"/>
             <WeaponArray Link="AcidSpew5"/>
             <WeaponDisableArray value="ParticleDisruptors"/>

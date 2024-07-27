@@ -39100,8 +39100,13 @@
         <Effect index="0" value="PointDefenseDroneReleaseCreateUnit4"/>
         <Flags index="AllowMovement" value="1"/>
         <Cost>
-            <Vital index="Energy" value="75"/>
-            <Cooldown Link="Raven Build Link" Location="Unit" TimeUse="40"/>
+            <Charge>
+                <CountMax value="2"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <TimeUse value="40"/>
+            </Charge>
+            <Cooldown Link="Raven Build Link" Location="Unit"/>
         </Cost>
         <Placeholder value="PointDefenseDrone"/>
         <Range value="6"/>
@@ -48620,6 +48625,21 @@
             <Button DefaultButtonFace="Salvage7"/>
         </InfoArray>
     </CAbilResearch>
+    <CAbilEffectInstant id="SalvageBunkerRefund64" parent="Refund">
+        <Name value="Abil/Name/SalvageBunkerRefund64"/>
+        <Effect index="0" value="BeamCaster1ImpactDummy"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="WaitToSpend" value="1"/>
+        <Cost>
+            <Resource index="Minerals" value="120"/>
+            <Resource index="Vespene" value="-50"/>
+            <Cooldown TimeUse="7"/>
+        </Cost>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastFilters value="Visible;Ally,Neutral,Enemy"/>
+        <AutoCastRange value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Salvage73"/>
+    </CAbilEffectInstant>
     <CAbilEffectInstant id="SalvageBunkerRefund7" parent="Refund">
         <Name value="Abil/Name/SalvageBunkerRefund7"/>
         <Effect index="0" value="SalvageDeath7"/>

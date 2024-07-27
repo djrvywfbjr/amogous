@@ -252,6 +252,7 @@
     <CWeaponLegacy id="ATSLaserBattery42" parent="ATSLaserBattery">
         <Name value="Weapon/Name/ATSLaserBattery42"/>
         <Tip value="Weapon/Tip/ATSLaserBattery42"/>
+        <Icon value="Assets\Textures\btn-ability-stetmann-battlecarrierlordmechayamatocannon.dds"/>
         <DisplayEffect value="ATSLaserBatteryU42"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="9"/>
@@ -261,7 +262,6 @@
         <Period value="5"/>
         <Effect value="ATSLaserBatteryLM42"/>
         <AllowedMovement value="Slowing"/>
-        <Icon value="Assets\Textures\btn-ability-stetmann-battlecarrierlordmechayamatocannon.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ATSLaserBattery422">
         <EditorCategories value="Race:Terran"/>
@@ -509,6 +509,14 @@
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Period value="2"/>
         <Effect value="AcidSalivaLM45"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="AcidSaliva56">
+        <EditorCategories value="Race:Zerg"/>
+        <Icon value="Assets\Textures\btn-upgrade-stetmann-banelingmanashieldefficiency.dds"/>
+        <DisplayEffect value="AcidSalivaU4"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="1.5"/>
+        <Effect value="AcidSalivaLM4"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="AcidSaliva6">
         <EditorCategories value="Race:Zerg"/>
@@ -1773,6 +1781,18 @@
         <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="6"/>
         <Period value="0.5"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Diamondback8">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-advanceballistics.dds"/>
+        <DisplayEffect value="DiamondbackBeam"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Period value="2"/>
+        <Effect value="Diamondback"/>
         <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DisruptionBeam2">
@@ -3780,6 +3800,7 @@
         <Period value="1.754"/>
         <Effect value="HighTemplarWeaponLM4"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="HotSBanelingDummy"/>
     <CWeaponLegacy id="HotSBanelingDummySmall2">
         <EditorCategories value="Race:Zerg"/>
         <Options index="Melee" value="1"/>
@@ -4309,6 +4330,17 @@
         <Period value="1.5"/>
         <Effect value="Impaler43"/>
         <LegacyOptions index="KeepChanneling" value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ImpalerTentacle2">
+        <EditorCategories value="Race:Zerg"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-seismicspines.dds"/>
+        <DisplayEffect value="ImpalerTentacleU"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <RangeSlop value="0"/>
+        <Period value="1.85"/>
+        <DamagePoint value="0.3332"/>
+        <Effect value="ImpalerTentacleLM"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="InfernalFlameThrower2">
         <EditorCategories value="Race:Terran"/>
@@ -11116,6 +11148,7 @@
         <Effect value="SonOfKorhalAOE4"/>
         <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="VolatileBurstBuilding"/>
     <CWeaponLegacy id="Vulture2">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
@@ -11192,6 +11225,18 @@
         <MinimumRange value="2"/>
         <Period value="5"/>
         <Effect value="KaiserWormBanelingMissileLaunch24"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="WarHound23">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-advanceballistics.dds"/>
+        <DisplayEffect value="WarHound2"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="10"/>
+        <Range value="7"/>
+        <Arc value="14.9963"/>
+        <Period value="2"/>
+        <Effect value="WarHoundLM2"/>
         <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="WarHound3">
@@ -11319,6 +11364,17 @@
         <Backswing value="1.333"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="WraithA2">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-stetmann-mechamissileattacks-level2.dds"/>
+        <DisplayEffect value="WraithAU2"/>
+        <DisplayAttackCount value="4"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="4"/>
+        <Period value="1.25"/>
+        <Effect value="WraithAPersistent2"/>
+        <AllowedMovement value="Slowing"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="WraithA22">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-stetmann-mechamissileattacks-level2.dds"/>
         <DisplayEffect value="WraithAU2"/>

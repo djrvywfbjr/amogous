@@ -8282,7 +8282,7 @@
         <NodeArray index="Show" Link="NotCountUpgradeUnknownUpgrade75QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="UnknownRequirement118">
-        <NodeArray index="Use" Link="CountUpgradeXenWarrior3CompleteOnlyAtUnit"/>
+        <NodeArray index="Use" Link="CountBehaviorXenWarrior3CompleteOnlyAtUnit"/>
         <NodeArray index="Show" Link="CountBehaviorXenWarrior3CompleteOnlyAtUnit"/>
     </CRequirement>
     <CRequirement id="UnknownRequirement12">

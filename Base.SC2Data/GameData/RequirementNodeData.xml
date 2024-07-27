@@ -1474,7 +1474,6 @@
     </CRequirementCountBehavior>
     <CRequirementCountBehavior id="CountBehaviorAntamoAirAll6222CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="AntamoAirAll6222" State="CompleteOnly"/>
     </CRequirementCountBehavior>
     <CRequirementCountBehavior id="CountBehaviorAntamoAirAll6222CompleteOnlyAtUnit1845366357">
@@ -15068,10 +15067,6 @@
         <Tooltip value=""/>
         <Count Link="VoidPhoenixPhasingArmor3" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
-    <CRequirementCountUpgrade id="CountUpgradeXenWarrior3CompleteOnlyAtUnit">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="XenWarrior3" State="CompleteOnlyAtUnit"/>
-    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeetaCrowCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="etaCrow" State="CompleteOnly"/>
@@ -15956,7 +15951,6 @@
         <OperandArray index="0" value="CountAbilVorazunShadowDash2222CompleteOnlyAtUnit"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountBehaviorAntamoAirAll6222CompleteOnly">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountBehaviorAntamoAirAll6222CompleteOnly"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountBehaviorDehakaHealBig92CompleteOnlyAtUnit">
