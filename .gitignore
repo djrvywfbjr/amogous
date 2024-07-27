@@ -1,0 +1,5 @@
+*
+
+!.gitignore
+!**/Base.SC2Data/**
+!**/enUS.SC2Data/**
