@@ -10553,6 +10553,10 @@
         <Icon value="Assets\Textures\btn-ability-stetmann-banelingmanashield.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-defensivematrix.dds"/>
     </CButton>
+    <CButton id="DefensiveMatrix263">
+        <Icon value="Assets\Textures\hardenedwill_coop.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-defensivematrix.dds"/>
+    </CButton>
     <CButton id="DefensiveMatrix3">
         <Icon value="Assets\Textures\btn-upgrade-swann-defensivematrix.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-defensivematrix.dds"/>
@@ -13036,7 +13040,7 @@
         <TintRacially value="1"/>
     </CButton>
     <CButton id="HighArchonPsiStorm2">
-        <Tooltip value="Button/Tooltip/QuickMutator"/>
+        <Tooltip value="Button/Tooltip/QuickMutator2"/>
         <Icon value="Assets\Textures\btn-progression-zeratul-15-purityofwill.dds"/>
         <AlertTooltip value="Button/Tooltip/PsiStorm"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-psistorm-color.dds"/>
@@ -13177,6 +13181,14 @@
     <CButton id="HighArchonPsiStorm24">
         <Tooltip value="Button/Tooltip/QuickMutator"/>
         <Icon value="Assets\Textures\btn-upgrade-zerg-dehaka-tenderize.dds"/>
+        <AlertTooltip value="Button/Tooltip/PsiStorm"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-psistorm-color.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="HighArchonPsiStorm25">
+        <Name value="Button/Name/HighArchonPsiStorm256"/>
+        <Tooltip value="Button/Tooltip/QuickMutator3"/>
+        <Icon value="Assets\Textures\btn-progression-mengsk-03-newunitearthsplitterordnance.dds"/>
         <AlertTooltip value="Button/Tooltip/PsiStorm"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-psistorm-color.dds"/>
         <EditorCategories value="Race:Protoss"/>
@@ -29096,6 +29108,16 @@
     <CButton id="UnknownButton11">
         <Icon value="Assets\Textures\btn-ability-terran-load.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-load.dds"/>
+    </CButton>
+    <CButton id="UnknownButton110">
+        <Icon value="Assets\Textures\btn-ability-stetmann-banelingmanashield.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-stetmann-banelingmanashield.dds"/>
+    </CButton>
+    <CButton id="UnknownButton111">
+        <Icon value="Assets\Textures\btn-ability-zerg-fireroach-increasefiredamage.dds"/>
+    </CButton>
+    <CButton id="UnknownButton112">
+        <Icon value="Assets\Textures\btn-ability-terran-activatemine.dds"/>
     </CButton>
     <CButton id="UnknownButton12">
         <Icon value="Assets\Textures\btn-upgrade-zerg-monarchblades.dds"/>

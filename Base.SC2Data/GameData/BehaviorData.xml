@@ -1904,6 +1904,23 @@
             <BehaviorLinkDisableArray value="SensorTowerRadar"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="DefensiveMatrix263">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-defensivematrix.dds"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <Duration value="14"/>
+        <Modification MoveSpeedMultiplier="1.55" AttackSpeedMultiplier="1.55" RangedWeaponRange="-3">
+            <DamageDealtFraction index="Spell" value="0.35"/>
+            <DamageDealtFraction index="Melee" value="0.35"/>
+            <DamageDealtFraction index="Ranged" value="0.35"/>
+            <DamageDealtFraction index="Splash" value="0.35"/>
+            <DamageDealtFraction index="NoProc" value="0.35"/>
+            <VitalRegenArray index="Life" value="-3"/>
+        </Modification>
+        <DamageResponse ModifyMinimumDamage="1"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="DefensiveMatrix322">
         <Alignment value="Positive"/>
         <InfoIcon value="Assets\Textures\btn-ability-terran-defensivematrix.dds"/>
@@ -1916,6 +1933,13 @@
             <VitalMaxArray index="Shields" value="150"/>
         </Modification>
         <DamageResponse ClampMaximum="15" Minimum="15"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DefensiveMatrixDummy263">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxArray index="Shields" value="200"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="DefensiveMatrixDummy322">
         <InfoFlags index="Hidden" value="1"/>
@@ -3007,6 +3031,17 @@
         <DamageResponse>
             <Chance value="1"/>
         </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="QuickMutator4">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-progression-mengsk-03-newunitearthsplitterordnance.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="3"/>
+        <Duration value="14"/>
+        <Modification MoveSpeedMultiplier="1.25" AccelerationMultiplier="1.25" AttackSpeedMultiplier="1.25">
+            <LifeArmorBonus value="4"/>
+            <VitalRegenArray index="Life" value="-3"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="RavenShredderMissileArmorReductionUISubtruct2">
         <Alignment value="Negative"/>
@@ -24847,10 +24882,8 @@
         </Cost>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification ShieldArmorBonus="0.5">
-            <DamageDealtScaled index="Spell" value="4"/>
             <DamageDealtScaled index="Melee" value="4"/>
             <DamageDealtScaled index="Ranged" value="4"/>
-            <DamageDealtScaled index="Splash" value="4"/>
             <DamageDealtScaled index="NoProc" value="4"/>
             <LifeArmorBonus value="0.5"/>
             <VitalMaxArray index="Life" value="15"/>
@@ -45970,9 +46003,9 @@
     <CBehaviorBuff id="XenWarrior232">
         <InfoIcon value="Assets\Textures\btn-ability-zeratul-immortal-enternitybarrier.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Modification WeaponRange="-3">
+        <Modification MoveSpeedMultiplier="1.25" AccelerationMultiplier="1.25" WeaponRange="-3">
             <LifeArmorBonus value="3"/>
-            <VitalMaxArray index="Life" value="100"/>
+            <VitalMaxArray index="Life" value="150"/>
             <VitalRegenArray index="Life" value="2"/>
         </Modification>
     </CBehaviorBuff>
@@ -49710,6 +49743,22 @@
         <Duration value="10"/>
         <Modification>
             <VitalMaxArray index="Life" value="-4"/>
+        </Modification>
+        <DamageResponse>
+            <Kind index="Spell" value="0"/>
+            <Kind index="Melee" value="0"/>
+            <Kind index="Ranged" value="0"/>
+            <Kind index="Splash" value="0"/>
+            <Kind index="NoProc" value="0"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZerglingSunder324">
+        <InfoIcon value="Assets\Textures\btn-ability-zerg-fireroach-increasefiredamage.dds"/>
+        <MaxStackCount value="10"/>
+        <Duration value="10"/>
+        <Modification>
+            <VitalRegenMultiplier index="Shields" value="-3"/>
+            <VitalRegenMultiplier index="Energy" value="-3"/>
         </Modification>
         <DamageResponse>
             <Kind index="Spell" value="0"/>

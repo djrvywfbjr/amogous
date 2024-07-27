@@ -16605,6 +16605,10 @@
         <EditorCategories value="Race:Terran"/>
         <Behavior value="DefensiveMatrix262"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="DefensiveMatrixApplyBehavior263">
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="DefensiveMatrix263"/>
+    </CEffectApplyBehavior>
     <CEffectApplyBehavior id="DefensiveMatrixApplyBehavior3">
         <EditorCategories value="Race:Terran"/>
         <Behavior value="DefensiveMatrix3"/>
@@ -16714,6 +16718,10 @@
     <CEffectApplyBehavior id="DefensiveMatrixApplyDummyBehavior262">
         <EditorCategories value="Race:Terran"/>
         <Behavior value="DefensiveMatrixDummy262"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="DefensiveMatrixApplyDummyBehavior263">
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="DefensiveMatrixDummy263"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="DefensiveMatrixApplyDummyBehavior3">
         <EditorCategories value="Race:Terran"/>
@@ -16849,6 +16857,13 @@
             <ChangeFraction value="1"/>
         </VitalArray>
     </CEffectModifyUnit>
+    <CEffectModifyUnit id="DefensiveMatrixModifyUnit263">
+        <EditorCategories value="Race:Terran"/>
+        <TransferUnit Value="Target"/>
+        <VitalArray index="Shields">
+            <ChangeFraction value="1"/>
+        </VitalArray>
+    </CEffectModifyUnit>
     <CEffectModifyUnit id="DefensiveMatrixModifyUnit3">
         <EditorCategories value="Race:Terran"/>
         <VitalArray index="Shields">
@@ -16976,6 +16991,10 @@
     <CEffectRemoveBehavior id="DefensiveMatrixRemoveDummyBehavior262">
         <EditorCategories value="Race:Terran"/>
         <BehaviorLink value="DefensiveMatrixDummy262"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="DefensiveMatrixRemoveDummyBehavior263">
+        <EditorCategories value="Race:Terran"/>
+        <BehaviorLink value="DefensiveMatrixDummy"/>
     </CEffectRemoveBehavior>
     <CEffectRemoveBehavior id="DefensiveMatrixRemoveDummyBehavior3">
         <EditorCategories value="Race:Terran"/>
@@ -17140,6 +17159,13 @@
         <EffectArray value="DefensiveMatrixModifyUnit262"/>
         <EffectArray value="DefensiveMatrixApplyBehavior262"/>
         <EffectArray value="DefensiveMatrixRemoveDummyBehavior262"/>
+    </CEffectSet>
+    <CEffectSet id="DefensiveMatrixSet263">
+        <EditorCategories value="Race:Terran"/>
+        <EffectArray value="DefensiveMatrixApplyDummyBehavior263"/>
+        <EffectArray value="DefensiveMatrixModifyUnit263"/>
+        <EffectArray value="DefensiveMatrixApplyBehavior263"/>
+        <EffectArray value="DefensiveMatrixRemoveDummyBehavior263"/>
     </CEffectSet>
     <CEffectSet id="DefensiveMatrixSet3">
         <EditorCategories value="Race:Terran"/>
@@ -37624,6 +37650,21 @@
         <PeriodicPeriodArray value="0.252"/>
         <PeriodicPeriodArray value="0.2"/>
     </CEffectCreatePersistent>
+    <CEffectDamage id="MengskSiegeTankDamage2">
+        <EditorCategories value="Race:Terran"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <AttributeBonus index="Light" value="10"/>
+        <AttributeBonus index="Structure" value="10"/>
+        <ArmorReduction value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="10"/>
+        <Death value="Blast"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+        <DamageInheritEffect value="ZerglingSunder324"/>
+    </CEffectDamage>
     <CEffectDamage id="MengskSiegeTankSiegedBlast2" parent="DU_WEAP">
         <ValidatorArray value="TargetRadiusSmall"/>
         <ValidatorArray value="NoShapedBlast"/>
@@ -40921,7 +40962,7 @@
     </CEffectDamage>
     <CEffectDamage id="NovaPlasmaPuddleDamage22">
         <EditorCategories value="Race:Terran"/>
-        <Amount value="1.5"/>
+        <Amount value="5"/>
         <Death value="Disintegrate"/>
     </CEffectDamage>
     <CEffectDamage id="NovaPlasmaPuddleDamage23">
@@ -55801,6 +55842,10 @@
         <Behavior value="AntamoAirAll2102"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="QuickMutator3">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="QuickMutator4">
         <ValidatorArray index="0" removed="1"/>
         <EditorCategories value=""/>
     </CEffectApplyBehavior>
@@ -78429,6 +78474,10 @@
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="ZerglingSunder323">
         <ValidatorArray index="0" value="IsWidowMine22342"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZerglingSunder324">
+        <ValidatorArray index="0" removed="1"/>
         <EditorCategories value="Race:Zerg"/>
     </CEffectApplyBehavior>
     <CEffectSet id="ZerusAlienTreeViper2">

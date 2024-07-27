@@ -8285,8 +8285,14 @@
         <NodeArray index="Use" Link="CountBehaviorXenWarrior3CompleteOnlyAtUnit"/>
         <NodeArray index="Show" Link="CountBehaviorXenWarrior3CompleteOnlyAtUnit"/>
     </CRequirement>
+    <CRequirement id="UnknownRequirement119">
+        <NodeArray index="Show" Link="NotCountUpgradeUnknownUpgrade77QueuedOrBetter"/>
+    </CRequirement>
     <CRequirement id="UnknownRequirement12">
         <NodeArray index="Show" Link="CountUpgradeUnknownUpgrade2CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UnknownRequirement120">
+        <NodeArray index="Show" Link="NotCountUpgradeUnknownUpgrade78QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="UnknownRequirement122">
         <NodeArray index="Show" Link="NotCountUpgradeUnknownUpgrade2QueuedOrBetter"/>

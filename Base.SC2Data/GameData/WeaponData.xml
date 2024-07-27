@@ -6440,6 +6440,15 @@
         <Backswing value="0.75"/>
         <Effect value="MengskReaperP38ScytheGuassPistolBurst3"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="MengskSiegeTank2">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel3.dds"/>
+        <DisplayEffect value="MengskSiegeTankDamage2"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="8"/>
+        <Period value="1.04"/>
+        <Effect value="MengskSiegeTankDamage2"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="MengskSiegeTankSieged2">
         <EditorCategories value="Race:Terran"/>
         <Options index="Disabled" value="1"/>
@@ -10263,7 +10272,7 @@
         <DisplayEffect value="ThrowMolotovDamage22"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="14"/>
-        <Period value="1.7"/>
+        <Period value="4"/>
         <DamagePoint value="0.5625"/>
         <Effect value="ThrowMolotovSwitch22"/>
         <RandomDelayMin value="0"/>

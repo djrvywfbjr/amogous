@@ -10112,6 +10112,16 @@
         <EffectArray Operation="Set" Reference="Unit,Ultralisk652,ShieldArmor" Value="2"/>
     </CUpgrade>
     <CUpgrade id="UnknownUpgrade76"/>
+    <CUpgrade id="UnknownUpgrade77">
+        <EffectArray Operation="Set" Reference="Unit,Mutalisk4,ShieldsMax" Value="100"/>
+        <EffectArray Operation="Set" Reference="Unit,Mutalisk4,ShieldRegenRate" Value="3.000000"/>
+        <EffectArray Operation="Set" Reference="Unit,Mutalisk4,ShieldArmor" Value="3"/>
+    </CUpgrade>
+    <CUpgrade id="UnknownUpgrade78">
+        <EffectArray Operation="Set" Reference="Abil,BuildNydusCanal3,InfoArray[Build18].Button.Requirements"/>
+        <EffectArray Operation="Set" Reference="Unit,NydusNetwork2,CostResource[Minerals]" Value="250"/>
+        <EffectArray Operation="Set" Reference="Unit,NydusNetwork2,CostResource[Vespene]" Value="100"/>
+    </CUpgrade>
     <CUpgrade id="UnknownUpgrade8">
         <EffectArray Operation="Subtract" Reference="Unit,PrimalTownHall222,EnergyMax" Value="1"/>
         <EffectArray Operation="Subtract" Reference="Unit,PrimalTownHall222,EnergyStart" Value="1"/>

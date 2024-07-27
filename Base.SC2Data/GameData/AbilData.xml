@@ -17900,6 +17900,25 @@
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="DefensiveMatrix262"/>
     </CAbilEffectTarget>
+    <CAbilEffectTarget id="DefensiveMatrix263">
+        <AbilSetId value="dmatrix"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Effect index="0" value="DefensiveMatrixSet263"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="BestUnit" value="0"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Vital index="Life" value="55"/>
+            <Charge Link="Abil/DefensiveMatrix"/>
+            <Cooldown Link="Abil/DefensiveMatrix" TimeUse="21"/>
+        </Cost>
+        <TargetFilters value="Visible;Neutral,Enemy,Missile"/>
+        <Range value="9"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="DefensiveMatrix263"/>
+    </CAbilEffectTarget>
     <CAbilEffectInstant id="DefensiveMatrix3">
         <AbilSetId value="dmatrix"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
@@ -20286,8 +20305,10 @@
             <Resource index="Vespene" value="200"/>
             <Button DefaultButtonFace="CalldownMULE4233223" Requirements="LearnBlink212242433324"/>
         </InfoArray>
-        <InfoArray index="Research6" Upgrade="UmojanBasicUnitUpgrade52224224232222223">
-            <Button DefaultButtonFace="CalldownMULE4233222" Requirements="LearnBlink2122424333234"/>
+        <InfoArray index="Research6" Upgrade="UnknownUpgrade78">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="UnknownButton112" Requirements="UnknownRequirement120"/>
         </InfoArray>
         <InfoArray index="Research7" Upgrade="UmojanBasicUnitUpgrade522242242322222222222">
             <Button DefaultButtonFace="CalldownMULE423323" Requirements="LearnBlink21224243332339"/>
@@ -20313,10 +20334,10 @@
             <Resource index="Vespene" value="250"/>
             <Button DefaultButtonFace="CalldownMULE423322" Requirements="LearnBlink21224243332339222"/>
         </InfoArray>
-        <InfoArray index="Research13" Time="200" Upgrade="UmojanBasicUnitUpgrade522242242322222234">
+        <InfoArray index="Research13" Time="115" Upgrade="UnknownUpgrade77">
             <Resource index="Minerals" value="150"/>
             <Resource index="Vespene" value="150"/>
-            <Button DefaultButtonFace="CalldownMULE42332232" Requirements="LearnBlink21224243332342"/>
+            <Button DefaultButtonFace="UnknownButton110" Requirements="UnknownRequirement119"/>
         </InfoArray>
         <InfoArray index="Research14" Time="120" Upgrade="UnknownUpgrade51">
             <Resource index="Minerals" value="150"/>
@@ -44698,6 +44719,18 @@
         <AutoCastRange value="6"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="HighArchonPsiStorm24" Requirements="HaveSupplyDepot2"/>
     </CAbilEffectTarget>
+    <CAbilEffectInstant id="QuickMutator4">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="BestUnit" value="1"/>
+        <Cost>
+            <Vital index="Life" value="50"/>
+            <Cooldown TimeUse="15"/>
+        </Cost>
+        <Range value="6"/>
+        <AutoCastFilters value="Visible;Self,Neutral,Enemy"/>
+        <AutoCastRange value="6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="HighArchonPsiStorm25"/>
+    </CAbilEffectInstant>
     <CAbilRally id="Rally2">
         <OrderArray index="0">
             <DisplayType value="Attack"/>
@@ -60730,7 +60763,7 @@
     <CAbilEffectInstant id="XenWarrior232">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Resource index="Minerals" value="175"/>
+            <Resource index="Minerals" value="150"/>
             <Resource index="Vespene" value="25"/>
             <Charge>
                 <CountMax value="1"/>
