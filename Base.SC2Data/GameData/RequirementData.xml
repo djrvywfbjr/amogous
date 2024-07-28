@@ -4453,7 +4453,7 @@
     </CRequirement>
     <CRequirement id="LearnBlink212242433323382232223223">
         <EditorCategories value="Race:Protoss,TechType:Ability"/>
-        <NodeArray index="Show" Link="NotCountUpgradeAdvancedConstruction24233QueuedOrBetter"/>
+        <NodeArray index="Show" Link="NotCountUpgradeIndustrialAutomatonsQueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="LearnBlink2122424333233822322232232">
         <EditorCategories value="Race:Protoss,TechType:Ability"/>
