@@ -769,20 +769,14 @@
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="AdvancedConstruction"/>
     </CUpgrade>
-    <CUpgrade id="AdvancedConstruction24233">
+    <CUpgrade id="IndustrialAutomatons">
         <Flags index="UpgradeCheat" value="0"/>
-        <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll27222,Modification.StateFlags[SuppressDetection]" Value="0"/>
-        <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll27222,Modification.ModifyFlags[DisableWeapons]" Value="0"/>
-        <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll27222,Modification.ModifyFlags[SuppressMoving]" Value="0"/>
-        <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll27222,Modification.ModifyFlags[SuppressTurning]" Value="0"/>
-        <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll27222,Modification.AbilClassDisableArray[CAbilAttack]" Value="0"/>
-        <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll27222,Modification.AbilClassDisableArray[CAbilEffectInstant]" Value="0"/>
-        <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll27222,Modification.AbilClassDisableArray[CAbilEffectTarget]" Value="0"/>
-        <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll27222,Modification.AbilClassDisableArray[CAbilHarvest]" Value="0"/>
-        <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll27222,Modification.AbilClassDisableArray[CAbilMove]" Value="0"/>
-        <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll27222,Modification.AbilClassDisableArray[CAbilResearch]" Value="0"/>
-        <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll27222,Modification.AbilClassDisableArray[CAbilTrain]" Value="0"/>
-        <EffectArray Reference="Behavior,AntamoAirAll27222,Modification.TimeScale" Value="1"/>
+        <EffectArray Operation="Set" Reference="Behavior,DisabledBuilding,Modification.StateFlags[SuppressDetection]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,DisabledBuilding,Modification.ModifyFlags[DisableWeapons]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,DisabledBuilding,Modification.AbilClassDisableArray[CAbilAttack]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,DisabledBuilding,Modification.TimeScale" Value="2"/>
+        <EffectArray Operation="Set" Reference="Behavior,DisabledBuilding,Modification.AbilClassDisableArray[CAbilEffectInstant]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Behavior,DisabledBuilding,Modification.AbilClassDisableArray[CAbilEffectTarget]" Value="1"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="AdvancedConstruction"/>
     </CUpgrade>
