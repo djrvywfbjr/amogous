@@ -21,6 +21,7 @@
         <InfoFlags index="Hidden" value="1"/>
         <BehaviorCategories index="Fast" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <Requirements value="HavePsionicHeart22432322232423222633222222222"/>
         <TimeScaleSource Value="Global"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="15xUnitSpeed322">
