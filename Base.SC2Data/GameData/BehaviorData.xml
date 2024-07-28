@@ -21,7 +21,6 @@
         <InfoFlags index="Hidden" value="1"/>
         <BehaviorCategories index="Fast" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Requirements value="HavePsionicHeart22432322232423222633222222222"/>
         <TimeScaleSource Value="Global"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="15xUnitSpeed322">
@@ -8504,7 +8503,7 @@
             <AbilClassDisableArray index="CAbilResearch" value="1"/>
             <AbilClassDisableArray index="CAbilTrain" value="1"/>
             <AbilClassDisableArray index="CAbilWarpTrain" value="1"/>
-            <BehaviorLinkDisableArray value="PsiDisruptionSearch72"/>
+            <BehaviorLinkDisableArray value="ForemanAura"/>
             <BehaviorLinkDisableArray value="AutoHarvestVespene"/>
             <BehaviorLinkDisableArray value="15xUnitSpeed34"/>
             <BehaviorLinkDisableArray value="PsiDisruptionSearch74"/>
@@ -17463,14 +17462,14 @@
         <Period value="6"/>
         <Modification TimeScale="1.3"/>
     </CBehaviorBuff>
-    <CBehaviorBuff id="PsiDisruption82">
+    <CBehaviorBuff id="InstructedByForeman">
         <Alignment value="Negative"/>
         <InfoIcon value="Assets\Textures\btn-ability-terran-psidisruption.dds"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="HasPsiStrike"/>
         <TimeScaleSource Value="Global"/>
         <Duration value="12"/>
-        <Period value="10"/>
+        <Period value="4"/>
         <PeriodicEffect value="SOAEnergizeSearch2233"/>
         <Modification TimeScale="1.25"/>
     </CBehaviorBuff>
@@ -17880,12 +17879,12 @@
         <Period value="8"/>
         <PeriodicEffect value="PsiDisruptionSearchArea7"/>
     </CBehaviorBuff>
-    <CBehaviorBuff id="PsiDisruptionSearch72">
+    <CBehaviorBuff id="ForemanAura">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <DisableValidatorArray value="NotDeadOrConstruction"/>
         <Period value="10"/>
-        <PeriodicEffect value="PsiDisruptionSearchArea72"/>
+        <PeriodicEffect value="ForemanAuraSearch"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="PsiDisruptionSearch73">
         <InfoFlags index="Hidden" value="1"/>
