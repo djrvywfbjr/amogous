@@ -8505,6 +8505,8 @@
             <ModifyFlags index="DisableWeapons" value="1"/>
             <StateFlags index="SuppressDetection" value="1"/>
             <AbilClassDisableArray index="CAbilAttack" value="1"/>
+            <AbilClassDisableArray index="CAbilEffectInstant" value="1"/>
+            <AbilClassDisableArray index="CAbilEffectTarget" value="1"/>
             <BehaviorLinkDisableArray value="ForemanAura"/>
             <BehaviorLinkDisableArray value="AutoHarvestVespene"/>
             <BehaviorLinkDisableArray value="15xUnitSpeed34"/>

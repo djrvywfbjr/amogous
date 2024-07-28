@@ -25987,26 +25987,26 @@
             <Resource index="Vespene" value="0"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
-            <Button DefaultButtonFace="CalldownMULE4233243322322224252" Requirements="LearnBlink212242433323382"/>
+            <Button DefaultButtonFace="ResearchMedicalOutpost" Requirements="LearnBlink212242433323382"/>
         </InfoArray>
         <InfoArray index="Research3" Time="125" Upgrade="AdvancedConstruction2322">
             <Charge Link="Abil/GhostAcademyResearch7"/>
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
-            <Button DefaultButtonFace="CalldownMULE42332433223222242522" Requirements="LearnBlink2122424333233822"/>
+            <Button DefaultButtonFace="ResearchSecondaryMedicalOutpost" Requirements="LearnBlink2122424333233822"/>
         </InfoArray>
         <InfoArray index="Research4" Time="225" Upgrade="AdvancedConstruction23222">
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="200"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
-            <Button DefaultButtonFace="CalldownMULE423324332232222425222" Requirements="LearnBlink21224243332338222"/>
+            <Button DefaultButtonFace="ResearchThirdMedicalOutpost" Requirements="LearnBlink21224243332338222"/>
         </InfoArray>
         <InfoArray index="Research5" Time="225" Upgrade="AdvancedConstruction2323">
             <Resource index="Minerals" value="125"/>
             <Resource index="Vespene" value="125"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
-            <Button DefaultButtonFace="CalldownMULE42332433223222242524" Requirements="LearnBlink21224243332338223"/>
+            <Button DefaultButtonFace="ResearchCompactScienceStations" Requirements="LearnBlink21224243332338223"/>
         </InfoArray>
         <InfoArray index="Research6" Time="600" Upgrade="AdvancedConstruction233">
             <Resource index="Minerals" value="200"/>
@@ -26020,42 +26020,42 @@
             <Resource index="Vespene" value="25"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
-            <Button DefaultButtonFace="CalldownMULE423324332232222425242" Requirements="LearnBlink212242433323382232"/>
+            <Button DefaultButtonFace="ResearchAdvancedConstructionTool" Requirements="LearnBlink212242433323382232"/>
         </InfoArray>
         <InfoArray index="Research8" Time="600" Upgrade="AdvancedConstruction242">
             <Resource index="Minerals" value="75"/>
             <Resource index="Vespene" value="150"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
-            <Button DefaultButtonFace="CalldownMULE4233243322322224252422" Requirements="LearnBlink2122424333233822322"/>
+            <Button DefaultButtonFace="ResearchCropModifications" Requirements="LearnBlink2122424333233822322"/>
         </InfoArray>
         <InfoArray index="Research9" Time="600" Upgrade="AdvancedConstruction2422">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="200"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
-            <Button DefaultButtonFace="CalldownMULE42332433223222242524222" Requirements="LearnBlink2122424333233822323"/>
+            <Button DefaultButtonFace="ResearchOptimizedHarvesting" Requirements="LearnBlink2122424333233822323"/>
         </InfoArray>
         <InfoArray index="Research10" Time="400" Upgrade="AdvancedConstruction24222">
             <Resource index="Minerals" value="300"/>
             <Resource index="Vespene" value="75"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
-            <Button DefaultButtonFace="CalldownMULE423324332232222425242222" Requirements="LearnBlink21224243332338223232"/>
+            <Button DefaultButtonFace="ResearchOptimizedWeaponaryMaterials" Requirements="LearnBlink21224243332338223232"/>
         </InfoArray>
         <InfoArray index="Research11" Time="325" Upgrade="AdvancedConstruction242232">
             <Resource index="Minerals" value="225"/>
             <Resource index="Vespene" value="125"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
-            <Button DefaultButtonFace="CalldownMULE423324332232222425242223" Requirements="LearnBlink21224243332338223233"/>
+            <Button DefaultButtonFace="ResearchOptimizedArmorMaterials" Requirements="LearnBlink21224243332338223233"/>
         </InfoArray>
         <InfoArray index="Research12" Time="250" Upgrade="AdvancedConstruction24223">
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="100"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
-            <Button DefaultButtonFace="CalldownMULE4233243322322224252422232" Requirements="LearnBlink212242433323382232332"/>
+            <Button DefaultButtonFace="ResearchThermoelectricGenerators" Requirements="LearnBlink212242433323382232332"/>
         </InfoArray>
         <InfoArray index="Research13" Time="700" Upgrade="AdvancedConstruction2332">
             <Resource index="Minerals" value="400"/>
@@ -26069,21 +26069,21 @@
             <Resource index="Vespene" value="125"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
-            <Button DefaultButtonFace="CalldownMULE4233243322322224252422233" Requirements="LearnBlink21224243332338223222"/>
+            <Button DefaultButtonFace="ResearchCompactWeaponary" Requirements="LearnBlink21224243332338223222"/>
         </InfoArray>
         <InfoArray index="Research15" Time="500" Upgrade="AdvancedConstruction24223222">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="300"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
-            <Button DefaultButtonFace="CalldownMULE423324332232222425242224" Requirements="LearnBlink212242433323382232222"/>
+            <Button DefaultButtonFace="ResearchOptimizedSchedule" Requirements="LearnBlink212242433323382232222"/>
         </InfoArray>
         <InfoArray index="Research16" Time="400" Upgrade="AdvancedConstruction2423">
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="150"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
-            <Button DefaultButtonFace="CalldownMULE4233243322322224252422242" Requirements="LearnBlink212242433323382232223"/>
+            <Button DefaultButtonFace="ResearchIndustrialGardens" Requirements="LearnBlink212242433323382232223"/>
         </InfoArray>
         <InfoArray index="Research17" Time="1000" Upgrade="AdvancedConstruction23322">
             <Resource index="Minerals" value="600"/>
@@ -26097,77 +26097,77 @@
             <Resource index="Vespene" value="200"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
-            <Button DefaultButtonFace="CalldownMULE42332433223222242524222332" Requirements="LearnBlink21224243332338223234"/>
+            <Button DefaultButtonFace="ResearchMilitaryTraining" Requirements="LearnBlink21224243332338223234"/>
         </InfoArray>
         <InfoArray index="Research19" Time="600" Upgrade="AdvancedConstruction2423222">
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="200"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
-            <Button DefaultButtonFace="CalldownMULE4233243322322224252422242222" Requirements="LearnBlink2122424333233822322232"/>
+            <Button DefaultButtonFace="ResearchIndustrialAssemblies" Requirements="LearnBlink2122424333233822322232"/>
         </InfoArray>
-        <InfoArray index="Research20" Time="500" Upgrade="AdvancedConstruction24233">
+        <InfoArray index="Research20" Time="500" Upgrade="IndustrialAutomatons">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
-            <Button DefaultButtonFace="CalldownMULE42332433223222242524222422222" Requirements="LearnBlink212242433323382232223223"/>
+            <Button DefaultButtonFace="ResearchIndustrialAutomatons" Requirements="LearnBlink212242433323382232223223"/>
         </InfoArray>
         <InfoArray index="Research21" Time="800" Upgrade="AdvancedConstruction24232">
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="200"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
-            <Button DefaultButtonFace="CalldownMULE42332433223222242524222422" Requirements="LearnBlink212242433323382232223222"/>
+            <Button DefaultButtonFace="ResearchIndustrialBarracks" Requirements="LearnBlink212242433323382232223222"/>
         </InfoArray>
         <InfoArray index="Research22" Time="800" Upgrade="AdvancedConstruction242322">
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="200"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
-            <Button DefaultButtonFace="CalldownMULE423324332232222425242224222" Requirements="LearnBlink21224243332338223222322"/>
+            <Button DefaultButtonFace="ResearchIndustrialPacifiers" Requirements="LearnBlink21224243332338223222322"/>
         </InfoArray>
         <InfoArray index="Research23" Time="800" Upgrade="AdvancedConstruction242332">
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="200"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
-            <Button DefaultButtonFace="CalldownMULE423324332232222425242224222222" Requirements="LearnBlink2122424333233822322232232"/>
+            <Button DefaultButtonFace="ResearchIndustrialThermoelectricStation" Requirements="LearnBlink2122424333233822322232232"/>
         </InfoArray>
         <InfoArray index="Research24" Time="500" Upgrade="AdvancedConstruction232322">
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="200"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
-            <Button DefaultButtonFace="CalldownMULE4233243322322224252422322" Requirements="LearnBlink2122424333233822323622"/>
+            <Button DefaultButtonFace="ResearchIndustrialOutposts" Requirements="LearnBlink2122424333233822323622"/>
         </InfoArray>
         <InfoArray index="Research25" Time="300" Upgrade="AdvancedConstruction2323222">
             <Resource index="Minerals" value="150"/>
             <Resource index="Vespene" value="150"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
-            <Button DefaultButtonFace="CalldownMULE423324332232222425242232" Requirements="LearnBlink21224243332338223236"/>
+            <Button DefaultButtonFace="ResearchDiminishingMarks" Requirements="LearnBlink21224243332338223236"/>
         </InfoArray>
         <InfoArray index="Research26" Time="100" Upgrade="AdvancedConstruction23232">
             <Resource index="Minerals" value="75"/>
             <Resource index="Vespene" value="75"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
-            <Button DefaultButtonFace="CalldownMULE42332433223222242524223" Requirements="LearnBlink212242433323382232362"/>
+            <Button DefaultButtonFace="ResearchFortifiedCargoCarriers" Requirements="LearnBlink212242433323382232362"/>
         </InfoArray>
         <InfoArray index="Research27" Time="200" Upgrade="AdvancedConstruction232222">
             <Resource index="Minerals" value="125"/>
             <Resource index="Vespene" value="125"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
-            <Button DefaultButtonFace="CalldownMULE423324332232222425243" Requirements="LearnBlink2122424333233823"/>
+            <Button DefaultButtonFace="ResearchColonialHousing" Requirements="LearnBlink2122424333233823"/>
         </InfoArray>
         <InfoArray index="Research28" Time="300" Upgrade="AdvancedConstruction2322222">
             <Resource index="Minerals" value="225"/>
             <Resource index="Vespene" value="225"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
-            <Button DefaultButtonFace="CalldownMULE4233243322322224252432" Requirements="LearnBlink21224243332338224"/>
+            <Button DefaultButtonFace="ResearchCivilHousing" Requirements="LearnBlink21224243332338224"/>
         </InfoArray>
         <InfoArray index="Research29">
             <Charge Link="Abil/GhostAcademyResearch7"/>
@@ -26185,35 +26185,35 @@
             <Resource index="Vespene" value="125"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
-            <Button DefaultButtonFace="CalldownMULE42332433223222242524222422222222" Requirements="LearnBlink2122424333233822422"/>
+            <Button DefaultButtonFace="ResearchOptimizedPowerDistributor" Requirements="LearnBlink2122424333233822422"/>
         </InfoArray>
         <InfoArray index="Research2" Time="400" Upgrade="AdvancedConstruction232222222">
             <Resource index="Minerals" value="225"/>
             <Resource index="Vespene" value="225"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
-            <Button DefaultButtonFace="CalldownMULE4233243322322224252422242222222" Requirements="LearnBlink21224243332338224222"/>
+            <Button DefaultButtonFace="ResearchIndustrialPowerDistributor" Requirements="LearnBlink21224243332338224222"/>
         </InfoArray>
         <InfoArray index="Research3" Time="400" Upgrade="AdvancedConstruction232222223">
             <Resource index="Minerals" value="325"/>
             <Resource index="Vespene" value="325"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
-            <Button DefaultButtonFace="CalldownMULE423324332232222425242224222222222" Requirements="LearnBlink212242433323382242"/>
+            <Button DefaultButtonFace="ResearchCapitalShipCabling" Requirements="LearnBlink212242433323382242"/>
         </InfoArray>
         <InfoArray index="Research4" Time="225" Upgrade="AdvancedConstruction23222">
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="200"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
-            <Button DefaultButtonFace="CalldownMULE423324332232222425222" Requirements="LearnBlink21224243332338222"/>
+            <Button DefaultButtonFace="ResearchThirdMedicalOutpost" Requirements="LearnBlink21224243332338222"/>
         </InfoArray>
         <InfoArray index="Research5" Time="225" Upgrade="AdvancedConstruction2323">
             <Resource index="Minerals" value="125"/>
             <Resource index="Vespene" value="125"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
-            <Button DefaultButtonFace="CalldownMULE42332433223222242524" Requirements="LearnBlink21224243332338223"/>
+            <Button DefaultButtonFace="ResearchCompactScienceStations" Requirements="LearnBlink21224243332338223"/>
         </InfoArray>
         <InfoArray index="Research6" Time="600" Upgrade="AdvancedConstruction233">
             <Resource index="Minerals" value="200"/>
@@ -26227,42 +26227,42 @@
             <Resource index="Vespene" value="25"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
-            <Button DefaultButtonFace="CalldownMULE423324332232222425242" Requirements="LearnBlink212242433323382232"/>
+            <Button DefaultButtonFace="ResearchAdvancedConstructionTool" Requirements="LearnBlink212242433323382232"/>
         </InfoArray>
         <InfoArray index="Research8" Time="600" Upgrade="AdvancedConstruction242">
             <Resource index="Minerals" value="75"/>
             <Resource index="Vespene" value="150"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
-            <Button DefaultButtonFace="CalldownMULE4233243322322224252422" Requirements="LearnBlink2122424333233822322"/>
+            <Button DefaultButtonFace="ResearchCropModifications" Requirements="LearnBlink2122424333233822322"/>
         </InfoArray>
         <InfoArray index="Research9" Time="600" Upgrade="AdvancedConstruction2422">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="200"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
-            <Button DefaultButtonFace="CalldownMULE42332433223222242524222" Requirements="LearnBlink2122424333233822323"/>
+            <Button DefaultButtonFace="ResearchOptimizedHarvesting" Requirements="LearnBlink2122424333233822323"/>
         </InfoArray>
         <InfoArray index="Research10" Time="400" Upgrade="AdvancedConstruction24222">
             <Resource index="Minerals" value="300"/>
             <Resource index="Vespene" value="75"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
-            <Button DefaultButtonFace="CalldownMULE423324332232222425242222" Requirements="LearnBlink21224243332338223232"/>
+            <Button DefaultButtonFace="ResearchOptimizedWeaponaryMaterials" Requirements="LearnBlink21224243332338223232"/>
         </InfoArray>
         <InfoArray index="Research11" Time="325" Upgrade="AdvancedConstruction242232">
             <Resource index="Minerals" value="225"/>
             <Resource index="Vespene" value="125"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
-            <Button DefaultButtonFace="CalldownMULE423324332232222425242223" Requirements="LearnBlink21224243332338223233"/>
+            <Button DefaultButtonFace="ResearchOptimizedArmorMaterials" Requirements="LearnBlink21224243332338223233"/>
         </InfoArray>
         <InfoArray index="Research12" Time="250" Upgrade="AdvancedConstruction24223">
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="100"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
-            <Button DefaultButtonFace="CalldownMULE4233243322322224252422232" Requirements="LearnBlink212242433323382232332"/>
+            <Button DefaultButtonFace="ResearchThermoelectricGenerators" Requirements="LearnBlink212242433323382232332"/>
         </InfoArray>
         <InfoArray index="Research13" Time="700" Upgrade="AdvancedConstruction2332">
             <Resource index="Minerals" value="400"/>
@@ -26276,21 +26276,21 @@
             <Resource index="Vespene" value="125"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
-            <Button DefaultButtonFace="CalldownMULE4233243322322224252422233" Requirements="LearnBlink21224243332338223222"/>
+            <Button DefaultButtonFace="ResearchCompactWeaponary" Requirements="LearnBlink21224243332338223222"/>
         </InfoArray>
         <InfoArray index="Research15" Time="500" Upgrade="AdvancedConstruction24223222">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="300"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
-            <Button DefaultButtonFace="CalldownMULE423324332232222425242224" Requirements="LearnBlink212242433323382232222"/>
+            <Button DefaultButtonFace="ResearchOptimizedSchedule" Requirements="LearnBlink212242433323382232222"/>
         </InfoArray>
         <InfoArray index="Research16" Time="400" Upgrade="AdvancedConstruction2423">
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="150"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
-            <Button DefaultButtonFace="CalldownMULE4233243322322224252422242" Requirements="LearnBlink212242433323382232223"/>
+            <Button DefaultButtonFace="ResearchIndustrialGardens" Requirements="LearnBlink212242433323382232223"/>
         </InfoArray>
         <InfoArray index="Research17" Time="1000" Upgrade="AdvancedConstruction23322">
             <Resource index="Minerals" value="600"/>
@@ -26304,77 +26304,77 @@
             <Resource index="Vespene" value="200"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
-            <Button DefaultButtonFace="CalldownMULE42332433223222242524222332" Requirements="LearnBlink21224243332338223234"/>
+            <Button DefaultButtonFace="ResearchMilitaryTraining" Requirements="LearnBlink21224243332338223234"/>
         </InfoArray>
         <InfoArray index="Research19" Time="600" Upgrade="AdvancedConstruction2423222">
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="200"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
-            <Button DefaultButtonFace="CalldownMULE4233243322322224252422242222" Requirements="LearnBlink2122424333233822322232"/>
+            <Button DefaultButtonFace="ResearchIndustrialAssemblies" Requirements="LearnBlink2122424333233822322232"/>
         </InfoArray>
-        <InfoArray index="Research20" Time="500" Upgrade="AdvancedConstruction24233">
+        <InfoArray index="Research20" Time="500" Upgrade="IndustrialAutomatons">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
-            <Button DefaultButtonFace="CalldownMULE42332433223222242524222422222" Requirements="LearnBlink212242433323382232223223"/>
+            <Button DefaultButtonFace="ResearchIndustrialAutomatons" Requirements="LearnBlink212242433323382232223223"/>
         </InfoArray>
         <InfoArray index="Research21" Time="800" Upgrade="AdvancedConstruction24232">
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="200"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
-            <Button DefaultButtonFace="CalldownMULE42332433223222242524222422" Requirements="LearnBlink212242433323382232223222"/>
+            <Button DefaultButtonFace="ResearchIndustrialBarracks" Requirements="LearnBlink212242433323382232223222"/>
         </InfoArray>
         <InfoArray index="Research22" Time="800" Upgrade="AdvancedConstruction242322">
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="200"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
-            <Button DefaultButtonFace="CalldownMULE423324332232222425242224222" Requirements="LearnBlink21224243332338223222322"/>
+            <Button DefaultButtonFace="ResearchIndustrialPacifiers" Requirements="LearnBlink21224243332338223222322"/>
         </InfoArray>
         <InfoArray index="Research23" Time="800" Upgrade="AdvancedConstruction242332">
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="200"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
-            <Button DefaultButtonFace="CalldownMULE423324332232222425242224222222" Requirements="LearnBlink2122424333233822322232232"/>
+            <Button DefaultButtonFace="ResearchIndustrialThermoelectricStation" Requirements="LearnBlink2122424333233822322232232"/>
         </InfoArray>
         <InfoArray index="Research24" Time="500" Upgrade="AdvancedConstruction232322">
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="200"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
-            <Button DefaultButtonFace="CalldownMULE4233243322322224252422322" Requirements="LearnBlink2122424333233822323622"/>
+            <Button DefaultButtonFace="ResearchIndustrialOutposts" Requirements="LearnBlink2122424333233822323622"/>
         </InfoArray>
         <InfoArray index="Research25" Time="300" Upgrade="AdvancedConstruction2323222">
             <Resource index="Minerals" value="150"/>
             <Resource index="Vespene" value="150"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
-            <Button DefaultButtonFace="CalldownMULE423324332232222425242232" Requirements="LearnBlink21224243332338223236"/>
+            <Button DefaultButtonFace="ResearchDiminishingMarks" Requirements="LearnBlink21224243332338223236"/>
         </InfoArray>
         <InfoArray index="Research26" Time="100" Upgrade="AdvancedConstruction23232">
             <Resource index="Minerals" value="75"/>
             <Resource index="Vespene" value="75"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
-            <Button DefaultButtonFace="CalldownMULE42332433223222242524223" Requirements="LearnBlink212242433323382232362"/>
+            <Button DefaultButtonFace="ResearchFortifiedCargoCarriers" Requirements="LearnBlink212242433323382232362"/>
         </InfoArray>
         <InfoArray index="Research27" Time="200" Upgrade="AdvancedConstruction232222">
             <Resource index="Minerals" value="125"/>
             <Resource index="Vespene" value="125"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
-            <Button DefaultButtonFace="CalldownMULE423324332232222425243" Requirements="LearnBlink2122424333233823"/>
+            <Button DefaultButtonFace="ResearchColonialHousing" Requirements="LearnBlink2122424333233823"/>
         </InfoArray>
         <InfoArray index="Research28" Time="300" Upgrade="AdvancedConstruction2322222">
             <Resource index="Minerals" value="225"/>
             <Resource index="Vespene" value="225"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
-            <Button DefaultButtonFace="CalldownMULE4233243322322224252432" Requirements="LearnBlink21224243332338224"/>
+            <Button DefaultButtonFace="ResearchCivilHousing" Requirements="LearnBlink21224243332338224"/>
         </InfoArray>
         <InfoArray index="Research29" Time="500" Upgrade="UnknownUpgrade71">
             <Resource index="Minerals" value="150"/>
