@@ -51038,10 +51038,10 @@
         <EditorCategories value="Race:Terran"/>
         <Behavior value="PsiDisruption8"/>
     </CEffectApplyBehavior>
-    <CEffectApplyBehavior id="ForemanAuraAB">
+    <CEffectApplyBehavior id="PsiDisruptionApplyBehavior82">
         <ValidatorArray index="0" removed="1"/>
         <EditorCategories value="Race:Terran"/>
-        <Behavior value="InstructedByForeman"/>
+        <Behavior value="PsiDisruption82"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="PsiDisruptionApplyBehavior83">
         <ValidatorArray index="0" value="RequiresCivilianAll23"/>
@@ -51770,10 +51770,10 @@
         <SearchFilters value="Structure;Self,Ally,Neutral,Enemy,Heroic,Missile,Stasis,Dead,Hidden,Invulnerable,Benign"/>
         <AreaArray Radius="12" Effect="PsiDisruptionApplyBehavior8"/>
     </CEffectEnumArea>
-    <CEffectEnumArea id="ForemanAuraSearch">
+    <CEffectEnumArea id="PsiDisruptionSearchArea72">
         <EditorCategories value="Race:Terran"/>
-        <SearchFilters value="-;Neutral,Enemy,Structure,Heroic,Missile,Stasis,Dead,Hidden,Invulnerable,Benign"/>
-        <AreaArray Radius="9" Effect="ForemanAuraAB"/>
+        <SearchFilters value="-;Self,Neutral,Enemy,Structure,Heroic,Missile,Stasis,Dead,Hidden,Invulnerable,Benign"/>
+        <AreaArray Radius="9" Effect="PsiDisruptionApplyBehavior82"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="PsiDisruptionSearchArea73">
         <EditorCategories value="Race:Terran"/>
