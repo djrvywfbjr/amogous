@@ -41804,7 +41804,7 @@
     <CEffectDamage id="NovaWeaponPlasmaBlastNewImpactDamage22" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <ArmorReduction value="0"/>
-        <Kind value="Ranged"/>
+        <Kind value="Spell"/>
         <Amount value="35"/>
         <Death value="Disintegrate"/>
     </CEffectDamage>
