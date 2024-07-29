@@ -37816,7 +37816,7 @@
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <InitialEffect value="PhaseCannonInitialStun722423"/>
         <FinalEffect value="PhaseCannonInitialStun722423"/>
-        <Modification MoveSpeedMultiplier="2.5">
+        <Modification MoveSpeedMultiplier="1.75">
             <AbilLinkDisableArray value="PhaseCannon723"/>
             <AbilLinkDisableArray value="Irradiate2225"/>
             <AbilLinkDisableArray value="RaynorSnipe4"/>
