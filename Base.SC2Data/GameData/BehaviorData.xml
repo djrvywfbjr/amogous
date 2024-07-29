@@ -2460,6 +2460,9 @@
         <RefreshEffect value="NovaPlasmaPuddleDamageDebuffSlowSet23"/>
         <PeriodicEffect value="NovaPlasmaPuddleDamage23"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="NovaPlasmaPuddleDamageDebuffSlow">
+        <Modification MoveSpeedMultiplier="0.5" AttackSpeedMultiplier="0.5"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="NovaPlasmaPuddleDamageDebuffSlow23">
         <Alignment value="Negative"/>
         <InfoFlags index="Hidden" value="1"/>
@@ -20093,7 +20096,7 @@
         </VeterancyLevelArray>
         <VeterancyLevelArray MinVeterancyXP="70" LevelGainEffect="RankDummy222222">
             <Modification Detect="8">
-                <DamageDealtAttributeScaled index="Mechanical" value="30"/>
+                <DamageDealtAttributeMultiplier index="Mechanical" value="0.5"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
