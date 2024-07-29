@@ -3060,7 +3060,7 @@
         <DisplayEffect value="VortexKillDamageDummy222"/>
         <TargetFilters value="Light,Visible;Air,Massive,Heroic,Missile,Dead,Hidden"/>
         <MinScanRange value="9"/>
-        <Range value="9"/>
+        <Range value="8"/>
         <Marker Link="Weapon/GuassRifle8"/>
         <Cost>
             <Cooldown Link="Weapon/GuassRifle8"/>

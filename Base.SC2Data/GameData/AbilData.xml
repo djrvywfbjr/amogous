@@ -62482,6 +62482,7 @@
         <Effect index="0" value="XenWarrior6332233323352332"/>
         <Cost>
             <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="100"/>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
@@ -62504,8 +62505,8 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="XenWarrior6332233323352333"/>
         <Cost>
-            <Resource index="Minerals" value="50"/>
-            <Resource index="Vespene" value="100"/>
+            <Resource index="Minerals" value="250"/>
+            <Resource index="Vespene" value="200"/>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
