@@ -769,14 +769,20 @@
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="AdvancedConstruction"/>
     </CUpgrade>
-    <CUpgrade id="IndustrialAutomatons">
+    <CUpgrade id="AdvancedConstruction24233">
         <Flags index="UpgradeCheat" value="0"/>
-        <EffectArray Operation="Set" Reference="Behavior,DisabledBuilding,Modification.StateFlags[SuppressDetection]" Value="0"/>
-        <EffectArray Operation="Set" Reference="Behavior,DisabledBuilding,Modification.ModifyFlags[DisableWeapons]" Value="0"/>
-        <EffectArray Operation="Set" Reference="Behavior,DisabledBuilding,Modification.AbilClassDisableArray[CAbilAttack]" Value="0"/>
-        <EffectArray Operation="Set" Reference="Behavior,DisabledBuilding,Modification.TimeScale" Value="2"/>
-        <EffectArray Operation="Set" Reference="Behavior,DisabledBuilding,Modification.AbilClassDisableArray[CAbilEffectInstant]" Value="1"/>
-        <EffectArray Operation="Set" Reference="Behavior,DisabledBuilding,Modification.AbilClassDisableArray[CAbilEffectTarget]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll27222,Modification.StateFlags[SuppressDetection]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll27222,Modification.ModifyFlags[DisableWeapons]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll27222,Modification.ModifyFlags[SuppressMoving]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll27222,Modification.ModifyFlags[SuppressTurning]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll27222,Modification.AbilClassDisableArray[CAbilAttack]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll27222,Modification.AbilClassDisableArray[CAbilEffectInstant]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll27222,Modification.AbilClassDisableArray[CAbilEffectTarget]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll27222,Modification.AbilClassDisableArray[CAbilHarvest]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll27222,Modification.AbilClassDisableArray[CAbilMove]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll27222,Modification.AbilClassDisableArray[CAbilResearch]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll27222,Modification.AbilClassDisableArray[CAbilTrain]" Value="0"/>
+        <EffectArray Reference="Behavior,AntamoAirAll27222,Modification.TimeScale" Value="1"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="AdvancedConstruction"/>
     </CUpgrade>
@@ -5140,45 +5146,45 @@
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222224">
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Melee]" Value="0.1"/>
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[NoProc]" Value="0.1"/>
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Ranged]" Value="0.1"/>
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Spell]" Value="0.1"/>
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Splash]" Value="0.1"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Melee]" Value="0.2"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[NoProc]" Value="0.2"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Ranged]" Value="0.2"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Spell]" Value="0.2"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Splash]" Value="0.2"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade52224224232222222242">
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Melee]" Value="0.1"/>
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[NoProc]" Value="0.1"/>
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Ranged]" Value="0.1"/>
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Spell]" Value="0.1"/>
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Splash]" Value="0.1"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Melee]" Value="0.2"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[NoProc]" Value="0.2"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Ranged]" Value="0.2"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Spell]" Value="0.2"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Splash]" Value="0.2"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade522242242322222222422">
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Melee]" Value="0.1"/>
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[NoProc]" Value="0.1"/>
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Ranged]" Value="0.1"/>
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Spell]" Value="0.1"/>
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Splash]" Value="0.1"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Melee]" Value="0.2"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[NoProc]" Value="0.2"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Ranged]" Value="0.2"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Spell]" Value="0.2"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Splash]" Value="0.2"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222224222">
-        <EffectArray Reference="Behavior,AntamoAirAll103,Modification.DamageDealtAttributeMultiplier[Light]" Value="0.3"/>
+        <EffectArray Reference="Behavior,AntamoAirAll103,Modification.DamageDealtAttributeMultiplier[Light]" Value="0.5"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade52224224232222222242222">
-        <EffectArray Reference="Behavior,AntamoAirAll103,Modification.DamageDealtAttributeMultiplier[Armored]" Value="0.3"/>
+        <EffectArray Reference="Behavior,AntamoAirAll103,Modification.DamageDealtAttributeMultiplier[Armored]" Value="0.5"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade522242242322222222422222">
-        <EffectArray Reference="Behavior,AntamoAirAll103,Modification.DamageDealtAttributeMultiplier[Massive]" Value="0.3"/>
-        <EffectArray Reference="Behavior,AntamoAirAll103,Modification.DamageDealtAttributeMultiplier[Heroic]" Value="0.3"/>
+        <EffectArray Reference="Behavior,AntamoAirAll103,Modification.DamageDealtAttributeMultiplier[Massive]" Value="0.5"/>
+        <EffectArray Reference="Behavior,AntamoAirAll103,Modification.DamageDealtAttributeMultiplier[Heroic]" Value="0.5"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -5276,6 +5282,174 @@
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222224222332342223">
+        <EffectArray Reference="Unit,LurkerMP342,Speed" Value="0.414000"/>
+        <EffectArray Reference="Unit,KerriganChar2,Speed" Value="0.390600"/>
+        <EffectArray Reference="Unit,Ultralisk652,Speed" Value="0.414000"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord2422,Speed" Value="0.523400"/>
+        <EffectArray Reference="Unit,HydraliskLurker223,Speed" Value="0.316400"/>
+        <EffectArray Reference="Unit,Overlord422,Speed" Value="0.281200"/>
+        <EffectArray Reference="Unit,BroodLord42,Speed" Value="0.421800"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord242,Speed" Value="0.523400"/>
+        <EffectArray Reference="Unit,Corruptor9,Speed" Value="0.472600"/>
+        <EffectArray Reference="Unit,HotSSwarmling342,Speed" Value="0.421800"/>
+        <EffectArray Reference="Unit,Ultralisk65,Speed" Value="0.414000"/>
+        <EffectArray Reference="Unit,Drone44,Speed" Value="0.398400"/>
+        <EffectArray Reference="Unit,LurkerMP342,Sight" Value="3"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed242,Sight" Value="3"/>
+        <EffectArray Reference="Unit,KerriganChar2,Sight" Value="3"/>
+        <EffectArray Reference="Unit,Ultralisk652,Sight" Value="3"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord2422,Sight" Value="3"/>
+        <EffectArray Reference="Unit,BroodLordCocoon2322,Sight" Value="3"/>
+        <EffectArray Reference="Unit,LurkerMPEgg2232,Sight" Value="3"/>
+        <EffectArray Reference="Unit,Corruptor9,Sight" Value="3"/>
+        <EffectArray Reference="Unit,HydraliskLurker223,Sight" Value="3"/>
+        <EffectArray Reference="Unit,Overlord422,Sight" Value="3"/>
+        <EffectArray Reference="Unit,BroodLord42,Sight" Value="3"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord242,Sight" Value="3"/>
+        <EffectArray Reference="Unit,HotSSwarmling342,Sight" Value="3"/>
+        <EffectArray Reference="Unit,Ultralisk65,Sight" Value="3"/>
+        <EffectArray Reference="Unit,Drone44,Sight" Value="3"/>
+        <EffectArray Operation="Set" Reference="Actor,BroodLord42,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Corruptor9,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Drone54,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,HydraliskLurker323,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MutaliskBroodlord242,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MutaliskBroodlord2422,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Overlord522,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Val03QueenOfBlades2,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Ultralisk65,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Ultralisk652,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP342,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP442,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed242,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMP342,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,KerriganChar2,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Ultralisk652,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord2422,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HydraliskLurker223,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Overlord422,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,BroodLord42,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord242,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Corruptor9,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HotSSwarmling342,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Ultralisk65,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Drone44,LifeArmorLevel" Value="1"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade52224224232222222242223323422232">
+        <EffectArray Reference="Unit,LurkerMP342,Speed" Value="0.414000"/>
+        <EffectArray Reference="Unit,KerriganChar2,Speed" Value="0.390600"/>
+        <EffectArray Reference="Unit,Ultralisk652,Speed" Value="0.414000"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord2422,Speed" Value="0.523400"/>
+        <EffectArray Reference="Unit,HydraliskLurker223,Speed" Value="0.316400"/>
+        <EffectArray Reference="Unit,Overlord422,Speed" Value="0.281200"/>
+        <EffectArray Reference="Unit,BroodLord42,Speed" Value="0.421800"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord242,Speed" Value="0.523400"/>
+        <EffectArray Reference="Unit,Corruptor9,Speed" Value="0.472600"/>
+        <EffectArray Reference="Unit,HotSSwarmling342,Speed" Value="0.421800"/>
+        <EffectArray Reference="Unit,Ultralisk65,Speed" Value="0.414000"/>
+        <EffectArray Reference="Unit,Drone44,Speed" Value="0.398400"/>
+        <EffectArray Reference="Unit,LurkerMP342,Sight" Value="3"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed242,Sight" Value="3"/>
+        <EffectArray Reference="Unit,KerriganChar2,Sight" Value="3"/>
+        <EffectArray Reference="Unit,Ultralisk652,Sight" Value="3"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord2422,Sight" Value="3"/>
+        <EffectArray Reference="Unit,BroodLordCocoon2322,Sight" Value="3"/>
+        <EffectArray Reference="Unit,LurkerMPEgg2232,Sight" Value="3"/>
+        <EffectArray Reference="Unit,Corruptor9,Sight" Value="3"/>
+        <EffectArray Reference="Unit,HydraliskLurker223,Sight" Value="3"/>
+        <EffectArray Reference="Unit,Overlord422,Sight" Value="3"/>
+        <EffectArray Reference="Unit,BroodLord42,Sight" Value="3"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord242,Sight" Value="3"/>
+        <EffectArray Reference="Unit,HotSSwarmling342,Sight" Value="3"/>
+        <EffectArray Reference="Unit,Ultralisk65,Sight" Value="3"/>
+        <EffectArray Reference="Unit,Drone44,Sight" Value="3"/>
+        <EffectArray Operation="Set" Reference="Actor,BroodLord42,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Corruptor9,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Drone54,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,HydraliskLurker323,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MutaliskBroodlord242,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MutaliskBroodlord2422,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Overlord522,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Val03QueenOfBlades2,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Ultralisk65,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Ultralisk652,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP342,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP442,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed242,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMP342,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,KerriganChar2,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Ultralisk652,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord2422,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HydraliskLurker223,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Overlord422,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,BroodLord42,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord242,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Corruptor9,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HotSSwarmling342,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Ultralisk65,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Drone44,LifeArmorLevel" Value="1"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade52224224232222222242223323422233">
+        <EffectArray Reference="Unit,LurkerMP342,Speed" Value="0.414000"/>
+        <EffectArray Reference="Unit,KerriganChar2,Speed" Value="0.390600"/>
+        <EffectArray Reference="Unit,Ultralisk652,Speed" Value="0.414000"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord2422,Speed" Value="0.523400"/>
+        <EffectArray Reference="Unit,HydraliskLurker223,Speed" Value="0.316400"/>
+        <EffectArray Reference="Unit,Overlord422,Speed" Value="0.281200"/>
+        <EffectArray Reference="Unit,BroodLord42,Speed" Value="0.421800"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord242,Speed" Value="0.523400"/>
+        <EffectArray Reference="Unit,Corruptor9,Speed" Value="0.472600"/>
+        <EffectArray Reference="Unit,HotSSwarmling342,Speed" Value="0.421800"/>
+        <EffectArray Reference="Unit,Ultralisk65,Speed" Value="0.414000"/>
+        <EffectArray Reference="Unit,Drone44,Speed" Value="0.398400"/>
+        <EffectArray Reference="Unit,LurkerMP342,Sight" Value="3"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed242,Sight" Value="3"/>
+        <EffectArray Reference="Unit,KerriganChar2,Sight" Value="3"/>
+        <EffectArray Reference="Unit,Ultralisk652,Sight" Value="3"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord2422,Sight" Value="3"/>
+        <EffectArray Reference="Unit,BroodLordCocoon2322,Sight" Value="3"/>
+        <EffectArray Reference="Unit,LurkerMPEgg2232,Sight" Value="3"/>
+        <EffectArray Reference="Unit,Corruptor9,Sight" Value="3"/>
+        <EffectArray Reference="Unit,HydraliskLurker223,Sight" Value="3"/>
+        <EffectArray Reference="Unit,Overlord422,Sight" Value="3"/>
+        <EffectArray Reference="Unit,BroodLord42,Sight" Value="3"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord242,Sight" Value="3"/>
+        <EffectArray Reference="Unit,HotSSwarmling342,Sight" Value="3"/>
+        <EffectArray Reference="Unit,Ultralisk65,Sight" Value="3"/>
+        <EffectArray Reference="Unit,Drone44,Sight" Value="3"/>
+        <EffectArray Operation="Set" Reference="Actor,BroodLord42,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Corruptor9,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Drone54,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,HydraliskLurker323,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MutaliskBroodlord242,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MutaliskBroodlord2422,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Overlord522,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Val03QueenOfBlades2,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Ultralisk65,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Ultralisk652,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP342,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP442,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed242,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMP342,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,KerriganChar2,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Ultralisk652,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord2422,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HydraliskLurker223,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Overlord422,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,BroodLord42,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord242,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Corruptor9,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HotSSwarmling342,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Ultralisk65,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Drone44,LifeArmorLevel" Value="1"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade522242242322222222422233234223">
         <EffectArray Operation="Set" Reference="Weapon,KorhalSporeCannon2,Period" Value="10.000000"/>
         <EffectArray Operation="Set" Reference="Abil,KorhalSporeCannonBombardment2,Cost[0].Cooldown.TimeUse" Value="12.500000"/>
@@ -5329,8 +5503,719 @@
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222224222332343">
+        <EffectArray Reference="Effect,BlackhammerAoELaunch32,AreaArray[0].Radius" Value="0.5"/>
+        <EffectArray Reference="Weapon,Val03QueenOfBladesPsiBlast2,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,HybridD2,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,NeedleSpines2222,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,NeedleSpines22222,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,MengskThorJavelinMissileLaunchers322,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,ParasiteSpore232,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,GuassRifle83,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,GuassRifle832,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,GuassRifle8322222,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,GuassRifle832222,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,GuassRifle83222,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,GuassRifle8322,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,Val03QueenOfBladesPsiBlast2,Period" Value="-0.070000"/>
+        <EffectArray Reference="Weapon,Val03RazorTalons2,Period" Value="-0.070000"/>
+        <EffectArray Reference="Weapon,Spines7,Period" Value="-0.100000"/>
+        <EffectArray Reference="Weapon,HybridD2,Period" Value="-0.110000"/>
+        <EffectArray Reference="Weapon,NeedleSpines2222,Period" Value="-0.084000"/>
+        <EffectArray Reference="Weapon,NeedleSpines22222,Period" Value="-0.042000"/>
+        <EffectArray Reference="Weapon,MengskThorJavelinMissileLaunchers322,Period" Value="-0.042000"/>
+        <EffectArray Reference="Weapon,ParasiteSpore232,Period" Value="-0.007000"/>
+        <EffectArray Reference="Weapon,GuassRifle83,Period" Value="-0.700000"/>
+        <EffectArray Reference="Weapon,GuassRifle832,Period" Value="-1.400000"/>
+        <EffectArray Reference="Weapon,GuassRifle8322222,Period" Value="-0.140000"/>
+        <EffectArray Reference="Weapon,GuassRifle832222,Period" Value="-1.260000"/>
+        <EffectArray Reference="Weapon,GuassRifle83222,Period" Value="-2.100000"/>
+        <EffectArray Reference="Weapon,GuassRifle8322,Period" Value="-1.260000"/>
+        <EffectArray Reference="Weapon,HotSSwarmlingClaws2,Period" Value="-0.049000"/>
+        <EffectArray Reference="Weapon,KaiserBlades11,Period" Value="-0.060000"/>
+        <EffectArray Reference="Weapon,Val03QueenOfBladesPsiBlast2,Level" Value="1"/>
+        <EffectArray Reference="Weapon,Val03RazorTalons2,Level" Value="1"/>
+        <EffectArray Reference="Weapon,Spines7,Level" Value="1"/>
+        <EffectArray Reference="Weapon,HybridD2,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NeedleSpines2222,Level" Value="1"/>
+        <EffectArray Reference="Weapon,MengskThorJavelinMissileLaunchers322,Level" Value="1"/>
+        <EffectArray Reference="Weapon,ParasiteSpore232,Level" Value="1"/>
+        <EffectArray Reference="Weapon,GuassRifle83,Level" Value="1"/>
+        <EffectArray Reference="Weapon,HotSSwarmlingClaws2,Level" Value="1"/>
+        <EffectArray Reference="Weapon,KaiserBlades11,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,Val03QueenOfBladesPsiBlast2,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,Val03RazorTalons2,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,Spines7,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,HybridD2,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,NeedleSpines2222,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,HotSSwarmlingClaws2,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,KaiserBlades11,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level1.dds"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade52224224232222222242223323432">
+        <EffectArray Reference="Effect,BlackhammerAoELaunch32,AreaArray[0].Radius" Value="0.5"/>
+        <EffectArray Reference="Weapon,Val03QueenOfBladesPsiBlast2,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,HybridD2,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,NeedleSpines2222,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,NeedleSpines22222,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,MengskThorJavelinMissileLaunchers322,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,ParasiteSpore232,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,GuassRifle83,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,GuassRifle832,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,GuassRifle8322222,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,GuassRifle832222,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,GuassRifle83222,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,GuassRifle8322,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,Val03QueenOfBladesPsiBlast2,Period" Value="-0.070000"/>
+        <EffectArray Reference="Weapon,Val03RazorTalons2,Period" Value="-0.070000"/>
+        <EffectArray Reference="Weapon,Spines7,Period" Value="-0.100000"/>
+        <EffectArray Reference="Weapon,HybridD2,Period" Value="-0.110000"/>
+        <EffectArray Reference="Weapon,NeedleSpines2222,Period" Value="-0.084000"/>
+        <EffectArray Reference="Weapon,NeedleSpines22222,Period" Value="-0.042000"/>
+        <EffectArray Reference="Weapon,MengskThorJavelinMissileLaunchers322,Period" Value="-0.042000"/>
+        <EffectArray Reference="Weapon,ParasiteSpore232,Period" Value="-0.007000"/>
+        <EffectArray Reference="Weapon,GuassRifle83,Period" Value="-0.700000"/>
+        <EffectArray Reference="Weapon,GuassRifle832,Period" Value="-1.400000"/>
+        <EffectArray Reference="Weapon,GuassRifle8322222,Period" Value="-0.140000"/>
+        <EffectArray Reference="Weapon,GuassRifle832222,Period" Value="-1.260000"/>
+        <EffectArray Reference="Weapon,GuassRifle83222,Period" Value="-2.100000"/>
+        <EffectArray Reference="Weapon,GuassRifle8322,Period" Value="-1.260000"/>
+        <EffectArray Reference="Weapon,HotSSwarmlingClaws2,Period" Value="-0.049000"/>
+        <EffectArray Reference="Weapon,KaiserBlades11,Period" Value="-0.060000"/>
+        <EffectArray Reference="Weapon,Val03QueenOfBladesPsiBlast2,Level" Value="1"/>
+        <EffectArray Reference="Weapon,Val03RazorTalons2,Level" Value="1"/>
+        <EffectArray Reference="Weapon,Spines7,Level" Value="1"/>
+        <EffectArray Reference="Weapon,HybridD2,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NeedleSpines2222,Level" Value="1"/>
+        <EffectArray Reference="Weapon,MengskThorJavelinMissileLaunchers322,Level" Value="1"/>
+        <EffectArray Reference="Weapon,ParasiteSpore232,Level" Value="1"/>
+        <EffectArray Reference="Weapon,GuassRifle83,Level" Value="1"/>
+        <EffectArray Reference="Weapon,HotSSwarmlingClaws2,Level" Value="1"/>
+        <EffectArray Reference="Weapon,KaiserBlades11,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,Val03QueenOfBladesPsiBlast2,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,Val03RazorTalons2,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,Spines7,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,HybridD2,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,NeedleSpines2222,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,HotSSwarmlingClaws2,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,KaiserBlades11,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade52224224232222222242223323433">
+        <EffectArray Reference="Effect,BlackhammerAoELaunch32,AreaArray[0].Radius" Value="0.5"/>
+        <EffectArray Reference="Weapon,Val03QueenOfBladesPsiBlast2,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,HybridD2,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,NeedleSpines2222,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,NeedleSpines22222,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,MengskThorJavelinMissileLaunchers322,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,ParasiteSpore232,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,GuassRifle83,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,GuassRifle832,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,GuassRifle8322222,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,GuassRifle832222,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,GuassRifle83222,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,GuassRifle8322,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,Val03QueenOfBladesPsiBlast2,Period" Value="-0.070000"/>
+        <EffectArray Reference="Weapon,Val03RazorTalons2,Period" Value="-0.070000"/>
+        <EffectArray Reference="Weapon,Spines7,Period" Value="-0.100000"/>
+        <EffectArray Reference="Weapon,HybridD2,Period" Value="-0.110000"/>
+        <EffectArray Reference="Weapon,NeedleSpines2222,Period" Value="-0.084000"/>
+        <EffectArray Reference="Weapon,NeedleSpines22222,Period" Value="-0.042000"/>
+        <EffectArray Reference="Weapon,MengskThorJavelinMissileLaunchers322,Period" Value="-0.042000"/>
+        <EffectArray Reference="Weapon,ParasiteSpore232,Period" Value="-0.007000"/>
+        <EffectArray Reference="Weapon,GuassRifle83,Period" Value="-0.700000"/>
+        <EffectArray Reference="Weapon,GuassRifle832,Period" Value="-1.400000"/>
+        <EffectArray Reference="Weapon,GuassRifle8322222,Period" Value="-0.140000"/>
+        <EffectArray Reference="Weapon,GuassRifle832222,Period" Value="-1.260000"/>
+        <EffectArray Reference="Weapon,GuassRifle83222,Period" Value="-2.100000"/>
+        <EffectArray Reference="Weapon,GuassRifle8322,Period" Value="-1.260000"/>
+        <EffectArray Reference="Weapon,HotSSwarmlingClaws2,Period" Value="-0.049000"/>
+        <EffectArray Reference="Weapon,KaiserBlades11,Period" Value="-0.060000"/>
+        <EffectArray Reference="Weapon,Val03QueenOfBladesPsiBlast2,Level" Value="1"/>
+        <EffectArray Reference="Weapon,Val03RazorTalons2,Level" Value="1"/>
+        <EffectArray Reference="Weapon,Spines7,Level" Value="1"/>
+        <EffectArray Reference="Weapon,HybridD2,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NeedleSpines2222,Level" Value="1"/>
+        <EffectArray Reference="Weapon,MengskThorJavelinMissileLaunchers322,Level" Value="1"/>
+        <EffectArray Reference="Weapon,ParasiteSpore232,Level" Value="1"/>
+        <EffectArray Reference="Weapon,GuassRifle83,Level" Value="1"/>
+        <EffectArray Reference="Weapon,HotSSwarmlingClaws2,Level" Value="1"/>
+        <EffectArray Reference="Weapon,KaiserBlades11,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,Val03QueenOfBladesPsiBlast2,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,Val03RazorTalons2,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,Spines7,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,HybridD2,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,NeedleSpines2222,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,HotSSwarmlingClaws2,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,KaiserBlades11,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade522242242322222222422233235">
+        <EffectArray Reference="Unit,LurkerMP34,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed24,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMPEgg223,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,HydraliskLurker222,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Ravager4,LifeArmor" Value="2"/>
+        <EffectArray Reference="Unit,ScantipedeParasitic3,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Overlord43,LifeArmor" Value="5"/>
+        <EffectArray Reference="Unit,Interceptor4,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,BroodLord5,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,HotSSwarmling34,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Corruptor8,LifeArmor" Value="2"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord24,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Ultralisk64,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Overseer42,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Drone43,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMP34,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed24,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMPEgg223,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HydraliskLurker222,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Ravager4,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,ScantipedeParasitic3,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Overlord43,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Interceptor4,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,BroodLord5,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Corruptor8,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord24,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HotSSwarmling34,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Ultralisk64,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Overseer42,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Drone43,LifeArmorLevel" Value="1"/>
+        <EffectArray Operation="Set" Reference="Actor,BroodLord5,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Corruptor8,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Drone53,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,HydraliskLurker322,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Interceptor6,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-airarmorlevel1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP34,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP44,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMPEgg223,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MutaliskBroodlord24,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Overlord53,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Overseer42,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Ravager5,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,ScantipedeParasitic3,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Ultralisk64,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222224222332352">
+        <EffectArray Reference="Unit,LurkerMP34,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed24,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMPEgg223,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,HydraliskLurker222,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Ravager4,LifeArmor" Value="2"/>
+        <EffectArray Reference="Unit,ScantipedeParasitic3,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Overlord43,LifeArmor" Value="5"/>
+        <EffectArray Reference="Unit,Interceptor4,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,BroodLord5,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,HotSSwarmling34,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Corruptor8,LifeArmor" Value="2"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord24,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Ultralisk64,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Overseer42,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Drone43,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMP34,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed24,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMPEgg223,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HydraliskLurker222,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Ravager4,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,ScantipedeParasitic3,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Overlord43,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Interceptor4,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,BroodLord5,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Corruptor8,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord24,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HotSSwarmling34,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Ultralisk64,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Overseer42,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Drone43,LifeArmorLevel" Value="1"/>
+        <EffectArray Operation="Set" Reference="Actor,BroodLord5,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Corruptor8,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Drone53,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,HydraliskLurker322,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Interceptor6,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-airarmorlevel2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP34,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP44,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMPEgg223,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MutaliskBroodlord24,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Overlord53,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Overseer42,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Ravager5,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,ScantipedeParasitic3,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Ultralisk64,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade522242242322222222422233236">
+        <EffectArray Reference="Unit,LurkerMP34,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed24,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMPEgg223,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,HydraliskLurker222,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Ravager4,LifeArmor" Value="2"/>
+        <EffectArray Reference="Unit,ScantipedeParasitic3,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Overlord43,LifeArmor" Value="5"/>
+        <EffectArray Reference="Unit,Interceptor4,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,BroodLord5,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,HotSSwarmling34,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Corruptor8,LifeArmor" Value="2"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord24,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Ultralisk64,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Overseer42,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Drone43,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMP34,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed24,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMPEgg223,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HydraliskLurker222,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Ravager4,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,ScantipedeParasitic3,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Overlord43,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Interceptor4,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,BroodLord5,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Corruptor8,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord24,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HotSSwarmling34,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Ultralisk64,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Overseer42,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Drone43,LifeArmorLevel" Value="1"/>
+        <EffectArray Operation="Set" Reference="Actor,BroodLord5,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Corruptor8,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Drone53,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,HydraliskLurker322,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Interceptor6,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-airarmorlevel3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP34,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP44,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMPEgg223,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MutaliskBroodlord24,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Overlord53,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Overseer42,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Ravager5,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,ScantipedeParasitic3,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Ultralisk64,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222224222333">
+        <EffectArray Reference="Weapon,ScantipedeParasitic2,Period" Value="-0.075000"/>
+        <EffectArray Reference="Weapon,ScantipedeParasitic,Period" Value="-0.300000"/>
+        <EffectArray Reference="Weapon,RavagerWeapon,Period" Value="-0.240000"/>
+        <EffectArray Reference="Weapon,LurkerMP,Period" Value="-0.300000"/>
+        <EffectArray Reference="Weapon,InterceptorBeam6,Period" Value="-0.450000"/>
+        <EffectArray Reference="Weapon,InterceptorLaunch,Period" Value="-0.075000"/>
+        <EffectArray Reference="Weapon,Spines5,Period" Value="-0.225000"/>
+        <EffectArray Reference="Weapon,NeedleSpines23,Period" Value="-0.150000"/>
+        <EffectArray Reference="Weapon,VoidRayVoid25,Period" Value="-0.075000"/>
+        <EffectArray Reference="Weapon,AcidSaliva56,Period" Value="-0.300000"/>
+        <EffectArray Reference="Weapon,HotSSwarmlingClaws6,Period" Value="-0.100000"/>
+        <EffectArray Reference="Weapon,KaiserBlades4,Period" Value="-0.130000"/>
+        <EffectArray Operation="Set" Reference="Weapon,InterceptorBeam6,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweaponslevel1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,ScantipedeParasitic,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,RavagerWeapon,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,ScantipedeParasitic2,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,LurkerMP,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,Spines5,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,NeedleSpines23,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,VoidRayVoid25,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweaponslevel1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,HotSSwarmlingClaws6,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,KaiserBlades4,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level1.dds"/>
+        <EffectArray Reference="Weapon,ScantipedeParasitic2,Level" Value="1"/>
+        <EffectArray Reference="Weapon,ScantipedeParasitic,Level" Value="1"/>
+        <EffectArray Reference="Weapon,RavagerWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,LurkerMP,Level" Value="1"/>
+        <EffectArray Reference="Weapon,InterceptorBeam6,Level" Value="1"/>
+        <EffectArray Reference="Weapon,InterceptorLaunch,Level" Value="1"/>
+        <EffectArray Reference="Weapon,Spines5,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NeedleSpines23,Level" Value="1"/>
+        <EffectArray Reference="Weapon,VoidRayVoid25,Level" Value="1"/>
+        <EffectArray Reference="Weapon,AcidSaliva56,Level" Value="1"/>
+        <EffectArray Reference="Weapon,HotSSwarmlingClaws6,Level" Value="1"/>
+        <EffectArray Reference="Weapon,KaiserBlades4,Level" Value="1"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade52224224232222222242223332">
+        <EffectArray Reference="Weapon,ScantipedeParasitic2,Period" Value="-0.075000"/>
+        <EffectArray Reference="Weapon,ScantipedeParasitic,Period" Value="-0.300000"/>
+        <EffectArray Reference="Weapon,RavagerWeapon,Period" Value="-0.240000"/>
+        <EffectArray Reference="Weapon,LurkerMP,Period" Value="-0.300000"/>
+        <EffectArray Reference="Weapon,InterceptorBeam6,Period" Value="-0.450000"/>
+        <EffectArray Reference="Weapon,InterceptorLaunch,Period" Value="-0.075000"/>
+        <EffectArray Reference="Weapon,Spines5,Period" Value="-0.225000"/>
+        <EffectArray Reference="Weapon,NeedleSpines23,Period" Value="-0.150000"/>
+        <EffectArray Reference="Weapon,VoidRayVoid25,Period" Value="-0.075000"/>
+        <EffectArray Reference="Weapon,AcidSaliva56,Period" Value="-0.300000"/>
+        <EffectArray Reference="Weapon,HotSSwarmlingClaws6,Period" Value="-0.100000"/>
+        <EffectArray Reference="Weapon,KaiserBlades4,Period" Value="-0.130000"/>
+        <EffectArray Operation="Set" Reference="Weapon,InterceptorBeam6,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweaponslevel2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,ScantipedeParasitic,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,RavagerWeapon,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,ScantipedeParasitic2,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,LurkerMP,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,Spines5,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,NeedleSpines23,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,VoidRayVoid25,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweaponslevel2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,HotSSwarmlingClaws6,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,KaiserBlades4,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <EffectArray Reference="Weapon,ScantipedeParasitic2,Level" Value="1"/>
+        <EffectArray Reference="Weapon,ScantipedeParasitic,Level" Value="1"/>
+        <EffectArray Reference="Weapon,RavagerWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,LurkerMP,Level" Value="1"/>
+        <EffectArray Reference="Weapon,InterceptorBeam6,Level" Value="1"/>
+        <EffectArray Reference="Weapon,InterceptorLaunch,Level" Value="1"/>
+        <EffectArray Reference="Weapon,Spines5,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NeedleSpines23,Level" Value="1"/>
+        <EffectArray Reference="Weapon,VoidRayVoid25,Level" Value="1"/>
+        <EffectArray Reference="Weapon,AcidSaliva56,Level" Value="1"/>
+        <EffectArray Reference="Weapon,HotSSwarmlingClaws6,Level" Value="1"/>
+        <EffectArray Reference="Weapon,KaiserBlades4,Level" Value="1"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222224222334">
+        <EffectArray Reference="Weapon,ScantipedeParasitic2,Period" Value="-0.075000"/>
+        <EffectArray Reference="Weapon,ScantipedeParasitic,Period" Value="-0.300000"/>
+        <EffectArray Reference="Weapon,RavagerWeapon,Period" Value="-0.240000"/>
+        <EffectArray Reference="Weapon,LurkerMP,Period" Value="-0.300000"/>
+        <EffectArray Reference="Weapon,InterceptorBeam6,Period" Value="-0.450000"/>
+        <EffectArray Reference="Weapon,InterceptorLaunch,Period" Value="-0.075000"/>
+        <EffectArray Reference="Weapon,Spines5,Period" Value="-0.225000"/>
+        <EffectArray Reference="Weapon,NeedleSpines23,Period" Value="-0.150000"/>
+        <EffectArray Reference="Weapon,VoidRayVoid25,Period" Value="-0.075000"/>
+        <EffectArray Reference="Weapon,AcidSaliva56,Period" Value="-0.300000"/>
+        <EffectArray Reference="Weapon,HotSSwarmlingClaws6,Period" Value="-0.100000"/>
+        <EffectArray Reference="Weapon,KaiserBlades4,Period" Value="-0.130000"/>
+        <EffectArray Operation="Set" Reference="Weapon,InterceptorBeam6,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweaponslevel3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,ScantipedeParasitic,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,RavagerWeapon,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,ScantipedeParasitic2,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,LurkerMP,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,Spines5,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,NeedleSpines23,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,VoidRayVoid25,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweaponslevel3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,HotSSwarmlingClaws6,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,KaiserBlades4,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray Reference="Weapon,ScantipedeParasitic2,Level" Value="1"/>
+        <EffectArray Reference="Weapon,ScantipedeParasitic,Level" Value="1"/>
+        <EffectArray Reference="Weapon,RavagerWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,LurkerMP,Level" Value="1"/>
+        <EffectArray Reference="Weapon,InterceptorBeam6,Level" Value="1"/>
+        <EffectArray Reference="Weapon,InterceptorLaunch,Level" Value="1"/>
+        <EffectArray Reference="Weapon,Spines5,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NeedleSpines23,Level" Value="1"/>
+        <EffectArray Reference="Weapon,VoidRayVoid25,Level" Value="1"/>
+        <EffectArray Reference="Weapon,AcidSaliva56,Level" Value="1"/>
+        <EffectArray Reference="Weapon,HotSSwarmlingClaws6,Level" Value="1"/>
+        <EffectArray Reference="Weapon,KaiserBlades4,Level" Value="1"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade522242242322222222422234">
         <EffectArray Reference="Abil,BuildNydusCanal32,Range" Value="455"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade522242242322222222422235">
+        <EffectArray Operation="Set" Reference="Actor,BroodLordCocoon23,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,BroodLord4,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Corruptor7,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,DefilerMP32,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Drone522,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,HydraliskLurker32,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP33,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP43,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MutaliskBroodlord23,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Overlord52,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,QueenClassic32,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Ultralisk63,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Reference="Unit,Corruptor7,LifeMax" Value="40"/>
+        <EffectArray Reference="Unit,Corruptor7,LifeStart" Value="40"/>
+        <EffectArray Reference="Unit,LurkerMP33,LifeMax" Value="40"/>
+        <EffectArray Reference="Unit,LurkerMP33,LifeStart" Value="40"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed23,LifeStart" Value="40"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed23,LifeMax" Value="40"/>
+        <EffectArray Reference="Unit,HydraliskLurker22,LifeMax" Value="25"/>
+        <EffectArray Reference="Unit,HydraliskLurker22,LifeStart" Value="25"/>
+        <EffectArray Reference="Unit,BroodLordCocoon23,LifeMax" Value="40"/>
+        <EffectArray Reference="Unit,BroodLordCocoon23,LifeStart" Value="40"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord233,LifeMax" Value="35"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord233,LifeStart" Value="35"/>
+        <EffectArray Reference="Unit,Overlord42,LifeMax" Value="120"/>
+        <EffectArray Reference="Unit,Overlord42,LifeStart" Value="120"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord23,LifeMax" Value="53"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord23,LifeStart" Value="53"/>
+        <EffectArray Reference="Unit,BroodLord4,LifeMax" Value="115"/>
+        <EffectArray Reference="Unit,BroodLord4,LifeStart" Value="115"/>
+        <EffectArray Reference="Unit,HotSSwarmling33,LifeMax" Value="7"/>
+        <EffectArray Reference="Unit,HotSSwarmling33,LifeStart" Value="7"/>
+        <EffectArray Reference="Unit,DefilerMP32,LifeMax" Value="40"/>
+        <EffectArray Reference="Unit,DefilerMP32,LifeStart" Value="40"/>
+        <EffectArray Reference="Unit,Ultralisk63,LifeMax" Value="250"/>
+        <EffectArray Reference="Unit,Ultralisk63,LifeStart" Value="250"/>
+        <EffectArray Reference="Unit,Drone422,LifeMax" Value="15"/>
+        <EffectArray Reference="Unit,Drone422,LifeStart" Value="15"/>
+        <EffectArray Reference="Unit,Corruptor7,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMP33,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed23,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HydraliskLurker22,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,BroodLordCocoon23,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord233,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Overlord42,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord23,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,BroodLord4,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HotSSwarmling33,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,DefilerMP32,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Ultralisk63,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Drone422,LifeArmorLevel" Value="1"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222224222352">
+        <EffectArray Operation="Set" Reference="Actor,BroodLordCocoon23,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,BroodLord4,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Corruptor7,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,DefilerMP32,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Drone522,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,HydraliskLurker32,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP33,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP43,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MutaliskBroodlord23,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Overlord52,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,QueenClassic32,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Ultralisk63,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Reference="Unit,Corruptor7,LifeMax" Value="40"/>
+        <EffectArray Reference="Unit,Corruptor7,LifeStart" Value="40"/>
+        <EffectArray Reference="Unit,LurkerMP33,LifeMax" Value="40"/>
+        <EffectArray Reference="Unit,LurkerMP33,LifeStart" Value="40"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed23,LifeStart" Value="40"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed23,LifeMax" Value="40"/>
+        <EffectArray Reference="Unit,HydraliskLurker22,LifeMax" Value="25"/>
+        <EffectArray Reference="Unit,HydraliskLurker22,LifeStart" Value="25"/>
+        <EffectArray Reference="Unit,BroodLordCocoon23,LifeMax" Value="40"/>
+        <EffectArray Reference="Unit,BroodLordCocoon23,LifeStart" Value="40"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord233,LifeMax" Value="35"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord233,LifeStart" Value="35"/>
+        <EffectArray Reference="Unit,Overlord42,LifeMax" Value="120"/>
+        <EffectArray Reference="Unit,Overlord42,LifeStart" Value="120"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord23,LifeMax" Value="53"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord23,LifeStart" Value="53"/>
+        <EffectArray Reference="Unit,BroodLord4,LifeMax" Value="115"/>
+        <EffectArray Reference="Unit,BroodLord4,LifeStart" Value="115"/>
+        <EffectArray Reference="Unit,HotSSwarmling33,LifeMax" Value="7"/>
+        <EffectArray Reference="Unit,HotSSwarmling33,LifeStart" Value="7"/>
+        <EffectArray Reference="Unit,DefilerMP32,LifeMax" Value="40"/>
+        <EffectArray Reference="Unit,DefilerMP32,LifeStart" Value="40"/>
+        <EffectArray Reference="Unit,Ultralisk63,LifeMax" Value="250"/>
+        <EffectArray Reference="Unit,Ultralisk63,LifeStart" Value="250"/>
+        <EffectArray Reference="Unit,Drone422,LifeMax" Value="15"/>
+        <EffectArray Reference="Unit,Drone422,LifeStart" Value="15"/>
+        <EffectArray Reference="Unit,Corruptor7,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMP33,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed23,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HydraliskLurker22,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,BroodLordCocoon23,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord233,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Overlord42,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord23,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,BroodLord4,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HotSSwarmling33,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,DefilerMP32,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Ultralisk63,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Drone422,LifeArmorLevel" Value="1"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade522242242322222222422236">
+        <EffectArray Operation="Set" Reference="Actor,BroodLordCocoon23,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,BroodLord4,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Corruptor7,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,DefilerMP32,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Drone522,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,HydraliskLurker32,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP33,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP43,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MutaliskBroodlord23,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Overlord52,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,QueenClassic32,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Ultralisk63,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Reference="Unit,Corruptor7,LifeMax" Value="40"/>
+        <EffectArray Reference="Unit,Corruptor7,LifeStart" Value="40"/>
+        <EffectArray Reference="Unit,LurkerMP33,LifeMax" Value="40"/>
+        <EffectArray Reference="Unit,LurkerMP33,LifeStart" Value="40"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed23,LifeStart" Value="40"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed23,LifeMax" Value="40"/>
+        <EffectArray Reference="Unit,HydraliskLurker22,LifeMax" Value="25"/>
+        <EffectArray Reference="Unit,HydraliskLurker22,LifeStart" Value="25"/>
+        <EffectArray Reference="Unit,BroodLordCocoon23,LifeMax" Value="40"/>
+        <EffectArray Reference="Unit,BroodLordCocoon23,LifeStart" Value="40"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord233,LifeMax" Value="35"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord233,LifeStart" Value="35"/>
+        <EffectArray Reference="Unit,Overlord42,LifeMax" Value="120"/>
+        <EffectArray Reference="Unit,Overlord42,LifeStart" Value="120"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord23,LifeMax" Value="53"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord23,LifeStart" Value="53"/>
+        <EffectArray Reference="Unit,BroodLord4,LifeMax" Value="115"/>
+        <EffectArray Reference="Unit,BroodLord4,LifeStart" Value="115"/>
+        <EffectArray Reference="Unit,HotSSwarmling33,LifeMax" Value="7"/>
+        <EffectArray Reference="Unit,HotSSwarmling33,LifeStart" Value="7"/>
+        <EffectArray Reference="Unit,DefilerMP32,LifeMax" Value="40"/>
+        <EffectArray Reference="Unit,DefilerMP32,LifeStart" Value="40"/>
+        <EffectArray Reference="Unit,Ultralisk63,LifeMax" Value="250"/>
+        <EffectArray Reference="Unit,Ultralisk63,LifeStart" Value="250"/>
+        <EffectArray Reference="Unit,Drone422,LifeMax" Value="15"/>
+        <EffectArray Reference="Unit,Drone422,LifeStart" Value="15"/>
+        <EffectArray Reference="Unit,Corruptor7,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMP33,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed23,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HydraliskLurker22,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,BroodLordCocoon23,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord233,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Overlord42,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord23,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,BroodLord4,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HotSSwarmling33,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,DefilerMP32,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Ultralisk63,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Drone422,LifeArmorLevel" Value="1"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade52224224232222222242224">
+        <EffectArray Operation="Set" Reference="Weapon,Spines4,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,OmegaliskHeadAttack,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,Omegalisk,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,KerriganVoidUlnar022,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,GoliathA22,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,NeedleSpines222,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,ParasiteSpore23,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,HotSSwarmlingClaws5,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level1.dds"/>
+        <EffectArray Reference="Weapon,Spines4,Level" Value="1"/>
+        <EffectArray Reference="Weapon,OmegaliskHeadAttack,Level" Value="1"/>
+        <EffectArray Reference="Weapon,Omegalisk,Level" Value="1"/>
+        <EffectArray Reference="Weapon,KerriganVoidUlnar022,Level" Value="1"/>
+        <EffectArray Reference="Weapon,GoliathA22,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NeedleSpines222,Level" Value="1"/>
+        <EffectArray Reference="Weapon,GuassRifle82,Level" Value="1"/>
+        <EffectArray Reference="Weapon,ParasiteSpore23,Level" Value="1"/>
+        <EffectArray Reference="Weapon,HotSSwarmlingClaws5,Level" Value="1"/>
+        <EffectArray Reference="Effect,HotSSwarmlingClawsDamage4,AttributeBonus[Light]" Value="2.5"/>
+        <EffectArray Reference="Effect,KerriganVoidUlnar02ChainReaction1Damage2,AttributeBonus[Light]" Value="12.5"/>
+        <EffectArray Reference="Effect,KerriganVoidUlnar02ChainReaction2Damage2,AttributeBonus[Light]" Value="5"/>
+        <EffectArray Reference="Effect,KerriganVoidUlnar02ChainReaction3Damage2,AttributeBonus[Light]" Value="5"/>
+        <EffectArray Reference="Effect,KerriganVoidUlnar02ChainReaction4Damage2,AttributeBonus[Light]" Value="5"/>
+        <EffectArray Reference="Effect,KerriganVoidUlnar02ChainReaction5Damage2,AttributeBonus[Light]" Value="5"/>
+        <EffectArray Reference="Effect,ParasiteSporeDamage23,AttributeBonus[Light]" Value="2.5"/>
+        <EffectArray Reference="Effect,Spines3,AttributeBonus[Light]" Value="2.5"/>
+        <EffectArray Reference="Effect,HunterKillerU,AttributeBonus[Light]" Value="7"/>
+        <EffectArray Reference="Effect,ZHybridPsionicShockwaveSpellDamage23,AttributeBonus[Light]" Value="12.5"/>
+        <EffectArray Reference="Effect,ZHybridPsionicShockwaveSpellDamage223,AttributeBonus[Light]" Value="12.5"/>
+        <EffectArray Reference="Effect,NeedleSpinesDamage22,AttributeBonus[Light]" Value="7.5"/>
+        <EffectArray Reference="Effect,OmegaliskHeadAttackDamage,AttributeBonus[Light]" Value="60"/>
+        <EffectArray Reference="Effect,OmegaliskCleaveMU,AttributeBonus[Light]" Value="7.5"/>
+        <EffectArray Reference="Effect,OmegaliskU,AttributeBonus[Light]" Value="30"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade522242242322222222422242">
+        <EffectArray Operation="Set" Reference="Weapon,Spines4,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,OmegaliskHeadAttack,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,Omegalisk,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,KerriganVoidUlnar022,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,GoliathA22,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,NeedleSpines222,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,ParasiteSpore23,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,HotSSwarmlingClaws5,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray Reference="Weapon,Spines4,Level" Value="1"/>
+        <EffectArray Reference="Weapon,OmegaliskHeadAttack,Level" Value="1"/>
+        <EffectArray Reference="Weapon,Omegalisk,Level" Value="1"/>
+        <EffectArray Reference="Weapon,KerriganVoidUlnar022,Level" Value="1"/>
+        <EffectArray Reference="Weapon,GoliathA22,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NeedleSpines222,Level" Value="1"/>
+        <EffectArray Reference="Weapon,GuassRifle82,Level" Value="1"/>
+        <EffectArray Reference="Weapon,ParasiteSpore23,Level" Value="1"/>
+        <EffectArray Reference="Weapon,HotSSwarmlingClaws5,Level" Value="1"/>
+        <EffectArray Reference="Effect,HotSSwarmlingClawsDamage4,AttributeBonus[Light]" Value="-2.5"/>
+        <EffectArray Reference="Effect,KerriganVoidUlnar02ChainReaction1Damage2,AttributeBonus[Light]" Value="-12.5"/>
+        <EffectArray Reference="Effect,KerriganVoidUlnar02ChainReaction2Damage2,AttributeBonus[Light]" Value="-5"/>
+        <EffectArray Reference="Effect,KerriganVoidUlnar02ChainReaction3Damage2,AttributeBonus[Light]" Value="-5"/>
+        <EffectArray Reference="Effect,KerriganVoidUlnar02ChainReaction4Damage2,AttributeBonus[Light]" Value="-5"/>
+        <EffectArray Reference="Effect,KerriganVoidUlnar02ChainReaction5Damage2,AttributeBonus[Light]" Value="-5"/>
+        <EffectArray Reference="Effect,ParasiteSporeDamage23,AttributeBonus[Light]" Value="-2.5"/>
+        <EffectArray Reference="Effect,Spines3,AttributeBonus[Light]" Value="-2.5"/>
+        <EffectArray Reference="Effect,HunterKillerU,AttributeBonus[Light]" Value="-7"/>
+        <EffectArray Reference="Effect,ZHybridPsionicShockwaveSpellDamage23,AttributeBonus[Light]" Value="-12.5"/>
+        <EffectArray Reference="Effect,ZHybridPsionicShockwaveSpellDamage223,AttributeBonus[Light]" Value="-12.5"/>
+        <EffectArray Reference="Effect,NeedleSpinesDamage22,AttributeBonus[Light]" Value="-7.5"/>
+        <EffectArray Reference="Effect,OmegaliskHeadAttackDamage,AttributeBonus[Light]" Value="-60"/>
+        <EffectArray Reference="Effect,OmegaliskCleaveMU,AttributeBonus[Light]" Value="-7.5"/>
+        <EffectArray Reference="Effect,OmegaliskU,AttributeBonus[Light]" Value="-30"/>
+        <EffectArray Reference="Effect,HotSSwarmlingClawsDamage4,AttributeBonus[Armored]" Value="-2.5"/>
+        <EffectArray Reference="Effect,HotSSwarmlingClawsDamage4,Amount" Value="2.5"/>
+        <EffectArray Reference="Effect,KerriganVoidUlnar02ChainReaction1Damage2,AttributeBonus[Armored]" Value="-12.5"/>
+        <EffectArray Reference="Effect,KerriganVoidUlnar02ChainReaction1Damage2,Amount" Value="12.5"/>
+        <EffectArray Reference="Effect,KerriganVoidUlnar02ChainReaction2Damage2,AttributeBonus[Armored]" Value="-5"/>
+        <EffectArray Reference="Effect,KerriganVoidUlnar02ChainReaction2Damage2,Amount" Value="5"/>
+        <EffectArray Reference="Effect,KerriganVoidUlnar02ChainReaction3Damage2,AttributeBonus[Armored]" Value="-5"/>
+        <EffectArray Reference="Effect,KerriganVoidUlnar02ChainReaction3Damage2,Amount" Value="5"/>
+        <EffectArray Reference="Effect,KerriganVoidUlnar02ChainReaction4Damage2,AttributeBonus[Armored]" Value="-5"/>
+        <EffectArray Reference="Effect,KerriganVoidUlnar02ChainReaction4Damage2,Amount" Value="5"/>
+        <EffectArray Reference="Effect,KerriganVoidUlnar02ChainReaction5Damage2,AttributeBonus[Armored]" Value="-5"/>
+        <EffectArray Reference="Effect,KerriganVoidUlnar02ChainReaction5Damage2,Amount" Value="5"/>
+        <EffectArray Reference="Effect,ParasiteSporeDamage23,AttributeBonus[Armored]" Value="-2.5"/>
+        <EffectArray Reference="Effect,ParasiteSporeDamage23,Amount" Value="2.5"/>
+        <EffectArray Reference="Effect,Spines3,AttributeBonus[Armored]" Value="-2.5"/>
+        <EffectArray Reference="Effect,Spines3,Amount" Value="2.5"/>
+        <EffectArray Reference="Effect,HunterKillerU,AttributeBonus[Armored]" Value="-7"/>
+        <EffectArray Reference="Effect,HunterKillerU,Amount" Value="7"/>
+        <EffectArray Reference="Effect,ZHybridPsionicShockwaveSpellDamage23,AttributeBonus[Armored]" Value="-12.5"/>
+        <EffectArray Reference="Effect,ZHybridPsionicShockwaveSpellDamage23,Amount" Value="12.5"/>
+        <EffectArray Reference="Effect,ZHybridPsionicShockwaveSpellDamage223,AttributeBonus[Armored]" Value="-12.5"/>
+        <EffectArray Reference="Effect,ZHybridPsionicShockwaveSpellDamage223,Amount" Value="12.5"/>
+        <EffectArray Reference="Effect,NeedleSpinesDamage22,AttributeBonus[Armored]" Value="-7.5"/>
+        <EffectArray Reference="Effect,NeedleSpinesDamage22,Amount" Value="7.5"/>
+        <EffectArray Reference="Effect,OmegaliskHeadAttackDamage,AttributeBonus[Armored]" Value="-60"/>
+        <EffectArray Reference="Effect,OmegaliskHeadAttackDamage,Amount" Value="60"/>
+        <EffectArray Reference="Effect,OmegaliskCleaveMU,AttributeBonus[Armored]" Value="-7.5"/>
+        <EffectArray Reference="Effect,OmegaliskCleaveMU,Amount" Value="7.5"/>
+        <EffectArray Reference="Effect,OmegaliskU,AttributeBonus[Armored]" Value="-30"/>
+        <EffectArray Reference="Effect,OmegaliskU,Amount" Value="30"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade52224224232222222242225">
+        <EffectArray Operation="Set" Reference="Weapon,Spines4,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,OmegaliskHeadAttack,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,Omegalisk,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,KerriganVoidUlnar022,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,GoliathA22,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,NeedleSpines222,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,ParasiteSpore23,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,HotSSwarmlingClaws5,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <EffectArray Reference="Weapon,Spines4,Level" Value="1"/>
+        <EffectArray Reference="Weapon,OmegaliskHeadAttack,Level" Value="1"/>
+        <EffectArray Reference="Weapon,Omegalisk,Level" Value="1"/>
+        <EffectArray Reference="Weapon,KerriganVoidUlnar022,Level" Value="1"/>
+        <EffectArray Reference="Weapon,GoliathA22,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NeedleSpines222,Level" Value="1"/>
+        <EffectArray Reference="Weapon,GuassRifle82,Level" Value="1"/>
+        <EffectArray Reference="Weapon,ParasiteSpore23,Level" Value="1"/>
+        <EffectArray Reference="Weapon,HotSSwarmlingClaws5,Level" Value="1"/>
+        <EffectArray Reference="Effect,HotSSwarmlingClawsDamage4,AttributeBonus[Armored]" Value="2.5"/>
+        <EffectArray Reference="Effect,KerriganVoidUlnar02ChainReaction1Damage2,AttributeBonus[Armored]" Value="12.5"/>
+        <EffectArray Reference="Effect,KerriganVoidUlnar02ChainReaction2Damage2,AttributeBonus[Armored]" Value="5"/>
+        <EffectArray Reference="Effect,KerriganVoidUlnar02ChainReaction3Damage2,AttributeBonus[Armored]" Value="5"/>
+        <EffectArray Reference="Effect,KerriganVoidUlnar02ChainReaction4Damage2,AttributeBonus[Armored]" Value="5"/>
+        <EffectArray Reference="Effect,KerriganVoidUlnar02ChainReaction5Damage2,AttributeBonus[Armored]" Value="5"/>
+        <EffectArray Reference="Effect,ParasiteSporeDamage23,AttributeBonus[Armored]" Value="2.5"/>
+        <EffectArray Reference="Effect,Spines3,AttributeBonus[Armored]" Value="2.5"/>
+        <EffectArray Reference="Effect,HunterKillerU,AttributeBonus[Armored]" Value="7"/>
+        <EffectArray Reference="Effect,ZHybridPsionicShockwaveSpellDamage23,AttributeBonus[Armored]" Value="12.5"/>
+        <EffectArray Reference="Effect,ZHybridPsionicShockwaveSpellDamage223,AttributeBonus[Armored]" Value="12.5"/>
+        <EffectArray Reference="Effect,NeedleSpinesDamage22,AttributeBonus[Armored]" Value="7.5"/>
+        <EffectArray Reference="Effect,OmegaliskHeadAttackDamage,AttributeBonus[Armored]" Value="60"/>
+        <EffectArray Reference="Effect,OmegaliskCleaveMU,AttributeBonus[Armored]" Value="7.5"/>
+        <EffectArray Reference="Effect,OmegaliskU,AttributeBonus[Armored]" Value="30"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -5436,6 +6321,573 @@
         <EffectArray Operation="Set" Reference="Unit,Scourge4,Acceleration" Value="1000.000000"/>
         <EffectArray Operation="Set" Reference="Unit,MiscCreep2,Acceleration" Value="1000.000000"/>
         <EffectArray Reference="Unit,MiscCreep2,Speed" Value="2.000000"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222224332223">
+        <EffectArray Reference="Weapon,HotSBanelingExplode,Level" Value="1"/>
+        <EffectArray Reference="Weapon,HotSBanelingExplodeBuilding,Level" Value="1"/>
+        <EffectArray Reference="Weapon,TalonsMissile,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,TalonsMissile,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level1.dds"/>
+        <EffectArray Reference="Weapon,VolatileBurstBuilding,Level" Value="1"/>
+        <EffectArray Reference="Weapon,ParasiteSpore3,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,ParasiteSpore3,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level1.dds"/>
+        <EffectArray Reference="Weapon,Spines6,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,Spines6,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level1.dds"/>
+        <EffectArray Reference="Weapon,NeedleSpines2,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,NeedleSpines2,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level1.dds"/>
+        <EffectArray Reference="Weapon,GlaiveWurm9,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,GlaiveWurm9,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level1.dds"/>
+        <EffectArray Reference="Weapon,HydraliskMelee22,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,HydraliskMelee22,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level1.dds"/>
+        <EffectArray Reference="Weapon,GuassRifle8,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,AcidSpines,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level1.dds"/>
+        <EffectArray Reference="Weapon,AcidSpines,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,Talons,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level1.dds"/>
+        <EffectArray Reference="Weapon,Talons,Level" Value="1"/>
+        <EffectArray Reference="Weapon,Suicide6,Level" Value="1"/>
+        <EffectArray Reference="Weapon,Suicide62,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,HotSSwarmlingClaws32,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level1.dds"/>
+        <EffectArray Reference="Weapon,HotSSwarmlingClaws32,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,KaiserBlades,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level1.dds"/>
+        <EffectArray Reference="Weapon,KaiserBlades,Level" Value="1"/>
+        <EffectArray Reference="Effect,AcidSpines,Amount" Value="3"/>
+        <EffectArray Reference="Effect,ExplosiveSpinesDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,HotSBanelingExplodeLargeDirect,Amount" Value="3"/>
+        <EffectArray Reference="Effect,HotSSwarmlingClawsDamage6,Amount" Value="3"/>
+        <EffectArray Reference="Effect,HotSUltraliskKaiserBladesDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,HotSUltraliskKaiserBladesSecondaryDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,HotSUltraliskKaiserBladesSecondaryUpgradeDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,MutaliskExplosiveGlaive8,Amount" Value="3"/>
+        <EffectArray Reference="Effect,MutaliskExplosiveGlaive8,AttributeBonus[Armored]" Value="3"/>
+        <EffectArray Reference="Effect,TalonsMissileDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,Talons,AttributeBonus[Armored]" Value="3"/>
+        <EffectArray Reference="Effect,GlaiveWurmU18,Amount" Value="3"/>
+        <EffectArray Reference="Effect,GlaiveWurmU28,Amount" Value="3"/>
+        <EffectArray Reference="Effect,GlaiveWurmU38,Amount" Value="3"/>
+        <EffectArray Reference="Effect,VolatileBurstU2,Amount" Value="3"/>
+        <EffectArray Reference="Effect,VolatileBurstFriendlyBuildingDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,VolatileBurstFriendlyUnitDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,VolatileBurstFriendlyUnitDamage,AttributeBonus[Light]" Value="3"/>
+        <EffectArray Reference="Effect,VolatileBurstU,Amount" Value="3"/>
+        <EffectArray Reference="Effect,VolatileBurstU,AttributeBonus[Light]" Value="3"/>
+        <EffectArray Reference="Effect,TalonsMissileDamage,AttributeBonus[Armored]" Value="3"/>
+        <EffectArray Reference="Effect,Talons,Amount" Value="3"/>
+        <EffectArray Reference="Effect,ParasiteSporeDamage3,Amount" Value="3"/>
+        <EffectArray Reference="Effect,ParasiteSporeDamage3,AttributeBonus[Massive]" Value="3"/>
+        <EffectArray Reference="Effect,Spines5,Amount" Value="3"/>
+        <EffectArray Reference="Effect,HydraliskMelee2,Amount" Value="3"/>
+        <EffectArray Reference="Effect,HydraliskMelee2,AttributeBonus[Light]" Value="3"/>
+        <EffectArray Reference="Effect,HydraliskMelee,Amount" Value="3"/>
+        <EffectArray Reference="Effect,NeedleSpinesDamage2,Amount" Value="3"/>
+        <EffectArray Reference="Effect,IrradiatePeriodicDamage12,Amount" Value="3"/>
+        <EffectArray Reference="Effect,SuicideDamage62,Amount" Value="3"/>
+        <EffectArray Reference="Effect,SuicideDamage6,Amount" Value="3"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade52224224232222222243322232">
+        <EffectArray Reference="Weapon,HotSBanelingExplode,Level" Value="1"/>
+        <EffectArray Reference="Weapon,HotSBanelingExplodeBuilding,Level" Value="1"/>
+        <EffectArray Reference="Weapon,TalonsMissile,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,TalonsMissile,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray Reference="Weapon,VolatileBurstBuilding,Level" Value="1"/>
+        <EffectArray Reference="Weapon,ParasiteSpore3,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,ParasiteSpore3,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level3.dds"/>
+        <EffectArray Reference="Weapon,Spines6,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,Spines6,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray Reference="Weapon,NeedleSpines2,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,NeedleSpines2,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray Reference="Weapon,GlaiveWurm9,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,GlaiveWurm9,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level3.dds"/>
+        <EffectArray Reference="Weapon,HydraliskMelee22,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,HydraliskMelee22,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray Reference="Weapon,GuassRifle8,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,AcidSpines,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray Reference="Weapon,AcidSpines,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,Talons,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray Reference="Weapon,Talons,Level" Value="1"/>
+        <EffectArray Reference="Weapon,Suicide6,Level" Value="1"/>
+        <EffectArray Reference="Weapon,Suicide62,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,HotSSwarmlingClaws32,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray Reference="Weapon,HotSSwarmlingClaws32,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,KaiserBlades,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray Reference="Weapon,KaiserBlades,Level" Value="1"/>
+        <EffectArray Reference="Effect,AcidSpines,Amount" Value="3"/>
+        <EffectArray Reference="Effect,ExplosiveSpinesDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,HotSBanelingExplodeLargeDirect,Amount" Value="3"/>
+        <EffectArray Reference="Effect,HotSSwarmlingClawsDamage6,Amount" Value="3"/>
+        <EffectArray Reference="Effect,HotSUltraliskKaiserBladesDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,HotSUltraliskKaiserBladesSecondaryDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,HotSUltraliskKaiserBladesSecondaryUpgradeDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,MutaliskExplosiveGlaive8,Amount" Value="3"/>
+        <EffectArray Reference="Effect,MutaliskExplosiveGlaive8,AttributeBonus[Armored]" Value="3"/>
+        <EffectArray Reference="Effect,TalonsMissileDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,Talons,AttributeBonus[Armored]" Value="3"/>
+        <EffectArray Reference="Effect,GlaiveWurmU18,Amount" Value="3"/>
+        <EffectArray Reference="Effect,GlaiveWurmU28,Amount" Value="3"/>
+        <EffectArray Reference="Effect,GlaiveWurmU38,Amount" Value="3"/>
+        <EffectArray Reference="Effect,VolatileBurstU2,Amount" Value="3"/>
+        <EffectArray Reference="Effect,VolatileBurstFriendlyBuildingDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,VolatileBurstFriendlyUnitDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,VolatileBurstFriendlyUnitDamage,AttributeBonus[Light]" Value="3"/>
+        <EffectArray Reference="Effect,VolatileBurstU,Amount" Value="3"/>
+        <EffectArray Reference="Effect,VolatileBurstU,AttributeBonus[Light]" Value="3"/>
+        <EffectArray Reference="Effect,TalonsMissileDamage,AttributeBonus[Armored]" Value="3"/>
+        <EffectArray Reference="Effect,Talons,Amount" Value="3"/>
+        <EffectArray Reference="Effect,ParasiteSporeDamage3,Amount" Value="3"/>
+        <EffectArray Reference="Effect,ParasiteSporeDamage3,AttributeBonus[Massive]" Value="3"/>
+        <EffectArray Reference="Effect,Spines5,Amount" Value="3"/>
+        <EffectArray Reference="Effect,HydraliskMelee2,Amount" Value="3"/>
+        <EffectArray Reference="Effect,HydraliskMelee2,AttributeBonus[Light]" Value="3"/>
+        <EffectArray Reference="Effect,HydraliskMelee,Amount" Value="3"/>
+        <EffectArray Reference="Effect,NeedleSpinesDamage2,Amount" Value="3"/>
+        <EffectArray Reference="Effect,IrradiatePeriodicDamage12,Amount" Value="3"/>
+        <EffectArray Reference="Effect,SuicideDamage62,Amount" Value="3"/>
+        <EffectArray Reference="Effect,SuicideDamage6,Amount" Value="3"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222224332224">
+        <EffectArray Reference="Weapon,HotSBanelingExplode,Level" Value="1"/>
+        <EffectArray Reference="Weapon,HotSBanelingExplodeBuilding,Level" Value="1"/>
+        <EffectArray Reference="Weapon,TalonsMissile,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,TalonsMissile,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level2.dds"/>
+        <EffectArray Reference="Weapon,VolatileBurstBuilding,Level" Value="1"/>
+        <EffectArray Reference="Weapon,ParasiteSpore3,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,ParasiteSpore3,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level2.dds"/>
+        <EffectArray Reference="Weapon,Spines6,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,Spines6,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <EffectArray Reference="Weapon,NeedleSpines2,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,NeedleSpines2,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level2.dds"/>
+        <EffectArray Reference="Weapon,GlaiveWurm9,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,GlaiveWurm9,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level2.dds"/>
+        <EffectArray Reference="Weapon,HydraliskMelee22,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,HydraliskMelee22,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <EffectArray Reference="Weapon,GuassRifle8,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,AcidSpines,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level2.dds"/>
+        <EffectArray Reference="Weapon,AcidSpines,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,Talons,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level2.dds"/>
+        <EffectArray Reference="Weapon,Talons,Level" Value="1"/>
+        <EffectArray Reference="Weapon,Suicide6,Level" Value="1"/>
+        <EffectArray Reference="Weapon,Suicide62,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,HotSSwarmlingClaws32,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <EffectArray Reference="Weapon,HotSSwarmlingClaws32,Level" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,KaiserBlades,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <EffectArray Reference="Weapon,KaiserBlades,Level" Value="1"/>
+        <EffectArray Reference="Effect,AcidSpines,Amount" Value="3"/>
+        <EffectArray Reference="Effect,ExplosiveSpinesDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,HotSBanelingExplodeLargeDirect,Amount" Value="3"/>
+        <EffectArray Reference="Effect,HotSSwarmlingClawsDamage6,Amount" Value="3"/>
+        <EffectArray Reference="Effect,HotSUltraliskKaiserBladesDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,HotSUltraliskKaiserBladesSecondaryDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,HotSUltraliskKaiserBladesSecondaryUpgradeDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,MutaliskExplosiveGlaive8,Amount" Value="3"/>
+        <EffectArray Reference="Effect,MutaliskExplosiveGlaive8,AttributeBonus[Armored]" Value="3"/>
+        <EffectArray Reference="Effect,TalonsMissileDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,Talons,AttributeBonus[Armored]" Value="3"/>
+        <EffectArray Reference="Effect,GlaiveWurmU18,Amount" Value="3"/>
+        <EffectArray Reference="Effect,GlaiveWurmU28,Amount" Value="3"/>
+        <EffectArray Reference="Effect,GlaiveWurmU38,Amount" Value="3"/>
+        <EffectArray Reference="Effect,VolatileBurstU2,Amount" Value="3"/>
+        <EffectArray Reference="Effect,VolatileBurstFriendlyBuildingDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,VolatileBurstFriendlyUnitDamage,Amount" Value="3"/>
+        <EffectArray Reference="Effect,VolatileBurstFriendlyUnitDamage,AttributeBonus[Light]" Value="3"/>
+        <EffectArray Reference="Effect,VolatileBurstU,Amount" Value="3"/>
+        <EffectArray Reference="Effect,VolatileBurstU,AttributeBonus[Light]" Value="3"/>
+        <EffectArray Reference="Effect,TalonsMissileDamage,AttributeBonus[Armored]" Value="3"/>
+        <EffectArray Reference="Effect,Talons,Amount" Value="3"/>
+        <EffectArray Reference="Effect,ParasiteSporeDamage3,Amount" Value="3"/>
+        <EffectArray Reference="Effect,ParasiteSporeDamage3,AttributeBonus[Massive]" Value="3"/>
+        <EffectArray Reference="Effect,Spines5,Amount" Value="3"/>
+        <EffectArray Reference="Effect,HydraliskMelee2,Amount" Value="3"/>
+        <EffectArray Reference="Effect,HydraliskMelee2,AttributeBonus[Light]" Value="3"/>
+        <EffectArray Reference="Effect,HydraliskMelee,Amount" Value="3"/>
+        <EffectArray Reference="Effect,NeedleSpinesDamage2,Amount" Value="3"/>
+        <EffectArray Reference="Effect,IrradiatePeriodicDamage12,Amount" Value="3"/>
+        <EffectArray Reference="Effect,SuicideDamage62,Amount" Value="3"/>
+        <EffectArray Reference="Effect,SuicideDamage6,Amount" Value="3"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222224333">
+        <EffectArray Reference="Unit,LurkerMPEgg22,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,LurkerMPEgg22,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMP32,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed22,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,CutALisk22,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,Overlord5,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord22,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,Scourge42,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,Baneling4,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,Baneling5,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,InfestationMother2,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,Scourge4,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,HotSSwarmling32,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,HotSSwarmling322,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,Corruptor6,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,Ultralisk62,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,MiscCreep2,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,Drone42,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,LurkerMP32,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed22,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,CutALisk22,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Overlord5,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord22,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Scourge42,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Baneling4,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Baneling5,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,InfestationMother2,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Scourge4,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HotSSwarmling32,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HotSSwarmling322,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Drone42,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Corruptor6,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Ultralisk62,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MiscCreep2,LifeArmorLevel" Value="1"/>
+        <EffectArray Operation="Set" Reference="Actor,Baneling4,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Baneling5,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Corruptor6,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Drone52,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Hydralisk322,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP32,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP42,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MutaliskBroodlord22,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Overlord6,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Queen22,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Scourge6,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Scourge62,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Scourge22,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Ultralisk62,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade52224224232222222243332">
+        <EffectArray Reference="Unit,LurkerMPEgg22,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,LurkerMPEgg22,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMP32,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed22,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,CutALisk22,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,Overlord5,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord22,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,Scourge42,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,Baneling4,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,Baneling5,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,InfestationMother2,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,Scourge4,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,HotSSwarmling32,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,HotSSwarmling322,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,Corruptor6,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,Ultralisk62,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,MiscCreep2,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,Drone42,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,LurkerMP32,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed22,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,CutALisk22,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Overlord5,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord22,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Scourge42,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Baneling4,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Baneling5,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,InfestationMother2,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Scourge4,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HotSSwarmling32,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HotSSwarmling322,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Drone42,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Corruptor6,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Ultralisk62,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MiscCreep2,LifeArmorLevel" Value="1"/>
+        <EffectArray Operation="Set" Reference="Actor,Baneling4,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Baneling5,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Corruptor6,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Drone52,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Hydralisk322,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP32,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP42,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MutaliskBroodlord22,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Overlord6,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Queen22,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Scourge6,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Scourge62,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Scourge22,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Ultralisk62,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222224334">
+        <EffectArray Reference="Unit,LurkerMPEgg22,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,LurkerMPEgg22,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMP32,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed22,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,CutALisk22,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,Overlord5,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord22,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,Scourge42,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,Baneling4,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,Baneling5,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,InfestationMother2,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,Scourge4,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,HotSSwarmling32,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,HotSSwarmling322,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,Corruptor6,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,Ultralisk62,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,MiscCreep2,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,Drone42,LifeRegenRate" Value="1.500000"/>
+        <EffectArray Reference="Unit,LurkerMP32,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed22,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,CutALisk22,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Overlord5,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord22,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Scourge42,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Baneling4,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Baneling5,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,InfestationMother2,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Scourge4,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HotSSwarmling32,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HotSSwarmling322,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Drone42,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Corruptor6,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Ultralisk62,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MiscCreep2,LifeArmorLevel" Value="1"/>
+        <EffectArray Operation="Set" Reference="Actor,Baneling4,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Baneling5,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Corruptor6,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Drone52,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Hydralisk322,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP32,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP42,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MutaliskBroodlord22,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Overlord6,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Queen22,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Scourge6,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Scourge62,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Scourge22,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Ultralisk62,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade522242242322222222434">
+        <EffectArray Operation="Set" Reference="Actor,DefilerMP3,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,GuardianMP3,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,DevourerMP2,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Drone5,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,HydraliskLurker3,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP3,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP4,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMPEgg2,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MutaliskBroodlord2,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Overlord5,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,QueenClassic3,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Ultralisk6,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray Reference="Unit,LurkerMPEgg2,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMPEgg2,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMP3,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMP3,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed2,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed2,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HydraliskLurker2,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,HydraliskLurker2,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,DefilerMP3,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,DefilerMP3,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,GuardianMP2,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,GuardianMP2,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,QueenClassic2,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,QueenClassic2,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Overlord4,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Overlord4,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,DevourerMP2,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,DevourerMP2,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord2,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord2,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HotSSwarmling3,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,HotSSwarmling3,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Ultralisk6,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Ultralisk6,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Drone4,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Drone4,LifeArmorLevel" Value="1"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222224342">
+        <EffectArray Operation="Set" Reference="Actor,DefilerMP3,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,GuardianMP3,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,DevourerMP2,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Drone5,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,HydraliskLurker3,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP3,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP4,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMPEgg2,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MutaliskBroodlord2,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Overlord5,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,QueenClassic3,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Ultralisk6,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray Reference="Unit,LurkerMPEgg2,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMPEgg2,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMP3,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMP3,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed2,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed2,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HydraliskLurker2,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,HydraliskLurker2,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,DefilerMP3,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,DefilerMP3,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,GuardianMP2,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,GuardianMP2,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,QueenClassic2,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,QueenClassic2,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Overlord4,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Overlord4,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,DevourerMP2,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,DevourerMP2,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord2,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord2,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HotSSwarmling3,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,HotSSwarmling3,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Ultralisk6,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Ultralisk6,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Drone4,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Drone4,LifeArmorLevel" Value="1"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade522242242322222222435">
+        <EffectArray Operation="Set" Reference="Actor,DefilerMP3,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,GuardianMP3,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,DevourerMP2,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Drone5,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,HydraliskLurker3,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP3,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMP4,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,LurkerMPEgg2,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,MutaliskBroodlord2,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Overlord5,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,QueenClassic3,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Actor,Ultralisk6,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray Reference="Unit,LurkerMPEgg2,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMPEgg2,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMP3,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMP3,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed2,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,LurkerMPBurrowed2,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HydraliskLurker2,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,HydraliskLurker2,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,DefilerMP3,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,DefilerMP3,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,GuardianMP2,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,GuardianMP2,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,QueenClassic2,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,QueenClassic2,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Overlord4,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Overlord4,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,DevourerMP2,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,DevourerMP2,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord2,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MutaliskBroodlord2,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HotSSwarmling3,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,HotSSwarmling3,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Ultralisk6,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Ultralisk6,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Drone4,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Drone4,LifeArmorLevel" Value="1"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade52224224232222222244">
+        <EffectArray Operation="Set" Reference="Weapon,LurkerMP3,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,Spines,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,GlaiveWurm,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,NeedleSpines5,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,GuardianMPWeapon3,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,DevourerMPWeapon2,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,HotSSwarmlingClaws,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,KaiserBlades9,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level1.dds"/>
+        <EffectArray Reference="Effect,DevourerMPWeaponDamage2,Amount" Value="5"/>
+        <EffectArray Reference="Effect,GuardianMPWeaponDamage3,Amount" Value="9"/>
+        <EffectArray Reference="Effect,HotSSwarmlingClawsDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,HotSUltraliskKaiserBladesDamage9,Amount" Value="10"/>
+        <EffectArray Reference="Effect,HotSUltraliskKaiserBladesSecondaryDamage9,Amount" Value="1"/>
+        <EffectArray Reference="Effect,HotSUltraliskKaiserBladesSecondaryUpgradeDamage7,Amount" Value="5"/>
+        <EffectArray Reference="Effect,LurkerMPDamage,Amount" Value="4"/>
+        <EffectArray Reference="Effect,LurkerMPDamage,AttributeBonus[Armored]" Value="2"/>
+        <EffectArray Reference="Effect,Spines,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NeedleSpinesDamage6,Amount" Value="2"/>
+        <EffectArray Reference="Effect,GlaiveWurmU1,Amount" Value="2"/>
+        <EffectArray Reference="Effect,GlaiveWurmU2,Amount" Value="1"/>
+        <EffectArray Reference="Effect,GlaiveWurmU3,Amount" Value="0.6"/>
+        <EffectArray Reference="Weapon,LurkerMP3,Level" Value="1"/>
+        <EffectArray Reference="Weapon,Spines,Level" Value="1"/>
+        <EffectArray Reference="Weapon,GlaiveWurm,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NeedleSpines5,Level" Value="1"/>
+        <EffectArray Reference="Weapon,GuardianMPWeapon3,Level" Value="1"/>
+        <EffectArray Reference="Weapon,DevourerMPWeapon2,Level" Value="1"/>
+        <EffectArray Reference="Weapon,HotSSwarmlingClaws,Level" Value="1"/>
+        <EffectArray Reference="Weapon,KaiserBlades9,Level" Value="1"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade52224224232222222245">
+        <EffectArray Operation="Set" Reference="Weapon,LurkerMP3,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,Spines,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,GlaiveWurm,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,NeedleSpines5,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,GuardianMPWeapon3,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,DevourerMPWeapon2,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,HotSSwarmlingClaws,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,KaiserBlades9,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <EffectArray Reference="Effect,DevourerMPWeaponDamage2,Amount" Value="5"/>
+        <EffectArray Reference="Effect,GuardianMPWeaponDamage3,Amount" Value="9"/>
+        <EffectArray Reference="Effect,HotSSwarmlingClawsDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,HotSUltraliskKaiserBladesDamage9,Amount" Value="10"/>
+        <EffectArray Reference="Effect,HotSUltraliskKaiserBladesSecondaryDamage9,Amount" Value="1"/>
+        <EffectArray Reference="Effect,HotSUltraliskKaiserBladesSecondaryUpgradeDamage7,Amount" Value="5"/>
+        <EffectArray Reference="Effect,LurkerMPDamage,Amount" Value="4"/>
+        <EffectArray Reference="Effect,LurkerMPDamage,AttributeBonus[Armored]" Value="2"/>
+        <EffectArray Reference="Effect,Spines,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NeedleSpinesDamage6,Amount" Value="2"/>
+        <EffectArray Reference="Effect,GlaiveWurmU1,Amount" Value="2"/>
+        <EffectArray Reference="Effect,GlaiveWurmU2,Amount" Value="1"/>
+        <EffectArray Reference="Effect,GlaiveWurmU3,Amount" Value="0.6"/>
+        <EffectArray Reference="Weapon,LurkerMP3,Level" Value="1"/>
+        <EffectArray Reference="Weapon,Spines,Level" Value="1"/>
+        <EffectArray Reference="Weapon,GlaiveWurm,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NeedleSpines5,Level" Value="1"/>
+        <EffectArray Reference="Weapon,GuardianMPWeapon3,Level" Value="1"/>
+        <EffectArray Reference="Weapon,DevourerMPWeapon2,Level" Value="1"/>
+        <EffectArray Reference="Weapon,HotSSwarmlingClaws,Level" Value="1"/>
+        <EffectArray Reference="Weapon,KaiserBlades9,Level" Value="1"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade52224224232222222246">
+        <EffectArray Operation="Set" Reference="Weapon,LurkerMP3,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,Spines,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,GlaiveWurm,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,NeedleSpines5,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,GuardianMPWeapon3,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,DevourerMPWeapon2,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,HotSSwarmlingClaws,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,KaiserBlades9,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray Reference="Effect,DevourerMPWeaponDamage2,Amount" Value="5"/>
+        <EffectArray Reference="Effect,GuardianMPWeaponDamage3,Amount" Value="9"/>
+        <EffectArray Reference="Effect,HotSSwarmlingClawsDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,HotSUltraliskKaiserBladesDamage9,Amount" Value="10"/>
+        <EffectArray Reference="Effect,HotSUltraliskKaiserBladesSecondaryDamage9,Amount" Value="1"/>
+        <EffectArray Reference="Effect,HotSUltraliskKaiserBladesSecondaryUpgradeDamage7,Amount" Value="5"/>
+        <EffectArray Reference="Effect,LurkerMPDamage,Amount" Value="4"/>
+        <EffectArray Reference="Effect,LurkerMPDamage,AttributeBonus[Armored]" Value="2"/>
+        <EffectArray Reference="Effect,Spines,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NeedleSpinesDamage6,Amount" Value="2"/>
+        <EffectArray Reference="Effect,GlaiveWurmU1,Amount" Value="2"/>
+        <EffectArray Reference="Effect,GlaiveWurmU2,Amount" Value="1"/>
+        <EffectArray Reference="Effect,GlaiveWurmU3,Amount" Value="0.6"/>
+        <EffectArray Reference="Weapon,LurkerMP3,Level" Value="1"/>
+        <EffectArray Reference="Weapon,Spines,Level" Value="1"/>
+        <EffectArray Reference="Weapon,GlaiveWurm,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NeedleSpines5,Level" Value="1"/>
+        <EffectArray Reference="Weapon,GuardianMPWeapon3,Level" Value="1"/>
+        <EffectArray Reference="Weapon,DevourerMPWeapon2,Level" Value="1"/>
+        <EffectArray Reference="Weapon,HotSSwarmlingClaws,Level" Value="1"/>
+        <EffectArray Reference="Weapon,KaiserBlades9,Level" Value="1"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -10014,7 +11466,7 @@
         <EffectArray Operation="Set" Reference="Effect,DevourerMPWeaponSearch2,AreaArray[0].Radius" Value="2"/>
     </CUpgrade>
     <CUpgrade id="UnknownUpgrade572">
-        <EffectArray Operation="Set" Reference="Weapon,GuardianMPWeapon3,Range" Value="12"/>
+        <EffectArray Operation="Set" Reference="Weapon,GuardianMPWeapon3,Range" Value="13"/>
     </CUpgrade>
     <CUpgrade id="UnknownUpgrade58">
         <EffectArray Reference="Effect,VolatileBurstUCorrosive3,Amount" Value="10"/>
