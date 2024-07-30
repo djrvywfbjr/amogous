@@ -23370,6 +23370,20 @@
         <ImpactEffect value="GlaiveWurmS19"/>
         <AmmoUnit value="GlaiveWurmWeapon8"/>
     </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="GlaiveWurm9">
+        <EditorCategories value="Race:Terran"/>
+        <ImpactEffect value="GlaiveWurmS110"/>
+        <AmmoUnit value="GlaiveWurmWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectEnumArea id="GlaiveWurmE110">
+        <ValidatorArray value="NotHotSExplosiveGlaive"/>
+        <EditorCategories value="Race:Zerg"/>
+        <ExcludeArray Value="Outer"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="3" Effect="GlaiveWurmM28"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
     <CEffectEnumArea id="GlaiveWurmE12">
         <ValidatorArray value="NotHotSExplosiveGlaive"/>
         <EditorCategories value="Race:Zerg"/>
@@ -23759,6 +23773,14 @@
         <AreaArray Radius="3" Effect="GlaiveWurmM37"/>
         <MaxCount value="1"/>
     </CEffectEnumArea>
+    <CEffectEnumArea id="GlaiveWurmE28">
+        <EditorCategories value="Race:Zerg"/>
+        <ExcludeArray Value="Outer"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="3" Effect="GlaiveWurmM38"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
     <CEffectEnumArea id="GlaiveWurmE32">
         <EditorCategories value="Race:Zerg"/>
         <ExcludeArray Value="Outer"/>
@@ -23811,6 +23833,15 @@
         <AreaArray Radius="3" Effect="GlaiveWurmM47"/>
         <MaxCount value="1"/>
     </CEffectEnumArea>
+    <CEffectEnumArea id="GlaiveWurmE38">
+        <ValidatorArray value="HaveHotSViciousGlaive"/>
+        <EditorCategories value="Race:Zerg"/>
+        <ExcludeArray Value="Outer"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="3" Effect="GlaiveWurmM48"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
     <CEffectEnumArea id="GlaiveWurmE42">
         <EditorCategories value="Race:Zerg"/>
         <ExcludeArray Value="Outer"/>
@@ -23858,6 +23889,14 @@
         <ExcludeArray Value="Target"/>
         <SearchFilters value="Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AreaArray Radius="3" Effect="GlaiveWurmM57"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="GlaiveWurmE48">
+        <EditorCategories value="Race:Zerg"/>
+        <ExcludeArray Value="Outer"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="3" Effect="GlaiveWurmM58"/>
         <MaxCount value="1"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="GlaiveWurmE52">
@@ -23909,6 +23948,14 @@
         <AreaArray Radius="3" Effect="GlaiveWurmM67"/>
         <MaxCount value="1"/>
     </CEffectEnumArea>
+    <CEffectEnumArea id="GlaiveWurmE58">
+        <EditorCategories value="Race:Zerg"/>
+        <ExcludeArray Value="Outer"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="3" Effect="GlaiveWurmM68"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
     <CEffectLaunchMissile id="GlaiveWurmM22">
         <ValidatorArray value="noMarkers"/>
         <ValidatorArray value="TargetNotChangeling"/>
@@ -23950,6 +23997,13 @@
         <EditorCategories value="Race:Zerg"/>
         <ImpactEffect value="GlaiveWurmS27"/>
         <AmmoUnit value="GlaiveWurmM2Weapon7"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="GlaiveWurmM28">
+        <ValidatorArray value="noMarkers"/>
+        <ValidatorArray value="TargetNotChangeling"/>
+        <EditorCategories value="Race:Zerg"/>
+        <ImpactEffect value="GlaiveWurmS28"/>
+        <AmmoUnit value="GlaiveWurmM2Weapon"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="GlaiveWurmM32">
         <ValidatorArray value="noMarkers"/>
@@ -23993,6 +24047,13 @@
         <ImpactEffect value="GlaiveWurmS37"/>
         <AmmoUnit value="GlaiveWurmM3Weapon7"/>
     </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="GlaiveWurmM38">
+        <ValidatorArray value="noMarkers"/>
+        <ValidatorArray value="TargetNotChangeling"/>
+        <EditorCategories value="Race:Zerg"/>
+        <ImpactEffect value="GlaiveWurmS38"/>
+        <AmmoUnit value="GlaiveWurmM3Weapon"/>
+    </CEffectLaunchMissile>
     <CEffectLaunchMissile id="GlaiveWurmM42">
         <ValidatorArray value="noMarkers"/>
         <EditorCategories value="Race:Zerg"/>
@@ -24028,6 +24089,12 @@
         <EditorCategories value="Race:Zerg"/>
         <ImpactEffect value="GlaiveWurmS47"/>
         <AmmoUnit value="GlaiveWurmM4Weapon7"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="GlaiveWurmM48">
+        <ValidatorArray value="noMarkers"/>
+        <EditorCategories value="Race:Zerg"/>
+        <ImpactEffect value="GlaiveWurmS48"/>
+        <AmmoUnit value="GlaiveWurmM4Weapon"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="GlaiveWurmM52">
         <ValidatorArray value="noMarkers"/>
@@ -24065,6 +24132,12 @@
         <ImpactEffect value="GlaiveWurmS57"/>
         <AmmoUnit value="GlaiveWurmM5Weapon7"/>
     </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="GlaiveWurmM58">
+        <ValidatorArray value="noMarkers"/>
+        <EditorCategories value="Race:Zerg"/>
+        <ImpactEffect value="GlaiveWurmS58"/>
+        <AmmoUnit value="GlaiveWurmM5Weapon"/>
+    </CEffectLaunchMissile>
     <CEffectLaunchMissile id="GlaiveWurmM62">
         <ValidatorArray value="noMarkers"/>
         <EditorCategories value="Race:Zerg"/>
@@ -24101,6 +24174,21 @@
         <ImpactEffect value="GlaiveWurmU67"/>
         <AmmoUnit value="GlaiveWurmM6Weapon7"/>
     </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="GlaiveWurmM68">
+        <ValidatorArray value="noMarkers"/>
+        <EditorCategories value="Race:Zerg"/>
+        <ImpactEffect value="GlaiveWurmU68"/>
+        <AmmoUnit value="GlaiveWurmM6Weapon"/>
+    </CEffectLaunchMissile>
+    <CEffectSet id="GlaiveWurmS110">
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="GlaiveWurmU18"/>
+        <EffectArray value="GlaiveWurmE110"/>
+        <EffectArray value="MutaliskDoubleDamageRB8"/>
+        <EffectArray value="MutaliskRapidRegenRB8"/>
+        <EffectArray value="MutaliskOutOfCombat2RB8"/>
+        <EffectArray value="MutaliskExplosiveGlaive8"/>
+    </CEffectSet>
     <CEffectSet id="GlaiveWurmS12">
         <EditorCategories value="Race:Zerg"/>
         <EffectArray value="GlaiveWurmU12"/>
@@ -24191,6 +24279,11 @@
         <EffectArray value="GlaiveWurmU27"/>
         <EffectArray value="GlaiveWurmE27"/>
     </CEffectSet>
+    <CEffectSet id="GlaiveWurmS28">
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="GlaiveWurmU28"/>
+        <EffectArray value="GlaiveWurmE28"/>
+    </CEffectSet>
     <CEffectSet id="GlaiveWurmS32">
         <EditorCategories value="Race:Zerg"/>
         <EffectArray value="GlaiveWurmU32"/>
@@ -24221,6 +24314,11 @@
         <EditorCategories value="Race:Zerg"/>
         <EffectArray value="GlaiveWurmU37"/>
         <EffectArray value="GlaiveWurmE37"/>
+    </CEffectSet>
+    <CEffectSet id="GlaiveWurmS38">
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="GlaiveWurmU38"/>
+        <EffectArray value="GlaiveWurmE38"/>
     </CEffectSet>
     <CEffectSet id="GlaiveWurmS42">
         <EditorCategories value="Race:Zerg"/>
@@ -24254,6 +24352,11 @@
         <EffectArray value="GlaiveWurmU47"/>
         <EffectArray value="GlaiveWurmE47"/>
     </CEffectSet>
+    <CEffectSet id="GlaiveWurmS48">
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="GlaiveWurmU48"/>
+        <EffectArray value="GlaiveWurmE48"/>
+    </CEffectSet>
     <CEffectSet id="GlaiveWurmS52">
         <EditorCategories value="Race:Zerg"/>
         <EffectArray value="GlaiveWurmU52"/>
@@ -24282,6 +24385,11 @@
         <EditorCategories value="Race:Zerg"/>
         <EffectArray value="GlaiveWurmU57"/>
         <EffectArray value="GlaiveWurmE57"/>
+    </CEffectSet>
+    <CEffectSet id="GlaiveWurmS58">
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="GlaiveWurmU58"/>
+        <EffectArray value="GlaiveWurmE58"/>
     </CEffectSet>
     <CEffectDamage id="GlaiveWurmU12" parent="GlaiveWurmU1">
         <Name value="Effect/Name/GlaiveWurmU12"/>
@@ -24314,6 +24422,13 @@
         <Amount value="15"/>
         <Death value="Disintegrate"/>
     </CEffectDamage>
+    <CEffectDamage id="GlaiveWurmU18" parent="DU_WEAP_MISSILE">
+        <ValidatorArray value="NotHotSExplosiveGlaive"/>
+        <EditorCategories value="Race:Zerg"/>
+        <Visibility value="Visible"/>
+        <Amount value="9"/>
+        <Death value="Disintegrate"/>
+    </CEffectDamage>
     <CEffectDamage id="GlaiveWurmU22" parent="GlaiveWurmU2">
         <Name value="Effect/Name/GlaiveWurmU22"/>
         <Amount value="10"/>
@@ -24343,6 +24458,12 @@
         <Amount value="15"/>
         <Death value="Disintegrate"/>
     </CEffectDamage>
+    <CEffectDamage id="GlaiveWurmU28" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:Zerg"/>
+        <Visibility value="Visible"/>
+        <Amount value="5"/>
+        <Death value="Disintegrate"/>
+    </CEffectDamage>
     <CEffectDamage id="GlaiveWurmU32" parent="GlaiveWurmU3">
         <Name value="Effect/Name/GlaiveWurmU32"/>
         <Amount value="10"/>
@@ -24369,6 +24490,12 @@
         <EditorCategories value="Race:Zerg"/>
         <Visibility value="Visible"/>
         <Amount value="15"/>
+        <Death value="Disintegrate"/>
+    </CEffectDamage>
+    <CEffectDamage id="GlaiveWurmU38" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:Zerg"/>
+        <Visibility value="Visible"/>
+        <Amount value="3"/>
         <Death value="Disintegrate"/>
     </CEffectDamage>
     <CEffectDamage id="GlaiveWurmU42" parent="DU_WEAP_MISSILE">
@@ -24402,6 +24529,11 @@
         <Visibility value="Visible"/>
         <Amount value="15"/>
     </CEffectDamage>
+    <CEffectDamage id="GlaiveWurmU48" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:Zerg"/>
+        <Visibility value="Visible"/>
+        <Amount value="3"/>
+    </CEffectDamage>
     <CEffectDamage id="GlaiveWurmU52" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Zerg"/>
         <Visibility value="Visible"/>
@@ -24433,6 +24565,11 @@
         <Visibility value="Visible"/>
         <Amount value="15"/>
     </CEffectDamage>
+    <CEffectDamage id="GlaiveWurmU58" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:Zerg"/>
+        <Visibility value="Visible"/>
+        <Amount value="1"/>
+    </CEffectDamage>
     <CEffectDamage id="GlaiveWurmU62" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Zerg"/>
         <Visibility value="Visible"/>
@@ -24463,6 +24600,11 @@
         <EditorCategories value="Race:Zerg"/>
         <Visibility value="Visible"/>
         <Amount value="15"/>
+    </CEffectDamage>
+    <CEffectDamage id="GlaiveWurmU68" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:Zerg"/>
+        <Visibility value="Visible"/>
+        <Amount value="1"/>
     </CEffectDamage>
     <CEffectCreatePersistent id="GoliathA2">
         <ValidatorArray value="CasterIsNotHidden"/>
@@ -26380,6 +26522,24 @@
         <EffectArray value="ZerglingSunder3"/>
         <EffectArray value="HotSSwarmlingClawsDamage3"/>
     </CEffectSet>
+    <CEffectSet id="HotSSwarmlingClaws4">
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="ZerglingFrenzy"/>
+        <EffectArray value="ZerglingSunder"/>
+        <EffectArray value="HotSSwarmlingClawsDamage4"/>
+    </CEffectSet>
+    <CEffectSet id="HotSSwarmlingClaws5">
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="ZerglingFrenzy"/>
+        <EffectArray value="ZerglingSunder"/>
+        <EffectArray value="HotSSwarmlingClawsDamage5"/>
+    </CEffectSet>
+    <CEffectSet id="HotSSwarmlingClaws6">
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="ZerglingFrenzy"/>
+        <EffectArray value="ZerglingSunder"/>
+        <EffectArray value="HotSSwarmlingClawsDamage6"/>
+    </CEffectSet>
     <CEffectDamage id="HotSSwarmlingClawsDamage2" parent="DU_WEAP">
         <EditorCategories value="Race:Zerg"/>
         <Amount value="5"/>
@@ -26388,10 +26548,30 @@
         <EditorCategories value="Race:Zerg"/>
         <Amount value="5"/>
     </CEffectDamage>
+    <CEffectDamage id="HotSSwarmlingClawsDamage4" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <Amount value="5"/>
+    </CEffectDamage>
+    <CEffectDamage id="HotSSwarmlingClawsDamage5" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <Amount value="5"/>
+    </CEffectDamage>
+    <CEffectDamage id="HotSSwarmlingClawsDamage6" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <Amount value="5"/>
+    </CEffectDamage>
     <CEffectSet id="HotSUltraliskKaiserBlades10">
         <EditorCategories value="Race:Zerg"/>
         <EffectArray value="HotSUltraliskKaiserBladesSearch10"/>
         <EffectArray value="HotSUltraliskKaiserBladesDamage10"/>
+        <EffectArray value="TissueAssimilation"/>
+        <EffectArray value="UltraliskBurrowChargeHold"/>
+        <EffectArray value="UltraliskOutOfCombatRBSet"/>
+    </CEffectSet>
+    <CEffectSet id="HotSUltraliskKaiserBlades11">
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="HotSUltraliskKaiserBladesSearch11"/>
+        <EffectArray value="HotSUltraliskKaiserBladesDamage11"/>
         <EffectArray value="TissueAssimilation"/>
         <EffectArray value="UltraliskBurrowChargeHold"/>
         <EffectArray value="UltraliskOutOfCombatRBSet"/>
@@ -26458,6 +26638,11 @@
         <Amount value="15"/>
         <Death value="Eviscerate"/>
     </CEffectDamage>
+    <CEffectDamage id="HotSUltraliskKaiserBladesDamage11" parent="DU_WEAP">
+        <KindSplash value="Melee"/>
+        <Amount value="25"/>
+        <Death value="Eviscerate"/>
+    </CEffectDamage>
     <CEffectDamage id="HotSUltraliskKaiserBladesDamage2" parent="DU_WEAP">
         <KindSplash value="Melee"/>
         <Amount value="45"/>
@@ -26504,6 +26689,14 @@
         <ExcludeArray Effect="HotSUltraliskKaiserBlades" Value="Target"/>
         <SearchFilters value="Ground,Visible;Self,Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AreaArray Arc="180" Radius="2" Effect="HotSUltraliskKaiserBladesSecondaryDamageSet10"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="HotSUltraliskKaiserBladesSearch11">
+        <EditorCategories value="Race:Zerg"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <ExcludeArray Effect="HotSUltraliskKaiserBlades" Value="Target"/>
+        <SearchFilters value="Ground,Visible;Self,Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Arc="180" Radius="2" Effect="HotSUltraliskKaiserBladesSecondaryDamageSet11"/>
         <SearchFlags index="OffsetByUnitRadius" value="1"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="HotSUltraliskKaiserBladesSearch2">
@@ -26575,6 +26768,11 @@
         <Amount value="5"/>
         <Death value="Eviscerate"/>
     </CEffectDamage>
+    <CEffectDamage id="HotSUltraliskKaiserBladesSecondaryDamage11" parent="DU_WEAP">
+        <ValidatorArray value="NotHaveHotSMonarchBlades"/>
+        <Amount value="5"/>
+        <Death value="Eviscerate"/>
+    </CEffectDamage>
     <CEffectDamage id="HotSUltraliskKaiserBladesSecondaryDamage2" parent="DU_WEAP">
         <ValidatorArray value="NotHaveHotSMonarchBlades"/>
         <Amount value="5"/>
@@ -26619,6 +26817,12 @@
         <EditorCategories value="Race:Zerg"/>
         <EffectArray value="HotSUltraliskKaiserBladesSecondaryDamage10"/>
         <EffectArray value="HotSUltraliskKaiserBladesSecondaryUpgradeDamage8"/>
+        <EffectArray value="TissueAssimilationSecondary"/>
+    </CEffectSet>
+    <CEffectSet id="HotSUltraliskKaiserBladesSecondaryDamageSet11">
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="HotSUltraliskKaiserBladesSecondaryDamage11"/>
+        <EffectArray value="HotSUltraliskKaiserBladesSecondaryUpgradeDamage9"/>
         <EffectArray value="TissueAssimilationSecondary"/>
     </CEffectSet>
     <CEffectSet id="HotSUltraliskKaiserBladesSecondaryDamageSet2">
@@ -26696,6 +26900,11 @@
     </CEffectDamage>
     <CEffectDamage id="HotSUltraliskKaiserBladesSecondaryUpgradeDamage8" parent="DU_WEAP">
         <Amount value="15"/>
+        <Death value="Eviscerate"/>
+    </CEffectDamage>
+    <CEffectDamage id="HotSUltraliskKaiserBladesSecondaryUpgradeDamage9" parent="DU_WEAP">
+        <ValidatorArray value="HaveHotSMonarchBlades"/>
+        <Amount value="25"/>
         <Death value="Eviscerate"/>
     </CEffectDamage>
     <CEffectSet id="HotSZerglingClaws2">
@@ -39527,6 +39736,11 @@
         <WhichUnit Value="Caster"/>
         <BehaviorLink value="MutaliskDoubleDamage"/>
     </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="MutaliskDoubleDamageRB8">
+        <EditorCategories value="Race:Zerg"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="MutaliskDoubleDamage"/>
+    </CEffectRemoveBehavior>
     <CEffectDamage id="MutaliskExplosiveGlaive2" parent="DU_WEAP_MISSILE">
         <ValidatorArray value="HaveHotSExplosiveGlaive"/>
         <EditorCategories value="Race:Zerg"/>
@@ -39567,6 +39781,13 @@
         <AttributeBonus index="Armored" value="15"/>
         <Visibility value="Visible"/>
         <Amount value="15"/>
+    </CEffectDamage>
+    <CEffectDamage id="MutaliskExplosiveGlaive8" parent="DU_WEAP_MISSILE">
+        <ValidatorArray value="HaveHotSExplosiveGlaive"/>
+        <EditorCategories value="Race:Zerg"/>
+        <AttributeBonus index="Armored" value="9"/>
+        <Visibility value="Visible"/>
+        <Amount value="9"/>
     </CEffectDamage>
     <CEffectDamage id="MutaliskGlaiveWurmDamage2" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Zerg"/>
@@ -39909,6 +40130,11 @@
         <WhichUnit Value="Caster"/>
         <BehaviorLink value="MutaliskOutOfCombat2"/>
     </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="MutaliskOutOfCombat2RB8">
+        <EditorCategories value="Race:Zerg"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="MutaliskOutOfCombat2"/>
+    </CEffectRemoveBehavior>
     <CEffectRemoveBehavior id="MutaliskRapidRegenRB2">
         <EditorCategories value="Race:Zerg"/>
         <WhichUnit Value="Caster"/>
@@ -39935,6 +40161,11 @@
         <BehaviorLink value="MutaliskRapidRegen"/>
     </CEffectRemoveBehavior>
     <CEffectRemoveBehavior id="MutaliskRapidRegenRB7">
+        <EditorCategories value="Race:Zerg"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="MutaliskRapidRegen"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="MutaliskRapidRegenRB8">
         <EditorCategories value="Race:Zerg"/>
         <WhichUnit Value="Caster"/>
         <BehaviorLink value="MutaliskRapidRegen"/>
@@ -40102,6 +40333,11 @@
         <EditorCategories value="Race:Zerg"/>
         <Kind value="Ranged"/>
     </CEffectDamage>
+    <CEffectDamage id="NeedleSpinesDamage23" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <Kind value="Ranged"/>
+        <Amount value="8"/>
+    </CEffectDamage>
     <CEffectDamage id="NeedleSpinesDamage3" parent="DU_WEAP">
         <EditorCategories value="Race:Zerg"/>
         <Kind value="Ranged"/>
@@ -40187,6 +40423,11 @@
         <EffectArray value="ParalyticSpines"/>
         <EffectArray value="NeedleSpinesDamage223"/>
     </CEffectSet>
+    <CEffectSet id="NeedleSpinesImpactSet23">
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="ParalyticSpines"/>
+        <EffectArray value="NeedleSpinesDamage23"/>
+    </CEffectSet>
     <CEffectSet id="NeedleSpinesImpactSet3">
         <EditorCategories value="Race:Zerg"/>
         <EffectArray value="ParalyticSpines"/>
@@ -40259,6 +40500,11 @@
         <EffectArray value="ParalyticSpines"/>
         <EffectArray value="ExplosiveSpinesDamage"/>
     </CEffectSet>
+    <CEffectSet id="NeedleSpinesImpactSetUpgraded23">
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="ParalyticSpines"/>
+        <EffectArray value="ExplosiveSpinesDamage"/>
+    </CEffectSet>
     <CEffectSet id="NeedleSpinesImpactSetUpgraded3">
         <EditorCategories value="Race:Zerg"/>
         <EffectArray value="ParalyticSpines2"/>
@@ -40313,6 +40559,11 @@
         <EditorCategories value="Race:Zerg"/>
         <CaseArray Validator="TargetIsAirAndHaveExplosiveSpines" Effect="NeedleSpinesImpactSetUpgraded223"/>
         <CaseDefault value="NeedleSpinesImpactSet223"/>
+    </CEffectSwitch>
+    <CEffectSwitch id="NeedleSpinesImpactSwitch23">
+        <EditorCategories value="Race:Zerg"/>
+        <CaseArray Validator="TargetIsAirAndHaveExplosiveSpines" Effect="NeedleSpinesImpactSetUpgraded23"/>
+        <CaseDefault value="NeedleSpinesImpactSet23"/>
     </CEffectSwitch>
     <CEffectSwitch id="NeedleSpinesImpactSwitch3">
         <EditorCategories value="Race:Zerg"/>
@@ -40374,6 +40625,11 @@
         <EditorCategories value="Race:Zerg"/>
         <ImpactEffect value="PureBornDeathCReateFanatic3222222233322425"/>
         <AmmoUnit value="NeedleSpinesWeapon2232"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="NeedleSpinesLaunchMissile23">
+        <EditorCategories value="Race:Zerg"/>
+        <ImpactEffect value="NeedleSpinesImpactSwitch23"/>
+        <AmmoUnit value="NeedleSpinesWeapon2"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="NeedleSpinesLaunchMissile3">
         <EditorCategories value="Race:Zerg"/>
@@ -41548,7 +41804,7 @@
     <CEffectDamage id="NovaWeaponPlasmaBlastNewImpactDamage22" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <ArmorReduction value="0"/>
-        <Kind value="Spell"/>
+        <Kind value="Ranged"/>
         <Amount value="35"/>
         <Death value="Disintegrate"/>
     </CEffectDamage>
@@ -51038,10 +51294,10 @@
         <EditorCategories value="Race:Terran"/>
         <Behavior value="PsiDisruption8"/>
     </CEffectApplyBehavior>
-    <CEffectApplyBehavior id="ForemanAuraAB">
+    <CEffectApplyBehavior id="PsiDisruptionApplyBehavior82">
         <ValidatorArray index="0" removed="1"/>
         <EditorCategories value="Race:Terran"/>
-        <Behavior value="InstructedByForeman"/>
+        <Behavior value="PsiDisruption82"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="PsiDisruptionApplyBehavior83">
         <ValidatorArray index="0" value="RequiresCivilianAll23"/>
@@ -51770,10 +52026,10 @@
         <SearchFilters value="Structure;Self,Ally,Neutral,Enemy,Heroic,Missile,Stasis,Dead,Hidden,Invulnerable,Benign"/>
         <AreaArray Radius="12" Effect="PsiDisruptionApplyBehavior8"/>
     </CEffectEnumArea>
-    <CEffectEnumArea id="ForemanAuraSearch">
+    <CEffectEnumArea id="PsiDisruptionSearchArea72">
         <EditorCategories value="Race:Terran"/>
-        <SearchFilters value="-;Neutral,Enemy,Structure,Heroic,Missile,Stasis,Dead,Hidden,Invulnerable,Benign"/>
-        <AreaArray Radius="9" Effect="ForemanAuraAB"/>
+        <SearchFilters value="-;Self,Neutral,Enemy,Structure,Heroic,Missile,Stasis,Dead,Hidden,Invulnerable,Benign"/>
+        <AreaArray Radius="9" Effect="PsiDisruptionApplyBehavior82"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="PsiDisruptionSearchArea73">
         <EditorCategories value="Race:Terran"/>
@@ -65842,6 +66098,22 @@
     <CEffectDamage id="Spines2" parent="DU_WEAP">
         <EditorCategories value="Race:Zerg"/>
         <Amount value="15"/>
+    </CEffectDamage>
+    <CEffectDamage id="Spines3" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <Amount value="5"/>
+    </CEffectDamage>
+    <CEffectDamage id="Spines4" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <Amount value="5"/>
+    </CEffectDamage>
+    <CEffectDamage id="Spines5" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <Amount value="5"/>
+    </CEffectDamage>
+    <CEffectDamage id="Spines6" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <Amount value="5"/>
     </CEffectDamage>
     <CEffectLaunchMissile id="SporeCrawler2">
         <EditorCategories value="Race:Zerg"/>

@@ -2428,12 +2428,6 @@
             <StateFlags index="Cloak" value="1"/>
         </Modification>
     </CBehaviorBuff>
-    <CBehaviorBuff id="MercGroundDrop">
-        <TimeScaleSource Value="Global"/>
-    </CBehaviorBuff>
-    <CBehaviorBuff id="MercGroundDropDelay">
-        <TimeScaleSource Value="Global"/>
-    </CBehaviorBuff>
     <CBehaviorBuff id="MoebiusCosmicExhange">
         <Modification>
             <AbilLinkDisableArray value="SecurityBarrier3"/>
@@ -2459,9 +2453,6 @@
         <InitialEffect value="NovaPlasmaPuddleDamageDebuffSlowSet23"/>
         <RefreshEffect value="NovaPlasmaPuddleDamageDebuffSlowSet23"/>
         <PeriodicEffect value="NovaPlasmaPuddleDamage23"/>
-    </CBehaviorBuff>
-    <CBehaviorBuff id="NovaPlasmaPuddleDamageDebuffSlow">
-        <Modification MoveSpeedMultiplier="0.5" AttackSpeedMultiplier="0.5"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="NovaPlasmaPuddleDamageDebuffSlow23">
         <Alignment value="Negative"/>
@@ -2691,9 +2682,6 @@
             <StateFlags index="Unselectable" value="1"/>
             <StateFlags index="Untargetable" value="1"/>
         </Modification>
-    </CBehaviorBuff>
-    <CBehaviorBuff id="PrecursorMerc">
-        <TimeScaleSource Value="Global"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="PreserveSelf4242">
         <InfoIcon value="Assets\Textures\btn-ability-zeratul-avatarofessence-evolutionaura.dds"/>
@@ -4182,7 +4170,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <MaxStackCount value="100"/>
         <Modification>
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -8495,7 +8483,7 @@
             </Cost>
         </DamageResponse>
     </CBehaviorBuff>
-    <CBehaviorBuff id="DisabledBuilding">
+    <CBehaviorBuff id="AntamoAirAll27222">
         <Cost>
             <Charge Link="Behavior/AntamoAirAll"/>
             <Cooldown Link="Behavior/AntamoAirAll"/>
@@ -8503,14 +8491,20 @@
         <BehaviorFlags index="Permanent" value="1"/>
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <DisableValidatorArray value="NotUnderConstruction"/>
-        <Modification TimeScale="0.01">
+        <Modification>
             <ModifyFlags index="DisableWeapons" value="1"/>
+            <ModifyFlags index="SuppressMoving" value="1"/>
+            <ModifyFlags index="SuppressTurning" value="1"/>
             <StateFlags index="SuppressDetection" value="1"/>
             <AbilClassDisableArray index="CAbilAttack" value="1"/>
             <AbilClassDisableArray index="CAbilEffectInstant" value="1"/>
             <AbilClassDisableArray index="CAbilEffectTarget" value="1"/>
-            <BehaviorLinkDisableArray value="ForemanAura"/>
+            <AbilClassDisableArray index="CAbilHarvest" value="1"/>
+            <AbilClassDisableArray index="CAbilMove" value="1"/>
+            <AbilClassDisableArray index="CAbilResearch" value="1"/>
+            <AbilClassDisableArray index="CAbilTrain" value="1"/>
+            <AbilClassDisableArray index="CAbilWarpTrain" value="1"/>
+            <BehaviorLinkDisableArray value="PsiDisruptionSearch72"/>
             <BehaviorLinkDisableArray value="AutoHarvestVespene"/>
             <BehaviorLinkDisableArray value="15xUnitSpeed34"/>
             <BehaviorLinkDisableArray value="PsiDisruptionSearch74"/>
@@ -8772,7 +8766,7 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification>
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
         </Modification>
         <RemoveValidatorArray value="IsTimeStopped21733232223"/>
     </CBehaviorBuff>
@@ -8781,7 +8775,7 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification TimeScale="1.2">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
         <RemoveValidatorArray value="IsTimeStopped21733232222"/>
@@ -8792,7 +8786,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped217332322222"/>
         <Modification TimeScale="1.4">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8802,7 +8796,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped2173323222222"/>
         <Modification TimeScale="1.6">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8812,7 +8806,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped21733232222222"/>
         <Modification TimeScale="1.8">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8822,7 +8816,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped217332322222222"/>
         <Modification TimeScale="2">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8832,7 +8826,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped2173323222222222"/>
         <Modification TimeScale="2.2">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8842,7 +8836,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped21733232222222222"/>
         <Modification TimeScale="2.4">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8852,7 +8846,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped217332322222222222"/>
         <Modification TimeScale="2.6">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8862,7 +8856,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped2173323222222222222"/>
         <Modification TimeScale="2.8">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8872,7 +8866,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped21733232222222222222"/>
         <Modification TimeScale="3">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8882,7 +8876,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped217332322222222222222"/>
         <Modification TimeScale="3.2">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8892,7 +8886,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped2173323222222222222222"/>
         <Modification TimeScale="3.4">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8902,7 +8896,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped21733232222222222222222"/>
         <Modification TimeScale="3.6">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8912,7 +8906,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped217332322222222222222222"/>
         <Modification TimeScale="3.8">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8922,7 +8916,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped2173323222222222222222222"/>
         <Modification TimeScale="4">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8932,7 +8926,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped21733232222222222222222222"/>
         <Modification TimeScale="4.2">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8942,7 +8936,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped217332322222222222222222222"/>
         <Modification TimeScale="4.4">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8952,7 +8946,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped2173323222222222222222222222"/>
         <Modification TimeScale="4.6">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8962,7 +8956,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped21733232222222222222222222222"/>
         <Modification TimeScale="4.8">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8972,7 +8966,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped217332322222222222222222222222"/>
         <Modification TimeScale="5">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8982,7 +8976,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped2173323222222222222222222222222"/>
         <Modification TimeScale="5.2">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8992,7 +8986,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped21733232222222222222222222222222"/>
         <Modification TimeScale="5.4">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -9002,7 +8996,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped217332322222222222222222222222222"/>
         <Modification TimeScale="5.6">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -9012,7 +9006,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped2173323222222222222222222222222222"/>
         <Modification TimeScale="5.8">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -9022,7 +9016,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped21733232222222222222222222222222222"/>
         <Modification TimeScale="6">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -9032,7 +9026,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped217332322222222222222222222222222222"/>
         <Modification TimeScale="6.2">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -9042,7 +9036,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped2173323222222222222222222222222222222"/>
         <Modification TimeScale="6.4">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -9052,7 +9046,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped21733232222222222222222222222222222222"/>
         <Modification TimeScale="6.6">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -9062,7 +9056,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped217332322222222222222222222222222222222"/>
         <Modification TimeScale="6.8">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -17092,7 +17086,7 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <MaxStackCount value="20"/>
         <Modification TimeScale="1.35">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -17112,7 +17106,7 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <MaxStackCount value="20"/>
         <Modification>
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -17134,7 +17128,7 @@
         <Period value="7"/>
         <PeriodicEffect value="SOAEnergizeSearch2233"/>
         <Modification>
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -17155,7 +17149,7 @@
         <Period value="45"/>
         <PeriodicEffect value="SOAEnergizeSearch2232352"/>
         <Modification>
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -17176,7 +17170,7 @@
         <MaxStackCount value="20"/>
         <Modification>
             <VitalRegenArray index="Energy" value="1"/>
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -17197,7 +17191,7 @@
         <MaxStackCount value="20"/>
         <Modification MoveSpeedBonus="0.1757">
             <AdditiveAttackSpeedFactor value="0.07"/>
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -17217,7 +17211,7 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <MaxStackCount value="20"/>
         <Modification MoveSpeedBonus="0.5">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -17238,7 +17232,7 @@
         <MaxStackCount value="20"/>
         <Modification MoveSpeedBonus="0.1015">
             <AdditiveAttackSpeedFactor value="0.15"/>
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -17259,7 +17253,7 @@
         <MaxStackCount value="20"/>
         <Modification>
             <AbilClassDisableArray index="CAbilTransport" value="1"/>
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -17281,7 +17275,7 @@
         <InitialEffect value="OracleVoidSiphonAddMinerals236222222222324"/>
         <FinalEffect value="OracleVoidSiphonAddMinerals2362222222223223"/>
         <Modification>
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -17318,7 +17312,7 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <MaxStackCount value="20"/>
         <Modification TimeScale="1.35">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -17339,7 +17333,7 @@
         <MaxStackCount value="20"/>
         <Modification>
             <AdditiveAttackSpeedFactor value="0.5"/>
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="AntamoAirAll27222"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -17469,14 +17463,14 @@
         <Period value="6"/>
         <Modification TimeScale="1.3"/>
     </CBehaviorBuff>
-    <CBehaviorBuff id="InstructedByForeman">
+    <CBehaviorBuff id="PsiDisruption82">
         <Alignment value="Negative"/>
         <InfoIcon value="Assets\Textures\btn-ability-terran-psidisruption.dds"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="HasPsiStrike"/>
         <TimeScaleSource Value="Global"/>
         <Duration value="12"/>
-        <Period value="4"/>
+        <Period value="10"/>
         <PeriodicEffect value="SOAEnergizeSearch2233"/>
         <Modification TimeScale="1.25"/>
     </CBehaviorBuff>
@@ -17886,12 +17880,12 @@
         <Period value="8"/>
         <PeriodicEffect value="PsiDisruptionSearchArea7"/>
     </CBehaviorBuff>
-    <CBehaviorBuff id="ForemanAura">
+    <CBehaviorBuff id="PsiDisruptionSearch72">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <DisableValidatorArray value="NotDeadOrConstruction"/>
         <Period value="10"/>
-        <PeriodicEffect value="ForemanAuraSearch"/>
+        <PeriodicEffect value="PsiDisruptionSearchArea72"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="PsiDisruptionSearch73">
         <InfoFlags index="Hidden" value="1"/>
@@ -20096,7 +20090,7 @@
         </VeterancyLevelArray>
         <VeterancyLevelArray MinVeterancyXP="70" LevelGainEffect="RankDummy222222">
             <Modification Detect="8">
-                <DamageDealtAttributeMultiplier index="Mechanical" value="0.5"/>
+                <DamageDealtAttributeScaled index="Mechanical" value="30"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
@@ -23154,7 +23148,7 @@
             </Modification>
         </VeterancyLevelArray>
         <VeterancyLevelArray MinVeterancyXP="100" LevelGainEffect="RankDummy22">
-            <Modification TimeScale="1.25">
+            <Modification TimeScale="2">
                 <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
@@ -35806,7 +35800,7 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="HasPsiStrike"/>
         <Duration value="4"/>
-        <Modification TimeScale="1.25"/>
+        <Modification TimeScale="1.3"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="PsiDisruption42">
         <Alignment value="Positive"/>
@@ -37819,7 +37813,7 @@
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <InitialEffect value="PhaseCannonInitialStun722423"/>
         <FinalEffect value="PhaseCannonInitialStun722423"/>
-        <Modification MoveSpeedMultiplier="1.75">
+        <Modification MoveSpeedMultiplier="2.5">
             <AbilLinkDisableArray value="PhaseCannon723"/>
             <AbilLinkDisableArray value="Irradiate2225"/>
             <AbilLinkDisableArray value="RaynorSnipe4"/>

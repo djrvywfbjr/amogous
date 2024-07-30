@@ -281,84 +281,84 @@
         <NodeArray index="Show" Link="CountUpgradeCloakDistortionFieldCompleteOnly"/>
     </CRequirement>
     <CRequirement id="Damage1">
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222224QueuedOrBetter"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222244QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage12">
-        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade5222422423222222224CompleteOnly4256853171"/>
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222242QueuedOrBetter"/>
+        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade52224224232222222244CompleteOnly4256853171"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222245QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage122">
-        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade52224224232222222242CompleteOnly4256853171"/>
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222422QueuedOrBetter"/>
+        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade52224224232222222245CompleteOnly4256853171"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222246QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage123">
-        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade52224224232222222243CompleteOnly4256853171"/>
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222432QueuedOrBetter"/>
+        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade522242242322222222434CompleteOnly4256853171"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222224342QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage1232">
-        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade522242242322222222432CompleteOnly4256853171"/>
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222224322QueuedOrBetter"/>
+        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade5222422423222222224342CompleteOnly4256853171"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222435QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage13">
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222243QueuedOrBetter"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222434QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage132">
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222433QueuedOrBetter"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222224333QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage1322">
-        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade522242242322222222433CompleteOnly969171298"/>
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222224332QueuedOrBetter"/>
+        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade5222422423222222224333CompleteOnly969171298"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222224334QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage13222">
-        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade5222422423222222224332CompleteOnly969171298"/>
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222243322QueuedOrBetter"/>
+        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade5222422423222222224334CompleteOnly969171298"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222243332QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage13223">
-        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade522242242322222222433222CompleteOnly969171298"/>
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222224332222QueuedOrBetter"/>
+        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade5222422423222222224332223CompleteOnly969171298"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222224332224QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage132232">
-        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade5222422423222222224332222CompleteOnly969171298"/>
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222243322222QueuedOrBetter"/>
+        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade5222422423222222224332224CompleteOnly969171298"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222243322232QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage1323">
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222433222QueuedOrBetter"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222224332223QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage13232">
         <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222243322223QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage133">
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222224222QueuedOrBetter"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222242224QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage1332">
-        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade5222422423222222224222CompleteOnly4256853171"/>
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222242222QueuedOrBetter"/>
+        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade52224224232222222242224CompleteOnly4256853171"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222242225QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage13322">
-        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade52224224232222222242222CompleteOnly4256853171"/>
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222422222QueuedOrBetter"/>
+        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade52224224232222222242225CompleteOnly4256853171"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222422242QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage13323">
-        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade52224224232222222242223CompleteOnly4256853171"/>
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222422232QueuedOrBetter"/>
+        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade522242242322222222422235CompleteOnly4256853171"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222224222352QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage133232">
-        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade522242242322222222422232CompleteOnly4256853171"/>
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222224222322QueuedOrBetter"/>
+        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade5222422423222222224222352CompleteOnly4256853171"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222422236QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage1333">
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222242223QueuedOrBetter"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222422235QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage134">
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222422233QueuedOrBetter"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222224222333QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage1342">
-        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade522242242322222222422233CompleteOnly4256853171"/>
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222224222332QueuedOrBetter"/>
+        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade5222422423222222224222333CompleteOnly4256853171"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222242223332QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage13422">
-        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade5222422423222222224222332CompleteOnly4256853171"/>
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222242223322QueuedOrBetter"/>
+        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade52224224232222222242223332CompleteOnly4256853171"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222224222334QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage134222">
         <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222422233233QueuedOrBetter"/>
@@ -368,37 +368,37 @@
         <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222224222332332QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage1343">
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222242223323QueuedOrBetter"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222422233235QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage13432">
-        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade52224224232222222242223323CompleteOnly4256853171"/>
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222422233232QueuedOrBetter"/>
+        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade522242242322222222422233235CompleteOnly4256853171"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222224222332352QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage134322">
-        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade522242242322222222422233232CompleteOnly4256853171"/>
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222224222332322QueuedOrBetter"/>
+        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade5222422423222222224222332352CompleteOnly4256853171"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222422233236QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage13433">
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222422233234QueuedOrBetter"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222224222332343QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage134332">
-        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade522242242322222222422233234CompleteOnly4256853171"/>
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222224222332342QueuedOrBetter"/>
+        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade5222422423222222224222332343CompleteOnly4256853171"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222242223323432QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage1343322">
-        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade5222422423222222224222332342CompleteOnly4256853171"/>
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222242223323422QueuedOrBetter"/>
+        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade52224224232222222242223323432CompleteOnly4256853171"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222242223323433QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage134333">
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222422233234222QueuedOrBetter"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222224222332342223QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage1343332">
-        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade522242242322222222422233234222CompleteOnly4256853171"/>
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222224222332342222QueuedOrBetter"/>
+        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade5222422423222222224222332342223CompleteOnly4256853171"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222242223323422232QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage13433322">
-        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade5222422423222222224222332342222CompleteOnly4256853171"/>
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222242223323422222QueuedOrBetter"/>
+        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade52224224232222222242223323422232CompleteOnly4256853171"/>
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222242223323422233QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage1343333">
         <NodeArray index="Use" Link="CountUnitInfestationPit4222CompleteOnly"/>
@@ -4453,7 +4453,7 @@
     </CRequirement>
     <CRequirement id="LearnBlink212242433323382232223223">
         <EditorCategories value="Race:Protoss,TechType:Ability"/>
-        <NodeArray index="Show" Link="NotCountUpgradeIndustrialAutomatonsQueuedOrBetter"/>
+        <NodeArray index="Show" Link="NotCountUpgradeAdvancedConstruction24233QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="LearnBlink2122424333233822322232232">
         <EditorCategories value="Race:Protoss,TechType:Ability"/>

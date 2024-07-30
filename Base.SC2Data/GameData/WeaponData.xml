@@ -2321,6 +2321,22 @@
         <LegacyOptions index="NoDeceleration" value="1"/>
         <AllowedMovement value="Slowing"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="GlaiveWurm9">
+        <EditorCategories value="Race:Zerg"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-airattacks-level0.dds"/>
+        <DisplayEffect value="GlaiveWurmU18"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="3"/>
+        <RangeSlop value="2"/>
+        <ArcSlop value="45"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="1.5246"/>
+        <DamagePoint value="0"/>
+        <LegacyOptions index="NoDeceleration" value="1"/>
+        <AllowedMovement value="Slowing"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="GoliathA22">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-zerg-hotsgroovedspines.dds"/>
@@ -3050,7 +3066,7 @@
         <DisplayEffect value="VortexKillDamageDummy222"/>
         <TargetFilters value="Light,Visible;Air,Massive,Heroic,Missile,Dead,Hidden"/>
         <MinScanRange value="9"/>
-        <Range value="8"/>
+        <Range value="9"/>
         <Marker Link="Weapon/GuassRifle8"/>
         <Cost>
             <Cooldown Link="Weapon/GuassRifle8"/>
@@ -3881,6 +3897,16 @@
         <Period value="0.35"/>
         <Effect value="HotSSwarmlingClaws"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="HotSSwarmlingClaws32">
+        <EditorCategories value="Race:Zerg"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="HotSSwarmlingClawsDamage6"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.1"/>
+        <Period value="0.35"/>
+        <Effect value="HotSSwarmlingClaws6"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="HotSSwarmlingClaws4">
         <EditorCategories value="Race:Zerg"/>
         <Options index="Melee" value="1"/>
@@ -3890,6 +3916,26 @@
         <Range value="0.1"/>
         <Period value="0.696"/>
         <Effect value="HotSSwarmlingClaws3"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="HotSSwarmlingClaws5">
+        <EditorCategories value="Race:Zerg"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="HotSSwarmlingClawsDamage4"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.1"/>
+        <Period value="0.696"/>
+        <Effect value="HotSSwarmlingClaws4"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="HotSSwarmlingClaws6">
+        <EditorCategories value="Race:Zerg"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="HotSSwarmlingClawsDamage5"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.1"/>
+        <Period value="0.696"/>
+        <Effect value="HotSSwarmlingClaws5"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HunterKiller2">
         <EditorCategories value="Race:Zerg"/>
@@ -5340,6 +5386,21 @@
         <Period value="0.86"/>
         <DamagePoint value="0.3332"/>
         <Effect value="HotSUltraliskKaiserBlades10"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="KaiserBlades11">
+        <EditorCategories value="Race:Zerg"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="HotSUltraliskKaiserBladesDamage11"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquirePrioritization value="ByAngle"/>
+        <Range value="1"/>
+        <Cost>
+            <Cooldown Link="Abil/UltraliskWeaponCooldown" Location="Unit" TimeUse="0.86"/>
+        </Cost>
+        <Period value="0.86"/>
+        <DamagePoint value="0.3332"/>
+        <Effect value="HotSUltraliskKaiserBlades11"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="KaiserBlades3" parent="KaiserBlades">
         <Name value="Weapon/Name/KaiserBlades3"/>
@@ -6863,6 +6924,15 @@
         <Period value="0.2"/>
         <DamagePoint value="0.208"/>
         <Effect value="NeedleSpinesLaunchMissile223"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NeedleSpines23">
+        <EditorCategories value="Race:Zerg"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-missileattacks-level0.dds"/>
+        <DisplayEffect value="NeedleSpinesDamage23"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="1"/>
+        <DamagePoint value="0.208"/>
+        <Effect value="NeedleSpinesLaunchMissile23"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="NeedleSpines5">
         <EditorCategories value="Race:Zerg"/>
@@ -9573,6 +9643,46 @@
         </Cost>
         <Period value="1.5"/>
         <Effect value="Spines"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Spines4">
+        <EditorCategories value="Race:Zerg"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="Spines3"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.1"/>
+        <Period value="1.5"/>
+        <Effect value="Spines3"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Spines5">
+        <EditorCategories value="Race:Zerg"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="Spines4"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.1"/>
+        <Period value="1.5"/>
+        <Effect value="Spines4"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Spines6">
+        <EditorCategories value="Race:Zerg"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="Spines5"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.1"/>
+        <Period value="1.5"/>
+        <Effect value="Spines5"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Spines7">
+        <EditorCategories value="Race:Zerg"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="Spines6"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.1"/>
+        <Period value="1.5"/>
+        <Effect value="Spines6"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="StoneZealotEyeBlast">
         <Icon value="Assets\Textures\btn-ability-zeratul-avatarofform-psionicblast.dds"/>
