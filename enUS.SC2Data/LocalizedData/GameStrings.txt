@@ -2077,6 +2077,7 @@ Abil/Name/Stimpack15=Weapon Overdrive
 Abil/Name/Stimpack152=Centaur Overdrive
 Abil/Name/Stimpack1522=Arsenal Overdrive
 Abil/Name/Stimpack16=Stimpack
+Abil/Name/Stimpack17=Stimpack Sexton
 Abil/Name/Stimpack2=Cheap Stimpack
 Abil/Name/Stimpack3=Ultra Stimpack
 Abil/Name/Stimpack32=High Grade Stimpack
@@ -29396,6 +29397,7 @@ Effect/Name/Stimpack16=Stim Pack (Apply Buff)
 Effect/Name/Stimpack162=Stim Pack (Apply Buff)
 Effect/Name/Stimpack17=Stim Pack (Apply Buff)
 Effect/Name/Stimpack172=Stim Pack (Apply Buff)
+Effect/Name/Stimpack18=Stim Pack (Apply Buff)
 Effect/Name/Stimpack2=Stim Pack (Apply Buff) Copy
 Effect/Name/Stimpack3=Stim Pack (Apply Buff) Copy 2
 Effect/Name/Stimpack32=Stim Pack (Apply Buff) Copy 3
@@ -38043,6 +38045,7 @@ Weapon/Name/AcidSpew22=Bane
 Weapon/Name/AcidSpew3=Psionic Spew
 Weapon/Name/AcidSpew4=Acid Spew
 Weapon/Name/AcidSpew5=Acid Spew
+Weapon/Name/AcidSpines=<c val="FFFF00">Acid Spines</c>
 Weapon/Name/AcidSpines2=Deadly Spines
 Weapon/Name/AcidSpines22=Shit Ops Spines
 Weapon/Name/AcidSpines23=Lethal Spines
@@ -38050,6 +38053,7 @@ Weapon/Name/AcidSpines232=Fatal Spines
 Weapon/Name/AcidSpines233=Fatal Spines
 Weapon/Name/AcidSpines2332=Mortal Spines
 Weapon/Name/AcidSpines23322=Killer Spines
+Weapon/Name/AcidSpines3=<c val="FFFF00">Acid Spines</c>
 Weapon/Name/AcidSpores2=Spores Of Acid
 Weapon/Name/AcidSpores22=Primitive Weapon
 Weapon/Name/AcidSpores23=Acidic Spores
@@ -38083,7 +38087,7 @@ Weapon/Name/Ascendanteeeae312312=Disruptive Pulse
 Weapon/Name/Ascendantjkrlgnbeank fea1=Bio Blast
 Weapon/Name/AshWorm2=Flamable Spray
 Weapon/Name/AshWorm22=Ignited Spray
-Weapon/Name/AutoTurret2=D-4 Gauss Cannon
+Weapon/Name/AutoTurret2=<c val="8A6A4A">D-4 Gauss Cannon</c>
 Weapon/Name/AutoTurret3=Lockdown Cannon
 Weapon/Name/AutoTurret4=24mm Autocannon
 Weapon/Name/BacklashRockets2=Working Rockets
@@ -38106,7 +38110,7 @@ Weapon/Name/C10CanisterRifle3=Electro-Magnetic Rifle
 Weapon/Name/C10CanisterRifle4=Umojan Rifle
 Weapon/Name/C10CanisterRifle42=Gauss Rifle
 Weapon/Name/C10CanisterRifle422=AM Rifle
-Weapon/Name/C10CanisterRifle5=C-7 Canister Rifle
+Weapon/Name/C10CanisterRifle5=<c val="8A6A4A">C-7 Canister Rifle</c>
 Weapon/Name/C10CanisterRifle6=T-15 Rifle
 Weapon/Name/C10CanisterRifle7=C-10 Canister Rifle Copy
 Weapon/Name/C10CanisterRifle8=C-19 Canister Rifle
@@ -38146,7 +38150,7 @@ Weapon/Name/Diamondback22=Doom Of Railgun
 Weapon/Name/Diamondback3=Blurp
 Weapon/Name/Diamondback4=Electrified Slime
 Weapon/Name/Diamondback5=Diamond Rail Gun
-Weapon/Name/Diamondback6=Destroyer-Class Energy Concentrator
+Weapon/Name/Diamondback6=<c val="8A6A4A">Destroyer-Class Energy Concentrator</c>
 Weapon/Name/Diamondback62=LAER
 Weapon/Name/Diamondback63=Double Surgical Laser
 Weapon/Name/Diamondback7=Interceptor Beam Set-up
@@ -38244,7 +38248,7 @@ Weapon/Name/GuassRifle542=P-356 Machine Gun
 Weapon/Name/GuassRifle55=C-5 ''Accurate'' SMG
 Weapon/Name/GuassRifle552=C-6 ''Ultra-Accurate'' SMG
 Weapon/Name/GuassRifle553=B-3 SMG
-Weapon/Name/GuassRifle56=Custommade Gauss SMG
+Weapon/Name/GuassRifle56=<c val="8A6A4A">Custom-made Gauss SMG</c>
 Weapon/Name/GuassRifle57=C-6 Gauss SMG
 Weapon/Name/GuassRifle6=Single Shadow Fury
 Weapon/Name/GuassRifle62=Furious Shadow
@@ -38489,8 +38493,8 @@ Weapon/Name/LocustMP2=Acid Spit
 Weapon/Name/LocustMelee2=Locust Melee
 Weapon/Name/LocustMelee3=Magnesium Claw
 Weapon/Name/LocustPressurizedGlands2=Talons
-Weapon/Name/LongboltMissile2=Devastator Missile Battery
-Weapon/Name/LongboltMissile22=Annihilator Missiles
+Weapon/Name/LongboltMissile2=<c val="FFFF00">Devastator Missile Battery</c>
+Weapon/Name/LongboltMissile22=<c val="8A6A4A">Annihilator Missiles</c>
 Weapon/Name/LongboltMissile23=A.P.O.C.A.L.Y.P.SE. Missile Battery
 Weapon/Name/LongboltMissile232=100 And 1 Missile
 Weapon/Name/LongboltMissile2322=Helium Missiles
@@ -38529,6 +38533,7 @@ Weapon/Name/MengskMarauder523=Neural Parasite
 Weapon/Name/MengskMarauder5232=Infesting Parasite
 Weapon/Name/MengskMarauder524=Organic Prison Dummy
 Weapon/Name/MengskMarauder53=Shrapnel Downtime Grenade
+Weapon/Name/MengskMarine=<c val="FFFF00">C-14 Gauss Rifle </c>
 Weapon/Name/MengskMarine2=C-14 Destructor Rifle
 Weapon/Name/MengskMarine3=Z-33 Splitfire Rifle
 Weapon/Name/MengskMarine32=B1G Rifle
@@ -38556,13 +38561,14 @@ Weapon/Name/MengskVikingFighter23=Destroyer Missiles
 Weapon/Name/MengskVikingFighter3=Hell-A-Peados
 Weapon/Name/MengskVikingFighter4=Lanzer Torpedoes Copy 2
 Weapon/Name/MengskWraithA2=Double Missiles
-Weapon/Name/MengskWraithA22=Alpha Missiles
+Weapon/Name/MengskWraithA22=<c val="FFFF00">Alpha Missiles</c>
 Weapon/Name/MengskWraithA23=Compact Missile Launcher
 Weapon/Name/MengskWraithA3=Thunderbolt Missiles
 Weapon/Name/MengskWraithG2=Hot Lasers
 Weapon/Name/MengskWraithG22=Plasma
 Weapon/Name/MengskWraithG3=Goldfinger Lasers
 Weapon/Name/MengskWraithG4=Plasma Pounders
+Weapon/Name/MercHellionInfernalFlameThrower=<c val="FFFF00">Hellfire Flamethrower</c>
 Weapon/Name/MercReaperD8Charge2=D-6 Charge
 Weapon/Name/MercReaperD8Charge3=D-12 Charge
 Weapon/Name/MercReaperD8Charge4=D-10 Charge
@@ -38720,7 +38726,7 @@ Weapon/Name/PunisherGrenades432=Thermo-Psionic Projectile
 Weapon/Name/PunisherGrenades4322=Dark Servant
 Weapon/Name/PunisherGrenades433=Pure Blast
 Weapon/Name/PunisherGrenades44=Pusher
-Weapon/Name/PunisherGrenades5=Overload Grenades
+Weapon/Name/PunisherGrenades5=<c val="8A6A4A">Overload Grenades</c>
 Weapon/Name/PunisherGrenades52=Ultra-Grenades
 Weapon/Name/PunisherGrenades6=Corrosive Cleanser
 Weapon/Name/PunisherGrenades62=Fire!
@@ -38804,7 +38810,7 @@ Weapon/Name/Suicide2=Suicide Run
 Weapon/Name/Suicide22=Death
 Weapon/Name/Suicide222=Release Potential
 Weapon/Name/Suicide3=Suicide Copy
-Weapon/Name/Suicide4=Suicide Copy 2
+Weapon/Name/Suicide4=<c val="FFFF00">Suicide </c>
 Weapon/Name/Suicide42=Explode
 Weapon/Name/Suicide5=Explode
 Weapon/Name/Suicide52=Explode Copy
@@ -38822,11 +38828,14 @@ Weapon/Name/Suicide7=Final Act
 Weapon/Name/Suicide8=Explode
 Weapon/Name/Suicide9=Vile Explosion
 Weapon/Name/SwannMelee2=Powerfist
+Weapon/Name/Talons=<c val="FFFF00">Talons</c>
+Weapon/Name/Talons2=<c val="FFFF00">Talons</c>
+Weapon/Name/TalonsMissile=<c val="FFFF00">Talons</c>
 Weapon/Name/Tempest2=Energy Blast
 Weapon/Name/Tempest3=Poisoned Blast
 Weapon/Name/Tempest32=Pure Poison
 Weapon/Name/Tempest33=Tribal Poisoned Blast
-Weapon/Name/TempestGround2=Umojan Plasma Weapon
+Weapon/Name/TempestGround2=<c val="FFFF00">Umojan Plasma Blaster</c>
 Weapon/Name/TempestGround22=Plasma Of Destruction
 Weapon/Name/TempestGround23=Plasmid Rocket
 Weapon/Name/TempestGround232=Tazer Shooter
@@ -38863,6 +38872,7 @@ Weapon/Name/TwinGatlingCannon22=Gatling Cannon
 Weapon/Name/TwinIbiksCannon2=Vindigo Cannon
 Weapon/Name/TwinIbiksCannon3=Bulwark Cannon
 Weapon/Name/TwinIbiksCannon4=Infestation Cannons
+Weapon/Name/TyphoonMissilePod=<c val="FFFF00">Typhoon Missile Pod</c>
 Weapon/Name/TyphoonMissilePod2=Typhoon Missiles
 Weapon/Name/TyphoonMissilePod3=Storm Missile Pod
 Weapon/Name/TyphoonMissilePod32=Ranger Bolt
@@ -38968,6 +38978,7 @@ Weapon/Tip/AcidSpines232=
 Weapon/Tip/AcidSpines233=
 Weapon/Tip/AcidSpines2332=
 Weapon/Tip/AcidSpines23322=
+Weapon/Tip/AcidSpines3=
 Weapon/Tip/BacklashRockets2=Costs 4 energy per shot.
 Weapon/Tip/C10CanisterRifle4=
 Weapon/Tip/C10CanisterRifle42=
@@ -39018,6 +39029,7 @@ Weapon/Tip/PunisherGrenades432=This weapon cannot target friendly units and dama
 Weapon/Tip/PunisherGrenades4322=This weapon creates a dark servant.
 Weapon/Tip/PunisherGrenades433=This weapon cannot target friendly units and damages enemies in a radius of 2.5
 Weapon/Tip/Ram2=Only used against structures.
+Weapon/Tip/Talons2=
 Weapon/Tip/Tempest3=Posions enemies instead of dealing damage for 15 seconds.
 Weapon/Tip/Tempest32=Poisons targeted unit. Poisoned unit moves and attacks 25% slower now and it's life regeneration is reduced by 20 and range by 2. It also cannot use attack, train, warp train, morph, merge, research and targeted abilities.
 Weapon/Tip/Tempest33=Poisons enemies and deals damage.<n/>Poison slows movement speed by 65% and attack speed by 15%.

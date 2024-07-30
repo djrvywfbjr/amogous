@@ -17914,7 +17914,7 @@
             <Charge Link="Abil/DefensiveMatrix"/>
             <Cooldown Link="Abil/DefensiveMatrix" TimeUse="21"/>
         </Cost>
-        <TargetFilters value="Visible;Neutral,Enemy,Missile"/>
+        <TargetFilters value="Visible;Self,Neutral,Enemy,Missile"/>
         <Range value="9"/>
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="DefensiveMatrix263"/>
@@ -53225,6 +53225,19 @@
             <Vital index="Life" value="10"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Stim">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Stimpack17">
+        <AbilSetId value="Stimpack"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <InfoTooltipPriority value="1"/>
+        <Effect index="0" value="Stimpack18"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Vital index="Life" value="10"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Stim" Requirements="UseStimpack">
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
     </CAbilEffectInstant>

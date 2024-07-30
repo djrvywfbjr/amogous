@@ -66437,6 +66437,10 @@
         <EditorCategories value="Race:Terran"/>
         <Behavior value="Stimpack123"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="Stimpack18">
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="QuickMutator4"/>
+    </CEffectApplyBehavior>
     <CEffectApplyBehavior id="Stimpack2">
         <EditorCategories value="Race:Terran"/>
     </CEffectApplyBehavior>
