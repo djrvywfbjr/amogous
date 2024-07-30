@@ -587,6 +587,7 @@
         <Period value="1"/>
         <Effect value="SporeCrawler5"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="AcidSpines"/>
     <CWeaponLegacy id="AcidSpines2">
         <EditorCategories value="Race:Zerg"/>
         <Icon value="Assets\Textures\btn-upgrade-zerg-missileattacks-level2.dds"/>
@@ -1007,9 +1008,9 @@
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-hisecautotracking.dds"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="8"/>
         <Range value="8"/>
         <Period value="0.8"/>
-        <MinScanRange value="8"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="AutoTurret3">
         <EditorCategories value="Race:Terran"/>
@@ -1753,7 +1754,7 @@
         <EditorCategories value="Race:Terran"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
-        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+        <Icon value="Assets\Textures\btn-ability-concentratedbeam.dds"/>
         <DisplayEffect value="DiamondbackBeam6"/>
         <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="9"/>
@@ -2903,10 +2904,10 @@
         <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel3.dds"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="5.5"/>
+        <Range value="3"/>
         <Period value="0.45"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0.75"/>
-        <Range value="3"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GuassRifle57">
         <EditorCategories value="Race:Terran"/>
@@ -3060,7 +3061,7 @@
         <DisplayEffect value="VortexKillDamageDummy222"/>
         <TargetFilters value="Light,Visible;Air,Massive,Heroic,Missile,Dead,Hidden"/>
         <MinScanRange value="9"/>
-        <Range value="8"/>
+        <Range value="9"/>
         <Marker Link="Weapon/GuassRifle8"/>
         <Cost>
             <Cooldown Link="Weapon/GuassRifle8"/>
@@ -6372,6 +6373,7 @@
         <Backswing value="0"/>
         <Effect value="MengskMarauderLM53"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="MengskMarine"/>
     <CWeaponLegacy id="MengskMarine3">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
@@ -6610,6 +6612,7 @@
         <Effect value="DarkArchonMindControlSet633222"/>
         <AllowedMovement value="Slowing"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="MercHellionInfernalFlameThrower"/>
     <CWeaponLegacy id="MercReaperD8Charge3">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
@@ -8798,7 +8801,7 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="PunisherGrenades5">
         <EditorCategories value="Race:Terran"/>
-        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
+        <Icon value="Assets\Textures\btn-ability-terran-punishergrenade-color.dds"/>
         <DisplayEffect value="PunisherGrenadesU5"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="7"/>
@@ -9978,6 +9981,7 @@
         <DamagePoint value="0.2"/>
         <Effect value="SwannMeleeCP2"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="Talons"/>
     <CWeaponLegacy id="Talons2">
         <EditorCategories value="Race:Zerg"/>
         <Options index="Hidden" value="1"/>
@@ -9990,6 +9994,7 @@
         <Period value="1"/>
         <Effect value="TalonsBurst"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="TalonsMissile"/>
     <CWeaponLegacy id="Tempest2" parent="Tempest">
         <Name value="Weapon/Name/Tempest2"/>
         <Tip value="Weapon/Tip/Tempest2"/>
@@ -10032,11 +10037,11 @@
         <Icon value="Assets\Textures\btn-upgrade-nova-equipment-gunblade_sword.dds"/>
         <DisplayEffect value="TempestDamageGround2"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Period value="1.5"/>
-        <Effect value="TempestLaunchMissileGround2"/>
         <Cost>
             <Vital index="Energy" value="-5"/>
         </Cost>
+        <Period value="1.5"/>
+        <Effect value="TempestLaunchMissileGround2"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="TempestGround22">
         <EditorCategories value="Race:Protoss"/>
@@ -10470,6 +10475,7 @@
         <Arc value="90"/>
         <Period value="2"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="TyphoonMissilePod"/>
     <CWeaponLegacy id="TyphoonMissilePod2">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>

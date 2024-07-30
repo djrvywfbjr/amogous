@@ -33227,10 +33227,11 @@
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="Wraith22233"/>
     </CButton>
-    <CButton id="JRUpgrades">
+    <CButton id="Wraith2224">
         <Icon value="Assets\Textures\btn-ability-terran-selfixarmor.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-terran-wraith.dds"/>
         <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="Wraith222"/>
     </CButton>
     <CButton id="Wraith22242">
         <Icon value="Assets\Textures\btn-ability-protoss-stasistrap.dds"/>

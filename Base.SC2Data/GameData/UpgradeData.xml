@@ -5146,45 +5146,45 @@
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222224">
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Melee]" Value="0.1"/>
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[NoProc]" Value="0.1"/>
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Ranged]" Value="0.1"/>
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Spell]" Value="0.1"/>
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Splash]" Value="0.1"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Melee]" Value="0.2"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[NoProc]" Value="0.2"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Ranged]" Value="0.2"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Spell]" Value="0.2"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Splash]" Value="0.2"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade52224224232222222242">
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Melee]" Value="0.1"/>
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[NoProc]" Value="0.1"/>
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Ranged]" Value="0.1"/>
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Spell]" Value="0.1"/>
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Splash]" Value="0.1"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Melee]" Value="0.2"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[NoProc]" Value="0.2"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Ranged]" Value="0.2"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Spell]" Value="0.2"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Splash]" Value="0.2"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade522242242322222222422">
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Melee]" Value="0.1"/>
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[NoProc]" Value="0.1"/>
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Ranged]" Value="0.1"/>
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Spell]" Value="0.1"/>
-        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Splash]" Value="0.1"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Melee]" Value="0.2"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[NoProc]" Value="0.2"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Ranged]" Value="0.2"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Spell]" Value="0.2"/>
+        <EffectArray Reference="Behavior,AntamoAirAll,Modification.DamageDealtFraction[Splash]" Value="0.2"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222224222">
-        <EffectArray Reference="Behavior,AntamoAirAll103,Modification.DamageDealtAttributeMultiplier[Light]" Value="0.3"/>
+        <EffectArray Reference="Behavior,AntamoAirAll103,Modification.DamageDealtAttributeMultiplier[Light]" Value="0.5"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade52224224232222222242222">
-        <EffectArray Reference="Behavior,AntamoAirAll103,Modification.DamageDealtAttributeMultiplier[Armored]" Value="0.3"/>
+        <EffectArray Reference="Behavior,AntamoAirAll103,Modification.DamageDealtAttributeMultiplier[Armored]" Value="0.5"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade522242242322222222422222">
-        <EffectArray Reference="Behavior,AntamoAirAll103,Modification.DamageDealtAttributeMultiplier[Massive]" Value="0.3"/>
-        <EffectArray Reference="Behavior,AntamoAirAll103,Modification.DamageDealtAttributeMultiplier[Heroic]" Value="0.3"/>
+        <EffectArray Reference="Behavior,AntamoAirAll103,Modification.DamageDealtAttributeMultiplier[Massive]" Value="0.5"/>
+        <EffectArray Reference="Behavior,AntamoAirAll103,Modification.DamageDealtAttributeMultiplier[Heroic]" Value="0.5"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -10020,7 +10020,7 @@
         <EffectArray Operation="Set" Reference="Effect,DevourerMPWeaponSearch2,AreaArray[0].Radius" Value="2"/>
     </CUpgrade>
     <CUpgrade id="UnknownUpgrade572">
-        <EffectArray Operation="Set" Reference="Weapon,GuardianMPWeapon3,Range" Value="12"/>
+        <EffectArray Operation="Set" Reference="Weapon,GuardianMPWeapon3,Range" Value="13"/>
     </CUpgrade>
     <CUpgrade id="UnknownUpgrade58">
         <EffectArray Reference="Effect,VolatileBurstUCorrosive3,Amount" Value="10"/>
