@@ -777,6 +777,11 @@
         <EffectArray Operation="Set" Reference="Behavior,DisabledBuilding,Modification.TimeScale" Value="2"/>
         <EffectArray Operation="Set" Reference="Behavior,DisabledBuilding,Modification.AbilClassDisableArray[CAbilEffectInstant]" Value="1"/>
         <EffectArray Operation="Set" Reference="Behavior,DisabledBuilding,Modification.AbilClassDisableArray[CAbilEffectTarget]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Behavior,DisabledBuilding,Modification.BehaviorLinkDisableArray[0]" Value="HighEnergyRegeneration4"/>
+        <EffectArray Operation="Set" Reference="Behavior,DisabledBuilding,Modification.BehaviorLinkDisableArray[3]" Value="HighEnergyRegeneration4"/>
+        <EffectArray Operation="Set" Reference="Behavior,DisabledBuilding,Modification.BehaviorLinkDisableArray[1]" Value="HighEnergyRegeneration4"/>
+        <EffectArray Operation="Set" Reference="Behavior,DisabledBuilding,Modification.BehaviorLinkDisableArray[4]" Value="HighEnergyRegeneration4"/>
+        <EffectArray Operation="Set" Reference="Behavior,DisabledBuilding,Modification.BehaviorLinkDisableArray[5]" Value="HighEnergyRegeneration4"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="AdvancedConstruction"/>
     </CUpgrade>
