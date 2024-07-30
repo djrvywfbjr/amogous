@@ -17905,10 +17905,9 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <Effect index="0" value="DefensiveMatrixSet263"/>
         <Flags index="AllowMovement" value="1"/>
-        <Flags index="BestUnit" value="0"/>
         <Flags index="NoDeceleration" value="1"/>
         <Flags index="RequireTargetVision" value="0"/>
-        <Flags index="Transient" value="1"/>
+        <Flags index="TransientPreferred" value="1"/>
         <Cost>
             <Vital index="Life" value="55"/>
             <Charge Link="Abil/DefensiveMatrix"/>
@@ -53237,7 +53236,7 @@
         <Cost>
             <Vital index="Life" value="10"/>
         </Cost>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Stim" Requirements="UseStimpack">
+        <CmdButtonArray index="Execute" DefaultButtonFace="HighArchonPsiStorm25">
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
     </CAbilEffectInstant>
