@@ -6830,7 +6830,7 @@
         <CmdButtonArray index="LoadAll">
             <Flags index="Hidden" value="1"/>
         </CmdButtonArray>
-        <Range value="0"/>
+        <Range value="4"/>
         <MaxCargoCount value="8"/>
         <MaxCargoSize value="1"/>
         <TotalCargoSpace value="8"/>
@@ -6882,7 +6882,7 @@
         <CmdButtonArray index="LoadAll">
             <Flags index="Hidden" value="1"/>
         </CmdButtonArray>
-        <Range value="0"/>
+        <Range value="4"/>
         <MaxCargoCount value="1"/>
         <MaxCargoSize value="1"/>
         <TotalCargoSpace value="1"/>
@@ -6909,7 +6909,7 @@
             <Flags index="Hidden" value="1"/>
         </CmdButtonArray>
         <Flags index="CargoDeath" value="1"/>
-        <Range value="0"/>
+        <Range value="4"/>
         <MaxCargoCount value="1"/>
         <MaxCargoSize value="1"/>
         <TotalCargoSpace value="1"/>
@@ -6936,7 +6936,7 @@
             <Flags index="Hidden" value="1"/>
         </CmdButtonArray>
         <Flags index="CargoDeath" value="1"/>
-        <Range value="0"/>
+        <Range value="4"/>
         <MaxCargoCount value="1"/>
         <MaxCargoSize value="1"/>
         <TotalCargoSpace value="1"/>
@@ -6963,7 +6963,7 @@
             <Flags index="Hidden" value="1"/>
         </CmdButtonArray>
         <Flags index="CargoDeath" value="1"/>
-        <Range value="0"/>
+        <Range value="4"/>
         <MaxCargoCount value="1"/>
         <MaxCargoSize value="1"/>
         <TotalCargoSpace value="1"/>
@@ -7015,7 +7015,7 @@
         <CmdButtonArray index="LoadAll">
             <Flags index="Hidden" value="1"/>
         </CmdButtonArray>
-        <Range value="0"/>
+        <Range value="4"/>
         <MaxCargoCount value="1"/>
         <MaxCargoSize value="1"/>
         <TotalCargoSpace value="1"/>
@@ -7223,7 +7223,7 @@
         <CmdButtonArray index="LoadAll">
             <Flags index="Hidden" value="1"/>
         </CmdButtonArray>
-        <Range value="0"/>
+        <Range value="2"/>
         <MaxCargoCount value="3"/>
         <MaxCargoSize value="1"/>
         <TotalCargoSpace value="3"/>
@@ -7328,7 +7328,7 @@
         <CmdButtonArray index="LoadAll">
             <Flags index="Hidden" value="1"/>
         </CmdButtonArray>
-        <Range value="0"/>
+        <Range value="2"/>
         <MaxCargoCount value="10"/>
         <MaxCargoSize value="8"/>
         <TotalCargoSpace value="10"/>
@@ -7354,7 +7354,7 @@
         <CmdButtonArray index="LoadAll">
             <Flags index="Hidden" value="1"/>
         </CmdButtonArray>
-        <Range value="0"/>
+        <Range value="4"/>
         <MaxCargoCount value="15"/>
         <MaxCargoSize value="8"/>
         <TotalCargoSpace value="15"/>
@@ -7380,7 +7380,7 @@
         <CmdButtonArray index="LoadAll">
             <Flags index="Hidden" value="1"/>
         </CmdButtonArray>
-        <Range value="0"/>
+        <Range value="4"/>
         <MaxCargoCount value="8"/>
         <MaxCargoSize value="8"/>
         <TotalCargoSpace value="8"/>
@@ -7406,7 +7406,7 @@
         <CmdButtonArray index="LoadAll">
             <Flags index="Hidden" value="1"/>
         </CmdButtonArray>
-        <Range value="0"/>
+        <Range value="4"/>
         <MaxCargoCount value="35"/>
         <MaxCargoSize value="4"/>
         <TotalCargoSpace value="35"/>
@@ -7430,7 +7430,7 @@
         <CmdButtonArray index="LoadAll">
             <Flags index="Hidden" value="1"/>
         </CmdButtonArray>
-        <Range value="0"/>
+        <Range value="4"/>
         <MaxCargoCount value="4"/>
         <MaxCargoSize value="4"/>
         <TotalCargoSpace value="4"/>
@@ -7456,7 +7456,7 @@
         <CmdButtonArray index="LoadAll">
             <Flags index="Hidden" value="1"/>
         </CmdButtonArray>
-        <Range value="0"/>
+        <Range value="4"/>
         <MaxCargoCount value="2"/>
         <MaxCargoSize value="2"/>
         <TotalCargoSpace value="2"/>
@@ -7483,7 +7483,7 @@
         <CmdButtonArray index="LoadAll">
             <Flags index="Hidden" value="1"/>
         </CmdButtonArray>
-        <Range value="0"/>
+        <Range value="4"/>
         <MaxCargoCount value="4"/>
         <MaxCargoSize value="2"/>
         <TotalCargoSpace value="4"/>
@@ -7510,7 +7510,7 @@
         <CmdButtonArray index="LoadAll">
             <Flags index="Hidden" value="1"/>
         </CmdButtonArray>
-        <Range value="0"/>
+        <Range value="2"/>
         <MaxCargoCount value="12"/>
         <MaxCargoSize value="8"/>
         <TotalCargoSpace value="12"/>
@@ -7536,7 +7536,7 @@
         <CmdButtonArray index="LoadAll">
             <Flags index="Hidden" value="1"/>
         </CmdButtonArray>
-        <Range value="0"/>
+        <Range value="2"/>
         <MaxCargoCount value="4"/>
         <MaxCargoSize value="8"/>
         <TotalCargoSpace value="4"/>
@@ -7563,7 +7563,7 @@
         <CmdButtonArray index="LoadAll">
             <Flags index="Hidden" value="1"/>
         </CmdButtonArray>
-        <Range value="0"/>
+        <Range value="2"/>
         <MaxCargoCount value="3"/>
         <MaxCargoSize value="8"/>
         <TotalCargoSpace value="3"/>
@@ -7720,7 +7720,7 @@
         <CmdButtonArray index="LoadAll">
             <Flags index="Hidden" value="1"/>
         </CmdButtonArray>
-        <Range value="0"/>
+        <Range value="4"/>
         <MaxCargoCount value="5"/>
         <MaxCargoSize value="1"/>
         <TotalCargoSpace value="5"/>
