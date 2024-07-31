@@ -4179,7 +4179,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <MaxStackCount value="100"/>
         <Modification>
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -8492,7 +8492,7 @@
             </Cost>
         </DamageResponse>
     </CBehaviorBuff>
-    <CBehaviorBuff id="DisabledBuilding">
+    <CBehaviorBuff id="Unmanned">
         <Cost>
             <Charge Link="Behavior/AntamoAirAll"/>
             <Cooldown Link="Behavior/AntamoAirAll"/>
@@ -8769,7 +8769,7 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification>
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
         </Modification>
         <RemoveValidatorArray value="IsTimeStopped21733232223"/>
     </CBehaviorBuff>
@@ -8778,7 +8778,7 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification TimeScale="1.2">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
         <RemoveValidatorArray value="IsTimeStopped21733232222"/>
@@ -8789,7 +8789,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped217332322222"/>
         <Modification TimeScale="1.4">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8799,7 +8799,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped2173323222222"/>
         <Modification TimeScale="1.6">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8809,7 +8809,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped21733232222222"/>
         <Modification TimeScale="1.8">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8819,7 +8819,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped217332322222222"/>
         <Modification TimeScale="2">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8829,7 +8829,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped2173323222222222"/>
         <Modification TimeScale="2.2">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8839,7 +8839,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped21733232222222222"/>
         <Modification TimeScale="2.4">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8849,7 +8849,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped217332322222222222"/>
         <Modification TimeScale="2.6">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8859,7 +8859,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped2173323222222222222"/>
         <Modification TimeScale="2.8">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8869,7 +8869,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped21733232222222222222"/>
         <Modification TimeScale="3">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8879,7 +8879,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped217332322222222222222"/>
         <Modification TimeScale="3.2">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8889,7 +8889,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped2173323222222222222222"/>
         <Modification TimeScale="3.4">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8899,7 +8899,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped21733232222222222222222"/>
         <Modification TimeScale="3.6">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8909,7 +8909,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped217332322222222222222222"/>
         <Modification TimeScale="3.8">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8919,7 +8919,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped2173323222222222222222222"/>
         <Modification TimeScale="4">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8929,7 +8929,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped21733232222222222222222222"/>
         <Modification TimeScale="4.2">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8939,7 +8939,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped217332322222222222222222222"/>
         <Modification TimeScale="4.4">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8949,7 +8949,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped2173323222222222222222222222"/>
         <Modification TimeScale="4.6">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8959,7 +8959,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped21733232222222222222222222222"/>
         <Modification TimeScale="4.8">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8969,7 +8969,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped217332322222222222222222222222"/>
         <Modification TimeScale="5">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8979,7 +8979,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped2173323222222222222222222222222"/>
         <Modification TimeScale="5.2">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8989,7 +8989,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped21733232222222222222222222222222"/>
         <Modification TimeScale="5.4">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -8999,7 +8999,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped217332322222222222222222222222222"/>
         <Modification TimeScale="5.6">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -9009,7 +9009,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped2173323222222222222222222222222222"/>
         <Modification TimeScale="5.8">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -9019,7 +9019,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped21733232222222222222222222222222222"/>
         <Modification TimeScale="6">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -9029,7 +9029,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped217332322222222222222222222222222222"/>
         <Modification TimeScale="6.2">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -9039,7 +9039,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped2173323222222222222222222222222222222"/>
         <Modification TimeScale="6.4">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -9049,7 +9049,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped21733232222222222222222222222222222222"/>
         <Modification TimeScale="6.6">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -9059,7 +9059,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped217332322222222222222222222222222222222"/>
         <Modification TimeScale="6.8">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
             <RateMultiplierArray index="Spawn" value="2.8"/>
         </Modification>
     </CBehaviorBuff>
@@ -17089,7 +17089,7 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <MaxStackCount value="20"/>
         <Modification TimeScale="1.35">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -17109,7 +17109,7 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <MaxStackCount value="20"/>
         <Modification>
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -17131,7 +17131,7 @@
         <Period value="7"/>
         <PeriodicEffect value="SOAEnergizeSearch2233"/>
         <Modification>
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -17152,7 +17152,7 @@
         <Period value="45"/>
         <PeriodicEffect value="SOAEnergizeSearch2232352"/>
         <Modification>
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -17173,7 +17173,7 @@
         <MaxStackCount value="20"/>
         <Modification>
             <VitalRegenArray index="Energy" value="1"/>
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -17194,7 +17194,7 @@
         <MaxStackCount value="20"/>
         <Modification MoveSpeedBonus="0.1757">
             <AdditiveAttackSpeedFactor value="0.07"/>
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -17214,7 +17214,7 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <MaxStackCount value="20"/>
         <Modification MoveSpeedBonus="0.5">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -17235,7 +17235,7 @@
         <MaxStackCount value="20"/>
         <Modification MoveSpeedBonus="0.1015">
             <AdditiveAttackSpeedFactor value="0.15"/>
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -17256,7 +17256,7 @@
         <MaxStackCount value="20"/>
         <Modification>
             <AbilClassDisableArray index="CAbilTransport" value="1"/>
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -17278,7 +17278,7 @@
         <InitialEffect value="OracleVoidSiphonAddMinerals236222222222324"/>
         <FinalEffect value="OracleVoidSiphonAddMinerals2362222222223223"/>
         <Modification>
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -17315,7 +17315,7 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <MaxStackCount value="20"/>
         <Modification TimeScale="1.35">
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -17336,7 +17336,7 @@
         <MaxStackCount value="20"/>
         <Modification>
             <AdditiveAttackSpeedFactor value="0.5"/>
-            <BehaviorLinkDisableArray value="DisabledBuilding"/>
+            <BehaviorLinkDisableArray value="Unmanned"/>
         </Modification>
         <DamageResponse>
             <Cost>
