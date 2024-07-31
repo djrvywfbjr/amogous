@@ -379,40 +379,40 @@
         <MaxLevel value="30"/>
         <LeaderAlias value="AdvancedConstruction"/>
     </CUpgrade>
-    <CUpgrade id="AdvancedConstruction2422322222242">
+    <CUpgrade id="ManufactureGunpowderMixer">
         <Flags index="UpgradeCheat" value="0"/>
-        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
-        <MaxLevel value="80"/>
-        <LeaderAlias value="AdvancedConstruction"/>
         <EffectArray Reference="Behavior,HighEnergyRegeneration42,Modification.DamageDealtScaled[Ranged]" Value="1"/>
-    </CUpgrade>
-    <CUpgrade id="AdvancedConstruction24223222222422">
-        <Flags index="UpgradeCheat" value="0"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <MaxLevel value="80"/>
         <LeaderAlias value="AdvancedConstruction"/>
+    </CUpgrade>
+    <CUpgrade id="ManufactureFusionCore">
+        <Flags index="UpgradeCheat" value="0"/>
         <EffectArray Reference="Behavior,HighEnergyRegeneration42,Modification.DamageDealtScaled[NoProc]" Value="1"/>
-    </CUpgrade>
-    <CUpgrade id="AdvancedConstruction242232222224222">
-        <Flags index="UpgradeCheat" value="0"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <MaxLevel value="80"/>
         <LeaderAlias value="AdvancedConstruction"/>
+    </CUpgrade>
+    <CUpgrade id="ManufactureChemicalStation">
+        <Flags index="UpgradeCheat" value="0"/>
         <EffectArray Reference="Behavior,HighEnergyRegeneration42,Modification.DamageDealtScaled[Melee]" Value="1"/>
-    </CUpgrade>
-    <CUpgrade id="AdvancedConstruction2422322222242222">
-        <Flags index="UpgradeCheat" value="0"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <MaxLevel value="80"/>
         <LeaderAlias value="AdvancedConstruction"/>
+    </CUpgrade>
+    <CUpgrade id="ManufactureRecyclerTank">
+        <Flags index="UpgradeCheat" value="0"/>
         <EffectArray Reference="Behavior,HighEnergyRegeneration42,Modification.DamageDealtScaled[Spell]" Value="1"/>
-    </CUpgrade>
-    <CUpgrade id="AdvancedConstruction24223222222422222">
-        <Flags index="UpgradeCheat" value="0"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <MaxLevel value="80"/>
         <LeaderAlias value="AdvancedConstruction"/>
+    </CUpgrade>
+    <CUpgrade id="ManufactureShellingFabricator">
+        <Flags index="UpgradeCheat" value="0"/>
         <EffectArray Reference="Behavior,HighEnergyRegeneration42,Modification.DamageDealtScaled[Splash]" Value="1"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <MaxLevel value="80"/>
+        <LeaderAlias value="AdvancedConstruction"/>
     </CUpgrade>
     <CUpgrade id="AdvancedConstruction24223223">
         <Flags index="UpgradeCheat" value="0"/>
@@ -775,8 +775,8 @@
         <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.ModifyFlags[DisableWeapons]" Value="0"/>
         <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.AbilClassDisableArray[CAbilAttack]" Value="0"/>
         <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.TimeScale" Value="2"/>
-        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.AbilClassDisableArray[CAbilEffectInstant]" Value="1"/>
-        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.AbilClassDisableArray[CAbilEffectTarget]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.AbilClassDisableArray[CAbilEffectInstant]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.AbilClassDisableArray[CAbilEffectTarget]" Value="0"/>
         <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.BehaviorLinkDisableArray[0]" Value="HighEnergyRegeneration4"/>
         <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.BehaviorLinkDisableArray[3]" Value="HighEnergyRegeneration4"/>
         <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.BehaviorLinkDisableArray[1]" Value="HighEnergyRegeneration4"/>

@@ -19932,40 +19932,40 @@
     </CAbilResearch>
     <CAbilResearch id="EngineeringBayResearch3222" parent="EngineeringBayResearch">
         <Name value="Abil/Name/EngineeringBayResearch3222"/>
-        <InfoArray index="Research1" Time="20" Upgrade="AdvancedConstruction2422322222242">
+        <InfoArray index="Research1" Time="20" Upgrade="ManufactureGunpowderMixer">
             <Resource index="Minerals" value="35"/>
             <Resource index="Vespene" value="0"/>
             <Charge Location="Unit"/>
             <Cooldown Location="Unit"/>
-            <Button DefaultButtonFace="CalldownMULE423324332232222425242224223" Requirements="ArmInterceptor72322"/>
+            <Button DefaultButtonFace="Manufacture3GunpowderMixers" Requirements="ManufactureGunpowderMixer"/>
         </InfoArray>
-        <InfoArray index="Research2" Time="20" Upgrade="AdvancedConstruction24223222222422222">
+        <InfoArray index="Research2" Time="20" Upgrade="ManufactureShellingFabricator">
             <Resource index="Minerals" value="25"/>
             <Resource index="Vespene" value="5"/>
             <Charge Location="Unit"/>
             <Cooldown Location="Unit"/>
-            <Button DefaultButtonFace="CalldownMULE4233243322322224252422242232" Requirements="ArmInterceptor7232222"/>
+            <Button DefaultButtonFace="Manufacture3ShellingFabricators" Requirements="ManufactureShellingFabricator"/>
         </InfoArray>
-        <InfoArray index="Research3" Time="20" Upgrade="AdvancedConstruction242232222224222">
+        <InfoArray index="Research3" Time="20" Upgrade="ManufactureChemicalStation">
             <Resource index="Minerals" value="15"/>
             <Resource index="Vespene" value="20"/>
             <Charge Location="Unit"/>
             <Cooldown Location="Unit"/>
-            <Button DefaultButtonFace="CalldownMULE42332433223222242524222422322" Requirements="ArmInterceptor723"/>
+            <Button DefaultButtonFace="Manufacture3ChemicalStations" Requirements="ManufactureChemicalStation"/>
         </InfoArray>
-        <InfoArray index="Research4" Time="20" Upgrade="AdvancedConstruction24223222222422">
+        <InfoArray index="Research4" Time="20" Upgrade="ManufactureFusionCore">
             <Resource index="Minerals" value="20"/>
             <Resource index="Vespene" value="20"/>
             <Charge Location="Unit"/>
             <Cooldown Location="Unit"/>
-            <Button DefaultButtonFace="CalldownMULE423324332232222425242224223222" Requirements="ArmInterceptor7232"/>
+            <Button DefaultButtonFace="Manufacture3FusionCores" Requirements="ManufactureFusionCore"/>
         </InfoArray>
-        <InfoArray index="Research5" Time="20" Upgrade="AdvancedConstruction2422322222242222">
+        <InfoArray index="Research5" Time="20" Upgrade="ManufactureRecyclerTank">
             <Resource index="Minerals" value="15"/>
             <Resource index="Vespene" value="20"/>
             <Charge Location="Unit"/>
             <Cooldown Location="Unit"/>
-            <Button DefaultButtonFace="CalldownMULE4233243322322224252422242232222" Requirements="ArmInterceptor723222"/>
+            <Button DefaultButtonFace="Manufacture3RecyclerTanks" Requirements="ManufactureRecyclerTank"/>
         </InfoArray>
         <InfoArray index="Research6" Time="0" Upgrade="UmojanBasicUnitUpgrade522242242322222236222322222">
             <Resource index="Minerals" value="15"/>
@@ -30367,6 +30367,43 @@
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
     </CAbilEffectTarget>
+    <CAbilSpecialize id="ManufactureParts">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoArray index="Specialize1" Time="60" Effect="Manufacture3GunpowderMixers">
+            <Resource index="Minerals" value="105"/>
+            <Charge Location="Unit"/>
+            <Cooldown Location="Unit"/>
+            <Button DefaultButtonFace="Manufacture3GunpowderMixers" Requirements="ManufactureGunpowderMixer"/>
+        </InfoArray>
+        <InfoArray index="Specialize2" Time="60" Effect="Manufacture3ShellingFabricators">
+            <Resource index="Minerals" value="75"/>
+            <Resource index="Vespene" value="15"/>
+            <Charge Location="Unit"/>
+            <Cooldown Location="Unit"/>
+            <Button DefaultButtonFace="Manufacture3ShellingFabricators" Requirements="ManufactureShellingFabricator"/>
+        </InfoArray>
+        <InfoArray index="Specialize3" Time="60" Effect="Manufacture3ChemicalStations">
+            <Resource index="Minerals" value="45"/>
+            <Resource index="Vespene" value="60"/>
+            <Charge Location="Unit"/>
+            <Cooldown Location="Unit"/>
+            <Button DefaultButtonFace="Manufacture3ChemicalStations" Requirements="ManufactureChemicalStation"/>
+        </InfoArray>
+        <InfoArray index="Specialize4" Time="60" Effect="Manufacture3FusionCores">
+            <Resource index="Minerals" value="60"/>
+            <Resource index="Vespene" value="60"/>
+            <Charge Location="Unit"/>
+            <Cooldown Location="Unit"/>
+            <Button DefaultButtonFace="Manufacture3FusionCores" Requirements="ManufactureFusionCore"/>
+        </InfoArray>
+        <InfoArray index="Specialize5" Time="60" Effect="Manufacture3RecyclerTanks">
+            <Resource index="Minerals" value="45"/>
+            <Resource index="Vespene" value="60"/>
+            <Charge Location="Unit"/>
+            <Cooldown Location="Unit"/>
+            <Button DefaultButtonFace="Manufacture3RecyclerTanks" Requirements="ManufactureRecyclerTank"/>
+        </InfoArray>
+    </CAbilSpecialize>
     <CAbilEffectTarget id="MedDrone">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ApplyMedDrone"/>
