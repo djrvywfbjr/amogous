@@ -608,6 +608,9 @@
             <Resource index="Vespene" value="150"/>
             <Button DefaultButtonFace="CalldownMULE4233243322322224242" Requirements="FighterUpgrades322"/>
         </InfoArray>
+        <InfoArray index="Research27" Time="168" Upgrade="UnknownUpgrade79">
+            <Button DefaultButtonFace="UnknownButton113" Requirements="UnknownRequirement121"/>
+        </InfoArray>
     </CAbilResearch>
     <CAbilEffectInstant id="ArtanisAstralWind2">
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
@@ -652,6 +655,15 @@
             <Cooldown TimeUse="5"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="ArtanisAstralWind5"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="ArtanisInspire2">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="ArtanisInspireSearch2"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="30"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ArtanisInspire2"/>
     </CAbilEffectInstant>
     <CAbilEffectTarget id="ArtanisLightningDash2">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -16207,6 +16219,36 @@
         <UninterruptibleArray index="Finish" value="1"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="ConsumeDNA3" Requirements="HavePsionicHeart22432322232423222"/>
     </CAbilEffectTarget>
+    <CAbilEffectTarget id="ConsumeDNA32">
+        <Alignment value="Negative"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ConsumeDNASet32"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Cost>
+            <Charge>
+                <CountMax value="3"/>
+                <CountStart value="3"/>
+                <CountUse value="1"/>
+                <Location value="Player"/>
+                <TimeStart value="0.3"/>
+                <TimeUse value="0.3"/>
+            </Charge>
+        </Cost>
+        <TargetFilters value="-;Self,Structure,Missile,Uncommandable,Stasis,Dead,Hidden,Hallucination,Invulnerable"/>
+        <Range value="8"/>
+        <Arc value="360"/>
+        <AutoCastFilters value="Visible;Neutral,Enemy,Missile"/>
+        <AutoCastRange value="8"/>
+        <AutoCastValidatorArray value="CasterLifeLT10Percent2222"/>
+        <AutoCastValidatorArray value="NotSummonedUnit"/>
+        <UninterruptibleArray index="Approach" value="1"/>
+        <UninterruptibleArray index="Prep" value="1"/>
+        <UninterruptibleArray index="Cast" value="1"/>
+        <UninterruptibleArray index="Channel" value="1"/>
+        <UninterruptibleArray index="Finish" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ConsumeDNA32" Requirements="UnknownRequirement123"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="ConsumeDNA4">
         <Alignment value="Negative"/>
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
@@ -17914,7 +17956,7 @@
             <Cooldown Link="Abil/DefensiveMatrix" TimeUse="21"/>
         </Cost>
         <TargetFilters value="Visible;Self,Neutral,Enemy,Missile"/>
-        <Range value="9"/>
+        <Range value="7"/>
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="DefensiveMatrix263"/>
     </CAbilEffectTarget>
@@ -53234,7 +53276,7 @@
         <Effect index="0" value="Stimpack18"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Vital index="Life" value="10"/>
+            <Vital index="Life" value="45"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="HighArchonPsiStorm25">
             <Flags index="ToSelection" value="1"/>
@@ -53353,6 +53395,20 @@
         <AutoCastFilters value="Self,Visible;Neutral,Enemy"/>
         <AutoCastValidatorArray value="CasterLifeNotFull"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="Stim324" Requirements="UseSpectreNyxSuit232">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Stimpack33">
+        <AbilSetId value="Stimpack"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <InfoTooltipPriority value="1"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge Link="Abil/Stimpack"/>
+            <Cooldown Link="Abil/Stimpack" TimeUse="60"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Stim3">
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
     </CAbilEffectInstant>
@@ -60767,6 +60823,7 @@
                 <CountStart value="1"/>
                 <CountUse value="1"/>
                 <Link value="Abil/XenWarrior"/>
+                <Location value="Unit"/>
             </Charge>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
@@ -60775,13 +60832,14 @@
     <CAbilEffectInstant id="XenWarrior232">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Resource index="Minerals" value="150"/>
+            <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="25"/>
             <Charge>
                 <CountMax value="1"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
                 <Link value="Abil/XenWarrior"/>
+                <Location value="Unit"/>
             </Charge>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>

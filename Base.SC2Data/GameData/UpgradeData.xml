@@ -11248,8 +11248,8 @@
         <EffectArray Operation="Set" Reference="Unit,Infestor3,EnergyStart" Value="75"/>
     </CUpgrade>
     <CUpgrade id="UnknownUpgrade38">
-        <EffectArray Operation="Set" Reference="Abil,SCVHarvest2,ResourceAmountMultiplier[Minerals]" Value="1.2"/>
-        <EffectArray Operation="Set" Reference="Abil,SCVHarvest2,ResourceAmountMultiplier[Vespene]" Value="1.25"/>
+        <EffectArray Operation="Set" Reference="Abil,SCVHarvest,ResourceAmountMultiplier[Minerals]" Value="1.2"/>
+        <EffectArray Operation="Set" Reference="Abil,SCVHarvest,ResourceAmountMultiplier[Vespene]" Value="1.25"/>
     </CUpgrade>
     <CUpgrade id="UnknownUpgrade39">
         <EffectArray Reference="Behavior,UnknownBehavior29,DamageResponse.BlockChance" Value="0.1"/>
@@ -11563,9 +11563,14 @@
         <EffectArray Operation="Set" Reference="Unit,Mutalisk4,ShieldArmor" Value="3"/>
     </CUpgrade>
     <CUpgrade id="UnknownUpgrade78">
-        <EffectArray Operation="Set" Reference="Abil,BuildNydusCanal3,InfoArray[Build18].Button.Requirements"/>
+        <EffectArray Operation="Set" Reference="Abil,BuildNydusCanal3,InfoArray[Build18].Button.Requirements" Value="HaveCyberHatchery"/>
         <EffectArray Operation="Set" Reference="Unit,NydusNetwork2,CostResource[Minerals]" Value="250"/>
         <EffectArray Operation="Set" Reference="Unit,NydusNetwork2,CostResource[Vespene]" Value="100"/>
+        <EffectArray Operation="Set" Reference="Abil,BuildNydusCanal34,InfoArray[Build18].Button.Requirements" Value="HaveCyberHatchery"/>
+        <EffectArray Operation="Set" Reference="Abil,ProtossBuild5,InfoArray[Build9].Button.Requirements" Value="HaveCyberHatchery"/>
+    </CUpgrade>
+    <CUpgrade id="UnknownUpgrade79">
+        <EffectArray Operation="Set" Reference="Effect,DragoonDamage6523,AttributeBonus[Armored]" Value="0"/>
     </CUpgrade>
     <CUpgrade id="UnknownUpgrade8">
         <EffectArray Operation="Subtract" Reference="Unit,PrimalTownHall222,EnergyMax" Value="1"/>

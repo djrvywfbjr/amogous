@@ -523,6 +523,9 @@
     <CButton id="ArtanisForceOfWill2">
         <Icon value="Assets\Textures\btn-ability-protoss-forceofwill.dds"/>
     </CButton>
+    <CButton id="ArtanisInspire2">
+        <Icon value="Assets\Textures\btn-ability-protoss-confusion.dds"/>
+    </CButton>
     <CButton id="ArtanisLightningDash2">
         <Icon value="Assets\Textures\btn-ability-protoss-lightningdash.dds"/>
         <EditorCategories value="Race:Protoss"/>
@@ -4099,6 +4102,11 @@
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="CalldownMULE42332"/>
+    </CButton>
+    <CButton id="ConsumeDNA32">
+        <Icon value="Assets\Textures\btn-ability-mengsk-ghost-pyrokineticimmolation_blue.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-consume.dds"/>
+        <EditorCategories value="Race:Zerg"/>
     </CButton>
     <CButton id="SetUpGenerator">
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel3.dds"/>
@@ -29090,6 +29098,11 @@
     </CButton>
     <CButton id="UnknownButton112">
         <Icon value="Assets\Textures\btn-ability-terran-activatemine.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-activatemine.dds"/>
+    </CButton>
+    <CButton id="UnknownButton113">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-rangeincrease.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-alarak-rangeincrease.dds"/>
     </CButton>
     <CButton id="UnknownButton12">
         <Icon value="Assets\Textures\btn-upgrade-zerg-monarchblades.dds"/>

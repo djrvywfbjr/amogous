@@ -783,9 +783,8 @@
     </CEffectDamage>
     <CEffectDamage id="AcidSalivaU4" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Zerg"/>
-        <AttributeBonus index="Biological" value="12"/>
         <AttributeBonus index="Heroic" value="20"/>
-        <Amount value="11"/>
+        <Amount value="20"/>
         <Death value="Fire"/>
     </CEffectDamage>
     <CEffectDamage id="AcidSalivaU42" parent="DU_WEAP_MISSILE">
@@ -4718,6 +4717,15 @@
             <Change value="50"/>
         </VitalArray>
     </CEffectModifyUnit>
+    <CEffectApplyBehavior id="ArtanisInspireApply2">
+        <EditorCategories value=""/>
+        <Behavior value="ArtanisInspire2"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="ArtanisInspireSearch2">
+        <EditorCategories value=""/>
+        <SearchFilters value="Visible;Neutral,Enemy,Structure,Missile,Dead,Hidden"/>
+        <AreaArray Radius="9" Effect="ArtanisInspireApply2"/>
+    </CEffectEnumArea>
     <CEffectCreatePersistent id="ArtanisLightningDash2">
         <Marker>
             <MatchFlags index="Id" value="1"/>
@@ -14353,6 +14361,14 @@
         <PeriodicEffectArray value="ConsumeDNAFeedbackSet3"/>
         <PeriodicPeriodArray value="0.1"/>
     </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="ConsumeDNACP32">
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="ConsumeDNAFeedbackSet32"/>
+        <PeriodicPeriodArray value="0.1"/>
+    </CEffectCreatePersistent>
     <CEffectCreatePersistent id="ConsumeDNACP4">
         <EditorCategories value=""/>
         <WhichLocation Value="TargetUnitOrPoint"/>
@@ -14381,6 +14397,12 @@
         <Amount value="200"/>
     </CEffectDamage>
     <CEffectDamage id="ConsumeDNADamage3">
+        <EditorCategories value="Race:Zerg"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <Kind value="Ranged"/>
+        <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectDamage id="ConsumeDNADamage32">
         <EditorCategories value="Race:Zerg"/>
         <ImpactLocation Value="CasterUnit"/>
         <Kind value="Ranged"/>
@@ -14415,6 +14437,14 @@
         <LaunchLocation Value="CasterUnitOrPoint"/>
         <LaunchEffect value="ConsumeDNADamage3"/>
         <ImpactEffect value="ConsumeDNAImpact3"/>
+        <AmmoUnit value="ConsumeDNAFeedbackWeapon3"/>
+        <Movers Link="ConsumeDNAFeedback"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="ConsumeDNAFeedbackLM32">
+        <EditorCategories value="Race:Zerg"/>
+        <LaunchLocation Value="CasterUnitOrPoint"/>
+        <LaunchEffect value="ConsumeDNADamage32"/>
+        <ImpactEffect value="ConsumeDNAImpact32"/>
         <AmmoUnit value="ConsumeDNAFeedbackWeapon3"/>
         <Movers Link="ConsumeDNAFeedback"/>
     </CEffectLaunchMissile>
@@ -14455,6 +14485,11 @@
         <EditorCategories value="Race:Zerg"/>
         <EffectArray value="ConsumeDNAFeedbackLM3"/>
     </CEffectSet>
+    <CEffectSet id="ConsumeDNAFeedbackSet32">
+        <ValidatorArray value="NotDead"/>
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="ConsumeDNAFeedbackLM32"/>
+    </CEffectSet>
     <CEffectSet id="ConsumeDNAFeedbackSet4">
         <ValidatorArray value="NotDead"/>
         <EditorCategories value="Race:Zerg"/>
@@ -14479,6 +14514,12 @@
         </VitalArray>
     </CEffectModifyUnit>
     <CEffectModifyUnit id="ConsumeDNAImpact3">
+        <EditorCategories value=""/>
+        <VitalArray index="Life">
+            <Change value="20"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectModifyUnit id="ConsumeDNAImpact32">
         <EditorCategories value=""/>
         <VitalArray index="Life">
             <Change value="20"/>
@@ -14517,6 +14558,11 @@
         <ValidatorArray value="NotDead"/>
         <EditorCategories value="Race:Zerg"/>
         <EffectArray value="ConsumeDNACP3"/>
+    </CEffectSet>
+    <CEffectSet id="ConsumeDNASet32">
+        <ValidatorArray value="NotDead"/>
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="ConsumeDNACP32"/>
     </CEffectSet>
     <CEffectSet id="ConsumeDNASet4">
         <ValidatorArray value="NotDead"/>
@@ -66458,6 +66504,10 @@
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="Stimpack324">
         <EditorCategories value="Race:Terran"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="Stimpack33">
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="QuickMutator4"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="Stimpack4">
         <EditorCategories value="Race:Terran"/>

@@ -3465,6 +3465,33 @@ void libCD55B2B5_gt_ConstructionSiteDies_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
+// Trigger: Blinkcd 2
+//--------------------------------------------------------------------------------------------------
+bool libCD55B2B5_gt_Blinkcd2_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!(((EventUpgradeName() == "AdvancedConstruction24223222222422222") || (EventUpgradeName() == "AdvancedConstruction2422322222242") || (EventUpgradeName() == "AdvancedConstruction2422322222242222") || (EventUpgradeName() == "AdvancedConstruction24223222222422") || (EventUpgradeName() == "AdvancedConstruction242232222224222")))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), EventUpgradeName(), (TechTreeUpgradeCount(EventPlayer(), libNtve_gf_TriggeringProgressUpgrade(), c_techCountCompleteOnly) + 2));
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCD55B2B5_gt_Blinkcd2_Init () {
+    libCD55B2B5_gt_Blinkcd2 = TriggerCreate("libCD55B2B5_gt_Blinkcd2_Func");
+    TriggerAddEventUnitResearchProgress(libCD55B2B5_gt_Blinkcd2, null, c_unitProgressStageComplete);
+}
+
+//--------------------------------------------------------------------------------------------------
 // Trigger: WorkPower
 //--------------------------------------------------------------------------------------------------
 bool libCD55B2B5_gt_WorkPower_Func (bool testConds, bool runActions) {
@@ -9881,6 +9908,7 @@ void libCD55B2B5_InitTriggers () {
     libCD55B2B5_gt_ConstructionSiteDialog_Init();
     libCD55B2B5_gt_ConstructionSite_Init();
     libCD55B2B5_gt_ConstructionSiteDies_Init();
+    libCD55B2B5_gt_Blinkcd2_Init();
     libCD55B2B5_gt_WorkPower_Init();
     libCD55B2B5_gt_MilitaryStation_Init();
     libCD55B2B5_gt_HunterOutpostDies_Init();

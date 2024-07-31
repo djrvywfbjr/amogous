@@ -120,6 +120,7 @@ Trigger/Name/lib_CD55B2B5_50B38FB2=Untitled Trigger 001
 Trigger/Name/lib_CD55B2B5_50D2A4EF=TimeSlowOn
 Trigger/Name/lib_CD55B2B5_50F6C01C=HardeningSkinBioAugmentatorDeath
 Trigger/Name/lib_CD55B2B5_5190689E=GatherIntel
+Trigger/Name/lib_CD55B2B5_5194970C=Blinkcd 2
 Trigger/Name/lib_CD55B2B5_5206EF88=RazingC
 Trigger/Name/lib_CD55B2B5_5458FE8B=Charges+
 Trigger/Name/lib_CD55B2B5_54A45DDC=TurnUnit
