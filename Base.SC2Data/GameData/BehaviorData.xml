@@ -17192,7 +17192,7 @@
         <InfoIcon value="Assets\Textures\btn-ability-terran-psidisruption.dds"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <MaxStackCount value="20"/>
-        <Modification MoveSpeedBonus="0.1757">
+        <Modification MoveSpeedBonus="0.1015">
             <AdditiveAttackSpeedFactor value="0.07"/>
             <BehaviorLinkDisableArray value="Unmanned"/>
         </Modification>
