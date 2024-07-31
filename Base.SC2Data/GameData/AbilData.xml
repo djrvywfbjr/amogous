@@ -25980,7 +25980,7 @@
             <Resource index="Vespene" value="0"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
-            <Button DefaultButtonFace="CalldownMULE423324332232222425" Requirements="LearnBlink21224243332338"/>
+            <Button DefaultButtonFace="SetUpGenerator" Requirements="LearnBlink21224243332338"/>
         </InfoArray>
         <InfoArray index="Research2" Time="65" Upgrade="AdvancedConstruction232">
             <Resource index="Vespene" value="0"/>
@@ -26012,7 +26012,7 @@
             <Resource index="Vespene" value="150"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
-            <Button DefaultButtonFace="CalldownMULE4233243322322224253" Requirements="LearnBlink212242433323383"/>
+            <Button DefaultButtonFace="SetUpEnhancedPsiwaveGenerator" Requirements="LearnBlink212242433323383"/>
         </InfoArray>
         <InfoArray index="Research7" Time="300" Upgrade="AdvancedConstruction24">
             <Resource index="Minerals" value="125"/>
@@ -26061,7 +26061,7 @@
             <Resource index="Vespene" value="200"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
-            <Button DefaultButtonFace="CalldownMULE4233243322322224254" Requirements="LearnBlink2122424333233832"/>
+            <Button DefaultButtonFace="SetUpPsiwaveWiring" Requirements="LearnBlink2122424333233832"/>
         </InfoArray>
         <InfoArray index="Research14" Time="225" Upgrade="AdvancedConstruction2422322">
             <Resource index="Minerals" value="125"/>
@@ -26089,7 +26089,7 @@
             <Resource index="Vespene" value="400"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
-            <Button DefaultButtonFace="CalldownMULE42332433223222242542" Requirements="LearnBlink21224243332338322"/>
+            <Button DefaultButtonFace="SetUpFinalStabilizer" Requirements="LearnBlink21224243332338322"/>
         </InfoArray>
         <InfoArray index="Research18" Time="200" Upgrade="AdvancedConstruction24223223">
             <Resource index="Minerals" value="125"/>
@@ -26219,7 +26219,7 @@
             <Resource index="Vespene" value="150"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
-            <Button DefaultButtonFace="CalldownMULE4233243322322224253" Requirements="LearnBlink212242433323383"/>
+            <Button DefaultButtonFace="SetUpEnhancedPsiwaveGenerator" Requirements="LearnBlink212242433323383"/>
         </InfoArray>
         <InfoArray index="Research7" Time="300" Upgrade="AdvancedConstruction24">
             <Resource index="Minerals" value="125"/>
@@ -26268,7 +26268,7 @@
             <Resource index="Vespene" value="200"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
-            <Button DefaultButtonFace="CalldownMULE4233243322322224254" Requirements="LearnBlink2122424333233832"/>
+            <Button DefaultButtonFace="SetUpPsiwaveWiring" Requirements="LearnBlink2122424333233832"/>
         </InfoArray>
         <InfoArray index="Research14" Time="225" Upgrade="AdvancedConstruction2422322">
             <Resource index="Minerals" value="125"/>
@@ -26296,7 +26296,7 @@
             <Resource index="Vespene" value="400"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
-            <Button DefaultButtonFace="CalldownMULE42332433223222242542" Requirements="LearnBlink21224243332338322"/>
+            <Button DefaultButtonFace="SetUpFinalStabilizer" Requirements="LearnBlink21224243332338322"/>
         </InfoArray>
         <InfoArray index="Research18" Time="200" Upgrade="AdvancedConstruction24223223">
             <Resource index="Minerals" value="125"/>

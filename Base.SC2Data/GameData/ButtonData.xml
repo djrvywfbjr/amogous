@@ -4100,11 +4100,10 @@
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="CalldownMULE42332"/>
     </CButton>
-    <CButton id="CalldownMULE423324332232222425">
+    <CButton id="SetUpGenerator">
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel3.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
-        <HotkeyAlias value="CalldownMULE42332"/>
     </CButton>
     <CButton id="ResearchMedicalOutpost">
         <Icon value="Assets\Textures\btn-ability-stetmann-topbar-healthconfiguration.dds"/>
@@ -4232,19 +4231,16 @@
         <Icon value="Assets\Textures\barrier_coop.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
-        <HotkeyAlias value="CalldownMULE42332"/>
     </CButton>
     <CButton id="ResearchIndustrialBarracks">
         <Icon value="Assets\Textures\talent-raynor-level04-barracksresearchbundle.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
-        <HotkeyAlias value="CalldownMULE42332"/>
     </CButton>
     <CButton id="ResearchIndustrialPacifiers">
         <Icon value="Assets\Textures\btn-research-terran-automatedrefinery.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
-        <HotkeyAlias value="CalldownMULE42332"/>
     </CButton>
     <CButton id="ResearchIndustrialAssemblies">
         <Icon value="Assets\Textures\talent-raynor-level09-factoryresearchbundle.dds"/>
@@ -4255,19 +4251,16 @@
         <Icon value="Assets\Textures\talent-raynor-level07-engineeringbayresearchbundle.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
-        <HotkeyAlias value="CalldownMULE42332"/>
     </CButton>
     <CButton id="ResearchIndustrialThermoelectricStation">
         <Icon value="Assets\Textures\talent-raynor-level11-armoryresearchbundle.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
-        <HotkeyAlias value="CalldownMULE42332"/>
     </CButton>
     <CButton id="ResearchIndustrialPowerDistributor">
         <Icon value="Assets\Textures\talent-swann-level10-techreactors.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
-        <HotkeyAlias value="CalldownMULE42332"/>
     </CButton>
     <CButton id="ResearchOptimizedPowerDistributor">
         <Icon value="Assets\Textures\btn-ability-stetmann-stetzonegenerator-energy.dds"/>
@@ -4363,7 +4356,6 @@
         <Icon value="Assets\Textures\talent-tychus-level09-additionalmedivacs.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
-        <HotkeyAlias value="CalldownMULE42332"/>
     </CButton>
     <CButton id="CalldownMULE4233243322322224252423">
         <Icon value="Assets\Textures\btn-progression-hornerhan-11-mechhealing.dds"/>
@@ -4654,23 +4646,20 @@
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
-    <CButton id="CalldownMULE4233243322322224253">
+    <CButton id="SetUpEnhancedPsiwaveGenerator">
         <Icon value="Assets\Textures\btn-upgrade-terran-infantryarmorlevel3.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
-        <HotkeyAlias value="CalldownMULE42332"/>
     </CButton>
-    <CButton id="CalldownMULE4233243322322224254">
+    <CButton id="SetUpPsiwaveWiring">
         <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel3.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
-        <HotkeyAlias value="CalldownMULE42332"/>
     </CButton>
-    <CButton id="CalldownMULE42332433223222242542">
+    <CButton id="SetUpFinalStabilizer">
         <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel3.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
-        <HotkeyAlias value="CalldownMULE42332"/>
     </CButton>
     <CButton id="CalldownMULE42332433223222243">
         <Icon value="Assets\Textures\btn-progression-zeratul-10-chronometry.dds"/>
