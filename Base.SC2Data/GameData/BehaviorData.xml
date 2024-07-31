@@ -2460,6 +2460,9 @@
         <RefreshEffect value="NovaPlasmaPuddleDamageDebuffSlowSet23"/>
         <PeriodicEffect value="NovaPlasmaPuddleDamage23"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="NovaPlasmaPuddleDamageDebuffSlow">
+        <Modification MoveSpeedMultiplier="0.5" AttackSpeedMultiplier="0.5"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="NovaPlasmaPuddleDamageDebuffSlow23">
         <Alignment value="Negative"/>
         <InfoFlags index="Hidden" value="1"/>
@@ -20093,7 +20096,7 @@
         </VeterancyLevelArray>
         <VeterancyLevelArray MinVeterancyXP="70" LevelGainEffect="RankDummy222222">
             <Modification Detect="8">
-                <DamageDealtAttributeScaled index="Mechanical" value="30"/>
+                <DamageDealtAttributeMultiplier index="Mechanical" value="0.5"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
@@ -23151,7 +23154,7 @@
             </Modification>
         </VeterancyLevelArray>
         <VeterancyLevelArray MinVeterancyXP="100" LevelGainEffect="RankDummy22">
-            <Modification TimeScale="2">
+            <Modification TimeScale="1.25">
                 <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
@@ -35803,7 +35806,7 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="HasPsiStrike"/>
         <Duration value="4"/>
-        <Modification TimeScale="1.3"/>
+        <Modification TimeScale="1.25"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="PsiDisruption42">
         <Alignment value="Positive"/>
