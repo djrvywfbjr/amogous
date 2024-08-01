@@ -185,7 +185,7 @@
     </CRequirement>
     <CRequirement id="ManufactureGunpowderMixer">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="LT86482581CountUpgradeManufactureGunpowderMixerQueuedOrBetter50"/>
+        <NodeArray index="Use" Link="LT1853237808CountUpgradeManufactureGunpowderMixerQueuedOrBetter50"/>
     </CRequirement>
     <CRequirement id="ManufactureRecyclerTank">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
