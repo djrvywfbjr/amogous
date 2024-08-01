@@ -10179,6 +10179,17 @@
         <Period value="2.5"/>
         <Effect value="TempestLaunchMissileGround232"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="Refugeation">
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-upgrade-nova-equipment-gunblade_sword.dds"/>
+        <DisplayEffect value="RefugeCannonDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Cost>
+            <Vital index="Energy" value="-5"/>
+        </Cost>
+        <Period value="1.5"/>
+        <Effect value="RefugeCannonLM"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="TempestGround3" parent="TempestGround">
         <Name value="Weapon/Name/TempestGround3"/>
         <Tip value="Weapon/Tip/TempestGround3"/>
