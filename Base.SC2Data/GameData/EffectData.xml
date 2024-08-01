@@ -21636,7 +21636,7 @@
         <EditorCategories value="Race:Terran"/>
         <WhichLocation Value="TargetPoint"/>
         <SpawnEffect value="DutchPlaceTurretTimedLife22"/>
-        <SpawnUnit value="FlamingBetty2"/>
+        <SpawnUnit value="RefugeCannon"/>
     </CEffectCreateUnit>
     <CEffectApplyBehavior id="DutchPlaceTurretTimedLife2">
         <EditorCategories value=""/>
@@ -67329,6 +67329,19 @@
         <Amount value="15"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectDamage>
+    <CEffectDamage id="RefugeCannonDamage">
+        <EditorCategories value="Race:Protoss"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <AttributeBonus index="Armored" value="30"/>
+        <ArmorReduction value="1"/>
+        <Visibility value="Visible"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="20"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectDamage>
     <CEffectDamage id="TempestDamageGround3" parent="TempestDamageGround">
         <Name value="Effect/Name/TempestDamageGround3"/>
         <Amount value="30"/>
@@ -67496,6 +67509,11 @@
         <EditorCategories value="Race:Protoss"/>
         <ImpactEffect value="ShieldUp2322"/>
         <AmmoUnit value="TempestWeaponGround232"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="RefugeCannonLM">
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactEffect value="RefugeCannonDamage"/>
+        <AmmoUnit value="RefugeCannonMissile"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="TempestLaunchMissileGround3">
         <EditorCategories value="Race:Protoss"/>
