@@ -55026,7 +55026,7 @@
             <ValidatorArray value="HasVespene"/>
         </InfoArray>
         <InfoArray index="Build9" Unit="Barracks172232" Time="55">
-            <Button DefaultButtonFace="SensorTower17" State="Restricted" Requirements="HavePsionicHeart2243232223242322263324"/>
+            <Button DefaultButtonFace="SensorTower17" State="Restricted"/>
         </InfoArray>
         <InfoArray index="Build10" Unit="EngineeringBay1732" Time="200">
             <Button DefaultButtonFace="GhostAcademy18" State="Suppressed" Requirements="MothershipRequirements23424422"/>
