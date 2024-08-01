@@ -54063,6 +54063,10 @@
             <Cooldown TimeUse="20"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="AetherMawAetherStorm"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <AutoCastFilters value="-;-"/>
+        <AutoCastValidatorArray value="CasterEnergyLT10022222222"/>
     </CAbilEffectInstant>
     <CAbilResearch id="UnknownAbility14">
         <EditorCategories value="AbilityorEffectType:Units"/>
