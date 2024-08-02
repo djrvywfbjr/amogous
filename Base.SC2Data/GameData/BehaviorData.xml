@@ -46516,6 +46516,7 @@
         <InfoIcon value="Assets\Textures\btn-upgrade-zerg-abathur-prolongeddispersion.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification TimeScale="1.85">
+            <StateFlags index="SuppressCloak" value="1"/>
             <WeaponArray Link="ParasiteSpore"/>
         </Modification>
     </CBehaviorBuff>
