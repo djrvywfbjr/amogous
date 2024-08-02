@@ -40457,7 +40457,7 @@
     <CBehaviorBuff id="ShieldingEngine4">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="15"/>
-        <Modification WeaponRange="3" Detect="7">
+        <Modification WeaponRange="3" DetectBonus="7">
             <DamageDealtScaled index="Spell" value="20"/>
             <DamageDealtScaled index="Melee" value="20"/>
             <DamageDealtScaled index="Ranged" value="20"/>
@@ -46505,6 +46505,21 @@
             <WeaponDisableArray value="ThermalLances"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="XenWarrior262">
+        <InfoIcon value="Assets\Textures\btn-upgrade-vorazun-stasiswardpermanentlycloaked.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification MoveSpeedMultiplier="1.5" AccelerationMultiplier="1.5">
+            <StateFlags index="Cloak" value="1"/>
+            <WeaponEnableArray value="HotSLeviathanAir3"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="XenWarrior263">
+        <InfoIcon value="Assets\Textures\btn-upgrade-zerg-abathur-prolongeddispersion.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification TimeScale="1.85">
+            <WeaponArray Link="ParasiteSpore"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="XenWarrior27">
         <InfoIcon value="Assets\Textures\btn-ability-zerg-causticspray.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -46709,6 +46724,19 @@
     <CBehaviorBuff id="XenWarrior52">
         <InfoIcon value="Assets\Textures\btn-ability-protoss-shadowdashvorazun.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="XenWarrior53">
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-veilofshadowsvorazun.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification MoveSpeedMultiplier="2" Detect="8">
+            <DamageDealtUnscaled index="Spell" value="5"/>
+            <DamageDealtUnscaled index="Melee" value="5"/>
+            <DamageDealtUnscaled index="Ranged" value="5"/>
+            <DamageDealtUnscaled index="Splash" value="5"/>
+            <DamageDealtUnscaled index="NoProc" value="5"/>
+            <VitalMaxArray index="Life" value="-30"/>
+            <VitalMaxArray index="Shields" value="-40"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="XenWarrior6">
         <InfoIcon value="Assets\Textures\btn-research-terran-microfiltering.dds"/>

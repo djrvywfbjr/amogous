@@ -26253,12 +26253,26 @@
         <Death value="Blast"/>
         <DamageInheritEffect value="PureBornTempestHunterAddPoison5223"/>
     </CEffectDamage>
+    <CEffectDamage id="HotSBanelingExplodeSmallDirect4" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Kind value="Splash"/>
+        <Amount value="36"/>
+        <Death value="Disintegrate"/>
+    </CEffectDamage>
     <CEffectSet id="HotSBanelingExplodeSmallFriendlySet2">
         <EffectArray value="HotSRemoveBanelingExplodeSmallDeathBehavior3"/>
         <EffectArray value="HotSBanelingHealSmallDirect2"/>
         <EffectArray value="HotSBanelingExplodeSmallSearch2"/>
         <EffectArray value="HotSBanelingExplodeSmallHealSearch2"/>
         <EffectArray value="SuicideDelay5"/>
+    </CEffectSet>
+    <CEffectSet id="HotSBanelingExplodeSmallFriendlySet3">
+        <EffectArray value="HotSRemoveBanelingExplodeSmallDeathBehavior4"/>
+        <EffectArray value="HotSBanelingHealSmallDirect3"/>
+        <EffectArray value="HotSBanelingExplodeSmallSearch3"/>
+        <EffectArray value="HotSBanelingExplodeSmallHealSearch3"/>
+        <EffectArray value="SuicideDelay6"/>
     </CEffectSet>
     <CEffectEnumArea id="HotSBanelingExplodeSmallHealSearch2">
         <ValidatorArray value="HaveHotSBanelingHeal"/>
@@ -26267,6 +26281,15 @@
         <ExcludeArray Value="Target"/>
         <SearchFilters value="Ground,Visible;Enemy,Missile,Item,Stasis,Dead,Hidden,Invulnerable"/>
         <AreaArray Radius="2.2" Effect="HotSBanelingExplodeSmallHealSearchHeal3"/>
+        <SearchFlags index="SameCliff" value="1"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="HotSBanelingExplodeSmallHealSearch3">
+        <ValidatorArray value="HaveHotSBanelingHeal"/>
+        <EditorCategories value="Race:Zerg"/>
+        <ImpactLocation Value="SourceUnit"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Visible;Enemy,Missile,Item,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="2.2" Effect="HotSBanelingExplodeSmallHealSearchHeal4"/>
         <SearchFlags index="SameCliff" value="1"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="HotSBanelingExplodeSmallHealSearchAll2">
@@ -26291,6 +26314,13 @@
             <Change value="5"/>
         </VitalArray>
     </CEffectModifyUnit>
+    <CEffectModifyUnit id="HotSBanelingExplodeSmallHealSearchHeal4">
+        <ValidatorArray value="IsNotConstructing"/>
+        <EditorCategories value="Race:Zerg"/>
+        <VitalArray index="Life">
+            <Change value="5"/>
+        </VitalArray>
+    </CEffectModifyUnit>
     <CEffectEnumArea id="HotSBanelingExplodeSmallSearch2">
         <EditorCategories value="Race:Zerg"/>
         <ImpactLocation Value="SourceUnit"/>
@@ -26298,6 +26328,15 @@
         <ExcludeArray Value="Target"/>
         <SearchFilters value="Visible;Player,Ally,Neutral,Missile,Item,Stasis,Dead,Hidden,Invulnerable"/>
         <AreaArray Radius="2.2" Effect="HotSBanelingExplodeSmallSearchDamage3"/>
+        <SearchFlags index="SameCliff" value="1"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="HotSBanelingExplodeSmallSearch3">
+        <EditorCategories value="Race:Zerg"/>
+        <ImpactLocation Value="SourceUnit"/>
+        <ExcludeArray Value="Outer"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Visible;Player,Ally,Neutral,Missile,Item,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="2.2" Effect="HotSBanelingExplodeSmallSearchDamage4"/>
         <SearchFlags index="SameCliff" value="1"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="HotSBanelingExplodeSmallSearchAll2">
@@ -26326,6 +26365,14 @@
         <Death value="Blast"/>
         <DamageInheritEffect value="PureBornTempestHunterAddPoison5223"/>
     </CEffectDamage>
+    <CEffectDamage id="HotSBanelingExplodeSmallSearchDamage4" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <Kind value="Splash"/>
+        <Amount value="36"/>
+        <Death value="Disintegrate"/>
+    </CEffectDamage>
     <CEffectSet id="HotSBanelingExplodeSmallSet2">
         <EffectArray value="HotSRemoveBanelingExplodeSmallDeathBehavior3"/>
         <EffectArray value="HotSBanelingExplodeSmallDirect3"/>
@@ -26333,12 +26380,26 @@
         <EffectArray value="HotSBanelingExplodeSmallHealSearch2"/>
         <EffectArray value="SuicideDelay5"/>
     </CEffectSet>
+    <CEffectSet id="HotSBanelingExplodeSmallSet3">
+        <EffectArray value="HotSRemoveBanelingExplodeSmallDeathBehavior4"/>
+        <EffectArray value="HotSBanelingExplodeSmallDirect4"/>
+        <EffectArray value="HotSBanelingExplodeSmallSearch3"/>
+        <EffectArray value="HotSBanelingExplodeSmallHealSearch3"/>
+        <EffectArray value="SuicideDelay6"/>
+    </CEffectSet>
     <CEffectSwitch id="HotSBanelingExplodeSmallTarget2">
         <EditorCategories value="Race:Zerg"/>
         <CaseArray Validator="FriendlyTargetAndHealUpgradeAndIsConstructing" Effect="HotSBanelingHealerDummy4"/>
         <CaseArray Validator="FriendlyTargetAndHealUpgradeAndTargetFullLife" Effect="HotSBanelingHealerDummy4"/>
         <CaseArray Validator="FriendlyTargetAndHealUpgrade" Effect="HotSBanelingExplodeSmallFriendlySet2"/>
         <CaseDefault value="HotSBanelingExplodeSmallSet2"/>
+    </CEffectSwitch>
+    <CEffectSwitch id="HotSBanelingExplodeSmallTarget3">
+        <EditorCategories value="Race:Zerg"/>
+        <CaseArray Validator="FriendlyTargetAndHealUpgradeAndIsConstructing" Effect="HotSBanelingHealerDummy5"/>
+        <CaseArray Validator="FriendlyTargetAndHealUpgradeAndTargetFullLife" Effect="HotSBanelingHealerDummy5"/>
+        <CaseArray Validator="FriendlyTargetAndHealUpgrade" Effect="HotSBanelingExplodeSmallFriendlySet3"/>
+        <CaseDefault value="HotSBanelingExplodeSmallSet3"/>
     </CEffectSwitch>
     <CEffectModifyUnit id="HotSBanelingHealLargeDirect2">
         <EditorCategories value="Race:Zerg"/>
@@ -26358,6 +26419,12 @@
             <Change value="5"/>
         </VitalArray>
     </CEffectModifyUnit>
+    <CEffectModifyUnit id="HotSBanelingHealSmallDirect3">
+        <EditorCategories value="Race:Zerg"/>
+        <VitalArray index="Life">
+            <Change value="5"/>
+        </VitalArray>
+    </CEffectModifyUnit>
     <CEffectIssueOrder id="HotSBanelingHealerDummy2">
         <EditorCategories value="Race:Zerg"/>
         <WhichUnit Value="Source"/>
@@ -26371,6 +26438,12 @@
         <Player Value="Source"/>
     </CEffectIssueOrder>
     <CEffectIssueOrder id="HotSBanelingHealerDummy4">
+        <EditorCategories value="Race:Zerg"/>
+        <WhichUnit Value="Source"/>
+        <Abil value="stop"/>
+        <Player Value="Source"/>
+    </CEffectIssueOrder>
+    <CEffectIssueOrder id="HotSBanelingHealerDummy5">
         <EditorCategories value="Race:Zerg"/>
         <WhichUnit Value="Source"/>
         <Abil value="stop"/>
@@ -26479,6 +26552,13 @@
         <PeriodicEffectArray value="HotSLeviathanAirAttackLaunchMissile2"/>
         <PeriodicPeriodArray value="0.0625"/>
     </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="HotSLeviathanAirAttackCreatePersistent3">
+        <EditorCategories value="Race:Zerg"/>
+        <WhichLocation Value="TargetUnit"/>
+        <PeriodCount value="8"/>
+        <PeriodicEffectArray value="HotSLeviathanAirAttackLaunchMissile3"/>
+        <PeriodicPeriodArray value="0.0625"/>
+    </CEffectCreatePersistent>
     <CEffectDamage id="HotSLeviathanAirAttackDamage2" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Zerg"/>
         <AttributeBonus index="Massive" value="6"/>
@@ -26487,12 +26567,32 @@
         <AreaArray Radius="3" Fraction="1"/>
         <SearchFilters value="-;Stasis,Dead,Invulnerable"/>
     </CEffectDamage>
+    <CEffectDamage id="HotSLeviathanAirAttackDamage3" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:Zerg"/>
+        <AttributeBonus index="Massive" value="6"/>
+        <Visibility value="Visible"/>
+        <Amount value="5"/>
+    </CEffectDamage>
     <CEffectLaunchMissile id="HotSLeviathanAirAttackLaunchMissile2">
         <ValidatorArray index="0" value=""/>
         <EditorCategories value="Race:Zerg"/>
         <ImpactEffect value="HotSLeviathanAirAttackDamage2"/>
         <Flags index="Retarget" value="1"/>
         <AmmoUnit value="HotSLeviathanScourgeMissile"/>
+        <RetargetFilters value="Air,Visible;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <RetargetRange value="4"/>
+        <Movers Link="ScourgeMissileLeftRear" IfRangeLTE="500"/>
+        <Movers Link="ScourgeMissileLeftForward" IfRangeLTE="500"/>
+        <Movers Link="ScourgeMissileRightForward" IfRangeLTE="500"/>
+        <Movers Link="ScourgeMissileRightRear" IfRangeLTE="500"/>
+        <MoverExecuteJump value="1"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="HotSLeviathanAirAttackLaunchMissile3">
+        <ValidatorArray index="0" value=""/>
+        <EditorCategories value="Race:Zerg"/>
+        <ImpactEffect value="HotSLeviathanAirAttackDamage3"/>
+        <Flags index="Retarget" value="1"/>
+        <AmmoUnit value="HotSLeviathanScourgeMissile2"/>
         <RetargetFilters value="Air,Visible;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <RetargetRange value="4"/>
         <Movers Link="ScourgeMissileLeftRear" IfRangeLTE="500"/>
@@ -26517,6 +26617,11 @@
         <BehaviorLink value="BanelingExplodeSmall2"/>
     </CEffectRemoveBehavior>
     <CEffectRemoveBehavior id="HotSRemoveBanelingExplodeSmallDeathBehavior3">
+        <EditorCategories value="Race:Zerg"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="BanelingExplodeSmall"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="HotSRemoveBanelingExplodeSmallDeathBehavior4">
         <EditorCategories value="Race:Zerg"/>
         <WhichUnit Value="Caster"/>
         <BehaviorLink value="BanelingExplodeSmall"/>
@@ -65779,7 +65884,7 @@
         <CreateFlags index="ProvideFood" value="0"/>
         <CreateFlags index="UseFood" value="0"/>
         <SpawnEffect value="UnburrowAndFollow22"/>
-        <SpawnUnit value="BanelingBurrowed"/>
+        <SpawnUnit value="Baneling62"/>
         <SpawnCount value="5"/>
         <SpawnRange value="10"/>
     </CEffectCreateUnit>
@@ -66768,6 +66873,11 @@
         <EditorCategories value="Race:Zerg"/>
         <ExpireDelay value="0.0625"/>
         <FinalEffect value="Suicide9"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="SuicideDelay6">
+        <EditorCategories value="Race:Zerg"/>
+        <ExpireDelay value="0.0625"/>
+        <FinalEffect value="Suicide"/>
     </CEffectCreatePersistent>
     <CEffectDamage id="SuicideRemove10">
         <ImpactLocation Value="SourceUnit"/>
@@ -73173,6 +73283,18 @@
         <EffectArray value="VolatileBurstUCorrosive3"/>
         <EffectArray value="VolatileBurstU2Corrosive3"/>
     </CEffectSet>
+    <CEffectSet id="VolatileBurst4">
+        <ValidatorArray value="CasterIsNotHidden"/>
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="BanelingDontExplode"/>
+        <EffectArray value="SuicideTargetFriendlySwitch"/>
+        <EffectArray value="VolatileBurstU24"/>
+        <EffectArray value="VolatileBurstU5"/>
+        <EffectArray value="Suicide"/>
+        <EffectArray value="VolatileBurstViscousDischargeSearch4"/>
+        <EffectArray value="VolatileBurstUCorrosive4"/>
+        <EffectArray value="VolatileBurstU2Corrosive4"/>
+    </CEffectSet>
     <CEffectDamage id="VolatileBurstFriendlyBuildingDamage2" parent="VolatileBurstU2">
         <AINotifyFlags index="HurtEnemy" value="0"/>
         <ResponseFlags index="Acquire" value="0"/>
@@ -73203,8 +73325,42 @@
         <SearchFlags index="OffsetByUnitRadius" value="0"/>
         <SearchFlags index="SameCliff" value="0"/>
     </CEffectDamage>
+    <CEffectDamage id="VolatileBurstFriendlyBuildingDamage4" parent="DU_WEAP">
+        <Name value="Effect/Name/VolatileBurstU2"/>
+        <EditorCategories value="Race:Zerg"/>
+        <Marker Link="Effect/VolatileBurstU2"/>
+        <ResponseFlags index="Acquire" value="0"/>
+        <ResponseFlags index="Flee" value="0"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <ArmorReduction value="0"/>
+        <Flags index="Notification" value="0"/>
+        <Kind value="Splash"/>
+        <KindSplash value="Splash"/>
+        <Amount value="80"/>
+        <Death value="Disintegrate"/>
+        <SearchFlags index="CallForHelp" value="0"/>
+        <SearchFlags index="OffsetByUnitRadius" value="0"/>
+        <SearchFlags index="SameCliff" value="0"/>
+    </CEffectDamage>
     <CEffectDamage id="VolatileBurstFriendlyUnitDamage2" parent="VolatileBurstFriendlyUnitDamage"/>
     <CEffectDamage id="VolatileBurstFriendlyUnitDamage3" parent="DU_WEAP">
+        <Name value="Effect/Name/VolatileBurstU"/>
+        <EditorCategories value="Race:Zerg"/>
+        <Marker Link="Effect/VolatileBurstU"/>
+        <ResponseFlags index="Acquire" value="0"/>
+        <ResponseFlags index="Flee" value="0"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <AttributeBonus index="Light" value="19"/>
+        <Flags index="Notification" value="0"/>
+        <Kind value="Splash"/>
+        <KindSplash value="Splash"/>
+        <Amount value="16"/>
+        <Death value="Disintegrate"/>
+        <SearchFlags index="CallForHelp" value="0"/>
+        <SearchFlags index="OffsetByUnitRadius" value="0"/>
+        <SearchFlags index="SameCliff" value="0"/>
+    </CEffectDamage>
+    <CEffectDamage id="VolatileBurstFriendlyUnitDamage4" parent="DU_WEAP">
         <Name value="Effect/Name/VolatileBurstU"/>
         <EditorCategories value="Race:Zerg"/>
         <Marker Link="Effect/VolatileBurstU"/>
@@ -73247,6 +73403,19 @@
         <ExcludeArray Value="Outer"/>
         <SearchFilters value="Ground,Structure;Self,Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CEffectDamage>
+    <CEffectDamage id="VolatileBurstU24" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <ArmorReduction value="0"/>
+        <Kind value="Splash"/>
+        <KindSplash value="Splash"/>
+        <Amount value="80"/>
+        <Death value="Disintegrate"/>
+        <AreaArray Radius="2.2" Fraction="1"/>
+        <ExcludeArray Value="Outer"/>
+        <SearchFilters value="Ground,Structure;Self,Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectDamage>
     <CEffectDamage id="VolatileBurstU2Corrosive">
         <AttributeBonus index="Light" value="19"/>
         <AttributeBonus index="Structure" value="64"/>
@@ -73275,6 +73444,19 @@
         <Amount value="10"/>
         <Death value="Disintegrate"/>
     </CEffectDamage>
+    <CEffectDamage id="VolatileBurstU2Corrosive4" parent="DU_WEAP">
+        <ValidatorArray value="HasHotSBanelingCorrosiveBile"/>
+        <ValidatorArray value="IsStructure"/>
+        <EditorCategories value="Race:Zerg"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <AttributeBonus index="Light" value="19"/>
+        <AttributeBonus index="Structure" value="64"/>
+        <ArmorReduction value="0"/>
+        <Kind value="Splash"/>
+        <Amount value="16"/>
+        <Death value="Disintegrate"/>
+    </CEffectDamage>
     <CEffectDamage id="VolatileBurstU3" parent="VolatileBurstU">
         <Name value="Effect/Name/VolatileBurstU3"/>
     </CEffectDamage>
@@ -73290,6 +73472,18 @@
         <AreaArray Radius="2.2" Fraction="1"/>
         <ExcludeArray Value="Outer"/>
         <SearchFilters value="Ground;Player,Ally,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectDamage>
+    <CEffectDamage id="VolatileBurstU5" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <Kind value="Splash"/>
+        <KindSplash value="Splash"/>
+        <Amount value="36"/>
+        <Death value="Disintegrate"/>
+        <AreaArray Radius="2.2" Fraction="1"/>
+        <ExcludeArray Value="Outer"/>
+        <SearchFilters value="-;Player,Ally,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CEffectDamage>
     <CEffectDamage id="VolatileBurstUCorrosive">
         <AttributeBonus index="Light" value="19"/>
@@ -73319,11 +73513,27 @@
         <Amount value="10"/>
         <Death value="Disintegrate"/>
     </CEffectDamage>
+    <CEffectDamage id="VolatileBurstUCorrosive4" parent="DU_WEAP">
+        <ValidatorArray value="HasHotSBanelingCorrosiveBile"/>
+        <ValidatorArray value="NotStructure"/>
+        <EditorCategories value="Race:Zerg"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <AttributeBonus index="Structure" value="64"/>
+        <ArmorReduction value="0"/>
+        <Kind value="Splash"/>
+        <Amount value="36"/>
+        <Death value="Disintegrate"/>
+    </CEffectDamage>
     <CEffectApplyBehavior id="VolatileBurstViscousDischargeApplyBehavior2">
         <EditorCategories value="Race:Zerg"/>
         <Behavior value="ViscousDischarge"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="VolatileBurstViscousDischargeApplyBehavior3">
+        <EditorCategories value="Race:Zerg"/>
+        <Behavior value="ViscousDischarge"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="VolatileBurstViscousDischargeApplyBehavior4">
         <EditorCategories value="Race:Zerg"/>
         <Behavior value="ViscousDischarge"/>
     </CEffectApplyBehavior>
@@ -73338,6 +73548,12 @@
         <EditorCategories value="Race:Zerg"/>
         <SearchFilters value="Ground;Player,Ally,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AreaArray Radius="2.2" Effect="VolatileBurstViscousDischargeApplyBehavior3"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="VolatileBurstViscousDischargeSearch4">
+        <ValidatorArray value="HotSViscousDischargeResearched"/>
+        <EditorCategories value="Race:Zerg"/>
+        <SearchFilters value="Ground;Player,Ally,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="2.2" Effect="VolatileBurstViscousDischargeApplyBehavior4"/>
     </CEffectEnumArea>
     <CEffectApplyBehavior id="VoodooShieldApplyBehavior2">
         <ValidatorArray index="0" value=""/>
@@ -75915,6 +76131,14 @@
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="XenWarrior262">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="XenWarrior263">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
     <CEffectApplyBehavior id="XenWarrior27">
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
@@ -76153,6 +76377,10 @@
         <WhichUnit Value="Caster"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="XenWarrior52">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="XenWarrior53">
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
     </CEffectApplyBehavior>

@@ -4108,6 +4108,18 @@
         <AlertIcon value="Assets\Textures\btn-ability-zerg-consume.dds"/>
         <EditorCategories value="Race:Zerg"/>
     </CButton>
+    <CButton id="PoisonNova22333232">
+        <Icon value="Assets\Textures\btn-upgrade-vorazun-stasiswardpermanentlycloaked.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-poisonnova.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+        <HotkeyAlias value="PoisonNova223"/>
+    </CButton>
+    <CButton id="PoisonNova22333233">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-abathur-prolongeddispersion.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-poisonnova.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+        <HotkeyAlias value="PoisonNova223"/>
+    </CButton>
     <CButton id="SetUpGenerator">
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel3.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
@@ -26712,7 +26724,7 @@
         <HotkeyAlias value="WildMutation"/>
     </CButton>
     <CButton id="SpawnBanelings22">
-        <Icon value="Assets\Textures\abilityicon_spawnbanelings_square.dds"/>
+        <Icon value="Assets\Textures\talent-zagara-level14-unlocksplitterling.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-zerg-baneling.dds"/>
         <Hotkey value="Button/Hotkey/WildMutation"/>
         <EditorCategories value="Race:Zerg"/>
@@ -34095,6 +34107,12 @@
     </CButton>
     <CButton id="Zealot2252">
         <Icon value="Assets\Textures\btn-upgrade-zerg-abathur-improvedmend.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="Zealot2253">
+        <Icon value="Assets\Textures\btn-ability-protoss-veilofshadowsvorazun.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
         <EditorCategories value="Race:Protoss"/>
         <Universal value="1"/>

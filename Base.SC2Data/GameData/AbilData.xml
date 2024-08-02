@@ -61349,10 +61349,42 @@
                 <CountStart value="1"/>
                 <CountUse value="1"/>
                 <Link value="Abil/XenWarrior"/>
+                <Location value="Unit"/>
             </Charge>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="PoisonNova2233323"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="XenWarrior262">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Resource index="Minerals" value="25"/>
+            <Resource index="Vespene" value="100"/>
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Link value="Abil/XenWarrior"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Cooldown Link="Abil/XenWarrior"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PoisonNova22333232"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="XenWarrior263">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Resource index="Minerals" value="25"/>
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Link value="Abil/XenWarrior"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Cooldown Link="Abil/XenWarrior"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PoisonNova22333233"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior27">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -61993,6 +62025,7 @@
                 <CountStart value="1"/>
                 <CountUse value="1"/>
                 <Link value="Abil/XenWarrior"/>
+                <Location value="Unit"/>
             </Charge>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
@@ -62010,6 +62043,22 @@
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2252"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="XenWarrior53">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Resource index="Minerals" value="125"/>
+            <Resource index="Vespene" value="50"/>
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Link value="Abil/XenWarrior"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Cooldown Link="Abil/XenWarrior"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2253"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior6">
         <EditorCategories value="AbilityorEffectType:Units"/>
