@@ -2790,7 +2790,7 @@
     <CValidatorUnitCompareBehaviorCount id="IsTimeStopped234">
         <Compare value="LT"/>
         <Value value="1"/>
-        <Behavior value="Slow2224"/>
+        <Behavior value="Corroded"/>
     </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitCompareBehaviorCount id="IsTimeStopped235">
         <Compare value="LT"/>

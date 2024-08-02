@@ -8114,7 +8114,7 @@
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade522242242322222235222222212322232322">
         <EffectArray Reference="Behavior,Slow22242,Duration" Value="10"/>
-        <EffectArray Reference="Behavior,Slow2224,Duration" Value="10"/>
+        <EffectArray Reference="Behavior,Corroded,Duration" Value="10"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -8127,7 +8127,7 @@
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade52224224232222223522222221232223232222">
         <EffectArray Operation="Set" Reference="Behavior,Slow22242,Modification.MoveSpeedMultiplier" Value="0.5"/>
-        <EffectArray Operation="Set" Reference="Behavior,Slow2224,Modification.MoveSpeedMultiplier" Value="0.5"/>
+        <EffectArray Operation="Set" Reference="Behavior,Corroded,Modification.MoveSpeedMultiplier" Value="0.5"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -8138,7 +8138,7 @@
         <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll202,Modification.DeathResponse.Effect" Value="ScantipedeParasiticCU32"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222352222222123222323222222">
-        <EffectArray Operation="Set" Reference="Effect,PureBornTempestHunterAddPoison52,Behavior" Value="Slow2224"/>
+        <EffectArray Operation="Set" Reference="Effect,PureBornTempestHunterAddPoison52,Behavior" Value="Corroded"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
