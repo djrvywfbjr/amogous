@@ -719,7 +719,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification>
             <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
-            <WeaponArray Link="PunisherGrenades6"/>
+            <WeaponArray Link="CorrosiveCleanser"/>
             <WeaponDisableArray value="GuassRifle553"/>
         </Modification>
         <DamageResponse>
@@ -4124,29 +4124,6 @@
             <DamageDealtFraction index="Ranged" value="0.75"/>
             <DamageDealtFraction index="Splash" value="0.75"/>
             <DamageDealtFraction index="NoProc" value="0.75"/>
-        </Modification>
-        <DamageResponse>
-            <Cost>
-                <Charge Link="Behavior/AntamoAirAll"/>
-                <Cooldown Link="Behavior/AntamoAirAll"/>
-            </Cost>
-        </DamageResponse>
-    </CBehaviorBuff>
-    <CBehaviorBuff id="AntamoAirAll132242">
-        <Cost>
-            <Charge Link="Behavior/AntamoAirAll"/>
-            <Cooldown Link="Behavior/AntamoAirAll"/>
-        </Cost>
-        <BehaviorFlags index="Permanent" value="1"/>
-        <InfoFlags index="Hidden" value="1"/>
-        <EditorCategories value="AbilityorEffectType:Units"/>
-        <Modification RangedWeaponRange="-1">
-            <AdditiveAttackSpeedFactor value="0.4"/>
-            <DamageDealtFraction index="Spell" value="0.4"/>
-            <DamageDealtFraction index="Melee" value="0.4"/>
-            <DamageDealtFraction index="Ranged" value="0.4"/>
-            <DamageDealtFraction index="Splash" value="0.4"/>
-            <DamageDealtFraction index="NoProc" value="0.4"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -41791,15 +41768,15 @@
             <DeathResponse Chance="1" Effect="BlackhammerAoELaunch622"/>
         </Modification>
     </CBehaviorBuff>
-    <CBehaviorBuff id="Slow2224" parent="Slow">
-        <Name value="Behavior/Name/Slow2224"/>
-        <Tooltip value="Behavior/Tooltip/Slow2224"/>
+    <CBehaviorBuff id="Corroded" parent="Slow">
+        <Name value="Behavior/Name/Corroded"/>
+        <Tooltip value="Behavior/Tooltip/Corroded"/>
         <RemoveValidatorArray index="0" removed="1"/>
         <RemoveValidatorArray index="1" removed="1"/>
         <RemoveValidatorArray index="2" removed="1"/>
         <Duration value="10"/>
         <Period value="1"/>
-        <PeriodicEffect value="IrradiatePeriodicDamage2"/>
+        <PeriodicEffect value="CorrosiveCleanserDamage"/>
         <Modification MoveSpeedMultiplier="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="Slow22242" parent="Slow">

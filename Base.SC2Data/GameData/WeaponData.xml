@@ -8924,17 +8924,25 @@
         <Backswing value="0"/>
         <Effect value="PunisherGrenadesLM52"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="PunisherGrenades6">
+    <CWeaponLegacy id="CorrosiveCleanser">
         <EditorCategories value="Race:Terran"/>
+        <Options index="ContinuousScan" value="1"/>
+        <Options index="IgnoreAttackPriority" value="1"/>
         <Icon value="Assets\Textures\abilityicon_corrosivespores_square.dds"/>
-        <DisplayEffect value="PunisherGrenadesU6"/>
+        <DisplayEffect value="CorrosiveCleanserDamage"/>
         <TargetFilters value="Visible;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <MinScanRange value="6.5"/>
+        <AcquireTargetSorts>
+            <SortArray value="TSMarker"/>
+        </AcquireTargetSorts>
+        <MinScanRange value="8.5"/>
         <Range value="6"/>
+        <Marker Duration="5">
+            <MatchFlags index="Link" value="1"/>
+        </Marker>
         <Period value="1"/>
         <DamagePoint value="0"/>
         <Backswing value="0"/>
-        <Effect value="PunisherGrenadesLM6"/>
+        <Effect value="CorrosiveCleanserLM"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PunisherGrenades62">
         <EditorCategories value="Race:Terran"/>

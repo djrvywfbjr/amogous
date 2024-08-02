@@ -19921,22 +19921,22 @@
     </CEffectSet>
     <CEffectSet id="DisablingCloudSet35">
         <EditorCategories value="Race:Zerg"/>
-        <EffectArray value="PureBornTempestHunterAddPoison5"/>
+        <EffectArray value="AddCORROSION"/>
     </CEffectSet>
     <CEffectSet id="DisablingCloudSet352">
         <EditorCategories value="Race:Zerg"/>
-        <EffectArray value="PureBornTempestHunterAddPoison5"/>
+        <EffectArray value="AddCORROSION"/>
         <EffectArray value="IrradiatePeriodicDamage2"/>
     </CEffectSet>
     <CEffectSet id="DisablingCloudSet3522">
         <EditorCategories value="Race:Zerg"/>
-        <EffectArray value="PureBornTempestHunterAddPoison5"/>
+        <EffectArray value="AddCORROSION"/>
         <EffectArray value="PureBornTempestHunterAddPoison52"/>
         <EffectArray value="IrradiatePeriodicDamage2"/>
     </CEffectSet>
     <CEffectSet id="DisablingCloudSet35222">
         <EditorCategories value="Race:Zerg"/>
-        <EffectArray value="PureBornTempestHunterAddPoison5"/>
+        <EffectArray value="AddCORROSION"/>
         <EffectArray value="PureBornTempestHunterAddPoison52"/>
         <EffectArray value="IrradiatePeriodicDamage2"/>
     </CEffectSet>
@@ -20466,12 +20466,12 @@
     <CEffectSet id="DisablingCloudSet35223222">
         <EditorCategories value="Race:Zerg"/>
         <EffectArray value="PureBornTempestHunterAddPoison522"/>
-        <EffectArray value="PureBornTempestHunterAddPoison5"/>
+        <EffectArray value="AddCORROSION"/>
     </CEffectSet>
     <CEffectSet id="DisablingCloudSet352232222">
         <EditorCategories value="Race:Zerg"/>
         <EffectArray value="PureBornTempestHunterAddPoison522"/>
-        <EffectArray value="PureBornTempestHunterAddPoison5"/>
+        <EffectArray value="AddCORROSION"/>
     </CEffectSet>
     <CEffectSet id="DisablingCloudSet3522323">
         <EditorCategories value="Race:Zerg"/>
@@ -20486,14 +20486,14 @@
         <EditorCategories value="Race:Zerg"/>
         <EffectArray value="PureBornTempestHunterAddPoison53"/>
         <EffectArray value="PureBornTempestHunterAddPoison52"/>
-        <EffectArray value="PureBornTempestHunterAddPoison5"/>
+        <EffectArray value="AddCORROSION"/>
         <EffectArray value="PureBornTempestHunterAddPoison522"/>
     </CEffectSet>
     <CEffectSet id="DisablingCloudSet352232422">
         <EditorCategories value="Race:Zerg"/>
         <EffectArray value="PureBornTempestHunterAddPoison53"/>
         <EffectArray value="PureBornTempestHunterAddPoison52"/>
-        <EffectArray value="PureBornTempestHunterAddPoison5"/>
+        <EffectArray value="AddCORROSION"/>
         <EffectArray value="PureBornTempestHunterAddPoison522"/>
         <EffectArray value="PureBornTempestHunterAddPoison5222"/>
     </CEffectSet>
@@ -54107,9 +54107,9 @@
         <AmmoUnit value="PunisherGrenadesLMWeapon52"/>
         <Movers Link="PunisherGrenadesWeapon"/>
     </CEffectLaunchMissile>
-    <CEffectLaunchMissile id="PunisherGrenadesLM6">
+    <CEffectLaunchMissile id="CorrosiveCleanserLM">
         <EditorCategories value="Race:Terran"/>
-        <ImpactEffect value="PureBornTempestHunterAddPoison5"/>
+        <ImpactEffect value="AddCORROSION"/>
         <AmmoUnit value="PunisherGrenadesLMWeapon7"/>
         <Movers Link="PunisherGrenadesWeapon"/>
     </CEffectLaunchMissile>
@@ -54223,7 +54223,7 @@
     <CEffectSet id="PunisherGrenadesSet6">
         <EditorCategories value="Race:Terran"/>
         <EffectArray value="PunisherGrenadesSlow7"/>
-        <EffectArray value="PunisherGrenadesU6"/>
+        <EffectArray value="CorrosiveCleanserDamage"/>
         <EffectArray value="MarauderSlowAOE"/>
     </CEffectSet>
     <CEffectSet id="PunisherGrenadesSet7">
@@ -54502,9 +54502,9 @@
         <Amount value="20"/>
         <Death value="Blast"/>
     </CEffectDamage>
-    <CEffectDamage id="PunisherGrenadesU6" parent="DU_WEAP">
+    <CEffectDamage id="CorrosiveCleanserDamage" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
-        <AttributeBonus index="Mechanical" value="10"/>
+        <AttributeBonus index="Mechanical" value="5"/>
         <Kind value="Ranged"/>
         <Amount value="10"/>
         <Death value="Blast"/>
@@ -55827,11 +55827,11 @@
         <EditorCategories value=""/>
         <Behavior value="Poisoned5"/>
     </CEffectApplyBehavior>
-    <CEffectApplyBehavior id="PureBornTempestHunterAddPoison5">
+    <CEffectApplyBehavior id="AddCORROSION">
         <ValidatorArray index="0" value="PureBornTempestHunterAddPoisonTargetFilters"/>
         <EditorCategories value=""/>
         <Marker Link="Effect/PureBornTempestHunterAddPoison"/>
-        <Behavior value="Slow2224"/>
+        <Behavior value="Corroded"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="PureBornTempestHunterAddPoison52">
         <ValidatorArray index="0" value="PureBornTempestHunterAddPoisonTargetFilters"/>
