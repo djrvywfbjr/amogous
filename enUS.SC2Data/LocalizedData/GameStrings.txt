@@ -12190,7 +12190,7 @@ Button/Tooltip/Blink322=Teleport to any visible area.
 Button/Tooltip/Blink4=Teleports the Apparition to a nearby target location.
 Button/Tooltip/Blink42=Teleports the Quiet One to a nearby target location and makes him fire an Entropy Lance missile at a nearby enemy.
 Button/Tooltip/Blink43=Teleport the Forgotten to the targeted location in radius of 20.
-Button/Tooltip/Brazier=Fast scout. Has a flame attack that damages all enemy units in its line of fire. <n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+Button/Tooltip/Brazier=Fast scout. Has a corrosive attack that damages enemy units over time. <n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/BroodLord2=Flying heavy-assault unit. Shoots with a rapid yamato weapon.
 Button/Tooltip/BroodLord3=Flying heavy-assault unit. Shoots Broodlings at its target. A Broodling is a small creature that can attack ground units.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/BroodLord32=Flying suicide unit. Deals damage in an area to air units.<n/><c val="FFFF00">Hatches 4 at once.</c>

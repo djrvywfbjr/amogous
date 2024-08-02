@@ -54399,7 +54399,7 @@
     </CEffectDamage>
     <CEffectDamage id="CorrosiveCleanserDamage" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
-        <AttributeBonus index="Mechanical" value="10"/>
+        <AttributeBonus index="Mechanical" value="5"/>
         <Kind value="Ranged"/>
         <Amount value="10"/>
         <Death value="Blast"/>
