@@ -21636,7 +21636,7 @@
         <EditorCategories value="Race:Terran"/>
         <WhichLocation Value="TargetPoint"/>
         <SpawnEffect value="DutchPlaceTurretTimedLife22"/>
-        <SpawnUnit value="FlamingBetty2"/>
+        <SpawnUnit value="RefugeCannon"/>
     </CEffectCreateUnit>
     <CEffectApplyBehavior id="DutchPlaceTurretTimedLife2">
         <EditorCategories value=""/>
@@ -36947,6 +36947,26 @@
     <CEffectCreateUnit id="ManifestZealCU2232">
         <SpawnCount value="7"/>
     </CEffectCreateUnit>
+    <CEffectModifyPlayer id="Manufacture3GunpowderMixers">
+        <EditorCategories value=""/>
+        <Upgrades Upgrade="ManufactureGunpowderMixer" Count="3"/>
+    </CEffectModifyPlayer>
+    <CEffectModifyPlayer id="Manufacture3ShellingFabricators">
+        <EditorCategories value=""/>
+        <Upgrades Upgrade="ManufactureShellingFabricator" Count="3"/>
+    </CEffectModifyPlayer>
+    <CEffectModifyPlayer id="Manufacture3ChemicalStations">
+        <EditorCategories value=""/>
+        <Upgrades Upgrade="ManufactureChemicalStation" Count="3"/>
+    </CEffectModifyPlayer>
+    <CEffectModifyPlayer id="Manufacture3RecyclerTanks">
+        <EditorCategories value=""/>
+        <Upgrades Upgrade="ManufactureRecyclerTank" Count="3"/>
+    </CEffectModifyPlayer>
+    <CEffectModifyPlayer id="Manufacture3FusionCores">
+        <EditorCategories value=""/>
+        <Upgrades Upgrade="ManufactureFusionCore" Count="3"/>
+    </CEffectModifyPlayer>
     <CEffectEnumArea id="MarauderSlowAOE2">
         <ValidatorArray value="PunisherGrenadesResearched"/>
         <EditorCategories value="Race:Terran"/>
@@ -45508,107 +45528,107 @@
         <EditorCategories value="Race:Zerg"/>
         <Marker Link="Effect/OracleVoidSiphonAddMinerals"/>
         <WhichPlayer Value="Caster"/>
-        <Upgrades Upgrade="AdvancedConstruction2422322222242" Count="-1"/>
-        <Upgrades Upgrade="AdvancedConstruction24223222222422222" Count="-2"/>
+        <Upgrades Upgrade="ManufactureGunpowderMixer" Count="-1"/>
+        <Upgrades Upgrade="ManufactureShellingFabricator" Count="-2"/>
     </CEffectModifyPlayer>
     <CEffectModifyPlayer id="OracleVoidSiphonAddMinerals236522222222322">
         <EditorCategories value="Race:Zerg"/>
         <Marker Link="Effect/OracleVoidSiphonAddMinerals"/>
         <WhichPlayer Value="Caster"/>
-        <Upgrades Upgrade="AdvancedConstruction2422322222242" Count="-2"/>
-        <Upgrades Upgrade="AdvancedConstruction24223222222422222" Count="-1"/>
+        <Upgrades Upgrade="ManufactureGunpowderMixer" Count="-2"/>
+        <Upgrades Upgrade="ManufactureShellingFabricator" Count="-1"/>
     </CEffectModifyPlayer>
     <CEffectModifyPlayer id="OracleVoidSiphonAddMinerals2365222222223222">
         <EditorCategories value="Race:Zerg"/>
         <Marker Link="Effect/OracleVoidSiphonAddMinerals"/>
         <WhichPlayer Value="Caster"/>
-        <Upgrades Upgrade="AdvancedConstruction2422322222242" Count="-1"/>
-        <Upgrades Upgrade="AdvancedConstruction24223222222422222" Count="-1"/>
-        <Upgrades Upgrade="AdvancedConstruction2422322222242222" Count="-1"/>
+        <Upgrades Upgrade="ManufactureGunpowderMixer" Count="-1"/>
+        <Upgrades Upgrade="ManufactureShellingFabricator" Count="-1"/>
+        <Upgrades Upgrade="ManufactureRecyclerTank" Count="-1"/>
     </CEffectModifyPlayer>
     <CEffectModifyPlayer id="OracleVoidSiphonAddMinerals23652222222232222">
         <EditorCategories value="Race:Zerg"/>
         <Marker Link="Effect/OracleVoidSiphonAddMinerals"/>
         <WhichPlayer Value="Caster"/>
-        <Upgrades Upgrade="AdvancedConstruction24223222222422222" Count="-1"/>
-        <Upgrades Upgrade="AdvancedConstruction242232222224222" Count="-2"/>
+        <Upgrades Upgrade="ManufactureShellingFabricator" Count="-1"/>
+        <Upgrades Upgrade="ManufactureChemicalStation" Count="-2"/>
     </CEffectModifyPlayer>
     <CEffectModifyPlayer id="OracleVoidSiphonAddMinerals236522222222322222">
         <EditorCategories value="Race:Zerg"/>
         <Marker Link="Effect/OracleVoidSiphonAddMinerals"/>
         <WhichPlayer Value="Caster"/>
-        <Upgrades Upgrade="AdvancedConstruction242232222224222" Count="-1"/>
-        <Upgrades Upgrade="AdvancedConstruction24223222222422" Count="-2"/>
+        <Upgrades Upgrade="ManufactureChemicalStation" Count="-1"/>
+        <Upgrades Upgrade="ManufactureFusionCore" Count="-2"/>
     </CEffectModifyPlayer>
     <CEffectModifyPlayer id="OracleVoidSiphonAddMinerals2365222222223222222">
         <EditorCategories value="Race:Zerg"/>
         <Marker Link="Effect/OracleVoidSiphonAddMinerals"/>
         <WhichPlayer Value="Caster"/>
-        <Upgrades Upgrade="AdvancedConstruction2422322222242222" Count="-1"/>
-        <Upgrades Upgrade="AdvancedConstruction2422322222242" Count="-2"/>
+        <Upgrades Upgrade="ManufactureRecyclerTank" Count="-1"/>
+        <Upgrades Upgrade="ManufactureGunpowderMixer" Count="-2"/>
     </CEffectModifyPlayer>
     <CEffectModifyPlayer id="OracleVoidSiphonAddMinerals2365222222223222223">
         <EditorCategories value="Race:Zerg"/>
         <Marker Link="Effect/OracleVoidSiphonAddMinerals"/>
         <WhichPlayer Value="Caster"/>
-        <Upgrades Upgrade="AdvancedConstruction242232222224222" Count="-1"/>
-        <Upgrades Upgrade="AdvancedConstruction24223222222422" Count="-2"/>
+        <Upgrades Upgrade="ManufactureChemicalStation" Count="-1"/>
+        <Upgrades Upgrade="ManufactureFusionCore" Count="-2"/>
     </CEffectModifyPlayer>
     <CEffectModifyPlayer id="OracleVoidSiphonAddMinerals236522222222323">
         <EditorCategories value="Race:Zerg"/>
         <Marker Link="Effect/OracleVoidSiphonAddMinerals"/>
         <WhichPlayer Value="Caster"/>
-        <Upgrades Upgrade="AdvancedConstruction2422322222242" Count="-3"/>
+        <Upgrades Upgrade="ManufactureGunpowderMixer" Count="-3"/>
     </CEffectModifyPlayer>
     <CEffectModifyPlayer id="OracleVoidSiphonAddMinerals2365222222223232">
         <EditorCategories value="Race:Zerg"/>
         <Marker Link="Effect/OracleVoidSiphonAddMinerals"/>
         <WhichPlayer Value="Caster"/>
-        <Upgrades Upgrade="AdvancedConstruction24223222222422" Count="-3"/>
+        <Upgrades Upgrade="ManufactureFusionCore" Count="-3"/>
     </CEffectModifyPlayer>
     <CEffectModifyPlayer id="OracleVoidSiphonAddMinerals23652222222232322">
         <EditorCategories value="Race:Zerg"/>
         <Marker Link="Effect/OracleVoidSiphonAddMinerals"/>
         <WhichPlayer Value="Caster"/>
-        <Upgrades Upgrade="AdvancedConstruction2422322222242222" Count="-1"/>
-        <Upgrades Upgrade="AdvancedConstruction24223222222422" Count="-1"/>
-        <Upgrades Upgrade="AdvancedConstruction242232222224222" Count="-1"/>
+        <Upgrades Upgrade="ManufactureRecyclerTank" Count="-1"/>
+        <Upgrades Upgrade="ManufactureFusionCore" Count="-1"/>
+        <Upgrades Upgrade="ManufactureChemicalStation" Count="-1"/>
     </CEffectModifyPlayer>
     <CEffectModifyPlayer id="OracleVoidSiphonAddMinerals236522222222323222">
         <EditorCategories value="Race:Zerg"/>
         <Marker Link="Effect/OracleVoidSiphonAddMinerals"/>
         <WhichPlayer Value="Caster"/>
-        <Upgrades Upgrade="AdvancedConstruction2422322222242222" Count="-1"/>
-        <Upgrades Upgrade="AdvancedConstruction2422322222242" Count="-2"/>
+        <Upgrades Upgrade="ManufactureRecyclerTank" Count="-1"/>
+        <Upgrades Upgrade="ManufactureGunpowderMixer" Count="-2"/>
     </CEffectModifyPlayer>
     <CEffectModifyPlayer id="OracleVoidSiphonAddMinerals2365222222223232222">
         <EditorCategories value="Race:Zerg"/>
         <Marker Link="Effect/OracleVoidSiphonAddMinerals"/>
         <WhichPlayer Value="Caster"/>
-        <Upgrades Upgrade="AdvancedConstruction24223222222422222" Count="-1"/>
-        <Upgrades Upgrade="AdvancedConstruction2422322222242222" Count="-2"/>
+        <Upgrades Upgrade="ManufactureShellingFabricator" Count="-1"/>
+        <Upgrades Upgrade="ManufactureRecyclerTank" Count="-2"/>
     </CEffectModifyPlayer>
     <CEffectModifyPlayer id="OracleVoidSiphonAddMinerals23652222222232322222">
         <EditorCategories value="Race:Zerg"/>
         <Marker Link="Effect/OracleVoidSiphonAddMinerals"/>
         <WhichPlayer Value="Caster"/>
-        <Upgrades Upgrade="AdvancedConstruction242232222224222" Count="-1"/>
-        <Upgrades Upgrade="AdvancedConstruction24223222222422" Count="-1"/>
-        <Upgrades Upgrade="AdvancedConstruction2422322222242222" Count="-1"/>
+        <Upgrades Upgrade="ManufactureChemicalStation" Count="-1"/>
+        <Upgrades Upgrade="ManufactureFusionCore" Count="-1"/>
+        <Upgrades Upgrade="ManufactureRecyclerTank" Count="-1"/>
     </CEffectModifyPlayer>
     <CEffectModifyPlayer id="OracleVoidSiphonAddMinerals236522222222323222222">
         <EditorCategories value="Race:Zerg"/>
         <Marker Link="Effect/OracleVoidSiphonAddMinerals"/>
         <WhichPlayer Value="Caster"/>
-        <Upgrades Upgrade="AdvancedConstruction242232222224222" Count="-1"/>
-        <Upgrades Upgrade="AdvancedConstruction24223222222422" Count="-1"/>
-        <Upgrades Upgrade="AdvancedConstruction2422322222242222" Count="-1"/>
+        <Upgrades Upgrade="ManufactureChemicalStation" Count="-1"/>
+        <Upgrades Upgrade="ManufactureFusionCore" Count="-1"/>
+        <Upgrades Upgrade="ManufactureRecyclerTank" Count="-1"/>
     </CEffectModifyPlayer>
     <CEffectModifyPlayer id="OracleVoidSiphonAddMinerals2365222222223233">
         <EditorCategories value="Race:Zerg"/>
         <Marker Link="Effect/OracleVoidSiphonAddMinerals"/>
         <WhichPlayer Value="Caster"/>
-        <Upgrades Upgrade="AdvancedConstruction2422322222242" Count="-3"/>
+        <Upgrades Upgrade="ManufactureGunpowderMixer" Count="-3"/>
     </CEffectModifyPlayer>
     <CEffectModifyPlayer id="OracleVoidSiphonAddMinerals236522222223">
         <ValidatorArray value="CasterLifeLT5032222222"/>
@@ -67419,6 +67439,19 @@
         <Amount value="15"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectDamage>
+    <CEffectDamage id="RefugeCannonDamage">
+        <EditorCategories value="Race:Protoss"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <AttributeBonus index="Armored" value="30"/>
+        <ArmorReduction value="1"/>
+        <Visibility value="Visible"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="20"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectDamage>
     <CEffectDamage id="TempestDamageGround3" parent="TempestDamageGround">
         <Name value="Effect/Name/TempestDamageGround3"/>
         <Amount value="30"/>
@@ -67586,6 +67619,11 @@
         <EditorCategories value="Race:Protoss"/>
         <ImpactEffect value="ShieldUp2322"/>
         <AmmoUnit value="TempestWeaponGround232"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="RefugeCannonLM">
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactEffect value="RefugeCannonDamage"/>
+        <AmmoUnit value="RefugeCannonMissile"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="TempestLaunchMissileGround3">
         <EditorCategories value="Race:Protoss"/>

@@ -2674,7 +2674,6 @@
         <InfoIcon value="Assets\Textures\btn-building-protoss-pylon.dds"/>
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
         <PowerLink value="PowerSource"/>
-        <PlacementMinPowerLevel value="1"/>
         <PowerStageArray>
             <Modification>
                 <ModifyFlags index="DisableAbils" value="1"/>

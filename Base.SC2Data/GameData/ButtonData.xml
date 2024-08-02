@@ -4292,39 +4292,34 @@
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
-    <CButton id="CalldownMULE423324332232222425242224223">
+    <CButton id="Manufacture3GunpowderMixers">
         <Icon value="Assets\Textures\btn-upgrade-tychus-herc-malice.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
-        <HotkeyAlias value="CalldownMULE42332"/>
         <ChargeText value="GunPow"/>
     </CButton>
-    <CButton id="CalldownMULE4233243322322224252422242232">
+    <CButton id="Manufacture3ShellingFabricators">
         <Icon value="Assets\Textures\btn-upgrade-tychus-reaper-hostilitieskit.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
-        <HotkeyAlias value="CalldownMULE42332"/>
         <ChargeText value="ShellFab"/>
     </CButton>
-    <CButton id="CalldownMULE42332433223222242524222422322">
+    <CButton id="Manufacture3ChemicalStations">
         <Icon value="Assets\Textures\btn-upgrade-tychus-marauder-aggressionblend.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
-        <HotkeyAlias value="CalldownMULE42332"/>
         <ChargeText value="ChemStat"/>
     </CButton>
-    <CButton id="CalldownMULE423324332232222425242224223222">
+    <CButton id="Manufacture3FusionCores">
         <Icon value="Assets\Textures\btn-upgrade-tychus-ghost-persuader.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
-        <HotkeyAlias value="CalldownMULE42332"/>
         <ChargeText value="FuseCore"/>
     </CButton>
-    <CButton id="CalldownMULE4233243322322224252422242232222">
+    <CButton id="Manufacture3RecyclerTanks">
         <Icon value="Assets\Textures\btn-upgrade-tychus-firebat-wildflamefuel.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
-        <HotkeyAlias value="CalldownMULE42332"/>
         <ChargeText value="RecTank"/>
     </CButton>
     <CButton id="CalldownMULE42332433223222242524222422322222">

@@ -175,25 +175,25 @@
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
         <NodeArray index="Use" Link="LT2533098009CountUpgradeUmojanBasicUnitUpgrade522242242322222236222322222QueuedOrBetter75"/>
     </CRequirement>
-    <CRequirement id="ArmInterceptor723">
+    <CRequirement id="ManufactureChemicalStation">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="LT879540594CountUpgradeAdvancedConstruction242232222224222QueuedOrBetter50"/>
+        <NodeArray index="Use" Link="LT879540594CountUpgradeManufactureChemicalStationQueuedOrBetter50"/>
     </CRequirement>
-    <CRequirement id="ArmInterceptor7232">
+    <CRequirement id="ManufactureFusionCore">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="LT1853237808CountUpgradeAdvancedConstruction24223222222422QueuedOrBetter50"/>
+        <NodeArray index="Use" Link="LT1853237808CountUpgradeManufactureFusionCoreQueuedOrBetter50"/>
     </CRequirement>
-    <CRequirement id="ArmInterceptor72322">
+    <CRequirement id="ManufactureGunpowderMixer">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="LT86482581CountUpgradeAdvancedConstruction2422322222242QueuedOrBetter50"/>
+        <NodeArray index="Use" Link="LT1853237808CountUpgradeManufactureGunpowderMixerQueuedOrBetter50"/>
     </CRequirement>
-    <CRequirement id="ArmInterceptor723222">
+    <CRequirement id="ManufactureRecyclerTank">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="LT393313941CountUpgradeAdvancedConstruction2422322222242222QueuedOrBetter50"/>
+        <NodeArray index="Use" Link="LT393313941CountUpgradeManufactureRecyclerTankQueuedOrBetter50"/>
     </CRequirement>
-    <CRequirement id="ArmInterceptor7232222">
+    <CRequirement id="ManufactureShellingFabricator">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="LT2053466437CountUpgradeAdvancedConstruction24223222222422222QueuedOrBetter50"/>
+        <NodeArray index="Use" Link="LT2053466437CountUpgradeManufactureShellingFabricatorQueuedOrBetter50"/>
     </CRequirement>
     <CRequirement id="ArmInterceptor8">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
@@ -6252,51 +6252,51 @@
     </CRequirement>
     <CRequirement id="MothershipRequirements232254">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="AndGTECountUpgradeAdvancedConstruction2422322222242CompleteOnly2GTECountUpgradeAdvancedConstruction24223222222422222CompleteOnly1"/>
+        <NodeArray index="Use" Link="AndGTECountUpgradeManufactureGunpowderMixerCompleteOnly2GTECountUpgradeManufactureShellingFabricatorCompleteOnly1"/>
     </CRequirement>
     <CRequirement id="MothershipRequirements2322542">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="AndGTECountUpgradeAdvancedConstruction2422322222242CompleteOnly1GTECountUpgradeAdvancedConstruction24223222222422222CompleteOnly2"/>
+        <NodeArray index="Use" Link="AndGTECountUpgradeManufactureGunpowderMixerCompleteOnly1GTECountUpgradeManufactureShellingFabricatorCompleteOnly2"/>
     </CRequirement>
     <CRequirement id="MothershipRequirements23225422">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="AndGTECountUpgradeAdvancedConstruction2422322222242CompleteOnly1GTECountUpgradeAdvancedConstruction24223222222422222CompleteOnly1GTECountUpgradeAdvancedConstruction2422322222242222CompleteOnly1"/>
+        <NodeArray index="Use" Link="AndGTECountUpgradeManufactureGunpowderMixerCompleteOnly1GTECountUpgradeManufactureShellingFabricatorCompleteOnly1GTECountUpgradeManufactureRecyclerTankCompleteOnly1"/>
     </CRequirement>
     <CRequirement id="MothershipRequirements232254222">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="AndGTECountUpgradeAdvancedConstruction242232222224222CompleteOnly1GTECountUpgradeAdvancedConstruction24223222222422CompleteOnly1GTECountUpgradeAdvancedConstruction2422322222242222CompleteOnly1"/>
+        <NodeArray index="Use" Link="AndGTECountUpgradeManufactureChemicalStationCompleteOnly1GTECountUpgradeManufactureFusionCoreCompleteOnly1GTECountUpgradeManufactureRecyclerTankCompleteOnly1"/>
     </CRequirement>
     <CRequirement id="MothershipRequirements23225423">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="AndGTECountUpgradeAdvancedConstruction242232222224222CompleteOnly2GTECountUpgradeAdvancedConstruction24223222222422222CompleteOnly1"/>
+        <NodeArray index="Use" Link="AndGTECountUpgradeManufactureChemicalStationCompleteOnly2GTECountUpgradeManufactureShellingFabricatorCompleteOnly1"/>
     </CRequirement>
     <CRequirement id="MothershipRequirements232254232">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="AndGTECountUpgradeAdvancedConstruction24223222222422CompleteOnly2GTECountUpgradeAdvancedConstruction242232222224222CompleteOnly1"/>
+        <NodeArray index="Use" Link="AndGTECountUpgradeManufactureFusionCoreCompleteOnly2GTECountUpgradeManufactureChemicalStationCompleteOnly1"/>
     </CRequirement>
     <CRequirement id="MothershipRequirements2322542322">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="AndGTECountUpgradeAdvancedConstruction2422322222242CompleteOnly2GTECountUpgradeAdvancedConstruction2422322222242222CompleteOnly1"/>
+        <NodeArray index="Use" Link="AndGTECountUpgradeManufactureGunpowderMixerCompleteOnly2GTECountUpgradeManufactureRecyclerTankCompleteOnly1"/>
     </CRequirement>
     <CRequirement id="MothershipRequirements232254233">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="AndGTECountUpgradeAdvancedConstruction2422322222242222CompleteOnly2GTECountUpgradeAdvancedConstruction2422322222242CompleteOnly1"/>
+        <NodeArray index="Use" Link="AndGTECountUpgradeManufactureRecyclerTankCompleteOnly2GTECountUpgradeManufactureGunpowderMixerCompleteOnly1"/>
     </CRequirement>
     <CRequirement id="MothershipRequirements2322542332">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="AndGTECountUpgradeAdvancedConstruction2422322222242222CompleteOnly2GTECountUpgradeAdvancedConstruction24223222222422222CompleteOnly1"/>
+        <NodeArray index="Use" Link="AndGTECountUpgradeManufactureRecyclerTankCompleteOnly2GTECountUpgradeManufactureShellingFabricatorCompleteOnly1"/>
     </CRequirement>
     <CRequirement id="MothershipRequirements23225424">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="AndGTECountUpgradeAdvancedConstruction2422322222242CompleteOnly1GTECountUpgradeAdvancedConstruction24223222222422222CompleteOnly2"/>
+        <NodeArray index="Use" Link="AndGTECountUpgradeManufactureGunpowderMixerCompleteOnly1GTECountUpgradeManufactureShellingFabricatorCompleteOnly2"/>
     </CRequirement>
     <CRequirement id="MothershipRequirements2322543">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="AndGTECountUpgradeAdvancedConstruction24223222222422CompleteOnly3"/>
+        <NodeArray index="Use" Link="AndGTECountUpgradeManufactureFusionCoreCompleteOnly3"/>
     </CRequirement>
     <CRequirement id="MothershipRequirements23225432">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="AndGTECountUpgradeAdvancedConstruction2422322222242CompleteOnly3"/>
+        <NodeArray index="Use" Link="AndGTECountUpgradeManufactureGunpowderMixerCompleteOnly3"/>
     </CRequirement>
     <CRequirement id="MothershipRequirements233">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
