@@ -28044,8 +28044,6 @@
         </Cost>
         <TargetFilters value="Structure;RawResource,HarvestableResource,Item,Dead,Hidden,Invulnerable"/>
         <Range value="13"/>
-        <PauseableArray index="Channel" value="0"/>
-        <UninterruptibleArray index="Channel" value="1"/>
         <AINotifyEffect value=""/>
         <CmdButtonArray index="Execute" DefaultButtonFace="Irradiate2222"/>
         <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
@@ -36013,7 +36011,7 @@
         <AutoCastRange value="8"/>
         <CursorEffect index="0" value="NovaWeaponPlasmaBlastNewMissileScan"/>
         <CmdButtonArray index="Execute" Requirements="HaveEnlistmentHouse2234222"/>
-        <AutoCastFilters value="Visible;Player,Ally,Neutral,Structure"/>
+        <AutoCastFilters value="Ground,Visible;Player,Ally,Neutral,Structure,User1,Missile,Cloaked,Stasis,Hidden"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="NovaWeaponPlasmaBlastNew23" parent="WizSimpleSkillshot">
         <Effect index="0" value="NovaWeaponPlasmaBlastNewInitialSet23"/>
@@ -39135,7 +39133,7 @@
                 <CountUse value="1"/>
                 <TimeUse value="40"/>
             </Charge>
-            <Cooldown Link="Raven Build Link" Location="Unit"/>
+            <Cooldown Link="Raven Build Link" Location="Unit" TimeStart="56"/>
         </Cost>
         <Placeholder value="PointDefenseDrone"/>
         <Range value="6"/>

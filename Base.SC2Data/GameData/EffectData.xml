@@ -36378,6 +36378,16 @@
         <PeriodicEffectArray value="LongboltMissileLM2322"/>
         <PeriodicPeriodArray value="0.1"/>
     </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="LongboltMissile24">
+        <EditorCategories value="Race:Terran"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="10"/>
+        <PeriodicEffectArray value="LongboltMissileLM24"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.1"/>
+    </CEffectCreatePersistent>
     <CEffectCreatePersistent id="LongboltMissile3">
         <EditorCategories value="Race:Terran"/>
         <WhichLocation Value="TargetUnit"/>
@@ -36476,6 +36486,12 @@
         <ImpactEffect value="LongboltMissileU2322"/>
         <AmmoUnit value="LongboltMissileWeapon2322"/>
     </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="LongboltMissileLM24">
+        <ValidatorArray index="0" value="RangeCheckLE15"/>
+        <EditorCategories value="Race:Terran"/>
+        <ImpactEffect value="LongboltMissileU24"/>
+        <AmmoUnit value="LongboltMissileWeapon2"/>
+    </CEffectLaunchMissile>
     <CEffectLaunchMissile id="LongboltMissileLM3">
         <ValidatorArray index="0" value="RangeCheckLE15"/>
         <EditorCategories value="Race:Terran"/>
@@ -36540,6 +36556,10 @@
     <CEffectDamage id="LongboltMissileU2322" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Terran"/>
         <Amount value="9"/>
+    </CEffectDamage>
+    <CEffectDamage id="LongboltMissileU24" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:Terran"/>
+        <Amount value="8"/>
     </CEffectDamage>
     <CEffectDamage id="LongboltMissileU3" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Terran"/>
