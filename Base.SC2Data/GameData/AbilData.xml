@@ -60271,6 +60271,8 @@
         <AutoCastRange value="13"/>
         <PrepTime index="0" value="0"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="WidowMineAttack23" Requirements=""/>
+        <Flags index="AutoCast" value="0"/>
+        <Flags index="AutoCastOn" value="0"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="WidowMineAttack24">
         <DataCollection value="WidowMineAttack"/>

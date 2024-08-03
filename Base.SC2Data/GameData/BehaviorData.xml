@@ -19719,7 +19719,7 @@
         </VeterancyLevelArray>
         <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.55"/>
-        <SharedXPFraction index="DamageDealt" value="0.75"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel22">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -19797,7 +19797,7 @@
         </VeterancyLevelArray>
         <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.73"/>
-        <SharedXPFraction index="DamageDealt" value="0.75"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel222">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -19864,7 +19864,7 @@
         </VeterancyLevelArray>
         <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.54"/>
-        <SharedXPFraction index="DamageDealt" value="0.8"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel223">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -19939,7 +19939,7 @@
         </VeterancyLevelArray>
         <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.73"/>
-        <SharedXPFraction index="DamageDealt" value="0.75"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel224">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -20017,7 +20017,7 @@
         </VeterancyLevelArray>
         <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.69"/>
-        <SharedXPFraction index="DamageDealt" value="0.75"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel2242">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -20090,7 +20090,7 @@
         </VeterancyLevelArray>
         <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.69"/>
-        <SharedXPFraction index="DamageDealt" value="0.75"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel22422">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -22472,7 +22472,7 @@
         </VeterancyLevelArray>
         <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.65"/>
-        <SharedXPFraction index="DamageDealt" value="0.75"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel22432">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -22560,7 +22560,7 @@
         </VeterancyLevelArray>
         <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.59"/>
-        <SharedXPFraction index="DamageDealt" value="0.75"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel22433">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -23124,7 +23124,7 @@
         </VeterancyLevelArray>
         <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.8"/>
-        <SharedXPFraction index="DamageDealt" value="0.75"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel226">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -23156,7 +23156,7 @@
         </VeterancyLevelArray>
         <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.5"/>
-        <SharedXPFraction index="DamageDealt" value="0.75"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel2262">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -23193,7 +23193,7 @@
         </VeterancyLevelArray>
         <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.69"/>
-        <SharedXPFraction index="DamageDealt" value="0.75"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel227">
         <Cost>
@@ -24446,7 +24446,7 @@
         </VeterancyLevelArray>
         <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.69"/>
-        <SharedXPFraction index="DamageDealt" value="0.75"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel2282">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -24513,7 +24513,7 @@
         </VeterancyLevelArray>
         <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.69"/>
-        <SharedXPFraction index="DamageDealt" value="0.75"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel2283">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -24572,7 +24572,7 @@
         </VeterancyLevelArray>
         <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.69"/>
-        <SharedXPFraction index="DamageDealt" value="0.75"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel229">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -24635,7 +24635,7 @@
         </VeterancyLevelArray>
         <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.69"/>
-        <SharedXPFraction index="DamageDealt" value="0.75"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel23">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -24713,7 +24713,7 @@
                 <RateMultiplierArray index="Cooldown" value="2"/>
             </Modification>
         </VeterancyLevelArray>
-        <SharedXPFraction index="DamageDealt" value="0.75"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorBuff id="CycloneWeaponLaunchMissileAlternate2">
         <InfoFlags index="Hidden" value="1"/>
@@ -46492,7 +46492,7 @@
     <CBehaviorBuff id="XenWarrior263">
         <InfoIcon value="Assets\Textures\btn-upgrade-zerg-abathur-prolongeddispersion.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Modification TimeScale="1.85">
+        <Modification MoveSpeedMultiplier="1.85" AccelerationMultiplier="1.85">
             <StateFlags index="SuppressCloak" value="1"/>
             <WeaponArray Link="ParasiteSpore"/>
         </Modification>
@@ -46706,6 +46706,7 @@
         <InfoIcon value="Assets\Textures\btn-ability-protoss-veilofshadowsvorazun.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification MoveSpeedMultiplier="2" Detect="8">
+            <StateFlags index="Cloak" value="1"/>
             <DamageDealtUnscaled index="Spell" value="5"/>
             <DamageDealtUnscaled index="Melee" value="5"/>
             <DamageDealtUnscaled index="Ranged" value="5"/>
