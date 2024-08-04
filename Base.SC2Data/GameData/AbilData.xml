@@ -27772,7 +27772,7 @@
             </Charge>
             <Cooldown TimeUse="0.1"/>
         </Cost>
-        <AutoCastFilters value="Air,Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Invulnerable"/>
+        <AutoCastFilters value="Air,Visible;Player,Ally,Neutral,Missile,Cloaked,Stasis,Dead,Invulnerable"/>
         <AutoCastRange value="8"/>
         <AutoCastValidatorArray index="0" removed="1"/>
         <AutoCastValidatorArray index="1" removed="1"/>
