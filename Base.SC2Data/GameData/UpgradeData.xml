@@ -11500,8 +11500,8 @@
         <EffectArray Operation="Subtract" Reference="Unit,PrimalTownHall222,EnergyStart" Value="1"/>
     </CUpgrade>
     <CUpgrade id="UnknownUpgrade63">
-        <EffectArray Operation="Set" Reference="Unit,HotSSwarmling33,ShieldsMax" Value="200"/>
-        <EffectArray Operation="Set" Reference="Unit,HotSSwarmling33,ShieldsStart" Value="200"/>
+        <EffectArray Reference="Unit,HotSSwarmling33,ShieldsMax" Value="50"/>
+        <EffectArray Reference="Unit,HotSSwarmling33,ShieldsStart" Value="50"/>
     </CUpgrade>
     <CUpgrade id="UnknownUpgrade64">
         <EffectArray Operation="Set" Reference="Weapon,GoliathA22,Range" Value="9"/>
