@@ -6316,10 +6316,10 @@
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade52224224232222222243322223">
-        <EffectArray Operation="Set" Reference="Unit,Scourge4,Speed" Value="5.898400"/>
+        <EffectArray Reference="Unit,Scourge4,Speed" Value="1.250000"/>
         <EffectArray Operation="Set" Reference="Unit,Scourge4,Acceleration" Value="1000.000000"/>
         <EffectArray Operation="Set" Reference="Unit,MiscCreep2,Acceleration" Value="1000.000000"/>
-        <EffectArray Reference="Unit,MiscCreep2,Speed" Value="2.000000"/>
+        <EffectArray Reference="Unit,MiscCreep2,Speed" Value="1.250000"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>

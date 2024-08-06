@@ -11344,6 +11344,12 @@
         <ExpireDelay value="4"/>
         <FinalEffect value="CalldownMULEFinalSet42322"/>
     </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="CalldownMULECreatePersistent423222">
+        <EditorCategories value="Race:Terran"/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <ExpireDelay value="4"/>
+        <FinalEffect value="CalldownMULEFinalSet423222"/>
+    </CEffectCreatePersistent>
     <CEffectCreatePersistent id="CalldownMULECreatePersistent42323">
         <EditorCategories value="Race:Terran"/>
         <WhichLocation Value="TargetUnitOrPoint"/>
@@ -11481,6 +11487,12 @@
         <WhichLocation Value="TargetUnitOrPoint"/>
         <ExpireDelay value="4"/>
         <FinalEffect value="CalldownMULEFinalSet423323"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="CalldownMULECreatePersistent42333">
+        <EditorCategories value="Race:Terran"/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <ExpireDelay value="2"/>
+        <FinalEffect value="CalldownMULEFinalSet42333"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="CalldownMULECreatePersistent4234">
         <EditorCategories value="Race:Terran"/>
@@ -11759,6 +11771,11 @@
         <EffectArray value="MakePrecursor"/>
         <EffectArray value="CalldownMULECreatePersistent42322"/>
     </CEffectSet>
+    <CEffectSet id="CalldownMULECreateSet423222">
+        <EditorCategories value="Race:Terran"/>
+        <EffectArray value="MakePrecursor"/>
+        <EffectArray value="CalldownMULECreatePersistent423222"/>
+    </CEffectSet>
     <CEffectSet id="CalldownMULECreateSet42323">
         <EditorCategories value="Race:Terran"/>
         <EffectArray value="MakePrecursor"/>
@@ -11873,6 +11890,11 @@
         <EditorCategories value="Race:Terran"/>
         <EffectArray value="MakePrecursor"/>
         <EffectArray value="CalldownMULECreatePersistent423323"/>
+    </CEffectSet>
+    <CEffectSet id="CalldownMULECreateSet42333">
+        <EditorCategories value="Race:Terran"/>
+        <EffectArray value="MakePrecursor"/>
+        <EffectArray value="CalldownMULECreatePersistent42333"/>
     </CEffectSet>
     <CEffectSet id="CalldownMULECreateSet4234">
         <EditorCategories value="Race:Terran"/>
@@ -12205,6 +12227,13 @@
         <SpawnEffect value="CalldownMULECreateSet42322"/>
         <SpawnUnit value="SporeCrawler2"/>
     </CEffectCreateUnit>
+    <CEffectCreateUnit id="CalldownMULECreateUnit423222">
+        <ValidatorArray value="MULETargetCheck"/>
+        <EditorCategories value="Race:Terran"/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <SpawnEffect value="CalldownMULECreateSet423222"/>
+        <SpawnUnit value="OmindCreepTower"/>
+    </CEffectCreateUnit>
     <CEffectCreateUnit id="CalldownMULECreateUnit42323">
         <ValidatorArray value="MULETargetCheck"/>
         <EditorCategories value="Race:Terran"/>
@@ -12363,6 +12392,13 @@
         <WhichLocation Value="TargetUnitOrPoint"/>
         <SpawnEffect value="CalldownMULECreateSet423323"/>
         <SpawnUnit value="Marine3"/>
+    </CEffectCreateUnit>
+    <CEffectCreateUnit id="CalldownMULECreateUnit42333">
+        <ValidatorArray value="MULETargetCheck"/>
+        <EditorCategories value="Race:Terran"/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <SpawnEffect value="CalldownMULECreateSet42333"/>
+        <SpawnUnit value="CreepTumorUsed2"/>
     </CEffectCreateUnit>
     <CEffectCreateUnit id="CalldownMULECreateUnit4234">
         <ValidatorArray value="MULETargetCheck"/>
@@ -12692,6 +12728,11 @@
         <EffectArray value="CalldownMULETimedLife42322"/>
         <EffectArray value="CalldownMULEIssueOrder42322"/>
     </CEffectSet>
+    <CEffectSet id="CalldownMULEFinalSet423222">
+        <EditorCategories value="Race:Terran"/>
+        <EffectArray value="RemovePrecursor"/>
+        <EffectArray value="CalldownMULEIssueOrder423222"/>
+    </CEffectSet>
     <CEffectSet id="CalldownMULEFinalSet42323">
         <EditorCategories value="Race:Terran"/>
         <EffectArray value="RemovePrecursor"/>
@@ -12827,6 +12868,12 @@
         <EffectArray value="RemovePrecursor"/>
         <EffectArray value="CalldownMULETimedLife423323"/>
         <EffectArray value="CalldownMULEIssueOrder423323"/>
+    </CEffectSet>
+    <CEffectSet id="CalldownMULEFinalSet42333">
+        <EditorCategories value="Race:Terran"/>
+        <EffectArray value="RemovePrecursor"/>
+        <EffectArray value="CalldownMULETimedLife42333"/>
+        <EffectArray value="CalldownMULEIssueOrder42333"/>
     </CEffectSet>
     <CEffectSet id="CalldownMULEFinalSet4234">
         <EditorCategories value="Race:Terran"/>
@@ -13105,6 +13152,11 @@
         <Abil value="MULEGather"/>
         <Target Effect="CalldownMULECreateUnit" Value="TargetUnit"/>
     </CEffectIssueOrder>
+    <CEffectIssueOrder id="CalldownMULEIssueOrder423222">
+        <EditorCategories value="Race:Terran"/>
+        <Abil value="MULEGather"/>
+        <Target Effect="CalldownMULECreateUnit" Value="TargetUnit"/>
+    </CEffectIssueOrder>
     <CEffectIssueOrder id="CalldownMULEIssueOrder42323">
         <EditorCategories value="Race:Terran"/>
         <Abil value="MULEGather"/>
@@ -13216,6 +13268,11 @@
         <Target Effect="CalldownMULECreateUnit" Value="TargetUnit"/>
     </CEffectIssueOrder>
     <CEffectIssueOrder id="CalldownMULEIssueOrder423323">
+        <EditorCategories value="Race:Terran"/>
+        <Abil value="MULEGather"/>
+        <Target Effect="CalldownMULECreateUnit" Value="TargetUnit"/>
+    </CEffectIssueOrder>
+    <CEffectIssueOrder id="CalldownMULEIssueOrder42333">
         <EditorCategories value="Race:Terran"/>
         <Abil value="MULEGather"/>
         <Target Effect="CalldownMULECreateUnit" Value="TargetUnit"/>
@@ -13446,6 +13503,10 @@
         <EditorCategories value="Race:Terran"/>
         <Behavior value="AntamoAirAll4322"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="CalldownMULETimedLife423222">
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="AntamoAirAll4322"/>
+    </CEffectApplyBehavior>
     <CEffectApplyBehavior id="CalldownMULETimedLife42323">
         <EditorCategories value="Race:Terran"/>
         <Behavior value="AntamoAirAll4323"/>
@@ -13537,6 +13598,10 @@
     <CEffectApplyBehavior id="CalldownMULETimedLife423323">
         <EditorCategories value="Race:Terran"/>
         <Behavior value="AntamoAirAll43323"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="CalldownMULETimedLife42333">
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="2Hydralisks"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="CalldownMULETimedLife4234">
         <EditorCategories value="Race:Terran"/>
@@ -14876,6 +14941,11 @@
     </CEffectIssueOrder>
     <CEffectIssueOrder id="CritterFleeIssueStopOrder22">
         <EditorCategories value="Race:Zerg"/>
+        <Abil value="stop"/>
+    </CEffectIssueOrder>
+    <CEffectIssueOrder id="CritterFleeIssueStopOrder23">
+        <EditorCategories value="Race:Zerg"/>
+        <WhichUnit Value="Caster"/>
         <Abil value="stop"/>
     </CEffectIssueOrder>
     <CEffectDamage id="CrucioShockCannonBlast2" parent="DU_WEAP">
@@ -22705,6 +22775,15 @@
         <SearchFlags index="OffsetByUnitRadius" value="0"/>
     </CEffectDamage>
     <CEffectDamage id="ExplosiveSpinesDamage6" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <Kind value="Splash"/>
+        <Amount value="15"/>
+        <AreaArray Radius="1.5" Fraction="0.333"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Air;Self,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFlags index="OffsetByUnitRadius" value="0"/>
+    </CEffectDamage>
+    <CEffectDamage id="ExplosiveSpinesDamage7" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <Kind value="Splash"/>
         <Amount value="15"/>
@@ -40488,6 +40567,11 @@
         <EditorCategories value="Race:Zerg"/>
         <Amount value="12"/>
     </CEffectDamage>
+    <CEffectDamage id="NeedleSpinesDamage10" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <Kind value="Ranged"/>
+        <Amount value="20"/>
+    </CEffectDamage>
     <CEffectDamage id="NeedleSpinesDamage2" parent="DU_WEAP">
         <EditorCategories value="Race:Zerg"/>
         <Kind value="Ranged"/>
@@ -40661,6 +40745,11 @@
         <EffectArray value="ParalyticSpines6"/>
         <EffectArray value="NeedleSpinesDamage9"/>
     </CEffectSet>
+    <CEffectSet id="NeedleSpinesImpactSet9">
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="ParalyticSpines7"/>
+        <EffectArray value="NeedleSpinesDamage10"/>
+    </CEffectSet>
     <CEffectSet id="NeedleSpinesImpactSetUpgraded2">
         <EditorCategories value="Race:Zerg"/>
         <EffectArray value="ParalyticSpines"/>
@@ -40721,6 +40810,11 @@
         <EffectArray value="ParalyticSpines6"/>
         <EffectArray value="ExplosiveSpinesDamage6"/>
     </CEffectSet>
+    <CEffectSet id="NeedleSpinesImpactSetUpgraded8">
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="ParalyticSpines7"/>
+        <EffectArray value="ExplosiveSpinesDamage7"/>
+    </CEffectSet>
     <CEffectSwitch id="NeedleSpinesImpactSwitch2">
         <EditorCategories value="Race:Zerg"/>
         <CaseArray Validator="TargetIsAirAndHaveExplosiveSpines" Effect="NeedleSpinesImpactSetUpgraded2"/>
@@ -40780,6 +40874,11 @@
         <EditorCategories value="Race:Zerg"/>
         <CaseArray Validator="TargetIsAirAndHaveExplosiveSpines" Effect="NeedleSpinesImpactSetUpgraded7"/>
         <CaseDefault value="NeedleSpinesImpactSet8"/>
+    </CEffectSwitch>
+    <CEffectSwitch id="NeedleSpinesImpactSwitch8">
+        <EditorCategories value="Race:Zerg"/>
+        <CaseArray Validator="TargetIsAirAndHaveExplosiveSpines" Effect="NeedleSpinesImpactSetUpgraded8"/>
+        <CaseDefault value="NeedleSpinesImpactSet9"/>
     </CEffectSwitch>
     <CEffectLaunchMissile id="NeedleSpinesLaunchMissile2">
         <EditorCategories value="Race:Zerg"/>
@@ -40860,6 +40959,11 @@
     <CEffectLaunchMissile id="NeedleSpinesLaunchMissile8">
         <EditorCategories value="Race:Zerg"/>
         <ImpactEffect value="NeedleSpinesImpactSwitch7"/>
+        <AmmoUnit value="NeedleSpinesWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="NeedleSpinesLaunchMissile9">
+        <EditorCategories value="Race:Zerg"/>
+        <ImpactEffect value="NeedleSpinesImpactSwitch8"/>
         <AmmoUnit value="NeedleSpinesWeapon"/>
     </CEffectLaunchMissile>
     <CEffectApplyBehavior id="NeuralParasite2">
@@ -46068,6 +46172,12 @@
         <EditorCategories value=""/>
         <Behavior value="ParalyticSpines"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ParalyticSpines7">
+        <ValidatorArray index="0" value="UseParalyticSpines"/>
+        <ValidatorArray value="TargetIsNotUnstoppable"/>
+        <EditorCategories value=""/>
+        <Behavior value="ParalyticSpines"/>
+    </CEffectApplyBehavior>
     <CEffectDamage id="ParasiteSporeDamage2" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Zerg"/>
         <AttributeBonus index="Mechanical" value="10"/>
@@ -49097,6 +49207,13 @@
         <SearchFlags index="OffsetAreaByAngle" value="0"/>
     </CEffectEnumArea>
     <CEffectModifyUnit id="PrimalHealSmall2">
+        <ValidatorArray value="LifeNotFull"/>
+        <EditorCategories value="Race:Zerg"/>
+        <VitalArray index="Life">
+            <Change value="20"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectModifyUnit id="PrimalHealSmall22">
         <ValidatorArray value="LifeNotFull"/>
         <EditorCategories value="Race:Zerg"/>
         <VitalArray index="Life">
@@ -54655,6 +54772,12 @@
         <SpawnCount value="2"/>
         <SpawnEffect value="PhaseCannonTimedLife732"/>
     </CEffectCreateUnit>
+    <CEffectCreateUnit id="2HunterKillers">
+        <EditorCategories value=""/>
+        <SpawnEffect value="BroodlingTimedLife3"/>
+        <SpawnUnit value="OmindHKHydralisk"/>
+        <SpawnCount value="2"/>
+    </CEffectCreateUnit>
     <CEffectCreateUnit id="PureBornDeathCReateFanatic322222223">
         <EditorCategories value=""/>
         <SpawnUnit value="Hydralisk2"/>
@@ -55515,6 +55638,11 @@
         <WhichLocation Value="TargetPoint"/>
         <SpawnUnit value="VoidRay22"/>
     </CEffectCreateUnit>
+    <CEffectCreateUnit id="PureBornDeathCReateFanatic3222222234">
+        <EditorCategories value=""/>
+        <SpawnUnit value="Hydralisk2"/>
+        <SpawnCount value="4"/>
+    </CEffectCreateUnit>
     <CEffectCreateUnit id="PureBornDeathCReateFanatic322222224">
         <EditorCategories value=""/>
         <SpawnUnit value="Civilian4"/>
@@ -56108,6 +56236,10 @@
     <CEffectApplyBehavior id="QueenMPEnsnareApply3">
         <EditorCategories value="Race:Zerg"/>
         <Behavior value="QueenMPEnsnare3"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="QueenMPEnsnareApply32">
+        <EditorCategories value="Race:Zerg"/>
+        <Behavior value="QueenMPEnsnare32"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="QueenMPEnsnareApply4">
         <ValidatorArray index="0" value="TargetIsEnemy"/>
@@ -63962,6 +64094,12 @@
         <Abil value="attack"/>
         <Target Value="TargetUnit"/>
     </CEffectIssueOrder>
+    <CEffectIssueOrder id="SapStructureIssueAttackOrder22">
+        <EditorCategories value="Race:Zerg"/>
+        <WhichUnit Value="Caster"/>
+        <Abil value="attack"/>
+        <Target Value="TargetUnit"/>
+    </CEffectIssueOrder>
     <CEffectCreatePersistent id="ScannerSweep2">
         <EditorCategories value="Race:Terran"/>
         <ExpireDelay value="120"/>
@@ -67027,6 +67165,11 @@
         <EditorCategories value="Race:Zerg"/>
         <EffectArray value="QueenMPEnsnareApply3"/>
         <EffectArray value="PrimalHealSmall2"/>
+    </CEffectSet>
+    <CEffectSet id="SuicideSet1222">
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="QueenMPEnsnareApply32"/>
+        <EffectArray value="PrimalHealSmall22"/>
     </CEffectSet>
     <CEffectSet id="SuicideSet123">
         <EditorCategories value="Race:Zerg"/>
@@ -70198,6 +70341,37 @@
         <PeriodicPeriodArray value="0.2"/>
         <PeriodicPeriodArray value="0.2"/>
     </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="VileStream22">
+        <ValidatorArray value="TargetIsNotArbiterMP22"/>
+        <ValidatorArray value="TargetIsNotArbiterMP2"/>
+        <EditorCategories value="Race:Zerg"/>
+        <WhichLocation Value="TargetUnit"/>
+        <InitialEffect value="SapStructureIssueAttackOrder22"/>
+        <FinalEffect value="CritterFleeIssueStopOrder23"/>
+        <PeriodCount value="20"/>
+        <PeriodicValidator value="CasterNotDead"/>
+        <PeriodicEffectArray value="VileStreamLM22"/>
+        <PeriodicPeriodArray value="1"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodicPeriodArray value="0.2"/>
+    </CEffectCreatePersistent>
     <CEffectCreatePersistent id="VileStream3">
         <EditorCategories value="Race:Zerg"/>
         <WhichLocation Value="TargetUnit"/>
@@ -70225,6 +70399,15 @@
     <CEffectLaunchMissile id="VileStreamLM2">
         <EditorCategories value="Race:Zerg"/>
         <ImpactEffect value="SuicideSet122"/>
+        <Flags index="ValidateAbil" value="0"/>
+        <Flags index="ValidateBenign" value="0"/>
+        <Flags index="ValidateTeleport" value="0"/>
+        <Flags index="ValidateWeapon" value="0"/>
+        <AmmoUnit value="VileStreamWeapon2"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="VileStreamLM22">
+        <EditorCategories value="Race:Zerg"/>
+        <ImpactEffect value="SuicideSet1222"/>
         <Flags index="ValidateAbil" value="0"/>
         <Flags index="ValidateBenign" value="0"/>
         <Flags index="ValidateTeleport" value="0"/>

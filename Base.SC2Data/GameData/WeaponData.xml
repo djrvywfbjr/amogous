@@ -7037,6 +7037,16 @@
         <DamagePoint value="0.208"/>
         <Effect value="NeedleSpinesLaunchMissile8"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="NeedleSpines9">
+        <EditorCategories value="Race:Zerg"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-missileattacks-level0.dds"/>
+        <DisplayEffect value="NeedleSpinesDamage10"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="5.5"/>
+        <Period value="0.825"/>
+        <DamagePoint value="0.208"/>
+        <Effect value="NeedleSpinesLaunchMissile9"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="NeutronFlare2">
         <EditorCategories value="Race:Protoss"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
