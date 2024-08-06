@@ -2451,6 +2451,15 @@
         <Universal value="1"/>
         <ChargeText value="50"/>
     </CButton>
+    <CButton id="BurrowUp422223">
+        <Tooltip value="Button/Tooltip/BurrowUp422223gwa21"/>
+        <Icon value="Assets\Textures\btn-unit-collection-primal-broodlord.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-upburrow-color.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+        <HotkeySet value="BurrowUnburrowModes"/>
+        <Universal value="1"/>
+        <ChargeText value="75"/>
+    </CButton>
     <CButton id="BurrowUp42223">
         <Tooltip value="Button/Tooltip/BurrowUp42223gwa21"/>
         <Icon value="Assets\Textures\btn-ability-zerg-dehaka-levelup.dds"/>
@@ -2486,6 +2495,24 @@
         <HotkeySet value="BurrowUnburrowModes"/>
         <Universal value="1"/>
         <ChargeText value="30"/>
+    </CButton>
+    <CButton id="BurrowUp42226">
+        <Tooltip value="Button/Tooltip/BurrowUp42226gwa21"/>
+        <Icon value="Assets\Textures\btn-unit-collection-primal-overseer.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-upburrow-color.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+        <HotkeySet value="BurrowUnburrowModes"/>
+        <Universal value="1"/>
+        <ChargeText value="80"/>
+    </CButton>
+    <CButton id="BurrowUp42227">
+        <Tooltip value="Button/Tooltip/BurrowUp42227gwa21"/>
+        <Icon value="Assets\Textures\btn-unit-collection-primal-viper.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-upburrow-color.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+        <HotkeySet value="BurrowUnburrowModes"/>
+        <Universal value="1"/>
+        <ChargeText value="50"/>
     </CButton>
     <CButton id="BurrowUp423">
         <Tooltip value="Button/Tooltip/BurrowUp423gwa21"/>
@@ -7757,7 +7784,7 @@
         <EditorCategories value="Race:Terran"/>
     </CButton>
     <CButton id="CombatShield223282">
-        <Icon value="Assets\Textures\btn-ability-mengsk-medivac-permanentcloak.dds"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-enduringcorruption.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
     <CButton id="CombatShield22329">
@@ -29111,6 +29138,10 @@
         <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-rangeincrease.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-protoss-alarak-rangeincrease.dds"/>
     </CButton>
+    <CButton id="UnknownButton114">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-abathur-symbiote.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-zerg-abathur-symbiote.dds"/>
+    </CButton>
     <CButton id="UnknownButton12">
         <Icon value="Assets\Textures\btn-upgrade-zerg-monarchblades.dds"/>
     </CButton>
@@ -29393,8 +29424,17 @@
         <Icon value="Assets\Textures\btn-unit-zerg-glevig.dds"/>
         <AlertTooltip value="Button/Tooltip/UnknownButton54422222"/>
     </CButton>
+    <CButton id="UnknownButton542">
+        <Tooltip value="Button/Tooltip/UnknownButton542422222"/>
+        <Icon value="Assets\Textures\btn-ability-dehaka-damagereductionwhilemoving.dds"/>
+        <AlertTooltip value="Button/Tooltip/UnknownButton542422222"/>
+    </CButton>
     <CButton id="UnknownButton55">
         <Icon value="Assets\Textures\btn-building-dehaka-glevignest.dds"/>
+        <AlertIcon value="Assets\Textures\btn-building-dehaka-glevignest.dds"/>
+    </CButton>
+    <CButton id="UnknownButton552">
+        <Icon value="Assets\Textures\btn-building-dehaka-dakrunnest.dds"/>
         <AlertIcon value="Assets\Textures\btn-building-dehaka-glevignest.dds"/>
     </CButton>
     <CButton id="UnknownButton56">
@@ -30466,6 +30506,12 @@
         <ChargeText value="Essence"/>
     </CButton>
     <CButton id="VoidColossusFireBeam2422322223">
+        <Icon value="Assets\Textures\btn-progression-zerg-dehaka-15-genemutation.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <HotkeyAlias value="VoidColossusFireBeam"/>
+        <ChargeText value="Essence"/>
+    </CButton>
+    <CButton id="VoidColossusFireBeam24223222232">
         <Icon value="Assets\Textures\btn-progression-zerg-dehaka-15-genemutation.dds"/>
         <EditorCategories value="Race:Protoss"/>
         <HotkeyAlias value="VoidColossusFireBeam"/>
@@ -32597,6 +32643,11 @@
         <AlertIcon value="Assets\Textures\btn-ability-kerrigan-wildmutation.dds"/>
         <EditorCategories value="Race:Zerg"/>
     </CButton>
+    <CButton id="WildMutation5">
+        <Icon value="Assets\Textures\btn-ability-kerrigan-wildmutation.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-kerrigan-wildmutation.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
     <CButton id="WormholeTransit2">
         <Icon value="Assets\Textures\btn-ability-protoss-wormholetransit-color.dds"/>
         <EditorCategories value="Race:Protoss"/>
@@ -33546,6 +33597,9 @@
         <AlertIcon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
         <EditorCategories value="Race:Terran"/>
         <Universal value="1"/>
+    </CButton>
+    <CButton id="Younglingstrike">
+        <Icon value="Assets\Textures\btn-ability-zerg-swarmseeds-color.dds"/>
     </CButton>
     <CButton id="Zealot2">
         <Icon value="Assets\Textures\btn-unit-collection-darktemplar-golden.dds"/>

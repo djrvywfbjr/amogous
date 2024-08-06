@@ -332,16 +332,22 @@ Abil/Name/BurrowPrimalHydraliskUp22223=Leader Morph Primaling
 Abil/Name/BurrowPrimalHydraliskUp222232=Leader Morph Spineshooter
 Abil/Name/BurrowPrimalHydraliskUp2222322=Leader Morph Spitter
 Abil/Name/BurrowPrimalHydraliskUp22223222=Leader Morph Spitter Molten
+Abil/Name/BurrowPrimalHydraliskUp22223223=Leader Morph Winged Airborne
 Abil/Name/BurrowPrimalHydraliskUp2222323=Leader Morph Crawler
+Abil/Name/BurrowPrimalHydraliskUp22223232=Leader Morph Crawler
 Abil/Name/BurrowPrimalHydraliskUp2222324=Leader Morph Spineshooter Molten
+Abil/Name/BurrowPrimalHydraliskUp22223242=Leader Morph Spineshooter Airborne
 Abil/Name/BurrowPrimalHydraliskUp222233=Leader Morph Beast
 Abil/Name/BurrowPrimalHydraliskUp2222332=Leader Morph Destroyer
 Abil/Name/BurrowPrimalHydraliskUp222234=Leader Morph Crawler Molten
 Abil/Name/BurrowPrimalHydraliskUp222235=Leader Morph Primaling Molten
+Abil/Name/BurrowPrimalHydraliskUp222236=Leader Morph Primaling Airborne
 Abil/Name/BurrowPrimalHydraliskUp22224=Rudimentary - Subterranean Nest
 Abil/Name/BurrowPrimalHydraliskUp22225=Spitter > Discharger
 Abil/Name/BurrowPrimalHydraliskUp222252=Spineshooter > Firecracker
 Abil/Name/BurrowPrimalHydraliskUp2222522=Destroyer > Devastator
+Abil/Name/BurrowPrimalHydraliskUp22226=Manipulator > Controller
+Abil/Name/BurrowPrimalHydraliskUp22227=Spineshooter > Nadder
 Abil/Name/BurrowPrimalHydraliskUp223=Primaling > Carrion
 Abil/Name/BurrowPrimalHydraliskUp2232=Force > Dragon
 Abil/Name/BurrowPrimalHydraliskUp2233=Primaling > Blazeling
@@ -2375,6 +2381,7 @@ Abil/Name/WildMutation323=Call To Arms
 Abil/Name/WildMutation33=Promote
 Abil/Name/WildMutation34=Pledge Of Loyalty
 Abil/Name/WildMutation4=Rapid Mutation
+Abil/Name/WildMutation5=Heal Mutation
 Abil/Name/WreckingCrewFighterMode2=Hel's Angels Fighter Mode Copy
 Abil/Name/XelNagaConstructSmash2=Smash
 Abil/Name/XenWarrior=Xen Warrior
@@ -2413,6 +2420,7 @@ Abil/Name/XenWarrior2423532=Phoenix1
 Abil/Name/XenWarrior2423533=Phoenix3
 Abil/Name/XenWarrior243=Pack Leader
 Abil/Name/XenWarrior2432=Pack Leader Molt
+Abil/Name/XenWarrior24322=Pack Leader Air
 Abil/Name/XenWarrior244=Watcher
 Abil/Name/XenWarrior25=Moebius Shields
 Abil/Name/XenWarrior252=D4-D DY Ship
@@ -3075,6 +3083,7 @@ Behavior/Name/AntamoAirAll30422=Ancient Mark
 Behavior/Name/AntamoAirAll304222=Ancient Mark
 Behavior/Name/AntamoAirAll32222222322=Unorganized
 Behavior/Name/AntamoAirAll322222223222=Unorganized
+Behavior/Name/AntamoAirAll3222222232222=Unorganized
 Behavior/Name/AntamoAirAll425=Enabling Powerfield And Supplies
 Behavior/Name/AntamoAirAll4252=Enabling Pylon Beam
 Behavior/Name/AntamoAirAll42522=Making Connection
@@ -4178,6 +4187,7 @@ Behavior/Name/WildMutation223=Call To Arms
 Behavior/Name/WildMutation23=Promote
 Behavior/Name/WildMutation24=Pledged Loyalty
 Behavior/Name/WildMutation3=Rapid Mutation
+Behavior/Name/WildMutation4=Cell Agitation
 Behavior/Name/XenWarrior=Xen Warrior
 Behavior/Name/XenWarrior2=Ascended
 Behavior/Name/XenWarrior22=Defiled Drone
@@ -4399,6 +4409,7 @@ Behavior/Tooltip/AntamoAirAll304221=This unit will spawn one or multiple Ancient
 Behavior/Tooltip/AntamoAirAll3042221=This unit will spawn one or multiple Ancients on death.
 Behavior/Tooltip/AntamoAirAll32222222322=This pack's leader isn't present on the map, causing it to be more vulnerable and attack slower.<n/>Take 75% extra damage and attack 15% slower.
 Behavior/Tooltip/AntamoAirAll322222223222=This pack's leader isn't in 20 range of the unit, causing it to be more vulnerable and attack slower.<n/>Take 75% extra damage and attack 15% slower.
+Behavior/Tooltip/AntamoAirAll3222222232222=This pack's leader isn't in 20 range of the unit, causing it to be more vulnerable and attack slower.<n/>Take 75% extra damage and attack 15% slower.
 Behavior/Tooltip/AntamoAirAll425=This pylon was warped in with only blood instide of it. Powerfield and supply increase are still on their way.
 Behavior/Tooltip/AntamoAirAll4252=Pylon Beam is not any simple technology, you see. It might take time to enable it.
 Behavior/Tooltip/AntamoAirAll42522=Archangel Protocol could barely save this soldier. It needs time to be able to reconnect and summon another armor suit.
@@ -5197,6 +5208,7 @@ Behavior/Tooltip/WildMutation223=This unit has been given food.
 Behavior/Tooltip/WildMutation23=This unit is now a Churchman
 Behavior/Tooltip/WildMutation24=This unit has pledged loyalty.
 Behavior/Tooltip/WildMutation3=This unit gains +50 maximum life and 100% attack speed.
+Behavior/Tooltip/WildMutation4=This unit gains +<d ref="Behavior,WildMutation,Modification.VitalMaxArray[1]"/> maximum life and <d ref="(Behavior,WildMutation,Modification.AttackSpeedMultiplier - 1) * 100"/>% increased attack speed.
 Behavior/Tooltip/XenWarrior252232=Ranged weapon range is increased by 2, if the unit has shields.
 Behavior/Tooltip/XenWarrior2522322=When this unit has shields, it has 1 more range and deals 100% more damage.
 Behavior/Tooltip/XenWarrior52=This unit is capable of spreading bio-plague.
@@ -5637,10 +5649,13 @@ Button/Name/BurrowUp4222=Contaminator Evolution
 Button/Name/BurrowUp42222=Terrorzor Evolution
 Button/Name/BurrowUp422222=Creeper Host Evolution
 Button/Name/BurrowUp4222222=Titan Host Evolution
+Button/Name/BurrowUp422223=Primalord Evolution
 Button/Name/BurrowUp42223=Leader Evolution
 Button/Name/BurrowUp42224=Contaminator Evolution
 Button/Name/BurrowUp42225=Lava Discharger Evolution
 Button/Name/BurrowUp422252=Firecracker Evolution
+Button/Name/BurrowUp42226=Controller Evolution
+Button/Name/BurrowUp42227=Nadder Evolution
 Button/Name/BurrowUp423=Carrion Evolution
 Button/Name/BurrowUp4232=Dragon Evolution
 Button/Name/BurrowUp4233=Carrion Evolution
@@ -6510,7 +6525,7 @@ Button/Name/CombatShield2232622224=Revive Hero 7
 Button/Name/CombatShield2232622225=Revive Hero 8
 Button/Name/CombatShield22327=Neutralize
 Button/Name/CombatShield22328=Polyshield
-Button/Name/CombatShield223282=Polyshield
+Button/Name/CombatShield223282=Carapace Mutation
 Button/Name/CombatShield22329=Overcharge Dusk Shields
 Button/Name/CombatShield2233=Activate Delta Cloaking Field
 Button/Name/CombatShield22332=Phase Through
@@ -9020,7 +9035,7 @@ Button/Name/PrimalHydralisk22=Summon Kaeltan
 Button/Name/PrimalHydralisk23=Birth Witness
 Button/Name/PrimalMutalisk2=Birth Aerolisk
 Button/Name/PrimalMutalisk22=Summon Hukus
-Button/Name/PrimalMutalisk23=Birth Winged Nightmare
+Button/Name/PrimalMutalisk23=Winged Nightmare Gestation
 Button/Name/PrimalRoach2=Birth Acid Spitter
 Button/Name/PrimalRoach22=Summon Garganton
 Button/Name/PrimalRoach23=Birth Behemoth
@@ -10476,6 +10491,7 @@ Button/Name/UnknownButton110=Research Protonic Shield Generator
 Button/Name/UnknownButton111=Ignited Shells
 Button/Name/UnknownButton112=Research Expanded Node Network
 Button/Name/UnknownButton113=Endowed Blood
+Button/Name/UnknownButton114=Crawler Seeds
 Button/Name/UnknownButton12=Flaming Charge
 Button/Name/UnknownButton13=Solar Detraction
 Button/Name/UnknownButton14=Primal Discharge
@@ -10555,7 +10571,9 @@ Button/Name/UnknownButton53=Seeker Instinct
 Button/Name/UnknownButton532=Hunter Instinct
 Button/Name/UnknownButton5322=Predator Instinct
 Button/Name/UnknownButton54=Molten Pack
+Button/Name/UnknownButton542=Airborne Pack
 Button/Name/UnknownButton55=Summon Molten Pack Nest
+Button/Name/UnknownButton552=Summon Airborne Pack Nest
 Button/Name/UnknownButton56=Lava Sacks
 Button/Name/UnknownButton562=Natural Gas Sacks
 Button/Name/UnknownButton57=Research Earthsplitter Missiles
@@ -10787,6 +10805,7 @@ Button/Name/VoidColossusFireBeam242232222=Essence Collection
 Button/Name/VoidColossusFireBeam2422322222=Essence Collection
 Button/Name/VoidColossusFireBeam24223222222=Essence Collection
 Button/Name/VoidColossusFireBeam2422322223=Essence Collection
+Button/Name/VoidColossusFireBeam24223222232=Essence Collection
 Button/Name/VoidColossusFireBeam242232223=Pack Leader
 Button/Name/VoidColossusFireBeam242232224=Essence Collection
 Button/Name/VoidColossusFireBeam24223223=Essence Collection
@@ -11203,6 +11222,7 @@ Button/Name/WildMutation324=Motivate With Food
 Button/Name/WildMutation33=Promote
 Button/Name/WildMutation34=Pledge Of Loyalty
 Button/Name/WildMutation4=Rapid Mutation
+Button/Name/WildMutation5=Cell Agitation
 Button/Name/WormholeTransit2=Wormhole Transit
 Button/Name/WormholeTransit3=Quick Wormhole Transit
 Button/Name/WormholeTransit4=Void Transit
@@ -11371,6 +11391,7 @@ Button/Name/YamatoGun3=Channel Power
 Button/Name/YamatoGun4=Juggernaut Cracker
 Button/Name/YamatoGun5=Tau Cannon
 Button/Name/YamatoGun52=Lambda Cannon
+Button/Name/Younglingstrike=Youngling Strike
 Button/Name/Zealot2=Hatch Darkness Reciever
 Button/Name/Zealot22=Advance Into Xen Warrior
 Button/Name/Zealot222=Advance Into Ascended One
@@ -12367,6 +12388,8 @@ Button/Tooltip/BurrowUp422222=Returns the unit to the surface.
 Button/Tooltip/BurrowUp4222222=Returns the unit to the surface.
 Button/Tooltip/BurrowUp4222222gwa21=Transforms into Titan Host for 50 <c val="FFFF00">Essence</c>.<n/>Summoner that uses minions with with long range attacks but also can protect itself with its own weapon.<n/><n/>Titan Hosts normally evolve when a Bulk Host consumes the essence of its own kind. Although the Beetles they spawn can barely lift off due to their body mass, their acid glands have also evolved to launch acidic biles over long distances.
 Button/Tooltip/BurrowUp422222gwa21=Transforms into Creep Host for 50 <c val="FFFF00">Essence</c>.<n/>Summoner that uses minions with area of effect suicide attack rather than attacking itself.<n/><n/>Creeper Hosts have evolved to ensure their safety in subterranean enviroments. The bile-filled Creepers they can spawn are quite agile and can flood whole packs with corrosive acid. The creatures have even learned to keep 1 or 2 Creepers for emergencies only, so that they can cause a cave-in between Hosts and opponents.
+Button/Tooltip/BurrowUp422223=Returns the unit to the surface.
+Button/Tooltip/BurrowUp422223gwa21=Transforms into Primalord for 75 <c val="FFFF00">Essence</c>.<n/><n/>Primalords are a rare and highly intelligent species, known to control a large number of spawnlings at once. They are known to inhabit the great peaks of Zerus and prey on larger ground creatures, sometimes leaving their nests for weeks.
 Button/Tooltip/BurrowUp42222gwa21=Transforms into Terrorzor for 75 <c val="FFFF00">Essence</c>.<n/>Beast that summons minions, especially powerful when under rapid fire.<n/><n/>Terrorzors are mainly lone cave hunters. They can outmanuver and causes cave-ins to block escapes of their prey. For the longest time their threat was accidentally stumbling into large territories of underground packs, however, by altering adrenal glands Terrorzors gained the ability to create small swarms of flying creatures against imminent threats.
 Button/Tooltip/BurrowUp42223=Returns the unit to the surface.
 Button/Tooltip/BurrowUp42223gwa21=Transforms into Contaminator for 80 <c val="FFFF00">Essence</c>.<n/>Flying detectors that have long-ranged acid attacks and a powerful cloud around them, which buffs allies and enemies.<n/><n/>Despite their appearance, Contaminators are quite agile in cave systems. Streams of vile substances that come out of their orifices have been evolved to flood caves with deadly toxins and quickly corrode stone for their nest expansion.
@@ -12376,6 +12399,10 @@ Button/Tooltip/BurrowUp42225=Returns the unit to the surface.
 Button/Tooltip/BurrowUp422252=Returns the unit to the surface.
 Button/Tooltip/BurrowUp422252gwa21=Evolves into Firecracker for 30 <c val="FFFF00">Essence.</c> <n/>Burrowing single target attackers that set their targets on fire.<n/><n/>Firecrackers live underground, near geysers and lava flows, only unburrowing to approach their prey. They have evolved their organs to generate and hold a substance similar to magma, only to release it at the unsuspecting creature.
 Button/Tooltip/BurrowUp42225gwa21=Transforms into Lava Discharger for 50 <c val="FFFF00">Essence</c>.<n/>Artillery units that can launch damaging puddles.<n/><n/>A number of Spitters that survived near the lava lakes of Zerus have evolved an organ that can launch small puddles of similar liquid. Smaller prey has its body melt almost instantly while larger predators are slowed down by the blazing substance upon stepping into the puddle.
+Button/Tooltip/BurrowUp42226=Returns the unit to the surface.
+Button/Tooltip/BurrowUp42226gwa21=Transforms into Contaminator for 80 <c val="FFFF00">Essence</c>: flying detectors that have increased <c val="FFFF00">essence </c>pool, life and a passive <c val="FFFF00">essence </c>regeneration.<n/><n/>Evolution Controllers, like Essence Manipulators, are intelligent on a level enough to control the flow of essene in their bodies. They are predominately social creatures, gathering in hordes with similar creatures. Despite these qualities, they still require a higher intelligence to fully use their abilities.
+Button/Tooltip/BurrowUp42227=Returns the unit to the surface.
+Button/Tooltip/BurrowUp42227gwa21=Transforms into Nadder for 50 <c val="FFFF00">Essence</c>.<n/><n/>The Nadder is one of the most intelligent creatures among the inhabitants of Zerus. Few in number, they are normally kept as advisors and evolution herds by pack leaders.
 Button/Tooltip/BurrowUp4222gwa21=Transforms into Contaminator for 80 <c val="FFFF00">Essence</c>.<n/>Flying detectors that have long-ranged acid attacks and a powerful cloud around them, which buffs allies and enemies.<n/><n/>Despite their appearance, Contaminators are quite agile in cave systems. Streams of vile substances that come out of their orifices have been evolved to flood caves with deadly toxins and quickly corrode stone for their nest expansion.
 Button/Tooltip/BurrowUp422gwa21=Transforms into Bileshooter for 30 <c val="FFFF00">Essence</c>.<n/>Unit that fires lobbed projectiles for heavy ground area damage and retains anti-air spine weapon.<n/><n/>The Ravasaurs mutations aren't quite developed. They have had too heavily improved their armor, despite being incapable of fighting opponents that already expected them. By repurposing biomass into improving attacking organs instead of obsolete carapace, the effectiveness of the creatures was raised in packs and groups of any size.
 Button/Tooltip/BurrowUp423=Returns the unit to the surface.
@@ -14608,7 +14635,7 @@ Button/Tooltip/HighArchonPsiStorm23222252222waf1fw=Flamethrower design stolen fr
 Button/Tooltip/HighArchonPsiStorm2322225222dwa1=A wide-spread weapon, originally created by the Antamo government to stop workers from revolting. It's unclear whether the extremely lethal force was an intentional. Deals increased damage to shields. Has small area-of-effect radius.
 Button/Tooltip/HighArchonPsiStorm232222523=Terminate targeted unit's weapons<n/>Burns any weapons.
 Button/Tooltip/HighArchonPsiStorm2322225wa21aw=Heavily simplified weapon design used by the royal guard. Attacks up to 3 targets each shot.
-Button/Tooltip/HighArchonPsiStorm2322226=Choose a unit to adapt into this pack's leader.<n/>Leaders have an increased limit on <c val="FFFF00">Essence</c> they can have and are capable of powerful abilities.<n/>Each pack can only have 1 leader.<n/><n/>Primal Hosts and Evolved units cannot become leaders.
+Button/Tooltip/HighArchonPsiStorm2322226=Choose a unit to adapt into this pack's leader.<n/>Leaders have an increased limit on <c val="FFFF00">Essence</c> they can have and are capable of powerful abilities.<n/>Each pack can only have 1 leader.<n/><n/>Primal Hosts, Igniters, Essence Manipulators and Evolved units cannot become leaders.
 Button/Tooltip/HighTemplar2=Potent psionic master. Can use Feedback and be upgraded to use Psionic Storm. Can transform into an Archon.<n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/HighTemplar22=Potent psionic master. Can use Feedback.
 Button/Tooltip/HighTemplar3=Potent robotic master. Can use Concussion and Take.<n/><n/><c val="00FFFF">Special Ability: </c>Creates a storm that deals triple damage to massive units.
@@ -14950,7 +14977,7 @@ Button/Tooltip/Interceptor42222332422222=Advanced infantry fighter. Deals damage
 Button/Tooltip/Interceptor422223324222222=Advanced infantry. Fires long-ranged fireballs that deal area damage.
 Button/Tooltip/Interceptor4222233242223=Infantry support. Can use Execute.
 Button/Tooltip/Interceptor422223325=A small basic melee creature.
-Button/Tooltip/Interceptor4222233252=Basic resource gatherer structure.
+Button/Tooltip/Interceptor4222233252=Basic resource gatherer unit.
 Button/Tooltip/Interceptor4222233253=Short-ranged attacker with a lot of health.
 Button/Tooltip/Interceptor42222332532=Ranged attacker.
 Button/Tooltip/Interceptor422223325322=Attacker, that uses minions to deal damage.
@@ -16567,7 +16594,7 @@ Button/Tooltip/PrimalHydralisk22=A pack leader.<n/><c val="FFFF00">Enables:</c><
 Button/Tooltip/PrimalHydralisk23=Ranged attacker. Is invisible and fast when high health and not attacking, but is slow without it.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
 Button/Tooltip/PrimalMutalisk2=Air unit. Bounces its shot to strike multiple targets. Can auto-cast Acid Sting to kill any air enemy with low health in 5 seconds.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
 Button/Tooltip/PrimalMutalisk22=A pack leader.<n/><c val="FFFF00">Enables:</c><n/>Primal Hosts<n/>Aerolisks<n/>Nest Guardians<n/>Nest Corruptors
-Button/Tooltip/PrimalMutalisk23=Air unit. Missiles create multiple bouncing missiles on impact.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
+Button/Tooltip/PrimalMutalisk23=Air unit. Attacks bounce to additional targets.
 Button/Tooltip/PrimalRoach2=Assault unit. Acid Spitter spits acid. Gains temporary attack speed boost each attack.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/PrimalRoach22=A pack leader.<n/><c val="FFFF00">Enables:</c><n/>Acid Spitters<n/>Birthing Mothers<n/>Winged Nightmares<n/>Healers
 Button/Tooltip/PrimalRoach23=Giant gargantuan beast. Can use charge and has alot of heatlh.<n/><n/><c val="FFFF00">Can attack ground units.</c>
@@ -18386,6 +18413,7 @@ Button/Tooltip/UnknownButton110=Hoverer  gain 100 shields, 3 shield armor, and 3
 Button/Tooltip/UnknownButton111=Holy Fire Division's attacks in tank mode degenerate shields and energy of their targets. In siege mode, however, most of the attack's power is traded for range.
 Button/Tooltip/UnknownButton112=Removes the lminit on the number of <c val="FFFF00">AI Centers</c>, but increases their cost by 200 minerals and 100 vespene.
 Button/Tooltip/UnknownButton113=Allows Archdeacons to use Self Sacrifice and increases the damage Penanced deal to armored units by 10.
+Button/Tooltip/UnknownButton114=<c val="FFFF00">Primalord </c>attacks will occasionally contain Aggravated Crawlers.
 Button/Tooltip/UnknownButton12=The Beast charges into the enemy, dealing area damage and setting the main target on fire
 Button/Tooltip/UnknownButton13=Adds area-of-effect damage to this unit's weapon that deals increased damage to the main target. Is active until the unit loses all energy. Ignores armor.
 Button/Tooltip/UnknownButton14=Deal 325 damage to a single target.
@@ -18444,7 +18472,7 @@ Button/Tooltip/UnknownButton40=This Leader's essence can be used to create somet
 Button/Tooltip/UnknownButton41=The pack leader launches mineral shards at the enemy units, injuring them and damaging their armor. Shards that are launched at the targets grow into slightly larger mineral chunks but also quickly dissolve after a short period of time. Units that are killed in the next five seconds will drop small mineral pick-ups that can be used for the betterment of the pack.<n/>Bonuses acquired after reaching certain <c val="FFFF00">Essence</c> amounts:<n/><c val="FFFF00">35</c>: Dying enemies drop an extra pick-up. <n/><c val="FFFF00">70</c>: Enemies affected by Mineral Shards have reduced armor.
 Button/Tooltip/UnknownButton412=Slows all enemy units around the Crawler by 25%.<n/><n/>Bonuses acquired after reaching certain <c val="FFFF00">Essence</c> amounts:<n/><c val="FFFF00">25</c>: Affected Enemies are slowed by additional 25% . <n/><c val="FFFF00">50</c>: The Cralwer Leader gains 125 life.<n/><n/>Colonies consisting of hundreds of organisms nestle on the Crawler's wings. While not inhibiting the host's movements, they can be forced to grow around potential prey or provide additional carapace for them.
 Button/Tooltip/UnknownButton42=Allows Laser Lancers to use Capacitor Overload.
-Button/Tooltip/UnknownButton422222=The Rudimentary Pack mostly consists of strains that are easy to birth and develop. Their Crawlers are birthed in pairs and cost less Pack Limit. The Primal Elder has increased life and sight radius when uprooted.
+Button/Tooltip/UnknownButton422222=The Rudimentary Pack mostly consists of strains that are easy to birth and develop. Their Crawlers are birthed in pairs and cost less Minerals. The Primal Elder has increased life and sight radius when uprooted, as well as no limit.
 Button/Tooltip/UnknownButton43=This unit can't take more than 10 damage as long as it has shields.
 Button/Tooltip/UnknownButton44=Assault unit. Has a shield that reduces incoming damage until it depletes.
 Button/Tooltip/UnknownButton45=Dramatically reduces cooldowns for all unit charges.
@@ -18464,8 +18492,10 @@ Button/Tooltip/UnknownButton52=Launches a puddle of lava that damages all enemy 
 Button/Tooltip/UnknownButton53=All units of this pack gain 1 vision and 10% movement speed.
 Button/Tooltip/UnknownButton532=All units of this pack gain 1 vision and 10% movement speed.
 Button/Tooltip/UnknownButton5322=All units of this pack gain 1 vision and 10% movement speed.
+Button/Tooltip/UnknownButton542422222=The Airborne Pack's Zerg are the masters of <c val="FFFF00">Essence</c>. Being the oldest pack to be established, their strains are focused on manipulating the <c val="FFFF00">Essence</c> of its species. Most units are caable of either hit-and-run attacks or controlling the flow of Essence within themselves and other units. Crawlers can sacrifice themselves to provide Essence to other units.<n/><n/><c val="FFFF00">Structure bonuses are to be added</c>
 Button/Tooltip/UnknownButton54422222=The Molten Pack's Zerg have adapted to living in the hostile areas around the Zerusian lava lakes and volcanoes. Their Crawlers can restore resources by sacrificing life and their primalings cannot evolve into other species. Units have less durability but are more mobile.
 Button/Tooltip/UnknownButton55=Allows creating units of the Molten Pack. Cannot be destroyed. Cannot receive resources.
+Button/Tooltip/UnknownButton552=Allows creating units of the AIrborne Pack. Cannot be destroyed. Cannot receive resources.
 Button/Tooltip/UnknownButton56=Firecracker attacks set the target on fire.
 Button/Tooltip/UnknownButton562=Reduces the Noxious Sprayers' vespene cost by 40.
 Button/Tooltip/UnknownButton57=Increases the range of Earthshaker Missiles by 5 and increases their damage by 35.
@@ -18713,6 +18743,7 @@ Button/Tooltip/VoidColossusFireBeam242232222=This unit can collect <c val="FFFF0
 Button/Tooltip/VoidColossusFireBeam2422322222=This unit can collect <c val="FFFF00">Essence</c>.<n/>It gains 2 <c val="FFFF00">Essence</c> for every time Creeper assaults an enemy.<n/>It also drops all current and 10 additional <c val="FFFF00">Essence</c> on death.<n/><n/>Each point of <c val="FFFF00">Essence </c>grants 3 increased health, 1% increased dealt damage and 0.03 armor.<n/><n/>Can collect up to 100 <c val="FFFF00">Essence</c>.
 Button/Tooltip/VoidColossusFireBeam24223222222=This unit can collect <c val="FFFF00">Essence</c>.<n/>It gains 2 <c val="FFFF00">Essence</c> for every time it attacks an enemy.<n/>It also drops all current and 10 additional <c val="FFFF00">Essence</c> on death.<n/><n/>Each point of <c val="FFFF00">Essence </c>grants 3 increased health, 1% increased dealt damage and 0.03 armor.<n/><n/>Can collect up to 100 <c val="FFFF00">Essence</c>.
 Button/Tooltip/VoidColossusFireBeam2422322223=This unit can collect <c val="FFFF00">Essence</c>.<n/>It gains 1 <c val="FFFF00">Essence</c> every attack. All spawns of this unit have their individual essence count and drop all essence they collected on death.<n/>It also drops all current and 10 additional <c val="FFFF00">Essence</c> on death.<n/><n/>Each point of <c val="FFFF00">Essence </c>grants 3 increased health, 1% increased dealt damage and 0.03 armor.<n/><n/>Can collect up to 100 <c val="FFFF00">Essence</c>.
+Button/Tooltip/VoidColossusFireBeam24223222232=This unit can collect <c val="FFFF00">Essence</c>.<n/>It cannot gain <c val="FFFF00">Essence</c> from combat, however, it can use <c val="FFFF00">Raw Essence</c> to increase the amount of <c val="FFFF00">Essence</c> for itself and friendly units.<n/><n/>Each point of <c val="FFFF00">Essence </c>grants 3 increased health, 1% increased dealt damage and 0.03 armor.<n/><n/>Can collect up to 100 <c val="FFFF00">Essence</c>.
 Button/Tooltip/VoidColossusFireBeam242232223=This Pack Leader can collect <c val="FFFF00">Essence</c>.<n/>Drops all <c val="FFFF00">Essence</c> on death.<n/><n/>Each point of <c val="FFFF00">Essence </c>grants 3 increased health, 1% increased dealt damage and 0.03 armor.<n/><n/>Has no limit no how much <c val="FFFF00">Essence</c> it can collect.<n/><n/>Units of this pack that don't have the leader in 15 range of them take 75% more damage and attack 15% slower.
 Button/Tooltip/VoidColossusFireBeam242232224=This unit can collect <c val="FFFF00">Essence</c>.<n/>It gains 5 <c val="FFFF00">Essence</c> every attack against enemies.<n/>It also drops all current <c val="FFFF00">Essence</c> on death.<n/><n/>Each point of <c val="FFFF00">Essence </c>grants 3 increased health, 1% increased dealt damage and 0.03 armor.<n/><n/>Can collect up to 300 <c val="FFFF00">Essence</c>.
 Button/Tooltip/VoidColossusFireBeam24223223=This unit can collect <c val="FFFF00">Essence</c>.<n/>It gains 1 <c val="FFFF00">Essence</c> every attack against enemies.<n/>It also drops all current and 5 additional <c val="FFFF00">Essence</c> on death.<n/><n/>Each point of <c val="FFFF00">Essence </c>grants 3 increased health, 1% increased dealt damage and 0.03 armor.<n/><n/>Can collect up to 100 <c val="FFFF00">Essence</c>.
@@ -19185,6 +19216,7 @@ Button/Tooltip/WildMutation33=Up to 15 Workers in the targeted area get converte
 Button/Tooltip/WildMutation33fwa=Converts up to 10 Scientists and Workers in the targeted area into Churchmen.
 Button/Tooltip/WildMutation34=Up to 6 Workers in the targeted area pledge loyalty and get an amputation, making them no longer cause riots and strikes as well as giving their personal belongings, granting 15 minerals and 20 vespene gas. However, they will receive double food, will grant 25 Dissatisfaction and also will still be able to join others on strikes and riots.
 Button/Tooltip/WildMutation4=Friendly units in the target area gain +50 maximum life and 100% increased attack speed for 10 seconds.<n/><n/><c val="ffff8a">Does not affect heroic units.</c>
+Button/Tooltip/WildMutation5=Friendly zerg units in the target area gain 1.5 attack and movement speed.<n/><n/><c val="ffff8a">Does not affect heroic units.</c>
 Button/Tooltip/WormholeTransit2=Creates an artificial Wormhole allowing this unit to instantly travel to the target owned structure.
 Button/Tooltip/WormholeTransit3=Creates an artificial Wormhole allowing the caster to instantly warp to the targeted friendly  unit or structure.
 Button/Tooltip/WormholeTransit4=Creates an artificial Wormhole allowing the Void Seeker to instantly travel to the target owned or allied structure.
@@ -19367,6 +19399,7 @@ Button/Tooltip/YamatoGun3=Increase target's damage by 35%, shields by 350 and pr
 Button/Tooltip/YamatoGun4=Blast target for 200 damage.
 Button/Tooltip/YamatoGun5=After 3 seconds, deal 150 damage to the enemies around targeted unit. Main target takes additional 150 damage.<n/><n/>The custom tau cannon fires slightly less concentrated blasts than usual yamato cannons, which allows them to deal damage in a greater area.
 Button/Tooltip/YamatoGun52=After 3 seconds, deal 100 damage to the enemies around targeted unit. Main target takes additional 100 damage.<n/><n/>The lambda model is a weaker version of the tau cannon installed on the flagship. It can still pack a punch and is just as explosive.
+Button/Tooltip/Younglingstrike=The Primalord attacks using its Younglings. Younglings attack everything around themselves and have their own essence pool.
 Button/Tooltip/ZaGara2=The first of Kerrigan's Broodmothers. Seeks to create a Swarm of her own on Char.
 Button/Tooltip/Zealot2=Powerful melee warrior. Can use Charge.<n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/Zealot22=Focuses mental and physical skills to become one of glorious warriors of xen. Gain 35% attack speed and 20% movement speed, 4 blink range. Darkness Recievers will also take 85% less damage for 2 seconds after blinking.
@@ -24395,6 +24428,7 @@ Effect/Name/KeneticMitosisSplitBehavior2=Kenetic Mitosis Split Behavior
 Effect/Name/KeneticMitosisSplitBehavior22=Kenetic Mitosis Split Behavior
 Effect/Name/KeneticMitosisSplitSet2=Kenetic Mitosis Split Set
 Effect/Name/KeneticMitosisSplitSet3=Kenetic Mitosis Split Set
+Effect/Name/KerriganAbilityEfficiency10=Kerrigan Ability Efficiency
 Effect/Name/KerriganAbilityEfficiency2=Kerrigan Ability Efficiency Copy
 Effect/Name/KerriganAbilityEfficiency3=Kerrigan Ability Efficiency Copy 2
 Effect/Name/KerriganAbilityEfficiency4=Kerrigan Ability Efficiency Copy 3
@@ -24403,6 +24437,7 @@ Effect/Name/KerriganAbilityEfficiency6=Kerrigan Ability Efficiency
 Effect/Name/KerriganAbilityEfficiency7=Kerrigan Ability Efficiency
 Effect/Name/KerriganAbilityEfficiency8=Kerrigan Ability Efficiency
 Effect/Name/KerriganAbilityEfficiency9=Kerrigan Ability Efficiency
+Effect/Name/KerriganAbilityEfficiencyAwardDummy10=Kerrigan Ability Efficiency Award Dummy
 Effect/Name/KerriganAbilityEfficiencyAwardDummy2=Kerrigan Ability Efficiency Award Dummy Copy
 Effect/Name/KerriganAbilityEfficiencyAwardDummy3=Kerrigan Ability Efficiency Award Dummy Copy 2
 Effect/Name/KerriganAbilityEfficiencyAwardDummy4=Kerrigan Ability Efficiency Award Dummy Copy 3
@@ -27089,6 +27124,7 @@ Effect/Name/PsiDisruptionApplyBehavior3222233222=Psi Disruption (Apply Behavior)
 Effect/Name/PsiDisruptionApplyBehavior32222332222=Psi Disruption (Apply Behavior) Copy 22
 Effect/Name/PsiDisruptionApplyBehavior322223323=Leadership
 Effect/Name/PsiDisruptionApplyBehavior3222233232=Leadership
+Effect/Name/PsiDisruptionApplyBehavior32222332322=Leadership
 Effect/Name/PsiDisruptionApplyBehavior3222233233=Leadership
 Effect/Name/PsiDisruptionApplyBehavior322224=Psi Disruption (Apply Behavior) Copy 24
 Effect/Name/PsiDisruptionApplyBehavior322225=Psi Disruption (Apply Behavior) Copy 33
@@ -27216,6 +27252,7 @@ Effect/Name/PsiDisruptionSearchArea3222233222=Psi Disruption (Search Area) Copy 
 Effect/Name/PsiDisruptionSearchArea32222332222=Psi Disruption (Search Area) Copy 22
 Effect/Name/PsiDisruptionSearchArea322223323=Psi Disruption (Search Area) Copy 19
 Effect/Name/PsiDisruptionSearchArea3222233232=Psi Disruption (Search Area) Copy 19
+Effect/Name/PsiDisruptionSearchArea32222332322=Psi Disruption (Search Area) Copy 19
 Effect/Name/PsiDisruptionSearchArea3222233233=Resource Restoration
 Effect/Name/PsiDisruptionSearchArea322224=Psi Disruption (Search Area) Copy 29
 Effect/Name/PsiDisruptionSearchArea3222242=Psi Disruption (Search Area) Copy 30
@@ -27922,6 +27959,7 @@ Effect/Name/QuickMutator222222=Quick Mutator Copy Copy Copy Copy Copy Copy
 Effect/Name/QuickMutator222223=Quick Mutator Copy Copy Copy Copy Copy Copy 2
 Effect/Name/QuickMutator222224=Quick Mutator Copy Copy Copy Copy Copy Copy 3
 Effect/Name/QuickMutator222225=Muick Qutator
+Effect/Name/QuickMutator2222252=Muick Qutator
 Effect/Name/QuickMutator22223=Quick Mutator Copy Copy Copy Copy
 Effect/Name/QuickMutator222232=Quick Mutator Copy Copy Copy Copy
 Effect/Name/QuickMutator3=Savior
@@ -30762,6 +30800,7 @@ Effect/Name/WildMutation223=Wild Mutation
 Effect/Name/WildMutation23=Wild Mutation
 Effect/Name/WildMutation24=Wild Mutation
 Effect/Name/WildMutation3=Wild Mutation
+Effect/Name/WildMutation4=Wild Mutation
 Effect/Name/WildMutationSearch2=Wild Mutation Search
 Effect/Name/WildMutationSearch22=8Negotiate With Food Search
 Effect/Name/WildMutationSearch222=8Negotiate With Resources Search
@@ -30769,6 +30808,7 @@ Effect/Name/WildMutationSearch223=Wild Mutation Search
 Effect/Name/WildMutationSearch23=Wild Mutation Search
 Effect/Name/WildMutationSearch24=Wild Mutation Search
 Effect/Name/WildMutationSearch3=Wild Mutation Search
+Effect/Name/WildMutationSearch4=Wild Mutation Search
 Effect/Name/WildMutationSet2=Wild Mutation Set
 Effect/Name/WildMutationSet22=Wild Mutation Set
 Effect/Name/WildMutationSet222=Wild Mutation Set
@@ -30782,6 +30822,7 @@ Effect/Name/WildMutationSet3=Wild Mutation Set
 Effect/Name/WildMutationSet4=Paramilitary Rebel Weapon Set
 Effect/Name/WildMutationSet42=Paramilitary Orbital Mode System Coordination Set
 Effect/Name/WildMutationSet422=Paramilitary Area Lockdown Target Set
+Effect/Name/WildMutationSet5=Wild Mutation Set
 Effect/Name/WraithALeftLaunchMissile2=Hurricane Missiles (Launch Missile)(Left) Copy
 Effect/Name/WraithALeftLaunchMissile3=Hurricane Missiles (Launch Missile)(Left)
 Effect/Name/WraithALeftLaunchMissile4=Hurricane Missiles (Launch Missile)(Left)
@@ -32417,6 +32458,7 @@ RequirementNode/Tooltip/CountUnitPylon8CompleteOnly1934273744TechTreeCheat=Have 
 RequirementNode/Tooltip/CountUnitQueen622222CompleteOnly2913771303=Nekta'la
 RequirementNode/Tooltip/CountUnitRoachWarren2222CompleteOnly725719904=Corrosive Nest
 RequirementNode/Tooltip/CountUnitRoachWarren22232CompleteOnly1571140864=Hill Nest
+RequirementNode/Tooltip/CountUnitRoachWarren22232QueuedOrBetter1336705134=No Molten Pack Nest
 RequirementNode/Tooltip/CountUnitRoachWarren2223CompleteOnly3237615005=Molten Nest
 RequirementNode/Tooltip/CountUnitRoachWarren22242QueuedOrBetter1336705134=No Molten Pack Nest
 RequirementNode/Tooltip/CountUnitRoachWarren222CompleteOnly3760166608=Zerus Nest
@@ -33782,12 +33824,13 @@ Unit/Name/Drone5=Crawler
 Unit/Name/Drone52=Suffus
 Unit/Name/Drone53=Aggravated Crawler
 Unit/Name/Drone54=Crawler Alpha
-Unit/Name/Drone55=Airboner Crawler
+Unit/Name/Drone55=Crawler
 Unit/Name/Drone56=Molten Crawler
 Unit/Name/Drone6=Taken Drone
 Unit/Name/Drone62=Drone
 Unit/Name/Drone622=Drone
 Unit/Name/Drone6222=Drone
+Unit/Name/Drone6223=Drone
 Unit/Name/Drone63=Taken Drone
 Unit/Name/Drone64=Taken Drone
 Unit/Name/Drone65=Taken Drone
@@ -35215,10 +35258,11 @@ Unit/Name/PrimalGasCloudWeapon2=Primal Gas Cloud Weapon Copy
 Unit/Name/PrimalHydralisk2=Primal Spiner
 Unit/Name/PrimalHydralisk22=Kaeltan
 Unit/Name/PrimalHydralisk23=Spineshooter
-Unit/Name/PrimalHydralisk232=Airborne Spineshooter
+Unit/Name/PrimalHydralisk232=Spineshooter
 Unit/Name/PrimalHydralisk233=Spineshooter
 Unit/Name/PrimalHydralisk3=Spineshooter
 Unit/Name/PrimalHydralisk32=Spineshooter
+Unit/Name/PrimalHydralisk322=Spineshooter
 Unit/Name/PrimalLocustFlying2=Wild Carrion
 Unit/Name/PrimalLocustFlying3=Pincer Beetle
 Unit/Name/PrimalLocustFlyingWeapon2=Primal Locust Flying Weapon
@@ -35263,6 +35307,7 @@ Unit/Name/PrimalZergling2=Hunter Tracker
 Unit/Name/PrimalZergling22=Horo Boros
 Unit/Name/PrimalZergling222=Primaling
 Unit/Name/PrimalZergling2222=Primaling
+Unit/Name/PrimalZergling2223=Primaling
 Unit/Name/PrimalZergling23=Primaling
 Unit/Name/PrimalZergling232=Megaling
 Unit/Name/PrimalZergling233=Ravageling
@@ -35974,6 +36019,7 @@ Unit/Name/StukovInfestedTerran22=Follower
 Unit/Name/StukovInfestedTerran23=Armed Dead
 Unit/Name/SuffusDuder2=Crawler Leader
 Unit/Name/SuffusDuderRud=Crawler
+Unit/Name/SuffusDuderRud2=Crawler
 Unit/Name/Summoner=Summoner
 Unit/Name/SunkenColony2=Broodling Colony
 Unit/Name/SunkenColony22=Defender Nest

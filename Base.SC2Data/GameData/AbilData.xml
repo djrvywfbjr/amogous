@@ -8789,6 +8789,28 @@
         <AutoCastRange value="500"/>
         <AutoCastCountMin value="1"/>
     </CAbilMorph>
+    <CAbilMorph id="BurrowPrimalHydraliskUp22223223">
+        <AbilSetId value="BrwU"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+        <DataCollection value="BurrowPrimalHydraliskUp22223"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="BurrowUp42223">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <ActorKey value="BurrowUp"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="IgnoreFacing" value="1"/>
+        <Flags index="SuppressMovement" value="1"/>
+        <InfoArray Unit="PrimalMutalisk233">
+            <SectionArray index="Abils">
+                <DurationArray index="Duration" value="0.1"/>
+                <EffectArray index="Finish" value="VoidShadeAB32"/>
+            </SectionArray>
+        </InfoArray>
+        <AutoCastValidatorArray value="IsTimeStopped217332222325"/>
+        <AutoCastRange value="500"/>
+        <AutoCastCountMin value="1"/>
+    </CAbilMorph>
     <CAbilMorph id="BurrowPrimalHydraliskUp2222323">
         <AbilSetId value="BrwU"/>
         <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
@@ -8811,6 +8833,28 @@
         <AutoCastRange value="500"/>
         <AutoCastCountMin value="1"/>
     </CAbilMorph>
+    <CAbilMorph id="BurrowPrimalHydraliskUp22223232">
+        <AbilSetId value="BrwU"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+        <DataCollection value="BurrowPrimalHydraliskUp22223"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="BurrowUp42223">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <ActorKey value="BurrowUp"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="IgnoreFacing" value="1"/>
+        <Flags index="SuppressMovement" value="1"/>
+        <InfoArray Unit="SuffusDuderRud2">
+            <SectionArray index="Abils">
+                <DurationArray index="Duration" value="0.1"/>
+                <EffectArray index="Finish" value="VoidShadeAB32"/>
+            </SectionArray>
+        </InfoArray>
+        <AutoCastValidatorArray value="IsTimeStopped217332222325"/>
+        <AutoCastRange value="500"/>
+        <AutoCastCountMin value="1"/>
+    </CAbilMorph>
     <CAbilMorph id="BurrowPrimalHydraliskUp2222324">
         <AbilSetId value="BrwU"/>
         <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
@@ -8824,6 +8868,28 @@
         <Flags index="IgnoreFacing" value="1"/>
         <Flags index="SuppressMovement" value="1"/>
         <InfoArray Unit="PrimalHydralisk32">
+            <SectionArray index="Abils">
+                <DurationArray index="Duration" value="0.1"/>
+                <EffectArray index="Finish" value="VoidShadeAB32"/>
+            </SectionArray>
+        </InfoArray>
+        <AutoCastValidatorArray value="IsTimeStopped217332222325"/>
+        <AutoCastRange value="500"/>
+        <AutoCastCountMin value="1"/>
+    </CAbilMorph>
+    <CAbilMorph id="BurrowPrimalHydraliskUp22223242">
+        <AbilSetId value="BrwU"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+        <DataCollection value="BurrowPrimalHydraliskUp22223"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="BurrowUp42223">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <ActorKey value="BurrowUp"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="IgnoreFacing" value="1"/>
+        <Flags index="SuppressMovement" value="1"/>
+        <InfoArray Unit="PrimalHydralisk322">
             <SectionArray index="Abils">
                 <DurationArray index="Duration" value="0.1"/>
                 <EffectArray index="Finish" value="VoidShadeAB32"/>
@@ -8910,6 +8976,27 @@
         <Flags index="IgnoreFacing" value="1"/>
         <Flags index="SuppressMovement" value="1"/>
         <InfoArray Unit="PrimalZergling2222">
+            <SectionArray index="Abils">
+                <DurationArray index="Duration" value="0.1"/>
+                <EffectArray index="Finish" value="VoidShadeAB32"/>
+            </SectionArray>
+        </InfoArray>
+        <AutoCastValidatorArray value="IsTimeStopped217332222325"/>
+        <AutoCastRange value="500"/>
+        <AutoCastCountMin value="1"/>
+    </CAbilMorph>
+    <CAbilMorph id="BurrowPrimalHydraliskUp222236">
+        <AbilSetId value="BrwU"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="BurrowUp42223">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <ActorKey value="BurrowUp"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="IgnoreFacing" value="1"/>
+        <Flags index="SuppressMovement" value="1"/>
+        <InfoArray Unit="PrimalZergling2223">
             <SectionArray index="Abils">
                 <DurationArray index="Duration" value="0.1"/>
                 <EffectArray index="Finish" value="VoidShadeAB32"/>
@@ -9017,10 +9104,60 @@
         <AutoCastCountMin value="1"/>
         <ValidatorArray value="IsTimeStopped2173322222222232222322"/>
     </CAbilMorph>
+    <CAbilMorph id="BurrowPrimalHydraliskUp22226">
+        <AbilSetId value="69"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="BurrowUp42226">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <ActorKey value="BurrowUp"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="IgnoreFacing" value="1"/>
+        <Flags index="SuppressMovement" value="1"/>
+        <InfoArray Unit="Overlord722">
+            <SectionArray index="Abils">
+                <DurationArray index="Duration" value="0.1"/>
+                <EffectArray index="Finish" value="VoidShadeAB32"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <EffectArray index="Finish" value="ObserverSquadSightAB2222322322222223"/>
+            </SectionArray>
+        </InfoArray>
+        <AutoCastValidatorArray value="IsTimeStopped2173322222222232222322"/>
+        <AutoCastRange value="500"/>
+        <AutoCastCountMin value="1"/>
+        <ValidatorArray value="IsTimeStopped2173322222222232222322"/>
+    </CAbilMorph>
+    <CAbilMorph id="BurrowPrimalHydraliskUp22227">
+        <AbilSetId value="69"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="BurrowUp42227">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <ActorKey value="BurrowUp"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="IgnoreFacing" value="1"/>
+        <Flags index="SuppressMovement" value="1"/>
+        <InfoArray Unit="MutaliskBroodlord24222">
+            <SectionArray index="Abils">
+                <DurationArray index="Duration" value="0.1"/>
+                <EffectArray index="Finish" value="VoidShadeAB32"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <EffectArray index="Finish" value="ObserverSquadSightAB2222322322222223"/>
+            </SectionArray>
+        </InfoArray>
+        <AutoCastValidatorArray value="IsTimeStopped21733222222222322222"/>
+        <AutoCastRange value="500"/>
+        <AutoCastCountMin value="1"/>
+        <ValidatorArray value="IsTimeStopped21733222222222322222"/>
+    </CAbilMorph>
     <CAbilMorph id="BurrowPrimalHydraliskUp223">
         <AbilSetId value="1023"/>
         <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="BurrowUp423" Requirements="HaveDehaka422232222">
+        <CmdButtonArray index="Execute" DefaultButtonFace="BurrowUp423">
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
         <ActorKey value="BurrowUp"/>
@@ -36621,8 +36758,6 @@
         <Alignment value="Negative"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <Effect index="0" value="SanitizationBeam332"/>
-        <Flags index="AutoCast" value="1"/>
-        <Flags index="AutoCastOn" value="1"/>
         <Cost>
             <Cooldown TimeUse="4"/>
         </Cost>
@@ -40355,27 +40490,28 @@
     </CAbilTrain>
     <CAbilTrain id="PrimalTrain222">
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
-        <InfoArray index="Train1" Time="7" Effect="AdeptPhaseShiftInitialSet2">
+        <InfoArray index="Train1" Time="7" Effect="DisablingCloudSet352235424">
             <Vital index="Energy" value="1"/>
             <Button DefaultButtonFace="Interceptor422223325"/>
             <Unit value="PrimalZergling235"/>
         </InfoArray>
-        <InfoArray index="Train2" Time="15" Effect="AdeptPhaseShiftInitialSet22">
+        <InfoArray index="Train2" Time="15" Effect="DisablingCloudSet35223542432">
             <Vital index="Energy" value="2"/>
             <Button DefaultButtonFace="Interceptor42222332532"/>
-            <Unit value="PrimalHydralisk23"/>
+            <Unit value="PrimalHydralisk232"/>
         </InfoArray>
-        <InfoArray index="Train3" Time="20" Effect="AdeptPhaseShiftInitialSet222">
+        <InfoArray index="Train3" Time="20" Effect="DisablingCloudSet352235424322">
             <Vital index="Energy" value="4"/>
             <Button DefaultButtonFace="Interceptor422223325323322"/>
             <Unit value="Overlord72"/>
         </InfoArray>
-        <InfoArray index="Train4" Time="15" Effect="AdeptPhaseShiftInitialSet22">
+        <InfoArray index="Train4" Time="15" Effect="DisablingCloudSet3522354243">
             <Vital index="Energy" value="2"/>
             <Button DefaultButtonFace="PrimalMutalisk23"/>
             <Unit value="PrimalMutalisk23"/>
         </InfoArray>
-        <InfoArray index="Train5" Time="7" Effect="AdeptPhaseShiftInitialSet2">
+        <InfoArray index="Train5" Time="7" Effect="DisablingCloudSet3522354244">
+            <Vital index="Energy" value="1"/>
             <Button DefaultButtonFace="Interceptor4222233252"/>
             <Unit value="Drone55"/>
         </InfoArray>
@@ -40562,7 +40698,7 @@
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
         <DataCollection value="PrimalTrain2"/>
         <InfoArray index="Train1" Time="10" Effect="DisablingCloudSet3522354244">
-            <Vital index="Energy" value="0.5"/>
+            <Vital index="Energy" value="1"/>
             <Button DefaultButtonFace="Interceptor4222233252"/>
             <Unit value="Drone5"/>
             <Unit value="Drone5"/>
@@ -43121,8 +43257,8 @@
             <Cooldown Link="Abil/PurificationNova" Location="Player" TimeUse="3"/>
             <Button DefaultButtonFace="PhotonCannon3" Requirements=""/>
         </InfoArray>
-        <InfoArray index="Build17" Unit="Hatchery4" Time="15">
-            <Button DefaultButtonFace="Hatchery4" Requirements="MothershipRequirements234232"/>
+        <InfoArray index="Build17" Unit="RoachWarren22232" Time="40">
+            <Button DefaultButtonFace="UnknownButton552" Requirements="UnknownRequirement842"/>
         </InfoArray>
         <InfoArray index="Build19" Unit="PhotonCannon22" Time="15">
             <Charge>
@@ -60688,6 +60824,19 @@
         <AINotifyEffect value="WildMutation"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="WildMutation4" Requirements="UseSpectreNyxSuit2222332223"/>
     </CAbilEffectTarget>
+    <CAbilEffectTarget id="WildMutation5">
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <Effect index="0" value="WildMutationSet5"/>
+        <Cost>
+            <Vital index="Energy" value="50"/>
+            <Cooldown Link="WildMutationWildMutation5" Location="Unit" TimeUse="25"/>
+        </Cost>
+        <TargetFilters value="Biological;Self,Enemy,Structure,Heroic,Missile,Item,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <CursorEffect value="WildMutationSearch4"/>
+        <AINotifyEffect value="WildMutation"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="WildMutation5"/>
+    </CAbilEffectTarget>
     <CAbilMorph id="WreckingCrewFighterMode2">
         <AbilSetId value="FighterMode"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
@@ -61216,6 +61365,19 @@
         <AINotifyEffect value="XenWarrior24"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="ActivateCompleteAnnihilation" Requirements="UnknownRequirement642"/>
         <Arc value="360"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="XenWarrior24322">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="QuickMutator2222252"/>
+        <Flags index="BestUnit" value="0"/>
+        <Cost>
+            <Charge Link="Abil/XenWarrior"/>
+            <Cooldown Link="Abil/XenWarrior" TimeUse="50"/>
+        </Cost>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <AINotifyEffect value="XenWarrior24"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ActivateCompleteAnnihilation" Requirements="UnknownRequirement6422"/>
     </CAbilEffectTarget>
     <CAbilEffectInstant id="XenWarrior244">
         <EditorCategories value="AbilityorEffectType:Units"/>

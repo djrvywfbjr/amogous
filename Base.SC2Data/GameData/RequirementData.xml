@@ -8816,6 +8816,9 @@
     <CRequirement id="UnknownRequirement642">
         <NodeArray index="Show" Link="NotOrCountUnitAshWorm2CompleteOnlyCountUnitPrimalRoach32CompleteOnlyCountUnitPrimalZergling2222CompleteOnlyCountUnitPrimalHydralisk32CompleteOnlyCountUnitSuffusDuder2CompleteOnly"/>
     </CRequirement>
+    <CRequirement id="UnknownRequirement6422">
+        <NodeArray index="Show" Link="NotOrCountUnitPrimalZergling2223CompleteOnlyCountUnitPrimalHydralisk322CompleteOnlyCountUnitSuffusDuderRud2CompleteOnly"/>
+    </CRequirement>
     <CRequirement id="UnknownRequirement65">
         <NodeArray index="Show" Link="NotCountUpgradeUnknownUpgrade40QueuedOrBetter2584292422"/>
     </CRequirement>
@@ -9318,6 +9321,10 @@
     <CRequirement id="UnknownRequirement84">
         <NodeArray index="Use" Link="NotCountUnitRoachWarren22242QueuedOrBetter1336705134"/>
         <NodeArray index="Show" Link="NotCountUnitRoachWarren22242QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnknownRequirement842">
+        <NodeArray index="Use" Link="NotCountUnitRoachWarren22232QueuedOrBetter1336705134"/>
+        <NodeArray index="Show" Link="NotCountUnitRoachWarren22232QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="UnknownRequirement85"/>
     <CRequirement id="UnknownRequirement86"/>

@@ -1632,6 +1632,17 @@
             <Chance value="1"/>
         </DamageResponse>
     </CBehaviorBuff>
+    <CBehaviorBuff id="AntamoAirAll3222222232222">
+        <Alignment value="Negative"/>
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-progression-zerg-dehaka-1-dehakaunlock.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="UnknownValidator522"/>
+        <Modification AttackSpeedMultiplier="0.85"/>
+        <DamageResponse ModifyFraction="1.75">
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
     <CBehaviorBuff id="AntamoAirAll332232222">
         <BehaviorFlags index="Permanent" value="1"/>
         <InfoFlags index="Hidden" value="1"/>
@@ -2799,6 +2810,17 @@
         </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="PsiDisruption3222243232">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-psidisruption.dds"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="UnknownValidator53"/>
+        <Duration value="3"/>
+        <DamageResponse ModifyFraction="0">
+            <Chance value="0.15"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PsiDisruption32222432322">
         <Alignment value="Positive"/>
         <InfoFlags index="Hidden" value="1"/>
         <InfoIcon value="Assets\Textures\btn-ability-terran-psidisruption.dds"/>
@@ -8478,6 +8500,11 @@
                 <Cooldown Link="Behavior/AntamoAirAll"/>
             </Cost>
         </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UnknownBehavior2822">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <PeriodicEffect value="PsiDisruptionSearchArea32222332322"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="Unmanned">
         <Cost>
@@ -45926,6 +45953,12 @@
         <Modification AttackSpeedMultiplier="2">
             <VitalMaxArray index="Life" value="50"/>
         </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WildMutation4">
+        <InfoIcon value="Assets\Textures\btn-ability-kerrigan-wildmutation.dds"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <Duration value="10"/>
+        <Modification MoveSpeedMultiplier="1.5" AccelerationMultiplier="1.5" AttackSpeedMultiplier="1.5"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="XelNagaConstructSmash2">
         <InfoFlags index="Hidden" value="1"/>

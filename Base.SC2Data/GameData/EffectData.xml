@@ -32977,6 +32977,12 @@
         <EffectArray value="BroodlingTimedLife5"/>
         <EffectArray value="BroodlingAttack3"/>
     </CEffectSet>
+    <CEffectApplyBehavior id="KerriganAbilityEfficiency10">
+        <ValidatorArray value="HaveK5AbilityEfficiency"/>
+        <EditorCategories value="Race:Zerg"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="KerriganAbilityEfficiency"/>
+    </CEffectApplyBehavior>
     <CEffectApplyBehavior id="KerriganAbilityEfficiency2">
         <ValidatorArray value="HaveK5AbilityEfficiency"/>
         <EditorCategories value="Race:Zerg"/>
@@ -33023,6 +33029,9 @@
         <WhichUnit Value="Caster"/>
         <Behavior value="KerriganAbilityEfficiency"/>
     </CEffectApplyBehavior>
+    <CEffectSet id="KerriganAbilityEfficiencyAwardDummy10">
+        <ValidatorArray value="KerriganAbilityEfficiencyStackCount"/>
+    </CEffectSet>
     <CEffectSet id="KerriganAbilityEfficiencyAwardDummy2">
         <ValidatorArray value="KerriganAbilityEfficiencyStackCount"/>
     </CEffectSet>
@@ -43548,6 +43557,7 @@
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="ObserverSquadSightAB22223342">
         <ValidatorArray index="0" value="IsTimeStopped21733222232"/>
+        <ValidatorArray value="IsTimeStopped217332222233"/>
         <EditorCategories value="Race:Protoss"/>
         <Marker Link="Effect/ObserverSquadSightAB2222"/>
         <Behavior value="PrimalistEssence"/>
@@ -46820,6 +46830,7 @@
         <CreateFlags index="UseFood" value="0"/>
         <SpawnUnit value="SJPickupHealth500222224"/>
         <ValidatorArray value="IsTimeStopped21733222232"/>
+        <ValidatorArray value="IsTimeStopped217332222233"/>
     </CEffectCreateUnit>
     <CEffectCreateUnit id="PhaseCannon2832">
         <ValidatorArray value="CasterEnergyGE10023"/>
@@ -51114,6 +51125,11 @@
         <EditorCategories value="Race:Terran"/>
         <Behavior value="PsiDisruption3222243232"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="PsiDisruptionApplyBehavior32222332322">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="PsiDisruption32222432322"/>
+    </CEffectApplyBehavior>
     <CEffectApplyBehavior id="PsiDisruptionApplyBehavior3222233233">
         <ValidatorArray index="0" removed="1"/>
         <EditorCategories value="Race:Terran"/>
@@ -51759,6 +51775,11 @@
         <EditorCategories value="Race:Terran"/>
         <SearchFilters value="Visible;Ally,Neutral,Enemy,Robotic,Structure,Missile,Stasis,Dead,Hidden,Invulnerable,Benign"/>
         <AreaArray Radius="500" Effect="PsiDisruptionApplyBehavior3222233232"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="PsiDisruptionSearchArea32222332322">
+        <EditorCategories value="Race:Terran"/>
+        <SearchFilters value="Visible;Ally,Neutral,Enemy,Robotic,Structure,Missile,Stasis,Dead,Hidden,Invulnerable,Benign"/>
+        <AreaArray Radius="500" Effect="PsiDisruptionApplyBehavior32222332322"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="PsiDisruptionSearchArea3222233233">
         <EditorCategories value="Race:Terran"/>
@@ -56274,6 +56295,11 @@
         <EditorCategories value=""/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="QuickMutator222225">
+        <ValidatorArray index="0" value="NotHeroic"/>
+        <EditorCategories value=""/>
+        <Behavior value=""/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="QuickMutator2222252">
         <ValidatorArray index="0" value="NotHeroic"/>
         <EditorCategories value=""/>
         <Behavior value=""/>
@@ -69373,6 +69399,7 @@
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="UnknownEffect112">
         <ValidatorArray index="0" value="IsTimeStopped21733222232"/>
+        <ValidatorArray value="IsTimeStopped217332222233"/>
         <EditorCategories value=""/>
         <Behavior value="PrimalistEssence"/>
         <Count value="22"/>
@@ -75625,6 +75652,10 @@
         <ValidatorArray index="0" removed="1"/>
         <EditorCategories value="Race:Zerg"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="WildMutation4">
+        <ValidatorArray value="RequiresZerg"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CEffectApplyBehavior>
     <CEffectEnumArea id="WildMutationSearch2">
         <EditorCategories value="Race:Zerg"/>
         <ImpactLocation Value="TargetPoint"/>
@@ -75666,6 +75697,12 @@
         <ImpactLocation Value="TargetPoint"/>
         <SearchFilters value="-;Enemy,Structure,Heroic,Missile,Item,Stasis,Dead,Hidden,Invulnerable"/>
         <AreaArray Radius="1.75" Effect="WildMutation3"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="WildMutationSearch4">
+        <EditorCategories value="Race:Zerg"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <SearchFilters value="Biological;Enemy,Structure,Heroic,Missile,Item,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="1.75" Effect="WildMutation4"/>
     </CEffectEnumArea>
     <CEffectSet id="WildMutationSet2">
         <EditorCategories value="Race:Zerg"/>
@@ -75745,6 +75782,12 @@
         <EditorCategories value="Race:Zerg"/>
         <EffectArray value="RavagerWeaponLM52"/>
         <EffectArray value="KarassPlasmaSurgeModifyUnit8222"/>
+    </CEffectSet>
+    <CEffectSet id="WildMutationSet5">
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="KerriganAbilityEfficiency10"/>
+        <EffectArray value="WildMutationSearch4"/>
+        <TargetLocationType value="Point"/>
     </CEffectSet>
     <CEffectLaunchMissile id="WraithALeftLaunchMissile2">
         <EditorCategories value="Race:Terran"/>

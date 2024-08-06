@@ -28,6 +28,7 @@ Trigger/Name/lib_CD55B2B5_02D6282B=EXPALLOW
 Trigger/Name/lib_CD55B2B5_0384200F=Essence Die
 Trigger/Name/lib_CD55B2B5_04BC798A=BOOYAisBACK
 Trigger/Name/lib_CD55B2B5_05D1F079=StartANew
+Trigger/Name/lib_CD55B2B5_06233D4A=Choose Leade 3
 Trigger/Name/lib_CD55B2B5_07D664CE=Deception4
 Trigger/Name/lib_CD55B2B5_08D099AF=IShotTheSheriff
 Trigger/Name/lib_CD55B2B5_09F1B1A1=AntamoTrain10

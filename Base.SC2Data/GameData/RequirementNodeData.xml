@@ -4301,6 +4301,11 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="PrimalHydralisk22" State="CompleteOnly"/>
     </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitPrimalHydralisk322CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="PrimalHydralisk322" State="CompleteOnly"/>
+    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitPrimalHydralisk32CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="PrimalHydralisk32" State="CompleteOnly"/>
@@ -4380,6 +4385,10 @@
     <CRequirementCountUnit id="CountUnitPrimalZergling2222CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="PrimalZergling2222" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitPrimalZergling2223CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="PrimalZergling2223" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitPrimalZergling222CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
@@ -4482,6 +4491,10 @@
         <Count Link="RoachWarren22232" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitRoachWarren22232QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="RoachWarren22232" State="QueuedOrBetter"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitRoachWarren22232QueuedOrBetter1336705134">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="RoachWarren22232" State="QueuedOrBetter"/>
     </CRequirementCountUnit>
@@ -4848,6 +4861,11 @@
     <CRequirementCountUnit id="CountUnitSuffusDuder2CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="SuffusDuder2" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitSuffusDuderRud2CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="SuffusDuderRud2" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitSuffusDuderRudCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
@@ -5891,7 +5909,6 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeManufactureGunpowderMixerQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="ManufactureGunpowderMixer" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeManufactureRecyclerTankCompleteOnly">
@@ -16123,6 +16140,14 @@
     <CRequirementNot id="NotCountUnitRealNergalQueuedOrBetter">
         <OperandArray index="0" value="CountUnitRealNergalQueuedOrBetter"/>
     </CRequirementNot>
+    <CRequirementNot id="NotCountUnitRoachWarren22232QueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUnitRoachWarren22232QueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUnitRoachWarren22232QueuedOrBetter1336705134">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUnitRoachWarren22232QueuedOrBetter1336705134"/>
+    </CRequirementNot>
     <CRequirementNot id="NotCountUnitRoachWarren22242QueuedOrBetter">
         <OperandArray index="0" value="CountUnitRoachWarren22242QueuedOrBetter"/>
     </CRequirementNot>
@@ -19228,6 +19253,10 @@
     <CRequirementNot id="NotOrCountUnitPrimalUltralisk23CompleteOnlyCountUnitPrimalRoach3CompleteOnlyCountUnitPrimalZergling222CompleteOnlyCountUnitPrimalHydralisk3CompleteOnlyCountUnitSuffusDuderRudCompleteOnly">
         <OperandArray index="0" value="OrCountUnitPrimalUltralisk23CompleteOnlyCountUnitPrimalRoach3CompleteOnlyCountUnitPrimalZergling222CompleteOnlyCountUnitPrimalHydralisk3CompleteOnlyCountUnitSuffusDuderRudCompleteOnly"/>
     </CRequirementNot>
+    <CRequirementNot id="NotOrCountUnitPrimalZergling2223CompleteOnlyCountUnitPrimalHydralisk322CompleteOnlyCountUnitSuffusDuderRud2CompleteOnly">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="OrCountUnitPrimalZergling2223CompleteOnlyCountUnitPrimalHydralisk322CompleteOnlyCountUnitSuffusDuderRud2CompleteOnly"/>
+    </CRequirementNot>
     <CRequirementNot id="NotOrCountUnitStarport6CompleteOnlyCountUnitStarport7FlyingCompleteOnly">
         <OperandArray index="0" value="OrCountUnitStarport6CompleteOnlyCountUnitStarport7FlyingCompleteOnly"/>
     </CRequirementNot>
@@ -19904,6 +19933,12 @@
         <OperandArray value="CountUnitPrimalZergling222CompleteOnly"/>
         <OperandArray value="CountUnitPrimalHydralisk3CompleteOnly"/>
         <OperandArray value="CountUnitSuffusDuderRudCompleteOnly"/>
+    </CRequirementOr>
+    <CRequirementOr id="OrCountUnitPrimalZergling2223CompleteOnlyCountUnitPrimalHydralisk322CompleteOnlyCountUnitSuffusDuderRud2CompleteOnly">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUnitPrimalZergling2223CompleteOnly"/>
+        <OperandArray value="CountUnitPrimalHydralisk322CompleteOnly"/>
+        <OperandArray value="CountUnitSuffusDuderRud2CompleteOnly"/>
     </CRequirementOr>
     <CRequirementOr id="OrCountUnitStargate7CompleteOnlyCountUnitDarkShrine3CompleteOnly">
         <OperandArray value="CountUnitStargate7CompleteOnly"/>
