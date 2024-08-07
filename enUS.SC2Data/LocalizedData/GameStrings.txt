@@ -16256,6 +16256,7 @@ Button/Tooltip/OdinNukeCalldown6=Calls down an Earthquake Strike, dealing 5000 d
 Button/Tooltip/OdinNukeCalldown7=Calls down a Nuclear Strike at a target location. Nukes take time to land, but they deal up to 5,000 damage to enemies in a large radius.
 Button/Tooltip/OmegaStorm2=Summons a storm that deals damage to enemies in an area. Deals 6(6 bonus to structures) damage 12 times.
 Button/Tooltip/OmegaStorm22=Summons a storm that deals damage to enemies in an area. Deals 20 damage(bonus 20 to armored, massive and heroic) to all units within 12 times.<n/><n/>Passive: increases energy regeneration by 6.
+Button/Tooltip/OmindHunterKiller=Ranged attacker. Can morph into a Lurker.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
 Button/Tooltip/Oracle2=Flying Caster.<n/><n/><c val="ffff8a">Can attack ground units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/Oracle22=Fast capital ship.
 Button/Tooltip/Oracle3=Flying combat support caster. Has a weak attack. Can autocast Double Shield Repair and Omega Disruption.<n/><c val="FFFF00">Detector</c><n/>Costs 2 charges.
@@ -34339,6 +34340,7 @@ Unit/Name/HybridReaver23=New Life Form
 Unit/Name/HybridReaver24=Fallen Hybrid
 Unit/Name/HybridReaver3=Unstable Hybrid Reaver
 Unit/Name/Hydralisk10=Hydralisk
+Unit/Name/Hydralisk11=Hydralisk
 Unit/Name/Hydralisk2=Last Hydralisk
 Unit/Name/Hydralisk3=Cyber Killer
 Unit/Name/Hydralisk4=Channeler
@@ -35142,6 +35144,7 @@ Unit/Name/NydusCanalAttacker3=Den Defender
 Unit/Name/NydusCanalAttackerWeapon2=Nydus Destroyer Copy
 Unit/Name/NydusCanalAttackerWeapon3=Nydus Destroyer
 Unit/Name/NydusCanalCreeper2=Subterranean Tendril
+Unit/Name/NydusCanalCreeper4=Creep Tower
 Unit/Name/NydusNetwork2=AI Center
 Unit/Name/NydusNetwork3=Super Nydus Network
 Unit/Name/NydusNetwork4=Fluke Network
@@ -35163,6 +35166,8 @@ Unit/Name/Odin2=Renegade Odin
 Unit/Name/Odin22=Legendary Odin
 Unit/Name/OdinAAWeapon2=Odin Anti-Air Copy
 Unit/Name/OdinAAWeapon22=Odin Anti-Air Copy Copy
+Unit/Name/OmindCreepTower=Creep Tower
+Unit/Name/OmindHunterKiller=HunterKiller
 Unit/Name/Oracle2=Pure Oracle
 Unit/Name/Oracle22=Pure Fighter
 Unit/Name/Oracle3=Dark Oracle
