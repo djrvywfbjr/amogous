@@ -70096,7 +70096,7 @@
     </CEffectApplyBehavior>
     <CEffectModifyUnit id="CombatProtocolAddCharge">
         <EditorCategories value=""/>
-        <Cost Abil="AnnihilationBombCP2,Execute" ChargeCountUse="-1">
+        <Cost Abil="PurifierBeamCP2,Execute" ChargeCountUse="-1">
             <Player Value="Target"/>
         </Cost>
         <Cost Abil="AnnihilationBombCP2,Execute" ChargeCountUse="-1">

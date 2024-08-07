@@ -33093,7 +33093,6 @@ Unit/LifeArmorName/ProtossPlating=Protoss Plating
 Unit/LifeArmorName/ProtossPlating2=<c val="00FF80">Living Plating</c>
 Unit/LifeArmorName/TerranBuildingPlatingeee=Wood
 Unit/LifeArmorName/TerranInfantryArmor132=Body
-Unit/LifeArmorName/TerranShipPlating=Terran Ship Plating
 Unit/LifeArmorName/TerranVehiclePlating=Terran Vehicle Plating
 Unit/LifeArmorName/Xel'nagaArmor=Xel'naga Armor
 Unit/LifeArmorName/ZergBrutalisk2Armor=Zerg Chitinous Plating
