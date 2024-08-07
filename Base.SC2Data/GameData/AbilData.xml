@@ -6248,10 +6248,10 @@
         <InfoArray index="Build3" Unit="SpawningPool3" Time="50">
             <Button DefaultButtonFace="SpawningPool3" Requirements="HaveCyberHatchery"/>
         </InfoArray>
-        <InfoArray index="Build4" Unit="SpawningPool222" Time="120">
+        <InfoArray index="Build4" Unit="Overmind2" Time="120">
             <Button DefaultButtonFace="SpawningPool623"/>
         </InfoArray>
-        <InfoArray index="Build5" Unit="SpawningPool222" Time="0.1">
+        <InfoArray index="Build5" Unit="Overmind2" Time="0.1">
             <Vital index="Life" value="99"/>
             <Button DefaultButtonFace="Wraith22262"/>
         </InfoArray>
@@ -9752,6 +9752,30 @@
         <Range value="100"/>
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CalldownMULE42522" Requirements="UnknownRequirement"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="DropHunterKillers">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Effect index="0" value="OrbitalCommandCreateMuleSwitch2"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="46"/>
+        </Cost>
+        <Range value="8"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="DropDownHydralisks"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="DropCreepTower">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Effect index="0" value="CalldownMULECreateUnit423222"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge Link="Abil/CalldownMULE" Location="Player"/>
+            <Cooldown Link="Abil/CalldownMULE" TimeUse="84"/>
+        </Cost>
+        <Range value="50"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="DropDownAcidColony"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="CalldownMULE42323">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
@@ -27909,7 +27933,7 @@
             </Charge>
             <Cooldown TimeUse="0.1"/>
         </Cost>
-        <AutoCastFilters value="Air,Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Invulnerable"/>
+        <AutoCastFilters value="Air,Visible;Player,Ally,Neutral,Missile,Cloaked,Stasis,Dead,Invulnerable"/>
         <AutoCastRange value="8"/>
         <AutoCastValidatorArray index="0" removed="1"/>
         <AutoCastValidatorArray index="1" removed="1"/>
@@ -28991,17 +29015,17 @@
         <Alignment value="Negative"/>
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
         <Effect index="0" value="KorhalSporeCannonBombardmentDelay"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
         <Cost>
             <Charge Link="KorhLol"/>
-            <Cooldown Link="KorhLol" TimeUse="25"/>
+            <Cooldown Link="KorhLol" TimeUse="84"/>
         </Cost>
         <Range value="500"/>
         <Arc value="360"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="KorhalSporeCannonBombardment2"/>
-        <Flags index="AutoCast" value="1"/>
-        <Flags index="AutoCastOn" value="1"/>
         <AutoCastFilters value="Ground,Visible;Player,Ally,Neutral,Missile,Dead"/>
         <AutoCastRange value="500"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="KorhalSporeCannonBombardment2"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="KorhalSporeCannonBombardment22">
         <Alignment value="Negative"/>
@@ -52277,6 +52301,24 @@
         <AINotifyEffect value="SpawnMutantLarva"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="MorphMorphalisk22"/>
     </CAbilEffectTarget>
+    <CAbilEffectTarget id="MetabolicStream">
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <Effect index="0" value="VileStream22"/>
+        <Cost>
+            <Charge Link="Abil/SpawnMutantLarva"/>
+            <Cooldown Link="Abil/SpawnMutantLarva" TimeUse="42"/>
+        </Cost>
+        <TargetFilters value="Structure,Visible;Neutral,Enemy,Heroic,UnderConstruction"/>
+        <Range value="5"/>
+        <Arc value="360"/>
+        <Marker Link="Abil/SpawnMutantLarva"/>
+        <UninterruptibleArray index="Prep" value="1"/>
+        <UninterruptibleArray index="Cast" value="1"/>
+        <UninterruptibleArray index="Channel" value="1"/>
+        <UninterruptibleArray index="Finish" value="1"/>
+        <AINotifyEffect value="SpawnMutantLarva"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MorphMorphalisk222"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="SpawnLocustsTargeted2">
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
         <Effect index="0" value="LocustMPCreateSet2"/>
@@ -54303,6 +54345,38 @@
             <Button DefaultButtonFace="PhaseCannon26" Requirements="UnknownRequirement692"/>
         </InfoArray>
     </CAbilResearch>
+    <CAbilMorph id="MorphBuilding">
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MutateintoSporeCrawler" State="Suppressed"/>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="CancelMutateMorph"/>
+        <ActorKey value="HiveUpgrade"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="Birth" value="1"/>
+        <Flags index="DisableAbils" value="1"/>
+        <Flags index="FastBuild" value="1"/>
+        <Flags index="Interruptible" value="1"/>
+        <Flags index="Produce" value="1"/>
+        <Flags index="ShowProgress" value="1"/>
+        <InfoArray Score="1" Unit="OmindSunkenColony">
+            <SectionArray index="Abils">
+                <DurationArray index="Delay" value="60"/>
+            </SectionArray>
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="60"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Delay" value="60"/>
+            </SectionArray>
+        </InfoArray>
+        <Alert value="MorphComplete_Zerg"/>
+        <Activity value="UI/Mutating"/>
+        <AbilLinkEnableArray value="ZerglingRespawnPrimary"/>
+        <AbilLinkEnableArray value="ZerglingRespawnDeath"/>
+        <AbilLinkEnableArray value="ZerglingRespawn"/>
+        <AbilLinkEnableArray value="ZerglingRespawnCounter"/>
+        <AbilLinkEnableArray value="ZerglingRespawnTrain"/>
+        <AbilLinkEnableArray value="SummonInfestedMercs"/>
+    </CAbilMorph>
     <CAbilMorph id="UpgradeToPlanetaryFortress22">
         <EditorCategories value="Race:Terran,AbilityorEffectType:MorphsandBurrows"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="PlanetaryFortress22" State="Restricted" Requirements="HaveExperimentCenter2222"/>
@@ -60399,7 +60473,7 @@
                 <CountUse value="1"/>
                 <TimeUse value="14"/>
             </Charge>
-            <Cooldown TimeUse="2"/>
+            <Cooldown TimeUse="0"/>
         </Cost>
         <Range index="0" value="13"/>
         <AutoCastRange value="13"/>
@@ -67563,53 +67637,55 @@
     </CAbilResearch>
     <CAbilResearch id="evolutionchamberresearch4" parent="evolutionchamberresearch">
         <Name value="Abil/Name/evolutionchamberresearch4"/>
-        <InfoArray index="Research1" Upgrade="UmojanBasicUnitUpgrade52224224232222222244">
+        <InfoArray index="Research1" Time="240" Upgrade="UmojanBasicUnitUpgrade52224224232222222244">
             <Button DefaultButtonFace="MothershipCore22223224" Requirements="Damage1"/>
         </InfoArray>
-        <InfoArray index="Research2" Upgrade="UmojanBasicUnitUpgrade52224224232222222245">
+        <InfoArray index="Research2" Time="285" Upgrade="UmojanBasicUnitUpgrade52224224232222222245">
             <Button DefaultButtonFace="MothershipCore222232242" Requirements="Damage12"/>
         </InfoArray>
-        <InfoArray index="Research3" Upgrade="UmojanBasicUnitUpgrade52224224232222222246">
+        <InfoArray index="Research3" Time="330" Upgrade="UmojanBasicUnitUpgrade52224224232222222246">
             <Button DefaultButtonFace="MothershipCore2222322422" Requirements="Damage122"/>
         </InfoArray>
-        <InfoArray index="Research4" Upgrade="UmojanBasicUnitUpgrade522242242322222222434">
+        <InfoArray index="Research4" Time="240" Upgrade="UmojanBasicUnitUpgrade522242242322222222434">
             <Button DefaultButtonFace="MothershipCore22223224222" Requirements="Damage13"/>
         </InfoArray>
-        <InfoArray index="Research5" Upgrade="UmojanBasicUnitUpgrade5222422423222222224342">
+        <InfoArray index="Research5" Time="285" Upgrade="UmojanBasicUnitUpgrade5222422423222222224342">
             <Button DefaultButtonFace="MothershipCore222232242222" Requirements="Damage123"/>
         </InfoArray>
-        <InfoArray index="Research6" Upgrade="UmojanBasicUnitUpgrade522242242322222222435">
+        <InfoArray index="Research6" Time="330" Upgrade="UmojanBasicUnitUpgrade522242242322222222435">
             <Button DefaultButtonFace="MothershipCore2222322422222" Requirements="Damage1232"/>
         </InfoArray>
-        <InfoArray index="Research7" Time="100" Upgrade="UmojanBasicUnitUpgrade52224224232222222242223323422322222">
+        <InfoArray index="Research7" Time="150" Upgrade="UmojanBasicUnitUpgrade52224224232222222242223323422322222">
             <Resource index="Minerals" value="125"/>
             <Resource index="Vespene" value="125"/>
             <Button DefaultButtonFace="MothershipCore222232242224335" Requirements="Damage13433332"/>
         </InfoArray>
-        <InfoArray index="Research8" Time="40" Upgrade="UmojanBasicUnitUpgrade522242242322222222422234">
+        <InfoArray index="Research8" Time="60" Upgrade="UmojanBasicUnitUpgrade522242242322222222422234">
             <Button DefaultButtonFace="MothershipCore2222322422233222" Requirements="Damage134333322223"/>
         </InfoArray>
-        <InfoArray index="Research11" Time="120" Upgrade="Burrow">
+        <InfoArray index="Research9" Time="330"/>
+        <InfoArray index="Research10" Time="120"/>
+        <InfoArray index="Research11" Time="180" Upgrade="Burrow">
             <Resource index="Minerals" value="150"/>
             <Resource index="Vespene" value="200"/>
             <Button DefaultButtonFace="BurrowDown" Requirements="UnknownRequirement45"/>
         </InfoArray>
-        <InfoArray index="Research12" Time="105" Upgrade="UnknownUpgrade56">
+        <InfoArray index="Research12" Time="155" Upgrade="UnknownUpgrade56">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Button DefaultButtonFace="UnknownButton89" Requirements="UnknownRequirement101"/>
         </InfoArray>
-        <InfoArray index="Research13" Time="210" Upgrade="UnknownUpgrade562">
+        <InfoArray index="Research13" Time="315" Upgrade="UnknownUpgrade562">
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="200"/>
             <Button DefaultButtonFace="UnknownButton90" Requirements="UnknownRequirement1012"/>
         </InfoArray>
-        <InfoArray index="Research14" Time="120" Upgrade="UnknownUpgrade57">
+        <InfoArray index="Research14" Time="180" Upgrade="UnknownUpgrade57">
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="200"/>
             <Button DefaultButtonFace="UnknownButton91" Requirements="UnknownRequirement102"/>
         </InfoArray>
-        <InfoArray index="Research15" Time="120" Upgrade="UnknownUpgrade572">
+        <InfoArray index="Research15" Time="180" Upgrade="UnknownUpgrade572">
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="200"/>
             <Button DefaultButtonFace="UnknownButton912" Requirements="UnknownRequirement1022"/>
@@ -67617,53 +67693,55 @@
     </CAbilResearch>
     <CAbilResearch id="evolutionchamberresearch42" parent="evolutionchamberresearch">
         <Name value="Abil/Name/evolutionchamberresearch42"/>
-        <InfoArray index="Research1" Upgrade="UmojanBasicUnitUpgrade5222422423222222224332223">
+        <InfoArray index="Research1" Time="240" Upgrade="UmojanBasicUnitUpgrade5222422423222222224332223">
             <Button DefaultButtonFace="MothershipCore2222322422233" Requirements="Damage1323"/>
         </InfoArray>
-        <InfoArray index="Research2" Upgrade="UmojanBasicUnitUpgrade5222422423222222224332224">
+        <InfoArray index="Research2" Time="285" Upgrade="UmojanBasicUnitUpgrade5222422423222222224332224">
             <Button DefaultButtonFace="MothershipCore22223224222332" Requirements="Damage13223"/>
         </InfoArray>
-        <InfoArray index="Research3" Upgrade="UmojanBasicUnitUpgrade52224224232222222243322232">
+        <InfoArray index="Research3" Time="330" Upgrade="UmojanBasicUnitUpgrade52224224232222222243322232">
             <Button DefaultButtonFace="MothershipCore222232242223322" Requirements="Damage132232"/>
         </InfoArray>
-        <InfoArray index="Research4" Upgrade="UmojanBasicUnitUpgrade5222422423222222224333">
+        <InfoArray index="Research4" Time="240" Upgrade="UmojanBasicUnitUpgrade5222422423222222224333">
             <Button DefaultButtonFace="MothershipCore222232242223" Requirements="Damage132"/>
         </InfoArray>
-        <InfoArray index="Research5" Upgrade="UmojanBasicUnitUpgrade5222422423222222224334">
+        <InfoArray index="Research5" Time="285" Upgrade="UmojanBasicUnitUpgrade5222422423222222224334">
             <Button DefaultButtonFace="MothershipCore2222322422232" Requirements="Damage1322"/>
         </InfoArray>
-        <InfoArray index="Research6" Upgrade="UmojanBasicUnitUpgrade52224224232222222243332">
+        <InfoArray index="Research6" Time="330" Upgrade="UmojanBasicUnitUpgrade52224224232222222243332">
             <Button DefaultButtonFace="MothershipCore22223224222322" Requirements="Damage13222"/>
         </InfoArray>
-        <InfoArray index="Research7" Time="100" Upgrade="UmojanBasicUnitUpgrade5222422423222222224222332342232222">
+        <InfoArray index="Research7" Time="150" Upgrade="UmojanBasicUnitUpgrade5222422423222222224222332342232222">
             <Resource index="Minerals" value="125"/>
             <Resource index="Vespene" value="125"/>
             <Button DefaultButtonFace="MothershipCore222232242224335" Requirements="Damage1343333222"/>
         </InfoArray>
-        <InfoArray index="Research8" Time="100" Upgrade="UmojanBasicUnitUpgrade52224224232222222243322223">
+        <InfoArray index="Research8" Time="150" Upgrade="UmojanBasicUnitUpgrade52224224232222222243322223">
             <Button DefaultButtonFace="MothershipCore22223224222333" Requirements="Damage13232"/>
         </InfoArray>
-        <InfoArray index="Research11" Time="120" Upgrade="UnknownUpgrade58">
+        <InfoArray index="Research9" Time="330"/>
+        <InfoArray index="Research10" Time="120"/>
+        <InfoArray index="Research11" Time="180" Upgrade="UnknownUpgrade58">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Button DefaultButtonFace="UnknownButton92" Requirements="Damage13433332223"/>
         </InfoArray>
-        <InfoArray index="Research12" Time="71" Upgrade="UnknownUpgrade59">
+        <InfoArray index="Research12" Time="105" Upgrade="UnknownUpgrade59">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="150"/>
             <Button DefaultButtonFace="VoidZealotShadowCharge24" Requirements="Damage1343333222322"/>
         </InfoArray>
-        <InfoArray index="Research13" Time="135" Upgrade="UnknownUpgrade592">
+        <InfoArray index="Research13" Time="185" Upgrade="UnknownUpgrade592">
             <Resource index="Minerals" value="75"/>
             <Resource index="Vespene" value="100"/>
             <Button DefaultButtonFace="UnknownButton93" Requirements="Damage13433332223222"/>
         </InfoArray>
-        <InfoArray index="Research14" Time="120" Upgrade="UnknownUpgrade60">
+        <InfoArray index="Research14" Time="180" Upgrade="UnknownUpgrade60">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="200"/>
             <Button DefaultButtonFace="UnknownButton562" Requirements="UnknownRequirement103"/>
         </InfoArray>
-        <InfoArray index="Research15" Time="168" Upgrade="UnknownUpgrade61">
+        <InfoArray index="Research15" Time="255" Upgrade="UnknownUpgrade61">
             <Resource index="Minerals" value="75"/>
             <Resource index="Vespene" value="175"/>
             <Button DefaultButtonFace="SpawnBanelings232" Requirements="UnknownRequirement105"/>
@@ -67671,45 +67749,48 @@
     </CAbilResearch>
     <CAbilResearch id="evolutionchamberresearch43" parent="evolutionchamberresearch">
         <Name value="Abil/Name/evolutionchamberresearch43"/>
-        <InfoArray index="Research1" Upgrade="UmojanBasicUnitUpgrade52224224232222222242224">
+        <InfoArray index="Research1" Time="240" Upgrade="UmojanBasicUnitUpgrade52224224232222222242224">
             <Button DefaultButtonFace="MothershipCore222232242224" Requirements="Damage133"/>
         </InfoArray>
-        <InfoArray index="Research2" Upgrade="UmojanBasicUnitUpgrade52224224232222222242225">
+        <InfoArray index="Research2" Time="285" Upgrade="UmojanBasicUnitUpgrade52224224232222222242225">
             <Button DefaultButtonFace="MothershipCore2222322422242" Requirements="Damage1332"/>
         </InfoArray>
-        <InfoArray index="Research3" Upgrade="UmojanBasicUnitUpgrade522242242322222222422242">
+        <InfoArray index="Research3" Time="330" Upgrade="UmojanBasicUnitUpgrade522242242322222222422242">
             <Button DefaultButtonFace="MothershipCore22223224222422" Requirements="Damage13322"/>
         </InfoArray>
-        <InfoArray index="Research4" Upgrade="UmojanBasicUnitUpgrade522242242322222222422235">
+        <InfoArray index="Research4" Time="240" Upgrade="UmojanBasicUnitUpgrade522242242322222222422235">
             <Button DefaultButtonFace="MothershipCore222232242225" Requirements="Damage1333"/>
         </InfoArray>
-        <InfoArray index="Research5" Upgrade="UmojanBasicUnitUpgrade5222422423222222224222352">
+        <InfoArray index="Research5" Time="285" Upgrade="UmojanBasicUnitUpgrade5222422423222222224222352">
             <Button DefaultButtonFace="MothershipCore2222322422252" Requirements="Damage13323"/>
         </InfoArray>
-        <InfoArray index="Research6" Upgrade="UmojanBasicUnitUpgrade522242242322222222422236">
+        <InfoArray index="Research6" Time="330" Upgrade="UmojanBasicUnitUpgrade522242242322222222422236">
             <Button DefaultButtonFace="MothershipCore22223224222522" Requirements="Damage133232"/>
         </InfoArray>
-        <InfoArray index="Research7" Time="100" Upgrade="UmojanBasicUnitUpgrade5222422423222222224222332342232222222">
+        <InfoArray index="Research7" Time="150" Upgrade="UmojanBasicUnitUpgrade5222422423222222224222332342232222222">
             <Resource index="Minerals" value="125"/>
             <Resource index="Vespene" value="125"/>
             <Button DefaultButtonFace="MothershipCore222232242224335" Requirements="Damage134333322"/>
         </InfoArray>
-        <InfoArray index="Research11" Time="75" Upgrade="UnknownUpgrade63">
+        <InfoArray index="Research8" Time="285"/>
+        <InfoArray index="Research9" Time="330"/>
+        <InfoArray index="Research10" Time="120"/>
+        <InfoArray index="Research11" Time="115" Upgrade="UnknownUpgrade63">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Button DefaultButtonFace="UnknownButton94" Requirements="Damage13433332224"/>
         </InfoArray>
-        <InfoArray index="Research12" Time="200" Upgrade="UnknownUpgrade64">
+        <InfoArray index="Research12" Time="300" Upgrade="UnknownUpgrade64">
             <Resource index="Minerals" value="150"/>
             <Resource index="Vespene" value="150"/>
             <Button DefaultButtonFace="UnknownButton95" Requirements="UnknownRequirement1013"/>
         </InfoArray>
-        <InfoArray index="Research13" Time="150" Upgrade="UnknownUpgrade65">
+        <InfoArray index="Research13" Time="225" Upgrade="UnknownUpgrade65">
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="200"/>
             <Button DefaultButtonFace="Blink234" Requirements="UnknownRequirement107"/>
         </InfoArray>
-        <InfoArray index="Research14" Time="120" Upgrade="UnknownUpgrade66">
+        <InfoArray index="Research14" Time="180" Upgrade="UnknownUpgrade66">
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="250"/>
             <Button DefaultButtonFace="UnknownButton96" Requirements="UnknownRequirement108"/>
@@ -67717,50 +67798,51 @@
     </CAbilResearch>
     <CAbilResearch id="evolutionchamberresearch432" parent="evolutionchamberresearch">
         <Name value="Abil/Name/evolutionchamberresearch432"/>
-        <InfoArray index="Research1" Upgrade="UmojanBasicUnitUpgrade5222422423222222224222333">
+        <InfoArray index="Research1" Time="240" Upgrade="UmojanBasicUnitUpgrade5222422423222222224222333">
             <Button DefaultButtonFace="MothershipCore2222322422243" Requirements="Damage134"/>
         </InfoArray>
-        <InfoArray index="Research2" Upgrade="UmojanBasicUnitUpgrade52224224232222222242223332">
+        <InfoArray index="Research2" Time="280" Upgrade="UmojanBasicUnitUpgrade52224224232222222242223332">
             <Button DefaultButtonFace="MothershipCore22223224222432" Requirements="Damage1342"/>
         </InfoArray>
-        <InfoArray index="Research3" Upgrade="UmojanBasicUnitUpgrade5222422423222222224222334">
+        <InfoArray index="Research3" Time="330" Upgrade="UmojanBasicUnitUpgrade5222422423222222224222334">
             <Button DefaultButtonFace="MothershipCore222232242224322" Requirements="Damage13422"/>
         </InfoArray>
-        <InfoArray index="Research4" Upgrade="UmojanBasicUnitUpgrade522242242322222222422233235">
+        <InfoArray index="Research4" Time="240" Upgrade="UmojanBasicUnitUpgrade522242242322222222422233235">
             <Button DefaultButtonFace="MothershipCore22223224222433" Requirements="Damage1343"/>
         </InfoArray>
-        <InfoArray index="Research5" Upgrade="UmojanBasicUnitUpgrade5222422423222222224222332352">
+        <InfoArray index="Research5" Time="280" Upgrade="UmojanBasicUnitUpgrade5222422423222222224222332352">
             <Button DefaultButtonFace="MothershipCore222232242224332" Requirements="Damage13432"/>
         </InfoArray>
-        <InfoArray index="Research6" Upgrade="UmojanBasicUnitUpgrade522242242322222222422233236">
+        <InfoArray index="Research6" Time="330" Upgrade="UmojanBasicUnitUpgrade522242242322222222422233236">
             <Button DefaultButtonFace="MothershipCore2222322422243322" Requirements="Damage134322"/>
         </InfoArray>
-        <InfoArray index="Research7" Upgrade="UmojanBasicUnitUpgrade522242242322222222422233233">
+        <InfoArray index="Research7" Time="240" Upgrade="UmojanBasicUnitUpgrade522242242322222222422233233">
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="200"/>
             <Button DefaultButtonFace="MothershipCore222232242224333" Requirements="Damage134222"/>
         </InfoArray>
-        <InfoArray index="Research8" Time="300" Upgrade="UmojanBasicUnitUpgrade5222422423222222224222332332">
+        <InfoArray index="Research8" Time="450" Upgrade="UmojanBasicUnitUpgrade5222422423222222224222332332">
             <Resource index="Minerals" value="300"/>
             <Resource index="Vespene" value="300"/>
             <Button DefaultButtonFace="MothershipCore2222322422243332" Requirements="Damage1342222"/>
         </InfoArray>
-        <InfoArray index="Research9" Time="100" Upgrade="UmojanBasicUnitUpgrade522242242322222222422233234223222222">
+        <InfoArray index="Research9" Time="150" Upgrade="UmojanBasicUnitUpgrade522242242322222222422233234223222222">
             <Resource index="Minerals" value="125"/>
             <Resource index="Vespene" value="125"/>
             <Button DefaultButtonFace="MothershipCore222232242224335" Requirements="Damage13433332222"/>
         </InfoArray>
-        <InfoArray index="Research11" Time="150" Upgrade="UmojanBasicUnitUpgrade522242242322222222422233234223222223">
+        <InfoArray index="Research10" Time="120"/>
+        <InfoArray index="Research11" Time="225" Upgrade="UmojanBasicUnitUpgrade522242242322222222422233234223222223">
             <Resource index="Minerals" value="150"/>
             <Resource index="Vespene" value="150"/>
             <Button DefaultButtonFace="UnknownButton97" Requirements="Damage1343333223"/>
         </InfoArray>
-        <InfoArray index="Research12" Time="60" Upgrade="UnknownUpgrade67">
+        <InfoArray index="Research12" Time="90" Upgrade="UnknownUpgrade67">
             <Resource index="Minerals" value="75"/>
             <Resource index="Vespene" value="75"/>
             <Button DefaultButtonFace="DehakaCliffJumper" Requirements="UnknownRequirement109"/>
         </InfoArray>
-        <InfoArray index="Research13" Time="70" Upgrade="UnknownUpgrade68">
+        <InfoArray index="Research13" Time="105" Upgrade="UnknownUpgrade68">
             <Resource index="Minerals" value="75"/>
             <Resource index="Vespene" value="75"/>
             <Button DefaultButtonFace="UnknownButton99" Requirements="LearnDamageLvl14222"/>
@@ -67798,57 +67880,57 @@
     </CAbilResearch>
     <CAbilResearch id="evolutionchamberresearch4322" parent="evolutionchamberresearch">
         <Name value="Abil/Name/evolutionchamberresearch4322"/>
-        <InfoArray index="Research1" Upgrade="UmojanBasicUnitUpgrade5222422423222222224222332343">
+        <InfoArray index="Research1" Time="240" Upgrade="UmojanBasicUnitUpgrade5222422423222222224222332343">
             <Button DefaultButtonFace="MothershipCore2222322422243343" Requirements="Damage13433"/>
         </InfoArray>
-        <InfoArray index="Research2" Upgrade="UmojanBasicUnitUpgrade52224224232222222242223323432">
+        <InfoArray index="Research2" Time="285" Upgrade="UmojanBasicUnitUpgrade52224224232222222242223323432">
             <Button DefaultButtonFace="MothershipCore22223224222433432" Requirements="Damage134332"/>
         </InfoArray>
-        <InfoArray index="Research3" Upgrade="UmojanBasicUnitUpgrade52224224232222222242223323433">
+        <InfoArray index="Research3" Time="330" Upgrade="UmojanBasicUnitUpgrade52224224232222222242223323433">
             <Button DefaultButtonFace="MothershipCore222232242224334322" Requirements="Damage1343322"/>
         </InfoArray>
-        <InfoArray index="Research4" Upgrade="UmojanBasicUnitUpgrade5222422423222222224222332342223">
+        <InfoArray index="Research4" Time="240" Upgrade="UmojanBasicUnitUpgrade5222422423222222224222332342223">
             <Button DefaultButtonFace="MothershipCore222232242224334" Requirements="Damage134333"/>
         </InfoArray>
-        <InfoArray index="Research5" Upgrade="UmojanBasicUnitUpgrade52224224232222222242223323422232">
+        <InfoArray index="Research5" Time="285" Upgrade="UmojanBasicUnitUpgrade52224224232222222242223323422232">
             <Button DefaultButtonFace="MothershipCore2222322422243342" Requirements="Damage1343332"/>
         </InfoArray>
-        <InfoArray index="Research6" Upgrade="UmojanBasicUnitUpgrade52224224232222222242223323422233">
+        <InfoArray index="Research6" Time="330" Upgrade="UmojanBasicUnitUpgrade52224224232222222242223323422233">
             <Button DefaultButtonFace="MothershipCore22223224222433422" Requirements="Damage13433322"/>
         </InfoArray>
-        <InfoArray index="Research7" Upgrade="UmojanBasicUnitUpgrade5222422423222222224222332342232">
+        <InfoArray index="Research7" Time="240" Upgrade="UmojanBasicUnitUpgrade5222422423222222224222332342232">
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="200"/>
             <Button DefaultButtonFace="MothershipCore222232242224334332" Requirements="Damage135"/>
         </InfoArray>
-        <InfoArray index="Research8" Time="300" Upgrade="UmojanBasicUnitUpgrade522242242322222222422233234223">
+        <InfoArray index="Research8" Time="450" Upgrade="UmojanBasicUnitUpgrade522242242322222222422233234223">
             <Button DefaultButtonFace="MothershipCore22223224222433433" Requirements="Damage1352"/>
         </InfoArray>
-        <InfoArray index="Research9" Time="100" Upgrade="UmojanBasicUnitUpgrade522242242322222222422233234223222">
+        <InfoArray index="Research9" Time="150" Upgrade="UmojanBasicUnitUpgrade522242242322222222422233234223222">
             <Resource index="Minerals" value="125"/>
             <Resource index="Vespene" value="125"/>
             <Button DefaultButtonFace="MothershipCore222232242224335" Requirements="Damage1343333"/>
         </InfoArray>
-        <InfoArray index="Research10" Time="160" Upgrade="UmojanBasicUnitUpgrade52224224232222222242223323422322">
+        <InfoArray index="Research10" Time="220" Upgrade="UmojanBasicUnitUpgrade52224224232222222242223323422322">
             <Resource index="Minerals" value="200"/>
             <Button DefaultButtonFace="MothershipCore2222322422243352" Requirements="Damage134333322222"/>
         </InfoArray>
-        <InfoArray index="Research11" Time="70" Upgrade="EvolveGroovedSpines3">
+        <InfoArray index="Research11" Time="105" Upgrade="EvolveGroovedSpines3">
             <Resource index="Minerals" value="76"/>
             <Resource index="Vespene" value="76"/>
             <Button DefaultButtonFace="UnknownButton100" Requirements="UnknownRequirement110"/>
         </InfoArray>
-        <InfoArray index="Research12" Time="120" Upgrade="UnknownUpgrade69">
+        <InfoArray index="Research12" Time="180" Upgrade="UnknownUpgrade69">
             <Resource index="Minerals" value="150"/>
             <Resource index="Vespene" value="150"/>
             <Button DefaultButtonFace="UnknownButton101" Requirements="UnknownRequirement112"/>
         </InfoArray>
-        <InfoArray index="Research13" Time="120" Upgrade="UnknownUpgrade70">
+        <InfoArray index="Research13" Time="180" Upgrade="UnknownUpgrade70">
             <Resource index="Minerals" value="75"/>
             <Resource index="Vespene" value="75"/>
             <Button DefaultButtonFace="UnknownButton102" Requirements="UnknownRequirement113"/>
         </InfoArray>
-        <InfoArray index="Research14" Time="75" Upgrade="UnknownUpgrade75">
+        <InfoArray index="Research14" Time="115" Upgrade="UnknownUpgrade75">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Button DefaultButtonFace="UnknownButton106" Requirements="UnknownRequirement117"/>

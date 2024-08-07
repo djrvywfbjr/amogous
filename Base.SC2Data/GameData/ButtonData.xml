@@ -4130,9 +4130,23 @@
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="CalldownMULE42332"/>
     </CButton>
+    <CButton id="DropDownHydralisks">
+        <Icon value="Assets\Textures\btn-unit-zerg-hydralisk-lurker.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
+    <CButton id="DropDownAcidColony">
+        <Icon value="Assets\Textures\btn-unit-zerg-nyduscreeptower.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-zerg-nyduscreeptower.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
     <CButton id="ConsumeDNA32">
         <Icon value="Assets\Textures\btn-ability-mengsk-ghost-pyrokineticimmolation_blue.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-zerg-consume.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
+    <CButton id="MorphMorphalisk222">
+        <Icon value="Assets\Textures\btn-upgrade-zagara-increasebilelauncherrange.dds"/>
         <EditorCategories value="Race:Zerg"/>
     </CButton>
     <CButton id="PoisonNova22333232">
@@ -27196,6 +27210,11 @@
     <CButton id="SporeCrawler2">
         <Icon value="Assets\Textures\btn-building-zerg-sporecrawler.dds"/>
         <AlertIcon value="Assets\Textures\btn-building-zerg-sporecrawler.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
+    <CButton id="MutateintoSporeCrawler">
+        <Icon value="Assets\Textures\btn-building-zerg-sporecrawler.dds"/>
+        <AlertIcon value="Assets\Textures\btn-building-zerg-impalercolony.dds"/>
         <EditorCategories value="Race:Zerg"/>
     </CButton>
     <CButton id="SporeCrawler3">

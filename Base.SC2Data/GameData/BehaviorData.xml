@@ -3057,6 +3057,16 @@
             </Cost>
         </DamageResponse>
     </CBehaviorBuff>
+    <CBehaviorBuff id="QueenMPEnsnare32">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-zagara-increasebilelauncherrange.dds"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <TimeScaleSource Value="Global"/>
+        <Duration value="42"/>
+        <Modification TimeScale="2"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="QuickMutator3">
         <Alignment value="Positive"/>
         <BehaviorFlags index="Permanent" value="1"/>
@@ -42041,16 +42051,8 @@
             <Count value="3"/>
             <MaxCount value="9"/>
             <Requirements value="HatcherySpawnLarva"/>
-            <Delay value="15"/>
+            <Delay value="40"/>
         </InfoArray>
-        <InfoArray>
-            <Unit value="Larva2"/>
-            <MaxCount value="19"/>
-            <Requirements value="HatcherySpawnMutantLarva"/>
-            <Delay value="0.25"/>
-            <Effect value="LarvaRelease2"/>
-        </InfoArray>
-        <InfoArray Unit="Larva2" Requirements="HaveSpawnLarvaInstant" Effect="SpawnLarvaInstantRemoveBehavior2"/>
         <Center value="0,-3"/>
         <Offset value="0,-3"/>
         <Offset value="1,-3"/>
@@ -42089,16 +42091,8 @@
             <Unit value="Larva22"/>
             <MaxCount value="4"/>
             <Requirements value="HatcherySpawnLarva"/>
-            <Delay value="5"/>
+            <Delay value="10"/>
         </InfoArray>
-        <InfoArray>
-            <Unit value="Larva22"/>
-            <MaxCount value="19"/>
-            <Requirements value="HatcherySpawnMutantLarva"/>
-            <Delay value="0.25"/>
-            <Effect value="LarvaRelease2"/>
-        </InfoArray>
-        <InfoArray Unit="Larva22" Requirements="HaveSpawnLarvaInstant" Effect="SpawnLarvaInstantRemoveBehavior2"/>
         <Center value="0,-3"/>
         <Offset value="0,-3"/>
         <Offset value="1,-3"/>
@@ -42138,16 +42132,8 @@
             <Count value="2"/>
             <MaxCount value="6"/>
             <Requirements value="HatcherySpawnLarva"/>
-            <Delay value="20"/>
+            <Delay value="40"/>
         </InfoArray>
-        <InfoArray>
-            <Unit value="Larva222"/>
-            <MaxCount value="19"/>
-            <Requirements value="HatcherySpawnMutantLarva"/>
-            <Delay value="0.25"/>
-            <Effect value="LarvaRelease22"/>
-        </InfoArray>
-        <InfoArray Unit="Larva222" Requirements="HaveSpawnLarvaInstant" Effect="SpawnLarvaInstantRemoveBehavior2"/>
         <Center value="0,-3"/>
         <Offset value="0,-3"/>
         <Offset value="1,-3"/>
@@ -42187,16 +42173,8 @@
             <Count value="2"/>
             <MaxCount value="8"/>
             <Requirements value="HatcherySpawnLarva"/>
-            <Delay value="15"/>
+            <Delay value="30"/>
         </InfoArray>
-        <InfoArray>
-            <Unit value="Larva2222"/>
-            <MaxCount value="19"/>
-            <Requirements value="HatcherySpawnMutantLarva"/>
-            <Delay value="0.25"/>
-            <Effect value="LarvaRelease222"/>
-        </InfoArray>
-        <InfoArray Unit="Larva2222" Requirements="HaveSpawnLarvaInstant" Effect="SpawnLarvaInstantRemoveBehavior22"/>
         <Center value="0,-3"/>
         <Offset value="0,-3"/>
         <Offset value="1,-3"/>
@@ -42236,16 +42214,8 @@
             <Count value="2"/>
             <MaxCount value="2"/>
             <Requirements value="HatcherySpawnLarva"/>
-            <Delay value="7"/>
+            <Delay value="18"/>
         </InfoArray>
-        <InfoArray>
-            <Unit value="Larva22222"/>
-            <MaxCount value="19"/>
-            <Requirements value="HatcherySpawnMutantLarva"/>
-            <Delay value="0.25"/>
-            <Effect value="LarvaRelease222"/>
-        </InfoArray>
-        <InfoArray Unit="Larva22222" Requirements="HaveSpawnLarvaInstant" Effect="SpawnLarvaInstantRemoveBehavior22"/>
         <Center value="0,-3"/>
         <Offset value="0,-3"/>
         <Offset value="1,-3"/>

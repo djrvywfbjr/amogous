@@ -5450,8 +5450,8 @@
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade522242242322222222422233234223">
-        <EffectArray Operation="Set" Reference="Weapon,KorhalSporeCannon2,Period" Value="10.000000"/>
-        <EffectArray Operation="Set" Reference="Abil,KorhalSporeCannonBombardment2,Cost[0].Cooldown.TimeUse" Value="12.500000"/>
+        <EffectArray Operation="Set" Reference="Weapon,KorhalSporeCannon2,Period" Value="20.000000"/>
+        <EffectArray Reference="Abil,KorhalSporeCannonBombardment2,Cost[0].Cooldown.TimeUse" Value="-21.000000"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -5912,6 +5912,7 @@
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade522242242322222222422234">
         <EffectArray Reference="Abil,BuildNydusCanal32,Range" Value="455"/>
+        <EffectArray Reference="Abil,DropCreepTower,Range[0]" Value="450"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -6316,10 +6317,10 @@
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade52224224232222222243322223">
-        <EffectArray Operation="Set" Reference="Unit,Scourge4,Speed" Value="5.898400"/>
+        <EffectArray Reference="Unit,Scourge4,Speed" Value="1.250000"/>
         <EffectArray Operation="Set" Reference="Unit,Scourge4,Acceleration" Value="1000.000000"/>
         <EffectArray Operation="Set" Reference="Unit,MiscCreep2,Acceleration" Value="1000.000000"/>
-        <EffectArray Reference="Unit,MiscCreep2,Speed" Value="2.000000"/>
+        <EffectArray Reference="Unit,MiscCreep2,Speed" Value="1.250000"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -11500,8 +11501,8 @@
         <EffectArray Operation="Subtract" Reference="Unit,PrimalTownHall222,EnergyStart" Value="1"/>
     </CUpgrade>
     <CUpgrade id="UnknownUpgrade63">
-        <EffectArray Operation="Set" Reference="Unit,HotSSwarmling33,ShieldsMax" Value="200"/>
-        <EffectArray Operation="Set" Reference="Unit,HotSSwarmling33,ShieldsStart" Value="200"/>
+        <EffectArray Reference="Unit,HotSSwarmling33,ShieldsMax" Value="50"/>
+        <EffectArray Reference="Unit,HotSSwarmling33,ShieldsStart" Value="50"/>
     </CUpgrade>
     <CUpgrade id="UnknownUpgrade64">
         <EffectArray Operation="Set" Reference="Weapon,GoliathA22,Range" Value="9"/>
