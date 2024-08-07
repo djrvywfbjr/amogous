@@ -6248,10 +6248,10 @@
         <InfoArray index="Build3" Unit="SpawningPool3" Time="50">
             <Button DefaultButtonFace="SpawningPool3" Requirements="HaveCyberHatchery"/>
         </InfoArray>
-        <InfoArray index="Build4" Unit="SpawningPool222" Time="120">
+        <InfoArray index="Build4" Unit="Overmind2" Time="120">
             <Button DefaultButtonFace="SpawningPool623"/>
         </InfoArray>
-        <InfoArray index="Build5" Unit="SpawningPool222" Time="0.1">
+        <InfoArray index="Build5" Unit="Overmind2" Time="0.1">
             <Vital index="Life" value="99"/>
             <Button DefaultButtonFace="Wraith22262"/>
         </InfoArray>
@@ -9616,26 +9616,25 @@
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CalldownMULE42522" Requirements="UnknownRequirement"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="DropHanterKillers">
+    <CAbilEffectTarget id="DropHunterKillers">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
-        <Effect index="0" value="CalldownMULECreateUnit42333"/>
+        <Effect index="0" value="OrbitalCommandCreateMuleSwitch2"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Charge Link="Abil/CalldownMULE" Location="Player"/>
-            <Cooldown Link="Abil/CalldownMULE" Location="Player" TimeUse="86"/>
+            <Cooldown TimeUse="46"/>
         </Cost>
         <Range value="8"/>
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="DropDownHydralisks"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="DropAcidColony">
+    <CAbilEffectTarget id="DropCreepTower">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <Effect index="0" value="CalldownMULECreateUnit423222"/>
         <Flags index="RequireTargetVision" value="0"/>
         <Flags index="Transient" value="1"/>
         <Cost>
             <Charge Link="Abil/CalldownMULE" Location="Player"/>
-            <Cooldown Link="Abil/CalldownMULE" TimeUse="42"/>
+            <Cooldown Link="Abil/CalldownMULE" TimeUse="84"/>
         </Cost>
         <Range value="50"/>
         <Arc value="360"/>
@@ -28879,17 +28878,17 @@
         <Alignment value="Negative"/>
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
         <Effect index="0" value="KorhalSporeCannonBombardmentDelay"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
         <Cost>
             <Charge Link="KorhLol"/>
-            <Cooldown Link="KorhLol" TimeUse="25"/>
+            <Cooldown Link="KorhLol" TimeUse="84"/>
         </Cost>
         <Range value="500"/>
         <Arc value="360"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="KorhalSporeCannonBombardment2"/>
-        <Flags index="AutoCast" value="1"/>
-        <Flags index="AutoCastOn" value="1"/>
         <AutoCastFilters value="Ground,Visible;Player,Ally,Neutral,Missile,Dead"/>
         <AutoCastRange value="500"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="KorhalSporeCannonBombardment2"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="KorhalSporeCannonBombardment22">
         <Alignment value="Negative"/>
@@ -60338,7 +60337,7 @@
                 <CountUse value="1"/>
                 <TimeUse value="14"/>
             </Charge>
-            <Cooldown TimeUse="2"/>
+            <Cooldown TimeUse="0"/>
         </Cost>
         <Range index="0" value="13"/>
         <AutoCastRange value="13"/>

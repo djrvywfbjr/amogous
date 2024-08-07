@@ -213,7 +213,7 @@
         <RaceIcon value="@UI/RaceIcon/Terr2"/>
         <GameMusic value="Music_TerrLow"/>
         <Flags index="TrialAllowed" value="1"/>
-        <StartingUnitArray Unit="SpawningPool222">
+        <StartingUnitArray Unit="Overmind2">
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
         <StartingUnitArray Unit="Pylon10">

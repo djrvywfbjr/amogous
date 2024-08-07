@@ -10917,10 +10917,6 @@
         <EditorCategories value="Race:Zerg"/>
         <Behavior value="BroodlingFate22"/>
     </CEffectApplyBehavior>
-    <CEffectApplyBehavior id="BroodlingTimedLife3">
-        <EditorCategories value="Race:Zerg"/>
-        <Behavior value="BroodlingFate3"/>
-    </CEffectApplyBehavior>
     <CEffectApplyBehavior id="BroodlingTimedLife4">
         <EditorCategories value="Race:Zerg"/>
         <Behavior value="BroodlingFate"/>
@@ -11488,12 +11484,6 @@
         <ExpireDelay value="4"/>
         <FinalEffect value="CalldownMULEFinalSet423323"/>
     </CEffectCreatePersistent>
-    <CEffectCreatePersistent id="CalldownMULECreatePersistent42333">
-        <EditorCategories value="Race:Terran"/>
-        <WhichLocation Value="TargetUnitOrPoint"/>
-        <ExpireDelay value="2"/>
-        <FinalEffect value="CalldownMULEFinalSet42333"/>
-    </CEffectCreatePersistent>
     <CEffectCreatePersistent id="CalldownMULECreatePersistent4234">
         <EditorCategories value="Race:Terran"/>
         <WhichLocation Value="TargetUnitOrPoint"/>
@@ -11625,6 +11615,12 @@
         <WhichLocation Value="TargetUnitOrPoint"/>
         <ExpireDelay value="4"/>
         <FinalEffect value="CalldownMULEFinalSet42355"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="CalldownMULECreatePersistent5">
+        <EditorCategories value="Race:Terran"/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <ExpireDelay value="2"/>
+        <FinalEffect value="CalldownMULEFinalSet5"/>
     </CEffectCreatePersistent>
     <CEffectSet id="CalldownMULECreateSet2">
         <EditorCategories value="Race:Terran"/>
@@ -11891,11 +11887,6 @@
         <EffectArray value="MakePrecursor"/>
         <EffectArray value="CalldownMULECreatePersistent423323"/>
     </CEffectSet>
-    <CEffectSet id="CalldownMULECreateSet42333">
-        <EditorCategories value="Race:Terran"/>
-        <EffectArray value="MakePrecursor"/>
-        <EffectArray value="CalldownMULECreatePersistent42333"/>
-    </CEffectSet>
     <CEffectSet id="CalldownMULECreateSet4234">
         <EditorCategories value="Race:Terran"/>
         <EffectArray value="MakePrecursor"/>
@@ -12005,6 +11996,11 @@
         <EditorCategories value="Race:Terran"/>
         <EffectArray value="MakePrecursor"/>
         <EffectArray value="CalldownMULECreatePersistent42355"/>
+    </CEffectSet>
+    <CEffectSet id="CalldownMULECreateSet5">
+        <EditorCategories value="Race:Terran"/>
+        <EffectArray value="MakePrecursor"/>
+        <EffectArray value="CalldownMULECreatePersistent5"/>
     </CEffectSet>
     <CEffectCreateUnit id="CalldownMULECreateUnit2">
         <ValidatorArray value="MULETargetCheck"/>
@@ -12393,13 +12389,6 @@
         <SpawnEffect value="CalldownMULECreateSet423323"/>
         <SpawnUnit value="Marine3"/>
     </CEffectCreateUnit>
-    <CEffectCreateUnit id="CalldownMULECreateUnit42333">
-        <ValidatorArray value="MULETargetCheck"/>
-        <EditorCategories value="Race:Terran"/>
-        <WhichLocation Value="TargetUnitOrPoint"/>
-        <SpawnEffect value="CalldownMULECreateSet42333"/>
-        <SpawnUnit value="CreepTumorUsed2"/>
-    </CEffectCreateUnit>
     <CEffectCreateUnit id="CalldownMULECreateUnit4234">
         <ValidatorArray value="MULETargetCheck"/>
         <EditorCategories value="Race:Terran"/>
@@ -12553,6 +12542,14 @@
         <WhichLocation Value="TargetUnitOrPoint"/>
         <SpawnEffect value="CalldownMULECreateSet42355"/>
         <SpawnUnit value="HybridDominatorVoid2"/>
+    </CEffectCreateUnit>
+    <CEffectCreateUnit id="CalldownMULECreateUnit5">
+        <ValidatorArray value="MULETargetCheck"/>
+        <EditorCategories value="Race:Terran"/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <SpawnEffect value="CalldownMULECreateSet5"/>
+        <SpawnUnit value="OmindHKHydralisk"/>
+        <SpawnCount value="2"/>
     </CEffectCreateUnit>
     <CEffectSet id="CalldownMULEFinalSet2">
         <EditorCategories value="Race:Terran"/>
@@ -12869,12 +12866,6 @@
         <EffectArray value="CalldownMULETimedLife423323"/>
         <EffectArray value="CalldownMULEIssueOrder423323"/>
     </CEffectSet>
-    <CEffectSet id="CalldownMULEFinalSet42333">
-        <EditorCategories value="Race:Terran"/>
-        <EffectArray value="RemovePrecursor"/>
-        <EffectArray value="CalldownMULETimedLife42333"/>
-        <EffectArray value="CalldownMULEIssueOrder42333"/>
-    </CEffectSet>
     <CEffectSet id="CalldownMULEFinalSet4234">
         <EditorCategories value="Race:Terran"/>
         <EffectArray value="RemovePrecursor"/>
@@ -13006,6 +12997,13 @@
         <EffectArray value="RemovePrecursor"/>
         <EffectArray value="CalldownMULETimedLife42355"/>
         <EffectArray value="CalldownMULEIssueOrder42355"/>
+    </CEffectSet>
+    <CEffectSet id="CalldownMULEFinalSet5">
+        <EditorCategories value="Race:Terran"/>
+        <EffectArray value="RemovePrecursor"/>
+        <EffectArray value="CalldownMULETimedLife7"/>
+        <EffectArray value="CalldownMULEIssueOrder5"/>
+        <EffectArray value="CalldownMULEIssueOrderSecondary2"/>
     </CEffectSet>
     <CEffectIssueOrder id="CalldownMULEIssueOrder2">
         <EditorCategories value="Race:Terran"/>
@@ -13272,11 +13270,6 @@
         <Abil value="MULEGather"/>
         <Target Effect="CalldownMULECreateUnit" Value="TargetUnit"/>
     </CEffectIssueOrder>
-    <CEffectIssueOrder id="CalldownMULEIssueOrder42333">
-        <EditorCategories value="Race:Terran"/>
-        <Abil value="MULEGather"/>
-        <Target Effect="CalldownMULECreateUnit" Value="TargetUnit"/>
-    </CEffectIssueOrder>
     <CEffectIssueOrder id="CalldownMULEIssueOrder4234">
         <EditorCategories value="Race:Terran"/>
         <Abil value="MULEGather"/>
@@ -13386,6 +13379,17 @@
         <EditorCategories value="Race:Terran"/>
         <Abil value="MULEGather"/>
         <Target Effect="CalldownMULECreateUnit" Value="TargetUnit"/>
+    </CEffectIssueOrder>
+    <CEffectIssueOrder id="CalldownMULEIssueOrder5">
+        <EditorCategories value="Race:Terran"/>
+        <Abil value="MULEGather"/>
+        <Target Effect="CalldownMULECreateUnit" Value="TargetUnit"/>
+    </CEffectIssueOrder>
+    <CEffectIssueOrder id="CalldownMULEIssueOrderSecondary2">
+        <EditorCategories value="Race:Terran"/>
+        <Marker Link="Effect/CalldownMULEIssueOrder"/>
+        <Abil value="MULEGather"/>
+        <Target Effect="OrbitalCommandCreateMuleSearchTownHall" Value="TargetUnit"/>
     </CEffectIssueOrder>
     <CEffectApplyBehavior id="CalldownMULETimedLife2">
         <EditorCategories value="Race:Terran"/>
@@ -13599,10 +13603,6 @@
         <EditorCategories value="Race:Terran"/>
         <Behavior value="AntamoAirAll43323"/>
     </CEffectApplyBehavior>
-    <CEffectApplyBehavior id="CalldownMULETimedLife42333">
-        <EditorCategories value="Race:Terran"/>
-        <Behavior value="2Hydralisks"/>
-    </CEffectApplyBehavior>
     <CEffectApplyBehavior id="CalldownMULETimedLife4234">
         <EditorCategories value="Race:Terran"/>
         <Behavior value="AntamoAirAll434"/>
@@ -13702,6 +13702,10 @@
     <CEffectApplyBehavior id="CalldownMULETimedLife6">
         <EditorCategories value="Race:Terran"/>
         <Behavior value="MULETimedLife83"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="CalldownMULETimedLife7">
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="LocustTimedLife4"/>
     </CEffectApplyBehavior>
     <CEffectDamage id="CarrierInterceptorBombDamage2" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
@@ -46084,6 +46088,32 @@
         <EditorCategories value="Race:Protoss"/>
         <EffectArray value="OracleWeaponDamage2"/>
     </CEffectSet>
+    <CEffectCreatePersistent id="OrbitalCommandCreateMuleOffsetCP2">
+        <ValidatorArray value="IsTownHall"/>
+        <EditorCategories value="Race:Terran"/>
+        <WhichLocation Effect="OrbitalCommandCreateMuleSearchTownHall" Value="TargetUnit"/>
+        <OffsetVectorStartLocation Effect="OrbitalCommandCreateMuleSearchTownHall" Value="TargetUnit"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="CalldownMULECreateUnit5"/>
+        <PeriodicOffsetArray value="0,-1,0"/>
+        <PeriodicPeriodArray value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="OrbitalCommandCreateMuleSearchTownHall2">
+        <EditorCategories value="Race:Terran"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <SearchFilters value="Structure;Ally,Neutral,Enemy,Missile,Item,Dead"/>
+        <TargetSorts>
+            <SortArray value="TSDistance"/>
+        </TargetSorts>
+        <AreaArray Radius="10" Effect="OrbitalCommandCreateMuleOffsetCP2"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectSwitch id="OrbitalCommandCreateMuleSwitch2">
+        <EditorCategories value="Race:Terran"/>
+        <CaseArray Validator="HarvestableResourceandNearbyTownhall" Effect="OrbitalCommandCreateMuleSearchTownHall2"/>
+        <CaseDefault value="CalldownMULECreateUnit5"/>
+        <TargetLocationType value="UnitOrPoint"/>
+    </CEffectSwitch>
     <CEffectApplyBehavior id="OutcastAllStrikerAPplyBehavior">
         <EditorCategories value=""/>
         <Behavior value="Stoned5"/>
@@ -54771,12 +54801,6 @@
         <SpawnUnit value="Marine32"/>
         <SpawnCount value="2"/>
         <SpawnEffect value="PhaseCannonTimedLife732"/>
-    </CEffectCreateUnit>
-    <CEffectCreateUnit id="2HunterKillers">
-        <EditorCategories value=""/>
-        <SpawnEffect value="BroodlingTimedLife3"/>
-        <SpawnUnit value="OmindHKHydralisk"/>
-        <SpawnCount value="2"/>
     </CEffectCreateUnit>
     <CEffectCreateUnit id="PureBornDeathCReateFanatic322222223">
         <EditorCategories value=""/>

@@ -1675,12 +1675,6 @@
         <Duration value="420"/>
         <Modification MoveSpeedMultiplier="0.2"/>
     </CBehaviorBuff>
-    <CBehaviorBuff id="2Hydralisks">
-        <InfoFlags index="Hidden" value="1"/>
-        <EditorCategories value="AbilityorEffectType:Units"/>
-        <Duration value="0.1"/>
-        <InitialEffect value="2HunterKillers"/>
-    </CBehaviorBuff>
     <CBehaviorBuff id="AntamoAirAll43423">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
