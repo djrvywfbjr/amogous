@@ -12548,7 +12548,7 @@
         <EditorCategories value="Race:Terran"/>
         <WhichLocation Value="TargetUnitOrPoint"/>
         <SpawnEffect value="CalldownMULECreateSet5"/>
-        <SpawnUnit value="OmindHKHydralisk"/>
+        <SpawnUnit value="OmindHunterKiller"/>
         <SpawnCount value="2"/>
     </CEffectCreateUnit>
     <CEffectSet id="CalldownMULEFinalSet2">
