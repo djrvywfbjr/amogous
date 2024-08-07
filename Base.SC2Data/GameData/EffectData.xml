@@ -70096,7 +70096,52 @@
     </CEffectApplyBehavior>
     <CEffectModifyUnit id="CombatProtocolAddCharge">
         <EditorCategories value=""/>
-        <Cost Abil="ArtificialStormCP2,255" ChargeCountUse="-1">
+        <Cost Abil="AnnihilationBombCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="AnnihilationBombCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="CannonOverchargeCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="CombatLeapCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="DisruptionWebCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="TemporarityCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="EmergencyProtocolCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="ArtificialStormCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="CybrosBombardmentCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="InstantWarpCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="JuggernautCrackerCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="NanobotWindCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="OverwatchProtocolCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="PhaseThroughCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="PolyshieldCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="ShieldRecreatorCP2,Execute" ChargeCountUse="-1">
             <Player Value="Target"/>
         </Cost>
     </CEffectModifyUnit>
