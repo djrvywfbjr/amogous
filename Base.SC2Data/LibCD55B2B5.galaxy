@@ -2165,28 +2165,6 @@ void libCD55B2B5_gt_ChooseLeade2_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
-// Trigger: Choose Leade 3
-//--------------------------------------------------------------------------------------------------
-bool libCD55B2B5_gt_ChooseLeade3_Func (bool testConds, bool runActions) {
-    // Automatic Variable Declarations
-    // Actions
-    if (!runActions) {
-        return true;
-    }
-
-    UnitIssueOrder(EventUnitTargetUnit(), Order(AbilityCommand("BurrowPrimalHydraliskUp222236", 0)), c_orderQueueReplace);
-    UnitIssueOrder(EventUnitTargetUnit(), Order(AbilityCommand("BurrowPrimalHydraliskUp22223242", 0)), c_orderQueueReplace);
-    UnitIssueOrder(EventUnitTargetUnit(), Order(AbilityCommand("BurrowPrimalHydraliskUp22223232", 0)), c_orderQueueReplace);
-    return true;
-}
-
-//--------------------------------------------------------------------------------------------------
-void libCD55B2B5_gt_ChooseLeade3_Init () {
-    libCD55B2B5_gt_ChooseLeade3 = TriggerCreate("libCD55B2B5_gt_ChooseLeade3_Func");
-    TriggerAddEventUnitAbility(libCD55B2B5_gt_ChooseLeade3, null, AbilityCommand("XenWarrior24322", 0), c_unitAbilStageAll, false);
-}
-
-//--------------------------------------------------------------------------------------------------
 // Trigger: Troglobites 2
 //--------------------------------------------------------------------------------------------------
 bool libCD55B2B5_gt_Troglobites2_Func (bool testConds, bool runActions) {
@@ -3487,13 +3465,13 @@ void libCD55B2B5_gt_ConstructionSiteDies_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
-// Trigger: Blinkcd 2
+// Trigger: 
 //--------------------------------------------------------------------------------------------------
-bool libCD55B2B5_gt_Blinkcd2_Func (bool testConds, bool runActions) {
+bool libCD55B2B5_gt_udsfmvtnkyfkfujk_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     // Conditions
     if (testConds) {
-        if (!(((EventUpgradeName() == "AdvancedConstruction24223222222422222") || (EventUpgradeName() == "AdvancedConstruction2422322222242") || (EventUpgradeName() == "AdvancedConstruction2422322222242222") || (EventUpgradeName() == "AdvancedConstruction24223222222422") || (EventUpgradeName() == "AdvancedConstruction242232222224222")))) {
+        if (!(((libNtve_gf_TriggeringProgressUpgrade() == "ManufactureChemicalStation") || (libNtve_gf_TriggeringProgressUpgrade() == "ManufactureFusionCore") || (libNtve_gf_TriggeringProgressUpgrade() == "ManufactureGunpowderMixer") || (libNtve_gf_TriggeringProgressUpgrade() == "ManufactureRecyclerTank") || (libNtve_gf_TriggeringProgressUpgrade() == "ManufactureShellingFabricator")))) {
             return false;
         }
     }
@@ -3503,14 +3481,14 @@ bool libCD55B2B5_gt_Blinkcd2_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), EventUpgradeName(), (TechTreeUpgradeCount(EventPlayer(), libNtve_gf_TriggeringProgressUpgrade(), c_techCountCompleteOnly) + 2));
+    libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), libNtve_gf_TriggeringProgressUpgrade(), (TechTreeUpgradeCount(EventPlayer(), libNtve_gf_TriggeringProgressUpgrade(), c_techCountCompleteOnly) + 2));
     return true;
 }
 
 //--------------------------------------------------------------------------------------------------
-void libCD55B2B5_gt_Blinkcd2_Init () {
-    libCD55B2B5_gt_Blinkcd2 = TriggerCreate("libCD55B2B5_gt_Blinkcd2_Func");
-    TriggerAddEventUnitResearchProgress(libCD55B2B5_gt_Blinkcd2, null, c_unitProgressStageComplete);
+void libCD55B2B5_gt_udsfmvtnkyfkfujk_Init () {
+    libCD55B2B5_gt_udsfmvtnkyfkfujk = TriggerCreate("libCD55B2B5_gt_udsfmvtnkyfkfujk_Func");
+    TriggerAddEventUnitResearchProgress(libCD55B2B5_gt_udsfmvtnkyfkfujk, null, c_unitProgressStageComplete);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -6566,38 +6544,6 @@ bool libCD55B2B5_gt_BiosteelSplit_Func (bool testConds, bool runActions) {
 void libCD55B2B5_gt_BiosteelSplit_Init () {
     libCD55B2B5_gt_BiosteelSplit = TriggerCreate("libCD55B2B5_gt_BiosteelSplit_Func");
     TriggerAddEventUnitBehaviorChange(libCD55B2B5_gt_BiosteelSplit, null, "Hallucination2322", c_unitBehaviorChangeCreate);
-}
-
-//--------------------------------------------------------------------------------------------------
-// Trigger: CombatProtocol
-//--------------------------------------------------------------------------------------------------
-bool libCD55B2B5_gt_CombatProtocol_Func (bool testConds, bool runActions) {
-    // Automatic Variable Declarations
-    // Actions
-    if (!runActions) {
-        return true;
-    }
-
-    UnitAddChargeUsed(EventUnit(), "Abil/DehakaRevive", -1.0);
-    if ((UnitTypeTestAttribute(UnitGetType(EventUnit()), c_unitAttributeLight) == true)) {
-        UnitSetScale(EventUnit(), 135.0, 135.0, 135.0);
-    }
-
-    if ((UnitTypeTestAttribute(UnitGetType(EventUnit()), c_unitAttributeArmored) == true)) {
-        UnitSetScale(EventUnit(), 125.0, 125.0, 125.0);
-    }
-
-    if ((UnitTypeTestAttribute(UnitGetType(EventUnit()), c_unitAttributeMassive) == true)) {
-        UnitSetScale(EventUnit(), 115.0, 115.0, 115.0);
-    }
-
-    return true;
-}
-
-//--------------------------------------------------------------------------------------------------
-void libCD55B2B5_gt_CombatProtocol_Init () {
-    libCD55B2B5_gt_CombatProtocol = TriggerCreate("libCD55B2B5_gt_CombatProtocol_Func");
-    TriggerAddEventUnitBehaviorChange(libCD55B2B5_gt_CombatProtocol, null, "SJHyperionLightningStormStun210", c_unitBehaviorChangeCreate);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -9893,7 +9839,6 @@ void libCD55B2B5_InitTriggers () {
     libCD55B2B5_gt_LocalizedEruption_Init();
     libCD55B2B5_gt_ChooseLeade_Init();
     libCD55B2B5_gt_ChooseLeade2_Init();
-    libCD55B2B5_gt_ChooseLeade3_Init();
     libCD55B2B5_gt_Troglobites2_Init();
     libCD55B2B5_gt_BroodColor1_Init();
     libCD55B2B5_gt_BroodColor2_Init();
@@ -9931,7 +9876,7 @@ void libCD55B2B5_InitTriggers () {
     libCD55B2B5_gt_ConstructionSiteDialog_Init();
     libCD55B2B5_gt_ConstructionSite_Init();
     libCD55B2B5_gt_ConstructionSiteDies_Init();
-    libCD55B2B5_gt_Blinkcd2_Init();
+    libCD55B2B5_gt_udsfmvtnkyfkfujk_Init();
     libCD55B2B5_gt_WorkPower_Init();
     libCD55B2B5_gt_MilitaryStation_Init();
     libCD55B2B5_gt_HunterOutpostDies_Init();
@@ -10002,7 +9947,6 @@ void libCD55B2B5_InitTriggers () {
     libCD55B2B5_gt_malfunction_Init();
     libCD55B2B5_gt_Defect_Init();
     libCD55B2B5_gt_BiosteelSplit_Init();
-    libCD55B2B5_gt_CombatProtocol_Init();
     libCD55B2B5_gt_CombatProtocol2_Init();
     libCD55B2B5_gt_SuperSecretSuprise_Init();
     libCD55B2B5_gt_SparePartsDeath_Init();

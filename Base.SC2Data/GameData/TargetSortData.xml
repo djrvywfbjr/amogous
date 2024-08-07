@@ -6,6 +6,10 @@
     <CTargetSortVital id="TSLifeLargestFirst2">
         <Descending value="1"/>
     </CTargetSortVital>
+    <CTargetSortBehaviorCount id="TSSpellChargeCount">
+        <WhichUnit Value="Target"/>
+        <Behavior value="HasSpellCharge"/>
+    </CTargetSortBehaviorCount>
     <CTargetSortBehaviorCount id="TSVoidSentryChronoBeam2">
         <WhichUnit Value="Target"/>
         <Behavior value="VoidSentryChronoBeam"/>
