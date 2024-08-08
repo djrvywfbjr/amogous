@@ -2295,12 +2295,6 @@
             <Chance value="1"/>
         </DamageResponse>
     </CBehaviorBuff>
-    <CBehaviorBuff id="HasSpellCharge">
-        <BehaviorFlags index="Permanent" value="1"/>
-        <InfoFlags index="Hidden" value="1"/>
-        <EditorCategories value="AbilityorEffectType:Units"/>
-        <MaxStackCount value="2"/>
-    </CBehaviorBuff>
     <CBehaviorBuff id="HighEnergyRegeneration35222">
         <Cost>
             <Charge Link="Behavior/HighEnergyRegeneration"/>
