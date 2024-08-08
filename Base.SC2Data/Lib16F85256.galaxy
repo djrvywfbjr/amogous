@@ -621,6 +621,10 @@ bool lib16F85256_gt_A_Func (bool testConds, bool runActions) {
             PlayerGroupAdd(lib16F85256_gv_xill[0], auto77220539_var);
         }
         else if (autoC4B9DA32_val == "0032") {
+            PlayerSetRace(auto77220539_var, "UnknownRace");
+            PlayerGroupAdd(lib16F85256_gv_pOZTest[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0032") {
             PlayerSetRace(auto77220539_var, "UnknownRace2");
             PlayerGroupAdd(lib16F85256_gv_paramilitary[0], auto77220539_var);
         }

@@ -640,7 +640,7 @@
         <AINotifyEffect value="ArtanisAstralWind3"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="ArtanisAstralWind4"/>
     </CAbilEffectInstant>
-    <CAbilEffectInstant id="ArtanisAstralWind4">
+    <CAbilEffectInstant id="NanobotWindCP2">
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
         <Effect index="0" value="ArtanisAstralWind5"/>
         <Flags index="BestUnit" value="1"/>
@@ -654,6 +654,7 @@
             </Charge>
             <Cooldown TimeUse="5"/>
         </Cost>
+        <AINotifyEffect value="ArtanisAstralWind4"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="ArtanisAstralWind5"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="ArtanisInspire2">
@@ -5796,9 +5797,10 @@
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="Blink322">
+    <CAbilEffectTarget id="InstantWarpCP2">
         <AbilSetId value="Blnk"/>
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="Blink322"/>
         <Flags index="BestUnit" value="0"/>
         <Cost>
             <Charge>
@@ -5811,6 +5813,7 @@
         </Cost>
         <Range value="500"/>
         <Arc value="360"/>
+        <AINotifyEffect value="Blink322"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="Blink322" State="Restricted">
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
@@ -12821,7 +12824,7 @@
         <CmdButtonArray index="Execute" DefaultButtonFace="ShadowBlade3245"/>
         <CmdButtonArray index="Cancel" Requirements="UseStimpack224"/>
     </CAbilEffectInstant>
-    <CAbilEffectInstant id="Cloak352">
+    <CAbilEffectInstant id="OverwatchProtocolCP2">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="PoisonBlade2352"/>
         <Flags index="AutoCast" value="1"/>
@@ -16618,7 +16621,7 @@
         <CursorEffect value="CorsairMPDisruptionWebSearch"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CorsairMPDisruptionWeb3"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="CorsairMPDisruptionWeb3">
+    <CAbilEffectTarget id="DisruptionWebCP2">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="CorsairMPDisruptionWebCreatePersistent"/>
         <Flags index="AllowMovement" value="1"/>
@@ -17959,7 +17962,7 @@
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="DefensiveMatrix2224323"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="DefensiveMatrix23">
+    <CAbilEffectTarget id="PolyshieldCP2">
         <AbilSetId value="dmatrix"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <Effect index="0" value="DefensiveMatrixSet23"/>
@@ -17982,11 +17985,11 @@
         <TargetFilters value="Visible;Neutral,Enemy,Missile"/>
         <Range value="9"/>
         <Arc value="360"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="DefensiveMatrix23"/>
         <AutoCastAcquireLevel value="Defensive"/>
         <AutoCastFilters value="Visible;Self,Neutral,Enemy"/>
         <AutoCastRange value="9"/>
         <AutoCastValidatorArray value="ShieldsNotFull"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="DefensiveMatrix23"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="DefensiveMatrix24">
         <AbilSetId value="dmatrix"/>
@@ -28336,7 +28339,7 @@
         <CmdButtonArray index="Execute" DefaultButtonFace="Irradiate22332"/>
         <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="Irradiate2234">
+    <CAbilEffectTarget id="PurifierBeamCP2">
         <EditorCategories value="AbilityorEffectType:Units,Race:Terran"/>
         <Effect index="0" value="VoidRayVoid29234"/>
         <Flags index="AllowMovement" value="1"/>
@@ -29647,9 +29650,11 @@
         <Range value="8"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="DarkArchonMindControl33234"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="LaunchPsionicMissile342">
+    <CAbilEffectTarget id="TemporarityCP2">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ColossusTaldarimLM242"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
         <Cost>
             <Charge>
                 <CountMax value="1"/>
@@ -29660,14 +29665,12 @@
             <Cooldown Link="Abil/AdeptPhaseShift" TimeUse="5"/>
         </Cost>
         <Range value="8"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="DarkArchonMindControl332342"/>
-        <TrackingArc value="360"/>
         <Arc value="360"/>
-        <Flags index="AutoCast" value="1"/>
-        <Flags index="AutoCastOn" value="1"/>
+        <TrackingArc value="360"/>
         <AutoCastFilters value="Visible;Player,Ally,Neutral,Missile,Dead"/>
         <AutoCastRange value="8"/>
         <AutoCastValidatorArray value="IsTimeStopped2352"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="DarkArchonMindControl332342"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="LaunchPsionicMissile35">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -31269,8 +31272,9 @@
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
     </CAbilEffectInstant>
-    <CAbilEffectInstant id="MedivacSpeedBoost4">
+    <CAbilEffectInstant id="EmergencyProtocolCP2">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Effect index="0" value="MedivacSpeedBoost4"/>
         <Flags index="Transient" value="1"/>
         <Cost>
             <Charge>
@@ -31281,6 +31285,7 @@
             </Charge>
             <Cooldown TimeUse="20"/>
         </Cost>
+        <AINotifyEffect value="MedivacSpeedBoost4"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="MedivacSpeedBoost4">
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
@@ -31846,7 +31851,7 @@
         <ShowProgressArray index="Prep" value="1"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="MindBolt52"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="MindBolt53">
+    <CAbilEffectTarget id="CannonOverchargeCP2">
         <Alignment value="Negative"/>
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
         <Effect index="0" value="KerriganEpilogue0323"/>
@@ -31861,7 +31866,7 @@
                 <Link value="Abil/DehakaRevive"/>
                 <Location value="Unit"/>
             </Charge>
-            <Cooldown Link="MindBoltMindBolt5MindBoltMindBolt53" Location="Unit" TimeUse="5"/>
+            <Cooldown Link="MindBoltMindBolt5MindBoltMindBolt53MindBoltMindBolt5MindBoltCannonOverchargeCP2" Location="Unit" TimeUse="5"/>
         </Cost>
         <TargetFilters value="Visible;Self,Player,Ally,Missile,Item,Dead,Hidden,Invulnerable"/>
         <Range value="9"/>
@@ -39905,7 +39910,7 @@
         <IgnoreFilters value="Ground;Self"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="PrimalSlash22233" Requirements="SoE4PortableHiveMind33322222222222222"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="PrimalSlash223">
+    <CAbilEffectTarget id="CombatLeapCP2">
         <Alignment value="Negative"/>
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
         <Effect index="0" value="PrimalSlashUpgraded223"/>
@@ -39926,6 +39931,7 @@
         <AutoCastFilters value="Ground,Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Invulnerable"/>
         <AutoCastRange value="7"/>
         <PrepTime value="0.125"/>
+        <AINotifyEffect value="PrimalSlash223"/>
         <IgnoreFilters value="Ground;Self"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="PrimalSlash223"/>
     </CAbilEffectTarget>
@@ -43930,7 +43936,7 @@
         <AutoCastRange value="12"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="PsiStorm5"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="PsiStorm52">
+    <CAbilEffectTarget id="ArtificialStormCP2">
         <Alignment value="Negative"/>
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <DataCollection value="PsiStorm"/>
@@ -48343,7 +48349,7 @@
         <PrepTime value="0.125"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="SOAOrbitalStrike22" Requirements="HavePsionicHeart2243222"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="SOAOrbitalStrikeExecute222">
+    <CAbilEffectTarget id="CybrosBombardmentCP2">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Effect index="0" value="SOAOrbitalStrikeCP222"/>
         <Flags index="AutoCast" value="1"/>
@@ -49946,9 +49952,10 @@
         <Arc value="360"/>
         <AutoCastValidatorArray value="IsTimeStopped23"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="ShieldUp23210">
+    <CAbilEffectTarget id="ArbiterCombatProtocol">
+        <AbilSetId value="Aries"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Effect index="0" value="SJHyperionLightningStormAB25"/>
+        <Effect index="0" value="AddCombatProtocol"/>
         <Flags index="AutoCast" value="1"/>
         <Flags index="AutoCastOn" value="1"/>
         <Flags index="Smart" value="1"/>
@@ -49957,6 +49964,9 @@
             <Cooldown Link="Abil/AlarakAvatar" TimeUse="15"/>
         </Cost>
         <TargetFilters value="-;Neutral,Enemy,Structure,Heroic,Worker,Summoned"/>
+        <TargetSorts>
+            <SortArray value="TSSpellChargeCount"/>
+        </TargetSorts>
         <Range value="12"/>
         <Arc value="360"/>
         <AutoCastFilters value="Visible;Ally,Neutral,Enemy,Structure,Heroic,Worker,Missile,Stasis,Dead,Summoned"/>
@@ -49966,14 +49976,11 @@
         <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield223211">
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
-        <TargetSorts>
-            <SortArray value="TSRandom"/>
-        </TargetSorts>
-        <AbilSetId value="Aries"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="ShieldUp232102">
+    <CAbilEffectTarget id="InitiatorCombatProtocol">
+        <AbilSetId value="Aries"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Effect index="0" value="SJHyperionLightningStormAB25"/>
+        <Effect index="0" value="AddCombatProtocol"/>
         <Flags index="AutoCast" value="1"/>
         <Flags index="AutoCastOn" value="1"/>
         <Flags index="Smart" value="1"/>
@@ -49982,6 +49989,9 @@
             <Cooldown Link="Abil/AlarakAvatar" TimeUse="45"/>
         </Cost>
         <TargetFilters value="-;Neutral,Enemy,Structure,Heroic,Worker,Summoned"/>
+        <TargetSorts>
+            <SortArray value="TSSpellChargeCount"/>
+        </TargetSorts>
         <Range value="12"/>
         <Arc value="360"/>
         <AutoCastFilters value="Visible;Self,Ally,Neutral,Enemy,Structure,Heroic,Worker,Missile,Stasis,Dead,Summoned"/>
@@ -49991,11 +50001,11 @@
         <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield2232112">
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
-        <AbilSetId value="Aries"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="ShieldUp2321022">
+    <CAbilEffectTarget id="BurningNexusCombatProtocol">
+        <AbilSetId value="Aries"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Effect index="0" value="SJHyperionLightningStormAB25"/>
+        <Effect index="0" value="AddCombatProtocol"/>
         <Flags index="AutoCast" value="1"/>
         <Flags index="AutoCastOn" value="1"/>
         <Flags index="BestUnit" value="0"/>
@@ -50005,6 +50015,9 @@
             <Cooldown Link="Abil/AlarakAvatar" TimeUse="25"/>
         </Cost>
         <TargetFilters value="-;Neutral,Enemy,Structure,Heroic,Worker,Summoned"/>
+        <TargetSorts>
+            <SortArray value="TSSpellChargeCount"/>
+        </TargetSorts>
         <Range value="12"/>
         <Arc value="360"/>
         <AutoCastFilters value="Visible;Ally,Neutral,Enemy,Structure,Heroic,Worker,Missile,Stasis,Dead,Summoned"/>
@@ -50014,11 +50027,11 @@
         <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield22321122">
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
-        <AbilSetId value="Aries"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="ShieldUp232103">
+    <CAbilEffectTarget id="DisruptionWardCombatProtocol">
+        <AbilSetId value="Aries"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Effect index="0" value="SJHyperionLightningStormAB25"/>
+        <Effect index="0" value="AddCombatProtocol"/>
         <Flags index="AutoCast" value="1"/>
         <Flags index="AutoCastOn" value="1"/>
         <Flags index="Smart" value="1"/>
@@ -50027,6 +50040,9 @@
             <Cooldown Link="Abil/AlarakAvatar" TimeUse="10"/>
         </Cost>
         <TargetFilters value="-;Neutral,Enemy,Structure,Heroic,Worker,Summoned"/>
+        <TargetSorts>
+            <SortArray value="TSSpellChargeCount"/>
+        </TargetSorts>
         <Range value="12"/>
         <Arc value="360"/>
         <AutoCastFilters value="Visible;Ally,Neutral,Enemy,Structure,Heroic,Worker,Missile,Stasis,Dead,Summoned"/>
@@ -50036,11 +50052,11 @@
         <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield2232113">
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
-        <AbilSetId value="Aries"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="ShieldUp2321032">
+    <CAbilEffectTarget id="FenixCombatProtocol">
+        <AbilSetId value="Aries"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Effect index="0" value="SJHyperionLightningStormAB25"/>
+        <Effect index="0" value="AddCombatProtocol"/>
         <Flags index="AutoCast" value="1"/>
         <Flags index="AutoCastOn" value="1"/>
         <Flags index="BestUnit" value="0"/>
@@ -50050,6 +50066,9 @@
             <Cooldown Link="Abil/AlarakAvatar" TimeUse="7"/>
         </Cost>
         <TargetFilters value="-;Neutral,Enemy,Structure,Heroic,Worker,Summoned"/>
+        <TargetSorts>
+            <SortArray value="TSSpellChargeCount"/>
+        </TargetSorts>
         <Range value="12"/>
         <Arc value="360"/>
         <AutoCastFilters value="Visible;Ally,Neutral,Enemy,Structure,Heroic,Worker,Missile,Stasis,Dead,Summoned"/>
@@ -50059,7 +50078,6 @@
         <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield22321132">
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
-        <AbilSetId value="Aries"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="ShieldUp2322">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -50310,8 +50328,9 @@
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield2233"/>
     </CAbilEffectInstant>
-    <CAbilEffectInstant id="ShieldUp2332">
+    <CAbilEffectInstant id="PhaseThroughCP2">
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="ShieldUp2332"/>
         <Flags index="AutoCast" value="1"/>
         <Flags index="AutoCastOn" value="1"/>
         <Cost>
@@ -50325,6 +50344,7 @@
         </Cost>
         <AutoCastRange value="15"/>
         <AutoCastValidatorArray value="CasterInCombat"/>
+        <AINotifyEffect value="ShieldUp2332"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield22332"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="ShieldUp2333">
@@ -58800,8 +58820,9 @@
         <DefaultError value="RequiresHealTarget"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="VoidSentryShieldRepairDouble2"/>
     </CAbilEffectTarget>
-    <CAbilEffectInstant id="VoidShieldCapacitor2">
+    <CAbilEffectInstant id="ShieldRecreatorCP2">
         <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
+        <Effect index="0" value="VoidShieldCapacitor2"/>
         <Flags index="AutoCast" value="1"/>
         <Flags index="AutoCastOn" value="1"/>
         <Flags index="Transient" value="1"/>
@@ -58816,6 +58837,7 @@
         </Cost>
         <AutoCastRange value="1"/>
         <AutoCastValidatorArray value="CasterShieldsLT1"/>
+        <AINotifyEffect value="VoidShieldCapacitor2"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="VoidShieldCapacitor2"/>
     </CAbilEffectInstant>
     <CAbilEffectTarget id="VoidSiphon2">
@@ -66004,7 +66026,7 @@
         <CancelEffect index="Prep" value="BattlecruiserYamatoCD"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="YamatoGun244232" Requirements="UnknownRequirement523332222222"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="Yamato245">
+    <CAbilEffectTarget id="AnnihilationBombCP2">
         <Alignment value="Negative"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <DataCollection value="Yamato"/>
@@ -66239,7 +66261,7 @@
         <CmdButtonArray index="Execute" DefaultButtonFace="YamatoGun3"/>
         <TargetFilters value="-;Self,Neutral,Enemy,Missile,Dead,Hidden"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="Yamato4">
+    <CAbilEffectTarget id="JuggernautCrackerCP2">
         <Alignment value="Negative"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <Effect index="0" value="Yamato3"/>
@@ -66255,10 +66277,11 @@
                 <Link value="Abil/DehakaRevive"/>
                 <Location value="Unit"/>
             </Charge>
-            <Cooldown Link="YamatoYamato4" TimeUse="5"/>
+            <Cooldown Link="YamatoYamato4YamatoJuggernautCrackerCP2" TimeUse="5"/>
         </Cost>
         <Range value="10"/>
         <RangeSlop value="10"/>
+        <Arc value="360"/>
         <AutoCastFilters value="Visible;Player,Ally,Neutral,Light,Dead,Invulnerable"/>
         <AutoCastRange value="10"/>
         <PrepTime value="1"/>
@@ -66273,7 +66296,6 @@
         <ProgressButtonArray index="Prep" value="YamatoGun"/>
         <CancelEffect index="Prep" value="BattlecruiserYamatoCD"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="YamatoGun4"/>
-        <Arc value="360"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="Yamato5">
         <Alignment value="Negative"/>
