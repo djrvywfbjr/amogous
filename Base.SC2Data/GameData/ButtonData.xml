@@ -4130,9 +4130,23 @@
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="CalldownMULE42332"/>
     </CButton>
+    <CButton id="DropDownHydralisks">
+        <Icon value="Assets\Textures\btn-unit-zerg-hydralisk.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
+    <CButton id="DropDownAcidColony">
+        <Icon value="Assets\Textures\btn-unit-zerg-nyduscreeptower.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-zerg-nyduscreeptower.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
     <CButton id="ConsumeDNA32">
         <Icon value="Assets\Textures\btn-ability-mengsk-ghost-pyrokineticimmolation_blue.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-zerg-consume.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
+    <CButton id="MorphMorphalisk222">
+        <Icon value="Assets\Textures\btn-upgrade-zagara-increasebilelauncherrange.dds"/>
         <EditorCategories value="Race:Zerg"/>
     </CButton>
     <CButton id="PoisonNova22333232">
@@ -4144,6 +4158,24 @@
     <CButton id="PoisonNova22333233">
         <Icon value="Assets\Textures\btn-upgrade-zerg-abathur-prolongeddispersion.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-zerg-poisonnova.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+        <HotkeyAlias value="PoisonNova223"/>
+    </CButton>
+    <CButton id="PoisonNova223332332">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-abathur-symbiote.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-zerg-abathur-symbiote.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+        <HotkeyAlias value="PoisonNova223"/>
+    </CButton>
+    <CButton id="PoisonNova2233323322">
+        <Icon value="Assets\Textures\btn-upgrade-vorazun-oraclepermanentlycloaked.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-zerg-abathur-symbiote.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+        <HotkeyAlias value="PoisonNova223"/>
+    </CButton>
+    <CButton id="PoisonNova22333233222">
+        <Icon value="Assets\Textures\btn-upgrade-karax-solarforgeupgradecache2.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-zerg-abathur-symbiote.dds"/>
         <EditorCategories value="Race:Zerg"/>
         <HotkeyAlias value="PoisonNova223"/>
     </CButton>
@@ -22511,7 +22543,7 @@
         <Tooltip value="Button/Tooltip/Pyloneeeeeeeeeeeeeee9"/>
     </CButton>
     <CButton id="Queen2">
-        <Icon value="Assets\Textures\btn-unit-zerg-queen.dds"/>
+        <Icon value="Assets\Textures\btn-unit-collection-webby-queen.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-zerg-queen.dds"/>
         <EditorCategories value="Race:Zerg"/>
         <Universal value="1"/>
@@ -27201,6 +27233,11 @@
         <AlertIcon value="Assets\Textures\btn-building-zerg-sporecrawler.dds"/>
         <EditorCategories value="Race:Zerg"/>
     </CButton>
+    <CButton id="MutateintoSporeCrawler">
+        <Icon value="Assets\Textures\btn-building-zerg-sporecrawler.dds"/>
+        <AlertIcon value="Assets\Textures\btn-building-zerg-impalercolony.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
     <CButton id="SporeCrawler3">
         <Icon value="Assets\Textures\btn-building-zerg-sporecrawler-mecha.dds"/>
         <AlertIcon value="Assets\Textures\btn-building-zerg-sporecrawler.dds"/>
@@ -29144,6 +29181,14 @@
     <CButton id="UnknownButton114">
         <Icon value="Assets\Textures\btn-upgrade-zerg-abathur-symbiote.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-zerg-abathur-symbiote.dds"/>
+    </CButton>
+    <CButton id="UnknownButton115">
+        <Icon value="Assets\Textures\btn-ability-mengsk-commandcenter-drafttroopers.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-mengsk-commandcenter-drafttroopers.dds"/>
+    </CButton>
+    <CButton id="UnknownButton1152">
+        <Icon value="Assets\Textures\btn-ability-mengsk-commandcenter-drafttroopers.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-mengsk-commandcenter-drafttroopers.dds"/>
     </CButton>
     <CButton id="UnknownButton12">
         <Icon value="Assets\Textures\btn-upgrade-zerg-monarchblades.dds"/>

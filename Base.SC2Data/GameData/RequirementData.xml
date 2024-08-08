@@ -8870,7 +8870,7 @@
         <NodeArray index="Show" Link="CountUnitSpawningPool2232222QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="UnknownRequirement723">
-        <NodeArray index="Show" Link="CountUnitSpawningPool222QueuedOrBetter"/>
+        <NodeArray index="Show" Link="CountUnitOvermind2QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="UnknownRequirement73">
         <NodeArray index="Show" Link="CountUnitSpawningPool223222QueuedOrBetter"/>

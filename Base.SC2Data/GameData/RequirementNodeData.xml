@@ -4269,6 +4269,11 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="OurGodPythonThePylon2" State="QueuedOrBetter"/>
     </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitOvermind2QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="Overmind2" State="QueuedOrBetter"/>
+    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitOverseer6QueuedOrBetterAtUnit">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Overseer6" State="QueuedOrBetterAtUnit"/>
@@ -4639,10 +4644,6 @@
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitSingularityControllerCompleteOnly381557053TechTreeCheat">
         <Count Link="SingularityController" State="CompleteOnly"/>
-    </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitSpawningPool222QueuedOrBetter">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="SpawningPool222" State="QueuedOrBetter"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitSpawningPool2232222QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
