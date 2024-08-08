@@ -720,7 +720,7 @@
         <Modification>
             <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
             <WeaponArray Link="CorrosiveCleanser"/>
-            <WeaponDisableArray value="GuassRifle553"/>
+            <WeaponDisableArray value="H3ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -743,7 +743,7 @@
         <Modification>
             <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
             <WeaponArray Link="PsionicShockwave422"/>
-            <WeaponDisableArray value="GuassRifle553"/>
+            <WeaponDisableArray value="H3ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -765,7 +765,7 @@
         <Modification>
             <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
             <WeaponArray Link="MengskMarine32"/>
-            <WeaponDisableArray value="GuassRifle553"/>
+            <WeaponDisableArray value="H3ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -787,7 +787,7 @@
         <Modification>
             <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
             <WeaponArray Link="GuassRifle523"/>
-            <WeaponDisableArray value="GuassRifle553"/>
+            <WeaponDisableArray value="H3ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -828,7 +828,7 @@
         <Modification>
             <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
             <WeaponArray Link="DutchTurretFlameThrower22"/>
-            <WeaponDisableArray value="GuassRifle553"/>
+            <WeaponDisableArray value="H3ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -958,7 +958,7 @@
             <AbilLinkDisableArray value="XenWarrior6223223354"/>
             <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
             <WeaponArray Link="MengskMarine322"/>
-            <WeaponDisableArray value="GuassRifle553"/>
+            <WeaponDisableArray value="H3ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -983,7 +983,7 @@
             <AbilLinkDisableArray value="XenWarrior6223223354"/>
             <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
             <WeaponArray Link="C10CanisterRifle11"/>
-            <WeaponDisableArray value="GuassRifle553"/>
+            <WeaponDisableArray value="H3ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -1008,7 +1008,7 @@
             <AbilLinkDisableArray value="XenWarrior6223223354"/>
             <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
             <WeaponArray Link="C10CanisterRifle11"/>
-            <WeaponDisableArray value="GuassRifle553"/>
+            <WeaponDisableArray value="H3ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -1113,7 +1113,7 @@
             <AbilLinkDisableArray value="XenWarrior6223223354"/>
             <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
             <WeaponArray Link="P38ScytheGuassPistol3"/>
-            <WeaponDisableArray value="GuassRifle553"/>
+            <WeaponDisableArray value="H3ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -1138,7 +1138,7 @@
             <AbilLinkDisableArray value="XenWarrior6223223354"/>
             <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
             <WeaponArray Link="Diamondback63"/>
-            <WeaponDisableArray value="GuassRifle553"/>
+            <WeaponDisableArray value="H3ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -1163,7 +1163,7 @@
             <AbilLinkDisableArray value="XenWarrior6223223354"/>
             <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
             <WeaponArray Link="MengskMarine3222"/>
-            <WeaponDisableArray value="GuassRifle553"/>
+            <WeaponDisableArray value="H3ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -1187,7 +1187,7 @@
             <AbilLinkDisableArray value="XenWarrior62232233542"/>
             <AbilLinkDisableArray value="XenWarrior6223223354"/>
             <AbilLinkDisableArray value="XenWarrior62232233543"/>
-            <WeaponDisableArray value="GuassRifle553"/>
+            <WeaponDisableArray value="H3ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -1211,7 +1211,7 @@
             <AbilLinkDisableArray value="XenWarrior62232233542"/>
             <AbilLinkDisableArray value="XenWarrior6223223354222222"/>
             <AbilLinkDisableArray value="XenWarrior6223223354"/>
-            <WeaponDisableArray value="GuassRifle553"/>
+            <WeaponDisableArray value="H3ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -1235,7 +1235,7 @@
             <AbilLinkDisableArray value="XenWarrior62232233542"/>
             <AbilLinkDisableArray value="XenWarrior62232233542222222"/>
             <AbilLinkDisableArray value="XenWarrior6223223354"/>
-            <WeaponDisableArray value="GuassRifle553"/>
+            <WeaponDisableArray value="H3ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -1259,7 +1259,7 @@
             <AbilLinkDisableArray value="XenWarrior62232233542"/>
             <AbilLinkDisableArray value="XenWarrior62232233542222222"/>
             <AbilLinkDisableArray value="XenWarrior6223223354"/>
-            <WeaponDisableArray value="GuassRifle553"/>
+            <WeaponDisableArray value="H3ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -1305,7 +1305,7 @@
         <Modification>
             <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
             <WeaponArray Link="Vulture22"/>
-            <WeaponDisableArray value="GuassRifle553"/>
+            <WeaponDisableArray value="H3ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -1760,6 +1760,14 @@
         <Modification MoveSpeedMultiplier="1.25">
             <VitalRegenArray index="Life" value="2"/>
         </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Automated">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Requirements value="HaveIndustrialAutomatons"/>
+        <TimeScaleSource Value="Global"/>
+        <Modification TimeScale="2"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="BanelingExplodeSmall2">
         <Alignment value="Positive"/>
@@ -4116,7 +4124,7 @@
             <DamageDealtFraction index="Splash" value="0.35"/>
             <DamageDealtFraction index="NoProc" value="0.35"/>
             <DamageDealtAttributeMultiplier index="Armored" value="0.5"/>
-            <WeaponDisableArray value="GuassRifle553"/>
+            <WeaponDisableArray value="H3ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -6116,27 +6124,15 @@
             </Cost>
         </DamageResponse>
     </CBehaviorBuff>
-    <CBehaviorBuff id="AntamoAirAll203224">
-        <Cost>
-            <Charge Link="Behavior/AntamoAirAll"/>
-            <Cooldown Link="Behavior/AntamoAirAll"/>
-        </Cost>
+    <CBehaviorBuff id="EmergencyWeapon">
         <BehaviorFlags index="Permanent" value="1"/>
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Requirements value="HavePsionicHeart2243232223242322263222"/>
-        <DisableValidatorArray value="IsTimeStopped282223"/>
         <Modification>
             <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
-            <WeaponArray Link="WraithG3"/>
-            <WeaponDisableArray value="GuassRifle553"/>
+            <WeaponArray Link="H3ScrapCannon"/>
         </Modification>
-        <DamageResponse Handled="AlexStoneBlast2233">
-            <Cost>
-                <Charge Link="Behavior/AntamoAirAll2" TimeUse="5"/>
-                <Cooldown Link="Behavior/AntamoAirAll2"/>
-            </Cost>
-        </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="AntamoAirAll20323">
         <Cost>

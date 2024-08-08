@@ -3785,6 +3785,7 @@ Button/Hotkey/ResearchOptimizedArmorMaterials=D
 Button/Hotkey/ResearchOptimizedHarvesting=A
 Button/Hotkey/ResearchOptimizedPowerDistributor=X
 Button/Hotkey/ResearchOptimizedSchedule=Z
+Button/Hotkey/ResearchOptimizedServos=C
 Button/Hotkey/ResearchOptimizedWeaponaryMaterials=S
 Button/Hotkey/ResearchSecondaryMedicalOutpost=A
 Button/Hotkey/ResearchStrikeCannons2=C

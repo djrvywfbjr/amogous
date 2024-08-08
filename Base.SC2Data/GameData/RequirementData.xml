@@ -175,6 +175,9 @@
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
         <NodeArray index="Use" Link="LT2533098009CountUpgradeUmojanBasicUnitUpgrade522242242322222236222322222QueuedOrBetter75"/>
     </CRequirement>
+    <CRequirement id="HaveIndustrialAutomatons">
+        <NodeArray index="Use" Link="CountUpgradeIndustrialAutomatonsCompleteOnly"/>
+    </CRequirement>
     <CRequirement id="ManufactureChemicalStation">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
         <NodeArray index="Use" Link="LT879540594CountUpgradeManufactureChemicalStationQueuedOrBetter50"/>

@@ -4179,6 +4179,9 @@
         <EditorCategories value="Race:Zerg"/>
         <HotkeyAlias value="PoisonNova223"/>
     </CButton>
+    <CButton id="ResearchOptimizedServos">
+        <Icon value="Assets\Textures\btn-upgrade-terran-transformationservos.dds"/>
+    </CButton>
     <CButton id="SetUpGenerator">
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel3.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>

@@ -216,12 +216,11 @@
     </CUpgrade>
     <CUpgrade id="AdvancedConstruction24222">
         <Flags index="UpgradeCheat" value="0"/>
-        <EffectArray Operation="Subtract" Reference="Abil,QuickMutator222225,Cost[0].Cooldown.TimeUse" Value="10.000000"/>
-        <EffectArray Operation="Subtract" Reference="Abil,QuickMutator22222522,Cost[0].Cooldown.TimeUse" Value="10.000000"/>
-        <EffectArray Operation="Subtract" Reference="Abil,QuickMutator2222252,Cost[0].Cooldown.TimeUse" Value="10.000000"/>
-        <EffectArray Operation="Subtract" Reference="Abil,QuickMutator222225222,Cost[0].Cooldown.TimeUse" Value="10.000000"/>
-        <EffectArray Operation="Subtract" Reference="Abil,QuickMutator2222252222,Cost[0].Cooldown.TimeUse" Value="10.000000"/>
-        <EffectArray Operation="Subtract" Reference="Abil,QuickMutator22222522222,Cost[0].Cooldown.TimeUse" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,ManufactureParts,InfoArray[Specialize1].Time" Value="20.000000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,ManufactureParts,InfoArray[Specialize2].Time" Value="20.000000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,ManufactureParts,InfoArray[Specialize3].Time" Value="20.000000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,ManufactureParts,InfoArray[Specialize4].Time" Value="20.000000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,ManufactureParts,InfoArray[Specialize5].Time" Value="20.000000"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="AdvancedConstruction"/>
     </CUpgrade>
@@ -239,7 +238,7 @@
     </CUpgrade>
     <CUpgrade id="AdvancedConstruction2422322">
         <Flags index="UpgradeCheat" value="0"/>
-        <EffectArray Operation="Set" Reference="Weapon,GuassRifle553,Options[Hidden]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,H3ScrapCannon,Options[Hidden]" Value="0"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="AdvancedConstruction"/>
     </CUpgrade>
@@ -774,7 +773,7 @@
         <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.StateFlags[SuppressDetection]" Value="0"/>
         <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.ModifyFlags[DisableWeapons]" Value="0"/>
         <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.AbilClassDisableArray[CAbilAttack]" Value="0"/>
-        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.TimeScale" Value="2"/>
+        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.TimeScale" Value="0.5"/>
         <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.AbilClassDisableArray[CAbilEffectInstant]" Value="0"/>
         <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.AbilClassDisableArray[CAbilEffectTarget]" Value="0"/>
         <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.BehaviorLinkDisableArray[0]" Value="HighEnergyRegeneration4"/>
@@ -1708,6 +1707,14 @@
         <EffectArray Operation="Set" Reference="Effect,WildMutationSet4,EffectArray[1]" Value="BlackhammerAoELaunch92"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="OptimizedServos">
+        <EffectArray Reference="Unit,Marine7,Speed" Value="0.300700"/>
+        <EffectArray Reference="Unit,Firebat2,Speed" Value="0.300700"/>
+        <EffectArray Reference="Unit,Ghost8,Speed" Value="0.398400"/>
+        <EffectArray Reference="Unit,Marauder4,Speed" Value="0.300700"/>
+        <EffectArray Reference="Unit,Marine313,Speed" Value="0.300700"/>
+        <EffectArray Reference="Unit,Reaper3,Speed" Value="0.500000"/>
     </CUpgrade>
     <CUpgrade id="SVMemorizer2">
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
