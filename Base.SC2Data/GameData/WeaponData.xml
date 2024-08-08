@@ -2908,12 +2908,14 @@
         <DamagePoint value="2"/>
         <Backswing value="2"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="GuassRifle553">
+    <CWeaponLegacy id="H3ScrapCannon">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel0.dds"/>
+        <DisplayEffect value="ScrapCannonDamage"/>
         <TargetFilters value="Visible;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="6"/>
         <Period value="2"/>
+        <Effect value="ScrapCannonDamage"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GuassRifle56">
         <EditorCategories value="Race:Terran"/>

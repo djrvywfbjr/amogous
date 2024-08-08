@@ -238,7 +238,7 @@
     </CUpgrade>
     <CUpgrade id="AdvancedConstruction2422322">
         <Flags index="UpgradeCheat" value="0"/>
-        <EffectArray Operation="Set" Reference="Weapon,GuassRifle553,Options[Hidden]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,H3ScrapCannon,Options[Hidden]" Value="0"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="AdvancedConstruction"/>
     </CUpgrade>
@@ -1707,6 +1707,14 @@
         <EffectArray Operation="Set" Reference="Effect,WildMutationSet4,EffectArray[1]" Value="BlackhammerAoELaunch92"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="OptimizedServos">
+        <EffectArray Reference="Unit,Marine7,Speed" Value="0.300700"/>
+        <EffectArray Reference="Unit,Firebat2,Speed" Value="0.300700"/>
+        <EffectArray Reference="Unit,Ghost8,Speed" Value="0.398400"/>
+        <EffectArray Reference="Unit,Marauder4,Speed" Value="0.300700"/>
+        <EffectArray Reference="Unit,Marine313,Speed" Value="0.300700"/>
+        <EffectArray Reference="Unit,Reaper3,Speed" Value="0.500000"/>
     </CUpgrade>
     <CUpgrade id="SVMemorizer2">
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>

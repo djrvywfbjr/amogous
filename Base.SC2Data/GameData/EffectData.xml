@@ -25410,11 +25410,11 @@
         <Kind value="Ranged"/>
         <Amount value="50"/>
     </CEffectDamage>
-    <CEffectDamage id="GuassRifle553" parent="DU_WEAP">
+    <CEffectDamage id="ScrapCannonDamage" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <ArmorReduction value="0"/>
         <Kind value="Ranged"/>
-        <Amount value="15"/>
+        <Amount value="35"/>
     </CEffectDamage>
     <CEffectDamage id="GuassRifle56" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>

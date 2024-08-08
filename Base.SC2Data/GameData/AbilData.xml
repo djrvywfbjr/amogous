@@ -1913,7 +1913,7 @@
         </InfoArray>
         <InfoArray index="Train8" Time="100" Effect="MercGroundDrop" Location="Rally">
             <Button DefaultButtonFace="Marine25" Requirements="HavePsionicHeart224323222324232226322432"/>
-            <Unit value="Marine72"/>
+            <Unit value="Foreman"/>
         </InfoArray>
         <InfoArray index="Train9" Time="65" Effect="MercGroundDrop" Location="Rally">
             <Button DefaultButtonFace="Marine252" Requirements="HavePsionicHeart22432322232423222632243"/>
@@ -26489,9 +26489,12 @@
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
             <Button DefaultButtonFace="UnknownButton103" Requirements="UnknownRequirement114"/>
         </InfoArray>
-        <InfoArray index="Research30">
+        <InfoArray index="Research30" Time="400" Upgrade="OptimizedServos">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="300"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
+            <Button DefaultButtonFace="ResearchOptimizedServos" Requirements="HavePsionicHeart22432322232423222632"/>
         </InfoArray>
     </CAbilResearch>
     <CAbilResearch id="GhostAcademyResearch8" parent="GhostAcademyResearch">
