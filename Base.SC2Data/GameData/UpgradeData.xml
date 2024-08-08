@@ -9139,22 +9139,22 @@
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222352222222522222222">
-        <EffectArray Reference="Abil,Yamato245,Cost[0].Charge.CountMax" Value="1"/>
-        <EffectArray Reference="Abil,PsiStorm52,Cost[0].Charge.CountMax" Value="1"/>
-        <EffectArray Reference="Abil,MindBolt53,Cost[0].Charge.CountMax" Value="1"/>
-        <EffectArray Reference="Abil,PrimalSlash223,Cost[0].Charge.CountMax" Value="1"/>
-        <EffectArray Reference="Abil,CorsairMPDisruptionWeb3,Cost[0].Charge.CountMax" Value="1"/>
-        <EffectArray Reference="Abil,MedivacSpeedBoost4,Cost[0].Charge.CountMax" Value="1"/>
-        <EffectArray Reference="Abil,Blink322,Cost[0].Charge.CountMax" Value="1"/>
-        <EffectArray Reference="Abil,Yamato4,Cost[0].Charge.CountMax" Value="1"/>
-        <EffectArray Reference="Abil,ArtanisAstralWind4,Cost[0].Charge.CountMax" Value="1"/>
-        <EffectArray Reference="Abil,Cloak352,Cost[0].Charge.CountMax" Value="1"/>
-        <EffectArray Reference="Abil,ShieldUp2332,Cost[0].Charge.CountMax" Value="1"/>
-        <EffectArray Reference="Abil,DefensiveMatrix23,Cost[0].Charge.CountMax" Value="1"/>
-        <EffectArray Reference="Abil,Irradiate2234,Cost[0].Charge.CountMax" Value="1"/>
-        <EffectArray Reference="Abil,VoidShieldCapacitor2,Cost[0].Charge.CountMax" Value="1"/>
-        <EffectArray Reference="Abil,LaunchPsionicMissile342,Cost[0].Charge.CountMax" Value="1"/>
-        <EffectArray Reference="Abil,SOAOrbitalStrikeExecute222,Cost[0].Charge.CountMax" Value="1"/>
+        <EffectArray Reference="Abil,AnnihilationBombCP2,Cost[0].Charge.CountMax" Value="1"/>
+        <EffectArray Reference="Abil,ArtificialStormCP2,Cost[0].Charge.CountMax" Value="1"/>
+        <EffectArray Reference="Abil,CannonOverchargeCP2,Cost[0].Charge.CountMax" Value="1"/>
+        <EffectArray Reference="Abil,CombatLeapCP2,Cost[0].Charge.CountMax" Value="1"/>
+        <EffectArray Reference="Abil,DisruptionWebCP2,Cost[0].Charge.CountMax" Value="1"/>
+        <EffectArray Reference="Abil,EmergencyProtocolCP2,Cost[0].Charge.CountMax" Value="1"/>
+        <EffectArray Reference="Abil,InstantWarpCP2,Cost[0].Charge.CountMax" Value="1"/>
+        <EffectArray Reference="Abil,JuggernautCrackerCP2,Cost[0].Charge.CountMax" Value="1"/>
+        <EffectArray Reference="Abil,NanobotWindCP2,Cost[0].Charge.CountMax" Value="1"/>
+        <EffectArray Reference="Abil,OverwatchProtocolCP2,Cost[0].Charge.CountMax" Value="1"/>
+        <EffectArray Reference="Abil,PhaseThroughCP2,Cost[0].Charge.CountMax" Value="1"/>
+        <EffectArray Reference="Abil,PolyshieldCP2,Cost[0].Charge.CountMax" Value="1"/>
+        <EffectArray Reference="Abil,PurifierBeamCP2,Cost[0].Charge.CountMax" Value="1"/>
+        <EffectArray Reference="Abil,ShieldRecreatorCP2,Cost[0].Charge.CountMax" Value="1"/>
+        <EffectArray Reference="Abil,TemporarityCP2,Cost[0].Charge.CountMax" Value="1"/>
+        <EffectArray Reference="Abil,CybrosBombardmentCP2,Cost[0].Charge.CountMax" Value="1"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -9246,8 +9246,8 @@
     <CUpgrade id="UmojanBasicUnitUpgrade52224224232222223522222225433">
         <EffectArray Reference="Unit,Forge5,EnergyRegenRate" Value="0.1015"/>
         <EffectArray Reference="Behavior,NovaArmorBlinkSuit233,Modification.TimeScale" Value="0.05"/>
-        <EffectArray Operation="Set" Reference="Abil,ShieldUp2321022,Cost[0].Cooldown.TimeUse" Value="15.000000"/>
-        <EffectArray Operation="Set" Reference="Abil,ShieldUp232102,Cost[0].Cooldown.TimeUse" Value="19.000000"/>
+        <EffectArray Operation="Set" Reference="Abil,BurningNexusCombatProtocol,Cost[0].Cooldown.TimeUse" Value="15.000000"/>
+        <EffectArray Operation="Set" Reference="Abil,InitiatorCombatProtocol,Cost[0].Cooldown.TimeUse" Value="19.000000"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -9271,11 +9271,11 @@
         <EffectArray Reference="Behavior,SJHyperionLightningStormStun210,Modification.VitalMaxAdditiveMultiplierArray[Life]" Value="0.4"/>
         <EffectArray Reference="Behavior,SJHyperionLightningStormStun210,Modification.VitalMaxAdditiveMultiplierArray[Shields]" Value="0.4"/>
         <EffectArray Reference="Behavior,SJHyperionLightningStormStun210,Duration" Value="10.000000"/>
-        <EffectArray Reference="Abil,ShieldUp23210,Cost[0].Cooldown.TimeUse" Value="7.500000"/>
-        <EffectArray Reference="Abil,ShieldUp2321022,Cost[0].Cooldown.TimeUse" Value="12.500000"/>
-        <EffectArray Reference="Abil,ShieldUp232103,Cost[0].Cooldown.TimeUse" Value="5.000000"/>
-        <EffectArray Reference="Abil,ShieldUp2321032,Cost[0].Cooldown.TimeUse" Value="3.500000"/>
-        <EffectArray Reference="Abil,ShieldUp232102,Cost[0].Cooldown.TimeUse" Value="22.500000"/>
+        <EffectArray Reference="Abil,ArbiterCombatProtocol,Cost[0].Cooldown.TimeUse" Value="7.500000"/>
+        <EffectArray Reference="Abil,BurningNexusCombatProtocol,Cost[0].Cooldown.TimeUse" Value="12.500000"/>
+        <EffectArray Reference="Abil,DisruptionWardCombatProtocol,Cost[0].Cooldown.TimeUse" Value="5.000000"/>
+        <EffectArray Reference="Abil,FenixCombatProtocol,Cost[0].Cooldown.TimeUse" Value="3.500000"/>
+        <EffectArray Reference="Abil,InitiatorCombatProtocol,Cost[0].Cooldown.TimeUse" Value="22.500000"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>

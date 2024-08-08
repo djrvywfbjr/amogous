@@ -14405,6 +14405,13 @@
         <ImpactEffect value="ColossusTaldarimDamage3"/>
         <AmmoUnit value="ColossusTaldarimWeapon3"/>
     </CEffectLaunchMissile>
+    <CEffectApplyBehavior id="CombatProtocolAB">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="CombatProtocolTrackerAB">
+        <EditorCategories value=""/>
+        <Behavior value="SJHyperionLightningStormStun210"/>
+    </CEffectApplyBehavior>
     <CEffectDamage id="CommandoRifle2">
         <EditorCategories value="Race:Terran"/>
         <ResponseFlags index="Acquire" value="1"/>
@@ -59400,9 +59407,11 @@
         <WhichUnit Value="Caster"/>
         <Behavior value="SJHyperionLightningStormStun28"/>
     </CEffectApplyBehavior>
-    <CEffectApplyBehavior id="SJHyperionLightningStormAB25">
-        <Behavior value="SJHyperionLightningStormStun210"/>
-    </CEffectApplyBehavior>
+    <CEffectSet id="AddCombatProtocol">
+        <EffectArray value="CombatProtocolAB"/>
+        <EffectArray value="CombatProtocolTrackerAB"/>
+        <EffectArray value="CombatProtocolAddCharge"/>
+    </CEffectSet>
     <CEffectDamage id="SJHyperionLightningStormDamage2" parent="DU_WEAP">
         <EditorCategories value="Race:Zerg"/>
     </CEffectDamage>
@@ -70257,6 +70266,57 @@
         <EditorCategories value=""/>
         <Behavior value="UnknownBehavior46"/>
     </CEffectApplyBehavior>
+    <CEffectModifyUnit id="CombatProtocolAddCharge">
+        <EditorCategories value=""/>
+        <Cost Abil="PurifierBeamCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="AnnihilationBombCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="CannonOverchargeCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="CombatLeapCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="DisruptionWebCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="TemporarityCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="EmergencyProtocolCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="ArtificialStormCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="CybrosBombardmentCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="InstantWarpCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="JuggernautCrackerCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="NanobotWindCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="OverwatchProtocolCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="PhaseThroughCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="PolyshieldCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+        <Cost Abil="ShieldRecreatorCP2,Execute" ChargeCountUse="-1">
+            <Player Value="Target"/>
+        </Cost>
+    </CEffectModifyUnit>
     <CEffectSet id="UnknownEffect7">
         <EditorCategories value=""/>
         <EffectArray value="NeedleClaws3"/>
