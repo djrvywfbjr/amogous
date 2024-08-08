@@ -2434,6 +2434,9 @@ Abil/Name/XenWarrior2523=D5-D DY Ship
 Abil/Name/XenWarrior26=Flood
 Abil/Name/XenWarrior262=Veil
 Abil/Name/XenWarrior263=Interceptor
+Abil/Name/XenWarrior2632=Overseer
+Abil/Name/XenWarrior26322=Transport Cloak
+Abil/Name/XenWarrior263222=Transport Energy
 Abil/Name/XenWarrior27=Descend
 Abil/Name/XenWarrior3=Unknown System Upgrade
 Abil/Name/XenWarrior32=Swarmer Upgrade
@@ -4206,6 +4209,9 @@ Behavior/Name/XenWarrior2522322=Dominant Energies
 Behavior/Name/XenWarrior26=Defiled Walker
 Behavior/Name/XenWarrior262=Shroudwalker
 Behavior/Name/XenWarrior263=Virulent Spore Chambers
+Behavior/Name/XenWarrior2632=Constricting Slime
+Behavior/Name/XenWarrior26322=Safety Overrides
+Behavior/Name/XenWarrior263222=Runic Core
 Behavior/Name/XenWarrior27=Worshipper
 Behavior/Name/XenWarrior3=Unknown System Upgrade
 Behavior/Name/XenWarrior32=Swarmer Conversion
@@ -7191,7 +7197,7 @@ Button/Name/Drone6=Prepare Taken Drone
 Button/Name/Drone7=Morph To Swarm's Miner
 Button/Name/Drone8=Morph to Drone
 Button/Name/DropDownAcidColony=Drop Down Creep Tower
-Button/Name/DropDownHydralisks=Drop Down Hydralisks
+Button/Name/DropDownHydralisks=Summon Hunter Killers
 Button/Name/DutchPlaceTurret2=Place Plasmid Turret
 Button/Name/DutchPlaceTurret22=Place Plasmid Turret
 Button/Name/EMP2=PME Round
@@ -8960,6 +8966,9 @@ Button/Name/PoisonNova2233322=Endless Pain
 Button/Name/PoisonNova2233323=Defiled Walker Transformation
 Button/Name/PoisonNova22333232=Shroudwalker Transformation
 Button/Name/PoisonNova22333233=Virulent Spore Chambers
+Button/Name/PoisonNova223332332=Constricting Slime
+Button/Name/PoisonNova2233323322=Safety Overrides
+Button/Name/PoisonNova22333233222=Runic Core
 Button/Name/PoisonNova22334=Creep Spores
 Button/Name/PoisonNova223342=Compact Parasite
 Button/Name/PoisonNova2233422=Contrived Frenzy
@@ -10502,6 +10511,8 @@ Button/Name/UnknownButton111=Ignited Shells
 Button/Name/UnknownButton112=Research Expanded Node Network
 Button/Name/UnknownButton113=Endowed Blood
 Button/Name/UnknownButton114=Crawler Seeds
+Button/Name/UnknownButton115=Path Of Blood
+Button/Name/UnknownButton1152=Path Of Tears
 Button/Name/UnknownButton12=Flaming Charge
 Button/Name/UnknownButton13=Solar Detraction
 Button/Name/UnknownButton14=Primal Discharge
@@ -13327,7 +13338,7 @@ Button/Tooltip/CombatShield216=Increases the power of engines by using scrap to 
 Button/Tooltip/CombatShield217=Diverts power from articulators to hull restoration systems, multiplying current armor by 3 and increasing life regeneration by 3. Decreases movement speed by 0.25.
 Button/Tooltip/CombatShield2172=Allows Spitters to use Reconstruction Protocol.
 Button/Tooltip/CombatShield218=Nexus Of Ancients will regenerate 1 resource to nearby resource nodes every 4 seconds.
-Button/Tooltip/CombatShield219=Weapon attacks will reduce targets' armor by 2 for 20 seconds. Does not stack.
+Button/Tooltip/CombatShield219=Weapon attacks will reduce targets' armor by 2 for 20 seconds upon inflicting damage. Does not stack.
 Button/Tooltip/CombatShield22=Activates the magma-thrower weapon for 10 seconds.
 Button/Tooltip/CombatShield222=Adds some protorype drugs to this unit. It's organism can only survive for 10 second each 30 seconds with drug active. Increases both speeds by 50% and life regeneration by 100.
 Button/Tooltip/CombatShield2222=Spreads plague to all biological units except for your own.
@@ -14131,7 +14142,7 @@ Button/Tooltip/Drone6=Basic worker unit. Can harvest minerals and vespene gas. C
 Button/Tooltip/Drone7=Basic worker unit. Can harvest minerals and vespene gas. Can mutate into structures.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/Drone8=Basic worker unit. Can harvest minerals and vespene gas. Can mutate into structures.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/DropDownAcidColony=Drops down a single creep tower
-Button/Tooltip/DropDownHydralisks=Drops 2 hunter killers
+Button/Tooltip/DropDownHydralisks=Summons two Hunter Killers with timed life.
 Button/Tooltip/DukesRevenge2=Powerful warship.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/DukesRevenge3=Powerful warship.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/DukesRevenge4=Powerful warship.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
@@ -16517,6 +16528,9 @@ Button/Tooltip/PoisonNova2233322=Instead of dying, this unit will be placed in s
 Button/Tooltip/PoisonNova2233323=Advances into a Defiled Walker, gaining 3 shield regeneration, 3 life armor,150 life and a weapon that creates weak units from dead enemies.
 Button/Tooltip/PoisonNova22333232=Advances into a Shroudwalker, gaining cloak and 50% movement speed, as well as an anti-air weapon that deals high damage to air units.
 Button/Tooltip/PoisonNova22333233=Grows spore chambers in the already small Seer frame. Add an anti-capital air attack and increases movement speed by 85%, but increased signature radius prevents cloaking.
+Button/Tooltip/PoisonNova223332332=Envelops the unit in slime, allowing the modules to operate at higher efficiency without overheating. Adds 35 life, 6 sight range and increases speed and cooldown rate by 35%.
+Button/Tooltip/PoisonNova2233323322=Grows a Seerlord's body into the ship's hull, allowing to redirect the Infested Transporter's power to emergency preservation systems. Cloaks the unit and provides a movement speed increase of 40%.
+Button/Tooltip/PoisonNova22333233222=Empowers the Infested Transporter's reactor using the nearly forgotten Pure Born Rites. Increases max energy by 50 and energy regeneration by 50%.
 Button/Tooltip/PoisonNova22334=Owned air units around Parasitic Cruisers recieve creep speed bonus, even if not on creep.
 Button/Tooltip/PoisonNova223342=Increases range of Neural Parasite Carrier launch by 2.
 Button/Tooltip/PoisonNova2233422=Units affected by Neural Parasites gain 35% attack speed and heal for 20% of damage they deal.
@@ -16791,7 +16805,7 @@ Button/Tooltip/Pylon9=Provides supply.<n/>Supply allows you to warp in more unit
 Button/Tooltip/Pylon92=Provides supply.<n/>Supply allows you to warp in more units.<n/>Creates power for nearby structures.
 Button/Tooltip/Pyloneeeeeeeeeeeeeee9=Is warped in instantly with full hp and shields, but cannot provide powerfield and supplies for 30 seconds.<n/>Don't you know what a pylon does?
 Button/Tooltip/Queen2=Support unit. Can use Spawn Creep Tumor and Rapid Transfusion.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
-Button/Tooltip/Queen22=Support unit. After hunting pure born for years in warpspace, is excelent against many types of units.
+Button/Tooltip/Queen22=Support unit. After hunting pure born for years in warpspace, is excellent against many types of units.
 Button/Tooltip/Queen3=Support unit. Can use Spawn Creep Tumor and Rapid Transfusion.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
 Button/Tooltip/Queen32=Support unit. Can use Spawn Creep Tumor and Rapid Transfusion.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
 Button/Tooltip/Queen33=Support unit. Can use Spawn Creep Tumor and Rapid Transfusion.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
@@ -16988,7 +17002,7 @@ Button/Tooltip/ReturnCargo2=Returns the carried resources to the nearest drop-of
 Button/Tooltip/Revive=Revives the hero.
 Button/Tooltip/RichMineralField2=Workers can harvest minerals from this Mineral Field at a faster rate than normal.
 Button/Tooltip/Roach2=Assault unit. Regenerates life quickly when burrowed. Can morph into a Ravager.<n/><n/><c val="ffff8a">Can attack ground units.</c>
-Button/Tooltip/Roach3=Assault unit. Has special acid, that deals more damage to biological and heroic units.
+Button/Tooltip/Roach3=Assault unit. Has special acid, that deals more damage to heroic units.
 Button/Tooltip/Roach4=A purely better mine, which can't summon strucutres.
 Button/Tooltip/Roach5=Assault unit. Regenerates life quickly when burrowed. Can morph into a Ravager.<n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/Roach6=Assault unit. Regenerates life quickly when burrowed. Can morph into a Ravager.<n/><n/><c val="ffff8a">Can attack ground units.</c>
@@ -18427,6 +18441,8 @@ Button/Tooltip/UnknownButton111=Holy Fire Division's attacks in tank mode degene
 Button/Tooltip/UnknownButton112=Removes the lminit on the number of <c val="FFFF00">AI Centers</c>, but increases their cost by 200 minerals and 100 vespene.
 Button/Tooltip/UnknownButton113=Allows Archdeacons to use Self Sacrifice and increases the damage Penanced deal to armored units by 10.
 Button/Tooltip/UnknownButton114=<c val="FFFF00">Primalord </c>attacks will occasionally contain Aggravated Crawlers.
+Button/Tooltip/UnknownButton115=Increases the damage dealt by all units by 30%, but reduces their life by 20%.
+Button/Tooltip/UnknownButton1152=Reduces the damage dealt by all units by 30%, but provides 50% more life.
 Button/Tooltip/UnknownButton12=The Beast charges into the enemy, dealing area damage and setting the main target on fire
 Button/Tooltip/UnknownButton13=Adds area-of-effect damage to this unit's weapon that deals increased damage to the main target. Is active until the unit loses all energy. Ignores armor.
 Button/Tooltip/UnknownButton14=Deal 325 damage to a single target.
@@ -28386,6 +28402,7 @@ Effect/Name/RoachCorpserAcidSalivaLM32=Taken Corrupt Launch Caustic Locust
 Effect/Name/RoachCorpserAcidSalivaLM4=Taken Merc Ravager AoE Missile Launch
 Effect/Name/RoachCorpserAcidSalivaLM42=Taken Merc Ravager Structure Missile Launch
 Effect/Name/RoachCorpserAcidSalivaSet2=Roach Corpser Acid Saliva Set
+Effect/Name/RoachCorpserAcidSalivaSet22=Xill Colossus Set
 Effect/Name/RoachCorpserAcidSalivaSet3=Roach Corpser Acid Saliva Set
 Effect/Name/RoachCorpserAcidSalivaSet32=Roach Corpser Acid Saliva Set
 Effect/Name/RoachCorpserAcidSalivaSet4=Roach Corpser Acid Saliva Set
@@ -30948,6 +30965,9 @@ Effect/Name/XenWarrior2523=Xen Warrior Copy Copy 8
 Effect/Name/XenWarrior26=Xen Warrior Copy
 Effect/Name/XenWarrior262=Xen Warrior Copy
 Effect/Name/XenWarrior263=Xen Warrior Copy
+Effect/Name/XenWarrior2632=Xen Warrior Copy
+Effect/Name/XenWarrior26322=Xen Warrior Copy
+Effect/Name/XenWarrior263222=Xen Warrior Copy
 Effect/Name/XenWarrior27=Xen Warrior Copy
 Effect/Name/XenWarrior3=Xen Warrior Copy 2
 Effect/Name/XenWarrior32=Xen Warrior Copy 2
@@ -35167,7 +35187,7 @@ Unit/Name/Odin22=Legendary Odin
 Unit/Name/OdinAAWeapon2=Odin Anti-Air Copy
 Unit/Name/OdinAAWeapon22=Odin Anti-Air Copy Copy
 Unit/Name/OmindCreepTower=Creep Tower
-Unit/Name/OmindHunterKiller=HunterKiller
+Unit/Name/OmindHunterKiller=Hunter Killer
 Unit/Name/Oracle2=Pure Oracle
 Unit/Name/Oracle22=Pure Fighter
 Unit/Name/Oracle3=Dark Oracle

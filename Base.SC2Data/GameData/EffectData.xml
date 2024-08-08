@@ -59186,6 +59186,11 @@
         <EffectArray value="PsiDisruptionSearchArea22"/>
         <EffectArray value="RoachCorpserAcidSalivaU2"/>
     </CEffectSet>
+    <CEffectSet id="RoachCorpserAcidSalivaSet22">
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="PsiDisruptionSearchArea22"/>
+        <EffectArray value="RoachCorpserAcidSalivaU2"/>
+    </CEffectSet>
     <CEffectSet id="RoachCorpserAcidSalivaSet3">
         <EditorCategories value="Race:Zerg"/>
         <EffectArray value="RoachCorpserAcidSalivaU3"/>
@@ -68139,7 +68144,7 @@
     </CEffectCreatePersistent>
     <CEffectSet id="ThermalBeamSet2">
         <EditorCategories value=""/>
-        <EffectArray value="ThermalBeamDamage2"/>
+        <EffectArray value="ObserverSquadSightAB222252"/>
         <EffectArray value="ThermalBeamDamage2"/>
     </CEffectSet>
     <CEffectSet id="ThermalLances2">
@@ -76444,6 +76449,18 @@
         <WhichUnit Value="Caster"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="XenWarrior263">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="XenWarrior2632">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="XenWarrior26322">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="XenWarrior263222">
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
     </CEffectApplyBehavior>
