@@ -16964,7 +16964,7 @@ Button/Tooltip/ResearchOptimizedArmorMaterials=Militia Barracks will now be able
 Button/Tooltip/ResearchOptimizedHarvesting=Gardens will now provide Food a third faster.
 Button/Tooltip/ResearchOptimizedPowerDistributor=Increases the power distribution field of Construction Site by 50%.
 Button/Tooltip/ResearchOptimizedSchedule=All manned structures will function 10% faster. 
-Button/Tooltip/ResearchOptimizedWeaponaryMaterials=Reduces cooldown on weapons at Weapon Shop by 10 seconds.
+Button/Tooltip/ResearchOptimizedWeaponaryMaterials=Reduces the time to make parts at Tools Manufacture by 20 seconds.
 Button/Tooltip/ResearchSecondaryMedicalOutpost=Allows construction of a secondary Medical Outpost
 Button/Tooltip/ResearchStrikeCannons2=Increases production speed of <c val="FFFF00">infantry and air units</c> and adds a second production slot to <c val="FFFF00">all</c> structures.
 Button/Tooltip/ResearchThermoelectricGenerators=Titans will now be equipped with thermoelectric generators. They will not completely compensate for how much power they take from the Construction Site, but it will reduce Power Supply they take by 2.

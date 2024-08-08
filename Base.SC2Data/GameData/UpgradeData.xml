@@ -216,12 +216,11 @@
     </CUpgrade>
     <CUpgrade id="AdvancedConstruction24222">
         <Flags index="UpgradeCheat" value="0"/>
-        <EffectArray Operation="Subtract" Reference="Abil,QuickMutator222225,Cost[0].Cooldown.TimeUse" Value="10.000000"/>
-        <EffectArray Operation="Subtract" Reference="Abil,QuickMutator22222522,Cost[0].Cooldown.TimeUse" Value="10.000000"/>
-        <EffectArray Operation="Subtract" Reference="Abil,QuickMutator2222252,Cost[0].Cooldown.TimeUse" Value="10.000000"/>
-        <EffectArray Operation="Subtract" Reference="Abil,QuickMutator222225222,Cost[0].Cooldown.TimeUse" Value="10.000000"/>
-        <EffectArray Operation="Subtract" Reference="Abil,QuickMutator2222252222,Cost[0].Cooldown.TimeUse" Value="10.000000"/>
-        <EffectArray Operation="Subtract" Reference="Abil,QuickMutator22222522222,Cost[0].Cooldown.TimeUse" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,ManufactureParts,InfoArray[Specialize1].Time" Value="20.000000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,ManufactureParts,InfoArray[Specialize2].Time" Value="20.000000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,ManufactureParts,InfoArray[Specialize3].Time" Value="20.000000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,ManufactureParts,InfoArray[Specialize4].Time" Value="20.000000"/>
+        <EffectArray Operation="Subtract" Reference="Abil,ManufactureParts,InfoArray[Specialize5].Time" Value="20.000000"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="AdvancedConstruction"/>
     </CUpgrade>
