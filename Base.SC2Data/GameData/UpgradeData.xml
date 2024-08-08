@@ -774,7 +774,7 @@
         <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.StateFlags[SuppressDetection]" Value="0"/>
         <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.ModifyFlags[DisableWeapons]" Value="0"/>
         <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.AbilClassDisableArray[CAbilAttack]" Value="0"/>
-        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.TimeScale" Value="2"/>
+        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.TimeScale" Value="0.5"/>
         <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.AbilClassDisableArray[CAbilEffectInstant]" Value="0"/>
         <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.AbilClassDisableArray[CAbilEffectTarget]" Value="0"/>
         <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.BehaviorLinkDisableArray[0]" Value="HighEnergyRegeneration4"/>
