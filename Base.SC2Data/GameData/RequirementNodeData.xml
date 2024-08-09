@@ -4271,7 +4271,6 @@
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitOvermind2QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="Overmind2" State="QueuedOrBetter"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitOverseer6QueuedOrBetterAtUnit">
@@ -5263,14 +5262,6 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="AdvancedConstruction24223223" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
-    <CRequirementCountUpgrade id="CountUpgradeAdvancedConstruction2422322CompleteOnly">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="AdvancedConstruction2422322" State="CompleteOnly"/>
-    </CRequirementCountUpgrade>
-    <CRequirementCountUpgrade id="CountUpgradeAdvancedConstruction2422322QueuedOrBetter">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="AdvancedConstruction2422322" State="QueuedOrBetter"/>
-    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeAdvancedConstruction242232CompleteOnly3006841575">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="AdvancedConstruction242232" State="CompleteOnly"/>
@@ -5850,6 +5841,16 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="DAS" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeEmergencyWeaponCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="EmergencyWeapon" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeEmergencyWeaponQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="EmergencyWeapon" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeEvolveGroovedSpines3QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="EvolveGroovedSpines3" State="QueuedOrBetter"/>
@@ -5884,7 +5885,6 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeIndustrialAutomatonsCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="IndustrialAutomatons" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeIndustrialAutomatonsQueuedOrBetter">
@@ -16225,9 +16225,6 @@
     <CRequirementNot id="NotCountUpgradeAdvancedConstruction24223223QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeAdvancedConstruction24223223QueuedOrBetter"/>
     </CRequirementNot>
-    <CRequirementNot id="NotCountUpgradeAdvancedConstruction2422322QueuedOrBetter">
-        <OperandArray index="0" value="CountUpgradeAdvancedConstruction2422322QueuedOrBetter"/>
-    </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeAdvancedConstruction242232QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeAdvancedConstruction242232QueuedOrBetter"/>
     </CRequirementNot>
@@ -16464,6 +16461,14 @@
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeCorruptedPlagueSpeedDebuffQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeCorruptedPlagueSpeedDebuffQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeEmergencyWeaponCompleteOnly">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeEmergencyWeaponCompleteOnly"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeEmergencyWeaponQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeEmergencyWeaponQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeEvolveGroovedSpines3QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeEvolveGroovedSpines3QueuedOrBetter"/>

@@ -718,9 +718,9 @@
         <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification>
-            <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
+            <BehaviorLinkDisableArray value="NoWeapon"/>
             <WeaponArray Link="CorrosiveCleanser"/>
-            <WeaponDisableArray value="H3ScrapCannon"/>
+            <WeaponDisableArray value="H4ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -741,9 +741,9 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <InitialEffect value="AlexStoneBlast224"/>
         <Modification>
-            <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
+            <BehaviorLinkDisableArray value="NoWeapon"/>
             <WeaponArray Link="PsionicShockwave422"/>
-            <WeaponDisableArray value="H3ScrapCannon"/>
+            <WeaponDisableArray value="H4ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -763,9 +763,9 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <InitialEffect value="AlexStoneBlast224"/>
         <Modification>
-            <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
+            <BehaviorLinkDisableArray value="NoWeapon"/>
             <WeaponArray Link="MengskMarine32"/>
-            <WeaponDisableArray value="H3ScrapCannon"/>
+            <WeaponDisableArray value="H4ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -785,9 +785,9 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <InitialEffect value="AlexStoneBlast224"/>
         <Modification>
-            <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
+            <BehaviorLinkDisableArray value="NoWeapon"/>
             <WeaponArray Link="GuassRifle523"/>
-            <WeaponDisableArray value="H3ScrapCannon"/>
+            <WeaponDisableArray value="H4ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -797,24 +797,20 @@
         </DamageResponse>
         <RemoveValidatorArray value="IsTimeStopped282223"/>
     </CBehaviorBuff>
-    <CBehaviorBuff id="AntamoAirAll103222222">
+    <CBehaviorBuff id="NoWeapon">
         <Alignment value="Negative"/>
-        <Cost>
-            <Charge Link="Behavior/AntamoAirAll"/>
-            <Cooldown Link="Behavior/AntamoAirAll"/>
-        </Cost>
         <BehaviorFlags index="Permanent" value="1"/>
         <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <Requirements value="NoEmergencyWeapon"/>
         <Modification>
-            <WeaponArray/>
+            <WeaponDisableArray value="H1ScrapCannon"/>
+            <WeaponDisableArray value="H3ScrapCannon"/>
+            <WeaponDisableArray value="H4ScrapCannon"/>
+            <WeaponDisableArray value="H5ScrapCannon"/>
+            <WeaponDisableArray value="H6ScrapCannon"/>
+            <WeaponDisableArray value="H66ScrapCannon"/>
         </Modification>
-        <DamageResponse>
-            <Cost>
-                <Charge Link="Behavior/AntamoAirAll"/>
-                <Cooldown Link="Behavior/AntamoAirAll"/>
-            </Cost>
-        </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="AntamoAirAll10322223">
         <Cost>
@@ -826,9 +822,9 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <InitialEffect value="AlexStoneBlast224"/>
         <Modification>
-            <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
+            <BehaviorLinkDisableArray value="NoWeapon"/>
             <WeaponArray Link="DutchTurretFlameThrower22"/>
-            <WeaponDisableArray value="H3ScrapCannon"/>
+            <WeaponDisableArray value="H4ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -856,7 +852,7 @@
         <Modification>
             <StateFlags index="Uncommandable" value="1"/>
             <VitalRegenArray index="Energy" value="-2"/>
-            <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
+            <BehaviorLinkDisableArray value="NoWeapon"/>
             <WeaponArray/>
         </Modification>
         <DamageResponse Handled="BlackhammerAddHealingWAve52325">
@@ -879,7 +875,7 @@
         <Duration value="10"/>
         <Modification>
             <StateFlags index="Uncommandable" value="1"/>
-            <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
+            <BehaviorLinkDisableArray value="NoWeapon"/>
             <WeaponArray Link="MengskMarine32"/>
         </Modification>
         <DamageResponse>
@@ -901,7 +897,7 @@
         <Duration value="10"/>
         <Modification>
             <StateFlags index="Uncommandable" value="1"/>
-            <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
+            <BehaviorLinkDisableArray value="NoWeapon"/>
             <WeaponArray Link="MengskMarine32"/>
         </Modification>
         <DamageResponse>
@@ -931,7 +927,7 @@
             <VitalRegenArray index="Energy" value="-5"/>
             <BehaviorLinkDisableArray value="15xUnitSpeed33"/>
             <BehaviorLinkDisableArray value="AntamoAirAll10322224"/>
-            <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
+            <BehaviorLinkDisableArray value="NoWeapon"/>
             <WeaponArray Link="MengskMarine32"/>
             <WeaponEnableArray value="ThrowMolotov8"/>
         </Modification>
@@ -956,9 +952,9 @@
             <AbilLinkDisableArray value="XenWarrior62232233543"/>
             <AbilLinkDisableArray value="XenWarrior62232233542"/>
             <AbilLinkDisableArray value="XenWarrior6223223354"/>
-            <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
+            <BehaviorLinkDisableArray value="NoWeapon"/>
             <WeaponArray Link="MengskMarine322"/>
-            <WeaponDisableArray value="H3ScrapCannon"/>
+            <WeaponDisableArray value="H4ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -981,9 +977,9 @@
             <AbilLinkDisableArray value="XenWarrior62232233543"/>
             <AbilLinkDisableArray value="XenWarrior62232233542"/>
             <AbilLinkDisableArray value="XenWarrior6223223354"/>
-            <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
+            <BehaviorLinkDisableArray value="NoWeapon"/>
             <WeaponArray Link="C10CanisterRifle11"/>
-            <WeaponDisableArray value="H3ScrapCannon"/>
+            <WeaponDisableArray value="H4ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -1006,9 +1002,9 @@
             <AbilLinkDisableArray value="XenWarrior62232233543"/>
             <AbilLinkDisableArray value="XenWarrior62232233542"/>
             <AbilLinkDisableArray value="XenWarrior6223223354"/>
-            <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
+            <BehaviorLinkDisableArray value="NoWeapon"/>
             <WeaponArray Link="C10CanisterRifle11"/>
-            <WeaponDisableArray value="H3ScrapCannon"/>
+            <WeaponDisableArray value="H4ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -1111,9 +1107,9 @@
             <AbilLinkDisableArray value="XenWarrior62232233543"/>
             <AbilLinkDisableArray value="XenWarrior62232233542"/>
             <AbilLinkDisableArray value="XenWarrior6223223354"/>
-            <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
+            <BehaviorLinkDisableArray value="NoWeapon"/>
             <WeaponArray Link="P38ScytheGuassPistol3"/>
-            <WeaponDisableArray value="H3ScrapCannon"/>
+            <WeaponDisableArray value="H4ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -1136,9 +1132,9 @@
             <AbilLinkDisableArray value="XenWarrior62232233543"/>
             <AbilLinkDisableArray value="XenWarrior62232233542"/>
             <AbilLinkDisableArray value="XenWarrior6223223354"/>
-            <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
+            <BehaviorLinkDisableArray value="NoWeapon"/>
             <WeaponArray Link="Diamondback63"/>
-            <WeaponDisableArray value="H3ScrapCannon"/>
+            <WeaponDisableArray value="H4ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -1161,9 +1157,9 @@
             <AbilLinkDisableArray value="XenWarrior62232233543"/>
             <AbilLinkDisableArray value="XenWarrior62232233542"/>
             <AbilLinkDisableArray value="XenWarrior6223223354"/>
-            <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
+            <BehaviorLinkDisableArray value="NoWeapon"/>
             <WeaponArray Link="MengskMarine3222"/>
-            <WeaponDisableArray value="H3ScrapCannon"/>
+            <WeaponDisableArray value="H4ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -1187,7 +1183,7 @@
             <AbilLinkDisableArray value="XenWarrior62232233542"/>
             <AbilLinkDisableArray value="XenWarrior6223223354"/>
             <AbilLinkDisableArray value="XenWarrior62232233543"/>
-            <WeaponDisableArray value="H3ScrapCannon"/>
+            <WeaponDisableArray value="H4ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -1211,7 +1207,7 @@
             <AbilLinkDisableArray value="XenWarrior62232233542"/>
             <AbilLinkDisableArray value="XenWarrior6223223354222222"/>
             <AbilLinkDisableArray value="XenWarrior6223223354"/>
-            <WeaponDisableArray value="H3ScrapCannon"/>
+            <WeaponDisableArray value="H4ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -1235,7 +1231,7 @@
             <AbilLinkDisableArray value="XenWarrior62232233542"/>
             <AbilLinkDisableArray value="XenWarrior62232233542222222"/>
             <AbilLinkDisableArray value="XenWarrior6223223354"/>
-            <WeaponDisableArray value="H3ScrapCannon"/>
+            <WeaponDisableArray value="H4ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -1259,7 +1255,7 @@
             <AbilLinkDisableArray value="XenWarrior62232233542"/>
             <AbilLinkDisableArray value="XenWarrior62232233542222222"/>
             <AbilLinkDisableArray value="XenWarrior6223223354"/>
-            <WeaponDisableArray value="H3ScrapCannon"/>
+            <WeaponDisableArray value="H4ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -1282,7 +1278,7 @@
             <AbilLinkDisableArray value="XenWarrior62232233543"/>
             <AbilLinkDisableArray value="XenWarrior62232233542"/>
             <AbilLinkDisableArray value="XenWarrior6223223354"/>
-            <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
+            <BehaviorLinkDisableArray value="NoWeapon"/>
             <WeaponArray Link="PunisherGrenades52"/>
             <WeaponDisableArray value="LongboltMissile72"/>
         </Modification>
@@ -1303,9 +1299,9 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <InitialEffect value="AlexStoneBlast224"/>
         <Modification>
-            <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
+            <BehaviorLinkDisableArray value="NoWeapon"/>
             <WeaponArray Link="Vulture22"/>
-            <WeaponDisableArray value="H3ScrapCannon"/>
+            <WeaponDisableArray value="H4ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -4124,7 +4120,7 @@
             <DamageDealtFraction index="Splash" value="0.35"/>
             <DamageDealtFraction index="NoProc" value="0.35"/>
             <DamageDealtAttributeMultiplier index="Armored" value="0.5"/>
-            <WeaponDisableArray value="H3ScrapCannon"/>
+            <WeaponDisableArray value="H4ScrapCannon"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -6129,10 +6125,6 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Requirements value="HavePsionicHeart2243232223242322263222"/>
-        <Modification>
-            <BehaviorLinkDisableArray value="AntamoAirAll103222222"/>
-            <WeaponArray Link="H3ScrapCannon"/>
-        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="AntamoAirAll20323">
         <Cost>

@@ -31001,7 +31001,7 @@
         <EditorCategories value="Race:Protoss"/>
         <HotkeyAlias value="VoidColossusFireBeam"/>
     </CButton>
-    <CButton id="VoidColossusFireBeam2633322">
+    <CButton id="JumperServos">
         <Icon value="Assets\Textures\btn-unit-terran-tychusreaper-holo.dds"/>
         <EditorCategories value="Race:Protoss"/>
         <HotkeyAlias value="VoidColossusFireBeam"/>

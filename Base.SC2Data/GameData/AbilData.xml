@@ -26194,7 +26194,7 @@
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
             <Button DefaultButtonFace="SetUpPsiwaveWiring" Requirements="LearnBlink2122424333233832"/>
         </InfoArray>
-        <InfoArray index="Research14" Time="225" Upgrade="AdvancedConstruction2422322">
+        <InfoArray index="Research14" Time="225" Upgrade="EmergencyWeapon">
             <Resource index="Minerals" value="125"/>
             <Resource index="Vespene" value="125"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
@@ -26401,7 +26401,7 @@
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
             <Button DefaultButtonFace="SetUpPsiwaveWiring" Requirements="LearnBlink2122424333233832"/>
         </InfoArray>
-        <InfoArray index="Research14" Time="225" Upgrade="AdvancedConstruction2422322">
+        <InfoArray index="Research14" Time="225" Upgrade="EmergencyWeapon">
             <Resource index="Minerals" value="125"/>
             <Resource index="Vespene" value="125"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>

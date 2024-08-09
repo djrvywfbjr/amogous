@@ -2954,7 +2954,7 @@
         <NodeArray index="Use" Link="CountUpgradeAdvancedConstruction2332CompleteOnly834541386"/>
     </CRequirement>
     <CRequirement id="HavePsionicHeart2243232223242322263222">
-        <NodeArray index="Use" Link="CountUpgradeAdvancedConstruction2422322CompleteOnly"/>
+        <NodeArray index="Use" Link="CountUpgradeEmergencyWeaponCompleteOnly"/>
     </CRequirement>
     <CRequirement id="HavePsionicHeart2243232223242322263223">
         <NodeArray index="Use" Link="CountUpgradeAdvancedConstruction2423CompleteOnly4191044114"/>
@@ -4390,7 +4390,7 @@
     </CRequirement>
     <CRequirement id="LearnBlink21224243332338223222">
         <EditorCategories value="Race:Protoss,TechType:Ability"/>
-        <NodeArray index="Show" Link="NotCountUpgradeAdvancedConstruction2422322QueuedOrBetter"/>
+        <NodeArray index="Show" Link="NotCountUpgradeEmergencyWeaponQueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="LearnBlink212242433323382232222">
         <EditorCategories value="Race:Protoss,TechType:Ability"/>
@@ -6676,6 +6676,9 @@
         <EditorCategories value="Race:Zerg"/>
         <NodeArray index="Use" Link="CountBehaviorShieldingEngine10222CompleteOnly3024621640"/>
         <NodeArray index="Show" Link="NotOrCountUpgradeUmojanBasicUnitUpgrade2233532222222422232233QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade223353222222242223223322QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade22335322222224222323689166607"/>
+    </CRequirement>
+    <CRequirement id="NoEmergencyWeapon">
+        <NodeArray index="Use" Link="NotCountUpgradeEmergencyWeaponCompleteOnly"/>
     </CRequirement>
     <CRequirement id="OutcastCollectorMax5">
         <NodeArray index="Show" Link="EqCountUnitBadgerQueuedOrBetter5"/>
