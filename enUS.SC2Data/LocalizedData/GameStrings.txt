@@ -2361,6 +2361,12 @@ Abil/Name/WarpPrismTransport3=Ancient Relic Load
 Abil/Name/WarpPrismTransport4=Forced Transport
 Abil/Name/WarpPrismTransport5=Load-Unload
 Abil/Name/WarpPrismTransport6=Load-Unload (Shuttle)
+Abil/Name/Wep1DualSecurityPistols=Wep1 Dual Security Pistols
+Abil/Name/Wep1ShellstormChaingun=Wep1 Shellstorm Chaingun
+Abil/Name/Wep2DoubleSurgicalLaser=Wep2 Double Surgical Laser
+Abil/Name/Wep2SharpnelRifle=Wep2 Sharpnel Rifle
+Abil/Name/Wep3SmartFireDartGuns=Wep3 Smart-Fire Dart Guns
+Abil/Name/Wep3WarheadLauncher=Wep3 Warhead Launcher
 Abil/Name/WidowMineAttack2=Tornade Missiles
 Abil/Name/WidowMineAttack22=EtS-55 Missiles
 Abil/Name/WidowMineAttack222=AtA Missile Battery
@@ -2573,17 +2579,11 @@ Abil/Name/XenWarrior62232233523=Aircraft 2 Tactical Cloak
 Abil/Name/XenWarrior622322335232=Aircraft 2 Armored Attachement
 Abil/Name/XenWarrior6223223352322=Aircraft 2 Phobos Weapon System
 Abil/Name/XenWarrior6223223353=Aircraft All Radar
-Abil/Name/XenWarrior6223223354=Wep2 Sharpnel Rifle
-Abil/Name/XenWarrior62232233542=Wep1 Shellstorm Chaingun
-Abil/Name/XenWarrior622322335422=Wep1 Dual Security Pistols
-Abil/Name/XenWarrior6223223354222=Wep2 Double Surgical Laser
-Abil/Name/XenWarrior62232233542222=Wep3 Smart-Fire Dart Guns
 Abil/Name/XenWarrior622322335422222=Ab1 Breaching Charge
 Abil/Name/XenWarrior6223223354222222=Ab2 Industrial Molotov
 Abil/Name/XenWarrior62232233542222222=Ab3 Cloaking Mantle
 Abil/Name/XenWarrior622322335422222222=Ab3 Cloaking Mantle
 Abil/Name/XenWarrior6223223354223=Wep1 Shock Cannons
-Abil/Name/XenWarrior62232233543=Wep3 Warhead Launcher
 Abil/Name/XenWarrior622322335432=Ab1 Adrenaline Injector
 Abil/Name/XenWarrior6223223354322=Ab2 Razor Grenade
 Abil/Name/XenWarrior62232233543222=Ab3 Dampening Cloud
@@ -3042,16 +3042,10 @@ Behavior/Name/AntamoAirAll10322222=Particle Rifle is on
 Behavior/Name/AntamoAirAll10322223=T-80 Flamethrower is on
 Behavior/Name/AntamoAirAll10322224=On Strike
 Behavior/Name/AntamoAirAll103222243=On Revolution
-Behavior/Name/AntamoAirAll10322225=(Wep) Shellstorm Chaingun
-Behavior/Name/AntamoAirAll103222252=(Wep) Shrapnel Rifle
-Behavior/Name/AntamoAirAll1032222522=(Wep) Warhead Launcher
 Behavior/Name/AntamoAirAll103222253=(Ab1) Razor Grenade
 Behavior/Name/AntamoAirAll1032222532=(Ab1) Adrenaline Injection
 Behavior/Name/AntamoAirAll1032222533=(Ab1) Dampening Cloud
 Behavior/Name/AntamoAirAll10322225332=(Ab1) Dampening Cloud
-Behavior/Name/AntamoAirAll103222254=(Wep) Dual Security Pistols
-Behavior/Name/AntamoAirAll1032222542=(Wep) Double Surgical Laser
-Behavior/Name/AntamoAirAll10322225422=(Wep) Smart-Fire Dart Guns
 Behavior/Name/AntamoAirAll103222254222=(Ab) Breaching Charge
 Behavior/Name/AntamoAirAll1032222542222=(Ab) Industrial Molotov
 Behavior/Name/AntamoAirAll10322225422222=(Ab) Cloaking Mantle
@@ -4188,6 +4182,12 @@ Behavior/Name/VoidTendrilDamageFieldDebuff2=Smokin' Field
 Behavior/Name/VoodooShield2=Proton Shield
 Behavior/Name/VorazunRegenShield2=Veil of Shadows
 Behavior/Name/VortexBehavior=Vortex Copy Copy
+Behavior/Name/WepDoubleSurgicalLaser=(Wep) Double Surgical Laser
+Behavior/Name/WepDualSecurityPistols=(Wep) Dual Security Pistols
+Behavior/Name/WepShellstormChaingun=(Wep) Shellstorm Chaingun
+Behavior/Name/WepShrapnelRifle=(Wep) Shrapnel Rifle
+Behavior/Name/WepSmartFireDartGuns=(Wep) Smart-Fire Dart Guns
+Behavior/Name/WepWarheadLauncher=(Wep) Warhead Launcher
 Behavior/Name/WildMutation2=Roundup
 Behavior/Name/WildMutation22=Negotiated With Food
 Behavior/Name/WildMutation222=Negotiated With Resources
@@ -7246,6 +7246,11 @@ Button/Name/EntropicBlast222=Ultra Concussion
 Button/Name/EntropicBlast223=Weak Concussion
 Button/Name/EntropicBlast23=Throw Ritual Knife
 Button/Name/EntropicBlast3=Entropic Blast
+Button/Name/EquipDoubleSurgicalLaser=Equip Double Surgical Laser
+Button/Name/EquipShellstormChaingun=Equip Shellstorm Chaingun
+Button/Name/EquipShrapnelRifle=Equip Shrapnel Rifle
+Button/Name/EquipSmartFireDartGuns=Equip Smart-Fire Dart Guns
+Button/Name/EquipWarheadLauncher=Equip Warhead Launcher
 Button/Name/EvolutionChamber2=Mutate into Evolution Chamber Copy
 Button/Name/EvolutionChamber3=Mutate into Evolution Chamber Copy 2
 Button/Name/EvolutionChamber4=Construct Research Chamber
@@ -11606,12 +11611,8 @@ Button/Name/Zealot2262232233523=Cloaking Technology
 Button/Name/Zealot22622322335232=Vanadium Plating
 Button/Name/Zealot226223223352322=Phobos Weapon System
 Button/Name/Zealot226223223353=Apollo Radar
-Button/Name/Zealot226223223354=Equip Shrapnel Rifle
-Button/Name/Zealot2262232233542=Equip Shellstorm Chaingun
 Button/Name/Zealot22622322335422=Shellstorm Chaingun
 Button/Name/Zealot22622322335423=Equip Dual Security Pistols
-Button/Name/Zealot226223223354232=Equip Double Surgical Laser
-Button/Name/Zealot2262232233542322=Equip Smart-Fire Dart Guns
 Button/Name/Zealot22622322335423222=Equip Breaching Charge
 Button/Name/Zealot226223223354232222=Equip Industrial Molotov
 Button/Name/Zealot2262232233542322222=Equip Bulwark Response System
@@ -11619,7 +11620,6 @@ Button/Name/Zealot22622322335423223=Smart-Fire Dart Guns
 Button/Name/Zealot2262232233542323=Double Surgical Laser
 Button/Name/Zealot226223223354233=Dual Security Pistols
 Button/Name/Zealot226223223354234=Equip Ultracharged Grenades
-Button/Name/Zealot2262232233543=Equip Warhead Launcher
 Button/Name/Zealot22622322335432=Equip Adrenaline Injector
 Button/Name/Zealot226223223354322=Equip Razor Grenades
 Button/Name/Zealot2262232233543222=Equip Dampening Cloud
@@ -14235,6 +14235,11 @@ Button/Tooltip/EntropicBlast222=Fire a powerful projectile of pulsing plasma, de
 Button/Tooltip/EntropicBlast223=Fire a projectile of pulsing plasma, dealing 15 damage to enemy units in the area.
 Button/Tooltip/EntropicBlast23=Launch a knife with special explosive chemicals in it, dealing 75 damage to units in a really small area.
 Button/Tooltip/EntropicBlast3=Channels a missile at the target location. After 4 seconds, deals 225 damage to all enemy units in the area.
+Button/Tooltip/EquipDoubleSurgicalLaser=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(3)</c> Fusion Cores<n/><n/>Equips the Outrider armor with 2 laser pistols with good range, rather long cooldown and Increased damage against Armored targets.<n/><n/>Weaker versions of these devices are used for actual surgeries. Specific plans were developed to fire them from sidearms at much greater ranges with much greater effect.
+Button/Tooltip/EquipShellstormChaingun=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Gunpowder Mixer<n/><c val="00FF00">(2)</c> Shelling Fabricators<n/><n/>Equips the Serviceman armor with a fast-firing chaingun that hits multiple enemies in an area around main target, but target armor reduces damage of the weapon twice as much as usual.<n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
+Button/Tooltip/EquipShrapnelRifle=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(2)</c> Gunpowder Mixers<n/><c val="00FF00">(1)</c> Shelling Fabricator<n/><n/>Equips the Serviceman armor with a powerful long-ranged rifle, that deals great damage and is even stronger against Armored targets, but cannot fire too often.<n/><n/>This powerful rifle was originally designed for hunting. Most creatures' meat is made inedible due to explosive shrapnel blasts created by these rifles.
+Button/Tooltip/EquipSmartFireDartGuns=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Chemical Station<n/><c val="00FF00">(1)</c> Fusion Core<n/><c val="00FF00">(1)</c> Recycler Tank<n/><n/>Equips the Outrider armor with 2 pistols that attack different enemies each attack. The pistols mark targets for increased damage and reveal them, while also making them blind.<n/><n/>These weapons function by firing tracker darts that inject certain vision-weakening drugs from advanced weapons that can calculate the trajectory of the projectiles.
+Button/Tooltip/EquipWarheadLauncher=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Gunpowder Mixer<n/><c val="00FF00">(1)</c> Recycler Tank<n/><c val="00FF00">(1)</c> Shelling Fabricator<n/><n/>Equips the Serviceman armor with a missile launcher that deals damage in a large area and increased damage to light units, but has an extremely long reload time.<n/><n/>This military rocket launcher design was never meant for the emergency colonization, but so little progress has been done on Psiwave Generators that Dominion authorities added them as a last-minute addition to finish clearing unfinished Construction Site shafts.
 Button/Tooltip/EternalOne=Highlord of the Tal'darim. Powerful Psionic Warrior.
 Button/Tooltip/EvolutionChamber2=Contains upgrades for Zerg ground units.<n/><n/><c val="ffff8a">Enables:</c><n/>- Aberrations from Larvae with Lair or Hive
 Button/Tooltip/EvolutionChamber3=Contains upgrades for Zerg ground units.<n/><n/><c val="ffff8a">Enables:</c><n/>- Aberrations from Larvae with Lair or Hive
@@ -19627,12 +19632,8 @@ Button/Tooltip/Zealot2262232233523=Equip this unit with cloaking technology and 
 Button/Tooltip/Zealot22622322335232=Equips the transport with a few tons of Vanadium Plating. Gain 150 life and 2 armor.
 Button/Tooltip/Zealot226223223352322=Equips this unit with Phobos targeting system, increasing range by 2 and damage by 8.
 Button/Tooltip/Zealot226223223353=Gain Apollo Radar, allowing detection of cloaked enemies.
-Button/Tooltip/Zealot226223223354=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(2)</c> Gunpowder Mixers<n/><c val="00FF00">(1)</c> Shelling Fabricator<n/><n/>Equips the Serviceman armor with a powerful long-ranged rifle, that deals great damage and is even stronger against Armored targets, but cannot fire too often.<n/><n/>This powerful rifle was originally designed for hunting. Most creatures' meat is made inedible due to explosive shrapnel blasts created by these rifles.
-Button/Tooltip/Zealot2262232233542=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Gunpowder Mixer<n/><c val="00FF00">(2)</c> Shelling Fabricators<n/><n/>Equips the Serviceman armor with a fast-firing chaingun that hits multiple enemies in an area around main target, but target armor reduces damage of the weapon twice as much as usual.<n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
 Button/Tooltip/Zealot22622322335422=Serviceman armor has a fast-firing chaingun that hits multiple enemies in an area around main target, but target armor reduces damage of the weapon twice as much as usual.<n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
 Button/Tooltip/Zealot22622322335423=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(3)</c> Gunpowder Mixers<n/><n/>Equips the Outrider armor with 2 pistols that deal double damage to light targets.<n/><n/>Rather than firing bullets, these pistols were designed to launch gunpowder that would only become dangerous and explosive after leaving the barrel of the gun.
-Button/Tooltip/Zealot226223223354232=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(3)</c> Fusion Cores<n/><n/>Equips the Outrider armor with 2 laser pistols with good range, rather long cooldown and Increased damage against Armored targets.<n/><n/>Weaker versions of these devices are used for actual surgeries. Specific plans were developed to fire them from sidearms at much greater ranges with much greater effect.
-Button/Tooltip/Zealot2262232233542322=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Chemical Station<n/><c val="00FF00">(1)</c> Fusion Core<n/><c val="00FF00">(1)</c> Recycler Tank<n/><n/>Equips the Outrider armor with 2 pistols that attack different enemies each attack. The pistols mark targets for increased damage and reveal them, while also making them blind.<n/><n/>These weapons function by firing tracker darts that inject certain vision-weakening drugs from advanced weapons that can calculate the trajectory of the projectiles.
 Button/Tooltip/Zealot22622322335423222=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(2)</c> Gunpowder Mixers<n/><c val="00FF00">(1)</c> Recycler Tank<n/><n/>Equips the Outrider armor with the ability to place charges on hostile structures. The charges explode in 11 seconds and deal devastating damage in an area.<n/><n/>In case the mechanisms for demolishing any structure weren't made in time, plans for anti-structure charges were developed.
 Button/Tooltip/Zealot226223223354232222=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(2)</c> Recycler Tanks<n/><c val="00FF00">(1)</c> Shelling Fabricator<n/><n/>Equips the Outrider armor with the ability to throw fire bombs that deal damage over time. Deals increased damage to light enemies.<n/><n/>The Industrial Alcohol was designed as cheap booze that could also be used as emergency fuel. It tasted like gasoline and powered generators as well as beer, but the design can still be used for makeshift molotov cocktails.
 Button/Tooltip/Zealot2262232233542322222=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Chemical Station<n/><c val="00FF00">(1)</c> Fusion Core<n/><c val="00FF00">(1)</c> Recycler Tanks<n/><n/>Equips the Titan Armor with a reactive armor hardener that provides 1 armor every time the unit takes damage. Stacks up to 5 times.<n/><n/>Designed to reduce the asteroid impacts of spaceships, the Bulwark Armor Hardener was initially considered unsuitable for infantry use due to the colossal power needs. The Titan suit's generator proved an effective power source, however.
@@ -19640,7 +19641,6 @@ Button/Tooltip/Zealot22622322335423223=The Outrider armor has 2 pistols that att
 Button/Tooltip/Zealot2262232233542323=The Outrider armor has 2 laser pistols with good range, rather long cooldown and Increased damage against Armored targets.<n/><n/>Weaker versions of these devices are used for actual surgeries. Specific plans were developed to fire them from sidearms at much greater ranges with much greater effect.
 Button/Tooltip/Zealot226223223354233=The Outrider armor has 2 pistols that deal double damage to light targets.<n/><n/>Rather than firing bullets, these pistols were designed to launch gunpowder that would only become dangerous and explosive after leaving the barrel of the gun.
 Button/Tooltip/Zealot226223223354234=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(3)</c> Gunpowder Mixers<n/><n/>Equips the Titan armor with Ultracharged Grenade launchers, increasing damage to unarmored and armored targets alike.<n/>Reusing the old world's technology may prove difficult, but adapting the existing grenade launchers to the Umojan Exterminator suit standard may be possible.
-Button/Tooltip/Zealot2262232233543=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Gunpowder Mixer<n/><c val="00FF00">(1)</c> Recycler Tank<n/><c val="00FF00">(1)</c> Shelling Fabricator<n/><n/>Equips the Serviceman armor with a missile launcher that deals damage in a large area and increased damage to light units, but has an extremely long reload time.<n/><n/>This military rocket launcher design was never meant for the emergency colonization, but so little progress has been done on Psiwave Generators that Dominion authorities added them as a last-minute addition to finish clearing unfinished Construction Site shafts.
 Button/Tooltip/Zealot22622322335432=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(2)</c> Chemical Stations<n/><c val="00FF00">(1)</c> Shelling Fabricator<n/><n/>Equips the Serviceman armor with the ability to perform an adrenaline injection, increasing attack speed and movement speed.<n/><n/>This device was designed to produce and inject user with a chemical compound to improve their combat ability. Unlike stimpacks, it deals no permanent physical harm.
 Button/Tooltip/Zealot226223223354322=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(2)</c> Gunpowder Mixers<n/><c val="00FF00">(1)</c> Recycler Tank<n/><n/>Equips the Serviceman armor with the ability to throw a powerful grenade that deals double damage to structures, but has a long cooldown.<n/><n/>These combat grenade plans were allegedly provided to colonies for additional means of protection. They rely on extreme amounts of gunpowder and recycled fuel to function, causing the actual grenade shell to be made by armor's built-in fabricators, which are a lot slower than manufactured ones.
 Button/Tooltip/Zealot2262232233543222=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Chemical Station<n/><c val="00FF00">(2)</c> Fusion Cores<n/><n/>Equips the Serviceman armor with the ability to create a cloud, that makes enemies unable to use energy, detect, cloak and slows them down by 50%.<n/><n/>The original plan for Psiwave Generator colonies was to remove the psionic capabilities of all of their inhabitants. If it couldn't be done, this gas would've been in a much lesser concentration while emergency psi-neutralization took effect.
@@ -21863,6 +21863,12 @@ Effect/Name/CorruptionLaunchMissile23=Corruption Copy
 Effect/Name/CorruptionLaunchMissile232=Corruption Copy
 Effect/Name/CorruptionLaunchMissile3=Corruption Copy 2
 Effect/Name/CorruptionLaunchMissile4=Corruption
+Effect/Name/CraftDoubleSurgicalLaser=Craft Double Surgical Laser
+Effect/Name/CraftDualSecurityPistols=Craft Dual Security Pistols
+Effect/Name/CraftShellstormChaingun=Craft Shellstorm Chaingun
+Effect/Name/CraftShrapnelRifle=Craft Shrapnel Rifle
+Effect/Name/CraftSmartFireDartGuns=Craft Smart Fire Dart Guns
+Effect/Name/CraftWarheadLauncher=Craft Warhead Launcher
 Effect/Name/CreatePukePuddle12=Create Puke Puddle4
 Effect/Name/CreatePukePuddle122=Create Puke Puddle6
 Effect/Name/CreatePukePuddle22=Create Puke Puddle5
@@ -26246,16 +26252,10 @@ Effect/Name/OracleVoidSiphonAddMinerals236522222222=Refugee Add Hope 9
 Effect/Name/OracleVoidSiphonAddMinerals2365222222222=Refugee Add Hope 10
 Effect/Name/OracleVoidSiphonAddMinerals23652222222222=Refugee Remove Hope 10
 Effect/Name/OracleVoidSiphonAddMinerals2365222222223=Refugee Remove Hope 9
-Effect/Name/OracleVoidSiphonAddMinerals23652222222232=Refugee Craft Remove 1 GM, 2 SF
-Effect/Name/OracleVoidSiphonAddMinerals236522222222322=Refugee Craft Remove 2GM, 1SF
-Effect/Name/OracleVoidSiphonAddMinerals2365222222223222=Refugee Craft Remove 1GM, 1SF, 1RT
 Effect/Name/OracleVoidSiphonAddMinerals23652222222232222=Refugee Craft Remove 2CS, 1SF
 Effect/Name/OracleVoidSiphonAddMinerals236522222222322222=Refugee Craft Remove 1CS, 2FC
 Effect/Name/OracleVoidSiphonAddMinerals2365222222223222222=Refugee Craft Remove 2GM, 1 RT
 Effect/Name/OracleVoidSiphonAddMinerals2365222222223222223=Refugee Craft Remove 1CS, 2FC
-Effect/Name/OracleVoidSiphonAddMinerals236522222222323=Refugee Craft Remove 3GM
-Effect/Name/OracleVoidSiphonAddMinerals2365222222223232=Refugee Craft Remove 3FC
-Effect/Name/OracleVoidSiphonAddMinerals23652222222232322=Refugee Craft Remove 1CS, 1FC, 1RT
 Effect/Name/OracleVoidSiphonAddMinerals236522222222323222=Refugee Craft Remove 2GM, 1RT
 Effect/Name/OracleVoidSiphonAddMinerals2365222222223232222=Refugee Craft Remove 2RT, 1SF
 Effect/Name/OracleVoidSiphonAddMinerals23652222222232322222=Refugee Craft Remove 1CS, 1FC, 1RT
@@ -28253,6 +28253,12 @@ Effect/Name/ReaperKD8KnockbackRB2=Reaper KD8 Knockback RB
 Effect/Name/RefineryMorph2=Refinery Morph
 Effect/Name/RefugeCannonDamage=Refuge Cannon Damage
 Effect/Name/RefugeCannonLM=Refuge Cannon LM
+Effect/Name/RefugeeCraftRemove1CS1FC1RT=Refugee Craft Remove 1CS, 1FC, 1RT
+Effect/Name/RefugeeCraftRemove1GM1SF1RT=Refugee Craft Remove 1GM, 1SF, 1RT
+Effect/Name/RefugeeCraftRemove1GM2SF=Refugee Craft Remove 1 GM, 2 SF
+Effect/Name/RefugeeCraftRemove2GM1SF=Refugee Craft Remove 2GM, 1SF
+Effect/Name/RefugeeCraftRemove3FC=Refugee Craft Remove 3FC
+Effect/Name/RefugeeCraftRemove3GM=Refugee Craft Remove 3GM
 Effect/Name/ReleaseInterceptors2=Release Interceptors2
 Effect/Name/ReleaseInterceptors3=Release Interceptors3
 Effect/Name/ReleaseInterceptorsApplyTimedLife2=Release Interceptors Apply Timed Life2
@@ -31118,17 +31124,11 @@ Effect/Name/XenWarrior6332233523=Xen Warrior Copy 58
 Effect/Name/XenWarrior63322335232=Xen Warrior Copy 59
 Effect/Name/XenWarrior633223352322=Xen Warrior Copy 60
 Effect/Name/XenWarrior633223353=Xen Warrior Copy 55
-Effect/Name/XenWarrior633223354=Xen Warrior Copy 55
-Effect/Name/XenWarrior6332233542=Xen Warrior Copy 55
-Effect/Name/XenWarrior63322335422=Xen Warrior Copy 55
-Effect/Name/XenWarrior633223354222=Xen Warrior Copy 55
-Effect/Name/XenWarrior6332233542222=Xen Warrior Copy 55
 Effect/Name/XenWarrior63322335422222=Xen Warrior Copy 55
 Effect/Name/XenWarrior633223354222222=Xen Warrior Copy 55
 Effect/Name/XenWarrior6332233542222222=Xen Warrior Copy 55
 Effect/Name/XenWarrior63322335422222222=Xen Warrior Copy 55
 Effect/Name/XenWarrior633223354223=Xen Warrior Copy 55
-Effect/Name/XenWarrior6332233543=Xen Warrior Copy 55
 Effect/Name/XenWarrior63322335432=Xen Warrior Copy 55
 Effect/Name/XenWarrior633223354322=Xen Warrior Copy 55
 Effect/Name/XenWarrior6332233543222=Xen Warrior Copy 55

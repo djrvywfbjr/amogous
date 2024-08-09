@@ -1928,13 +1928,13 @@
         <NodeArray index="Show" Link="CountBehaviorXenWarrior24233CompleteOnlyAtUnit"/>
     </CRequirement>
     <CRequirement id="HaveHoloCore232222222222">
-        <NodeArray index="Show" Link="CountBehaviorAntamoAirAll103222252CompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountBehaviorWepShrapnelRifleCompleteOnlyAtUnit"/>
     </CRequirement>
     <CRequirement id="HaveHoloCore2322222222222">
-        <NodeArray index="Show" Link="CountBehaviorAntamoAirAll10322225CompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountBehaviorWepShellstormChaingunCompleteOnlyAtUnit"/>
     </CRequirement>
     <CRequirement id="HaveHoloCore23222222222222">
-        <NodeArray index="Show" Link="CountBehaviorAntamoAirAll1032222522CompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountBehaviorWepWarheadLauncherCompleteOnlyAtUnit"/>
     </CRequirement>
     <CRequirement id="HaveHoloCore232222222222222">
         <NodeArray index="Show" Link="CountBehaviorAntamoAirAll1032222532CompleteOnlyAtUnit"/>
@@ -1946,13 +1946,13 @@
         <NodeArray index="Show" Link="CountBehaviorAntamoAirAll103222253CompleteOnlyAtUnit"/>
     </CRequirement>
     <CRequirement id="HaveHoloCore2322222222222223">
-        <NodeArray index="Show" Link="CountBehaviorAntamoAirAll1032222542CompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountBehaviorWepDoubleSurgicalLaserCompleteOnlyAtUnit"/>
     </CRequirement>
     <CRequirement id="HaveHoloCore23222222222222232">
-        <NodeArray index="Show" Link="CountBehaviorAntamoAirAll103222254CompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountBehaviorWepDualSecurityPistolsCompleteOnlyAtUnit"/>
     </CRequirement>
     <CRequirement id="HaveHoloCore232222222222222322">
-        <NodeArray index="Show" Link="CountBehaviorAntamoAirAll10322225422CompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountBehaviorWepSmartFireDartGunsCompleteOnlyAtUnit"/>
     </CRequirement>
     <CRequirement id="HaveHoloCore2322222222222223222">
         <NodeArray index="Show" Link="CountBehaviorAntamoAirAll1032222542222CompleteOnlyAtUnit"/>

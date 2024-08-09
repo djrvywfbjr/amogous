@@ -34817,13 +34817,13 @@
         <EditorCategories value="Race:Protoss"/>
         <Universal value="1"/>
     </CButton>
-    <CButton id="Zealot226223223354">
+    <CButton id="EquipShrapnelRifle">
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-snipetripletap.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
         <EditorCategories value="Race:Protoss"/>
         <Universal value="1"/>
     </CButton>
-    <CButton id="Zealot2262232233542">
+    <CButton id="EquipShellstormChaingun">
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-shotgunaoe.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
         <EditorCategories value="Race:Protoss"/>
@@ -34833,7 +34833,7 @@
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-shotgunaoe.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
         <EditorCategories value="Race:Protoss"/>
-        <HotkeyAlias value="Zealot2262232233542"/>
+        <HotkeyAlias value="EquipShellstormChaingun"/>
         <Universal value="1"/>
     </CButton>
     <CButton id="Zealot22622322335423">
@@ -34842,13 +34842,13 @@
         <EditorCategories value="Race:Protoss"/>
         <Universal value="1"/>
     </CButton>
-    <CButton id="Zealot226223223354232">
+    <CButton id="EquipDoubleSurgicalLaser">
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel1.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
         <EditorCategories value="Race:Protoss"/>
         <Universal value="1"/>
     </CButton>
-    <CButton id="Zealot2262232233542322">
+    <CButton id="EquipSmartFireDartGuns">
         <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel3.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
         <EditorCategories value="Race:Protoss"/>
@@ -34876,14 +34876,14 @@
         <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel3.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
         <EditorCategories value="Race:Protoss"/>
-        <HotkeyAlias value="Zealot2262232233542322"/>
+        <HotkeyAlias value="EquipSmartFireDartGuns"/>
         <Universal value="1"/>
     </CButton>
     <CButton id="Zealot2262232233542323">
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel1.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
         <EditorCategories value="Race:Protoss"/>
-        <HotkeyAlias value="Zealot226223223354232"/>
+        <HotkeyAlias value="EquipDoubleSurgicalLaser"/>
         <Universal value="1"/>
     </CButton>
     <CButton id="Zealot226223223354233">
@@ -34899,7 +34899,7 @@
         <EditorCategories value="Race:Protoss"/>
         <Universal value="1"/>
     </CButton>
-    <CButton id="Zealot2262232233543">
+    <CButton id="EquipWarheadLauncher">
         <Icon value="Assets\Textures\btn-ability-terran-surfacetoairtargeting.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
         <EditorCategories value="Race:Protoss"/>
@@ -34939,14 +34939,14 @@
         <Icon value="Assets\Textures\btn-ability-terran-surfacetoairtargeting.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
         <EditorCategories value="Race:Protoss"/>
-        <HotkeyAlias value="Zealot2262232233543"/>
+        <HotkeyAlias value="EquipWarheadLauncher"/>
         <Universal value="1"/>
     </CButton>
     <CButton id="Zealot2262232233544">
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-snipetripletap.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
         <EditorCategories value="Race:Protoss"/>
-        <HotkeyAlias value="Zealot226223223354"/>
+        <HotkeyAlias value="EquipShrapnelRifle"/>
         <Universal value="1"/>
     </CButton>
     <CButton id="Zealot2262233">

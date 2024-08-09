@@ -1344,14 +1344,6 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="AggressiveMutation5" State="CompleteOnlyAtUnit"/>
     </CRequirementCountBehavior>
-    <CRequirementCountBehavior id="CountBehaviorAntamoAirAll1032222522CompleteOnlyAtUnit">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="AntamoAirAll1032222522" State="CompleteOnlyAtUnit"/>
-    </CRequirementCountBehavior>
-    <CRequirementCountBehavior id="CountBehaviorAntamoAirAll103222252CompleteOnlyAtUnit">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="AntamoAirAll103222252" State="CompleteOnlyAtUnit"/>
-    </CRequirementCountBehavior>
     <CRequirementCountBehavior id="CountBehaviorAntamoAirAll1032222532CompleteOnlyAtUnit">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="AntamoAirAll1032222532" State="CompleteOnlyAtUnit"/>
@@ -1375,22 +1367,6 @@
     <CRequirementCountBehavior id="CountBehaviorAntamoAirAll103222254222CompleteOnlyAtUnit">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="AntamoAirAll103222254222" State="CompleteOnlyAtUnit"/>
-    </CRequirementCountBehavior>
-    <CRequirementCountBehavior id="CountBehaviorAntamoAirAll10322225422CompleteOnlyAtUnit">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="AntamoAirAll10322225422" State="CompleteOnlyAtUnit"/>
-    </CRequirementCountBehavior>
-    <CRequirementCountBehavior id="CountBehaviorAntamoAirAll1032222542CompleteOnlyAtUnit">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="AntamoAirAll1032222542" State="CompleteOnlyAtUnit"/>
-    </CRequirementCountBehavior>
-    <CRequirementCountBehavior id="CountBehaviorAntamoAirAll103222254CompleteOnlyAtUnit">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="AntamoAirAll103222254" State="CompleteOnlyAtUnit"/>
-    </CRequirementCountBehavior>
-    <CRequirementCountBehavior id="CountBehaviorAntamoAirAll10322225CompleteOnlyAtUnit">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="AntamoAirAll10322225" State="CompleteOnlyAtUnit"/>
     </CRequirementCountBehavior>
     <CRequirementCountBehavior id="CountBehaviorAntamoAirAll12CompleteOnlyAtUnit3554409632">
         <Flags index="TechTreeCheat" value="0"/>
@@ -1867,6 +1843,36 @@
     <CRequirementCountBehavior id="CountBehaviorVoidSeekerDock2CompleteOnlyAtUnit">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="VoidSeekerDock2" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorWepDoubleSurgicalLaserCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="WepDoubleSurgicalLaser" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorWepDualSecurityPistolsCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="WepDualSecurityPistols" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorWepShellstormChaingunCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="WepShellstormChaingun" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorWepShrapnelRifleCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="WepShrapnelRifle" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorWepSmartFireDartGunsCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="WepSmartFireDartGuns" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorWepWarheadLauncherCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="WepWarheadLauncher" State="CompleteOnlyAtUnit"/>
     </CRequirementCountBehavior>
     <CRequirementCountBehavior id="CountBehaviorXenWarrior22CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>

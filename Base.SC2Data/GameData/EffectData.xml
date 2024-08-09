@@ -45715,21 +45715,21 @@
         <WhichPlayer Value="Caster"/>
         <Upgrades Upgrade="AdvancedConstruction24223222222339" Count="-1"/>
     </CEffectModifyPlayer>
-    <CEffectModifyPlayer id="OracleVoidSiphonAddMinerals23652222222232">
+    <CEffectModifyPlayer id="RefugeeCraftRemove1GM2SF">
         <EditorCategories value="Race:Zerg"/>
         <Marker Link="Effect/OracleVoidSiphonAddMinerals"/>
         <WhichPlayer Value="Caster"/>
         <Upgrades Upgrade="ManufactureGunpowderMixer" Count="-1"/>
         <Upgrades Upgrade="ManufactureShellingFabricator" Count="-2"/>
     </CEffectModifyPlayer>
-    <CEffectModifyPlayer id="OracleVoidSiphonAddMinerals236522222222322">
+    <CEffectModifyPlayer id="RefugeeCraftRemove2GM1SF">
         <EditorCategories value="Race:Zerg"/>
         <Marker Link="Effect/OracleVoidSiphonAddMinerals"/>
         <WhichPlayer Value="Caster"/>
         <Upgrades Upgrade="ManufactureGunpowderMixer" Count="-2"/>
         <Upgrades Upgrade="ManufactureShellingFabricator" Count="-1"/>
     </CEffectModifyPlayer>
-    <CEffectModifyPlayer id="OracleVoidSiphonAddMinerals2365222222223222">
+    <CEffectModifyPlayer id="RefugeeCraftRemove1GM1SF1RT">
         <EditorCategories value="Race:Zerg"/>
         <Marker Link="Effect/OracleVoidSiphonAddMinerals"/>
         <WhichPlayer Value="Caster"/>
@@ -45765,19 +45765,19 @@
         <Upgrades Upgrade="ManufactureChemicalStation" Count="-1"/>
         <Upgrades Upgrade="ManufactureFusionCore" Count="-2"/>
     </CEffectModifyPlayer>
-    <CEffectModifyPlayer id="OracleVoidSiphonAddMinerals236522222222323">
+    <CEffectModifyPlayer id="RefugeeCraftRemove3GM">
         <EditorCategories value="Race:Zerg"/>
         <Marker Link="Effect/OracleVoidSiphonAddMinerals"/>
         <WhichPlayer Value="Caster"/>
         <Upgrades Upgrade="ManufactureGunpowderMixer" Count="-3"/>
     </CEffectModifyPlayer>
-    <CEffectModifyPlayer id="OracleVoidSiphonAddMinerals2365222222223232">
+    <CEffectModifyPlayer id="RefugeeCraftRemove3FC">
         <EditorCategories value="Race:Zerg"/>
         <Marker Link="Effect/OracleVoidSiphonAddMinerals"/>
         <WhichPlayer Value="Caster"/>
         <Upgrades Upgrade="ManufactureFusionCore" Count="-3"/>
     </CEffectModifyPlayer>
-    <CEffectModifyPlayer id="OracleVoidSiphonAddMinerals23652222222232322">
+    <CEffectModifyPlayer id="RefugeeCraftRemove1CS1FC1RT">
         <EditorCategories value="Race:Zerg"/>
         <Marker Link="Effect/OracleVoidSiphonAddMinerals"/>
         <WhichPlayer Value="Caster"/>
@@ -77236,30 +77236,30 @@
         <WhichUnit Value="Caster"/>
         <Behavior value="XenWarrior643223353"/>
     </CEffectApplyBehavior>
-    <CEffectApplyBehavior id="XenWarrior633223354">
+    <CEffectApplyBehavior id="CraftShrapnelRifle">
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
-        <Behavior value="AntamoAirAll103222252"/>
+        <Behavior value="WepShrapnelRifle"/>
     </CEffectApplyBehavior>
-    <CEffectApplyBehavior id="XenWarrior6332233542">
+    <CEffectApplyBehavior id="CraftShellstormChaingun">
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
-        <Behavior value="AntamoAirAll10322225"/>
+        <Behavior value="WepShellstormChaingun"/>
     </CEffectApplyBehavior>
-    <CEffectApplyBehavior id="XenWarrior63322335422">
+    <CEffectApplyBehavior id="CraftDualSecurityPistols">
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
-        <Behavior value="AntamoAirAll103222254"/>
+        <Behavior value="WepDualSecurityPistols"/>
     </CEffectApplyBehavior>
-    <CEffectApplyBehavior id="XenWarrior633223354222">
+    <CEffectApplyBehavior id="CraftDoubleSurgicalLaser">
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
-        <Behavior value="AntamoAirAll1032222542"/>
+        <Behavior value="WepDoubleSurgicalLaser"/>
     </CEffectApplyBehavior>
-    <CEffectApplyBehavior id="XenWarrior6332233542222">
+    <CEffectApplyBehavior id="CraftSmartFireDartGuns">
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
-        <Behavior value="AntamoAirAll10322225422"/>
+        <Behavior value="WepSmartFireDartGuns"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="XenWarrior63322335422222">
         <EditorCategories value=""/>
@@ -77286,10 +77286,10 @@
         <WhichUnit Value="Caster"/>
         <Behavior value="AntamoAirAll1032222543"/>
     </CEffectApplyBehavior>
-    <CEffectApplyBehavior id="XenWarrior6332233543">
+    <CEffectApplyBehavior id="CraftWarheadLauncher">
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
-        <Behavior value="AntamoAirAll1032222522"/>
+        <Behavior value="WepWarheadLauncher"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="XenWarrior63322335432">
         <EditorCategories value=""/>
