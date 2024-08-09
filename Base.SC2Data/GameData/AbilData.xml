@@ -38082,7 +38082,9 @@
         <Placeholder value="HybridDestroyer3"/>
         <Range value="12"/>
         <ProducedUnitArray value="HybridDestroyer3"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="PhaseCannon20" Requirements="HaveCoreOfScience"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PhaseCannon20" Requirements="HaveCoreOfScience">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
         <PlaceUnit value="HybridDestroyer3"/>
         <Arc value="360"/>
     </CAbilEffectTarget>
@@ -38098,7 +38100,9 @@
         <Placeholder value="HybridReaver3"/>
         <Range value="12"/>
         <ProducedUnitArray value="HybridReaver3"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="PhaseCannon202" Requirements="HaveCoreOfScience422"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PhaseCannon202" Requirements="HaveCoreOfScience422">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
         <PlaceUnit value="HybridReaver3"/>
         <Arc value="360"/>
     </CAbilEffectTarget>
@@ -38114,7 +38118,9 @@
         <Placeholder value="HybridDominatorVoid3"/>
         <Range value="12"/>
         <ProducedUnitArray value="HybridDominatorVoid3"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="PhaseCannon2022" Requirements="HaveCoreOfScience4223"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PhaseCannon2022" Requirements="HaveCoreOfScience4223">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
         <PlaceUnit value="HybridDominatorVoid3"/>
         <Arc value="360"/>
     </CAbilEffectTarget>
@@ -38130,7 +38136,9 @@
         <Placeholder value="HybridNemesis3"/>
         <Range value="12"/>
         <ProducedUnitArray value="HybridNemesis3"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="PhaseCannon20222" Requirements="HaveCoreOfScience4"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PhaseCannon20222" Requirements="HaveCoreOfScience4">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
         <PlaceUnit value="HybridNemesis3"/>
         <Arc value="360"/>
     </CAbilEffectTarget>
@@ -38146,7 +38154,9 @@
         <Placeholder value="HybridBehemoth4"/>
         <Range value="12"/>
         <ProducedUnitArray value="HybridBehemoth4"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="PhaseCannon202222" Requirements="HaveCoreOfScience4222"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PhaseCannon202222" Requirements="HaveCoreOfScience4222">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
         <PlaceUnit value="HybridBehemoth4"/>
         <Arc value="360"/>
     </CAbilEffectTarget>
@@ -38165,7 +38175,9 @@
         <Arc value="360"/>
         <AINotifyEffect value="PhaseCannon2322"/>
         <ProducedUnitArray value="HybridDominatorVoid3"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="PhaseCannon2022" Requirements="UnknownRequirement98"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PhaseCannon2022" Requirements="UnknownRequirement98">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
         <PlaceUnit value="HybridDominatorVoid3"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="PhaseCannon24">
