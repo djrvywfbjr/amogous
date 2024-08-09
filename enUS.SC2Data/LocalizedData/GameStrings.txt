@@ -7196,7 +7196,7 @@ Button/Name/Drone52222=Morph to Underling
 Button/Name/Drone6=Prepare Taken Drone
 Button/Name/Drone7=Morph To Swarm's Miner
 Button/Name/Drone8=Morph to Drone
-Button/Name/DropDownAcidColony=Drop Down Creep Tower
+Button/Name/DropDownAcidColony=Drop Down Sustenance Tower
 Button/Name/DropDownHydralisks=Summon Hunter Killers
 Button/Name/DutchPlaceTurret2=Place Plasmid Turret
 Button/Name/DutchPlaceTurret22=Place Plasmid Turret
@@ -14142,7 +14142,7 @@ Button/Tooltip/Drone5e=
 Button/Tooltip/Drone6=Basic worker unit. Can harvest minerals and vespene gas. Can mutate into and build structures.
 Button/Tooltip/Drone7=Basic worker unit. Can harvest minerals and vespene gas. Can mutate into structures.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/Drone8=Basic worker unit. Can harvest minerals and vespene gas. Can mutate into structures.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
-Button/Tooltip/DropDownAcidColony=Drops down a single creep tower
+Button/Tooltip/DropDownAcidColony=Drops down a single Sustenance Tower, which boosts nearby structures, increasing their cooldown and production rates.
 Button/Tooltip/DropDownHydralisks=Summons two Hunter Killers with timed life.
 Button/Tooltip/DukesRevenge2=Powerful warship.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/DukesRevenge3=Powerful warship.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
@@ -35190,7 +35190,7 @@ Unit/Name/Odin2=Renegade Odin
 Unit/Name/Odin22=Legendary Odin
 Unit/Name/OdinAAWeapon2=Odin Anti-Air Copy
 Unit/Name/OdinAAWeapon22=Odin Anti-Air Copy Copy
-Unit/Name/OmindCreepTower=Creep Tower
+Unit/Name/OmindCreepTower=Sustenance Tower
 Unit/Name/OmindHunterKiller=Hunter Killer
 Unit/Name/Oracle2=Pure Oracle
 Unit/Name/Oracle22=Pure Fighter

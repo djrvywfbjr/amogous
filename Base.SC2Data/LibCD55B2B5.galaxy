@@ -2417,11 +2417,12 @@ void libCD55B2B5_gt_BroodColor10_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
-// Trigger: Advanced Construction Auto - User
+// Trigger: Advanced Construction Auto - User 2
 //--------------------------------------------------------------------------------------------------
-bool libCD55B2B5_gt_AdvancedConstructionAutoUser_Func (bool testConds, bool runActions) {
+bool libCD55B2B5_gt_AdvancedConstructionAutoUser2_Func (bool testConds, bool runActions) {
     // Variable Declarations
     order lv_orderDummy;
+    unit lv_sCV;
     unit lv_target;
     bool lv_isUserOrder;
     bool lv_isSetAutoCastStateOrder;
@@ -2433,11 +2434,12 @@ bool libCD55B2B5_gt_AdvancedConstructionAutoUser_Func (bool testConds, bool runA
     int lv_i;
 
     // Automatic Variable Declarations
-    int auto1583B229_ae;
-    const int auto1583B229_ai = 1;
+    int auto808438BB_ae;
+    const int auto808438BB_ai = 1;
 
     // Variable Initialization
     lv_orderDummy = EventUnitOrder();
+    lv_sCV = EventUnit();
     lv_target = OrderGetTargetUnit(lv_orderDummy);
     lv_isUserOrder = OrderGetFlag(lv_orderDummy, c_cmdUser);
     lv_isSetAutoCastStateOrder = OrderGetFlag(lv_orderDummy, c_cmdSetAutoCast);
@@ -2454,10 +2456,6 @@ bool libCD55B2B5_gt_AdvancedConstructionAutoUser_Func (bool testConds, bool runA
         if (!((lv_isSetAutoCastStateOrder == false))) {
             return false;
         }
-
-        if (!((UnitGetType(EventUnit()) == "Civilian4"))) {
-            return false;
-        }
     }
 
     // Actions
@@ -2465,21 +2463,21 @@ bool libCD55B2B5_gt_AdvancedConstructionAutoUser_Func (bool testConds, bool runA
         return true;
     }
 
-    UnitCreateEffectUnit(EventUnit(), "CancelOrderAdvancedConstructionAuto", EventUnit());
-    auto1583B229_ae = (lv_c - 1);
+    UnitCreateEffectUnit(lv_sCV, "CancelOrderAdvancedConstructionAuto", lv_sCV);
+    auto808438BB_ae = (lv_c - 1);
     lv_i = 0;
-    for ( ; ( (auto1583B229_ai >= 0 && lv_i <= auto1583B229_ae) || (auto1583B229_ai < 0 && lv_i >= auto1583B229_ae) ) ; lv_i += auto1583B229_ai ) {
+    for ( ; ( (auto808438BB_ai >= 0 && lv_i <= auto808438BB_ae) || (auto808438BB_ai < 0 && lv_i >= auto808438BB_ae) ) ; lv_i += auto808438BB_ai ) {
         lv_cmd = TechTreeUnitProducedAbilCmd(lv_ut, lv_i);
         lv_order = Order(lv_cmd);
-        if ((UnitOrderIsValid(EventUnit(), lv_order) == false)) {
+        if (true) {
             break;
         }
 
         lv_order = OrderTargetingUnit(lv_cmd, lv_target);
         OrderSetFlag(lv_order, c_cmdSmartClick, true);
         OrderSetFlag(lv_order, c_cmdQueued, lv_isQueuedOrder);
-        if ((UnitOrderIsValid(EventUnit(), lv_order) == true)) {
-            UnitIssueOrder(EventUnit(), lv_order, c_orderQueueReplace);
+        if ((UnitOrderIsValid(lv_sCV, lv_order) == true)) {
+            UnitIssueOrder(lv_sCV, lv_order, c_orderQueueReplace);
             return true;
         }
 
@@ -2489,17 +2487,18 @@ bool libCD55B2B5_gt_AdvancedConstructionAutoUser_Func (bool testConds, bool runA
 }
 
 //--------------------------------------------------------------------------------------------------
-void libCD55B2B5_gt_AdvancedConstructionAutoUser_Init () {
-    libCD55B2B5_gt_AdvancedConstructionAutoUser = TriggerCreate("libCD55B2B5_gt_AdvancedConstructionAutoUser_Func");
-    TriggerAddEventUnitOrder(libCD55B2B5_gt_AdvancedConstructionAutoUser, null, AbilityCommand("AdvancedConstructionAuto", 0));
+void libCD55B2B5_gt_AdvancedConstructionAutoUser2_Init () {
+    libCD55B2B5_gt_AdvancedConstructionAutoUser2 = TriggerCreate("libCD55B2B5_gt_AdvancedConstructionAutoUser2_Func");
+    TriggerAddEventUnitOrder(libCD55B2B5_gt_AdvancedConstructionAutoUser2, null, AbilityCommand("AdvancedConstructionAuto", 0));
 }
 
 //--------------------------------------------------------------------------------------------------
-// Trigger: Advanced Construction Auto - Auto Cast
+// Trigger: Advanced Construction Auto - Auto Cast 2
 //--------------------------------------------------------------------------------------------------
-bool libCD55B2B5_gt_AdvancedConstructionAutoAutoCast_Func (bool testConds, bool runActions) {
+bool libCD55B2B5_gt_AdvancedConstructionAutoAutoCast2_Func (bool testConds, bool runActions) {
     // Variable Declarations
     order lv_orderDummy;
+    unit lv_sCV;
     unit lv_target;
     bool lv_isUserOrder;
     bool lv_isQueuedOrder;
@@ -2510,11 +2509,12 @@ bool libCD55B2B5_gt_AdvancedConstructionAutoAutoCast_Func (bool testConds, bool 
     int lv_i;
 
     // Automatic Variable Declarations
-    int autoAC9CA3BA_ae;
-    const int autoAC9CA3BA_ai = 1;
+    int auto1827BD84_ae;
+    const int auto1827BD84_ai = 1;
 
     // Variable Initialization
     lv_orderDummy = UnitOrder(EventUnit(), 0);
+    lv_sCV = EventUnit();
     lv_target = OrderGetTargetUnit(lv_orderDummy);
     lv_isUserOrder = OrderGetFlag(lv_orderDummy, c_cmdUser);
     lv_isQueuedOrder = OrderGetFlag(lv_orderDummy, c_cmdQueued);
@@ -2523,10 +2523,6 @@ bool libCD55B2B5_gt_AdvancedConstructionAutoAutoCast_Func (bool testConds, bool 
 
     // Conditions
     if (testConds) {
-        if (!((UnitGetType(EventUnit()) == "Civilian4"))) {
-            return false;
-        }
-
         if (!((lv_isUserOrder == false))) {
             return false;
         }
@@ -2537,20 +2533,20 @@ bool libCD55B2B5_gt_AdvancedConstructionAutoAutoCast_Func (bool testConds, bool 
         return true;
     }
 
-    UnitCreateEffectUnit(EventUnit(), "CancelOrderAdvancedConstructionAuto", EventUnit());
-    autoAC9CA3BA_ae = (lv_c - 1);
+    UnitCreateEffectUnit(lv_sCV, "CancelOrderAdvancedConstructionAuto", lv_sCV);
+    auto1827BD84_ae = (lv_c - 1);
     lv_i = 0;
-    for ( ; ( (autoAC9CA3BA_ai >= 0 && lv_i <= autoAC9CA3BA_ae) || (autoAC9CA3BA_ai < 0 && lv_i >= autoAC9CA3BA_ae) ) ; lv_i += autoAC9CA3BA_ai ) {
+    for ( ; ( (auto1827BD84_ai >= 0 && lv_i <= auto1827BD84_ae) || (auto1827BD84_ai < 0 && lv_i >= auto1827BD84_ae) ) ; lv_i += auto1827BD84_ai ) {
         lv_cmd = TechTreeUnitProducedAbilCmd(lv_ut, lv_i);
         lv_order = Order(lv_cmd);
-        if ((UnitOrderIsValid(EventUnit(), lv_order) == false)) {
+        if (true) {
             return true;
         }
 
         lv_order = OrderTargetingUnit(lv_cmd, lv_target);
         OrderSetFlag(lv_order, c_cmdSmartClick, true);
-        if ((UnitOrderIsValid(EventUnit(), lv_order) == true)) {
-            UnitIssueOrder(EventUnit(), lv_order, c_orderQueueAddToFront);
+        if ((UnitOrderIsValid(lv_sCV, lv_order) == true)) {
+            UnitIssueOrder(lv_sCV, lv_order, c_orderQueueAddToFront);
             return true;
         }
 
@@ -2559,9 +2555,9 @@ bool libCD55B2B5_gt_AdvancedConstructionAutoAutoCast_Func (bool testConds, bool 
 }
 
 //--------------------------------------------------------------------------------------------------
-void libCD55B2B5_gt_AdvancedConstructionAutoAutoCast_Init () {
-    libCD55B2B5_gt_AdvancedConstructionAutoAutoCast = TriggerCreate("libCD55B2B5_gt_AdvancedConstructionAutoAutoCast_Func");
-    TriggerAddEventUnitAbility(libCD55B2B5_gt_AdvancedConstructionAutoAutoCast, null, AbilityCommand("AdvancedConstructionAuto", 0), c_unitAbilStageExecute, false);
+void libCD55B2B5_gt_AdvancedConstructionAutoAutoCast2_Init () {
+    libCD55B2B5_gt_AdvancedConstructionAutoAutoCast2 = TriggerCreate("libCD55B2B5_gt_AdvancedConstructionAutoAutoCast2_Func");
+    TriggerAddEventUnitAbility(libCD55B2B5_gt_AdvancedConstructionAutoAutoCast2, null, AbilityCommand("AdvancedConstructionAuto", 0), c_unitAbilStageExecute, false);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -9904,8 +9900,8 @@ void libCD55B2B5_InitTriggers () {
     libCD55B2B5_gt_BroodColor8_Init();
     libCD55B2B5_gt_BroodColor9_Init();
     libCD55B2B5_gt_BroodColor10_Init();
-    libCD55B2B5_gt_AdvancedConstructionAutoUser_Init();
-    libCD55B2B5_gt_AdvancedConstructionAutoAutoCast_Init();
+    libCD55B2B5_gt_AdvancedConstructionAutoUser2_Init();
+    libCD55B2B5_gt_AdvancedConstructionAutoAutoCast2_Init();
     libCD55B2B5_gt_SaviorField_Init();
     libCD55B2B5_gt_AstrakhanStayDeadForReal_Init();
     libCD55B2B5_gt_SmefSupply_Init();

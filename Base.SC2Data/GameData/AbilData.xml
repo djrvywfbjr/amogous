@@ -39295,7 +39295,7 @@
         <Flags index="AllowMovement" value="1"/>
         <Cost>
             <Charge>
-                <CountMax value="2"/>
+                <CountMax value="1"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
                 <TimeUse value="40"/>
