@@ -14886,6 +14886,11 @@
     <CEffectDamage id="CosmicExchangeFailFate">
         <ValidatorArray value="CasterLifeLT60Percent"/>
     </CEffectDamage>
+    <CEffectApplyBehavior id="CraftNapalmSprayer">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="WepNapalmSprayer"/>
+    </CEffectApplyBehavior>
     <CEffectCreateUnit id="CreatePukePuddle12">
         <EditorCategories value="Race:Zerg"/>
         <WhichLocation Value="TargetPoint"/>
@@ -45714,6 +45719,13 @@
         <Marker Link="Effect/OracleVoidSiphonAddMinerals"/>
         <WhichPlayer Value="Caster"/>
         <Upgrades Upgrade="AdvancedConstruction24223222222339" Count="-1"/>
+    </CEffectModifyPlayer>
+    <CEffectModifyPlayer id="RefugeeCraftRemove2RT1FC">
+        <EditorCategories value="Race:Zerg"/>
+        <Marker Link="Effect/OracleVoidSiphonAddMinerals"/>
+        <WhichPlayer Value="Caster"/>
+        <Upgrades Upgrade="ManufactureFusionCore" Count="-1"/>
+        <Upgrades Upgrade="ManufactureRecyclerTank" Count="-2"/>
     </CEffectModifyPlayer>
     <CEffectModifyPlayer id="RefugeeCraftRemove1GM2SF">
         <EditorCategories value="Race:Zerg"/>

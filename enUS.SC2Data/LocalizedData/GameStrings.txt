@@ -2362,6 +2362,7 @@ Abil/Name/WarpPrismTransport4=Forced Transport
 Abil/Name/WarpPrismTransport5=Load-Unload
 Abil/Name/WarpPrismTransport6=Load-Unload (Shuttle)
 Abil/Name/Wep1DualSecurityPistols=Wep1 Dual Security Pistols
+Abil/Name/Wep1NapalmSprayer=Wep1 Napalm Sprayer
 Abil/Name/Wep1ShellstormChaingun=Wep1 Shellstorm Chaingun
 Abil/Name/Wep2DoubleSurgicalLaser=Wep2 Double Surgical Laser
 Abil/Name/Wep2SharpnelRifle=Wep2 Sharpnel Rifle
@@ -4184,6 +4185,7 @@ Behavior/Name/VorazunRegenShield2=Veil of Shadows
 Behavior/Name/VortexBehavior=Vortex Copy Copy
 Behavior/Name/WepDoubleSurgicalLaser=(Wep) Double Surgical Laser
 Behavior/Name/WepDualSecurityPistols=(Wep) Dual Security Pistols
+Behavior/Name/WepNapalmSprayer=(Wep) Napalm Sprayer
 Behavior/Name/WepShellstormChaingun=(Wep) Shellstorm Chaingun
 Behavior/Name/WepShrapnelRifle=(Wep) Shrapnel Rifle
 Behavior/Name/WepSmartFireDartGuns=(Wep) Smart-Fire Dart Guns
@@ -5949,7 +5951,6 @@ Button/Name/CalldownMULE423324332232222425233=Warfare Research
 Button/Name/CalldownMULE4233243322322224252332=Information
 Button/Name/CalldownMULE4233243322322224252333=Adaption Laws
 Button/Name/CalldownMULE42332433223222242523332=Alignment Laws
-Button/Name/CalldownMULE42332433223222242523333=Equip Weapon
 Button/Name/CalldownMULE423324332232222425233332=Equip Additional Gear
 Button/Name/CalldownMULE423324332232222425234=Industrialization Research
 Button/Name/CalldownMULE42332433223222242524222422322222=Recycler Tanks
@@ -7247,10 +7248,12 @@ Button/Name/EntropicBlast223=Weak Concussion
 Button/Name/EntropicBlast23=Throw Ritual Knife
 Button/Name/EntropicBlast3=Entropic Blast
 Button/Name/EquipDoubleSurgicalLaser=Equip Double Surgical Laser
+Button/Name/EquipNapalmSprayer=Equip Napalm Sprayer
 Button/Name/EquipShellstormChaingun=Equip Shellstorm Chaingun
 Button/Name/EquipShrapnelRifle=Equip Shrapnel Rifle
 Button/Name/EquipSmartFireDartGuns=Equip Smart-Fire Dart Guns
 Button/Name/EquipWarheadLauncher=Equip Warhead Launcher
+Button/Name/EquipWeapon=Equip Weapon
 Button/Name/EvolutionChamber2=Mutate into Evolution Chamber Copy
 Button/Name/EvolutionChamber3=Mutate into Evolution Chamber Copy 2
 Button/Name/EvolutionChamber4=Construct Research Chamber
@@ -12717,7 +12720,6 @@ Button/Tooltip/CalldownMULE423324332232222425233=Shows available warfare-related
 Button/Tooltip/CalldownMULE4233243322322224252332=Shows information about different mechanics.
 Button/Tooltip/CalldownMULE4233243322322224252333=Shows available adaption laws, which will allow the colony to survive during these times.
 Button/Tooltip/CalldownMULE42332433223222242523332=Shows available alignment laws, which will allow the colony to join and recieve help from any factions that still exist
-Button/Tooltip/CalldownMULE42332433223222242523333=Shows available weapons that can be crafted for this unit by using parts made at Tools Manufacture.
 Button/Tooltip/CalldownMULE423324332232222425233332=Shows available abilities that can be crafted for this unit by using parts made at Tools Manufacture.
 Button/Tooltip/CalldownMULE423324332232222425234=Shows available industrialization-related research.
 Button/Tooltip/CalldownMULE42332433223222242524222422322222=This little canister recycles user's bodily fluids, excess suit power and whatever can be found in the environment to create basic fuel.
@@ -14236,10 +14238,12 @@ Button/Tooltip/EntropicBlast223=Fire a projectile of pulsing plasma, dealing 15 
 Button/Tooltip/EntropicBlast23=Launch a knife with special explosive chemicals in it, dealing 75 damage to units in a really small area.
 Button/Tooltip/EntropicBlast3=Channels a missile at the target location. After 4 seconds, deals 225 damage to all enemy units in the area.
 Button/Tooltip/EquipDoubleSurgicalLaser=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(3)</c> Fusion Cores<n/><n/>Equips the Outrider armor with 2 laser pistols with good range, rather long cooldown and Increased damage against Armored targets.<n/><n/>Weaker versions of these devices are used for actual surgeries. Specific plans were developed to fire them from sidearms at much greater ranges with much greater effect.
+Button/Tooltip/EquipNapalmSprayer=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Fusion Core<n/><c val="00FF00">(2)</c> Recycling Tanks<n/><n/>Equips the Combater armor with a fire-firing sprayer that hits multiple enemies in an area around main target. Does more damage to biological targets.<n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
 Button/Tooltip/EquipShellstormChaingun=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Gunpowder Mixer<n/><c val="00FF00">(2)</c> Shelling Fabricators<n/><n/>Equips the Serviceman armor with a fast-firing chaingun that hits multiple enemies in an area around main target, but target armor reduces damage of the weapon twice as much as usual.<n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
 Button/Tooltip/EquipShrapnelRifle=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(2)</c> Gunpowder Mixers<n/><c val="00FF00">(1)</c> Shelling Fabricator<n/><n/>Equips the Serviceman armor with a powerful long-ranged rifle, that deals great damage and is even stronger against Armored targets, but cannot fire too often.<n/><n/>This powerful rifle was originally designed for hunting. Most creatures' meat is made inedible due to explosive shrapnel blasts created by these rifles.
 Button/Tooltip/EquipSmartFireDartGuns=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Chemical Station<n/><c val="00FF00">(1)</c> Fusion Core<n/><c val="00FF00">(1)</c> Recycler Tank<n/><n/>Equips the Outrider armor with 2 pistols that attack different enemies each attack. The pistols mark targets for increased damage and reveal them, while also making them blind.<n/><n/>These weapons function by firing tracker darts that inject certain vision-weakening drugs from advanced weapons that can calculate the trajectory of the projectiles.
 Button/Tooltip/EquipWarheadLauncher=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Gunpowder Mixer<n/><c val="00FF00">(1)</c> Recycler Tank<n/><c val="00FF00">(1)</c> Shelling Fabricator<n/><n/>Equips the Serviceman armor with a missile launcher that deals damage in a large area and increased damage to light units, but has an extremely long reload time.<n/><n/>This military rocket launcher design was never meant for the emergency colonization, but so little progress has been done on Psiwave Generators that Dominion authorities added them as a last-minute addition to finish clearing unfinished Construction Site shafts.
+Button/Tooltip/EquipWeapon=Shows available weapons that can be crafted for this unit by using parts made at Tools Manufacture.
 Button/Tooltip/EternalOne=Highlord of the Tal'darim. Powerful Psionic Warrior.
 Button/Tooltip/EvolutionChamber2=Contains upgrades for Zerg ground units.<n/><n/><c val="ffff8a">Enables:</c><n/>- Aberrations from Larvae with Lair or Hive
 Button/Tooltip/EvolutionChamber3=Contains upgrades for Zerg ground units.<n/><n/><c val="ffff8a">Enables:</c><n/>- Aberrations from Larvae with Lair or Hive
@@ -21865,6 +21869,7 @@ Effect/Name/CorruptionLaunchMissile3=Corruption Copy 2
 Effect/Name/CorruptionLaunchMissile4=Corruption
 Effect/Name/CraftDoubleSurgicalLaser=Craft Double Surgical Laser
 Effect/Name/CraftDualSecurityPistols=Craft Dual Security Pistols
+Effect/Name/CraftNapalmSprayer=Craft Napalm Sprayer
 Effect/Name/CraftShellstormChaingun=Craft Shellstorm Chaingun
 Effect/Name/CraftShrapnelRifle=Craft Shrapnel Rifle
 Effect/Name/CraftSmartFireDartGuns=Craft Smart Fire Dart Guns
@@ -28257,6 +28262,7 @@ Effect/Name/RefugeeCraftRemove1CS1FC1RT=Refugee Craft Remove 1CS, 1FC, 1RT
 Effect/Name/RefugeeCraftRemove1GM1SF1RT=Refugee Craft Remove 1GM, 1SF, 1RT
 Effect/Name/RefugeeCraftRemove1GM2SF=Refugee Craft Remove 1 GM, 2 SF
 Effect/Name/RefugeeCraftRemove2GM1SF=Refugee Craft Remove 2GM, 1SF
+Effect/Name/RefugeeCraftRemove2RT1FC=Refugee Craft Remove 2RT, 1FC
 Effect/Name/RefugeeCraftRemove3FC=Refugee Craft Remove 3FC
 Effect/Name/RefugeeCraftRemove3GM=Refugee Craft Remove 3GM
 Effect/Name/ReleaseInterceptors2=Release Interceptors2

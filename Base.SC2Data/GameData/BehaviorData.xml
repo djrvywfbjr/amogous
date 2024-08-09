@@ -963,6 +963,31 @@
             </Cost>
         </DamageResponse>
     </CBehaviorBuff>
+    <CBehaviorBuff id="WepNapalmSprayer">
+        <Cost>
+            <Charge Link="Behavior/AntamoAirAll"/>
+            <Cooldown Link="Behavior/AntamoAirAll"/>
+        </Cost>
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="IsTimeStopped282223"/>
+        <InitialEffect value="RefugeeCraftRemove2RT1FC"/>
+        <Modification>
+            <AbilLinkDisableArray value="Wep3WarheadLauncher"/>
+            <AbilLinkDisableArray value="Wep1ShellstormChaingun"/>
+            <AbilLinkDisableArray value="Wep2SharpnelRifle"/>
+            <BehaviorLinkDisableArray value="NoWeapon"/>
+            <WeaponArray Link="NapalmSprayer"/>
+            <WeaponDisableArray value="H4ScrapCannon"/>
+        </Modification>
+        <DamageResponse>
+            <Cost>
+                <Charge Link="Behavior/AntamoAirAll"/>
+                <Cooldown Link="Behavior/AntamoAirAll"/>
+            </Cost>
+        </DamageResponse>
+    </CBehaviorBuff>
     <CBehaviorBuff id="WepShrapnelRifle">
         <Cost>
             <Charge Link="Behavior/AntamoAirAll"/>
