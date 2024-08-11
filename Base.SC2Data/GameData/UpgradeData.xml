@@ -236,9 +236,20 @@
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="AdvancedConstruction"/>
     </CUpgrade>
-    <CUpgrade id="AdvancedConstruction2422322">
+    <CUpgrade id="EmergencyWeapon">
         <Flags index="UpgradeCheat" value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,H1ScrapCannon,Options[Hidden]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,H1ScrapCannon,Options[Disabled]" Value="0"/>
         <EffectArray Operation="Set" Reference="Weapon,H3ScrapCannon,Options[Hidden]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,H3ScrapCannon,Options[Disabled]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,H4ScrapCannon,Options[Hidden]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,H4ScrapCannon,Options[Disabled]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,H5ScrapCannon,Options[Hidden]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,H5ScrapCannon,Options[Disabled]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,H6ScrapCannon,Options[Hidden]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,H6ScrapCannon,Options[Disabled]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,H66ScrapCannon,Options[Hidden]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,H66ScrapCannon,Options[Disabled]" Value="0"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="AdvancedConstruction"/>
     </CUpgrade>

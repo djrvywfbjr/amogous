@@ -26204,7 +26204,7 @@
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
             <Button DefaultButtonFace="SetUpPsiwaveWiring" Requirements="LearnBlink2122424333233832"/>
         </InfoArray>
-        <InfoArray index="Research14" Time="225" Upgrade="AdvancedConstruction2422322">
+        <InfoArray index="Research14" Time="225" Upgrade="EmergencyWeapon">
             <Resource index="Minerals" value="125"/>
             <Resource index="Vespene" value="125"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
@@ -26411,7 +26411,7 @@
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
             <Button DefaultButtonFace="SetUpPsiwaveWiring" Requirements="LearnBlink2122424333233832"/>
         </InfoArray>
-        <InfoArray index="Research14" Time="225" Upgrade="AdvancedConstruction2422322">
+        <InfoArray index="Research14" Time="225" Upgrade="EmergencyWeapon">
             <Resource index="Minerals" value="125"/>
             <Resource index="Vespene" value="125"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
@@ -60357,6 +60357,18 @@
         <TargetFilters value="Visible;Ally,Neutral,Enemy,Buried,UnderConstruction,Dead,Hidden"/>
         <LoadValidatorArray value="NotWidowMineTarget"/>
     </CAbilTransport>
+    <CAbilEffectInstant id="Wep1NapalmSprayer">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="XenWarrior622322335"/>
+        <Effect index="0" value="CraftNapalmSprayer"/>
+        <Flags index="BestUnit" value="1"/>
+        <Cost>
+            <Charge Link="Abil/XenWarrior"/>
+            <Cooldown Link="Abil/XenWarrior"/>
+        </Cost>
+        <AINotifyEffect value="XenWarrior6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipNapalmSprayer" Requirements="Craft1FC2RT"/>
+    </CAbilEffectInstant>
     <CAbilEffectTarget id="WidowMineAttack2" parent="WidowMineAttack">
         <Name value="Abil/Name/WidowMineAttack2"/>
         <PrepEffect index="0" value="WidowMineTargetingBeamDummy2"/>
@@ -63372,34 +63384,34 @@
         <AINotifyEffect value="XenWarrior6"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot226223223353"/>
     </CAbilEffectInstant>
-    <CAbilEffectInstant id="XenWarrior6223223354">
+    <CAbilEffectInstant id="Wep2SharpnelRifle">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DataCollection value="XenWarrior622322335"/>
-        <Effect index="0" value="XenWarrior633223354"/>
+        <Effect index="0" value="CraftShrapnelRifle"/>
+        <Flags index="BestUnit" value="1"/>
         <Cost>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <AINotifyEffect value="XenWarrior6"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot226223223354" Requirements="MothershipRequirements232254"/>
-        <Flags index="BestUnit" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipShrapnelRifle" Requirements="MothershipRequirements232254"/>
     </CAbilEffectInstant>
-    <CAbilEffectInstant id="XenWarrior62232233542">
+    <CAbilEffectInstant id="Wep1ShellstormChaingun">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DataCollection value="XenWarrior622322335"/>
-        <Effect index="0" value="XenWarrior6332233542"/>
+        <Effect index="0" value="CraftShellstormChaingun"/>
+        <Flags index="BestUnit" value="1"/>
         <Cost>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <AINotifyEffect value="XenWarrior6"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2262232233542" Requirements="MothershipRequirements2322542"/>
-        <Flags index="BestUnit" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipShellstormChaingun" Requirements="MothershipRequirements2322542"/>
     </CAbilEffectInstant>
-    <CAbilEffectInstant id="XenWarrior622322335422">
+    <CAbilEffectInstant id="Wep1DualSecurityPistols">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DataCollection value="XenWarrior622322335"/>
-        <Effect index="0" value="XenWarrior63322335422"/>
+        <Effect index="0" value="CraftDualSecurityPistols"/>
         <Flags index="BestUnit" value="1"/>
         <Cost>
             <Charge Link="Abil/XenWarrior"/>
@@ -63408,29 +63420,29 @@
         <AINotifyEffect value="XenWarrior6"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot22622322335423" Requirements="MothershipRequirements23225432"/>
     </CAbilEffectInstant>
-    <CAbilEffectInstant id="XenWarrior6223223354222">
+    <CAbilEffectInstant id="Wep2DoubleSurgicalLaser">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DataCollection value="XenWarrior622322335"/>
-        <Effect index="0" value="XenWarrior633223354222"/>
+        <Effect index="0" value="CraftDoubleSurgicalLaser"/>
         <Flags index="BestUnit" value="1"/>
         <Cost>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <AINotifyEffect value="XenWarrior6"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot226223223354232" Requirements="MothershipRequirements23225432"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipDoubleSurgicalLaser" Requirements="MothershipRequirements23225432"/>
     </CAbilEffectInstant>
-    <CAbilEffectInstant id="XenWarrior62232233542222">
+    <CAbilEffectInstant id="Wep3SmartFireDartGuns">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DataCollection value="XenWarrior622322335"/>
-        <Effect index="0" value="XenWarrior6332233542222"/>
+        <Effect index="0" value="CraftSmartFireDartGuns"/>
         <Flags index="BestUnit" value="1"/>
         <Cost>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <AINotifyEffect value="XenWarrior6"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2262232233542322" Requirements="MothershipRequirements232254222"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipSmartFireDartGuns" Requirements="MothershipRequirements232254222"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior622322335422222">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -63492,17 +63504,17 @@
         <AINotifyEffect value="XenWarrior6"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot226223223354234" Requirements="MothershipRequirements23225432"/>
     </CAbilEffectInstant>
-    <CAbilEffectInstant id="XenWarrior62232233543">
+    <CAbilEffectInstant id="Wep3WarheadLauncher">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DataCollection value="XenWarrior622322335"/>
-        <Effect index="0" value="XenWarrior6332233543"/>
+        <Effect index="0" value="CraftWarheadLauncher"/>
+        <Flags index="BestUnit" value="1"/>
         <Cost>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <AINotifyEffect value="XenWarrior6"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2262232233543" Requirements="MothershipRequirements23225422"/>
-        <Flags index="BestUnit" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipWarheadLauncher" Requirements="MothershipRequirements23225422"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior622322335432">
         <EditorCategories value="AbilityorEffectType:Units"/>
