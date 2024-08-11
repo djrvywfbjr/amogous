@@ -91,6 +91,16 @@
         <Duration value="30"/>
         <Modification MoveSpeedMultiplier="1.35" AttackSpeedMultiplier="1.35"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="AggressiveMutation24">
+        <InfoIcon value="Assets\Textures\btn-ability-terran-battlefieldawareness.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:Zerg"/>
+        <Duration value="15"/>
+        <Modification>
+            <ModifyFlags index="Reveal" value="1"/>
+            <StateFlags index="RevealProgress" value="1"/>
+            <StateFlags index="SuppressCloak" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="AggressiveMutation3">
         <Alignment value="Positive"/>
         <InfoIcon value="Assets\Textures\btn-ability-kerrigan-wildmutation.dds"/>

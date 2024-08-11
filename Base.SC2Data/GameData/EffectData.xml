@@ -1412,6 +1412,11 @@
         <EditorCategories value="Race:Zerg"/>
         <Behavior value="AggressiveMutation23"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="AggressiveMutationAB24">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:Zerg"/>
+        <Behavior value="AggressiveMutation24"/>
+    </CEffectApplyBehavior>
     <CEffectApplyBehavior id="AggressiveMutationAB3">
         <ValidatorArray index="0" value="IsZergUnit"/>
         <ValidatorArray value="NotSwarmHostBurrowedMP"/>

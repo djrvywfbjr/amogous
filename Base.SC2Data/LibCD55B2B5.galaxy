@@ -2469,7 +2469,7 @@ bool libCD55B2B5_gt_AdvancedConstructionAutoUser2_Func (bool testConds, bool run
     for ( ; ( (auto808438BB_ai >= 0 && lv_i <= auto808438BB_ae) || (auto808438BB_ai < 0 && lv_i >= auto808438BB_ae) ) ; lv_i += auto808438BB_ai ) {
         lv_cmd = TechTreeUnitProducedAbilCmd(lv_ut, lv_i);
         lv_order = Order(lv_cmd);
-        if (true) {
+        if ((UnitOrderIsValid(lv_sCV, lv_order) == false)) {
             break;
         }
 
@@ -2539,7 +2539,7 @@ bool libCD55B2B5_gt_AdvancedConstructionAutoAutoCast2_Func (bool testConds, bool
     for ( ; ( (auto1827BD84_ai >= 0 && lv_i <= auto1827BD84_ae) || (auto1827BD84_ai < 0 && lv_i >= auto1827BD84_ae) ) ; lv_i += auto1827BD84_ai ) {
         lv_cmd = TechTreeUnitProducedAbilCmd(lv_ut, lv_i);
         lv_order = Order(lv_cmd);
-        if (true) {
+        if ((UnitOrderIsValid(lv_sCV, lv_order) == false)) {
             return true;
         }
 
@@ -6259,83 +6259,83 @@ bool libCD55B2B5_gt_MaltanisAddoOrderBit_Func (bool testConds, bool runActions) 
     }
 
     if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 1.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 1);
-    }
-
-    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 2.0)) {
         TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 2);
     }
 
-    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 3.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 3);
-    }
-
-    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 4.0)) {
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 2.0)) {
         TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 4);
     }
 
-    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 5.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 5);
-    }
-
-    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 6.0)) {
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 3.0)) {
         TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 6);
     }
 
-    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 7.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 7);
-    }
-
-    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 8.0)) {
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 4.0)) {
         TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 8);
     }
 
-    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 9.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 9);
-    }
-
-    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 10.0)) {
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 5.0)) {
         TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 10);
     }
 
-    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 11.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 11);
-    }
-
-    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 12.0)) {
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 6.0)) {
         TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 12);
     }
 
-    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 13.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 13);
-    }
-
-    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 14.0)) {
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 7.0)) {
         TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 14);
     }
 
-    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 15.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 15);
-    }
-
-    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 16.0)) {
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 8.0)) {
         TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 16);
     }
 
-    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 17.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 17);
-    }
-
-    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 18.0)) {
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 9.0)) {
         TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 18);
     }
 
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 10.0)) {
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 20);
+    }
+
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 11.0)) {
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 22);
+    }
+
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 12.0)) {
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 24);
+    }
+
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 13.0)) {
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 26);
+    }
+
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 14.0)) {
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 28);
+    }
+
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 15.0)) {
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 30);
+    }
+
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 16.0)) {
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 32);
+    }
+
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 17.0)) {
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 34);
+    }
+
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 18.0)) {
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 36);
+    }
+
     if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 19.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 19);
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 38);
     }
 
     if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 20.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 20);
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 40);
     }
 
     return true;

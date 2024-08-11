@@ -29190,6 +29190,10 @@
         <Icon value="Assets\Textures\btn-ability-mengsk-commandcenter-drafttroopers.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-mengsk-commandcenter-drafttroopers.dds"/>
     </CButton>
+    <CButton id="UnknownButton116">
+        <Icon value="Assets\Textures\btn-ability-terran-battlefieldawareness.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-battlefieldawareness.dds"/>
+    </CButton>
     <CButton id="UnknownButton12">
         <Icon value="Assets\Textures\btn-upgrade-zerg-monarchblades.dds"/>
     </CButton>

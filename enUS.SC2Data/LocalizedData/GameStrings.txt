@@ -2968,6 +2968,7 @@ Behavior/Name/15xUnitSpeed2=Extended Shift
 Behavior/Name/AggressiveMutation2=Aggressive Mutator
 Behavior/Name/AggressiveMutation22=Adapting
 Behavior/Name/AggressiveMutation23=Fanaticism
+Behavior/Name/AggressiveMutation24=Tracked
 Behavior/Name/AggressiveMutation3=Feral
 Behavior/Name/AggressiveMutation32=Crew Redirected
 Behavior/Name/AggressiveMutation322=Hybrid Strenght
@@ -4382,6 +4383,7 @@ Behavior/Name/ZerglingSunder324=Ignited Shells
 Behavior/Tooltip/AggressiveMutation2=This unit's attack damage has been increased.
 Behavior/Tooltip/AggressiveMutation22=This unit has adapeted to enemies and has gained increased life. Can be upgraded.<n/>
 Behavior/Tooltip/AggressiveMutation23=This unit's attack damage has been increased.
+Behavior/Tooltip/AggressiveMutation24=This unit is revealed.
 Behavior/Tooltip/AggressiveMutation3=This unit's attack damage, speed and life regeneration is increased, but it is not selectable nor commandable anymore.
 Behavior/Tooltip/AggressiveMutation32=This unit builds interceptors faster.
 Behavior/Tooltip/AggressiveMutation322=This unit is powerful.
@@ -10514,6 +10516,7 @@ Button/Name/UnknownButton113=Endowed Blood
 Button/Name/UnknownButton114=Crawler Seeds
 Button/Name/UnknownButton115=Path Of Blood
 Button/Name/UnknownButton1152=Path Of Tears
+Button/Name/UnknownButton116=Research Tracker Rounds
 Button/Name/UnknownButton12=Flaming Charge
 Button/Name/UnknownButton13=Solar Detraction
 Button/Name/UnknownButton14=Primal Discharge
@@ -18445,6 +18448,7 @@ Button/Tooltip/UnknownButton113=Allows Archdeacons to use Self Sacrifice and inc
 Button/Tooltip/UnknownButton114=<c val="FFFF00">Primalord </c>attacks will occasionally contain Aggravated Crawlers.
 Button/Tooltip/UnknownButton115=Increases the damage dealt by all units by 30%, but reduces their life by 20%.
 Button/Tooltip/UnknownButton1152=Reduces the damage dealt by all units by 30%, but provides 50% more life.
+Button/Tooltip/UnknownButton116=Civil Control Division's attacks will mark enemies, revealing their location. Civil Control Division gains 2 range.
 Button/Tooltip/UnknownButton12=The Beast charges into the enemy, dealing area damage and setting the main target on fire
 Button/Tooltip/UnknownButton13=Adds area-of-effect damage to this unit's weapon that deals increased damage to the main target. Is active until the unit loses all energy. Ignores armor.
 Button/Tooltip/UnknownButton14=Deal 325 damage to a single target.
@@ -18577,7 +18581,7 @@ Button/Tooltip/UnknownButton79=Quiet Ones' attacks reduce target unit's life by 
 Button/Tooltip/UnknownButton8=Activates the weapon on the Old Fortress, draining its shields each second.
 Button/Tooltip/UnknownButton80=Heretic Cannon's attacks reduce target units' weapon range by 1 and attack speed by 20%.
 Button/Tooltip/UnknownButton81=Structures around Khalai Pylons gain a 15% increase to everything time related.<n/><c val="FFFF00">Stacks up to 3 times.</c>
-Button/Tooltip/UnknownButton82=Upgrades <c val="FFFF00">all infantry units</c>:<n/><c val="FFFF00">Civil Control Divisions </c>gain 1 range and an autocastable <c val="FFFF00">Tracker Drone </c>ability<n/><c val="FFFF00">Fabricators</c> gain the ability to destabilize <c val="FFFF00">Hybrid Dominator</c><n/>Units attacked by <c val="FFFF00">Advanced Vanguards </c>will slow nearby units on death<n/><c val="FFFF00">Special Operatives </c>gain permanent cloak<n/><c val="FFFF00">Infernobats </c>gain a temporary shield upon jumping<n/><n/>In addition, <c val="FFFF00">all infantry units </c>gain extra life, damage, regenerations or movement speed.
+Button/Tooltip/UnknownButton82=<c val="FFFF00">All infantry units </c>gain extra life, damage, regenerations or movement speed.
 Button/Tooltip/UnknownButton83=Supply Warp Depots increase nearby projected units' attack range by 1 and life by 5.<n/><c val="FFFF00">Does not stack.</c>
 Button/Tooltip/UnknownButton84=Singularity Collector increases the mining, attack and movement speed of Solarite Probes around itself.
 Button/Tooltip/UnknownButton85=Instead of attacking, <c val="FFFF00">the Feeder</c> violently explodes, birthing 5 Floodlings.
@@ -20270,6 +20274,7 @@ Effect/Name/AdeptPiercingSet25=Ethereal Genesis Set
 Effect/Name/AggressiveMutationAB2=AggressiveMutationAB (Unnamed) Copy
 Effect/Name/AggressiveMutationAB22=AggressiveMutationAB (Unnamed) Copy Copy
 Effect/Name/AggressiveMutationAB23=AggressiveMutationAB (Unnamed) Copy
+Effect/Name/AggressiveMutationAB24=Tracker Rounds Apply
 Effect/Name/AggressiveMutationAB3=AggressiveMutationAB (Unnamed) Copy 2
 Effect/Name/AggressiveMutationAB32=AggressiveMutationAB (Unnamed) Copy 3
 Effect/Name/AggressiveMutationAB322=AggressiveMutationAB (Unnamed) Copy 4
@@ -38092,6 +38097,7 @@ Upgrade/Name/UnknownUpgrade77=Protonic Shield
 Upgrade/Name/UnknownUpgrade78=Expanded AI Network
 Upgrade/Name/UnknownUpgrade79=Endowed Blood
 Upgrade/Name/UnknownUpgrade8=Exchanged Genes
+Upgrade/Name/UnknownUpgrade80=Tracker Rounds
 Upgrade/Name/UnknownUpgrade9=Razing Corrosion
 Upgrade/Name/VoidDarkArchonDarkAmulet2=Basic Energy Max Bonus
 Upgrade/Name/VoidDarkArchonDarkAmulet22=Basic Shield Bonus

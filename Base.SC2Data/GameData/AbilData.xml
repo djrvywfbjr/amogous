@@ -19826,6 +19826,16 @@
             <Resource index="Vespene" value="200"/>
             <Button DefaultButtonFace="UnknownButton49" Requirements="UnknownRequirement61"/>
         </InfoArray>
+        <InfoArray index="Research23" Time="160" Upgrade="UnknownUpgrade52">
+            <Resource index="Minerals" value="300"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="UnknownButton82" Requirements="UnknownRequirement124"/>
+        </InfoArray>
+        <InfoArray index="Research24" Time="75" Upgrade="UnknownUpgrade80">
+            <Resource index="Minerals" value="75"/>
+            <Resource index="Vespene" value="75"/>
+            <Button DefaultButtonFace="UnknownButton116" Requirements="UnknownRequirement125"/>
+        </InfoArray>
     </CAbilResearch>
     <CAbilResearch id="EngineeringBayResearch3" parent="EngineeringBayResearch">
         <Name value="Abil/Name/EngineeringBayResearch3"/>

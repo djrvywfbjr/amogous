@@ -4772,6 +4772,7 @@ Button/Hotkey/UnknownButton112=N
 Button/Hotkey/UnknownButton113=D
 Button/Hotkey/UnknownButton115=B
 Button/Hotkey/UnknownButton1152=T
+Button/Hotkey/UnknownButton116=R
 Button/Hotkey/UnknownButton13=V
 Button/Hotkey/UnknownButton14=D
 Button/Hotkey/UnknownButton142=D

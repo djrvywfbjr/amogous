@@ -11585,6 +11585,10 @@
         <EffectArray Operation="Subtract" Reference="Unit,PrimalTownHall222,EnergyMax" Value="1"/>
         <EffectArray Operation="Subtract" Reference="Unit,PrimalTownHall222,EnergyStart" Value="1"/>
     </CUpgrade>
+    <CUpgrade id="UnknownUpgrade80">
+        <EffectArray Operation="Set" Reference="Effect,P38ScytheGuassPistol3,DamageInheritEffect" Value="AggressiveMutationAB24"/>
+        <EffectArray Operation="Set" Reference="Weapon,P38ScytheGuassPistol,Range" Value="7"/>
+    </CUpgrade>
     <CUpgrade id="UnknownUpgrade9">
         <EffectArray Operation="Set" Reference="Effect,AlarakPsiOrbSet2,EffectArray[3]" Value="Epilogue02VoidRiftAB223"/>
         <EffectArray Operation="Set" Reference="Effect,HotSUltraliskKaiserBlades7,EffectArray[4]" Value="Epilogue02VoidRiftAB2232"/>
