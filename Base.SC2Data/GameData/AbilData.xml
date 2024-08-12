@@ -34538,7 +34538,7 @@
             <Unit value="Searcher"/>
         </InfoArray>
         <InfoArray index="Train4" Time="40">
-            <Button DefaultButtonFace="WarpInAdept3" Requirements="HaveHoloCore24"/>
+            <Button DefaultButtonFace="WarpInPreserver" Requirements="HaveHoloCore24"/>
             <Unit value="Preserver"/>
             <Unit value=""/>
             <Unit value=""/>
@@ -39609,7 +39609,8 @@
             </Charge>
             <Cooldown Link="Abil/AiurLightBridgeNW10" TimeUse="5"/>
         </Cost>
-        <CmdButtonArray index="Execute" DefaultButtonFace="WarpInAdept2"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PreserveSelf"/>
+        <Flags index="Transient" value="1"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="PreserveSelf2">
         <EditorCategories value="AbilityorEffectType:Units"/>

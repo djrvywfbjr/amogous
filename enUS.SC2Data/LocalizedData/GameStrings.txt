@@ -9053,6 +9053,7 @@ Button/Name/PoisonNova7=Amnesia
 Button/Name/PoisonNova8=Toxic Blast
 Button/Name/Predator2=Bloodcall Pylon's Hunter
 Button/Name/Predator3=Build Mongrel
+Button/Name/PreserveSelf=Preserve Self
 Button/Name/PrimalBuildingRoot2=Root
 Button/Name/PrimalBuildingUproot2=Uproot
 Button/Name/PrimalFlyer2=Birth Nest Guardian
@@ -11176,10 +11177,8 @@ Button/Name/WarHound2=Build UltraHound
 Button/Name/WarHound22=Build Missiler
 Button/Name/WarHound3=Hire Penetration Division
 Button/Name/WarHound32=Clone Penetration Division
-Button/Name/WarpInAdept2=Preserve Self
 Button/Name/WarpInAdept22=Phasing Mode
 Button/Name/WarpInAdept23=Enter Sub Warp Space
-Button/Name/WarpInAdept3=Warp In Preserver
 Button/Name/WarpInAdept32=Warp In Cleanser
 Button/Name/WarpInAdept322=Resurrect Death Embracer
 Button/Name/WarpInAdept4=Warp In Initiator
@@ -11188,6 +11187,7 @@ Button/Name/WarpInAdept52=Arise Distraction
 Button/Name/WarpInPhotonTower2=Transform Into Heretic Cannon
 Button/Name/WarpInPhotonTower3=Warp In Warp Cannon
 Button/Name/WarpInPhotonTower32=Warp In Warp Cannon Copy
+Button/Name/WarpInPreserver=Warp In Preserver
 Button/Name/WarpInReaver2=Warp In Artillery
 Button/Name/WarpInReplicant2=Resurrect Formless
 Button/Name/WarpInRoboticsWarpFacility2=Warp In Summoner
@@ -16620,7 +16620,7 @@ Button/Tooltip/PortalOfHerecy=Warps in ground units.
 Button/Tooltip/Predator2=Anti-infantry specialist that deals area damage with each attack.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/Predator3=Anti-infantry specialist that deals area damage with each attack.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/Predator3wagwagw21=Anti-mechanical specialist that deals damage in an area.<n/><n/>The old predators were so ineffective, an outdated colonial ship was the alternative for finishing their research. These mongrels are slightly different, because the zerg threat is becoming less relevant and the robot design can unleash it's true potential as an anti-mechanical attacker.
-Button/Tooltip/PreserveSelf=Become invulnerable and cloaked for 10 seconds. Also gain ability to walk through units. Cannot attack or burn enemies during that time.
+Button/Tooltip/PreserveSelf=Purifier Faction<n/>Ranged specialist. Can use Psionic Transfer.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/PreserveSelf321wa=Become invulnerable, gain 75% movement speed and life regeneration for 20 seconds, but loose ability to attack during that time.
 Button/Tooltip/PreserveSelf321waf=Become invulnerable for 15 seconds, but loose half of the movement speed and abilities.
 Button/Tooltip/PrideOfAugustgrad=Powerful warship. Can level up to use Exodus Cannon and Orbital Drop, Can use Emergency Jump.
@@ -19159,11 +19159,9 @@ Button/Tooltip/WarPig42=General-purpose infantry.<n/><n/><c val="#ColorAttackInf
 Button/Tooltip/Warden=Slow and clunky strider that can be upgraded to spawn units from dead enemies.
 Button/Tooltip/Warden2=Fragile melee warrior. Can be upgraded to use Shadow Fury.<n/><n/><c val="FFFF8A">Can attack ground units.</c>
 Button/Tooltip/WarpGate2=Enables warp in of Protoss ground units.
-Button/Tooltip/WarpInAdept2=Purifier Faction<n/>Ranged specialist. Can use Psionic Transfer.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/WarpInAdept22=Purifier Faction<n/>Ranged specialist. Can use Psionic Transfer.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/WarpInAdept222=Purifier Faction<n/>Ranged specialist. Can use Psionic Transfer.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/WarpInAdept23=Purifier Faction<n/>Ranged specialist. Can use Psionic Transfer.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
-Button/Tooltip/WarpInAdept3=Ranged unit with the ability to preserve self.
 Button/Tooltip/WarpInAdept4=Ranged specialist. The cheapest unit, that can spread combat protocol.<n/><n/><c val="00FFFF">Special Ability: </c>Fires bouncing energy, dealing damage to multiple enemies.
 Button/Tooltip/WarpInAdept42=Ranged specialist. The cheapest unit, that can spread combat protocol.
 Button/Tooltip/WarpInAdept422=Ranged specialist. The cheapest unit, that can spread combat protocol.
@@ -19177,7 +19175,7 @@ Button/Tooltip/WarpInMiscCultistAdept=Purifier Faction<n/>Ranged specialist. Can
 Button/Tooltip/WarpInPhotonTower2=Defensive Tower.
 Button/Tooltip/WarpInPhotonTower32eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee=Cannon that can disassemble itself to move to a different location.
 Button/Tooltip/WarpInPhotonTower3eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee=Cannon that can disassemble itself to move to a different location.
-Button/Tooltip/WarpInPreserver=Purifier Faction<n/>Ranged specialist. Can use Psionic Transfer.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/WarpInPreserver=Ranged unit with the ability to preserve self.
 Button/Tooltip/WarpInReaver2=Big artillery unit with repair drones and phase removal.<n/>Rebuilding scarabs cost too much resources and time. Carrier repair drones with added-on phase removal modules were a better addition to the hangars than explosives.
 Button/Tooltip/WarpInReplicant2=Mimic unit. Can turn into a copy of an allied or enemy unit.
 Button/Tooltip/WarpInRoboticsWarpFacility2=Summons Sacred Cores.

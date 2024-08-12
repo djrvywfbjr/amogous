@@ -10428,7 +10428,6 @@
         <AlertIcon value="Assets\Textures\btn-unit-protoss-darktemplar-aiur.dds"/>
         <Hotkey value="Button/Hotkey/DarkTemplar"/>
         <EditorCategories value="Race:Protoss"/>
-        <HotkeyAlias value="DarkTemplar"/>
         <Universal value="1"/>
     </CButton>
     <CButton id="DarkTemplarAiur22">
@@ -32197,12 +32196,11 @@
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="WarHound"/>
     </CButton>
-    <CButton id="WarpInAdept2">
+    <CButton id="PreserveSelf">
+        <Tooltip value="Button/Tooltip/PreserveSelf321wa"/>
         <Icon value="Assets\Textures\btn-ability-protoss-adept-spiritform.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-adept-purifier.dds"/>
-        <Hotkey value="Button/Hotkey/PreserveSelf"/>
         <Universal value="1"/>
-        <Tooltip value="Button/Tooltip/PreserveSelf321wa"/>
     </CButton>
     <CButton id="WarpInAdept22">
         <Tooltip value="Button/Tooltip/PreserveSelf321waf"/>
@@ -32218,11 +32216,10 @@
         <Hotkey value="Button/Hotkey/PreserveSelf"/>
         <Universal value="1"/>
     </CButton>
-    <CButton id="WarpInAdept3">
+    <CButton id="WarpInPreserver">
         <Icon value="Assets\Textures\btn-unit-protoss-adept-golden.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-adept-purifier.dds"/>
         <Hotkey value="Button/Hotkey/Stalke1312312312r"/>
-        <HotkeyAlias value="Stalker"/>
         <Universal value="1"/>
     </CButton>
     <CButton id="WarpInAdept32">
