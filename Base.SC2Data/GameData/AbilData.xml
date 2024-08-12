@@ -51503,6 +51503,7 @@
         <ProgressButtonArray index="Prep" value="CombatShield2822"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="ShieldUp723">
+        <Flags index="BestUnit" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="UnknownEffect23"/>
         <Cost>
