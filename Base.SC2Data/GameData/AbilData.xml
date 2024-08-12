@@ -640,6 +640,41 @@
         <AINotifyEffect value="ArtanisAstralWind3"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="ArtanisAstralWind4"/>
     </CAbilEffectInstant>
+    <CAbilEffectTarget id="Irradiate22353">
+        <EditorCategories value="AbilityorEffectType:Units,Race:Terran"/>
+        <Effect index="0" value="VoidRayVoid292353"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="1"/>
+            <Charge Link="Abil/Irradiate"/>
+            <Cooldown Link="Abil/Irradiate" TimeUse="7"/>
+        </Cost>
+        <TargetFilters value="-;RawResource,HarvestableResource,Item,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Arc value="360"/>
+        <PauseableArray index="Channel" value="0"/>
+        <UninterruptibleArray index="Channel" value="1"/>
+        <AINotifyEffect value=""/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Irradiate22353"/>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="KerriganVoidKineticBlast3">
+        <Alignment value="Negative"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <Effect index="0" value="KerriganVoidKineticBlastLaunchMissile3"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="75"/>
+            <Cooldown Link="KerriganVoidKineticBlastKerriganVoidKineticBlast3" Location="Unit" TimeUse="10"/>
+        </Cost>
+        <TargetFilters value="Visible;Self,Player,Ally,Missile,Item,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <RangeSlop value="7"/>
+        <PrepTime value="0"/>
+        <ShowProgressArray index="Prep" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="KerriganVoidKineticBlast3"/>
+    </CAbilEffectTarget>
     <CAbilEffectInstant id="NanobotWindCP2">
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
         <Effect index="0" value="ArtanisAstralWind5"/>

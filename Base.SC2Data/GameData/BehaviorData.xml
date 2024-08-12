@@ -4693,7 +4693,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DisableValidatorArray value="CasterHasEnergy22222"/>
         <Modification>
-            <AdditiveMoveSpeedFactor value="0.15"/>
+            <AdditiveMoveSpeedFactor value="0.05"/>
             <AdditiveAttackSpeedFactor value="0.15"/>
             <RateMultiplierArray index="Charge" value="1.15"/>
             <RateMultiplierArray index="Cooldown" value="1.15"/>
@@ -4715,7 +4715,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DisableValidatorArray value="CasterHasEnergy2"/>
         <Modification>
-            <AdditiveMoveSpeedFactor value="0.15"/>
+            <AdditiveMoveSpeedFactor value="0.05"/>
             <AdditiveAttackSpeedFactor value="0.15"/>
             <RateMultiplierArray index="Charge" value="1.15"/>
             <RateMultiplierArray index="Cooldown" value="1.15"/>
@@ -4737,7 +4737,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DisableValidatorArray value="CasterHasEnergy22"/>
         <Modification>
-            <AdditiveMoveSpeedFactor value="0.15"/>
+            <AdditiveMoveSpeedFactor value="0.05"/>
             <AdditiveAttackSpeedFactor value="0.15"/>
             <RateMultiplierArray index="Charge" value="1.15"/>
             <RateMultiplierArray index="Cooldown" value="1.15"/>
@@ -4759,7 +4759,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DisableValidatorArray value="CasterHasEnergy222"/>
         <Modification>
-            <AdditiveMoveSpeedFactor value="0.15"/>
+            <AdditiveMoveSpeedFactor value="0.05"/>
             <AdditiveAttackSpeedFactor value="0.15"/>
             <RateMultiplierArray index="Charge" value="1.15"/>
             <RateMultiplierArray index="Cooldown" value="1.15"/>
@@ -4781,7 +4781,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DisableValidatorArray value="CasterHasEnergy2222"/>
         <Modification>
-            <AdditiveMoveSpeedFactor value="0.15"/>
+            <AdditiveMoveSpeedFactor value="0.05"/>
             <AdditiveAttackSpeedFactor value="0.15"/>
             <RateMultiplierArray index="Charge" value="1.15"/>
             <RateMultiplierArray index="Cooldown" value="1.15"/>
@@ -4803,7 +4803,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DisableValidatorArray value="CasterHasEnergy22223"/>
         <Modification>
-            <AdditiveMoveSpeedFactor value="0.15"/>
+            <AdditiveMoveSpeedFactor value="0.05"/>
             <AdditiveAttackSpeedFactor value="0.15"/>
             <RateMultiplierArray index="Charge" value="1.15"/>
             <RateMultiplierArray index="Cooldown" value="1.15"/>
@@ -4825,7 +4825,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DisableValidatorArray value="CasterHasEnergy222232"/>
         <Modification>
-            <AdditiveMoveSpeedFactor value="0.15"/>
+            <AdditiveMoveSpeedFactor value="0.05"/>
             <AdditiveAttackSpeedFactor value="0.15"/>
             <RateMultiplierArray index="Charge" value="1.15"/>
             <RateMultiplierArray index="Cooldown" value="1.15"/>
@@ -4847,7 +4847,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DisableValidatorArray value="CasterHasEnergy2222322"/>
         <Modification>
-            <AdditiveMoveSpeedFactor value="0.15"/>
+            <AdditiveMoveSpeedFactor value="0.05"/>
             <AdditiveAttackSpeedFactor value="0.15"/>
             <RateMultiplierArray index="Charge" value="1.15"/>
             <RateMultiplierArray index="Cooldown" value="1.15"/>
@@ -4869,7 +4869,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DisableValidatorArray value="CasterHasEnergy22223222"/>
         <Modification>
-            <AdditiveMoveSpeedFactor value="0.15"/>
+            <AdditiveMoveSpeedFactor value="0.05"/>
             <AdditiveAttackSpeedFactor value="0.15"/>
             <RateMultiplierArray index="Charge" value="1.15"/>
             <RateMultiplierArray index="Cooldown" value="1.15"/>
@@ -4891,7 +4891,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DisableValidatorArray value="CasterHasEnergy222232222"/>
         <Modification>
-            <AdditiveMoveSpeedFactor value="0.15"/>
+            <AdditiveMoveSpeedFactor value="0.05"/>
             <AdditiveAttackSpeedFactor value="0.15"/>
             <RateMultiplierArray index="Charge" value="1.15"/>
             <RateMultiplierArray index="Cooldown" value="1.15"/>
@@ -4913,7 +4913,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DisableValidatorArray value="CasterHasEnergy2222322222"/>
         <Modification>
-            <AdditiveMoveSpeedFactor value="0.15"/>
+            <AdditiveMoveSpeedFactor value="0.05"/>
             <AdditiveAttackSpeedFactor value="0.15"/>
             <RateMultiplierArray index="Charge" value="1.15"/>
             <RateMultiplierArray index="Cooldown" value="1.15"/>
@@ -4935,7 +4935,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DisableValidatorArray value="CasterHasEnergy222232223"/>
         <Modification>
-            <AdditiveMoveSpeedFactor value="0.15"/>
+            <AdditiveMoveSpeedFactor value="0.05"/>
             <AdditiveAttackSpeedFactor value="0.15"/>
             <RateMultiplierArray index="Charge" value="1.15"/>
             <RateMultiplierArray index="Cooldown" value="1.15"/>
@@ -4957,7 +4957,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DisableValidatorArray value="CasterHasEnergy2222322233"/>
         <Modification>
-            <AdditiveMoveSpeedFactor value="0.15"/>
+            <AdditiveMoveSpeedFactor value="0.05"/>
             <AdditiveAttackSpeedFactor value="0.15"/>
             <RateMultiplierArray index="Charge" value="1.15"/>
             <RateMultiplierArray index="Cooldown" value="1.15"/>
@@ -4979,7 +4979,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DisableValidatorArray value="CasterHasEnergy22223222332"/>
         <Modification>
-            <AdditiveMoveSpeedFactor value="0.15"/>
+            <AdditiveMoveSpeedFactor value="0.05"/>
             <AdditiveAttackSpeedFactor value="0.15"/>
             <RateMultiplierArray index="Charge" value="1.15"/>
             <RateMultiplierArray index="Cooldown" value="1.15"/>
@@ -8521,6 +8521,26 @@
                 <Charge Link="Behavior/AntamoAirAll"/>
                 <Cooldown Link="Behavior/AntamoAirAll"/>
             </Cost>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UnknownBehavior1923">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-voidstasis.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="5"/>
+        <Duration value="7"/>
+        <Modification AttackSpeedMultiplier="1.15">
+            <LifeArmorBonus value="1"/>
+            <VitalRegenArray index="Life" value="0.5"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UnknownBehavior194">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DamageResponse Handled="UnknownEffect333">
+            <Chance value="1"/>
         </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="UnknownBehavior2822">

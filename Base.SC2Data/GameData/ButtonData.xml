@@ -4145,6 +4145,15 @@
         <AlertIcon value="Assets\Textures\btn-ability-zerg-consume.dds"/>
         <EditorCategories value="Race:Zerg"/>
     </CButton>
+    <CButton id="Irradiate22353">
+        <Icon value="Assets\Textures\btn-ability-protoss-purify.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-irradiate.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
+    <CButton id="KerriganVoidKineticBlast3">
+        <Icon value="Assets\Textures\btn-ability-mengsk-ghost-pyrokineticimmolation_orange.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
     <CButton id="MorphMorphalisk222">
         <Icon value="Assets\Textures\btn-upgrade-zagara-increasebilelauncherrange.dds"/>
         <EditorCategories value="Race:Zerg"/>
@@ -29194,6 +29203,12 @@
         <Icon value="Assets\Textures\btn-ability-terran-battlefieldawareness.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-battlefieldawareness.dds"/>
     </CButton>
+    <CButton id="UnknownButton117">
+        <Icon value="Assets\Textures\btn-ability-protoss-voidstasis.dds"/>
+    </CButton>
+    <CButton id="UnknownButton118">
+        <Icon value="Assets\Textures\btn-ability-terran-surfacetoairtargeting.dds"/>
+    </CButton>
     <CButton id="UnknownButton12">
         <Icon value="Assets\Textures\btn-upgrade-zerg-monarchblades.dds"/>
     </CButton>
@@ -29839,6 +29854,7 @@
         <Icon value="Assets\Textures\btn-unit-terran-vikingassault-silver.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-terran-vikingfighter.dds"/>
         <EditorCategories value="Race:Terran"/>
+        <Tooltip value="Button/Tooltip/GroundFury"/>
     </CButton>
     <CButton id="VikingFighter4">
         <Icon value="Assets\Textures\btn-unit-terran-viking-silver.dds"/>
