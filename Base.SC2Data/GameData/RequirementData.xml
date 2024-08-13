@@ -1928,13 +1928,13 @@
         <NodeArray index="Show" Link="CountBehaviorXenWarrior24233CompleteOnlyAtUnit"/>
     </CRequirement>
     <CRequirement id="HaveHoloCore232222222222">
-        <NodeArray index="Show" Link="CountBehaviorAntamoAirAll103222252CompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountBehaviorWepShrapnelRifleCompleteOnlyAtUnit"/>
     </CRequirement>
     <CRequirement id="HaveHoloCore2322222222222">
-        <NodeArray index="Show" Link="CountBehaviorAntamoAirAll10322225CompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountBehaviorWepShellstormChaingunCompleteOnlyAtUnit"/>
     </CRequirement>
     <CRequirement id="HaveHoloCore23222222222222">
-        <NodeArray index="Show" Link="CountBehaviorAntamoAirAll1032222522CompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountBehaviorWepWarheadLauncherCompleteOnlyAtUnit"/>
     </CRequirement>
     <CRequirement id="HaveHoloCore232222222222222">
         <NodeArray index="Show" Link="CountBehaviorAntamoAirAll1032222532CompleteOnlyAtUnit"/>
@@ -1946,13 +1946,13 @@
         <NodeArray index="Show" Link="CountBehaviorAntamoAirAll103222253CompleteOnlyAtUnit"/>
     </CRequirement>
     <CRequirement id="HaveHoloCore2322222222222223">
-        <NodeArray index="Show" Link="CountBehaviorAntamoAirAll1032222542CompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountBehaviorWepDoubleSurgicalLaserCompleteOnlyAtUnit"/>
     </CRequirement>
     <CRequirement id="HaveHoloCore23222222222222232">
-        <NodeArray index="Show" Link="CountBehaviorAntamoAirAll103222254CompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountBehaviorWepDualSecurityPistolsCompleteOnlyAtUnit"/>
     </CRequirement>
     <CRequirement id="HaveHoloCore232222222222222322">
-        <NodeArray index="Show" Link="CountBehaviorAntamoAirAll10322225422CompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountBehaviorWepSmartFireDartGunsCompleteOnlyAtUnit"/>
     </CRequirement>
     <CRequirement id="HaveHoloCore2322222222222223222">
         <NodeArray index="Show" Link="CountBehaviorAntamoAirAll1032222542222CompleteOnlyAtUnit"/>
@@ -2954,7 +2954,7 @@
         <NodeArray index="Use" Link="CountUpgradeAdvancedConstruction2332CompleteOnly834541386"/>
     </CRequirement>
     <CRequirement id="HavePsionicHeart2243232223242322263222">
-        <NodeArray index="Use" Link="CountUpgradeAdvancedConstruction2422322CompleteOnly"/>
+        <NodeArray index="Use" Link="CountUpgradeEmergencyWeaponCompleteOnly"/>
     </CRequirement>
     <CRequirement id="HavePsionicHeart2243232223242322263223">
         <NodeArray index="Use" Link="CountUpgradeAdvancedConstruction2423CompleteOnly4191044114"/>
@@ -4390,7 +4390,7 @@
     </CRequirement>
     <CRequirement id="LearnBlink21224243332338223222">
         <EditorCategories value="Race:Protoss,TechType:Ability"/>
-        <NodeArray index="Show" Link="NotCountUpgradeAdvancedConstruction2422322QueuedOrBetter"/>
+        <NodeArray index="Show" Link="NotCountUpgradeEmergencyWeaponQueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="LearnBlink212242433323382232222">
         <EditorCategories value="Race:Protoss,TechType:Ability"/>
@@ -6293,6 +6293,10 @@
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
         <NodeArray index="Use" Link="AndGTECountUpgradeManufactureGunpowderMixerCompleteOnly1GTECountUpgradeManufactureShellingFabricatorCompleteOnly2"/>
     </CRequirement>
+    <CRequirement id="Craft1FC2RT">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <NodeArray index="Use" Link="AndGTECountUpgradeManufactureFusionCoreCompleteOnly1GTECountUpgradeManufactureRecyclerTankCompleteOnly2"/>
+    </CRequirement>
     <CRequirement id="MothershipRequirements2322543">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
         <NodeArray index="Use" Link="AndGTECountUpgradeManufactureFusionCoreCompleteOnly3"/>
@@ -6676,6 +6680,9 @@
         <EditorCategories value="Race:Zerg"/>
         <NodeArray index="Use" Link="CountBehaviorShieldingEngine10222CompleteOnly3024621640"/>
         <NodeArray index="Show" Link="NotOrCountUpgradeUmojanBasicUnitUpgrade2233532222222422232233QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade223353222222242223223322QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade22335322222224222323689166607"/>
+    </CRequirement>
+    <CRequirement id="NoEmergencyWeapon">
+        <NodeArray index="Use" Link="NotCountUpgradeEmergencyWeaponCompleteOnly"/>
     </CRequirement>
     <CRequirement id="OutcastCollectorMax5">
         <NodeArray index="Show" Link="EqCountUnitBadgerQueuedOrBetter5"/>

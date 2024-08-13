@@ -17295,9 +17295,9 @@
         <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="DarkArchonMindControl22">
+        <Flags index="AbortOnAllianceChange" value="0"/>
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Effect index="0" value="DarkArchonMindControlSet2"/>
-        <Flags index="AbortOnAllianceChange" value="0"/>
         <Cost>
             <Vital index="Energy" value="100"/>
             <Charge Link="Abil/DarkArchonMindControl"/>
@@ -26239,7 +26239,7 @@
             <Cooldown Link="Abil/GhostAcademyResearch7"/>
             <Button DefaultButtonFace="SetUpPsiwaveWiring" Requirements="LearnBlink2122424333233832"/>
         </InfoArray>
-        <InfoArray index="Research14" Time="225" Upgrade="AdvancedConstruction2422322">
+        <InfoArray index="Research14" Time="225" Upgrade="EmergencyWeapon">
             <Resource index="Minerals" value="125"/>
             <Resource index="Vespene" value="125"/>
             <Charge Link="Abil/GhostAcademyResearch7"/>
@@ -26446,7 +26446,7 @@
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
             <Button DefaultButtonFace="SetUpPsiwaveWiring" Requirements="LearnBlink2122424333233832"/>
         </InfoArray>
-        <InfoArray index="Research14" Time="225" Upgrade="AdvancedConstruction2422322">
+        <InfoArray index="Research14" Time="225" Upgrade="EmergencyWeapon">
             <Resource index="Minerals" value="125"/>
             <Resource index="Vespene" value="125"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
@@ -34573,7 +34573,7 @@
             <Unit value="Searcher"/>
         </InfoArray>
         <InfoArray index="Train4" Time="40">
-            <Button DefaultButtonFace="WarpInAdept3" Requirements="HaveHoloCore24"/>
+            <Button DefaultButtonFace="WarpInPreserver" Requirements="HaveHoloCore24"/>
             <Unit value="Preserver"/>
             <Unit value=""/>
             <Unit value=""/>
@@ -39644,7 +39644,8 @@
             </Charge>
             <Cooldown Link="Abil/AiurLightBridgeNW10" TimeUse="5"/>
         </Cost>
-        <CmdButtonArray index="Execute" DefaultButtonFace="WarpInAdept2"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PreserveSelf"/>
+        <Flags index="Transient" value="1"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="PreserveSelf2">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -47860,7 +47861,7 @@
         <DataCollection value="SOACloak"/>
         <Effect index="0" value="SOACloakSearch3"/>
         <Flags index="RequireTargetVision" value="0"/>
-        <Flags index="Transient" value="1"/>
+        <Flags index="TransientPreferred" value="1"/>
         <Cost>
             <Cooldown TimeUse="10"/>
         </Cost>
@@ -51537,6 +51538,7 @@
         <ProgressButtonArray index="Prep" value="CombatShield2822"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="ShieldUp723">
+        <Flags index="BestUnit" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="UnknownEffect23"/>
         <Cost>
@@ -60392,6 +60394,18 @@
         <TargetFilters value="Visible;Ally,Neutral,Enemy,Buried,UnderConstruction,Dead,Hidden"/>
         <LoadValidatorArray value="NotWidowMineTarget"/>
     </CAbilTransport>
+    <CAbilEffectInstant id="Wep1NapalmSprayer">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="XenWarrior622322335"/>
+        <Effect index="0" value="CraftNapalmSprayer"/>
+        <Flags index="BestUnit" value="1"/>
+        <Cost>
+            <Charge Link="Abil/XenWarrior"/>
+            <Cooldown Link="Abil/XenWarrior"/>
+        </Cost>
+        <AINotifyEffect value="XenWarrior6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipNapalmSprayer" Requirements="Craft1FC2RT"/>
+    </CAbilEffectInstant>
     <CAbilEffectTarget id="WidowMineAttack2" parent="WidowMineAttack">
         <Name value="Abil/Name/WidowMineAttack2"/>
         <PrepEffect index="0" value="WidowMineTargetingBeamDummy2"/>
@@ -61140,353 +61154,245 @@
     <CAbilEffectInstant id="XenWarrior242">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Charge>
-                <CountMax value="1"/>
-                <CountStart value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/XenWarrior"/>
-            </Charge>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot22242" Requirements="BlademasterUpgrades"/>
+        <Flags index="BestUnit" value="1"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior2422">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Charge>
-                <CountMax value="1"/>
-                <CountStart value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/XenWarrior"/>
-            </Charge>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot222422" Requirements="BlademasterUpgrades"/>
+        <Flags index="BestUnit" value="1"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior24222">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Charge>
-                <CountMax value="1"/>
-                <CountStart value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/XenWarrior"/>
-            </Charge>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2224222" Requirements="BlademasterUpgrades"/>
+        <Flags index="BestUnit" value="1"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior2423">
+        <Flags index="BestUnit" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Charge>
-                <CountMax value="1"/>
-                <CountStart value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/XenWarrior"/>
-            </Charge>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot222423" Requirements="BlademasterUpgrades2"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior24232">
+        <Flags index="BestUnit" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Charge>
-                <CountMax value="1"/>
-                <CountStart value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/XenWarrior"/>
-            </Charge>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2224232" Requirements="BlademasterUpgrades2"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior242322">
+        <Flags index="BestUnit" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Charge>
-                <CountMax value="1"/>
-                <CountStart value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/XenWarrior"/>
-            </Charge>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot22242322" Requirements="BlademasterUpgrades2"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior2423222">
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="BestUnit" value="1"/>
         <Cost>
-            <Charge>
-                <CountMax value="1"/>
-                <CountStart value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/XenWarrior"/>
-            </Charge>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot222423222" Requirements="BlademasterUpgrades24"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior24232222">
+        <Flags index="BestUnit" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Charge>
-                <CountMax value="1"/>
-                <CountStart value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/XenWarrior"/>
-            </Charge>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2224232222" Requirements="BlademasterUpgrades24"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior242322222">
+        <Flags index="BestUnit" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Charge>
-                <CountMax value="1"/>
-                <CountStart value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/XenWarrior"/>
-            </Charge>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot22242322222" Requirements="BlademasterUpgrades24"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior24232223">
+        <Flags index="BestUnit" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Charge>
-                <CountMax value="1"/>
-                <CountStart value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/XenWarrior"/>
-            </Charge>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2224232223" Requirements="BlademasterUpgrades242"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior242322232">
+        <Flags index="BestUnit" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Charge>
-                <CountMax value="1"/>
-                <CountStart value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/XenWarrior"/>
-            </Charge>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot22242322232" Requirements="BlademasterUpgrades242"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior2423222322">
+        <Flags index="BestUnit" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Charge>
-                <CountMax value="1"/>
-                <CountStart value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/XenWarrior"/>
-            </Charge>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot222423222322" Requirements="BlademasterUpgrades242"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior24233">
+        <Flags index="BestUnit" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Charge>
-                <CountMax value="1"/>
-                <CountStart value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/XenWarrior"/>
-            </Charge>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2224233" Requirements="BlademasterUpgrades22"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior242332">
+        <Flags index="BestUnit" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Charge>
-                <CountMax value="1"/>
-                <CountStart value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/XenWarrior"/>
-            </Charge>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot22242332" Requirements="BlademasterUpgrades22"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior2423322">
+        <Flags index="BestUnit" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Charge>
-                <CountMax value="1"/>
-                <CountStart value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/XenWarrior"/>
-            </Charge>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot222423322" Requirements="BlademasterUpgrades22"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior24234">
+        <Flags index="BestUnit" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Charge>
-                <CountMax value="1"/>
-                <CountStart value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/XenWarrior"/>
-            </Charge>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2224234" Requirements="BlademasterUpgrades23"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior242342">
+        <Flags index="BestUnit" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Charge>
-                <CountMax value="1"/>
-                <CountStart value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/XenWarrior"/>
-            </Charge>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot22242342" Requirements="BlademasterUpgrades23"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior2423422">
+        <Flags index="BestUnit" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Charge>
-                <CountMax value="1"/>
-                <CountStart value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/XenWarrior"/>
-            </Charge>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot222423422" Requirements="BlademasterUpgrades23"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior242343">
+        <Flags index="BestUnit" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DataCollection value="XenWarrior24234"/>
         <Cost>
-            <Charge>
-                <CountMax value="1"/>
-                <CountStart value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/XenWarrior"/>
-            </Charge>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot22242343" Requirements="BlademasterUpgrades232"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior2423432">
+        <Flags index="BestUnit" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DataCollection value="XenWarrior24234"/>
         <Cost>
-            <Charge>
-                <CountMax value="1"/>
-                <CountStart value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/XenWarrior"/>
-            </Charge>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot222423432" Requirements="BlademasterUpgrades232"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior24234322">
+        <Flags index="BestUnit" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DataCollection value="XenWarrior24234"/>
         <Cost>
-            <Charge>
-                <CountMax value="1"/>
-                <CountStart value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/XenWarrior"/>
-            </Charge>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2224234322" Requirements="BlademasterUpgrades232"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior24235">
+        <Flags index="BestUnit" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Charge>
-                <CountMax value="1"/>
-                <CountStart value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/XenWarrior"/>
-            </Charge>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2224235" Requirements="BlademasterUpgrades25"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior242352">
+        <Flags index="BestUnit" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Charge>
-                <CountMax value="1"/>
-                <CountStart value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/XenWarrior"/>
-            </Charge>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot22242352" Requirements="BlademasterUpgrades25"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior2423522">
+        <Flags index="BestUnit" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Charge>
-                <CountMax value="1"/>
-                <CountStart value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/XenWarrior"/>
-            </Charge>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot222423522" Requirements="BlademasterUpgrades25"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior242353">
+        <Flags index="BestUnit" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Charge>
-                <CountMax value="1"/>
-                <CountStart value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/XenWarrior"/>
-            </Charge>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot22242353" Requirements="BlademasterUpgrades3"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior2423532">
+        <Flags index="BestUnit" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Charge>
-                <CountMax value="1"/>
-                <CountStart value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/XenWarrior"/>
-            </Charge>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot222423532" Requirements="BlademasterUpgrades3"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior2423533">
+        <Flags index="BestUnit" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Charge>
-                <CountMax value="1"/>
-                <CountStart value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/XenWarrior"/>
-            </Charge>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot222423533" Requirements="BlademasterUpgrades3"/>
@@ -63407,34 +63313,34 @@
         <AINotifyEffect value="XenWarrior6"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot226223223353"/>
     </CAbilEffectInstant>
-    <CAbilEffectInstant id="XenWarrior6223223354">
+    <CAbilEffectInstant id="Wep2SharpnelRifle">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DataCollection value="XenWarrior622322335"/>
-        <Effect index="0" value="XenWarrior633223354"/>
+        <Effect index="0" value="CraftShrapnelRifle"/>
+        <Flags index="BestUnit" value="1"/>
         <Cost>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <AINotifyEffect value="XenWarrior6"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot226223223354" Requirements="MothershipRequirements232254"/>
-        <Flags index="BestUnit" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipShrapnelRifle" Requirements="MothershipRequirements232254"/>
     </CAbilEffectInstant>
-    <CAbilEffectInstant id="XenWarrior62232233542">
+    <CAbilEffectInstant id="Wep1ShellstormChaingun">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DataCollection value="XenWarrior622322335"/>
-        <Effect index="0" value="XenWarrior6332233542"/>
+        <Effect index="0" value="CraftShellstormChaingun"/>
+        <Flags index="BestUnit" value="1"/>
         <Cost>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <AINotifyEffect value="XenWarrior6"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2262232233542" Requirements="MothershipRequirements2322542"/>
-        <Flags index="BestUnit" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipShellstormChaingun" Requirements="MothershipRequirements2322542"/>
     </CAbilEffectInstant>
-    <CAbilEffectInstant id="XenWarrior622322335422">
+    <CAbilEffectInstant id="Wep1DualSecurityPistols">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DataCollection value="XenWarrior622322335"/>
-        <Effect index="0" value="XenWarrior63322335422"/>
+        <Effect index="0" value="CraftDualSecurityPistols"/>
         <Flags index="BestUnit" value="1"/>
         <Cost>
             <Charge Link="Abil/XenWarrior"/>
@@ -63443,29 +63349,29 @@
         <AINotifyEffect value="XenWarrior6"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot22622322335423" Requirements="MothershipRequirements23225432"/>
     </CAbilEffectInstant>
-    <CAbilEffectInstant id="XenWarrior6223223354222">
+    <CAbilEffectInstant id="Wep2DoubleSurgicalLaser">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DataCollection value="XenWarrior622322335"/>
-        <Effect index="0" value="XenWarrior633223354222"/>
+        <Effect index="0" value="CraftDoubleSurgicalLaser"/>
         <Flags index="BestUnit" value="1"/>
         <Cost>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <AINotifyEffect value="XenWarrior6"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot226223223354232" Requirements="MothershipRequirements23225432"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipDoubleSurgicalLaser" Requirements="MothershipRequirements23225432"/>
     </CAbilEffectInstant>
-    <CAbilEffectInstant id="XenWarrior62232233542222">
+    <CAbilEffectInstant id="Wep3SmartFireDartGuns">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DataCollection value="XenWarrior622322335"/>
-        <Effect index="0" value="XenWarrior6332233542222"/>
+        <Effect index="0" value="CraftSmartFireDartGuns"/>
         <Flags index="BestUnit" value="1"/>
         <Cost>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <AINotifyEffect value="XenWarrior6"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2262232233542322" Requirements="MothershipRequirements232254222"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipSmartFireDartGuns" Requirements="MothershipRequirements232254222"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior622322335422222">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -63527,17 +63433,17 @@
         <AINotifyEffect value="XenWarrior6"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot226223223354234" Requirements="MothershipRequirements23225432"/>
     </CAbilEffectInstant>
-    <CAbilEffectInstant id="XenWarrior62232233543">
+    <CAbilEffectInstant id="Wep3WarheadLauncher">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DataCollection value="XenWarrior622322335"/>
-        <Effect index="0" value="XenWarrior6332233543"/>
+        <Effect index="0" value="CraftWarheadLauncher"/>
+        <Flags index="BestUnit" value="1"/>
         <Cost>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <AINotifyEffect value="XenWarrior6"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2262232233543" Requirements="MothershipRequirements23225422"/>
-        <Flags index="BestUnit" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipWarheadLauncher" Requirements="MothershipRequirements23225422"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior622322335432">
         <EditorCategories value="AbilityorEffectType:Units"/>
