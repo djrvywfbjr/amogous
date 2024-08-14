@@ -29214,6 +29214,9 @@
     <CButton id="UnknownButton118">
         <Icon value="Assets\Textures\btn-ability-terran-surfacetoairtargeting.dds"/>
     </CButton>
+    <CButton id="UnknownButton119">
+        <Icon value="Assets\Textures\btn-ability-mengsk-ghost-pyrokineticimmolation_orange.dds"/>
+    </CButton>
     <CButton id="UnknownButton12">
         <Icon value="Assets\Textures\btn-upgrade-zerg-monarchblades.dds"/>
     </CButton>
@@ -32487,14 +32490,7 @@
         <EditorCategories value="Race:Protoss"/>
         <HotkeyAlias value="WarpPrism"/>
     </CButton>
-    <CButton id="WarpPrismLoad2">
-        <Icon value="Assets\Textures\btn-ability-terran-load.dds"/>
-        <AlertIcon value="Assets\Textures\btn-ability-terran-load.dds"/>
-        <EditorCategories value="Race:Protoss"/>
-        <TintRacially value="1"/>
-        <HotkeyAlias value="BunkerLoad"/>
-        <Universal value="1"/>
-    </CButton>
+    <CButton id="WarpPrismLoad2"/>
     <CButton id="WarpPrismUnloadAll2">
         <Icon value="Assets\Textures\btn-ability-terran-unloadall.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-unloadall.dds"/>

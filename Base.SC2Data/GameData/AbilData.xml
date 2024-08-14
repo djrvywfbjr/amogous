@@ -172,27 +172,18 @@
         <CmdButtonArray index="Execute" DefaultButtonFace="PoisonNova232332" Requirements="UseSpectreNyxSuit22223322322"/>
     </CAbilEffectInstant>
     <CAbilEffectTarget id="AmonTentacleB2">
-        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Effect index="0" value="AmonTentacleBCP2"/>
-        <Flags index="AutoCast" value="1"/>
-        <Flags index="AutoCastOn" value="1"/>
-        <Flags index="DeferCooldown" value="1"/>
         <Cost>
-            <Cooldown TimeStart="3" TimeUse="25"/>
+            <Charge Link="Abil/AmonTentacleB2"/>
+            <Cooldown Link="Abil/AmonTentacleB2" TimeStart="3" TimeUse="25"/>
         </Cost>
         <TargetFilters value="Visible;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <TargetSorts RequestCount="1">
+        <TargetSorts>
             <SortArray value="TSAmonTentacleB"/>
             <SortArray value="TSRandom"/>
         </TargetSorts>
         <Range value="13"/>
-        <Arc value="360"/>
-        <ArcSlop value="360"/>
-        <AutoCastRange value="13"/>
         <CastIntroTime value="0.1"/>
-        <UninterruptibleArray index="Channel" value="1"/>
-        <AINotifyEffect value="AmonTentacleB"/>
-        <ProgressButtonArray index="Channel" value="AmonTentacleB"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="AmonTentacleB2"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="AmonTentacleB22">
@@ -4339,10 +4330,9 @@
             <Unit value="Probe5"/>
         </InfoArray>
         <InfoArray index="Train27">
-            <Resource index="Minerals" value="-50"/>
             <Vital index="Life" value="99"/>
-            <Button DefaultButtonFace="Wraith2222226"/>
-            <Unit value="Drone6"/>
+            <Button DefaultButtonFace="UnknownButton119" Requirements="HavePlagueCenter23322"/>
+            <Unit value="ProbingDrone"/>
         </InfoArray>
         <InfoArray index="Train28">
             <Resource index="Minerals" value="-50"/>
@@ -45750,32 +45740,22 @@
         <CmdButtonArray index="Execute" DefaultButtonFace="ReplicantReplicate3"/>
     </CAbilEffectTarget>
     <CAbilBehavior id="RogueGhostCloak2">
-        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
-        <CmdButtonArray index="On" DefaultButtonFace="CloakOnSpectre2" Requirements="HavePsionicHeart2243232223242322222222">
-            <Flags index="ToSelection" value="1"/>
-        </CmdButtonArray>
-        <CmdButtonArray index="Off" DefaultButtonFace="CloakOff2">
-            <Flags index="ToSelection" value="1"/>
-        </CmdButtonArray>
-        <Flags index="Toggle" value="1"/>
-        <Flags index="Transient" value="1"/>
+        <CmdButtonArray index="On" DefaultButtonFace="CloakOnSpectre2" Requirements="HavePsionicHeart2243232223242322222222"/>
+        <CmdButtonArray index="Off" DefaultButtonFace="CloakOff2"/>
         <Cost>
             <Vital index="Energy" value="5"/>
+            <Charge Link="Abil/RogueGhostCloak2"/>
+            <Cooldown Link="Abil/RogueGhostCloak2"/>
         </Cost>
         <BehaviorArray value="SpectreCloaking"/>
     </CAbilBehavior>
     <CAbilBehavior id="RogueGhostCloak22">
-        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
-        <CmdButtonArray index="On" DefaultButtonFace="CloakOnSpectre22" Requirements="HavePsionicHeart22432322232423">
-            <Flags index="ToSelection" value="1"/>
-        </CmdButtonArray>
-        <CmdButtonArray index="Off" DefaultButtonFace="CloakOff22">
-            <Flags index="ToSelection" value="1"/>
-        </CmdButtonArray>
-        <Flags index="Toggle" value="1"/>
-        <Flags index="Transient" value="1"/>
+        <CmdButtonArray index="On" DefaultButtonFace="CloakOnSpectre22" Requirements="HavePsionicHeart22432322232423"/>
+        <CmdButtonArray index="Off" DefaultButtonFace="CloakOff22"/>
         <Cost>
             <Vital index="Energy" value="5"/>
+            <Charge Link="Abil/RogueGhostCloak22"/>
+            <Cooldown Link="Abil/RogueGhostCloak22"/>
         </Cost>
         <BehaviorArray value="SpectreCloaking"/>
     </CAbilBehavior>
