@@ -4360,31 +4360,31 @@
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
-    <CButton id="Manufacture3GunpowderMixers">
+    <CButton id="Manufacture6GunpowderMixers">
         <Icon value="Assets\Textures\btn-upgrade-tychus-herc-malice.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
         <ChargeText value="GunPow"/>
     </CButton>
-    <CButton id="Manufacture3ShellingFabricators">
+    <CButton id="Manufacture6ShellingFabricators">
         <Icon value="Assets\Textures\btn-upgrade-tychus-reaper-hostilitieskit.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
         <ChargeText value="ShellFab"/>
     </CButton>
-    <CButton id="Manufacture3ChemicalStations">
+    <CButton id="Manufacture6ChemicalStations">
         <Icon value="Assets\Textures\btn-upgrade-tychus-marauder-aggressionblend.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
         <ChargeText value="ChemStat"/>
     </CButton>
-    <CButton id="Manufacture3FusionCores">
+    <CButton id="Manufacture6FusionCores">
         <Icon value="Assets\Textures\btn-upgrade-tychus-ghost-persuader.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
         <ChargeText value="FuseCore"/>
     </CButton>
-    <CButton id="Manufacture3RecyclerTanks">
+    <CButton id="Manufacture6RecyclerTanks">
         <Icon value="Assets\Textures\btn-upgrade-tychus-firebat-wildflamefuel.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
@@ -14111,6 +14111,7 @@
         <Icon value="Assets\Textures\btn-unit-collection-immortal-golden.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Protoss-Immortal.dds"/>
         <EditorCategories value="Race:Protoss"/>
+        <HotkeyAlias value="ImmortalAiur"/>
     </CButton>
     <CButton id="Immortal32">
         <Icon value="Assets\Textures\btn-unit-collection-immortal-golden.dds"/>

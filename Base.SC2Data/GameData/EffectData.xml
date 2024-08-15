@@ -4408,23 +4408,23 @@
     <CEffectDamage id="ArcNodeDamage2" parent="DU_WEAP">
         <ValidatorArray value="HaveHotSViciousGlaive2222234"/>
         <Kind value="Ranged"/>
-        <Amount value="5"/>
+        <Amount value="4"/>
         <Chance value="0.3"/>
     </CEffectDamage>
     <CEffectDamage id="ArcNodeDamage22" parent="DU_WEAP">
         <ValidatorArray value="HaveHotSViciousGlaive22222343"/>
         <Chance value="0.6"/>
         <Kind value="Ranged"/>
-        <Amount value="5"/>
+        <Amount value="4"/>
     </CEffectDamage>
     <CEffectDamage id="ArcNodeDamage222" parent="DU_WEAP">
         <ValidatorArray value="HaveHotSViciousGlaive222223432"/>
         <Kind value="Ranged"/>
-        <Amount value="5"/>
+        <Amount value="4"/>
     </CEffectDamage>
     <CEffectDamage id="ArcNodeDamage2222" parent="DU_WEAP">
         <Kind value="Ranged"/>
-        <Amount value="6"/>
+        <Amount value="4"/>
     </CEffectDamage>
     <CEffectDamage id="ArcNodeDamage22222" parent="DU_WEAP">
         <Kind value="Ranged"/>
@@ -37122,25 +37122,25 @@
     <CEffectCreateUnit id="ManifestZealCU2232">
         <SpawnCount value="7"/>
     </CEffectCreateUnit>
-    <CEffectModifyPlayer id="Manufacture3GunpowderMixers">
+    <CEffectModifyPlayer id="Manufacture6GunpowderMixers">
         <EditorCategories value=""/>
-        <Upgrades Upgrade="ManufactureGunpowderMixer" Count="3"/>
+        <Upgrades Upgrade="ManufactureGunpowderMixer" Count="6"/>
     </CEffectModifyPlayer>
-    <CEffectModifyPlayer id="Manufacture3ShellingFabricators">
+    <CEffectModifyPlayer id="Manufacture6ShellingFabricators">
         <EditorCategories value=""/>
-        <Upgrades Upgrade="ManufactureShellingFabricator" Count="3"/>
+        <Upgrades Upgrade="ManufactureShellingFabricator" Count="6"/>
     </CEffectModifyPlayer>
-    <CEffectModifyPlayer id="Manufacture3ChemicalStations">
+    <CEffectModifyPlayer id="Manufacture6ChemicalStations">
         <EditorCategories value=""/>
-        <Upgrades Upgrade="ManufactureChemicalStation" Count="3"/>
+        <Upgrades Upgrade="ManufactureChemicalStation" Count="6"/>
     </CEffectModifyPlayer>
-    <CEffectModifyPlayer id="Manufacture3RecyclerTanks">
+    <CEffectModifyPlayer id="Manufacture6RecyclerTanks">
         <EditorCategories value=""/>
-        <Upgrades Upgrade="ManufactureRecyclerTank" Count="3"/>
+        <Upgrades Upgrade="ManufactureRecyclerTank" Count="6"/>
     </CEffectModifyPlayer>
-    <CEffectModifyPlayer id="Manufacture3FusionCores">
+    <CEffectModifyPlayer id="Manufacture6FusionCores">
         <EditorCategories value=""/>
-        <Upgrades Upgrade="ManufactureFusionCore" Count="3"/>
+        <Upgrades Upgrade="ManufactureFusionCore" Count="6"/>
     </CEffectModifyPlayer>
     <CEffectEnumArea id="MarauderSlowAOE2">
         <ValidatorArray value="PunisherGrenadesResearched"/>
@@ -41345,7 +41345,7 @@
         <ResponseFlags index="Acquire" value="1"/>
         <ResponseFlags index="Flee" value="1"/>
         <AttributeBonus index="Structure" value="200"/>
-        <Amount value="100"/>
+        <Amount value="50"/>
         <AreaArray Radius="1.5" Fraction="1"/>
         <AreaArray Radius="2.5" Fraction="0.6"/>
         <SearchFilters value="Ground;Self,Player,Ally,Missile,Stasis,Dead,Invulnerable"/>

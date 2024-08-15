@@ -182,17 +182,33 @@
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
         <NodeArray index="Use" Link="LT879540594CountUpgradeManufactureChemicalStationQueuedOrBetter50"/>
     </CRequirement>
+    <CRequirement id="ManufactureChemicalStationAuto">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <NodeArray index="Use" Link="LT879540594CountUpgradeManufactureChemicalStationQueuedOrBetter15"/>
+    </CRequirement>
     <CRequirement id="ManufactureFusionCore">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
         <NodeArray index="Use" Link="LT1853237808CountUpgradeManufactureFusionCoreQueuedOrBetter50"/>
+    </CRequirement>
+    <CRequirement id="ManufactureFusionCoreAuto">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <NodeArray index="Use" Link="LT1853237808CountUpgradeManufactureFusionCoreQueuedOrBetter15"/>
     </CRequirement>
     <CRequirement id="ManufactureGunpowderMixer">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
         <NodeArray index="Use" Link="LT1853237808CountUpgradeManufactureGunpowderMixerQueuedOrBetter50"/>
     </CRequirement>
+    <CRequirement id="ManufactureGunpowderMixerAuto">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <NodeArray index="Use" Link="LT1853237808CountUpgradeManufactureGunpowderMixerQueuedOrBetter15"/>
+    </CRequirement>
     <CRequirement id="ManufactureRecyclerTank">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
         <NodeArray index="Use" Link="LT393313941CountUpgradeManufactureRecyclerTankQueuedOrBetter50"/>
+    </CRequirement>
+    <CRequirement id="ManufactureRecyclerTankAuto">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <NodeArray index="Use" Link="LT393313941CountUpgradeManufactureRecyclerTankQueuedOrBetter15"/>
     </CRequirement>
     <CRequirement id="ManufactureShellingFabricator">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
@@ -6167,6 +6183,10 @@
     </CRequirement>
     <CRequirement id="MalTanisLearnEnergyMax62">
         <NodeArray index="Show" Link="NotCountUpgradeVoidDarkArchonDarkAmulet2235QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="ManufactureShellingFabricatorAuto">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <NodeArray index="Use" Link="LT2053466437CountUpgradeManufactureShellingFabricatorQueuedOrBetter15"/>
     </CRequirement>
     <CRequirement id="MothershipRequirements2">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>

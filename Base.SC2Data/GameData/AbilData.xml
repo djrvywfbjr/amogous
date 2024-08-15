@@ -30469,43 +30469,43 @@
     </CAbilEffectTarget>
     <CAbilSpecialize id="ManufactureParts">
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <InfoArray index="Specialize1" Time="60" Effect="Manufacture3GunpowderMixers">
+        <InfoArray index="Specialize1" Time="60" Effect="Manufacture6GunpowderMixers">
             <Resource index="Minerals" value="105"/>
             <Charge Location="Unit"/>
             <Cooldown Location="Unit"/>
-            <Button DefaultButtonFace="Manufacture3GunpowderMixers" Requirements="ManufactureGunpowderMixer"/>
+            <Button DefaultButtonFace="Manufacture6GunpowderMixers" Requirements="ManufactureGunpowderMixer"/>
             <Flags index="AutoCast" value="1"/>
         </InfoArray>
-        <InfoArray index="Specialize2" Time="60" Effect="Manufacture3ShellingFabricators">
+        <InfoArray index="Specialize2" Time="60" Effect="Manufacture6ShellingFabricators">
             <Resource index="Minerals" value="75"/>
             <Resource index="Vespene" value="15"/>
             <Charge Location="Unit"/>
             <Cooldown Location="Unit"/>
-            <Button DefaultButtonFace="Manufacture3ShellingFabricators" Requirements="ManufactureShellingFabricator"/>
+            <Button DefaultButtonFace="Manufacture6ShellingFabricators" Requirements="ManufactureShellingFabricator"/>
             <Flags index="AutoCast" value="1"/>
         </InfoArray>
-        <InfoArray index="Specialize3" Time="60" Effect="Manufacture3ChemicalStations">
+        <InfoArray index="Specialize3" Time="60" Effect="Manufacture6ChemicalStations">
             <Resource index="Minerals" value="45"/>
             <Resource index="Vespene" value="60"/>
             <Charge Location="Unit"/>
             <Cooldown Location="Unit"/>
-            <Button DefaultButtonFace="Manufacture3ChemicalStations" Requirements="ManufactureChemicalStation"/>
+            <Button DefaultButtonFace="Manufacture6ChemicalStations" Requirements="ManufactureChemicalStation"/>
             <Flags index="AutoCast" value="1"/>
         </InfoArray>
-        <InfoArray index="Specialize4" Time="60" Effect="Manufacture3FusionCores">
+        <InfoArray index="Specialize4" Time="60" Effect="Manufacture6FusionCores">
             <Resource index="Minerals" value="60"/>
             <Resource index="Vespene" value="60"/>
             <Charge Location="Unit"/>
             <Cooldown Location="Unit"/>
-            <Button DefaultButtonFace="Manufacture3FusionCores" Requirements="ManufactureFusionCore"/>
+            <Button DefaultButtonFace="Manufacture6FusionCores" Requirements="ManufactureFusionCore"/>
             <Flags index="AutoCast" value="1"/>
         </InfoArray>
-        <InfoArray index="Specialize5" Time="60" Effect="Manufacture3RecyclerTanks">
+        <InfoArray index="Specialize5" Time="60" Effect="Manufacture6RecyclerTanks">
             <Resource index="Minerals" value="45"/>
             <Resource index="Vespene" value="60"/>
             <Charge Location="Unit"/>
             <Cooldown Location="Unit"/>
-            <Button DefaultButtonFace="Manufacture3RecyclerTanks" Requirements="ManufactureRecyclerTank"/>
+            <Button DefaultButtonFace="Manufacture6RecyclerTanks" Requirements="ManufactureRecyclerTank"/>
             <Flags index="AutoCast" value="1"/>
         </InfoArray>
     </CAbilSpecialize>
@@ -45935,7 +45935,6 @@
     <CAbilHarvest id="SCVHarvest4">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <ResourceAmountBonus index="Minerals" value="10"/>
-        <ResourceTimeMultiplier index="Minerals" value="0.8"/>
     </CAbilHarvest>
     <CAbilHarvest id="SCVHarvest5">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
