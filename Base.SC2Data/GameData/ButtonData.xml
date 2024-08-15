@@ -10428,7 +10428,6 @@
         <AlertIcon value="Assets\Textures\btn-unit-protoss-darktemplar-aiur.dds"/>
         <Hotkey value="Button/Hotkey/DarkTemplar"/>
         <EditorCategories value="Race:Protoss"/>
-        <HotkeyAlias value="DarkTemplar"/>
         <Universal value="1"/>
     </CButton>
     <CButton id="DarkTemplarAiur22">
@@ -15006,6 +15005,11 @@
         <AlertIcon value="Assets\Textures\btn-ability-terran-irradiate.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
+    <CButton id="Irradiate22353">
+        <Icon value="Assets\Textures\btn-ability-protoss-purify.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-irradiate.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
     <CButton id="Irradiate224">
         <Icon value="Assets\Textures\btn-ability-stetmann-garystetelliteovercharge-health.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-irradiate.dds"/>
@@ -15167,6 +15171,10 @@
     </CButton>
     <CButton id="KerriganVoidKineticBlast2">
         <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-dragoongroundattack.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
+    <CButton id="KerriganVoidKineticBlast3">
+        <Icon value="Assets\Textures\btn-ability-mengsk-ghost-pyrokineticimmolation_orange.dds"/>
         <EditorCategories value="Race:Zerg"/>
     </CButton>
     <CButton id="KhaydarinMonolith10">
@@ -29200,6 +29208,15 @@
         <Icon value="Assets\Textures\btn-ability-terran-battlefieldawareness.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-battlefieldawareness.dds"/>
     </CButton>
+    <CButton id="UnknownButton117">
+        <Icon value="Assets\Textures\btn-ability-protoss-voidstasis.dds"/>
+    </CButton>
+    <CButton id="UnknownButton118">
+        <Icon value="Assets\Textures\btn-ability-terran-surfacetoairtargeting.dds"/>
+    </CButton>
+    <CButton id="UnknownButton119">
+        <Icon value="Assets\Textures\btn-ability-mengsk-ghost-pyrokineticimmolation_orange.dds"/>
+    </CButton>
     <CButton id="UnknownButton12">
         <Icon value="Assets\Textures\btn-upgrade-zerg-monarchblades.dds"/>
     </CButton>
@@ -29845,6 +29862,7 @@
         <Icon value="Assets\Textures\btn-unit-terran-vikingassault-silver.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-terran-vikingfighter.dds"/>
         <EditorCategories value="Race:Terran"/>
+        <Tooltip value="Button/Tooltip/GroundFury"/>
     </CButton>
     <CButton id="VikingFighter4">
         <Icon value="Assets\Textures\btn-unit-terran-viking-silver.dds"/>
@@ -32197,12 +32215,11 @@
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="WarHound"/>
     </CButton>
-    <CButton id="WarpInAdept2">
+    <CButton id="PreserveSelf">
+        <Tooltip value="Button/Tooltip/PreserveSelf321wa"/>
         <Icon value="Assets\Textures\btn-ability-protoss-adept-spiritform.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-adept-purifier.dds"/>
-        <Hotkey value="Button/Hotkey/PreserveSelf"/>
         <Universal value="1"/>
-        <Tooltip value="Button/Tooltip/PreserveSelf321wa"/>
     </CButton>
     <CButton id="WarpInAdept22">
         <Tooltip value="Button/Tooltip/PreserveSelf321waf"/>
@@ -32218,11 +32235,10 @@
         <Hotkey value="Button/Hotkey/PreserveSelf"/>
         <Universal value="1"/>
     </CButton>
-    <CButton id="WarpInAdept3">
+    <CButton id="WarpInPreserver">
         <Icon value="Assets\Textures\btn-unit-protoss-adept-golden.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-adept-purifier.dds"/>
         <Hotkey value="Button/Hotkey/Stalke1312312312r"/>
-        <HotkeyAlias value="Stalker"/>
         <Universal value="1"/>
     </CButton>
     <CButton id="WarpInAdept32">
@@ -32474,14 +32490,7 @@
         <EditorCategories value="Race:Protoss"/>
         <HotkeyAlias value="WarpPrism"/>
     </CButton>
-    <CButton id="WarpPrismLoad2">
-        <Icon value="Assets\Textures\btn-ability-terran-load.dds"/>
-        <AlertIcon value="Assets\Textures\btn-ability-terran-load.dds"/>
-        <EditorCategories value="Race:Protoss"/>
-        <TintRacially value="1"/>
-        <HotkeyAlias value="BunkerLoad"/>
-        <Universal value="1"/>
-    </CButton>
+    <CButton id="WarpPrismLoad2"/>
     <CButton id="WarpPrismUnloadAll2">
         <Icon value="Assets\Textures\btn-ability-terran-unloadall.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-unloadall.dds"/>

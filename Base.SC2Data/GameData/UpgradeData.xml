@@ -11083,11 +11083,16 @@
         <LeaderAlias value="UmojanBasicUnitUpgrade652"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade65243">
-        <EffectArray Reference="Behavior,XenWarrior7222222322223222323,Modification.DamageDealtFraction[Melee]" Value="0.3"/>
-        <EffectArray Reference="Behavior,XenWarrior7222222322223222323,Modification.DamageDealtFraction[NoProc]" Value="0.3"/>
-        <EffectArray Reference="Behavior,XenWarrior7222222322223222323,Modification.DamageDealtFraction[Ranged]" Value="0.3"/>
-        <EffectArray Reference="Behavior,XenWarrior7222222322223222323,Modification.DamageDealtFraction[Spell]" Value="0.3"/>
-        <EffectArray Reference="Behavior,XenWarrior7222222322223222323,Modification.DamageDealtFraction[Splash]" Value="0.3"/>
+        <EffectArray Reference="Behavior,PsiDisruption2422,Modification.DamageDealtFraction[Melee]" Value="0.3"/>
+        <EffectArray Reference="Behavior,PsiDisruption2422,Modification.DamageDealtFraction[NoProc]" Value="0.3"/>
+        <EffectArray Reference="Behavior,PsiDisruption2422,Modification.DamageDealtFraction[Ranged]" Value="0.3"/>
+        <EffectArray Reference="Behavior,PsiDisruption2422,Modification.DamageDealtFraction[Spell]" Value="0.3"/>
+        <EffectArray Reference="Behavior,PsiDisruption2422,Modification.DamageDealtFraction[Splash]" Value="0.3"/>
+        <EffectArray Reference="Behavior,PsiDisruption242,Modification.DamageDealtFraction[Splash]" Value="0.3"/>
+        <EffectArray Reference="Behavior,PsiDisruption242,Modification.DamageDealtFraction[Spell]" Value="0.3"/>
+        <EffectArray Reference="Behavior,PsiDisruption242,Modification.DamageDealtFraction[Ranged]" Value="0.3"/>
+        <EffectArray Reference="Behavior,PsiDisruption242,Modification.DamageDealtFraction[Melee]" Value="0.3"/>
+        <EffectArray Reference="Behavior,PsiDisruption242,Modification.DamageDealtFraction[NoProc]" Value="0.3"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade652"/>
     </CUpgrade>
@@ -12821,10 +12826,12 @@
         <EffectArray Operation="Set" Reference="Abil,NexusTrain3,InfoArray[Train5].Unit[2]" Value="Upgrader"/>
         <EffectArray Operation="Set" Reference="Abil,NexusTrain3,InfoArray[Train6].Unit[1]" Value="VengeanceSeer"/>
         <EffectArray Operation="Set" Reference="Abil,NexusTrain3,InfoArray[Train6].Unit[2]" Value="VengeanceSeer"/>
-        <EffectArray Operation="Set" Reference="Unit,BladeMaster,CostResource[Minerals]" Value="60"/>
-        <EffectArray Operation="Set" Reference="Unit,Preserver,CostResource[Minerals]" Value="75"/>
-        <EffectArray Operation="Set" Reference="Unit,Upgrader,CostResource[Minerals]" Value="65"/>
-        <EffectArray Operation="Set" Reference="Unit,VengeanceSeer,CostResource[Minerals]" Value="75"/>
+        <EffectArray Operation="Subtract" Reference="Unit,BladeMaster,CostResource[Minerals]" Value="25"/>
+        <EffectArray Operation="Subtract" Reference="Unit,Preserver,CostResource[Minerals]" Value="25"/>
+        <EffectArray Operation="Subtract" Reference="Unit,Upgrader,CostResource[Minerals]" Value="25"/>
+        <EffectArray Operation="Subtract" Reference="Unit,Upgrader,CostResource[Vespene]" Value="50"/>
+        <EffectArray Operation="Subtract" Reference="Unit,VengeanceSeer,CostResource[Minerals]" Value="50"/>
+        <EffectArray Operation="Subtract" Reference="Unit,VengeanceSeer,CostResource[Vespene]" Value="50"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade6432"/>
     </CUpgrade>
@@ -12832,17 +12839,20 @@
         <EffectArray Operation="Set" Reference="Abil,NexusTrain3,InfoArray[Train7].Unit[1]" Value="Obstructor"/>
         <EffectArray Operation="Set" Reference="Abil,NexusTrain3,InfoArray[Train9].Unit[1]" Value="DeMaker"/>
         <EffectArray Operation="Set" Reference="Abil,NexusTrain3,InfoArray[Train12].Unit[1]" Value="Engineer"/>
-        <EffectArray Operation="Set" Reference="Unit,Obstructor,CostResource[Minerals]" Value="175"/>
-        <EffectArray Operation="Set" Reference="Unit,DeMaker,CostResource[Minerals]" Value="200"/>
-        <EffectArray Operation="Set" Reference="Unit,Engineer,CostResource[Vespene]" Value="175"/>
+        <EffectArray Operation="Subtract" Reference="Unit,Obstructor,CostResource[Minerals]" Value="75"/>
+        <EffectArray Operation="Subtract" Reference="Unit,Obstructor,CostResource[Vespene]" Value="75"/>
+        <EffectArray Operation="Subtract" Reference="Unit,DeMaker,CostResource[Minerals]" Value="75"/>
+        <EffectArray Operation="Subtract" Reference="Unit,DeMaker,CostResource[Vespene]" Value="75"/>
+        <EffectArray Operation="Subtract" Reference="Unit,Engineer,CostResource[Minerals]" Value="75"/>
+        <EffectArray Operation="Subtract" Reference="Unit,Engineer,CostResource[Vespene]" Value="75"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade6432"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade6432222">
         <EffectArray Operation="Set" Reference="Abil,NexusTrain3,InfoArray[Train10].Unit[1]" Value="WarpRay"/>
         <EffectArray Operation="Set" Reference="Abil,NexusTrain3,InfoArray[Train10].Unit[2]" Value="WarpRay"/>
-        <EffectArray Operation="Set" Reference="Unit,WarpRay,CostResource[Minerals]" Value="175"/>
-        <EffectArray Operation="Set" Reference="Unit,WarpRay,CostResource[Vespene]" Value="100"/>
+        <EffectArray Operation="Subtract" Reference="Unit,WarpRay,CostResource[Minerals]" Value="100"/>
+        <EffectArray Operation="Subtract" Reference="Unit,WarpRay,CostResource[Vespene]" Value="75"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade6432"/>
     </CUpgrade>
@@ -13015,6 +13025,7 @@
     <CUpgrade id="UmojanBasicUnitUpgrade654">
         <EffectArray Operation="Set" Reference="Unit,Silverback,CostResource[Vespene]" Value="75"/>
         <EffectArray Operation="Set" Reference="Unit,Silverback,CostResource[Minerals]" Value="100"/>
+        <EffectArray Operation="Set" Reference="Unit,Silverback,Speed" Value="3.648400"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade6542">

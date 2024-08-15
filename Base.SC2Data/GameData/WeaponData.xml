@@ -6688,6 +6688,19 @@
         <LegacyOptions index="KeepChanneling" value="1"/>
         <AllowedMovement value="Slowing"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="MengskThorJavelinMissileLaunchers323">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-swann-multilockweaponsystem.dds"/>
+        <DisplayEffect value="MengskThorJavelinMissileLaunchersDamage323"/>
+        <DisplayAttackCount value="4"/>
+        <TargetFilters value="Air,Visible;Ground,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquirePrioritization value="ByAngle"/>
+        <Range value="8"/>
+        <Arc value="5.625"/>
+        <Period value="3"/>
+        <Effect value="BlackhammerAoELaunch33"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="MengskThorJavelinMissileLaunchers33">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
@@ -11735,10 +11748,11 @@
     <CWeaponLegacy id="WreckingCrewAssault2">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
-        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="6"/>
         <Arc value="5.625"/>
         <Period value="1"/>
+        <Options index="LinkedCooldown" value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="WreckingCrewAssault3">
         <EditorCategories value="Race:Terran"/>

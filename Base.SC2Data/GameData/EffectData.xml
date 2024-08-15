@@ -9989,6 +9989,12 @@
         <AreaArray Radius="8" Effect="PrismaticBeam"/>
         <MaxCount value="12"/>
     </CEffectEnumArea>
+    <CEffectEnumArea id="BlackhammerAoELaunch33">
+        <EditorCategories value=""/>
+        <SearchFilters value="Air;Player,Ally,Missile,Stasis,Dead,Invulnerable"/>
+        <AreaArray Radius="2" Effect="MengskThorJavelinMissileLaunchersPersistent323"/>
+        <MaxCount value="2"/>
+    </CEffectEnumArea>
     <CEffectEnumArea id="BlackhammerAoELaunch4">
         <EditorCategories value=""/>
         <Marker Link="Effect/BlackhammerAoELaunch"/>
@@ -20784,6 +20790,12 @@
         <EffectArray value="VoidRayVoidDamage292352"/>
         <EffectArray value="ObserverSquadSightAB22223210"/>
     </CEffectSet>
+    <CEffectSet id="DisablingCloudSet352235353">
+        <EditorCategories value="Race:Zerg"/>
+        <Marker Link="Effect/DisablingCloudSet35223"/>
+        <EffectArray value="VoidRayVoidDamage292353"/>
+        <EffectArray value="KarassPlasmaSurgeModifyUnit32224226"/>
+    </CEffectSet>
     <CEffectSet id="DisablingCloudSet3522354">
         <EditorCategories value="Race:Zerg"/>
         <Marker Link="Effect/DisablingCloudSet35223"/>
@@ -25503,6 +25515,53 @@
         <Kind value="Ranged"/>
         <Amount value="50"/>
     </CEffectDamage>
+    <CEffectDamage id="KerriganVoidKineticBlastDamage3">
+        <EditorCategories value="Race:Zerg"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <Amount value="100"/>
+        <SearchFilters value="-;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="KerriganVoidKineticBlastLaunchMissile3">
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactEffect value="KerriganVoidKineticBlastDamage3"/>
+        <AmmoUnit value="KerriganVoidKineticBlastWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="MengskThorJavelinMissileLaunchersDamage323" parent="DU_WEAP_SPLASH">
+        <EditorCategories value="Race:Terran"/>
+        <Kind value="Ranged"/>
+        <Amount value="10"/>
+        <Death value="Blast"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Air;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFlags index="OffsetByUnitRadius" value="0"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="MengskThorJavelinMissileLaunchersLM323">
+        <ValidatorArray index="0" value="ThorAALaunchMissileTargetFilters"/>
+        <EditorCategories value="Race:Terran"/>
+        <ImpactEffect value="MengskThorJavelinMissileLaunchersDamage323"/>
+        <AmmoUnit value="MengskThorAAWeapon32"/>
+    </CEffectLaunchMissile>
+    <CEffectCreatePersistent id="MengskThorJavelinMissileLaunchersPersistent323">
+        <EditorCategories value="Race:Terran"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="MengskThorJavelinMissileLaunchersLM323"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.125"/>
+        <PeriodicPeriodArray value="0.25"/>
+        <PeriodicPeriodArray value="0.125"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="ScrapCannonDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <ArmorReduction value="0"/>
+        <Kind value="Ranged"/>
+        <Amount value="35"/>
+	</CEffectDamage>
     <CEffectDamage id="H66ScrapCannonDamage" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <ArmorReduction value="0"/>
@@ -32437,6 +32496,14 @@
         <ImpactUnit Value="Caster"/>
         <VitalArray index="Energy">
             <Change value="-1"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectModifyUnit id="KarassPlasmaSurgeModifyUnit32224226">
+        <EditorCategories value="Race:Protoss"/>
+        <Marker Link="Effect/KarassPlasmaSurgeModifyUnit"/>
+        <ImpactUnit Value="Caster"/>
+        <VitalArray index="Energy">
+            <Change value="-5"/>
         </VitalArray>
     </CEffectModifyUnit>
     <CEffectModifyUnit id="KarassPlasmaSurgeModifyUnit3222423">
@@ -70155,6 +70222,12 @@
         <WhichUnit Value="Caster"/>
         <Behavior value="UnknownBehavior1922"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="UnknownEffect333">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="UnknownBehavior1923"/>
+    </CEffectApplyBehavior>
     <CEffectApplyBehavior id="UnknownEffect34">
         <ValidatorArray index="0" value="IsTimeStopped217332222222223232222"/>
         <EditorCategories value=""/>
@@ -72662,6 +72735,17 @@
         <PeriodicPeriodArray value="0.02"/>
         <FinalEffect value="DarkArchonMindControlApply7"/>
     </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="VoidRayVoid292353">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <InitialEffect value="VoidRayVoidDamage292353"/>
+        <PeriodCount value="40"/>
+        <PeriodicValidator value="IsFlyingAndWildMutationViper2"/>
+        <PeriodicEffectArray value="DisablingCloudSet352235353"/>
+        <PeriodicPeriodArray value="0.1"/>
+    </CEffectCreatePersistent>
     <CEffectCreatePersistent id="VoidRayVoid2924">
         <EditorCategories value="Race:Protoss"/>
         <WhichLocation Value="TargetUnit"/>
@@ -73052,6 +73136,13 @@
         <Visibility value="Visible"/>
         <Kind value="Ranged"/>
         <Amount value="0.001"/>
+    </CEffectDamage>
+    <CEffectDamage id="VoidRayVoidDamage292353" parent="DU_WEAP">
+        <EditorCategories value="Race:Protoss"/>
+        <DamageModifierSource Value="Caster"/>
+        <Visibility value="Visible"/>
+        <Kind value="Ranged"/>
+        <Amount value="4"/>
     </CEffectDamage>
     <CEffectDamage id="VoidRayVoidDamage2924" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
