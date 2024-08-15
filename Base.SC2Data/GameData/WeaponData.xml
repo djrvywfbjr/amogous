@@ -3410,7 +3410,7 @@
         <DisplayEffect value="H3ScrapCannonDamage"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="6"/>
-        <Period value="2"/>
+        <Period value="1.5"/>
         <Effect value="H3ScrapCannonDamage"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="H5ScrapCannon">
@@ -3421,7 +3421,7 @@
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="6"/>
         <Range value="7"/>
-        <Period value="3"/>
+        <Period value="2"/>
         <Effect value="H5ScrapCannonDamage"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="H66ScrapCannon">
@@ -3454,7 +3454,7 @@
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="6"/>
         <Range value="4"/>
-        <Period value="1.5"/>
+        <Period value="1.2"/>
         <Effect value="H1ScrapCannonDamage"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HERCWeapon2">

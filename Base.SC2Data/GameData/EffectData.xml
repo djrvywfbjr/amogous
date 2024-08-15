@@ -25508,6 +25508,7 @@
         <ArmorReduction value="0"/>
         <Kind value="Ranged"/>
         <Amount value="50"/>
+        <AttributeBonus index="Armored" value="20"/>
     </CEffectDamage>
     <CEffectDamage id="H6ScrapCannonDamage" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>

@@ -10282,7 +10282,7 @@
         <Effect index="0" value="CalldownMULECreateUnit42343"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Resource index="Minerals" value="500"/>
+            <Resource index="Minerals" value="250"/>
             <Charge Link="Abil/CalldownMULE" Location="Unit"/>
             <Cooldown Link="Abil/CalldownMULE" Location="Unit" TimeUse="200"/>
         </Cost>
@@ -10295,8 +10295,8 @@
         <Effect index="0" value="CalldownMULECreateUnit423432"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Resource index="Minerals" value="20"/>
-            <Resource index="Vespene" value="288"/>
+            <Resource index="Minerals" value="10"/>
+            <Resource index="Vespene" value="144"/>
             <Charge Link="Abil/CalldownMULE" Location="Unit"/>
             <Cooldown Link="Abil/CalldownMULE" Location="Unit" TimeUse="200"/>
         </Cost>
@@ -10309,8 +10309,8 @@
         <Effect index="0" value="CalldownMULECreateUnit4234322"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Resource index="Minerals" value="260"/>
-            <Resource index="Vespene" value="144"/>
+            <Resource index="Minerals" value="130"/>
+            <Resource index="Vespene" value="72"/>
             <Charge Link="Abil/CalldownMULE" Location="Unit"/>
             <Cooldown Link="Abil/CalldownMULE" Location="Unit" TimeUse="200"/>
         </Cost>
@@ -10323,7 +10323,7 @@
         <Effect index="0" value="CalldownMULECreateUnit423433"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Resource index="Minerals" value="1000"/>
+            <Resource index="Minerals" value="300"/>
             <Charge Link="Abil/BypassArmor"/>
             <Cooldown Link="Abil/BypassArmor" Location="Unit" TimeUse="200"/>
         </Cost>
@@ -10336,8 +10336,8 @@
         <Effect index="0" value="CalldownMULECreateUnit4234332"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Resource index="Minerals" value="500"/>
-            <Resource index="Vespene" value="144"/>
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="72"/>
             <Charge Link="Abil/BypassArmor"/>
             <Cooldown Link="Abil/BypassArmor" Location="Unit" TimeUse="200"/>
         </Cost>
@@ -10350,8 +10350,8 @@
         <Effect index="0" value="CalldownMULECreateUnit423434"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Resource index="Minerals" value="260"/>
-            <Resource index="Vespene" value="96"/>
+            <Resource index="Minerals" value="130"/>
+            <Resource index="Vespene" value="48"/>
             <Charge Link="Abil/CalldownMULE" Location="Unit"/>
             <Cooldown Link="Abil/CalldownMULE" Location="Unit" TimeUse="200"/>
         </Cost>
@@ -10364,8 +10364,8 @@
         <Effect index="0" value="CalldownMULECreateUnit4234342"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Resource index="Minerals" value="140"/>
-            <Resource index="Vespene" value="144"/>
+            <Resource index="Minerals" value="70"/>
+            <Resource index="Vespene" value="72"/>
             <Charge Link="Abil/CalldownMULE" Location="Unit"/>
             <Cooldown Link="Abil/CalldownMULE" Location="Unit" TimeUse="200"/>
         </Cost>
@@ -10378,8 +10378,8 @@
         <Effect index="0" value="CalldownMULECreateUnit42343422"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Resource index="Minerals" value="140"/>
-            <Resource index="Vespene" value="144"/>
+            <Resource index="Minerals" value="70"/>
+            <Resource index="Vespene" value="72"/>
             <Charge Link="Abil/CalldownMULE" Location="Unit"/>
             <Cooldown Link="Abil/CalldownMULE" Location="Unit" TimeUse="200"/>
         </Cost>
