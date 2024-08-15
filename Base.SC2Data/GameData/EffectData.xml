@@ -54093,7 +54093,7 @@
         <Death value="Disintegrate"/>
     </CEffectDamage>
     <CEffectDamage id="PukePuddleDamage222">
-        <AttributeBonus index="Light" value="5"/>
+        <AttributeBonus index="Light" value="3"/>
         <Amount value="5"/>
         <Death value="Disintegrate"/>
     </CEffectDamage>
@@ -54238,7 +54238,7 @@
         <EditorCategories value="Race:Zerg"/>
         <ImpactLocation Value="TargetUnit"/>
         <SearchFilters value="Ground;Player,Ally,Neutral,Missile,Item,Stasis,Dead,Hidden,Invulnerable"/>
-        <AreaArray Radius="4" Effect="PukePuddleSet222"/>
+        <AreaArray Radius="2" Effect="PukePuddleSet222"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="PukePuddleSlowSearch323">
         <EditorCategories value="Race:Zerg"/>
