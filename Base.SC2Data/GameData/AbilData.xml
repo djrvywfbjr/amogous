@@ -6885,13 +6885,13 @@
         <AbilSetId value="PPPP"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <CmdButtonArray index="Load" DefaultButtonFace="BunkerLoad522"/>
-        <CmdButtonArray index="UnloadAll" DefaultButtonFace="BunkerUnloadAll52">
+        <CmdButtonArray index="UnloadAll" DefaultButtonFace="BunkerUnloadAll52" Requirements="NoSealedArmor">
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
         <CmdButtonArray index="UnloadAt">
             <Flags index="Hidden" value="1"/>
         </CmdButtonArray>
-        <CmdButtonArray index="UnloadUnit">
+        <CmdButtonArray index="UnloadUnit" Requirements="NoSealedArmor">
             <Flags index="Hidden" value="1"/>
         </CmdButtonArray>
         <CmdButtonArray index="LoadAll">

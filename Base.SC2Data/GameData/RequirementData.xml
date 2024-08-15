@@ -6704,6 +6704,9 @@
     <CRequirement id="NoEmergencyWeapon">
         <NodeArray index="Use" Link="NotCountUpgradeEmergencyWeaponCompleteOnly"/>
     </CRequirement>
+    <CRequirement id="NoSealedArmor">
+        <NodeArray index="Use" Link="NotCountUpgradeAdvancedConstruction2422332222CompleteOnly"/>
+    </CRequirement>
     <CRequirement id="OutcastCollectorMax5">
         <NodeArray index="Show" Link="EqCountUnitBadgerQueuedOrBetter5"/>
     </CRequirement>

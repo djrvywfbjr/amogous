@@ -16364,6 +16364,10 @@
     <CRequirementNot id="NotCountUpgradeAdvancedConstruction24223322222QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeAdvancedConstruction24223322222QueuedOrBetter"/>
     </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeAdvancedConstruction2422332222CompleteOnly">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeAdvancedConstruction2422332222CompleteOnly"/>
+    </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeAdvancedConstruction2422332222QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeAdvancedConstruction2422332222QueuedOrBetter"/>
     </CRequirementNot>
