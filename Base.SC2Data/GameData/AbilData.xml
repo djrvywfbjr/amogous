@@ -6910,13 +6910,13 @@
         <AbilSetId value="PPPP"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <CmdButtonArray index="Load" DefaultButtonFace="BunkerLoad522"/>
-        <CmdButtonArray index="UnloadAll" DefaultButtonFace="BunkerUnloadAll52">
+        <CmdButtonArray index="UnloadAll" DefaultButtonFace="BunkerUnloadAll52" Requirements="NoSealedArmor">
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
         <CmdButtonArray index="UnloadAt">
             <Flags index="Hidden" value="1"/>
         </CmdButtonArray>
-        <CmdButtonArray index="UnloadUnit">
+        <CmdButtonArray index="UnloadUnit" Requirements="NoSealedArmor">
             <Flags index="Hidden" value="1"/>
         </CmdButtonArray>
         <CmdButtonArray index="LoadAll">
@@ -10307,7 +10307,7 @@
         <Effect index="0" value="CalldownMULECreateUnit42343"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Resource index="Minerals" value="500"/>
+            <Resource index="Minerals" value="250"/>
             <Charge Link="Abil/CalldownMULE" Location="Unit"/>
             <Cooldown Link="Abil/CalldownMULE" Location="Unit" TimeUse="200"/>
         </Cost>
@@ -10320,8 +10320,8 @@
         <Effect index="0" value="CalldownMULECreateUnit423432"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Resource index="Minerals" value="20"/>
-            <Resource index="Vespene" value="288"/>
+            <Resource index="Minerals" value="10"/>
+            <Resource index="Vespene" value="144"/>
             <Charge Link="Abil/CalldownMULE" Location="Unit"/>
             <Cooldown Link="Abil/CalldownMULE" Location="Unit" TimeUse="200"/>
         </Cost>
@@ -10334,8 +10334,8 @@
         <Effect index="0" value="CalldownMULECreateUnit4234322"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Resource index="Minerals" value="260"/>
-            <Resource index="Vespene" value="144"/>
+            <Resource index="Minerals" value="130"/>
+            <Resource index="Vespene" value="72"/>
             <Charge Link="Abil/CalldownMULE" Location="Unit"/>
             <Cooldown Link="Abil/CalldownMULE" Location="Unit" TimeUse="200"/>
         </Cost>
@@ -10348,7 +10348,7 @@
         <Effect index="0" value="CalldownMULECreateUnit423433"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Resource index="Minerals" value="1000"/>
+            <Resource index="Minerals" value="300"/>
             <Charge Link="Abil/BypassArmor"/>
             <Cooldown Link="Abil/BypassArmor" Location="Unit" TimeUse="200"/>
         </Cost>
@@ -10361,8 +10361,8 @@
         <Effect index="0" value="CalldownMULECreateUnit4234332"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Resource index="Minerals" value="500"/>
-            <Resource index="Vespene" value="144"/>
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="72"/>
             <Charge Link="Abil/BypassArmor"/>
             <Cooldown Link="Abil/BypassArmor" Location="Unit" TimeUse="200"/>
         </Cost>
@@ -10375,8 +10375,8 @@
         <Effect index="0" value="CalldownMULECreateUnit423434"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Resource index="Minerals" value="260"/>
-            <Resource index="Vespene" value="96"/>
+            <Resource index="Minerals" value="130"/>
+            <Resource index="Vespene" value="48"/>
             <Charge Link="Abil/CalldownMULE" Location="Unit"/>
             <Cooldown Link="Abil/CalldownMULE" Location="Unit" TimeUse="200"/>
         </Cost>
@@ -10389,8 +10389,8 @@
         <Effect index="0" value="CalldownMULECreateUnit4234342"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Resource index="Minerals" value="140"/>
-            <Resource index="Vespene" value="144"/>
+            <Resource index="Minerals" value="70"/>
+            <Resource index="Vespene" value="72"/>
             <Charge Link="Abil/CalldownMULE" Location="Unit"/>
             <Cooldown Link="Abil/CalldownMULE" Location="Unit" TimeUse="200"/>
         </Cost>
@@ -10403,8 +10403,8 @@
         <Effect index="0" value="CalldownMULECreateUnit42343422"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Resource index="Minerals" value="140"/>
-            <Resource index="Vespene" value="144"/>
+            <Resource index="Minerals" value="70"/>
+            <Resource index="Vespene" value="72"/>
             <Charge Link="Abil/CalldownMULE" Location="Unit"/>
             <Cooldown Link="Abil/CalldownMULE" Location="Unit" TimeUse="200"/>
         </Cost>
@@ -29688,6 +29688,24 @@
         <Range value="8"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="DarkArchonMindControl33234"/>
     </CAbilEffectTarget>
+    <CAbilEffectTarget id="SensorSweep">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <SharedFlags index="Disabled" value="1"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Flags index="TransientPreferred" value="1"/>
+        <Cost>
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <TimeUse value="60"/>
+            </Charge>
+        </Cost>
+        <Range value="30"/>
+        <Arc value="360"/>
+        <CursorEffect value="SensorSweep"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SensorSweep"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="TemporarityCP2">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ColossusTaldarimLM242"/>
@@ -30494,43 +30512,43 @@
     </CAbilEffectTarget>
     <CAbilSpecialize id="ManufactureParts">
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <InfoArray index="Specialize1" Time="60" Effect="Manufacture3GunpowderMixers">
+        <InfoArray index="Specialize1" Time="60" Effect="Manufacture6GunpowderMixers">
             <Resource index="Minerals" value="105"/>
             <Charge Location="Unit"/>
             <Cooldown Location="Unit"/>
-            <Button DefaultButtonFace="Manufacture3GunpowderMixers" Requirements="ManufactureGunpowderMixer"/>
+            <Button DefaultButtonFace="Manufacture6GunpowderMixers" Requirements="ManufactureGunpowderMixer"/>
             <Flags index="AutoCast" value="1"/>
         </InfoArray>
-        <InfoArray index="Specialize2" Time="60" Effect="Manufacture3ShellingFabricators">
+        <InfoArray index="Specialize2" Time="60" Effect="Manufacture6ShellingFabricators">
             <Resource index="Minerals" value="75"/>
             <Resource index="Vespene" value="15"/>
             <Charge Location="Unit"/>
             <Cooldown Location="Unit"/>
-            <Button DefaultButtonFace="Manufacture3ShellingFabricators" Requirements="ManufactureShellingFabricator"/>
+            <Button DefaultButtonFace="Manufacture6ShellingFabricators" Requirements="ManufactureShellingFabricator"/>
             <Flags index="AutoCast" value="1"/>
         </InfoArray>
-        <InfoArray index="Specialize3" Time="60" Effect="Manufacture3ChemicalStations">
+        <InfoArray index="Specialize3" Time="60" Effect="Manufacture6ChemicalStations">
             <Resource index="Minerals" value="45"/>
             <Resource index="Vespene" value="60"/>
             <Charge Location="Unit"/>
             <Cooldown Location="Unit"/>
-            <Button DefaultButtonFace="Manufacture3ChemicalStations" Requirements="ManufactureChemicalStation"/>
+            <Button DefaultButtonFace="Manufacture6ChemicalStations" Requirements="ManufactureChemicalStation"/>
             <Flags index="AutoCast" value="1"/>
         </InfoArray>
-        <InfoArray index="Specialize4" Time="60" Effect="Manufacture3FusionCores">
+        <InfoArray index="Specialize4" Time="60" Effect="Manufacture6FusionCores">
             <Resource index="Minerals" value="60"/>
             <Resource index="Vespene" value="60"/>
             <Charge Location="Unit"/>
             <Cooldown Location="Unit"/>
-            <Button DefaultButtonFace="Manufacture3FusionCores" Requirements="ManufactureFusionCore"/>
+            <Button DefaultButtonFace="Manufacture6FusionCores" Requirements="ManufactureFusionCore"/>
             <Flags index="AutoCast" value="1"/>
         </InfoArray>
-        <InfoArray index="Specialize5" Time="60" Effect="Manufacture3RecyclerTanks">
+        <InfoArray index="Specialize5" Time="60" Effect="Manufacture6RecyclerTanks">
             <Resource index="Minerals" value="45"/>
             <Resource index="Vespene" value="60"/>
             <Charge Location="Unit"/>
             <Cooldown Location="Unit"/>
-            <Button DefaultButtonFace="Manufacture3RecyclerTanks" Requirements="ManufactureRecyclerTank"/>
+            <Button DefaultButtonFace="Manufacture6RecyclerTanks" Requirements="ManufactureRecyclerTank"/>
             <Flags index="AutoCast" value="1"/>
         </InfoArray>
     </CAbilSpecialize>
@@ -45951,7 +45969,6 @@
     <CAbilHarvest id="SCVHarvest4">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <ResourceAmountBonus index="Minerals" value="10"/>
-        <ResourceTimeMultiplier index="Minerals" value="0.8"/>
     </CAbilHarvest>
     <CAbilHarvest id="SCVHarvest5">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
@@ -55233,7 +55250,7 @@
             <Button DefaultButtonFace="Starport16" State="Suppressed" Requirements="MothershipRequirements234242"/>
         </InfoArray>
         <InfoArray index="Build13" Unit="Barracks102" Time="125">
-            <Button DefaultButtonFace="MercCompound16" State="Suppressed"/>
+            <Button DefaultButtonFace="MercCompound16" State="Suppressed" Requirements="HavePsionicHeart22432322232423222632"/>
         </InfoArray>
         <InfoArray index="Build14" Unit="Barracks172" Time="300">
             <Button DefaultButtonFace="Armory16" State="Suppressed" Requirements="MothershipRequirements23424"/>
@@ -60380,11 +60397,37 @@
         <Effect index="0" value="CraftNapalmSprayer"/>
         <Flags index="BestUnit" value="1"/>
         <Cost>
-            <Charge Link="Abil/XenWarrior"/>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <AINotifyEffect value="XenWarrior6"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="EquipNapalmSprayer" Requirements="Craft1FC2RT"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Wep1ZapperGun">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="XenWarrior622322335"/>
+        <Effect index="0" value="CraftZapperGun"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
+            <Cooldown Link="Abil/XenWarrior"/>
+        </Cost>
+        <AINotifyEffect value="XenWarrior6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipZapperGun" Requirements="Craft1FC2SF"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Wep2HellRifle">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="XenWarrior622322335"/>
+        <Effect index="0" value="CraftHellRifle"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
+            <Cooldown Link="Abil/XenWarrior"/>
+        </Cost>
+        <AINotifyEffect value="XenWarrior6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipHellRifle" Requirements="Craft1GM1CS1RT"/>
     </CAbilEffectInstant>
     <CAbilEffectTarget id="WidowMineAttack2" parent="WidowMineAttack">
         <Name value="Abil/Name/WidowMineAttack2"/>
@@ -63435,7 +63478,7 @@
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <AINotifyEffect value="XenWarrior6"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot22622322335432" Requirements="MothershipRequirements23225423"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot22622322335432" Requirements="Craft2FC1SF"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior6223223354322">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -63471,7 +63514,18 @@
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <AINotifyEffect value="XenWarrior6"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot22622322335432222" Requirements="MothershipRequirements232254232"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2262232233542322222" Requirements="MothershipRequirements232254232"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Ab1PortableSensorTower">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="XenWarrior622322335"/>
+        <Effect index="0" value="CraftPortableSensorTower"/>
+        <Flags index="BestUnit" value="1"/>
+        <Cost>
+            <Charge CountMax="1" CountUse="-1"/>
+        </Cost>
+        <AINotifyEffect value="XenWarrior6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipPortableSensorTower" Requirements="Craft2FC1SF"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior62233">
         <EditorCategories value="AbilityorEffectType:Units"/>

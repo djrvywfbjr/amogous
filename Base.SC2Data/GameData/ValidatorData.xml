@@ -741,6 +741,18 @@
         <Compare value="GE"/>
         <Value value="8"/>
     </CValidatorPlayerCompareFoodAvailable>
+    <CValidatorPlayerRequirement id="SFAutocast">
+        <Value value="ManufactureShellingFabricatorAuto"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="CSAutocast">
+        <Value value="ManufactureChemicalStationAuto"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="FCAutocast">
+        <Value value="ManufactureFusionCoreAuto"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="RTAutocast">
+        <Value value="ManufactureRecyclerTankAuto"/>
+    </CValidatorPlayerRequirement>
     <CValidatorUnitCompareOrderCount id="HangarQueueEmpty2">
         <Compare value="GT"/>
         <AbilLink value="EngineeringBayResearch323"/>
@@ -3357,6 +3369,9 @@
         <CombineArray value="IsMarine3"/>
         <CombineArray value="IsMarine32"/>
     </CValidatorCombine>
+    <CValidatorPlayerRequirement id="GMAutocast">
+        <Value value="ManufactureGunpowderMixerAuto"/>
+    </CValidatorPlayerRequirement>
     <CValidatorUnitCompareVital id="hasShields2">
         <ResultFailed value="NotEnoughShields"/>
         <WhichUnit Value="Caster"/>
