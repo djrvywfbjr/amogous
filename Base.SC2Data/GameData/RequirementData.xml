@@ -175,6 +175,10 @@
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
         <NodeArray index="Use" Link="LT2533098009CountUpgradeUmojanBasicUnitUpgrade522242242322222236222322222QueuedOrBetter75"/>
     </CRequirement>
+    <CRequirement id="Craft1FC2SF">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <NodeArray index="Use" Link="AndGTECountUpgradeManufactureFusionCoreCompleteOnly1GTECountUpgradeManufactureShellingFabricatorCompleteOnly2"/>
+    </CRequirement>
     <CRequirement id="HaveIndustrialAutomatons">
         <NodeArray index="Use" Link="CountUpgradeIndustrialAutomatonsCompleteOnly"/>
     </CRequirement>
@@ -6289,9 +6293,9 @@
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
         <NodeArray index="Use" Link="AndGTECountUpgradeManufactureChemicalStationCompleteOnly1GTECountUpgradeManufactureFusionCoreCompleteOnly1GTECountUpgradeManufactureRecyclerTankCompleteOnly1"/>
     </CRequirement>
-    <CRequirement id="MothershipRequirements23225423">
+    <CRequirement id="Craft2FC1SF">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="AndGTECountUpgradeManufactureChemicalStationCompleteOnly2GTECountUpgradeManufactureShellingFabricatorCompleteOnly1"/>
+        <NodeArray index="Use" Link="AndGTECountUpgradeManufactureFusionCoreCompleteOnly2GTECountUpgradeManufactureShellingFabricatorCompleteOnly1"/>
     </CRequirement>
     <CRequirement id="MothershipRequirements232254232">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>

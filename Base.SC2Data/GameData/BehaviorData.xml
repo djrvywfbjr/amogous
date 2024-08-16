@@ -8,7 +8,7 @@
         <Period value="5"/>
         <InitialEffect value="SOAEnergizeSearch22322"/>
         <PeriodicEffect value="SOAEnergizeSearch2237"/>
-        <Modification TimeScale="1.75"/>
+        <Modification TimeScale="1.6"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="15xUnitSpeed3">
         <InfoFlags index="Hidden" value="1"/>
@@ -807,6 +807,20 @@
         </DamageResponse>
         <RemoveValidatorArray value="IsTimeStopped282223"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="Ab1PortableSensorTower">
+        <Cost>
+            <Charge Link="Behavior/AntamoAirAll"/>
+            <Cooldown Link="Behavior/AntamoAirAll"/>
+        </Cost>
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InitialEffect value="RefugeeCraftRemove2FC1SF"/>
+        <Modification Detect="12" Radar="20">
+            <AbilLinkEnableArray value="SensorSweep"/>
+            <AbilLinkDisableArray value="Ab1PortableSensorTower"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="NoWeapon">
         <Alignment value="Negative"/>
         <BehaviorFlags index="Permanent" value="1"/>
@@ -942,6 +956,31 @@
             <WeaponEnableArray value="ThrowMolotov8"/>
         </Modification>
         <DamageResponse Handled="BlackhammerAddHealingWAve52325">
+            <Cost>
+                <Charge Link="Behavior/AntamoAirAll"/>
+                <Cooldown Link="Behavior/AntamoAirAll"/>
+            </Cost>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WepZapperGun">
+        <Cost>
+            <Charge Link="Behavior/AntamoAirAll"/>
+            <Cooldown Link="Behavior/AntamoAirAll"/>
+        </Cost>
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="IsTimeStopped282223"/>
+        <InitialEffect value="RefugeeCraftRemove2SF1FC"/>
+        <Modification>
+            <AbilLinkDisableArray value="Wep3WarheadLauncher"/>
+            <AbilLinkDisableArray value="Wep1ShellstormChaingun"/>
+            <AbilLinkDisableArray value="Wep2SharpnelRifle"/>
+            <BehaviorLinkDisableArray value="NoWeapon"/>
+            <WeaponArray Link="NapalmSprayer"/>
+            <WeaponDisableArray value="H4ScrapCannon"/>
+        </Modification>
+        <DamageResponse>
             <Cost>
                 <Charge Link="Behavior/AntamoAirAll"/>
                 <Cooldown Link="Behavior/AntamoAirAll"/>

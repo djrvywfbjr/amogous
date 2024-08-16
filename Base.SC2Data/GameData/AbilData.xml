@@ -29663,6 +29663,26 @@
         <Range value="8"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="DarkArchonMindControl33234"/>
     </CAbilEffectTarget>
+    <CAbilEffectTarget id="SensorSweep">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <SharedFlags index="Disabled" value="1"/>
+        <Effect index="0" value="ScannerSweep6"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Flags index="TransientPreferred" value="1"/>
+        <Cost>
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <TimeUse value="60"/>
+            </Charge>
+        </Cost>
+        <Range value="30"/>
+        <Arc value="360"/>
+        <CursorEffect value="ScannerSweep6"/>
+        <AINotifyEffect value="ScannerSweep6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SensorSweep"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="TemporarityCP2">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ColossusTaldarimLM242"/>
@@ -55215,7 +55235,7 @@
             <Button DefaultButtonFace="Starport16" State="Suppressed" Requirements="MothershipRequirements234242"/>
         </InfoArray>
         <InfoArray index="Build13" Unit="Barracks102" Time="125">
-            <Button DefaultButtonFace="MercCompound16" State="Suppressed"/>
+            <Button DefaultButtonFace="MercCompound16" State="Suppressed" Requirements="HavePsionicHeart22432322232423222632"/>
         </InfoArray>
         <InfoArray index="Build14" Unit="Barracks172" Time="300">
             <Button DefaultButtonFace="Armory16" State="Suppressed" Requirements="MothershipRequirements23424"/>
@@ -60362,11 +60382,24 @@
         <Effect index="0" value="CraftNapalmSprayer"/>
         <Flags index="BestUnit" value="1"/>
         <Cost>
-            <Charge Link="Abil/XenWarrior"/>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <AINotifyEffect value="XenWarrior6"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="EquipNapalmSprayer" Requirements="Craft1FC2RT"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Wep1ZapperGun">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="XenWarrior622322335"/>
+        <Effect index="0" value="CraftZapperGun"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
+            <Cooldown Link="Abil/XenWarrior"/>
+        </Cost>
+        <AINotifyEffect value="XenWarrior6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipNapalmSprayer2" Requirements="Craft1FC2SF"/>
     </CAbilEffectInstant>
     <CAbilEffectTarget id="WidowMineAttack2" parent="WidowMineAttack">
         <Name value="Abil/Name/WidowMineAttack2"/>
@@ -63525,7 +63558,7 @@
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <AINotifyEffect value="XenWarrior6"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot22622322335432" Requirements="MothershipRequirements23225423"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot22622322335432" Requirements="Craft2FC1SF"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior6223223354322">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -63561,7 +63594,18 @@
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <AINotifyEffect value="XenWarrior6"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot22622322335432222" Requirements="MothershipRequirements232254232"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2262232233542322222" Requirements="MothershipRequirements232254232"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Ab1PortableSensorTower">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="XenWarrior622322335"/>
+        <Effect index="0" value="CraftPortableSensorTower"/>
+        <Flags index="BestUnit" value="1"/>
+        <Cost>
+            <Charge CountMax="1" CountUse="-1"/>
+        </Cost>
+        <AINotifyEffect value="XenWarrior6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipPortableSensorTower" Requirements="Craft2FC1SF"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior62233">
         <EditorCategories value="AbilityorEffectType:Units"/>

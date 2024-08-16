@@ -877,17 +877,23 @@
         <OperandArray value="GTECountUpgradeManufactureFusionCoreCompleteOnly1"/>
         <OperandArray value="GTECountUpgradeManufactureRecyclerTankCompleteOnly1"/>
     </CRequirementAnd>
-    <CRequirementAnd id="AndGTECountUpgradeManufactureChemicalStationCompleteOnly2GTECountUpgradeManufactureShellingFabricatorCompleteOnly1">
-        <OperandArray value="GTECountUpgradeManufactureChemicalStationCompleteOnly2"/>
-        <OperandArray value="GTECountUpgradeManufactureShellingFabricatorCompleteOnly1"/>
-    </CRequirementAnd>
     <CRequirementAnd id="AndGTECountUpgradeManufactureFusionCoreCompleteOnly1GTECountUpgradeManufactureRecyclerTankCompleteOnly2">
         <OperandArray value="GTECountUpgradeManufactureFusionCoreCompleteOnly1"/>
         <OperandArray value="GTECountUpgradeManufactureRecyclerTankCompleteOnly2"/>
     </CRequirementAnd>
+    <CRequirementAnd id="AndGTECountUpgradeManufactureFusionCoreCompleteOnly1GTECountUpgradeManufactureShellingFabricatorCompleteOnly2">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="GTECountUpgradeManufactureFusionCoreCompleteOnly1"/>
+        <OperandArray value="GTECountUpgradeManufactureShellingFabricatorCompleteOnly2"/>
+    </CRequirementAnd>
     <CRequirementAnd id="AndGTECountUpgradeManufactureFusionCoreCompleteOnly2GTECountUpgradeManufactureChemicalStationCompleteOnly1">
         <OperandArray value="GTECountUpgradeManufactureFusionCoreCompleteOnly2"/>
         <OperandArray value="GTECountUpgradeManufactureChemicalStationCompleteOnly1"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndGTECountUpgradeManufactureFusionCoreCompleteOnly2GTECountUpgradeManufactureShellingFabricatorCompleteOnly1">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="GTECountUpgradeManufactureFusionCoreCompleteOnly2"/>
+        <OperandArray value="GTECountUpgradeManufactureShellingFabricatorCompleteOnly1"/>
     </CRequirementAnd>
     <CRequirementAnd id="AndGTECountUpgradeManufactureFusionCoreCompleteOnly3">
         <OperandArray value="GTECountUpgradeManufactureFusionCoreCompleteOnly3"/>
@@ -15650,10 +15656,6 @@
     <CRequirementGTE id="GTECountUpgradeManufactureChemicalStationCompleteOnly1">
         <OperandArray index="0" value="CountUpgradeManufactureChemicalStationCompleteOnly"/>
         <OperandArray index="1" value="1"/>
-    </CRequirementGTE>
-    <CRequirementGTE id="GTECountUpgradeManufactureChemicalStationCompleteOnly2">
-        <OperandArray index="0" value="CountUpgradeManufactureChemicalStationCompleteOnly"/>
-        <OperandArray index="1" value="2"/>
     </CRequirementGTE>
     <CRequirementGTE id="GTECountUpgradeManufactureFusionCoreCompleteOnly1">
         <OperandArray index="0" value="CountUpgradeManufactureFusionCoreCompleteOnly"/>

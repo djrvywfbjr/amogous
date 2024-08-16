@@ -20,6 +20,7 @@
 :zyr: :khan:=
 Aaron=Giant
 Abgail=Former Royal Guard
+Abil/Name/Ab1PortableSensorTower=Ab1 Portable Sensor Tower
 Abil/Name/AggressiveMutation2=Aggressive Mutation
 Abil/Name/AggressiveMutation22=Fanaticism
 Abil/Name/AlarakKnockback2=Trash
@@ -1853,6 +1854,7 @@ Abil/Name/SelfRepair3=Emergency Repair
 Abil/Name/SelfRepair4=Emergency Repair
 Abil/Name/SelfRepair5=Field Repair
 Abil/Name/SelfRepair6=Emergency Repair
+Abil/Name/SensorSweep=Sensor Sweep
 Abil/Name/ShadowBlade2=Shadow Blade
 Abil/Name/ShadowBlade22=Cut Throat
 Abil/Name/ShadowBlade23=Warp Blade
@@ -2364,6 +2366,7 @@ Abil/Name/WarpPrismTransport6=Load-Unload (Shuttle)
 Abil/Name/Wep1DualSecurityPistols=Wep1 Dual Security Pistols
 Abil/Name/Wep1NapalmSprayer=Wep1 Napalm Sprayer
 Abil/Name/Wep1ShellstormChaingun=Wep1 Shellstorm Chaingun
+Abil/Name/Wep1ZapperGun=Wep1 Zapper Gun
 Abil/Name/Wep2DoubleSurgicalLaser=Wep2 Double Surgical Laser
 Abil/Name/Wep2SharpnelRifle=Wep2 Sharpnel Rifle
 Abil/Name/Wep3SmartFireDartGuns=Wep3 Smart-Fire Dart Guns
@@ -2966,6 +2969,7 @@ Attribute003/Value032/Desc=Take control of the mighty flagship and a ragtag mili
 Attribute003/Value032/Name=Paramilitary
 Awoken=Awoken
 Behavior/Name/15xUnitSpeed2=Extended Shift
+Behavior/Name/Ab1PortableSensorTower=(Ab1) Portable Sensor Tower
 Behavior/Name/AggressiveMutation2=Aggressive Mutator
 Behavior/Name/AggressiveMutation22=Adapting
 Behavior/Name/AggressiveMutation23=Fanaticism
@@ -4191,6 +4195,7 @@ Behavior/Name/WepShellstormChaingun=(Wep) Shellstorm Chaingun
 Behavior/Name/WepShrapnelRifle=(Wep) Shrapnel Rifle
 Behavior/Name/WepSmartFireDartGuns=(Wep) Smart-Fire Dart Guns
 Behavior/Name/WepWarheadLauncher=(Wep) Warhead Launcher
+Behavior/Name/WepZapperGun=(Wep) Zapper Gun
 Behavior/Name/WildMutation2=Roundup
 Behavior/Name/WildMutation22=Negotiated With Food
 Behavior/Name/WildMutation222=Negotiated With Resources
@@ -5953,7 +5958,6 @@ Button/Name/CalldownMULE423324332232222425233=Warfare Research
 Button/Name/CalldownMULE4233243322322224252332=Information
 Button/Name/CalldownMULE4233243322322224252333=Adaption Laws
 Button/Name/CalldownMULE42332433223222242523332=Alignment Laws
-Button/Name/CalldownMULE423324332232222425233332=Equip Additional Gear
 Button/Name/CalldownMULE423324332232222425234=Industrialization Research
 Button/Name/CalldownMULE42332433223222242524222422322222=Recycler Tanks
 Button/Name/CalldownMULE4233243322322224252422242232223=Fusion Cores
@@ -7250,7 +7254,10 @@ Button/Name/EntropicBlast223=Weak Concussion
 Button/Name/EntropicBlast23=Throw Ritual Knife
 Button/Name/EntropicBlast3=Entropic Blast
 Button/Name/EquipDoubleSurgicalLaser=Equip Double Surgical Laser
+Button/Name/EquipGear=Equip Gear
 Button/Name/EquipNapalmSprayer=Equip Napalm Sprayer
+Button/Name/EquipNapalmSprayer2=Equip Napalm Sprayer
+Button/Name/EquipPortableSensorTower=Equip Portable Sensor Tower
 Button/Name/EquipShellstormChaingun=Equip Shellstorm Chaingun
 Button/Name/EquipShrapnelRifle=Equip Shrapnel Rifle
 Button/Name/EquipSmartFireDartGuns=Equip Smart-Fire Dart Guns
@@ -9645,6 +9652,7 @@ Button/Name/SelfRepair3=Emergency Repair
 Button/Name/SelfRepair4=Vanadium Emergency Repair
 Button/Name/SelfRepair5=Field Repair
 Button/Name/SelfRepair6=Emergency Repair
+Button/Name/SensorSweep=Sensor Sweep
 Button/Name/SensorTower10=Build Sensor Tower Copy 5
 Button/Name/SensorTower11=Build Refuel Tower
 Button/Name/SensorTower12=Grow Tree
@@ -12723,7 +12731,6 @@ Button/Tooltip/CalldownMULE423324332232222425233=Shows available warfare-related
 Button/Tooltip/CalldownMULE4233243322322224252332=Shows information about different mechanics.
 Button/Tooltip/CalldownMULE4233243322322224252333=Shows available adaption laws, which will allow the colony to survive during these times.
 Button/Tooltip/CalldownMULE42332433223222242523332=Shows available alignment laws, which will allow the colony to join and recieve help from any factions that still exist
-Button/Tooltip/CalldownMULE423324332232222425233332=Shows available abilities that can be crafted for this unit by using parts made at Tools Manufacture.
 Button/Tooltip/CalldownMULE423324332232222425234=Shows available industrialization-related research.
 Button/Tooltip/CalldownMULE42332433223222242524222422322222=This little canister recycles user's bodily fluids, excess suit power and whatever can be found in the environment to create basic fuel.
 Button/Tooltip/CalldownMULE4233243322322224252422242232223=A small canister containing and recreating a lot of power. 
@@ -12736,7 +12743,7 @@ Button/Tooltip/CalldownMULE423324332232222425242322=If we give out increased rat
 Button/Tooltip/CalldownMULE4233243322322224252423222=Bathhouses are great for recreational activities and will be able to provide warm baths to people around the building. The cheap boiler system however requires a lot of fuel.<n/><n/><c val="00FFFF">Unlocks Bathhouse - buildings that grants Motivation and decrease Dissatisfaction based on nearby homes.<n/>Hope will rise.</c><n/><c val="FF0000">Using Bathhouses will cost vespene gas</c>
 Button/Tooltip/CalldownMULE42332433223222242524233=If we seal armor completely, it will be able to take more damage, but workers will be trapped inside until it's destroyed.<n/><n/><c val="00FFFF">All armors from Militia Barracks gain 30 health</c><n/><c val="FF0000">Units can no longer take off armors<n/>Hope falls<n/>Cannot sign Escape Orders if Sealed Armor is signed</c>
 Button/Tooltip/CalldownMULE423324332232222425242332=We can allow our workers to run back to base as soon as they are armorless. They will feel safer and have an adrenaline rush to escape faster, when exiting an armor or when it's destroyed.<n/><n/><c val="00FFFF">Workers will run to the nearest Construction Site, when leaving or loosing Militia Barracks armors<n/>When leaving Militia Barracks armors(or when they are destroyed), workers gain 1 speed, can walk through units and become invulnerable for 4 seconds.<n/>Motivation will increase</c><n/><c val="FF0000">Militia Barracks armors will be slowed down by 15%<n/>Cannot sign Sealed Armor if Escape Orders is signed</c><n/>
-Button/Tooltip/CalldownMULE4233243322322224252423322=If we extend the shifts of workers in a structure, it will most certainly be alot more productive. People might dislike it, but these hard times leave no choice.<n/><n/><c val="00FFFF">Allows production, research structures and Gardens to toggle Extended Shifts on and off.<n/>Extended Shifts will increase productivity of the structure by 75%.</c><n/><c val="FF0000">Initial use of Extended Shifts increases Dissatisfaction by 40<n/>Every 5 seconds Extended Shifts will reduce Motivation by 1<n/>Discontent will rise.<n/></c>
+Button/Tooltip/CalldownMULE4233243322322224252423322=If we extend the shifts of workers in a structure, it will most certainly be alot more productive. People might dislike it, but these hard times leave no choice.<n/><n/><c val="00FFFF">Allows production, research structures and Gardens to toggle Extended Shifts on and off.<n/>Extended Shifts will increase productivity of the structure by 60%.</c><n/><c val="FF0000">Initial use of Extended Shifts increases Dissatisfaction by 40<n/>Every 5 seconds Extended Shifts will reduce Motivation by 1<n/>Discontent will rise.<n/></c>
 Button/Tooltip/CalldownMULE42332433223222242524233222=We did agree to not make work too longer, but permanently prolonging the shifts at every structures will slightly boost productivity. People will still remember this.<n/><n/><n/><c val="00FFFF">All manned structures will function 10% faster</c><n/><c val="FF0000">Dissatisfaction will increase<n/>Dissatisfaction will be passively grow by 1 every 2 seconds.<n/>Cannot sign More Breaks if Prolonged Shifts is signed.</c>
 Button/Tooltip/CalldownMULE423324332232222425242332222=Workers are sure to get satisfied from additional breaks inbetween work. It's not useful to the productivity in the short terms, but they get abit more motivational.<n/><n/><c val="00FFFF">Every 2 seconds, generates 1 Motivation and removes 1 Dissatisfaction<n/>Dissatisfaction will fall</c><n/><c val="FF0000">Manned structures will work 10% slower<n/>Cannot sign Prolonged Shifts if More Breaks is signed</c>
 Button/Tooltip/CalldownMULE4233243322322224252423322222=If we remove all hazardous vespene gas protection from structures, they will be alot cheaper to make,  but our workers will suffer greatly.<n/><n/><c val="00FFFF">Reduces cost Medical Outposts, Weapon Shops and Psiwave Communicator to 75 minerals and 0 vespene gas.</c><n/><c val="FF0000">Increases chances of low Safety Levels increasing damage by 50%<n/>Increases damage taken by workers because of low Safety Levels by 3<n/>Increases Dissatisfaction<n/>Lowers Motivation</c>
@@ -13263,7 +13270,7 @@ Button/Tooltip/CloakOnSpectre22=Cloaks the unit, preventing enemy units from see
 Button/Tooltip/CloakOnSpectre3=Medical Outpost starts ensuring safety and providing medicine to dangerous workplaces.<n/><n/>Increases Safety Level by 1, but starts degenerating <c val="00FF00">Medicine</c> at a rate of 7/sec.<n/><n/>Does not function, when out of <c val="00FF00">Medicine</c>.
 Button/Tooltip/CloakOnSpectre32=Medical Outpost starts ensuring safety and providing medicine to dangerous workplaces.<n/><n/>Increases Safety Level by 1, but starts degenerating <c val="00FF00">Medicine</c> at a rate of 7/sec.<n/><n/>Does not function, when out of <c val="00FF00">Medicine</c>.
 Button/Tooltip/CloakOnSpectre322=Medical Outpost starts ensuring safety and providing medicine to dangerous workplaces.<n/><n/>Increases Safety Level by 1, but starts degenerating <c val="00FF00">Medicine</c> at a rate of 7/sec.<n/><n/>Does not function, when out of <c val="00FF00">Medicine</c>.
-Button/Tooltip/CloakOnSpectre322dwa1wa=This structure will function 75% faster, but will also instantly raise 40 Dissatisfaction instantly and remove 1 Motivation every 5 seconds.
+Button/Tooltip/CloakOnSpectre322dwa1wa=This structure will function 60% faster, but will also instantly raise 40 Dissatisfaction instantly and remove 1 Motivation every 5 seconds.
 Button/Tooltip/CloakOnSpectre323=Medical Outpost starts ensuring safety and providing medicine to dangerous workplaces.<n/><n/>Increases Safety Level by 1, but starts degenerating <c val="00FF00">Medicine</c> at a rate of 7/sec.<n/><n/>Does not function, when out of <c val="00FF00">Medicine</c>.
 Button/Tooltip/CloakOnSpectre3232=Medical Outpost starts ensuring safety and providing medicine to dangerous workplaces.<n/><n/>Increases Safety Level by 1, but starts degenerating <c val="00FF00">Medicine</c> at a rate of 7/sec.<n/><n/>Does not function, when out of <c val="00FF00">Medicine</c>.
 Button/Tooltip/CloakOnSpectre3232dwa1wa=This vessel will instantly jump into the orbit, where it is safe from harm. If the Flagship is in <c val="800080">Orbital Mode</c>, this vessel will also heal 50 hp/s in the orbit.<n/><n/>We can use the Two-Way Warp technology to link our ships to orbital dry docks. If the flagship is there to power them, ships will also be quickly repaired.
@@ -14241,7 +14248,10 @@ Button/Tooltip/EntropicBlast223=Fire a projectile of pulsing plasma, dealing 15 
 Button/Tooltip/EntropicBlast23=Launch a knife with special explosive chemicals in it, dealing 75 damage to units in a really small area.
 Button/Tooltip/EntropicBlast3=Channels a missile at the target location. After 4 seconds, deals 225 damage to all enemy units in the area.
 Button/Tooltip/EquipDoubleSurgicalLaser=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(3)</c> Fusion Cores<n/><n/>Equips the Outrider armor with 2 laser pistols with good range, rather long cooldown and Increased damage against Armored targets.<n/><n/>Weaker versions of these devices are used for actual surgeries. Specific plans were developed to fire them from sidearms at much greater ranges with much greater effect.
+Button/Tooltip/EquipGear=Shows available abilities that can be crafted for this unit by using parts made at Tools Manufacture.
 Button/Tooltip/EquipNapalmSprayer=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Fusion Core<n/><c val="00FF00">(2)</c> Recycling Tanks<n/><n/>Equips the Combater armor with a fire-firing sprayer that hits multiple enemies in an area around main target. Does more damage to biological targets.<n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
+Button/Tooltip/EquipNapalmSprayer2=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Fusion Core<n/><c val="00FF00">(2)</c> Recycling Tanks<n/><n/>Equips the Combater armor with a fire-firing sprayer that hits multiple enemies in an area around main target. Does more damage to biological targets.<n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
+Button/Tooltip/EquipPortableSensorTower=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(2)</c> Fusion Cores<n/><c val="00FF00">(1)</c> Shelling Fabricator<n/><n/>Equips the Serviceman armor with the ability to perform an adrenaline injection, increasing attack speed and movement speed.<n/><n/>This device was designed to produce and inject user with a chemical compound to improve their combat ability. Unlike stimpacks, it deals no permanent physical harm.
 Button/Tooltip/EquipShellstormChaingun=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Gunpowder Mixer<n/><c val="00FF00">(2)</c> Shelling Fabricators<n/><n/>Equips the Serviceman armor with a fast-firing chaingun that hits multiple enemies in an area around main target, but target armor reduces damage of the weapon twice as much as usual.<n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
 Button/Tooltip/EquipShrapnelRifle=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(2)</c> Gunpowder Mixers<n/><c val="00FF00">(1)</c> Shelling Fabricator<n/><n/>Equips the Serviceman armor with a powerful long-ranged rifle, that deals great damage and is even stronger against Armored targets, but cannot fire too often.<n/><n/>This powerful rifle was originally designed for hunting. Most creatures' meat is made inedible due to explosive shrapnel blasts created by these rifles.
 Button/Tooltip/EquipSmartFireDartGuns=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Chemical Station<n/><c val="00FF00">(1)</c> Fusion Core<n/><c val="00FF00">(1)</c> Recycler Tank<n/><n/>Equips the Outrider armor with 2 pistols that attack different enemies each attack. The pistols mark targets for increased damage and reveal them, while also making them blind.<n/><n/>These weapons function by firing tracker darts that inject certain vision-weakening drugs from advanced weapons that can calculate the trajectory of the projectiles.
@@ -17402,6 +17412,7 @@ Button/Tooltip/SelfRepair3=Regenerates 30 life per second. Unstoppable cannot mo
 Button/Tooltip/SelfRepair4=Regenerates 56 life per second. Blackhammer cannot move or attack until fully repaired or <d ref="Behavior,SelfRepair,Duration"/> seconds have passed.
 Button/Tooltip/SelfRepair5=Regenerates 40 life per second, but be unable to move during that time. Lasts up to 20 seconds.
 Button/Tooltip/SelfRepair6=Regenerates <d ref="Behavior,SelfRepair,Modification.VitalRegenArray[Life]"/> life per second. Cannot move or attack until fully repaired or <d ref="Behavior,SelfRepair,Duration"/> seconds have passed.
+Button/Tooltip/SensorSweep=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="12"/>.
 Button/Tooltip/SensorTower10=Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy.
 Button/Tooltip/SensorTower11=Refuels energy of units for resources.
 Button/Tooltip/SensorTower12=Supply ''strucutre''.<n/>Provides 1 supply.
@@ -21875,10 +21886,12 @@ Effect/Name/CorruptionLaunchMissile4=Corruption
 Effect/Name/CraftDoubleSurgicalLaser=Craft Double Surgical Laser
 Effect/Name/CraftDualSecurityPistols=Craft Dual Security Pistols
 Effect/Name/CraftNapalmSprayer=Craft Napalm Sprayer
+Effect/Name/CraftPortableSensorTower=Craft Portable Sensor Tower
 Effect/Name/CraftShellstormChaingun=Craft Shellstorm Chaingun
 Effect/Name/CraftShrapnelRifle=Craft Shrapnel Rifle
 Effect/Name/CraftSmartFireDartGuns=Craft Smart Fire Dart Guns
 Effect/Name/CraftWarheadLauncher=Craft Warhead Launcher
+Effect/Name/CraftZapperGun=Craft Zapper Gun
 Effect/Name/CreatePukePuddle12=Create Puke Puddle4
 Effect/Name/CreatePukePuddle122=Create Puke Puddle6
 Effect/Name/CreatePukePuddle22=Create Puke Puddle5
@@ -28266,8 +28279,10 @@ Effect/Name/RefugeCannonLM=Refuge Cannon LM
 Effect/Name/RefugeeCraftRemove1CS1FC1RT=Refugee Craft Remove 1CS, 1FC, 1RT
 Effect/Name/RefugeeCraftRemove1GM1SF1RT=Refugee Craft Remove 1GM, 1SF, 1RT
 Effect/Name/RefugeeCraftRemove1GM2SF=Refugee Craft Remove 1 GM, 2 SF
+Effect/Name/RefugeeCraftRemove2FC1SF=Refugee Craft Remove 2FC, 1SF
 Effect/Name/RefugeeCraftRemove2GM1SF=Refugee Craft Remove 2GM, 1SF
 Effect/Name/RefugeeCraftRemove2RT1FC=Refugee Craft Remove 2RT, 1FC
+Effect/Name/RefugeeCraftRemove2SF1FC=Refugee Craft Remove 2SF, 1FC
 Effect/Name/RefugeeCraftRemove3FC=Refugee Craft Remove 3FC
 Effect/Name/RefugeeCraftRemove3GM=Refugee Craft Remove 3GM
 Effect/Name/ReleaseInterceptors2=Release Interceptors2
@@ -29163,6 +29178,7 @@ Effect/Name/ScannerSweep2=Scanner Sweep Copy
 Effect/Name/ScannerSweep3=Scanner Sweep Copy 2
 Effect/Name/ScannerSweep4=Scanner Sweep
 Effect/Name/ScannerSweep5=Scanner Sweep2
+Effect/Name/ScannerSweep6=Scanner Sweep
 Effect/Name/ScantipedeParasiticAB2=Scantipede Parasitic AB Copy
 Effect/Name/ScantipedeParasiticCU2=Scantipede Parasitic CU Copy
 Effect/Name/ScantipedeParasiticCU3=Hamborger Armorless Servant

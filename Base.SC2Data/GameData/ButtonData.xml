@@ -4151,6 +4151,12 @@
         <EditorCategories value="Race:Protoss"/>
         <Universal value="1"/>
     </CButton>
+    <CButton id="EquipNapalmSprayer2">
+        <Icon value="Assets\Textures\btn-upgrade-terran-infernalpreigniter.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
     <CButton id="MorphMorphalisk222">
         <Icon value="Assets\Textures\btn-upgrade-zagara-increasebilelauncherrange.dds"/>
         <EditorCategories value="Race:Zerg"/>
@@ -4187,6 +4193,11 @@
     </CButton>
     <CButton id="ResearchOptimizedServos">
         <Icon value="Assets\Textures\btn-upgrade-terran-transformationservos.dds"/>
+    </CButton>
+    <CButton id="SensorSweep">
+        <Icon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
     </CButton>
     <CButton id="SetUpGenerator">
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel3.dds"/>
@@ -4253,7 +4264,7 @@
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="CalldownMULE42332"/>
     </CButton>
-    <CButton id="CalldownMULE423324332232222425233332">
+    <CButton id="EquipGear">
         <Icon value="Assets\Textures\btn-upgrade-terran-infantryarmorlevel0.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
@@ -34942,6 +34953,12 @@
     </CButton>
     <CButton id="Zealot226223223354323">
         <Icon value="Assets\Textures\btn-ability-terran-stimpack-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="EquipPortableSensorTower">
+        <Icon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
         <EditorCategories value="Race:Protoss"/>
         <Universal value="1"/>
