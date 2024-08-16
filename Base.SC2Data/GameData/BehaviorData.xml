@@ -962,30 +962,30 @@
             </Cost>
         </DamageResponse>
     </CBehaviorBuff>
+    <CBehaviorBuff id="HellRifleIgnite">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-slow.dds"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Duration value="10"/>
+        <Period value="1"/>
+        <PeriodicEffect value="IgnitedDamage"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="WepZapperGun">
         <Cost>
-            <Charge Link="Behavior/AntamoAirAll"/>
-            <Cooldown Link="Behavior/AntamoAirAll"/>
+            <Charge CountMax="1" CountUse="-1"/>
         </Cost>
         <BehaviorFlags index="Permanent" value="1"/>
         <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <RemoveValidatorArray value="IsTimeStopped282223"/>
         <InitialEffect value="RefugeeCraftRemove2SF1FC"/>
         <Modification>
             <AbilLinkDisableArray value="Wep3WarheadLauncher"/>
-            <AbilLinkDisableArray value="Wep1ShellstormChaingun"/>
-            <AbilLinkDisableArray value="Wep2SharpnelRifle"/>
+            <AbilLinkDisableArray value="Wep1ZapperGun"/>
+            <AbilLinkDisableArray value="Wep2HellRifle"/>
             <BehaviorLinkDisableArray value="NoWeapon"/>
-            <WeaponArray Link="NapalmSprayer"/>
-            <WeaponDisableArray value="H4ScrapCannon"/>
+            <WeaponArray Link="ZapperGun"/>
+            <WeaponDisableArray value="H5ScrapCannon"/>
         </Modification>
-        <DamageResponse>
-            <Cost>
-                <Charge Link="Behavior/AntamoAirAll"/>
-                <Cooldown Link="Behavior/AntamoAirAll"/>
-            </Cost>
-        </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="WepShellstormChaingun">
         <Cost>
@@ -45857,6 +45857,23 @@
             <BehaviorClassDisableArray index="CBehaviorSpawn" value="1"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="WepHellRifle">
+        <Cost>
+            <Charge CountMax="1" CountUse="-1"/>
+        </Cost>
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InitialEffect value="RefugeeCraftRemove1GM1CS1RT"/>
+        <Modification>
+            <AbilLinkDisableArray value="Wep3WarheadLauncher"/>
+            <AbilLinkDisableArray value="Wep1ZapperGun"/>
+            <AbilLinkDisableArray value="Wep2HellRifle"/>
+            <BehaviorLinkDisableArray value="NoWeapon"/>
+            <WeaponArray Link="HellRifle"/>
+            <WeaponDisableArray value="H5ScrapCannon"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="WidowMineAnimationController2">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -49609,6 +49626,12 @@
         <Modification>
             <StateFlags index="Stun" value="1"/>
         </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZapperGunSlow">
+        <InfoIcon value="Assets\Textures\btn-research-terran-ultracapacitors.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.5"/>
+        <Modification MoveSpeedMultiplier="0.25" AttackSpeedMultiplier="0.25"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZeratulStun2">
         <Alignment value="Negative"/>

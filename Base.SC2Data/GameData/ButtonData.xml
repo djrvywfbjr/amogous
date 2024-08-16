@@ -4151,8 +4151,14 @@
         <EditorCategories value="Race:Protoss"/>
         <Universal value="1"/>
     </CButton>
-    <CButton id="EquipNapalmSprayer2">
-        <Icon value="Assets\Textures\btn-upgrade-terran-infernalpreigniter.dds"/>
+    <CButton id="EquipZapperGun">
+        <Icon value="Assets\Textures\btn-research-terran-ultracapacitors.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="EquipHellRifle">
+        <Icon value="Assets\Textures\btn-ability-mengsk-ghost-pyrokineticimmolation_orange.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
         <EditorCategories value="Race:Protoss"/>
         <Universal value="1"/>

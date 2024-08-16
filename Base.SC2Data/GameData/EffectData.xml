@@ -11083,6 +11083,17 @@
         <Kind value="Ranged"/>
         <Amount value="10"/>
     </CEffectDamage>
+    <CEffectApplyBehavior id="CraftHellRifle">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="WepHellRifle"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="HellRifleDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <AttributeBonus index="Biological" value="15"/>
+        <Kind value="Ranged"/>
+        <Amount value="10"/>
+    </CEffectDamage>
     <CEffectDamage id="C10CanisterRifle2" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <AttributeBonus index="Light" value="10"/>
@@ -25526,6 +25537,13 @@
         <ArmorReduction value="0"/>
         <Kind value="Ranged"/>
         <Amount value="18"/>
+    </CEffectDamage>
+    <CEffectDamage id="IgnitedDamage">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/IrradiatePeriodicDamage"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <AttributeBonus index="Biological" value="1"/>
+        <Amount value="3"/>
     </CEffectDamage>
     <CEffectSet id="NapalmSprayer">
         <EditorCategories value="Race:Zerg"/>
@@ -45792,6 +45810,13 @@
         <Upgrades Upgrade="ManufactureFusionCore" Count="-1"/>
         <Upgrades Upgrade="ManufactureShellingFabricator" Count="-2"/>
     </CEffectModifyPlayer>
+    <CEffectModifyPlayer id="RefugeeCraftRemove1GM1CS1RT">
+        <EditorCategories value="Race:Zerg"/>
+        <WhichPlayer Value="Caster"/>
+        <Upgrades Upgrade="ManufactureGunpowderMixer" Count="-1"/>
+        <Upgrades Upgrade="ManufactureChemicalStation" Count="-1"/>
+        <Upgrades Upgrade="ManufactureRecyclerTank" Count="-1"/>
+    </CEffectModifyPlayer>
     <CEffectModifyPlayer id="RefugeeCraftRemove3GM">
         <EditorCategories value="Race:Zerg"/>
         <WhichPlayer Value="Caster"/>
@@ -64258,7 +64283,7 @@
         <RevealFlags index="Unfog" value="1"/>
         <RevealFlags index="Detect" value="1"/>
     </CEffectCreatePersistent>
-    <CEffectCreatePersistent id="ScannerSweep6">
+    <CEffectCreatePersistent id="SensorSweep">
         <EditorCategories value="Race:Terran"/>
         <ExpireDelay value="8"/>
         <RevealRadius value="5"/>
@@ -79301,6 +79326,26 @@
     <CEffectDamage id="ZHybridPsionicShockwaveSpellDamage4">
         <Amount value="20"/>
     </CEffectDamage>
+    <CEffectSet id="ZapperGun">
+        <EditorCategories value=""/>
+        <EffectArray value="ZapperGunDamage"/>
+        <EffectArray value="ZapperGunSlow"/>
+    </CEffectSet>
+    <CEffectSet id="HellRifle">
+        <EditorCategories value=""/>
+        <EffectArray value="HellRifleDamage"/>
+        <EffectArray value="HellRifleIgnite"/>
+    </CEffectSet>
+    <CEffectDamage id="ZapperGunDamage">
+        <EditorCategories value=""/>
+        <Amount value="8"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="ZapperGunSlow">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="HellRifleIgnite">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
     <CEffectSet id="ZealotPsiBladesCleaveSet10">
         <EditorCategories value=""/>
         <EffectArray value="PsiBladesBurst11"/>

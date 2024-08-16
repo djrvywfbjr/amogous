@@ -29666,7 +29666,6 @@
     <CAbilEffectTarget id="SensorSweep">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <SharedFlags index="Disabled" value="1"/>
-        <Effect index="0" value="ScannerSweep6"/>
         <Flags index="RequireTargetVision" value="0"/>
         <Flags index="TransientPreferred" value="1"/>
         <Cost>
@@ -29679,8 +29678,7 @@
         </Cost>
         <Range value="30"/>
         <Arc value="360"/>
-        <CursorEffect value="ScannerSweep6"/>
-        <AINotifyEffect value="ScannerSweep6"/>
+        <CursorEffect value="SensorSweep"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="SensorSweep"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="TemporarityCP2">
@@ -60399,7 +60397,20 @@
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <AINotifyEffect value="XenWarrior6"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="EquipNapalmSprayer2" Requirements="Craft1FC2SF"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipZapperGun" Requirements="Craft1FC2SF"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Wep2HellRifle">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="XenWarrior622322335"/>
+        <Effect index="0" value="CraftHellRifle"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
+            <Cooldown Link="Abil/XenWarrior"/>
+        </Cost>
+        <AINotifyEffect value="XenWarrior6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipHellRifle" Requirements="Craft1GM1CS1RT"/>
     </CAbilEffectInstant>
     <CAbilEffectTarget id="WidowMineAttack2" parent="WidowMineAttack">
         <Name value="Abil/Name/WidowMineAttack2"/>

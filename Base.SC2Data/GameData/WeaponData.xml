@@ -1100,6 +1100,17 @@
         <Backswing value="1.167"/>
         <Effect value="C10CanisterRifle"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="HellRifle">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-ability-mengsk-ghost-pyrokineticimmolation_orange.dds"/>
+        <DisplayEffect value="HellRifleDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="6.5"/>
+        <Range value="8"/>
+        <Period value="2.5"/>
+        <DamagePoint value="0.083"/>
+        <Backswing value="1.167"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="C10CanisterRifle11">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-snipetripletap.dds"/>
@@ -11858,6 +11869,13 @@
         </Cost>
         <Period value="1"/>
         <Effect value="XelNagaChargedCrystalDamage3"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ZapperGun">
+        <EditorCategories value=""/>
+        <Icon value="Assets\Textures\btn-research-terran-ultracapacitors.dds"/>
+        <DisplayEffect value="ZapperGunDamage"/>
+        <Range value="6"/>
+        <Period value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ZergTowerArtillery2">
         <EditorCategories value="Race:Terran"/>
