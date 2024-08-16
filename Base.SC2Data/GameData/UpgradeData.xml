@@ -2890,6 +2890,10 @@
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade34222"/>
     </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade34223">
+        <EffectArray Operation="Set" Reference="Unit,SCV22,EnergyRegenRate" Value="0.398400"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+    </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade3423">
         <EffectArray Operation="Set" Reference="Abil,AshWormBurrowMove223,Range[0]" Value="500"/>
         <EffectArray Operation="Set" Reference="Abil,AshWormBurrowMove22322,Range[0]" Value="500"/>
@@ -9254,7 +9258,6 @@
         <EffectArray Reference="Unit,Forge5,EnergyRegenRate" Value="0.1015"/>
         <EffectArray Reference="Behavior,NovaArmorBlinkSuit233,Modification.TimeScale" Value="0.05"/>
         <EffectArray Reference="Abil,ProbeHarvest,ResourceAmountBonus[Minerals]" Value="1"/>
-        <EffectArray Reference="Abil,ProbeHarvest,ResourceAmountBonus[Vespene]" Value="1"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>

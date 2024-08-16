@@ -821,6 +821,23 @@
             <AbilLinkDisableArray value="Ab1PortableSensorTower"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="ArbiterMPStasisField24">
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-entomb.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="NotMaxEnergy2"/>
+        <RemoveValidatorArray value="NotMaxEnergy2"/>
+        <Duration value="60"/>
+        <Modification>
+            <ResourceHarvestAmountBonus index="Minerals" value="1"/>
+            <VitalRegenArray index="Energy" value="-0.6992"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ArbiterMPStasisFieldTimedLife24">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <Duration value="60"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="NoWeapon">
         <Alignment value="Negative"/>
         <BehaviorFlags index="Permanent" value="1"/>
@@ -969,6 +986,26 @@
         <Duration value="10"/>
         <Period value="1"/>
         <PeriodicEffect value="IgnitedDamage"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ObserverSquadSight242">
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-targetlock.dds"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Duration value="20"/>
+        <Modification MoveSpeedMultiplier="1.5" AttackSpeedMultiplier="1.5">
+            <ResourceHarvestAmountBonus index="Minerals" value="1"/>
+            <ResourceHarvestAmountBonus index="Vespene" value="1"/>
+            <VitalRegenArray index="Energy" value="-1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Stimpack1022">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-terran-nova-snipeenergyrefund.dds"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Duration value="30"/>
+        <Modification AttackSpeedMultiplier="1.2">
+            <ResourceHarvestAmountBonus index="Minerals" value="1"/>
+            <ResourceHarvestTimeMultiplier index="Minerals" value="0.8"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="WepZapperGun">
         <Cost>
@@ -31722,13 +31759,11 @@
     </CBehaviorBuff>
     <CBehaviorBuff id="ObserverSquadSight2">
         <InfoIcon value="Assets\Textures\btn-ability-protoss-targetlock.dds"/>
-        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Duration value="1"/>
         <Modification MoveSpeedMultiplier="1.5" AttackSpeedMultiplier="1.5"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ObserverSquadSight22">
         <InfoIcon value="Assets\Textures\btn-ability-protoss-targetlock.dds"/>
-        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Duration value="1"/>
         <Modification MoveSpeedMultiplier="1.5" AttackSpeedMultiplier="1.5"/>
     </CBehaviorBuff>
@@ -31766,7 +31801,6 @@
     </CBehaviorBuff>
     <CBehaviorBuff id="ObserverSquadSight23">
         <InfoIcon value="Assets\Textures\btn-ability-protoss-targetlock.dds"/>
-        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Duration value="1"/>
         <Modification>
             <AbilClassDisableArray index="CAbilEffectTarget" value="1"/>

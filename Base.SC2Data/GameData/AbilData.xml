@@ -405,6 +405,19 @@
         <CursorEffect value="ArbiterMPStasisFieldSearch23"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="ArbiterMPStasisField23"/>
     </CAbilEffectTarget>
+    <CAbilEffectTarget id="ArbiterMPStasisField34">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="ArbiterMPStasisFieldSearch24"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Cost>
+            <Charge Link="Abil/ArbiterMPStasisField"/>
+            <Cooldown Link="Abil/ArbiterMPStasisField" TimeUse="30"/>
+        </Cost>
+        <Range value="7"/>
+        <Arc value="360"/>
+        <CursorEffect value="ArbiterMPStasisFieldSearch4"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ArbiterMPStasisField24"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="ArbiterMPStasisField4">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ArbiterMPStasisFieldSearch3"/>
@@ -4331,7 +4344,7 @@
         </InfoArray>
         <InfoArray index="Train27">
             <Vital index="Life" value="99"/>
-            <Button DefaultButtonFace="UnknownButton119" Requirements="HavePlagueCenter23322"/>
+            <Button DefaultButtonFace="UnknownButton119" Requirements="HavePlagueCenter233224"/>
             <Unit value="ProbingDrone"/>
         </InfoArray>
         <InfoArray index="Train28">
@@ -12849,6 +12862,15 @@
         <CmdButtonArray index="Execute" DefaultButtonFace="ShadowBlade3245"/>
         <CmdButtonArray index="Cancel" Requirements="UseStimpack224"/>
     </CAbilEffectInstant>
+    <CAbilEffectInstant id="ObserverSquadSight242">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ObserverSquadSightCP242"/>
+        <Cost>
+            <Charge Link="Abil/ObserverSquadSight"/>
+            <Cooldown Link="Abil/ObserverSquadSight" TimeUse="60"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SquadSight242"/>
+    </CAbilEffectInstant>
     <CAbilEffectInstant id="OverwatchProtocolCP2">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="PoisonBlade2352"/>
@@ -13053,7 +13075,7 @@
     </CAbilTrain>
     <CAbilTrain id="CommandCenterTrain3">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
-        <InfoArray index="Train1" Time="12">
+        <InfoArray index="Train1" Time="10">
             <Button DefaultButtonFace="SCV4" State="Restricted">
                 <Flags index="ToSelection" value="1"/>
             </Button>
@@ -15326,7 +15348,7 @@
     </CAbilTrain>
     <CAbilTrain id="CommandCenterTrain8">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
-        <InfoArray index="Train1" Time="20">
+        <InfoArray index="Train1" Time="16">
             <Charge Link="Abil/CommandCenterTrain"/>
             <Cooldown Link="Abil/CommandCenterTrain"/>
             <Button DefaultButtonFace="SCV9" State="Restricted">
@@ -20344,6 +20366,11 @@
             <Resource index="Minerals" value="75"/>
             <Resource index="Vespene" value="75"/>
             <Button DefaultButtonFace="CommanderTraitNovaStealthMode226242" Requirements="LearnBlink2426225"/>
+        </InfoArray>
+        <InfoArray index="Research20" Time="160" Upgrade="UmojanBasicUnitUpgrade34223">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="UnknownButton120" Requirements="UnknownRequirement127"/>
         </InfoArray>
         <InfoArray index="Research22" Time="140" Upgrade="UmojanBasicUnitUpgrade35">
             <Resource index="Minerals" value="200"/>
@@ -29706,6 +29733,19 @@
         <CursorEffect value="SensorSweep"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="SensorSweep"/>
     </CAbilEffectTarget>
+    <CAbilEffectInstant id="Stimpack1222">
+        <AbilSetId value="Stimpack"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <InfoTooltipPriority value="1"/>
+        <Effect index="0" value="Stimpack1422"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="45"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Stim122">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectInstant>
     <CAbilEffectTarget id="TemporarityCP2">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ColossusTaldarimLM242"/>
@@ -38102,7 +38142,7 @@
         <Flags index="RequireTargetVision" value="0"/>
         <Cost>
             <Charge Link="Abil/SpawnPhaseCannon" Location="Player"/>
-            <Cooldown Link="MindBolt" Location="Player" TimeUse="60"/>
+            <Cooldown Link="MindBolt" Location="Player" TimeUse="90"/>
         </Cost>
         <Range value="35"/>
         <Arc value="360"/>
@@ -42438,7 +42478,7 @@
             <Button DefaultButtonFace="CommandCenter182" State="Suppressed" Requirements="MothershipRequirements3232222222222"/>
         </InfoArray>
         <InfoArray index="Build17" Unit="WarFactory2">
-            <Vital index="Energy" value="60"/>
+            <Vital index="Energy" value="40"/>
             <Charge>
                 <CountMax value="3"/>
                 <CountStart value="3"/>
@@ -42451,7 +42491,7 @@
             <Button DefaultButtonFace="Bunker162"/>
         </InfoArray>
         <InfoArray index="Build18" Unit="UpgradedBarracks2">
-            <Vital index="Energy" value="45"/>
+            <Vital index="Energy" value="30"/>
             <Charge>
                 <CountMax value="3"/>
                 <CountStart value="3"/>
@@ -42479,7 +42519,7 @@
             <Button DefaultButtonFace="PsionicAmplifier7" State="Suppressed"/>
         </InfoArray>
         <InfoArray index="Build21" Unit="StarStation2">
-            <Vital index="Energy" value="60"/>
+            <Vital index="Energy" value="45"/>
             <Charge>
                 <CountMax value="3"/>
                 <CountStart value="3"/>
@@ -42580,7 +42620,7 @@
             <ValidatorArray value="HasVespene"/>
         </InfoArray>
         <InfoArray index="Build4" Unit="SupplyDepot23">
-            <Vital index="Energy" value="20"/>
+            <Vital index="Energy" value="15"/>
             <Charge>
                 <CountMax value="3"/>
                 <CountStart value="3"/>
@@ -48087,7 +48127,7 @@
         <Flags index="AllowMovement" value="1"/>
         <Cost>
             <Charge>
-                <CountMax value="3"/>
+                <CountMax value="2"/>
                 <CountStart value="2"/>
                 <CountUse value="1"/>
                 <Link value="Abil/SOAMothershipLineAttack"/>
@@ -55902,7 +55942,7 @@
         <InfoArray index="Build3" Unit="Refinery5">
             <Button DefaultButtonFace="Refinery2" Requirements=""/>
         </InfoArray>
-        <InfoArray index="Build4" Unit="CyberneticsAttacher" Time="59">
+        <InfoArray index="Build4" Unit="CyberneticsAttacher" Time="45">
             <Button DefaultButtonFace="Barracks4" Requirements=""/>
         </InfoArray>
         <InfoArray index="Build5" Unit="CoreOfScience">
@@ -55941,7 +55981,7 @@
     </CAbilBuild>
     <CAbilBuild id="TerranBuild7" parent="TerranBuild">
         <Name value="Abil/Name/TerranBuild7"/>
-        <InfoArray index="Build1" Unit="CommandCenter4" Time="60">
+        <InfoArray index="Build1" Unit="CommandCenter4" Time="45">
             <Button DefaultButtonFace="CommandCenter8" Requirements=""/>
         </InfoArray>
         <InfoArray index="Build3" Unit="Refinery2">

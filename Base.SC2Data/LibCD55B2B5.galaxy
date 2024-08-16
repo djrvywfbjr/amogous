@@ -598,28 +598,6 @@ void libCD55B2B5_gt_NewConfederacyChoose_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
-// Trigger: NewConfederacyChoose 2
-//--------------------------------------------------------------------------------------------------
-bool libCD55B2B5_gt_NewConfederacyChoose2_Func (bool testConds, bool runActions) {
-    // Automatic Variable Declarations
-    // Actions
-    if (!runActions) {
-        return true;
-    }
-
-    PlayerSetConsoleSkin(EventPlayer(), "ConsoleProtoss_XelNaga");
-    libNtve_gf_UnitCreateFacingPoint(1, "GoldenNexus", c_unitCreateIgnorePlacement, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
-    libNtve_gf_UnitCreateFacingPoint(12, "ProbingDrone", c_unitCreateIgnorePlacement, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
-    return true;
-}
-
-//--------------------------------------------------------------------------------------------------
-void libCD55B2B5_gt_NewConfederacyChoose2_Init () {
-    libCD55B2B5_gt_NewConfederacyChoose2 = TriggerCreate("libCD55B2B5_gt_NewConfederacyChoose2_Func");
-    TriggerAddEventUnitAbility(libCD55B2B5_gt_NewConfederacyChoose2, null, AbilityCommand("BarracksTrain42", 26), c_unitAbilStageExecute, false);
-}
-
-//--------------------------------------------------------------------------------------------------
 // Trigger: PrimalistChoose
 //--------------------------------------------------------------------------------------------------
 bool libCD55B2B5_gt_PrimalistChoose_Func (bool testConds, bool runActions) {
@@ -1469,7 +1447,6 @@ bool libCD55B2B5_gt_CheatDeveloper_Func (bool testConds, bool runActions) {
 void libCD55B2B5_gt_CheatDeveloper_Init () {
     libCD55B2B5_gt_CheatDeveloper = TriggerCreate("libCD55B2B5_gt_CheatDeveloper_Func");
     TriggerAddEventChatMessage(libCD55B2B5_gt_CheatDeveloper, c_playerAny, "glgl", true);
-    TriggerAddEventKeyPressed(libCD55B2B5_gt_CheatDeveloper, c_playerAny, c_keyP, true, c_keyModifierStateRequire, c_keyModifierStateIgnore, c_keyModifierStateIgnore);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -8201,7 +8178,7 @@ bool libCD55B2B5_gt__985Mode_Func (bool testConds, bool runActions) {
 //--------------------------------------------------------------------------------------------------
 void libCD55B2B5_gt__985Mode_Init () {
     libCD55B2B5_gt__985Mode = TriggerCreate("libCD55B2B5_gt__985Mode_Func");
-    TriggerAddEventTimeElapsed(libCD55B2B5_gt__985Mode, 60.0, c_timeGame);
+    TriggerAddEventTimeElapsed(libCD55B2B5_gt__985Mode, 20.0, c_timeGame);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -9846,7 +9823,6 @@ void libCD55B2B5_InitTriggers () {
     libCD55B2B5_gt_CorruptedChoose_Init();
     libCD55B2B5_gt_SecretChoose_Init();
     libCD55B2B5_gt_NewConfederacyChoose_Init();
-    libCD55B2B5_gt_NewConfederacyChoose2_Init();
     libCD55B2B5_gt_PrimalistChoose_Init();
     libCD55B2B5_gt_SecondMilitaryExpeditionaryFleet_Init();
     libCD55B2B5_gt_PythonsBLoodCUltChoose_Init();

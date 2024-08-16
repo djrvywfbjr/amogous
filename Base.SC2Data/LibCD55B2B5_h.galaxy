@@ -34,7 +34,6 @@ trigger libCD55B2B5_gt_RandomRace;
 trigger libCD55B2B5_gt_CorruptedChoose;
 trigger libCD55B2B5_gt_SecretChoose;
 trigger libCD55B2B5_gt_NewConfederacyChoose;
-trigger libCD55B2B5_gt_NewConfederacyChoose2;
 trigger libCD55B2B5_gt_PrimalistChoose;
 trigger libCD55B2B5_gt_SecondMilitaryExpeditionaryFleet;
 trigger libCD55B2B5_gt_PythonsBLoodCUltChoose;
