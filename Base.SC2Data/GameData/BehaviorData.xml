@@ -50,6 +50,16 @@
             <AbilClassDisableArray index="CAbilTransport" value="1"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="Ab1PlasmaCoater">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InitialEffect value="RefugeeCraftRemove2FC1SF"/>
+        <Modification>
+            <AbilLinkEnableArray value="PlasmaCoater"/>
+            <AbilLinkDisableArray value="Ab1PlasmaCoater"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="AbilityTargetExclusionBehavior2">
         <BehaviorFlags index="Permanent" value="1"/>
         <InfoFlags index="Hidden" value="1"/>
@@ -969,6 +979,22 @@
         <Duration value="10"/>
         <Period value="1"/>
         <PeriodicEffect value="IgnitedDamage"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PlasmaCoater">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="10"/>
+        <Modification ShieldArmorBonus="3">
+            <VitalMaxArray index="Shields" value="125"/>
+            <VitalRegenArray index="Life" value="8"/>
+        </Modification>
+        <DamageResponse Handled="PlasmaCoaterDamage">
+            <Kind index="Spell" value="0"/>
+            <Kind index="Ranged" value="0"/>
+            <Kind index="Splash" value="0"/>
+            <Kind index="NoProc" value="0"/>
+            <Chance value="1"/>
+        </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="UnmannedBuilding">
         <Cost>

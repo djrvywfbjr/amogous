@@ -11103,6 +11103,11 @@
         <WhichUnit Value="Caster"/>
         <Behavior value="WepCorrosiveDesolator"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="CraftPlasmaCoater">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="Ab1PlasmaCoater"/>
+    </CEffectApplyBehavior>
     <CEffectDamage id="HellRifleDamage" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <AttributeBonus index="Biological" value="15"/>
@@ -45782,6 +45787,10 @@
         <WhichPlayer Value="Caster"/>
         <Upgrades Upgrade="AdvancedConstruction24223222222339" Count="-1"/>
     </CEffectModifyPlayer>
+    <CEffectDamage id="PlasmaCoaterDamage">
+        <EditorCategories value=""/>
+        <Amount value="10"/>
+    </CEffectDamage>
     <CEffectModifyPlayer id="RefugeeCraftRemove2FC1SF">
         <EditorCategories value="Race:Zerg"/>
         <WhichPlayer Value="Caster"/>
@@ -65185,6 +65194,10 @@
         <ValidatorArray index="0" value="IsTimeStopped2"/>
         <EditorCategories value=""/>
         <Behavior value="Shield38"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="PlasmaCoater">
+        <ValidatorArray index="0" value="IsTimeStopped2"/>
+        <EditorCategories value=""/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="ShieldUp2322">
         <EditorCategories value=""/>

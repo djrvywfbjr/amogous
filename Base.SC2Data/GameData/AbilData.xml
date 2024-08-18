@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CAbilEffectInstant id="Ab1PlasmaCoater">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="XenWarrior622322335"/>
+        <Effect index="0" value="CraftPlasmaCoater"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge CountMax="1" CountUse="-1"/>
+        </Cost>
+        <AINotifyEffect value="XenWarrior6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipPlasmaCoater" Requirements="Craft2FC1SF"/>
+    </CAbilEffectInstant>
     <CAbilEffectTarget id="AdvancedConstructionAuto">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <Flags index="AllowMovement" value="1"/>
@@ -29681,6 +29693,22 @@
         <CursorEffect value="SensorSweep"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="SensorSweep"/>
     </CAbilEffectTarget>
+    <CAbilEffectInstant id="PlasmaCoater">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown TimeUse="60"/>
+        </Cost>
+        <AutoCastValidatorArray value="CasterLifeNotFull"/>
+        <AINotifyEffect value="ShieldUp23210"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PlasmaCoater"/>
+        <SharedFlags index="Disabled" value="1"/>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastFilters value="Visible;-"/>
+    </CAbilEffectInstant>
     <CAbilEffectTarget id="TemporarityCP2">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ColossusTaldarimLM242"/>
