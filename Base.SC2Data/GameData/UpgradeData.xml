@@ -279,7 +279,7 @@
     </CUpgrade>
     <CUpgrade id="AdvancedConstruction242232222222">
         <Flags index="UpgradeCheat" value="0"/>
-        <EffectArray Operation="Subtract" Reference="Behavior,AntamoAirAll272223,Modification.TimeScale" Value="0.4"/>
+        <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll272223,Modification.TimeScale" Value="0.4"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="AdvancedConstruction"/>
     </CUpgrade>
@@ -469,6 +469,7 @@
     </CUpgrade>
     <CUpgrade id="AdvancedConstruction2422332222">
         <Flags index="UpgradeCheat" value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll2722223,Modification.AbilClassDisableArray[CAbilTransport]" Value="1"/>
         <EffectArray Reference="Unit,Marauder4,LifeMax" Value="30"/>
         <EffectArray Reference="Unit,Marauder4,LifeStart" Value="30"/>
         <EffectArray Reference="Unit,Marine313,LifeMax" Value="30"/>
@@ -528,9 +529,11 @@
     </CUpgrade>
     <CUpgrade id="AdvancedConstruction2422332222222222">
         <Flags index="UpgradeCheat" value="0"/>
-        <EffectArray Reference="Effect,ArcNodeDamage222,Amount" Value="2"/>
-        <EffectArray Reference="Effect,ArcNodeDamage22,Amount" Value="2"/>
-        <EffectArray Reference="Effect,ArcNodeDamage2,Amount" Value="2"/>
+        <EffectArray Reference="Effect,ArcNodeDamage222,Amount" Value="3"/>
+        <EffectArray Reference="Effect,ArcNodeDamage22,Amount" Value="3"/>
+        <EffectArray Reference="Effect,ArcNodeDamage2,Amount" Value="3"/>
+        <EffectArray Reference="Effect,ArcNodeDamage2,Chance" Value="0.15"/>
+        <EffectArray Reference="Effect,ArcNodeDamage22,Chance" Value="0.3"/>
         <EffectArray Operation="Set" Reference="Unit,Barracks172,CostResource[Vespene]" Value="0"/>
         <EffectArray Operation="Set" Reference="Unit,Barracks172,CostResource[Minerals]" Value="75"/>
         <EffectArray Operation="Set" Reference="Unit,EngineeringBay1822,CostResource[Minerals]" Value="75"/>
