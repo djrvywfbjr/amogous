@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Attributes>
+    <Attribute>
+        <Id Value="1"/>
+        <Type Value="Global"/>
+        <Name Value="Attribute001/Name"/>
+        <Description Value="Attribute001/Desc"/>
+        <Availability Value="All"/>
+        <Visibility Value="All"/>
+        <Access Value="Host"/>
+        <Value>
+            <Id Value="2"/>
+            <Name Value="Attribute001/Value002/Name"/>
+            <Description Value="Attribute001/Value002/Desc"/>
+        </Value>
+        <Value>
+            <Id Value="11"/>
+            <Name Value="Attribute001/Value011/Name"/>
+            <Description Value="Attribute001/Value011/Desc"/>
+        </Value>
+        <Value>
+            <Id Value="6"/>
+            <Name Value="Attribute001/Value006/Name"/>
+            <Description Value="Attribute001/Value006/Desc"/>
+        </Value>
+        <Value>
+            <Id Value="1"/>
+            <Name Value="Attribute001/Value001/Name"/>
+            <Description Value="Attribute001/Value001/Desc"/>
+        </Value>
+        <Value>
+            <Id Value="3"/>
+            <Name Value="Attribute001/Value003/Name"/>
+            <Description Value="Attribute001/Value003/Desc"/>
+        </Value>
+        <Value>
+            <Id Value="5"/>
+            <Name Value="Attribute001/Value005/Name"/>
+            <Description Value="Attribute001/Value005/Desc"/>
+        </Value>
+        <Value>
+            <Id Value="7"/>
+            <Name Value="Attribute001/Value007/Name"/>
+            <Description Value="Attribute001/Value007/Desc"/>
+        </Value>
+        <Value>
+            <Id Value="8"/>
+            <Name Value="Attribute001/Value008/Name"/>
+            <Description Value="Attribute001/Value008/Desc"/>
+        </Value>
+        <Value>
+            <Id Value="9"/>
+            <Name Value="Attribute001/Value009/Name"/>
+            <Description Value="Attribute001/Value009/Desc"/>
+        </Value>
+        <Value>
+            <Id Value="10"/>
+            <Name Value="Attribute001/Value010/Name"/>
+            <Description Value="Attribute001/Value010/Desc"/>
+        </Value>
+        <Default>
+            <Slot Id="Global"/>
+            <Value Id="1"/>
+        </Default>
+    </Attribute>
+    <Attribute>
+        <Id Value="2"/>
+        <Type Value="Global"/>
+        <Name Value="Attribute002/Name"/>
+        <Description Value="Attribute002/Desc"/>
+        <Availability Value="All"/>
+        <Visibility Value="All"/>
+        <Access Value="Host"/>
+        <Value>
+            <Id Value="1"/>
+            <Name Value="Attribute002/Value001/Name"/>
+            <Description Value="Attribute002/Value001/Desc"/>
+        </Value>
+        <Value>
+            <Id Value="6"/>
+            <Name Value="Attribute002/Value006/Name"/>
+            <Description Value="Attribute002/Value006/Desc"/>
+            <Icon Value="Assets\Textures\btn-ability-spearofadun-deploypylon.dds"/>
+        </Value>
+        <Value>
+            <Id Value="2"/>
+            <Name Value="Attribute002/Value002/Name"/>
+            <Description Value="Attribute002/Value002/Desc"/>
+        </Value>
+        <Value>
+            <Id Value="3"/>
+            <Name Value="Attribute002/Value003/Name"/>
+            <Description Value="Attribute002/Value003/Desc"/>
+        </Value>
+        <Value>
+            <Id Value="4"/>
+            <Name Value="Attribute002/Value004/Name"/>
+            <Description Value="Attribute002/Value004/Desc"/>
+        </Value>
+        <Value>
+            <Id Value="5"/>
+            <Name Value="Attribute002/Value005/Name"/>
+            <Description Value="Attribute002/Value005/Desc"/>
+        </Value>
+        <Default>
+            <Slot Id="Global"/>
+            <Value Id="6"/>
+        </Default>
+    </Attribute>
+    <Attribute>
+        <Id Value="3"/>
+        <Type Value="Player"/>
+        <Name Value="Attribute003/Name"/>
+        <Description Value="Attribute003/Desc"/>
+        <Availability Value="All"/>
+        <Visibility Value="All"/>
+        <Access Value="Self"/>
+        <Value>
+            <Id Value="30"/>
+            <Name Value="Attribute003/Value030/Name"/>
+            <Description Value="Attribute003/Value030/Desc"/>
+            <Icon Value="Assets\Textures\btn-ability-mengsk-siegetank-flyingtankarmament.dds"/>
+        </Value>
+        <Value>
+            <Id Value="1"/>
+            <Name Value="Attribute003/Value001/Name"/>
+            <Description Value="Attribute003/Value001/Desc"/>
+            <Icon Value="Assets\Textures\decal_terran_0050_02.dds"/>
+        </Value>
+        <Value>
+            <Id Value="24"/>
+            <Name Value="Attribute003/Value024/Name"/>
+            <Description Value="Attribute003/Value024/Desc"/>
+            <Icon Value="Assets\Textures\btn-hero-artanis.dds"/>
+        </Value>
+        <Value>
+            <Id Value="28"/>
+            <Name Value="Attribute003/Value028/Name"/>
+            <Description Value="Attribute003/Value028/Desc"/>
+            <Icon Value="Assets\Textures\btn-upgrade-zerg-swarmfrenzy.dds"/>
+        </Value>
+        <Value>
+            <Id Value="29"/>
+            <Name Value="Attribute003/Value029/Name"/>
+            <Description Value="Attribute003/Value029/Desc"/>
+            <Icon Value="Assets\Textures\tip_hybridbehemoth.dds"/>
+        </Value>
+        <Value>
+            <Id Value="6"/>
+            <Name Value="Attribute003/Value006/Name"/>
+            <Description Value="Attribute003/Value006/Desc"/>
+            <Icon Value="Assets\Textures\decal_zerg_0031_01.dds"/>
+        </Value>
+        <Value>
+            <Id Value="4"/>
+            <Name Value="Attribute003/Value004/Name"/>
+            <Description Value="Attribute003/Value004/Desc"/>
+            <Icon Value="Assets\Textures\decal_terran_0082_01.dds"/>
+        </Value>
+        <Value>
+            <Id Value="26"/>
+            <Name Value="Attribute003/Value026/Name"/>
+            <Description Value="Attribute003/Value026/Desc"/>
+            <Icon Value="Assets\Textures\btn-ability-zeratul-hero-propheticvision.dds"/>
+        </Value>
+        <Value>
+            <Id Value="11"/>
+            <Name Value="Attribute003/Value011/Name"/>
+            <Description Value="Attribute003/Value011/Desc"/>
+            <Icon Value="Assets\Textures\btn-ability-hornerhan-hellbat-dot.dds"/>
+        </Value>
+        <Value>
+            <Id Value="7"/>
+            <Name Value="Attribute003/Value007/Name"/>
+            <Description Value="Attribute003/Value007/Desc"/>
+            <Icon Value="Assets\Textures\btn-upgrade-protoss-fenix-adeptchampionshadespawn.dds"/>
+        </Value>
+        <Value>
+            <Id Value="2"/>
+            <Name Value="Attribute003/Value002/Name"/>
+            <Description Value="Attribute003/Value002/Desc"/>
+            <Icon Value="Assets\Textures\btn-sc2-temp.dds"/>
+        </Value>
+        <Value>
+            <Id Value="12"/>
+            <Name Value="Attribute003/Value012/Name"/>
+            <Description Value="Attribute003/Value012/Desc"/>
+            <Icon Value="Assets\Textures\btn-ability-stukov-plaugedmunitions.dds"/>
+        </Value>
+        <Value>
+            <Id Value="9"/>
+            <Name Value="Attribute003/Value009/Name"/>
+            <Description Value="Attribute003/Value009/Desc"/>
+            <Icon Value="Assets\Textures\btn-ability-mengsk-commandcenter-drafttroopers.dds"/>
+        </Value>
+        <Value>
+            <Id Value="8"/>
+            <Name Value="Attribute003/Value008/Name"/>
+            <Description Value="Attribute003/Value008/Desc"/>
+            <Icon Value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-orbitaldrop.dds"/>
+        </Value>
+        <Value>
+            <Id Value="5"/>
+            <Name Value="Attribute003/Value005/Name"/>
+            <Description Value="Attribute003/Value005/Desc"/>
+            <Icon Value="Assets\Textures\decal_protoss_0000_01.dds"/>
+        </Value>
+        <Value>
+            <Id Value="3"/>
+            <Name Value="Attribute003/Value003/Name"/>
+            <Description Value="Attribute003/Value003/Desc"/>
+            <Icon Value="Assets\Textures\btn-ability-protoss-hallucination-color.dds"/>
+        </Value>
+        <Value>
+            <Id Value="22"/>
+            <Name Value="Attribute003/Value022/Name"/>
+            <Description Value="Attribute003/Value022/Desc"/>
+            <Icon Value="Assets\Textures\btn-upgrade-terran-nova-repairbeamcloak.dds"/>
+        </Value>
+        <Value>
+            <Id Value="17"/>
+            <Name Value="Attribute003/Value017/Name"/>
+            <Description Value="Attribute003/Value017/Desc"/>
+            <Icon Value="Assets\Textures\btn-ability-alarak-massteleport.dds"/>
+        </Value>
+        <Value>
+            <Id Value="16"/>
+            <Name Value="Attribute003/Value016/Name"/>
+            <Description Value="Attribute003/Value016/Desc"/>
+            <Icon Value="Assets\Textures\btn-ability-hornerhan-reaper-flightmode.dds"/>
+        </Value>
+        <Value>
+            <Id Value="15"/>
+            <Name Value="Attribute003/Value015/Name"/>
+            <Description Value="Attribute003/Value015/Desc"/>
+            <Icon Value="Assets\Textures\btn-unit-zerg-leviathan.dds"/>
+        </Value>
+        <Value>
+            <Id Value="18"/>
+            <Name Value="Attribute003/Value018/Name"/>
+            <Description Value="Attribute003/Value018/Desc"/>
+            <Icon Value="Assets\Textures\btn-ability-alarak-reliquaryofsouls.dds"/>
+        </Value>
+        <Value>
+            <Id Value="13"/>
+            <Name Value="Attribute003/Value013/Name"/>
+            <Description Value="Attribute003/Value013/Desc"/>
+            <Icon Value="Assets\Textures\btn-upgrade-zerg-abathur-improvedmend.dds"/>
+        </Value>
+        <Value>
+            <Id Value="20"/>
+            <Name Value="Attribute003/Value020/Name"/>
+            <Description Value="Attribute003/Value020/Desc"/>
+            <Icon Value="Assets\Textures\btn-upgrade-mengsk-trooper-orbitalrequisition.dds"/>
+        </Value>
+        <Value>
+            <Id Value="25"/>
+            <Name Value="Attribute003/Value025/Name"/>
+            <Description Value="Attribute003/Value025/Desc"/>
+            <Icon Value="Assets\Textures\btn-ability-tychus-medivac.dds"/>
+        </Value>
+        <Value>
+            <Id Value="32"/>
+            <Name Value="Attribute003/Value032/Name"/>
+            <Description Value="Attribute003/Value032/Desc"/>
+            <Icon Value="Assets\Textures\btn-tips-hyperion.dds"/>
+        </Value>
+        <Value>
+            <Id Value="27"/>
+            <Name Value="Attribute003/Value027/Name"/>
+            <Description Value="Attribute003/Value027/Desc"/>
+            <Icon Value="Assets\Textures\btn-ability-zeratul-darktemplar-backtotheshadows.dds"/>
+        </Value>
+        <Value>
+            <Id Value="31"/>
+            <Name Value="Attribute003/Value031/Name"/>
+            <Description Value="Attribute003/Value031/Desc"/>
+            <Icon Value="Assets\Textures\ui_battlenet_glue_icons_random_highlight.dds"/>
+        </Value>
+        <Value>
+            <Id Value="23"/>
+            <Name Value="Attribute003/Value023/Name"/>
+            <Description Value="Attribute003/Value023/Desc"/>
+            <Icon Value="Assets\Textures\btn-progression-hornerhan-5-fleetcalldown.dds"/>
+        </Value>
+        <Value>
+            <Id Value="19"/>
+            <Name Value="Attribute003/Value019/Name"/>
+            <Description Value="Attribute003/Value019/Desc"/>
+            <Icon Value="Assets\Textures\nova coop_lvl 01_black ops.dds"/>
+        </Value>
+        <Value>
+            <Id Value="21"/>
+            <Name Value="Attribute003/Value021/Name"/>
+            <Description Value="Attribute003/Value021/Desc"/>
+            <Icon Value="Assets\Textures\btn-ability-mengsk-topbar-dogsofwar-level04.dds"/>
+        </Value>
+        <Value>
+            <Id Value="10"/>
+            <Name Value="Attribute003/Value010/Name"/>
+            <Description Value="Attribute003/Value010/Desc"/>
+            <Icon Value="Assets\Textures\btn-ability-zeratul-topbar-avatarofform.dds"/>
+        </Value>
+        <Value>
+            <Id Value="14"/>
+            <Name Value="Attribute003/Value014/Name"/>
+            <Description Value="Attribute003/Value014/Desc"/>
+            <Icon Value="Assets\Textures\btn-ability-zeratul-hero-purityofwill.dds"/>
+        </Value>
+        <Default>
+            <Slot Id="0"/>
+            <Value Id="2"/>
+        </Default>
+        <Default>
+            <Slot Id="2"/>
+            <Value Id="2"/>
+        </Default>
+        <Default>
+            <Slot Id="15"/>
+            <Value Id="2"/>
+        </Default>
+        <Default>
+            <Slot Id="14"/>
+            <Value Id="2"/>
+        </Default>
+        <Default>
+            <Slot Id="13"/>
+            <Value Id="2"/>
+        </Default>
+        <Default>
+            <Slot Id="12"/>
+            <Value Id="2"/>
+        </Default>
+        <Default>
+            <Slot Id="11"/>
+            <Value Id="2"/>
+        </Default>
+        <Default>
+            <Slot Id="10"/>
+            <Value Id="2"/>
+        </Default>
+        <Default>
+            <Slot Id="9"/>
+            <Value Id="2"/>
+        </Default>
+        <Default>
+            <Slot Id="8"/>
+            <Value Id="2"/>
+        </Default>
+        <Default>
+            <Slot Id="7"/>
+            <Value Id="2"/>
+        </Default>
+        <Default>
+            <Slot Id="6"/>
+            <Value Id="2"/>
+        </Default>
+        <Default>
+            <Slot Id="4"/>
+            <Value Id="2"/>
+        </Default>
+        <Default>
+            <Slot Id="5"/>
+            <Value Id="2"/>
+        </Default>
+        <Default>
+            <Slot Id="3"/>
+            <Value Id="2"/>
+        </Default>
+        <Default>
+            <Slot Id="1"/>
+            <Value Id="2"/>
+        </Default>
+    </Attribute>
+    <DefaultVariants Value="1"/>
+</Attributes>

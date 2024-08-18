@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Preload>
+<Asset path="assets\textures\btn-building-terran-supplybunkermengsk.dds" Type="Image"/>
+<Asset path="assets\textures\btn-ability-mengsk-commandcenter-draftlaborers.dds" Type="Image"/>
+<Asset path="assets\textures\btn-building-hornerhan-engineeringbay.dds" Type="Image"/>
+<Asset path="assets\textures\btn-unit-biomechanicaldrone.dds" Type="Image"/>
+<Asset path="assets\textures\btn-building-protoss-darkpylon.dds" Type="Image"/>
+<Asset path="assets\textures\btn-ability-zerg-corruption-color.dds" Type="Image"/>
+<Asset path="assets\textures\btn-building-terran-ghostacademy-covertops.dds" Type="Image"/>
+<Asset path="assets\textures\btn-commander-artanis.dds" Type="Image"/>
+<Asset path="assets\textures\btn-ability-protoss-hallucination-color.dds" Type="Image"/>
+<Asset path="assets\textures\btn-building-nova-sciencefacility.dds" Type="Image"/>
+<Asset path="assets\textures\btn-ability-mengsk-commandcenter-drafttroopers.dds" Type="Image"/>
+<Asset path="assets\textures\btn-unit-zerg-ultralisk-noxious.dds" Type="Image"/>
+<Asset path="assets\textures\btn-building-nova-supplydepot.dds" Type="Image"/>
+<Asset path="assets\textures\btn-building-terran-supplydepotxpreward.dds" Type="Image"/>
+<Asset path="assets\textures\btn-ability-zeratul-chargedcrystal-psionicwinds.dds" Type="Image"/>
+<Asset path="assets\textures\btn-building-terran-supplydepot-covertops.dds" Type="Image"/>
+<Asset path="assets\textures\btn-building-zerg-virophage.dds" Type="Image"/>
+<Asset path="assets\textures\btn-tips-resourcecaches.dds" Type="Image"/>
+<Asset path="assets\textures\btn-hero-kerriganascended.dds" Type="Image"/>
+<Asset path="assets\textures\btn-unit-collection-overlord-mutant.dds" Type="Image"/>
+<Asset path="assets\textures\btn-tips-researchunlocked.dds" Type="Image"/>
+<Asset path="assets\textures\btn-ability-zerg-debilitatingbile.dds" Type="Image"/>
+<Asset path="assets\textures\btn-building-hornerhan-supplydepot.dds" Type="Image"/>
+<Asset path="assets\textures\btn-building-protoss-pylon-forged.dds" Type="Image"/>
+<Asset path="assets\textures\fearex3_coop.dds" Type="Image"/>
+<Asset path="assets\textures\btn-building-terran-techlab-covertops.dds" Type="Image"/>
+<Asset path="assets\textures\btn-tips-richminerals.dds" Type="Image"/>
+<Asset path="assets\textures\btn-tips-hyperion.dds" Type="Image"/>
+<Asset path="assets\textures\btn-building-protoss-pylon-ihanrii.dds" Type="Image"/>
+<Asset path="assets\textures\btn-building-terran-supplydepot-silver.dds" Type="Image"/>
+<Asset path="assets\textures\btn-sc2-temp.dds" Type="Image"/>
+<Asset path="assets\textures\btn-unit-collection-webby-overlord.dds" Type="Image"/>
+<Asset path="assets\textures\btn-unit-zerg-overlord-mecha.dds" Type="Image"/>
+<Asset path="assets\textures\btn-unit-zerg-infestedcolonist.dds" Type="Image"/>
+<Asset path="assets\textures\btn-unit-protoss-fenix-purifier-pylon.dds" Type="Image"/>
+<Asset path="assets\textures\giftexchange_coop.dds" Type="Image"/>
+<Asset path="assets\textures\btn-upgrade-protoss-khaydarinamulet.dds" Type="Image"/>
+<Asset path="assets\textures\btn-unit-protoss-mothership-ihanrii.dds" Type="Image"/>
+<Asset path="assets\textures\btn-ability-spearofadun-temporalfield.dds" Type="Image"/>
+<Asset path="assets\textures\ui_ingame_help_techtree_questionmark.dds" Type="Image"/>
+<Actor id="SYSTEM_ActorConfig"/>
+<Behavior id="Invulnerable"/>
+<Behavior id="4xUnitSpeed"/>
+<Behavior id="AggressiveMutation22"/>
+<Behavior id="Angry2"/>
+<Behavior id="Angry22"/>
+<Behavior id="Angry222"/>
+<Behavior id="Angry2222"/>
+<Behavior id="Angry22222"/>
+<Behavior id="Angry222222"/>
+<Behavior id="Angry2222222"/>
+<Behavior id="Angry22222222"/>
+<Behavior id="Angry222222222"/>
+<Behavior id="Angry2222222222"/>
+<Behavior id="Angry22222222222"/>
+<Behavior id="Angry222222222222"/>
+<Behavior id="Angry2222222222222"/>
+<Behavior id="Angry22222222222222"/>
+<Behavior id="Angry222222222222222"/>
+<Behavior id="Angry2222222222222222"/>
+<Behavior id="Angry22222222222222222"/>
+<Behavior id="Angry2222222222222223"/>
+<Behavior id="Angry22222222222222232"/>
+<Behavior id="Angry222222222222222322"/>
+<Behavior id="Angry2222222222222223222"/>
+<Behavior id="Angry22222222222222232222"/>
+<Behavior id="Angry222222222222222322222"/>
+<Behavior id="Angry2222222222222223222222"/>
+<Behavior id="Angry22222222222222232222222"/>
+<Behavior id="Angry222222222222222322222222"/>
+<Behavior id="Angry2222222222222223222222222"/>
+<Behavior id="Angry22222222222222232222222222"/>
+<Behavior id="Angry222222222222222322222222222"/>
+<Behavior id="Angry22222222222222232223"/>
+<Behavior id="Angry222222222222222322232"/>
+<Behavior id="Angry2222222222222223222322"/>
+<Behavior id="Angry22222222222222232223222"/>
+<Behavior id="Angry222222222222222322232222"/>
+<Behavior id="Angry2222222222222223222322222"/>
+<Behavior id="Angry22222222222222232223222222"/>
+<Behavior id="Angry222222222222222322232222222"/>
+<Behavior id="Angry2222222222222223222322222222"/>
+<Behavior id="Angry2222222222222223222322223"/>
+<Behavior id="Angry22222222222222232223222232"/>
+<Behavior id="AntamoAirAll"/>
+<Behavior id="AntamoAirAll10"/>
+<Behavior id="AntamoAirAll102"/>
+<Behavior id="AntamoAirAll103"/>
+<Behavior id="AntamoAirAll1032"/>
+<Behavior id="AntamoAirAll10322224"/>
+<Behavior id="AntamoAirAll103222243"/>
+<Behavior id="AntamoAirAll426"/>
+<Behavior id="SOASuperChrono222"/>
+<Behavior id="AntamoAirAll21224"/>
+<Behavior id="AntamoAirAll272223"/>
+<Behavior id="AntamoAirAll2722232"/>
+<Behavior id="AntamoAirAll27222322"/>
+<Behavior id="AntamoAirAll272223222"/>
+<Behavior id="AntamoAirAll2722232222"/>
+<Behavior id="AntamoAirAll27222322222"/>
+<Behavior id="AntamoAirAll272223222222"/>
+<Behavior id="AntamoAirAll2722232222222"/>
+<Behavior id="AntamoAirAll27222322222222"/>
+<Behavior id="AntamoAirAll272223222222222"/>
+<Behavior id="AntamoAirAll2722232222222222"/>
+<Behavior id="AntamoAirAll27222322222222222"/>
+<Behavior id="AntamoAirAll272223222222222222"/>
+<Behavior id="AntamoAirAll2722232222222222222"/>
+<Behavior id="AntamoAirAll27222322222222222222"/>
+<Behavior id="AntamoAirAll272223222222222222222"/>
+<Behavior id="AntamoAirAll2722232222222222222222"/>
+<Behavior id="AntamoAirAll27222322222222222222222"/>
+<Behavior id="AntamoAirAll272223222222222222222222"/>
+<Behavior id="AntamoAirAll2722232222222222222222222"/>
+<Behavior id="AntamoAirAll27222322222222222222222222"/>
+<Behavior id="AntamoAirAll272223222222222222222222222"/>
+<Behavior id="AntamoAirAll2722232222222222222222222222"/>
+<Behavior id="AntamoAirAll27222322222222222222222222222"/>
+<Behavior id="AntamoAirAll272223222222222222222222222222"/>
+<Behavior id="AntamoAirAll2722232222222222222222222222222"/>
+<Behavior id="AntamoAirAll27222322222222222222222222222222"/>
+<Behavior id="AntamoAirAll272223222222222222222222222222222"/>
+<Behavior id="AntamoAirAll2722232222222222222222222222222222"/>
+<Behavior id="AntamoAirAll27222322222222222222222222222222222"/>
+<Behavior id="AntamoAirAll29"/>
+<Behavior id="AntamoAirAll4252"/>
+<Behavior id="PrimalistEssence"/>
+<Behavior id="PrimalistEssence2"/>
+<Behavior id="DarkTemplarRecallToDarkShrine2"/>
+<Behavior id="DevilMaisBuff3"/>
+<Behavior id="DevilMaisBuff32"/>
+<Behavior id="DevilMaisBuff322"/>
+<Behavior id="Evacuation7"/>
+<Behavior id="GlazeHolo22"/>
+<Behavior id="GlazeHolo222"/>
+<Behavior id="GlazeHolo223"/>
+<Behavior id="GlazeHolo2232"/>
+<Behavior id="GlazeHolo4"/>
+<Behavior id="HarvestableVespeneGeyserGas2"/>
+<Behavior id="HighEnergyRegeneration342"/>
+<Behavior id="HighEnergyRegeneration3422"/>
+<Behavior id="HighEnergyRegeneration34222"/>
+<Behavior id="HighEnergyRegeneration34223"/>
+<Behavior id="HighEnergyRegeneration342232"/>
+<Behavior id="HighEnergyRegeneration342233"/>
+<Behavior id="HighEnergyRegeneration34223422222"/>
+<Behavior id="HighEnergyRegeneration3423"/>
+<Behavior id="HighEnergyRegeneration34232"/>
+<Behavior id="HighEnergyRegeneration3424"/>
+<Behavior id="HighEnergyRegeneration34242"/>
+<Behavior id="HighEnergyRegeneration343"/>
+<Behavior id="LostInTimeStop42"/>
+<Behavior id="LostInTimeStop43"/>
+<Behavior id="PoisonBlade"/>
+<Behavior id="PsiDisruptionSearch342435"/>
+<Behavior id="QuickMutator22222"/>
+<Behavior id="QuickMutator222223"/>
+<Behavior id="QuickMutator222224"/>
+<Behavior id="ShieldingEngine5325233"/>
+<Behavior id="ShieldingEngine9222"/>
+<Behavior id="Stoned23"/>
+<Behavior id="XenWarrior722222232222322223"/>
+<Effect id="PickupMinerals250"/>
+<Effect id="PickupEX2Gas200"/>
+<Effect id="AllStrikerTimeSlowSearch"/>
+<Effect id="SOATimeFreeze3"/>
+<Effect id="KarassPlasmaSurgeSearchArea232222222322"/>
+<Effect id="NukePersistent23"/>
+<Effect id="ObserverSquadSightAB222233433"/>
+<Effect id="AllStrikerTimeSlowSearch32"/>
+<Effect id="AllStrikerTimeSlowSearch4"/>
+<Effect id="KarassPlasmaSurgeModifyUnit32223"/>
+<Effect id="KarassPlasmaSurgeModifyUnit322232"/>
+<Effect id="KarassPlasmaSurgeSearchArea2322222223222"/>
+<Effect id="KarassPlasmaSurgeSearchArea23222222234"/>
+<Effect id="SOAEnergizeSearch223222"/>
+<Effect id="SOAEnergizeSearch2232332"/>
+<Effect id="SOAEnergizeSearch223422"/>
+<Effect id="SOAEnergizeSearch2234222"/>
+<Light id="CLight"/>
+<Light id="MarSaraCampaignDay"/>
+<Light id="MarSaraCampaignSunrise"/>
+<Light id="MarSaraCampaign"/>
+<Light id="MeinhoffCampaignNight"/>
+<Light id="MeinhoffCampaignNightSolitude"/>
+<Race id="Terr2"/>
+<Race id="Terr22"/>
+<Race id="Terr222"/>
+<Race id="Terr2222"/>
+<Race id="Terr22222"/>
+<Race id="Terr222222"/>
+<Race id="Terr222223"/>
+<Race id="Terr2222232"/>
+<Race id="Terr22222322"/>
+<Race id="Terr222223222"/>
+<Race id="Terr2222232222"/>
+<Race id="Terr22222323"/>
+<Race id="Terr222223232"/>
+<Race id="Terr2222232322"/>
+<Race id="Terr22222323222"/>
+<Race id="Terr222223232222"/>
+<Race id="Terr2222232322222"/>
+<Race id="Terr2222233"/>
+<Race id="Terr222224"/>
+<Race id="Terr2222242"/>
+<Race id="Terr22222422"/>
+<Race id="Terr222224222"/>
+<Race id="Terr2222242222"/>
+<Race id="Terr22222422222"/>
+<Race id="Terr222224222222"/>
+<Race id="Terr222224223"/>
+<Race id="Terr2222242232"/>
+<Race id="Terr22222422322"/>
+<Race id="Terr2223"/>
+<Race id="UnknownRace2"/>
+<Sound id="UI_GenericError"/>
+<Unit id="CommandCenter"/>
+<Unit id="SCV"/>
+<Unit id="Battlecruiser"/>
+<Unit id="Nexus"/>
+<Unit id="Probe"/>
+<Unit id="Hatchery"/>
+<Unit id="Drone"/>
+<Unit id="Zergling"/>
+<Unit id="Overlord"/>
+<Unit id="MULE"/>
+<Unit id="Swann"/>
+<Unit id="MengskSiegeTank"/>
+<Unit id="MengskMarauder"/>
+<Unit id="MengskReaper"/>
+<Unit id="MengskMedic"/>
+<Unit id="MengskGoliath"/>
+<Unit id="MengskBanshee"/>
+<Unit id="MengskBC"/>
+<Unit id="MengskThor"/>
+<Unit id="HotSLeviathan"/>
+<Unit id="GehennaCruiser"/>
+<Unit id="CarrierAiur"/>
+<Unit id="Nexus2"/>
+<Unit id="CommandCenter13"/>
+<Unit id="Marine7"/>
+<Unit id="Reaper3"/>
+<Unit id="Firebat2"/>
+<Unit id="SCV11"/>
+<Unit id="Probe7"/>
+<Unit id="SCV12"/>
+<Unit id="SCV13"/>
+<Unit id="D4DShip"/>
+<Unit id="Collector"/>
+<Unit id="ForbiddenOne"/>
+<Unit id="Administrator"/>
+<Unit id="ControlledDrone"/>
+<Unit id="Drone2"/>
+<Unit id="SCV22"/>
+<Unit id="Probe2"/>
+<Unit id="SCV4"/>
+<Unit id="Collector2"/>
+<Unit id="Probe3"/>
+<Unit id="SCV6"/>
+<Unit id="SCV7"/>
+<Unit id="Collector23"/>
+<Unit id="Probe4"/>
+<Unit id="Drone5"/>
+<Unit id="SCV8"/>
+<Unit id="SCV9"/>
+<Unit id="SCV10"/>
+<Unit id="Probe5"/>
+<Unit id="Probe52"/>
+<Unit id="Drone3"/>
+<Unit id="Drone7"/>
+<Unit id="Civilian4"/>
+<Unit id="SCV14"/>
+<Unit id="AdvancedMiner"/>
+<Unit id="AmerdallianMiner"/>
+<Unit id="AmerdallianMiner2"/>
+<Unit id="QuickALisk"/>
+<Unit id="Leviathan32"/>
+<Unit id="HotSNoxious2"/>
+<Unit id="Hatchery4"/>
+<Unit id="Dehaka2"/>
+<Unit id="CommandCenter9"/>
+<Unit id="MilitarizedColonistTransport2"/>
+<Unit id="MilitarizedColonistShipFlying2"/>
+<Unit id="Collector22"/>
+<Unit id="HelsAngelAssault2"/>
+<Unit id="DukesRevenge5"/>
+<Unit id="Overlord3"/>
+<Unit id="Marine37"/>
+<Unit id="MarineWarfield3"/>
+<Unit id="Ghost7"/>
+<Unit id="BarracksFlying22"/>
+<Unit id="Overlord7"/>
+<Unit id="Burner2"/>
+<Unit id="ArtanisVoid225"/>
+<Unit id="ArtanisVoid2252"/>
+<Unit id="Mothership2"/>
+<Unit id="Spectre2"/>
+<Unit id="Nova33"/>
+<Unit id="Marine5"/>
+<Unit id="GhostAlternate2"/>
+<Unit id="Nova3"/>
+<Unit id="Brutalisk2"/>
+<Unit id="ScienceVessel4222"/>
+<Unit id="HybridDestroyer3"/>
+<Unit id="Nexus7"/>
+<Unit id="Nexus6"/>
+<Unit id="Nexus9"/>
+<Unit id="Nexus10"/>
+<Unit id="Nexus3"/>
+<Unit id="HoloNexus"/>
+<Unit id="Nexus5"/>
+<Unit id="Nexus8"/>
+<Unit id="CenterOfCommands2"/>
+<Unit id="Hatchery2"/>
+<Unit id="UEDTrooper"/>
+<Unit id="UEDFlagship"/>
+<Unit id="CommandCenter6"/>
+<Unit id="Virophage2"/>
+<Unit id="CommandCenter11"/>
+<Unit id="CommandCenter8"/>
+<Unit id="CommandCenter10"/>
+<Unit id="CenterofBasicOperations"/>
+<Unit id="CommandCenter2"/>
+<Unit id="CommandCenter4"/>
+<Unit id="CenterofBasicOperations2"/>
+<Unit id="PointDefenseDrone24"/>
+<Unit id="PointDefenseDrone2222"/>
+<Unit id="CommandCenter5"/>
+<Unit id="WidowMine52"/>
+<Unit id="NexusofAncients"/>
+<Unit id="Hatchery7"/>
+<Unit id="CommandCenter12"/>
+<Unit id="SmallARES"/>
+<Unit id="Odin2"/>
+<Unit id="SpacePrisonerBig3"/>
+<Unit id="SJPickupHealth500222224"/>
+<Unit id="Scientist3"/>
+<Unit id="Civilian42"/>
+<Unit id="Wraith22"/>
+<Unit id="RoachWarren2224"/>
+<Unit id="Adept2"/>
+<Unit id="Adept22"/>
+<Unit id="Adept222"/>
+<Unit id="BehemothClassBattlecruiser2333"/>
+<Unit id="Civilian2"/>
+<Unit id="CivilianFemale2"/>
+<Unit id="Corruptor12"/>
+<Unit id="DarkArchon22"/>
+<Unit id="Ghost4"/>
+<Unit id="MarineWarfield2"/>
+<Unit id="NarudXelNaga2"/>
+<Unit id="NovaHero2"/>
+<Unit id="PointDefenseDrone4"/>
+<Unit id="Pylon3"/>
+<Unit id="Pylon32"/>
+<Unit id="RaynorLab23"/>
+<Unit id="RaynorLab232"/>
+<Unit id="RaynorLab2322"/>
+<Unit id="RaynorLab23222"/>
+<Unit id="RaynorLab232222"/>
+<Unit id="RaynorLab232223"/>
+<Unit id="SacredCore3"/>
+<Unit id="Scientist222"/>
+<Unit id="SensorTower42"/>
+<Unit id="Queen5"/>
+<Weapon id="RavasaurAir3"/>
+</Preload>
