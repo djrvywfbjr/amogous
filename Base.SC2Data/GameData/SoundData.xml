@@ -14940,7 +14940,7 @@
     </CSound>
     <CSound id="Marine_Stimpack5" parent="Spell">
         <EditorCategories value="Race:Terran"/>
-        <AssetArray File="LocalizedData\Sounds\TerranUnitVO\MULE\Mule_Ready0.ogg"/>
+        <AssetArray File="Assets\Sounds\Alarak_Empower_Start.wav"/>
         <DupeDestroyCount value="3"/>
         <Volume value="-3.000000,-3.000000"/>
     </CSound>
