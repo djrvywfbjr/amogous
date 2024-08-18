@@ -61027,6 +61027,11 @@
     </CAbilEffectTarget>
     <CAbilResearch id="WorkshopResearch3">
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoArray index="Research1" Time="400" Upgrade="MobileAutomatons">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="400"/>
+            <Button DefaultButtonFace="ResearchMobileAutomatons" Requirements="LearnMobileAutomatons"/>
+        </InfoArray>
     </CAbilResearch>
     <CAbilMorph id="WreckingCrewFighterMode2">
         <AbilSetId value="FighterMode"/>

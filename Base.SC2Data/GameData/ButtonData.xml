@@ -4203,6 +4203,9 @@
         <EditorCategories value="Race:Zerg"/>
         <HotkeyAlias value="PoisonNova223"/>
     </CButton>
+    <CButton id="ResearchMobileAutomatons">
+        <Icon value="Assets\Textures\talent-raynor-level01-infantryspecialist.dds"/>
+    </CButton>
     <CButton id="ResearchOptimizedServos">
         <Icon value="Assets\Textures\btn-upgrade-terran-transformationservos.dds"/>
     </CButton>

@@ -405,7 +405,7 @@
         <MaxLevel value="30"/>
         <LeaderAlias value="AdvancedConstruction"/>
     </CUpgrade>
-    <CUpgrade id="CombatAutomatons">
+    <CUpgrade id="MobileAutomatons">
         <Flags index="UpgradeCheat" value="0"/>
         <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.StateFlags[SuppressDetection]" Value="0"/>
         <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.ModifyFlags[DisableWeapons]" Value="0"/>

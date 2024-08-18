@@ -5986,6 +5986,11 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="MicroFiltering3" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMobileAutomatonsQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="MobileAutomatons" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeMontulCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Montul" State="CompleteOnly"/>
@@ -16532,6 +16537,10 @@
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeMicroFiltering3QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeMicroFiltering3QueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeMobileAutomatonsQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeMobileAutomatonsQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeNovaArmorApolloInfantrySuitQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeNovaArmorApolloInfantrySuitQueuedOrBetter"/>

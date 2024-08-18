@@ -3791,6 +3791,7 @@ Button/Hotkey/ResearchIndustrialPacifiers=D
 Button/Hotkey/ResearchIndustrialPowerDistributor=F
 Button/Hotkey/ResearchIndustrialThermoelectricStation=X
 Button/Hotkey/ResearchMilitaryTraining=D
+Button/Hotkey/ResearchMobileAutomatons=Z
 Button/Hotkey/ResearchOptimizedArmorMaterials=D
 Button/Hotkey/ResearchOptimizedHarvesting=A
 Button/Hotkey/ResearchOptimizedPowerDistributor=X
