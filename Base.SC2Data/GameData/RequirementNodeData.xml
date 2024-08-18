@@ -882,7 +882,6 @@
         <OperandArray value="GTECountUpgradeManufactureRecyclerTankCompleteOnly2"/>
     </CRequirementAnd>
     <CRequirementAnd id="AndGTECountUpgradeManufactureFusionCoreCompleteOnly1GTECountUpgradeManufactureShellingFabricatorCompleteOnly2">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray value="GTECountUpgradeManufactureFusionCoreCompleteOnly1"/>
         <OperandArray value="GTECountUpgradeManufactureShellingFabricatorCompleteOnly2"/>
     </CRequirementAnd>
@@ -891,7 +890,6 @@
         <OperandArray value="GTECountUpgradeManufactureChemicalStationCompleteOnly1"/>
     </CRequirementAnd>
     <CRequirementAnd id="AndGTECountUpgradeManufactureFusionCoreCompleteOnly2GTECountUpgradeManufactureShellingFabricatorCompleteOnly1">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray value="GTECountUpgradeManufactureFusionCoreCompleteOnly2"/>
         <OperandArray value="GTECountUpgradeManufactureShellingFabricatorCompleteOnly1"/>
     </CRequirementAnd>
@@ -899,7 +897,6 @@
         <OperandArray value="GTECountUpgradeManufactureFusionCoreCompleteOnly3"/>
     </CRequirementAnd>
     <CRequirementAnd id="AndGTECountUpgradeManufactureGunpowderMixerCompleteOnly1GTECountUpgradeManufactureChemicalStationCompleteOnly1GTECountUpgradeManufactureRecyclerTankCompleteOnly1">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray value="GTECountUpgradeManufactureGunpowderMixerCompleteOnly1"/>
         <OperandArray value="GTECountUpgradeManufactureChemicalStationCompleteOnly1"/>
         <OperandArray value="GTECountUpgradeManufactureRecyclerTankCompleteOnly1"/>
@@ -6011,6 +6008,11 @@
     <CRequirementCountUpgrade id="CountUpgradeNovaGadgetPulseGrenadesQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="NovaGadgetPulseGrenades" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeOptimizedServosQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="OptimizedServos" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeOracleEnergyUpgradeCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
@@ -16373,7 +16375,6 @@
         <OperandArray index="0" value="CountUpgradeAdvancedConstruction24223322222QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeAdvancedConstruction2422332222CompleteOnly">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeAdvancedConstruction2422332222CompleteOnly"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeAdvancedConstruction2422332222QueuedOrBetter">
@@ -16540,6 +16541,10 @@
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeNovaGadgetPulseGrenadesQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeNovaGadgetPulseGrenadesQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeOptimizedServosQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeOptimizedServosQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeParamilitaryUpgrade12QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeParamilitaryUpgrade12QueuedOrBetter"/>

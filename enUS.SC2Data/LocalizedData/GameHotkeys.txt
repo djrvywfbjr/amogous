@@ -1820,6 +1820,7 @@ Button/Hotkey/EntropicBlast222=C
 Button/Hotkey/EntropicBlast223=V
 Button/Hotkey/EntropicBlast23=Q
 Button/Hotkey/EntropicBlast3=Q
+Button/Hotkey/EquipCorrosiveDesolator=W
 Button/Hotkey/EquipDoubleSurgicalLaser=W
 Button/Hotkey/EquipGear=F
 Button/Hotkey/EquipHellRifle=W

@@ -4145,6 +4145,12 @@
         <AlertIcon value="Assets\Textures\btn-ability-zerg-consume.dds"/>
         <EditorCategories value="Race:Zerg"/>
     </CButton>
+    <CButton id="EquipCorrosiveDesolator">
+        <Icon value="Assets\Textures\abilityicon_corrosivespores_square.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
     <CButton id="EquipNapalmSprayer">
         <Icon value="Assets\Textures\btn-upgrade-terran-infernalpreigniter.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
