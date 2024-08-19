@@ -405,6 +405,19 @@
         <CursorEffect value="ArbiterMPStasisFieldSearch23"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="ArbiterMPStasisField23"/>
     </CAbilEffectTarget>
+    <CAbilEffectTarget id="ArbiterMPStasisField34">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="ArbiterMPStasisFieldSearch24"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="125"/>
+            <Charge Link="Abil/ArbiterMPStasisField"/>
+            <Cooldown Link="Abil/ArbiterMPStasisField"/>
+        </Cost>
+        <Range value="7"/>
+        <CursorEffect value="ArbiterMPStasisFieldSearch4"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ArbiterMPStasisField24"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="ArbiterMPStasisField4">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ArbiterMPStasisFieldSearch3"/>
@@ -4330,9 +4343,10 @@
             <Unit value="Probe5"/>
         </InfoArray>
         <InfoArray index="Train27">
+            <Resource index="Minerals" value="-50"/>
             <Vital index="Life" value="99"/>
-            <Button DefaultButtonFace="UnknownButton119" Requirements="HavePlagueCenter23322"/>
-            <Unit value="ProbingDrone"/>
+            <Button DefaultButtonFace="Wraith2222226"/>
+            <Unit value="Drone6"/>
         </InfoArray>
         <InfoArray index="Train28">
             <Resource index="Minerals" value="-50"/>
@@ -29688,6 +29702,14 @@
         <Range value="8"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="DarkArchonMindControl33234"/>
     </CAbilEffectTarget>
+    <CAbilEffectInstant id="ShieldUp236">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link="Abil/AlarakAvatar" TimeUse="50"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield2236"/>
+    </CAbilEffectInstant>
     <CAbilEffectTarget id="TemporarityCP2">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ColossusTaldarimLM242"/>
