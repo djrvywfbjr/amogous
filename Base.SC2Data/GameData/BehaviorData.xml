@@ -807,20 +807,6 @@
         </DamageResponse>
         <RemoveValidatorArray value="IsTimeStopped282223"/>
     </CBehaviorBuff>
-    <CBehaviorBuff id="ArbiterMPStasisField24">
-        <InfoIcon value="Assets\Textures\btn-ability-protoss-entomb.dds"/>
-        <EditorCategories value="AbilityorEffectType:Units"/>
-        <Duration value="60"/>
-        <Modification>
-            <ResourceHarvestAmountBonus index="Minerals" value="1"/>
-        </Modification>
-    </CBehaviorBuff>
-    <CBehaviorBuff id="ArbiterMPStasisFieldTimedLife24">
-        <InfoFlags index="Hidden" value="1"/>
-        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
-        <DisplayDuration index="Enemy" value="1"/>
-        <Duration value="15"/>
-    </CBehaviorBuff>
     <CBehaviorBuff id="NoWeapon">
         <Alignment value="Negative"/>
         <BehaviorFlags index="Permanent" value="1"/>
@@ -961,15 +947,6 @@
                 <Cooldown Link="Behavior/AntamoAirAll"/>
             </Cost>
         </DamageResponse>
-    </CBehaviorBuff>
-    <CBehaviorBuff id="Shield8">
-        <InfoFlags index="Hidden" value="1"/>
-        <EditorCategories value="AbilityorEffectType:Units"/>
-        <Duration value="15"/>
-        <Modification>
-            <ResourceHarvestAmountBonus index="Minerals" value="1"/>
-            <ResourceHarvestTimeMultiplier index="Minerals" value="0.8"/>
-        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="WepShellstormChaingun">
         <Cost>
@@ -31706,11 +31683,13 @@
     </CBehaviorBuff>
     <CBehaviorBuff id="ObserverSquadSight2">
         <InfoIcon value="Assets\Textures\btn-ability-protoss-targetlock.dds"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Duration value="1"/>
         <Modification MoveSpeedMultiplier="1.5" AttackSpeedMultiplier="1.5"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ObserverSquadSight22">
         <InfoIcon value="Assets\Textures\btn-ability-protoss-targetlock.dds"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Duration value="1"/>
         <Modification MoveSpeedMultiplier="1.5" AttackSpeedMultiplier="1.5"/>
     </CBehaviorBuff>
@@ -31748,6 +31727,7 @@
     </CBehaviorBuff>
     <CBehaviorBuff id="ObserverSquadSight23">
         <InfoIcon value="Assets\Textures\btn-ability-protoss-targetlock.dds"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Duration value="1"/>
         <Modification>
             <AbilClassDisableArray index="CAbilEffectTarget" value="1"/>

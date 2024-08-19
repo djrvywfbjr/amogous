@@ -388,10 +388,6 @@
         <Icon value="Assets\Textures\btn-unit-collection-ghost-umojan.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-stasisfield.dds"/>
     </CButton>
-    <CButton id="ArbiterMPStasisField24">
-        <Icon value="Assets\Textures\btn-ability-protoss-entomb.dds"/>
-        <AlertIcon value="Assets\Textures\btn-ability-protoss-stasisfield.dds"/>
-    </CButton>
     <CButton id="ArbiterMPStasisField3">
         <Icon value="Assets\Textures\btn-ability-protoss-stasisfield.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-stasisfield.dds"/>
@@ -4133,10 +4129,6 @@
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="CalldownMULE42332"/>
-    </CButton>
-    <CButton id="CombatShield2236">
-        <Icon value="Assets\Textures\btn-upgrade-terran-mobiusreactor.dds"/>
-        <EditorCategories value="Race:Terran"/>
     </CButton>
     <CButton id="DropDownHydralisks">
         <Icon value="Assets\Textures\btn-unit-zerg-hydralisk.dds"/>
@@ -32495,7 +32487,14 @@
         <EditorCategories value="Race:Protoss"/>
         <HotkeyAlias value="WarpPrism"/>
     </CButton>
-    <CButton id="WarpPrismLoad2"/>
+    <CButton id="WarpPrismLoad2">
+        <Icon value="Assets\Textures\btn-ability-terran-load.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-load.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <TintRacially value="1"/>
+        <HotkeyAlias value="BunkerLoad"/>
+        <Universal value="1"/>
+    </CButton>
     <CButton id="WarpPrismUnloadAll2">
         <Icon value="Assets\Textures\btn-ability-terran-unloadall.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-unloadall.dds"/>

@@ -4280,11 +4280,6 @@
         <EditorCategories value="Race:Protoss"/>
         <Behavior value="ArbiterMPStasisField23"/>
     </CEffectApplyBehavior>
-    <CEffectApplyBehavior id="ArbiterMPStasisFieldApply24">
-        <ValidatorArray value="NotFrenzied"/>
-        <EditorCategories value="Race:Protoss"/>
-        <Behavior value="ArbiterMPStasisField24"/>
-    </CEffectApplyBehavior>
     <CEffectApplyBehavior id="ArbiterMPStasisFieldApply3">
         <ValidatorArray value="NotFrenzied"/>
         <EditorCategories value="Race:Protoss"/>
@@ -4343,12 +4338,6 @@
         <SearchFilters value="-;Self,Player,Enemy,Biological,Structure,Heroic,Missile,Item,Dead,Hidden"/>
         <AreaArray MaxCount="3" Radius="5" Effect="ArbiterMPStasisFieldSet23"/>
     </CEffectEnumArea>
-    <CEffectEnumArea id="ArbiterMPStasisFieldSearch24">
-        <EditorCategories value="Race:PrimalZerg"/>
-        <ImpactLocation Value="TargetPoint"/>
-        <SearchFilters value="Worker;Self,Structure,Heroic,Missile,Item,Dead,Hidden"/>
-        <AreaArray Radius="5" Effect="ArbiterMPStasisFieldSet24"/>
-    </CEffectEnumArea>
     <CEffectEnumArea id="ArbiterMPStasisFieldSearch3">
         <EditorCategories value="Race:PrimalZerg"/>
         <ImpactLocation Value="TargetPoint"/>
@@ -4360,12 +4349,6 @@
         <ImpactLocation Value="TargetPoint"/>
         <SearchFilters value="-;Self,Heroic,Missile,Item,Dead,Hidden"/>
         <AreaArray Radius="1.15" Effect="ArbiterMPStasisFieldSet32"/>
-    </CEffectEnumArea>
-    <CEffectEnumArea id="ArbiterMPStasisFieldSearch4">
-        <EditorCategories value="Race:PrimalZerg"/>
-        <ImpactLocation Value="TargetPoint"/>
-        <SearchFilters value="Worker;Self,Structure,Heroic,Missile,Item,Dead,Hidden"/>
-        <AreaArray Radius="5" Effect="ArbiterMPStasisFieldSet"/>
     </CEffectEnumArea>
     <CEffectSet id="ArbiterMPStasisFieldSet2">
         <EditorCategories value="Race:Protoss"/>
@@ -4380,11 +4363,6 @@
     <CEffectSet id="ArbiterMPStasisFieldSet23">
         <EditorCategories value="Race:Protoss"/>
         <EffectArray value="ArbiterMPStasisFieldTimerApply23"/>
-    </CEffectSet>
-    <CEffectSet id="ArbiterMPStasisFieldSet24">
-        <EditorCategories value="Race:Protoss"/>
-        <EffectArray value="ArbiterMPStasisFieldApply24"/>
-        <EffectArray value="ArbiterMPStasisFieldTimerApply24"/>
     </CEffectSet>
     <CEffectSet id="ArbiterMPStasisFieldSet3">
         <EditorCategories value="Race:Protoss"/>
@@ -4408,11 +4386,6 @@
         <ValidatorArray index="0" value="RequiresCivilianAll2"/>
         <EditorCategories value="Race:Protoss"/>
         <Behavior value="ArbiterMPStasisFieldTimedLife23"/>
-    </CEffectApplyBehavior>
-    <CEffectApplyBehavior id="ArbiterMPStasisFieldTimerApply24">
-        <ValidatorArray value="NotFrenzied"/>
-        <EditorCategories value="Race:Protoss"/>
-        <Behavior value="ArbiterMPStasisFieldTimedLife24"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="ArbiterMPStasisFieldTimerApply3">
         <ValidatorArray value="NotFrenzied"/>
@@ -25588,7 +25561,7 @@
         <ArmorReduction value="0"/>
         <Kind value="Ranged"/>
         <Amount value="35"/>
-    </CEffectDamage>
+	</CEffectDamage>
     <CEffectDamage id="H66ScrapCannonDamage" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <ArmorReduction value="0"/>
@@ -65390,10 +65363,6 @@
     <CEffectApplyBehavior id="ShieldUp2353">
         <EditorCategories value=""/>
         <Behavior value="Shield63"/>
-    </CEffectApplyBehavior>
-    <CEffectApplyBehavior id="ShieldUp236">
-        <EditorCategories value=""/>
-        <Behavior value="Shield8"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="ShieldUp3">
         <EditorCategories value=""/>
