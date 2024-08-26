@@ -11089,16 +11089,36 @@
         <Kind value="Ranged"/>
         <Amount value="10"/>
     </CEffectDamage>
+    <CEffectEnumArea id="CorrosiveDesolatorSearch">
+        <EditorCategories value=""/>
+        <AreaArray Radius="3" Effect="AddCORROSION"/>
+        <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectEnumArea>
+    <CEffectSet id="CorrosiveDesolatorSet">
+        <EditorCategories value=""/>
+        <EffectArray value="CorrosiveDesolatorDamage"/>
+        <EffectArray value="CorrosiveDesolatorSearch"/>
+    </CEffectSet>
     <CEffectApplyBehavior id="CraftHellRifle">
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
         <Behavior value="WepHellRifle"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="CraftCorrosiveDesolator">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="WepCorrosiveDesolator"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="CraftPlasmaCoater">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="Ab1PlasmaCoater"/>
+    </CEffectApplyBehavior>
     <CEffectDamage id="HellRifleDamage" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <AttributeBonus index="Biological" value="15"/>
         <Kind value="Ranged"/>
-        <Amount value="10"/>
+        <Amount value="40"/>
     </CEffectDamage>
     <CEffectDamage id="C10CanisterRifle2" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
@@ -25604,6 +25624,24 @@
         <AttributeBonus index="Biological" value="1"/>
         <Amount value="3"/>
     </CEffectDamage>
+    <CEffectDamage id="CorrosiveDesolatorDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <AttributeBonus index="Mechanical" value="20"/>
+        <Kind value="Splash"/>
+        <Amount value="20"/>
+        <AreaArray Radius="1" Fraction="1"/>
+        <AreaArray Radius="1.5" Fraction="0.5"/>
+        <AreaArray Radius="3" Fraction="0.25"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFlags index="OffsetByUnitRadius" value="0"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="CorrosiveDesolatorLM">
+        <EditorCategories value="Race:Zerg"/>
+        <ImpactEffect value="CorrosiveDesolatorSet"/>
+        <AmmoUnit value="CorrosiveDesolatorMissile"/>
+        <ImpactLocation Value="TargetPoint"/>
+    </CEffectLaunchMissile>
     <CEffectSet id="NapalmSprayer">
         <EditorCategories value="Race:Zerg"/>
         <EffectArray value="HellionTankApplyBehavior4"/>
@@ -45816,6 +45854,10 @@
         <WhichPlayer Value="Caster"/>
         <Upgrades Upgrade="AdvancedConstruction24223222222339" Count="-1"/>
     </CEffectModifyPlayer>
+    <CEffectDamage id="PlasmaCoaterDamage">
+        <EditorCategories value=""/>
+        <Amount value="10"/>
+    </CEffectDamage>
     <CEffectModifyPlayer id="RefugeeCraftRemove2FC1SF">
         <EditorCategories value="Race:Zerg"/>
         <WhichPlayer Value="Caster"/>
@@ -65220,6 +65262,10 @@
         <EditorCategories value=""/>
         <Behavior value="Shield38"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="PlasmaCoater">
+        <ValidatorArray index="0" value="IsTimeStopped2"/>
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
     <CEffectApplyBehavior id="ShieldUp2322">
         <EditorCategories value=""/>
         <Behavior value="SJHyperionLightningStormStun2"/>
@@ -77426,7 +77472,7 @@
     <CEffectApplyBehavior id="XenWarrior633223354223">
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
-        <Behavior value="AntamoAirAll1032222543"/>
+        <Behavior value="WepUltraGrenades"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="CraftWarheadLauncher">
         <EditorCategories value=""/>

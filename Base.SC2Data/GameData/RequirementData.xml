@@ -183,8 +183,21 @@
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
         <NodeArray index="Use" Link="AndGTECountUpgradeManufactureGunpowderMixerCompleteOnly1GTECountUpgradeManufactureChemicalStationCompleteOnly1GTECountUpgradeManufactureRecyclerTankCompleteOnly1"/>
     </CRequirement>
+    <CRequirement id="Craft1GM1CS1RT2">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <NodeArray index="Use" Link="AndGTECountUpgradeManufactureGunpowderMixerCompleteOnly1GTECountUpgradeManufactureChemicalStationCompleteOnly1GTECountUpgradeManufactureRecyclerTankCompleteOnly1"/>
+    </CRequirement>
     <CRequirement id="HaveIndustrialAutomatons">
         <NodeArray index="Use" Link="CountUpgradeIndustrialAutomatonsCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="LearnMobileAutomatons">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeIndustrialAutomatonsCompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeMobileAutomatonsQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnOptimizedServos">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Show" Link="NotCountUpgradeOptimizedServosQueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="ManufactureChemicalStation">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>

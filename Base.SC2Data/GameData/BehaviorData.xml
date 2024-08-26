@@ -50,6 +50,16 @@
             <AbilClassDisableArray index="CAbilTransport" value="1"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="Ab1PlasmaCoater">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InitialEffect value="RefugeeCraftRemove2FC1SF"/>
+        <Modification>
+            <AbilLinkEnableArray value="PlasmaCoater"/>
+            <AbilLinkDisableArray value="Ab1PlasmaCoater"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="AbilityTargetExclusionBehavior2">
         <BehaviorFlags index="Permanent" value="1"/>
         <InfoFlags index="Hidden" value="1"/>
@@ -970,6 +980,65 @@
         <Period value="1"/>
         <PeriodicEffect value="IgnitedDamage"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="PlasmaCoater">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="10"/>
+        <Modification ShieldArmorBonus="3">
+            <VitalMaxArray index="Shields" value="125"/>
+            <VitalRegenArray index="Life" value="8"/>
+        </Modification>
+        <DamageResponse Handled="PlasmaCoaterDamage">
+            <Kind index="Spell" value="0"/>
+            <Kind index="Ranged" value="0"/>
+            <Kind index="Splash" value="0"/>
+            <Kind index="NoProc" value="0"/>
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UnmannedBuilding">
+        <Cost>
+            <Charge Link="Behavior/AntamoAirAll"/>
+            <Cooldown Link="Behavior/AntamoAirAll"/>
+        </Cost>
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="NotUnderConstruction"/>
+        <Modification TimeScale="0.01">
+            <ModifyFlags index="DisableWeapons" value="1"/>
+            <StateFlags index="SuppressDetection" value="1"/>
+            <AbilClassDisableArray index="CAbilAttack" value="1"/>
+            <AbilClassDisableArray index="CAbilEffectInstant" value="1"/>
+            <AbilClassDisableArray index="CAbilEffectTarget" value="1"/>
+            <BehaviorLinkDisableArray value="ForemanAura"/>
+            <BehaviorLinkDisableArray value="AutoHarvestVespene"/>
+            <BehaviorLinkDisableArray value="15xUnitSpeed34"/>
+            <BehaviorLinkDisableArray value="PsiDisruptionSearch74"/>
+            <BehaviorLinkDisableArray value="PsiDisruptionSearch7322"/>
+            <BehaviorLinkDisableArray value="15xUnitSpeed3"/>
+        </Modification>
+        <DamageResponse Fatal="1" ModifyFraction="0">
+            <Cost>
+                <Charge Link="Behavior/AntamoAirAll"/>
+                <Cooldown Link="Behavior/AntamoAirAll"/>
+            </Cost>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WepCorrosiveDesolator">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InitialEffect value="RefugeeCraftRemove1CS1FC1RT"/>
+        <Modification>
+            <AbilLinkDisableArray value="Wep3WarheadLauncher"/>
+            <AbilLinkDisableArray value="Wep1ShockCannons"/>
+            <AbilLinkDisableArray value="Wep2CorrosiveDesolator"/>
+            <BehaviorLinkDisableArray value="NoWeapon"/>
+            <WeaponArray Link="CorrosiveDesolator"/>
+            <WeaponDisableArray value="H66ScrapCannon"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="WepZapperGun">
         <Cost>
             <Charge CountMax="1" CountUse="-1"/>
@@ -1338,11 +1407,7 @@
             </Cost>
         </DamageResponse>
     </CBehaviorBuff>
-    <CBehaviorBuff id="AntamoAirAll1032222543">
-        <Cost>
-            <Charge Link="Behavior/AntamoAirAll"/>
-            <Cooldown Link="Behavior/AntamoAirAll"/>
-        </Cost>
+    <CBehaviorBuff id="WepUltraGrenades">
         <BehaviorFlags index="Permanent" value="1"/>
         <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -1350,18 +1415,12 @@
         <InitialEffect value="OracleVoidSiphonAddMinerals2365222222223233"/>
         <Modification>
             <AbilLinkDisableArray value="Wep3WarheadLauncher"/>
-            <AbilLinkDisableArray value="Wep1ShellstormChaingun"/>
-            <AbilLinkDisableArray value="Wep2SharpnelRifle"/>
+            <AbilLinkDisableArray value="Wep1ShockCannons"/>
+            <AbilLinkDisableArray value="Wep2CorrosiveDesolator"/>
             <BehaviorLinkDisableArray value="NoWeapon"/>
             <WeaponArray Link="PunisherGrenades52"/>
             <WeaponDisableArray value="H66ScrapCannon"/>
         </Modification>
-        <DamageResponse>
-            <Cost>
-                <Charge Link="Behavior/AntamoAirAll"/>
-                <Cooldown Link="Behavior/AntamoAirAll"/>
-            </Cost>
-        </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="AntamoAirAll103223">
         <Cost>
@@ -4283,6 +4342,7 @@
         <MaxStackCount value="100"/>
         <Modification>
             <BehaviorLinkDisableArray value="Unmanned"/>
+            <BehaviorLinkDisableArray value="UnmannedBuilding"/>
         </Modification>
         <DamageResponse>
             <Cost>
@@ -42683,7 +42743,7 @@
         <InfoIcon value="Assets\Textures\btn-ability-terran-stimpack.dds"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <Duration value="15"/>
-        <Modification MoveSpeedMultiplier="1.25" AttackSpeedMultiplier="1.5"/>
+        <Modification MoveSpeedMultiplier="1.5" AttackSpeedMultiplier="2"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="Stimpack11">
         <Alignment value="Positive"/>

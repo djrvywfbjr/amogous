@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CAbilEffectInstant id="Ab1PlasmaCoater">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="XenWarrior622322335"/>
+        <Effect index="0" value="CraftPlasmaCoater"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge CountMax="1" CountUse="-1"/>
+        </Cost>
+        <AINotifyEffect value="XenWarrior6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipPlasmaCoater" Requirements="Craft2FC1SF"/>
+    </CAbilEffectInstant>
     <CAbilEffectTarget id="AdvancedConstructionAuto">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <Flags index="AllowMovement" value="1"/>
@@ -551,17 +563,17 @@
         <InfoArray index="Research15" Time="160" Upgrade="TerranVehicleAndShipArmorsLevel1">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
-            <Button DefaultButtonFace="TerranVehicleAndShipPlatingLevel1" Requirements="LearnTerranVehicleAndShipArmor1"/>
+            <Button DefaultButtonFace="TerranVehicleAndShipPlatingLevel1" Requirements="ShieldBattery9"/>
         </InfoArray>
         <InfoArray index="Research16" Time="190" Upgrade="TerranVehicleAndShipArmorsLevel2">
             <Resource index="Minerals" value="175"/>
             <Resource index="Vespene" value="175"/>
-            <Button DefaultButtonFace="TerranVehicleAndShipPlatingLevel2" Requirements="LearnTerranVehicleAndShipArmor2"/>
+            <Button DefaultButtonFace="TerranVehicleAndShipPlatingLevel2" Requirements="PsionicAmplifier6"/>
         </InfoArray>
         <InfoArray index="Research17" Time="220" Upgrade="TerranVehicleAndShipArmorsLevel3">
             <Resource index="Minerals" value="250"/>
             <Resource index="Vespene" value="250"/>
-            <Button DefaultButtonFace="TerranVehicleAndShipPlatingLevel3" Requirements="LearnTerranVehicleAndShipArmor3"/>
+            <Button DefaultButtonFace="TerranVehicleAndShipPlatingLevel3" Requirements="VoidPylon7"/>
         </InfoArray>
         <InfoArray index="Research18" Time="75" Upgrade="UmojanBasicUnitUpgrade5222422423222222352222222422223">
             <Resource index="Minerals" value="75"/>
@@ -26563,7 +26575,7 @@
             <Resource index="Vespene" value="300"/>
             <Charge Link="Abil/GhostAcademyResearch72"/>
             <Cooldown Link="Abil/GhostAcademyResearch72"/>
-            <Button DefaultButtonFace="ResearchOptimizedServos" Requirements="HavePsionicHeart22432322232423222632"/>
+            <Button DefaultButtonFace="ResearchOptimizedServos" Requirements="LearnOptimizedServos"/>
         </InfoArray>
     </CAbilResearch>
     <CAbilResearch id="GhostAcademyResearch8" parent="GhostAcademyResearch">
@@ -29716,6 +29728,22 @@
         <CursorEffect value="SensorSweep"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="SensorSweep"/>
     </CAbilEffectTarget>
+    <CAbilEffectInstant id="PlasmaCoater">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown TimeUse="60"/>
+        </Cost>
+        <AutoCastValidatorArray value="CasterLifeNotFull"/>
+        <AINotifyEffect value="ShieldUp23210"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PlasmaCoater"/>
+        <SharedFlags index="Disabled" value="1"/>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastFilters value="Visible;-"/>
+    </CAbilEffectInstant>
     <CAbilEffectTarget id="TemporarityCP2">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ColossusTaldarimLM242"/>
@@ -30147,7 +30175,7 @@
         <AutoCastValidatorArray value="IsDefensiveStructure"/>
         <AutoCastValidatorArray value="IsNotBroodlingFate"/>
         <AutoCastValidatorArray value="NotLarva"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="LockOn" Requirements="NoLockedOn"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="LockOn" Requirements="HaveSOAAutoAssimilator2"/>
         <FollowRange value="7"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="LocustFlyingLaunch2">
@@ -36209,7 +36237,7 @@
         <Range value="250"/>
         <CastIntroTime value="0.125"/>
         <CursorEffect value="NovaWeaponHellfireShotgunBlastSearch3"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="NovaWeaponHellfireShotgunBlast3" Requirements="HaveNovaWeaponHellfireShotgunBehavior"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="NovaWeaponHellfireShotgunBlast3" Requirements="DragoonAttack733DamageReactionShield"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="NovaWeaponHellfireShotgunBlast4">
         <EditorCategories value="AbilityorEffectType:Units,Race:Terran"/>
@@ -41317,7 +41345,7 @@
             <Button DefaultButtonFace="Pylon10"/>
         </InfoArray>
         <InfoArray index="Build3" Unit="Assimilator4" Time="30">
-            <Button DefaultButtonFace="Assimilator11" Requirements="NotHaveSOAAutoAssimilator"/>
+            <Button DefaultButtonFace="Assimilator11" Requirements="DragoonAttack6ImpactReactionShield"/>
             <ValidatorArray value="HasVespene"/>
         </InfoArray>
         <InfoArray index="Build4" Unit="Gateway9" Time="65">
@@ -41378,10 +41406,10 @@
             <Button DefaultButtonFace="ShieldBattery11" Requirements="HaveNexus"/>
         </InfoArray>
         <InfoArray index="Build23" Unit="SoACaster" Time="40">
-            <Button DefaultButtonFace="WarpinSoACaster" Requirements="NoSoACaster"/>
+            <Button DefaultButtonFace="WarpinSoACaster" Requirements="DragoonAttack6DamageReaction"/>
         </InfoArray>
         <InfoArray index="Build24" Unit="AutomatedAssimilator" Time="30">
-            <Button DefaultButtonFace="AutomatedAssimilator" Requirements="HaveSOAAutoAssimilator"/>
+            <Button DefaultButtonFace="AutomatedAssimilator" Requirements="DragoonAttack6DamageShield"/>
         </InfoArray>
         <InfoArray index="Build25" Unit="KhaydarinMonolith" Time="80">
             <Button DefaultButtonFace="KhaydarinMonolith10" Requirements="HaveForge"/>
@@ -41415,7 +41443,7 @@
             <Button DefaultButtonFace="Pylon10"/>
         </InfoArray>
         <InfoArray index="Build3" Unit="Assimilator4" Time="30">
-            <Button DefaultButtonFace="Assimilator11" Requirements="NotHaveSOAAutoAssimilator"/>
+            <Button DefaultButtonFace="Assimilator11" Requirements="DragoonAttack6ImpactReactionShield"/>
             <ValidatorArray value="HasVespene"/>
         </InfoArray>
         <InfoArray index="Build4" Unit="Gateway9" Time="65">
@@ -41476,10 +41504,10 @@
             <Button DefaultButtonFace="ShieldBattery11" Requirements="HaveNexus"/>
         </InfoArray>
         <InfoArray index="Build23" Unit="SoACaster" Time="40">
-            <Button DefaultButtonFace="WarpinSoACaster" Requirements="NoSoACaster"/>
+            <Button DefaultButtonFace="WarpinSoACaster" Requirements="DragoonAttack6DamageReaction"/>
         </InfoArray>
         <InfoArray index="Build24" Unit="AutomatedAssimilator" Time="30">
-            <Button DefaultButtonFace="AutomatedAssimilator" Requirements="HaveSOAAutoAssimilator"/>
+            <Button DefaultButtonFace="AutomatedAssimilator" Requirements="DragoonAttack6DamageShield"/>
         </InfoArray>
         <InfoArray index="Build25" Unit="KhaydarinMonolith" Time="80">
             <Button DefaultButtonFace="KhaydarinMonolith10" Requirements="HaveForge"/>
@@ -42510,12 +42538,12 @@
         <InfoArray index="Build23" Unit="SoACaster" Time="40">
             <Charge Link="Abil/ProtossBuild"/>
             <Cooldown Link="Abil/ProtossBuild"/>
-            <Button DefaultButtonFace="WarpinSoACaster7" Requirements="NoSoACaster"/>
+            <Button DefaultButtonFace="WarpinSoACaster7" Requirements="DragoonAttack6DamageReaction"/>
         </InfoArray>
         <InfoArray index="Build24" Unit="AutomatedAssimilator" Time="30">
             <Charge Link="Abil/ProtossBuild"/>
             <Cooldown Link="Abil/ProtossBuild"/>
-            <Button DefaultButtonFace="AutomatedAssimilator7" Requirements="HaveSOAAutoAssimilator"/>
+            <Button DefaultButtonFace="AutomatedAssimilator7" Requirements="DragoonAttack6DamageShield"/>
         </InfoArray>
         <InfoArray index="Build25" Unit="KhaydarinMonolith" Time="80">
             <Resource index="Minerals" value="-100"/>
@@ -42532,7 +42560,7 @@
         <InfoArray index="Build27" Unit="StargateWarp" Time="60">
             <Charge Link="Abil/ProtossBuild"/>
             <Cooldown Link="Abil/ProtossBuild"/>
-            <Button DefaultButtonFace="WarpInStarWarpGate8" State="Suppressed" Requirements="HaveGatewayAndHaveSOAWarpTech"/>
+            <Button DefaultButtonFace="WarpInStarWarpGate8" State="Suppressed" Requirements="DragoonAttack7"/>
         </InfoArray>
         <InfoArray index="Build28" Unit="GreaterNydusWorm2">
             <Charge Link="Abil/PurificationNovaMorphBack"/>
@@ -42782,12 +42810,12 @@
         <InfoArray index="Build23" Unit="SoACaster" Time="40">
             <Charge Link="Abil/ProtossBuild"/>
             <Cooldown Link="Abil/ProtossBuild"/>
-            <Button DefaultButtonFace="WarpinSoACaster7" Requirements="NoSoACaster"/>
+            <Button DefaultButtonFace="WarpinSoACaster7" Requirements="DragoonAttack6DamageReaction"/>
         </InfoArray>
         <InfoArray index="Build24" Unit="AutomatedAssimilator" Time="30">
             <Charge Link="Abil/ProtossBuild"/>
             <Cooldown Link="Abil/ProtossBuild"/>
-            <Button DefaultButtonFace="AutomatedAssimilator7" Requirements="HaveSOAAutoAssimilator"/>
+            <Button DefaultButtonFace="AutomatedAssimilator7" Requirements="DragoonAttack6DamageShield"/>
         </InfoArray>
         <InfoArray index="Build25" Unit="KhaydarinMonolith" Time="80">
             <Resource index="Minerals" value="-100"/>
@@ -42804,7 +42832,7 @@
         <InfoArray index="Build27" Unit="StargateWarp" Time="60">
             <Charge Link="Abil/ProtossBuild"/>
             <Cooldown Link="Abil/ProtossBuild"/>
-            <Button DefaultButtonFace="WarpInStarWarpGate8" State="Suppressed" Requirements="HaveGatewayAndHaveSOAWarpTech"/>
+            <Button DefaultButtonFace="WarpInStarWarpGate8" State="Suppressed" Requirements="DragoonAttack7"/>
         </InfoArray>
         <InfoArray index="Build28" Unit="GreaterNydusWorm2">
             <Charge Link="Abil/PurificationNovaMorphBack"/>
@@ -43066,12 +43094,12 @@
         <InfoArray index="Build23" Unit="SoACaster" Time="40">
             <Charge Link="Abil/ProtossBuild"/>
             <Cooldown Link="Abil/ProtossBuild"/>
-            <Button DefaultButtonFace="WarpinSoACaster7" Requirements="NoSoACaster"/>
+            <Button DefaultButtonFace="WarpinSoACaster7" Requirements="DragoonAttack6DamageReaction"/>
         </InfoArray>
         <InfoArray index="Build24" Unit="AutomatedAssimilator" Time="30">
             <Charge Link="Abil/ProtossBuild"/>
             <Cooldown Link="Abil/ProtossBuild"/>
-            <Button DefaultButtonFace="AutomatedAssimilator7" Requirements="HaveSOAAutoAssimilator"/>
+            <Button DefaultButtonFace="AutomatedAssimilator7" Requirements="DragoonAttack6DamageShield"/>
         </InfoArray>
         <InfoArray index="Build25" Unit="KhaydarinMonolith" Time="80">
             <Resource index="Minerals" value="-100"/>
@@ -43088,7 +43116,7 @@
         <InfoArray index="Build27" Unit="StargateWarp" Time="60">
             <Charge Link="Abil/ProtossBuild"/>
             <Cooldown Link="Abil/ProtossBuild"/>
-            <Button DefaultButtonFace="WarpInStarWarpGate8" State="Suppressed" Requirements="HaveGatewayAndHaveSOAWarpTech"/>
+            <Button DefaultButtonFace="WarpInStarWarpGate8" State="Suppressed" Requirements="DragoonAttack7"/>
         </InfoArray>
         <InfoArray index="Build28" Unit="GreaterNydusWorm2">
             <Charge Link="Abil/PurificationNovaMorphBack"/>
@@ -43483,7 +43511,7 @@
         <InfoArray index="Build14" Unit="RoboticsFacility" Time="65">
             <Charge Link="Abil/ProtossBuild"/>
             <Cooldown Link="Abil/ProtossBuild"/>
-            <Button DefaultButtonFace="RoboticsFacility" State="Suppressed" Requirements="HaveGatewayAndNotHaveSOAWarpTech"/>
+            <Button DefaultButtonFace="RoboticsFacility" State="Suppressed" Requirements="DragoonAttack6Damage"/>
         </InfoArray>
         <InfoArray index="Build15" Unit="TribesmanHall" Time="25">
             <Charge Link="Abil/ProtossBuild"/>
@@ -43543,12 +43571,12 @@
         <InfoArray index="Build23" Unit="SoACaster" Time="40">
             <Charge Link="Abil/ProtossBuild"/>
             <Cooldown Link="Abil/ProtossBuild"/>
-            <Button DefaultButtonFace="WarpinSoACaster" Requirements="NoSoACaster"/>
+            <Button DefaultButtonFace="WarpinSoACaster" Requirements="DragoonAttack6DamageReaction"/>
         </InfoArray>
         <InfoArray index="Build24" Unit="AutomatedAssimilator" Time="30">
             <Charge Link="Abil/ProtossBuild"/>
             <Cooldown Link="Abil/ProtossBuild"/>
-            <Button DefaultButtonFace="AutomatedAssimilator" Requirements="HaveSOAAutoAssimilator"/>
+            <Button DefaultButtonFace="AutomatedAssimilator" Requirements="DragoonAttack6DamageShield"/>
         </InfoArray>
         <InfoArray index="Build25" Unit="KhaydarinMonolith" Time="60">
             <Resource index="Minerals" value="-100"/>
@@ -43560,12 +43588,12 @@
         <InfoArray index="Build26" Unit="WarpGate" Time="65">
             <Charge Link="Abil/ProtossBuild"/>
             <Cooldown Link="Abil/ProtossBuild"/>
-            <Button DefaultButtonFace="WarpInWarpGate" Requirements="HaveNexusAndHaveSOAWarpTech"/>
+            <Button DefaultButtonFace="WarpInWarpGate" Requirements="DragoonAttack6DamageReactionShield"/>
         </InfoArray>
         <InfoArray index="Build27" Unit="StargateWarp" Time="60">
             <Charge Link="Abil/ProtossBuild"/>
             <Cooldown Link="Abil/ProtossBuild"/>
-            <Button DefaultButtonFace="WarpInStarWarpGate" State="Suppressed" Requirements="HaveGatewayAndHaveSOAWarpTech"/>
+            <Button DefaultButtonFace="WarpInStarWarpGate" State="Suppressed" Requirements="DragoonAttack7"/>
         </InfoArray>
         <InfoArray index="Build28" Unit="GreaterNydusWorm2">
             <Charge Link="Abil/PurificationNovaMorphBack"/>
@@ -53880,7 +53908,7 @@
         <Cost>
             <Cooldown TimeUse="20"/>
         </Cost>
-        <CmdButtonArray index="Execute" DefaultButtonFace="SuperStimpackNova3" Requirements="HaveSuperStimpackNova">
+        <CmdButtonArray index="Execute" DefaultButtonFace="SuperStimpackNova3" Requirements="DragoonAttack74DamageReactionShield">
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
     </CAbilEffectInstant>
@@ -58445,7 +58473,7 @@
         <AutoCastValidatorArray value="VoidScienceVesselNanoRepairNotCasting"/>
         <AINotifyEffect value="VoidScienceVesselNanoRepair"/>
         <DefaultError value="RequiresHealTarget"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Heal" Requirements="VoidScienceVesselNanoRepairEnabled"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Heal" Requirements="DragoonAttack732DamageReactionShield"/>
         <AcquireAttackers value="1"/>
     </CAbilEffectTarget>
     <CAbilBehavior id="VoidSeekerDock2">
@@ -60449,6 +60477,18 @@
         <AINotifyEffect value="XenWarrior6"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="EquipHellRifle" Requirements="Craft1GM1CS1RT"/>
     </CAbilEffectInstant>
+    <CAbilEffectInstant id="Wep2CorrosiveDesolator">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="XenWarrior622322335"/>
+        <Effect index="0" value="CraftCorrosiveDesolator"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge CountMax="1" CountUse="-1"/>
+        </Cost>
+        <AINotifyEffect value="XenWarrior6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipCorrosiveDesolator" Requirements="MothershipRequirements232254222"/>
+    </CAbilEffectInstant>
     <CAbilEffectTarget id="WidowMineAttack2" parent="WidowMineAttack">
         <Name value="Abil/Name/WidowMineAttack2"/>
         <PrepEffect index="0" value="WidowMineTargetingBeamDummy2"/>
@@ -61050,6 +61090,14 @@
         <AINotifyEffect value="WildMutation"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="WildMutation5"/>
     </CAbilEffectTarget>
+    <CAbilResearch id="WorkshopResearch3">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoArray index="Research1" Time="400" Upgrade="MobileAutomatons">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="400"/>
+            <Button DefaultButtonFace="ResearchMobileAutomatons" Requirements="LearnMobileAutomatons"/>
+        </InfoArray>
+    </CAbilResearch>
     <CAbilMorph id="WreckingCrewFighterMode2">
         <AbilSetId value="FighterMode"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
@@ -63464,14 +63512,13 @@
         <AINotifyEffect value="XenWarrior6"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2262232233542322222" Requirements="MothershipRequirements232254222"/>
     </CAbilEffectInstant>
-    <CAbilEffectInstant id="XenWarrior6223223354223">
+    <CAbilEffectInstant id="Wep1ShockCannons">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DataCollection value="XenWarrior622322335"/>
         <Effect index="0" value="XenWarrior633223354223"/>
         <Flags index="BestUnit" value="1"/>
         <Cost>
-            <Charge Link="Abil/XenWarrior"/>
-            <Cooldown Link="Abil/XenWarrior"/>
+            <Charge CountMax="1" CountUse="-1"/>
         </Cost>
         <AINotifyEffect value="XenWarrior6"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot226223223354234" Requirements="MothershipRequirements23225432"/>
