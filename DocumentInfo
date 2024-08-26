@@ -10,7 +10,6 @@
         <Value>bnet:TUMOE Add-On: Early Moebius/0.0/317293</Value>
         <Value>bnet:Void (Campaign)/0.0/999,file:Campaigns/Void.SC2Campaign</Value>
         <Value>bnet:Balance Multi (Mod)/0.0/999,file:Mods/BalanceMulti.SC2Mod</Value>
-        <Value>bnet:TUMOE Add-On: New Armada/0.0/327314</Value>
     </Dependencies>
     <Screenshot>
         <File>

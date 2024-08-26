@@ -228,7 +228,7 @@ bool lib16F85256_gt_A2_Func (bool testConds, bool runActions) {
 
     // Conditions
     if (testConds) {
-        if (!((GameAttributeGameValue("1") != "0009"))) {
+        if (!((GameAttributeGameValue("[bnet:local/0.0/446325]1") != "0009"))) {
             return false;
         }
     }
@@ -485,7 +485,7 @@ bool lib16F85256_gt_A_Func (bool testConds, bool runActions) {
 
     // Conditions
     if (testConds) {
-        if (!((GameAttributeGameValue("1") != "0009"))) {
+        if (!((GameAttributeGameValue("[bnet:local/0.0/446325]1") != "0009"))) {
             return false;
         }
     }
@@ -500,7 +500,7 @@ bool lib16F85256_gt_A_Func (bool testConds, bool runActions) {
     while (true) {
         auto77220539_var = PlayerGroupNextPlayer(auto77220539_g, auto77220539_var);
         if (auto77220539_var < 0) { break; }
-        autoC4B9DA32_val = GameAttributePlayerValue("3", auto77220539_var);
+        autoC4B9DA32_val = GameAttributePlayerValue("[bnet:local/0.0/446325]3", auto77220539_var);
         if (autoC4B9DA32_val == "0031") {
             PlayerGroupAdd(lib16F85256_gv_random[0], auto77220539_var);
         }

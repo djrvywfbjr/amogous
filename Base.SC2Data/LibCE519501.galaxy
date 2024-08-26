@@ -148,7 +148,7 @@ bool libCE519501_gt_DefundRefund_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     // Conditions
     if (testConds) {
-        if (!((GameAttributeGameValue("1") == "0010"))) {
+        if (!((GameAttributeGameValue("[bnet:local/0.0/446325]1") == "0010"))) {
             return false;
         }
     }
@@ -178,7 +178,7 @@ bool libCE519501_gt_AlmostExtinct_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     // Conditions
     if (testConds) {
-        if (!((GameAttributeGameValue("1") == "0011"))) {
+        if (!((GameAttributeGameValue("[bnet:local/0.0/446325]1") == "0011"))) {
             return false;
         }
     }
@@ -208,7 +208,7 @@ bool libCE519501_gt_BigDigHunters_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    if ((GameAttributeGameValue("1") == "0005")) {
+    if ((GameAttributeGameValue("[bnet:local/0.0/446325]1") == "0005")) {
         TriggerEnable(libCE519501_gt_BDHgas, true);
         TriggerEnable(libCE519501_gt_BDHgas2, true);
         TriggerEnable(libCE519501_gt_BDHgas3, true);
@@ -254,7 +254,7 @@ bool libCE519501_gt_ExtinctStart_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    if ((GameAttributeGameValue("1") == "0011")) {
+    if ((GameAttributeGameValue("[bnet:local/0.0/446325]1") == "0011")) {
         PlayerModifyPropertyFixed(1, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 400.0);
         PlayerModifyPropertyFixed(2, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 400.0);
         PlayerModifyPropertyFixed(3, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 400.0);
@@ -282,7 +282,7 @@ bool libCE519501_gt_Random_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     // Conditions
     if (testConds) {
-        if (!(((UnitGetType(EventUnit()) == "Wraith22") && (GameAttributeGameValue("1") == "0009")))) {
+        if (!(((UnitGetType(EventUnit()) == "Wraith22") && (GameAttributeGameValue("[bnet:local/0.0/446325]1") == "0009")))) {
             return false;
         }
     }
@@ -312,7 +312,7 @@ bool libCE519501_gt_TheEternalRewards_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    if ((GameAttributeGameValue("1") == "0006")) {
+    if ((GameAttributeGameValue("[bnet:local/0.0/446325]1") == "0006")) {
         TriggerEnable(libCD55B2B5_gt_HeroicUnitsBuff, true);
         TriggerEnable(libCD55B2B5_gt_MassiveUnitsBuff, true);
         TriggerEnable(libCD55B2B5_gt_SimpleUnitsBuff, true);
@@ -342,7 +342,7 @@ bool libCE519501_gt_Defund_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    if ((GameAttributeGameValue("1") == "0010")) {
+    if ((GameAttributeGameValue("[bnet:local/0.0/446325]1") == "0010")) {
         TriggerEnable(libCE519501_gt_DefundRefund, true);
         HelpPanelAddTip(PlayerGroupAll(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/lib_CE519501_6F8324EF"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/lib_CE519501_3AB83FCD"), StringExternal("Param/Value/lib_CE519501_8BEE05AD"), "Assets\\Textures\\btn-tips-resourcecaches.dds");
     }
@@ -368,7 +368,7 @@ bool libCE519501_gt_Amplified_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    if ((GameAttributeGameValue("1") == "0007")) {
+    if ((GameAttributeGameValue("[bnet:local/0.0/446325]1") == "0007")) {
         TriggerEnable(libCE519501_gt_AmplifiedAdd, true);
         HelpPanelAddTip(PlayerGroupAll(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/lib_CE519501_A5B79FA2"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/lib_CE519501_D410FB56"), StringExternal("Param/Value/lib_CE519501_92D88C89"), "Assets\\Textures\\btn-tips-richminerals.dds");
     }
@@ -394,7 +394,7 @@ bool libCE519501_gt_ToughAsNails_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    if ((GameAttributeGameValue("1") == "0008")) {
+    if ((GameAttributeGameValue("[bnet:local/0.0/446325]1") == "0008")) {
         TriggerEnable(libCE519501_gt_ToughAsNailsADd, true);
         HelpPanelAddTip(PlayerGroupAll(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/lib_CE519501_FA00ED18"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/lib_CE519501_E38655C5"), StringExternal("Param/Value/lib_CE519501_66A04DF5"), "Assets\\Textures\\btn-tips-richminerals.dds");
     }
@@ -417,7 +417,7 @@ bool libCE519501_gt_CelestialRebirth_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     // Conditions
     if (testConds) {
-        if (!((GameAttributeGameValue("1") == "0009"))) {
+        if (!((GameAttributeGameValue("[bnet:local/0.0/446325]1") == "0009"))) {
             return false;
         }
     }
@@ -444,7 +444,7 @@ bool libCE519501_gt_ToughAsNailsADd_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     // Conditions
     if (testConds) {
-        if (!(((!((UnitGetType(EventUnit()) == "Wraith22"))) && (GameAttributeGameValue("1") == "0008")))) {
+        if (!(((!((UnitGetType(EventUnit()) == "Wraith22"))) && (GameAttributeGameValue("[bnet:local/0.0/446325]1") == "0008")))) {
             return false;
         }
     }
@@ -491,7 +491,7 @@ bool libCE519501_gt_BikDigHuntersFields_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     // Conditions
     if (testConds) {
-        if (!((((UnitGetType(EventUnit()) == "BattleStationMineralField") || (UnitGetType(EventUnit()) == "BattleStationMineralField750") || (UnitGetType(EventUnit()) == "LabMineralField750") || (UnitGetType(EventUnit()) == "LabMineralField") || (UnitGetType(EventUnit()) == "MineralField") || (UnitGetType(EventUnit()) == "MineralField450") || (UnitGetType(EventUnit()) == "MineralField750") || (UnitGetType(EventUnit()) == "MineralFieldOpaque900") || (UnitGetType(EventUnit()) == "MineralFieldOpaque") || (UnitGetType(EventUnit()) == "PurifierMineralField") || (UnitGetType(EventUnit()) == "PurifierMineralField750") || (UnitGetType(EventUnit()) == "PurifierRichMineralField") || (UnitGetType(EventUnit()) == "PurifierRichMineralField750") || (UnitGetType(EventUnit()) == "RichMineralField") || (UnitGetType(EventUnit()) == "RichMineralField750") || (UnitGetType(EventUnit()) == "UmojanLabMineralField")) && (GameAttributeGameValue("1") == "0005")))) {
+        if (!((((UnitGetType(EventUnit()) == "BattleStationMineralField") || (UnitGetType(EventUnit()) == "BattleStationMineralField750") || (UnitGetType(EventUnit()) == "LabMineralField750") || (UnitGetType(EventUnit()) == "LabMineralField") || (UnitGetType(EventUnit()) == "MineralField") || (UnitGetType(EventUnit()) == "MineralField450") || (UnitGetType(EventUnit()) == "MineralField750") || (UnitGetType(EventUnit()) == "MineralFieldOpaque900") || (UnitGetType(EventUnit()) == "MineralFieldOpaque") || (UnitGetType(EventUnit()) == "PurifierMineralField") || (UnitGetType(EventUnit()) == "PurifierMineralField750") || (UnitGetType(EventUnit()) == "PurifierRichMineralField") || (UnitGetType(EventUnit()) == "PurifierRichMineralField750") || (UnitGetType(EventUnit()) == "RichMineralField") || (UnitGetType(EventUnit()) == "RichMineralField750") || (UnitGetType(EventUnit()) == "UmojanLabMineralField")) && (GameAttributeGameValue("[bnet:local/0.0/446325]1") == "0005")))) {
             return false;
         }
     }
@@ -518,7 +518,7 @@ bool libCE519501_gt_BikDigHuntersVespene_Func (bool testConds, bool runActions) 
     // Automatic Variable Declarations
     // Conditions
     if (testConds) {
-        if (!((((UnitGetType(EventUnit()) == "RichVespeneGeyser") || (UnitGetType(EventUnit()) == "VespeneGeyser") || (UnitGetType(EventUnit()) == "ProtossVespeneGeyser") || (UnitGetType(EventUnit()) == "PurifierVespeneGeyser") || (UnitGetType(EventUnit()) == "ShakurasVespeneGeyser") || (UnitGetType(EventUnit()) == "SpacePlatformGeyser")) && (GameAttributeGameValue("1") == "0005")))) {
+        if (!((((UnitGetType(EventUnit()) == "RichVespeneGeyser") || (UnitGetType(EventUnit()) == "VespeneGeyser") || (UnitGetType(EventUnit()) == "ProtossVespeneGeyser") || (UnitGetType(EventUnit()) == "PurifierVespeneGeyser") || (UnitGetType(EventUnit()) == "ShakurasVespeneGeyser") || (UnitGetType(EventUnit()) == "SpacePlatformGeyser")) && (GameAttributeGameValue("[bnet:local/0.0/446325]1") == "0005")))) {
             return false;
         }
     }
@@ -581,7 +581,7 @@ bool libCE519501_gt_BikDigHuntersPeriodVEspene_Func (bool testConds, bool runAct
         return true;
     }
 
-    if ((GameAttributeGameValue("1") == "0005")) {
+    if ((GameAttributeGameValue("[bnet:local/0.0/446325]1") == "0005")) {
         PlayerModifyPropertyFixed(8, c_playerPropVespene, c_playerPropOperAdd, 750.0);
         PlayerModifyPropertyFixed(8, c_playerPropVespeneCollected, c_playerPropOperAdd, 750.0);
         PlayerModifyPropertyFixed(7, c_playerPropVespeneCollected, c_playerPropOperAdd, 750.0);
@@ -618,7 +618,7 @@ bool libCE519501_gt_Ref_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     // Conditions
     if (testConds) {
-        if (!(((GameAttributeGameValue("2") == "0005") && (UnitGetType(EventUnit()) == "Wraith22")))) {
+        if (!(((GameAttributeGameValue("[bnet:local/0.0/446325]2") == "0005") && (UnitGetType(EventUnit()) == "Wraith22")))) {
             return false;
         }
     }
@@ -650,7 +650,7 @@ bool libCE519501_gt_Ref2_Func (bool testConds, bool runActions) {
             return false;
         }
 
-        if (!((GameAttributeGameValue("2") != "0002"))) {
+        if (!((GameAttributeGameValue("[bnet:local/0.0/446325]2") != "0002"))) {
             return false;
         }
     }
@@ -677,7 +677,7 @@ bool libCE519501_gt_HalloweenCheck_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     // Conditions
     if (testConds) {
-        if (!((GameAttributeGameValue("2") == "0003"))) {
+        if (!((GameAttributeGameValue("[bnet:local/0.0/446325]2") == "0003"))) {
             return false;
         }
     }
@@ -786,7 +786,7 @@ bool libCE519501_gt_AddHalloween_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     // Conditions
     if (testConds) {
-        if (!(((UnitGetOwner(EventUnit()) == 1) && (GameAttributeGameValue("2") == "0003")))) {
+        if (!(((UnitGetOwner(EventUnit()) == 1) && (GameAttributeGameValue("[bnet:local/0.0/446325]2") == "0003")))) {
             return false;
         }
     }
@@ -820,7 +820,7 @@ bool libCE519501_gt_HalloweenStart_Func (bool testConds, bool runActions) {
 
     // Conditions
     if (testConds) {
-        if (!((GameAttributeGameValue("2") == "0003"))) {
+        if (!((GameAttributeGameValue("[bnet:local/0.0/446325]2") == "0003"))) {
             return false;
         }
     }
@@ -919,7 +919,7 @@ bool libCE519501_gt_CyrstmasStart_Func (bool testConds, bool runActions) {
 
     // Conditions
     if (testConds) {
-        if (!((GameAttributeGameValue("2") == "0004"))) {
+        if (!((GameAttributeGameValue("[bnet:local/0.0/446325]2") == "0004"))) {
             return false;
         }
     }
@@ -964,7 +964,7 @@ bool libCE519501_gt_CrystmasCreate_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     // Conditions
     if (testConds) {
-        if (!((GameAttributeGameValue("2") == "0004"))) {
+        if (!((GameAttributeGameValue("[bnet:local/0.0/446325]2") == "0004"))) {
             return false;
         }
     }
@@ -1015,7 +1015,7 @@ bool libCE519501_gt_CrystmasCreatePeriod_Func (bool testConds, bool runActions) 
     // Automatic Variable Declarations
     // Conditions
     if (testConds) {
-        if (!((GameAttributeGameValue("2") == "0004"))) {
+        if (!((GameAttributeGameValue("[bnet:local/0.0/446325]2") == "0004"))) {
             return false;
         }
     }
@@ -1112,7 +1112,7 @@ bool libCE519501_gt_POTH_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    if ((GameAttributeGameValue("2") == "0002")) {
+    if ((GameAttributeGameValue("[bnet:local/0.0/446325]2") == "0002")) {
         TriggerEnable(libCE519501_gt_SparkOfExistence, false);
         TriggerEnable(libCD55B2B5_gt_Timer5Alt, false);
         libNtve_gf_UnitCreateFacingPoint(1, "SacredCore3", 0, 15, RegionGetCenter(RegionPlayableMap()), UnitGetPosition(EventUnit()));
@@ -1145,7 +1145,7 @@ bool libCE519501_gt_Timer400_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     // Conditions
     if (testConds) {
-        if (!((GameAttributeGameValue("2") == "0002"))) {
+        if (!((GameAttributeGameValue("[bnet:local/0.0/446325]2") == "0002"))) {
             return false;
         }
     }

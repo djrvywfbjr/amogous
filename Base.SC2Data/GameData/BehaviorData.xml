@@ -23277,7 +23277,7 @@
                 <AttributeChangeArray Attribute="DamageBonus342" Points="1"/>
             </Modification>
         </VeterancyLevelArray>
-        <XPFraction index="DamageDealt" value="0.25"/>
+        <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.69"/>
         <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
@@ -31683,11 +31683,13 @@
     </CBehaviorBuff>
     <CBehaviorBuff id="ObserverSquadSight2">
         <InfoIcon value="Assets\Textures\btn-ability-protoss-targetlock.dds"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Duration value="1"/>
         <Modification MoveSpeedMultiplier="1.5" AttackSpeedMultiplier="1.5"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ObserverSquadSight22">
         <InfoIcon value="Assets\Textures\btn-ability-protoss-targetlock.dds"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Duration value="1"/>
         <Modification MoveSpeedMultiplier="1.5" AttackSpeedMultiplier="1.5"/>
     </CBehaviorBuff>
@@ -31725,6 +31727,7 @@
     </CBehaviorBuff>
     <CBehaviorBuff id="ObserverSquadSight23">
         <InfoIcon value="Assets\Textures\btn-ability-protoss-targetlock.dds"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Duration value="1"/>
         <Modification>
             <AbilClassDisableArray index="CAbilEffectTarget" value="1"/>

@@ -8141,7 +8141,7 @@ bool libCD55B2B5_gt__985Mode_Func (bool testConds, bool runActions) {
 
     // Conditions
     if (testConds) {
-        if (!((GameAttributeGameValue("2") == "0006"))) {
+        if (!((GameAttributeGameValue("[bnet:local/0.0/446325]2") == "0006"))) {
             return false;
         }
     }
@@ -8851,14 +8851,14 @@ bool libCD55B2B5_gt_FuckSimpleCommandCard_Func (bool testConds, bool runActions)
         return true;
     }
 
-    if ((GameAttributeGameValue("1") == "0002")) {
+    if ((GameAttributeGameValue("[bnet:local/0.0/446325]1") == "0002")) {
         HelpPanelAddTip(PlayerGroupAll(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/lib_CD55B2B5_731FB3F7"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/lib_CD55B2B5_8271D48F"), StringExternal("Param/Value/lib_CD55B2B5_A44EB668"), "Assets\\Textures\\btn-ability-zerg-corruption-color.dds");
         TriggerEnable(libCD55B2B5_gt_PhantomDeathAlways, true);
     }
     else {
         TriggerEnable(libCD55B2B5_gt_PhantomDeathAlways, false);
     }
-    if ((GameAttributeGameValue("1") == "0003")) {
+    if ((GameAttributeGameValue("[bnet:local/0.0/446325]1") == "0003")) {
         HelpPanelAddTip(PlayerGroupAll(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/lib_CD55B2B5_88E6A52C"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/lib_CD55B2B5_889E3690"), StringExternal("Param/Value/lib_CD55B2B5_5153FC7F"), "Assets\\Textures\\btn-ability-zerg-debilitatingbile.dds");
         TriggerEnable(libCD55B2B5_gt_DarkwoodVirus, true);
     }
