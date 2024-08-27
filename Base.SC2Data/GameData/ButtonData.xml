@@ -4130,6 +4130,16 @@
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="CalldownMULE42332"/>
     </CButton>
+    <CButton id="EquipPlasmaCoater">
+        <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="PlasmaCoater">
+        <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
     <CButton id="DropDownHydralisks">
         <Icon value="Assets\Textures\btn-unit-zerg-hydralisk.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
@@ -4145,8 +4155,26 @@
         <AlertIcon value="Assets\Textures\btn-ability-zerg-consume.dds"/>
         <EditorCategories value="Race:Zerg"/>
     </CButton>
+    <CButton id="EquipCorrosiveDesolator">
+        <Icon value="Assets\Textures\abilityicon_corrosivespores_square.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
     <CButton id="EquipNapalmSprayer">
         <Icon value="Assets\Textures\btn-upgrade-terran-infernalpreigniter.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="EquipZapperGun">
+        <Icon value="Assets\Textures\btn-research-terran-ultracapacitors.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="EquipHellRifle">
+        <Icon value="Assets\Textures\btn-ability-mengsk-ghost-pyrokineticimmolation_orange.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
         <EditorCategories value="Race:Protoss"/>
         <Universal value="1"/>
@@ -4185,8 +4213,16 @@
         <EditorCategories value="Race:Zerg"/>
         <HotkeyAlias value="PoisonNova223"/>
     </CButton>
+    <CButton id="ResearchMobileAutomatons">
+        <Icon value="Assets\Textures\talent-raynor-level01-infantryspecialist.dds"/>
+    </CButton>
     <CButton id="ResearchOptimizedServos">
         <Icon value="Assets\Textures\btn-upgrade-terran-transformationservos.dds"/>
+    </CButton>
+    <CButton id="SensorSweep">
+        <Icon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
     </CButton>
     <CButton id="SetUpGenerator">
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel3.dds"/>
@@ -4253,7 +4289,7 @@
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="CalldownMULE42332"/>
     </CButton>
-    <CButton id="CalldownMULE423324332232222425233332">
+    <CButton id="EquipGear">
         <Icon value="Assets\Textures\btn-upgrade-terran-infantryarmorlevel0.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
@@ -4360,31 +4396,31 @@
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
-    <CButton id="Manufacture3GunpowderMixers">
+    <CButton id="Manufacture6GunpowderMixers">
         <Icon value="Assets\Textures\btn-upgrade-tychus-herc-malice.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
         <ChargeText value="GunPow"/>
     </CButton>
-    <CButton id="Manufacture3ShellingFabricators">
+    <CButton id="Manufacture6ShellingFabricators">
         <Icon value="Assets\Textures\btn-upgrade-tychus-reaper-hostilitieskit.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
         <ChargeText value="ShellFab"/>
     </CButton>
-    <CButton id="Manufacture3ChemicalStations">
+    <CButton id="Manufacture6ChemicalStations">
         <Icon value="Assets\Textures\btn-upgrade-tychus-marauder-aggressionblend.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
         <ChargeText value="ChemStat"/>
     </CButton>
-    <CButton id="Manufacture3FusionCores">
+    <CButton id="Manufacture6FusionCores">
         <Icon value="Assets\Textures\btn-upgrade-tychus-ghost-persuader.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
         <ChargeText value="FuseCore"/>
     </CButton>
-    <CButton id="Manufacture3RecyclerTanks">
+    <CButton id="Manufacture6RecyclerTanks">
         <Icon value="Assets\Textures\btn-upgrade-tychus-firebat-wildflamefuel.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
@@ -14110,6 +14146,7 @@
         <Icon value="Assets\Textures\btn-unit-collection-immortal-golden.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Protoss-Immortal.dds"/>
         <EditorCategories value="Race:Protoss"/>
+        <HotkeyAlias value="ImmortalAiur"/>
     </CButton>
     <CButton id="Immortal32">
         <Icon value="Assets\Textures\btn-unit-collection-immortal-golden.dds"/>
@@ -34954,6 +34991,12 @@
     </CButton>
     <CButton id="Zealot226223223354323">
         <Icon value="Assets\Textures\btn-ability-terran-stimpack-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="EquipPortableSensorTower">
+        <Icon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
         <EditorCategories value="Race:Protoss"/>
         <Universal value="1"/>

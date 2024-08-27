@@ -243,7 +243,6 @@ Trigger/Name/lib_CD55B2B5_AD6E80D4=Python69
 Trigger/Name/lib_CD55B2B5_ADC76D71=MaltanisAddChaosBit
 Trigger/Name/lib_CD55B2B5_AFA91791=ApocalypseNOW
 Trigger/Name/lib_CD55B2B5_AFF096AA=Culling
-Trigger/Name/lib_CD55B2B5_B2127B92=AdvancedConstruction
 Trigger/Name/lib_CD55B2B5_B2DC99B9=TerminateAssembly
 Trigger/Name/lib_CD55B2B5_B2F460CB=PhantomDeath
 Trigger/Name/lib_CD55B2B5_B32FBDFC=RandomRace

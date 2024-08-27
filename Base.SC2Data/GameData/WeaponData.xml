@@ -1100,10 +1100,21 @@
         <Backswing value="1.167"/>
         <Effect value="C10CanisterRifle"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="HellRifle">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-ability-mengsk-ghost-pyrokineticimmolation_orange.dds"/>
+        <DisplayEffect value="HellRifleDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="6.5"/>
+        <Range value="8"/>
+        <Period value="2.5"/>
+        <DamagePoint value="0.083"/>
+        <Backswing value="1.167"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="C10CanisterRifle11">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-snipetripletap.dds"/>
-        <TargetFilters value="Visible;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="7.5"/>
         <Range value="7.5"/>
         <Period value="2"/>
@@ -1113,7 +1124,7 @@
     <CWeaponLegacy id="C10CanisterRifle112">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-snipetripletap.dds"/>
-        <TargetFilters value="Visible;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="7.5"/>
         <Range value="7.5"/>
         <Period value="2"/>
@@ -1778,7 +1789,7 @@
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
         <DisplayEffect value="DiamondbackBeam63"/>
-        <TargetFilters value="Visible;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="7"/>
         <Period value="2"/>
         <AllowedMovement value="Moving"/>
@@ -2174,7 +2185,7 @@
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-raynor-incineratorgauntlets.dds"/>
         <DisplayEffect value="FirebatUFull4"/>
-        <TargetFilters value="Ground,Visible;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="3"/>
         <Marker>
             <MatchFlags index="Id" value="1"/>
@@ -2510,7 +2521,7 @@
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-mengsk-trooper-flamethrower.dds"/>
         <DisplayEffect value="SOAMothershipLineAttackDamage26"/>
-        <TargetFilters value="Ground,Visible;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="4.5"/>
         <Marker Link="Weapon/GuassRifle52"/>
         <Cost>
@@ -3410,7 +3421,7 @@
         <DisplayEffect value="H3ScrapCannonDamage"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="6"/>
-        <Period value="2"/>
+        <Period value="1.5"/>
         <Effect value="H3ScrapCannonDamage"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="H5ScrapCannon">
@@ -3421,7 +3432,7 @@
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="6"/>
         <Range value="7"/>
-        <Period value="3"/>
+        <Period value="2"/>
         <Effect value="H5ScrapCannonDamage"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="H66ScrapCannon">
@@ -3454,7 +3465,7 @@
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="6"/>
         <Range value="4"/>
-        <Period value="1.5"/>
+        <Period value="1.2"/>
         <Effect value="H1ScrapCannonDamage"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HERCWeapon2">
@@ -3834,6 +3845,21 @@
         <AcquirePrioritization value="ByAngle"/>
         <Range value="2"/>
         <Period value="2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CorrosiveDesolator">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\abilityicon_corrosivespores_square.dds"/>
+        <DisplayEffect value="CorrosiveDesolatorDamage"/>
+        <TargetFilters value="Ground;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="11"/>
+        <RangeDisplayFlags index="DisplayRounded" value="1"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="3"/>
+        <DamagePoint value="0.3"/>
+        <Backswing value="0"/>
+        <Effect value="CorrosiveDesolatorLM"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="NapalmSprayer">
         <EditorCategories value="Race:Terran"/>
@@ -5151,7 +5177,7 @@
         <Options index="LinkedCooldown" value="0"/>
         <Icon value="Assets\Textures\btn-unit-protoss-interceptor.dds"/>
         <DisplayEffect value="Carrier"/>
-        <TargetFilters value="Ground,Visible;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="12"/>
         <Arc value="360"/>
         <Marker Link="Weapon/InterceptorLaunch2"/>
@@ -6585,7 +6611,7 @@
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-shotgunaoe.dds"/>
         <DisplayEffect value="MengskMarineDamage322"/>
-        <TargetFilters value="Visible;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="7"/>
         <Range value="7"/>
         <Period value="3"/>
@@ -7367,7 +7393,7 @@
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
         <DisplayAttackCount value="2"/>
-        <TargetFilters value="Ground,Visible;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="5.5"/>
         <Period value="1.1"/>
         <DamagePoint value="0"/>
@@ -8580,7 +8606,7 @@
         <EditorCategories value="Race:Zerg"/>
         <Options index="Melee" value="1"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel1.dds"/>
-        <TargetFilters value="Ground,Visible;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="3"/>
         <Period value="4"/>
         <DamagePoint value="1.5"/>
@@ -10574,7 +10600,7 @@
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-ability-mengsk-earthsplitterordnance-earthsplitterbombardment.dds"/>
         <DisplayEffect value="ThrowMolotovDamage222"/>
-        <TargetFilters value="Visible;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="12"/>
         <Period value="5"/>
         <DamagePoint value="0.5625"/>
@@ -11489,7 +11515,7 @@
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-ability-terran-surfacetoairtargeting.dds"/>
         <DisplayEffect value="VultureU222"/>
-        <TargetFilters value="Ground,Visible;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="9"/>
         <Period value="10"/>
         <Backswing value="0"/>
@@ -11516,7 +11542,7 @@
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-raynor-phobosclassweaponssystem.dds"/>
         <DisplayEffect value="VultureU3"/>
-        <TargetFilters value="Visible;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="6"/>
         <Period value="1.694"/>
         <Backswing value="0"/>
@@ -11872,6 +11898,14 @@
         </Cost>
         <Period value="1"/>
         <Effect value="XelNagaChargedCrystalDamage3"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ZapperGun">
+        <EditorCategories value=""/>
+        <Icon value="Assets\Textures\btn-research-terran-ultracapacitors.dds"/>
+        <DisplayEffect value="ZapperGunDamage"/>
+        <Range value="6"/>
+        <Period value="1"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ZergTowerArtillery2">
         <EditorCategories value="Race:Terran"/>

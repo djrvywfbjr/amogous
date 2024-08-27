@@ -20,6 +20,8 @@
 :zyr: :khan:=
 Aaron=Giant
 Abgail=Former Royal Guard
+Abil/Name/Ab1PlasmaCoater=Ab1 Plasma Coater
+Abil/Name/Ab1PortableSensorTower=Ab1 Portable Sensor Tower
 Abil/Name/AggressiveMutation2=Aggressive Mutation
 Abil/Name/AggressiveMutation22=Fanaticism
 Abil/Name/AlarakKnockback2=Trash
@@ -1466,6 +1468,7 @@ Abil/Name/PlaceWormhole2=Place Wormhole
 Abil/Name/PlaceWormhole3=Place Wormhole
 Abil/Name/PlaceWormhole32=Place Wormhole
 Abil/Name/PlaceWormhole33=Abducc Place
+Abil/Name/PlasmaCoater=Plasma Coater
 Abil/Name/PoisonBlade=Poison Blade
 Abil/Name/PoisonBlade2=Acid Sting
 Abil/Name/PoisonBlade22=Spill Blood
@@ -1855,6 +1858,7 @@ Abil/Name/SelfRepair3=Emergency Repair
 Abil/Name/SelfRepair4=Emergency Repair
 Abil/Name/SelfRepair5=Field Repair
 Abil/Name/SelfRepair6=Emergency Repair
+Abil/Name/SensorSweep=Sensor Sweep
 Abil/Name/ShadowBlade2=Shadow Blade
 Abil/Name/ShadowBlade22=Cut Throat
 Abil/Name/ShadowBlade23=Warp Blade
@@ -2366,7 +2370,11 @@ Abil/Name/WarpPrismTransport6=Load-Unload (Shuttle)
 Abil/Name/Wep1DualSecurityPistols=Wep1 Dual Security Pistols
 Abil/Name/Wep1NapalmSprayer=Wep1 Napalm Sprayer
 Abil/Name/Wep1ShellstormChaingun=Wep1 Shellstorm Chaingun
+Abil/Name/Wep1ShockCannons=Wep1 Shock Cannons
+Abil/Name/Wep1ZapperGun=Wep1 Zapper Gun
+Abil/Name/Wep2CorrosiveDesolator=Wep2 Corrosive Desolator
 Abil/Name/Wep2DoubleSurgicalLaser=Wep2 Double Surgical Laser
+Abil/Name/Wep2HellRifle=Wep2 Hell Rifle
 Abil/Name/Wep2SharpnelRifle=Wep2 Sharpnel Rifle
 Abil/Name/Wep3SmartFireDartGuns=Wep3 Smart-Fire Dart Guns
 Abil/Name/Wep3WarheadLauncher=Wep3 Warhead Launcher
@@ -2397,6 +2405,7 @@ Abil/Name/WildMutation33=Promote
 Abil/Name/WildMutation34=Pledge Of Loyalty
 Abil/Name/WildMutation4=Rapid Mutation
 Abil/Name/WildMutation5=Heal Mutation
+Abil/Name/WorkshopResearch3=Workshop Research 3
 Abil/Name/WreckingCrewFighterMode2=Hel's Angels Fighter Mode Copy
 Abil/Name/XelNagaConstructSmash2=Smash
 Abil/Name/XenWarrior=Xen Warrior
@@ -2586,7 +2595,6 @@ Abil/Name/XenWarrior622322335422222=Ab1 Breaching Charge
 Abil/Name/XenWarrior6223223354222222=Ab2 Industrial Molotov
 Abil/Name/XenWarrior62232233542222222=Ab3 Cloaking Mantle
 Abil/Name/XenWarrior622322335422222222=Ab3 Cloaking Mantle
-Abil/Name/XenWarrior6223223354223=Wep1 Shock Cannons
 Abil/Name/XenWarrior622322335432=Ab1 Adrenaline Injector
 Abil/Name/XenWarrior6223223354322=Ab2 Razor Grenade
 Abil/Name/XenWarrior62232233543222=Ab3 Dampening Cloud
@@ -2968,6 +2976,8 @@ Attribute003/Value032/Desc=Take control of the mighty flagship and a ragtag mili
 Attribute003/Value032/Name=Paramilitary
 Awoken=Awoken
 Behavior/Name/15xUnitSpeed2=Extended Shift
+Behavior/Name/Ab1PlasmaCoater=(Ab1) Plasma Coater
+Behavior/Name/Ab1PortableSensorTower=(Ab1) Portable Sensor Tower
 Behavior/Name/AggressiveMutation2=Aggressive Mutator
 Behavior/Name/AggressiveMutation22=Adapting
 Behavior/Name/AggressiveMutation23=Fanaticism
@@ -3054,7 +3064,6 @@ Behavior/Name/AntamoAirAll103222254222=(Ab) Breaching Charge
 Behavior/Name/AntamoAirAll1032222542222=(Ab) Industrial Molotov
 Behavior/Name/AntamoAirAll10322225422222=(Ab) Cloaking Mantle
 Behavior/Name/AntamoAirAll103222254222222=(Ab) Cloaking Mantle
-Behavior/Name/AntamoAirAll1032222543=(Wep) Ultra-Grenades
 Behavior/Name/AntamoAirAll103223=Z-20 RPG is on
 Behavior/Name/AntamoAirAll11=Divine Being
 Behavior/Name/AntamoAirAll21=Adrenaline
@@ -3440,6 +3449,7 @@ Behavior/Name/GuardianShield4=Umbrella Shield
 Behavior/Name/GuardianShield5=Guardian Shield
 Behavior/Name/HardenedShield22=Urun's Glory
 Behavior/Name/HardenedShield222=Life Support
+Behavior/Name/HellRifleIgnite=Hell Rifle Ignite
 Behavior/Name/HighArchonPsiStorm2=Leading Storm
 Behavior/Name/HighArchonPsiStorm3=Psi Storm
 Behavior/Name/HighEnergyRegeneration=High Energy Regeneration
@@ -4186,13 +4196,17 @@ Behavior/Name/VoidTendrilDamageFieldDebuff2=Smokin' Field
 Behavior/Name/VoodooShield2=Proton Shield
 Behavior/Name/VorazunRegenShield2=Veil of Shadows
 Behavior/Name/VortexBehavior=Vortex Copy Copy
+Behavior/Name/WepCorrosiveDesolator=(Wep) Corrosive Desolator
 Behavior/Name/WepDoubleSurgicalLaser=(Wep) Double Surgical Laser
 Behavior/Name/WepDualSecurityPistols=(Wep) Dual Security Pistols
+Behavior/Name/WepHellRifle=(Wep) Hell Rifle
 Behavior/Name/WepNapalmSprayer=(Wep) Napalm Sprayer
 Behavior/Name/WepShellstormChaingun=(Wep) Shellstorm Chaingun
 Behavior/Name/WepShrapnelRifle=(Wep) Shrapnel Rifle
 Behavior/Name/WepSmartFireDartGuns=(Wep) Smart-Fire Dart Guns
+Behavior/Name/WepUltraGrenades=(Wep) Ultra-Grenades
 Behavior/Name/WepWarheadLauncher=(Wep) Warhead Launcher
+Behavior/Name/WepZapperGun=(Wep) Zapper Gun
 Behavior/Name/WildMutation2=Roundup
 Behavior/Name/WildMutation22=Negotiated With Food
 Behavior/Name/WildMutation222=Negotiated With Resources
@@ -4370,6 +4384,7 @@ Behavior/Name/ZHybridPsionicShockwaveHeightAndStun232=Stunned
 Behavior/Name/ZHybridPsionicShockwaveHeightAndStun233=Stunned Copy Copy 4
 Behavior/Name/ZHybridPsionicShockwaveHeightAndStun3=Stunned
 Behavior/Name/ZHybridPsionicShockwaveHeightAndStun4=Stunned
+Behavior/Name/ZapperGunSlow=Zapper Gun Slow
 Behavior/Name/ZeratulStun2=Void Prisoned
 Behavior/Name/ZeratulStun22=Chronological Failure
 Behavior/Name/ZeratulStun3=Psionic Prison
@@ -4665,6 +4680,7 @@ Behavior/Tooltip/GuardianShield4=This unit takes 5 less damage from every incomi
 Behavior/Tooltip/GuardianShield5=Incoming attack damage reduced by 2.
 Behavior/Tooltip/HardenedShield22=This unit takes 30% less damage from any attack.
 Behavior/Tooltip/HardenedShield222=This unit takes 70% less damage but cannot move, attack and use targeted abilities while in this state.
+Behavior/Tooltip/HellRifleIgnite=This unit takes fire damage. Fire deals more damage to biological units.
 Behavior/Tooltip/HighArchonPsiStorm2=Target is under the effects of Psionic Storm and will take massive damage while in this area of effect.
 Behavior/Tooltip/HighArchonPsiStorm3=Target is under the effects of Psionic Storm and will take massive damage while in this area of effect.
 Behavior/Tooltip/HighEnergyRegeneration33=This unit is targeted by Jason Antamo and will take alot of damage every second.
@@ -5955,7 +5971,6 @@ Button/Name/CalldownMULE423324332232222425233=Warfare Research
 Button/Name/CalldownMULE4233243322322224252332=Information
 Button/Name/CalldownMULE4233243322322224252333=Adaption Laws
 Button/Name/CalldownMULE42332433223222242523332=Alignment Laws
-Button/Name/CalldownMULE423324332232222425233332=Equip Additional Gear
 Button/Name/CalldownMULE423324332232222425234=Industrialization Research
 Button/Name/CalldownMULE42332433223222242524222422322222=Recycler Tanks
 Button/Name/CalldownMULE4233243322322224252422242232223=Fusion Cores
@@ -7251,13 +7266,19 @@ Button/Name/EntropicBlast222=Ultra Concussion
 Button/Name/EntropicBlast223=Weak Concussion
 Button/Name/EntropicBlast23=Throw Ritual Knife
 Button/Name/EntropicBlast3=Entropic Blast
+Button/Name/EquipCorrosiveDesolator=Equip Corrosive Desolator
 Button/Name/EquipDoubleSurgicalLaser=Equip Double Surgical Laser
+Button/Name/EquipGear=Equip Gear
+Button/Name/EquipHellRifle=Equip Hell Rifle
 Button/Name/EquipNapalmSprayer=Equip Napalm Sprayer
+Button/Name/EquipPlasmaCoater=Equip Plasma Coater
+Button/Name/EquipPortableSensorTower=Equip Portable Sensor Tower
 Button/Name/EquipShellstormChaingun=Equip Shellstorm Chaingun
 Button/Name/EquipShrapnelRifle=Equip Shrapnel Rifle
 Button/Name/EquipSmartFireDartGuns=Equip Smart-Fire Dart Guns
 Button/Name/EquipWarheadLauncher=Equip Warhead Launcher
 Button/Name/EquipWeapon=Equip Weapon
+Button/Name/EquipZapperGun=Equip Zapper Gun
 Button/Name/EvolutionChamber2=Mutate into Evolution Chamber Copy
 Button/Name/EvolutionChamber3=Mutate into Evolution Chamber Copy 2
 Button/Name/EvolutionChamber4=Construct Research Chamber
@@ -8144,11 +8165,11 @@ Button/Name/LurkerMP232=Morph to Ambusher
 Button/Name/LurkerMP2322=Morph to Ambusher
 Button/Name/LurkerMP2323=Evolve Into Composer
 Button/Name/LurkerMP23232=Evolve Into Obtained
-Button/Name/Manufacture3ChemicalStations=Manufacture 3 Chemical Stations
-Button/Name/Manufacture3FusionCores=Manufacture 3 Fusion Cores
-Button/Name/Manufacture3GunpowderMixers=Manufacture 3 Gunpowder Mixers
-Button/Name/Manufacture3RecyclerTanks=Manufacture 3 Recycler Tanks
-Button/Name/Manufacture3ShellingFabricators=Manufacture 3 Shelling Fabricators
+Button/Name/Manufacture6ChemicalStations=Manufacture 6 Chemical Stations
+Button/Name/Manufacture6FusionCores=Manufacture 6 Fusion Cores
+Button/Name/Manufacture6GunpowderMixers=Manufacture 6 Gunpowder Mixers
+Button/Name/Manufacture6RecyclerTanks=Manufacture 6 Recycler Tanks
+Button/Name/Manufacture6ShellingFabricators=Manufacture 6 Shelling Fabricators
 Button/Name/Marauder10=Prepare Acid Sprayer
 Button/Name/Marauder11=Train Sexton
 Button/Name/Marauder112=Summon Tamiel
@@ -8941,6 +8962,7 @@ Button/Name/PlaceWormhole32=Place Wormhole
 Button/Name/PlanetaryFortress2=Activate Experimental Fortress Protocol
 Button/Name/PlanetaryFortress22=Mutate Into Subterranean Spine
 Button/Name/PlantC4Charge2=Breaching Charge
+Button/Name/PlasmaCoater=Plasma Coater
 Button/Name/PointDefense2=Regional Masking
 Button/Name/PointDefenseDrone2=Launch Point Defense Drone
 Button/Name/PointDefenseDrone22=Launch Cloaking Drone
@@ -9368,6 +9390,7 @@ Button/Name/ResearchIndustrialPowerDistributor=Research Industrial Power Distrib
 Button/Name/ResearchIndustrialThermoelectricStation=Research Industrial Thermoelectric Station
 Button/Name/ResearchMedicalOutpost=Research Medical Outpost
 Button/Name/ResearchMilitaryTraining=Research Military Training
+Button/Name/ResearchMobileAutomatons=Research Mobile Automatons
 Button/Name/ResearchOptimizedArmorMaterials=Research Optimized Armor Materials
 Button/Name/ResearchOptimizedHarvesting=Research Optimized Harvesting
 Button/Name/ResearchOptimizedPowerDistributor=Research Optimized Power Distributor
@@ -9650,6 +9673,7 @@ Button/Name/SelfRepair3=Emergency Repair
 Button/Name/SelfRepair4=Vanadium Emergency Repair
 Button/Name/SelfRepair5=Field Repair
 Button/Name/SelfRepair6=Emergency Repair
+Button/Name/SensorSweep=Sensor Sweep
 Button/Name/SensorTower10=Build Sensor Tower Copy 5
 Button/Name/SensorTower11=Build Refuel Tower
 Button/Name/SensorTower12=Grow Tree
@@ -12729,7 +12753,6 @@ Button/Tooltip/CalldownMULE423324332232222425233=Shows available warfare-related
 Button/Tooltip/CalldownMULE4233243322322224252332=Shows information about different mechanics.
 Button/Tooltip/CalldownMULE4233243322322224252333=Shows available adaption laws, which will allow the colony to survive during these times.
 Button/Tooltip/CalldownMULE42332433223222242523332=Shows available alignment laws, which will allow the colony to join and recieve help from any factions that still exist
-Button/Tooltip/CalldownMULE423324332232222425233332=Shows available abilities that can be crafted for this unit by using parts made at Tools Manufacture.
 Button/Tooltip/CalldownMULE423324332232222425234=Shows available industrialization-related research.
 Button/Tooltip/CalldownMULE42332433223222242524222422322222=This little canister recycles user's bodily fluids, excess suit power and whatever can be found in the environment to create basic fuel.
 Button/Tooltip/CalldownMULE4233243322322224252422242232223=A small canister containing and recreating a lot of power. 
@@ -12742,7 +12765,7 @@ Button/Tooltip/CalldownMULE423324332232222425242322=If we give out increased rat
 Button/Tooltip/CalldownMULE4233243322322224252423222=Bathhouses are great for recreational activities and will be able to provide warm baths to people around the building. The cheap boiler system however requires a lot of fuel.<n/><n/><c val="00FFFF">Unlocks Bathhouse - buildings that grants Motivation and decrease Dissatisfaction based on nearby homes.<n/>Hope will rise.</c><n/><c val="FF0000">Using Bathhouses will cost vespene gas</c>
 Button/Tooltip/CalldownMULE42332433223222242524233=If we seal armor completely, it will be able to take more damage, but workers will be trapped inside until it's destroyed.<n/><n/><c val="00FFFF">All armors from Militia Barracks gain 30 health</c><n/><c val="FF0000">Units can no longer take off armors<n/>Hope falls<n/>Cannot sign Escape Orders if Sealed Armor is signed</c>
 Button/Tooltip/CalldownMULE423324332232222425242332=We can allow our workers to run back to base as soon as they are armorless. They will feel safer and have an adrenaline rush to escape faster, when exiting an armor or when it's destroyed.<n/><n/><c val="00FFFF">Workers will run to the nearest Construction Site, when leaving or loosing Militia Barracks armors<n/>When leaving Militia Barracks armors(or when they are destroyed), workers gain 1 speed, can walk through units and become invulnerable for 4 seconds.<n/>Motivation will increase</c><n/><c val="FF0000">Militia Barracks armors will be slowed down by 15%<n/>Cannot sign Sealed Armor if Escape Orders is signed</c><n/>
-Button/Tooltip/CalldownMULE4233243322322224252423322=If we extend the shifts of workers in a structure, it will most certainly be alot more productive. People might dislike it, but these hard times leave no choice.<n/><n/><c val="00FFFF">Allows production, research structures and Gardens to toggle Extended Shifts on and off.<n/>Extended Shifts will increase productivity of the structure by 75%.</c><n/><c val="FF0000">Initial use of Extended Shifts increases Dissatisfaction by 40<n/>Every 5 seconds Extended Shifts will reduce Motivation by 1<n/>Discontent will rise.<n/></c>
+Button/Tooltip/CalldownMULE4233243322322224252423322=If we extend the shifts of workers in a structure, it will most certainly be alot more productive. People might dislike it, but these hard times leave no choice.<n/><n/><c val="00FFFF">Allows production, research structures and Gardens to toggle Extended Shifts on and off.<n/>Extended Shifts will increase productivity of the structure by 60%.</c><n/><c val="FF0000">Initial use of Extended Shifts increases Dissatisfaction by 40<n/>Every 5 seconds Extended Shifts will reduce Motivation by 1<n/>Discontent will rise.<n/></c>
 Button/Tooltip/CalldownMULE42332433223222242524233222=We did agree to not make work too longer, but permanently prolonging the shifts at every structures will slightly boost productivity. People will still remember this.<n/><n/><n/><c val="00FFFF">All manned structures will function 10% faster</c><n/><c val="FF0000">Dissatisfaction will increase<n/>Dissatisfaction will be passively grow by 1 every 2 seconds.<n/>Cannot sign More Breaks if Prolonged Shifts is signed.</c>
 Button/Tooltip/CalldownMULE423324332232222425242332222=Workers are sure to get satisfied from additional breaks inbetween work. It's not useful to the productivity in the short terms, but they get abit more motivational.<n/><n/><c val="00FFFF">Every 2 seconds, generates 1 Motivation and removes 1 Dissatisfaction<n/>Dissatisfaction will fall</c><n/><c val="FF0000">Manned structures will work 10% slower<n/>Cannot sign Prolonged Shifts if More Breaks is signed</c>
 Button/Tooltip/CalldownMULE4233243322322224252423322222=If we remove all hazardous vespene gas protection from structures, they will be alot cheaper to make,  but our workers will suffer greatly.<n/><n/><c val="00FFFF">Reduces cost Medical Outposts, Weapon Shops and Psiwave Communicator to 75 minerals and 0 vespene gas.</c><n/><c val="FF0000">Increases chances of low Safety Levels increasing damage by 50%<n/>Increases damage taken by workers because of low Safety Levels by 3<n/>Increases Dissatisfaction<n/>Lowers Motivation</c>
@@ -13269,7 +13292,7 @@ Button/Tooltip/CloakOnSpectre22=Cloaks the unit, preventing enemy units from see
 Button/Tooltip/CloakOnSpectre3=Medical Outpost starts ensuring safety and providing medicine to dangerous workplaces.<n/><n/>Increases Safety Level by 1, but starts degenerating <c val="00FF00">Medicine</c> at a rate of 7/sec.<n/><n/>Does not function, when out of <c val="00FF00">Medicine</c>.
 Button/Tooltip/CloakOnSpectre32=Medical Outpost starts ensuring safety and providing medicine to dangerous workplaces.<n/><n/>Increases Safety Level by 1, but starts degenerating <c val="00FF00">Medicine</c> at a rate of 7/sec.<n/><n/>Does not function, when out of <c val="00FF00">Medicine</c>.
 Button/Tooltip/CloakOnSpectre322=Medical Outpost starts ensuring safety and providing medicine to dangerous workplaces.<n/><n/>Increases Safety Level by 1, but starts degenerating <c val="00FF00">Medicine</c> at a rate of 7/sec.<n/><n/>Does not function, when out of <c val="00FF00">Medicine</c>.
-Button/Tooltip/CloakOnSpectre322dwa1wa=This structure will function 75% faster, but will also instantly raise 40 Dissatisfaction instantly and remove 1 Motivation every 5 seconds.
+Button/Tooltip/CloakOnSpectre322dwa1wa=This structure will function 60% faster, but will also instantly raise 40 Dissatisfaction instantly and remove 1 Motivation every 5 seconds.
 Button/Tooltip/CloakOnSpectre323=Medical Outpost starts ensuring safety and providing medicine to dangerous workplaces.<n/><n/>Increases Safety Level by 1, but starts degenerating <c val="00FF00">Medicine</c> at a rate of 7/sec.<n/><n/>Does not function, when out of <c val="00FF00">Medicine</c>.
 Button/Tooltip/CloakOnSpectre3232=Medical Outpost starts ensuring safety and providing medicine to dangerous workplaces.<n/><n/>Increases Safety Level by 1, but starts degenerating <c val="00FF00">Medicine</c> at a rate of 7/sec.<n/><n/>Does not function, when out of <c val="00FF00">Medicine</c>.
 Button/Tooltip/CloakOnSpectre3232dwa1wa=This vessel will instantly jump into the orbit, where it is safe from harm. If the Flagship is in <c val="800080">Orbital Mode</c>, this vessel will also heal 50 hp/s in the orbit.<n/><n/>We can use the Two-Way Warp technology to link our ships to orbital dry docks. If the flagship is there to power them, ships will also be quickly repaired.
@@ -14246,13 +14269,19 @@ Button/Tooltip/EntropicBlast222=Fire a powerful projectile of pulsing plasma, de
 Button/Tooltip/EntropicBlast223=Fire a projectile of pulsing plasma, dealing 15 damage to enemy units in the area.
 Button/Tooltip/EntropicBlast23=Launch a knife with special explosive chemicals in it, dealing 75 damage to units in a really small area.
 Button/Tooltip/EntropicBlast3=Channels a missile at the target location. After 4 seconds, deals 225 damage to all enemy units in the area.
+Button/Tooltip/EquipCorrosiveDesolator=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Chemical Station<n/><c val="00FF00">(1)</c> Fusion Core<n/><c val="00FF00">(1)</c> Recycler Tank<n/><n/>Equips the Titan armor with a corrosive launcher that deals damage in an area and additional damage over time. Does more damage to mechanical units. <n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
 Button/Tooltip/EquipDoubleSurgicalLaser=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(3)</c> Fusion Cores<n/><n/>Equips the Outrider armor with 2 laser pistols with good range, rather long cooldown and Increased damage against Armored targets.<n/><n/>Weaker versions of these devices are used for actual surgeries. Specific plans were developed to fire them from sidearms at much greater ranges with much greater effect.
+Button/Tooltip/EquipGear=Shows available abilities that can be crafted for this unit by using parts made at Tools Manufacture.
+Button/Tooltip/EquipHellRifle=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Gunpowder Mixer<n/><c val="00FF00">(1)</c> Chemical Station<n/><c val="00FF00">(1)</c> Recycler Tank<n/><n/>Equips the Hunter Ranger armor with a rifle that ignites the target, dealing 30(40 to biological) extra damage over 10 seconds.<n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
 Button/Tooltip/EquipNapalmSprayer=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Fusion Core<n/><c val="00FF00">(2)</c> Recycling Tanks<n/><n/>Equips the Combater armor with a fire-firing sprayer that hits multiple enemies in an area around main target. Does more damage to biological targets.<n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
+Button/Tooltip/EquipPlasmaCoater=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(2)</c> Fusion Cores<n/><c val="00FF00">(1)</c> Shelling Fabricator<n/><n/>Equips the Combater armor with an unstable plasma generator, allowing the ability to gain a shield that absorbs damage while damaging melee attackers.<n/><n/>This device was designed to produce and inject user with a chemical compound to improve their combat ability. Unlike stimpacks, it deals no permanent physical harm.
+Button/Tooltip/EquipPortableSensorTower=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(2)</c> Fusion Cores<n/><c val="00FF00">(1)</c> Shelling Fabricator<n/><n/>Equips the Hunter Ranger armor with a portable sensor tower, enabling 12 range detection, 20 range radar, and the ability to reveal an area of the map for a short time.<n/><n/>This device was designed to produce and inject user with a chemical compound to improve their combat ability. Unlike stimpacks, it deals no permanent physical harm.
 Button/Tooltip/EquipShellstormChaingun=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Gunpowder Mixer<n/><c val="00FF00">(2)</c> Shelling Fabricators<n/><n/>Equips the Serviceman armor with a fast-firing chaingun that hits multiple enemies in an area around main target, but target armor reduces damage of the weapon twice as much as usual.<n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
 Button/Tooltip/EquipShrapnelRifle=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(2)</c> Gunpowder Mixers<n/><c val="00FF00">(1)</c> Shelling Fabricator<n/><n/>Equips the Serviceman armor with a powerful long-ranged rifle, that deals great damage and is even stronger against Armored targets, but cannot fire too often.<n/><n/>This powerful rifle was originally designed for hunting. Most creatures' meat is made inedible due to explosive shrapnel blasts created by these rifles.
 Button/Tooltip/EquipSmartFireDartGuns=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Chemical Station<n/><c val="00FF00">(1)</c> Fusion Core<n/><c val="00FF00">(1)</c> Recycler Tank<n/><n/>Equips the Outrider armor with 2 pistols that attack different enemies each attack. The pistols mark targets for increased damage and reveal them, while also making them blind.<n/><n/>These weapons function by firing tracker darts that inject certain vision-weakening drugs from advanced weapons that can calculate the trajectory of the projectiles.
 Button/Tooltip/EquipWarheadLauncher=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Gunpowder Mixer<n/><c val="00FF00">(1)</c> Recycler Tank<n/><c val="00FF00">(1)</c> Shelling Fabricator<n/><n/>Equips the Serviceman armor with a missile launcher that deals damage in a large area and increased damage to light units, but has an extremely long reload time.<n/><n/>This military rocket launcher design was never meant for the emergency colonization, but so little progress has been done on Psiwave Generators that Dominion authorities added them as a last-minute addition to finish clearing unfinished Construction Site shafts.
 Button/Tooltip/EquipWeapon=Shows available weapons that can be crafted for this unit by using parts made at Tools Manufacture.
+Button/Tooltip/EquipZapperGun=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Fusion Core<n/><c val="00FF00">(2)</c> Shelling Fabricators<n/><n/>Equips the Hunter Ranger armor with a shocker that reduces enemy attack and movement speed, but does not do much damage.<n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
 Button/Tooltip/EternalOne=Highlord of the Tal'darim. Powerful Psionic Warrior.
 Button/Tooltip/EvolutionChamber2=Contains upgrades for Zerg ground units.<n/><n/><c val="ffff8a">Enables:</c><n/>- Aberrations from Larvae with Lair or Hive
 Button/Tooltip/EvolutionChamber3=Contains upgrades for Zerg ground units.<n/><n/><c val="ffff8a">Enables:</c><n/>- Aberrations from Larvae with Lair or Hive
@@ -15455,11 +15484,11 @@ Button/Tooltip/MULE2=Prototype harvesting unit. Gathers minerals more quickly th
 Button/Tooltip/MULE22=Prototype harvesting unit. Gathers minerals more quickly than regular SCVs. MULEs last <d time="90"/> before their systems fail.
 Button/Tooltip/MULE3=Prototype harvesting unit. Gathers minerals more quickly than regular SCVs. MULEs last <d time="90"/> before their systems fail.
 Button/Tooltip/MaintanceDrone=Support unit. Can heal shields, time warp and guardian shield.<n/><n/><c val="FFFF00">Is a detector.</c>
-Button/Tooltip/Manufacture3ChemicalStations=This hand-sized apparatus can synthesize and perform different functions with chemicals.
-Button/Tooltip/Manufacture3FusionCores=A small canister containing and recreating a lot of power. 
-Button/Tooltip/Manufacture3GunpowderMixers=This device can create gunpowder from materials it picks up in the environment.
-Button/Tooltip/Manufacture3RecyclerTanks=This little canister recycles user's bodily fluids, excess suit power and whatever can be found in the environment to create basic fuel.
-Button/Tooltip/Manufacture3ShellingFabricators=This machine is used to fabricate different kinds of ammo shells and outer layers of other weapons in the field.
+Button/Tooltip/Manufacture6ChemicalStations=This hand-sized apparatus can synthesize and perform different functions with chemicals.
+Button/Tooltip/Manufacture6FusionCores=A small canister containing and recreating a lot of power. 
+Button/Tooltip/Manufacture6GunpowderMixers=This device can create gunpowder from materials it picks up in the environment.
+Button/Tooltip/Manufacture6RecyclerTanks=This little canister recycles user's bodily fluids, excess suit power and whatever can be found in the environment to create basic fuel.
+Button/Tooltip/Manufacture6ShellingFabricators=This machine is used to fabricate different kinds of ammo shells and outer layers of other weapons in the field.
 Button/Tooltip/Marauder10=Splash suicide infantry.<n/>Costs 2 supplies.
 Button/Tooltip/Marauder11=Heavy assault infantry. Attacks slow target.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/Marauder112=Heavy assault infantry. Attacks slow target.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
@@ -16165,7 +16194,7 @@ Button/Tooltip/NovaGadgetPulseGrenades3232=Pick Up objects in an area around tar
 Button/Tooltip/NovaGadgetPulseGrenades4=Deals up to 15 damage to enemy ground units in the target area.</n></n><c val="ffff8a">Does not damage friendly units.</c>
 Button/Tooltip/NovaGadgetPulseGrenades5=Deals up to <d ref="Effect,NovaGadgetPulseGrenadesDamage,Amount"/> damage to enemy ground and air units in the target area.</n></n><c val="ffff8a">Does not damage friendly units.</c>
 Button/Tooltip/NovaGadgetPulseGrenades6=Orders all troopers to throw a Bloodnade. Bloodnades deal 10 damage in a large area.
-Button/Tooltip/NovaGadgetPulseGrenades7=Deals up to 100(200 to structures) damage to enemy ground units in the target area.<n/><n/>These combat grenade plans were allegedly provided to colonies for additional means of protection. They rely on extreme amounts of gunpowder and recycled fuel to function, causing the actual grenade shell to be made by armor's built-in fabricators, which are a lot slower than manufactured ones.
+Button/Tooltip/NovaGadgetPulseGrenades7=Deals up to 50(250 to structures) damage to enemy ground units in the target area.<n/><n/>These combat grenade plans were allegedly provided to colonies for additional means of protection. They rely on extreme amounts of gunpowder and recycled fuel to function, causing the actual grenade shell to be made by armor's built-in fabricators, which are a lot slower than manufactured ones.
 Button/Tooltip/NovaHero2=Dominion covert operative. Can equip and use a variety of weapons and gear.<n/><n/><c val="#ColorAttackInfo">Can attack different enemy units based on weaponry.</c>
 Button/Tooltip/NovaHero3=Dominion covert operative. Can equip and use a variety of weapons and gear.<n/><n/><c val="#ColorAttackInfo">Can attack different enemy units based on weaponry.</c>
 Button/Tooltip/NovaHero4=Dominion covert operative. Can equip and use a variety of weapons and gear.<n/><n/><c val="#ColorAttackInfo">Can attack different enemy units based on weaponry.</c>
@@ -16498,6 +16527,7 @@ Button/Tooltip/PlanetaryFortress3=Defensive stronghold. <n/>Used to receive gath
 Button/Tooltip/PlanetaryFortress4=Defensive stronghold. <n/>Used to receive gathered resources. <n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/PlanetaryFortress5=Defensive stronghold. <n/>Used to receive gathered resources. <n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/PlantC4Charge2=Plants an explosive charge on a structure, which deals 500(500 bonus to structures) in 2.5 radius after 11 seconds.
+Button/Tooltip/PlasmaCoater=Gain 125 shields, 3 shield armor, and 8 life regeneration for 10 seconds. Melee attackers are inflicted 10 damage.
 Button/Tooltip/Plasmer=Close range combat unit. Good against armor.
 Button/Tooltip/PointDefense2=Units around Masking Drone heal 5 health every second and are cloaked.
 Button/Tooltip/PointDefenseDrone2=Uses a laser to shoot down enemy missiles.  <n/>Cannot target special attacks. <n/>Times out after <d ref="Behavior,PointDefenseDroneTimedLife,Duration"/> seconds.<n/><n/><c val="f078ff">Each shot consumes 10 energy.</c><n/><c val="FFFF00">Autocasted towards enemy missiles.</c>
@@ -17002,7 +17032,7 @@ Button/Tooltip/ResearchCropModifications=Gardens will now provide 50% more Food.
 Button/Tooltip/ResearchDiminishingMarks=Marks, that are signalled by Outposts, now also weaken units they are on:<n/><n/>Biological units marked by Hunter Outpost loose 50% movement speed<n/>Mechanical units marked by Gathering Outpost loose 35% attack speed<n/>Flying units marked by Recycling Outposts loose 5 weapon range
 Button/Tooltip/ResearchFortifiedCargoCarriers=Scows, Freighters and Trawlers gain 100% health increase, 50% cargo size increase, but loose 33% movement speed.
 Button/Tooltip/ResearchIndustrialAssemblies=Expands Colonial Assemblies, allowing 5 more scientists to be assigned there.
-Button/Tooltip/ResearchIndustrialAutomatons=Modifies all structures, vehicles and armors that required workers or scientists to function automatically, even without anyone piloting them. Automated technologies function at 100% of the original speed.
+Button/Tooltip/ResearchIndustrialAutomatons=Modifies all structures that required workers or scientists to function automatically, even without anyone piloting them. Automated technologies function at 100% of the original speed, 200% if manned.
 Button/Tooltip/ResearchIndustrialBarracks=Expands Barracks and Weapon Shops, allowing 3 more workers to be assigned in each one.
 Button/Tooltip/ResearchIndustrialGardens=Expands all Gardens, allowing 5 more workers to work in each one and doubling their health.
 Button/Tooltip/ResearchIndustrialOutposts=All 3 Outposts now provide 50% more resources, but they mark enemies 5 seconds slower and can load in 2 more workers to compensate for it.
@@ -17011,6 +17041,7 @@ Button/Tooltip/ResearchIndustrialPowerDistributor=Increases the power distributi
 Button/Tooltip/ResearchIndustrialThermoelectricStation=Modifies the thermoelectric station under the Construction Site to provide 45 more Power Supply.
 Button/Tooltip/ResearchMedicalOutpost=Allows Workers to create a Medical Outpost, which can heal units and raise Safety Levels.
 Button/Tooltip/ResearchMilitaryTraining=Decrypts Dominion training manual, allowing all workers to learn about chemical warfare and fighting in hazardous enviroments. Increases Safety Level by 1.
+Button/Tooltip/ResearchMobileAutomatons=Modifies all vehicles and armors that required workers or scientists to function automatically, even without anyone piloting them. Automated technologies function at 100% of the original speed, 200% if manned.
 Button/Tooltip/ResearchOptimizedArmorMaterials=Militia Barracks will now be able to construct Militia Trooper armor. It is way less effective than other armors, but is cheap and constructed quickly.
 Button/Tooltip/ResearchOptimizedHarvesting=Gardens will now provide Food a third faster.
 Button/Tooltip/ResearchOptimizedPowerDistributor=Increases the power distribution field of Construction Site by 50%.
@@ -17410,6 +17441,7 @@ Button/Tooltip/SelfRepair3=Regenerates 30 life per second. Unstoppable cannot mo
 Button/Tooltip/SelfRepair4=Regenerates 56 life per second. Blackhammer cannot move or attack until fully repaired or <d ref="Behavior,SelfRepair,Duration"/> seconds have passed.
 Button/Tooltip/SelfRepair5=Regenerates 40 life per second, but be unable to move during that time. Lasts up to 20 seconds.
 Button/Tooltip/SelfRepair6=Regenerates <d ref="Behavior,SelfRepair,Modification.VitalRegenArray[Life]"/> life per second. Cannot move or attack until fully repaired or <d ref="Behavior,SelfRepair,Duration"/> seconds have passed.
+Button/Tooltip/SensorSweep=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="12"/>.
 Button/Tooltip/SensorTower10=Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy.
 Button/Tooltip/SensorTower11=Refuels energy of units for resources.
 Button/Tooltip/SensorTower12=Supply ''strucutre''.<n/>Provides 1 supply.
@@ -18889,7 +18921,7 @@ Button/Tooltip/VoidColossusFireBeam2633222=Each person in Bathhouse reduces Disc
 Button/Tooltip/VoidColossusFireBeam2633222fwa1=Holy Butcheries automatically cut any Churchmen, Workers or Scientists inside of them into meat.<n/>People inside die quickly.<n/>On death, people inside Holy Butcheries grant 120 Food, 40 Hope, remove 20 Dissatisfaction and 30 Moitvation.
 Button/Tooltip/VoidColossusFireBeam263322fwa1=Torture chambers are completely automated.<n/>Workers and Convicts inside of them take 6 damage, remove 5 Dissatisfaction and add 5 Motivation every 3 seconds.<n/>Workers and Convicts inside do not die and grant Motivation or decrease Dissatisfaction, if their health is under 7<n/>Workers and Convicts cannot strike or riot, as the torture rooms automatically lock them in, unless ordered to open.
 Button/Tooltip/VoidColossusFireBeam263323=Each person in Public House reduces Disctonent by 3 and increases Hope by 4 every 5 seconds.
-Button/Tooltip/VoidColossusFireBeam26333=While Vespene Pacifier is alot safer and simpler than usual Refineries, it's still hazardous.<n/><n/>If Safety Level is under 6, all workers will take 5 damage every 5 seconds<n/><n/>If Safety Level is under 8, all workers will likely take 5 damage every 5 seconds while working here.<n/><n/>If Safety Level is under 10, all workers will sometimes take 5 damage every 5 seconds while working here.<n/><n/>If Safety Level is under 11, all  workers will reduce Hope by 1 and increase Disctonent by 2 every 5 seconds.<n/><n/>Current safety level:<c val="00FF00"> <d ref="Behavior,HighEnergyRegeneration4,Modification.VitalMaxArray[Life]"/></c>
+Button/Tooltip/VoidColossusFireBeam26333=While Vespene Pacifier is alot safer and simpler than usual Refineries, it's still hazardous.<n/><n/>If Safety Level is under 6, all workers will take 4 damage every 5 seconds<n/><n/>If Safety Level is under 8, all workers will likely take 4 damage every 5 seconds while working here.<n/><n/>If Safety Level is under 10, all workers will sometimes take 4 damage every 5 seconds while working here.<n/><n/>If Safety Level is under 11, all  workers will reduce Motivation by 1 and increase Disctonent by 2 every 5 seconds.<n/><n/>Current safety level:<c val="00FF00"> <d ref="Behavior,HighEnergyRegeneration4,Modification.VitalMaxArray[Life]"/></c>
 Button/Tooltip/VoidColossusFireBeam263332=Each Scientists in Medical Outposts starts making 1 dose <c val="00FF00">Medicine</c> every second.<n/><n/>The outpost can only store up to 150 doses of <c val="00FF00">Medicine</c>.<n/><n/><c val="00FF00">Medicine</c> is used to heal biological units near the Outpost and increase Safety levels.
 Button/Tooltip/VoidColossusFireBeam26333222=Each weapon of Hunter Range has 35% increased attack damage and 2 more range, but fires 25% slower.
 Button/Tooltip/VoidColossusFireBeam263332222=Each weapon of Combater has 200% increased attack speed, but 3 less range.
@@ -18933,7 +18965,7 @@ Button/Tooltip/VoidColossusFireBeam26333242=Structures around Pious Shrines do e
 Button/Tooltip/VoidColossusFireBeam263332422=Structures around Agitator do everything 30% faster.
 Button/Tooltip/VoidColossusFireBeam2633324222=Every 45 seconds, 3 citizens will be crucified. Every time this happens, Dissatisfaction will fall by 150 and Motivation will rise by 150.
 Button/Tooltip/VoidColossusFireBeam2633324223=Units in Watchtower gain 2 increased range and 30% attack speed.
-Button/Tooltip/VoidColossusFireBeam263333=Workers don't quite always have the safety measures to be able to work without harming themselves, especially when working with toxic materials for weapons.<n/><n/>If Safety Level is under 6, all workers will take 5 damage every 5 seconds<n/><n/>If Safety Level is under 8, all workers will likely take 5 damage every 5 seconds while working here.<n/><n/>If Safety Level is under 10, all workers will sometimes take 5 damage every 5 seconds while working here.<n/><n/>If Safety Level is under 11, all  workers will reduce Hope by 1 and increase Disctonent by 2 every 5 seconds.<n/><n/>Current safety level:<c val="00FF00"> <d ref="Behavior,HighEnergyRegeneration4,Modification.VitalMaxArray[Life]"/></c>
+Button/Tooltip/VoidColossusFireBeam263333=Workers don't quite always have the safety measures to be able to work without harming themselves, especially when working with toxic materials for weapons.<n/><n/>If Safety Level is under 6, all workers will take 4 damage every 5 seconds<n/><n/>If Safety Level is under 8, all workers will likely take 4 damage every 5 seconds while working here.<n/><n/>If Safety Level is under 10, all workers will sometimes take 4 damage every 5 seconds while working here.<n/><n/>If Safety Level is under 11, all  workers will reduce Motivation by 1 and increase Disctonent by 2 every 5 seconds.<n/><n/>Current safety level:<c val="00FF00"> <d ref="Behavior,HighEnergyRegeneration4,Modification.VitalMaxArray[Life]"/></c>
 Button/Tooltip/VoidColossusFireBeam26334=Minerals can be dropped here by harvesters.
 Button/Tooltip/VoidColossusFireBeam264=Enemies in a 20 radius around Grill Tower take 8 damage every second. Does not stack.
 Button/Tooltip/VoidColossusFireBeam27=Attacks are shot in a giant area, knockbacking all enemies in the path, but dealing much less damage to air target.
@@ -21862,6 +21894,10 @@ Effect/Name/CorpserSet22=Corpser Set
 Effect/Name/CorpserSet3=Corpser Set
 Effect/Name/CorrosiveCleanserDamage=Corrosive Cleanser Damage
 Effect/Name/CorrosiveCleanserLM=Corrosive Cleanser LM
+Effect/Name/CorrosiveDesolatorDamage=Corrosive Desolator Damage
+Effect/Name/CorrosiveDesolatorLM=Corrosive Desolator LM
+Effect/Name/CorrosiveDesolatorSearch=Corrosive Desolator Search
+Effect/Name/CorrosiveDesolatorSet=Corrosive Desolator Set
 Effect/Name/Corruption2=Corruption Copy
 Effect/Name/Corruption22=Corruption Copy
 Effect/Name/Corruption23=Corruption Copy
@@ -21881,13 +21917,18 @@ Effect/Name/CorruptionLaunchMissile23=Corruption Copy
 Effect/Name/CorruptionLaunchMissile232=Corruption Copy
 Effect/Name/CorruptionLaunchMissile3=Corruption Copy 2
 Effect/Name/CorruptionLaunchMissile4=Corruption
+Effect/Name/CraftCorrosiveDesolator=Craft Corrosive Desolator
 Effect/Name/CraftDoubleSurgicalLaser=Craft Double Surgical Laser
 Effect/Name/CraftDualSecurityPistols=Craft Dual Security Pistols
+Effect/Name/CraftHellRifle=Craft Hell Rifle
 Effect/Name/CraftNapalmSprayer=Craft Napalm Sprayer
+Effect/Name/CraftPlasmaCoater=Craft Plasma Coater
+Effect/Name/CraftPortableSensorTower=Craft Portable Sensor Tower
 Effect/Name/CraftShellstormChaingun=Craft Shellstorm Chaingun
 Effect/Name/CraftShrapnelRifle=Craft Shrapnel Rifle
 Effect/Name/CraftSmartFireDartGuns=Craft Smart Fire Dart Guns
 Effect/Name/CraftWarheadLauncher=Craft Warhead Launcher
+Effect/Name/CraftZapperGun=Craft Zapper Gun
 Effect/Name/CreatePukePuddle12=Create Puke Puddle4
 Effect/Name/CreatePukePuddle122=Create Puke Puddle6
 Effect/Name/CreatePukePuddle22=Create Puke Puddle5
@@ -23593,6 +23634,9 @@ Effect/Name/HamborgerTechUp1Add22=Hamborger Tech Up Add 3
 Effect/Name/HamborgerTechUp1Add222=Hamborger Tech Up Add 4
 Effect/Name/HealRemoveTargetBehavior2=Heal Remove Target Behavior Copy
 Effect/Name/HealScanPersistent2=Heal Scan Persistent Copy
+Effect/Name/HellRifle=Hell Rifle
+Effect/Name/HellRifleDamage=Hell Rifle Damage
+Effect/Name/HellRifleIgnite=Hell Rifle Ignite
 Effect/Name/HellionTank2=Hellion Tank Copy
 Effect/Name/HellionTank3=Hellion Tank Copy 2
 Effect/Name/HellionTank4=Hellion Tank
@@ -23914,6 +23958,7 @@ Effect/Name/HyperionU22=Hyperion (Damage)
 Effect/Name/HyperionU23=Hyperion (Damage)
 Effect/Name/HyperionU3=Hyperion (Damage)
 Effect/Name/HyperionU32=Hyperion (Damage)
+Effect/Name/IgnitedDamage=Ignited Damage
 Effect/Name/ImmortalOverloadAB2=Immortal Overload AB Copy
 Effect/Name/ImmortalOverloadAB3=Immortal Overload AB
 Effect/Name/ImmortalOverloadAB4=Spec Ops Add Absorber
@@ -25078,11 +25123,11 @@ Effect/Name/MakePrecursorMerc23=Make Precursor Merc Copy
 Effect/Name/MakePrecursorMerc232=Make Precursor Merc Copy
 Effect/Name/MakePrecursorMerc233=Make Precursor Merc Copy
 Effect/Name/MakePrecursorMerc2332=Make Precursor Merc Copy
-Effect/Name/Manufacture3ChemicalStations=Manufacture 3 Chemical Stations
-Effect/Name/Manufacture3FusionCores=Manufacture 3 Fusion Cores
-Effect/Name/Manufacture3GunpowderMixers=Manufacture 3 Gunpowder Mixers
-Effect/Name/Manufacture3RecyclerTanks=Manufacture 3 Recycler Tanks
-Effect/Name/Manufacture3ShellingFabricators=Manufacture 3 Shelling Fabricators
+Effect/Name/Manufacture6ChemicalStations=Manufacture 6 Chemical Stations
+Effect/Name/Manufacture6FusionCores=Manufacture 6 Fusion Cores
+Effect/Name/Manufacture6GunpowderMixers=Manufacture 6 Gunpowder Mixers
+Effect/Name/Manufacture6RecyclerTanks=Manufacture 6 Recycler Tanks
+Effect/Name/Manufacture6ShellingFabricators=Manufacture 6 Shelling Fabricators
 Effect/Name/MarauderSlowAOE2=Slow AOE Copy
 Effect/Name/MarauderSlowAOE3=Slow AOE Copy 2
 Effect/Name/MarauderSlowAOE32=Slow AOE Copy 3
@@ -26801,6 +26846,8 @@ Effect/Name/PlaceWormholeCreateUnit2=Place Wormhole (Create Unit)
 Effect/Name/PlaceWormholeInitialSearch2=Place Wormhole (Initial Search)
 Effect/Name/PlaceWormholeInitialSet2=Place Wormhole (Initial Set)
 Effect/Name/PlaceWormholeKillExistingWormholes2=Place Wormhole (Kill Existing Wormholes)
+Effect/Name/PlasmaCoater=Plasma Coater
+Effect/Name/PlasmaCoaterDamage=Plasma Coater Damage
 Effect/Name/PlasmaPuddleSearchSmall2=PlasmaPuddleSearchSmall (Unnamed) Copy
 Effect/Name/PlasmaPuddleSearchSmall22=PlasmaPuddleSearchSmall (Unnamed) Copy Copy
 Effect/Name/PlasmaPuddleSearchSmall23=PlasmaPuddleSearchSmall (Unnamed) Copy
@@ -28280,10 +28327,13 @@ Effect/Name/RefineryMorph2=Refinery Morph
 Effect/Name/RefugeCannonDamage=Refuge Cannon Damage
 Effect/Name/RefugeCannonLM=Refuge Cannon LM
 Effect/Name/RefugeeCraftRemove1CS1FC1RT=Refugee Craft Remove 1CS, 1FC, 1RT
+Effect/Name/RefugeeCraftRemove1GM1CS1RT=Refugee Craft Remove 1GM, 1CS, 1RT
 Effect/Name/RefugeeCraftRemove1GM1SF1RT=Refugee Craft Remove 1GM, 1SF, 1RT
 Effect/Name/RefugeeCraftRemove1GM2SF=Refugee Craft Remove 1 GM, 2 SF
+Effect/Name/RefugeeCraftRemove2FC1SF=Refugee Craft Remove 2FC, 1SF
 Effect/Name/RefugeeCraftRemove2GM1SF=Refugee Craft Remove 2GM, 1SF
 Effect/Name/RefugeeCraftRemove2RT1FC=Refugee Craft Remove 2RT, 1FC
+Effect/Name/RefugeeCraftRemove2SF1FC=Refugee Craft Remove 2SF, 1FC
 Effect/Name/RefugeeCraftRemove3FC=Refugee Craft Remove 3FC
 Effect/Name/RefugeeCraftRemove3GM=Refugee Craft Remove 3GM
 Effect/Name/ReleaseInterceptors2=Release Interceptors2
@@ -29252,6 +29302,7 @@ Effect/Name/SelfRepairApplyBehavior4=Self Repair Apply Behavior
 Effect/Name/SelfRepairEndApplyBehavior2=Self Repair End Apply Behavior
 Effect/Name/SelfRepairEndApplyBehavior3=Self Repair End Apply Behavior
 Effect/Name/SelfRepairEndApplyBehavior4=Self Repair End Apply Behavior
+Effect/Name/SensorSweep=Sensor Sweep
 Effect/Name/SentryWeaponPeriodicSet2=SentryWeaponPeriodicSet (Unnamed) Copy
 Effect/Name/SentryWeaponPeriodicSet22=SentryWeaponPeriodicSet (Unnamed) Copy
 Effect/Name/ServitorStrikeDamageA2=Servitor Strike Damage A Copy
@@ -31523,6 +31574,9 @@ Effect/Name/ZHybridPsionicShockwaveSpellDamage234=Psionic Shockwave Copy Copy 5
 Effect/Name/ZHybridPsionicShockwaveSpellDamage235=Psionic Shockwave Copy Copy 2
 Effect/Name/ZHybridPsionicShockwaveSpellDamage3=Psionic Shockwave
 Effect/Name/ZHybridPsionicShockwaveSpellDamage4=Psionic Shockwave
+Effect/Name/ZapperGun=Zapper Gun
+Effect/Name/ZapperGunDamage=Zapper Gun Damage
+Effect/Name/ZapperGunSlow=Zapper Gun Slow
 Effect/Name/ZealotPsiBladesCleaveSet10=Zealot Psi Blades (Cleave Set)
 Effect/Name/ZealotPsiBladesCleaveSet11=Zealot Psi Blades (Cleave Set)
 Effect/Name/ZealotPsiBladesCleaveSet2=Zealot Psi Blades (Cleave Set) Copy
@@ -33051,11 +33105,14 @@ RequirementNode/Tooltip/LT1207038827CountUnitSwarmHostMP3QueuedOrBetterAtUnit3=N
 RequirementNode/Tooltip/LT1327943848CountUnitScourge5QueuedOrBetterAtUnit10=Less than 10 Scourge
 RequirementNode/Tooltip/LT1401987719CountUnitMutalisk7QueuedOrBetterAtUnit2=No more than 2 Rattlers
 RequirementNode/Tooltip/LT1687767472CountUnitScourge5QueuedOrBetterAtUnit5=Less than 5 Scourge
+RequirementNode/Tooltip/LT1853237808CountUpgradeManufactureFusionCoreQueuedOrBetter15=Less than 50 Fusion Cores
 RequirementNode/Tooltip/LT1853237808CountUpgradeManufactureFusionCoreQueuedOrBetter50=Less than 50 Fusion Cores
+RequirementNode/Tooltip/LT1853237808CountUpgradeManufactureGunpowderMixerQueuedOrBetter15=Less than 50 Fusion Cores
 RequirementNode/Tooltip/LT1853237808CountUpgradeManufactureGunpowderMixerQueuedOrBetter50=Less than 50 Fusion Cores
 RequirementNode/Tooltip/LT1856959500CountUnitBaneling7QueuedOrBetterAtUnit3=less than 3 Eruptlings
 RequirementNode/Tooltip/LT1930678520CountUnitInfestedAbomination3QueuedOrBetterAtUnit3=No more than 3 Defects
 RequirementNode/Tooltip/LT1997165036CountUnitLurker2QueuedOrBetterAtUnit2=Less than 2 Snarelisks
+RequirementNode/Tooltip/LT2053466437CountUpgradeManufactureShellingFabricatorQueuedOrBetter15=Less than 50 Shelling Fabricator
 RequirementNode/Tooltip/LT2053466437CountUpgradeManufactureShellingFabricatorQueuedOrBetter50=Less than 50 Shelling Fabricator
 RequirementNode/Tooltip/LT2055757943CountUnitRoach5QueuedOrBetterAtUnit3=No more than 3 Termites
 RequirementNode/Tooltip/LT2141440390CountUnitLocustFlying262QueuedOrBetterAtUnit25842924222=Less than 4 Ravagelings
@@ -33075,6 +33132,7 @@ RequirementNode/Tooltip/LT3530165603CountUnitInterceptor12QueuedOrBetterAtUnit14
 RequirementNode/Tooltip/LT3611948901CountUnitLurker2QueuedOrBetterAtUnit4=Less than 4 Snarelisks
 RequirementNode/Tooltip/LT3650568372CountUnitNuke3QueuedOrBetterAtUnit3=No more than 3 Nuclear Missiles
 RequirementNode/Tooltip/LT3837032373CountUnitMutalisk7QueuedOrBetterAtUnit4=No more than 4 Rattlers
+RequirementNode/Tooltip/LT393313941CountUpgradeManufactureRecyclerTankQueuedOrBetter15=Less than 50 Recycler Tanks
 RequirementNode/Tooltip/LT393313941CountUpgradeManufactureRecyclerTankQueuedOrBetter50=Less than 50 Recycler Tanks
 RequirementNode/Tooltip/LT4047662850CountUnitSwarmHostMP3QueuedOrBetterAtUnit2=No more than 2 Swarming Hosts
 RequirementNode/Tooltip/LT4100454701CountUnitInfestedAbomination3QueuedOrBetterAtUnit2=No more than 2 Defects
@@ -33083,6 +33141,7 @@ RequirementNode/Tooltip/LT429841720CountUnitInterceptor9QueuedOrBetterAtUnit12=N
 RequirementNode/Tooltip/LT454479024CountUpgradeUmojanBasicUnitUpgrade5222422423222222362223222QueuedOrBetter75=No more than 75 Horrific Dead prepared
 RequirementNode/Tooltip/LT650896700CountUnitZergling6QueuedOrBetterAtUnit10=No More than 10 Nektalings
 RequirementNode/Tooltip/LT654778867CountUpgradeUmojanBasicUnitUpgrade52224224232222223622232222QueuedOrBetter75=No more than 75 Ghastly Dead prepared
+RequirementNode/Tooltip/LT879540594CountUpgradeManufactureChemicalStationQueuedOrBetter15=Less than 50 Chemical Stations
 RequirementNode/Tooltip/LT879540594CountUpgradeManufactureChemicalStationQueuedOrBetter50=Less than 50 Chemical Stations
 RequirementNode/Tooltip/LT890753747CountUnitHydralisk6QueuedOrBetterAtUnit2=No more than 2 Kereslisks
 RequirementNode/Tooltip/LTE1255560832CountUnitNydusNetwork2QueuedOrBetter1=No More Than 2 AI Centers
@@ -33700,6 +33759,7 @@ Unit/Name/ColossusTaldarimWeapon253324=ColossusTaldarimWeapon (Unnamed) Copy Cop
 Unit/Name/ColossusTaldarimWeapon2533242=ColossusTaldarimWeapon (Unnamed) Copy Copy 16
 Unit/Name/ColossusTaldarimWeapon25333=ColossusTaldarimWeapon (Unnamed) Copy Copy 20
 Unit/Name/ColossusTaldarimWeapon2534=ColossusTaldarimWeapon (Unnamed) Copy Copy 19
+Unit/Name/Combater=Combater
 Unit/Name/CommandCenter10=Mercenary Center
 Unit/Name/CommandCenter11=Holy Center
 Unit/Name/CommandCenter12=Construction Site
@@ -33734,6 +33794,7 @@ Unit/Name/ControlStation=Control Station
 Unit/Name/ControlledDrone=Remote Controlled Drone
 Unit/Name/CopyOfAdams=Psionic Copy
 Unit/Name/CoreOfScience=Core Of Science
+Unit/Name/CorrosiveDesolatorMissile=Corrosive Desolator Missile
 Unit/Name/CorruptionWeapon2=Corruption Copy
 Unit/Name/CorruptionWeapon22=Corruption Copy
 Unit/Name/CorruptionWeapon23=Corruption Copy
@@ -34097,7 +34158,6 @@ Unit/Name/Fanatic22=Confronting One
 Unit/Name/Fanatic23=Optio
 Unit/Name/FenixChampion2=Fenix
 Unit/Name/FireYGoliath=Fire-Y Goliath
-Unit/Name/Firebat2=Incinerator
 Unit/Name/Firebat3=Pyrokinetic Specialist
 Unit/Name/Firebat4=Biled Dead
 Unit/Name/Firebat5=Electrobat
@@ -34581,6 +34641,7 @@ Unit/Name/JakobsAngel=Jakob's Angel
 Unit/Name/JarbanInfestibleColonistHut2=Infested Hut
 Unit/Name/JasonAntamo=Antamo Jason
 Unit/Name/JasonAntamo2=Triton
+Unit/Name/Jumper=Jumper
 Unit/Name/K5Kerrigan2=Kerrigan
 Unit/Name/KD8Charge2=KD32 Charge
 Unit/Name/KaiserWormBanelingMissile2=Void Thrasher Baneling Missile
@@ -35607,7 +35668,6 @@ Unit/Name/Reactor2=Exterior Reactor
 Unit/Name/ReactorParamilitary=Exterior Reactor
 Unit/Name/RealNergal=Nergal
 Unit/Name/Reaper2=Throatcutter
-Unit/Name/Reaper3=Outrider
 Unit/Name/Reaper4=Civil Control Division
 Unit/Name/Reaper5=Raider
 Unit/Name/Reaver2=Artillery
@@ -36633,6 +36693,7 @@ UnitSubtitle/SwarmHostSplitA24=Carrion Strain
 Unpreventable=Unpreventable
 Unstoppable=Unstoppable
 Upgrade/Name/Abduct=SV Abduction Prism
+Upgrade/Name/AdvancedCombatAutomatons=Advanced Combat Automatons
 Upgrade/Name/AdvancedConstruction2=Multi-Struction
 Upgrade/Name/AdvancedConstruction22=Safety Level
 Upgrade/Name/AdvancedConstruction222=Scientists Dominion Outpost
@@ -36792,6 +36853,7 @@ Upgrade/Name/MicroFiltering222=!B (Base) 4: Advanced Transportship
 Upgrade/Name/MicroFiltering2222=!B (Base) 4: Nuclear Reactors
 Upgrade/Name/MicroFiltering22222=!B (Base) 4: Tsar Drills
 Upgrade/Name/MicroFiltering3=Imperial Academy
+Upgrade/Name/MobileAutomatons=Mobile Automatons
 Upgrade/Name/Montul=SF Montul
 Upgrade/Name/OptimizedServos=Optimized Servos
 Upgrade/Name/ParamilitaryUpgrade1=Mutineer Trench Shield
@@ -38362,6 +38424,7 @@ Weapon/Name/Claws5=Claws
 Weapon/Name/ColossusTaldarimChargedBeam2=Eclipse Blast
 Weapon/Name/CommandoRifle2=Davkin's Special Dish
 Weapon/Name/CorrosiveCleanser=Corrosive Cleanser
+Weapon/Name/CorrosiveDesolator=Corrosive Desolator
 Weapon/Name/CrucioShockCannon2=Crucio Shock Cannon
 Weapon/Name/CyberDevastatorMissileBatteryc=<c val="FFFF00">Devastator Missile Battery</c>
 Weapon/Name/DarkArchonChampionWeapon2=Mortal Blades
@@ -38547,6 +38610,7 @@ Weapon/Name/HailstormMissilePods323=Cyborg's Special Anti-Air Munition
 Weapon/Name/HailstormMissilePods324=Annihilator Railgun
 Weapon/Name/HailstormMissilePods33=Warrior's Special Munition
 Weapon/Name/HailstormMissilePods4=Skyfall Barrage
+Weapon/Name/HellRifle=Hell Rifle
 Weapon/Name/HellionTank2=Hell Spray
 Weapon/Name/HellionTank3=Napalm Spray Copy
 Weapon/Name/HellionTank4=Inferno Spray
@@ -39215,6 +39279,7 @@ Weapon/Name/WreckingCrewFighter4=Midas Missiles
 Weapon/Name/WreckingCrewFighter42=Midas Touch
 Weapon/Name/XelNagaChargedCrystal2=Concussive Beam
 Weapon/Name/XelNagaChargedCrystal3=Defensive Beam
+Weapon/Name/ZapperGun=Zapper Gun
 Weapon/Name/ZergTowerArtillery2=Symbiote Wind
 Weapon/Name/ZerusAlienTreeViper2=Stingy Fingy
 Weapon/Tip/AcidSpines2=
@@ -39283,6 +39348,7 @@ Weapon/Tip/TempestGround232=Stuns target for 5 seconds.
 Weapon/Tip/TempestGround3=Makes targeted enemy move and attack 50% slower and loose 6 life regeneration.
 Weapon/Tip/VoidSeeker22=Can only attack massive, heroic and psionic units.
 Weapon/Tip/WreckingCrewFighter2=Damages all units in a radius of 2.
+Weapon/Tip/ZapperGun=Slows the target by 75% for 1.5 seconds.
 Winx=Winx
 Workpower=<d ref="($BehaviorStackCount:AntamoAirAll1322442$)"/>
 Workpower321=<d ref="($BehaviorStackCount:AntamoAirAll132244$)"/>

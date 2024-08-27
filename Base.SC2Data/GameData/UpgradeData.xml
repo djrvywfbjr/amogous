@@ -236,6 +236,22 @@
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="AdvancedConstruction"/>
     </CUpgrade>
+    <CUpgrade id="AdvancedCombatAutomatons">
+        <Flags index="UpgradeCheat" value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.StateFlags[SuppressDetection]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.ModifyFlags[DisableWeapons]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.AbilClassDisableArray[CAbilAttack]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.TimeScale" Value="0.5"/>
+        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.AbilClassDisableArray[CAbilEffectInstant]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.AbilClassDisableArray[CAbilEffectTarget]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.BehaviorLinkDisableArray[0]" Value="HighEnergyRegeneration4"/>
+        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.BehaviorLinkDisableArray[3]" Value="HighEnergyRegeneration4"/>
+        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.BehaviorLinkDisableArray[1]" Value="HighEnergyRegeneration4"/>
+        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.BehaviorLinkDisableArray[4]" Value="HighEnergyRegeneration4"/>
+        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.BehaviorLinkDisableArray[5]" Value="HighEnergyRegeneration4"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="AdvancedConstruction"/>
+    </CUpgrade>
     <CUpgrade id="EmergencyWeapon">
         <Flags index="UpgradeCheat" value="0"/>
         <EffectArray Operation="Set" Reference="Weapon,H1ScrapCannon,Options[Hidden]" Value="0"/>
@@ -279,7 +295,7 @@
     </CUpgrade>
     <CUpgrade id="AdvancedConstruction242232222222">
         <Flags index="UpgradeCheat" value="0"/>
-        <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll272223,Modification.TimeScale" Value="0.4"/>
+        <EffectArray Operation="Subtract" Reference="Behavior,AntamoAirAll272223,Modification.TimeScale" Value="0.4"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="AdvancedConstruction"/>
     </CUpgrade>
@@ -389,6 +405,22 @@
         <MaxLevel value="30"/>
         <LeaderAlias value="AdvancedConstruction"/>
     </CUpgrade>
+    <CUpgrade id="MobileAutomatons">
+        <Flags index="UpgradeCheat" value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.StateFlags[SuppressDetection]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.ModifyFlags[DisableWeapons]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.AbilClassDisableArray[CAbilAttack]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.TimeScale" Value="0.5"/>
+        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.AbilClassDisableArray[CAbilEffectInstant]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.AbilClassDisableArray[CAbilEffectTarget]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.BehaviorLinkDisableArray[0]" Value="HighEnergyRegeneration4"/>
+        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.BehaviorLinkDisableArray[3]" Value="HighEnergyRegeneration4"/>
+        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.BehaviorLinkDisableArray[1]" Value="HighEnergyRegeneration4"/>
+        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.BehaviorLinkDisableArray[4]" Value="HighEnergyRegeneration4"/>
+        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.BehaviorLinkDisableArray[5]" Value="HighEnergyRegeneration4"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="AdvancedConstruction"/>
+    </CUpgrade>
     <CUpgrade id="ManufactureGunpowderMixer">
         <Flags index="UpgradeCheat" value="0"/>
         <EffectArray Reference="Behavior,HighEnergyRegeneration42,Modification.DamageDealtScaled[Ranged]" Value="1"/>
@@ -469,19 +501,18 @@
     </CUpgrade>
     <CUpgrade id="AdvancedConstruction2422332222">
         <Flags index="UpgradeCheat" value="0"/>
-        <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll2722223,Modification.AbilClassDisableArray[CAbilTransport]" Value="1"/>
         <EffectArray Reference="Unit,Marauder4,LifeMax" Value="30"/>
         <EffectArray Reference="Unit,Marauder4,LifeStart" Value="30"/>
         <EffectArray Reference="Unit,Marine313,LifeMax" Value="30"/>
         <EffectArray Reference="Unit,Marine313,LifeStart" Value="30"/>
-        <EffectArray Reference="Unit,Reaper3,LifeStart" Value="30"/>
-        <EffectArray Reference="Unit,Reaper3,LifeMax" Value="30"/>
+        <EffectArray Reference="Unit,Jumper,LifeStart" Value="30"/>
+        <EffectArray Reference="Unit,Jumper,LifeMax" Value="30"/>
         <EffectArray Reference="Unit,Marine7,LifeMax" Value="30"/>
         <EffectArray Reference="Unit,Ghost8,LifeStart" Value="30"/>
         <EffectArray Reference="Unit,Ghost8,LifeStart" Value="30"/>
         <EffectArray Reference="Unit,Marine7,LifeStart" Value="30"/>
-        <EffectArray Reference="Unit,Firebat2,LifeStart" Value="30"/>
-        <EffectArray Reference="Unit,Firebat2,LifeMax" Value="30"/>
+        <EffectArray Reference="Unit,Combater,LifeStart" Value="30"/>
+        <EffectArray Reference="Unit,Combater,LifeMax" Value="30"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="AdvancedConstruction"/>
     </CUpgrade>
@@ -489,10 +520,10 @@
         <Flags index="UpgradeCheat" value="0"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="AdvancedConstruction"/>
-        <EffectArray Operation="Multiply" Reference="Unit,Firebat2,Speed" Value="0.851500"/>
+        <EffectArray Operation="Multiply" Reference="Unit,Combater,Speed" Value="0.851500"/>
         <EffectArray Operation="Multiply" Reference="Unit,Marine7,Speed" Value="0.851500"/>
         <EffectArray Operation="Multiply" Reference="Unit,Ghost8,Speed" Value="0.851500"/>
-        <EffectArray Operation="Multiply" Reference="Unit,Reaper3,Speed" Value="0.851500"/>
+        <EffectArray Operation="Multiply" Reference="Unit,Jumper,Speed" Value="0.851500"/>
         <EffectArray Operation="Multiply" Reference="Unit,Marine313,Speed" Value="0.851500"/>
         <EffectArray Operation="Multiply" Reference="Unit,Marauder4,Speed" Value="0.851500"/>
     </CUpgrade>
@@ -529,11 +560,9 @@
     </CUpgrade>
     <CUpgrade id="AdvancedConstruction2422332222222222">
         <Flags index="UpgradeCheat" value="0"/>
-        <EffectArray Reference="Effect,ArcNodeDamage222,Amount" Value="3"/>
-        <EffectArray Reference="Effect,ArcNodeDamage22,Amount" Value="3"/>
-        <EffectArray Reference="Effect,ArcNodeDamage2,Amount" Value="3"/>
-        <EffectArray Reference="Effect,ArcNodeDamage2,Chance" Value="0.15"/>
-        <EffectArray Reference="Effect,ArcNodeDamage22,Chance" Value="0.3"/>
+        <EffectArray Reference="Effect,ArcNodeDamage222,Amount" Value="2"/>
+        <EffectArray Reference="Effect,ArcNodeDamage22,Amount" Value="2"/>
+        <EffectArray Reference="Effect,ArcNodeDamage2,Amount" Value="2"/>
         <EffectArray Operation="Set" Reference="Unit,Barracks172,CostResource[Vespene]" Value="0"/>
         <EffectArray Operation="Set" Reference="Unit,Barracks172,CostResource[Minerals]" Value="75"/>
         <EffectArray Operation="Set" Reference="Unit,EngineeringBay1822,CostResource[Minerals]" Value="75"/>
@@ -781,17 +810,17 @@
     </CUpgrade>
     <CUpgrade id="IndustrialAutomatons">
         <Flags index="UpgradeCheat" value="0"/>
-        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.StateFlags[SuppressDetection]" Value="0"/>
-        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.ModifyFlags[DisableWeapons]" Value="0"/>
-        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.AbilClassDisableArray[CAbilAttack]" Value="0"/>
-        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.TimeScale" Value="0.5"/>
-        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.AbilClassDisableArray[CAbilEffectInstant]" Value="0"/>
-        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.AbilClassDisableArray[CAbilEffectTarget]" Value="0"/>
-        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.BehaviorLinkDisableArray[0]" Value="HighEnergyRegeneration4"/>
-        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.BehaviorLinkDisableArray[3]" Value="HighEnergyRegeneration4"/>
-        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.BehaviorLinkDisableArray[1]" Value="HighEnergyRegeneration4"/>
-        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.BehaviorLinkDisableArray[4]" Value="HighEnergyRegeneration4"/>
-        <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.BehaviorLinkDisableArray[5]" Value="HighEnergyRegeneration4"/>
+        <EffectArray Operation="Set" Reference="Behavior,UnmannedBuilding,Modification.StateFlags[SuppressDetection]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,UnmannedBuilding,Modification.ModifyFlags[DisableWeapons]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,UnmannedBuilding,Modification.AbilClassDisableArray[CAbilAttack]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,UnmannedBuilding,Modification.TimeScale" Value="0.5"/>
+        <EffectArray Operation="Set" Reference="Behavior,UnmannedBuilding,Modification.AbilClassDisableArray[CAbilEffectInstant]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,UnmannedBuilding,Modification.AbilClassDisableArray[CAbilEffectTarget]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,UnmannedBuilding,Modification.BehaviorLinkDisableArray[0]" Value="HighEnergyRegeneration4"/>
+        <EffectArray Operation="Set" Reference="Behavior,UnmannedBuilding,Modification.BehaviorLinkDisableArray[3]" Value="HighEnergyRegeneration4"/>
+        <EffectArray Operation="Set" Reference="Behavior,UnmannedBuilding,Modification.BehaviorLinkDisableArray[1]" Value="HighEnergyRegeneration4"/>
+        <EffectArray Operation="Set" Reference="Behavior,UnmannedBuilding,Modification.BehaviorLinkDisableArray[4]" Value="HighEnergyRegeneration4"/>
+        <EffectArray Operation="Set" Reference="Behavior,UnmannedBuilding,Modification.BehaviorLinkDisableArray[5]" Value="HighEnergyRegeneration4"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="AdvancedConstruction"/>
     </CUpgrade>
@@ -1721,11 +1750,11 @@
     </CUpgrade>
     <CUpgrade id="OptimizedServos">
         <EffectArray Reference="Unit,Marine7,Speed" Value="0.300700"/>
-        <EffectArray Reference="Unit,Firebat2,Speed" Value="0.300700"/>
+        <EffectArray Reference="Unit,Combater,Speed" Value="0.300700"/>
         <EffectArray Reference="Unit,Ghost8,Speed" Value="0.398400"/>
         <EffectArray Reference="Unit,Marauder4,Speed" Value="0.300700"/>
         <EffectArray Reference="Unit,Marine313,Speed" Value="0.300700"/>
-        <EffectArray Reference="Unit,Reaper3,Speed" Value="0.500000"/>
+        <EffectArray Reference="Unit,Jumper,Speed" Value="0.500000"/>
     </CUpgrade>
     <CUpgrade id="SVMemorizer2">
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
