@@ -190,6 +190,9 @@
     <CRequirement id="HaveIndustrialAutomatons">
         <NodeArray index="Use" Link="CountUpgradeIndustrialAutomatonsCompleteOnly"/>
     </CRequirement>
+    <CRequirement id="HaveMobileAutomatons">
+        <NodeArray index="Use" Link="CountUpgradeMobileAutomatonsCompleteOnly"/>
+    </CRequirement>
     <CRequirement id="LearnMobileAutomatons">
         <EditorCategories value="Race:Protoss,TechType:Ability"/>
         <NodeArray index="Use" Link="CountUpgradeIndustrialAutomatonsCompleteOnly"/>

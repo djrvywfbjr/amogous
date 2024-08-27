@@ -5986,9 +5986,13 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="MicroFiltering3" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
-    <CRequirementCountUpgrade id="CountUpgradeMobileAutomatonsQueuedOrBetter">
+    <CRequirementCountUpgrade id="CountUpgradeMobileAutomatonsCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
         <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="MobileAutomatons" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMobileAutomatonsQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
         <Count Link="MobileAutomatons" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeMontulCompleteOnly">
@@ -6016,7 +6020,6 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeOptimizedServosQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="OptimizedServos" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeOracleEnergyUpgradeCompleteOnly">
@@ -16539,7 +16542,6 @@
         <OperandArray index="0" value="CountUpgradeMicroFiltering3QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeMobileAutomatonsQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeMobileAutomatonsQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeNovaArmorApolloInfantrySuitQueuedOrBetter">
@@ -16552,7 +16554,6 @@
         <OperandArray index="0" value="CountUpgradeNovaGadgetPulseGrenadesQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeOptimizedServosQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeOptimizedServosQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeParamilitaryUpgrade12QueuedOrBetter">
