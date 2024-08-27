@@ -45717,7 +45717,7 @@
         <RemoveValidatorArray value="hasShields"/>
         <Duration value="10"/>
         <Modification MoveSpeedMultiplier="0.7">
-            <VitalMaxArray index="Shields" value="300"/>
+            <VitalMaxArray index="Shields" value="150"/>
         </Modification>
         <DamageResponse ModifyMinimumDamage="1"/>
     </CBehaviorBuff>

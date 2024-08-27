@@ -9287,17 +9287,18 @@
             <Charge Link="Abil/CalldownMULE" Location="Unit"/>
             <Cooldown>
                 <Link value="Abil/CalldownMULE"/>
-                <Location value="Player"/>
+                <Location value="Unit"/>
                 <TimeStart value="20"/>
                 <TimeUse value="60"/>
             </Cooldown>
         </Cost>
+        <InterruptCost>
+            <Charge Location="Unit"/>
+            <Cooldown Location="Player"/>
+        </InterruptCost>
         <Range value="7"/>
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CalldownMULE2"/>
-        <InterruptCost>
-            <Cooldown Location="Player"/>
-        </InterruptCost>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="CalldownMULE22">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
@@ -22158,10 +22159,8 @@
                 <CountMax value="2"/>
                 <CountStart value="2"/>
                 <CountUse value="1"/>
-                <Link value="Abil/Frenzy"/>
                 <TimeUse value="50"/>
             </Charge>
-            <Cooldown Link="Abil/Frenzy"/>
             <Button DefaultButtonFace="DarkTemplarShakuras2" Requirements="HaveBarracks32"/>
             <Unit value="Warden"/>
         </InfoArray>
@@ -22170,10 +22169,8 @@
                 <CountMax value="2"/>
                 <CountStart value="2"/>
                 <CountUse value="1"/>
-                <Link value="Abil/Frenzy"/>
-                <TimeUse value="60"/>
+                <TimeUse value="42"/>
             </Charge>
-            <Cooldown Link="Abil/Frenzy"/>
             <Button DefaultButtonFace="Queen22"/>
             <Unit value="DaughterOfNektala"/>
         </InfoArray>
@@ -22182,10 +22179,8 @@
                 <CountMax value="2"/>
                 <CountStart value="2"/>
                 <CountUse value="1"/>
-                <Link value="Abil/Frenzy"/>
-                <TimeUse value="60"/>
+                <TimeUse value="75"/>
             </Charge>
-            <Cooldown Link="Abil/Frenzy"/>
             <Button DefaultButtonFace="CarrierAiur4" Requirements="HaveBarracks32"/>
             <Unit value="DarknessBringer"/>
         </InfoArray>
@@ -22194,10 +22189,8 @@
                 <CountMax value="2"/>
                 <CountStart value="2"/>
                 <CountUse value="1"/>
-                <Link value="Abil/Frenzy"/>
-                <TimeUse value="60"/>
+                <TimeUse value="28"/>
             </Charge>
-            <Cooldown Link="Abil/Frenzy"/>
             <Button DefaultButtonFace="Observer2"/>
             <Unit value="Seer"/>
         </InfoArray>
@@ -22206,10 +22199,8 @@
                 <CountMax value="2"/>
                 <CountStart value="2"/>
                 <CountUse value="1"/>
-                <Link value="Abil/Frenzy"/>
-                <TimeUse value="60"/>
+                <TimeUse value="42"/>
             </Charge>
-            <Cooldown Link="Abil/Frenzy"/>
             <Button DefaultButtonFace="WarpPrism3"/>
             <Unit value="WarpPrism22"/>
         </InfoArray>
@@ -22218,9 +22209,8 @@
                 <CountMax value="2"/>
                 <CountStart value="2"/>
                 <CountUse value="1"/>
-                <Link value="Abil/Frenzy"/>
+                <TimeUse value="63"/>
             </Charge>
-            <Cooldown Link="Abil/Frenzy"/>
             <Button DefaultButtonFace="CarrierAiur42"/>
             <Unit value="Tempest22"/>
         </InfoArray>
@@ -22229,10 +22219,8 @@
                 <CountMax value="2"/>
                 <CountStart value="2"/>
                 <CountUse value="1"/>
-                <Link value="Abil/Frenzy"/>
                 <TimeUse value="60"/>
             </Charge>
-            <Cooldown Link="Abil/Frenzy"/>
             <Button DefaultButtonFace="DarkTemplarShakuras22" Requirements="HaveBarracks322"/>
             <Unit value="ColossusTaldarim222"/>
         </InfoArray>

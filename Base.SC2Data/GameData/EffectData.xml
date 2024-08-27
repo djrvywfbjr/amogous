@@ -2,9 +2,9 @@
 <Catalog>
     <CEffectDamage id="90mmCannons2" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
-        <AttributeBonus index="Heroic" value="15"/>
+        <AttributeBonus index="Heroic" value="10"/>
         <Kind value="Ranged"/>
-        <Amount value="15"/>
+        <Amount value="20"/>
         <Death value="Blast"/>
     </CEffectDamage>
     <CEffectDamage id="90mmCannons3" parent="DU_WEAP">

@@ -14697,7 +14697,7 @@ Button/Tooltip/Hercules4=Massive transport ship.
 Button/Tooltip/HerculesLoad2=Loads units into the Hercules' hold.
 Button/Tooltip/HerculesUnloadAll2=Unloads all units.
 Button/Tooltip/HereticCannon=Primary defensive structure.<n/><n/><c val="ffff8a">Can attack ground and air units.</c><n/><c val="FFE303">Detector</c>
-Button/Tooltip/HighArchonPsiStorm232222=Increase tageted unit's life by 175.
+Button/Tooltip/HighArchonPsiStorm232222=Increase tageted unit's life by 150%
 Button/Tooltip/HighArchonPsiStorm2322222=Targeted structure gains life regeneration and starts to produce broodlings for 30 seconds.
 Button/Tooltip/HighArchonPsiStorm2322223=Target gains 85% attack speed.
 Button/Tooltip/HighArchonPsiStorm2322224=Targeted unit becomes a detector and gains 125 shields and 3 shield regeneration.
