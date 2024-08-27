@@ -2469,18 +2469,10 @@ bool libCD55B2B5_gt_AdvancedConstructionAutoUser2_Func (bool testConds, bool run
     for ( ; ( (auto808438BB_ai >= 0 && lv_i <= auto808438BB_ae) || (auto808438BB_ai < 0 && lv_i >= auto808438BB_ae) ) ; lv_i += auto808438BB_ai ) {
         lv_cmd = TechTreeUnitProducedAbilCmd(lv_ut, lv_i);
         lv_order = Order(lv_cmd);
-        if ((UnitOrderIsValid(lv_sCV, lv_order) == false)) {
-            break;
-        }
-
         lv_order = OrderTargetingUnit(lv_cmd, lv_target);
         OrderSetFlag(lv_order, c_cmdSmartClick, true);
         OrderSetFlag(lv_order, c_cmdQueued, lv_isQueuedOrder);
-        if ((UnitOrderIsValid(lv_sCV, lv_order) == true)) {
-            UnitIssueOrder(lv_sCV, lv_order, c_orderQueueReplace);
-            return true;
-        }
-
+        UnitIssueOrder(lv_sCV, lv_order, c_orderQueueReplace);
     }
     libNtve_gf_UIErrorMessage(PlayerGroupSingle(EventPlayer()), StringExternal("Error/CannotAdvancedConstruction"), SoundLink("UI_GenericError", -1));
     return true;
@@ -2539,17 +2531,9 @@ bool libCD55B2B5_gt_AdvancedConstructionAutoAutoCast2_Func (bool testConds, bool
     for ( ; ( (auto1827BD84_ai >= 0 && lv_i <= auto1827BD84_ae) || (auto1827BD84_ai < 0 && lv_i >= auto1827BD84_ae) ) ; lv_i += auto1827BD84_ai ) {
         lv_cmd = TechTreeUnitProducedAbilCmd(lv_ut, lv_i);
         lv_order = Order(lv_cmd);
-        if ((UnitOrderIsValid(lv_sCV, lv_order) == false)) {
-            return true;
-        }
-
         lv_order = OrderTargetingUnit(lv_cmd, lv_target);
         OrderSetFlag(lv_order, c_cmdSmartClick, true);
-        if ((UnitOrderIsValid(lv_sCV, lv_order) == true)) {
-            UnitIssueOrder(lv_sCV, lv_order, c_orderQueueAddToFront);
-            return true;
-        }
-
+        UnitIssueOrder(lv_sCV, lv_order, c_orderQueueAddToFront);
     }
     return true;
 }
@@ -3639,7 +3623,7 @@ bool libCD55B2B5_gt_MilitaryStation_Func (bool testConds, bool runActions) {
 
     // Conditions
     if (testConds) {
-        if (!(((UnitGetType(EventUnit()) == "Firebat2") || (UnitGetType(EventUnit()) == "Marine7") || (UnitGetType(EventUnit()) == "Ghost8") || (UnitGetType(EventUnit()) == "Reaper3") || (UnitGetType(EventUnit()) == "Marine313") || (UnitGetType(EventUnit()) == "SCV12") || (UnitGetType(EventUnit()) == "Marauder4")))) {
+        if (!(((UnitGetType(EventUnit()) == "Combater") || (UnitGetType(EventUnit()) == "Marine7") || (UnitGetType(EventUnit()) == "Ghost8") || (UnitGetType(EventUnit()) == "Jumper") || (UnitGetType(EventUnit()) == "Marine313") || (UnitGetType(EventUnit()) == "SCV12") || (UnitGetType(EventUnit()) == "Marauder4")))) {
             return false;
         }
     }
@@ -5717,9 +5701,9 @@ bool libCD55B2B5_gt_Gift_Func (bool testConds, bool runActions) {
 
     if ((libCD55B2B5_gv_randomPythonLook == 51)) {
         libNtve_gf_UnitCreateFacingPoint(1, "WidowMine52", c_unitCreateIgnorePlacement, UnitGetOwner(EventUnitTargetUnit()), UnitGetPosition(EventUnit()), UnitGetPosition(EventUnit()));
-        libNtve_gf_UnitCreateFacingPoint(5, "Firebat2", c_unitCreateIgnorePlacement, UnitGetOwner(EventUnitTargetUnit()), UnitGetPosition(EventUnit()), UnitGetPosition(EventUnit()));
+        libNtve_gf_UnitCreateFacingPoint(5, "Combater", c_unitCreateIgnorePlacement, UnitGetOwner(EventUnitTargetUnit()), UnitGetPosition(EventUnit()), UnitGetPosition(EventUnit()));
         libNtve_gf_UnitCreateFacingPoint(10, "Marine7", c_unitCreateIgnorePlacement, UnitGetOwner(EventUnitTargetUnit()), UnitGetPosition(EventUnit()), UnitGetPosition(EventUnit()));
-        libNtve_gf_UnitCreateFacingPoint(5, "Reaper3", c_unitCreateIgnorePlacement, UnitGetOwner(EventUnitTargetUnit()), UnitGetPosition(EventUnit()), UnitGetPosition(EventUnit()));
+        libNtve_gf_UnitCreateFacingPoint(5, "Jumper", c_unitCreateIgnorePlacement, UnitGetOwner(EventUnitTargetUnit()), UnitGetPosition(EventUnit()), UnitGetPosition(EventUnit()));
         UIDisplayMessage(libNtve_gf_AlliesEnemiesOfPlayerCountInactiveAndSelf(libNtve_ge_PlayerRelation_Ally, UnitGetOwner(EventUnitTargetUnit())), c_messageAreaSubtitle, StringExternal("Param/Value/lib_CD55B2B5_FF0879F9"));
     }
 
@@ -8141,7 +8125,7 @@ bool libCD55B2B5_gt__985Mode_Func (bool testConds, bool runActions) {
 
     // Conditions
     if (testConds) {
-        if (!((GameAttributeGameValue("[bnet:local/0.0/446325]2") == "0006"))) {
+        if (!((GameAttributeGameValue("2") == "0006"))) {
             return false;
         }
     }
@@ -8851,14 +8835,14 @@ bool libCD55B2B5_gt_FuckSimpleCommandCard_Func (bool testConds, bool runActions)
         return true;
     }
 
-    if ((GameAttributeGameValue("[bnet:local/0.0/446325]1") == "0002")) {
+    if ((GameAttributeGameValue("1") == "0002")) {
         HelpPanelAddTip(PlayerGroupAll(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/lib_CD55B2B5_731FB3F7"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/lib_CD55B2B5_8271D48F"), StringExternal("Param/Value/lib_CD55B2B5_A44EB668"), "Assets\\Textures\\btn-ability-zerg-corruption-color.dds");
         TriggerEnable(libCD55B2B5_gt_PhantomDeathAlways, true);
     }
     else {
         TriggerEnable(libCD55B2B5_gt_PhantomDeathAlways, false);
     }
-    if ((GameAttributeGameValue("[bnet:local/0.0/446325]1") == "0003")) {
+    if ((GameAttributeGameValue("1") == "0003")) {
         HelpPanelAddTip(PlayerGroupAll(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/lib_CD55B2B5_88E6A52C"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/lib_CD55B2B5_889E3690"), StringExternal("Param/Value/lib_CD55B2B5_5153FC7F"), "Assets\\Textures\\btn-ability-zerg-debilitatingbile.dds");
         TriggerEnable(libCD55B2B5_gt_DarkwoodVirus, true);
     }

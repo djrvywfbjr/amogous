@@ -1937,7 +1937,7 @@
         </InfoArray>
         <InfoArray index="Train2" Effect="MercGroundDrop" Location="Rally">
             <Button DefaultButtonFace="Reaper7"/>
-            <Unit index="0" value="Reaper3"/>
+            <Unit index="0" value="Jumper"/>
         </InfoArray>
         <InfoArray index="Train3" Time="60" Effect="MercGroundDrop" Location="Rally">
             <Button DefaultButtonFace="Ghost11" Requirements="HavePsionicHeart22432322232423222633"/>
@@ -1952,7 +1952,7 @@
         </InfoArray>
         <InfoArray index="Train6" Time="40" Effect="MercGroundDrop" Location="Rally">
             <Button DefaultButtonFace="FlameMech4" Requirements="HavePsionicHeart224323222324232226332"/>
-            <Unit index="0" value="Firebat2"/>
+            <Unit index="0" value="Combater"/>
         </InfoArray>
         <InfoArray index="Train7" Time="18.2" Effect="MercGroundDrop" Location="Rally">
             <Button DefaultButtonFace="Spectre6" Requirements="HavePsionicHeart22432322232423222634"/>
