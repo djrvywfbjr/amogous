@@ -12050,7 +12050,6 @@
         <WhichLocation Value="TargetUnitOrPoint"/>
         <SpawnEffect value="CalldownMULECreateSet2"/>
         <SpawnUnit value="SmallARES"/>
-        <SpawnCount value="3"/>
     </CEffectCreateUnit>
     <CEffectCreateUnit id="CalldownMULECreateUnit22">
         <ValidatorArray value="MULETargetCheck"/>
@@ -25597,7 +25596,7 @@
         <ArmorReduction value="0"/>
         <Kind value="Ranged"/>
         <Amount value="35"/>
-	</CEffectDamage>
+    </CEffectDamage>
     <CEffectDamage id="H66ScrapCannonDamage" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <ArmorReduction value="0"/>

@@ -4136,6 +4136,12 @@
         <EditorCategories value="Race:Protoss"/>
         <Universal value="1"/>
     </CButton>
+    <CButton id="MothershipCore2222322422243354">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-zagara-zerglingdodge.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-mothership.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="MothershipCore2222322"/>
+    </CButton>
     <CButton id="PlasmaCoater">
         <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
         <EditorCategories value="Race:Terran"/>

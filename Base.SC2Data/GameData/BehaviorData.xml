@@ -1004,6 +1004,210 @@
             <Chance value="1"/>
         </DamageResponse>
     </CBehaviorBuff>
+    <CBehaviorSpawn id="SpawnLarva222222">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
+        <Requirements value="UnknownRequirement7222"/>
+        <InfoArray>
+            <Unit value="Larva22222"/>
+            <Count value="2"/>
+            <MaxCount value="2"/>
+            <Requirements value="HatcherySpawnLarva"/>
+            <Delay value="9"/>
+        </InfoArray>
+        <Center value="0,-3"/>
+        <Offset value="0,-3"/>
+        <Offset value="1,-3"/>
+        <Offset value="2,-3"/>
+        <Offset value="3,-3"/>
+        <Offset value="3,-2"/>
+        <Offset value="3,-1"/>
+        <Offset value="3,0"/>
+        <Offset value="3,1"/>
+        <Offset value="3,2"/>
+        <Offset value="3,3"/>
+        <Offset value="2,3"/>
+        <Offset value="1,3"/>
+        <Offset value="0,3"/>
+        <Offset value="-1,3"/>
+        <Offset value="-2,3"/>
+        <Offset value="-3,3"/>
+        <Offset value="-3,2"/>
+        <Offset value="-3,1"/>
+        <Offset value="-3,0"/>
+        <Offset value="-3,-1"/>
+        <Offset value="-3,-2"/>
+        <Offset value="-3,-3"/>
+        <Offset value="-2,-3"/>
+        <Offset value="-1,-3"/>
+        <Slop value="1"/>
+        <Range value="1"/>
+        <Limit value="19"/>
+        <ConjoinedLink value="SpawnLarvaConjoined"/>
+    </CBehaviorSpawn>
+    <CBehaviorSpawn id="SpawnLarva22223">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
+        <Requirements value="UnknownRequirement73"/>
+        <InfoArray>
+            <Unit value="Larva2222"/>
+            <Count value="2"/>
+            <MaxCount value="8"/>
+            <Requirements value="HatcherySpawnLarva"/>
+            <Delay value="15"/>
+        </InfoArray>
+        <Center value="0,-3"/>
+        <Offset value="0,-3"/>
+        <Offset value="1,-3"/>
+        <Offset value="2,-3"/>
+        <Offset value="3,-3"/>
+        <Offset value="3,-2"/>
+        <Offset value="3,-1"/>
+        <Offset value="3,0"/>
+        <Offset value="3,1"/>
+        <Offset value="3,2"/>
+        <Offset value="3,3"/>
+        <Offset value="2,3"/>
+        <Offset value="1,3"/>
+        <Offset value="0,3"/>
+        <Offset value="-1,3"/>
+        <Offset value="-2,3"/>
+        <Offset value="-3,3"/>
+        <Offset value="-3,2"/>
+        <Offset value="-3,1"/>
+        <Offset value="-3,0"/>
+        <Offset value="-3,-1"/>
+        <Offset value="-3,-2"/>
+        <Offset value="-3,-3"/>
+        <Offset value="-2,-3"/>
+        <Offset value="-1,-3"/>
+        <Slop value="1"/>
+        <Range value="1"/>
+        <Limit value="19"/>
+        <ConjoinedLink value="SpawnLarvaConjoined"/>
+    </CBehaviorSpawn>
+    <CBehaviorSpawn id="SpawnLarva2223">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
+        <Requirements value="UnknownRequirement7"/>
+        <InfoArray>
+            <Unit value="Larva222"/>
+            <Count value="2"/>
+            <MaxCount value="6"/>
+            <Requirements value="HatcherySpawnLarva"/>
+            <Delay value="20"/>
+        </InfoArray>
+        <Center value="0,-3"/>
+        <Offset value="0,-3"/>
+        <Offset value="1,-3"/>
+        <Offset value="2,-3"/>
+        <Offset value="3,-3"/>
+        <Offset value="3,-2"/>
+        <Offset value="3,-1"/>
+        <Offset value="3,0"/>
+        <Offset value="3,1"/>
+        <Offset value="3,2"/>
+        <Offset value="3,3"/>
+        <Offset value="2,3"/>
+        <Offset value="1,3"/>
+        <Offset value="0,3"/>
+        <Offset value="-1,3"/>
+        <Offset value="-2,3"/>
+        <Offset value="-3,3"/>
+        <Offset value="-3,2"/>
+        <Offset value="-3,1"/>
+        <Offset value="-3,0"/>
+        <Offset value="-3,-1"/>
+        <Offset value="-3,-2"/>
+        <Offset value="-3,-3"/>
+        <Offset value="-2,-3"/>
+        <Offset value="-1,-3"/>
+        <Slop value="1"/>
+        <Range value="1"/>
+        <Limit value="19"/>
+        <ConjoinedLink value="SpawnLarvaConjoined"/>
+    </CBehaviorSpawn>
+    <CBehaviorSpawn id="SpawnLarva223">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
+        <Requirements value="UnknownRequirement72"/>
+        <InfoArray>
+            <Unit value="Larva22"/>
+            <MaxCount value="4"/>
+            <Requirements value="HatcherySpawnLarva"/>
+            <Delay value="5"/>
+        </InfoArray>
+        <Center value="0,-3"/>
+        <Offset value="0,-3"/>
+        <Offset value="1,-3"/>
+        <Offset value="2,-3"/>
+        <Offset value="3,-3"/>
+        <Offset value="3,-2"/>
+        <Offset value="3,-1"/>
+        <Offset value="3,0"/>
+        <Offset value="3,1"/>
+        <Offset value="3,2"/>
+        <Offset value="3,3"/>
+        <Offset value="2,3"/>
+        <Offset value="1,3"/>
+        <Offset value="0,3"/>
+        <Offset value="-1,3"/>
+        <Offset value="-2,3"/>
+        <Offset value="-3,3"/>
+        <Offset value="-3,2"/>
+        <Offset value="-3,1"/>
+        <Offset value="-3,0"/>
+        <Offset value="-3,-1"/>
+        <Offset value="-3,-2"/>
+        <Offset value="-3,-3"/>
+        <Offset value="-2,-3"/>
+        <Offset value="-1,-3"/>
+        <Slop value="1"/>
+        <Range value="1"/>
+        <Limit value="19"/>
+        <ConjoinedLink value="SpawnLarvaConjoined"/>
+    </CBehaviorSpawn>
+    <CBehaviorSpawn id="SpawnLarva23">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
+        <Requirements value="UnknownRequirement722"/>
+        <InfoArray>
+            <Unit value="Larva2"/>
+            <Count value="3"/>
+            <MaxCount value="9"/>
+            <Requirements value="HatcherySpawnLarva"/>
+            <Delay value="20"/>
+        </InfoArray>
+        <Center value="0,-3"/>
+        <Offset value="0,-3"/>
+        <Offset value="1,-3"/>
+        <Offset value="2,-3"/>
+        <Offset value="3,-3"/>
+        <Offset value="3,-2"/>
+        <Offset value="3,-1"/>
+        <Offset value="3,0"/>
+        <Offset value="3,1"/>
+        <Offset value="3,2"/>
+        <Offset value="3,3"/>
+        <Offset value="2,3"/>
+        <Offset value="1,3"/>
+        <Offset value="0,3"/>
+        <Offset value="-1,3"/>
+        <Offset value="-2,3"/>
+        <Offset value="-3,3"/>
+        <Offset value="-3,2"/>
+        <Offset value="-3,1"/>
+        <Offset value="-3,0"/>
+        <Offset value="-3,-1"/>
+        <Offset value="-3,-2"/>
+        <Offset value="-3,-3"/>
+        <Offset value="-2,-3"/>
+        <Offset value="-1,-3"/>
+        <Slop value="1"/>
+        <Range value="1"/>
+        <Limit value="19"/>
+        <ConjoinedLink value="SpawnLarvaConjoined"/>
+    </CBehaviorSpawn>
     <CBehaviorBuff id="UnmannedBuilding">
         <Cost>
             <Charge Link="Behavior/AntamoAirAll"/>
@@ -38634,7 +38838,7 @@
         <InfoIcon value="Assets\Textures\btn-tips-biosample.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification>
-            <VitalMaxArray index="Life" value="175"/>
+            <VitalMaxAdditiveMultiplierArray index="Life" value="1.5"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="QuickMutator222222">
@@ -38752,7 +38956,7 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <TimeScaleSource Value="Global"/>
         <Duration value="0.125"/>
-        <Modification SightMaximum="0" TimeScale="0.2"/>
+        <Modification TimeScale="0.2"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ReactorQueue2">
         <InfoFlags index="Hidden" value="1"/>

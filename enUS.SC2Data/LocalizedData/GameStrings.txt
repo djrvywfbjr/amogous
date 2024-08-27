@@ -8568,6 +8568,7 @@ Button/Name/MothershipCore222232242224334332=Unconcentrated Bombardment
 Button/Name/MothershipCore222232242224335=Simple Inner Structure
 Button/Name/MothershipCore2222322422243352=Straight To Hell
 Button/Name/MothershipCore2222322422243353=Simple Inner Structure
+Button/Name/MothershipCore2222322422243354=Simple Inner Structure
 Button/Name/MothershipCore222232242225=Dominant Life 1
 Button/Name/MothershipCore2222322422252=Dominant Life 2
 Button/Name/MothershipCore22223224222522=Dominant Life 3
@@ -12475,7 +12476,7 @@ Button/Tooltip/BurrowUp4234=Returns the unit to the surface.
 Button/Tooltip/BurrowUp4234gwa21=Transforms into Devastator for 80 <c val="FFFF00">Essence</c>.<n/>Highly durable unit that deals area damage.<n/><n/>Primal Wurms can be found in most regions of Zerus. These have adapted to survive temperatures under which most other creatures would boil.
 Button/Tooltip/BurrowUp423gwa21=Transforms into Carrion for 10 <c val="FFFF00">Essence</c>.<n/>Unit that deals more damage, has more speed and flight.<n/><n/>Based on the creatures breeding in the Primal Pool on Zerus, these organisms have adapted to outrun possible predators while still retaining durable carapace.
 Button/Tooltip/BurrowUp42gwa21=Transforms into Volatile Beetle for 10 <c val="FFFF00">Essence</c>.<n/>Unit that deals more damage and explodes on death.<n/><n/>While based on stolen genes from zerg banelings - selfless suicide units with only one purpose, Volatile Beetles evolved with most selfish of intentions. They purposefully have an extremely thin layer of carapace between their insides with corrosive bile and the outside world, making most predators of their size endangered by attacking them. Even larger creatures will suffer heavy damage by devouring them.
-Button/Tooltip/CalldownMULE2=Drops 3 Small A.R.E.S. to help you. They have a lot of health, but need to load in an Advanced Miner to have viable weaponary and movement speed. Lasts 20 seconds.
+Button/Tooltip/CalldownMULE2=Drops 1 Small A.R.E.S. to help you. It has a lot of health, but needs to load in an Advanced Miner to have viable weaponry and movement speed. Lasts 20 seconds.
 Button/Tooltip/CalldownMULE22=Drops 4 Guard Marines to help you. They have 90 seconds before they warp back seconds.<n/>Holds up to 2 charges. 30 seconds to regain a charge.<n/>Charges on this ability are shared globally, but cooldown is individual per Hail.
 Button/Tooltip/CalldownMULE222=Drops 6 weaker versions of Antamo Soldiers, that live for 60 seconds.
 Button/Tooltip/CalldownMULE223=Calls down a Last Aider, a healer that lasts 30 seconds. Last Aider also heals units in an area around them after dropping.
@@ -16035,6 +16036,7 @@ Button/Tooltip/MothershipCore222232242224334332=Increase damage and radius of He
 Button/Tooltip/MothershipCore222232242224335=Reduce cost of this brood's Smallings.
 Button/Tooltip/MothershipCore2222322422243352=Decreases energy cost of Ambusher Send on massive units by 25.
 Button/Tooltip/MothershipCore2222322422243353=Reduce cost of this brood's Smallings and allows unlocks their passive ability.
+Button/Tooltip/MothershipCore2222322422243354=Reduce cost of this brood's Smallings and increases their life by 5.
 Button/Tooltip/MothershipCore222232242225=Increases life of all Dominant Strain units by 20%.
 Button/Tooltip/MothershipCore2222322422252=Increases life of all Dominant Strain units by 20%.
 Button/Tooltip/MothershipCore22223224222522=Increases life of all Dominant Strain units by 20%.

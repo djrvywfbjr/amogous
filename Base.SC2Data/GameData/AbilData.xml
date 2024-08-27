@@ -13057,7 +13057,7 @@
     </CAbilTrain>
     <CAbilTrain id="CommandCenterTrain2">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
-        <InfoArray index="Train1" Time="10">
+        <InfoArray index="Train1" Time="12.6">
             <Button DefaultButtonFace="SCV2" State="Restricted">
                 <Flags index="ToSelection" value="1"/>
             </Button>
@@ -22097,7 +22097,7 @@
     </CAbilEffectTarget>
     <CAbilTrain id="GatewayTrain2" parent="GatewayTrain">
         <Name value="Abil/Name/GatewayTrain2"/>
-        <InfoArray index="Train1" Time="10">
+        <InfoArray index="Train1" Time="14">
             <Button DefaultButtonFace="Drone2"/>
             <Unit index="0" value="ForbiddenOne"/>
         </InfoArray>
@@ -22131,8 +22131,8 @@
         </InfoArray>
         <InfoArray index="Train9">
             <Charge>
-                <CountMax value="5"/>
-                <CountStart value="1"/>
+                <CountMax value="2"/>
+                <CountStart value="2"/>
                 <CountUse value="1"/>
                 <TimeUse value="50"/>
             </Charge>
@@ -22141,8 +22141,8 @@
         </InfoArray>
         <InfoArray index="Train10">
             <Charge>
-                <CountMax value="5"/>
-                <CountStart value="1"/>
+                <CountMax value="2"/>
+                <CountStart value="2"/>
                 <CountUse value="1"/>
                 <TimeUse value="60"/>
             </Charge>
@@ -22155,8 +22155,8 @@
         </InfoArray>
         <InfoArray index="Train12">
             <Charge>
-                <CountMax value="3"/>
-                <CountStart value="3"/>
+                <CountMax value="2"/>
+                <CountStart value="2"/>
                 <CountUse value="1"/>
                 <Link value="Abil/Frenzy"/>
                 <TimeUse value="50"/>
@@ -22165,23 +22165,62 @@
             <Button DefaultButtonFace="DarkTemplarShakuras2" Requirements="HaveBarracks32"/>
             <Unit value="Warden"/>
         </InfoArray>
-        <InfoArray index="Train13" Time="45">
+        <InfoArray index="Train13">
+            <Charge>
+                <CountMax value="2"/>
+                <CountStart value="2"/>
+                <CountUse value="1"/>
+                <Link value="Abil/Frenzy"/>
+                <TimeUse value="60"/>
+            </Charge>
+            <Cooldown Link="Abil/Frenzy"/>
             <Button DefaultButtonFace="Queen22"/>
             <Unit value="DaughterOfNektala"/>
         </InfoArray>
-        <InfoArray index="Train14" Time="75">
+        <InfoArray index="Train14">
+            <Charge>
+                <CountMax value="2"/>
+                <CountStart value="2"/>
+                <CountUse value="1"/>
+                <Link value="Abil/Frenzy"/>
+                <TimeUse value="60"/>
+            </Charge>
+            <Cooldown Link="Abil/Frenzy"/>
             <Button DefaultButtonFace="CarrierAiur4" Requirements="HaveBarracks32"/>
             <Unit value="DarknessBringer"/>
         </InfoArray>
-        <InfoArray index="Train15" Time="30">
+        <InfoArray index="Train15">
+            <Charge>
+                <CountMax value="2"/>
+                <CountStart value="2"/>
+                <CountUse value="1"/>
+                <Link value="Abil/Frenzy"/>
+                <TimeUse value="60"/>
+            </Charge>
+            <Cooldown Link="Abil/Frenzy"/>
             <Button DefaultButtonFace="Observer2"/>
             <Unit value="Seer"/>
         </InfoArray>
-        <InfoArray index="Train16" Time="30">
+        <InfoArray index="Train16">
+            <Charge>
+                <CountMax value="2"/>
+                <CountStart value="2"/>
+                <CountUse value="1"/>
+                <Link value="Abil/Frenzy"/>
+                <TimeUse value="60"/>
+            </Charge>
+            <Cooldown Link="Abil/Frenzy"/>
             <Button DefaultButtonFace="WarpPrism3"/>
             <Unit value="WarpPrism22"/>
         </InfoArray>
-        <InfoArray index="Train17" Time="50">
+        <InfoArray index="Train17">
+            <Charge>
+                <CountMax value="2"/>
+                <CountStart value="2"/>
+                <CountUse value="1"/>
+                <Link value="Abil/Frenzy"/>
+            </Charge>
+            <Cooldown Link="Abil/Frenzy"/>
             <Button DefaultButtonFace="CarrierAiur42"/>
             <Unit value="Tempest22"/>
         </InfoArray>
@@ -22191,7 +22230,7 @@
                 <CountStart value="2"/>
                 <CountUse value="1"/>
                 <Link value="Abil/Frenzy"/>
-                <TimeUse value="50"/>
+                <TimeUse value="60"/>
             </Charge>
             <Cooldown Link="Abil/Frenzy"/>
             <Button DefaultButtonFace="DarkTemplarShakuras22" Requirements="HaveBarracks322"/>
@@ -22201,19 +22240,19 @@
             <Button DefaultButtonFace="PrimalZergling24"/>
             <Unit value="Hydralisk7"/>
         </InfoArray>
-        <InfoArray index="Train28" Time="126">
+        <InfoArray index="Train28" Time="70">
             <Charge Location="Global"/>
             <Cooldown Location="Global"/>
             <Button DefaultButtonFace="ShadowBlade33"/>
             <Unit value="EternalOne"/>
         </InfoArray>
-        <InfoArray index="Train29" Time="126">
+        <InfoArray index="Train29" Time="70">
             <Charge Location="Global"/>
             <Cooldown Location="Global"/>
             <Button DefaultButtonFace="AdeptPassive2"/>
             <Unit value="EmbracingOne"/>
         </InfoArray>
-        <InfoArray index="Train30" Time="126">
+        <InfoArray index="Train30" Time="70">
             <Charge Location="Global"/>
             <Cooldown Location="Global"/>
             <Button DefaultButtonFace="DarkTemplar2"/>
@@ -56566,7 +56605,7 @@
                 <CountUse value="1"/>
                 <Link value="RaynorTimeBomb"/>
                 <Location value="Unit"/>
-                <TimeUse value="45"/>
+                <TimeUse value="84"/>
             </Charge>
             <Cooldown Link="Abil/TheMorosDevice"/>
         </Cost>
@@ -61629,7 +61668,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
             <Resource index="Minerals" value="125"/>
-            <Resource index="Vespene" value="50"/>
+            <Resource index="Vespene" value="100"/>
             <Charge>
                 <CountMax value="1"/>
                 <CountStart value="1"/>
@@ -67801,9 +67840,9 @@
         </InfoArray>
         <InfoArray index="Research9" Time="330"/>
         <InfoArray index="Research10" Time="120"/>
-        <InfoArray index="Research11" Time="180" Upgrade="Burrow">
-            <Resource index="Minerals" value="150"/>
-            <Resource index="Vespene" value="200"/>
+        <InfoArray index="Research11" Time="70" Upgrade="Burrow">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
             <Button DefaultButtonFace="BurrowDown" Requirements="UnknownRequirement45"/>
         </InfoArray>
         <InfoArray index="Research12" Time="155" Upgrade="UnknownUpgrade56">

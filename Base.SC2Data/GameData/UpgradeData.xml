@@ -5536,6 +5536,8 @@
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade522242242322222222422233234223222222">
         <EffectArray Operation="Set" Reference="Unit,HotSSwarmling34,CostResource[Minerals]" Value="7"/>
+        <EffectArray Operation="Set" Reference="Unit,HotSSwarmling34,LifeMax" Value="20"/>
+        <EffectArray Operation="Set" Reference="Unit,HotSSwarmling34,LifeStart" Value="20"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
