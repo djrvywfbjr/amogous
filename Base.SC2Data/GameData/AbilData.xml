@@ -4871,6 +4871,10 @@
             <Button DefaultButtonFace="UnknownButton44"/>
             <Unit value="Yeti2"/>
         </InfoArray>
+        <InfoArray index="Train17" Time="34">
+            <Button DefaultButtonFace="Spectre42" Requirements="HavePlagueCenter2322"/>
+            <Unit value="Queen8"/>
+        </InfoArray>
         <InfoArray index="Train28" Time="60">
             <Button DefaultButtonFace="HotSLeviathan2" Requirements="LastZergHostAndWeakHost"/>
             <Unit value="Leviathan32"/>

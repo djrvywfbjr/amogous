@@ -1004,6 +1004,9 @@
             <Chance value="1"/>
         </DamageResponse>
     </CBehaviorBuff>
+    <CBehaviorBuff id="QueenClassicParasite">
+        <Modification Detect="5"/>
+    </CBehaviorBuff>
     <CBehaviorSpawn id="SpawnLarva222222">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
@@ -40830,7 +40833,7 @@
     <CBehaviorBuff id="ShieldingEngine4">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="15"/>
-        <Modification WeaponRange="3" DetectBonus="7">
+        <Modification WeaponRange="3" Detect="7">
             <DamageDealtScaled index="Spell" value="20"/>
             <DamageDealtScaled index="Melee" value="20"/>
             <DamageDealtScaled index="Ranged" value="20"/>
@@ -40843,6 +40846,7 @@
         <DisplayDuration index="Ally" value="1"/>
         <DisplayDuration index="Neutral" value="1"/>
         <DisplayDuration index="Enemy" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zeratul-stalker-phasebattery.dds"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ShieldingEngine42">
         <EditorCategories value="AbilityorEffectType:Units"/>

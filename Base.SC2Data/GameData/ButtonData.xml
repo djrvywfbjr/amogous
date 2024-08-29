@@ -4219,6 +4219,10 @@
         <EditorCategories value="Race:Zerg"/>
         <HotkeyAlias value="PoisonNova223"/>
     </CButton>
+    <CButton id="QueenClassicParasite3">
+        <Icon value="Assets\Textures\btn-ability-zerg-viper-ocularparasite.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
     <CButton id="ResearchMobileAutomatons">
         <Icon value="Assets\Textures\talent-raynor-level01-infantryspecialist.dds"/>
     </CButton>
@@ -27099,6 +27103,15 @@
     <CButton id="Spectre4">
         <Icon value="Assets\Textures\btn-unit-zerg-mutalisk-broodlord.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-terran-spectre.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <Tooltip value="Button/Tooltip/FlyingRetard"/>
+    </CButton>
+    <CButton id="Spectre42">
+        <Name value="Button/Name/Spectre425"/>
+        <Tooltip value="Button/Tooltip/FlyingRetard2"/>
+        <Icon value="Assets\Textures\btn-unit-collection-primal-queen.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-spectre.dds"/>
+        <Hotkey value="Button/Hotkey/Spectre425"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
     <CButton id="Spectre5">

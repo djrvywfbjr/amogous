@@ -9278,6 +9278,7 @@ Button/Name/QueenBurstHeal222=Healing Mix
 Button/Name/QueenBurstHeal2222=Renew
 Button/Name/QueenBurstHeal3=Quick Fix
 Button/Name/QueenClassicParasite2=Incendiary Parasite
+Button/Name/QueenClassicParasite3=Ocular Parasite
 Button/Name/QueenMPEnsnare2=Creep Snare
 Button/Name/QueenMPSpawnBroodlings2=Shoot Hydralisk Parasite
 Button/Name/QueenMPSpawnBroodlings22=Launch Beast Parasite
@@ -10127,6 +10128,8 @@ Button/Name/Spectre23=Re-Build D4-D Ship
 Button/Name/Spectre232=D4-D Ship Is Already Build
 Button/Name/Spectre3=Prepare Remote Controlled Drone
 Button/Name/Spectre4=Birth Flying Nightmare
+Button/Name/Spectre42=Birth Flying Nightmare
+Button/Name/Spectre425=Birth Corrupted Queen
 Button/Name/Spectre5=Prepare Psi Controller
 Button/Name/Spectre52=Psi Controller Prepared
 Button/Name/Spectre6=Construct Militia Trooper Armor
@@ -13428,7 +13431,7 @@ Button/Tooltip/CombatShield2235=Gain 500 shields for 30 seconds.
 Button/Tooltip/CombatShield22352=Gain 300 shields and 25 life regeneration for 20 seconds. Autocasts when caster has less than 1/3 of maximum hp.
 Button/Tooltip/CombatShield22353=Gain 200 shields and 100 life renegeration for 5 seconds. Autocasts when life is under 30%.
 Button/Tooltip/CombatShield23=Activates built-in armor. Increases armor by 3, life by 50, but multiplies speed by 0.65, removes 1 range. On fatal damage, removes the armor, making it a normal unit again.
-Button/Tooltip/CombatShield24=Enables Legendary Weapon for 15 seconds as well as increases damage by 25, range by 3, life by 500.<n/>Weapon has area of effect damage and cannot damage friendly units.<n/>The cooldown on it is global per player.
+Button/Tooltip/CombatShield24=Enables Legendary Weapon for 15 seconds as well as increases damage by 25, range by 3, life by 500 and grants detection.<n/>Weapon has area of effect damage and cannot damage friendly units.<n/>The cooldown on it is global per player.
 Button/Tooltip/CombatShield242=Enables Thermo-Psionic Missiles for 20 seconds as well as increases damage by 35, range by 3, life by 500.<n/>Weapon has area of effect damage and cannot damage friendly units.<n/>The cooldown on it is global per player.
 Button/Tooltip/CombatShield25=Enables a weapon, that confuses targeted enemies for 10 seconds.
 Button/Tooltip/CombatShield252=Enables weapon that deals more damage to light enemies.
@@ -14401,6 +14404,8 @@ Button/Tooltip/FleetBeacon8=Contains upgrades for Phoenixes and Void Rays.<n/><n
 Button/Tooltip/FleetBeacon8321wafwa=Contains an upgrade and enables units.
 Button/Tooltip/FleetBeacon9=Contains upgrades.
 Button/Tooltip/FlyingNemesis=Artillery fighter. Has a powerful anti-ground shot and up to 10 blackout missiles.
+Button/Tooltip/FlyingRetard=Fast air unit. Attacks deal higher damage to air units and spread Flyer plague.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/FlyingRetard2=Backline unit. Attacks apply Biological Plague in an area. Can use Ocular Parasite and Rapid Transfusion.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/ForbiddenOne=Basic worker unit. Can harvest minerals and vespene gas. Can transform into structures.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/ForceField2=Barrier that lasts <d time="15"/> and impedes movement of ground units. Massive units will shatter Force Fields on contact.
 Button/Tooltip/Forge10=Contains weapon and armor upgrades for Protoss ground units and shield upgrades for all Protoss units and structures.<n/><n/><c val="ffff8a">Enables:</c><n/>- Photon Cannons from Probes
@@ -16881,6 +16886,7 @@ Button/Tooltip/QueenClassic2=Flying Support Unit. Can use Parasite, Ensnare, Spa
 Button/Tooltip/QueenClassic22=Flying Support Unit. Can use Parasite, Ensnare, Spawn Broodlings and Spawn Creep Tumor.
 Button/Tooltip/QueenClassic3=Flying Support Unit. Can use Parasite, Ensnare, Spawn Broodlings and Spawn Creep Tumor.
 Button/Tooltip/QueenClassicParasite2=Infect the target unit with an Incendiary Parasite for 30 seconds, granting detection and firing a 30(30 bonus to armored) damage to enemies in 8 range of them every 2 seconds.
+Button/Tooltip/QueenClassicParasite3=Infect the target unit with a Parasite, granting vision of everything the infected unit can see and providing detection in a radius of 5.
 Button/Tooltip/QueenMPEnsnare2=Launch a projectile, slowing enemies by 65% and reducing their ranged attack range by 3 around the impact area for 10 seconds. Enemies must be on creep to be weakened,
 Button/Tooltip/QueenMPSpawnBroodlings2=Kills target non-massive unit and spawns 4 hydralisks.
 Button/Tooltip/QueenMPSpawnBroodlings22=Kills target non-massive and non-heroic unit and spawns 4 Beasts. Beasts last 60 seconds.
@@ -17963,6 +17969,7 @@ Button/Tooltip/Spectre23=Re-builds a D4-D Ship from remains of the last one.
 Button/Tooltip/Spectre232=When destroyed, you can rebuild D4-D Ship here.
 Button/Tooltip/Spectre3=Infiltration unit. Can use Ultrasonic Pulse and Cloak. Can also call down Tactical Nukes built at the Ghost Academy.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/Spectre4=Infiltration unit. Can use Ultrasonic Pulse and Cloak. Can also call down Tactical Nukes built at the Ghost Academy.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/Spectre42=Infiltration unit. Can use Ultrasonic Pulse and Cloak. Can also call down Tactical Nukes built at the Ghost Academy.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/Spectre5=Infiltration unit. Can use Ultrasonic Pulse and Cloak. Can also call down Tactical Nukes built at the Ghost Academy.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/Spectre52=Unit, that can use ultrasonic pulse, confusion and mind control.
 Button/Tooltip/Spectre6=Infiltration unit. Can use Ultrasonic Pulse and Cloak. Can also call down Tactical Nukes built at the Ghost Academy.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
@@ -21886,6 +21893,9 @@ Effect/Name/CopyBuildingAttackOrder2=Copy Building Attack Order Copy
 Effect/Name/CopyBuildingAttackOrder3=Copy Building Attack Order Copy 2
 Effect/Name/CopyOrders2=Copy Orders Copy
 Effect/Name/CopyOrders3=Copy Orders Copy 2
+Effect/Name/CorQueenAttack=CorQueen Attack
+Effect/Name/CorQueenDamage=CorQueen Damage
+Effect/Name/CorQueenSet=CorQueen Set
 Effect/Name/CorpsAgonizerVikingAoESearch=CorpsAgonizerVikingAoESearch
 Effect/Name/CorpsMarauderAoE=CorpsMarauderAoE
 Effect/Name/CorpserRemoveBehavior2=Corpser Remove Behavior
@@ -35460,6 +35470,7 @@ Unit/Name/PrimalRoachWeapon242=Primal Roach Copy Copy 3
 Unit/Name/PrimalRoachWeapon3=Primal Roach Copy 2
 Unit/Name/PrimalRoachWeapon4=Primal Roach
 Unit/Name/PrimalRoachWeapon5=Primal Roach
+Unit/Name/PrimalRoachWeapon6=Primal Roach
 Unit/Name/PrimalTownHall2=Primal Elder
 Unit/Name/PrimalTownHall22=Ancient Of Wonders
 Unit/Name/PrimalTownHall222=Mammoth Hive
@@ -35566,6 +35577,7 @@ Unit/Name/Pylon8=Literally A Pylon
 Unit/Name/Pylon82=Python Projector
 Unit/Name/Pylon9=Literally A Pylon
 Unit/Name/Pylon92=Pylon Placeholder 2 (PYTHONFENDER)
+Unit/Name/Queen10=Queen
 Unit/Name/Queen2=Henta
 Unit/Name/Queen22=Hanta's Body
 Unit/Name/Queen3=Last Queen
@@ -35586,7 +35598,7 @@ Unit/Name/Queen62222=Nekta'la
 Unit/Name/Queen622222=Nekta'la
 Unit/Name/Queen623=Nekta'la
 Unit/Name/Queen7=Contrived Queen
-Unit/Name/Queen8=Queen
+Unit/Name/Queen8=Corrupted Queen
 Unit/Name/Queen82=Queen
 Unit/Name/Queen822=Queen
 Unit/Name/Queen8222=Queen
@@ -38962,6 +38974,7 @@ Weapon/Name/PhotonCannon4=Phase Cannon
 Weapon/Name/PhotonCannon5=Flesh Burner
 Weapon/Name/PhotonCannon6=Photon Cannon
 Weapon/Name/PhotonCannon62=Photon Overload
+Weapon/Name/PlaguedBile=Plagued Bile
 Weapon/Name/PointDefenseLaser2=Point Defense Array
 Weapon/Name/Predator2=Mechpiercer Claws
 Weapon/Name/PrimalBaseWeapon2=Master's Call
