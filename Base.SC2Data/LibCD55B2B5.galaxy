@@ -3623,7 +3623,7 @@ bool libCD55B2B5_gt_MilitaryStation_Func (bool testConds, bool runActions) {
 
     // Conditions
     if (testConds) {
-        if (!(((UnitGetType(EventUnit()) == "Combater") || (UnitGetType(EventUnit()) == "Marine7") || (UnitGetType(EventUnit()) == "Ghost8") || (UnitGetType(EventUnit()) == "Jumper") || (UnitGetType(EventUnit()) == "Marine313") || (UnitGetType(EventUnit()) == "SCV12") || (UnitGetType(EventUnit()) == "Marauder4")))) {
+        if (!(((UnitGetType(EventUnit()) == "Combater") || (UnitGetType(EventUnit()) == "Brazier") || (UnitGetType(EventUnit()) == "Marine7") || (UnitGetType(EventUnit()) == "Ghost8") || (UnitGetType(EventUnit()) == "Jumper") || (UnitGetType(EventUnit()) == "Marine313") || (UnitGetType(EventUnit()) == "SCV12") || (UnitGetType(EventUnit()) == "Marauder4")))) {
             return false;
         }
     }
