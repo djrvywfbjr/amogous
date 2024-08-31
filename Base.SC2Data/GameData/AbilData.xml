@@ -12,6 +12,17 @@
         <AINotifyEffect value="XenWarrior6"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="EquipPlasmaCoater" Requirements="Craft2FC1SF"/>
     </CAbilEffectInstant>
+    <CAbilEffectInstant id="Ab2StormcallerUplink">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="XenWarrior622322335"/>
+        <Effect index="0" value="CraftStormcallerUplink"/>
+        <Flags index="BestUnit" value="1"/>
+        <Cost>
+            <Charge CountMax="1" CountUse="-1"/>
+        </Cost>
+        <AINotifyEffect value="XenWarrior6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipStormcallerUplink" Requirements="Craft2FC1SF2"/>
+    </CAbilEffectInstant>
     <CAbilEffectTarget id="AdvancedConstructionAuto">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <Flags index="AllowMovement" value="1"/>
@@ -29774,8 +29785,9 @@
     <CAbilEffectTarget id="DivineIntervention">
         <Alignment value="Negative"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <SharedFlags index="Disabled" value="1"/>
         <Cost>
-            <Vital index="Energy" value="25"/>
+            <Cooldown TimeUse="30"/>
         </Cost>
         <TargetFilters value="Biological,Visible;Self,Structure,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="15"/>
@@ -29784,6 +29796,7 @@
             <MatchFlags index="Link" value="0"/>
             <MatchFlags index="CasterUnit" value="1"/>
         </Marker>
+        <CursorEffect value="DivineIntervention"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="DivineIntervention"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="TemporarityCP2">

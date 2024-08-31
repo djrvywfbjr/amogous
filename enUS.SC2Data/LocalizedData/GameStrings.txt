@@ -22,6 +22,7 @@ Aaron=Giant
 Abgail=Former Royal Guard
 Abil/Name/Ab1PlasmaCoater=Ab1 Plasma Coater
 Abil/Name/Ab1PortableSensorTower=Ab1 Portable Sensor Tower
+Abil/Name/Ab2StormcallerUplink=Ab2 Stormcaller Uplink
 Abil/Name/AggressiveMutation2=Aggressive Mutation
 Abil/Name/AggressiveMutation22=Fanaticism
 Abil/Name/AlarakKnockback2=Trash
@@ -2979,6 +2980,7 @@ Awoken=Awoken
 Behavior/Name/15xUnitSpeed2=Extended Shift
 Behavior/Name/Ab1PlasmaCoater=(Ab1) Plasma Coater
 Behavior/Name/Ab1PortableSensorTower=(Ab1) Portable Sensor Tower
+Behavior/Name/Ab2StormcallerUplink=(Ab2) Stormcaller Uplink
 Behavior/Name/AggressiveMutation2=Aggressive Mutator
 Behavior/Name/AggressiveMutation22=Adapting
 Behavior/Name/AggressiveMutation23=Fanaticism
@@ -7278,6 +7280,7 @@ Button/Name/EquipPortableSensorTower=Equip Portable Sensor Tower
 Button/Name/EquipShellstormChaingun=Equip Shellstorm Chaingun
 Button/Name/EquipShrapnelRifle=Equip Shrapnel Rifle
 Button/Name/EquipSmartFireDartGuns=Equip Smart-Fire Dart Guns
+Button/Name/EquipStormcallerUplink=Equip Stormcaller Uplink
 Button/Name/EquipWarheadLauncher=Equip Warhead Launcher
 Button/Name/EquipWeapon=Equip Weapon
 Button/Name/EquipZapperGun=Equip Zapper Gun
@@ -14153,7 +14156,7 @@ Button/Tooltip/Disruptor2=Robotic disruption unit. Can use Purification Nova to 
 Button/Tooltip/Disruptor3=Robotic disruption unit. Can use Purification Nova to deal heavy area damage.
 Button/Tooltip/Disruptor4=Robotic disruption unit. Can use Purification Nova to deal heavy area damage.
 Button/Tooltip/Disruptor5=Robotic disruption unit. Can use Purification Nova to deal heavy area damage.
-Button/Tooltip/DivineIntervention=A careful shot, dealing <d ref="Effect,SnipeDamage,Amount"/> (<d ref="Effect,SnipeDamage,Amount + Effect,SnipeDamage,AttributeBonus[5]"/> vs. Psionic) damage. Ignores armor.<n/><n/><c val="#ColorAttackInfo">Can only target biological units.</c>
+Button/Tooltip/DivineIntervention=Calls down a lightning bolt, dealing 150 damage in a small area and stunning enemies for 1.5 seconds.
 Button/Tooltip/DominionKillTeam2=Marauder kill team.
 Button/Tooltip/DominionKillTeam3=Marauder kill team.
 Button/Tooltip/DominionKillTeam32=Marauder kill team.
@@ -14283,6 +14286,7 @@ Button/Tooltip/EquipPortableSensorTower=<c val="00FF00">Required parts:</c><n/><
 Button/Tooltip/EquipShellstormChaingun=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Gunpowder Mixer<n/><c val="00FF00">(2)</c> Shelling Fabricators<n/><n/>Equips the Serviceman armor with a fast-firing chaingun that hits multiple enemies in an area around main target, but target armor reduces damage of the weapon twice as much as usual.<n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
 Button/Tooltip/EquipShrapnelRifle=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(2)</c> Gunpowder Mixers<n/><c val="00FF00">(1)</c> Shelling Fabricator<n/><n/>Equips the Serviceman armor with a powerful long-ranged rifle, that deals great damage and is even stronger against Armored targets, but cannot fire too often.<n/><n/>This powerful rifle was originally designed for hunting. Most creatures' meat is made inedible due to explosive shrapnel blasts created by these rifles.
 Button/Tooltip/EquipSmartFireDartGuns=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Chemical Station<n/><c val="00FF00">(1)</c> Fusion Core<n/><c val="00FF00">(1)</c> Recycler Tank<n/><n/>Equips the Outrider armor with 2 pistols that attack different enemies each attack. The pistols mark targets for increased damage and reveal them, while also making them blind.<n/><n/>These weapons function by firing tracker darts that inject certain vision-weakening drugs from advanced weapons that can calculate the trajectory of the projectiles.
+Button/Tooltip/EquipStormcallerUplink=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(3)</c> Shelling Fabricators<n/><n/>Equips the Hunter Ranger armor with a satellite uplink, allowing it to call down lightning strikes that deal heavy damage and stun enemies in a small area.
 Button/Tooltip/EquipWarheadLauncher=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Gunpowder Mixer<n/><c val="00FF00">(1)</c> Recycler Tank<n/><c val="00FF00">(1)</c> Shelling Fabricator<n/><n/>Equips the Serviceman armor with a missile launcher that deals damage in a large area and increased damage to light units, but has an extremely long reload time.<n/><n/>This military rocket launcher design was never meant for the emergency colonization, but so little progress has been done on Psiwave Generators that Dominion authorities added them as a last-minute addition to finish clearing unfinished Construction Site shafts.
 Button/Tooltip/EquipWeapon=Shows available weapons that can be crafted for this unit by using parts made at Tools Manufacture.
 Button/Tooltip/EquipZapperGun=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Fusion Core<n/><c val="00FF00">(2)</c> Shelling Fabricators<n/><n/>Equips the Hunter Ranger armor with a shocker that reduces enemy attack and movement speed, but does not do much damage.<n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
@@ -14494,7 +14498,6 @@ Button/Tooltip/Gatherer=Basic builder. Warps in most of the structures.
 Button/Tooltip/GenerateCreep2=Makes the Dirge Beetle Monarch start to generate creep. Creep will only be generated when the Dirge Beetle Monarch isn't moving.
 Button/Tooltip/Ghost=Beastmaster
 Button/Tooltip/Ghost10=Beastmaster
-Button/Tooltip/Ghost102=Beastmaster
 Button/Tooltip/Ghost11=Beastmaster
 Button/Tooltip/Ghost12=Sniper. Can use Steady Targeting, EMP Round, and be upgraded to use Cloak. Can call down Tactical Nukes built at the Ghost Academy.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/Ghost13=Beastmaster
@@ -21932,6 +21935,7 @@ Effect/Name/CraftPortableSensorTower=Craft Portable Sensor Tower
 Effect/Name/CraftShellstormChaingun=Craft Shellstorm Chaingun
 Effect/Name/CraftShrapnelRifle=Craft Shrapnel Rifle
 Effect/Name/CraftSmartFireDartGuns=Craft Smart Fire Dart Guns
+Effect/Name/CraftStormcallerUplink=Craft Stormcaller Uplink
 Effect/Name/CraftWarheadLauncher=Craft Warhead Launcher
 Effect/Name/CraftZapperGun=Craft Zapper Gun
 Effect/Name/CreatePukePuddle12=Create Puke Puddle4
@@ -28345,6 +28349,7 @@ Effect/Name/RefugeeCraftRemove2RT1FC=Refugee Craft Remove 2RT, 1FC
 Effect/Name/RefugeeCraftRemove2SF1FC=Refugee Craft Remove 2SF, 1FC
 Effect/Name/RefugeeCraftRemove3FC=Refugee Craft Remove 3FC
 Effect/Name/RefugeeCraftRemove3GM=Refugee Craft Remove 3GM
+Effect/Name/RefugeeCraftRemove3SF=Refugee Craft Remove 3SF
 Effect/Name/ReleaseInterceptors2=Release Interceptors2
 Effect/Name/ReleaseInterceptors3=Release Interceptors3
 Effect/Name/ReleaseInterceptorsApplyTimedLife2=Release Interceptors Apply Timed Life2
@@ -34235,7 +34240,6 @@ Unit/Name/Gateway8=Blood Gate Of Pure Torment And Chaos Of Any Living Being In E
 Unit/Name/Gateway82=Force Cantonment
 Unit/Name/Gateway9=Waygate
 Unit/Name/Ghost10=Rifleman
-Unit/Name/Ghost102=Hunter Ranger
 Unit/Name/Ghost11=Revenant
 Unit/Name/Ghost12=Ghost
 Unit/Name/Ghost1223123213EEEEEEEEEEEEE1ret12t=Secret Operative

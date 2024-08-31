@@ -11114,6 +11114,11 @@
         <WhichUnit Value="Caster"/>
         <Behavior value="Ab1PlasmaCoater"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="CraftStormcallerUplink">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="Ab2StormcallerUplink"/>
+    </CEffectApplyBehavior>
     <CEffectEnumArea id="DivineIntervention">
         <EditorCategories value=""/>
         <ImpactLocation Value="TargetPoint"/>
@@ -25613,6 +25618,11 @@
         <PeriodicPeriodArray value="0.25"/>
         <PeriodicPeriodArray value="0.125"/>
     </CEffectCreatePersistent>
+    <CEffectModifyPlayer id="RefugeeCraftRemove3SF">
+        <EditorCategories value="Race:Zerg"/>
+        <WhichPlayer Value="Caster"/>
+        <Upgrades Upgrade="ManufactureShellingFabricator" Count="-3"/>
+    </CEffectModifyPlayer>
     <CEffectDamage id="ScrapCannonDamage" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <ArmorReduction value="0"/>

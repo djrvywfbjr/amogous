@@ -4136,6 +4136,12 @@
         <EditorCategories value="Race:Protoss"/>
         <Universal value="1"/>
     </CButton>
+    <CButton id="EquipStormcallerUplink">
+        <Icon value="Assets\Textures\btn-upgrade-artanis-healingpsionicstorm.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
     <CButton id="MothershipCore2222322422243354">
         <Icon value="Assets\Textures\btn-upgrade-zerg-zagara-zerglingdodge.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-mothership.dds"/>

@@ -929,6 +929,10 @@
         <OperandArray value="GTECountUpgradeManufactureRecyclerTankCompleteOnly2"/>
         <OperandArray value="GTECountUpgradeManufactureShellingFabricatorCompleteOnly1"/>
     </CRequirementAnd>
+    <CRequirementAnd id="AndGTECountUpgradeManufactureShellingFabricatorCompleteOnly3">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="GTECountUpgradeManufactureShellingFabricatorCompleteOnly3"/>
+    </CRequirementAnd>
     <CRequirementAnd id="AndNotCountBehaviorVoidSeekerDock2CompleteOnlyAtUnitCountUpgradeUmojanBasicUnitUpgrade52224224232222223943CompleteOnly">
         <OperandArray value="NotCountBehaviorVoidSeekerDock2CompleteOnlyAtUnit"/>
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade52224224232222223943CompleteOnly"/>
@@ -5988,7 +5992,6 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeMobileAutomatonsCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="MobileAutomatons" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeMobileAutomatonsQueuedOrBetter">
@@ -15712,6 +15715,11 @@
     <CRequirementGTE id="GTECountUpgradeManufactureShellingFabricatorCompleteOnly2">
         <OperandArray index="0" value="CountUpgradeManufactureShellingFabricatorCompleteOnly"/>
         <OperandArray index="1" value="2"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTECountUpgradeManufactureShellingFabricatorCompleteOnly3">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeManufactureShellingFabricatorCompleteOnly"/>
+        <OperandArray index="1" value="3"/>
     </CRequirementGTE>
     <CRequirementLT id="LT1059713976CountUnitInterceptor122QueuedOrBetterAtUnit2">
         <OperandArray index="0" value="CountUnitInterceptor122QueuedOrBetterAtUnit"/>
