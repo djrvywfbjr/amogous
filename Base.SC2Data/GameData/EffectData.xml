@@ -11114,6 +11114,28 @@
         <WhichUnit Value="Caster"/>
         <Behavior value="Ab1PlasmaCoater"/>
     </CEffectApplyBehavior>
+    <CEffectEnumArea id="DivineIntervention">
+        <EditorCategories value=""/>
+        <ImpactLocation Value="TargetPoint"/>
+        <SearchFilters value="-;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="0.5" Effect="DivineInterventionSet"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="DivineInterventionDamage">
+        <EditorCategories value=""/>
+        <Amount value="150"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="DivineInterventionStun">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <Behavior value="DehakaLeapStun"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="1.5"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="DivineInterventionSet">
+        <EditorCategories value=""/>
+        <EffectArray value="DivineInterventionDamage"/>
+        <EffectArray value="DivineInterventionStun"/>
+    </CEffectSet>
     <CEffectDamage id="HellRifleDamage" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <AttributeBonus index="Biological" value="15"/>

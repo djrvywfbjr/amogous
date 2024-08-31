@@ -29771,6 +29771,21 @@
         <AutoCastAcquireLevel value="Defensive"/>
         <AutoCastFilters value="Visible;-"/>
     </CAbilEffectInstant>
+    <CAbilEffectTarget id="DivineIntervention">
+        <Alignment value="Negative"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Cost>
+            <Vital index="Energy" value="25"/>
+        </Cost>
+        <TargetFilters value="Biological,Visible;Self,Structure,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="15"/>
+        <CastIntroTime value="0.5"/>
+        <Marker>
+            <MatchFlags index="Link" value="0"/>
+            <MatchFlags index="CasterUnit" value="1"/>
+        </Marker>
+        <CmdButtonArray index="Execute" DefaultButtonFace="DivineIntervention"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="TemporarityCP2">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ColossusTaldarimLM242"/>
