@@ -4136,6 +4136,17 @@
         <EditorCategories value="Race:Protoss"/>
         <Universal value="1"/>
     </CButton>
+    <CButton id="Marauder334325424">
+        <Tooltip value="Button/Tooltip/Marauder3343254242"/>
+        <Icon value="Assets\Textures\btn-ability-zerg-stukov-ensnarecdr.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-marauder.dds"/>
+        <Hotkey value="Button/Hotkey/Marau12der3343254"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="Marauder334325"/>
+    </CButton>
+    <CButton id="MicrobialAgitation2">
+        <Icon value="Assets\Textures\btn-ability-zerg-corruption-multi.dds"/>
+    </CButton>
     <CButton id="MothershipCore2222322422243354">
         <Icon value="Assets\Textures\btn-upgrade-zerg-zagara-zerglingdodge.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-mothership.dds"/>
@@ -17491,6 +17502,7 @@
         <Icon value="Assets\Textures\wireframe-critter-scantipede.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-terran-marine.dds"/>
         <EditorCategories value="Race:Terran"/>
+        <Hotkey value="Button/Hotkey/CorOne"/>
     </CButton>
     <CButton id="Marine7">
         <Icon value="Assets\Textures\btn-unit-terran-troopermengskrifle.dds"/>
@@ -29270,6 +29282,9 @@
     <CButton id="UnknownButton118">
         <Icon value="Assets\Textures\btn-ability-terran-surfacetoairtargeting.dds"/>
     </CButton>
+    <CButton id="MicrobialAgitation">
+        <Icon value="Assets\Textures\btn-ability-zerg-corruption-color.dds"/>
+    </CButton>
     <CButton id="UnknownButton12">
         <Icon value="Assets\Textures\btn-upgrade-zerg-monarchblades.dds"/>
     </CButton>
@@ -31888,6 +31903,9 @@
     </CButton>
     <CButton id="VoidShieldCapacitor2">
         <Icon value="Assets\Textures\btn-ability-protoss-shieldcapacitor.dds"/>
+    </CButton>
+    <CButton id="AIAssistedMining">
+        <Icon value="Assets\Textures\btn-upgrade-terran-mobiusreactor.dds"/>
     </CButton>
     <CButton id="VoidShieldCapacitor3">
         <Icon value="Assets\Textures\btn-ability-stetmann-banelingmanashield.dds"/>

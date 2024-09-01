@@ -50,6 +50,15 @@
             <AbilClassDisableArray index="CAbilTransport" value="1"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="AIMining">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="15"/>
+        <Modification>
+            <ResourceHarvestTimeMultiplier index="Minerals" value="0.7"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="Ab1PlasmaCoater">
         <BehaviorFlags index="Permanent" value="1"/>
         <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
@@ -1211,6 +1220,14 @@
         <Limit value="19"/>
         <ConjoinedLink value="SpawnLarvaConjoined"/>
     </CBehaviorSpawn>
+    <CBehaviorBuff id="UnknownBehavior47">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification TimeScale="2">
+            <VitalRegenArray index="Life" value="-10"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="UnmannedBuilding">
         <Cost>
             <Charge Link="Behavior/AntamoAirAll"/>

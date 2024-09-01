@@ -73681,6 +73681,11 @@
             <Change value="1000"/>
         </VitalArray>
     </CEffectModifyUnit>
+    <CEffectApplyBehavior id="VoidShieldCapacitor22">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="AIMining"/>
+    </CEffectApplyBehavior>
     <CEffectModifyUnit id="VoidShieldCapacitor3">
         <EditorCategories value="Race:Protoss"/>
         <ImpactUnit Value="Source"/>

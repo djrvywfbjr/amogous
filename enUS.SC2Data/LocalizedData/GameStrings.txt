@@ -1126,6 +1126,7 @@ Abil/Name/MengskVikingAssaultMode3=Assault Mode Copy 2
 Abil/Name/MengskVikingFighterMode2=Fighter Mode Copy
 Abil/Name/MengskVikingFighterMode3=Fighter Mode Copy 2
 Abil/Name/MetabolicStream=Metabolic Stream
+Abil/Name/Microbialagitation=Crap
 Abil/Name/MindBolt2=Psi Blast
 Abil/Name/MindBolt22=Psi Bolt
 Abil/Name/MindBolt23=Void Blast
@@ -1143,6 +1144,7 @@ Abil/Name/MindControl32=Steal
 Abil/Name/MindControl4=Take Control
 Abil/Name/Minerals=Minerals
 Abil/Name/Minerals2=Vespene Gas
+Abil/Name/MiningAI=Mining AI
 Abil/Name/MiscCreateHolographicCopy=Misc Create Holographic Copy
 Abil/Name/MissilePods2=Tsunami Missile Pods
 Abil/Name/MissilePods22=Transitional Missile Launchers
@@ -5269,6 +5271,7 @@ BoJack=BoJack
 Brainwashed Civilian=
 Brigand=Fringe Brigand
 Bucephalus=Bucephalus
+Button/Name/AIAssistedMining=AI-Assisted Mining
 Button/Name/AWrp2=Hatch Psi Master
 Button/Name/AWrp3=Dark Merge
 Button/Name/AWrp4=Archon Merge
@@ -8232,6 +8235,7 @@ Button/Name/Marauder33432542=Plague Eruption
 Button/Name/Marauder334325422=Plagued Blades
 Button/Name/Marauder3343254222=Plague Spray
 Button/Name/Marauder334325423=Plagued Air
+Button/Name/Marauder334325424=Plagued Bile
 Button/Name/Marauder4=Prepare Advanced Vanguard
 Button/Name/Marauder5=Birth Noxious Beast
 Button/Name/Marauder52=Birth Plague Warden
@@ -8424,6 +8428,8 @@ Button/Name/MercHellion2=Prepare Outback Hunter
 Button/Name/MercMedic2=Train Heaven's Angel
 Button/Name/MercMedicHeal2=Greater Restore
 Button/Name/MicroBot2=Sentry Bot Copy
+Button/Name/MicrobialAgitation=Microbial Agitation
+Button/Name/MicrobialAgitation2=Cease Microbial Agitation
 Button/Name/MindBolt2=Heretic Blast
 Button/Name/MindBolt22=Psi Bolt
 Button/Name/MindBolt23=Void Blast
@@ -11885,6 +11891,7 @@ Button/Name/Zergling7=Force Endoling Metamorphosis
 Button/Name/zerglingattackspeed2=Evolve Regenerative Flesh
 Button/Name/zerglingmovementspeed2=Evolve Psionic Connection
 Button/Tooltip/250mmStrikeCannons=Fires at a single unit or structure, stunning the target and dealing 1000 damage over 2 second seconds.<n/><n/><c val="#ColorAttackInfo">Can target ground units.</c>
+Button/Tooltip/AIAssistedMining=Provides a 30% increase in the Mineral harvesting speed for a short time.
 Button/Tooltip/AWrp2=Powerful Psionic Unit.
 Button/Tooltip/AWrp3=Sacrifices 2 Templar to create a dark archon. Dark Archons cannot attack, but have Feedback, Maelstorm and Mind Control abilities.
 Button/Tooltip/AWrp4=Sacrifices 2 Templar to create an Archon.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
@@ -14404,7 +14411,7 @@ Button/Tooltip/FleetBeacon8=Contains upgrades for Phoenixes and Void Rays.<n/><n
 Button/Tooltip/FleetBeacon8321wafwa=Contains an upgrade and enables units.
 Button/Tooltip/FleetBeacon9=Contains upgrades.
 Button/Tooltip/FlyingNemesis=Artillery fighter. Has a powerful anti-ground shot and up to 10 blackout missiles.
-Button/Tooltip/FlyingRetard=Fast air unit. Attacks deal higher damage to air units and spread Flyer plague.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/FlyingRetard=Fast air unit. Attacks deal higher damage to air units.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/FlyingRetard2=Backline unit. Attacks apply Biological Plague in an area. Can use Ocular Parasite and Rapid Transfusion.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/ForbiddenOne=Basic worker unit. Can harvest minerals and vespene gas. Can transform into structures.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/ForceField2=Barrier that lasts <d time="15"/> and impedes movement of ground units. Massive units will shatter Force Fields on contact.
@@ -15560,6 +15567,8 @@ Button/Tooltip/Marauder33432542=On death, Hunterlings spread Biological Plague t
 Button/Tooltip/Marauder334325422=Noxious Beasts spread Mechanical Plague to non-owned units around their attack targets.
 Button/Tooltip/Marauder3343254222=Plague Wardens spread Mechanical Plague to units around their attack target, but have a minimum range of 4.
 Button/Tooltip/Marauder334325423=Torrasques constantly spread Massive Plague to massive units around them.
+Button/Tooltip/Marauder334325424=On death, Hunterlings spread Biological Plague to all biological units in 5 radius around them.
+Button/Tooltip/Marauder3343254242=Corrupted Queen's attacks apply Biological plague to all affected targets.
 Button/Tooltip/Marauder4=Heavy assault infantry.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/Marauder4eaef54532=Combination of a Firebat and a Maraduer. Deals damage in an area to ground units.
 Button/Tooltip/Marauder5=Heavy assault infantry.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
@@ -15863,6 +15872,8 @@ Button/Tooltip/MichaelAntamo=A strong psionic master, who can turn enemies into 
 Button/Tooltip/MichaelAntamo2=A general.
 Button/Tooltip/MicroAngel=Durable support mech, extremely useful against enemies with 0 armor.
 Button/Tooltip/MicroBot2=Sentry Bot 209, for all your pacification needs.
+Button/Tooltip/MicrobialAgitation=Increases the production speed of affected structures by 100% at the cost of 7 life every second.
+Button/Tooltip/MicrobialAgitation2=Stops Microbial Agitation.
 Button/Tooltip/MindBolt2=Deals 150 damage to targeted unit or structure.
 Button/Tooltip/MindBolt22=Deals 100 damage to the targeted unit.
 Button/Tooltip/MindBolt23=Deals 150 damage to targeted unit or structure.
@@ -30630,6 +30641,7 @@ Effect/Name/VoidShadeAB2=Void Shade  Copy
 Effect/Name/VoidShadeAB3=Void Shade 
 Effect/Name/VoidShadeAB32=Primalist Apply Genome Shift Morph Behavior
 Effect/Name/VoidShieldCapacitor2=Void Shield Capacitor
+Effect/Name/VoidShieldCapacitor22=Void Shield Capacitor
 Effect/Name/VoidShieldCapacitor3=Heal Shields
 Effect/Name/VoidStalkerBlinkApplyRestore2=Blinkin' Jimmy Shield
 Effect/Name/VoidStalkerBlinkApplyRestore22=Rail Gun Overcharge
