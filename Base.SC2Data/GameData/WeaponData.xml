@@ -8487,6 +8487,15 @@
         <Period value="2"/>
         <Effect value="PrimalRoachLM5"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="PlaguedBile">
+        <EditorCategories value="Race:Zerg"/>
+        <Icon value="Assets\Textures\btn-ability-zerg-stukov-ensnarecdr.dds"/>
+        <DisplayEffect value="CorQueenDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="8"/>
+        <Period value="3"/>
+        <Effect value="CorQueenAttack"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="PrimalZergling2">
         <EditorCategories value="Race:Zerg"/>
         <Options index="Melee" value="1"/>

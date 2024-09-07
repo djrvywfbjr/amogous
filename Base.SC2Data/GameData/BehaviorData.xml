@@ -40,6 +40,25 @@
             <ModifyFlags index="DisableWeapons" value="1"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="15xUnitSpeed34">
+        <InfoFlags index="Hidden" value="1"/>
+        <BehaviorCategories index="Fast" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Requirements value="HavePsionicHeart224323222324232226322432422222"/>
+        <TimeScaleSource Value="Global"/>
+        <Modification>
+            <AbilClassDisableArray index="CAbilTransport" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AIMining">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="15"/>
+        <Modification>
+            <ResourceHarvestTimeMultiplier index="Minerals" value="0.7"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="Ab1PlasmaCoater">
         <BehaviorFlags index="Permanent" value="1"/>
         <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
@@ -1008,6 +1027,9 @@
             <Chance value="1"/>
         </DamageResponse>
     </CBehaviorBuff>
+    <CBehaviorBuff id="QueenClassicParasite">
+        <Modification Detect="5"/>
+    </CBehaviorBuff>
     <CBehaviorSpawn id="SpawnLarva222222">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
@@ -1212,6 +1234,14 @@
         <Limit value="19"/>
         <ConjoinedLink value="SpawnLarvaConjoined"/>
     </CBehaviorSpawn>
+    <CBehaviorBuff id="UnknownBehavior47">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification TimeScale="2">
+            <VitalRegenArray index="Life" value="-10"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="UnmannedBuilding">
         <Cost>
             <Charge Link="Behavior/AntamoAirAll"/>
@@ -40834,7 +40864,7 @@
     <CBehaviorBuff id="ShieldingEngine4">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="15"/>
-        <Modification WeaponRange="3" DetectBonus="7">
+        <Modification WeaponRange="3" Detect="7">
             <DamageDealtScaled index="Spell" value="20"/>
             <DamageDealtScaled index="Melee" value="20"/>
             <DamageDealtScaled index="Ranged" value="20"/>
@@ -40847,6 +40877,7 @@
         <DisplayDuration index="Ally" value="1"/>
         <DisplayDuration index="Neutral" value="1"/>
         <DisplayDuration index="Enemy" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zeratul-stalker-phasebattery.dds"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ShieldingEngine42">
         <EditorCategories value="AbilityorEffectType:Units"/>

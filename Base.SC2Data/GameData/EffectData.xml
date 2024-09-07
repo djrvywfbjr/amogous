@@ -11089,6 +11089,11 @@
         <Kind value="Ranged"/>
         <Amount value="10"/>
     </CEffectDamage>
+    <CEffectSet id="CorQueenSet">
+        <EditorCategories value=""/>
+        <EffectArray value="CorQueenDamage"/>
+        <EffectArray value="PsiDisruptionApplyBehavior27"/>
+    </CEffectSet>
     <CEffectEnumArea id="CorrosiveDesolatorSearch">
         <EditorCategories value=""/>
         <AreaArray Radius="3" Effect="AddCORROSION"/>
@@ -25623,6 +25628,23 @@
         <WhichPlayer Value="Caster"/>
         <Upgrades Upgrade="ManufactureShellingFabricator" Count="-3"/>
     </CEffectModifyPlayer>
+    <CEffectDamage id="CorQueenDamage" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:Zerg"/>
+        <AttributeBonus index="Light" value="14"/>
+        <AttributeBonus index="Biological" value="16"/>
+        <Amount value="16"/>
+        <Death value="Disintegrate"/>
+        <AreaArray Radius="1.5" Fraction="1"/>
+        <AreaArray Radius="2" Fraction="0.6"/>
+        <AreaArray Radius="2.5" Fraction="0.35"/>
+        <SearchFilters value="-;Player,Ally,Missile,Invulnerable"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="CorQueenAttack">
+        <EditorCategories value="Race:Zerg"/>
+        <ImpactEffect value="CorQueenSet"/>
+        <AmmoUnit value="PrimalRoachWeapon6"/>
+        <Movers Link="MissileDefault"/>
+    </CEffectLaunchMissile>
     <CEffectDamage id="ScrapCannonDamage" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <ArmorReduction value="0"/>
@@ -73691,6 +73713,11 @@
             <Change value="1000"/>
         </VitalArray>
     </CEffectModifyUnit>
+    <CEffectApplyBehavior id="VoidShieldCapacitor22">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="AIMining"/>
+    </CEffectApplyBehavior>
     <CEffectModifyUnit id="VoidShieldCapacitor3">
         <EditorCategories value="Race:Protoss"/>
         <ImpactUnit Value="Source"/>
