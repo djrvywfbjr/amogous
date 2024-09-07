@@ -12,6 +12,17 @@
         <AINotifyEffect value="XenWarrior6"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="EquipPlasmaCoater" Requirements="Craft2FC1SF"/>
     </CAbilEffectInstant>
+    <CAbilEffectInstant id="Ab2StormcallerUplink">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="XenWarrior622322335"/>
+        <Effect index="0" value="CraftStormcallerUplink"/>
+        <Flags index="BestUnit" value="1"/>
+        <Cost>
+            <Charge CountMax="1" CountUse="-1"/>
+        </Cost>
+        <AINotifyEffect value="XenWarrior6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipStormcallerUplink" Requirements="Craft3SF"/>
+    </CAbilEffectInstant>
     <CAbilEffectTarget id="AdvancedConstructionAuto">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <Flags index="AllowMovement" value="1"/>
@@ -29778,6 +29789,23 @@
         <AutoCastAcquireLevel value="Defensive"/>
         <AutoCastFilters value="Visible;-"/>
     </CAbilEffectInstant>
+    <CAbilEffectTarget id="DivineIntervention">
+        <Alignment value="Negative"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <SharedFlags index="Disabled" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="30"/>
+        </Cost>
+        <TargetFilters value="Biological,Visible;Self,Structure,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="15"/>
+        <CastIntroTime value="0.5"/>
+        <Marker>
+            <MatchFlags index="Link" value="0"/>
+            <MatchFlags index="CasterUnit" value="1"/>
+        </Marker>
+        <CursorEffect value="DivineIntervention"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="DivineIntervention"/>
+    </CAbilEffectTarget>
     <CAbilEffectInstant id="MiningAI">
         <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
         <Effect index="0" value="VoidShieldCapacitor22"/>
@@ -63554,19 +63582,7 @@
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <AINotifyEffect value="XenWarrior6"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2262232233542322222" Requirements="MothershipRequirements232254222"/>
-    </CAbilEffectInstant>
-    <CAbilEffectInstant id="XenWarrior622322335422222222">
-        <EditorCategories value="AbilityorEffectType:Units"/>
-        <DataCollection value="XenWarrior622322335"/>
-        <Effect index="0" value="XenWarrior63322335422222222"/>
-        <Flags index="BestUnit" value="1"/>
-        <Cost>
-            <Charge Link="Abil/XenWarrior"/>
-            <Cooldown Link="Abil/XenWarrior"/>
-        </Cost>
-        <AINotifyEffect value="XenWarrior6"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2262232233542322222" Requirements="MothershipRequirements232254222"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipCloakingMantle" Requirements="MothershipRequirements232254222"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="Wep1ShockCannons">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -63601,7 +63617,7 @@
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <AINotifyEffect value="XenWarrior6"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot22622322335432" Requirements="Craft2FC1SF"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot22622322335432" Requirements="Craft2CS1SF"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior6223223354322">
         <EditorCategories value="AbilityorEffectType:Units"/>

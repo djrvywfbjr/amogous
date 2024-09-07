@@ -509,7 +509,7 @@
         <EffectArray Reference="Unit,Jumper,LifeMax" Value="30"/>
         <EffectArray Reference="Unit,Marine7,LifeMax" Value="30"/>
         <EffectArray Reference="Unit,Ghost8,LifeStart" Value="30"/>
-        <EffectArray Reference="Unit,Ghost8,LifeStart" Value="30"/>
+        <EffectArray Reference="Unit,Ghost8,LifeMax" Value="30"/>
         <EffectArray Reference="Unit,Marine7,LifeStart" Value="30"/>
         <EffectArray Reference="Unit,Combater,LifeStart" Value="30"/>
         <EffectArray Reference="Unit,Combater,LifeMax" Value="30"/>
