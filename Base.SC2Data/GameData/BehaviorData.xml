@@ -40,16 +40,6 @@
             <ModifyFlags index="DisableWeapons" value="1"/>
         </Modification>
     </CBehaviorBuff>
-    <CBehaviorBuff id="15xUnitSpeed34">
-        <InfoFlags index="Hidden" value="1"/>
-        <BehaviorCategories index="Fast" value="1"/>
-        <EditorCategories value="AbilityorEffectType:Units"/>
-        <Requirements value="HavePsionicHeart224323222324232226322432422222"/>
-        <TimeScaleSource Value="Global"/>
-        <Modification>
-            <AbilClassDisableArray index="CAbilTransport" value="1"/>
-        </Modification>
-    </CBehaviorBuff>
     <CBehaviorBuff id="Ab1PlasmaCoater">
         <BehaviorFlags index="Permanent" value="1"/>
         <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>

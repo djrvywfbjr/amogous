@@ -21,7 +21,7 @@
             <Charge CountMax="1" CountUse="-1"/>
         </Cost>
         <AINotifyEffect value="XenWarrior6"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="EquipStormcallerUplink" Requirements="Craft2FC1SF2"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipStormcallerUplink" Requirements="Craft3SF"/>
     </CAbilEffectInstant>
     <CAbilEffectTarget id="AdvancedConstructionAuto">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
@@ -63553,19 +63553,7 @@
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <AINotifyEffect value="XenWarrior6"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2262232233542322222" Requirements="MothershipRequirements232254222"/>
-    </CAbilEffectInstant>
-    <CAbilEffectInstant id="XenWarrior622322335422222222">
-        <EditorCategories value="AbilityorEffectType:Units"/>
-        <DataCollection value="XenWarrior622322335"/>
-        <Effect index="0" value="XenWarrior63322335422222222"/>
-        <Flags index="BestUnit" value="1"/>
-        <Cost>
-            <Charge Link="Abil/XenWarrior"/>
-            <Cooldown Link="Abil/XenWarrior"/>
-        </Cost>
-        <AINotifyEffect value="XenWarrior6"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2262232233542322222" Requirements="MothershipRequirements232254222"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipCloakingMantle" Requirements="MothershipRequirements232254222"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="Wep1ShockCannons">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -63600,7 +63588,7 @@
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <AINotifyEffect value="XenWarrior6"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot22622322335432" Requirements="Craft2FC1SF"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot22622322335432" Requirements="Craft2CS1SF"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior6223223354322">
         <EditorCategories value="AbilityorEffectType:Units"/>

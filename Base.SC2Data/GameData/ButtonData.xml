@@ -4130,6 +4130,14 @@
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="CalldownMULE42332"/>
     </CButton>
+    <CButton id="EquipCloakingMantle">
+        <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-cloak-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="CloakOnBanshee2"/>
+        <HotkeySet value="Cloak"/>
+        <Universal value="1"/>
+    </CButton>
     <CButton id="EquipPlasmaCoater">
         <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>

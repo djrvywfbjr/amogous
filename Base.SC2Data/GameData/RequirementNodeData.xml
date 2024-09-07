@@ -877,6 +877,11 @@
         <OperandArray value="GTECountUpgradeManufactureFusionCoreCompleteOnly1"/>
         <OperandArray value="GTECountUpgradeManufactureRecyclerTankCompleteOnly1"/>
     </CRequirementAnd>
+    <CRequirementAnd id="AndGTECountUpgradeManufactureChemicalStationCompleteOnly2GTECountUpgradeManufactureShellingFabricatorCompleteOnly1">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="GTECountUpgradeManufactureChemicalStationCompleteOnly2"/>
+        <OperandArray value="GTECountUpgradeManufactureShellingFabricatorCompleteOnly1"/>
+    </CRequirementAnd>
     <CRequirementAnd id="AndGTECountUpgradeManufactureFusionCoreCompleteOnly1GTECountUpgradeManufactureRecyclerTankCompleteOnly2">
         <OperandArray value="GTECountUpgradeManufactureFusionCoreCompleteOnly1"/>
         <OperandArray value="GTECountUpgradeManufactureRecyclerTankCompleteOnly2"/>
@@ -930,7 +935,6 @@
         <OperandArray value="GTECountUpgradeManufactureShellingFabricatorCompleteOnly1"/>
     </CRequirementAnd>
     <CRequirementAnd id="AndGTECountUpgradeManufactureShellingFabricatorCompleteOnly3">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray value="GTECountUpgradeManufactureShellingFabricatorCompleteOnly3"/>
     </CRequirementAnd>
     <CRequirementAnd id="AndNotCountBehaviorVoidSeekerDock2CompleteOnlyAtUnitCountUpgradeUmojanBasicUnitUpgrade52224224232222223943CompleteOnly">
@@ -15676,6 +15680,11 @@
         <OperandArray index="0" value="CountUpgradeManufactureChemicalStationCompleteOnly"/>
         <OperandArray index="1" value="1"/>
     </CRequirementGTE>
+    <CRequirementGTE id="GTECountUpgradeManufactureChemicalStationCompleteOnly2">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeManufactureChemicalStationCompleteOnly"/>
+        <OperandArray index="1" value="2"/>
+    </CRequirementGTE>
     <CRequirementGTE id="GTECountUpgradeManufactureFusionCoreCompleteOnly1">
         <OperandArray index="0" value="CountUpgradeManufactureFusionCoreCompleteOnly"/>
         <OperandArray index="1" value="1"/>
@@ -15717,7 +15726,6 @@
         <OperandArray index="1" value="2"/>
     </CRequirementGTE>
     <CRequirementGTE id="GTECountUpgradeManufactureShellingFabricatorCompleteOnly3">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeManufactureShellingFabricatorCompleteOnly"/>
         <OperandArray index="1" value="3"/>
     </CRequirementGTE>

@@ -2596,7 +2596,6 @@ Abil/Name/XenWarrior6223223353=Aircraft All Radar
 Abil/Name/XenWarrior622322335422222=Ab1 Breaching Charge
 Abil/Name/XenWarrior6223223354222222=Ab2 Industrial Molotov
 Abil/Name/XenWarrior62232233542222222=Ab3 Cloaking Mantle
-Abil/Name/XenWarrior622322335422222222=Ab3 Cloaking Mantle
 Abil/Name/XenWarrior622322335432=Ab1 Adrenaline Injector
 Abil/Name/XenWarrior6223223354322=Ab2 Razor Grenade
 Abil/Name/XenWarrior62232233543222=Ab3 Dampening Cloud
@@ -7270,6 +7269,7 @@ Button/Name/EntropicBlast222=Ultra Concussion
 Button/Name/EntropicBlast223=Weak Concussion
 Button/Name/EntropicBlast23=Throw Ritual Knife
 Button/Name/EntropicBlast3=Entropic Blast
+Button/Name/EquipCloakingMantle=Equip Cloaking Mantle
 Button/Name/EquipCorrosiveDesolator=Equip Corrosive Desolator
 Button/Name/EquipDoubleSurgicalLaser=Equip Double Surgical Laser
 Button/Name/EquipGear=Equip Gear
@@ -14276,6 +14276,7 @@ Button/Tooltip/EntropicBlast222=Fire a powerful projectile of pulsing plasma, de
 Button/Tooltip/EntropicBlast223=Fire a projectile of pulsing plasma, dealing 15 damage to enemy units in the area.
 Button/Tooltip/EntropicBlast23=Launch a knife with special explosive chemicals in it, dealing 75 damage to units in a really small area.
 Button/Tooltip/EntropicBlast3=Channels a missile at the target location. After 4 seconds, deals 225 damage to all enemy units in the area.
+Button/Tooltip/EquipCloakingMantle=Cloaks the Outrider, but reduces movement speed by 50%.
 Button/Tooltip/EquipCorrosiveDesolator=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Chemical Station<n/><c val="00FF00">(1)</c> Fusion Core<n/><c val="00FF00">(1)</c> Recycler Tank<n/><n/>Equips the Titan armor with a corrosive launcher that deals damage in an area and additional damage over time. Does more damage to mechanical units. <n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
 Button/Tooltip/EquipDoubleSurgicalLaser=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(3)</c> Fusion Cores<n/><n/>Equips the Outrider armor with 2 laser pistols with good range, rather long cooldown and Increased damage against Armored targets.<n/><n/>Weaker versions of these devices are used for actual surgeries. Specific plans were developed to fire them from sidearms at much greater ranges with much greater effect.
 Button/Tooltip/EquipGear=Shows available abilities that can be crafted for this unit by using parts made at Tools Manufacture.
