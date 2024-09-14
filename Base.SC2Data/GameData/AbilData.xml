@@ -12,6 +12,17 @@
         <AINotifyEffect value="XenWarrior6"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="EquipPlasmaCoater" Requirements="Craft2FC1SF"/>
     </CAbilEffectInstant>
+    <CAbilEffectInstant id="Ab3JumpJets">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="XenWarrior622322335"/>
+        <Effect index="0" value="CraftJumpJets"/>
+        <Flags index="BestUnit" value="1"/>
+        <Cost>
+            <Charge CountMax="1" CountUse="-1"/>
+        </Cost>
+        <AINotifyEffect value="XenWarrior6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipJumpJets" Requirements="MothershipRequirements232254232"/>
+    </CAbilEffectInstant>
     <CAbilEffectInstant id="Ab2StormcallerUplink">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DataCollection value="XenWarrior622322335"/>
@@ -28440,6 +28451,24 @@
         <AINotifyEffect value=""/>
         <CmdButtonArray index="Execute" DefaultButtonFace="Irradiate22332"/>
         <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="Relocate">
+        <Alignment value="Negative"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <Effect index="0" value="PrimalSlashUpgraded2223"/>
+        <Flags index="AbortOnAllianceChange" value="0"/>
+        <Cost>
+            <Cooldown TimeUse="45"/>
+        </Cost>
+        <Range value="12"/>
+        <TrackingArc value="360"/>
+        <AutoCastFilters value="Ground,Visible;Player,Ally,Neutral,Missile,Stasis,Dead"/>
+        <AutoCastRange value="8"/>
+        <PrepTime value="0.125"/>
+        <AINotifyEffect value="PrimalSlash222"/>
+        <IgnoreFilters value="Ground;Self"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Relocate"/>
+        <SharedFlags index="Disabled" value="1"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="PurifierBeamCP2">
         <EditorCategories value="AbilityorEffectType:Units,Race:Terran"/>

@@ -6732,7 +6732,7 @@
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
         <DisplayEffect value="MengskThorJavelinMissileLaunchersDamage33"/>
         <DisplayAttackCount value="3"/>
-        <TargetFilters value="Ground,Visible;Worker,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AcquirePrioritization value="ByAngle"/>
         <Range value="8"/>
         <Arc value="5.625"/>
@@ -9068,7 +9068,7 @@
         <Options index="IgnoreAttackPriority" value="1"/>
         <Icon value="Assets\Textures\abilityicon_corrosivespores_square.dds"/>
         <DisplayEffect value="CorrosiveCleanserDamage"/>
-        <TargetFilters value="Visible;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AcquireTargetSorts>
             <SortArray value="TSMarker"/>
         </AcquireTargetSorts>

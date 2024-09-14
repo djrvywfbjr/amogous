@@ -4144,12 +4144,18 @@
         <EditorCategories value="Race:Protoss"/>
         <Universal value="1"/>
     </CButton>
+    <CButton id="EquipJumpJets">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-scoutchampionstunmissiles.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
     <CButton id="EquipStormcallerUplink">
         <Icon value="Assets\Textures\btn-upgrade-artanis-healingpsionicstorm.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
         <EditorCategories value="Race:Protoss"/>
         <Universal value="1"/>
-	</CButton>
+    </CButton>
     <CButton id="Marauder334325424">
         <Tooltip value="Button/Tooltip/Marauder3343254242"/>
         <Icon value="Assets\Textures\btn-ability-zerg-stukov-ensnarecdr.dds"/>
@@ -4243,6 +4249,12 @@
         <AlertIcon value="Assets\Textures\btn-upgrade-zerg-abathur-symbiote.dds"/>
         <EditorCategories value="Race:Zerg"/>
         <HotkeyAlias value="PoisonNova223"/>
+    </CButton>
+    <CButton id="Relocate">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-scoutchampionstunmissiles.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-kerrigan-leapingstrike.dds"/>
+        <Hotkey value="Button/Hotkey/MindBolt"/>
+        <EditorCategories value="Race:Zerg"/>
     </CButton>
     <CButton id="QueenClassicParasite3">
         <Icon value="Assets\Textures\btn-ability-zerg-viper-ocularparasite.dds"/>

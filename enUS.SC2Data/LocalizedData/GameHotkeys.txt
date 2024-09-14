@@ -1828,6 +1828,7 @@ Button/Hotkey/EquipCorrosiveDesolator=W
 Button/Hotkey/EquipDoubleSurgicalLaser=W
 Button/Hotkey/EquipGear=F
 Button/Hotkey/EquipHellRifle=W
+Button/Hotkey/EquipJumpJets=E
 Button/Hotkey/EquipNapalmSprayer=Q
 Button/Hotkey/EquipPlasmaCoater=Q
 Button/Hotkey/EquipPortableSensorTower=Q

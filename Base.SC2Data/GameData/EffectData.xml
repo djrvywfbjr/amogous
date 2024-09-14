@@ -11119,6 +11119,11 @@
         <WhichUnit Value="Caster"/>
         <Behavior value="Ab1PlasmaCoater"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="CraftJumpJets">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="Ab3JumpJets"/>
+    </CEffectApplyBehavior>
     <CEffectApplyBehavior id="CraftStormcallerUplink">
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
@@ -25674,8 +25679,9 @@
         <EditorCategories value=""/>
         <Marker Link="Effect/IrradiatePeriodicDamage"/>
         <ResponseFlags index="Flee" value="1"/>
-        <AttributeBonus index="Biological" value="1"/>
-        <Amount value="3"/>
+        <AttributeBonus index="Biological" value="3"/>
+        <Amount value="4"/>
+        <VitalBonus index="Energy" value="4"/>
     </CEffectDamage>
     <CEffectDamage id="CorrosiveDesolatorDamage" parent="DU_WEAP">
         <EditorCategories value="Race:Zerg"/>
@@ -45948,7 +45954,7 @@
         <Upgrades Upgrade="ManufactureShellingFabricator" Count="-1"/>
         <Upgrades Upgrade="ManufactureChemicalStation" Count="-2"/>
     </CEffectModifyPlayer>
-    <CEffectModifyPlayer id="OracleVoidSiphonAddMinerals236522222222322222">
+    <CEffectModifyPlayer id="RefugeeCraftRemove1CS2FC">
         <EditorCategories value="Race:Zerg"/>
         <WhichPlayer Value="Caster"/>
         <Upgrades Upgrade="ManufactureChemicalStation" Count="-1"/>

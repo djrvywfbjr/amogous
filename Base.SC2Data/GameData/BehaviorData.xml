@@ -69,6 +69,16 @@
             <AbilLinkDisableArray value="Ab1PlasmaCoater"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="Ab3JumpJets">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InitialEffect value="RefugeeCraftRemove1CS2FC"/>
+        <Modification Detect="12" Radar="20" RadarFilters="-;Player,Ally,Neutral">
+            <AbilLinkEnableArray value="Relocate"/>
+            <AbilLinkDisableArray value="Ab3JumpJets"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="Ab2StormcallerUplink">
         <Cost>
             <Charge Link="Behavior/AntamoAirAll"/>
@@ -849,7 +859,7 @@
         <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <InitialEffect value="RefugeeCraftRemove2FC1SF"/>
-        <Modification Detect="12" Radar="20">
+        <Modification Detect="12" Radar="20" RadarFilters="-;Player,Ally,Neutral">
             <AbilLinkEnableArray value="SensorSweep"/>
             <AbilLinkDisableArray value="Ab1PortableSensorTower"/>
         </Modification>
@@ -1451,27 +1461,7 @@
         <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped282223"/>
-        <InitialEffect value="OracleVoidSiphonAddMinerals236522222222322222"/>
-        <Modification>
-            <AbilLinkDisableArray value="XenWarrior62232233543222"/>
-        </Modification>
-        <DamageResponse>
-            <Cost>
-                <Charge Link="Behavior/AntamoAirAll"/>
-                <Cooldown Link="Behavior/AntamoAirAll"/>
-            </Cost>
-        </DamageResponse>
-    </CBehaviorBuff>
-    <CBehaviorBuff id="AntamoAirAll10322225332">
-        <Cost>
-            <Charge Link="Behavior/AntamoAirAll"/>
-            <Cooldown Link="Behavior/AntamoAirAll"/>
-        </Cost>
-        <BehaviorFlags index="Permanent" value="1"/>
-        <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
-        <EditorCategories value="AbilityorEffectType:Units"/>
-        <RemoveValidatorArray value="IsTimeStopped282223"/>
-        <InitialEffect value="OracleVoidSiphonAddMinerals2365222222223222223"/>
+        <InitialEffect value="RefugeeCraftRemove1CS2FC"/>
         <Modification>
             <AbilLinkDisableArray value="XenWarrior62232233543222"/>
         </Modification>
