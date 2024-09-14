@@ -54,6 +54,7 @@
         <CmdButtonArray index="Execute" DefaultButtonFace="VoidHighTemplarPsiOrb44">
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
+        <AutoCastValidatorArray value="CasterNotHoldingPosition"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="AggressiveMutation2">
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
