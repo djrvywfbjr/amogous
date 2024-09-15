@@ -11134,6 +11134,11 @@
         <WhichUnit Value="Caster"/>
         <Behavior value="Ab2StormcallerUplink"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="CraftGlancerTorpedoTubes">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="WepGlancerTorpedoTubes"/>
+    </CEffectApplyBehavior>
     <CEffectEnumArea id="DivineIntervention">
         <EditorCategories value=""/>
         <ImpactLocation Value="TargetPoint"/>
@@ -25610,6 +25615,31 @@
         <EditorCategories value="Race:Terran"/>
         <Behavior value="FusionDrive"/>
     </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="GlancerTorpedoesPersistent">
+        <EditorCategories value="Race:Terran"/>
+        <WhichLocation Value="TargetUnit"/>
+        <PeriodCount value="6"/>
+        <PeriodicEffectArray value="GlancerTorpedoesLM"/>
+        <PeriodicEffectArray value="GlancerTorpedoesLM"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.21"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="GlancerTorpedoesDamage" parent="DU_WEAP_SPLASH">
+        <EditorCategories value="Race:Terran"/>
+        <AttributeBonus index="Armored" value="4"/>
+        <Visibility value="Visible"/>
+        <Kind value="Ranged"/>
+        <KindSplash value="Splash"/>
+        <Amount value="16"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Air;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="GlancerTorpedoesLM">
+        <ValidatorArray index="0" value="RangeCheckLE15"/>
+        <EditorCategories value="Race:Terran"/>
+        <ImpactEffect value="GlancerTorpedoesDamage"/>
+        <AmmoUnit value="VikingFighterWeapon"/>
+    </CEffectLaunchMissile>
     <CEffectDamage id="MengskThorJavelinMissileLaunchersDamage323" parent="DU_WEAP_SPLASH">
         <EditorCategories value="Race:Terran"/>
         <Kind value="Ranged"/>
@@ -25637,6 +25667,13 @@
         <PeriodicPeriodArray value="0.25"/>
         <PeriodicPeriodArray value="0.125"/>
     </CEffectCreatePersistent>
+    <CEffectModifyPlayer id="RefugeeCraftRemove2GM3SF1FC">
+        <EditorCategories value="Race:Zerg"/>
+        <WhichPlayer Value="Caster"/>
+        <Upgrades Upgrade="ManufactureFusionCore" Count="-1"/>
+        <Upgrades Upgrade="ManufactureShellingFabricator" Count="-3"/>
+        <Upgrades Upgrade="ManufactureGunpowderMixer" Count="-2"/>
+    </CEffectModifyPlayer>
     <CEffectModifyPlayer id="RefugeeCraftRemove4FC1SF1CS">
         <EditorCategories value="Race:Zerg"/>
         <WhichPlayer Value="Caster"/>
@@ -75486,8 +75523,8 @@
     </CEffectDamage>
     <CEffectDamage id="VultureU3" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Terran"/>
-        <AttributeBonus index="Light" value="15"/>
-        <Amount value="10"/>
+        <AttributeBonus index="Light" value="25"/>
+        <Amount value="20"/>
     </CEffectDamage>
     <CEffectDamage id="WarHound2">
         <EditorCategories value="Race:Terran"/>

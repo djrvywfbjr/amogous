@@ -3861,6 +3861,17 @@
         <Backswing value="0"/>
         <Effect value="CorrosiveDesolatorLM"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="GlancerTorpedoes">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
+        <DisplayEffect value="GlancerTorpedoesDamage"/>
+        <DisplayAttackCount value="6"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="12"/>
+        <Period value="6"/>
+        <Effect value="GlancerTorpedoesPersistent"/>
+        <AllowedMovement value="Slowing"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="NapalmSprayer">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
@@ -11547,13 +11558,13 @@
         <Period value="1.694"/>
         <Backswing value="0"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="Vulture32">
+    <CWeaponLegacy id="ScrapGrenade">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-raynor-phobosclassweaponssystem.dds"/>
         <DisplayEffect value="VultureU3"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="6"/>
-        <Period value="1.694"/>
+        <Range value="12"/>
+        <Period value="3"/>
         <Backswing value="0"/>
         <Effect value="Vulture3"/>
         <AllowedMovement value="Slowing"/>

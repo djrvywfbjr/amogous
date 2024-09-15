@@ -60602,6 +60602,19 @@
         <AINotifyEffect value="XenWarrior6"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="EquipZapperGun" Requirements="Craft1FC2SF"/>
     </CAbilEffectInstant>
+    <CAbilEffectInstant id="Wep1GlancerTorpedoTubes">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="XenWarrior622322335"/>
+        <Effect index="0" value="CraftGlancerTorpedoTubes"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
+            <Cooldown Link="Abil/XenWarrior"/>
+        </Cost>
+        <AINotifyEffect value="XenWarrior6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipGlancerTorpedoTubes" Requirements="Craft2GM3SF1FC"/>
+    </CAbilEffectInstant>
     <CAbilEffectInstant id="Wep2HellRifle">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DataCollection value="XenWarrior622322335"/>

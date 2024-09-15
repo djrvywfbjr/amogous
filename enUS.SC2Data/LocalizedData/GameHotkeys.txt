@@ -1829,6 +1829,7 @@ Button/Hotkey/EquipCorrosiveDesolator=W
 Button/Hotkey/EquipDoubleSurgicalLaser=W
 Button/Hotkey/EquipEpsteinFusionDrive=Q
 Button/Hotkey/EquipGear=F
+Button/Hotkey/EquipGlancerTorpedoTubes=Q
 Button/Hotkey/EquipHellRifle=W
 Button/Hotkey/EquipJumpJets=E
 Button/Hotkey/EquipNapalmSprayer=Q
