@@ -7284,9 +7284,9 @@
             <Flags index="Hidden" value="1"/>
         </CmdButtonArray>
         <Range value="4"/>
-        <MaxCargoCount value="20"/>
+        <MaxCargoCount value="100"/>
         <MaxCargoSize value="1"/>
-        <TotalCargoSpace value="20"/>
+        <TotalCargoSpace value="100"/>
         <LoadCargoBehavior value="AntamoAirAll2722222232"/>
         <LoadTransportEffect value="BlackhammerAddHealingWAve542"/>
         <UnloadTransportEffect value="BlackhammerAddHealingWAve5232"/>
