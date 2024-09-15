@@ -69,6 +69,16 @@
             <AbilLinkDisableArray value="Ab1PlasmaCoater"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="Ab1EpsteinFusionDrive">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InitialEffect value="RefugeeCraftRemove4FC1SF1CS"/>
+        <Modification>
+            <AbilLinkEnableArray value="EngageFusionDrive"/>
+            <AbilLinkDisableArray value="Ab1EpsteinFusionDrive"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="Ab3JumpJets">
         <BehaviorFlags index="Permanent" value="1"/>
         <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
@@ -871,6 +881,16 @@
         <Requirements value="HaveMobileAutomatons"/>
         <TimeScaleSource Value="Global"/>
         <Modification TimeScale="2"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FusionDrive">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-terran-jotunboosters.dds"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <RemoveValidatorArray value="NotHaveScramblerMissileBehavior"/>
+        <Duration value="15"/>
+        <Modification MoveSpeedBonus="2.5" AccelerationBonus="500" DecelerationBonus="500"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="NoWeapon">
         <Alignment value="Negative"/>

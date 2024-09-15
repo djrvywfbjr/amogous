@@ -878,7 +878,6 @@
         <OperandArray value="GTECountUpgradeManufactureRecyclerTankCompleteOnly1"/>
     </CRequirementAnd>
     <CRequirementAnd id="AndGTECountUpgradeManufactureChemicalStationCompleteOnly2GTECountUpgradeManufactureShellingFabricatorCompleteOnly1">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray value="GTECountUpgradeManufactureChemicalStationCompleteOnly2"/>
         <OperandArray value="GTECountUpgradeManufactureShellingFabricatorCompleteOnly1"/>
     </CRequirementAnd>
@@ -900,6 +899,12 @@
     </CRequirementAnd>
     <CRequirementAnd id="AndGTECountUpgradeManufactureFusionCoreCompleteOnly3">
         <OperandArray value="GTECountUpgradeManufactureFusionCoreCompleteOnly3"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndGTECountUpgradeManufactureFusionCoreCompleteOnly4GTECountUpgradeManufactureShellingFabricatorCompleteOnly1GTECountUpgradeManufactureChemicalStationCompleteOnly1">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="GTECountUpgradeManufactureFusionCoreCompleteOnly4"/>
+        <OperandArray value="GTECountUpgradeManufactureShellingFabricatorCompleteOnly1"/>
+        <OperandArray value="GTECountUpgradeManufactureChemicalStationCompleteOnly1"/>
     </CRequirementAnd>
     <CRequirementAnd id="AndGTECountUpgradeManufactureGunpowderMixerCompleteOnly1GTECountUpgradeManufactureChemicalStationCompleteOnly1GTECountUpgradeManufactureRecyclerTankCompleteOnly1">
         <OperandArray value="GTECountUpgradeManufactureGunpowderMixerCompleteOnly1"/>
@@ -15681,7 +15686,6 @@
         <OperandArray index="1" value="1"/>
     </CRequirementGTE>
     <CRequirementGTE id="GTECountUpgradeManufactureChemicalStationCompleteOnly2">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeManufactureChemicalStationCompleteOnly"/>
         <OperandArray index="1" value="2"/>
     </CRequirementGTE>
@@ -15696,6 +15700,11 @@
     <CRequirementGTE id="GTECountUpgradeManufactureFusionCoreCompleteOnly3">
         <OperandArray index="0" value="CountUpgradeManufactureFusionCoreCompleteOnly"/>
         <OperandArray index="1" value="3"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTECountUpgradeManufactureFusionCoreCompleteOnly4">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeManufactureFusionCoreCompleteOnly"/>
+        <OperandArray index="1" value="4"/>
     </CRequirementGTE>
     <CRequirementGTE id="GTECountUpgradeManufactureGunpowderMixerCompleteOnly1">
         <OperandArray index="0" value="CountUpgradeManufactureGunpowderMixerCompleteOnly"/>

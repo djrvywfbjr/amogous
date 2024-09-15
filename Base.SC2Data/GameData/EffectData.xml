@@ -11124,6 +11124,11 @@
         <WhichUnit Value="Caster"/>
         <Behavior value="Ab3JumpJets"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="CraftEpsteinFusionDrive">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="Ab1EpsteinFusionDrive"/>
+    </CEffectApplyBehavior>
     <CEffectApplyBehavior id="CraftStormcallerUplink">
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
@@ -25601,6 +25606,10 @@
         <ImpactEffect value="KerriganVoidKineticBlastDamage3"/>
         <AmmoUnit value="KerriganVoidKineticBlastWeapon"/>
     </CEffectLaunchMissile>
+    <CEffectApplyBehavior id="EngageFusionDrive">
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="FusionDrive"/>
+    </CEffectApplyBehavior>
     <CEffectDamage id="MengskThorJavelinMissileLaunchersDamage323" parent="DU_WEAP_SPLASH">
         <EditorCategories value="Race:Terran"/>
         <Kind value="Ranged"/>
@@ -25628,6 +25637,13 @@
         <PeriodicPeriodArray value="0.25"/>
         <PeriodicPeriodArray value="0.125"/>
     </CEffectCreatePersistent>
+    <CEffectModifyPlayer id="RefugeeCraftRemove4FC1SF1CS">
+        <EditorCategories value="Race:Zerg"/>
+        <WhichPlayer Value="Caster"/>
+        <Upgrades Upgrade="ManufactureShellingFabricator" Count="-1"/>
+        <Upgrades Upgrade="ManufactureChemicalStation" Count="-1"/>
+        <Upgrades Upgrade="ManufactureFusionCore" Count="-4"/>
+    </CEffectModifyPlayer>
     <CEffectModifyPlayer id="RefugeeCraftRemove3SF">
         <EditorCategories value="Race:Zerg"/>
         <WhichPlayer Value="Caster"/>

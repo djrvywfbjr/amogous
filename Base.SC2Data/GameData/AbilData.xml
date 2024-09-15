@@ -12,6 +12,18 @@
         <AINotifyEffect value="XenWarrior6"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="EquipPlasmaCoater" Requirements="Craft2FC1SF"/>
     </CAbilEffectInstant>
+    <CAbilEffectInstant id="Ab1EpsteinFusionDrive">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="XenWarrior622322335"/>
+        <Effect index="0" value="CraftEpsteinFusionDrive"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge CountMax="1" CountUse="-1"/>
+        </Cost>
+        <AINotifyEffect value="XenWarrior6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipEpsteinFusionDrive" Requirements="Craft4FC1SF1CS"/>
+    </CAbilEffectInstant>
     <CAbilEffectInstant id="Ab3JumpJets">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DataCollection value="XenWarrior622322335"/>
@@ -710,6 +722,18 @@
         <ShowProgressArray index="Prep" value="1"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="KerriganVoidKineticBlast3"/>
     </CAbilEffectTarget>
+    <CAbilEffectInstant id="EngageFusionDrive">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <SharedFlags index="Disabled" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="90"/>
+        </Cost>
+        <AINotifyEffect value="MedivacSpeedBoost4"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EngageFusionDrive">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectInstant>
     <CAbilEffectInstant id="NanobotWindCP2">
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
         <Effect index="0" value="ArtanisAstralWind5"/>

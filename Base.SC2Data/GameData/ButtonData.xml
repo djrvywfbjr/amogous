@@ -4150,6 +4150,12 @@
         <EditorCategories value="Race:Protoss"/>
         <Universal value="1"/>
     </CButton>
+    <CButton id="EquipEpsteinFusionDrive">
+        <Icon value="Assets\Textures\BTN-Upgrade-Terran-MedivacEmergencyThrusters.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
     <CButton id="EquipStormcallerUplink">
         <Icon value="Assets\Textures\btn-upgrade-artanis-healingpsionicstorm.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
@@ -4163,6 +4169,11 @@
         <Hotkey value="Button/Hotkey/Marau12der3343254"/>
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="Marauder334325"/>
+    </CButton>
+    <CButton id="EngageFusionDrive">
+        <Icon value="Assets\Textures\BTN-Upgrade-Terran-MedivacEmergencyThrusters.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Upgrade-Terran-MedivacEmergencyThrusters.dds"/>
+        <EditorCategories value="Race:Neutral"/>
     </CButton>
     <CButton id="MicrobialAgitation2">
         <Icon value="Assets\Textures\btn-ability-zerg-corruption-multi.dds"/>
