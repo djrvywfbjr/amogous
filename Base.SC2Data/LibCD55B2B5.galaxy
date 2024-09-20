@@ -4539,7 +4539,7 @@ bool libCD55B2B5_gt_StrikeStart_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    UIAlertUnit("Trigger", UnitGetOwner(EventUnit()), StringExternal("Param/Value/lib_CD55B2B5_1EC94DDA"), "Assets\\Textures\\btn-ability-mengsk-ghost-pyrokineticimmolation_orange.dds", EventUnit());
+    UIAlertUnit("AttackTown_Terr", UnitGetOwner(EventUnit()), StringExternal("Param/Value/lib_CD55B2B5_1EC94DDA"), "Assets\\Textures\\btn-ability-mengsk-ghost-pyrokineticimmolation_orange.dds", EventUnit());
     UnitIssueOrder(UnitTransport(EventUnit()), Order(AbilityCommand("BunkerTransport534", 1)), c_orderQueueReplace);
     UnitIssueOrder(UnitTransport(EventUnit()), Order(AbilityCommand("BunkerTransport533", 1)), c_orderQueueReplace);
     UnitIssueOrder(UnitTransport(EventUnit()), Order(AbilityCommand("BunkerTransport53", 1)), c_orderQueueReplace);
@@ -4590,7 +4590,7 @@ bool libCD55B2B5_gt_RevolutionStart_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    UIAlertUnit("Trigger", UnitGetOwner(EventUnit()), StringExternal("Param/Value/lib_CD55B2B5_5ACB6408"), "Assets\\Textures\\btn-ability-mengsk-ghost-pyrokineticimmolation_orange.dds", EventUnit());
+    UIAlertUnit("AttackTown_Terr", UnitGetOwner(EventUnit()), StringExternal("Param/Value/lib_CD55B2B5_5ACB6408"), "Assets\\Textures\\btn-ability-mengsk-ghost-pyrokineticimmolation_orange.dds", EventUnit());
     UnitIssueOrder(UnitTransport(EventUnit()), Order(AbilityCommand("BunkerTransport534", 1)), c_orderQueueReplace);
     UnitIssueOrder(UnitTransport(EventUnit()), Order(AbilityCommand("BunkerTransport533", 1)), c_orderQueueReplace);
     UnitIssueOrder(UnitTransport(EventUnit()), Order(AbilityCommand("BunkerTransport53", 1)), c_orderQueueReplace);
