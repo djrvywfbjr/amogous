@@ -69,6 +69,26 @@
             <AbilLinkDisableArray value="Ab1PlasmaCoater"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="Ab1EpsteinFusionDrive">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InitialEffect value="RefugeeCraftRemove4FC1SF1CS"/>
+        <Modification>
+            <AbilLinkEnableArray value="EngageFusionDrive"/>
+            <AbilLinkDisableArray value="Ab1EpsteinFusionDrive"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Ab3JumpJets">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InitialEffect value="RefugeeCraftRemove1CS2FC"/>
+        <Modification Detect="12" Radar="20" RadarFilters="-;Player,Ally,Neutral">
+            <AbilLinkEnableArray value="Relocate"/>
+            <AbilLinkDisableArray value="Ab3JumpJets"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="Ab2StormcallerUplink">
         <Cost>
             <Charge Link="Behavior/AntamoAirAll"/>
@@ -849,7 +869,7 @@
         <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <InitialEffect value="RefugeeCraftRemove2FC1SF"/>
-        <Modification Detect="12" Radar="20">
+        <Modification Detect="12" Radar="20" RadarFilters="-;Player,Ally,Neutral">
             <AbilLinkEnableArray value="SensorSweep"/>
             <AbilLinkDisableArray value="Ab1PortableSensorTower"/>
         </Modification>
@@ -861,6 +881,16 @@
         <Requirements value="HaveMobileAutomatons"/>
         <TimeScaleSource Value="Global"/>
         <Modification TimeScale="2"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FusionDrive">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-terran-jotunboosters.dds"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <RemoveValidatorArray value="NotHaveScramblerMissileBehavior"/>
+        <Duration value="15"/>
+        <Modification MoveSpeedBonus="2.5" AccelerationBonus="500" DecelerationBonus="500"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="NoWeapon">
         <Alignment value="Negative"/>
@@ -928,7 +958,7 @@
             </Cost>
         </DamageResponse>
     </CBehaviorBuff>
-    <CBehaviorBuff id="AntamoAirAll103222242">
+    <CBehaviorBuff id="StrikeStarting">
         <Cost>
             <Charge Link="Behavior/AntamoAirAll"/>
             <Cooldown Link="Behavior/AntamoAirAll"/>
@@ -1285,6 +1315,23 @@
             <WeaponDisableArray value="H66ScrapCannon"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="WepPDCArray">
+        <Cost>
+            <Charge CountMax="1" CountUse="-1"/>
+        </Cost>
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InitialEffect value="RefugeeCraftRemove3GM2SF1RT"/>
+        <Modification>
+            <AbilLinkDisableArray value="Wep1GlancerTorpedoTubes"/>
+            <AbilLinkDisableArray value="Wep2PDCArray"/>
+            <AbilLinkDisableArray value="Wep2HellRifle"/>
+            <BehaviorLinkDisableArray value="NoWeapon"/>
+            <WeaponArray Link="PDCArray"/>
+            <WeaponDisableArray value="ScrapGrenade"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="WepZapperGun">
         <Cost>
             <Charge CountMax="1" CountUse="-1"/>
@@ -1451,27 +1498,7 @@
         <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="IsTimeStopped282223"/>
-        <InitialEffect value="OracleVoidSiphonAddMinerals236522222222322222"/>
-        <Modification>
-            <AbilLinkDisableArray value="XenWarrior62232233543222"/>
-        </Modification>
-        <DamageResponse>
-            <Cost>
-                <Charge Link="Behavior/AntamoAirAll"/>
-                <Cooldown Link="Behavior/AntamoAirAll"/>
-            </Cost>
-        </DamageResponse>
-    </CBehaviorBuff>
-    <CBehaviorBuff id="AntamoAirAll10322225332">
-        <Cost>
-            <Charge Link="Behavior/AntamoAirAll"/>
-            <Cooldown Link="Behavior/AntamoAirAll"/>
-        </Cost>
-        <BehaviorFlags index="Permanent" value="1"/>
-        <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
-        <EditorCategories value="AbilityorEffectType:Units"/>
-        <RemoveValidatorArray value="IsTimeStopped282223"/>
-        <InitialEffect value="OracleVoidSiphonAddMinerals2365222222223222223"/>
+        <InitialEffect value="RefugeeCraftRemove1CS2FC"/>
         <Modification>
             <AbilLinkDisableArray value="XenWarrior62232233543222"/>
         </Modification>
@@ -46199,6 +46226,23 @@
             <BehaviorLinkDisableArray value="NoWeapon"/>
             <WeaponArray Link="HellRifle"/>
             <WeaponDisableArray value="H5ScrapCannon"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WepGlancerTorpedoTubes">
+        <Cost>
+            <Charge CountMax="1" CountUse="-1"/>
+        </Cost>
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InitialEffect value="RefugeeCraftRemove2GM3SF1FC"/>
+        <Modification>
+            <AbilLinkDisableArray value="Wep1GlancerTorpedoTubes"/>
+            <AbilLinkDisableArray value="Wep2PDCArray"/>
+            <AbilLinkDisableArray value="Wep2HellRifle"/>
+            <BehaviorLinkDisableArray value="NoWeapon"/>
+            <WeaponArray Link="GlancerTorpedoes"/>
+            <WeaponDisableArray value="ScrapGrenade"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="WidowMineAnimationController2">

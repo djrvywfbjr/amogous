@@ -741,6 +741,13 @@
         <Compare value="GE"/>
         <Value value="8"/>
     </CValidatorPlayerCompareFoodAvailable>
+    <CValidatorCombine id="RefugeeValidatorAnyWorkerOrScientist">
+        <CombineArray value="RequiresCivilian2"/>
+        <CombineArray value="RequiresCivilian24"/>
+        <CombineArray value="RequiresCivilian23"/>
+        <CombineArray value="IsNotRecentlyRecalled2332"/>
+        <CombineArray value="RequiresCivilian22"/>
+    </CValidatorCombine>
     <CValidatorPlayerRequirement id="SFAutocast">
         <Value value="ManufactureShellingFabricatorAuto"/>
     </CValidatorPlayerRequirement>

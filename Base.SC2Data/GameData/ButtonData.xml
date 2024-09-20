@@ -4138,8 +4138,26 @@
         <HotkeySet value="Cloak"/>
         <Universal value="1"/>
     </CButton>
+    <CButton id="EquipPDCArray">
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-shotgunaoe.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
     <CButton id="EquipPlasmaCoater">
         <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="EquipJumpJets">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-scoutchampionstunmissiles.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="EquipEpsteinFusionDrive">
+        <Icon value="Assets\Textures\BTN-Upgrade-Terran-MedivacEmergencyThrusters.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
         <EditorCategories value="Race:Protoss"/>
         <Universal value="1"/>
@@ -4149,7 +4167,13 @@
         <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
         <EditorCategories value="Race:Protoss"/>
         <Universal value="1"/>
-	</CButton>
+    </CButton>
+    <CButton id="EquipGlancerTorpedoTubes">
+        <Icon value="Assets\Textures\btn-techupgrade-terran-charonboosters.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
     <CButton id="Marauder334325424">
         <Tooltip value="Button/Tooltip/Marauder3343254242"/>
         <Icon value="Assets\Textures\btn-ability-zerg-stukov-ensnarecdr.dds"/>
@@ -4157,6 +4181,11 @@
         <Hotkey value="Button/Hotkey/Marau12der3343254"/>
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="Marauder334325"/>
+    </CButton>
+    <CButton id="EngageFusionDrive">
+        <Icon value="Assets\Textures\BTN-Upgrade-Terran-MedivacEmergencyThrusters.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Upgrade-Terran-MedivacEmergencyThrusters.dds"/>
+        <EditorCategories value="Race:Neutral"/>
     </CButton>
     <CButton id="MicrobialAgitation2">
         <Icon value="Assets\Textures\btn-ability-zerg-corruption-multi.dds"/>
@@ -4243,6 +4272,12 @@
         <AlertIcon value="Assets\Textures\btn-upgrade-zerg-abathur-symbiote.dds"/>
         <EditorCategories value="Race:Zerg"/>
         <HotkeyAlias value="PoisonNova223"/>
+    </CButton>
+    <CButton id="Relocate">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-scoutchampionstunmissiles.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-kerrigan-leapingstrike.dds"/>
+        <Hotkey value="Button/Hotkey/MindBolt"/>
+        <EditorCategories value="Race:Zerg"/>
     </CButton>
     <CButton id="QueenClassicParasite3">
         <Icon value="Assets\Textures\btn-ability-zerg-viper-ocularparasite.dds"/>

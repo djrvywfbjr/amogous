@@ -20,9 +20,11 @@
 :zyr: :khan:=
 Aaron=Giant
 Abgail=Former Royal Guard
+Abil/Name/Ab1EpsteinFusionDrive=Ab1 Epstein Fusion Drive
 Abil/Name/Ab1PlasmaCoater=Ab1 Plasma Coater
 Abil/Name/Ab1PortableSensorTower=Ab1 Portable Sensor Tower
 Abil/Name/Ab2StormcallerUplink=Ab2 Stormcaller Uplink
+Abil/Name/Ab3JumpJets=Ab3 Jump Jets
 Abil/Name/AggressiveMutation2=Aggressive Mutation
 Abil/Name/AggressiveMutation22=Fanaticism
 Abil/Name/AlarakKnockback2=Trash
@@ -806,6 +808,7 @@ Abil/Name/EMP7=EMP
 Abil/Name/EMP72=1Corrosive Bile
 Abil/Name/EMPNova2=EMP Nova
 Abil/Name/EmergencyProtocolCP2=Emergency Protocol (CP2)
+Abil/Name/EngageFusionDrive=Engage Fusion Drive
 Abil/Name/EngineeringBayResearch10=Research
 Abil/Name/EngineeringBayResearch2=Research Corps
 Abil/Name/EngineeringBayResearch3=Research (Engineering Bay) Copy
@@ -1660,6 +1663,7 @@ Abil/Name/ReleaseInterceptors23=Scarab Assault
 Abil/Name/ReleaseInterceptors232=Drone Assault
 Abil/Name/ReleaseInterceptors2322=Phase Being Assault
 Abil/Name/ReleaseInterceptors3=Release Decayed
+Abil/Name/Relocate=Relocate
 Abil/Name/Repair2=Repair Copy
 Abil/Name/Repair3=Choosing Beggar Repair
 Abil/Name/Repair4=Repair
@@ -2372,6 +2376,7 @@ Abil/Name/WarpPrismTransport4=Forced Transport
 Abil/Name/WarpPrismTransport5=Load-Unload
 Abil/Name/WarpPrismTransport6=Load-Unload (Shuttle)
 Abil/Name/Wep1DualSecurityPistols=Wep1 Dual Security Pistols
+Abil/Name/Wep1GlancerTorpedoTubes=Wep1 Glancer Torpedo Tubes
 Abil/Name/Wep1NapalmSprayer=Wep1 Napalm Sprayer
 Abil/Name/Wep1ShellstormChaingun=Wep1 Shellstorm Chaingun
 Abil/Name/Wep1ShockCannons=Wep1 Shock Cannons
@@ -2379,6 +2384,7 @@ Abil/Name/Wep1ZapperGun=Wep1 Zapper Gun
 Abil/Name/Wep2CorrosiveDesolator=Wep2 Corrosive Desolator
 Abil/Name/Wep2DoubleSurgicalLaser=Wep2 Double Surgical Laser
 Abil/Name/Wep2HellRifle=Wep2 Hell Rifle
+Abil/Name/Wep2PDCArray=Wep2 PDC Array
 Abil/Name/Wep2SharpnelRifle=Wep2 Sharpnel Rifle
 Abil/Name/Wep3SmartFireDartGuns=Wep3 Smart-Fire Dart Guns
 Abil/Name/Wep3WarheadLauncher=Wep3 Warhead Launcher
@@ -2979,9 +2985,11 @@ Attribute003/Value032/Desc=Take control of the mighty flagship and a ragtag mili
 Attribute003/Value032/Name=Paramilitary
 Awoken=Awoken
 Behavior/Name/15xUnitSpeed2=Extended Shift
+Behavior/Name/Ab1EpsteinFusionDrive=(Ab1) Epstein Fusion Drive
 Behavior/Name/Ab1PlasmaCoater=(Ab1) Plasma Coater
 Behavior/Name/Ab1PortableSensorTower=(Ab1) Portable Sensor Tower
 Behavior/Name/Ab2StormcallerUplink=(Ab2) Stormcaller Uplink
+Behavior/Name/Ab3JumpJets=(Ab3) Jump Jets
 Behavior/Name/AggressiveMutation2=Aggressive Mutator
 Behavior/Name/AggressiveMutation22=Adapting
 Behavior/Name/AggressiveMutation23=Fanaticism
@@ -3063,7 +3071,6 @@ Behavior/Name/AntamoAirAll103222243=On Revolution
 Behavior/Name/AntamoAirAll103222253=(Ab1) Razor Grenade
 Behavior/Name/AntamoAirAll1032222532=(Ab1) Adrenaline Injection
 Behavior/Name/AntamoAirAll1032222533=(Ab1) Dampening Cloud
-Behavior/Name/AntamoAirAll10322225332=(Ab1) Dampening Cloud
 Behavior/Name/AntamoAirAll103222254222=(Ab) Breaching Charge
 Behavior/Name/AntamoAirAll1032222542222=(Ab) Industrial Molotov
 Behavior/Name/AntamoAirAll10322225422222=(Ab) Cloaking Mantle
@@ -3421,6 +3428,7 @@ Behavior/Name/FungalGrowth2=Bionic Snare
 Behavior/Name/FungalGrowth22=Invasive Growth
 Behavior/Name/FungalGrowth3=Oppressive Spores
 Behavior/Name/FungalGrowth32=Oppressive Spores
+Behavior/Name/FusionDrive=Fusion Drive
 Behavior/Name/GhostCloak2=Ensuring Safety
 Behavior/Name/GhostCloak22=Increased Rations
 Behavior/Name/GhostCloak222=Panopticon Operated Manually
@@ -4203,8 +4211,10 @@ Behavior/Name/VortexBehavior=Vortex Copy Copy
 Behavior/Name/WepCorrosiveDesolator=(Wep) Corrosive Desolator
 Behavior/Name/WepDoubleSurgicalLaser=(Wep) Double Surgical Laser
 Behavior/Name/WepDualSecurityPistols=(Wep) Dual Security Pistols
+Behavior/Name/WepGlancerTorpedoTubes=(Wep) Glancer Torpedo Tubes
 Behavior/Name/WepHellRifle=(Wep) Hell Rifle
 Behavior/Name/WepNapalmSprayer=(Wep) Napalm Sprayer
+Behavior/Name/WepPDCArray=(Wep) PDC Array
 Behavior/Name/WepShellstormChaingun=(Wep) Shellstorm Chaingun
 Behavior/Name/WepShrapnelRifle=(Wep) Shrapnel Rifle
 Behavior/Name/WepSmartFireDartGuns=(Wep) Smart-Fire Dart Guns
@@ -4656,6 +4666,7 @@ Behavior/Tooltip/FungalGrowth2=This unit is being ensnared.
 Behavior/Tooltip/FungalGrowth22=This unit is being grown on.
 Behavior/Tooltip/FungalGrowth3=Taking damage over time.
 Behavior/Tooltip/FungalGrowth32=Taking damage over time.
+Behavior/Tooltip/FusionDrive=This unit's movement speed is increased.
 Behavior/Tooltip/GhostCloak2=Medical post is increasing Safety Level by 1, but is constantly loosing Medicine.
 Behavior/Tooltip/GhostCloak22=Units eat triple rations, but Safety Level is increased.
 Behavior/Tooltip/GhostCloak222=Safety Level is reduced by 3 and Scientists work slower, but Workers and Convicts do their jobs twice as fast.
@@ -7239,6 +7250,7 @@ Button/Name/EMP63=Tactical EMB
 Button/Name/EMP7=Launch EMP Round
 Button/Name/EMP72=Corrosive Bile
 Button/Name/EMPNova2=EMP Nova
+Button/Name/EngageFusionDrive=Engage Fusion Drive
 Button/Name/EngineeringBay10=Reconstruct Agony Bay
 Button/Name/EngineeringBay11=Build Altar
 Button/Name/EngineeringBay12=Build Center Of Mining Operations
@@ -7275,9 +7287,13 @@ Button/Name/EntropicBlast3=Entropic Blast
 Button/Name/EquipCloakingMantle=Equip Cloaking Mantle
 Button/Name/EquipCorrosiveDesolator=Equip Corrosive Desolator
 Button/Name/EquipDoubleSurgicalLaser=Equip Double Surgical Laser
+Button/Name/EquipEpsteinFusionDrive=Equip Epstein Fusion Drive
 Button/Name/EquipGear=Equip Gear
+Button/Name/EquipGlancerTorpedoTubes=Equip Glancer Torpedo Tubes
 Button/Name/EquipHellRifle=Equip Hell Rifle
+Button/Name/EquipJumpJets=Equip Jump Jets
 Button/Name/EquipNapalmSprayer=Equip Napalm Sprayer
+Button/Name/EquipPDCArray=Equip PDC Array
 Button/Name/EquipPlasmaCoater=Equip Plasma Coater
 Button/Name/EquipPortableSensorTower=Equip Portable Sensor Tower
 Button/Name/EquipShellstormChaingun=Equip Shellstorm Chaingun
@@ -9370,6 +9386,7 @@ Button/Name/ReleaseInterceptors232=Drone Assault
 Button/Name/ReleaseInterceptors2322=Detach Phase Beings
 Button/Name/ReleaseInterceptors23222=Detach Phase Beings
 Button/Name/ReleaseInterceptors3=Release Decayed
+Button/Name/Relocate=Relocate
 Button/Name/Repair2=Beggar's Repair
 Button/Name/Repair3=Enhanced Repair
 Button/Name/Repair4=Automated Repair
@@ -14219,6 +14236,7 @@ Button/Tooltip/EMPNova2=Launches a massive electromagnetic shockwave, dealing sh
 Button/Tooltip/Egg2=Zerg units morph in the safety of these cocoons.
 Button/Tooltip/EggChamber=Specialized infestation organism. Hatches Xill units.
 Button/Tooltip/EliteArmory=Contains upgrades.
+Button/Tooltip/EngageFusionDrive=Increases the Blimp's movement speed by 2.5 for 15 seconds.
 Button/Tooltip/Engi12312312neeringBay18=Structure, where Workers periodically produce Food.
 Button/Tooltip/Engi12312312neeringBay18fwa2=Structure, where units can go to reduce to raise Hope and reduce Dissatisfaction.
 Button/Tooltip/Engineer=Master Engineer. Can speed up production of buildings and take control of enemy buildings.
@@ -14289,9 +14307,13 @@ Button/Tooltip/EntropicBlast3=Channels a missile at the target location. After 4
 Button/Tooltip/EquipCloakingMantle=Cloaks the Outrider, but reduces movement speed by 50%.
 Button/Tooltip/EquipCorrosiveDesolator=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Chemical Station<n/><c val="00FF00">(1)</c> Fusion Core<n/><c val="00FF00">(1)</c> Recycler Tank<n/><n/>Equips the Titan armor with a corrosive launcher that deals damage in an area and additional damage over time. Does more damage to mechanical units. <n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
 Button/Tooltip/EquipDoubleSurgicalLaser=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(3)</c> Fusion Cores<n/><n/>Equips the Outrider armor with 2 laser pistols with good range, rather long cooldown and Increased damage against Armored targets.<n/><n/>Weaker versions of these devices are used for actual surgeries. Specific plans were developed to fire them from sidearms at much greater ranges with much greater effect.
+Button/Tooltip/EquipEpsteinFusionDrive=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(4)</c> Fusion Cores<n/><c val="00FF00">(1)</c> Shelling Fabricator<n/><c val="00FF00">(1)</c> Chemical Station<n/><n/>Equips the Siege Blimp with a fusion drive, allowing the ability to gain a massive speed boost for a short time. Long cooldown.<n/><n/>Yes, this is a reference. No, I will not elaborate.
 Button/Tooltip/EquipGear=Shows available abilities that can be crafted for this unit by using parts made at Tools Manufacture.
+Button/Tooltip/EquipGlancerTorpedoTubes=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Fusion Core<n/><c val="00FF00">(3)</c> Shelling Fabricators<n/><c val="00FF00">(2)</c> Gunpowder Mixers<n/><n/>Equips the Hunter Ranger armor with a shocker that reduces enemy attack and movement speed, but does not do much damage.<n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
 Button/Tooltip/EquipHellRifle=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Gunpowder Mixer<n/><c val="00FF00">(1)</c> Chemical Station<n/><c val="00FF00">(1)</c> Recycler Tank<n/><n/>Equips the Hunter Ranger armor with a rifle that ignites the target, dealing 30(40 to biological) extra damage over 10 seconds.<n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
+Button/Tooltip/EquipJumpJets=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(2)</c> Fusion Cores<n/><c val="00FF00">(1)</c> Chemical Station<n/><n/>Equips the Hunter Ranger armor with a portable sensor tower, enabling 12 range detection, 20 range radar, and the ability to reveal an area of the map for a short time.<n/><n/>This device was designed to produce and inject user with a chemical compound to improve their combat ability. Unlike stimpacks, it deals no permanent physical harm.
 Button/Tooltip/EquipNapalmSprayer=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Fusion Core<n/><c val="00FF00">(2)</c> Recycling Tanks<n/><n/>Equips the Combater armor with a fire-firing sprayer that hits multiple enemies in an area around main target. Does more damage to biological targets.<n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
+Button/Tooltip/EquipPDCArray=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Recycler Tank<n/><c val="00FF00">(2)</c> Shelling Fabricators<n/><c val="00FF00">(3)</c> Gunpowder Mixers<n/><n/>Equips the Hunter Ranger armor with a shocker that reduces enemy attack and movement speed, but does not do much damage.<n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
 Button/Tooltip/EquipPlasmaCoater=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(2)</c> Fusion Cores<n/><c val="00FF00">(1)</c> Shelling Fabricator<n/><n/>Equips the Combater armor with an unstable plasma generator, allowing the ability to gain a shield that absorbs damage while damaging melee attackers.<n/><n/>This device was designed to produce and inject user with a chemical compound to improve their combat ability. Unlike stimpacks, it deals no permanent physical harm.
 Button/Tooltip/EquipPortableSensorTower=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(2)</c> Fusion Cores<n/><c val="00FF00">(1)</c> Shelling Fabricator<n/><n/>Equips the Hunter Ranger armor with a portable sensor tower, enabling 12 range detection, 20 range radar, and the ability to reveal an area of the map for a short time.<n/><n/>This device was designed to produce and inject user with a chemical compound to improve their combat ability. Unlike stimpacks, it deals no permanent physical harm.
 Button/Tooltip/EquipShellstormChaingun=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Gunpowder Mixer<n/><c val="00FF00">(2)</c> Shelling Fabricators<n/><n/>Equips the Serviceman armor with a fast-firing chaingun that hits multiple enemies in an area around main target, but target armor reduces damage of the weapon twice as much as usual.<n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
@@ -15753,7 +15775,6 @@ Button/Tooltip/MedicHeal4=Heals a friendly biological target.<n/><n/><c val="f07
 Button/Tooltip/MedicHeal5=Heals a friendly biological target.<n/><n/><c val="f078ff">Heals <d ref="Effect,heal,RechargeVitalRate"/> life per <d ref="Effect,heal,RechargeVitalRate * Effect,heal,DrainVitalCostFactor"/> energy.</c>
 Button/Tooltip/MedicHeal6=Heals a friendly biological target.<n/><n/><c val="f078ff">Heals 27 life per 9 energy.</c>
 Button/Tooltip/MedicHeal7=Heals a friendly biological target.<n/><n/><c val="f078ff">Heals 12 life per 3 energy.</c>
-Button/Tooltip/Medivac10=Air transport. Heals nearby biological units. Can use Afterburners.
 Button/Tooltip/Medivac10awwa12=Air transport. Can land to act as a resource drop-off point.<n/><n/>These barges were originally used to move large amounts of resources and partially process them on the way. Paramilitary groups started using them as mobile command centers, because actual HQs are expensive, slow and not compact.
 Button/Tooltip/Medivac11=Air transport. Heals nearby biological units. Can use Afterburners.
 Button/Tooltip/Medivac112=Air transport. Heals nearby biological units. Can use Afterburners.
@@ -17032,6 +17053,7 @@ Button/Tooltip/ReleaseInterceptors3=Awoken Vessel launches all Decayed at the ta
 Button/Tooltip/RelicOFEmpowerment21eawd=Upgrade and tech structure.
 Button/Tooltip/RelicOfDarkness=Contains upgrades for basic units.
 Button/Tooltip/RelicOfSacrifice=Contains upgrades.
+Button/Tooltip/Relocate=Jump towards a target. Deals 15 damage to an enemy on impact.
 Button/Tooltip/Repair2=Restores life to mechanical units and structures at the cost of resources.
 Button/Tooltip/Repair3=Restores life to mechanical units and structures at the cost of resources.
 Button/Tooltip/Repair4=Restores life to mechanical units and structures for free at a rate of 30/sec.
@@ -17614,6 +17636,7 @@ Button/Tooltip/ShieldBatteryRecharge2NotOverchargedConstantText=<n/><n/><c val="
 Button/Tooltip/ShieldBatteryRecharge2Overcharged=<n/><n/><c val="f078ff">Restores up to 36 shields per second. Every 3 shields restored drains 1 energy from the Battery.</c>
 Button/Tooltip/Shrike=Flying suicide unit. Scourge hatch in pairs from a single Larva.<n/><n/><c val="ffff8a">Can attack air units.</c>
 Button/Tooltip/ShrikeTurret2=Flaming Turrets are invisible when not attacking and regenerate 10 life per second.
+Button/Tooltip/SiegeBlimp=Air transport. Heals nearby biological units. Can use Afterburners.
 Button/Tooltip/SiegeBreaker2=Heavy tank. Long-range artillery in Siege Mode.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/SiegeBreaker3=Heavy tank. Long-range artillery in Siege Mode.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/SiegeBreaker4=Heavy tank. Long-range artillery in Siege Mode.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
@@ -18955,7 +18978,7 @@ Button/Tooltip/VoidColossusFireBeam263332222=Each weapon of Combater has 200% in
 Button/Tooltip/VoidColossusFireBeam2633322222=Each weapon of Titan has 50% accelerated attack speed, 35% damage bonus, 1 increased attack range and 50% increased damage to Armored targets, but Titans take up Power Supply.
 Button/Tooltip/VoidColossusFireBeam2633322223=Civil Control Divisions will automatically try to prevent any riots in radius of 9.<n/>Their batons can beat some sense into workers on strikes, but dire revolutionaries will not back down and try to fight back.
 Button/Tooltip/VoidColossusFireBeam26333223=Each weapon of Militia Trooper has 40% reduced damage and 1 reduced range.
-Button/Tooltip/VoidColossusFireBeam26333224=Each weapon of Siege Blimp has 6 increased range, longer attack speed and 75% damage bonus.<n/><n/>Each unit inside the Siege Blimp increases it's speed by 0.35 and attack speed by 15%.
+Button/Tooltip/VoidColossusFireBeam26333224=Each unit inside the Siege Blimp increases it's speed by 0.35 and attack speed by 15%.
 Button/Tooltip/VoidColossusFireBeam263332242=Each weapon of Brazier has 1 reduced range, but deals 40% more damage and attacks 40% faster.
 Button/Tooltip/VoidColossusFireBeam2633322422=Each weapon of Brazier has 1 reduced range, but deals 40% more damage and attacks 40% faster.
 Button/Tooltip/VoidColossusFireBeam2633322422faw21=Multiple workers can work on constructing the same structure at once.
@@ -21950,8 +21973,12 @@ Effect/Name/CorruptionLaunchMissile4=Corruption
 Effect/Name/CraftCorrosiveDesolator=Craft Corrosive Desolator
 Effect/Name/CraftDoubleSurgicalLaser=Craft Double Surgical Laser
 Effect/Name/CraftDualSecurityPistols=Craft Dual Security Pistols
+Effect/Name/CraftEpsteinFusionDrive=Craft Epstein Fusion Drive
+Effect/Name/CraftGlancerTorpedoTubes=Craft Glancer Torpedo Tubes
 Effect/Name/CraftHellRifle=Craft Hell Rifle
+Effect/Name/CraftJumpJets=Craft Jump Jets
 Effect/Name/CraftNapalmSprayer=Craft Napalm Sprayer
+Effect/Name/CraftPDCArray=Craft PDC Array
 Effect/Name/CraftPlasmaCoater=Craft Plasma Coater
 Effect/Name/CraftPortableSensorTower=Craft Portable Sensor Tower
 Effect/Name/CraftShellstormChaingun=Craft Shellstorm Chaingun
@@ -23167,6 +23194,7 @@ Effect/Name/EMPSet8=EMP
 Effect/Name/EMPSet82=EMP
 Effect/Name/EnergyBeamCreatePersistent2=Energy Beam (Create Persistent) Copy
 Effect/Name/EnergyBeamCreatePersistent22=Energy Beam (Create Persistent) Copy
+Effect/Name/EngageFusionDrive=Engage Fusion Drive
 Effect/Name/EnterWormholeApplyBehavior2=Enter Wormhole (Apply Behavior)
 Effect/Name/EnterWormholePersistent22=Enter Wormhole (Persistent 2)
 Effect/Name/EnterWormholePersistent3=Enter Wormhole (Persistent)
@@ -23506,6 +23534,9 @@ Effect/Name/GlaiveWurmU65=Glaive Wurm U10
 Effect/Name/GlaiveWurmU66=Glaive Wurm U6
 Effect/Name/GlaiveWurmU67=Glaive Wurm U6
 Effect/Name/GlaiveWurmU68=Glaive Wurm U6
+Effect/Name/GlancerTorpedoesDamage=Glancer Torpedoes Damage
+Effect/Name/GlancerTorpedoesLM=Glancer Torpedoes LM
+Effect/Name/GlancerTorpedoesPersistent=Glancer Torpedoes Persistent
 Effect/Name/GoliathA2=Hellfire Missile Pack Copy
 Effect/Name/GoliathA22=Hellfire Missile Pack Copy Copy
 Effect/Name/GoliathA222=Hellfire Missile Pack Copy Copy
@@ -25292,7 +25323,7 @@ Effect/Name/MengskMarauderSet7=Mengsk Marauder Set
 Effect/Name/MengskMarineDamage2=Mengsk Marine Damage Copy
 Effect/Name/MengskMarineDamage3=Mengsk Marine Damage Copy 2
 Effect/Name/MengskMarineDamage32=Mengsk Marine Damage Copy 3
-Effect/Name/MengskMarineDamage322=Mengsk Marine Damage Copy 3
+Effect/Name/MengskMarineDamage3222=Mengsk Marine Damage Copy 3
 Effect/Name/MengskMarineDamage33=Mengsk Marine Damage Copy 2
 Effect/Name/MengskMedicHeal2=Hamborger Greater Restore
 Effect/Name/MengskReaperP38ScytheGuassPistol2=Mengsk Reaper P38 Scythe Guass Pistol Copy
@@ -26359,7 +26390,6 @@ Effect/Name/OracleVoidSiphonAddMinerals2365222222222=Refugee Add Hope 10
 Effect/Name/OracleVoidSiphonAddMinerals23652222222222=Refugee Remove Hope 10
 Effect/Name/OracleVoidSiphonAddMinerals2365222222223=Refugee Remove Hope 9
 Effect/Name/OracleVoidSiphonAddMinerals23652222222232222=Refugee Craft Remove 2CS, 1SF
-Effect/Name/OracleVoidSiphonAddMinerals236522222222322222=Refugee Craft Remove 1CS, 2FC
 Effect/Name/OracleVoidSiphonAddMinerals2365222222223222222=Refugee Craft Remove 2GM, 1 RT
 Effect/Name/OracleVoidSiphonAddMinerals2365222222223222223=Refugee Craft Remove 1CS, 2FC
 Effect/Name/OracleVoidSiphonAddMinerals236522222222323222=Refugee Craft Remove 2GM, 1RT
@@ -26426,6 +26456,11 @@ Effect/Name/P38ScytheGuassPistol4=P-38 Scythe Guass Pistol
 Effect/Name/P38ScytheGuassPistolBurst2=P-38 Scythe Guass Pistol Copy
 Effect/Name/P38ScytheGuassPistolBurst3=P-38 Scythe Guass Pistol
 Effect/Name/P38ScytheGuassPistolBurst4=P-38 Scythe Guass Pistol
+Effect/Name/PDCArrayDamage=PDC Array Damage
+Effect/Name/PDCArrayInitialSet=PDC Array Initial Set
+Effect/Name/PDCArrayKillMissile=PDC Array Kill Missile
+Effect/Name/PDCArrayPD=PDC Array PD
+Effect/Name/PDCArraySet=PDC Array Set
 Effect/Name/ParalyticSpines2=Paralytic Spines Copy
 Effect/Name/ParalyticSpines3=Paralytic Spines Copy 2
 Effect/Name/ParalyticSpines4=Paralytic Spines Copy 3
@@ -28362,16 +28397,20 @@ Effect/Name/RefineryMorph2=Refinery Morph
 Effect/Name/RefugeCannonDamage=Refuge Cannon Damage
 Effect/Name/RefugeCannonLM=Refuge Cannon LM
 Effect/Name/RefugeeCraftRemove1CS1FC1RT=Refugee Craft Remove 1CS, 1FC, 1RT
+Effect/Name/RefugeeCraftRemove1CS2FC=Refugee Craft Remove 1CS, 2FC
 Effect/Name/RefugeeCraftRemove1GM1CS1RT=Refugee Craft Remove 1GM, 1CS, 1RT
 Effect/Name/RefugeeCraftRemove1GM1SF1RT=Refugee Craft Remove 1GM, 1SF, 1RT
 Effect/Name/RefugeeCraftRemove1GM2SF=Refugee Craft Remove 1 GM, 2 SF
 Effect/Name/RefugeeCraftRemove2FC1SF=Refugee Craft Remove 2FC, 1SF
 Effect/Name/RefugeeCraftRemove2GM1SF=Refugee Craft Remove 2GM, 1SF
+Effect/Name/RefugeeCraftRemove2GM3SF1FC=Refugee Craft Remove 2GM, 3SF, 1FC
 Effect/Name/RefugeeCraftRemove2RT1FC=Refugee Craft Remove 2RT, 1FC
 Effect/Name/RefugeeCraftRemove2SF1FC=Refugee Craft Remove 2SF, 1FC
 Effect/Name/RefugeeCraftRemove3FC=Refugee Craft Remove 3FC
 Effect/Name/RefugeeCraftRemove3GM=Refugee Craft Remove 3GM
+Effect/Name/RefugeeCraftRemove3GM2SF1RT=Refugee Craft Remove 3GM, 2SF, 1RT
 Effect/Name/RefugeeCraftRemove3SF=Refugee Craft Remove 3SF
+Effect/Name/RefugeeCraftRemove4FC1SF1CS=Refugee Craft Remove 4FC, 1SF, 1CS
 Effect/Name/ReleaseInterceptors2=Release Interceptors2
 Effect/Name/ReleaseInterceptors3=Release Interceptors3
 Effect/Name/ReleaseInterceptorsApplyTimedLife2=Release Interceptors Apply Timed Life2
@@ -31747,6 +31786,7 @@ Param/Value/lib_CD55B2B5_1CF843CF=You have wanted it, you have asked for it, so 
 Param/Value/lib_CD55B2B5_1D6C9792=<c val="00FFFF">You gained Weak Host!</c>
 Param/Value/lib_CD55B2B5_1E9C98B3=go!
 Param/Value/lib_CD55B2B5_1EBCB189=7
+Param/Value/lib_CD55B2B5_1EC94DDA=Workers are on strike.
 Param/Value/lib_CD55B2B5_1F1BCA7A=No, no, no!
 Param/Value/lib_CD55B2B5_1F22A637=Light... approaching...
 Param/Value/lib_CD55B2B5_1FE73D2C=<c val="FF0000">My true intentions is something you will never comprehend.</c>
@@ -31818,6 +31858,7 @@ Param/Value/lib_CD55B2B5_54983721=<c val="00FFFF">You gained buncha money in gas
 Param/Value/lib_CD55B2B5_57CE7A24=<c val="80FFFF">Python The Pylon</c>
 Param/Value/lib_CD55B2B5_580F8E5F=<c val="80FFFF">Python Went To Pylon Heaven.</c>
 Param/Value/lib_CD55B2B5_5A342490=I am not satisfied. Let's start over.
+Param/Value/lib_CD55B2B5_5ACB6408=Workers are starting a revolution.
 Param/Value/lib_CD55B2B5_5BDF3B0E=<c val="00FFFF">You gained 2000 maximum supply!</c>
 Param/Value/lib_CD55B2B5_5EB20EFA=<c val="00FF00">You gained John Dalski!</c>
 Param/Value/lib_CD55B2B5_5ED01597=<c val="80FFFF">Python The Pylon</c>
@@ -34963,7 +35004,6 @@ Unit/Name/Medic4=Life Saver
 Unit/Name/Medic5=Medical Officer
 Unit/Name/Medic6=Medic
 Unit/Name/Medic7=Medic
-Unit/Name/Medivac10=Siege Blimp
 Unit/Name/Medivac11=Trawler
 Unit/Name/Medivac112=Scow
 Unit/Name/Medivac113=Freighter
@@ -36073,6 +36113,7 @@ Unit/Name/ShieldBatteryNerazim2=Shield Battery
 Unit/Name/ShieldBatteryNerazim22=Shield Battery
 Unit/Name/ShieldBatteryfwa=Recharging Battery
 Unit/Name/Shrike=Shrike
+Unit/Name/SiegeBlimp=Siege Blimp
 Unit/Name/SiegeBreaker2=Duke's Revenge
 Unit/Name/SiegeBreaker22=Neutralizer
 Unit/Name/SiegeBreaker3=Drill Tank
@@ -38535,6 +38576,7 @@ Weapon/Name/GlaiveWurm6=Parasite Missile
 Weapon/Name/GlaiveWurm7=Chaos Cannon
 Weapon/Name/GlaiveWurm8=Praetor Glaive
 Weapon/Name/GlaiveWurm9=Glave Wurm
+Weapon/Name/GlancerTorpedoes=Glancer Torpedoes
 Weapon/Name/GoliathA2=Upgraded Missile Battery
 Weapon/Name/GoliathA22=Hunting Killer Needles
 Weapon/Name/GoliathA222=Blazing Spit
@@ -38969,6 +39011,7 @@ Weapon/Name/Oracle2=Beam Of The Pure
 Weapon/Name/P38ScytheGuassPistol2=P-66 Gauss Pistols
 Weapon/Name/P38ScytheGuassPistol3=Dual Security Pistols
 Weapon/Name/P38ScytheGuassPistol4=P-55 Gauss Pistol
+Weapon/Name/PDCArray=PDC Array
 Weapon/Name/ParasiteSpore2=Sabotage Spore
 Weapon/Name/ParasiteSpore22=<c val="FFFF00">AI Ling Shell</c>
 Weapon/Name/ParasiteSpore23=Spore Spray
@@ -39126,6 +39169,7 @@ Weapon/Name/ScoutGround4=Mounted Photon Blaster
 Weapon/Name/ScoutGround5=Bloodstream Blasters
 Weapon/Name/ScoutGround6=Photon Blaster
 Weapon/Name/ScoutGround7=Photon Blaster
+Weapon/Name/ScrapGrenade=Scrap Grenade
 Weapon/Name/ServitorStrike2=Follower Beam
 Weapon/Name/ServitorStrikeA2=Servitor Strike A Copy
 Weapon/Name/ShrikeTurret2=Mounted Turret
@@ -39283,7 +39327,6 @@ Weapon/Name/Vulture22=Z-20 RPG
 Weapon/Name/Vulture222=Warhead Launcher
 Weapon/Name/Vulture23=Farnade
 Weapon/Name/Vulture3=Scrap Grenade
-Weapon/Name/Vulture32=Scrap Grenade
 Weapon/Name/WarHound2=Fire Laser
 Weapon/Name/WarHound22=Grenade Launcher
 Weapon/Name/WarHound23=<c val="FFFF00">Fire Laser</c>
@@ -39372,6 +39415,7 @@ Weapon/Tip/LocustFlyingLaunch2=<c val="#ColorAttackInfo">Must be rooted or burro
 Weapon/Tip/LocustLaunchCreeper2=<c val="#ColorAttackInfo">Must be rooted or burrowed to attack.</c>
 Weapon/Tip/LocustLaunchCreeper22=<c val="#ColorAttackInfo">Must be rooted or burrowed to attack.</c>
 Weapon/Tip/MengskMarauder4=<s val="ABChoiceButtonText"><c val="8000FF">Costs 20 energy per shot.</c></s>
+Weapon/Tip/PDCArray=Can target missiles.
 Weapon/Tip/PhotonCannon32=Confuses target for 10 seconds.
 Weapon/Tip/PhotonCannon322=Confuses multiple targets in an area for 10 seconds.
 Weapon/Tip/PunisherGrenades43=This weapon cannot target friendly units and damages enemies in a radius of 2.5

@@ -12,6 +12,29 @@
         <AINotifyEffect value="XenWarrior6"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="EquipPlasmaCoater" Requirements="Craft2FC1SF"/>
     </CAbilEffectInstant>
+    <CAbilEffectInstant id="Ab1EpsteinFusionDrive">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="XenWarrior622322335"/>
+        <Effect index="0" value="CraftEpsteinFusionDrive"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge CountMax="1" CountUse="-1"/>
+        </Cost>
+        <AINotifyEffect value="XenWarrior6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipEpsteinFusionDrive" Requirements="Craft4FC1SF1CS"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Ab3JumpJets">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="XenWarrior622322335"/>
+        <Effect index="0" value="CraftJumpJets"/>
+        <Flags index="BestUnit" value="1"/>
+        <Cost>
+            <Charge CountMax="1" CountUse="-1"/>
+        </Cost>
+        <AINotifyEffect value="XenWarrior6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipJumpJets" Requirements="MothershipRequirements232254232"/>
+    </CAbilEffectInstant>
     <CAbilEffectInstant id="Ab2StormcallerUplink">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DataCollection value="XenWarrior622322335"/>
@@ -43,6 +66,7 @@
         <CmdButtonArray index="Execute" DefaultButtonFace="VoidHighTemplarPsiOrb44">
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
+        <AutoCastValidatorArray value="CasterNotHoldingPosition"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="AggressiveMutation2">
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
@@ -698,6 +722,18 @@
         <ShowProgressArray index="Prep" value="1"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="KerriganVoidKineticBlast3"/>
     </CAbilEffectTarget>
+    <CAbilEffectInstant id="EngageFusionDrive">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <SharedFlags index="Disabled" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="90"/>
+        </Cost>
+        <AINotifyEffect value="MedivacSpeedBoost4"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EngageFusionDrive">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectInstant>
     <CAbilEffectInstant id="NanobotWindCP2">
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
         <Effect index="0" value="ArtanisAstralWind5"/>
@@ -3405,7 +3441,7 @@
         </InfoArray>
         <InfoArray index="Train4" Time="75">
             <Button DefaultButtonFace="Marauder17" State="Restricted" Requirements="HavePsionicHeart22432322232423222632"/>
-            <Unit value="Medivac10"/>
+            <Unit value="SiegeBlimp"/>
         </InfoArray>
         <InfoArray index="Train5" Time="200">
             <Button DefaultButtonFace="Medic14" State="Restricted" Requirements="HavePsionicHeart224323222324232226332222222222"/>
@@ -3482,7 +3518,7 @@
         </InfoArray>
         <InfoArray index="Train4" Time="150">
             <Button DefaultButtonFace="Marauder17" State="Restricted" Requirements="HavePsionicHeart22432322232423222632"/>
-            <Unit value="Medivac10"/>
+            <Unit value="SiegeBlimp"/>
         </InfoArray>
         <InfoArray index="Train5" Time="200">
             <Button DefaultButtonFace="Medic14" State="Restricted" Requirements="HavePsionicHeart224323222324232226322"/>
@@ -3533,7 +3569,7 @@
         </InfoArray>
         <InfoArray index="Train4" Time="150">
             <Button DefaultButtonFace="Marauder17" State="Restricted" Requirements="HavePsionicHeart22432322232423222632"/>
-            <Unit value="Medivac10"/>
+            <Unit value="SiegeBlimp"/>
         </InfoArray>
         <InfoArray index="Train5" Time="200">
             <Button DefaultButtonFace="Medic14" State="Restricted" Requirements="HavePsionicHeart224323222324232226322"/>
@@ -3584,7 +3620,7 @@
         </InfoArray>
         <InfoArray index="Train4" Time="150">
             <Button DefaultButtonFace="Marauder17" State="Restricted" Requirements="HavePsionicHeart22432322232423222632"/>
-            <Unit value="Medivac10"/>
+            <Unit value="SiegeBlimp"/>
         </InfoArray>
         <InfoArray index="Train5" Time="200">
             <Button DefaultButtonFace="Medic14" State="Restricted" Requirements="HavePsionicHeart224323222324232226322"/>
@@ -7248,14 +7284,14 @@
             <Flags index="Hidden" value="1"/>
         </CmdButtonArray>
         <Range value="4"/>
-        <MaxCargoCount value="20"/>
+        <MaxCargoCount value="100"/>
         <MaxCargoSize value="1"/>
-        <TotalCargoSpace value="20"/>
+        <TotalCargoSpace value="100"/>
         <LoadCargoBehavior value="AntamoAirAll2722222232"/>
         <LoadTransportEffect value="BlackhammerAddHealingWAve542"/>
         <UnloadTransportEffect value="BlackhammerAddHealingWAve5232"/>
         <TargetFilters value="Biological,Visible;Ally,Neutral,Enemy,Dead,Hidden"/>
-        <LoadValidatorArray value="RequiresCivilianAll2"/>
+        <LoadValidatorArray value="RefugeeValidatorAnyWorkerOrScientist"/>
     </CAbilTransport>
     <CAbilTransport id="BunkerTransport533224">
         <AbilSetId value="PPPP"/>
@@ -28440,6 +28476,24 @@
         <AINotifyEffect value=""/>
         <CmdButtonArray index="Execute" DefaultButtonFace="Irradiate22332"/>
         <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="Relocate">
+        <Alignment value="Negative"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <Effect index="0" value="PrimalSlashUpgraded2223"/>
+        <Flags index="AbortOnAllianceChange" value="0"/>
+        <Cost>
+            <Cooldown TimeUse="45"/>
+        </Cost>
+        <Range value="12"/>
+        <TrackingArc value="360"/>
+        <AutoCastFilters value="Ground,Visible;Player,Ally,Neutral,Missile,Stasis,Dead"/>
+        <AutoCastRange value="8"/>
+        <PrepTime value="0.125"/>
+        <AINotifyEffect value="PrimalSlash222"/>
+        <IgnoreFilters value="Ground;Self"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Relocate"/>
+        <SharedFlags index="Disabled" value="1"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="PurifierBeamCP2">
         <EditorCategories value="AbilityorEffectType:Units,Race:Terran"/>
@@ -60523,6 +60577,19 @@
         <TargetFilters value="Visible;Ally,Neutral,Enemy,Buried,UnderConstruction,Dead,Hidden"/>
         <LoadValidatorArray value="NotWidowMineTarget"/>
     </CAbilTransport>
+    <CAbilEffectInstant id="Wep2PDCArray">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="XenWarrior622322335"/>
+        <Effect index="0" value="CraftPDCArray"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
+            <Cooldown Link="Abil/XenWarrior"/>
+        </Cost>
+        <AINotifyEffect value="XenWarrior6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipPDCArray" Requirements="Craft3GM2SF1RT"/>
+    </CAbilEffectInstant>
     <CAbilEffectInstant id="Wep1NapalmSprayer">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DataCollection value="XenWarrior622322335"/>
@@ -60547,6 +60614,19 @@
         </Cost>
         <AINotifyEffect value="XenWarrior6"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="EquipZapperGun" Requirements="Craft1FC2SF"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Wep1GlancerTorpedoTubes">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="XenWarrior622322335"/>
+        <Effect index="0" value="CraftGlancerTorpedoTubes"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
+            <Cooldown Link="Abil/XenWarrior"/>
+        </Cost>
+        <AINotifyEffect value="XenWarrior6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipGlancerTorpedoTubes" Requirements="Craft2GM3SF1FC"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="Wep2HellRifle">
         <EditorCategories value="AbilityorEffectType:Units"/>
