@@ -1833,6 +1833,7 @@ Button/Hotkey/EquipGlancerTorpedoTubes=Q
 Button/Hotkey/EquipHellRifle=W
 Button/Hotkey/EquipJumpJets=E
 Button/Hotkey/EquipNapalmSprayer=Q
+Button/Hotkey/EquipPDCArray=W
 Button/Hotkey/EquipPlasmaCoater=Q
 Button/Hotkey/EquipPortableSensorTower=Q
 Button/Hotkey/EquipShellstormChaingun=Q

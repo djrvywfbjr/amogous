@@ -11104,6 +11104,11 @@
         <EffectArray value="CorrosiveDesolatorDamage"/>
         <EffectArray value="CorrosiveDesolatorSearch"/>
     </CEffectSet>
+    <CEffectApplyBehavior id="CraftPDCArray">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="WepPDCArray"/>
+    </CEffectApplyBehavior>
     <CEffectApplyBehavior id="CraftHellRifle">
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
@@ -25640,6 +25645,17 @@
         <ImpactEffect value="GlancerTorpedoesDamage"/>
         <AmmoUnit value="VikingFighterWeapon"/>
     </CEffectLaunchMissile>
+    <CEffectDamage id="MengskMarineDamage3222">
+        <EditorCategories value="Race:Terran"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ArmorReduction value="2"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="10"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+    </CEffectDamage>
     <CEffectDamage id="MengskThorJavelinMissileLaunchersDamage323" parent="DU_WEAP_SPLASH">
         <EditorCategories value="Race:Terran"/>
         <Kind value="Ranged"/>
@@ -25667,12 +25683,40 @@
         <PeriodicPeriodArray value="0.25"/>
         <PeriodicPeriodArray value="0.125"/>
     </CEffectCreatePersistent>
+    <CEffectModifyUnit id="PDCArrayKillMissile">
+        <EditorCategories value=""/>
+        <ModifyFlags index="NullifyMissile" value="1"/>
+    </CEffectModifyUnit>
+    <CEffectSet id="PDCArraySet">
+        <EditorCategories value=""/>
+        <EffectArray value="PDCArrayDamage"/>
+        <EffectArray value="PDCArrayKillMissile"/>
+    </CEffectSet>
+    <CEffectEnumArea id="PDCArrayPD">
+        <ValidatorArray value="PointDefenseSearchTargetFilters"/>
+        <EditorCategories value=""/>
+        <ImpactLocation Value="SourceUnit"/>
+        <SearchFilters value="Missile,Visible;Self,Player,Ally,Neutral,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="6" Effect="PDCArraySet"/>
+    </CEffectEnumArea>
+    <CEffectSet id="PDCArrayInitialSet">
+        <EditorCategories value=""/>
+        <EffectArray value="PDCArrayDamage"/>
+        <EffectArray value="PDCArrayPD"/>
+    </CEffectSet>
     <CEffectModifyPlayer id="RefugeeCraftRemove2GM3SF1FC">
         <EditorCategories value="Race:Zerg"/>
         <WhichPlayer Value="Caster"/>
         <Upgrades Upgrade="ManufactureFusionCore" Count="-1"/>
         <Upgrades Upgrade="ManufactureShellingFabricator" Count="-3"/>
         <Upgrades Upgrade="ManufactureGunpowderMixer" Count="-2"/>
+    </CEffectModifyPlayer>
+    <CEffectModifyPlayer id="RefugeeCraftRemove3GM2SF1RT">
+        <EditorCategories value="Race:Zerg"/>
+        <WhichPlayer Value="Caster"/>
+        <Upgrades Upgrade="ManufactureRecyclerTank" Count="-1"/>
+        <Upgrades Upgrade="ManufactureShellingFabricator" Count="-2"/>
+        <Upgrades Upgrade="ManufactureGunpowderMixer" Count="-3"/>
     </CEffectModifyPlayer>
     <CEffectModifyPlayer id="RefugeeCraftRemove4FC1SF1CS">
         <EditorCategories value="Race:Zerg"/>
@@ -38373,16 +38417,16 @@
         <SearchFlags index="CallForHelp" value="1"/>
         <SearchFlags index="OffsetByUnitRadius" value="1"/>
     </CEffectDamage>
-    <CEffectDamage id="MengskMarineDamage322">
+    <CEffectDamage id="PDCArrayDamage">
         <EditorCategories value="Race:Terran"/>
         <ResponseFlags index="Acquire" value="1"/>
         <ResponseFlags index="Flee" value="1"/>
-        <ArmorReduction value="2"/>
         <Flags index="Notification" value="1"/>
         <Kind value="Ranged"/>
-        <Amount value="10"/>
-        <SearchFlags index="CallForHelp" value="1"/>
-        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+        <Amount value="12"/>
+        <TargetSorts>
+            <SortArray value="TSDistance"/>
+        </TargetSorts>
     </CEffectDamage>
     <CEffectDamage id="MengskMarineDamage33">
         <EditorCategories value="Race:Terran"/>
@@ -66140,7 +66184,7 @@
     <CEffectEnumArea id="SonOfKorhalAOE32">
         <EditorCategories value=""/>
         <SearchFilters value="-;Self,Player,Ally,Missile,Invulnerable"/>
-        <AreaArray Radius="1.5" Effect="MengskMarineDamage322"/>
+        <AreaArray Radius="1.5" Effect="PDCArrayDamage"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="SonOfKorhalAOE322">
         <EditorCategories value=""/>

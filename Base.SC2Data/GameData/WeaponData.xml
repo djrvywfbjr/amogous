@@ -3863,7 +3863,7 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="GlancerTorpedoes">
         <EditorCategories value="Race:Terran"/>
-        <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
+        <Icon value="Assets\Textures\btn-techupgrade-terran-charonboosters.dds"/>
         <DisplayEffect value="GlancerTorpedoesDamage"/>
         <DisplayAttackCount value="6"/>
         <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
@@ -3871,6 +3871,22 @@
         <Period value="6"/>
         <Effect value="GlancerTorpedoesPersistent"/>
         <AllowedMovement value="Slowing"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PDCArray">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-shotgunaoe.dds"/>
+        <DisplayEffect value="PDCArrayDamage"/>
+        <TargetFilters value="Visible;Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="6"/>
+        <Range value="5.5"/>
+        <Period value="0.25"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="PDCArrayInitialSet"/>
+        <AllowedMovement value="Moving"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Arc value="360"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="NapalmSprayer">
         <EditorCategories value="Race:Terran"/>
@@ -6609,7 +6625,7 @@
     <CWeaponLegacy id="MengskMarine322">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-shotgunaoe.dds"/>
-        <DisplayEffect value="MengskMarineDamage322"/>
+        <DisplayEffect value="PDCArrayDamage"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="6"/>
         <Range value="6"/>
@@ -6621,7 +6637,7 @@
     <CWeaponLegacy id="MengskMarine3222">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-shotgunaoe.dds"/>
-        <DisplayEffect value="MengskMarineDamage322"/>
+        <DisplayEffect value="PDCArrayDamage"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="7"/>
         <Range value="7"/>

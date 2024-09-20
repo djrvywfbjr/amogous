@@ -4138,6 +4138,12 @@
         <HotkeySet value="Cloak"/>
         <Universal value="1"/>
     </CButton>
+    <CButton id="EquipPDCArray">
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-shotgunaoe.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
     <CButton id="EquipPlasmaCoater">
         <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
@@ -4163,7 +4169,7 @@
         <Universal value="1"/>
     </CButton>
     <CButton id="EquipGlancerTorpedoTubes">
-        <Icon value="Assets\Textures\btn-research-terran-ultracapacitors.dds"/>
+        <Icon value="Assets\Textures\btn-techupgrade-terran-charonboosters.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
         <EditorCategories value="Race:Protoss"/>
         <Universal value="1"/>

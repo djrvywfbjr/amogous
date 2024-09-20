@@ -1315,6 +1315,23 @@
             <WeaponDisableArray value="H66ScrapCannon"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="WepPDCArray">
+        <Cost>
+            <Charge CountMax="1" CountUse="-1"/>
+        </Cost>
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InitialEffect value="RefugeeCraftRemove3GM2SF1RT"/>
+        <Modification>
+            <AbilLinkDisableArray value="Wep1GlancerTorpedoTubes"/>
+            <AbilLinkDisableArray value="Wep2PDCArray"/>
+            <AbilLinkDisableArray value="Wep2HellRifle"/>
+            <BehaviorLinkDisableArray value="NoWeapon"/>
+            <WeaponArray Link="PDCArray"/>
+            <WeaponDisableArray value="ScrapGrenade"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="WepZapperGun">
         <Cost>
             <Charge CountMax="1" CountUse="-1"/>
@@ -46221,7 +46238,7 @@
         <InitialEffect value="RefugeeCraftRemove2GM3SF1FC"/>
         <Modification>
             <AbilLinkDisableArray value="Wep1GlancerTorpedoTubes"/>
-            <AbilLinkDisableArray value="Wep1ZapperGun"/>
+            <AbilLinkDisableArray value="Wep2PDCArray"/>
             <AbilLinkDisableArray value="Wep2HellRifle"/>
             <BehaviorLinkDisableArray value="NoWeapon"/>
             <WeaponArray Link="GlancerTorpedoes"/>

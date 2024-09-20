@@ -2384,6 +2384,7 @@ Abil/Name/Wep1ZapperGun=Wep1 Zapper Gun
 Abil/Name/Wep2CorrosiveDesolator=Wep2 Corrosive Desolator
 Abil/Name/Wep2DoubleSurgicalLaser=Wep2 Double Surgical Laser
 Abil/Name/Wep2HellRifle=Wep2 Hell Rifle
+Abil/Name/Wep2PDCArray=Wep2 PDC Array
 Abil/Name/Wep2SharpnelRifle=Wep2 Sharpnel Rifle
 Abil/Name/Wep3SmartFireDartGuns=Wep3 Smart-Fire Dart Guns
 Abil/Name/Wep3WarheadLauncher=Wep3 Warhead Launcher
@@ -4213,6 +4214,7 @@ Behavior/Name/WepDualSecurityPistols=(Wep) Dual Security Pistols
 Behavior/Name/WepGlancerTorpedoTubes=(Wep) Glancer Torpedo Tubes
 Behavior/Name/WepHellRifle=(Wep) Hell Rifle
 Behavior/Name/WepNapalmSprayer=(Wep) Napalm Sprayer
+Behavior/Name/WepPDCArray=(Wep) PDC Array
 Behavior/Name/WepShellstormChaingun=(Wep) Shellstorm Chaingun
 Behavior/Name/WepShrapnelRifle=(Wep) Shrapnel Rifle
 Behavior/Name/WepSmartFireDartGuns=(Wep) Smart-Fire Dart Guns
@@ -7291,6 +7293,7 @@ Button/Name/EquipGlancerTorpedoTubes=Equip Glancer Torpedo Tubes
 Button/Name/EquipHellRifle=Equip Hell Rifle
 Button/Name/EquipJumpJets=Equip Jump Jets
 Button/Name/EquipNapalmSprayer=Equip Napalm Sprayer
+Button/Name/EquipPDCArray=Equip PDC Array
 Button/Name/EquipPlasmaCoater=Equip Plasma Coater
 Button/Name/EquipPortableSensorTower=Equip Portable Sensor Tower
 Button/Name/EquipShellstormChaingun=Equip Shellstorm Chaingun
@@ -14310,6 +14313,7 @@ Button/Tooltip/EquipGlancerTorpedoTubes=<c val="00FF00">Required parts:</c><n/><
 Button/Tooltip/EquipHellRifle=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Gunpowder Mixer<n/><c val="00FF00">(1)</c> Chemical Station<n/><c val="00FF00">(1)</c> Recycler Tank<n/><n/>Equips the Hunter Ranger armor with a rifle that ignites the target, dealing 30(40 to biological) extra damage over 10 seconds.<n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
 Button/Tooltip/EquipJumpJets=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(2)</c> Fusion Cores<n/><c val="00FF00">(1)</c> Chemical Station<n/><n/>Equips the Hunter Ranger armor with a portable sensor tower, enabling 12 range detection, 20 range radar, and the ability to reveal an area of the map for a short time.<n/><n/>This device was designed to produce and inject user with a chemical compound to improve their combat ability. Unlike stimpacks, it deals no permanent physical harm.
 Button/Tooltip/EquipNapalmSprayer=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Fusion Core<n/><c val="00FF00">(2)</c> Recycling Tanks<n/><n/>Equips the Combater armor with a fire-firing sprayer that hits multiple enemies in an area around main target. Does more damage to biological targets.<n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
+Button/Tooltip/EquipPDCArray=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Recycler Tank<n/><c val="00FF00">(2)</c> Shelling Fabricators<n/><c val="00FF00">(3)</c> Gunpowder Mixers<n/><n/>Equips the Hunter Ranger armor with a shocker that reduces enemy attack and movement speed, but does not do much damage.<n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
 Button/Tooltip/EquipPlasmaCoater=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(2)</c> Fusion Cores<n/><c val="00FF00">(1)</c> Shelling Fabricator<n/><n/>Equips the Combater armor with an unstable plasma generator, allowing the ability to gain a shield that absorbs damage while damaging melee attackers.<n/><n/>This device was designed to produce and inject user with a chemical compound to improve their combat ability. Unlike stimpacks, it deals no permanent physical harm.
 Button/Tooltip/EquipPortableSensorTower=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(2)</c> Fusion Cores<n/><c val="00FF00">(1)</c> Shelling Fabricator<n/><n/>Equips the Hunter Ranger armor with a portable sensor tower, enabling 12 range detection, 20 range radar, and the ability to reveal an area of the map for a short time.<n/><n/>This device was designed to produce and inject user with a chemical compound to improve their combat ability. Unlike stimpacks, it deals no permanent physical harm.
 Button/Tooltip/EquipShellstormChaingun=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Gunpowder Mixer<n/><c val="00FF00">(2)</c> Shelling Fabricators<n/><n/>Equips the Serviceman armor with a fast-firing chaingun that hits multiple enemies in an area around main target, but target armor reduces damage of the weapon twice as much as usual.<n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
@@ -15771,7 +15775,6 @@ Button/Tooltip/MedicHeal4=Heals a friendly biological target.<n/><n/><c val="f07
 Button/Tooltip/MedicHeal5=Heals a friendly biological target.<n/><n/><c val="f078ff">Heals <d ref="Effect,heal,RechargeVitalRate"/> life per <d ref="Effect,heal,RechargeVitalRate * Effect,heal,DrainVitalCostFactor"/> energy.</c>
 Button/Tooltip/MedicHeal6=Heals a friendly biological target.<n/><n/><c val="f078ff">Heals 27 life per 9 energy.</c>
 Button/Tooltip/MedicHeal7=Heals a friendly biological target.<n/><n/><c val="f078ff">Heals 12 life per 3 energy.</c>
-Button/Tooltip/Medivac10=Air transport. Heals nearby biological units. Can use Afterburners.
 Button/Tooltip/Medivac10awwa12=Air transport. Can land to act as a resource drop-off point.<n/><n/>These barges were originally used to move large amounts of resources and partially process them on the way. Paramilitary groups started using them as mobile command centers, because actual HQs are expensive, slow and not compact.
 Button/Tooltip/Medivac11=Air transport. Heals nearby biological units. Can use Afterburners.
 Button/Tooltip/Medivac112=Air transport. Heals nearby biological units. Can use Afterburners.
@@ -17633,6 +17636,7 @@ Button/Tooltip/ShieldBatteryRecharge2NotOverchargedConstantText=<n/><n/><c val="
 Button/Tooltip/ShieldBatteryRecharge2Overcharged=<n/><n/><c val="f078ff">Restores up to 36 shields per second. Every 3 shields restored drains 1 energy from the Battery.</c>
 Button/Tooltip/Shrike=Flying suicide unit. Scourge hatch in pairs from a single Larva.<n/><n/><c val="ffff8a">Can attack air units.</c>
 Button/Tooltip/ShrikeTurret2=Flaming Turrets are invisible when not attacking and regenerate 10 life per second.
+Button/Tooltip/SiegeBlimp=Air transport. Heals nearby biological units. Can use Afterburners.
 Button/Tooltip/SiegeBreaker2=Heavy tank. Long-range artillery in Siege Mode.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/SiegeBreaker3=Heavy tank. Long-range artillery in Siege Mode.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/SiegeBreaker4=Heavy tank. Long-range artillery in Siege Mode.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
@@ -21974,6 +21978,7 @@ Effect/Name/CraftGlancerTorpedoTubes=Craft Glancer Torpedo Tubes
 Effect/Name/CraftHellRifle=Craft Hell Rifle
 Effect/Name/CraftJumpJets=Craft Jump Jets
 Effect/Name/CraftNapalmSprayer=Craft Napalm Sprayer
+Effect/Name/CraftPDCArray=Craft PDC Array
 Effect/Name/CraftPlasmaCoater=Craft Plasma Coater
 Effect/Name/CraftPortableSensorTower=Craft Portable Sensor Tower
 Effect/Name/CraftShellstormChaingun=Craft Shellstorm Chaingun
@@ -25318,7 +25323,7 @@ Effect/Name/MengskMarauderSet7=Mengsk Marauder Set
 Effect/Name/MengskMarineDamage2=Mengsk Marine Damage Copy
 Effect/Name/MengskMarineDamage3=Mengsk Marine Damage Copy 2
 Effect/Name/MengskMarineDamage32=Mengsk Marine Damage Copy 3
-Effect/Name/MengskMarineDamage322=Mengsk Marine Damage Copy 3
+Effect/Name/MengskMarineDamage3222=Mengsk Marine Damage Copy 3
 Effect/Name/MengskMarineDamage33=Mengsk Marine Damage Copy 2
 Effect/Name/MengskMedicHeal2=Hamborger Greater Restore
 Effect/Name/MengskReaperP38ScytheGuassPistol2=Mengsk Reaper P38 Scythe Guass Pistol Copy
@@ -26451,6 +26456,11 @@ Effect/Name/P38ScytheGuassPistol4=P-38 Scythe Guass Pistol
 Effect/Name/P38ScytheGuassPistolBurst2=P-38 Scythe Guass Pistol Copy
 Effect/Name/P38ScytheGuassPistolBurst3=P-38 Scythe Guass Pistol
 Effect/Name/P38ScytheGuassPistolBurst4=P-38 Scythe Guass Pistol
+Effect/Name/PDCArrayDamage=PDC Array Damage
+Effect/Name/PDCArrayInitialSet=PDC Array Initial Set
+Effect/Name/PDCArrayKillMissile=PDC Array Kill Missile
+Effect/Name/PDCArrayPD=PDC Array PD
+Effect/Name/PDCArraySet=PDC Array Set
 Effect/Name/ParalyticSpines2=Paralytic Spines Copy
 Effect/Name/ParalyticSpines3=Paralytic Spines Copy 2
 Effect/Name/ParalyticSpines4=Paralytic Spines Copy 3
@@ -28398,6 +28408,7 @@ Effect/Name/RefugeeCraftRemove2RT1FC=Refugee Craft Remove 2RT, 1FC
 Effect/Name/RefugeeCraftRemove2SF1FC=Refugee Craft Remove 2SF, 1FC
 Effect/Name/RefugeeCraftRemove3FC=Refugee Craft Remove 3FC
 Effect/Name/RefugeeCraftRemove3GM=Refugee Craft Remove 3GM
+Effect/Name/RefugeeCraftRemove3GM2SF1RT=Refugee Craft Remove 3GM, 2SF, 1RT
 Effect/Name/RefugeeCraftRemove3SF=Refugee Craft Remove 3SF
 Effect/Name/RefugeeCraftRemove4FC1SF1CS=Refugee Craft Remove 4FC, 1SF, 1CS
 Effect/Name/ReleaseInterceptors2=Release Interceptors2
@@ -34991,7 +35002,6 @@ Unit/Name/Medic4=Life Saver
 Unit/Name/Medic5=Medical Officer
 Unit/Name/Medic6=Medic
 Unit/Name/Medic7=Medic
-Unit/Name/Medivac10=Siege Blimp
 Unit/Name/Medivac11=Trawler
 Unit/Name/Medivac112=Scow
 Unit/Name/Medivac113=Freighter
@@ -36101,6 +36111,7 @@ Unit/Name/ShieldBatteryNerazim2=Shield Battery
 Unit/Name/ShieldBatteryNerazim22=Shield Battery
 Unit/Name/ShieldBatteryfwa=Recharging Battery
 Unit/Name/Shrike=Shrike
+Unit/Name/SiegeBlimp=Siege Blimp
 Unit/Name/SiegeBreaker2=Duke's Revenge
 Unit/Name/SiegeBreaker22=Neutralizer
 Unit/Name/SiegeBreaker3=Drill Tank
@@ -38998,6 +39009,7 @@ Weapon/Name/Oracle2=Beam Of The Pure
 Weapon/Name/P38ScytheGuassPistol2=P-66 Gauss Pistols
 Weapon/Name/P38ScytheGuassPistol3=Dual Security Pistols
 Weapon/Name/P38ScytheGuassPistol4=P-55 Gauss Pistol
+Weapon/Name/PDCArray=PDC Array
 Weapon/Name/ParasiteSpore2=Sabotage Spore
 Weapon/Name/ParasiteSpore22=<c val="FFFF00">AI Ling Shell</c>
 Weapon/Name/ParasiteSpore23=Spore Spray
@@ -39401,6 +39413,7 @@ Weapon/Tip/LocustFlyingLaunch2=<c val="#ColorAttackInfo">Must be rooted or burro
 Weapon/Tip/LocustLaunchCreeper2=<c val="#ColorAttackInfo">Must be rooted or burrowed to attack.</c>
 Weapon/Tip/LocustLaunchCreeper22=<c val="#ColorAttackInfo">Must be rooted or burrowed to attack.</c>
 Weapon/Tip/MengskMarauder4=<s val="ABChoiceButtonText"><c val="8000FF">Costs 20 energy per shot.</c></s>
+Weapon/Tip/PDCArray=Can target missiles.
 Weapon/Tip/PhotonCannon32=Confuses target for 10 seconds.
 Weapon/Tip/PhotonCannon322=Confuses multiple targets in an area for 10 seconds.
 Weapon/Tip/PunisherGrenades43=This weapon cannot target friendly units and damages enemies in a radius of 2.5

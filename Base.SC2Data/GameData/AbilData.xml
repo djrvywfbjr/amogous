@@ -3441,7 +3441,7 @@
         </InfoArray>
         <InfoArray index="Train4" Time="75">
             <Button DefaultButtonFace="Marauder17" State="Restricted" Requirements="HavePsionicHeart22432322232423222632"/>
-            <Unit value="Medivac10"/>
+            <Unit value="SiegeBlimp"/>
         </InfoArray>
         <InfoArray index="Train5" Time="200">
             <Button DefaultButtonFace="Medic14" State="Restricted" Requirements="HavePsionicHeart224323222324232226332222222222"/>
@@ -3518,7 +3518,7 @@
         </InfoArray>
         <InfoArray index="Train4" Time="150">
             <Button DefaultButtonFace="Marauder17" State="Restricted" Requirements="HavePsionicHeart22432322232423222632"/>
-            <Unit value="Medivac10"/>
+            <Unit value="SiegeBlimp"/>
         </InfoArray>
         <InfoArray index="Train5" Time="200">
             <Button DefaultButtonFace="Medic14" State="Restricted" Requirements="HavePsionicHeart224323222324232226322"/>
@@ -3569,7 +3569,7 @@
         </InfoArray>
         <InfoArray index="Train4" Time="150">
             <Button DefaultButtonFace="Marauder17" State="Restricted" Requirements="HavePsionicHeart22432322232423222632"/>
-            <Unit value="Medivac10"/>
+            <Unit value="SiegeBlimp"/>
         </InfoArray>
         <InfoArray index="Train5" Time="200">
             <Button DefaultButtonFace="Medic14" State="Restricted" Requirements="HavePsionicHeart224323222324232226322"/>
@@ -3620,7 +3620,7 @@
         </InfoArray>
         <InfoArray index="Train4" Time="150">
             <Button DefaultButtonFace="Marauder17" State="Restricted" Requirements="HavePsionicHeart22432322232423222632"/>
-            <Unit value="Medivac10"/>
+            <Unit value="SiegeBlimp"/>
         </InfoArray>
         <InfoArray index="Train5" Time="200">
             <Button DefaultButtonFace="Medic14" State="Restricted" Requirements="HavePsionicHeart224323222324232226322"/>
@@ -60577,6 +60577,19 @@
         <TargetFilters value="Visible;Ally,Neutral,Enemy,Buried,UnderConstruction,Dead,Hidden"/>
         <LoadValidatorArray value="NotWidowMineTarget"/>
     </CAbilTransport>
+    <CAbilEffectInstant id="Wep2PDCArray">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="XenWarrior622322335"/>
+        <Effect index="0" value="CraftPDCArray"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
+            <Cooldown Link="Abil/XenWarrior"/>
+        </Cost>
+        <AINotifyEffect value="XenWarrior6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipPDCArray" Requirements="Craft3GM2SF1RT"/>
+    </CAbilEffectInstant>
     <CAbilEffectInstant id="Wep1NapalmSprayer">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DataCollection value="XenWarrior622322335"/>
