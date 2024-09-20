@@ -7291,7 +7291,7 @@
         <LoadTransportEffect value="BlackhammerAddHealingWAve542"/>
         <UnloadTransportEffect value="BlackhammerAddHealingWAve5232"/>
         <TargetFilters value="Biological,Visible;Ally,Neutral,Enemy,Dead,Hidden"/>
-        <LoadValidatorArray value="RequiresCivilianAll2"/>
+        <LoadValidatorArray value="RefugeeValidatorAnyWorkerOrScientist"/>
     </CAbilTransport>
     <CAbilTransport id="BunkerTransport533224">
         <AbilSetId value="PPPP"/>
