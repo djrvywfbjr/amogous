@@ -2711,7 +2711,7 @@
         <EditorCategories value=""/>
         <Marker Link="Effect/AlexStoneBlast224"/>
         <Chance value="0"/>
-        <Behavior value="AntamoAirAll103222242"/>
+        <Behavior value="StrikeStarting"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="AlexStoneBlast224222422">
         <ValidatorArray index="0" value="RequiresCivilianAll2"/>

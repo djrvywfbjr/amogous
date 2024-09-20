@@ -31786,6 +31786,7 @@ Param/Value/lib_CD55B2B5_1CF843CF=You have wanted it, you have asked for it, so 
 Param/Value/lib_CD55B2B5_1D6C9792=<c val="00FFFF">You gained Weak Host!</c>
 Param/Value/lib_CD55B2B5_1E9C98B3=go!
 Param/Value/lib_CD55B2B5_1EBCB189=7
+Param/Value/lib_CD55B2B5_1EC94DDA=Workers are on strike.
 Param/Value/lib_CD55B2B5_1F1BCA7A=No, no, no!
 Param/Value/lib_CD55B2B5_1F22A637=Light... approaching...
 Param/Value/lib_CD55B2B5_1FE73D2C=<c val="FF0000">My true intentions is something you will never comprehend.</c>
@@ -31857,6 +31858,7 @@ Param/Value/lib_CD55B2B5_54983721=<c val="00FFFF">You gained buncha money in gas
 Param/Value/lib_CD55B2B5_57CE7A24=<c val="80FFFF">Python The Pylon</c>
 Param/Value/lib_CD55B2B5_580F8E5F=<c val="80FFFF">Python Went To Pylon Heaven.</c>
 Param/Value/lib_CD55B2B5_5A342490=I am not satisfied. Let's start over.
+Param/Value/lib_CD55B2B5_5ACB6408=Workers are starting a revolution.
 Param/Value/lib_CD55B2B5_5BDF3B0E=<c val="00FFFF">You gained 2000 maximum supply!</c>
 Param/Value/lib_CD55B2B5_5EB20EFA=<c val="00FF00">You gained John Dalski!</c>
 Param/Value/lib_CD55B2B5_5ED01597=<c val="80FFFF">Python The Pylon</c>

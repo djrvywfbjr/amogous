@@ -958,7 +958,7 @@
             </Cost>
         </DamageResponse>
     </CBehaviorBuff>
-    <CBehaviorBuff id="AntamoAirAll103222242">
+    <CBehaviorBuff id="StrikeStarting">
         <Cost>
             <Charge Link="Behavior/AntamoAirAll"/>
             <Cooldown Link="Behavior/AntamoAirAll"/>
