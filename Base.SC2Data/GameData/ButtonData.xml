@@ -4130,26 +4130,12 @@
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="CalldownMULE42332"/>
     </CButton>
-    <CButton id="EquipCloakingMantle">
-        <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
-        <AlertIcon value="Assets\Textures\btn-ability-terran-cloak-color.dds"/>
-        <EditorCategories value="Race:Terran"/>
-        <HotkeyAlias value="CloakOnBanshee2"/>
-        <HotkeySet value="Cloak"/>
-        <Universal value="1"/>
-    </CButton>
     <CButton id="EquipPlasmaCoater">
         <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
         <EditorCategories value="Race:Protoss"/>
         <Universal value="1"/>
     </CButton>
-    <CButton id="EquipStormcallerUplink">
-        <Icon value="Assets\Textures\btn-upgrade-artanis-healingpsionicstorm.dds"/>
-        <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
-        <EditorCategories value="Race:Protoss"/>
-        <Universal value="1"/>
-	</CButton>
     <CButton id="Marauder334325424">
         <Tooltip value="Button/Tooltip/Marauder3343254242"/>
         <Icon value="Assets\Textures\btn-ability-zerg-stukov-ensnarecdr.dds"/>
@@ -25635,12 +25621,6 @@
     </CButton>
     <CButton id="Snipe4">
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-snipeenergyrefund.dds"/>
-        <AlertIcon value="Assets\Textures\btn-ability-terran-snipe-color.dds"/>
-        <EditorCategories value="Race:Terran"/>
-        <HidesForSimpleText value="0"/>
-    </CButton>
-    <CButton id="DivineIntervention">
-        <Icon value="Assets\Textures\btn-upgrade-artanis-healingpsionicstorm.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-snipe-color.dds"/>
         <EditorCategories value="Race:Terran"/>
         <HidesForSimpleText value="0"/>

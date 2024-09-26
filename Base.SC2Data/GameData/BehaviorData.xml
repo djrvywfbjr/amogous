@@ -69,20 +69,6 @@
             <AbilLinkDisableArray value="Ab1PlasmaCoater"/>
         </Modification>
     </CBehaviorBuff>
-    <CBehaviorBuff id="Ab2StormcallerUplink">
-        <Cost>
-            <Charge Link="Behavior/AntamoAirAll"/>
-            <Cooldown Link="Behavior/AntamoAirAll"/>
-        </Cost>
-        <BehaviorFlags index="Permanent" value="1"/>
-        <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
-        <EditorCategories value="AbilityorEffectType:Units"/>
-        <InitialEffect value="RefugeeCraftRemove3SF"/>
-        <Modification>
-            <AbilLinkEnableArray value="DivineIntervention"/>
-            <AbilLinkDisableArray value="Ab2StormcallerUplink"/>
-        </Modification>
-    </CBehaviorBuff>
     <CBehaviorBuff id="AbilityTargetExclusionBehavior2">
         <BehaviorFlags index="Permanent" value="1"/>
         <InfoFlags index="Hidden" value="1"/>

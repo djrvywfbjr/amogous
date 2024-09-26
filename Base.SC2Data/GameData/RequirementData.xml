@@ -187,14 +187,6 @@
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
         <NodeArray index="Use" Link="AndGTECountUpgradeManufactureGunpowderMixerCompleteOnly1GTECountUpgradeManufactureChemicalStationCompleteOnly1GTECountUpgradeManufactureRecyclerTankCompleteOnly1"/>
     </CRequirement>
-    <CRequirement id="Craft2CS1SF">
-        <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="AndGTECountUpgradeManufactureChemicalStationCompleteOnly2GTECountUpgradeManufactureShellingFabricatorCompleteOnly1"/>
-    </CRequirement>
-    <CRequirement id="Craft3SF">
-        <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="AndGTECountUpgradeManufactureShellingFabricatorCompleteOnly3"/>
-    </CRequirement>
     <CRequirement id="HaveIndustrialAutomatons">
         <NodeArray index="Use" Link="CountUpgradeIndustrialAutomatonsCompleteOnly"/>
     </CRequirement>
