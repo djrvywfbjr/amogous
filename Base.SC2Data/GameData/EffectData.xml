@@ -9985,7 +9985,7 @@
     <CEffectEnumArea id="BlackhammerAoELaunch32">
         <EditorCategories value=""/>
         <ImpactLocation Value="CasterPoint"/>
-        <SearchFilters value="-;Player,Ally,Dead"/>
+        <SearchFilters value="-;Player,Ally,Neutral,Dead"/>
         <AreaArray Radius="8" Effect="PrismaticBeam"/>
         <MaxCount value="12"/>
     </CEffectEnumArea>
@@ -21596,7 +21596,7 @@
         <AttributeBonus index="Armored" value="-10"/>
         <Kind value="Ranged"/>
         <Amount value="25"/>
-        <AreaArray Radius="1" Fraction="1"/>
+        <AreaArray Radius="2" Fraction="1"/>
         <SearchFilters value="-;Player,Ally,Neutral"/>
     </CEffectDamage>
     <CEffectDamage id="DragoonDamage65232" parent="DU_WEAP">
