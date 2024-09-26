@@ -30144,7 +30144,7 @@
             <Cooldown Link="Abil/AdeptPhaseShift" TimeUse="5"/>
         </Cost>
         <Range value="6"/>
-        <AutoCastFilters value="Visible;Player,Ally,Neutral,Missile,Stasis,Dead"/>
+        <AutoCastFilters value="Ground,Visible;Player,Ally,Neutral,Missile,Stasis,Dead"/>
         <AutoCastRange value="6"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="DarkArchonMindControl3324"/>
     </CAbilEffectTarget>
@@ -45135,6 +45135,7 @@
         <AutoCastFilters value="Visible;Self,Neutral,Enemy"/>
         <AutoCastRange value="6"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="HighArchonPsiStorm24" Requirements="HaveSupplyDepot2"/>
+        <TargetFilters value="-;Ally,Neutral,Enemy,Structure,Heroic,Missile"/>
     </CAbilEffectTarget>
     <CAbilEffectInstant id="QuickMutator4">
         <EditorCategories value="AbilityorEffectType:Units"/>

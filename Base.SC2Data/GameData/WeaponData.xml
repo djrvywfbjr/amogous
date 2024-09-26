@@ -1492,7 +1492,7 @@
         <Icon value="Assets\Textures\btn-upgrade-protoss-researchbosoniccore.dds"/>
         <DisplayEffect value="ColossusTaldarimDamage3"/>
         <DisplayAttackCount value="1"/>
-        <TargetFilters value="Ground,Visible;Air,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AcquirePrioritization value="ByDistanceFromTarget"/>
         <Range value="10"/>
         <RangeSlop value="0"/>
