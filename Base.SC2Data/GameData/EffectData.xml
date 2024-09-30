@@ -67464,7 +67464,8 @@
     </CEffectDamage>
     <CEffectDamage id="SuicideDamage8">
         <EditorCategories value="Race:Zerg"/>
-        <Amount value="50"/>
+        <Amount value="20"/>
+        <AttributeBonus index="Light" value="10"/>
     </CEffectDamage>
     <CEffectDamage id="SuicideDamage82">
         <EditorCategories value="Race:Zerg"/>
