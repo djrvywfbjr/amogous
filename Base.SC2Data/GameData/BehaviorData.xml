@@ -16085,11 +16085,11 @@
             <StateFlags index="Hallucination" value="1"/>
             <StateFlags index="SuppressFoodMade" value="1"/>
             <StateFlags index="SuppressFoodUsed" value="1"/>
-            <DamageDealtFraction index="Spell" value="0.25"/>
-            <DamageDealtFraction index="Melee" value="0.25"/>
-            <DamageDealtFraction index="Ranged" value="0.25"/>
-            <DamageDealtFraction index="Splash" value="0.25"/>
-            <DamageDealtFraction index="NoProc" value="0.25"/>
+            <DamageDealtFraction index="Spell" value="-0.25"/>
+            <DamageDealtFraction index="Melee" value="-0.25"/>
+            <DamageDealtFraction index="Ranged" value="-0.25"/>
+            <DamageDealtFraction index="Splash" value="-0.25"/>
+            <DamageDealtFraction index="NoProc" value="-0.25"/>
             <AbilLinkDisableArray value="MorphZerglingToBaneling"/>
             <AbilLinkDisableArray value="DevourerAspect"/>
             <AbilLinkDisableArray value="MorphToBroodLord"/>
@@ -16101,7 +16101,7 @@
             <AbilLinkDisableArray value="ThorUncrippled"/>
             <AbilLinkDisableArray value="PhasingMode"/>
         </Modification>
-        <DamageResponse ModifyFraction="0.65">
+        <DamageResponse ModifyFraction="1.4">
             <Chance value="1"/>
         </DamageResponse>
     </CBehaviorBuff>
