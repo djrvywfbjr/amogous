@@ -4341,7 +4341,7 @@ bool libCD55B2B5_gt_StrikeStartChurchman_Func (bool testConds, bool runActions) 
         UIDisplayMessage(PlayerGroupSingle(UnitGetOwner(EventUnit())), c_messageAreaError, StringExternal("Param/Value/lib_CD55B2B5_4F7B432F"));
     }
     else {
-        UnitBehaviorRemove(EventUnit(), "AntamoAirAll103222242", 1);
+        UnitBehaviorRemove(EventUnit(), "StrikeStarting", 1);
     }
     return true;
 }
@@ -4349,7 +4349,7 @@ bool libCD55B2B5_gt_StrikeStartChurchman_Func (bool testConds, bool runActions) 
 //--------------------------------------------------------------------------------------------------
 void libCD55B2B5_gt_StrikeStartChurchman_Init () {
     libCD55B2B5_gt_StrikeStartChurchman = TriggerCreate("libCD55B2B5_gt_StrikeStartChurchman_Func");
-    TriggerAddEventUnitBehaviorChange(libCD55B2B5_gt_StrikeStartChurchman, null, "AntamoAirAll103222242", c_unitBehaviorChangeCreate);
+    TriggerAddEventUnitBehaviorChange(libCD55B2B5_gt_StrikeStartChurchman, null, "StrikeStarting", c_unitBehaviorChangeCreate);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -4396,7 +4396,7 @@ bool libCD55B2B5_gt_RevolutionStartChurchman_Func (bool testConds, bool runActio
         UIDisplayMessage(PlayerGroupSingle(UnitGetOwner(EventUnit())), c_messageAreaError, StringExternal("Param/Value/lib_CD55B2B5_D505D9A0"));
     }
     else {
-        UnitBehaviorRemove(EventUnit(), "AntamoAirAll103222242", 1);
+        UnitBehaviorRemove(EventUnit(), "StrikeStarting", 1);
     }
     return true;
 }
@@ -4452,7 +4452,7 @@ bool libCD55B2B5_gt_StrikeStartConvict_Func (bool testConds, bool runActions) {
         UIDisplayMessage(PlayerGroupSingle(UnitGetOwner(EventUnit())), c_messageAreaError, StringExternal("Param/Value/lib_CD55B2B5_ADC2C253"));
     }
     else {
-        UnitBehaviorRemove(EventUnit(), "AntamoAirAll103222242", 1);
+        UnitBehaviorRemove(EventUnit(), "StrikeStarting", 1);
     }
     return true;
 }
@@ -4460,7 +4460,7 @@ bool libCD55B2B5_gt_StrikeStartConvict_Func (bool testConds, bool runActions) {
 //--------------------------------------------------------------------------------------------------
 void libCD55B2B5_gt_StrikeStartConvict_Init () {
     libCD55B2B5_gt_StrikeStartConvict = TriggerCreate("libCD55B2B5_gt_StrikeStartConvict_Func");
-    TriggerAddEventUnitBehaviorChange(libCD55B2B5_gt_StrikeStartConvict, null, "AntamoAirAll103222242", c_unitBehaviorChangeCreate);
+    TriggerAddEventUnitBehaviorChange(libCD55B2B5_gt_StrikeStartConvict, null, "StrikeStarting", c_unitBehaviorChangeCreate);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -4507,7 +4507,7 @@ bool libCD55B2B5_gt_RevolutionStartConvict_Func (bool testConds, bool runActions
         UIDisplayMessage(PlayerGroupSingle(UnitGetOwner(EventUnit())), c_messageAreaError, StringExternal("Param/Value/lib_CD55B2B5_4507F505"));
     }
     else {
-        UnitBehaviorRemove(EventUnit(), "AntamoAirAll103222242", 1);
+        UnitBehaviorRemove(EventUnit(), "StrikeStarting", 1);
     }
     return true;
 }
@@ -4539,6 +4539,7 @@ bool libCD55B2B5_gt_StrikeStart_Func (bool testConds, bool runActions) {
         return true;
     }
 
+    UIAlertUnit("AttackTown_Terr", UnitGetOwner(EventUnit()), StringExternal("Param/Value/lib_CD55B2B5_1EC94DDA"), "Assets\\Textures\\btn-ability-mengsk-ghost-pyrokineticimmolation_orange.dds", EventUnit());
     UnitIssueOrder(UnitTransport(EventUnit()), Order(AbilityCommand("BunkerTransport534", 1)), c_orderQueueReplace);
     UnitIssueOrder(UnitTransport(EventUnit()), Order(AbilityCommand("BunkerTransport533", 1)), c_orderQueueReplace);
     UnitIssueOrder(UnitTransport(EventUnit()), Order(AbilityCommand("BunkerTransport53", 1)), c_orderQueueReplace);
@@ -4565,7 +4566,7 @@ bool libCD55B2B5_gt_StrikeStart_Func (bool testConds, bool runActions) {
 //--------------------------------------------------------------------------------------------------
 void libCD55B2B5_gt_StrikeStart_Init () {
     libCD55B2B5_gt_StrikeStart = TriggerCreate("libCD55B2B5_gt_StrikeStart_Func");
-    TriggerAddEventUnitBehaviorChange(libCD55B2B5_gt_StrikeStart, null, "AntamoAirAll103222242", c_unitBehaviorChangeCreate);
+    TriggerAddEventUnitBehaviorChange(libCD55B2B5_gt_StrikeStart, null, "StrikeStarting", c_unitBehaviorChangeCreate);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -4589,6 +4590,7 @@ bool libCD55B2B5_gt_RevolutionStart_Func (bool testConds, bool runActions) {
         return true;
     }
 
+    UIAlertUnit("AttackTown_Terr", UnitGetOwner(EventUnit()), StringExternal("Param/Value/lib_CD55B2B5_5ACB6408"), "Assets\\Textures\\btn-ability-mengsk-ghost-pyrokineticimmolation_orange.dds", EventUnit());
     UnitIssueOrder(UnitTransport(EventUnit()), Order(AbilityCommand("BunkerTransport534", 1)), c_orderQueueReplace);
     UnitIssueOrder(UnitTransport(EventUnit()), Order(AbilityCommand("BunkerTransport533", 1)), c_orderQueueReplace);
     UnitIssueOrder(UnitTransport(EventUnit()), Order(AbilityCommand("BunkerTransport53", 1)), c_orderQueueReplace);

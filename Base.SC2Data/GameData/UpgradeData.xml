@@ -509,7 +509,7 @@
         <EffectArray Reference="Unit,Jumper,LifeMax" Value="30"/>
         <EffectArray Reference="Unit,Marine7,LifeMax" Value="30"/>
         <EffectArray Reference="Unit,Ghost8,LifeStart" Value="30"/>
-        <EffectArray Reference="Unit,Ghost8,LifeStart" Value="30"/>
+        <EffectArray Reference="Unit,Ghost8,LifeMax" Value="30"/>
         <EffectArray Reference="Unit,Marine7,LifeStart" Value="30"/>
         <EffectArray Reference="Unit,Combater,LifeStart" Value="30"/>
         <EffectArray Reference="Unit,Combater,LifeMax" Value="30"/>
@@ -8305,6 +8305,10 @@
         <EffectArray Reference="Unit,GhostAlternate3,LifeMax" Value="100"/>
         <EffectArray Reference="Unit,GhostAlternate3,LifeStart" Value="100"/>
         <EffectArray Reference="Unit,GhostAlternate3,EnergyMax" Value="100"/>
+        <EffectArray Operation="Set" Reference="Unit,GhostAlternate3,LifeRegenDelay" Value="10.000000"/>
+        <EffectArray Operation="Set" Reference="Unit,GhostAlternate3,LifeRegenRate" Value="3.000000"/>
+        <EffectArray Operation="Set" Reference="Unit,GhostAlternate3,LifeArmorLevel" Value="2"/>
+        <EffectArray Operation="Set" Reference="Unit,GhostAlternate3,LifeArmor" Value="3"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -9907,6 +9911,16 @@
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade522242242322222237222">
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade522242242322222237223">
+        <EffectArray Operation="Set" Reference="Unit,Administrator,CostResource[Minerals]" Value="20"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222372232">
+        <EffectArray Operation="Set" Reference="Unit,Administrator,Food" Value="-0.5"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -12430,6 +12444,8 @@
         <EffectArray Reference="Unit,Warden,LifeArmor" Value="1"/>
         <EffectArray Reference="Unit,Tempest22,LifeArmor" Value="1"/>
         <EffectArray Reference="Unit,Hydralisk7,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,ColossusTaldarim222,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Shrike,LifeArmor" Value="1"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -12450,6 +12466,8 @@
         <EffectArray Reference="Unit,Warden,LifeArmor" Value="1"/>
         <EffectArray Reference="Unit,Tempest22,LifeArmor" Value="1"/>
         <EffectArray Reference="Unit,Hydralisk7,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,ColossusTaldarim222,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Shrike,LifeArmor" Value="1"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -12470,6 +12488,8 @@
         <EffectArray Reference="Unit,Warden,LifeArmor" Value="1"/>
         <EffectArray Reference="Unit,Tempest22,LifeArmor" Value="1"/>
         <EffectArray Reference="Unit,Hydralisk7,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,ColossusTaldarim222,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Shrike,LifeArmor" Value="1"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -12492,6 +12512,15 @@
         <EffectArray Reference="Effect,RoachVileAcidSalivaU3,Amount" Value="3"/>
         <EffectArray Reference="Effect,RoachVileUMelee2,Amount" Value="3"/>
         <EffectArray Reference="Effect,ParticleDisruptorsU3,Amount" Value="2"/>
+        <EffectArray Operation="Set" Reference="Effect,NeedleSpinesDamage2,Chance" Value="1"/>
+        <EffectArray Reference="Effect,NeedleSpinesDamage9,Amount" Value="3"/>
+        <EffectArray Reference="Effect,HotSLeviathanAirAttackDamage3,Amount" Value="1"/>
+        <EffectArray Reference="Effect,ThermalLancesFriendlyDamage,Amount" Value="4"/>
+        <EffectArray Reference="Effect,WarpBlades,Amount" Value="2"/>
+        <EffectArray Reference="Effect,PunisherGrenadesU42,Amount" Value="6"/>
+        <EffectArray Reference="Effect,HotSSwarmlingClawsDamage3,Amount" Value="1"/>
+        <EffectArray Reference="Effect,Talons,Amount" Value="1"/>
+        <EffectArray Reference="Effect,AcidSpines,Amount" Value="2"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -12514,6 +12543,13 @@
         <EffectArray Reference="Effect,RoachVileAcidSalivaU3,Amount" Value="3"/>
         <EffectArray Reference="Effect,RoachVileUMelee2,Amount" Value="3"/>
         <EffectArray Reference="Effect,ParticleDisruptorsU3,Amount" Value="2"/>
+        <EffectArray Operation="Set" Reference="Effect,NeedleSpinesDamage2,Chance" Value="1"/>
+        <EffectArray Reference="Effect,NeedleSpinesDamage9,Amount" Value="3"/>
+        <EffectArray Reference="Effect,HotSLeviathanAirAttackDamage3,Amount" Value="1"/>
+        <EffectArray Reference="Effect,ThermalLancesFriendlyDamage,Amount" Value="4"/>
+        <EffectArray Reference="Effect,WarpBlades,Amount" Value="2"/>
+        <EffectArray Reference="Effect,PunisherGrenadesU42,Amount" Value="6"/>
+        <EffectArray Reference="Effect,HotSSwarmlingClawsDamage3,Amount" Value="1"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -12536,6 +12572,13 @@
         <EffectArray Reference="Effect,RoachVileAcidSalivaU3,Amount" Value="3"/>
         <EffectArray Reference="Effect,RoachVileUMelee2,Amount" Value="3"/>
         <EffectArray Reference="Effect,ParticleDisruptorsU3,Amount" Value="2"/>
+        <EffectArray Operation="Set" Reference="Effect,NeedleSpinesDamage2,Chance" Value="1"/>
+        <EffectArray Reference="Effect,NeedleSpinesDamage9,Amount" Value="3"/>
+        <EffectArray Reference="Effect,HotSLeviathanAirAttackDamage3,Amount" Value="1"/>
+        <EffectArray Reference="Effect,ThermalLancesFriendlyDamage,Amount" Value="4"/>
+        <EffectArray Reference="Effect,WarpBlades,Amount" Value="2"/>
+        <EffectArray Reference="Effect,PunisherGrenadesU42,Amount" Value="6"/>
+        <EffectArray Reference="Effect,HotSSwarmlingClawsDamage3,Amount" Value="1"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>

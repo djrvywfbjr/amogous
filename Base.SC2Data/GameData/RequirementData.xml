@@ -179,6 +179,10 @@
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
         <NodeArray index="Use" Link="AndGTECountUpgradeManufactureFusionCoreCompleteOnly1GTECountUpgradeManufactureShellingFabricatorCompleteOnly2"/>
     </CRequirement>
+    <CRequirement id="Craft2GM3SF1FC">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <NodeArray index="Use" Link="AndGTECountUpgradeManufactureFusionCoreCompleteOnly1GTECountUpgradeManufactureShellingFabricatorCompleteOnly3GTECountUpgradeManufactureGunpowderMixerCompleteOnly2"/>
+    </CRequirement>
     <CRequirement id="Craft1GM1CS1RT">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
         <NodeArray index="Use" Link="AndGTECountUpgradeManufactureGunpowderMixerCompleteOnly1GTECountUpgradeManufactureChemicalStationCompleteOnly1GTECountUpgradeManufactureRecyclerTankCompleteOnly1"/>
@@ -187,11 +191,33 @@
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
         <NodeArray index="Use" Link="AndGTECountUpgradeManufactureGunpowderMixerCompleteOnly1GTECountUpgradeManufactureChemicalStationCompleteOnly1GTECountUpgradeManufactureRecyclerTankCompleteOnly1"/>
     </CRequirement>
+    <CRequirement id="Craft2CS1SF">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <NodeArray index="Use" Link="AndGTECountUpgradeManufactureChemicalStationCompleteOnly2GTECountUpgradeManufactureShellingFabricatorCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="Craft3GM2SF1RT">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <NodeArray index="Use" Link="AndGTECountUpgradeManufactureRecyclerTankCompleteOnly1GTECountUpgradeManufactureShellingFabricatorCompleteOnly2GTECountUpgradeManufactureGunpowderMixerCompleteOnly3"/>
+    </CRequirement>
+    <CRequirement id="Craft4FC1SF1CS">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <NodeArray index="Use" Link="AndGTECountUpgradeManufactureFusionCoreCompleteOnly4GTECountUpgradeManufactureShellingFabricatorCompleteOnly1GTECountUpgradeManufactureChemicalStationCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="Craft3SF">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <NodeArray index="Use" Link="AndGTECountUpgradeManufactureShellingFabricatorCompleteOnly3"/>
+    </CRequirement>
     <CRequirement id="HaveIndustrialAutomatons">
         <NodeArray index="Use" Link="CountUpgradeIndustrialAutomatonsCompleteOnly"/>
     </CRequirement>
     <CRequirement id="HaveMobileAutomatons">
         <NodeArray index="Use" Link="CountUpgradeMobileAutomatonsCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="LearnHoloRegeneration224">
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222237223QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnHoloRegeneration225">
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222372232QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="LearnMobileAutomatons">
         <EditorCategories value="Race:Protoss,TechType:Ability"/>

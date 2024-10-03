@@ -4130,8 +4130,46 @@
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="CalldownMULE42332"/>
     </CButton>
+    <CButton id="EquipCloakingMantle">
+        <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-cloak-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="CloakOnBanshee2"/>
+        <HotkeySet value="Cloak"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="EquipPDCArray">
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-shotgunaoe.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
     <CButton id="EquipPlasmaCoater">
         <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="EquipJumpJets">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-scoutchampionstunmissiles.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="EquipEpsteinFusionDrive">
+        <Icon value="Assets\Textures\BTN-Upgrade-Terran-MedivacEmergencyThrusters.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="EquipStormcallerUplink">
+        <Icon value="Assets\Textures\btn-upgrade-artanis-healingpsionicstorm.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="EquipGlancerTorpedoTubes">
+        <Icon value="Assets\Textures\btn-techupgrade-terran-charonboosters.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
         <EditorCategories value="Race:Protoss"/>
         <Universal value="1"/>
@@ -4143,6 +4181,11 @@
         <Hotkey value="Button/Hotkey/Marau12der3343254"/>
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="Marauder334325"/>
+    </CButton>
+    <CButton id="EngageFusionDrive">
+        <Icon value="Assets\Textures\BTN-Upgrade-Terran-MedivacEmergencyThrusters.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Upgrade-Terran-MedivacEmergencyThrusters.dds"/>
+        <EditorCategories value="Race:Neutral"/>
     </CButton>
     <CButton id="MicrobialAgitation2">
         <Icon value="Assets\Textures\btn-ability-zerg-corruption-multi.dds"/>
@@ -4230,6 +4273,12 @@
         <EditorCategories value="Race:Zerg"/>
         <HotkeyAlias value="PoisonNova223"/>
     </CButton>
+    <CButton id="Relocate">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-scoutchampionstunmissiles.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-kerrigan-leapingstrike.dds"/>
+        <Hotkey value="Button/Hotkey/MindBolt"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
     <CButton id="QueenClassicParasite3">
         <Icon value="Assets\Textures\btn-ability-zerg-viper-ocularparasite.dds"/>
         <EditorCategories value="Race:Zerg"/>
@@ -4239,6 +4288,16 @@
     </CButton>
     <CButton id="ResearchOptimizedServos">
         <Icon value="Assets\Textures\btn-upgrade-terran-transformationservos.dds"/>
+    </CButton>
+    <CButton id="SJHyperionYamato462236">
+        <Icon value="Assets\Textures\btn-ability-protoss-carrierrepairdrones.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
+    <CButton id="SJHyperionYamato4622362">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-disruptorpermanentcloak.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
     </CButton>
     <CButton id="SensorSweep">
         <Icon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
@@ -13295,6 +13354,7 @@
         <AlertTooltip value="Button/Tooltip/PsiStorm"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-psistorm-color.dds"/>
         <EditorCategories value="Race:Protoss"/>
+        <Hotkey value="Button/Hotkey/Savoir"/>
     </CButton>
     <CButton id="HighArchonPsiStorm25">
         <Name value="Button/Name/HighArchonPsiStorm256"/>
@@ -25621,6 +25681,12 @@
     </CButton>
     <CButton id="Snipe4">
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-snipeenergyrefund.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-snipe-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="DivineIntervention">
+        <Icon value="Assets\Textures\btn-upgrade-artanis-healingpsionicstorm.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-snipe-color.dds"/>
         <EditorCategories value="Race:Terran"/>
         <HidesForSimpleText value="0"/>
