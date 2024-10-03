@@ -4146,6 +4146,7 @@ Behavior/Name/UnknownBehavior3323=Void Discharge
 Behavior/Name/UnknownBehavior33232=Void Discharge
 Behavior/Name/UnknownBehavior332322=Void Discharge
 Behavior/Name/UnknownBehavior3323222=Void Discharge
+Behavior/Name/UnknownBehavior48=Reckoning Summon
 Behavior/Name/UnknownBehavior6=Eternal Punishment
 Behavior/Name/UnknownBehavior7=Aeugh
 Behavior/Name/UnknownBehavior9=DegenDegenovy
@@ -13892,7 +13893,7 @@ Button/Tooltip/DarkArchonMindControl333322322226222222=Servants can use Rage Lea
 Button/Tooltip/DarkArchonMindControl3333223222262222222=Servants' weapons deal damage in an area and double damage to the main target.
 Button/Tooltip/DarkArchonMindControl33332232222622222222=Servants heal all of their shields and life in a second if they haven't taken damage for more than 3 seconds. Only works if the unit's life is not full.
 Button/Tooltip/DarkArchonMindControl3333224=Every 3 seconds, generates 1 stack of <c val="8080FF">Forming Order</c>.
-Button/Tooltip/DarkArchonMindControl33332242=Every 20 seconds, generates 1 stack of <c val="8080FF">Forming Order</c>.
+Button/Tooltip/DarkArchonMindControl33332242=Every 25 seconds, generates 1 stack of <c val="8080FF">Forming Order</c>.
 Button/Tooltip/DarkArchonMindControl333322422=Every 20 seconds, generates 1 stack of <c val="FF8040">Growing Chaos</c>.
 Button/Tooltip/DarkArchonMindControl333323=Allows to pick 1 of 4 abilities for Mal'tanis' 1st ability slot. 1st Abilities have area effects.
 Button/Tooltip/DarkArchonMindControl3333232=Allows to pick 1 of 4 abilities for Mal'tanis' 2nd ability slot. 2nd Abilities have single target effects.
@@ -16377,7 +16378,7 @@ Button/Tooltip/Oracle5=Flying Caster.<n/><n/><c val="ffff8a">Can attack ground u
 Button/Tooltip/OracleBuildStasisTrap2=Places a cloaked Stunning Ward at the target location. Once activated by an enemy ground unit, the ward traps nearby enemies in stun for 15 seconds.
 Button/Tooltip/OracleRevelation2=Causes enemy units and structures within the target area to grant vision for <d ref="Behavior,OracleRevelation,Duration"/> seconds. Reveals cloaked or burrowed units and structures.
 Button/Tooltip/OracleRevelation22=Marks all allied and owned units in the targeted area for 10 seconds. While marked, units take 50% more damage. If units are alived by the time the mark ends, they will spawn a replica of themselves with default life, energy and shields. <n/><n/>Replicas can use abilities and attack enemies, but take 100% more damge and deal 65% less damage. Replicated workers mine at the same rate and bring the same resources.
-Button/Tooltip/OracleRevelation222=Marks all non-heroic friendly and hostile units in the targeted area in radius of <c val="00FFFF">(1;2;3;4;5)</c>. After 3 seconds, creates a copies of them that deal 25% more damage, take 35% less damage and have <c val="00FFFF">(20;30;40;50;60)</c> second timed life.<n/><n/><n/>(Blue numbers indicate the range of the ability and timed life duration for each level of Nekta'la)
+Button/Tooltip/OracleRevelation222=Marks all non-heroic friendly and hostile units in the targeted area in radius of <c val="00FFFF">(1;2;3;4;5)</c>. After 3 seconds, creates a copies of them that deal 25% less damage, take 35% more damage and have <c val="00FFFF">(20;30;40;50;60)</c> second timed life.<n/><n/><n/>(Blue numbers indicate the range of the ability and timed life duration for each level of Nekta'la)
 Button/Tooltip/OracleRevelation23=Causes enemy units and structures within the target area to grant vision for 30 seconds and take additional 10 damage from incoming damage sources. Has 13 range.<n/><n/>The Panoptes Drone System was the original design for a planet-wide scanner device, capable of detecting foes anywhere. While it turned out to be too expensive and inefficient, we have come back to the concept. By creating an artificial psionic energy generator, the Bionic Overrunners can create psionic biosteel drones instantly, around a target.
 Button/Tooltip/OracleRevelation3=Causes the Fluke Worm to try to devour all non-heroic owned units in the area. Auto-cast will automatically devour units in range of 6.
 Button/Tooltip/OracleRevelation32=Causes the Fluke Worm to try to devour all non-heroic owned units in the area. Auto-cast will automatically devour units in range of 6.
@@ -18864,7 +18865,7 @@ Button/Tooltip/VilePassive2232343=Allows Scourge to deal 70 damage around it whe
 Button/Tooltip/VilePassive23=Defects deal double damage against armored targets.
 Button/Tooltip/VilePassive232=Defects gain 2 armor for every 50 health they are missing.
 Button/Tooltip/VilePassive2322=Defects gain 1 speed and are grown 50% faster.
-Button/Tooltip/VilePassive2323=Nekta'la heals heath and energy from units dying allied or owned in range of 15 instead of regenerating energy.<n/><n/>Nektalings, Eruptlings, Scourge and other light units heal 1 energy and 10 health.<n/><n/>Termites, Kereslisks, Swarming Hosts, Snarelisks and other non-massive and non-light units heal 2 energy and 20 life.<n/><n/>Defects, Rattlers and other massive units heal 3 energy.<n/><n/>Is not healed by units that die from expiring their timed life or instant-kill effects.
+Button/Tooltip/VilePassive2323=Nekta'la heals heath and energy from non-summoned, allied or owned units dying in range of 15 instead of regenerating energy.<n/><n/>Nektalings, Eruptlings, Scourge and other light units heal 1 energy and 10 health.<n/><n/>Termites, Kereslisks, Swarming Hosts, Snarelisks and other non-massive and non-light units heal 2 energy and 20 life.<n/><n/>Defects, Rattlers and other massive units heal 3 energy.<n/><n/>Is not healed by units that die from expiring their timed life or instant-kill effects.
 Button/Tooltip/Viper2=Flying support caster. Able to use Supportive Cloud and Drag.<n/><n/><c val="FFFF00">Is a detector.</c>
 Button/Tooltip/Viper3=Flying caster. Able to manipulate battlefield conditions. Can use Parasitic Bomb, Consume, Blinding Cloud, and Abduct abilities.
 Button/Tooltip/Viper4=Flying caster. Able to manipulate battlefield conditions. Can be upgraded to use support and offensive abilities.
@@ -30283,6 +30284,7 @@ Effect/Name/UnknownEffect58=Savior CU
 Effect/Name/UnknownEffect59=Cockdown Missilo
 Effect/Name/UnknownEffect6=Capacitor AB
 Effect/Name/UnknownEffect60=Piercer Add
+Effect/Name/UnknownEffect61=Reckoning Add Summoned
 Effect/Name/UnknownEffect7=Youngling Fight
 Effect/Name/UnknownEffect8=Crawler Modify Resource
 Effect/Name/UnknownEffect9=Guardianair
@@ -32179,6 +32181,8 @@ ProjectFear=Project Confusion
 ProtonicShield1=<c val="FFFF00">Protonic Shield</c>
 PsionicMisisle=Psionic Shot
 Qwerfaith=<c val="FFFF00">Faith</c>
+Race/Name/Prot=I've heard your dad is lonely
+Race/Name/Terr=POOPOOPBITCHASSASSBURGEr(funny Poo Poo)
 Race/Name/Terr2=Blue Intel
 Race/Name/Terr22=Castaway
 Race/Name/Terr222=Combined Broods
@@ -32210,6 +32214,7 @@ Race/Name/Terr22222422322=New Confederacy
 Race/Name/Terr2223=Foundation
 Race/Name/UnknownRace=Packs Of Zerus
 Race/Name/UnknownRace2=Paramilitary
+Race/Name/Zerg=Hey handsome, can I have a buff
 RageLeap=Rage Leap
 RageLock=Rage Lock
 Random Civilian=

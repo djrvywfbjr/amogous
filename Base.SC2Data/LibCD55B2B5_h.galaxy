@@ -19,6 +19,8 @@ unit libCD55B2B5_gv_python;
 
 // Trigger Declarations
 trigger libCD55B2B5_gt_AlphaUnsiege;
+trigger libCD55B2B5_gt_FlagshipDebuff;
+trigger libCD55B2B5_gt_FlagshipDebuffOff;
 trigger libCD55B2B5_gt_MineralNeutral;
 trigger libCD55B2B5_gt_PVET;
 trigger libCD55B2B5_gt_MaltanisDie;

@@ -1272,6 +1272,12 @@
             <VitalRegenArray index="Life" value="-10"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="UnknownBehavior48">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <StateFlags index="Summoned" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="UnmannedBuilding">
         <Cost>
             <Charge Link="Behavior/AntamoAirAll"/>
@@ -10794,7 +10800,7 @@
         <BehaviorFlags index="Permanent" value="1"/>
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Period value="15"/>
+        <Period value="35"/>
         <PeriodicEffect value="OracleVoidSiphonAddMinerals233"/>
         <DamageResponse>
             <Chance value="1"/>
@@ -16085,11 +16091,11 @@
             <StateFlags index="Hallucination" value="1"/>
             <StateFlags index="SuppressFoodMade" value="1"/>
             <StateFlags index="SuppressFoodUsed" value="1"/>
-            <DamageDealtFraction index="Spell" value="0.25"/>
-            <DamageDealtFraction index="Melee" value="0.25"/>
-            <DamageDealtFraction index="Ranged" value="0.25"/>
-            <DamageDealtFraction index="Splash" value="0.25"/>
-            <DamageDealtFraction index="NoProc" value="0.25"/>
+            <DamageDealtFraction index="Spell" value="-0.25"/>
+            <DamageDealtFraction index="Melee" value="-0.25"/>
+            <DamageDealtFraction index="Ranged" value="-0.25"/>
+            <DamageDealtFraction index="Splash" value="-0.25"/>
+            <DamageDealtFraction index="NoProc" value="-0.25"/>
             <AbilLinkDisableArray value="MorphZerglingToBaneling"/>
             <AbilLinkDisableArray value="DevourerAspect"/>
             <AbilLinkDisableArray value="MorphToBroodLord"/>
@@ -16101,7 +16107,7 @@
             <AbilLinkDisableArray value="ThorUncrippled"/>
             <AbilLinkDisableArray value="PhasingMode"/>
         </Modification>
-        <DamageResponse ModifyFraction="0.65">
+        <DamageResponse ModifyFraction="1.35">
             <Chance value="1"/>
         </DamageResponse>
     </CBehaviorBuff>

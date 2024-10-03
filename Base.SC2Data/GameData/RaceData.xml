@@ -1455,6 +1455,10 @@
         <StartingUnitArray Unit="Pylon10">
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
+        <StartingUnitArray Unit="Pylon2">
+            <Flags index="ResourceSetRally" value="1"/>
+            <Offset value="4,4"/>
+        </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
         <StartingResource index="Vespene" value="300"/>
         <StartingResource index="Terrazine" value="50"/>

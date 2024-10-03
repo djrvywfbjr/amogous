@@ -28525,7 +28525,7 @@
         <Cost>
             <Vital index="Energy" value="1"/>
             <Charge Link="Abil/Irradiate"/>
-            <Cooldown Link="Abil/Irradiate" TimeUse="7"/>
+            <Cooldown Link="Abil/Irradiate" TimeUse="21"/>
         </Cost>
         <TargetFilters value="-;RawResource,HarvestableResource,Item,Dead,Hidden,Invulnerable"/>
         <Range value="15"/>
@@ -45380,6 +45380,7 @@
             <Flags index="External" value="1"/>
         </InfoArray>
         <Alert value=""/>
+        <EffectArray index="Create" value="UnknownEffect61"/>
         <EffectArray index="Death" value="RaynorLabMagazineFate"/>
         <ExternalAngle value="-114.994"/>
         <ExternalAngle value="-144.9975"/>
@@ -45413,6 +45414,7 @@
             <Flags index="External" value="1"/>
         </InfoArray>
         <Alert value=""/>
+        <EffectArray index="Create" value="UnknownEffect61"/>
         <EffectArray index="Death" value="RaynorLabMagazineFate"/>
         <ExternalAngle value="45"/>
         <ExternalAngle value="-45"/>
@@ -45444,6 +45446,7 @@
             <Flags index="External" value="1"/>
         </InfoArray>
         <Alert value=""/>
+        <EffectArray index="Create" value="UnknownEffect61"/>
         <EffectArray index="Death" value="RaynorLabMagazineFate"/>
         <ExternalAngle value="-139.9987"/>
         <ExternalAngle value="-49.9987"/>
@@ -49815,7 +49818,7 @@
             <VitalFraction index="Life" value="0.9"/>
             <VitalFraction index="Shields" value="0.9"/>
             <Charge Link=""/>
-            <Cooldown Link="Abil/AlarakAvatar" TimeUse="252"/>
+            <Cooldown Link="Abil/AlarakAvatar" Location="Player" TimeUse="252"/>
         </Cost>
         <AINotifyEffect value="ShieldUp"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield21435322" Requirements="HaveMalTanis223233223222223"/>

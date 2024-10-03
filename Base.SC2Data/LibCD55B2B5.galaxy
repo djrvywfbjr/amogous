@@ -89,6 +89,53 @@ void libCD55B2B5_gt_AlphaUnsiege_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
+// Trigger: Flagship Debuff
+//--------------------------------------------------------------------------------------------------
+bool libCD55B2B5_gt_FlagshipDebuff_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((UnitGetType(EventUnit()) == "CommandCenter13"))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UnitBehaviorAdd(EventUnit(), "AntamoAirAll426", EventUnit(), 1);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCD55B2B5_gt_FlagshipDebuff_Init () {
+    libCD55B2B5_gt_FlagshipDebuff = TriggerCreate("libCD55B2B5_gt_FlagshipDebuff_Func");
+    TriggerAddEventUnitRegion(libCD55B2B5_gt_FlagshipDebuff, null, RegionEntireMap(), true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Flagship Debuff Off
+//--------------------------------------------------------------------------------------------------
+bool libCD55B2B5_gt_FlagshipDebuffOff_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerEnable(libCD55B2B5_gt_FlagshipDebuff, false);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCD55B2B5_gt_FlagshipDebuffOff_Init () {
+    libCD55B2B5_gt_FlagshipDebuffOff = TriggerCreate("libCD55B2B5_gt_FlagshipDebuffOff_Func");
+    TriggerAddEventTimeElapsed(libCD55B2B5_gt_FlagshipDebuffOff, 7.0, c_timeGame);
+}
+
+//--------------------------------------------------------------------------------------------------
 // Trigger: Mineral Neutral
 //--------------------------------------------------------------------------------------------------
 bool libCD55B2B5_gt_MineralNeutral_Func (bool testConds, bool runActions) {
@@ -6245,83 +6292,83 @@ bool libCD55B2B5_gt_MaltanisAddoOrderBit_Func (bool testConds, bool runActions) 
     }
 
     if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 1.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 2);
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 1);
     }
 
     if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 2.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 4);
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 2);
     }
 
     if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 3.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 6);
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 3);
     }
 
     if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 4.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 8);
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 4);
     }
 
     if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 5.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 10);
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 5);
     }
 
     if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 6.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 12);
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 6);
     }
 
     if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 7.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 14);
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 7);
     }
 
     if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 8.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 16);
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 8);
     }
 
     if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 9.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 18);
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 9);
     }
 
     if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 10.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 20);
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 10);
     }
 
     if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 11.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 22);
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 11);
     }
 
     if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 12.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 24);
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 12);
     }
 
     if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 13.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 26);
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 13);
     }
 
     if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 14.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 28);
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 14);
     }
 
     if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 15.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 30);
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 15);
     }
 
     if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 16.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 32);
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 16);
     }
 
     if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 17.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 34);
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 17);
     }
 
     if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 18.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 36);
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 18);
     }
 
     if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 19.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 38);
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 19);
     }
 
     if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropCurrent) == 20.0)) {
-        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 40);
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 20);
     }
 
     return true;
@@ -9795,6 +9842,8 @@ void libCD55B2B5_gt_FuckTheReveal_Init () {
 
 void libCD55B2B5_InitTriggers () {
     libCD55B2B5_gt_AlphaUnsiege_Init();
+    libCD55B2B5_gt_FlagshipDebuff_Init();
+    libCD55B2B5_gt_FlagshipDebuffOff_Init();
     libCD55B2B5_gt_MineralNeutral_Init();
     libCD55B2B5_gt_PVET_Init();
     libCD55B2B5_gt_MaltanisDie_Init();

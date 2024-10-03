@@ -66399,17 +66399,17 @@
     </CEffectEnumArea>
     <CEffectEnumArea id="SoulAbsorptionSearch3">
         <EditorCategories value=""/>
-        <SearchFilters value="-;Self,Neutral,Enemy,Light,Robotic,Massive"/>
+        <SearchFilters value="-;Self,Neutral,Enemy,Light,Robotic,Massive,Summoned"/>
         <AreaArray Radius="17" Effect="SoulAbsorptionAB3"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="SoulAbsorptionSearch32">
         <EditorCategories value=""/>
-        <SearchFilters value="Light;Self,Neutral,Enemy,Robotic"/>
+        <SearchFilters value="Light;Self,Neutral,Enemy,Robotic,Summoned"/>
         <AreaArray Radius="17" Effect="SoulAbsorptionAB32"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="SoulAbsorptionSearch33">
         <EditorCategories value=""/>
-        <SearchFilters value="Massive;Self,Neutral,Enemy,Robotic"/>
+        <SearchFilters value="Massive;Self,Neutral,Enemy,Robotic,Summoned"/>
         <AreaArray Radius="17" Effect="SoulAbsorptionAB33"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="SoulAbsorptionSearch4">
@@ -67464,7 +67464,8 @@
     </CEffectDamage>
     <CEffectDamage id="SuicideDamage8">
         <EditorCategories value="Race:Zerg"/>
-        <Amount value="50"/>
+        <Amount value="20"/>
+        <AttributeBonus index="Light" value="10"/>
     </CEffectDamage>
     <CEffectDamage id="SuicideDamage82">
         <EditorCategories value="Race:Zerg"/>
@@ -70701,6 +70702,11 @@
             <Player Value="Target"/>
         </Cost>
     </CEffectModifyUnit>
+    <CEffectApplyBehavior id="UnknownEffect61">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <Behavior value="UnknownBehavior48"/>
+    </CEffectApplyBehavior>
     <CEffectSet id="UnknownEffect7">
         <EditorCategories value=""/>
         <EffectArray value="NeedleClaws3"/>
