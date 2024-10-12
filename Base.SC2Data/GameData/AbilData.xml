@@ -1075,7 +1075,14 @@
     <CAbilEffectTarget id="AshWormBurrowMove22322">
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
         <Cost>
-            <Charge Link="Abil/AshWormBurrowMove2"/>
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <HideCount value="1"/>
+                <Link value="Abil/AshWormBurrowMove2"/>
+                <TimeUse value="0.015"/>
+            </Charge>
             <Cooldown Link="Abil/AshWormBurrowMove2" TimeUse="40"/>
         </Cost>
         <TargetFilters value="Visible;-"/>
@@ -15185,7 +15192,7 @@
             <Button DefaultButtonFace="Marauder9" Requirements="HavePartStorageDepot22"/>
             <Unit value="Marauder22"/>
         </InfoArray>
-        <InfoArray index="Train4" Time="35">
+        <InfoArray index="Train4" Time="25">
             <Button DefaultButtonFace="Hellion6"/>
             <Unit value="MercHellion3"/>
         </InfoArray>
@@ -38507,7 +38514,7 @@
         <Flags index="RangeUseCasterRadius" value="0"/>
         <Cost>
             <Charge>
-                <CountMax value="2"/>
+                <CountMax value="1"/>
                 <CountUse value="1"/>
                 <Link value="Abil/SpawnPhaseCannon29"/>
                 <Location value="Unit"/>
@@ -62632,7 +62639,7 @@
         <Effect index="0" value="XenWarrior632222"/>
         <Cost>
             <Resource index="Minerals" value="125"/>
-            <Resource index="Vespene" value="175"/>
+            <Resource index="Vespene" value="150"/>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
@@ -62667,8 +62674,8 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="XenWarrior63322"/>
         <Cost>
-            <Resource index="Minerals" value="160"/>
-            <Resource index="Vespene" value="185"/>
+            <Resource index="Minerals" value="75"/>
+            <Resource index="Vespene" value="160"/>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
@@ -62740,7 +62747,6 @@
         <Effect index="0" value="XenWarrior6332233"/>
         <Cost>
             <Resource index="Minerals" value="75"/>
-            <Resource index="Vespene" value="50"/>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
@@ -62751,8 +62757,8 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="XenWarrior63322332"/>
         <Cost>
-            <Resource index="Minerals" value="50"/>
-            <Resource index="Vespene" value="75"/>
+            <Resource index="Minerals" value="75"/>
+            <Resource index="Vespene" value="25"/>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
@@ -62763,8 +62769,8 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="XenWarrior633223322"/>
         <Cost>
-            <Resource index="Minerals" value="35"/>
-            <Resource index="Vespene" value="65"/>
+            <Resource index="Minerals" value="50"/>
+            <Resource index="Vespene" value="50"/>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
@@ -62799,8 +62805,8 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="XenWarrior63322333"/>
         <Cost>
-            <Resource index="Minerals" value="150"/>
-            <Resource index="Vespene" value="25"/>
+            <Resource index="Minerals" value="75"/>
+            <Resource index="Vespene" value="50"/>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
@@ -63465,8 +63471,8 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="XenWarrior63322334"/>
         <Cost>
-            <Resource index="Minerals" value="75"/>
-            <Resource index="Vespene" value="100"/>
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="75"/>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
@@ -63751,8 +63757,8 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="XenWarrior6333"/>
         <Cost>
-            <Resource index="Minerals" value="100"/>
-            <Resource index="Vespene" value="125"/>
+            <Resource index="Minerals" value="75"/>
+            <Resource index="Vespene" value="50"/>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
@@ -63763,7 +63769,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="XenWarrior63332"/>
         <Cost>
-            <Resource index="Minerals" value="150"/>
+            <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="25"/>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>

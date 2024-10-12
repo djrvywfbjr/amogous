@@ -1724,6 +1724,8 @@
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
         <DefaultConsoleSkin value="ConsoleTerran_Swann"/>
+        <StartingResource index="Minerals" value="300"/>
+        <StartingResource index="Vespene" value="200"/>
     </CRace>
     <CRace id="Zerg">
         <StartingUnitArray index="0" Unit="Wraith22">

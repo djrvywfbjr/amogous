@@ -10794,7 +10794,7 @@
         <BehaviorFlags index="Permanent" value="1"/>
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Period value="15"/>
+        <Period value="35"/>
         <PeriodicEffect value="OracleVoidSiphonAddMinerals233"/>
         <DamageResponse>
             <Chance value="1"/>
@@ -13037,7 +13037,7 @@
         <InfoFlags index="Hidden" value="1"/>
         <InfoIcon value="Assets\Textures\btn-ability-spearofadun-guardianshell.dds"/>
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
-        <DisableValidatorArray value="TargetLifeLTE10"/>
+        <DisableValidatorArray value="CasterLifeLT10Percent232"/>
         <TimeScaleSource Value="Global"/>
         <Duration value="10"/>
         <DamageResponse>
@@ -47319,10 +47319,19 @@
             <DamageDealtScaled index="NoProc" value="25"/>
             <LifeArmorBonus value="2"/>
             <VitalMaxArray index="Life" value="90"/>
-            <AbilLinkDisableArray value="XenWarrior6222"/>
-            <AbilLinkDisableArray value="XenWarrior622222"/>
-            <AbilLinkDisableArray value="XenWarrior6222222"/>
+            <AbilLinkDisableArray value="XenWarrior62233"/>
             <AbilLinkDisableArray value="XenWarrior62"/>
+            <AbilLinkDisableArray value="XenWarrior6222"/>
+            <AbilLinkDisableArray value="XenWarrior6223222"/>
+            <AbilLinkDisableArray value="XenWarrior622322"/>
+            <AbilLinkDisableArray value="XenWarrior622"/>
+            <AbilLinkDisableArray value="XenWarrior622332"/>
+            <AbilLinkDisableArray value="XenWarrior622222"/>
+            <AbilLinkDisableArray value="XenWarrior6223"/>
+            <AbilLinkDisableArray value="XenWarrior622322"/>
+            <AbilLinkDisableArray value="XenWarrior622"/>
+            <AbilLinkDisableArray value="XenWarrior6222222"/>
+            <AbilLinkDisableArray value="XenWarrior62232"/>
             <WeaponArray Link="GuassRifle52"/>
             <WeaponDisableArray value="WarHoundMelee2"/>
             <WeaponDisableArray value="GuassRifle57"/>
@@ -48089,7 +48098,7 @@
             <DamageDealtScaled index="Splash" value="7"/>
             <DamageDealtScaled index="NoProc" value="7"/>
             <LifeArmorBonus value="2"/>
-            <VitalMaxArray index="Life" value="50"/>
+            <VitalMaxArray index="Life" value="100"/>
             <AbilLinkDisableArray value="XenWarrior6223223322"/>
             <AbilLinkDisableArray value="XenWarrior622322334"/>
             <AbilLinkDisableArray value="XenWarrior622322332"/>
@@ -48101,7 +48110,9 @@
     <CBehaviorBuff id="XenWarrior643223342">
         <InfoIcon value="Assets\Textures\btn-upgrade-terran-nova-personaldefensivematrix.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Modification MoveSpeedBonus="-0.5" WeaponRange="1">
+        <Modification MoveSpeedBonus="-0.5" AttackSpeedMultiplier="1.3" WeaponRange="2">
+            <DamageDealtAttributeMultiplier index="Mechanical" value="1.2"/>
+            <DamageDealtAttributeMultiplier index="Massive" value="1.4"/>
             <LifeArmorBonus value="3"/>
             <VitalMaxArray index="Life" value="100"/>
             <AbilLinkDisableArray value="XenWarrior6223223322"/>

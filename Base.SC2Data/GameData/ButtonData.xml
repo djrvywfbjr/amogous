@@ -32398,7 +32398,7 @@
     <CButton id="WarpInAdept52">
         <Icon value="Assets\Textures\btn-upgrade-vorazun-shadowdash.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-adept-purifier.dds"/>
-        <Hotkey value="Button/Hotkey/Stalker"/>
+        <Hotkey value="Button/Hotkey/Distractio"/>
         <HotkeyAlias value="Stalker"/>
         <Universal value="1"/>
     </CButton>

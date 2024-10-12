@@ -52242,7 +52242,7 @@
     </CEffectEnumArea>
     <CEffectEnumArea id="PsiDisruptionSearchArea322223232">
         <EditorCategories value="Race:Terran"/>
-        <SearchFilters value="Ground,Visible;Neutral,Enemy,Massive,Structure,Missile,Stasis,Dead,Hidden,Invulnerable,Benign,Summoned"/>
+        <SearchFilters value="Ground,Visible;Neutral,Enemy,Massive,Structure,Heroic,Missile,Stasis,Dead,Hidden,Invulnerable,Benign,Summoned"/>
         <AreaArray Radius="5" Effect="PsiDisruptionApplyBehavior322223232"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="PsiDisruptionSearchArea32222324">
@@ -66339,7 +66339,7 @@
         <EditorCategories value=""/>
         <ImpactUnit Value="Caster"/>
         <VitalArray index="Life">
-            <Change value="20"/>
+            <Change value="3"/>
         </VitalArray>
         <VitalArray index="Energy">
             <Change value="2"/>
@@ -66349,7 +66349,7 @@
         <EditorCategories value=""/>
         <ImpactUnit Value="Caster"/>
         <VitalArray index="Life">
-            <Change value="10"/>
+            <Change value="1"/>
         </VitalArray>
         <VitalArray index="Energy">
             <Change value="1"/>
@@ -66359,7 +66359,7 @@
         <EditorCategories value=""/>
         <ImpactUnit Value="Caster"/>
         <VitalArray index="Life">
-            <Change value="30"/>
+            <Change value="5"/>
         </VitalArray>
         <VitalArray index="Energy">
             <Change value="3"/>

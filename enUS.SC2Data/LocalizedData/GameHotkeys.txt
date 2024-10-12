@@ -1757,6 +1757,7 @@ Button/Hotkey/DisablingCloud4222=B
 Button/Hotkey/DisablingCloud42222=B
 Button/Hotkey/DisablingCloud5=Q
 Button/Hotkey/DisablingCloud6=B
+Button/Hotkey/Distractio=D
 Button/Hotkey/DivineIntervention=R
 Button/Hotkey/Drag2=Q
 Button/Hotkey/Drag3=Q

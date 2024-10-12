@@ -5153,7 +5153,7 @@ Behavior/Tooltip/Stimpack123=This unit can now fire a bomb chain gun.
 Behavior/Tooltip/Stimpack2=This unit moves and attacks more quickly while under the effects of Stimpack.
 Behavior/Tooltip/Stimpack3=This unit moves and attacks more quickly while under the effects of Stimpack.
 Behavior/Tooltip/Stimpack32=This unit moves and attacks more quickly while under the effects of Stimpack.
-Behavior/Tooltip/Stimpack322=This unit moves and attacks more quickly while under the effects of Stimpack.
+Behavior/Tooltip/Stimpack322=This unit heals itself and attacks more quickly.
 Behavior/Tooltip/Stimpack323=This unit moves and attacks more quickly while under the effects of Stimpack.
 Behavior/Tooltip/Stimpack324=This unit moves and attacks more quickly while under the effects of Stimpack.
 Behavior/Tooltip/Stimpack4=This unit moves and attacks more quickly while under the effects of Stimpack.
@@ -13890,7 +13890,7 @@ Button/Tooltip/DarkArchonMindControl333322322226222222=Servants can use Rage Lea
 Button/Tooltip/DarkArchonMindControl3333223222262222222=Servants' weapons deal damage in an area and double damage to the main target.
 Button/Tooltip/DarkArchonMindControl33332232222622222222=Servants heal all of their shields and life in a second if they haven't taken damage for more than 3 seconds. Only works if the unit's life is not full.
 Button/Tooltip/DarkArchonMindControl3333224=Every 3 seconds, generates 1 stack of <c val="8080FF">Forming Order</c>.
-Button/Tooltip/DarkArchonMindControl33332242=Every 20 seconds, generates 1 stack of <c val="8080FF">Forming Order</c>.
+Button/Tooltip/DarkArchonMindControl33332242=Every 25 seconds, generates 1 stack of <c val="8080FF">Forming Order</c>.
 Button/Tooltip/DarkArchonMindControl333322422=Every 20 seconds, generates 1 stack of <c val="FF8040">Growing Chaos</c>.
 Button/Tooltip/DarkArchonMindControl333323=Allows to pick 1 of 4 abilities for Mal'tanis' 1st ability slot. 1st Abilities have area effects.
 Button/Tooltip/DarkArchonMindControl3333232=Allows to pick 1 of 4 abilities for Mal'tanis' 2nd ability slot. 2nd Abilities have single target effects.
@@ -16375,7 +16375,7 @@ Button/Tooltip/Oracle5=Flying Caster.<n/><n/><c val="ffff8a">Can attack ground u
 Button/Tooltip/OracleBuildStasisTrap2=Places a cloaked Stunning Ward at the target location. Once activated by an enemy ground unit, the ward traps nearby enemies in stun for 15 seconds.
 Button/Tooltip/OracleRevelation2=Causes enemy units and structures within the target area to grant vision for <d ref="Behavior,OracleRevelation,Duration"/> seconds. Reveals cloaked or burrowed units and structures.
 Button/Tooltip/OracleRevelation22=Marks all allied and owned units in the targeted area for 10 seconds. While marked, units take 50% more damage. If units are alived by the time the mark ends, they will spawn a replica of themselves with default life, energy and shields. <n/><n/>Replicas can use abilities and attack enemies, but take 100% more damge and deal 65% less damage. Replicated workers mine at the same rate and bring the same resources.
-Button/Tooltip/OracleRevelation222=Marks all non-heroic friendly and hostile units in the targeted area in radius of <c val="00FFFF">(1;2;3;4;5)</c>. After 3 seconds, creates a copies of them that deal 25% more damage, take 35% less damage and have <c val="00FFFF">(20;30;40;50;60)</c> second timed life.<n/><n/><n/>(Blue numbers indicate the range of the ability and timed life duration for each level of Nekta'la)
+Button/Tooltip/OracleRevelation222=Marks all non-heroic friendly and hostile units in the targeted area in radius of <c val="00FFFF">(1;2;3;4;5)</c>. After 3 seconds, creates a copies of them that deal 25% less damage, take 35% more damage and have <c val="00FFFF">(20;30;40;50;60)</c> second timed life.<n/><n/><n/>(Blue numbers indicate the range of the ability and timed life duration for each level of Nekta'la)
 Button/Tooltip/OracleRevelation23=Causes enemy units and structures within the target area to grant vision for 30 seconds and take additional 10 damage from incoming damage sources. Has 13 range.<n/><n/>The Panoptes Drone System was the original design for a planet-wide scanner device, capable of detecting foes anywhere. While it turned out to be too expensive and inefficient, we have come back to the concept. By creating an artificial psionic energy generator, the Bionic Overrunners can create psionic biosteel drones instantly, around a target.
 Button/Tooltip/OracleRevelation3=Causes the Fluke Worm to try to devour all non-heroic owned units in the area. Auto-cast will automatically devour units in range of 6.
 Button/Tooltip/OracleRevelation32=Causes the Fluke Worm to try to devour all non-heroic owned units in the area. Auto-cast will automatically devour units in range of 6.
@@ -16899,7 +16899,7 @@ Button/Tooltip/Pylon4=Provides supply.<n/>Supply allows you to warp in more unit
 Button/Tooltip/Pylon5=Provides supply.<n/>Supply allows you to warp in more units.<n/>Creates power for nearby structures.
 Button/Tooltip/Pylon6=An ancient crystal channeling it's energy into nearby structures and increasing supply.
 Button/Tooltip/Pylon7=Provides supply.<n/>Supply allows you to warp in more units.<n/>Creates power for nearby structures.
-Button/Tooltip/Pylon8=Provides supply.<n/>Supply allows you to warp in more units.<n/>Creates power for nearby structures.
+Button/Tooltip/Pylon8=Provides supply.<n/>Supply allows you to warp in more units.<n/>
 Button/Tooltip/Pylon9=Provides supply.<n/>Supply allows you to warp in more units.<n/>Creates power for nearby structures.
 Button/Tooltip/Pylon92=Provides supply.<n/>Supply allows you to warp in more units.<n/>Creates power for nearby structures.
 Button/Tooltip/Pyloneeeeeeeeeeeeeee9=Is warped in instantly with full hp and shields, but cannot provide powerfield and supplies for 30 seconds.<n/>Don't you know what a pylon does?
@@ -18962,7 +18962,7 @@ Button/Tooltip/VoidColossusFireBeam2632=Last Terran are blessed by the Dark God 
 Button/Tooltip/VoidColossusFireBeam26322=All units slowly drain energy.<n/>Some modes can increase or decrease the rate of it's decrease, but at the end all units have 30% less time scale and 25% less hp when energy is at 1% or lower and 20% increased damage and speed and 1 armor at over 75%.<n/>Energy can be increased by Refuel Towers.
 Button/Tooltip/VoidColossusFireBeam26323=The Dark God has finally come and is ready to bring whatever salvation he deems fitting. Non-believers almost perished, but Last Terran survived and are fighting among Amon's forces because of their <c val="FFFF00">Faith</c>.<n/><n/>For every 100 points of <c val="FFFF00">Faith</c>, all units gain 0.4 armor, 5% increased damage.<n/><n/>Dark God's Cathedral can use abilities, which either cost or grant <c val="FFFF00">Faith</c>.
 Button/Tooltip/VoidColossusFireBeam263232=Those who sinned must repent through trial by cleansing dropship fuel. Deals 25(50 vs light, 10 vs armored) damage on death in 1 radius, but dies when attacking.
-Button/Tooltip/VoidColossusFireBeam26324=Units in small range of Azazel block fatal damage.
+Button/Tooltip/VoidColossusFireBeam26324=Non-heroic ground units in small range of Azazel block fatal damage.
 Button/Tooltip/VoidColossusFireBeam26325=Hurat's weapon bounces to multiple targets. Every attack also increases attack speed by 20% for 20 seconds. Stacks up to 20 times.
 Button/Tooltip/VoidColossusFireBeam2633=Minerals can be dropped here by harvesters.
 Button/Tooltip/VoidColossusFireBeam26332=Each person in Bathhouse reduces Disctonent by 1 and increases Motivation by 1 every 10 seconds.
@@ -19637,16 +19637,16 @@ Button/Tooltip/Zealot22622=Knights Attachements allow the addition of more power
 Button/Tooltip/Zealot226222=Fire Dog Attachements allow the addition of more powerful bionics, while still providing more capabilities for user.<n/>Increases life by 55, armor by 3 and enables a flamethrower weapon.
 Button/Tooltip/Zealot2262222=Monster attachements slowly take away any chance of the user to function as a normal human. Replace both arms with a melee attack claws and lower body with mechanical legs. Gain 1 speed, 55 life, 1 armor and a melee attack.
 Button/Tooltip/Zealot22622222=Change the user so much, that all biological left of him is a brain in a 4-legged dog-like body. Gain a new weapon, with high damage, 2 armor, 110 life.
-Button/Tooltip/Zealot226222222=Convert the user into a mindless follower of whoever made him so. Gain 35 life, 25 damage, 2 armor, a longer ranged rifle and a snipe ability, but reducing speed by 0.3.
-Button/Tooltip/Zealot226223=The final attachements to this unit.<n/>Gain 2 armor, 85 life, 20 damage, anti-ground grenade weapon and Deploy Grenade ability.
+Button/Tooltip/Zealot226222222=Convert the user into a mindless follower of whoever made him so. Gain 35 life, 25 damage, 2 armor, a longer ranged rifle and a snipe ability, but reduce speed by 0.3.
+Button/Tooltip/Zealot226223=The final attachements to this unit.<n/>Gain 2 armor, 85 life, 20 damage, stimpack, anti-ground grenade weapon and Deploy Grenade ability.
 Button/Tooltip/Zealot2262232=The final attachements to this unit.<n/>Gain 2 armor, 85 life, 1 range, 20 damage and Nanobot Shield ability.
-Button/Tooltip/Zealot22622322=The final attachements to this unit.<n/>Gain 2 armor, 4 sight radius, 0.25 speed, 65 life and 100 energy. Also enables the Fire Round ability.
-Button/Tooltip/Zealot226223222=The final attachements to this unit.<n/>Gain 2 armor, 85 life, 9 sight radius and swap weapon with a healing beam.
+Button/Tooltip/Zealot22622322=The final attachements to this unit.<n/>Gain 2 armor, 4 sight radius, 0.25 speed, 65 life and 100 energy. Also enables the Fire Round and Short Lockdown abilities.
+Button/Tooltip/Zealot226223222=The final attachements to this unit.<n/>Gain 2 armor, 85 life, 9 sight radius and swap weapon with a healing beam. Additionally unlock the ability to stun mechanical units.
 Button/Tooltip/Zealot226223223=Finish the basic suit and gain  55 life, 1 armor, 7 damage.
 Button/Tooltip/Zealot2262232232=Finish the advanced suit upgrade and gain anti-air missiles and Forced Field ability, which gives alot of shields for a short duration.
 Button/Tooltip/Zealot22622322322=Finish the advanced suit upgrade and gain 1.5 range and Mark For Death ability, which makes a unit take more damage.
 Button/Tooltip/Zealot226223223222=Finish the advanced suit upgrade and gain 0.25 speed and Bio-Mechanical Stimpack ability.
-Button/Tooltip/Zealot2262232233=Adds a new wheel, makes some interal  changes. Increases armor by 1, life by 55, damage by7, speed by 1 and replaces burst laser with a flamethrower.
+Button/Tooltip/Zealot2262232233=Adds a new wheel, makes some interal  changes. Increases armor by 1, life by 55, damage by 7, speed by 1 and replaces burst laser with a flamethrower.
 Button/Tooltip/Zealot22622322332=Transform into a walker, gaining 75 life, 7 damage, 1 armor, -0.75 speed and anti-ground cannons and anti-air missiles.
 Button/Tooltip/Zealot226223223322=Transform into a hovercraft and gain 25 life, 1 armor, 1 speed, 7 damage, a new ranged weapon and widow mines.
 Button/Tooltip/Zealot2262232233222=Attach additional plating, a new targeting system and ammunition to gain 2 armor, 75 life, 2 range and 15 damage but lose 15% speed.
@@ -19721,8 +19721,8 @@ Button/Tooltip/Zealot22622322333233523352232422322=Allows Unstoppable to gain 50
 Button/Tooltip/Zealot226223223332335233522324223222=Allows Unstoppable to start quickly regenerating health.
 Button/Tooltip/Zealot22622322333233523352232422323=Allows Unstoppable to create a Persistent Anomaly dome, which heavily slows down enemy movement and attack speeds after a delay.
 Button/Tooltip/Zealot22622322333233523353=Allows Jailers to launch Wardens 50% farther and also build up to 3 Watchmen, anti-ground and anti-structure bombers.
-Button/Tooltip/Zealot22622322334=Transform into the ultimate hovercraft and gain 50 life, 2 armor, 7 damage and a railgun.
-Button/Tooltip/Zealot226223223342=Allow a few more tons of plating onto this walker, adding 3 armor, 100 life, 1 range, but reducing speed by 0.5.
+Button/Tooltip/Zealot22622322334=Transform into the ultimate hovercraft and gain 100 life, 2 armor, 7 damage and a railgun.
+Button/Tooltip/Zealot226223223342=Allow a few more tons of plating onto this walker, adding 3 armor, 100 life, 2 range, 30% attack speed, 20% damage to mechanical, 40% damage to massive, but reducing speed by 0.5.
 Button/Tooltip/Zealot22622322335=Makes aircraft better at figthing against other air targets, increasing damave by 10, range by 1 and speed by 1, armor by 1 and life by 50.
 Button/Tooltip/Zealot226223223352=Makes aircraft better at tactical strikes. Increases damage by 15, speed by 1, life by 35, increase sight range by 5. Also replace torpeados with anti-ground missiles.
 Button/Tooltip/Zealot2262232233522=Makes aircraft a carrier for troopers at the cost of battle capabilities. Loose 9 damage, 1 range, but gain cargo ability, 65 life, 1 armor.
@@ -19747,7 +19747,7 @@ Button/Tooltip/Zealot226223223354323=Greatly increases the attack and movement s
 Button/Tooltip/Zealot22622322335433=Serviceman armor has a missile launcher that deals damage in a large area and increased damage to light units, but has an extremely long reload time.<n/><n/>This military rocket launcher design was never meant for the emergency colonization, but so little progress has been done on Psiwave Generators that Dominion authorities added them as a last-minute addition to finish clearing unfinished Construction Site shafts.
 Button/Tooltip/Zealot2262232233544=Serviceman armor has a powerful long-ranged rifle, that deals great damage and is even stronger against Armored targets, but cannot fire too often.<n/><n/>This powerful rifle was originally designed for hunting. Most creatures' meat is made inedible due to explosive shrapnel blasts created by these rifles.
 Button/Tooltip/Zealot2262233=The final attachements to this unit.<n/>Gain 5 armor, 80 life, 0.5 speed, a close-ranged weapon and a Jet Jump ability.
-Button/Tooltip/Zealot22622332=The final attachements to this unit.<n/>Gain 5 armor, 75 life, a close-ranged weapon with high damage, loose 0.35 speed and get the Juggernaut Defensive Pistol ability.
+Button/Tooltip/Zealot22622332=The final attachements to this unit.<n/>Gain 5 armor, 130 life, a close-ranged weapon with high damage, loose 0.35 speed and get the Juggernaut Defensive Pistol ability.
 Button/Tooltip/Zealot2263=D45 armor allows the pilot to reach each part of the 2-sided hull from the inside and repair it for 20 hp a second.
 Button/Tooltip/Zealot2264=Basic bionics include mechanical fingers, eye implants, leg exoskeleton.<n/>Increases life by 35, range by 1 and speed by 0.25
 Button/Tooltip/Zealot227=Gain Divine Storm.
