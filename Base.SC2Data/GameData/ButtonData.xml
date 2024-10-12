@@ -21921,7 +21921,7 @@
         <EditorCategories value="Race:Zerg"/>
     </CButton>
     <CButton id="Probe2">
-        <Icon value="Assets\Textures\btn-unit-protoss-probe-dark.dds"/>
+        <Icon value="Assets\Textures\btn-unit-protoss-alarak-taldarim-probe.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-probe.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>

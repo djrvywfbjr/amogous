@@ -29816,6 +29816,24 @@
     <CAbilEffectTarget id="QueenClassicParasite">
         <TargetFilters index="0" value="-;Structure,Heroic,Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CAbilEffectTarget>
+    <CAbilBuild id="SOAProxyPylon2">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <FlagArray index="IgnoreUnitCost" value="1"/>
+        <FlagArray index="PeonMaintained" value="0"/>
+        <InfoArray index="Build1" Unit="Pylon2" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Location value="Player"/>
+            </Charge>
+            <Cooldown Location="Player" TimeUse="60"/>
+            <Button DefaultButtonFace="SOAProxyPylon"/>
+            <ValidatorArray value="HasVisionOfTarget"/>
+        </InfoArray>
+        <Range value="500"/>
+        <EffectArray index="Start" value="SOAProxyPylonVisualAB"/>
+    </CAbilBuild>
     <CAbilEffectTarget id="SensorSweep">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <SharedFlags index="Disabled" value="1"/>
@@ -45385,6 +45403,7 @@
             <Flags index="External" value="1"/>
         </InfoArray>
         <Alert value=""/>
+        <EffectArray index="Create" value="UnknownEffect61"/>
         <EffectArray index="Death" value="RaynorLabMagazineFate"/>
         <ExternalAngle value="-114.994"/>
         <ExternalAngle value="-144.9975"/>
@@ -45418,6 +45437,7 @@
             <Flags index="External" value="1"/>
         </InfoArray>
         <Alert value=""/>
+        <EffectArray index="Create" value="UnknownEffect61"/>
         <EffectArray index="Death" value="RaynorLabMagazineFate"/>
         <ExternalAngle value="45"/>
         <ExternalAngle value="-45"/>
@@ -45449,6 +45469,7 @@
             <Flags index="External" value="1"/>
         </InfoArray>
         <Alert value=""/>
+        <EffectArray index="Create" value="UnknownEffect61"/>
         <EffectArray index="Death" value="RaynorLabMagazineFate"/>
         <ExternalAngle value="-139.9987"/>
         <ExternalAngle value="-49.9987"/>

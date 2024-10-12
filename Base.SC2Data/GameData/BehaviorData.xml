@@ -1272,6 +1272,14 @@
             <VitalRegenArray index="Life" value="-10"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="UnknownBehavior48">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <StateFlags index="Summoned" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="UnmannedBuilding">
         <Cost>
             <Charge Link="Behavior/AntamoAirAll"/>
