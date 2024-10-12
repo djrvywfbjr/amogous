@@ -2752,6 +2752,53 @@ void libCD55B2B5_gt_Blinkcd_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
+// Trigger: EM2
+//--------------------------------------------------------------------------------------------------
+bool libCD55B2B5_gt_EM2_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerEnable(libCD55B2B5_gt_EngineMalf, false);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCD55B2B5_gt_EM2_Init () {
+    libCD55B2B5_gt_EM2 = TriggerCreate("libCD55B2B5_gt_EM2_Func");
+    TriggerAddEventTimeElapsed(libCD55B2B5_gt_EM2, 5.0, c_timeGame);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Engine Malf
+//--------------------------------------------------------------------------------------------------
+bool libCD55B2B5_gt_EngineMalf_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((UnitGetType(EventUnit()) == "CommandCenter13"))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UnitBehaviorAdd(EventUnit(), "AntamoAirAll426", EventUnit(), 1);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCD55B2B5_gt_EngineMalf_Init () {
+    libCD55B2B5_gt_EngineMalf = TriggerCreate("libCD55B2B5_gt_EngineMalf_Func");
+    TriggerAddEventUnitRegion(libCD55B2B5_gt_EngineMalf, null, RegionEntireMap(), true);
+}
+
+//--------------------------------------------------------------------------------------------------
 // Trigger: NameFlagship
 //--------------------------------------------------------------------------------------------------
 bool libCD55B2B5_gt_NameFlagship_Func (bool testConds, bool runActions) {
@@ -9895,6 +9942,8 @@ void libCD55B2B5_InitTriggers () {
     libCD55B2B5_gt_ARES_Init();
     libCD55B2B5_gt_Phoenixcd_Init();
     libCD55B2B5_gt_Blinkcd_Init();
+    libCD55B2B5_gt_EM2_Init();
+    libCD55B2B5_gt_EngineMalf_Init();
     libCD55B2B5_gt_NameFlagship_Init();
     libCD55B2B5_gt_NameCentaur_Init();
     libCD55B2B5_gt_NameStallion_Init();

@@ -119,6 +119,8 @@ trigger libCD55B2B5_gt_Fluke;
 trigger libCD55B2B5_gt_ARES;
 trigger libCD55B2B5_gt_Phoenixcd;
 trigger libCD55B2B5_gt_Blinkcd;
+trigger libCD55B2B5_gt_EM2;
+trigger libCD55B2B5_gt_EngineMalf;
 trigger libCD55B2B5_gt_NameFlagship;
 trigger libCD55B2B5_gt_NameCentaur;
 trigger libCD55B2B5_gt_NameStallion;
