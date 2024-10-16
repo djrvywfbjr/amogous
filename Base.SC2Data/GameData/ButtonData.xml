@@ -4174,6 +4174,9 @@
         <EditorCategories value="Race:Protoss"/>
         <Universal value="1"/>
     </CButton>
+    <CButton id="ExpeditedTransfer">
+        <Icon value="Assets\Textures\btn-tips-credit.dds"/>
+    </CButton>
     <CButton id="Marauder334325424">
         <Tooltip value="Button/Tooltip/Marauder3343254242"/>
         <Icon value="Assets\Textures\btn-ability-zerg-stukov-ensnarecdr.dds"/>
@@ -4971,7 +4974,7 @@
         <HotkeyAlias value="CalldownMULE42332"/>
     </CButton>
     <CButton id="CalldownMULE423326232222232222">
-        <Icon value="Assets\Textures\btn-tips-credit.dds"/>
+        <Icon value="Assets\Textures\btn-tips-challengecounter.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="CalldownMULE42332"/>
@@ -25662,6 +25665,12 @@
         <EditorCategories value="Race:Terran"/>
         <HidesForSimpleText value="0"/>
     </CButton>
+    <CButton id="Snipe332422">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-ascendant&apos;spsiorbtravelsfurther.dds"/>
+        <AlertIcon value="Assets\Textures\fearex3_coop.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
     <CButton id="Snipe3325">
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-snipetripletap.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-snipe-color.dds"/>
@@ -29339,6 +29348,9 @@
     </CButton>
     <CButton id="MicrobialAgitation">
         <Icon value="Assets\Textures\btn-ability-zerg-corruption-color.dds"/>
+    </CButton>
+    <CButton id="UnknownButton119">
+        <Icon value="Assets\Textures\btn-progression-zeratul-12-darkagency.dds"/>
     </CButton>
     <CButton id="UnknownButton12">
         <Icon value="Assets\Textures\btn-upgrade-zerg-monarchblades.dds"/>

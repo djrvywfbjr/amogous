@@ -882,6 +882,22 @@
         <TimeScaleSource Value="Global"/>
         <Modification TimeScale="2"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="DefiledKeeper">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-progression-zeratul-12-darkagency.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="OnCreep"/>
+        <Modification AttackSpeedMultiplier="1.1">
+            <LifeArmorBonus value="2"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DehakaHealSmall4322">
+        <InfoIcon value="Assets\Textures\fearex3_coop.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="13"/>
+        <Modification TimeScale="1.35"/>
+        <ExpireEffect value="AshNexusExhaustion"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="FusionDrive">
         <Alignment value="Positive"/>
         <InfoIcon value="Assets\Textures\btn-upgrade-terran-jotunboosters.dds"/>
@@ -1272,12 +1288,32 @@
             <VitalRegenArray index="Life" value="-10"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="UnknownBehavior472">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <Duration value="30"/>
+        <Modification TimeScale="2">
+            <AbilClassDisableArray index="CAbilAttack" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="UnknownBehavior48">
         <BehaviorFlags index="Permanent" value="1"/>
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification>
             <StateFlags index="Summoned" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Exhaustion">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="15"/>
+        <Modification>
+            <LifeArmorBonus value="-2"/>
+            <ResourceHarvestAmountMultiplier index="Minerals" value="0.75"/>
+            <ResourceHarvestAmountMultiplier index="Vespene" value="0.75"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="UnmannedBuilding">
@@ -20633,6 +20669,7 @@
                 <AttributeChangeArray Attribute="DamageBonus322222" Points="3"/>
             </Modification>
         </VeterancyLevelArray>
+        <XPFraction index="DamageDealt" value="0.45"/>
         <XPFraction index="Kills" value="2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel224222">
@@ -20718,7 +20755,8 @@
                 <AttributeChangeArray Attribute="DamageBonus322222" Points="2"/>
             </Modification>
         </VeterancyLevelArray>
-        <XPFraction index="Kills" value="2.25"/>
+        <XPFraction index="DamageDealt" value="0.5"/>
+        <XPFraction index="Kills" value="2.75"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel2242222">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -21083,6 +21121,7 @@
                 <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
             </Modification>
         </VeterancyLevelArray>
+        <XPFraction index="DamageDealt" value="0.4"/>
         <XPFraction index="Kills" value="1.75"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel2242233">
@@ -21178,7 +21217,7 @@
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel22422332">
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <XPFraction index="Kills" value="1.1"/>
+        <XPFraction index="Kills" value="1.75"/>
         <VeterancyLevelArray>
             <Modification>
                 <AttributeChangeArray Attribute="DamageBonus3222223" Points="1"/>
@@ -21358,7 +21397,8 @@
                 <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
             </Modification>
         </VeterancyLevelArray>
-        <XPFraction index="Kills" value="2.55"/>
+        <XPFraction index="DamageDealt" value="0.7"/>
+        <XPFraction index="Kills" value="2.95"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel2242235">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -22682,7 +22722,7 @@
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel224224">
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <XPFraction index="Kills" value="1.35"/>
+        <XPFraction index="Kills" value="1.85"/>
         <VeterancyLevelArray>
             <Modification>
                 <AbilLinkDisableArray value="XenWarrior722222232222523"/>
@@ -46961,6 +47001,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification MoveSpeedMultiplier="1.85" AccelerationMultiplier="1.85">
             <StateFlags index="SuppressCloak" value="1"/>
+            <VitalMaxArray index="Life" value="45"/>
             <WeaponArray Link="ParasiteSpore"/>
         </Modification>
     </CBehaviorBuff>

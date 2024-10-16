@@ -179,14 +179,14 @@
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
         <Icon value="Assets\Textures\btn-ability-neutral-ursadonleap.dds"/>
         <DisplayEffect value="PrimalNeedleSpinesDamage3"/>
-        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetFilters value="Air,Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AcquirePrioritization value="ByAngle"/>
         <Range value="8"/>
         <Arc value="360"/>
         <Cost>
             <Cooldown Link="Weapon/ATSLaserBattery" Location="Unit"/>
         </Cost>
-        <Period value="0.4"/>
+        <Period value="0.7"/>
         <Effect value="MitosaurusBSplit2232"/>
         <AllowedMovement value="Moving"/>
         <RandomDelayMin value="0"/>
@@ -198,14 +198,14 @@
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
         <Icon value="Assets\Textures\btn-ability-neutral-ursadonleap.dds"/>
         <DisplayEffect value="InfestedClawsDamage222"/>
-        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetFilters value="Ground,Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AcquirePrioritization value="ByAngle"/>
         <Range value="8"/>
         <Arc value="360"/>
         <Cost>
             <Cooldown Link="Weapon/ATSLaserBattery" Location="Unit"/>
         </Cost>
-        <Period value="0.4"/>
+        <Period value="0.6"/>
         <Effect value="MitosaurusBSplit223"/>
         <AllowedMovement value="Moving"/>
         <RandomDelayMin value="0"/>
@@ -7999,7 +7999,7 @@
     <CWeaponLegacy id="MengskMarauder3">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
-        <DisplayEffect value="MengskMarauderDamage3"/>
+        <DisplayEffect value="UnknownEffect62"/>
         <DisplayAttackCount value="1"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="7"/>

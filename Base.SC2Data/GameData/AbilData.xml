@@ -734,6 +734,17 @@
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
     </CAbilEffectInstant>
+    <CAbilEffectInstant id="TakentanksMakery">
+        <OrderArray index="0" Model="Assets\UI\Cursors\WayPointConfirm_Void\WayPointConfirm_Void.m3"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="TakentanksAB"/>
+        <Cost>
+            <Resource index="Minerals" value="75"/>
+            <Resource index="Vespene" value="50"/>
+            <Cooldown TimeUse="70"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ExpeditedTransfer"/>
+    </CAbilEffectInstant>
     <CAbilEffectInstant id="NanobotWindCP2">
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
         <Effect index="0" value="ArtanisAstralWind5"/>
@@ -9560,8 +9571,14 @@
         <Effect index="0" value="CalldownMULECreateUnit23"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Charge Link="Abil/CalldownMULE"/>
-            <Cooldown Link="Abil/CalldownMULE" Location="Player" TimeUse="100"/>
+            <Charge>
+                <CountMax value="3"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Link value="Abil/CalldownMULE"/>
+                <TimeUse value="50"/>
+            </Charge>
+            <Cooldown Link="Abil/CalldownMULE" Location="Player" TimeUse="20"/>
         </Cost>
         <InterruptCost>
             <Cooldown Location="Player"/>
@@ -9867,7 +9884,13 @@
         <Effect index="0" value="OrbitalCommandCreateMuleSwitch2"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Cooldown TimeUse="46"/>
+            <Charge>
+                <CountMax value="3"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <TimeUse value="40"/>
+            </Charge>
+            <Cooldown TimeStart="40" TimeUse="25"/>
         </Cost>
         <Range value="8"/>
         <Arc value="360"/>
@@ -9971,7 +9994,7 @@
                 <CountStart value="1"/>
                 <CountUse value="1"/>
                 <Link value="Abil/CalldownMULE32"/>
-                <TimeUse value="30"/>
+                <TimeUse value="46.2"/>
             </Charge>
             <Cooldown Link="Abil/CalldownMULE32" Location="Unit"/>
         </Cost>
@@ -17632,7 +17655,7 @@
         <Flags index="AutoCast" value="1"/>
         <Flags index="AutoCastOn" value="1"/>
         <Cost>
-            <Cooldown TimeUse="15"/>
+            <Cooldown TimeUse="60"/>
         </Cost>
         <TargetFilters value="Visible;Player,Ally,Neutral,Robotic,Massive,Structure,Heroic,Missile,Stasis,Dead,Invulnerable"/>
         <Range value="8"/>
@@ -29888,8 +29911,6 @@
     <CAbilEffectInstant id="MiningAI">
         <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
         <Effect index="0" value="VoidShieldCapacitor22"/>
-        <Flags index="AutoCast" value="1"/>
-        <Flags index="AutoCastOn" value="1"/>
         <Flags index="Transient" value="1"/>
         <Cost>
             <Charge Link="Abil/DehakaRevive" Location="Unit"/>
@@ -29907,6 +29928,24 @@
         <Flags index="Toggle" value="1"/>
         <BehaviorArray value="UnknownBehavior47"/>
     </CAbilBehavior>
+    <CAbilEffectTarget id="Snipe332422">
+        <Alignment value="Negative"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Effect index="0" value="DisablingCloudSet352234422"/>
+        <Cost>
+            <Charge Link="Abil/Snipe"/>
+            <Cooldown Link="Abil/Snipe" TimeUse="60"/>
+        </Cost>
+        <TargetFilters value="Ground,Worker,Visible;Self,Neutral,Enemy,Structure,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <CastIntroTime value="0.5"/>
+        <Marker>
+            <MatchFlags index="Link" value="0"/>
+            <MatchFlags index="CasterUnit" value="1"/>
+        </Marker>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Snipe332422"/>
+        <Arc value="360"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="TemporarityCP2">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ColossusTaldarimLM242"/>
@@ -49841,7 +49880,7 @@
             <VitalFraction index="Life" value="0.9"/>
             <VitalFraction index="Shields" value="0.9"/>
             <Charge Link=""/>
-            <Cooldown Link="Abil/AlarakAvatar" TimeUse="252"/>
+            <Cooldown Link="Abil/AlarakAvatar" Location="Player" TimeUse="252"/>
         </Cost>
         <AINotifyEffect value="ShieldUp"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield21435322" Requirements="HaveMalTanis223233223222223"/>
@@ -55100,10 +55139,10 @@
         <InfoArray index="Build11" Unit="Factory7">
             <Button DefaultButtonFace="Factory10" Requirements="HaveExperimentCenter2"/>
         </InfoArray>
-        <InfoArray index="Build12" Unit="Starport6">
+        <InfoArray index="Build12" Unit="Starport6" Time="57">
             <Button DefaultButtonFace="Starport10" Requirements="HaveExperimentCenter2222"/>
         </InfoArray>
-        <InfoArray index="Build14" Unit="Armory7">
+        <InfoArray index="Build14" Unit="Armory7" Time="120">
             <Button DefaultButtonFace="Armory10" Requirements="HaveExperimentCenter2222"/>
         </InfoArray>
         <InfoArray index="Build16" Unit="EngineeringBay82" Time="100">
@@ -60130,6 +60169,7 @@
     </CAbilEffectTarget>
     <CAbilMorph id="VultureSpiderMineUnburrow">
         <AcquirePriority value="20"/>
+        <AutoCastFilters value="Ground,Visible;Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden,Invulnerable,Benign"/>
     </CAbilMorph>
     <CAbilEffectTarget id="VultureSpiderMines2">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
@@ -61853,7 +61893,7 @@
     <CAbilEffectInstant id="XenWarrior263">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Resource index="Minerals" value="25"/>
+            <Resource index="Minerals" value="50"/>
             <Charge>
                 <CountMax value="1"/>
                 <CountStart value="1"/>

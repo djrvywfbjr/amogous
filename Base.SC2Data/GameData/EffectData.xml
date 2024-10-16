@@ -9480,6 +9480,9 @@
         <Amount value="1"/>
         <Death value="Disintegrate"/>
     </CEffectDamage>
+    <CEffectEnumArea id="BioStasisSearchArea">
+        <SearchFilters value="-;Player,Ally,Neutral,Heroic,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectEnumArea>
     <CEffectApplyBehavior id="BlackhammerAddHealingWAve">
         <EditorCategories value=""/>
         <Behavior value="PsiDisruptionSearch3"/>
@@ -11144,6 +11147,28 @@
         <WhichUnit Value="Caster"/>
         <Behavior value="WepGlancerTorpedoTubes"/>
     </CEffectApplyBehavior>
+    <CEffectEnumArea id="DehakaHealSearch4322">
+        <EditorCategories value="Race:Zerg"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <ExcludeArray Effect="DehakaHeal5" Value="Target"/>
+        <SearchFilters value="Worker;Enemy,Air,Structure,Missile,Stasis,Dead,Hidden"/>
+        <AreaArray Radius="7" Effect="DehakaHealSmallSet4322"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="DehakaHealSmallAB4322">
+        <EditorCategories value="Race:Zerg"/>
+        <Behavior value="DehakaHealSmall4322"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="DehakaHealSmallSet4322">
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="DehakaHealSmallAB4322"/>
+    </CEffectSet>
+    <CEffectSet id="DisablingCloudSet352234422">
+        <EditorCategories value="Race:Zerg"/>
+        <Marker Link="Effect/DisablingCloudSet35223"/>
+        <EffectArray value="DehakaHealSearch4322"/>
+        <EffectArray value="SnipeDamage332422"/>
+    </CEffectSet>
     <CEffectEnumArea id="DivineIntervention">
         <EditorCategories value=""/>
         <ImpactLocation Value="TargetPoint"/>
@@ -21469,6 +21494,7 @@
         <ValidatorArray index="0" value="HaveHotSViciousGlaive2222232223223"/>
         <ValidatorArray value="IsMechanical"/>
         <ValidatorArray value="NotHeroic"/>
+        <ValidatorArray value="NotMassive"/>
         <EditorCategories value="Race:Zerg"/>
         <Behavior value="DragStun2"/>
     </CEffectApplyBehavior>
@@ -32721,7 +32747,7 @@
         <Marker Link="Effect/KarassPlasmaSurgeModifyUnit"/>
         <ImpactUnit Value="Caster"/>
         <VitalArray index="Energy">
-            <Change value="-5"/>
+            <Change value="-3"/>
         </VitalArray>
     </CEffectModifyUnit>
     <CEffectModifyUnit id="KarassPlasmaSurgeModifyUnit3222423">
@@ -38076,7 +38102,7 @@
     <CEffectDamage id="MengskMarauderDamage3" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <Kind value="Ranged"/>
-        <Amount value="15"/>
+        <Amount value="12"/>
         <Death value="Blast"/>
         <AreaArray Radius="3" Fraction="1"/>
         <SearchFilters value="Ground;Player,Ally,Neutral,Missile,Stasis,Dead,Invulnerable"/>
@@ -65983,6 +66009,15 @@
         <Amount value="45"/>
         <Death value="Squish"/>
     </CEffectDamage>
+    <CEffectDamage id="SnipeDamage332422" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <ArmorReduction value="0"/>
+        <Flags index="Kill" value="1"/>
+        <Kind value="Spell"/>
+        <Amount value="45"/>
+        <Death value="Squish"/>
+    </CEffectDamage>
     <CEffectDamage id="SnipeDamage3325" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <ImpactLocation Value="TargetUnit"/>
@@ -67984,6 +68019,10 @@
     <CEffectApplyBehavior id="SwarmQueenRegenAuraTarget2">
         <ValidatorArray value="LifeNotFull"/>
         <EditorCategories value="Race:Zerg"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="TakentanksAB">
+        <EditorCategories value=""/>
+        <Behavior value="UnknownBehavior472"/>
     </CEffectApplyBehavior>
     <CEffectDamage id="TempestDamage2" parent="TempestDamage">
         <Name value="Effect/Name/TempestDamage2"/>
@@ -70705,6 +70744,15 @@
     <CEffectApplyBehavior id="UnknownEffect61">
         <EditorCategories value=""/>
         <Behavior value="UnknownBehavior48"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="UnknownEffect62">
+        <EditorCategories value=""/>
+        <Amount value="24"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="AshNexusExhaustion">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <Behavior value="Exhaustion"/>
     </CEffectApplyBehavior>
     <CEffectSet id="UnknownEffect7">
         <EditorCategories value=""/>

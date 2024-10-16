@@ -8915,6 +8915,9 @@
     <CUpgrade id="UmojanBasicUnitUpgrade522242242322222235222222222222">
         <EffectArray Reference="Unit,Hydralisk4,EnergyMax" Value="40"/>
         <EffectArray Operation="Set" Reference="Unit,Hydralisk4,EnergyRegenRate" Value="3.000000"/>
+        <EffectArray Operation="Set" Reference="Unit,Discharger2,LifeMax" Value="175"/>
+        <EffectArray Operation="Set" Reference="Unit,Discharger2,LifeStart" Value="175"/>
+        <EffectArray Operation="Set" Reference="Unit,Discharger2,Speed" Value="3.148400"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
