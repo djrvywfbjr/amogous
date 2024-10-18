@@ -3545,6 +3545,7 @@ bool libCD55B2B5_gt_MilitaryStationWorkerConvict_Func (bool testConds, bool runA
 //--------------------------------------------------------------------------------------------------
 void libCD55B2B5_gt_MilitaryStationWorkerConvict_Init () {
     libCD55B2B5_gt_MilitaryStationWorkerConvict = TriggerCreate("libCD55B2B5_gt_MilitaryStationWorkerConvict_Func");
+    TriggerAddEventUnitAbility(libCD55B2B5_gt_MilitaryStationWorkerConvict, null, AbilityCommand("SendWorker", 0), c_unitAbilStageExecute, false);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -3579,6 +3580,7 @@ bool libCD55B2B5_gt_MilitaryStationScientist_Func (bool testConds, bool runActio
 //--------------------------------------------------------------------------------------------------
 void libCD55B2B5_gt_MilitaryStationScientist_Init () {
     libCD55B2B5_gt_MilitaryStationScientist = TriggerCreate("libCD55B2B5_gt_MilitaryStationScientist_Func");
+    TriggerAddEventUnitAbility(libCD55B2B5_gt_MilitaryStationScientist, null, AbilityCommand("SendScientist", 0), c_unitAbilStageExecute, false);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -3725,72 +3727,6 @@ bool libCD55B2B5_gt_WorkPower_Func (bool testConds, bool runActions) {
 void libCD55B2B5_gt_WorkPower_Init () {
     libCD55B2B5_gt_WorkPower = TriggerCreate("libCD55B2B5_gt_WorkPower_Func");
     TriggerAddEventUnitBehaviorChange(libCD55B2B5_gt_WorkPower, null, "AntamoAirAll132244", c_unitBehaviorChangeAny);
-}
-
-//--------------------------------------------------------------------------------------------------
-// Trigger: MilitaryStation
-//--------------------------------------------------------------------------------------------------
-bool libCD55B2B5_gt_MilitaryStation_Func (bool testConds, bool runActions) {
-    // Automatic Variable Declarations
-    unitgroup autoB8A76C2E_g;
-    int autoB8A76C2E_u;
-    unit autoB8A76C2E_var;
-
-    // Conditions
-    if (testConds) {
-        if (!(((UnitGetType(EventUnit()) == "Combater") || (UnitGetType(EventUnit()) == "Brazier") || (UnitGetType(EventUnit()) == "Serviceman") || (UnitGetType(EventUnit()) == "HunterRanger") || (UnitGetType(EventUnit()) == "Jumper") || (UnitGetType(EventUnit()) == "MilitiaTrooper") || (UnitGetType(EventUnit()) == "MaintenanceVehicle") || (UnitGetType(EventUnit()) == "Titan")))) {
-            return false;
-        }
-    }
-
-    // Actions
-    if (!runActions) {
-        return true;
-    }
-
-    autoB8A76C2E_g = UnitGroup("Barracks172232", UnitGetOwner(EventUnit()), RegionCircle(UnitGetPosition(EventUnit()), 30.0), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 1);
-    autoB8A76C2E_u = UnitGroupCount(autoB8A76C2E_g, c_unitCountAll);
-    for (;; autoB8A76C2E_u -= 1) {
-        autoB8A76C2E_var = UnitGroupUnitFromEnd(autoB8A76C2E_g, autoB8A76C2E_u);
-        if (autoB8A76C2E_var == null) { break; }
-        if ((UnitHasBehavior2(autoB8A76C2E_var, "PsiDisruption3222233242") == true)) {
-            if ((UnitGetType(UnitCargo(autoB8A76C2E_var, 1)) == "Civilian4")) {
-                UnitRemove(UnitCargo(autoB8A76C2E_var, 1));
-                UnitCargoCreate(EventUnit(), "Civilian4", 1);
-                TriggerStop(TriggerGetCurrent());
-            }
-            else {
-                if ((UnitGetType(UnitCargo(autoB8A76C2E_var, 1)) == "SpacePrisonerBig3")) {
-                    UnitRemove(UnitCargo(autoB8A76C2E_var, 1));
-                    UnitCargoCreate(EventUnit(), "SpacePrisonerBig3", 1);
-                    TriggerStop(TriggerGetCurrent());
-                }
-                else {
-                    if ((UnitGetType(UnitCargo(autoB8A76C2E_var, 1)) == "Civilian42")) {
-                        UnitRemove(UnitCargo(autoB8A76C2E_var, 1));
-                        UnitCargoCreate(EventUnit(), "Civilian42", 1);
-                        TriggerStop(TriggerGetCurrent());
-                    }
-                    else {
-                        if ((UnitGetType(UnitCargo(autoB8A76C2E_var, 1)) == "Scientist3")) {
-                            UnitRemove(UnitCargo(autoB8A76C2E_var, 1));
-                            UnitCargoCreate(EventUnit(), "Scientist3", 1);
-                            TriggerStop(TriggerGetCurrent());
-                        }
-
-                    }
-                }
-            }
-        }
-
-    }
-    return true;
-}
-
-//--------------------------------------------------------------------------------------------------
-void libCD55B2B5_gt_MilitaryStation_Init () {
-    libCD55B2B5_gt_MilitaryStation = TriggerCreate("libCD55B2B5_gt_MilitaryStation_Func");
-    TriggerAddEventUnitRegion(libCD55B2B5_gt_MilitaryStation, null, RegionEntireMap(), true);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -4196,47 +4132,6 @@ void libCD55B2B5_gt_Culling_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
-// Trigger: TurnUnit
-//--------------------------------------------------------------------------------------------------
-bool libCD55B2B5_gt_TurnUnit_Func (bool testConds, bool runActions) {
-    // Automatic Variable Declarations
-    unitgroup auto5D08D059_g;
-    int auto5D08D059_u;
-    unit auto5D08D059_var;
-
-    // Conditions
-    if (testConds) {
-        if (!(((UnitGetType(EventUnit()) == "EngineeringBay172") || (UnitGetType(EventUnit()) == "MissileTurret13") || (UnitGetType(EventUnit()) == "EngineeringBay183") || (UnitGetType(EventUnit()) == "MissileTurret132") || (UnitGetType(EventUnit()) == "EngineeringBay1722") || (UnitGetType(EventUnit()) == "Barracks172232") || (UnitGetType(EventUnit()) == "Factory82") || (UnitGetType(EventUnit()) == "Barracks17222") || (UnitGetType(EventUnit()) == "Barracks1722") || (UnitGetType(EventUnit()) == "EngineeringBay18") || (UnitGetType(EventUnit()) == "Barracks17") || (UnitGetType(EventUnit()) == "EngineeringBay17") || (UnitGetType(EventUnit()) == "EngineeringBay1832") || (UnitGetType(EventUnit()) == "Barracks172") || (UnitGetType(EventUnit()) == "Barracks10") || (UnitGetType(EventUnit()) == "EngineeringBay18222") || (UnitGetType(EventUnit()) == "EngineeringBay1822") || (UnitGetType(EventUnit()) == "Barracks102") || (UnitGetType(EventUnit()) == "Barracks173") || (UnitGetType(EventUnit()) == "Barracks17223") || (UnitGetType(EventUnit()) == "MissileTurret1322") || (UnitGetType(EventUnit()) == "EngineeringBay184") || (UnitGetType(EventUnit()) == "EngineeringBay1723") || (UnitGetType(EventUnit()) == "EngineeringBay1732") || (UnitGetType(EventUnit()) == "EngineeringBay173") || (UnitGetType(EventUnit()) == "Bunker4") || (UnitGetType(EventUnit()) == "EngineeringBay1733") || (UnitGetType(EventUnit()) == "Barracks174") || (UnitGetType(EventUnit()) == "EngineeringBay185") || (UnitGetType(EventUnit()) == "EngineeringBay18522") || (UnitGetType(EventUnit()) == "EngineeringBay1852")))) {
-            return false;
-        }
-    }
-
-    // Actions
-    if (!runActions) {
-        return true;
-    }
-
-    auto5D08D059_g = UnitGroup("CommandCenter12", UnitGetOwner(EventUnit()), RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
-    auto5D08D059_u = UnitGroupCount(auto5D08D059_g, c_unitCountAll);
-    for (;; auto5D08D059_u -= 1) {
-        auto5D08D059_var = UnitGroupUnitFromEnd(auto5D08D059_g, auto5D08D059_u);
-        if (auto5D08D059_var == null) { break; }
-        libNtve_gf_MakeUnitFacePoint(EventUnit(), UnitGetPosition(auto5D08D059_var), 0.0);
-    }
-    if (((UnitGetType(EventUnit()) == "EngineeringBay185") || (UnitGetType(EventUnit()) == "MissileTurret13"))) {
-        UnitSetFacing(EventUnit(), (UnitGetFacing(EventUnit()) + 90.0), 0.0);
-    }
-
-    return true;
-}
-
-//--------------------------------------------------------------------------------------------------
-void libCD55B2B5_gt_TurnUnit_Init () {
-    libCD55B2B5_gt_TurnUnit = TriggerCreate("libCD55B2B5_gt_TurnUnit_Func");
-    TriggerAddEventUnitRegion(libCD55B2B5_gt_TurnUnit, null, RegionEntireMap(), true);
-}
-
-//--------------------------------------------------------------------------------------------------
 // Trigger: Food
 //--------------------------------------------------------------------------------------------------
 bool libCD55B2B5_gt_Food_Func (bool testConds, bool runActions) {
@@ -4333,7 +4228,7 @@ bool libCD55B2B5_gt_CivilControl_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     // Conditions
     if (testConds) {
-        if (!(((UnitGetType(EventUnitDamageSourceUnit()) == "GhostAlternate22")))) {
+        if (!(((UnitGetType(EventUnitDamageSourceUnit()) == "CivilControlDivision")))) {
             return false;
         }
     }
@@ -4931,7 +4826,7 @@ bool libCD55B2B5_gt_RemoveWeapons_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     // Conditions
     if (testConds) {
-        if (!(((UnitGetType(EventUnit()) != "Civilian4") && (UnitGetType(EventUnit()) != "GhostAlternate22") && (UnitGetType(EventUnit()) != "SpacePrisonerBig3") && (UnitGetType(EventUnit()) != "MengskThor32") && (UnitGetType(EventUnit()) != "GhostAlternate222") && (UnitGetType(EventUnit()) != "GhostAlternate2222") && (UnitGetType(EventUnit()) != "TarsonisEngineFast22") && (UnitGetType(EventUnit()) != "TarsonisEngineFast23") && (UnitGetType(EventUnit()) != "TarsonisEngineFast2") && (UnitGetType(EventUnit()) != "TarsonisEngineFast232") && (UnitGetType(EventUnit()) != "TarsonisEngineFast222") && (UnitGetType(EventUnit()) != "ImperialSilencer")))) {
+        if (!(((UnitGetType(EventUnit()) != "Civilian4") && (UnitGetType(EventUnit()) != "CivilControlDivision") && (UnitGetType(EventUnit()) != "SpacePrisonerBig3") && (UnitGetType(EventUnit()) != "MengskThor32") && (UnitGetType(EventUnit()) != "GhostAlternate222") && (UnitGetType(EventUnit()) != "GhostAlternate2222") && (UnitGetType(EventUnit()) != "TarsonisEngineFast22") && (UnitGetType(EventUnit()) != "TarsonisEngineFast23") && (UnitGetType(EventUnit()) != "TarsonisEngineFast2") && (UnitGetType(EventUnit()) != "TarsonisEngineFast232") && (UnitGetType(EventUnit()) != "TarsonisEngineFast222") && (UnitGetType(EventUnit()) != "ImperialSilencer")))) {
             return false;
         }
     }
@@ -10033,7 +9928,6 @@ void libCD55B2B5_InitTriggers () {
     libCD55B2B5_gt_MilitaryStationScientist_Init();
     libCD55B2B5_gt_Blinkcd2_Init();
     libCD55B2B5_gt_WorkPower_Init();
-    libCD55B2B5_gt_MilitaryStation_Init();
     libCD55B2B5_gt_HunterOutpostDies_Init();
     libCD55B2B5_gt_RecyclingOutpostDies_Init();
     libCD55B2B5_gt_GatheringOutpostDies_Init();
@@ -10042,7 +9936,6 @@ void libCD55B2B5_InitTriggers () {
     libCD55B2B5_gt_Freighter_Init();
     libCD55B2B5_gt_Execution_Init();
     libCD55B2B5_gt_Culling_Init();
-    libCD55B2B5_gt_TurnUnit_Init();
     libCD55B2B5_gt_Food_Init();
     libCD55B2B5_gt_Resources_Init();
     libCD55B2B5_gt_Roundup_Init();

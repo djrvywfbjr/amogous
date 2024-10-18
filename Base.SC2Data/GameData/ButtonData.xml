@@ -4298,8 +4298,12 @@
     <CButton id="ResearchOptimizedServos">
         <Icon value="Assets\Textures\btn-upgrade-terran-transformationservos.dds"/>
     </CButton>
-    <CButton id="SendScientist"/>
-    <CButton id="SendWorker"/>
+    <CButton id="SendScientist">
+        <Icon value="Assets\Textures\btn-unit-terran-sciencevessel.dds"/>
+    </CButton>
+    <CButton id="SendWorker">
+        <Icon value="Assets\Textures\btn-ability-mengsk-trooper-volunteertowork.dds"/>
+    </CButton>
     <CButton id="SensorSweep">
         <Icon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>

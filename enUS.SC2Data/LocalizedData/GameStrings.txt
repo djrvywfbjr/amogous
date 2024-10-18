@@ -11987,6 +11987,7 @@ Button/Tooltip/AmonTentacleB2=Bombards target with 20 missiles, each dealing 5 a
 Button/Tooltip/AmonTentacleC2=Fire a missile, dealing 15 damage in an area and slowing units in it by 75% for 3 seconds.
 Button/Tooltip/AmonTentacleC22=Fire a missile, dealing 45 damage in an area and slowing units in it by 75% for 3 seconds.
 Button/Tooltip/Ana=Durable support unit. Can switch to Fighter Mode to attack air units. Part of Mengsk's elite guard.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+Button/Tooltip/AnalyzerVessel=Aerial support unit. Can use Irradiate and Nano-Repair abilities.<n/><n/><c val="FFE303">Detector</c>
 Button/Tooltip/AncientDefender=Assault strider controlled by a hybrid infestor.
 Button/Tooltip/AncientDefender2=Assault strider. Can be upgraded to deal more damage to single targets.
 Button/Tooltip/Anda=Support trooper. Heals nearby biological units.
@@ -14289,7 +14290,6 @@ Button/Tooltip/EngineeringBay1732=Contains upgrades for Terran infantry and stru
 Button/Tooltip/EngineeringBay1733=Contains upgrades for Terran infantry and structures. <n/><n/><c val="ffff8a">Enables:</c><n/>- Missile Turrets from SCVs<n/>- Sensor Towers from SCVs<n/>- Planetary Fortresses from Command Centers
 Button/Tooltip/EngineeringBay18=Contains upgrades for Terran infantry and structures. <n/><n/><c val="ffff8a">Enables:</c><n/>- Missile Turrets from SCVs<n/>- Sensor Towers from SCVs<n/>- Planetary Fortresses from Command Centers
 Button/Tooltip/EngineeringBay182=Contains upgrades for Terran infantry and structures. <n/><n/><c val="ffff8a">Enables:</c><n/>- Missile Turrets from SCVs<n/>- Sensor Towers from SCVs<n/>- Planetary Fortresses from Command Centers
-Button/Tooltip/EngineeringBay1822=Contains upgrades for Terran infantry and structures. <n/><n/><c val="ffff8a">Enables:</c><n/>- Missile Turrets from SCVs<n/>- Sensor Towers from SCVs<n/>- Planetary Fortresses from Command Centers
 Button/Tooltip/EngineeringBay18222=Contains upgrades for Terran infantry and structures. <n/><n/><c val="ffff8a">Enables:</c><n/>- Missile Turrets from SCVs<n/>- Sensor Towers from SCVs<n/>- Planetary Fortresses from Command Centers
 Button/Tooltip/EngineeringBay183=Contains upgrades for Terran infantry and structures. <n/><n/><c val="ffff8a">Enables:</c><n/>- Missile Turrets from SCVs<n/>- Sensor Towers from SCVs<n/>- Planetary Fortresses from Command Centers
 Button/Tooltip/EngineeringBay1832=Contains upgrades for Terran infantry and structures. <n/><n/><c val="ffff8a">Enables:</c><n/>- Missile Turrets from SCVs<n/>- Sensor Towers from SCVs<n/>- Planetary Fortresses from Command Centers
@@ -15961,7 +15961,6 @@ Button/Tooltip/MissilePods5=Annihilator Missile Pods deal 100 + 50 to light dama
 Button/Tooltip/MissileTurret10=Anti-air defensive structure.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/MissileTurret11=Anti-air defensive structure.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/MissileTurret12=Anti-air defensive structure.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
-Button/Tooltip/MissileTurret13=Anti-air defensive structure.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/MissileTurret132=Anti-air defensive structure.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/MissileTurret1322=Anti-air defensive structure.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/MissileTurret14=Anti-air defensive structure.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
@@ -16434,6 +16433,7 @@ Button/Tooltip/Overseer42=Advanced aerial observer. Maintains the unit cap set b
 Button/Tooltip/Overseer5=Advanced aerial observer. Maintains the unit cap set by the Overlord. Can use the Oversight, Spawn Changeling, and Contaminate abilities.<n/><n/><c val="FFE303">Detector</c>
 Button/Tooltip/Overseer6=Advanced aerial observer. Maintains the unit cap set by the Overlord. Can use the Oversight, Spawn Changeling, and Contaminate abilities.<n/><n/><c val="FFE303">Detector</c>
 Button/Tooltip/Overseer7=Advanced aerial observer. Maintains the unit cap set by the Overlord. Can use the Oversight, Spawn Changeling, and Contaminate abilities.<n/><n/><c val="FFE303">Detector</c>
+Button/Tooltip/OverseerTower=Anti-air defensive structure.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/ParalyticSpines2=The attacks of this unit decrease target's attack and movement speed. The attacked unit remains revealed for 8 seconds. Stacks up to 3 times.
 Button/Tooltip/ParasiticInvasion2=Causes the Larva to leap toward the targeted creature, infest it, and take control.
 Button/Tooltip/PerditionTurret2=Automated defensive turret. Burrows when there are no enemies nearby. Is disabled for 30 seconds after being called down. Shares charges with other base defenses.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
@@ -16891,6 +16891,7 @@ Button/Tooltip/PsionicShockwave233=Releases a burst, dealing 65 damage and stunn
 Button/Tooltip/PsionicShockwave3=Releases a burst of psionic energy radiating outward, knocking away all enemy units, dealing 35 damage. While being knocked away, they are stunned for 2 seconds and loose 10 armor.
 Button/Tooltip/PsionicShockwave4=Enemies in a large radius around Imposed Adder get knocked away, take 40 damage and stunned for 3 seconds.<n/><n/>The crew has recently developed a design for a custom doomsday device. It would release psionic energy and kinetic force, radiating towards a surface. The result would be massive earthquakes and flattening of anything on the planet or space station. If designed, a smaller version of it could be attached to Imposed Adders.
 Button/Tooltip/PsionicShockwave5=Releases a burst of psionic energy radiating outward from the Hybrid, knocking away all units and stunning them momentarily.
+Button/Tooltip/PsiwaveCommunicator=Contains upgrades for Terran infantry and structures. <n/><n/><c val="ffff8a">Enables:</c><n/>- Missile Turrets from SCVs<n/>- Sensor Towers from SCVs<n/>- Planetary Fortresses from Command Centers
 Button/Tooltip/PsytrousOxideOff2=Reduces speed to normal.
 Button/Tooltip/PsytrousOxideOff22=Highlights pickups around Davinski, but makes him unable to see anything else.
 Button/Tooltip/PsytrousOxideOff23=Disables Savior Field
@@ -17473,7 +17474,6 @@ Button/Tooltip/ScienceVessel422=Aerial support unit. Can use Irradiate and Nano-
 Button/Tooltip/ScienceVessel4222=Aerial support unit. Can use Irradiate and Nano-Repair abilities.<n/><n/><c val="FFE303">Detector</c>
 Button/Tooltip/ScienceVessel5=Aerial support unit. Can use Irradiate and Nano-Repair abilities.<n/><n/><c val="FFE303">Detector</c>
 Button/Tooltip/ScienceVessel6=Aerial support unit. Can use Irradiate and Nano-Repair abilities.<n/><n/><c val="FFE303">Detector</c>
-Button/Tooltip/ScienceVessel7=Aerial support unit. Can use Irradiate and Nano-Repair abilities.<n/><n/><c val="FFE303">Detector</c>
 Button/Tooltip/ScienceVessel8=Aerial support unit. Can use Irradiate and Nano-Repair abilities.<n/><n/><c val="FFE303">Detector</c>
 Button/Tooltip/Scientist2=A terran expert in the sciences.
 Button/Tooltip/Scientist22=A terran expert in the sciences.
@@ -17507,6 +17507,8 @@ Button/Tooltip/SelfRepair3=Regenerates 30 life per second. Unstoppable cannot mo
 Button/Tooltip/SelfRepair4=Regenerates 56 life per second. Blackhammer cannot move or attack until fully repaired or <d ref="Behavior,SelfRepair,Duration"/> seconds have passed.
 Button/Tooltip/SelfRepair5=Regenerates 40 life per second, but be unable to move during that time. Lasts up to 20 seconds.
 Button/Tooltip/SelfRepair6=Regenerates <d ref="Behavior,SelfRepair,Modification.VitalRegenArray[Life]"/> life per second. Cannot move or attack until fully repaired or <d ref="Behavior,SelfRepair,Duration"/> seconds have passed.
+Button/Tooltip/SendScientist=Sends a stored Scientist to a unit or structure that requires them.
+Button/Tooltip/SendWorker=Sends a stored Worker or Convict to a unit or structure that requires them.
 Button/Tooltip/SensorSweep=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="12"/>.
 Button/Tooltip/SensorTower10=Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy.
 Button/Tooltip/SensorTower11=Refuels energy of units for resources.
@@ -25494,6 +25496,12 @@ Effect/Name/MercReaperP38ScytheGuassPistolBurst2=Merc Reaper P38 Scythe Guass Pi
 Effect/Name/MercReaperP38ScytheGuassPistolBurst22=Merc Reaper P38 Scythe Guass Pistol Burst Copy Copy
 Effect/Name/MilitarizedColonistShipAirDamage2=Militarized Colonist Ship Air Damage Copy
 Effect/Name/MilitarizedColonistShipAirLM2=Militarized Colonist Ship Air LM Copy
+Effect/Name/MilitaryStationAddScientist2=Military Station Add Scientist
+Effect/Name/MilitaryStationAddWorker2=Military Station Add Worker
+Effect/Name/MilitaryStationLoadSet=Military Station Load Set
+Effect/Name/MilitaryStationRemoveScientist=Military Station Remove Scientist
+Effect/Name/MilitaryStationRemoveWorker=Military Station Remove Worker
+Effect/Name/MilitaryStationUnloadSet=Military Station Unload Set
 Effect/Name/MindBoltDamage2=Mind Bolt Damage Copy
 Effect/Name/MindBoltDamage22=Mind Bolt Damage Copy Copy
 Effect/Name/MindBoltDamage23=Mind Bolt Damage Copy
@@ -29404,6 +29412,7 @@ Effect/Name/SelfRepairApplyBehavior4=Self Repair Apply Behavior
 Effect/Name/SelfRepairEndApplyBehavior2=Self Repair End Apply Behavior
 Effect/Name/SelfRepairEndApplyBehavior3=Self Repair End Apply Behavior
 Effect/Name/SelfRepairEndApplyBehavior4=Self Repair End Apply Behavior
+Effect/Name/SendScientist=Send Scientist
 Effect/Name/SensorSweep=Sensor Sweep
 Effect/Name/SentryWeaponPeriodicSet2=SentryWeaponPeriodicSet (Unnamed) Copy
 Effect/Name/SentryWeaponPeriodicSet22=SentryWeaponPeriodicSet (Unnamed) Copy
@@ -29999,7 +30008,6 @@ Effect/Name/TemporalFieldSearchAreaImpactDummy22=Temporal Field Search Area Impa
 Effect/Name/TemporalFieldSearchAreaImpactDummy222=Temporal Field Search Area Impact Dummy Copy Copy Copy
 Effect/Name/TemporalFieldSearchAreaImpactDummy3=Temporal Field Search Area Impact Dummy
 Effect/Name/TemporalFieldSearchAreaImpactDummy32=Temporal Field Search Area Impact Dummy
-Effect/Name/TheEmptySet=The Empty Set
 Effect/Name/ThermalBeamDamage2=Defiled Beam
 Effect/Name/ThermalBeamPersistent2=Thermal Beam (Persistent)
 Effect/Name/ThermalBeamSet2=Thermal Beam (Set)
@@ -32259,7 +32267,7 @@ RequirementNode/Tooltip/And1116186996CountUnitCenterofBasicOperationsCompleteOnl
 RequirementNode/Tooltip/And1335326031CountUnitBarracks16CompleteOnlyCountUpgradeUmojanBasicUnitUpgrade522242242322222CompleteOnly=Have Antamo Assembly and War Declared at Antamo Council
 RequirementNode/Tooltip/And134148224CountUpgradeUmojanBasicUnitUpgrade5222422423222222394522222222CompleteOnlyTechTreeCheatEq134148224CountUnitOdin22QueuedOrBetter0=No Legendary Odin
 RequirementNode/Tooltip/And1391540240CountUpgradeAdvancedConstruction2422332222222222324CompleteOnly241625231CountUpgradeAdvancedConstruction222CompleteOnlyCountUnitMissileTurret132CompleteOnly=Pious Shrine signed, atleast a single Pious Shrine, atleast a single person at Parochial Institute
-RequirementNode/Tooltip/And1418005013Eq3523259510CountUnitBarracks172QueuedOrBetter0CountUpgradeAdvancedConstruction232CompleteOnly=No Medical Outpost
+RequirementNode/Tooltip/And1418005013Eq3523259510CountUnitMedicalOutpostQueuedOrBetter0CountUpgradeAdvancedConstruction232CompleteOnly=No Medical Outpost
 RequirementNode/Tooltip/And1476756178CountUnitTwilightCouncil3CompleteOnly1213073564CountUpgradeUmojanBasicUnitUpgrade522242242322222222222222CompleteOnly4256853171=Previous upgrade and Twilight Council
 RequirementNode/Tooltip/And1476756178CountUnitTwilightCouncil3CompleteOnly1213073564CountUpgradeUmojanBasicUnitUpgrade5222422423222222222223CompleteOnly4256853171=Previous upgrade and Twilight Council
 RequirementNode/Tooltip/And1476756178CountUnitTwilightCouncil3CompleteOnly1213073564CountUpgradeUmojanBasicUnitUpgrade52224224232222222223CompleteOnly4256853171=Previous upgrade and Twilight Council
@@ -32299,7 +32307,7 @@ RequirementNode/Tooltip/And2607061574CountUpgradeAdvancedConstruction24223322222
 RequirementNode/Tooltip/And2613904422CountUnitTemplarArchive6CompleteOnlyTechTreeCheatEq1993962031CountUnitRoboticsFacility7QueuedOrBetter0=Have Koprulu Beacon and no Phase Projector
 RequirementNode/Tooltip/And269701147CountUpgradeAdvancedConstruction242233222222222232222CompleteOnlyCountUpgradeAdvancedConstruction222CompleteOnly=Penal Colony Signed, atleast 1 Scientist at Dominion Outpost
 RequirementNode/Tooltip/And269701147CountUpgradeAdvancedConstruction242233222222222232222CompleteOnlyCountUpgradeAdvancedConstruction222CompleteOnly1976135158=Penal Colony Signed, atleast 1 Scientist at Dominion Outpost
-RequirementNode/Tooltip/And2709914029CountUpgradeAdvancedConstruction2422332222222222322CompleteOnly943849952CountUpgradeAdvancedConstruction222CompleteOnlyCountUnitMissileTurret13CompleteOnly2794507798=Overseer Towers signed, atleast 1 Scientist at Dominion Outpost and an Overseer Tower
+RequirementNode/Tooltip/And2709914029CountUpgradeAdvancedConstruction2422332222222222322CompleteOnly943849952CountUpgradeAdvancedConstruction222CompleteOnlyCountUnitOverseerTowerCompleteOnly2794507798=Overseer Towers signed, atleast 1 Scientist at Dominion Outpost and an Overseer Tower
 RequirementNode/Tooltip/And2722287730GTECountUpgradeAdvancedConstruction22CompleteOnly10=Life Armor Level 1
 RequirementNode/Tooltip/And2722287730GTECountUpgradeAdvancedConstruction22CompleteOnly5=Life Armor Level 1
 RequirementNode/Tooltip/And2722287730GTECountUpgradeAdvancedConstruction22CompleteOnly7=Life Armor Level 1
@@ -32318,7 +32326,7 @@ RequirementNode/Tooltip/And3188649539CountUpgradeSJHyperionHangerCheckQueuedOnly
 RequirementNode/Tooltip/And3188649539CountUpgradeUmojanBasicUnitUpgrade64422CompleteOnlyLTECountUnitTemplarArchive52QueuedOrBetter2=Matrix Level atleast 3 and No more than 3 Phase Prisms
 RequirementNode/Tooltip/And3195770911Eq3195770911CountUnitMedivac11QueuedOrBetter0=No Trawler
 RequirementNode/Tooltip/And3197730804CountUpgradeAdvancedConstruction242233222222222232322CompleteOnlyCountUpgradeAdvancedConstruction222CompleteOnly=Privilege Abolition signed, atleast a single person at Labor Union
-RequirementNode/Tooltip/And3240799816LTECountUnitBarracks172QueuedOrBetter1=No more than 2 Medical Outposts
+RequirementNode/Tooltip/And3240799816LTECountUnitMedicalOutpostQueuedOrBetter1=No more than 2 Medical Outposts
 RequirementNode/Tooltip/And3243137408OrCountUnitGhostAcademy6CompleteOnlyCountUnitGhostAcademy63CompleteOnlyCountUpgradeUmojanBasicUnitUpgrade52224224232222223522222221222CompleteOnly=Rank 3 and Second Sphere ops or Physics Lab
 RequirementNode/Tooltip/And3249779664CountUpgradeAdvancedConstruction24223322222222223242CompleteOnlyCountUpgradeAdvancedConstruction222CompleteOnly=Proselytism signed, atleast a single person at Parochial Institute
 RequirementNode/Tooltip/And326326518Eq3682145486CountUnitEngineeringBay1722QueuedOrBetter0=No Righteous Sacrificial Altar
@@ -32342,7 +32350,7 @@ RequirementNode/Tooltip/And3842468106EqCountUnitAlexQueuedOrBetter0EqCountUnitPr
 RequirementNode/Tooltip/And38482455CountUpgradeUmojanBasicUnitUpgrade223353222222322244CompleteOnlyOrCountUnitLair2CompleteOnlyCountUnitHive2CompleteOnly=Have previous upgrade and Morphing Den
 RequirementNode/Tooltip/And38482455CountUpgradeUmojanBasicUnitUpgrade22335322222232224CompleteOnlyOrCountUnitLair2CompleteOnlyCountUnitHive2CompleteOnly=Have previous upgrade and Morphing Den
 RequirementNode/Tooltip/And3854065385Eq3523259510CountUnitEngineeringBay18QueuedOrBetter0CountUpgradeAdvancedConstruction242233222CompleteOnly=No Bathhouse
-RequirementNode/Tooltip/And385800716LTECountUnitBarracks172QueuedOrBetter2=No more than 3 Medical Outposts
+RequirementNode/Tooltip/And385800716LTECountUnitMedicalOutpostQueuedOrBetter2=No more than 3 Medical Outposts
 RequirementNode/Tooltip/And4028130618Eq3682145486CountUnitEngineeringBay1723QueuedOrBetter0=No Execution Stage
 RequirementNode/Tooltip/And4090560728CountBehaviorAntamoAirAll62CompleteOnlyAtUnitCountBehaviorShieldingEngine532CompleteOnlyAtUnit=Level 2 And Artillery Mode
 RequirementNode/Tooltip/And4115141093CountUpgradeAdvancedConstruction242233222222222232323CompleteOnly1964497010CountUpgradeAdvancedConstruction222CompleteOnly=People's Militia signed, atleast a single person at Labor Union
@@ -32358,7 +32366,7 @@ RequirementNode/Tooltip/And541506112CountUnitTwilightCouncil6CompleteOnlyCountUn
 RequirementNode/Tooltip/And55448061EqCountUnitOrbitalCommand3QueuedOrBetter0EqCountUnitOrbitalCommandFlying2QueuedOrBetter0=No Silent House
 RequirementNode/Tooltip/And584850668EqCountUnitRaven4QueuedOrBetter0EqCountUnitArtoniusQueuedOrBetter0EqCountUnitZealotPurifier2QueuedOrBetter0=No Arto'nius
 RequirementNode/Tooltip/And584850668LTAndCountUnitMarine312QueuedOrBetterAtUnitCountUnitMarine332CompleteOnlyAtUnitCountUnitMarine342QueuedOrBetterAtUnitCountUnitMarine3122QueuedOrBetterAtUnitCountUnitMarine3222CompleteOnlyAtUnit9=No Arto'nius
-RequirementNode/Tooltip/And613433959Eq3523259510CountUnitEngineeringBay1822QueuedOrBetter0CountUpgradeAdvancedConstruction23CompleteOnly=No Psiwave Generator at Construction Site and no Psiwave Communicator
+RequirementNode/Tooltip/And613433959Eq3523259510CountUnitPsiwaveCommunicatorQueuedOrBetter0CountUpgradeAdvancedConstruction23CompleteOnly=No Psiwave Generator at Construction Site and no Psiwave Communicator
 RequirementNode/Tooltip/And634491802CountUnitAdamsCompleteOnlyTechTreeCheatLTECountUnitCopyOfAdamsQueuedOrBetter4=No more than 5 Psionic Copies
 RequirementNode/Tooltip/And755649803CountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233223232322232222222222CompleteOnlyCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332225CompleteOnly=3rd Magnitude Operations And Level 1 Creep Pump
 RequirementNode/Tooltip/And771565496CountUpgradeAdvancedConstruction2422332222222222324CompleteOnlyCountUpgradeAdvancedConstruction222CompleteOnly=Pious Shrine signed, atleast a single person at Parochial Institute
@@ -32555,7 +32563,6 @@ RequirementNode/Tooltip/CountUnitBanelingNest4CompleteOnly1291402289=Eruptling N
 RequirementNode/Tooltip/CountUnitBanelingNest5CompleteOnly2002531244=Psionic Energy Reactor
 RequirementNode/Tooltip/CountUnitBarracks10CompleteOnly1079876273=Militia Barracks
 RequirementNode/Tooltip/CountUnitBarracks11CompleteOnly2572999284=Replacer
-RequirementNode/Tooltip/CountUnitBarracks173CompleteOnly1678174459=Workshop
 RequirementNode/Tooltip/CountUnitBarracks19CompleteOnly2257536121TechTreeCheat=Hiring Terminal
 RequirementNode/Tooltip/CountUnitBarracks2CompleteOnly2504430885=Have Agent Core
 RequirementNode/Tooltip/CountUnitBarracks4CompleteOnly2487500794=Have Legend Barracks
@@ -32590,7 +32597,6 @@ RequirementNode/Tooltip/CountUnitEngineeringBay11CompleteOnly1500852968=Armor Ba
 RequirementNode/Tooltip/CountUnitEngineeringBay12CompleteOnly3039349731TechTreeCheat=Pyloning Bay
 RequirementNode/Tooltip/CountUnitEngineeringBay13CompleteOnly83083295TechTreeCheat=UED Academy
 RequirementNode/Tooltip/CountUnitEngineeringBay16CompleteOnly1740727727=Have Annihilation Bay
-RequirementNode/Tooltip/CountUnitEngineeringBay1822CompleteOnly1851208886=Psiwave Communicator
 RequirementNode/Tooltip/CountUnitEngineeringBay3CompleteOnly2381971792=Have Research Bay
 RequirementNode/Tooltip/CountUnitEngineeringBay4CompleteOnly2862189119=Have Psionic Field Manipulator
 RequirementNode/Tooltip/CountUnitEngineeringBay6CompleteOnly1954741260=Patriot Bay
@@ -32699,7 +32705,6 @@ RequirementNode/Tooltip/CountUnitMercCompound2222CompleteOnly3296903257=SGSC
 RequirementNode/Tooltip/CountUnitMercCompound222CompleteOnly2142443369=AFCC
 RequirementNode/Tooltip/CountUnitMercCompound22CompleteOnly513510848=GMC
 RequirementNode/Tooltip/CountUnitMercCompound2CompleteOnly3580762789=NCC
-RequirementNode/Tooltip/CountUnitMissileTurret13CompleteOnly2794507798=Atleast a single Overseer Tower
 RequirementNode/Tooltip/CountUnitNexus5CompleteOnly2158532138=Have Old Fortress
 RequirementNode/Tooltip/CountUnitNexus6CompleteOnly235829342=Burning Nexus
 RequirementNode/Tooltip/CountUnitNexus7CompleteOnly2977231162=Relic Of Hope
@@ -32708,6 +32713,7 @@ RequirementNode/Tooltip/CountUnitNuke2CompleteOnly2611872378=Build Tactical Miss
 RequirementNode/Tooltip/CountUnitNuke3CompleteOnly3888653629=Build Nuke at the Psi Ops
 RequirementNode/Tooltip/CountUnitNydusNetwork5CompleteOnly5794797=Operating Room
 RequirementNode/Tooltip/CountUnitOurGodPythonThePylon2CompleteOnly4290652824TechTreeCheat=Python The Pylon
+RequirementNode/Tooltip/CountUnitOverseerTowerCompleteOnly2794507798=Atleast a single Overseer Tower
 RequirementNode/Tooltip/CountUnitPirateBayCompleteOnly1609407400=Have Technology Bay
 RequirementNode/Tooltip/CountUnitPointDefenseDrone22CompleteOnly3393635091=Have Space Assembly Station
 RequirementNode/Tooltip/CountUnitPointDefenseDrone262CompleteOnly757322852=Have Fleeting Fleet Beacon
@@ -32722,6 +32728,7 @@ RequirementNode/Tooltip/CountUnitPrimalUltralisk222CompleteOnly782040131=Farkash
 RequirementNode/Tooltip/CountUnitPrimalZergling22CompleteOnly3607272808=Horo Boros
 RequirementNode/Tooltip/CountUnitPrimalZergling22CompleteOnly63660370=Have Horos Boros
 RequirementNode/Tooltip/CountUnitPsiRepeaterCompleteOnly2667952670TechTreeCheat=Psi Repeater
+RequirementNode/Tooltip/CountUnitPsiwaveCommunicatorCompleteOnly1851208886=Psiwave Communicator
 RequirementNode/Tooltip/CountUnitPylon22CompleteOnly706135416=Crimson Crystal
 RequirementNode/Tooltip/CountUnitPylon2CompleteOnly1744543767=Bloodshed Pylon
 RequirementNode/Tooltip/CountUnitPylon5CompleteOnly517960714=Fire Crystal
@@ -32826,6 +32833,7 @@ RequirementNode/Tooltip/CountUnitVengeanceShrineCompleteOnly675923554=Vengeance 
 RequirementNode/Tooltip/CountUnitVirophage2CompleteOnly2318693240=Plaguebringer
 RequirementNode/Tooltip/CountUnitVortexWidenerCompleteOnly3352140914=Vortex Widener
 RequirementNode/Tooltip/CountUnitWarFactoryCompleteOnly2868240374TechTreeCheat=War Factory
+RequirementNode/Tooltip/CountUnitWorkshopCompleteOnly1678174459=Workshop
 RequirementNode/Tooltip/CountUpgradeAdvancedConstruction222CompleteOnly1976135158=Atleast 1 Scientist at Dominion Outpost
 RequirementNode/Tooltip/CountUpgradeAdvancedConstruction232222CompleteOnly629882346=Colonial Housing researched
 RequirementNode/Tooltip/CountUpgradeAdvancedConstruction2322CompleteOnly3569594373=Secondary Medical Outpost available
@@ -33173,9 +33181,9 @@ RequirementNode/Tooltip/Eq32775967CountUnitAaronTheExterminatorQueuedOrBetter0=N
 RequirementNode/Tooltip/Eq3427415290CountUnitNydusNetwork5QueuedOrBetter0=No Operating Room
 RequirementNode/Tooltip/Eq3523259510CountUnitBarracks17222QueuedOrBetter0=No Medical Outpost and Medical Outposts researched
 RequirementNode/Tooltip/Eq3523259510CountUnitBarracks1722QueuedOrBetter0=No Medical Outpost and Medical Outposts researched
-RequirementNode/Tooltip/Eq3523259510CountUnitBarracks172QueuedOrBetter0=No Medical Outpost and Medical Outposts researched
-RequirementNode/Tooltip/Eq3523259510CountUnitEngineeringBay1822QueuedOrBetter0=No Medical Outpost and Medical Outposts researched
 RequirementNode/Tooltip/Eq3523259510CountUnitEngineeringBay18QueuedOrBetter0=No Medical Outpost and Medical Outposts researched
+RequirementNode/Tooltip/Eq3523259510CountUnitMedicalOutpostQueuedOrBetter0=No Medical Outpost and Medical Outposts researched
+RequirementNode/Tooltip/Eq3523259510CountUnitPsiwaveCommunicatorQueuedOrBetter0=No Medical Outpost and Medical Outposts researched
 RequirementNode/Tooltip/Eq3546266166CountUnitMedivac113QueuedOrBetter0=No Freighter
 RequirementNode/Tooltip/Eq3546614471CountUnitFenixChampion2QueuedOrBetter0=No Fenix deployed.
 RequirementNode/Tooltip/Eq3555195491CountUnitBattlecruiser8QueuedOrBetter0=No Admiral Anhoff
@@ -33500,6 +33508,7 @@ Unit/Name/AmonShardBWeapon22=Amon Shard BWeapon2
 Unit/Name/AmonShardCWeapon2=Amon Shard CWeapon
 Unit/Name/AmonShardCWeapon22=Amon Shard CWeapon
 Unit/Name/Ana=Ana
+Unit/Name/AnalyzerVessel=Analyzer Vessel
 Unit/Name/AncientDefender=Ancient Defender
 Unit/Name/AncientDefender2=Nekta'la Defender
 Unit/Name/Anda=Anda
@@ -33595,7 +33604,6 @@ Unit/Name/AutomatedRefinery222=Extracting Extractor
 Unit/Name/AutomatedRefinery223=Relic Of Greed
 Unit/Name/AutomatedRefinery23=Programmed Refinery
 Unit/Name/AutomatedRefinery3=Automated Refinery
-Unit/Name/AutomatedRefinery4=Vespene Pacifier
 Unit/Name/AutomatedRefinery5=Automated Refinery
 Unit/Name/BacklashRocketsLMWeapon2=Backlash Rockets Copy
 Unit/Name/BacklashRocketsLMWeapon3=Backlash Rockets
@@ -33622,7 +33630,6 @@ Unit/Name/Banshee6=Groundshaker
 Unit/Name/Banshee7=Banshee
 Unit/Name/Banshee8=Banshee
 Unit/Name/Barracks10=Militia Barracks
-Unit/Name/Barracks102=Tools Manufacture
 Unit/Name/Barracks1022=Logistics Center
 Unit/Name/Barracks103=Grenade Turret
 Unit/Name/Barracks11=Replacer
@@ -33634,13 +33641,10 @@ Unit/Name/Barracks132=UED Barracks
 Unit/Name/Barracks14=Invention Bay
 Unit/Name/Barracks15=34th Division Compound
 Unit/Name/Barracks16=Antamo Assembly
-Unit/Name/Barracks17=Colonial Assembly
-Unit/Name/Barracks172=Medical Outpost
 Unit/Name/Barracks1722=Dominion Outpost
 Unit/Name/Barracks17222=Parochial Institute
 Unit/Name/Barracks17223=Labor Union
 Unit/Name/Barracks172232=Military Station
-Unit/Name/Barracks173=Workshop
 Unit/Name/Barracks174=Military Assembly
 Unit/Name/Barracks18=Shadowpiercer
 Unit/Name/Barracks182=Drop Barge
@@ -33759,7 +33763,6 @@ Unit/Name/Brutalisk2=Archangel
 Unit/Name/BuilderDrone=Builder Drone
 Unit/Name/Bunker2=Compact Garrison
 Unit/Name/Bunker3=Advanced Bunker
-Unit/Name/Bunker4=Watchtower
 Unit/Name/Bunker5=Ethereal Bunker
 Unit/Name/Bunker6=Alloy Bunker
 Unit/Name/Bunker7=Bunker
@@ -33826,6 +33829,7 @@ Unit/Name/Collector222=Point Defender
 Unit/Name/Collector23=Greed Totem
 Unit/Name/Collector24=Kringanu Defeat Preventer
 Unit/Name/Collector3=Supplier
+Unit/Name/ColonialAssembly=Colonial Assembly
 Unit/Name/Colonist2=Crew
 Unit/Name/Colonist22=Civilian
 Unit/Name/Colonist222=Settler
@@ -34182,7 +34186,6 @@ Unit/Name/EngineeringBay1732=Gathering Outpost
 Unit/Name/EngineeringBay1733=Recycling Outpost
 Unit/Name/EngineeringBay18=Bathhouse
 Unit/Name/EngineeringBay182=Bathhouse
-Unit/Name/EngineeringBay1822=Psiwave Communicator
 Unit/Name/EngineeringBay18222=Penal Colony
 Unit/Name/EngineeringBay1823=Bathhouse
 Unit/Name/EngineeringBay183=Bathhouse
@@ -35037,6 +35040,7 @@ Unit/Name/Medic4=Life Saver
 Unit/Name/Medic5=Medical Officer
 Unit/Name/Medic6=Medic
 Unit/Name/Medic7=Medic
+Unit/Name/MedicalOutpost=Medical Outpost
 Unit/Name/Medivac11=Trawler
 Unit/Name/Medivac112=Scow
 Unit/Name/Medivac113=Freighter
@@ -35230,7 +35234,6 @@ Unit/Name/MiscRoguePilot=Rogue Pilot
 Unit/Name/MissileTurret10=Infested Ordnance
 Unit/Name/MissileTurret11=Hail Turret
 Unit/Name/MissileTurret12=Churchwarden
-Unit/Name/MissileTurret13=Overseer Tower
 Unit/Name/MissileTurret132=Pious Shrine
 Unit/Name/MissileTurret1322=Agitator
 Unit/Name/MissileTurret14=Inferno Turret
@@ -35450,6 +35453,7 @@ Unit/Name/Overseer43=Symbioto Flying motherfucking FUCK
 Unit/Name/Overseer5=Oversheer
 Unit/Name/Overseer6=Seerlord
 Unit/Name/Overseer7=Contaminator
+Unit/Name/OverseerTower=Overseer Tower
 Unit/Name/ParasiteSporeWeapon2=Parasite Spore Copy
 Unit/Name/ParasiteSporeWeapon22=Parasite Spore Copy Copy
 Unit/Name/ParasiteSporeWeapon23=Parasite Spore Copy Copy 2
@@ -35615,6 +35619,7 @@ Unit/Name/Probe9=Probe
 Unit/Name/PsiMaster=Shaman
 Unit/Name/PsiRepeater=Psi Repeater
 Unit/Name/PsiUpgrader=Psi Upgrader
+Unit/Name/PsiwaveCommunicator=Psiwave Communicator
 Unit/Name/PukePuddle2=Blight Totem
 Unit/Name/PukePuddle22=Acid Puddle
 Unit/Name/PukePuddle222=Acid Puddle
@@ -36058,7 +36063,6 @@ Unit/Name/ScienceVessel4222=Lentas
 Unit/Name/ScienceVessel5=Scientific Vessel
 Unit/Name/ScienceVessel52=Scientific Vessel
 Unit/Name/ScienceVessel6=Phase Vessel
-Unit/Name/ScienceVessel7=Analyzer Vessel
 Unit/Name/ScienceVessel72=Analyzer Vessel
 Unit/Name/ScienceVessel8=Chemical Vessel
 Unit/Name/ScienceVessel9=Science Vessel
@@ -36388,6 +36392,7 @@ Unit/Name/Titan=Titan
 Unit/Name/TitanMechMissileWeapon2=Archangel Missile Copy
 Unit/Name/TitanMechMissileWeapon22=Archangel Missile Copy Copy
 Unit/Name/TitanMechMissileWeapon23=Archangel Missile Copy Copy 2
+Unit/Name/ToolsManufacture=Tools Manufacture
 Unit/Name/TornadoMissileDummyWeapon2=Tornado Missile Dummy
 Unit/Name/TornadoMissileWeapon2=Tornado Missile
 Unit/Name/Tosh2=Gustav Antamo
@@ -36465,6 +36470,7 @@ Unit/Name/ValerianLab2=Arcturus Mengsk
 Unit/Name/VengeanceSeer=Vengeance Seer
 Unit/Name/VengeanceShrine=Vengeance Shrine
 Unit/Name/VespeneGeyser2=Richass Vespene Gayser
+Unit/Name/VespenePacifier=Vespene Pacifier
 Unit/Name/VikingAssault2=Viking
 Unit/Name/VikingFighter2=Zeta Gunship
 Unit/Name/VikingFighter22=Aries Gunship
@@ -36574,6 +36580,7 @@ Unit/Name/WarpRay=Warp Ray
 Unit/Name/WarpSpaceBeacon=Warp-Space Beacon
 Unit/Name/Watcher=Watcher
 Unit/Name/Watcher2=Pure Core
+Unit/Name/Watchtower=Watchtower
 Unit/Name/WeaponHybridD2=HybridD Copy
 Unit/Name/WeaponHybridD3=HybridD
 Unit/Name/WhitePhoenix=White Phoenix
@@ -36611,6 +36618,7 @@ Unit/Name/WidowMineWeapon3222=Widow Mine
 Unit/Name/WidowMineWeapon32222=Widow Mine
 Unit/Name/WidowMineWeapon322222=Widow Mine
 Unit/Name/WidowMineWeapon33=Widow Mine
+Unit/Name/Workshop=Workshop
 Unit/Name/Wraith2=Curate
 Unit/Name/Wraith22=Flame Of Eternity
 Unit/Name/Wraith222=Spark Of Tournament
