@@ -907,6 +907,7 @@
         <RemoveValidatorArray value="NotHaveScramblerMissileBehavior"/>
         <Duration value="15"/>
         <Modification MoveSpeedBonus="2.5" AccelerationBonus="500" DecelerationBonus="500"/>
+        <TimeScaleSource Value="Global"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="NoWeapon">
         <Alignment value="Negative"/>
