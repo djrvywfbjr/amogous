@@ -2390,6 +2390,7 @@ Abil/Name/Wep2HellRifle=Wep2 Hell Rifle
 Abil/Name/Wep2PDCArray=Wep2 PDC Array
 Abil/Name/Wep2SharpnelRifle=Wep2 Sharpnel Rifle
 Abil/Name/Wep3SmartFireDartGuns=Wep3 Smart-Fire Dart Guns
+Abil/Name/Wep3StarshipRailgun=Wep3 Starship Railgun
 Abil/Name/Wep3WarheadLauncher=Wep3 Warhead Launcher
 Abil/Name/WidowMineAttack2=Tornade Missiles
 Abil/Name/WidowMineAttack22=EtS-55 Missiles
@@ -4223,6 +4224,7 @@ Behavior/Name/WepPDCArray=(Wep) PDC Array
 Behavior/Name/WepShellstormChaingun=(Wep) Shellstorm Chaingun
 Behavior/Name/WepShrapnelRifle=(Wep) Shrapnel Rifle
 Behavior/Name/WepSmartFireDartGuns=(Wep) Smart-Fire Dart Guns
+Behavior/Name/WepStarshipRailgun=(Wep) Starship Railgun
 Behavior/Name/WepUltraGrenades=(Wep) Ultra-Grenades
 Behavior/Name/WepWarheadLauncher=(Wep) Warhead Launcher
 Behavior/Name/WepZapperGun=(Wep) Zapper Gun
@@ -7305,6 +7307,7 @@ Button/Name/EquipPortableSensorTower=Equip Portable Sensor Tower
 Button/Name/EquipShellstormChaingun=Equip Shellstorm Chaingun
 Button/Name/EquipShrapnelRifle=Equip Shrapnel Rifle
 Button/Name/EquipSmartFireDartGuns=Equip Smart-Fire Dart Guns
+Button/Name/EquipStarshipRailgun=Equip Starship Railgun
 Button/Name/EquipStormcallerUplink=Equip Stormcaller Uplink
 Button/Name/EquipWarheadLauncher=Equip Warhead Launcher
 Button/Name/EquipWeapon=Equip Weapon
@@ -14328,6 +14331,7 @@ Button/Tooltip/EquipPortableSensorTower=<c val="00FF00">Required parts:</c><n/><
 Button/Tooltip/EquipShellstormChaingun=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Gunpowder Mixer<n/><c val="00FF00">(2)</c> Shelling Fabricators<n/><n/>Equips the Serviceman armor with a fast-firing chaingun that hits multiple enemies in an area around main target, but target armor reduces damage of the weapon twice as much as usual.<n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
 Button/Tooltip/EquipShrapnelRifle=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(2)</c> Gunpowder Mixers<n/><c val="00FF00">(1)</c> Shelling Fabricator<n/><n/>Equips the Serviceman armor with a powerful long-ranged rifle, that deals great damage and is even stronger against Armored targets, but cannot fire too often.<n/><n/>This powerful rifle was originally designed for hunting. Most creatures' meat is made inedible due to explosive shrapnel blasts created by these rifles.
 Button/Tooltip/EquipSmartFireDartGuns=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Chemical Station<n/><c val="00FF00">(1)</c> Fusion Core<n/><c val="00FF00">(1)</c> Recycler Tank<n/><n/>Equips the Outrider armor with 2 pistols that attack different enemies each attack. The pistols mark targets for increased damage and reveal them, while also making them blind.<n/><n/>These weapons function by firing tracker darts that inject certain vision-weakening drugs from advanced weapons that can calculate the trajectory of the projectiles.
+Button/Tooltip/EquipStarshipRailgun=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(3)</c> Shelling Fabricators<n/><c val="00FF00">(3)</c> Fusion Cores<n/><n/>Equips the Hunter Ranger armor with a shocker that reduces enemy attack and movement speed, but does not do much damage.<n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
 Button/Tooltip/EquipStormcallerUplink=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(3)</c> Shelling Fabricators<n/><n/>Equips the Hunter Ranger armor with a satellite uplink, allowing it to call down lightning strikes that deal heavy damage and stun enemies in a small area.
 Button/Tooltip/EquipWarheadLauncher=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(1)</c> Gunpowder Mixer<n/><c val="00FF00">(1)</c> Recycler Tank<n/><c val="00FF00">(1)</c> Shelling Fabricator<n/><n/>Equips the Serviceman armor with a missile launcher that deals damage in a large area and increased damage to light units, but has an extremely long reload time.<n/><n/>This military rocket launcher design was never meant for the emergency colonization, but so little progress has been done on Psiwave Generators that Dominion authorities added them as a last-minute addition to finish clearing unfinished Construction Site shafts.
 Button/Tooltip/EquipWeapon=Shows available weapons that can be crafted for this unit by using parts made at Tools Manufacture.
@@ -21996,6 +22000,7 @@ Effect/Name/CraftPortableSensorTower=Craft Portable Sensor Tower
 Effect/Name/CraftShellstormChaingun=Craft Shellstorm Chaingun
 Effect/Name/CraftShrapnelRifle=Craft Shrapnel Rifle
 Effect/Name/CraftSmartFireDartGuns=Craft Smart Fire Dart Guns
+Effect/Name/CraftStarshipRailgun=Craft Starship Railgun
 Effect/Name/CraftStormcallerUplink=Craft Stormcaller Uplink
 Effect/Name/CraftWarheadLauncher=Craft Warhead Launcher
 Effect/Name/CraftZapperGun=Craft Zapper Gun
@@ -28427,6 +28432,7 @@ Effect/Name/RefugeeCraftRemove3FC=Refugee Craft Remove 3FC
 Effect/Name/RefugeeCraftRemove3GM=Refugee Craft Remove 3GM
 Effect/Name/RefugeeCraftRemove3GM2SF1RT=Refugee Craft Remove 3GM, 2SF, 1RT
 Effect/Name/RefugeeCraftRemove3SF=Refugee Craft Remove 3SF
+Effect/Name/RefugeeCraftRemove3SF3FC=Refugee Craft Remove 3SF, 3FC
 Effect/Name/RefugeeCraftRemove4FC1SF1CS=Refugee Craft Remove 4FC, 1SF, 1CS
 Effect/Name/ReleaseInterceptors2=Release Interceptors2
 Effect/Name/ReleaseInterceptors3=Release Interceptors3
@@ -29719,6 +29725,8 @@ Effect/Name/StalkerEntropyLanceSecondaryLM3=Entropy Lance Secondary LM
 Effect/Name/StalkerEntropyLanceSecondaryLM4=Entropy Lance Secondary LM
 Effect/Name/StalkerEntropyLanceSecondaryLM5=Entropy Lance Secondary LM
 Effect/Name/StalkerEntropyLanceSecondaryLM6=Entropy Lance Secondary LM
+Effect/Name/StarshipRailgunDamage=Starship Railgun Damage
+Effect/Name/StarshipRailgunLM=Starship Railgun LM
 Effect/Name/Stimpack10=7 Minutes Later Add
 Effect/Name/Stimpack102=Dont [3] Apply Pernament Cocoon Protection
 Effect/Name/Stimpack11=Undead Apply Cocoon
@@ -39213,6 +39221,7 @@ Weapon/Name/Spines4=Claws
 Weapon/Name/Spines5=Claws
 Weapon/Name/Spines6=Claws
 Weapon/Name/Spines7=Claws
+Weapon/Name/StarshipRailgun=Starship Railgun
 Weapon/Name/StoneZealotEyeBlast=Nullity Lance
 Weapon/Name/StukovInfestedTerran2=Organ Relocation
 Weapon/Name/StukovInfestedTerran22=Organ Relocation

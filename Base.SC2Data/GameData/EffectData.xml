@@ -10283,6 +10283,11 @@
         <AreaArray Radius="3" Effect="PunisherGrenadesLM422"/>
         <MaxCount value="3"/>
     </CEffectEnumArea>
+    <CEffectApplyBehavior id="CraftStarshipRailgun">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="WepStarshipRailgun"/>
+    </CEffectApplyBehavior>
     <CEffectEnumArea id="DispersiveFire">
         <EditorCategories value=""/>
         <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Invulnerable"/>
@@ -25671,6 +25676,19 @@
         <ImpactEffect value="GlancerTorpedoesDamage"/>
         <AmmoUnit value="VikingFighterWeapon"/>
     </CEffectLaunchMissile>
+    <CEffectDamage id="StarshipRailgunDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <Visibility value="Visible"/>
+        <Kind value="Ranged"/>
+        <Amount value="75"/>
+        <Death value="Fire"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="StarshipRailgunLM">
+        <EditorCategories value="Race:Terran"/>
+        <ImpactEffect value="StarshipRailgunDamage"/>
+        <AmmoUnit value="LiberatorAGMissile"/>
+    </CEffectLaunchMissile>
     <CEffectDamage id="MengskMarineDamage3222">
         <EditorCategories value="Race:Terran"/>
         <ResponseFlags index="Acquire" value="1"/>
@@ -25709,6 +25727,12 @@
         <PeriodicPeriodArray value="0.25"/>
         <PeriodicPeriodArray value="0.125"/>
     </CEffectCreatePersistent>
+    <CEffectModifyPlayer id="RefugeeCraftRemove3SF3FC">
+        <EditorCategories value="Race:Zerg"/>
+        <WhichPlayer Value="Caster"/>
+        <Upgrades Upgrade="ManufactureShellingFabricator" Count="-3"/>
+        <Upgrades Upgrade="ManufactureFusionCore" Count="-3"/>
+    </CEffectModifyPlayer>
     <CEffectDamage id="ShellstormChaingunDamage">
         <EditorCategories value="Race:Terran"/>
         <ResponseFlags index="Acquire" value="1"/>
