@@ -241,12 +241,10 @@
 <Unit id="CarrierAiur"/>
 <Unit id="Nexus2"/>
 <Unit id="CommandCenter13"/>
-<Unit id="Marine7"/>
 <Unit id="Jumper"/>
 <Unit id="Combater"/>
 <Unit id="SCV11"/>
 <Unit id="Probe7"/>
-<Unit id="SCV12"/>
 <Unit id="SCV13"/>
 <Unit id="D4DShip"/>
 <Unit id="Collector"/>
@@ -366,5 +364,7 @@
 <Unit id="Scientist222"/>
 <Unit id="SensorTower42"/>
 <Unit id="Queen5"/>
+<Unit id="Serviceman"/>
+<Unit id="MaintenanceVehicle"/>
 <Weapon id="RavasaurAir3"/>
 </Preload>

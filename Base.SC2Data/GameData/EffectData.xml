@@ -68586,6 +68586,9 @@
         <AreaArray Radius="3.5" Effect="TemporalFieldDamageDummy32"/>
         <AreaArray Radius="3.5" Effect="TemporalFieldDamageDummy32"/>
     </CEffectEnumArea>
+    <CEffectSet id="TheEmptySet">
+        <EditorCategories value=""/>
+    </CEffectSet>
     <CEffectDamage id="ThermalBeamDamage2" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
         <Kind value="Ranged"/>

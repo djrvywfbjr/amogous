@@ -741,12 +741,53 @@
         <Compare value="GE"/>
         <Value value="8"/>
     </CValidatorPlayerCompareFoodAvailable>
+    <CValidatorUnitCompareCargo id="HasCargoSpace">
+        <Compare value="GT"/>
+    </CValidatorUnitCompareCargo>
+    <CValidatorUnitType id="IsMaintenanceVehicle">
+        <Value value="MaintenanceVehicle"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsServiceman">
+        <Value value="Serviceman"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsJumper">
+        <Value value="Jumper"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsCombater">
+        <Value value="Combater"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsHunterRanger">
+        <Value value="HunterRanger"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsBrazier">
+        <Value value="Brazier"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsBlimp">
+        <Value value="SiegeBlimp"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsTrooper">
+        <Value value="MilitiaTrooper"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsTitan">
+        <Value value="Titan"/>
+    </CValidatorUnitType>
     <CValidatorCombine id="RefugeeValidatorAnyWorkerOrScientist">
         <CombineArray value="RequiresCivilian2"/>
         <CombineArray value="RequiresCivilian24"/>
         <CombineArray value="RequiresCivilian23"/>
         <CombineArray value="IsNotRecentlyRecalled2332"/>
         <CombineArray value="RequiresCivilian22"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="RequiresWorkers">
+        <CombineArray value="IsServiceman"/>
+        <CombineArray value="IsJumper"/>
+        <CombineArray value="IsCombater"/>
+        <CombineArray value="IsHunterRanger"/>
+        <CombineArray value="IsTitan"/>
+        <CombineArray value="IsTrooper"/>
+        <CombineArray value="IsBrazier"/>
+        <CombineArray value="IsBlimp"/>
+        <CombineArray value="IsMaintenanceVehicle"/>
     </CValidatorCombine>
     <CValidatorPlayerRequirement id="SFAutocast">
         <Value value="ManufactureShellingFabricatorAuto"/>

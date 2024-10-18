@@ -226,13 +226,13 @@
     </CUpgrade>
     <CUpgrade id="AdvancedConstruction24223">
         <Flags index="UpgradeCheat" value="0"/>
-        <EffectArray Operation="Set" Reference="Unit,Marauder4,Food" Value="-2"/>
+        <EffectArray Operation="Set" Reference="Unit,Titan,Food" Value="-2"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="AdvancedConstruction"/>
     </CUpgrade>
     <CUpgrade id="AdvancedConstruction242232">
         <Flags index="UpgradeCheat" value="0"/>
-        <EffectArray Operation="Set" Reference="Unit,Marauder4,Food" Value="-2"/>
+        <EffectArray Operation="Set" Reference="Unit,Titan,Food" Value="-2"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="AdvancedConstruction"/>
     </CUpgrade>
@@ -501,16 +501,16 @@
     </CUpgrade>
     <CUpgrade id="AdvancedConstruction2422332222">
         <Flags index="UpgradeCheat" value="0"/>
-        <EffectArray Reference="Unit,Marauder4,LifeMax" Value="30"/>
-        <EffectArray Reference="Unit,Marauder4,LifeStart" Value="30"/>
-        <EffectArray Reference="Unit,Marine313,LifeMax" Value="30"/>
-        <EffectArray Reference="Unit,Marine313,LifeStart" Value="30"/>
+        <EffectArray Reference="Unit,Titan,LifeMax" Value="30"/>
+        <EffectArray Reference="Unit,Titan,LifeStart" Value="30"/>
+        <EffectArray Reference="Unit,MilitiaTrooper,LifeMax" Value="30"/>
+        <EffectArray Reference="Unit,MilitiaTrooper,LifeStart" Value="30"/>
         <EffectArray Reference="Unit,Jumper,LifeStart" Value="30"/>
         <EffectArray Reference="Unit,Jumper,LifeMax" Value="30"/>
-        <EffectArray Reference="Unit,Marine7,LifeMax" Value="30"/>
-        <EffectArray Reference="Unit,Ghost8,LifeStart" Value="30"/>
-        <EffectArray Reference="Unit,Ghost8,LifeMax" Value="30"/>
-        <EffectArray Reference="Unit,Marine7,LifeStart" Value="30"/>
+        <EffectArray Reference="Unit,Serviceman,LifeMax" Value="30"/>
+        <EffectArray Reference="Unit,HunterRanger,LifeStart" Value="30"/>
+        <EffectArray Reference="Unit,HunterRanger,LifeMax" Value="30"/>
+        <EffectArray Reference="Unit,Serviceman,LifeStart" Value="30"/>
         <EffectArray Reference="Unit,Combater,LifeStart" Value="30"/>
         <EffectArray Reference="Unit,Combater,LifeMax" Value="30"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
@@ -521,11 +521,11 @@
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="AdvancedConstruction"/>
         <EffectArray Operation="Multiply" Reference="Unit,Combater,Speed" Value="0.851500"/>
-        <EffectArray Operation="Multiply" Reference="Unit,Marine7,Speed" Value="0.851500"/>
-        <EffectArray Operation="Multiply" Reference="Unit,Ghost8,Speed" Value="0.851500"/>
+        <EffectArray Operation="Multiply" Reference="Unit,Serviceman,Speed" Value="0.851500"/>
+        <EffectArray Operation="Multiply" Reference="Unit,HunterRanger,Speed" Value="0.851500"/>
         <EffectArray Operation="Multiply" Reference="Unit,Jumper,Speed" Value="0.851500"/>
-        <EffectArray Operation="Multiply" Reference="Unit,Marine313,Speed" Value="0.851500"/>
-        <EffectArray Operation="Multiply" Reference="Unit,Marauder4,Speed" Value="0.851500"/>
+        <EffectArray Operation="Multiply" Reference="Unit,MilitiaTrooper,Speed" Value="0.851500"/>
+        <EffectArray Operation="Multiply" Reference="Unit,Titan,Speed" Value="0.851500"/>
     </CUpgrade>
     <CUpgrade id="AdvancedConstruction242233222222">
         <Flags index="UpgradeCheat" value="0"/>
@@ -1749,11 +1749,11 @@
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
     <CUpgrade id="OptimizedServos">
-        <EffectArray Reference="Unit,Marine7,Speed" Value="0.300700"/>
+        <EffectArray Reference="Unit,Serviceman,Speed" Value="0.300700"/>
         <EffectArray Reference="Unit,Combater,Speed" Value="0.300700"/>
-        <EffectArray Reference="Unit,Ghost8,Speed" Value="0.398400"/>
-        <EffectArray Reference="Unit,Marauder4,Speed" Value="0.300700"/>
-        <EffectArray Reference="Unit,Marine313,Speed" Value="0.300700"/>
+        <EffectArray Reference="Unit,HunterRanger,Speed" Value="0.398400"/>
+        <EffectArray Reference="Unit,Titan,Speed" Value="0.300700"/>
+        <EffectArray Reference="Unit,MilitiaTrooper,Speed" Value="0.300700"/>
         <EffectArray Reference="Unit,Jumper,Speed" Value="0.500000"/>
     </CUpgrade>
     <CUpgrade id="SVMemorizer2">

@@ -734,6 +734,26 @@
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
     </CAbilEffectInstant>
+    <CAbilEffectTarget id="SendWorker">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="TheEmptySet"/>
+        <Cost>
+            <Charge CountMax="255" CountUse="1"/>
+            <Cooldown TimeUse="0.125"/>
+        </Cost>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastFilters value="Visible;Self,Ally,Neutral,Enemy,Missile,UnderConstruction,Dead"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="SendScientist">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="TheEmptySet"/>
+        <Cost>
+            <Charge CountMax="255" CountUse="1"/>
+            <Cooldown TimeUse="0.125"/>
+        </Cost>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastFilters value="Visible;Self,Ally,Neutral,Enemy,Missile,UnderConstruction,Dead"/>
+    </CAbilEffectTarget>
     <CAbilEffectInstant id="TakentanksMakery">
         <OrderArray index="0" Model="Assets\UI\Cursors\WayPointConfirm_Void\WayPointConfirm_Void.m3"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -1998,7 +2018,7 @@
         <Name value="Abil/Name/BarracksTrain10"/>
         <InfoArray index="Train1" Effect="MercGroundDrop" Location="Rally">
             <Button DefaultButtonFace="Marine17"/>
-            <Unit index="0" value="Marine7"/>
+            <Unit index="0" value="Serviceman"/>
         </InfoArray>
         <InfoArray index="Train2" Effect="MercGroundDrop" Location="Rally">
             <Button DefaultButtonFace="Reaper7"/>
@@ -2006,11 +2026,11 @@
         </InfoArray>
         <InfoArray index="Train3" Time="60" Effect="MercGroundDrop" Location="Rally">
             <Button DefaultButtonFace="Ghost11" Requirements="HavePsionicHeart22432322232423222633"/>
-            <Unit index="0" value="Ghost8"/>
+            <Unit index="0" value="HunterRanger"/>
         </InfoArray>
         <InfoArray index="Train4" Time="75" Effect="MercGroundDrop" Location="Rally">
             <Button DefaultButtonFace="Marauder12" Requirements="HavePsionicHeart22432322232423222632"/>
-            <Unit index="0" value="Marauder4"/>
+            <Unit index="0" value="Titan"/>
         </InfoArray>
         <InfoArray index="Train5">
             <Button DefaultButtonFace="Medic7"/>
@@ -2021,7 +2041,7 @@
         </InfoArray>
         <InfoArray index="Train7" Time="18.2" Effect="MercGroundDrop" Location="Rally">
             <Button DefaultButtonFace="Spectre6" Requirements="HavePsionicHeart22432322232423222634"/>
-            <Unit index="0" value="Marine313"/>
+            <Unit index="0" value="MilitiaTrooper"/>
         </InfoArray>
         <InfoArray index="Train8" Time="100" Effect="MercGroundDrop" Location="Rally">
             <Button DefaultButtonFace="Marine25" Requirements="HavePsionicHeart224323222324232226322432"/>
@@ -3447,7 +3467,7 @@
         <Range value="5"/>
         <InfoArray index="Train1" Time="45">
             <Button DefaultButtonFace="Marine24" State="Restricted"/>
-            <Unit value="SCV12"/>
+            <Unit value="MaintenanceVehicle"/>
         </InfoArray>
         <InfoArray index="Train2" Time="45">
             <Button DefaultButtonFace="Reaper13" State="Restricted"/>
@@ -3487,7 +3507,7 @@
         </InfoArray>
         <InfoArray index="Train11" Time="100">
             <Button DefaultButtonFace="Spectre11222" Requirements="HavePsionicHeart22432322232423222632243"/>
-            <Unit value="Banshee5"/>
+            <Unit value="ImperialSilencer"/>
         </InfoArray>
         <InfoArray index="Train12" Time="175">
             <Button DefaultButtonFace="Medic142" Requirements="HavePsionicHeart224323222324232226332222"/>
@@ -3524,7 +3544,7 @@
         <Range value="5"/>
         <InfoArray index="Train1" Time="90">
             <Button DefaultButtonFace="Marine24" State="Restricted"/>
-            <Unit value="SCV12"/>
+            <Unit value="MaintenanceVehicle"/>
         </InfoArray>
         <InfoArray index="Train2" Time="45">
             <Button DefaultButtonFace="Reaper13" State="Restricted"/>
@@ -3575,7 +3595,7 @@
         <Range value="5"/>
         <InfoArray index="Train1" Time="90">
             <Button DefaultButtonFace="Marine24" State="Restricted"/>
-            <Unit value="SCV12"/>
+            <Unit value="MaintenanceVehicle"/>
         </InfoArray>
         <InfoArray index="Train2" Time="45">
             <Button DefaultButtonFace="Reaper13" State="Restricted"/>
@@ -3626,7 +3646,7 @@
         <Range value="5"/>
         <InfoArray index="Train1" Time="90">
             <Button DefaultButtonFace="Marine24" State="Restricted"/>
-            <Unit value="SCV12"/>
+            <Unit value="MaintenanceVehicle"/>
         </InfoArray>
         <InfoArray index="Train2" Time="45">
             <Button DefaultButtonFace="Reaper13" State="Restricted"/>

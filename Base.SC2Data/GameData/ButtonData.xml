@@ -4298,6 +4298,8 @@
     <CButton id="ResearchOptimizedServos">
         <Icon value="Assets\Textures\btn-upgrade-terran-transformationservos.dds"/>
     </CButton>
+    <CButton id="SendScientist"/>
+    <CButton id="SendWorker"/>
     <CButton id="SensorSweep">
         <Icon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>

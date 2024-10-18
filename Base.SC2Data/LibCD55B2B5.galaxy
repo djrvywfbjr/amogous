@@ -917,13 +917,13 @@ bool libCD55B2B5_gt_RefugeesChoose_Func (bool testConds, bool runActions) {
     libNtve_gf_UnitCreateFacingPoint(1, "CommandCenter12", c_unitCreateIgnorePlacement, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
     libNtve_gf_UnitCreateFacingPoint(17, "Scientist3", c_unitCreateIgnorePlacement, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
     libNtve_gf_UnitCreateFacingPoint(25, "Civilian4", c_unitCreateIgnorePlacement, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
-    libNtve_gf_UnitCreateFacingPoint(1, "SCV12", 0, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
+    libNtve_gf_UnitCreateFacingPoint(1, "MaintenanceVehicle", 0, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
     UnitCargoCreate(UnitLastCreated(), "Civilian4", 1);
-    libNtve_gf_UnitCreateFacingPoint(1, "SCV12", 0, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
+    libNtve_gf_UnitCreateFacingPoint(1, "MaintenanceVehicle", 0, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
     UnitCargoCreate(UnitLastCreated(), "Civilian4", 1);
-    libNtve_gf_UnitCreateFacingPoint(1, "SCV12", 0, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
+    libNtve_gf_UnitCreateFacingPoint(1, "MaintenanceVehicle", 0, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
     UnitCargoCreate(UnitLastCreated(), "Civilian4", 1);
-    libNtve_gf_UnitCreateFacingPoint(1, "SCV12", 0, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
+    libNtve_gf_UnitCreateFacingPoint(1, "MaintenanceVehicle", 0, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
     UnitCargoCreate(UnitLastCreated(), "Civilian4", 1);
     return true;
 }
@@ -3514,6 +3514,74 @@ void libCD55B2B5_gt_ConstructionSiteDies_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
+// Trigger: MilitaryStationWorkerConvict
+//--------------------------------------------------------------------------------------------------
+bool libCD55B2B5_gt_MilitaryStationWorkerConvict_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    unitgroup auto46A66CE1_g;
+    int auto46A66CE1_u;
+    unit auto46A66CE1_var;
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    auto46A66CE1_g = UnitCargoGroup(EventUnit());
+    auto46A66CE1_u = UnitGroupCount(auto46A66CE1_g, c_unitCountAll);
+    for (;; auto46A66CE1_u -= 1) {
+        auto46A66CE1_var = UnitGroupUnitFromEnd(auto46A66CE1_g, auto46A66CE1_u);
+        if (auto46A66CE1_var == null) { break; }
+        if (((UnitGetType(auto46A66CE1_var) == "Civilian4") || (UnitGetType(auto46A66CE1_var) == "SpacePrisonerBig3"))) {
+            UnitRemove(auto46A66CE1_var);
+            UnitCargoCreate(EventUnitTargetUnit(), UnitGetType(auto46A66CE1_var), 1);
+            return true;
+        }
+
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCD55B2B5_gt_MilitaryStationWorkerConvict_Init () {
+    libCD55B2B5_gt_MilitaryStationWorkerConvict = TriggerCreate("libCD55B2B5_gt_MilitaryStationWorkerConvict_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: MilitaryStationScientist
+//--------------------------------------------------------------------------------------------------
+bool libCD55B2B5_gt_MilitaryStationScientist_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    unitgroup auto0D31EB73_g;
+    int auto0D31EB73_u;
+    unit auto0D31EB73_var;
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    auto0D31EB73_g = UnitCargoGroup(EventUnit());
+    auto0D31EB73_u = UnitGroupCount(auto0D31EB73_g, c_unitCountAll);
+    for (;; auto0D31EB73_u -= 1) {
+        auto0D31EB73_var = UnitGroupUnitFromEnd(auto0D31EB73_g, auto0D31EB73_u);
+        if (auto0D31EB73_var == null) { break; }
+        if (((UnitGetType(auto0D31EB73_var) == "Scientist3"))) {
+            UnitRemove(auto0D31EB73_var);
+            UnitCargoCreate(EventUnitTargetUnit(), UnitGetType(auto0D31EB73_var), 1);
+            return true;
+        }
+
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCD55B2B5_gt_MilitaryStationScientist_Init () {
+    libCD55B2B5_gt_MilitaryStationScientist = TriggerCreate("libCD55B2B5_gt_MilitaryStationScientist_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
 // Trigger: Blinkcd 2
 //--------------------------------------------------------------------------------------------------
 bool libCD55B2B5_gt_Blinkcd2_Func (bool testConds, bool runActions) {
@@ -3670,7 +3738,7 @@ bool libCD55B2B5_gt_MilitaryStation_Func (bool testConds, bool runActions) {
 
     // Conditions
     if (testConds) {
-        if (!(((UnitGetType(EventUnit()) == "Combater") || (UnitGetType(EventUnit()) == "Brazier") || (UnitGetType(EventUnit()) == "Marine7") || (UnitGetType(EventUnit()) == "Ghost8") || (UnitGetType(EventUnit()) == "Jumper") || (UnitGetType(EventUnit()) == "Marine313") || (UnitGetType(EventUnit()) == "SCV12") || (UnitGetType(EventUnit()) == "Marauder4")))) {
+        if (!(((UnitGetType(EventUnit()) == "Combater") || (UnitGetType(EventUnit()) == "Brazier") || (UnitGetType(EventUnit()) == "Serviceman") || (UnitGetType(EventUnit()) == "HunterRanger") || (UnitGetType(EventUnit()) == "Jumper") || (UnitGetType(EventUnit()) == "MilitiaTrooper") || (UnitGetType(EventUnit()) == "MaintenanceVehicle") || (UnitGetType(EventUnit()) == "Titan")))) {
             return false;
         }
     }
@@ -4863,7 +4931,7 @@ bool libCD55B2B5_gt_RemoveWeapons_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     // Conditions
     if (testConds) {
-        if (!(((UnitGetType(EventUnit()) != "Civilian4") && (UnitGetType(EventUnit()) != "GhostAlternate22") && (UnitGetType(EventUnit()) != "SpacePrisonerBig3") && (UnitGetType(EventUnit()) != "MengskThor32") && (UnitGetType(EventUnit()) != "GhostAlternate222") && (UnitGetType(EventUnit()) != "GhostAlternate2222") && (UnitGetType(EventUnit()) != "TarsonisEngineFast22") && (UnitGetType(EventUnit()) != "TarsonisEngineFast23") && (UnitGetType(EventUnit()) != "TarsonisEngineFast2") && (UnitGetType(EventUnit()) != "TarsonisEngineFast232") && (UnitGetType(EventUnit()) != "TarsonisEngineFast222") && (UnitGetType(EventUnit()) != "Banshee5")))) {
+        if (!(((UnitGetType(EventUnit()) != "Civilian4") && (UnitGetType(EventUnit()) != "GhostAlternate22") && (UnitGetType(EventUnit()) != "SpacePrisonerBig3") && (UnitGetType(EventUnit()) != "MengskThor32") && (UnitGetType(EventUnit()) != "GhostAlternate222") && (UnitGetType(EventUnit()) != "GhostAlternate2222") && (UnitGetType(EventUnit()) != "TarsonisEngineFast22") && (UnitGetType(EventUnit()) != "TarsonisEngineFast23") && (UnitGetType(EventUnit()) != "TarsonisEngineFast2") && (UnitGetType(EventUnit()) != "TarsonisEngineFast232") && (UnitGetType(EventUnit()) != "TarsonisEngineFast222") && (UnitGetType(EventUnit()) != "ImperialSilencer")))) {
             return false;
         }
     }
@@ -5751,7 +5819,7 @@ bool libCD55B2B5_gt_Gift_Func (bool testConds, bool runActions) {
     if ((libCD55B2B5_gv_randomPythonLook == 51)) {
         libNtve_gf_UnitCreateFacingPoint(1, "WidowMine52", c_unitCreateIgnorePlacement, UnitGetOwner(EventUnitTargetUnit()), UnitGetPosition(EventUnit()), UnitGetPosition(EventUnit()));
         libNtve_gf_UnitCreateFacingPoint(5, "Combater", c_unitCreateIgnorePlacement, UnitGetOwner(EventUnitTargetUnit()), UnitGetPosition(EventUnit()), UnitGetPosition(EventUnit()));
-        libNtve_gf_UnitCreateFacingPoint(10, "Marine7", c_unitCreateIgnorePlacement, UnitGetOwner(EventUnitTargetUnit()), UnitGetPosition(EventUnit()), UnitGetPosition(EventUnit()));
+        libNtve_gf_UnitCreateFacingPoint(10, "Serviceman", c_unitCreateIgnorePlacement, UnitGetOwner(EventUnitTargetUnit()), UnitGetPosition(EventUnit()), UnitGetPosition(EventUnit()));
         libNtve_gf_UnitCreateFacingPoint(5, "Jumper", c_unitCreateIgnorePlacement, UnitGetOwner(EventUnitTargetUnit()), UnitGetPosition(EventUnit()), UnitGetPosition(EventUnit()));
         UIDisplayMessage(libNtve_gf_AlliesEnemiesOfPlayerCountInactiveAndSelf(libNtve_ge_PlayerRelation_Ally, UnitGetOwner(EventUnitTargetUnit())), c_messageAreaSubtitle, StringExternal("Param/Value/lib_CD55B2B5_FF0879F9"));
     }
@@ -9961,6 +10029,8 @@ void libCD55B2B5_InitTriggers () {
     libCD55B2B5_gt_ConstructionSiteDialog_Init();
     libCD55B2B5_gt_ConstructionSite_Init();
     libCD55B2B5_gt_ConstructionSiteDies_Init();
+    libCD55B2B5_gt_MilitaryStationWorkerConvict_Init();
+    libCD55B2B5_gt_MilitaryStationScientist_Init();
     libCD55B2B5_gt_Blinkcd2_Init();
     libCD55B2B5_gt_WorkPower_Init();
     libCD55B2B5_gt_MilitaryStation_Init();
