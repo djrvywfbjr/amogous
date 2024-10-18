@@ -52507,7 +52507,13 @@
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
         <Cost>
             <Vital index="Energy" value="50"/>
-            <Charge Link="Abil/SpawnBanelings"/>
+            <Charge>
+                <CountMax value="3"/>
+                <CountUse value="1"/>
+                <Link value="Abil/SpawnBanelings"/>
+                <Location value="Player"/>
+                <TimeUse value="50"/>
+            </Charge>
             <Cooldown Link="SpawnBanelings" Location="Unit" TimeUse="60"/>
         </Cost>
         <Range value="8"/>
