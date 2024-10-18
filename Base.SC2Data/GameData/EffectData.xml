@@ -10283,10 +10283,10 @@
         <AreaArray Radius="3" Effect="PunisherGrenadesLM422"/>
         <MaxCount value="3"/>
     </CEffectEnumArea>
-    <CEffectEnumArea id="BlackhammerAoELaunch9">
+    <CEffectEnumArea id="DispersiveFire">
         <EditorCategories value=""/>
-        <SearchFilters value="Ground;Player,Ally,Worker,Missile,Stasis,Dead,Invulnerable"/>
-        <AreaArray Radius="3" Effect="MengskThorJavelinMissileLaunchersPersistent33"/>
+        <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Invulnerable"/>
+        <AreaArray Radius="3" Effect="DispersiveFirePersistent"/>
         <MaxCount value="3"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="BlackhammerAoELaunch92">
@@ -38650,11 +38650,11 @@
     </CEffectDamage>
     <CEffectDamage id="MengskThorJavelinMissileLaunchersDamage33" parent="DU_WEAP_SPLASH">
         <EditorCategories value="Race:Terran"/>
-        <AttributeBonus index="Light" value="12"/>
+        <AttributeBonus index="Light" value="5"/>
         <Kind value="Ranged"/>
-        <Amount value="8"/>
+        <Amount value="10"/>
         <Death value="Blast"/>
-        <AreaArray Radius="1" Fraction="1"/>
+        <AreaArray Radius="0.5" Fraction="1"/>
         <ExcludeArray Value="Target"/>
         <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <SearchFlags index="OffsetByUnitRadius" value="0"/>
@@ -38750,14 +38750,13 @@
         <PeriodicPeriodArray value="0.25"/>
         <PeriodicPeriodArray value="0.125"/>
     </CEffectCreatePersistent>
-    <CEffectCreatePersistent id="MengskThorJavelinMissileLaunchersPersistent33">
+    <CEffectCreatePersistent id="DispersiveFirePersistent">
         <EditorCategories value="Race:Terran"/>
         <WhichLocation Value="TargetUnit"/>
         <TimeScaleSource Value="Caster"/>
         <Flags index="Channeled" value="1"/>
-        <PeriodCount value="4"/>
+        <PeriodCount value="3"/>
         <PeriodicEffectArray value="MengskThorJavelinMissileLaunchersLM33"/>
-        <PeriodicPeriodArray value="0"/>
         <PeriodicPeriodArray value="0.125"/>
         <PeriodicPeriodArray value="0.25"/>
         <PeriodicPeriodArray value="0.125"/>

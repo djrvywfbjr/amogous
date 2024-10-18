@@ -67032,6 +67032,7 @@
         <AutoCastRange value="13"/>
         <AINotifyEffect value=""/>
         <CmdButtonArray index="Execute" DefaultButtonFace="ZeratulStun42"/>
+        <Flags index="AllowMovement" value="1"/>
     </CAbilEffectTarget>
     <CAbilBuild id="ZergBuild2" parent="ZergBuild">
         <Name value="Abil/Name/ZergBuild2"/>
