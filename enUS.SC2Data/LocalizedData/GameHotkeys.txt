@@ -1840,6 +1840,7 @@ Button/Hotkey/EquipPortableSensorTower=Q
 Button/Hotkey/EquipShellstormChaingun=Q
 Button/Hotkey/EquipShrapnelRifle=W
 Button/Hotkey/EquipSmartFireDartGuns=E
+Button/Hotkey/EquipStarshipRailgun=E
 Button/Hotkey/EquipStormcallerUplink=W
 Button/Hotkey/EquipWarheadLauncher=E
 Button/Hotkey/EquipWeapon=G

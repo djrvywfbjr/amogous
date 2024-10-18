@@ -3872,6 +3872,16 @@
         <Effect value="GlancerTorpedoesPersistent"/>
         <AllowedMovement value="Slowing"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="StarshipRailgun">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-advanceballistics.dds"/>
+        <DisplayEffect value="StarshipRailgunDamage"/>
+        <TargetFilters value="Visible;Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <Period value="2"/>
+        <DamagePoint value="0.5"/>
+        <Effect value="StarshipRailgunLM"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="PDCArray">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-shotgunaoe.dds"/>
@@ -3879,7 +3889,7 @@
         <TargetFilters value="Visible;Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="6"/>
         <Range value="5.5"/>
-        <Period value="0.25"/>
+        <Period value="0.35"/>
         <DamagePoint value="0"/>
         <Backswing value="0"/>
         <Effect value="PDCArrayInitialSet"/>
@@ -6625,11 +6635,11 @@
     <CWeaponLegacy id="MengskMarine322">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-shotgunaoe.dds"/>
-        <DisplayEffect value="PDCArrayDamage"/>
+        <DisplayEffect value="ShellstormChaingunDamage"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="6"/>
         <Range value="6"/>
-        <Period value="0.4"/>
+        <Period value="0.2"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0.75"/>
         <Effect value="SonOfKorhalAOE32"/>
@@ -6754,17 +6764,16 @@
         <Period value="3"/>
         <Effect value="BlackhammerAoELaunch33"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="MengskThorJavelinMissileLaunchers33">
+    <CWeaponLegacy id="DispersiveFire">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
         <DisplayEffect value="MengskThorJavelinMissileLaunchersDamage33"/>
-        <DisplayAttackCount value="3"/>
+        <DisplayAttackCount value="9"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AcquirePrioritization value="ByAngle"/>
         <Range value="8"/>
         <Arc value="5.625"/>
         <Period value="2"/>
-        <Effect value="BlackhammerAoELaunch9"/>
         <LegacyOptions index="KeepChanneling" value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="MengskThorsHammer2">

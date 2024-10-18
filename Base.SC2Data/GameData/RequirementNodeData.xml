@@ -936,7 +936,6 @@
         <OperandArray value="GTECountUpgradeManufactureGunpowderMixerCompleteOnly3"/>
     </CRequirementAnd>
     <CRequirementAnd id="AndGTECountUpgradeManufactureRecyclerTankCompleteOnly1GTECountUpgradeManufactureShellingFabricatorCompleteOnly2GTECountUpgradeManufactureGunpowderMixerCompleteOnly3">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray value="GTECountUpgradeManufactureRecyclerTankCompleteOnly1"/>
         <OperandArray value="GTECountUpgradeManufactureShellingFabricatorCompleteOnly2"/>
         <OperandArray value="GTECountUpgradeManufactureGunpowderMixerCompleteOnly3"/>
@@ -951,6 +950,11 @@
     </CRequirementAnd>
     <CRequirementAnd id="AndGTECountUpgradeManufactureShellingFabricatorCompleteOnly3">
         <OperandArray value="GTECountUpgradeManufactureShellingFabricatorCompleteOnly3"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndGTECountUpgradeManufactureShellingFabricatorCompleteOnly3GTECountUpgradeManufactureFusionCoreCompleteOnly3">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="GTECountUpgradeManufactureShellingFabricatorCompleteOnly3"/>
+        <OperandArray value="GTECountUpgradeManufactureFusionCoreCompleteOnly3"/>
     </CRequirementAnd>
     <CRequirementAnd id="AndNotCountBehaviorVoidSeekerDock2CompleteOnlyAtUnitCountUpgradeUmojanBasicUnitUpgrade52224224232222223943CompleteOnly">
         <OperandArray value="NotCountBehaviorVoidSeekerDock2CompleteOnlyAtUnit"/>

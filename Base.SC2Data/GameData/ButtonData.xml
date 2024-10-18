@@ -4144,6 +4144,12 @@
         <EditorCategories value="Race:Protoss"/>
         <Universal value="1"/>
     </CButton>
+    <CButton id="EquipStarshipRailgun">
+        <Icon value="Assets\Textures\btn-upgrade-terran-advanceballistics.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
     <CButton id="EquipPlasmaCoater">
         <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>

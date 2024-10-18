@@ -7695,9 +7695,9 @@
             <Flags index="Hidden" value="1"/>
         </CmdButtonArray>
         <Range value="2"/>
-        <MaxCargoCount value="3"/>
+        <MaxCargoCount value="1"/>
         <MaxCargoSize value="8"/>
-        <TotalCargoSpace value="3"/>
+        <TotalCargoSpace value="1"/>
         <LoadCargoBehavior value="AntamoAirAll27222233"/>
         <LoadTransportEffect value="BlackhammerAddHealingWAve5424"/>
         <UnloadTransportEffect value="BlackhammerAddHealingWAve52324"/>
@@ -60722,6 +60722,19 @@
         <AINotifyEffect value="XenWarrior6"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="EquipCorrosiveDesolator" Requirements="MothershipRequirements232254222"/>
     </CAbilEffectInstant>
+    <CAbilEffectInstant id="Wep3StarshipRailgun">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="XenWarrior622322335"/>
+        <Effect index="0" value="CraftStarshipRailgun"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge CountMax="1" CountUse="-1" Link="Abil/XenWarrior"/>
+            <Cooldown Link="Abil/XenWarrior"/>
+        </Cost>
+        <AINotifyEffect value="XenWarrior6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipStarshipRailgun" Requirements="Craft3SF3FC"/>
+    </CAbilEffectInstant>
     <CAbilEffectTarget id="WidowMineAttack2" parent="WidowMineAttack">
         <Name value="Abil/Name/WidowMineAttack2"/>
         <PrepEffect index="0" value="WidowMineTargetingBeamDummy2"/>
@@ -67024,7 +67037,7 @@
         <Effect index="0" value="ZeratulStunApplyBehavior42"/>
         <Cost>
             <Charge Link="Abil/ZeratulStun"/>
-            <Cooldown Link="Abil/ZeratulStun" TimeUse="20"/>
+            <Cooldown Link="Abil/ZeratulStun" TimeUse="30"/>
         </Cost>
         <TargetFilters value="Visible;Self,Player,Ally,Neutral,Heroic,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="20"/>
@@ -67032,6 +67045,7 @@
         <AutoCastRange value="13"/>
         <AINotifyEffect value=""/>
         <CmdButtonArray index="Execute" DefaultButtonFace="ZeratulStun42"/>
+        <Flags index="AllowMovement" value="1"/>
     </CAbilEffectTarget>
     <CAbilBuild id="ZergBuild2" parent="ZergBuild">
         <Name value="Abil/Name/ZergBuild2"/>

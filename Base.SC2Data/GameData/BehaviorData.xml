@@ -907,6 +907,7 @@
         <RemoveValidatorArray value="NotHaveScramblerMissileBehavior"/>
         <Duration value="15"/>
         <Modification MoveSpeedBonus="2.5" AccelerationBonus="500" DecelerationBonus="500"/>
+        <TimeScaleSource Value="Global"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="NoWeapon">
         <Alignment value="Negative"/>
@@ -1370,9 +1371,26 @@
         <Modification>
             <AbilLinkDisableArray value="Wep1GlancerTorpedoTubes"/>
             <AbilLinkDisableArray value="Wep2PDCArray"/>
-            <AbilLinkDisableArray value="Wep2HellRifle"/>
+            <AbilLinkDisableArray value="Wep3StarshipRailgun"/>
             <BehaviorLinkDisableArray value="NoWeapon"/>
             <WeaponArray Link="PDCArray"/>
+            <WeaponDisableArray value="ScrapGrenade"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WepStarshipRailgun">
+        <Cost>
+            <Charge CountMax="1" CountUse="-1"/>
+        </Cost>
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-experiencedplasmagun.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InitialEffect value="RefugeeCraftRemove3SF3FC"/>
+        <Modification>
+            <AbilLinkDisableArray value="Wep1GlancerTorpedoTubes"/>
+            <AbilLinkDisableArray value="Wep2PDCArray"/>
+            <AbilLinkDisableArray value="Wep3StarshipRailgun"/>
+            <BehaviorLinkDisableArray value="NoWeapon"/>
+            <WeaponArray Link="StarshipRailgun"/>
             <WeaponDisableArray value="ScrapGrenade"/>
         </Modification>
     </CBehaviorBuff>
@@ -46287,7 +46305,7 @@
         <Modification>
             <AbilLinkDisableArray value="Wep1GlancerTorpedoTubes"/>
             <AbilLinkDisableArray value="Wep2PDCArray"/>
-            <AbilLinkDisableArray value="Wep2HellRifle"/>
+            <AbilLinkDisableArray value="Wep3StarshipRailgun"/>
             <BehaviorLinkDisableArray value="NoWeapon"/>
             <WeaponArray Link="GlancerTorpedoes"/>
             <WeaponDisableArray value="ScrapGrenade"/>
