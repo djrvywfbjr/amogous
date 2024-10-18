@@ -3879,7 +3879,7 @@
         <TargetFilters value="Visible;Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="6"/>
         <Range value="5.5"/>
-        <Period value="0.25"/>
+        <Period value="0.3"/>
         <DamagePoint value="0"/>
         <Backswing value="0"/>
         <Effect value="PDCArrayInitialSet"/>
@@ -6625,11 +6625,11 @@
     <CWeaponLegacy id="MengskMarine322">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-shotgunaoe.dds"/>
-        <DisplayEffect value="PDCArrayDamage"/>
+        <DisplayEffect value="ShellstormChaingunDamage"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="6"/>
         <Range value="6"/>
-        <Period value="0.4"/>
+        <Period value="0.2"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0.75"/>
         <Effect value="SonOfKorhalAOE32"/>

@@ -25709,6 +25709,18 @@
         <PeriodicPeriodArray value="0.25"/>
         <PeriodicPeriodArray value="0.125"/>
     </CEffectCreatePersistent>
+    <CEffectDamage id="ShellstormChaingunDamage">
+        <EditorCategories value="Race:Terran"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="5"/>
+        <TargetSorts>
+            <SortArray value="TSDistance"/>
+        </TargetSorts>
+        <ArmorReduction value="1"/>
+    </CEffectDamage>
     <CEffectModifyUnit id="PDCArrayKillMissile">
         <EditorCategories value=""/>
         <ModifyFlags index="NullifyMissile" value="1"/>
@@ -66218,7 +66230,7 @@
     <CEffectEnumArea id="SonOfKorhalAOE32">
         <EditorCategories value=""/>
         <SearchFilters value="-;Self,Player,Ally,Missile,Invulnerable"/>
-        <AreaArray Radius="1.5" Effect="PDCArrayDamage"/>
+        <AreaArray Radius="1.5" Effect="ShellstormChaingunDamage"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="SonOfKorhalAOE322">
         <EditorCategories value=""/>

@@ -19742,7 +19742,7 @@ Button/Tooltip/Zealot2262232233523=Equip this unit with cloaking technology and 
 Button/Tooltip/Zealot22622322335232=Equips the transport with a few tons of Vanadium Plating. Gain 150 life and 2 armor.
 Button/Tooltip/Zealot226223223352322=Equips this unit with Phobos targeting system, increasing range by 2 and damage by 8.
 Button/Tooltip/Zealot226223223353=Gain Apollo Radar, allowing detection of cloaked enemies.
-Button/Tooltip/Zealot22622322335422=Serviceman armor has a fast-firing chaingun that hits multiple enemies in an area around main target, but target armor reduces damage of the weapon twice as much as usual.<n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
+Button/Tooltip/Zealot22622322335422=Serviceman armor has a fast-firing chaingun that hits multiple enemies in an area around main target, but is highly sensitive to armor.<n/><n/>This weapon was made for clear combat purposes. It requires double the normal amount of shelling fabricators to fire hundreds of rounds every minute.
 Button/Tooltip/Zealot22622322335423=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(3)</c> Gunpowder Mixers<n/><n/>Equips the Outrider armor with 2 pistols that deal double damage to light targets.<n/><n/>Rather than firing bullets, these pistols were designed to launch gunpowder that would only become dangerous and explosive after leaving the barrel of the gun.
 Button/Tooltip/Zealot22622322335423222=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(2)</c> Gunpowder Mixers<n/><c val="00FF00">(1)</c> Recycler Tank<n/><n/>Equips the Outrider armor with the ability to place charges on hostile structures. The charges explode in 11 seconds and deal devastating damage in an area.<n/><n/>In case the mechanisms for demolishing any structure weren't made in time, plans for anti-structure charges were developed.
 Button/Tooltip/Zealot226223223354232222=<c val="00FF00">Required parts:</c><n/><c val="00FF00">(2)</c> Recycler Tanks<n/><c val="00FF00">(1)</c> Shelling Fabricator<n/><n/>Equips the Outrider armor with the ability to throw fire bombs that deal damage over time. Deals increased damage to light enemies.<n/><n/>The Industrial Alcohol was designed as cheap booze that could also be used as emergency fuel. It tasted like gasoline and powered generators as well as beer, but the design can still be used for makeshift molotov cocktails.
@@ -29403,6 +29403,7 @@ Effect/Name/ShadowBladeDamage22=Shadow Blade Damage Copy Copy
 Effect/Name/ShadowBladeDamage23=Shadow Blade Damage Copy Copy 2
 Effect/Name/ShadowBladeDamage24=Shadow Blade Damage Copy Copy 3
 Effect/Name/SharpenedCrystalAoE=SharpenedCrystalAoE
+Effect/Name/ShellstormChaingunDamage=Shellstorm Chaingun Damage
 Effect/Name/ShieldBatteryRechargeChanneled2=Shield Battery Recharge Channeled
 Effect/Name/ShieldUp=Shield Up
 Effect/Name/ShieldUp10=Shield Up Copy 30
