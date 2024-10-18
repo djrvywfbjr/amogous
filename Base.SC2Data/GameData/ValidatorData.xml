@@ -13,6 +13,9 @@
         <CombineArray value="NotUnderConstruction"/>
         <CombineArray value="250mmCannonValidators2"/>
     </CValidatorCombine>
+    <CValidatorUnitType id="AddWorker">
+        <Value value="Civilian4"/>
+    </CValidatorUnitType>
     <CValidatorCombine id="AdvancedConstructionAutoTarget">
         <ResultFailed value="BuildingIsUnderConstruction,Error/CannotAdvancedConstruction"/>
         <Type value="And"/>
@@ -741,12 +744,101 @@
         <Compare value="GE"/>
         <Value value="8"/>
     </CValidatorPlayerCompareFoodAvailable>
+    <CValidatorUnitCompareCargo id="HasCargoSpace">
+        <Compare value="GT"/>
+    </CValidatorUnitCompareCargo>
+    <CValidatorUnitType id="IsAnalyzerVessel">
+        <Value value="AnalyzerVessel"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsMedicalOutpost">
+        <Value value="MedicalOutpost"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsWorkshop">
+        <Value value="Workshop"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsColonialAssembly">
+        <Value value="ColonialAssembly"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsCivilControlDivision">
+        <Value value="CivilControlDivision"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsForeman">
+        <Value value="Foreman"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsMaintenanceVehicle">
+        <Value value="MaintenanceVehicle"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsNotWatchtower">
+        <Value value="Watchtower"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsServiceman">
+        <Value value="Serviceman"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsJumper">
+        <Value value="Jumper"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsCombater">
+        <Value value="Combater"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsHunterRanger">
+        <Value value="HunterRanger"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsBrazier">
+        <Value value="Brazier"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsBlimp">
+        <Value value="SiegeBlimp"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsToolsManufacture">
+        <Value value="ToolsManufacture"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsVespenePacifier">
+        <Value value="VespenePacifier"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsImperialSilencer">
+        <Value value="ImperialSilencer"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsTrooper">
+        <Value value="MilitiaTrooper"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsTitan">
+        <Value value="Titan"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsPsiwaveCommunicator">
+        <Value value="PsiwaveCommunicator"/>
+    </CValidatorUnitType>
     <CValidatorCombine id="RefugeeValidatorAnyWorkerOrScientist">
         <CombineArray value="RequiresCivilian2"/>
         <CombineArray value="RequiresCivilian24"/>
         <CombineArray value="RequiresCivilian23"/>
         <CombineArray value="IsNotRecentlyRecalled2332"/>
         <CombineArray value="RequiresCivilian22"/>
+    </CValidatorCombine>
+    <CValidatorUnitType id="AddScientist">
+        <Value value="Scientist3"/>
+    </CValidatorUnitType>
+    <CValidatorCombine id="RequiresWorkers">
+        <CombineArray value="IsServiceman"/>
+        <CombineArray value="IsJumper"/>
+        <CombineArray value="IsCombater"/>
+        <CombineArray value="IsHunterRanger"/>
+        <CombineArray value="IsTitan"/>
+        <CombineArray value="IsTrooper"/>
+        <CombineArray value="IsBrazier"/>
+        <CombineArray value="IsToolsManufacture"/>
+        <CombineArray value="IsVespenePacifier"/>
+        <CombineArray value="IsImperialSilencer"/>
+        <CombineArray value="IsMaintenanceVehicle"/>
+        <CombineArray value="IsPsiwaveCommunicator"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="RequiresScientists">
+        <CombineArray value="IsMedicalOutpost"/>
+        <CombineArray value="IsAnalyzerVessel"/>
+        <CombineArray value="IsWorkshop"/>
+        <CombineArray value="IsCivilControlDivision"/>
+        <CombineArray value="IsForeman"/>
+        <CombineArray value="IsColonialAssembly"/>
     </CValidatorCombine>
     <CValidatorPlayerRequirement id="SFAutocast">
         <Value value="ManufactureShellingFabricatorAuto"/>
@@ -1505,13 +1597,13 @@
         <Value value="EngineeringBay17"/>
     </CValidatorUnitType>
     <CValidatorUnitType id="IsOverlord22">
-        <Value value="AutomatedRefinery4"/>
+        <Value value="VespenePacifier"/>
     </CValidatorUnitType>
     <CValidatorUnitType id="IsOverlord222">
         <Value value="Barracks10"/>
     </CValidatorUnitType>
     <CValidatorUnitType id="IsOverlord2222">
-        <Value value="Barracks102"/>
+        <Value value="ToolsManufacture"/>
     </CValidatorUnitType>
     <CValidatorUnitType id="IsPylon2">
         <ResultFailed value="CantTargetThatUnit"/>

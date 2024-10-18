@@ -50,8 +50,8 @@
         <OperandArray value="CountUpgradeAdvancedConstruction222CompleteOnly"/>
         <OperandArray value="CountUnitMissileTurret132CompleteOnly"/>
     </CRequirementAnd>
-    <CRequirementAnd id="And1418005013Eq3523259510CountUnitBarracks172QueuedOrBetter0CountUpgradeAdvancedConstruction232CompleteOnly">
-        <OperandArray value="Eq3523259510CountUnitBarracks172QueuedOrBetter0"/>
+    <CRequirementAnd id="And1418005013Eq3523259510CountUnitMedicalOutpostQueuedOrBetter0CountUpgradeAdvancedConstruction232CompleteOnly">
+        <OperandArray value="Eq3523259510CountUnitMedicalOutpostQueuedOrBetter0"/>
         <OperandArray value="CountUpgradeAdvancedConstruction232CompleteOnly"/>
     </CRequirementAnd>
     <CRequirementAnd id="And1476756178CountUnitTwilightCouncil3CompleteOnly1213073564CountUpgradeUmojanBasicUnitUpgrade522242242322222222222222CompleteOnly4256853171">
@@ -206,10 +206,10 @@
         <OperandArray value="CountUpgradeAdvancedConstruction242233222222222232222CompleteOnly"/>
         <OperandArray value="CountUpgradeAdvancedConstruction222CompleteOnly1976135158"/>
     </CRequirementAnd>
-    <CRequirementAnd id="And2709914029CountUpgradeAdvancedConstruction2422332222222222322CompleteOnly943849952CountUpgradeAdvancedConstruction222CompleteOnlyCountUnitMissileTurret13CompleteOnly2794507798">
+    <CRequirementAnd id="And2709914029CountUpgradeAdvancedConstruction2422332222222222322CompleteOnly943849952CountUpgradeAdvancedConstruction222CompleteOnlyCountUnitOverseerTowerCompleteOnly2794507798">
         <OperandArray value="CountUpgradeAdvancedConstruction2422332222222222322CompleteOnly943849952"/>
         <OperandArray value="CountUpgradeAdvancedConstruction222CompleteOnly"/>
-        <OperandArray value="CountUnitMissileTurret13CompleteOnly2794507798"/>
+        <OperandArray value="CountUnitOverseerTowerCompleteOnly2794507798"/>
     </CRequirementAnd>
     <CRequirementAnd id="And2722287730GTECountUpgradeAdvancedConstruction22CompleteOnly10">
         <OperandArray value="GTECountUpgradeAdvancedConstruction22CompleteOnly10"/>
@@ -272,8 +272,8 @@
         <OperandArray value="CountUpgradeAdvancedConstruction242233222222222232322CompleteOnly"/>
         <OperandArray value="CountUpgradeAdvancedConstruction222CompleteOnly"/>
     </CRequirementAnd>
-    <CRequirementAnd id="And3240799816LTECountUnitBarracks172QueuedOrBetter1">
-        <OperandArray value="LTECountUnitBarracks172QueuedOrBetter1"/>
+    <CRequirementAnd id="And3240799816LTECountUnitMedicalOutpostQueuedOrBetter1">
+        <OperandArray value="LTECountUnitMedicalOutpostQueuedOrBetter1"/>
     </CRequirementAnd>
     <CRequirementAnd id="And3243137408OrCountUnitGhostAcademy6CompleteOnlyCountUnitGhostAcademy63CompleteOnlyCountUpgradeUmojanBasicUnitUpgrade52224224232222223522222221222CompleteOnly">
         <OperandArray value="OrCountUnitGhostAcademy6CompleteOnlyCountUnitGhostAcademy63CompleteOnly"/>
@@ -363,8 +363,8 @@
         <OperandArray value="Eq3523259510CountUnitEngineeringBay18QueuedOrBetter0"/>
         <OperandArray value="CountUpgradeAdvancedConstruction242233222CompleteOnly"/>
     </CRequirementAnd>
-    <CRequirementAnd id="And385800716LTECountUnitBarracks172QueuedOrBetter2">
-        <OperandArray value="LTECountUnitBarracks172QueuedOrBetter2"/>
+    <CRequirementAnd id="And385800716LTECountUnitMedicalOutpostQueuedOrBetter2">
+        <OperandArray value="LTECountUnitMedicalOutpostQueuedOrBetter2"/>
     </CRequirementAnd>
     <CRequirementAnd id="And4028130618Eq3682145486CountUnitEngineeringBay1723QueuedOrBetter0">
         <OperandArray value="Eq3682145486CountUnitEngineeringBay1723QueuedOrBetter0"/>
@@ -426,8 +426,8 @@
     <CRequirementAnd id="And584850668LTAndCountUnitMarine312QueuedOrBetterAtUnitCountUnitMarine332CompleteOnlyAtUnitCountUnitMarine342QueuedOrBetterAtUnitCountUnitMarine3122QueuedOrBetterAtUnitCountUnitMarine3222CompleteOnlyAtUnit9">
         <OperandArray value="LTAndCountUnitMarine312QueuedOrBetterAtUnitCountUnitMarine332CompleteOnlyAtUnitCountUnitMarine342QueuedOrBetterAtUnitCountUnitMarine3122QueuedOrBetterAtUnitCountUnitMarine3222CompleteOnlyAtUnit9"/>
     </CRequirementAnd>
-    <CRequirementAnd id="And613433959Eq3523259510CountUnitEngineeringBay1822QueuedOrBetter0CountUpgradeAdvancedConstruction23CompleteOnly">
-        <OperandArray value="Eq3523259510CountUnitEngineeringBay1822QueuedOrBetter0"/>
+    <CRequirementAnd id="And613433959Eq3523259510CountUnitPsiwaveCommunicatorQueuedOrBetter0CountUpgradeAdvancedConstruction23CompleteOnly">
+        <OperandArray value="Eq3523259510CountUnitPsiwaveCommunicatorQueuedOrBetter0"/>
         <OperandArray value="CountUpgradeAdvancedConstruction23CompleteOnly"/>
     </CRequirementAnd>
     <CRequirementAnd id="And634491802CountUnitAdamsCompleteOnlyTechTreeCheatLTECountUnitCopyOfAdamsQueuedOrBetter4">
@@ -952,7 +952,6 @@
         <OperandArray value="GTECountUpgradeManufactureShellingFabricatorCompleteOnly3"/>
     </CRequirementAnd>
     <CRequirementAnd id="AndGTECountUpgradeManufactureShellingFabricatorCompleteOnly3GTECountUpgradeManufactureFusionCoreCompleteOnly3">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray value="GTECountUpgradeManufactureShellingFabricatorCompleteOnly3"/>
         <OperandArray value="GTECountUpgradeManufactureFusionCoreCompleteOnly3"/>
     </CRequirementAnd>
@@ -3000,14 +2999,6 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Barracks1722" State="QueuedOrBetter"/>
     </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitBarracks172QueuedOrBetter">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="Barracks172" State="QueuedOrBetter"/>
-    </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitBarracks173CompleteOnly1678174459">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="Barracks173" State="CompleteOnly"/>
-    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitBarracks19CompleteOnly2257536121TechTreeCheat">
         <Count Link="Barracks19" State="CompleteOnly"/>
     </CRequirementCountUnit>
@@ -3421,14 +3412,6 @@
     <CRequirementCountUnit id="CountUnitEngineeringBay18222QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="EngineeringBay18222" State="QueuedOrBetter"/>
-    </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitEngineeringBay1822CompleteOnly1851208886">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="EngineeringBay1822" State="CompleteOnly"/>
-    </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitEngineeringBay1822QueuedOrBetter">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="EngineeringBay1822" State="QueuedOrBetter"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitEngineeringBay183CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
@@ -4131,6 +4114,11 @@
     <CRequirementCountUnit id="CountUnitMechTestingFacilityCompleteOnlyTechTreeCheat">
         <Count Link="MechTestingFacility" State="CompleteOnly"/>
     </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitMedicalOutpostQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="MedicalOutpost" State="QueuedOrBetter"/>
+    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitMedivac112QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Medivac112" State="QueuedOrBetter"/>
@@ -4186,10 +4174,6 @@
     <CRequirementCountUnit id="CountUnitMissileTurret132CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="MissileTurret132" State="CompleteOnly"/>
-    </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitMissileTurret13CompleteOnly2794507798">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="MissileTurret13" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitMothership2QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
@@ -4316,6 +4300,10 @@
     <CRequirementCountUnit id="CountUnitOverseer6QueuedOrBetterAtUnit">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Overseer6" State="QueuedOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitOverseerTowerCompleteOnly2794507798">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="OverseerTower" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitPhotonCannon6CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
@@ -4455,6 +4443,15 @@
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitPsiRepeaterCompleteOnly2667952670TechTreeCheat">
         <Count Link="PsiRepeater" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitPsiwaveCommunicatorCompleteOnly1851208886">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="PsiwaveCommunicator" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitPsiwaveCommunicatorQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="PsiwaveCommunicator" State="QueuedOrBetter"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitPusher2QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
@@ -5113,6 +5110,10 @@
     <CRequirementCountUnit id="CountUnitWarpPrismPhasing2CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="WarpPrismPhasing2" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitWorkshopCompleteOnly1678174459">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="Workshop" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitWraith5QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
@@ -15423,16 +15424,16 @@
         <OperandArray index="0" value="CountUnitBarracks1722QueuedOrBetter"/>
         <OperandArray index="1" value="0"/>
     </CRequirementEq>
-    <CRequirementEq id="Eq3523259510CountUnitBarracks172QueuedOrBetter0">
-        <OperandArray index="0" value="CountUnitBarracks172QueuedOrBetter"/>
-        <OperandArray index="1" value="0"/>
-    </CRequirementEq>
-    <CRequirementEq id="Eq3523259510CountUnitEngineeringBay1822QueuedOrBetter0">
-        <OperandArray index="0" value="CountUnitEngineeringBay1822QueuedOrBetter"/>
-        <OperandArray index="1" value="0"/>
-    </CRequirementEq>
     <CRequirementEq id="Eq3523259510CountUnitEngineeringBay18QueuedOrBetter0">
         <OperandArray index="0" value="CountUnitEngineeringBay18QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq3523259510CountUnitMedicalOutpostQueuedOrBetter0">
+        <OperandArray index="0" value="CountUnitMedicalOutpostQueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq3523259510CountUnitPsiwaveCommunicatorQueuedOrBetter0">
+        <OperandArray index="0" value="CountUnitPsiwaveCommunicatorQueuedOrBetter"/>
         <OperandArray index="1" value="0"/>
     </CRequirementEq>
     <CRequirementEq id="Eq3546266166CountUnitMedivac113QueuedOrBetter0">
@@ -15975,14 +15976,6 @@
         <OperandArray index="0" value="CountBehaviorMindControl3CompleteOnlyAtUnit"/>
         <OperandArray index="1" value="4"/>
     </CRequirementLTE>
-    <CRequirementLTE id="LTECountUnitBarracks172QueuedOrBetter1">
-        <OperandArray index="0" value="CountUnitBarracks172QueuedOrBetter"/>
-        <OperandArray index="1" value="1"/>
-    </CRequirementLTE>
-    <CRequirementLTE id="LTECountUnitBarracks172QueuedOrBetter2">
-        <OperandArray index="0" value="CountUnitBarracks172QueuedOrBetter"/>
-        <OperandArray index="1" value="2"/>
-    </CRequirementLTE>
     <CRequirementLTE id="LTECountUnitCopyOfAdamsQueuedOrBetter2">
         <OperandArray index="0" value="CountUnitCopyOfAdamsQueuedOrBetter"/>
         <OperandArray index="1" value="2"/>
@@ -16002,6 +15995,16 @@
     <CRequirementLTE id="LTECountUnitKD8Charge2QueuedOrBetterAtUnit3">
         <OperandArray index="0" value="CountUnitKD8Charge2QueuedOrBetterAtUnit"/>
         <OperandArray index="1" value="3"/>
+    </CRequirementLTE>
+    <CRequirementLTE id="LTECountUnitMedicalOutpostQueuedOrBetter1">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUnitMedicalOutpostQueuedOrBetter"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementLTE>
+    <CRequirementLTE id="LTECountUnitMedicalOutpostQueuedOrBetter2">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUnitMedicalOutpostQueuedOrBetter"/>
+        <OperandArray index="1" value="2"/>
     </CRequirementLTE>
     <CRequirementLTE id="LTECountUnitPhotonCannon8QueuedOrBetter2">
         <OperandArray index="0" value="CountUnitPhotonCannon8QueuedOrBetter"/>

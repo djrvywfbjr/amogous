@@ -734,6 +734,44 @@
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
     </CAbilEffectInstant>
+    <CAbilEffectTarget id="SendWorker">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge CountMax="255"/>
+        </Cost>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastFilters value="Visible;Self,Ally,Neutral,Enemy,Missile,UnderConstruction,Dead"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SendWorker"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <TargetFilters value="Visible;Self,Ally,Neutral,Enemy,Missile,UnderConstruction,Dead"/>
+        <Range value="30"/>
+        <Arc value="360"/>
+        <AutoCastRange value="30"/>
+        <AutoCastValidatorArray value="RequiresWorkers"/>
+        <AutoCastValidatorArray value="HasCargoSpace"/>
+        <AutoCastValidatorArray value="IsNotWatchtower"/>
+        <AutoCastValidatorArray value="HasPower"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="SendScientist">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge CountMax="255"/>
+        </Cost>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastFilters value="Visible;Self,Ally,Neutral,Enemy,Missile,UnderConstruction,Dead"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SendScientist"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <TargetFilters value="Visible;Self,Ally,Neutral,Enemy,Missile,UnderConstruction,Dead"/>
+        <Range value="30"/>
+        <Arc value="360"/>
+        <AutoCastRange value="30"/>
+        <AutoCastValidatorArray value="RequiresScientists"/>
+        <AutoCastValidatorArray value="HasCargoSpace"/>
+        <AutoCastValidatorArray value="IsNotWatchtower"/>
+        <AutoCastValidatorArray value="HasPower"/>
+    </CAbilEffectTarget>
     <CAbilEffectInstant id="TakentanksMakery">
         <OrderArray index="0" Model="Assets\UI\Cursors\WayPointConfirm_Void\WayPointConfirm_Void.m3"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -1998,7 +2036,7 @@
         <Name value="Abil/Name/BarracksTrain10"/>
         <InfoArray index="Train1" Effect="MercGroundDrop" Location="Rally">
             <Button DefaultButtonFace="Marine17"/>
-            <Unit index="0" value="Marine7"/>
+            <Unit index="0" value="Serviceman"/>
         </InfoArray>
         <InfoArray index="Train2" Effect="MercGroundDrop" Location="Rally">
             <Button DefaultButtonFace="Reaper7"/>
@@ -2006,11 +2044,11 @@
         </InfoArray>
         <InfoArray index="Train3" Time="60" Effect="MercGroundDrop" Location="Rally">
             <Button DefaultButtonFace="Ghost11" Requirements="HavePsionicHeart22432322232423222633"/>
-            <Unit index="0" value="Ghost8"/>
+            <Unit index="0" value="HunterRanger"/>
         </InfoArray>
         <InfoArray index="Train4" Time="75" Effect="MercGroundDrop" Location="Rally">
             <Button DefaultButtonFace="Marauder12" Requirements="HavePsionicHeart22432322232423222632"/>
-            <Unit index="0" value="Marauder4"/>
+            <Unit index="0" value="Titan"/>
         </InfoArray>
         <InfoArray index="Train5">
             <Button DefaultButtonFace="Medic7"/>
@@ -2021,7 +2059,7 @@
         </InfoArray>
         <InfoArray index="Train7" Time="18.2" Effect="MercGroundDrop" Location="Rally">
             <Button DefaultButtonFace="Spectre6" Requirements="HavePsionicHeart22432322232423222634"/>
-            <Unit index="0" value="Marine313"/>
+            <Unit index="0" value="MilitiaTrooper"/>
         </InfoArray>
         <InfoArray index="Train8" Time="100" Effect="MercGroundDrop" Location="Rally">
             <Button DefaultButtonFace="Marine25" Requirements="HavePsionicHeart224323222324232226322432"/>
@@ -2029,7 +2067,7 @@
         </InfoArray>
         <InfoArray index="Train9" Time="65" Effect="MercGroundDrop" Location="Rally">
             <Button DefaultButtonFace="Marine252" Requirements="HavePsionicHeart22432322232423222632243"/>
-            <Unit value="GhostAlternate22"/>
+            <Unit value="CivilControlDivision"/>
         </InfoArray>
         <InfoArray index="Train10" Time="200" Effect="MercGroundDrop" Location="Rally">
             <Button DefaultButtonFace="Marine2522" Requirements="HavePsionicHeart224323222324232226332222"/>
@@ -3447,7 +3485,7 @@
         <Range value="5"/>
         <InfoArray index="Train1" Time="45">
             <Button DefaultButtonFace="Marine24" State="Restricted"/>
-            <Unit value="SCV12"/>
+            <Unit value="MaintenanceVehicle"/>
         </InfoArray>
         <InfoArray index="Train2" Time="45">
             <Button DefaultButtonFace="Reaper13" State="Restricted"/>
@@ -3479,7 +3517,7 @@
         </InfoArray>
         <InfoArray index="Train9" Time="175">
             <Button DefaultButtonFace="Spectre1122" Requirements="HavePsionicHeart22432322232423222632243222"/>
-            <Unit value="ScienceVessel7"/>
+            <Unit value="AnalyzerVessel"/>
         </InfoArray>
         <InfoArray index="Train10" Time="75">
             <Button DefaultButtonFace="Medic1422" Requirements="HavePsionicHeart224323222324232226332222222"/>
@@ -3487,7 +3525,7 @@
         </InfoArray>
         <InfoArray index="Train11" Time="100">
             <Button DefaultButtonFace="Spectre11222" Requirements="HavePsionicHeart22432322232423222632243"/>
-            <Unit value="Banshee5"/>
+            <Unit value="ImperialSilencer"/>
         </InfoArray>
         <InfoArray index="Train12" Time="175">
             <Button DefaultButtonFace="Medic142" Requirements="HavePsionicHeart224323222324232226332222"/>
@@ -3524,7 +3562,7 @@
         <Range value="5"/>
         <InfoArray index="Train1" Time="90">
             <Button DefaultButtonFace="Marine24" State="Restricted"/>
-            <Unit value="SCV12"/>
+            <Unit value="MaintenanceVehicle"/>
         </InfoArray>
         <InfoArray index="Train2" Time="45">
             <Button DefaultButtonFace="Reaper13" State="Restricted"/>
@@ -3575,7 +3613,7 @@
         <Range value="5"/>
         <InfoArray index="Train1" Time="90">
             <Button DefaultButtonFace="Marine24" State="Restricted"/>
-            <Unit value="SCV12"/>
+            <Unit value="MaintenanceVehicle"/>
         </InfoArray>
         <InfoArray index="Train2" Time="45">
             <Button DefaultButtonFace="Reaper13" State="Restricted"/>
@@ -3626,7 +3664,7 @@
         <Range value="5"/>
         <InfoArray index="Train1" Time="90">
             <Button DefaultButtonFace="Marine24" State="Restricted"/>
-            <Unit value="SCV12"/>
+            <Unit value="MaintenanceVehicle"/>
         </InfoArray>
         <InfoArray index="Train2" Time="45">
             <Button DefaultButtonFace="Reaper13" State="Restricted"/>
@@ -7306,10 +7344,11 @@
         <MaxCargoSize value="1"/>
         <TotalCargoSpace value="100"/>
         <LoadCargoBehavior value="AntamoAirAll2722222232"/>
-        <LoadTransportEffect value="BlackhammerAddHealingWAve542"/>
         <UnloadTransportEffect value="BlackhammerAddHealingWAve5232"/>
         <TargetFilters value="Biological,Visible;Ally,Neutral,Enemy,Dead,Hidden"/>
         <LoadValidatorArray value="RefugeeValidatorAnyWorkerOrScientist"/>
+        <LoadCargoEffect value="MilitaryStationLoadSet"/>
+        <UnloadCargoEffect value="MilitaryStationUnloadSet"/>
     </CAbilTransport>
     <CAbilTransport id="BunkerTransport533224">
         <AbilSetId value="PPPP"/>
@@ -55478,11 +55517,11 @@
         <InfoArray index="Build2" Unit="EngineeringBay18" Time="300">
             <Button DefaultButtonFace="SupplyDepot17" State="Suppressed" Requirements="HavePsionicHeart2243232223242322263224324"/>
         </InfoArray>
-        <InfoArray index="Build3" Unit="AutomatedRefinery4" Time="30">
+        <InfoArray index="Build3" Unit="VespenePacifier" Time="30">
             <Button DefaultButtonFace="Refinery16" State="Suppressed" Requirements="HavePsionicHeart2243232223242322263"/>
             <ValidatorArray value="HasVespene"/>
         </InfoArray>
-        <InfoArray index="Build4" Unit="Barracks17" Time="240">
+        <InfoArray index="Build4" Unit="ColonialAssembly" Time="240">
             <Button DefaultButtonFace="Barracks17" State="Suppressed"/>
         </InfoArray>
         <InfoArray index="Build5" Unit="EngineeringBay17" Time="35">
@@ -55491,10 +55530,10 @@
         <InfoArray index="Build6" Unit="EngineeringBay1733" Time="200">
             <Button DefaultButtonFace="MissileTurret17" State="Restricted" Requirements="MothershipRequirements2342442222"/>
         </InfoArray>
-        <InfoArray index="Build7" Unit="Barracks173" Time="200">
+        <InfoArray index="Build7" Unit="Workshop" Time="200">
             <Button DefaultButtonFace="Bunker18" State="Restricted"/>
         </InfoArray>
-        <InfoArray index="Build8" Unit="AutomatedRefinery4" Time="30">
+        <InfoArray index="Build8" Unit="VespenePacifier" Time="30">
             <ValidatorArray value="HasVespene"/>
         </InfoArray>
         <InfoArray index="Build9" Unit="Barracks172232" Time="55">
@@ -55506,13 +55545,13 @@
         <InfoArray index="Build11" Unit="EngineeringBay182" Time="500">
             <Button DefaultButtonFace="Factory16" State="Suppressed"/>
         </InfoArray>
-        <InfoArray index="Build12" Unit="EngineeringBay1822" Time="450">
+        <InfoArray index="Build12" Unit="PsiwaveCommunicator" Time="450">
             <Button DefaultButtonFace="Starport16" State="Suppressed" Requirements="MothershipRequirements234242"/>
         </InfoArray>
-        <InfoArray index="Build13" Unit="Barracks102" Time="125">
+        <InfoArray index="Build13" Unit="ToolsManufacture" Time="125">
             <Button DefaultButtonFace="MercCompound16" State="Suppressed" Requirements="HavePsionicHeart22432322232423222632"/>
         </InfoArray>
-        <InfoArray index="Build14" Unit="Barracks172" Time="300">
+        <InfoArray index="Build14" Unit="MedicalOutpost" Time="300">
             <Button DefaultButtonFace="Armory16" State="Suppressed" Requirements="MothershipRequirements23424"/>
         </InfoArray>
         <InfoArray index="Build15">
@@ -55527,7 +55566,7 @@
         <InfoArray index="Build19" Unit="AutomatedRefinery" Time="45">
             <Button DefaultButtonFace="AutomatedRefinery16" Requirements="UseAutomatedRefinery"/>
         </InfoArray>
-        <InfoArray index="Build23" Unit="Bunker4" Time="100">
+        <InfoArray index="Build23" Unit="Watchtower" Time="100">
             <Button DefaultButtonFace="BunkerFortified8" Requirements="HavePsionicHeart2243232223242322263324"/>
         </InfoArray>
         <InfoArray index="Build24" Unit="SupplyDepotLowered2" Time="150">
@@ -55560,11 +55599,11 @@
         <InfoArray index="Build2" Unit="EngineeringBay18" Time="300">
             <Button DefaultButtonFace="SupplyDepot172" State="Suppressed"/>
         </InfoArray>
-        <InfoArray index="Build3" Unit="AutomatedRefinery4" Time="30">
+        <InfoArray index="Build3" Unit="VespenePacifier" Time="30">
             <Button DefaultButtonFace="Refinery162" State="Suppressed" Requirements="HavePsionicHeart2243232223242322263"/>
             <ValidatorArray value="HasVespene"/>
         </InfoArray>
-        <InfoArray index="Build4" Unit="Barracks17" Time="240">
+        <InfoArray index="Build4" Unit="ColonialAssembly" Time="240">
             <Button DefaultButtonFace="Barracks172" State="Suppressed"/>
         </InfoArray>
         <InfoArray index="Build5" Unit="EngineeringBay183" Time="120">
@@ -55573,10 +55612,10 @@
         <InfoArray index="Build6" Unit="MissileTurret" Time="25">
             <Button DefaultButtonFace="MissileTurret172" State="Restricted" Requirements="HaveEngineeringBay"/>
         </InfoArray>
-        <InfoArray index="Build7" Unit="Barracks173" Time="200">
+        <InfoArray index="Build7" Unit="Workshop" Time="200">
             <Button DefaultButtonFace="Bunker182" State="Restricted"/>
         </InfoArray>
-        <InfoArray index="Build8" Unit="AutomatedRefinery4" Time="30">
+        <InfoArray index="Build8" Unit="VespenePacifier" Time="30">
             <ValidatorArray value="HasVespene"/>
         </InfoArray>
         <InfoArray index="Build9" Unit="Barracks1722" Time="150">
@@ -55588,10 +55627,10 @@
         <InfoArray index="Build11" Unit="EngineeringBay182" Time="500">
             <Button DefaultButtonFace="Factory162" State="Suppressed"/>
         </InfoArray>
-        <InfoArray index="Build12" Unit="MissileTurret13" Time="60">
+        <InfoArray index="Build12" Unit="OverseerTower" Time="60">
             <Button DefaultButtonFace="Starport162" State="Suppressed" Requirements="HavePsionicHeart22432322232423222632243222"/>
         </InfoArray>
-        <InfoArray index="Build13" Unit="Barracks102" Time="125">
+        <InfoArray index="Build13" Unit="ToolsManufacture" Time="125">
             <Button DefaultButtonFace="MercCompound162" State="Suppressed"/>
         </InfoArray>
         <InfoArray index="Build14" Unit="EngineeringBay172" Time="325">
@@ -55627,11 +55666,11 @@
         <InfoArray index="Build2" Unit="EngineeringBay18" Time="300">
             <Button DefaultButtonFace="SupplyDepot172" State="Suppressed"/>
         </InfoArray>
-        <InfoArray index="Build3" Unit="AutomatedRefinery4" Time="30">
+        <InfoArray index="Build3" Unit="VespenePacifier" Time="30">
             <Button DefaultButtonFace="Refinery162" State="Suppressed" Requirements="HavePsionicHeart2243232223242322263"/>
             <ValidatorArray value="HasVespene"/>
         </InfoArray>
-        <InfoArray index="Build4" Unit="Barracks17" Time="240">
+        <InfoArray index="Build4" Unit="ColonialAssembly" Time="240">
             <Button DefaultButtonFace="Barracks172" State="Suppressed"/>
         </InfoArray>
         <InfoArray index="Build5" Unit="EngineeringBay1832" Time="80">
@@ -55640,10 +55679,10 @@
         <InfoArray index="Build6" Unit="MissileTurret" Time="25">
             <Button DefaultButtonFace="MissileTurret172" State="Restricted" Requirements="HaveEngineeringBay"/>
         </InfoArray>
-        <InfoArray index="Build7" Unit="Barracks173" Time="200">
+        <InfoArray index="Build7" Unit="Workshop" Time="200">
             <Button DefaultButtonFace="Bunker182" State="Restricted"/>
         </InfoArray>
-        <InfoArray index="Build8" Unit="AutomatedRefinery4" Time="30">
+        <InfoArray index="Build8" Unit="VespenePacifier" Time="30">
             <ValidatorArray value="HasVespene"/>
         </InfoArray>
         <InfoArray index="Build9" Unit="Barracks17222" Time="150">
@@ -55658,7 +55697,7 @@
         <InfoArray index="Build12" Unit="MissileTurret132" Time="30">
             <Button DefaultButtonFace="Starport1622" State="Suppressed" Requirements="HavePsionicHeart2243232223242322263322222"/>
         </InfoArray>
-        <InfoArray index="Build13" Unit="Barracks102" Time="125">
+        <InfoArray index="Build13" Unit="ToolsManufacture" Time="125">
             <Button DefaultButtonFace="MercCompound162" State="Suppressed"/>
         </InfoArray>
         <InfoArray index="Build14" Unit="EngineeringBay1722" Time="325">
@@ -55694,11 +55733,11 @@
         <InfoArray index="Build2" Unit="EngineeringBay18" Time="300">
             <Button DefaultButtonFace="SupplyDepot172" State="Suppressed"/>
         </InfoArray>
-        <InfoArray index="Build3" Unit="AutomatedRefinery4" Time="30">
+        <InfoArray index="Build3" Unit="VespenePacifier" Time="30">
             <Button DefaultButtonFace="Refinery162" State="Suppressed" Requirements="HavePsionicHeart2243232223242322263"/>
             <ValidatorArray value="HasVespene"/>
         </InfoArray>
-        <InfoArray index="Build4" Unit="Barracks17" Time="240">
+        <InfoArray index="Build4" Unit="ColonialAssembly" Time="240">
             <Button DefaultButtonFace="Barracks172" State="Suppressed"/>
         </InfoArray>
         <InfoArray index="Build5" Unit="EngineeringBay184" Time="70">
@@ -55707,10 +55746,10 @@
         <InfoArray index="Build6" Unit="MissileTurret" Time="25">
             <Button DefaultButtonFace="MissileTurret172" State="Restricted" Requirements="HaveEngineeringBay"/>
         </InfoArray>
-        <InfoArray index="Build7" Unit="Barracks173" Time="200">
+        <InfoArray index="Build7" Unit="Workshop" Time="200">
             <Button DefaultButtonFace="Bunker182" State="Restricted"/>
         </InfoArray>
-        <InfoArray index="Build8" Unit="AutomatedRefinery4" Time="30">
+        <InfoArray index="Build8" Unit="VespenePacifier" Time="30">
             <ValidatorArray value="HasVespene"/>
         </InfoArray>
         <InfoArray index="Build9" Unit="Barracks17223" Time="150">
@@ -55725,7 +55764,7 @@
         <InfoArray index="Build12" Unit="MissileTurret1322" Time="30">
             <Button DefaultButtonFace="Starport16222" State="Suppressed" Requirements="HavePsionicHeart224323222324232226332223"/>
         </InfoArray>
-        <InfoArray index="Build13" Unit="Barracks102" Time="125">
+        <InfoArray index="Build13" Unit="ToolsManufacture" Time="125">
             <Button DefaultButtonFace="MercCompound162" State="Suppressed"/>
         </InfoArray>
         <InfoArray index="Build14" Unit="EngineeringBay1723" Time="325">
@@ -61039,7 +61078,7 @@
         <Flags index="MoveBlockers" value="0"/>
         <Flags index="ShowPlaceholder" value="0"/>
         <Flags index="SuppressMovement" value="1"/>
-        <InfoArray Unit="Barracks102" RandomDelayMax="0.5">
+        <InfoArray Unit="ToolsManufacture" RandomDelayMax="0.5">
             <SectionArray index="Actor">
                 <DurationArray index="Duration" value="3"/>
             </SectionArray>

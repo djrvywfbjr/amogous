@@ -241,12 +241,12 @@
 <Unit id="CarrierAiur"/>
 <Unit id="Nexus2"/>
 <Unit id="CommandCenter13"/>
-<Unit id="Marine7"/>
+<Unit id="Serviceman"/>
 <Unit id="Jumper"/>
 <Unit id="Combater"/>
 <Unit id="SCV11"/>
 <Unit id="Probe7"/>
-<Unit id="SCV12"/>
+<Unit id="MaintenanceVehicle"/>
 <Unit id="SCV13"/>
 <Unit id="D4DShip"/>
 <Unit id="Collector"/>
@@ -335,10 +335,8 @@
 <Unit id="CommandCenter12"/>
 <Unit id="SmallARES"/>
 <Unit id="Odin2"/>
-<Unit id="SpacePrisonerBig3"/>
 <Unit id="SJPickupHealth500222224"/>
 <Unit id="Scientist3"/>
-<Unit id="Civilian42"/>
 <Unit id="Wraith22"/>
 <Unit id="RoachWarren2224"/>
 <Unit id="Adept2"/>
