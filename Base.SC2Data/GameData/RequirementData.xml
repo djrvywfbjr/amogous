@@ -3126,13 +3126,13 @@
         <NodeArray index="Show" Link="CountUpgradeAdvancedConstruction24223322222222223CompleteOnly"/>
     </CRequirement>
     <CRequirement id="HavePsionicHeart22432322232423222633">
-        <NodeArray index="Use" Link="CountUnitEngineeringBay1822CompleteOnly1851208886"/>
+        <NodeArray index="Use" Link="CountUnitPsiwaveCommunicatorCompleteOnly1851208886"/>
     </CRequirement>
     <CRequirement id="HavePsionicHeart224323222324232226332">
-        <NodeArray index="Use" Link="CountUnitBarracks173CompleteOnly1678174459"/>
+        <NodeArray index="Use" Link="CountUnitWorkshopCompleteOnly1678174459"/>
     </CRequirement>
     <CRequirement id="HavePsionicHeart2243232223242322263322">
-        <NodeArray index="Use" Link="CountUnitBarracks173CompleteOnly1678174459"/>
+        <NodeArray index="Use" Link="CountUnitWorkshopCompleteOnly1678174459"/>
     </CRequirement>
     <CRequirement id="HavePsionicHeart22432322232423222633222">
         <NodeArray index="Show" Link="CountUpgradeAdvancedConstruction24223322222222223242222CompleteOnly"/>
@@ -4562,7 +4562,7 @@
     </CRequirement>
     <CRequirement id="LearnBlink2122424333233822323522">
         <EditorCategories value="Race:Protoss,TechType:Ability"/>
-        <NodeArray index="Use" Link="And2709914029CountUpgradeAdvancedConstruction2422332222222222322CompleteOnly943849952CountUpgradeAdvancedConstruction222CompleteOnlyCountUnitMissileTurret13CompleteOnly2794507798"/>
+        <NodeArray index="Use" Link="And2709914029CountUpgradeAdvancedConstruction2422332222222222322CompleteOnly943849952CountUpgradeAdvancedConstruction222CompleteOnlyCountUnitOverseerTowerCompleteOnly2794507798"/>
         <NodeArray index="Show" Link="AndNotCountUpgradeAdvancedConstruction242233222222222232222QueuedOrBetterCountUpgradeAdvancedConstruction242233222222222232CompleteOnly"/>
     </CRequirement>
     <CRequirement id="LearnBlink21224243332338223235222">
@@ -6310,11 +6310,11 @@
     </CRequirement>
     <CRequirement id="MothershipRequirements23225">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="And3240799816LTECountUnitBarracks172QueuedOrBetter1"/>
+        <NodeArray index="Use" Link="And3240799816LTECountUnitMedicalOutpostQueuedOrBetter1"/>
     </CRequirement>
     <CRequirement id="MothershipRequirements232252">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="And385800716LTECountUnitBarracks172QueuedOrBetter2"/>
+        <NodeArray index="Use" Link="And385800716LTECountUnitMedicalOutpostQueuedOrBetter2"/>
     </CRequirement>
     <CRequirement id="MothershipRequirements232253">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
@@ -6399,11 +6399,11 @@
     </CRequirement>
     <CRequirement id="MothershipRequirements23424">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="And1418005013Eq3523259510CountUnitBarracks172QueuedOrBetter0CountUpgradeAdvancedConstruction232CompleteOnly"/>
+        <NodeArray index="Use" Link="And1418005013Eq3523259510CountUnitMedicalOutpostQueuedOrBetter0CountUpgradeAdvancedConstruction232CompleteOnly"/>
     </CRequirement>
     <CRequirement id="MothershipRequirements234242">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="And613433959Eq3523259510CountUnitEngineeringBay1822QueuedOrBetter0CountUpgradeAdvancedConstruction23CompleteOnly"/>
+        <NodeArray index="Use" Link="And613433959Eq3523259510CountUnitPsiwaveCommunicatorQueuedOrBetter0CountUpgradeAdvancedConstruction23CompleteOnly"/>
     </CRequirement>
     <CRequirement id="MothershipRequirements2342422">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
