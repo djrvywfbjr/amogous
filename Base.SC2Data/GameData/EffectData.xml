@@ -25748,14 +25748,12 @@
         <EditorCategories value=""/>
         <ValidatorArray value="RequiresScientists"/>
         <ValidatorArray value="HasCargoSpace"/>
-        <ValidatorArray value="IsNotWatchtower"/>
         <ValidatorArray value="HasPower"/>
     </CEffectSet>
     <CEffectSet id="SendWorker">
         <EditorCategories value=""/>
         <ValidatorArray value="RequiresWorkers"/>
         <ValidatorArray value="HasCargoSpace"/>
-        <ValidatorArray value="IsNotWatchtower"/>
         <ValidatorArray value="HasPower"/>
     </CEffectSet>
     <CEffectDamage id="StarshipRailgunDamage" parent="DU_WEAP">
