@@ -9366,7 +9366,7 @@
     <CEffectEnumArea id="BarrageSearchArea52">
         <EditorCategories value="Race:Terran"/>
         <ImpactLocation Effect="BarragePersistent62"/>
-        <SearchFilters value="Ground;Self,Player,Ally,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AreaArray MaxCount="2" Radius="4.4" Effect="MengskMarauderLM524"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="BarrageSearchArea53">
@@ -25705,6 +25705,45 @@
         <EffectArray value="MilitaryStationAddScientist2"/>
         <EffectArray value="MilitaryStationAddWorker2"/>
     </CEffectSet>
+    <CEffectSet id="SJPirateYamato3522">
+        <EditorCategories value="Race:Terran"/>
+        <EffectArray value="SJPirateYamatoA3522"/>
+        <EffectArray value="SJPirateYamatoB3522"/>
+    </CEffectSet>
+    <CEffectLaunchMissile id="SJPirateYamatoA3522">
+        <ValidatorArray value="IsNotWarpBubble"/>
+        <ValidatorArray value="YamatoTargetFilters"/>
+        <EditorCategories value="Race:Terran"/>
+        <ImpactEffect value="SJPirateYamatoADamage3522"/>
+        <AmmoUnit value="SJPirateYamatoAWeapon352"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="SJPirateYamatoADamage3522">
+        <EditorCategories value="Race:Terran"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ArmorReduction value="-10"/>
+        <Visibility value="Visible"/>
+        <Flags index="Notification" value="1"/>
+        <Amount value="65"/>
+        <Death value="Blast"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="SJPirateYamatoB3522">
+        <ValidatorArray value="IsNotWarpBubble"/>
+        <ValidatorArray value="YamatoTargetFilters"/>
+        <EditorCategories value="Race:Terran"/>
+        <ImpactEffect value="SJPirateYamatoBDamage3522"/>
+        <AmmoUnit value="SJPirateYamatoBWeapon352"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="SJPirateYamatoBDamage3522">
+        <EditorCategories value="Race:Terran"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Visibility value="Visible"/>
+        <Flags index="Notification" value="1"/>
+        <Death value="Blast"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectDamage>
     <CEffectSet id="SendScientist">
         <EditorCategories value=""/>
         <ValidatorArray value="RequiresScientists"/>
@@ -32229,7 +32268,7 @@
         <Flags index="Notification" value="1"/>
         <Amount value="65"/>
         <AreaArray Radius="2.2" Fraction="1"/>
-        <SearchFilters value="Ground,Visible;-"/>
+        <SearchFilters value="Ground,Visible;Invulnerable"/>
         <AttributeBonus index="Structure" value="-30"/>
     </CEffectDamage>
     <CEffectDamage id="KaiserWormBanelingMissileDamage222">
@@ -48962,7 +49001,7 @@
     <CEffectLaunchMissile id="PhotonCannonLM322">
         <ValidatorArray index="0" value="PhotonCannonTargetFilters"/>
         <EditorCategories value="Race:Protoss"/>
-        <ImpactEffect value="DarkArchonConfusionSearch"/>
+        <ImpactEffect value="UnknownEffect63"/>
         <AmmoUnit value="PhotonCannonWeapon32"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="PhotonCannonLM4">
@@ -68177,7 +68216,7 @@
     </CEffectDamage>
     <CEffectDamage id="TempestDamageGround3" parent="TempestDamageGround">
         <Name value="Effect/Name/TempestDamageGround3"/>
-        <Amount value="30"/>
+        <Amount value="20"/>
         <AttributeBonus index="Light" value="10"/>
     </CEffectDamage>
     <CEffectDamage id="TempestDamageGround32" parent="TempestDamageGround">
@@ -70836,6 +70875,11 @@
         <EditorCategories value=""/>
         <EffectArray value="MilitaryStationRemoveScientist"/>
         <EffectArray value="MilitaryStationRemoveWorker"/>
+    </CEffectSet>
+    <CEffectSet id="UnknownEffect63">
+        <EditorCategories value=""/>
+        <EffectArray value="DarkArchonConfusionSearch"/>
+        <EffectArray value="UnknownEffect63"/>
     </CEffectSet>
     <CEffectSet id="UnknownEffect7">
         <EditorCategories value=""/>

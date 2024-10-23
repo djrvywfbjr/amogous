@@ -8395,6 +8395,19 @@
     <CRequirement id="UnknownRequirement126">
         <NodeArray index="Use" Link="CountUpgradeUnknownUpgrade80CompleteOnly"/>
     </CRequirement>
+    <CRequirement id="UnknownRequirement127">
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222352222222222222QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnknownRequirement1272">
+        <NodeArray index="Show" Link="CountUpgradeUmojanBasicUnitUpgrade5222422423222222352222222222222CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UnknownRequirement128">
+        <NodeArray index="Show" Link="NotCountUpgradeUnknownUpgrade81QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UnknownRequirement1282">
+        <NodeArray index="Use" Link="CountUpgradeUnknownUpgrade81CompleteOnly"/>
+        <NodeArray index="Show" Link="CountUpgradeUnknownUpgrade81CompleteOnly"/>
+    </CRequirement>
     <CRequirement id="UnknownRequirement13">
         <NodeArray index="Show" Link="Not2584292422CountUpgradeUnknownUpgrade3QueuedOrBetter2584292422"/>
     </CRequirement>

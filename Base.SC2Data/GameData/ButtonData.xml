@@ -4205,6 +4205,10 @@
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="MothershipCore2222322"/>
     </CButton>
+    <CButton id="PatriotReactor">
+        <Icon value="Assets\Textures\btn-upgrade-terran-caduceusreactor.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-terran-caduceusreactor.dds"/>
+    </CButton>
     <CButton id="PlasmaCoater">
         <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
         <EditorCategories value="Race:Terran"/>
@@ -4252,6 +4256,12 @@
         <Icon value="Assets\Textures\btn-upgrade-zagara-increasebilelauncherrange.dds"/>
         <EditorCategories value="Race:Zerg"/>
     </CButton>
+    <CButton id="PoisonNova22332223">
+        <Icon value="Assets\Textures\btn-ability-zeratul-immortal-enternitybarrier.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-immortal-enternitybarrier.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+        <HotkeyAlias value="PoisonNova223"/>
+    </CButton>
     <CButton id="PoisonNova22333232">
         <Icon value="Assets\Textures\btn-upgrade-vorazun-stasiswardpermanentlycloaked.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-zerg-poisonnova.dds"/>
@@ -4297,6 +4307,11 @@
     </CButton>
     <CButton id="ResearchOptimizedServos">
         <Icon value="Assets\Textures\btn-upgrade-terran-transformationservos.dds"/>
+    </CButton>
+    <CButton id="SJHyperionYamato4722">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-empowermeslaves.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
     </CButton>
     <CButton id="SendScientist">
         <Icon value="Assets\Textures\btn-unit-terran-sciencevessel.dds"/>
@@ -29366,6 +29381,14 @@
     </CButton>
     <CButton id="UnknownButton12">
         <Icon value="Assets\Textures\btn-upgrade-zerg-monarchblades.dds"/>
+    </CButton>
+    <CButton id="UnknownButton120">
+        <Icon value="Assets\Textures\btn-ability-zeratul-darktemplar-backtotheshadows.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-darktemplar-backtotheshadows.dds"/>
+    </CButton>
+    <CButton id="UnknownButton1202">
+        <Icon value="Assets\Textures\btn-ability-zeratul-darktemplar-backtotheshadows.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-darktemplar-backtotheshadows.dds"/>
     </CButton>
     <CButton id="UnknownButton13">
         <Icon value="Assets\Textures\btn-ability-protoss-scarabshot.dds"/>

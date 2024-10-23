@@ -808,6 +808,15 @@
     <CValidatorUnitType id="IsPsiwaveCommunicator">
         <Value value="PsiwaveCommunicator"/>
     </CValidatorUnitType>
+    <CValidatorUnitType id="IsZergling2">
+        <Value value="HybridReaver22"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsZergling22">
+        <Value value="HybridNemesis22"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsZergling23">
+        <Value value="Mutalisk5"/>
+    </CValidatorUnitType>
     <CValidatorCombine id="RefugeeValidatorAnyWorkerOrScientist">
         <CombineArray value="RequiresCivilian2"/>
         <CombineArray value="RequiresCivilian24"/>

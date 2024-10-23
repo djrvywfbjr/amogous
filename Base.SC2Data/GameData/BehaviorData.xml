@@ -909,6 +909,21 @@
         <Modification MoveSpeedBonus="2.5" AccelerationBonus="500" DecelerationBonus="500"/>
         <TimeScaleSource Value="Global"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="HardenedShield9">
+        <Alignment value="Positive"/>
+        <Cost>
+            <Cooldown Link="Immortal Shield"/>
+        </Cost>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-HardenedShields.dds"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Requirements value="UnknownRequirement1282"/>
+        <DisableValidatorArray value="CasterShieldsGE1"/>
+        <DamageResponse ClampMaximum="10" Minimum="10">
+            <Kind index="Spell" value="0"/>
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
     <CBehaviorBuff id="NoWeapon">
         <Alignment value="Negative"/>
         <BehaviorFlags index="Permanent" value="1"/>

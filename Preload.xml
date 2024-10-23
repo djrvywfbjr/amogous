@@ -21,8 +21,8 @@
 <Asset path="assets\textures\btn-hero-kerriganascended.dds" Type="Image"/>
 <Asset path="assets\textures\btn-unit-collection-overlord-mutant.dds" Type="Image"/>
 <Asset path="assets\textures\btn-tips-researchunlocked.dds" Type="Image"/>
-<Asset path="assets\textures\btn-ability-zerg-debilitatingbile.dds" Type="Image"/>
 <Asset path="assets\textures\btn-ability-mengsk-ghost-pyrokineticimmolation_orange.dds" Type="Image"/>
+<Asset path="assets\textures\btn-ability-zerg-debilitatingbile.dds" Type="Image"/>
 <Asset path="assets\textures\btn-building-hornerhan-supplydepot.dds" Type="Image"/>
 <Asset path="assets\textures\btn-building-protoss-pylon-forged.dds" Type="Image"/>
 <Asset path="assets\textures\fearex3_coop.dds" Type="Image"/>

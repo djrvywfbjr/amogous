@@ -2236,6 +2236,7 @@
         <EffectArray Reference="Behavior,AntamoAirAll35,Modification.VitalDamageLeechArray[Life].KindArray[Splash]" Value="0.2"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade2"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-avatarofform-entropicblast.dds"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade223352242">
         <EffectArray Reference="Behavior,AntamoAirAll35,Modification.VitalDamageLeechArray[Life].KindArray[Melee]" Value="0.15"/>
@@ -2245,6 +2246,7 @@
         <EffectArray Reference="Behavior,AntamoAirAll35,Modification.VitalDamageLeechArray[Life].KindArray[Splash]" Value="0.15"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade2"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-darkarchon-maelstrom.dds"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade223352243">
         <EffectArray Reference="Behavior,AntamoAirAll35,Modification.VitalDamageLeechArray[Life].KindArray[Melee]" Value="0.1"/>
@@ -2254,6 +2256,7 @@
         <EffectArray Reference="Behavior,AntamoAirAll35,Modification.VitalDamageLeechArray[Life].KindArray[Splash]" Value="0.1"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade2"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-havoctargetlockbuffed.dds"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade223353">
         <EffectArray Operation="Set" Reference="Effect,RoachVileAcidSalivaSet2,EffectArray[2]" Value="SacredCoreWeaponAOE3"/>
@@ -8890,6 +8893,7 @@
         <EffectArray Operation="Set" Reference="Unit,HybridReaver22,Speed" Value="3.312500"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-topbar-steadfastreinforcements.dds"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade522242242322222235222222222">
         <EffectArray Operation="Set" Reference="Abil,Blink2223,Cost[0].Vital[Energy]" Value="1"/>
@@ -8904,6 +8908,7 @@
         <EffectArray Operation="Set" Reference="Abil,ProtossBuild10,InfoArray[Build22].Time" Value="5.000000"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-topbar-voidsuppressioncrystal.dds"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade52224224232222223522222222222">
         <EffectArray Reference="Unit,XelNagaConstruct22,LifeArmor" Value="4"/>
@@ -8911,6 +8916,7 @@
         <EffectArray Reference="Unit,XelNagaChargedCrystal2,LifeArmor" Value="2"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-avatarofform-entropicblast.dds"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade522242242322222235222222222222">
         <EffectArray Reference="Unit,Hydralisk4,EnergyMax" Value="40"/>
@@ -8921,9 +8927,16 @@
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222352222222222222">
+        <Icon value="Assets\Textures\btn-ability-zeratul-immortal-enternitybarrier.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,AnnihilatorParticleDisruptors,Cost.Vital[Energy]" Value="-5"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade522242242322222235222222222223">
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+        <Icon value="Assets\Textures\tip_amonhostbody.dds"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222352222222223">
         <EffectArray Reference="Weapon,CenturionWarpBlades2,Cost.Vital[Life]" Value="-15"/>
@@ -8934,6 +8947,7 @@
         <EffectArray Reference="Weapon,HybridNemesisWeapon,Cost.Vital[Life]" Value="-20"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-topbar-stasisbeam.dds"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade52224224232222223522222222232">
         <EffectArray Reference="Abil,VoidThrasherLightningAoE2,Range[0]" Value="6"/>
@@ -8941,6 +8955,7 @@
         <EffectArray Reference="Weapon,IonCannons22,Range" Value="3"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-disruptor-novabattery.dds"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade522242242322222235222222223">
         <EffectArray Reference="Behavior,AntamoAirAll352,Modification.DamageDealtFraction[Melee]" Value="0.2"/>
@@ -8950,6 +8965,7 @@
         <EffectArray Reference="Behavior,AntamoAirAll352,Modification.DamageDealtFraction[Splash]" Value="0.2"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-warpprism-shieldboosters.dds"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222352222222232">
         <EffectArray Reference="Behavior,AntamoAirAll352,Modification.DamageDealtFraction[Melee]" Value="0.2"/>
@@ -8959,6 +8975,7 @@
         <EffectArray Reference="Behavior,AntamoAirAll352,Modification.DamageDealtFraction[Splash]" Value="0.2"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+        <Icon value="Assets\Textures\btn-ability-stetmann-banelingmanashield.dds"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222352222222233">
         <EffectArray Reference="Behavior,AntamoAirAll352,Modification.DamageDealtFraction[Melee]" Value="0.2"/>
@@ -8968,6 +8985,7 @@
         <EffectArray Reference="Behavior,AntamoAirAll352,Modification.DamageDealtFraction[Splash]" Value="0.2"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-supplicantextrashields.dds"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade52224224232222223522222223">
         <EffectArray Reference="Abil,XelNagaShadowStep,Range[0]" Value="10"/>
@@ -9397,6 +9415,13 @@
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222352222225">
         <EffectArray Reference="Behavior,AntamoAirAll9,Modification.VitalRegenArray[Life]" Value="2.000000"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
+    </CUpgrade>
+    <CUpgrade id="InfiltratorEnergy">
+        <EffectArray Operation="Set" Reference="Unit,Spectre5,EnergyMax" Value="150"/>
+        <EffectArray Operation="Set" Reference="Unit,Spectre5,EnergyStart" Value="75"/>
+        <EffectArray Operation="Set" Reference="Unit,Spectre5,Speed" Value="2.949200"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -11639,6 +11664,7 @@
         <EffectArray Operation="Set" Reference="Effect,P38ScytheGuassPistol3,DamageInheritEffect" Value="AggressiveMutationAB24"/>
         <EffectArray Operation="Set" Reference="Weapon,P38ScytheGuassPistol,Range" Value="7"/>
     </CUpgrade>
+    <CUpgrade id="UnknownUpgrade81"/>
     <CUpgrade id="UnknownUpgrade9">
         <EffectArray Operation="Set" Reference="Effect,AlarakPsiOrbSet2,EffectArray[3]" Value="Epilogue02VoidRiftAB223"/>
         <EffectArray Operation="Set" Reference="Effect,HotSUltraliskKaiserBlades7,EffectArray[4]" Value="Epilogue02VoidRiftAB2232"/>

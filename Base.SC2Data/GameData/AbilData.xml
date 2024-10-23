@@ -734,6 +734,36 @@
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
     </CAbilEffectInstant>
+    <CAbilResearch id="MoebiusZResearch">
+        <InfoArray index="Research3">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilEffectTarget id="SJPirateYamato3522">
+        <Alignment value="Negative"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Cost>
+            <Charge Link="Abil/SJPirateYamato"/>
+            <Cooldown Link="SJPirateYamato" TimeUse="30"/>
+        </Cost>
+        <Range value="8"/>
+        <RangeSlop value="100"/>
+        <AutoCastFilters value="Visible;Player,Ally,Neutral,Missile"/>
+        <AutoCastRange value="8"/>
+        <PrepTime value="2"/>
+        <ShowProgressArray index="Prep" value="1"/>
+        <UninterruptibleArray index="Prep" value="1"/>
+        <UninterruptibleArray index="Cast" value="1"/>
+        <UninterruptibleArray index="Channel" value="1"/>
+        <UninterruptibleArray index="Finish" value="1"/>
+        <ProgressButtonArray index="Prep" value="SJPirateYamato"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SJHyperionYamato4722"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="SendWorker">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
@@ -21577,6 +21607,16 @@
             <Resource index="Minerals" value="150"/>
             <Resource index="Vespene" value="150"/>
             <Button DefaultButtonFace="PoisonNova2233222222" Requirements="LearnPylonSpeed224"/>
+        </InfoArray>
+        <InfoArray index="Research18" Time="71" Upgrade="UmojanBasicUnitUpgrade5222422423222222352222222222222">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="PoisonNova22332223" Requirements="UnknownRequirement127"/>
+        </InfoArray>
+        <InfoArray index="Research19" Time="150" Upgrade="UnknownUpgrade81">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="UnknownButton120" Requirements="UnknownRequirement128"/>
         </InfoArray>
     </CAbilResearch>
     <CAbilResearch id="ForgeResearch4" parent="ForgeResearch">
@@ -48402,7 +48442,7 @@
             <Cooldown Link="Abil/SOAMothershipLineAttack" TimeUse="30"/>
         </Cost>
         <Range value="500"/>
-        <PrepTime value="6"/>
+        <PrepTime value="3"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="SOAMothershipLineAttack222"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="SOAMothershipLineAttack23">
@@ -54029,6 +54069,8 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <InfoTooltipPriority value="1"/>
         <Effect index="0" value="MitosaurusBSplitSet2"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
         <Flags index="Transient" value="1"/>
         <Cost>
             <Cooldown TimeUse="50"/>
