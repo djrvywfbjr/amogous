@@ -25633,6 +25633,22 @@
         <Kind value="Ranged"/>
         <Amount value="50"/>
     </CEffectDamage>
+    <CEffectDamage id="HighTemplarWeaponDamage5" parent="DU_WEAP">
+        <EditorCategories value="Race:Protoss"/>
+        <Kind value="Ranged"/>
+        <Amount value="25"/>
+        <Death value="Blast"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="HighTemplarWeaponLM5">
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactEffect value="HighTemplarWeaponSet5"/>
+        <AmmoUnit value="HighTemplarWeaponMissile5"/>
+        <Movers Link="HighTemplarWeapon"/>
+        <Movers Link="HighTemplarWeaponMover"/>
+    </CEffectLaunchMissile>
+    <CEffectSet id="HighTemplarWeaponSet5">
+        <EffectArray value="HighTemplarWeaponDamage5"/>
+    </CEffectSet>
     <CEffectDamage id="KerriganVoidKineticBlastDamage3">
         <EditorCategories value="Race:Zerg"/>
         <ResponseFlags index="Acquire" value="1"/>
@@ -25744,16 +25760,41 @@
         <Death value="Blast"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectDamage>
+    <CEffectCreatePersistent id="SOAOrbitalStrikeCP2222">
+        <EditorCategories value="Race:Protoss"/>
+        <InitialDelay value="0.75"/>
+        <InitialEffect value="SOAOrbitalStrikeImpactDummy2222"/>
+        <ExpireDelay value="0.125"/>
+        <ExpireEffect value="SOAOrbitalStrikeImpactSearch2222"/>
+        <RevealRadius value="1"/>
+        <RevealFlags index="Unfog" value="1"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="SOAOrbitalStrikeDamage2222">
+        <EditorCategories value="Race:Protoss"/>
+        <ShieldBonus value="70"/>
+        <Amount value="60"/>
+    </CEffectDamage>
+    <CEffectDamage id="SOAOrbitalStrikeImpactDummy2222">
+        <EditorCategories value="Race:Protoss"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="SOAOrbitalStrikeImpactSearch2222">
+        <EditorCategories value="Race:Protoss"/>
+        <LaunchLocation Value="TargetPoint"/>
+        <SearchFilters value="-;Self,Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="1" Effect="SOAOrbitalStrikeDamage2222"/>
+    </CEffectEnumArea>
     <CEffectSet id="SendScientist">
         <EditorCategories value=""/>
         <ValidatorArray value="RequiresScientists"/>
         <ValidatorArray value="HasCargoSpace"/>
+        <ValidatorArray value="IsNotWatchtower"/>
         <ValidatorArray value="HasPower"/>
     </CEffectSet>
     <CEffectSet id="SendWorker">
         <EditorCategories value=""/>
         <ValidatorArray value="RequiresWorkers"/>
         <ValidatorArray value="HasCargoSpace"/>
+        <ValidatorArray value="IsNotWatchtower"/>
         <ValidatorArray value="HasPower"/>
     </CEffectSet>
     <CEffectDamage id="StarshipRailgunDamage" parent="DU_WEAP">
@@ -38636,8 +38677,8 @@
         <EditorCategories value="Race:Terran"/>
         <ResponseFlags index="Acquire" value="1"/>
         <ResponseFlags index="Flee" value="1"/>
-        <AttributeBonus index="Light" value="10"/>
-        <AttributeBonus index="Structure" value="10"/>
+        <AttributeBonus index="Light" value="20"/>
+        <AttributeBonus index="Structure" value="20"/>
         <ArmorReduction value="1"/>
         <Flags index="Notification" value="1"/>
         <Kind value="Ranged"/>
@@ -63408,7 +63449,7 @@
         </Marker>
         <WhichLocation Value="SourceUnit"/>
         <TimeScaleSource Value="Caster"/>
-        <PeriodCount value="10"/>
+        <PeriodCount value="20"/>
         <PeriodicEffectArray value="SOAMothershipLineAttackSearch222"/>
         <PeriodicPeriodArray value="0.0625"/>
     </CEffectCreatePersistent>
@@ -70879,6 +70920,11 @@
         <EffectArray value="DarkArchonConfusionSearch"/>
         <EffectArray value="UnknownEffect63"/>
     </CEffectSet>
+    <CEffectApplyBehavior id="UnknownEffect64">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <Behavior value="UnknownBehavior49"/>
+    </CEffectApplyBehavior>
     <CEffectSet id="UnknownEffect7">
         <EditorCategories value=""/>
         <EffectArray value="NeedleClaws3"/>

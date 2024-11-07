@@ -894,7 +894,7 @@
     <CBehaviorBuff id="DehakaHealSmall4322">
         <InfoIcon value="Assets\Textures\fearex3_coop.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Duration value="13"/>
+        <Duration value="27"/>
         <Modification TimeScale="1.35"/>
         <ExpireEffect value="AshNexusExhaustion"/>
     </CBehaviorBuff>
@@ -1330,6 +1330,26 @@
             <LifeArmorBonus value="-2"/>
             <ResourceHarvestAmountMultiplier index="Minerals" value="0.75"/>
             <ResourceHarvestAmountMultiplier index="Vespene" value="0.75"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UnknownBehavior49">
+        <InfoIcon value="Assets\Textures\btn-ability-zeratul-stalker-vengeanceofthevoid.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="20"/>
+        <Modification>
+            <MoveSpeedMultiplier value="0.95"/>
+            <AccelerationBonus value="0.9375"/>
+            <AttackSpeedMultiplier value="0.95"/>
+            <RangedWeaponRange value="-0.5"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UnknownBehavior50">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <WeaponArray Link="HighTemplarWeapon5"/>
+            <WeaponDisableArray value="VoidRayVoid2922"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="UnmannedBuilding">
@@ -36854,7 +36874,6 @@
     <CBehaviorBuff id="PsiDisruptionSearch3222262223">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
-        <Requirements value="UseStimpack227"/>
         <DisableValidatorArray value="NotDeadOrConstruction"/>
         <Period value="1"/>
         <Modification>
@@ -45192,8 +45211,8 @@
     <CBehaviorBuff id="VoidPhoenixPhasingArmor424">
         <InfoIcon value="Assets\Textures\btn-ability-zeratul-avatarofessence-evolutionaura.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Duration value="15"/>
-        <Modification Detect="8">
+        <Duration value="25"/>
+        <Modification MoveSpeedMultiplier="1.35" Detect="8">
             <DamageDealtFraction index="Spell" value="0.35"/>
             <DamageDealtFraction index="Melee" value="0.35"/>
             <DamageDealtFraction index="Ranged" value="0.35"/>

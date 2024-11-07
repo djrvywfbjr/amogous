@@ -1871,6 +1871,11 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="SupplyDrop2" State="CompleteOnlyAtUnit"/>
     </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorUnknownBehavior50CompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="UnknownBehavior50" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
     <CRequirementCountBehavior id="CountBehaviorUnknownUpgrade18CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="UnknownUpgrade18" State="CompleteOnly"/>
@@ -11399,12 +11404,10 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade5222422423222222352222222222222CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="UmojanBasicUnitUpgrade5222422423222222352222222222222" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade5222422423222222352222222222222QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="UmojanBasicUnitUpgrade5222422423222222352222222222222" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade522242242322222235222222222222QueuedOrBetter">
@@ -14693,12 +14696,10 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUnknownUpgrade81CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="UnknownUpgrade81" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUnknownUpgrade81QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="UnknownUpgrade81" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUnknownUpgrade8CompleteOnly">
@@ -16201,6 +16202,10 @@
     </CRequirementNot>
     <CRequirementNot id="NotCountBehaviorSquadSightPersistentBehavior3CompleteOnlyAtUnit">
         <OperandArray index="0" value="CountBehaviorSquadSightPersistentBehavior3CompleteOnlyAtUnit"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountBehaviorUnknownBehavior50CompleteOnlyAtUnit">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountBehaviorUnknownBehavior50CompleteOnlyAtUnit"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountBehaviorVoidSeekerDock2CompleteOnlyAtUnit">
         <OperandArray index="0" value="CountBehaviorVoidSeekerDock2CompleteOnlyAtUnit"/>
@@ -18123,7 +18128,6 @@
         <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade522242242322222235222222212QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222352222222222222QueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade5222422423222222352222222222222QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222235222222222222QueuedOrBetter">
@@ -19213,7 +19217,6 @@
         <OperandArray index="0" value="CountUpgradeUnknownUpgrade80QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUnknownUpgrade81QueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeUnknownUpgrade81QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUnknownUpgrade8QueuedOrBetter">

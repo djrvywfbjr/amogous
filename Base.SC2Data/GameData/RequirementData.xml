@@ -8408,6 +8408,12 @@
         <NodeArray index="Use" Link="CountUpgradeUnknownUpgrade81CompleteOnly"/>
         <NodeArray index="Show" Link="CountUpgradeUnknownUpgrade81CompleteOnly"/>
     </CRequirement>
+    <CRequirement id="UnknownRequirement129">
+        <NodeArray index="Show" Link="CountBehaviorUnknownBehavior50CompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="UnknownRequirement1292">
+        <NodeArray index="Show" Link="NotCountBehaviorUnknownBehavior50CompleteOnlyAtUnit"/>
+    </CRequirement>
     <CRequirement id="UnknownRequirement13">
         <NodeArray index="Show" Link="Not2584292422CountUpgradeUnknownUpgrade3QueuedOrBetter2584292422"/>
     </CRequirement>

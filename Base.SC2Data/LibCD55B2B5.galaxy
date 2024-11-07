@@ -116,6 +116,26 @@ void libCD55B2B5_gt_MineralNeutral_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
+// Trigger: Enslaver Unsiege
+//--------------------------------------------------------------------------------------------------
+bool libCD55B2B5_gt_EnslaverUnsiege_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UnitIssueOrder(EventUnit(), Order(AbilityCommand("OdinBarrage62", 1)), c_orderQueueAddToFront);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCD55B2B5_gt_EnslaverUnsiege_Init () {
+    libCD55B2B5_gt_EnslaverUnsiege = TriggerCreate("libCD55B2B5_gt_EnslaverUnsiege_Func");
+    TriggerAddEventUnitAbility(libCD55B2B5_gt_EnslaverUnsiege, null, AbilityCommand("Stimpack10", 0), c_unitAbilStageAll, false);
+}
+
+//--------------------------------------------------------------------------------------------------
 // Trigger: PVE T
 //--------------------------------------------------------------------------------------------------
 bool libCD55B2B5_gt_PVET_Func (bool testConds, bool runActions) {
@@ -9806,6 +9826,7 @@ void libCD55B2B5_gt_FuckTheReveal_Init () {
 void libCD55B2B5_InitTriggers () {
     libCD55B2B5_gt_AlphaUnsiege_Init();
     libCD55B2B5_gt_MineralNeutral_Init();
+    libCD55B2B5_gt_EnslaverUnsiege_Init();
     libCD55B2B5_gt_PVET_Init();
     libCD55B2B5_gt_MaltanisDie_Init();
     libCD55B2B5_gt_DarkOnesChooseP1_Init();

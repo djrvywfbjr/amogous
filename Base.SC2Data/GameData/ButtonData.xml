@@ -4292,6 +4292,9 @@
         <EditorCategories value="Race:Zerg"/>
         <HotkeyAlias value="PoisonNova223"/>
     </CButton>
+    <CButton id="PsionicLift">
+        <Hotkey value="Button/Hotkey/PsionicLift3"/>
+    </CButton>
     <CButton id="Relocate">
         <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-scoutchampionstunmissiles.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-kerrigan-leapingstrike.dds"/>
@@ -4312,6 +4315,11 @@
         <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-empowermeslaves.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
         <EditorCategories value="Race:Terran"/>
+    </CButton>
+    <CButton id="SOAOrbitalStrike2222">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-purificationblast.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-spearofadun-orbitalstrike.dds"/>
+        <EditorCategories value="Race:Protoss"/>
     </CButton>
     <CButton id="SendScientist">
         <Icon value="Assets\Textures\btn-unit-terran-sciencevessel.dds"/>
@@ -7107,7 +7115,7 @@
         <EditorCategories value="Race:Terran"/>
     </CButton>
     <CButton id="CalldownMULE425532">
-        <Icon value="Assets\Textures\wireframe-partparcel-hybrid-moebiushybrid-shield00.dds"/>
+        <Icon value="Assets\Textures\wireframe-void-voidthrasher.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
@@ -29389,6 +29397,12 @@
     <CButton id="UnknownButton1202">
         <Icon value="Assets\Textures\btn-ability-zeratul-darktemplar-backtotheshadows.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-zeratul-darktemplar-backtotheshadows.dds"/>
+    </CButton>
+    <CButton id="UnknownButton121">
+        <Icon value="Assets\Textures\btn-ability-zeratul-stalker-vengeanceofthevoid.dds"/>
+    </CButton>
+    <CButton id="UnknownButton122">
+        <Icon value="Assets\Textures\btn-ability-zeratul-stalker-phasebattery.dds"/>
     </CButton>
     <CButton id="UnknownButton13">
         <Icon value="Assets\Textures\btn-ability-protoss-scarabshot.dds"/>

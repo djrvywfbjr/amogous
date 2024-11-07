@@ -203,6 +203,7 @@ Trigger/Name/lib_CD55B2B5_8C20FD99=AntamoTrain8
 Trigger/Name/lib_CD55B2B5_8CAE7BEC=CastawayChoose
 Trigger/Name/lib_CD55B2B5_8CF59A1F=PhaseObelisk
 Trigger/Name/lib_CD55B2B5_8E708C05=fuck
+Trigger/Name/lib_CD55B2B5_8EF0AD9A=Enslaver Unsiege
 Trigger/Name/lib_CD55B2B5_8FFC6783=Choose Leade 2
 Trigger/Name/lib_CD55B2B5_90808F95=BlueSextell
 Trigger/Name/lib_CD55B2B5_90D6B5F4=Python'sBLoodCUltChoose

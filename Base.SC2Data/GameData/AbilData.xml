@@ -687,6 +687,28 @@
         <AINotifyEffect value="ArtanisAstralWind3"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="ArtanisAstralWind4"/>
     </CAbilEffectInstant>
+    <CAbilEffectTarget id="CybrosBombardmentCP22">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="SOAOrbitalStrikeCP2222"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Link value="Abil/DehakaRevive"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Cooldown Link="Abil/SOAOrbitalStrikeExecute2" Location="Unit" TimeUse="5"/>
+        </Cost>
+        <Range value="12"/>
+        <Arc value="360"/>
+        <AutoCastFilters value="Visible;Player,Ally,Neutral"/>
+        <AutoCastRange value="12"/>
+        <PrepTime value="0.125"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SOAOrbitalStrike2222"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="Irradiate22353">
         <EditorCategories value="AbilityorEffectType:Units,Race:Terran"/>
         <Effect index="0" value="VoidRayVoid292353"/>
@@ -780,6 +802,7 @@
         <AutoCastRange value="30"/>
         <AutoCastValidatorArray value="RequiresWorkers"/>
         <AutoCastValidatorArray value="HasCargoSpace"/>
+        <AutoCastValidatorArray value="IsNotWatchtower"/>
         <AutoCastValidatorArray value="HasPower"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="SendScientist">
@@ -798,8 +821,17 @@
         <AutoCastRange value="30"/>
         <AutoCastValidatorArray value="RequiresScientists"/>
         <AutoCastValidatorArray value="HasCargoSpace"/>
+        <AutoCastValidatorArray value="IsNotWatchtower"/>
         <AutoCastValidatorArray value="HasPower"/>
     </CAbilEffectTarget>
+    <CAbilBehavior id="ShadowShieldGenerator4">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <CmdButtonArray index="On" DefaultButtonFace="SJHyperionYamato45232"/>
+        <CmdButtonArray index="Off" DefaultButtonFace="UnknownButton121"/>
+        <Flags index="Toggle" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <BehaviorArray value="UnknownBehavior50"/>
+    </CAbilBehavior>
     <CAbilEffectInstant id="TakentanksMakery">
         <OrderArray index="0" Model="Assets\UI\Cursors\WayPointConfirm_Void\WayPointConfirm_Void.m3"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -29991,7 +30023,7 @@
         <Flags index="Transient" value="1"/>
         <Cost>
             <Charge Link="Abil/DehakaRevive" Location="Unit"/>
-            <Cooldown TimeUse="30"/>
+            <Cooldown TimeUse="45"/>
         </Cost>
         <AutoCastRange value="1"/>
         <AutoCastValidatorArray value="CasterShieldsLT1"/>
@@ -35306,7 +35338,7 @@
             <Button DefaultButtonFace="Marine13"/>
             <Unit value="XelNagaChargedCrystal2"/>
         </InfoArray>
-        <InfoArray index="Train3" Time="30">
+        <InfoArray index="Train3" Time="20">
             <Button DefaultButtonFace="Zealot4" Requirements="HaveRelicOfHope222"/>
             <Unit value="PrisonZealot3"/>
         </InfoArray>
@@ -35314,15 +35346,15 @@
             <Button DefaultButtonFace="Hydralisk4" Requirements="HaveRelicOfHope222"/>
             <Unit value="Hydralisk4"/>
         </InfoArray>
-        <InfoArray index="Train5" Time="45">
+        <InfoArray index="Train5" Time="36.4">
             <Button DefaultButtonFace="HighTemplarAiur4" Requirements="HaveRelicOfHope2222"/>
             <Unit value="Discharger2"/>
         </InfoArray>
-        <InfoArray index="Train6" Time="55">
+        <InfoArray index="Train6" Time="45">
             <Button DefaultButtonFace="Immortal22" Requirements="HaveRelicOfHope2222"/>
             <Unit value="ImmortalShakuras2"/>
         </InfoArray>
-        <InfoArray index="Train7" Time="45">
+        <InfoArray index="Train7" Time="35">
             <Button DefaultButtonFace="HighTemplarAiur42"/>
             <Unit value="HybridReaver22"/>
         </InfoArray>
@@ -42029,7 +42061,7 @@
         <InfoArray index="Build4" Unit="AmerdallGate" Time="55">
             <Button DefaultButtonFace="Gateway3" Requirements="PureBornHaveAmerdallGate42"/>
         </InfoArray>
-        <InfoArray index="Build6" Unit="VortexWidener" Time="180">
+        <InfoArray index="Build6" Unit="VortexWidener" Time="64">
             <Button DefaultButtonFace="FleetBeacon3" Requirements="PureBornHaveAmerdallGate32"/>
         </InfoArray>
         <InfoArray index="Build7" Unit="CouncilOfThePure">
@@ -42047,7 +42079,7 @@
         <InfoArray index="Build12" Unit="TribesmanTotem">
             <Button DefaultButtonFace="DarkShrine3" Requirements="PureBornHaveAmerdallGate3"/>
         </InfoArray>
-        <InfoArray index="Build13" Unit="SacredBay">
+        <InfoArray index="Build13" Unit="SacredBay" Time="35">
             <Button DefaultButtonFace="RoboticsBay2" Requirements="PureBornHaveAmerdallGate32"/>
         </InfoArray>
         <InfoArray index="Build15" Unit="TribesmanHall" Time="25">
@@ -48440,7 +48472,7 @@
             <Cooldown Link="Abil/SOAMothershipLineAttack" TimeUse="30"/>
         </Cost>
         <Range value="500"/>
-        <PrepTime value="3"/>
+        <PrepTime value="7"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="SOAMothershipLineAttack222"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="SOAMothershipLineAttack23">

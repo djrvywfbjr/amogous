@@ -3872,6 +3872,17 @@
         <Effect value="GlancerTorpedoesPersistent"/>
         <AllowedMovement value="Slowing"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="HighTemplarWeapon5">
+        <Name value="Weapon/Name/PsiBlast"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-stalker-vengeanceofthevoid.dds"/>
+        <DisplayEffect value="HighTemplarWeaponDamage5"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="6.5"/>
+        <Range value="6"/>
+        <Period value="1.754"/>
+        <Effect value="HighTemplarWeaponLM5"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="StarshipRailgun">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-advanceballistics.dds"/>
@@ -6696,7 +6707,7 @@
         <DisplayEffect value="MengskSiegeTankDamage2"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="8"/>
-        <Period value="1.04"/>
+        <Period value="0.9"/>
         <Effect value="MengskSiegeTankDamage2"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="MengskSiegeTankSieged2">
