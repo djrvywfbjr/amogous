@@ -25721,6 +25721,35 @@
         <EffectArray value="MilitaryStationAddScientist2"/>
         <EffectArray value="MilitaryStationAddWorker2"/>
     </CEffectSet>
+    <CEffectModifyUnit id="MohandarStickyBombDamage42">
+        <EditorCategories value=""/>
+        <VitalArray index="Shields">
+            <Change value="-200"/>
+        </VitalArray>
+        <VitalArray index="Energy">
+            <Change value="-200"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectEnumArea id="MohandarStickyBombSearch42">
+        <EditorCategories value=""/>
+        <SearchFilters value="Visible;Self,Player,Ally,Neutral,Missile,Item,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="3" Effect="MohandarStickyBombDamage42"/>
+    </CEffectEnumArea>
+    <CEffectSet id="MohandarStickyBombSet42">
+        <EditorCategories value=""/>
+        <EffectArray value="MohandarStickyBombSearch42"/>
+        <EffectArray value="MohandarStickyBombDamage42"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="PsiDisruptionApplyBehavior32222232">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="PsiDisruption32222232"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="PsiDisruptionSearchArea32222232">
+        <EditorCategories value="Race:Terran"/>
+        <SearchFilters value="Visible;Neutral,Enemy,Missile,Stasis,Dead,Hidden,Invulnerable,Benign"/>
+        <AreaArray Radius="9" Effect="PsiDisruptionApplyBehavior32222232"/>
+    </CEffectEnumArea>
     <CEffectSet id="SJPirateYamato3522">
         <EditorCategories value="Race:Terran"/>
         <EffectArray value="SJPirateYamatoA3522"/>
@@ -25768,21 +25797,19 @@
         <ExpireEffect value="SOAOrbitalStrikeImpactSearch2222"/>
         <RevealRadius value="1"/>
         <RevealFlags index="Unfog" value="1"/>
+        <WhichLocation Value="TargetUnit"/>
     </CEffectCreatePersistent>
     <CEffectDamage id="SOAOrbitalStrikeDamage2222">
         <EditorCategories value="Race:Protoss"/>
-        <ShieldBonus value="70"/>
-        <Amount value="60"/>
+        <ShieldBonus value="50"/>
     </CEffectDamage>
     <CEffectDamage id="SOAOrbitalStrikeImpactDummy2222">
         <EditorCategories value="Race:Protoss"/>
     </CEffectDamage>
-    <CEffectEnumArea id="SOAOrbitalStrikeImpactSearch2222">
+    <CEffectSet id="SOAOrbitalStrikeImpactSearch2222">
         <EditorCategories value="Race:Protoss"/>
-        <LaunchLocation Value="TargetPoint"/>
-        <SearchFilters value="-;Self,Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <AreaArray Radius="1" Effect="SOAOrbitalStrikeDamage2222"/>
-    </CEffectEnumArea>
+        <EffectArray value="UnknownEffect66"/>
+    </CEffectSet>
     <CEffectSet id="SendScientist">
         <EditorCategories value=""/>
         <ValidatorArray value="RequiresScientists"/>
@@ -25797,6 +25824,11 @@
         <ValidatorArray value="IsNotWatchtower"/>
         <ValidatorArray value="HasPower"/>
     </CEffectSet>
+    <CEffectApplyBehavior id="ShieldUp103622">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="PsiDisruptionSearch32222232"/>
+    </CEffectApplyBehavior>
     <CEffectDamage id="StarshipRailgunDamage" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <ImpactLocation Value="TargetUnit"/>
@@ -53088,7 +53120,7 @@
         <EditorCategories value="Race:Protoss"/>
         <AttributeFactor index="Massive" value="5"/>
         <Visibility value="Hidden"/>
-        <Amount value="5"/>
+        <Amount value="9"/>
     </CEffectDamage>
     <CEffectDamage id="PsiStormDamage8">
         <ValidatorArray value="PsiStormUTargetFilters"/>
@@ -53185,7 +53217,7 @@
         <ResponseFlags index="Flee" value="1"/>
         <AttributeFactor index="Massive" value="5"/>
         <Flags index="Notification" value="1"/>
-        <Amount value="50"/>
+        <Amount value="35"/>
     </CEffectDamage>
     <CEffectDamage id="PsiStormDamageInitial8">
         <ValidatorArray value="PsiStormUTargetFilters"/>
@@ -70925,6 +70957,19 @@
         <EditorCategories value=""/>
         <Behavior value="UnknownBehavior49"/>
     </CEffectApplyBehavior>
+    <CEffectEnumArea id="UnknownEffect65">
+        <EditorCategories value=""/>
+        <AreaArray Radius="3" Effect="MohandarStickyBombDamage42"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="UnknownEffect66">
+        <EditorCategories value=""/>
+        <Behavior value="MohandarStickyBomb42"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="UnknownEffect67">
+        <EditorCategories value=""/>
+        <Amount value="1"/>
+        <Fraction value="0.5"/>
+    </CEffectDamage>
     <CEffectSet id="UnknownEffect7">
         <EditorCategories value=""/>
         <EffectArray value="NeedleClaws3"/>
@@ -73581,7 +73626,7 @@
         <DamageModifierSource Value="Caster"/>
         <Visibility value="Visible"/>
         <Kind value="Ranged"/>
-        <Amount value="30"/>
+        <Amount value="40"/>
     </CEffectDamage>
     <CEffectDamage id="VoidRayVoidDamage29235" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>

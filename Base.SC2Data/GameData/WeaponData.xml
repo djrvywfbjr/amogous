@@ -9608,6 +9608,7 @@
         <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Period value="1"/>
         <AllowedMovement value="Slowing"/>
+        <Range value="7"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ScoutAir3">
         <EditorCategories value="Race:Protoss"/>
@@ -9633,7 +9634,6 @@
         <EditorCategories value="Race:Protoss"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="4"/>
         <Period value="1.694"/>
         <AllowedMovement value="Slowing"/>
     </CWeaponLegacy>

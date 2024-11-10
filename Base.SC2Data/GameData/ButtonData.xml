@@ -4130,6 +4130,10 @@
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="CalldownMULE42332"/>
     </CButton>
+    <CButton id="CombatShield2143622">
+        <Icon value="Assets\Textures\btn-ability-zeratul-sentry-reflectionshield.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
     <CButton id="EquipCloakingMantle">
         <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-cloak-color.dds"/>
@@ -4317,7 +4321,7 @@
         <EditorCategories value="Race:Terran"/>
     </CButton>
     <CButton id="SOAOrbitalStrike2222">
-        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-purificationblast.dds"/>
+        <Icon value="Assets\Textures\btn-ability-spearofadun-temporalfield.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-spearofadun-orbitalstrike.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
@@ -29403,6 +29407,10 @@
     </CButton>
     <CButton id="UnknownButton122">
         <Icon value="Assets\Textures\btn-ability-zeratul-stalker-phasebattery.dds"/>
+    </CButton>
+    <CButton id="UnknownButton123">
+        <Icon value="Assets\Textures\talent-raynor-level04-barracksresearchbundle.dds"/>
+        <AlertIcon value="Assets\Textures\talent-raynor-level04-barracksresearchbundle.dds"/>
     </CButton>
     <CButton id="UnknownButton13">
         <Icon value="Assets\Textures\btn-ability-protoss-scarabshot.dds"/>

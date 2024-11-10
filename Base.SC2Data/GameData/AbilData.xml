@@ -690,17 +690,11 @@
     <CAbilEffectTarget id="CybrosBombardmentCP22">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Effect index="0" value="SOAOrbitalStrikeCP2222"/>
-        <Flags index="AutoCast" value="1"/>
-        <Flags index="AutoCastOn" value="1"/>
         <Flags index="RequireTargetVision" value="0"/>
         <Cost>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/DehakaRevive"/>
-                <Location value="Unit"/>
-            </Charge>
-            <Cooldown Link="Abil/SOAOrbitalStrikeExecute2" Location="Unit" TimeUse="5"/>
+            <Vital index="Energy" value="125"/>
+            <Charge Link="Abil/DehakaRevive" Location="Unit"/>
+            <Cooldown Link="Abil/SOAOrbitalStrikeExecute2" Location="Unit"/>
         </Cost>
         <Range value="12"/>
         <Arc value="360"/>
@@ -832,6 +826,17 @@
         <Flags index="Transient" value="1"/>
         <BehaviorArray value="UnknownBehavior50"/>
     </CAbilBehavior>
+    <CAbilEffectInstant id="ShieldUp133622">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="ShieldUp103622"/>
+        <Flags index="BestUnit" value="1"/>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link="Abil/AlarakAvatar" Location="Unit" TimeUse="60"/>
+        </Cost>
+        <AINotifyEffect value="ShieldUp"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield2143622"/>
+    </CAbilEffectInstant>
     <CAbilEffectInstant id="TakentanksMakery">
         <OrderArray index="0" Model="Assets\UI\Cursors\WayPointConfirm_Void\WayPointConfirm_Void.m3"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -4919,7 +4924,7 @@
             <Button DefaultButtonFace="Mutalisk2"/>
             <Unit value="QuickALisk"/>
         </InfoArray>
-        <InfoArray index="Train12" Time="40">
+        <InfoArray index="Train12" Time="29">
             <Button DefaultButtonFace="Banshee3"/>
             <Unit value="SpecialOperative"/>
         </InfoArray>
@@ -4935,7 +4940,7 @@
             <Button DefaultButtonFace="Roach2"/>
             <Unit value="CerberusRoach"/>
         </InfoArray>
-        <InfoArray index="Train16" Time="90">
+        <InfoArray index="Train16" Time="64">
             <Button DefaultButtonFace="FusionCore42" Requirements="HaveCoreOfScience4222"/>
             <Unit value="MechaHybrid"/>
         </InfoArray>
@@ -4943,7 +4948,7 @@
             <Button DefaultButtonFace="Viper2"/>
             <Unit value="Catelite"/>
         </InfoArray>
-        <InfoArray index="Train18" Time="40">
+        <InfoArray index="Train18" Time="29">
             <Button DefaultButtonFace="VikingFighter4"/>
             <Unit value="Agonizer"/>
         </InfoArray>
@@ -16853,8 +16858,6 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="CorsairMPDisruptionWebCreatePersistent"/>
         <Flags index="AllowMovement" value="1"/>
-        <Flags index="AutoCast" value="1"/>
-        <Flags index="AutoCastOn" value="1"/>
         <Flags index="NoDeceleration" value="1"/>
         <Cost>
             <Charge>
@@ -19975,7 +19978,7 @@
             <Resource index="Vespene" value="125"/>
             <Button DefaultButtonFace="Wraith22222224" Requirements="LearnCleanserUpgrade324"/>
         </InfoArray>
-        <InfoArray index="Research5" Upgrade="UmojanBasicUnitUpgrade65322">
+        <InfoArray index="Research5" Time="75" Upgrade="UmojanBasicUnitUpgrade65322">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="200"/>
             <Button DefaultButtonFace="Wraith222222242" Requirements="LearnCleanserUpgrade3242"/>
@@ -20059,10 +20062,15 @@
             <Resource index="Vespene" value="150"/>
             <Button DefaultButtonFace="UnknownButton82" Requirements="UnknownRequirement124"/>
         </InfoArray>
-        <InfoArray index="Research24" Time="75" Upgrade="UnknownUpgrade80">
+        <InfoArray index="Research24" Time="220" Upgrade="UnknownUpgrade80">
             <Resource index="Minerals" value="75"/>
             <Resource index="Vespene" value="75"/>
             <Button DefaultButtonFace="UnknownButton116" Requirements="UnknownRequirement125"/>
+        </InfoArray>
+        <InfoArray index="Research25" Time="168" Upgrade="UmojanBasicUnitUpgrade653222">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="UnknownButton123" Requirements="UnknownRequirement130"/>
         </InfoArray>
     </CAbilResearch>
     <CAbilResearch id="EngineeringBayResearch3" parent="EngineeringBayResearch">
@@ -30022,6 +30030,7 @@
         <Effect index="0" value="VoidShieldCapacitor22"/>
         <Flags index="Transient" value="1"/>
         <Cost>
+            <Vital index="Energy" value="45"/>
             <Charge Link="Abil/DehakaRevive" Location="Unit"/>
             <Cooldown TimeUse="45"/>
         </Cost>
@@ -54622,17 +54631,17 @@
     <CAbilResearch id="UnknownAbility14">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Activity value="UI/Training"/>
-        <InfoArray index="Research1" Time="240" Upgrade="UnknownUpgrade53">
+        <InfoArray index="Research1" Time="160" Upgrade="UnknownUpgrade53">
             <Resource index="Minerals" value="500"/>
             <Resource index="Vespene" value="200"/>
             <Button DefaultButtonFace="UnknownButton8722" Requirements="UnknownRequirement1002"/>
         </InfoArray>
-        <InfoArray index="Research2" Time="240" Upgrade="UnknownUpgrade55">
+        <InfoArray index="Research2" Time="160" Upgrade="UnknownUpgrade55">
             <Resource index="Minerals" value="500"/>
             <Resource index="Vespene" value="500"/>
             <Button DefaultButtonFace="UnknownButton872" Requirements="UnknownRequirement100"/>
         </InfoArray>
-        <InfoArray index="Research3" Time="240" Upgrade="UnknownUpgrade54">
+        <InfoArray index="Research3" Time="160" Upgrade="UnknownUpgrade54">
             <Resource index="Minerals" value="700"/>
             <Resource index="Vespene" value="700"/>
             <Button DefaultButtonFace="UnknownButton87" Requirements="UnknownRequirement1003"/>
@@ -56267,7 +56276,7 @@
         <InfoArray index="Build1" Unit="CommandCenter2" Time="50">
             <Button DefaultButtonFace="CommandCenter6" Requirements=""/>
         </InfoArray>
-        <InfoArray index="Build2" Unit="ControlStation" Time="20">
+        <InfoArray index="Build2" Unit="ControlStation" Time="16.8">
             <Button DefaultButtonFace="SupplyDepot4" Requirements=""/>
         </InfoArray>
         <InfoArray index="Build3" Unit="Refinery5">
@@ -66743,12 +66752,12 @@
             </Charge>
             <Cooldown Link="YamatoYamato4YamatoJuggernautCrackerCP2" TimeUse="5"/>
         </Cost>
-        <Range value="10"/>
+        <Range value="12"/>
         <RangeSlop value="10"/>
         <Arc value="360"/>
         <AutoCastFilters value="Visible;Player,Ally,Neutral,Light,Dead,Invulnerable"/>
         <AutoCastRange value="10"/>
-        <PrepTime value="1"/>
+        <PrepTime value="0.3"/>
         <ShowProgressArray index="Prep" value="1"/>
         <UninterruptibleArray index="Prep" value="1"/>
         <UninterruptibleArray index="Cast" value="1"/>
@@ -68538,6 +68547,9 @@
         <AcquireAttackers value="1"/>
         <FollowRange value="1.5"/>
     </CAbilEffectTarget>
+    <CAbilQueue id="que1">
+        <Flags index="Passive" value="1"/>
+    </CAbilQueue>
     <CAbilQueue id="que52">
         <EditorCategories value="Race:Neutral,AbilityorEffectType:Structures"/>
         <QueueSize value="5"/>

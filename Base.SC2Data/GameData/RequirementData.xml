@@ -8417,6 +8417,9 @@
     <CRequirement id="UnknownRequirement13">
         <NodeArray index="Show" Link="Not2584292422CountUpgradeUnknownUpgrade3QueuedOrBetter2584292422"/>
     </CRequirement>
+    <CRequirement id="UnknownRequirement130">
+        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade653222QueuedOrBetter"/>
+    </CRequirement>
     <CRequirement id="UnknownRequirement132">
         <NodeArray index="Show" Link="CountUpgradeUnknownUpgrade3CompleteOnly2584292422"/>
     </CRequirement>

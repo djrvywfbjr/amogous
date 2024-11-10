@@ -11160,6 +11160,14 @@
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade652"/>
     </CUpgrade>
+    <CUpgrade id="UmojanBasicUnitUpgrade653222">
+        <EffectArray Operation="Set" Reference="Unit,CommandCenter2,CostResource[Minerals]" Value="200"/>
+        <EffectArray Operation="Set" Reference="Unit,Refinery5,CostResource[Minerals]" Value="15"/>
+        <EffectArray Operation="Set" Reference="Abil,TerranBuild5,InfoArray[Build10].Time" Value="30.000000"/>
+        <EffectArray Operation="Set" Reference="Abil,TerranBuild5,InfoArray[Build2].Time" Value="8.000000"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <LeaderAlias value="UmojanBasicUnitUpgrade6532"/>
+    </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade65323">
         <EffectArray Operation="Set" Reference="Behavior,PsiDisruptionSearch322226,Modification.DeathResponse.Chance" Value="1"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>

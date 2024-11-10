@@ -1873,7 +1873,6 @@
     </CRequirementCountBehavior>
     <CRequirementCountBehavior id="CountBehaviorUnknownBehavior50CompleteOnlyAtUnit">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="UnknownBehavior50" State="CompleteOnlyAtUnit"/>
     </CRequirementCountBehavior>
     <CRequirementCountBehavior id="CountBehaviorUnknownUpgrade18CompleteOnly">
@@ -14014,6 +14013,11 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="UmojanBasicUnitUpgrade652" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade653222QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="UmojanBasicUnitUpgrade653222" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade65322CompleteOnly3580350487">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="UmojanBasicUnitUpgrade65322" State="CompleteOnly"/>
@@ -16204,7 +16208,6 @@
         <OperandArray index="0" value="CountBehaviorSquadSightPersistentBehavior3CompleteOnlyAtUnit"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountBehaviorUnknownBehavior50CompleteOnlyAtUnit">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountBehaviorUnknownBehavior50CompleteOnlyAtUnit"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountBehaviorVoidSeekerDock2CompleteOnlyAtUnit">
@@ -18936,6 +18939,10 @@
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade652QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade652QueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade653222QueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade653222QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade65322QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade65322QueuedOrBetter"/>

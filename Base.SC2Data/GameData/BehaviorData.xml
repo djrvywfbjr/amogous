@@ -909,6 +909,19 @@
         <Modification MoveSpeedBonus="2.5" AccelerationBonus="500" DecelerationBonus="500"/>
         <TimeScaleSource Value="Global"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="HardenedShield10">
+        <Alignment value="Positive"/>
+        <Cost>
+            <Cooldown Link="Immortal Shield"/>
+        </Cost>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-HardenedShields.dds"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <DamageResponse ClampMaximum="10" Minimum="15">
+            <Kind index="Spell" value="0"/>
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
     <CBehaviorBuff id="HardenedShield9">
         <Alignment value="Positive"/>
         <Cost>
@@ -923,6 +936,17 @@
             <Kind index="Spell" value="0"/>
             <Chance value="1"/>
         </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MohandarStickyBomb42">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-phaseshift2.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <Duration value="5"/>
+        <ExpireEffect value="MohandarStickyBombSet42"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="NoWeapon">
         <Alignment value="Negative"/>
@@ -989,6 +1013,28 @@
                 <Cooldown Link="Behavior/AntamoAirAll"/>
             </Cost>
         </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PsiDisruption32222232">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-psidisruption.dds"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Duration value="0.1875"/>
+        <DamageResponse Handled="UnknownEffect67"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PsiDisruptionSearch32222232">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+        <DisableValidatorArray value="NotDeadOrConstruction"/>
+        <Duration value="15"/>
+        <Period value="0.125"/>
+        <PeriodicEffect value="PsiDisruptionSearchArea32222232"/>
+        <Modification>
+            <ModifyFlags index="DisableWeapons" value="1"/>
+            <ModifyFlags index="SuppressMoving" value="1"/>
+            <ModifyFlags index="SuppressTurning" value="1"/>
+            <StateFlags index="Stun" value="1"/>
+            <StateFlags index="SuppressAttack" value="1"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="StrikeStarting">
         <Cost>
