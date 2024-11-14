@@ -4130,6 +4130,18 @@
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="CalldownMULE42332"/>
     </CButton>
+    <CButton id="CalldownMULE4233262322224322">
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-modeswapping.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-terran-nova-modeswapping.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="CalldownMULE42332"/>
+    </CButton>
+    <CButton id="CalldownMULE42332623222243222">
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-dominationvisor.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-terran-nova-dominationvisor.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="CalldownMULE42332"/>
+    </CButton>
     <CButton id="CombatShield2143622">
         <Icon value="Assets\Textures\btn-ability-zeratul-sentry-reflectionshield.dds"/>
         <EditorCategories value="Race:Terran"/>
@@ -4186,6 +4198,23 @@
     </CButton>
     <CButton id="ExpeditedTransfer">
         <Icon value="Assets\Textures\btn-tips-credit.dds"/>
+    </CButton>
+    <CButton id="Firebat722">
+        <Icon value="Assets\Textures\wireframe-ghostfemale.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-firebat.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="Firebat"/>
+    </CButton>
+    <CButton id="Firebat7222">
+        <Icon value="Assets\Textures\wireframe-ghostfemale.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-firebat.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="Firebat"/>
+    </CButton>
+    <CButton id="Frenzy22">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-swarmfrenzy.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-frenzy.dds"/>
+        <EditorCategories value="Race:Zerg"/>
     </CButton>
     <CButton id="Marauder334325424">
         <Tooltip value="Button/Tooltip/Marauder3343254242"/>
@@ -4324,6 +4353,11 @@
         <Icon value="Assets\Textures\btn-ability-spearofadun-temporalfield.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-spearofadun-orbitalstrike.dds"/>
         <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="Scan32">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-dragoonsolariteflare.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
     </CButton>
     <CButton id="SendScientist">
         <Icon value="Assets\Textures\btn-unit-terran-sciencevessel.dds"/>
@@ -29411,6 +29445,21 @@
     <CButton id="UnknownButton123">
         <Icon value="Assets\Textures\talent-raynor-level04-barracksresearchbundle.dds"/>
         <AlertIcon value="Assets\Textures\talent-raynor-level04-barracksresearchbundle.dds"/>
+    </CButton>
+    <CButton id="UnknownButton124">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+    </CButton>
+    <CButton id="UnknownButton125">
+        <Icon value="Assets\Textures\btn-techupgrade-terran-impalerrounds.dds"/>
+    </CButton>
+    <CButton id="UnknownButton126">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+    </CButton>
+    <CButton id="UnknownButton1262">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+    </CButton>
+    <CButton id="UnknownButton127">
+        <Icon value="Assets\Textures\btn-ability-mengsk-topbar-dogsofwar-level04.dds"/>
     </CButton>
     <CButton id="UnknownButton13">
         <Icon value="Assets\Textures\btn-ability-protoss-scarabshot.dds"/>

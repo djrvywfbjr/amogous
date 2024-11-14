@@ -10283,11 +10283,18 @@
         <AreaArray Radius="3" Effect="PunisherGrenadesLM422"/>
         <MaxCount value="3"/>
     </CEffectEnumArea>
+    <CEffectCreatePersistent id="ChannelSnipeCreatePersistent">
+        <PeriodCount value="20"/>
+    </CEffectCreatePersistent>
     <CEffectApplyBehavior id="CraftStarshipRailgun">
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
         <Behavior value="WepStarshipRailgun"/>
     </CEffectApplyBehavior>
+    <CEffectSet id="DarkArchonMindControlSet322">
+        <EditorCategories value=""/>
+        <EffectArray value="UnknownEffect682"/>
+    </CEffectSet>
     <CEffectEnumArea id="DispersiveFire">
         <EditorCategories value=""/>
         <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Invulnerable"/>
@@ -11196,6 +11203,19 @@
         <EffectArray value="DivineInterventionDamage"/>
         <EffectArray value="DivineInterventionStun"/>
     </CEffectSet>
+    <CEffectApplyBehavior id="FrenzyApplyBehavior22">
+        <ValidatorArray index="0" value="IsZerg"/>
+        <EditorCategories value="Race:Zerg"/>
+        <Behavior value="Frenzy22"/>
+    </CEffectApplyBehavior>
+    <CEffectLaunchMissile id="FrenzyLaunchMissile22">
+        <ValidatorArray index="0" value=""/>
+        <EditorCategories value="Race:Zerg"/>
+        <LaunchEffect value="SurfaceForSpellcast22"/>
+        <ImpactEffect value="FrenzyApplyBehavior22"/>
+        <AmmoUnit value="FrenzyWeapon2"/>
+        <Visibility value="Visible"/>
+    </CEffectLaunchMissile>
     <CEffectDamage id="HellRifleDamage" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <AttributeBonus index="Biological" value="15"/>
@@ -25740,11 +25760,52 @@
         <EffectArray value="MohandarStickyBombSearch42"/>
         <EffectArray value="MohandarStickyBombDamage42"/>
     </CEffectSet>
+    <CEffectDamage id="NovaWeaponCanisterRifleCloaked2" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <Kind value="Ranged"/>
+        <Amount value="20"/>
+        <ShieldBonus value="20"/>
+        <ArmorReduction value="-5"/>
+    </CEffectDamage>
+    <CEffectSwitch id="NovaWeaponCanisterRifleCloakedSwitch2">
+        <EditorCategories value="Race:Terran"/>
+        <CaseArray Validator="CasterIsCloaked" Effect="NovaWeaponCanisterRifleCloaked2"/>
+        <CaseDefault value="NovaWeaponCanisterRifleUncloaked2"/>
+    </CEffectSwitch>
+    <CEffectDamage id="NovaWeaponCanisterRifleUncloaked2" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <ShieldBonus value="20"/>
+        <ArmorReduction value="-5"/>
+        <Kind value="Ranged"/>
+        <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="PsiDisruptionApplyBehavior12">
+        <ValidatorArray index="0" value="IsZerg"/>
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="PsiDisruption12"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="PsiDisruptionApplyBehavior122">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="PsiDisruption122"/>
+    </CEffectApplyBehavior>
     <CEffectApplyBehavior id="PsiDisruptionApplyBehavior32222232">
         <ValidatorArray index="0" removed="1"/>
         <EditorCategories value="Race:Terran"/>
         <Behavior value="PsiDisruption32222232"/>
     </CEffectApplyBehavior>
+    <CEffectEnumArea id="PsiDisruptionSearchArea11">
+        <EditorCategories value="Race:Terran"/>
+        <SearchFilters value="Visible;Self,Neutral,Enemy,Structure,Heroic,Missile,Stasis,Dead,Hidden,Invulnerable,Benign"/>
+        <AreaArray Radius="8" Effect="PsiDisruptionApplyBehavior12"/>
+        <ValidatorArray value="IsZerg"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="PsiDisruptionSearchArea112">
+        <ValidatorArray value="IsTerran"/>
+        <EditorCategories value="Race:Terran"/>
+        <SearchFilters value="Psionic,Visible;Self,Neutral,Enemy,Structure,Heroic,Missile,Stasis,Dead,Hidden,Invulnerable,Benign"/>
+        <AreaArray Radius="8" Effect="PsiDisruptionApplyBehavior122"/>
+    </CEffectEnumArea>
     <CEffectEnumArea id="PsiDisruptionSearchArea32222232">
         <EditorCategories value="Race:Terran"/>
         <SearchFilters value="Visible;Neutral,Enemy,Missile,Stasis,Dead,Hidden,Invulnerable,Benign"/>
@@ -25810,6 +25871,13 @@
         <EditorCategories value="Race:Protoss"/>
         <EffectArray value="UnknownEffect66"/>
     </CEffectSet>
+    <CEffectCreatePersistent id="ScannerSweep32">
+        <EditorCategories value="Race:Terran"/>
+        <ExpireDelay value="18"/>
+        <RevealRadius value="7"/>
+        <RevealFlags index="Unfog" value="1"/>
+        <RevealFlags index="Detect" value="1"/>
+    </CEffectCreatePersistent>
     <CEffectSet id="SendScientist">
         <EditorCategories value=""/>
         <ValidatorArray value="RequiresScientists"/>
@@ -43860,7 +43928,6 @@
         <Alert value="CalldownLaunchObserver"/>
         <InitialDelay value="5"/>
         <ExpireEffect value="NukeDetonate33"/>
-        <FinalEffect value="NukeSuicide23"/>
         <PeriodCount value="13"/>
         <PeriodicPeriodArray value="0.2"/>
         <AINotifyEffect value="NukeDamage"/>
@@ -66622,17 +66689,17 @@
     </CEffectEnumArea>
     <CEffectEnumArea id="SoulAbsorptionSearch3">
         <EditorCategories value=""/>
-        <SearchFilters value="-;Self,Neutral,Enemy,Light,Robotic,Massive,Summoned"/>
+        <SearchFilters value="-;Self,Neutral,Enemy,Light,Robotic,Massive"/>
         <AreaArray Radius="17" Effect="SoulAbsorptionAB3"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="SoulAbsorptionSearch32">
         <EditorCategories value=""/>
-        <SearchFilters value="Light;Self,Neutral,Enemy,Robotic,Summoned"/>
+        <SearchFilters value="Light;Self,Neutral,Enemy,Robotic"/>
         <AreaArray Radius="17" Effect="SoulAbsorptionAB32"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="SoulAbsorptionSearch33">
         <EditorCategories value=""/>
-        <SearchFilters value="Massive;Self,Neutral,Enemy,Robotic,Summoned"/>
+        <SearchFilters value="Massive;Self,Neutral,Enemy,Robotic"/>
         <AreaArray Radius="17" Effect="SoulAbsorptionAB33"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="SoulAbsorptionSearch4">
@@ -67136,18 +67203,16 @@
     </CEffectLaunchMissile>
     <CEffectDamage id="SporeCrawlerU">
         <DamageInheritEffect value="ZerglingSunder323"/>
+        <AttributeBonus index="Biological" value="0"/>
+        <Amount value="20"/>
     </CEffectDamage>
     <CEffectDamage id="SporeCrawlerU2" parent="SporeCrawlerU">
         <Name value="Effect/Name/SporeCrawlerU2"/>
-        <AttributeBonus index="Biological" value="0"/>
-        <Amount value="20"/>
         <AreaArray Radius="2" Fraction="1"/>
         <SearchFilters value="-;Player,Ally"/>
     </CEffectDamage>
     <CEffectDamage id="SporeCrawlerU22" parent="SporeCrawlerU">
         <Name value="Effect/Name/SporeCrawlerU22"/>
-        <AttributeBonus index="Biological" value="0"/>
-        <Amount value="20"/>
     </CEffectDamage>
     <CEffectDamage id="SporeCrawlerU3" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Zerg"/>
@@ -68045,6 +68110,12 @@
         <Behavior value="GhostCloak22323"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="SurfaceForSpellcast2">
+        <ValidatorArray index="0" value="IsInfestorBurrowed"/>
+        <EditorCategories value="Race:Zerg"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="SurfaceForSpellCast2"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="SurfaceForSpellcast22">
         <ValidatorArray index="0" value="IsInfestorBurrowed"/>
         <EditorCategories value="Race:Zerg"/>
         <WhichUnit Value="Caster"/>
@@ -70970,6 +71041,17 @@
         <Amount value="1"/>
         <Fraction value="0.5"/>
     </CEffectDamage>
+    <CEffectRemoveBehavior id="UnknownEffect68">
+        <ValidatorArray index="0" value="UnknownValidator9"/>
+        <ValidatorArray value="IsZerg2"/>
+        <EditorCategories value=""/>
+        <BehaviorLink value="ShieldingEngine9352"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="UnknownEffect682">
+        <ValidatorArray index="0" value="IsZerg"/>
+        <EditorCategories value=""/>
+        <Behavior value="ShieldingEngine9352"/>
+    </CEffectApplyBehavior>
     <CEffectSet id="UnknownEffect7">
         <EditorCategories value=""/>
         <EffectArray value="NeedleClaws3"/>
@@ -74161,6 +74243,11 @@
         <WhichUnit Value="Caster"/>
         <Behavior value="VoidStalkerBlinkShieldRestore3"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="VoidStalkerBlinkApplyRestore4">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="VoidStalkerBlinkShieldRestore4"/>
+    </CEffectApplyBehavior>
     <CEffectTeleport id="VoidStalkerBlinkMultiple2" parent="Blink">
         <PlacementRange value="5"/>
         <Range value="5"/>
@@ -74169,6 +74256,13 @@
         <EditorCategories value=""/>
         <ImpactUnit Value="Caster"/>
         <VitalArray index="Shields">
+            <Change value="1"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectModifyUnit id="VoidStalkerBlinkRestoreModifyUnit3">
+        <EditorCategories value=""/>
+        <ImpactUnit Value="Caster"/>
+        <VitalArray index="Life">
             <Change value="1"/>
         </VitalArray>
     </CEffectModifyUnit>
@@ -74212,7 +74306,7 @@
         <Range value="8"/>
         <TargetLocation Value="TargetPoint"/>
         <TeleportFlags index="TestCliff" value="1"/>
-        <TeleportEffect value="VoidStalkerBlinkApplyRestore"/>
+        <TeleportEffect value="VoidStalkerBlinkApplyRestore4"/>
     </CEffectTeleport>
     <CEffectDamage id="VoidTendrilDamageFieldDamage2">
         <EditorCategories value="Race:Protoss"/>

@@ -582,7 +582,7 @@
         <Icon value="Assets\Textures\btn-ability-zerg-dehaka-ravasaur-dissolvingacid.dds"/>
         <DisplayEffect value="SporeCrawlerU"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="10"/>
+        <Range value="8"/>
         <RangeSlop value="0"/>
         <Period value="1"/>
         <Effect value="SporeCrawler5"/>
@@ -3882,6 +3882,17 @@
         <Range value="6"/>
         <Period value="1.754"/>
         <Effect value="HighTemplarWeaponLM5"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NovaWeaponCanisterRifle2">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-nova-equipment-canisterrifle.dds"/>
+        <DisplayEffect value="NovaWeaponCanisterRifleCloaked2"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Period value="1.5"/>
+        <DamagePoint value="0.083"/>
+        <Backswing value="1.167"/>
+        <Effect value="NovaWeaponCanisterRifleCloakedSwitch2"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="StarshipRailgun">
         <EditorCategories value="Race:Terran"/>

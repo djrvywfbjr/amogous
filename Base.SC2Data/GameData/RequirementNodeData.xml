@@ -14015,7 +14015,6 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade653222QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="UmojanBasicUnitUpgrade653222" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade65322CompleteOnly3580350487">
@@ -14705,6 +14704,24 @@
     <CRequirementCountUpgrade id="CountUpgradeUnknownUpgrade81QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="UnknownUpgrade81" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeUnknownUpgrade82CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="UnknownUpgrade82" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeUnknownUpgrade82QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="UnknownUpgrade82" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeUnknownUpgrade83CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="UnknownUpgrade83" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeUnknownUpgrade83QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="UnknownUpgrade83" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUnknownUpgrade8CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
@@ -18941,7 +18958,6 @@
         <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade652QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade653222QueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade653222QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade65322QueuedOrBetter">
@@ -19225,6 +19241,13 @@
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUnknownUpgrade81QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeUnknownUpgrade81QueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeUnknownUpgrade82QueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeUnknownUpgrade82QueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeUnknownUpgrade83QueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeUnknownUpgrade83QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUnknownUpgrade8QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeUnknownUpgrade8QueuedOrBetter"/>

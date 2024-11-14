@@ -898,6 +898,22 @@
         <Modification TimeScale="1.35"/>
         <ExpireEffect value="AshNexusExhaustion"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="Frenzy22">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zerg-creepmove.dds"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <Duration value="60"/>
+        <Modification>
+            <DamageDealtFraction index="Spell" value="0.25"/>
+            <DamageDealtFraction index="Melee" value="0.25"/>
+            <DamageDealtFraction index="Ranged" value="0.25"/>
+            <DamageDealtFraction index="Splash" value="0.25"/>
+            <DamageDealtFraction index="NoProc" value="0.25"/>
+            <LifeArmorBonus value="1"/>
+            <VitalRegenArray index="Life" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="FusionDrive">
         <Alignment value="Positive"/>
         <InfoIcon value="Assets\Textures\btn-upgrade-terran-jotunboosters.dds"/>
@@ -1014,12 +1030,54 @@
             </Cost>
         </DamageResponse>
     </CBehaviorBuff>
+    <CBehaviorBuff id="PsiDisruption12">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-psidisruption.dds"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="HasPsiStrike"/>
+        <Duration value="0.1875"/>
+        <Modification SightBonus="-4" AttackSpeedMultiplier="1.15">
+            <LifeArmorBonus value="2"/>
+            <VitalRegenArray index="Life" value="1.1015"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PsiDisruption122">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-psidisruption.dds"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="HasPsiStrike"/>
+        <MaxStackCount value="7"/>
+        <MaxStackCountPerCaster value="1"/>
+        <Duration value="0.1875"/>
+        <Modification SightBonus="0.5" MoveSpeedMultiplier="1.2">
+            <VitalRegenArray index="Energy" value="0.1992"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="PsiDisruption32222232">
         <Alignment value="Positive"/>
         <InfoIcon value="Assets\Textures\btn-ability-terran-psidisruption.dds"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <Duration value="0.1875"/>
         <DamageResponse Handled="UnknownEffect67"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PsiDisruptionSearch10">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+        <DisableValidatorArray value="NotDeadOrConstruction"/>
+        <Period value="0.125"/>
+        <PeriodicEffect value="PsiDisruptionSearchArea11"/>
+        <Requirements value="UnknownRequirement131"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PsiDisruptionSearch102">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+        <Requirements value="UnknownRequirement1312"/>
+        <DisableValidatorArray value="NotDeadOrConstruction"/>
+        <Period value="0.125"/>
+        <PeriodicEffect value="PsiDisruptionSearchArea112"/>
+        <Modification>
+            <StateFlags index="Cloak" value="1"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="PsiDisruptionSearch32222232">
         <InfoFlags index="Hidden" value="1"/>
@@ -1365,7 +1423,7 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification>
-            <StateFlags index="Summoned" value="1"/>
+            <StateFlags index="UnitAttrOnRobotic" value="1"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="Exhaustion">
@@ -1426,6 +1484,14 @@
                 <Cooldown Link="Behavior/AntamoAirAll"/>
             </Cost>
         </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="VoidStalkerBlinkShieldRestore4">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zeratul-warpprism-shieldboosters.dds"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+        <Period value="0.25"/>
+        <PeriodicEffect value="VoidStalkerBlinkRestoreModifyUnit3"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="WepCorrosiveDesolator">
         <BehaviorFlags index="Permanent" value="1"/>
@@ -41964,7 +42030,7 @@
             <MoveSpeedMultiplier value="1.5"/>
             <AttackSpeedMultiplier value="1.5"/>
             <RangedWeaponRange value="1.5"/>
-            <Food value="-6"/>
+            <Food value="-12"/>
             <VitalMaxFractionArray index="Life" value="0.5"/>
         </Modification>
     </CBehaviorBuff>
@@ -47155,9 +47221,8 @@
         <Period value="10"/>
         <PeriodicEffect value="PureBornDeathCReateFanatic322222223332242533522"/>
         <Modification MoveSpeedMultiplier="0.65" AttackSpeedMultiplier="0.75">
-            <LifeArmorBonus value="3"/>
+            <LifeArmorBonus value="2"/>
             <VitalMaxArray index="Life" value="35"/>
-            <VitalRegenArray index="Life" value="2"/>
             <WeaponArray Link="AcidSpew5"/>
             <WeaponDisableArray value="ParticleDisruptors"/>
             <RateMultiplierArray index="Cooldown" value="0.5"/>

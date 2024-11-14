@@ -808,6 +808,11 @@
     <CValidatorUnitType id="IsPsiwaveCommunicator">
         <Value value="PsiwaveCommunicator"/>
     </CValidatorUnitType>
+    <CValidatorUnitCompareField id="IsZerg2">
+        <ResultFailed value="CantTargetThatUnit,Error/CantTargetNonTaken"/>
+        <Field value="Race"/>
+        <Value value="Taken"/>
+    </CValidatorUnitCompareField>
     <CValidatorUnitType id="IsZergling2">
         <Value value="HybridReaver22"/>
     </CValidatorUnitType>
@@ -3480,6 +3485,13 @@
     <CValidatorPlayerRequirement id="GMAutocast">
         <Value value="ManufactureGunpowderMixerAuto"/>
     </CValidatorPlayerRequirement>
+    <CValidatorUnitCompareBehaviorCount id="UnknownValidator9">
+        <Behavior value="ShieldingEngine9352"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="UnknownValidator92">
+        <Value value="1"/>
+        <Behavior value="ShieldingEngine9352"/>
+    </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitCompareVital id="hasShields2">
         <ResultFailed value="NotEnoughShields"/>
         <WhichUnit Value="Caster"/>

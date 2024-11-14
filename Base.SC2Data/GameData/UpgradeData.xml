@@ -4514,6 +4514,8 @@
         <EffectArray Operation="Subtract" Reference="Behavior,ShieldingEngine532523352,Period" Value="0.250000"/>
         <EffectArray Reference="Weapon,GoliathA3,DisplayAttackCount" Value="1"/>
         <EffectArray Reference="Weapon,WarHound3,DisplayAttackCount" Value="4"/>
+        <EffectArray Operation="Set" Reference="Weapon,NovaWeaponCanisterRifle2,Period" Value="1.125000"/>
+        <EffectArray Operation="Set" Reference="Effect,ChannelSnipeCreatePersistent,PeriodCount" Value="15"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -4531,6 +4533,8 @@
         <EffectArray Reference="Unit,WarHound42,EnergyMax" Value="50"/>
         <EffectArray Reference="Unit,WarHound42,EnergyRegenRate" Value="1.000000"/>
         <EffectArray Reference="Unit,WarHound42,EnergyStart" Value="50"/>
+        <EffectArray Operation="Set" Reference="Behavior,PsiDisruptionSearch102,Modification.VitalMaxArray[Energy]" Value="50"/>
+        <EffectArray Reference="Unit,GhostAlternate7,EnergyStart" Value="50"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade522242242322222222222223223324">
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
@@ -11673,6 +11677,13 @@
         <EffectArray Operation="Set" Reference="Weapon,P38ScytheGuassPistol,Range" Value="7"/>
     </CUpgrade>
     <CUpgrade id="UnknownUpgrade81"/>
+    <CUpgrade id="UnknownUpgrade82"/>
+    <CUpgrade id="UnknownUpgrade83">
+        <EffectArray Operation="Set" Reference="Unit,GhostAlternate7,EnergyMax" Value="150"/>
+        <EffectArray Operation="Set" Reference="Unit,GhostAlternate7,EnergyStart" Value="50"/>
+        <EffectArray Operation="Set" Reference="Unit,GhostAlternate72,EnergyMax" Value="150"/>
+        <EffectArray Operation="Set" Reference="Unit,GhostAlternate72,EnergyStart" Value="50"/>
+    </CUpgrade>
     <CUpgrade id="UnknownUpgrade9">
         <EffectArray Operation="Set" Reference="Effect,AlarakPsiOrbSet2,EffectArray[3]" Value="Epilogue02VoidRiftAB223"/>
         <EffectArray Operation="Set" Reference="Effect,HotSUltraliskKaiserBlades7,EffectArray[4]" Value="Epilogue02VoidRiftAB2232"/>
