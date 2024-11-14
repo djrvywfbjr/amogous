@@ -4154,7 +4154,7 @@
             <Button DefaultButtonFace="Spectre23" Requirements="MothershipRequirements33"/>
             <Unit value="D4DShip"/>
         </InfoArray>
-        <InfoArray index="Train30" Time="30">
+        <InfoArray index="Train30" Time="50.4">
             <Charge Link="Abil/Blink"/>
             <Cooldown Link="Abil/Blink"/>
             <Button DefaultButtonFace="Banshee2"/>
@@ -4975,7 +4975,7 @@
     </CAbilTrain>
     <CAbilTrain id="BarracksTrain7" parent="BarracksTrain">
         <Name value="Abil/Name/BarracksTrain7"/>
-        <InfoArray index="Train1" Time="14">
+        <InfoArray index="Train1" Time="15.4">
             <Button DefaultButtonFace="Marine6"/>
             <Unit index="0" value="Drone2"/>
         </InfoArray>
@@ -13243,7 +13243,7 @@
     </CAbilTrain>
     <CAbilTrain id="CommandCenterTrain2">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
-        <InfoArray index="Train1" Time="12.6">
+        <InfoArray index="Train1" Time="16.8">
             <Button DefaultButtonFace="SCV2" State="Restricted">
                 <Flags index="ToSelection" value="1"/>
             </Button>
@@ -13261,7 +13261,7 @@
     </CAbilTrain>
     <CAbilTrain id="CommandCenterTrain3">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
-        <InfoArray index="Train1" Time="12">
+        <InfoArray index="Train1" Time="15.4">
             <Button DefaultButtonFace="SCV4" State="Restricted">
                 <Flags index="ToSelection" value="1"/>
             </Button>
@@ -22296,7 +22296,7 @@
     </CAbilEffectTarget>
     <CAbilTrain id="GatewayTrain2" parent="GatewayTrain">
         <Name value="Abil/Name/GatewayTrain2"/>
-        <InfoArray index="Train1" Time="14">
+        <InfoArray index="Train1" Time="15.4">
             <Button DefaultButtonFace="Drone2"/>
             <Unit index="0" value="ForbiddenOne"/>
         </InfoArray>
@@ -34883,7 +34883,7 @@
     <CAbilTrain id="NexusTrain2">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
         <Activity value="UI/Warping"/>
-        <InfoArray index="Train1" Time="14">
+        <InfoArray index="Train1" Time="16.8">
             <Button DefaultButtonFace="Probe2"/>
             <Unit value="Probe2"/>
         </InfoArray>
@@ -34922,7 +34922,7 @@
     <CAbilTrain id="NexusTrain3">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
         <Activity value="UI/Warping"/>
-        <InfoArray index="Train1" Time="14">
+        <InfoArray index="Train1" Time="15.4">
             <Button DefaultButtonFace="Probe3"/>
             <Unit value="Administrator"/>
         </InfoArray>
@@ -41852,7 +41852,7 @@
     </CAbilBuild>
     <CAbilBuild id="ProtossBuild2" parent="ProtossBuild">
         <Name value="Abil/Name/ProtossBuild2"/>
-        <InfoArray index="Build1" Unit="Nexus3" Time="60">
+        <InfoArray index="Build1" Unit="Nexus3" Time="70">
             <Button DefaultButtonFace="Nexus2"/>
         </InfoArray>
         <InfoArray index="Build2" Unit="Pylon2" Time="7">
@@ -41916,7 +41916,7 @@
     </CAbilBuild>
     <CAbilBuild id="ProtossBuild3" parent="ProtossBuild">
         <Name value="Abil/Name/ProtossBuild3"/>
-        <InfoArray index="Build1" Unit="HoloNexus" Time="45">
+        <InfoArray index="Build1" Unit="HoloNexus" Time="70">
             <Button DefaultButtonFace="Nexus3"/>
         </InfoArray>
         <InfoArray index="Build2" Unit="HoloPylon">
@@ -42094,7 +42094,7 @@
         <InfoArray index="Build15" Unit="TribesmanHall" Time="25">
             <Button DefaultButtonFace="CyberneticsCore3" Requirements="PureBornHaveAmerdallGate2"/>
         </InfoArray>
-        <InfoArray index="Build16" Unit="SunkenColony2" Time="20">
+        <InfoArray index="Build16" Unit="SunkenColony2" Time="50">
             <Resource index="Minerals" value="-125"/>
             <Resource index="Vespene" value="-75"/>
             <Charge>
@@ -42111,7 +42111,7 @@
         <InfoArray index="Build17" Unit="Hatchery4" Time="15">
             <Button DefaultButtonFace="Hatchery4" Requirements="MothershipRequirements234232"/>
         </InfoArray>
-        <InfoArray index="Build19" Unit="PhotonCannon22" Time="15">
+        <InfoArray index="Build19" Unit="PhotonCannon22" Time="40">
             <Charge>
                 <CountMax value="1"/>
                 <CountStart value="1"/>
@@ -44040,7 +44040,7 @@
     </CAbilBuild>
     <CAbilBuild id="ProtossBuild6" parent="ProtossBuild">
         <Name value="Abil/Name/ProtossBuild6"/>
-        <InfoArray index="Build1" Unit="Hatchery2" Time="60">
+        <InfoArray index="Build1" Unit="Hatchery2" Time="70">
             <Button DefaultButtonFace="Nexus5"/>
         </InfoArray>
         <InfoArray index="Build2" Unit="SpawningPool2" Time="45">
@@ -56013,7 +56013,7 @@
     </CAbilBuild>
     <CAbilBuild id="TerranBuild2" parent="TerranBuild">
         <Name value="Abil/Name/TerranBuild2"/>
-        <InfoArray index="Build1" Unit="CenterofBasicOperations" Time="60">
+        <InfoArray index="Build1" Unit="CenterofBasicOperations" Time="63">
             <Charge Link="Abil/ThorNormalMode"/>
             <Cooldown Link="Abil/ThorNormalMode"/>
             <Button DefaultButtonFace="CommandCenter2" Requirements=""/>
@@ -56321,7 +56321,7 @@
     </CAbilBuild>
     <CAbilBuild id="TerranBuild7" parent="TerranBuild">
         <Name value="Abil/Name/TerranBuild7"/>
-        <InfoArray index="Build1" Unit="CommandCenter4" Time="60">
+        <InfoArray index="Build1" Unit="CommandCenter4" Time="70">
             <Button DefaultButtonFace="CommandCenter8" Requirements=""/>
         </InfoArray>
         <InfoArray index="Build3" Unit="Refinery2">
@@ -67175,7 +67175,7 @@
     </CAbilEffectTarget>
     <CAbilBuild id="ZergBuild2" parent="ZergBuild">
         <Name value="Abil/Name/ZergBuild2"/>
-        <InfoArray index="Build1" Unit="NexusofAncients">
+        <InfoArray index="Build1" Unit="NexusofAncients" Time="70">
             <Button DefaultButtonFace="Hatchery2"/>
         </InfoArray>
         <InfoArray index="Build3">

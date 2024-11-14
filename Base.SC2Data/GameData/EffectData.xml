@@ -54952,7 +54952,7 @@
     <CEffectSet id="PunisherGrenadesSet43">
         <EditorCategories value="Race:Terran"/>
         <EffectArray value="PunisherGrenadesSlow43"/>
-        <EffectArray value="SacredCoreWeaponAOE"/>
+        <EffectArray value="LegendaryWeapon"/>
         <EffectArray value="MarauderSlowAOE"/>
     </CEffectSet>
     <CEffectSet id="PunisherGrenadesSet432">
@@ -55235,7 +55235,7 @@
         <Amount value="55"/>
         <Death value="Blast"/>
     </CEffectDamage>
-    <CEffectDamage id="PunisherGrenadesU43" parent="DU_WEAP">
+    <CEffectDamage id="LegendaryWeapon" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <Kind value="Ranged"/>
         <Amount value="20"/>
@@ -64525,7 +64525,7 @@
     <CEffectEnumArea id="SacredCoreWeaponAOE">
         <EditorCategories value=""/>
         <SearchFilters value="-;Player,Ally"/>
-        <AreaArray Radius="2.5" Effect="PunisherGrenadesU43"/>
+        <AreaArray Radius="2.5" Effect="LegendaryWeapon"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="SacredCoreWeaponAOE2">
         <EditorCategories value=""/>
@@ -66728,7 +66728,7 @@
         <CreateFlags index="UseFood" value="0"/>
         <SpawnEffect value="UnburrowAndFollow22"/>
         <SpawnUnit value="Baneling62"/>
-        <SpawnCount value="5"/>
+        <SpawnCount value="2"/>
         <SpawnRange value="10"/>
     </CEffectCreateUnit>
     <CEffectCreateUnit id="SpawnBanelings23">
@@ -74169,7 +74169,7 @@
         <EditorCategories value=""/>
         <ImpactUnit Value="Caster"/>
         <VitalArray index="Shields">
-            <Change value="1"/>
+            <Change value="0.5"/>
         </VitalArray>
     </CEffectModifyUnit>
     <CEffectTeleport id="VoidStalkerBlinkShieldRestore2">

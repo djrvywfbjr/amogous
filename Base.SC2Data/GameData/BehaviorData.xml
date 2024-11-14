@@ -17884,7 +17884,7 @@
         <InfoFlags index="Hidden" value="1"/>
         <InfoIcon value="Assets\Textures\btn-ability-terran-psidisruption.dds"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
-        <Modification MoveSpeedMultiplier="4" AttackSpeedMultiplier="5"/>
+        <Modification MoveSpeedMultiplier="2" AttackSpeedMultiplier="2"/>
         <DamageResponse>
             <Cost>
                 <Charge Link="Behavior/PsiDisruption32222"/>
