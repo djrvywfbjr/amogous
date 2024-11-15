@@ -44949,7 +44949,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="CasterShieldsGE102"/>
         <Modification>
-            <VitalRegenMultiplier index="Shields" value="-5"/>
+            <VitalRegenMultiplier index="Shields" value="-10"/>
             <WeaponEnableArray value="PhotonCannon62"/>
         </Modification>
     </CBehaviorBuff>

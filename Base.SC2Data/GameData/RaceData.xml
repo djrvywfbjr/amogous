@@ -671,7 +671,7 @@
         <RaceIcon value="@UI/RaceIcon/Terr2"/>
         <GameMusic value="Music_TerrLow"/>
         <Flags index="TrialAllowed" value="1"/>
-        <StartingUnitArray Unit="Nexus5">
+        <StartingUnitArray Unit="OldFortress">
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
         <StartingUnitArray Count="14" Unit="Probe3">

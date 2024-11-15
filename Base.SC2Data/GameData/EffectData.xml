@@ -231,7 +231,7 @@
     <CEffectDamage id="ATALaserBatteryU32" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Terran"/>
         <Visibility value="Visible"/>
-        <Amount value="75"/>
+        <Amount value="50"/>
     </CEffectDamage>
     <CEffectDamage id="ATALaserBatteryU322" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Terran"/>
@@ -70322,7 +70322,7 @@
         <EditorCategories value=""/>
         <SearchFilters value="-;Player,Ally,Neutral"/>
         <AreaArray Radius="15" Effect="ATALaserBatteryLM32"/>
-        <MaxCount value="10"/>
+        <MaxCount value="4"/>
         <MinCount value="1"/>
     </CEffectEnumArea>
     <CEffectSet id="UnknownEffect20">
@@ -70659,8 +70659,7 @@
         <EditorCategories value=""/>
         <Marker Link="Effect/UnknownEffect2"/>
         <SearchFilters value="Visible;Player,Ally,Neutral,Stasis,Dead,Hidden,Invulnerable"/>
-        <AreaArray Radius="9" Effect="AcidSalivaLM42"/>
-        <MaxCount value="15"/>
+        <AreaArray MaxCount="5" Radius="9" Effect="AcidSalivaLM42"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="UnknownEffect242">
         <EditorCategories value=""/>
