@@ -9054,7 +9054,7 @@
         <EditorCategories value="Race:Terran"/>
         <Options index="Disabled" value="1"/>
         <Icon value="Assets\Textures\btn-ability-zeratul-disruptor-clusternova.dds"/>
-        <DisplayEffect value="PunisherGrenadesU43"/>
+        <DisplayEffect value="LegendaryWeapon"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="9"/>
         <Period value="1.5"/>
