@@ -311,7 +311,6 @@
 <Unit id="Nexus10"/>
 <Unit id="Nexus3"/>
 <Unit id="HoloNexus"/>
-<Unit id="Nexus5"/>
 <Unit id="Nexus8"/>
 <Unit id="CenterOfCommands2"/>
 <Unit id="Hatchery2"/>
@@ -364,5 +363,6 @@
 <Unit id="Scientist222"/>
 <Unit id="SensorTower42"/>
 <Unit id="Queen5"/>
+<Unit id="OldFortress"/>
 <Weapon id="RavasaurAir3"/>
 </Preload>

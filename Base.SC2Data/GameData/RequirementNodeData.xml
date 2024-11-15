@@ -4214,10 +4214,6 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Nexus4" State="QueuedOrBetter"/>
     </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitNexus5CompleteOnly2158532138">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="Nexus5" State="CompleteOnly"/>
-    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitNexus6CompleteOnly235829342">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Nexus6" State="CompleteOnly"/>
@@ -4276,6 +4272,10 @@
     <CRequirementCountUnit id="CountUnitOdin22QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Odin22" State="QueuedOrBetter"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitOldFortressCompleteOnly2158532138">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="OldFortress" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitOracle4CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
@@ -14715,12 +14715,10 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUnknownUpgrade83CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="UnknownUpgrade83" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUnknownUpgrade83QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="UnknownUpgrade83" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUnknownUpgrade8CompleteOnly">
@@ -19246,7 +19244,6 @@
         <OperandArray index="0" value="CountUpgradeUnknownUpgrade82QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUnknownUpgrade83QueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeUnknownUpgrade83QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUnknownUpgrade8QueuedOrBetter">
