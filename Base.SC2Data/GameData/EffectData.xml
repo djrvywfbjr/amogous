@@ -10295,6 +10295,9 @@
         <EditorCategories value=""/>
         <EffectArray value="UnknownEffect682"/>
     </CEffectSet>
+    <CEffectDamage id="DefensiveFighterDamage">
+        <Amount value="3"/>
+    </CEffectDamage>
     <CEffectEnumArea id="DispersiveFire">
         <EditorCategories value=""/>
         <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Invulnerable"/>
@@ -12229,7 +12232,6 @@
         <WhichLocation Value="TargetUnitOrPoint"/>
         <SpawnEffect value="CalldownMULECreateSet23"/>
         <SpawnUnit value="MiscPsycho"/>
-        <SpawnCount value="2"/>
     </CEffectCreateUnit>
     <CEffectCreateUnit id="CalldownMULECreateUnit232">
         <ValidatorArray value="MULETargetCheck"/>
@@ -12692,7 +12694,6 @@
         <WhichLocation Value="TargetUnitOrPoint"/>
         <SpawnEffect value="CalldownMULECreateSet5"/>
         <SpawnUnit value="OmindHunterKiller"/>
-        <SpawnCount value="2"/>
     </CEffectCreateUnit>
     <CEffectSet id="CalldownMULEFinalSet2">
         <EditorCategories value="Race:Terran"/>
@@ -22957,7 +22958,7 @@
     <CEffectDamage id="ExplosiveSpinesDamage7" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <Kind value="Splash"/>
-        <Amount value="15"/>
+        <Amount value="10"/>
         <AreaArray Radius="1.5" Fraction="0.333"/>
         <ExcludeArray Value="Target"/>
         <SearchFilters value="Air;Self,Missile,Stasis,Dead,Hidden,Invulnerable"/>
@@ -25811,6 +25812,33 @@
         <SearchFilters value="Visible;Neutral,Enemy,Missile,Stasis,Dead,Hidden,Invulnerable,Benign"/>
         <AreaArray Radius="9" Effect="PsiDisruptionApplyBehavior32222232"/>
     </CEffectEnumArea>
+    <CEffectLaunchMissile id="PunisherGrenadesLM434">
+        <EditorCategories value="Race:Terran"/>
+        <ImpactEffect value="PunisherGrenadesSet434"/>
+        <AmmoUnit value="PunisherGrenadesLMWeapon43"/>
+        <Movers Link="PunisherGrenadesWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectSet id="PunisherGrenadesSet434">
+        <EditorCategories value="Race:Terran"/>
+        <EffectArray value="PunisherGrenadesSlow434"/>
+        <EffectArray value="SacredCoreWeaponAOE5"/>
+        <EffectArray value="MarauderSlowAOE"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="PunisherGrenadesSlow434">
+        <ValidatorArray index="0" value="PunisherGrenadesResearched"/>
+        <ValidatorArray value="PunisherGrenadesSlowTargetFilters"/>
+        <ValidatorArray value="NotStructure"/>
+        <ValidatorArray value="NotFrenzied"/>
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="Slow"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="PunisherGrenadesU434" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <AttributeBonus index="Light" value="15"/>
+        <Kind value="Ranged"/>
+        <Amount value="35"/>
+        <Death value="Blast"/>
+    </CEffectDamage>
     <CEffectSet id="SJPirateYamato3522">
         <EditorCategories value="Race:Terran"/>
         <EffectArray value="SJPirateYamatoA3522"/>
@@ -25871,6 +25899,11 @@
         <EditorCategories value="Race:Protoss"/>
         <EffectArray value="UnknownEffect66"/>
     </CEffectSet>
+    <CEffectEnumArea id="SacredCoreWeaponAOE5">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Player,Ally"/>
+        <AreaArray Radius="2.5" Effect="PunisherGrenadesU434"/>
+    </CEffectEnumArea>
     <CEffectCreatePersistent id="ScannerSweep32">
         <EditorCategories value="Race:Terran"/>
         <ExpireDelay value="18"/>
@@ -25896,6 +25929,11 @@
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
         <Behavior value="PsiDisruptionSearch32222232"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ShieldUp23273">
+        <ValidatorArray index="0" value="IsTimeStopped215"/>
+        <EditorCategories value=""/>
+        <Behavior value="Shield363"/>
     </CEffectApplyBehavior>
     <CEffectDamage id="StarshipRailgunDamage" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
@@ -41213,7 +41251,7 @@
     <CEffectDamage id="NeedleSpinesDamage10" parent="DU_WEAP">
         <EditorCategories value="Race:Zerg"/>
         <Kind value="Ranged"/>
-        <Amount value="20"/>
+        <Amount value="10"/>
     </CEffectDamage>
     <CEffectDamage id="NeedleSpinesDamage2" parent="DU_WEAP">
         <EditorCategories value="Race:Zerg"/>
@@ -66125,7 +66163,7 @@
     <CEffectDamage id="SlaynMissileTurretDamage2" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
         <Kind value="Ranged"/>
-        <Amount value="135"/>
+        <Amount value="50"/>
         <DamageInheritEffect value="UnknownEffect47"/>
     </CEffectDamage>
     <CEffectCreatePersistent id="SlivanPukeCP2">
@@ -69976,6 +70014,9 @@
         <EditorCategories value="Race:Terran"/>
         <Kind value="Ranged"/>
         <Amount value="16"/>
+    </CEffectDamage>
+    <CEffectDamage id="TwinIbiksCannon">
+        <Amount value="20"/>
     </CEffectDamage>
     <CEffectDamage id="TwinIbiksCannon2" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>

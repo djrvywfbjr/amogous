@@ -1049,7 +1049,7 @@
         <MaxStackCount value="7"/>
         <MaxStackCountPerCaster value="1"/>
         <Duration value="0.1875"/>
-        <Modification SightBonus="0.5" MoveSpeedMultiplier="1.2">
+        <Modification SightBonus="0.5" MoveSpeedMultiplier="1.1">
             <VitalRegenArray index="Energy" value="0.1992"/>
         </Modification>
     </CBehaviorBuff>
@@ -1092,6 +1092,15 @@
             <ModifyFlags index="SuppressTurning" value="1"/>
             <StateFlags index="Stun" value="1"/>
             <StateFlags index="SuppressAttack" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Shield363">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="8"/>
+        <Modification AttackSpeedMultiplier="1.5" ShieldArmorBonus="3">
+            <VitalMaxArray index="Shields" value="125"/>
+            <VitalRegenArray index="Life" value="20"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="StrikeStarting">

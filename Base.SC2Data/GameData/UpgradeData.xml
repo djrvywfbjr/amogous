@@ -9304,8 +9304,8 @@
     <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222352222222543">
         <EffectArray Reference="Unit,Forge5,EnergyRegenRate" Value="0.1015"/>
         <EffectArray Reference="Behavior,NovaArmorBlinkSuit233,Modification.TimeScale" Value="0.05"/>
-        <EffectArray Operation="Set" Reference="Abil,NexusTrain6,InfoArray[Train1].Time" Value="11.000000"/>
-        <EffectArray Operation="Set" Reference="Abil,NexusTrain6,InfoArray[Train1].Resource[Minerals]" Value="-7"/>
+        <EffectArray Operation="Set" Reference="Abil,NexusTrain6,InfoArray[Train1].Time" Value="12.000000"/>
+        <EffectArray Operation="Set" Reference="Abil,NexusTrain6,InfoArray[Train1].Resource[Minerals]" Value="-5"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -9313,7 +9313,6 @@
         <EffectArray Reference="Unit,Forge5,EnergyRegenRate" Value="0.1015"/>
         <EffectArray Reference="Behavior,NovaArmorBlinkSuit233,Modification.TimeScale" Value="0.05"/>
         <EffectArray Reference="Abil,ProbeHarvest,ResourceAmountBonus[Minerals]" Value="1"/>
-        <EffectArray Reference="Abil,ProbeHarvest,ResourceAmountBonus[Vespene]" Value="1"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>

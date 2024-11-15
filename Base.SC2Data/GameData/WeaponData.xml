@@ -3894,6 +3894,18 @@
         <Backswing value="1.167"/>
         <Effect value="NovaWeaponCanisterRifleCloakedSwitch2"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="PunisherGrenades434">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-disruptor-clusternova.dds"/>
+        <DisplayEffect value="PunisherGrenadesU434"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <Period value="1.5"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="PunisherGrenadesLM434"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="StarshipRailgun">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-advanceballistics.dds"/>
@@ -4291,7 +4303,7 @@
         <RandomDelayMin value="-0.13"/>
         <RandomDelayMax value="0.1875"/>
         <Cost>
-            <Vital index="Energy" value="2"/>
+            <Vital index="Energy" value="4"/>
         </Cost>
     </CWeaponLegacy>
     <CWeaponLegacy id="Hyperion332">
@@ -4359,7 +4371,7 @@
         <RangeSlop value="0"/>
         <Arc value="180"/>
         <Cost>
-            <Vital index="Energy" value="1"/>
+            <Vital index="Energy" value="2"/>
         </Cost>
         <Period value="1.2"/>
         <DamagePoint value="0"/>
