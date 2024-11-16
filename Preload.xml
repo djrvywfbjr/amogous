@@ -292,6 +292,7 @@
 <Unit id="MarineWarfield3"/>
 <Unit id="Ghost7"/>
 <Unit id="BarracksFlying22"/>
+<Unit id="PsiUpgrader"/>
 <Unit id="Overlord7"/>
 <Unit id="Burner2"/>
 <Unit id="ArtanisVoid225"/>
@@ -311,7 +312,7 @@
 <Unit id="Nexus10"/>
 <Unit id="Nexus3"/>
 <Unit id="HoloNexus"/>
-<Unit id="Nexus5"/>
+<Unit id="OldFortress"/>
 <Unit id="Nexus8"/>
 <Unit id="CenterOfCommands2"/>
 <Unit id="Hatchery2"/>

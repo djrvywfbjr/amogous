@@ -1433,6 +1433,8 @@
         <EffectArray Reference="Effect,HyperionU3,Amount" Value="5"/>
         <EffectArray Reference="Effect,HyperionDamageDirect3,Amount" Value="5"/>
         <EffectArray Reference="Weapon,HailstormMissilePods32222222222,Range" Value="2"/>
+        <EffectArray Operation="Set" Reference="Weapon,Hyperion33,Cost.Vital[Energy]" Value="2"/>
+        <EffectArray Operation="Set" Reference="Weapon,HyperionAir2,Cost.Vital[Energy]" Value="2"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -9304,7 +9306,7 @@
     <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222352222222543">
         <EffectArray Reference="Unit,Forge5,EnergyRegenRate" Value="0.1015"/>
         <EffectArray Reference="Behavior,NovaArmorBlinkSuit233,Modification.TimeScale" Value="0.05"/>
-        <EffectArray Operation="Set" Reference="Abil,NexusTrain6,InfoArray[Train1].Time" Value="12.000000"/>
+        <EffectArray Operation="Set" Reference="Abil,NexusTrain6,InfoArray[Train1].Time" Value="13.000000"/>
         <EffectArray Operation="Set" Reference="Abil,NexusTrain6,InfoArray[Train1].Resource[Minerals]" Value="-5"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
@@ -10777,6 +10779,7 @@
         <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll30222,Modification.VitalMaxAdditiveMultiplierArray[Shields]" Value="-0.25"/>
         <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll302,Modification.VitalMaxAdditiveMultiplierArray[Shields]" Value="-0.25"/>
         <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll3022,Modification.VitalMaxAdditiveMultiplierArray[Shields]" Value="-0.25"/>
+        <EffectArray Operation="Set" Reference="Abil,PhaseCannon19,Cost[0].Cooldown.TimeUse" Value="15.000000"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -11632,7 +11635,6 @@
         <EffectArray Operation="Set" Reference="Unit,MilitarizedColonistTransport2,LifeStart" Value="350"/>
     </CUpgrade>
     <CUpgrade id="UnknownUpgrade74">
-        <EffectArray Operation="Set" Reference="Abil,CommandCenterTrain5,InfoArray[Train1].Time" Value="7.000000"/>
         <EffectArray Operation="Set" Reference="Abil,CommandCenterTrain5,InfoArray[Train10].Time" Value="10.000000"/>
         <EffectArray Operation="Set" Reference="Abil,CommandCenterTrain5,InfoArray[Train2].Time" Value="5.000000"/>
         <EffectArray Operation="Set" Reference="Abil,CommandCenterTrain5,InfoArray[Train3].Time" Value="12.000000"/>
@@ -11682,6 +11684,9 @@
         <EffectArray Operation="Set" Reference="Unit,GhostAlternate7,EnergyStart" Value="50"/>
         <EffectArray Operation="Set" Reference="Unit,GhostAlternate72,EnergyMax" Value="150"/>
         <EffectArray Operation="Set" Reference="Unit,GhostAlternate72,EnergyStart" Value="50"/>
+    </CUpgrade>
+    <CUpgrade id="UnknownUpgrade84">
+        <EffectArray Operation="Set" Reference="Effect,VultureSpiderMinesDamage,DamageInheritEffect" Value="AddCORROSION"/>
     </CUpgrade>
     <CUpgrade id="UnknownUpgrade9">
         <EffectArray Operation="Set" Reference="Effect,AlarakPsiOrbSet2,EffectArray[3]" Value="Epilogue02VoidRiftAB223"/>

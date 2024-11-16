@@ -1181,6 +1181,7 @@ bool libCD55B2B5_gt_XillChoose_Func (bool testConds, bool runActions) {
 
     PlayerSetConsoleSkin(EventPlayer(), "ConsoleProtoss_Ihanrii");
     libNtve_gf_UnitCreateFacingPoint(1, "NexusofAncients", c_unitCreateIgnorePlacement, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
+    libNtve_gf_UnitCreateFacingPoint(1, "PsiUpgrader", c_unitCreateIgnorePlacement, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
     libNtve_gf_UnitCreateFacingPoint(13, "ForbiddenOne", c_unitCreateIgnorePlacement, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
     return true;
 }
@@ -1351,7 +1352,7 @@ bool libCD55B2B5_gt_HighOnesChoose_Func (bool testConds, bool runActions) {
 
     libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "UmojanBasicUnitUpgrade522242242322222235222222214", 1);
     PlayerSetConsoleSkin(EventPlayer(), "ConsoleZerg_Zagara");
-    libNtve_gf_UnitCreateFacingPoint(1, "Nexus5", c_unitCreateIgnorePlacement, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
+    libNtve_gf_UnitCreateFacingPoint(1, "OldFortress", c_unitCreateIgnorePlacement, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
     libNtve_gf_UnitCreateFacingPoint(13, "Probe3", c_unitCreateIgnorePlacement, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
     return true;
 }

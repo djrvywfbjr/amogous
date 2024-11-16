@@ -709,6 +709,12 @@
         </Cost>
         <Range index="0" value="13"/>
     </CAbilEffectTarget>
+    <CAbilEffectTarget id="ConsumeDNA">
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <AutoCastFilters value="Visible;Player,Ally,Neutral,Structure,User1,Missile,Cloaked,Stasis,Dead,Hidden,MapBoss"/>
+        <AutoCastRange value="5"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="CybrosBombardmentCP22">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Effect index="0" value="SOAOrbitalStrikeCP2222"/>
@@ -734,7 +740,7 @@
             <Charge Link="Abil/DarkArchonMindControl"/>
             <Cooldown Link="Abil/DarkArchonMindControl" TimeUse="5"/>
         </Cost>
-        <TargetFilters value="Visible;Neutral,Enemy,Robotic,Structure,Heroic,Missile,Stasis,Dead,Invulnerable"/>
+        <TargetFilters value="Visible;Neutral,Enemy,Robotic,Massive,Structure,Heroic,Missile,Stasis,Dead,Invulnerable"/>
         <Range value="5"/>
         <AutoCastFilters value="Biological,Visible;Player,Ally,Neutral,Massive,Structure,Heroic,Missile,Dead"/>
         <AutoCastRange value="7"/>
@@ -816,9 +822,6 @@
             <Resource index="Vespene" value="150"/>
         </InfoArray>
     </CAbilResearch>
-    <CAbilTrain id="MoebiusZTrain">
-        <InfoArray index="Train1" Time="15.4"/>
-    </CAbilTrain>
     <CAbilEffectTarget id="SJPirateYamato3522">
         <Alignment value="Negative"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
@@ -854,7 +857,7 @@
         <Range value="13"/>
         <Arc value="360"/>
         <CursorEffect value="ScannerSweep32"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Scan32"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Scan32" Requirements="SoE4PortableHiveMind33"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="SendWorker">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -914,27 +917,28 @@
     <CAbilEffectTarget id="ShieldUp23283">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ShieldUp23273"/>
-        <Flags index="AutoCast" value="1"/>
-        <Flags index="AutoCastOn" value="1"/>
         <Flags index="BestUnit" value="0"/>
         <Cost>
             <Charge>
-                <CountMax value="3"/>
+                <CountMax value="1"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
                 <Link value=""/>
-                <TimeStart value="30"/>
-                <TimeUse value="30"/>
+                <Location value="Player"/>
+                <TimeStart value="40"/>
+                <TimeUse value="40"/>
             </Charge>
             <Cooldown Link="Abil/AlarakAvatar" TimeUse="5"/>
         </Cost>
-        <Range value="8"/>
-        <AutoCastFilters value="Visible;Neutral,Enemy,Structure,Heroic,Missile,Stasis,Dead"/>
+        <TargetFilters value="-;Neutral,Enemy,Heroic,Dead,Invulnerable"/>
+        <Range value="40"/>
+        <AutoCastFilters value="Visible;Neutral,Enemy,Structure,Missile,Stasis,Dead"/>
         <AutoCastRange value="8"/>
         <AutoCastValidatorArray value="CasterLifeNotFull2"/>
         <AutoCastValidatorArray value="IsTimeStopped215"/>
         <AINotifyEffect value="ShieldUp232"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield223283"/>
+        <Arc value="360"/>
     </CAbilEffectTarget>
     <CAbilEffectInstant id="TakentanksMakery">
         <OrderArray index="0" Model="Assets\UI\Cursors\WayPointConfirm_Void\WayPointConfirm_Void.m3"/>
@@ -2421,7 +2425,7 @@
             <Button DefaultButtonFace="Goliath7" Requirements="HaveAttachedTechLab332"/>
             <Unit value="SpartanCompany3"/>
         </InfoArray>
-        <InfoArray index="Train12" Time="15.8">
+        <InfoArray index="Train12" Time="15.4">
             <Button DefaultButtonFace="SCV13"/>
             <Unit value="SCV11"/>
             <Unit value=""/>
@@ -3935,7 +3939,7 @@
             <Button DefaultButtonFace="Battlecruiser12" Requirements="HaveSupplyDepot422"/>
             <Unit value="Battlecruiser10"/>
         </InfoArray>
-        <InfoArray index="Train11" Time="15.8">
+        <InfoArray index="Train11" Time="15.4">
             <Charge Link="Abil/BarracksTrain17"/>
             <Cooldown Link="Abil/BarracksTrain17"/>
             <Button DefaultButtonFace="SCV14"/>
@@ -5070,7 +5074,7 @@
             <Button DefaultButtonFace="Reaper11"/>
             <Unit value="Reaper4"/>
         </InfoArray>
-        <InfoArray index="Train23" Time="15.8">
+        <InfoArray index="Train23" Time="14">
             <Button DefaultButtonFace="Spectre3"/>
             <Unit value="ControlledDrone"/>
         </InfoArray>
@@ -5185,9 +5189,9 @@
         <InfoArray index="Train1" Time="0">
             <Charge>
                 <CountMax value="4"/>
-                <CountStart value="1"/>
+                <CountStart value="3"/>
                 <CountUse value="1"/>
-                <TimeUse value="15.8"/>
+                <TimeUse value="14"/>
             </Charge>
             <Button DefaultButtonFace="Drone3"/>
             <Unit index="0" value="Drone3"/>
@@ -13221,7 +13225,7 @@
     </CAbilMorph>
     <CAbilTrain id="CommandCenterTrain10">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
-        <InfoArray index="Train1" Time="14">
+        <InfoArray index="Train1" Time="15.4">
             <Vital index="Energy" value="5"/>
             <Button DefaultButtonFace="SCV15" State="Restricted">
                 <Flags index="ToSelection" value="1"/>
@@ -13345,7 +13349,7 @@
     </CAbilTrain>
     <CAbilTrain id="CommandCenterTrain2">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
-        <InfoArray index="Train1" Time="12.6">
+        <InfoArray index="Train1" Time="15.4">
             <Button DefaultButtonFace="SCV2" State="Restricted">
                 <Flags index="ToSelection" value="1"/>
             </Button>
@@ -15336,7 +15340,7 @@
     </CAbilTrain>
     <CAbilTrain id="CommandCenterTrain5">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
-        <InfoArray index="Train1" Time="14">
+        <InfoArray index="Train1" Time="15.4">
             <Cooldown TimeStart="600"/>
             <Button DefaultButtonFace="SCV" State="Restricted">
                 <Flags index="ToSelection" value="1"/>
@@ -15407,7 +15411,7 @@
     </CAbilTrain>
     <CAbilTrain id="CommandCenterTrain6">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
-        <InfoArray index="Train1" Time="14">
+        <InfoArray index="Train1" Time="15.4">
             <Button DefaultButtonFace="SCV6" State="Restricted">
                 <Flags index="ToSelection" value="1"/>
             </Button>
@@ -15636,7 +15640,7 @@
     </CAbilTrain>
     <CAbilTrain id="CommandCenterTrain8">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
-        <InfoArray index="Train1" Time="15.8">
+        <InfoArray index="Train1" Time="14">
             <Charge Link="Abil/CommandCenterTrain"/>
             <Cooldown Link="Abil/CommandCenterTrain"/>
             <Button DefaultButtonFace="SCV9" State="Restricted">
@@ -15799,8 +15803,8 @@
     <CAbilTrain id="CommandCenterTrain82">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <InfoArray index="Train1">
-            <Resource index="Minerals" value="-50"/>
-            <Vital index="Energy" value="10"/>
+            <Resource index="Minerals" value="-60"/>
+            <Vital index="Energy" value="25"/>
             <Charge Link="Abil/CommandCenterTrain"/>
             <Cooldown Link="Abil/CommandCenterTrain"/>
             <Button DefaultButtonFace="SCV92" State="Restricted">
@@ -15989,19 +15993,19 @@
     </CAbilTrain>
     <CAbilTrain id="CommandCenterTrain9">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
-        <InfoArray index="Train1" Time="12">
+        <InfoArray index="Train1" Time="15.4">
             <Charge CountMax="20" CountStart="20" CountUse="1"/>
             <Button DefaultButtonFace="SCV112" State="Restricted">
                 <Flags index="ToSelection" value="1"/>
             </Button>
             <Unit value="SCV1032"/>
         </InfoArray>
-        <InfoArray index="Train2" Time="5">
+        <InfoArray index="Train2" Time="15.4">
             <Charge CountMax="30" CountStart="30" CountUse="1"/>
             <Button DefaultButtonFace="SCV113"/>
             <Unit value="SCV103"/>
         </InfoArray>
-        <InfoArray index="Train3" Time="14">
+        <InfoArray index="Train3" Time="15.4">
             <Button DefaultButtonFace="SCV1132"/>
             <Unit value="SCV102"/>
         </InfoArray>
@@ -20162,7 +20166,7 @@
             <Resource index="Vespene" value="150"/>
             <Button DefaultButtonFace="UnknownButton82" Requirements="UnknownRequirement124"/>
         </InfoArray>
-        <InfoArray index="Research24" Time="220" Upgrade="UnknownUpgrade80">
+        <InfoArray index="Research24" Time="126" Upgrade="UnknownUpgrade80">
             <Resource index="Minerals" value="75"/>
             <Resource index="Vespene" value="75"/>
             <Button DefaultButtonFace="UnknownButton116" Requirements="UnknownRequirement125"/>
@@ -21462,7 +21466,7 @@
             <Button DefaultButtonFace="BuildCyclone6" Requirements="HaveStargate2"/>
             <Unit index="0" value="DominionKillTeam32"/>
         </InfoArray>
-        <InfoArray index="Train10" Time="5">
+        <InfoArray index="Train10" Time="9.8">
             <Button DefaultButtonFace="Vulture2"/>
             <Unit index="0" value="Probe52"/>
         </InfoArray>
@@ -22605,7 +22609,7 @@
         <InfoArray index="Train10">
             <Charge>
                 <CountMax value="6"/>
-                <CountStart value="1"/>
+                <CountStart value="6"/>
                 <CountUse value="1"/>
                 <TimeUse value="15.6"/>
             </Charge>
@@ -22615,7 +22619,7 @@
         <InfoArray index="Train11">
             <Charge>
                 <CountMax value="6"/>
-                <CountStart value="1"/>
+                <CountStart value="6"/>
                 <CountUse value="3"/>
                 <TimeUse value="15.6"/>
             </Charge>
@@ -22625,7 +22629,7 @@
         <InfoArray index="Train12">
             <Charge>
                 <CountMax value="6"/>
-                <CountStart value="1"/>
+                <CountStart value="6"/>
                 <CountUse value="4"/>
                 <TimeUse value="15.6"/>
             </Charge>
@@ -27694,12 +27698,9 @@
             <Cooldown Link="Abil/GhostAcademyResearch9"/>
             <Button DefaultButtonFace="CalldownMULE42332623222243222" Requirements="UnknownRequirement133"/>
         </InfoArray>
-        <InfoArray index="Research26" Time="100" Upgrade="UnknownUpgrade83">
-            <Resource index="Minerals" value="150"/>
-            <Resource index="Vespene" value="150"/>
+        <InfoArray index="Research26">
             <Charge Link="Abil/GhostAcademyResearch9"/>
             <Cooldown Link="Abil/GhostAcademyResearch9"/>
-            <Button DefaultButtonFace="CalldownMULE4233262322224322" Requirements="UnknownRequirement1332"/>
         </InfoArray>
         <InfoArray index="Research27">
             <Charge Link="Abil/GhostAcademyResearch9"/>
@@ -29431,7 +29432,7 @@
         <Flags index="AutoCastOn" value="1"/>
         <Cost>
             <Charge Link="KorhLol"/>
-            <Cooldown Link="KorhLol" TimeUse="84"/>
+            <Cooldown Link="KorhLol" TimeUse="42"/>
         </Cost>
         <Range value="500"/>
         <Arc value="360"/>
@@ -30157,8 +30158,9 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <Effect index="0" value="DisablingCloudSet352234422"/>
         <Cost>
+            <Vital index="Energy" value="50"/>
             <Charge Link="Abil/Snipe"/>
-            <Cooldown Link="Abil/Snipe" TimeUse="60"/>
+            <Cooldown Link="Abil/Snipe" TimeUse="15"/>
         </Cost>
         <TargetFilters value="Ground,Worker,Visible;Self,Neutral,Enemy,Structure,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="6"/>
@@ -35260,7 +35262,7 @@
                 <CountMax value="5"/>
                 <CountStart value="5"/>
                 <CountUse value="1"/>
-                <TimeUse value="15"/>
+                <TimeUse value="15.4"/>
             </Charge>
             <Button DefaultButtonFace="Probe3222"/>
             <Unit value="AmerdallianMiner2"/>
@@ -35376,7 +35378,7 @@
     <CAbilTrain id="NexusTrain4">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
         <Activity value="UI/Warping"/>
-        <InfoArray index="Train1" Time="14">
+        <InfoArray index="Train1" Time="15.4">
             <Button DefaultButtonFace="Probe4"/>
             <Unit value="Probe3"/>
         </InfoArray>
@@ -35445,7 +35447,7 @@
     <CAbilTrain id="NexusTrain5">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
         <Activity value="UI/Warping"/>
-        <InfoArray index="Train1" Time="14">
+        <InfoArray index="Train1" Time="16.8">
             <Button DefaultButtonFace="Probe5"/>
             <Unit value="Collector23"/>
         </InfoArray>
@@ -35530,7 +35532,7 @@
     <CAbilTrain id="NexusTrain6">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
         <Activity value="UI/Warping"/>
-        <InfoArray index="Train1" Time="15.8">
+        <InfoArray index="Train1" Time="17">
             <Charge Link="Abil/NexusTrain"/>
             <Cooldown Link="Abil/NexusTrain"/>
             <Button DefaultButtonFace="Probe6"/>
@@ -35716,7 +35718,7 @@
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
         <Activity value="UI/Warping"/>
         <Offset value="0,0"/>
-        <InfoArray index="Train1" Time="14">
+        <InfoArray index="Train1" Time="16.4">
             <Button DefaultButtonFace="MothershipCore3" State="Restricted"/>
             <Unit value="SCV22"/>
         </InfoArray>
@@ -38800,7 +38802,7 @@
                 <Link value="Abil/SpawnPhaseCannon29"/>
                 <Location value="Unit"/>
                 <TimeStart value="15"/>
-                <TimeUse value="79"/>
+                <TimeUse value="50"/>
             </Charge>
             <Cooldown Link="SpawnPhaseCannonSpawnPhaseCannon29" Location="Unit"/>
         </Cost>
@@ -38883,7 +38885,7 @@
         <Flags index="RangeUseCasterRadius" value="0"/>
         <Cost>
             <Charge Link="Abil/SpawnPhaseCannon" Location="Player"/>
-            <Cooldown Link="SpawnPhaseCannon" Location="Player" TimeUse="120"/>
+            <Cooldown Link="SpawnPhaseCannon" Location="Player" TimeUse="90"/>
         </Cost>
         <Placeholder value="HybridDestroyer22"/>
         <Range value="10"/>
@@ -39827,7 +39829,7 @@
                 <CountMax value="1"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
-                <TimeUse value="72"/>
+                <TimeUse value="80"/>
             </Charge>
             <Cooldown Link="Raven Build Link" Location="Unit" TimeStart="56"/>
         </Cost>
@@ -41473,7 +41475,7 @@
     </CAbilHarvest>
     <CAbilBuild id="ProtossBuild10" parent="ProtossBuild">
         <Name value="Abil/Name/ProtossBuild10"/>
-        <InfoArray index="Build1" Unit="Nexus7" Time="60">
+        <InfoArray index="Build1" Unit="Nexus7" Time="70">
             <Button DefaultButtonFace="Nexus7"/>
         </InfoArray>
         <InfoArray index="Build2" Unit="Pylon6" Time="35">
@@ -41555,7 +41557,7 @@
     </CAbilBuild>
     <CAbilBuild id="ProtossBuild11" parent="ProtossBuild">
         <Name value="Abil/Name/ProtossBuild11"/>
-        <InfoArray index="Build1" Unit="Nexus6" Time="70">
+        <InfoArray index="Build1" Unit="Nexus6" Time="80">
             <Button DefaultButtonFace="Nexus8"/>
         </InfoArray>
         <InfoArray index="Build2" Unit="Pylon5">
@@ -41597,7 +41599,7 @@
     </CAbilBuild>
     <CAbilBuild id="ProtossBuild12" parent="ProtossBuild">
         <Name value="Abil/Name/ProtossBuild12"/>
-        <InfoArray index="Build1" Unit="Nexus9" Time="70">
+        <InfoArray index="Build1" Unit="Nexus9" Time="60">
             <Button DefaultButtonFace="Nexus9"/>
         </InfoArray>
         <InfoArray index="Build2" Unit="Pylon22" Time="30">
@@ -42118,7 +42120,7 @@
             <Cooldown Location="Player"/>
             <Button DefaultButtonFace="CommandCenter7"/>
         </InfoArray>
-        <InfoArray index="Build4" Unit="Nexus5" Time="4">
+        <InfoArray index="Build4" Unit="OldFortress" Time="4">
             <Charge>
                 <CountMax value="1"/>
                 <CountStart value="1"/>
@@ -44278,7 +44280,7 @@
     </CAbilBuild>
     <CAbilBuild id="ProtossBuild9" parent="ProtossBuild">
         <Name value="Abil/Name/ProtossBuild9"/>
-        <InfoArray index="Build1" Unit="Nexus5" Time="56">
+        <InfoArray index="Build1" Unit="OldFortress" Time="70">
             <Resource index="Minerals" value="-75"/>
             <Button DefaultButtonFace="Nexus6"/>
         </InfoArray>
@@ -44397,11 +44399,11 @@
         <Flags index="AutoCast" value="1"/>
         <Cost>
             <Charge>
-                <CountMax value="2"/>
-                <CountStart value="2"/>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
                 <CountUse value="1"/>
                 <Link value="Abil/PsiStorm"/>
-                <TimeUse value="25"/>
+                <TimeUse value="40"/>
             </Charge>
             <Cooldown Link="Abil/PsiStorm" TimeStart="15"/>
         </Cost>
@@ -45234,7 +45236,7 @@
             <Charge Link="Abil/QuickMutator2" Location="Player"/>
             <Cooldown Link="Abil/QuickMutator2" Location="Player"/>
         </Cost>
-        <TargetFilters value="-;Ally,Neutral,Enemy,Massive"/>
+        <TargetFilters value="-;Ally,Neutral,Enemy"/>
         <Range value="500"/>
         <Arc value="360"/>
         <AutoCastFilters value="Visible;Neutral,Enemy"/>
@@ -45247,7 +45249,7 @@
             <Charge Link="Abil/QuickMutator2" Location="Player"/>
             <Cooldown Link="Abil/QuickMutator2" Location="Player"/>
         </Cost>
-        <TargetFilters value="-;Ally,Neutral,Enemy,Massive"/>
+        <TargetFilters value="-;Ally,Neutral,Enemy"/>
         <Range value="500"/>
         <Arc value="360"/>
         <AutoCastFilters value="Visible;Neutral,Enemy"/>
@@ -46455,7 +46457,7 @@
     </CAbilHarvest>
     <CAbilHarvest id="SCVHarvest6">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
-        <ResourceAmountRequest index="Vespene" value="6"/>
+        <ResourceAmountRequest index="Vespene" value="5"/>
     </CAbilHarvest>
     <CAbilEffectInstant id="SJHyperionLightningStorm2">
         <Alignment value="Negative"/>
@@ -47311,8 +47313,8 @@
         <Flags index="NoDeceleration" value="1"/>
         <Cost>
             <Charge>
-                <CountMax value="50"/>
-                <CountStart value="50"/>
+                <CountMax value="25"/>
+                <CountStart value="25"/>
                 <CountUse value="1"/>
                 <Link value="Abil/SJPirateYamato"/>
                 <TimeUse value="1"/>
@@ -48872,7 +48874,7 @@
                 <CountUse value="1"/>
                 <Link value="Abil/SOAOrbitalStrikeExecute2"/>
                 <Location value="Player"/>
-                <TimeUse value="50"/>
+                <TimeUse value="21"/>
             </Charge>
             <Cooldown Link="Abil/SOAOrbitalStrikeExecute2" Location="Player"/>
         </Cost>
@@ -49776,6 +49778,9 @@
         <CmdButtonArray index="On" DefaultButtonFace="ActivateShieldGenerator"/>
         <CmdButtonArray index="Off" DefaultButtonFace="DeactivateShieldGenerator"/>
         <Flags index="Toggle" value="1"/>
+        <OffCost>
+            <Cooldown TimeStart="7" TimeUse="7"/>
+        </OffCost>
         <BehaviorArray value="UnknownBehavior5"/>
     </CAbilBehavior>
     <CAbilBehavior id="ShadowShieldGenerator3">
@@ -50847,7 +50852,7 @@
             <Cooldown Link="Abil/AlarakAvatar" TimeUse="20"/>
         </Cost>
         <Range value="12"/>
-        <AutoCastFilters value="Visible;Neutral,Enemy,Structure,Missile,Stasis,Dead"/>
+        <AutoCastFilters value="Visible;Neutral,Enemy,Structure,Hover,Missile,Stasis,Dead"/>
         <AutoCastRange value="12"/>
         <AutoCastValidatorArray value="CasterLifeLT10Percent2222"/>
         <AutoCastValidatorArray value="IsTimeStopped221"/>
@@ -51977,7 +51982,7 @@
         <AINotifyEffect value="ShieldUp"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield28"/>
     </CAbilEffectInstant>
-    <CAbilEffectInstant id="ShieldUp72">
+    <CAbilEffectInstant id="YamatoDefenseField">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="UnknownEffect2"/>
         <Cost>
@@ -54600,9 +54605,6 @@
         <CmdButtonArray index="Execute" DefaultButtonFace="TitanMechMissileShot2"/>
         <AcquireAttackers value="1"/>
     </CAbilEffectTarget>
-    <CAbilTrain id="TrainTerrans">
-        <InfoArray index="Train1" Time="15.4"/>
-    </CAbilTrain>
     <CAbilEffectTarget id="UltraliskBurrowCharge">
         <CmdButtonArray index="Execute" Requirements="HaveHotSBurrowCharge"/>
         <!--This makes it so it will no longer snap to units, also makes it so it wont autocast on units though-->
@@ -55279,7 +55281,7 @@
     </CAbilEffectTarget>
     <CAbilBuild id="TerranBuild10" parent="TerranBuild">
         <Name value="Abil/Name/TerranBuild10"/>
-        <InfoArray index="Build1" Unit="CommandCenter6" Time="60">
+        <InfoArray index="Build1" Unit="CommandCenter6" Time="70">
             <Button DefaultButtonFace="CommandCenter11"/>
         </InfoArray>
         <InfoArray index="Build2" Unit="SupplyDepot22" Time="21">
@@ -55637,7 +55639,7 @@
     </CAbilBuild>
     <CAbilBuild id="TerranBuild15" parent="TerranBuild">
         <Name value="Abil/Name/TerranBuild15"/>
-        <InfoArray index="Build1" Unit="CommandCenter9" Time="60">
+        <InfoArray index="Build1" Unit="CommandCenter9" Time="70">
             <Button DefaultButtonFace="CommandCenter17" Requirements=""/>
         </InfoArray>
         <InfoArray index="Build2" Unit="SupplyDepot7">
@@ -56468,7 +56470,7 @@
     </CAbilBuild>
     <CAbilBuild id="TerranBuild8" parent="TerranBuild">
         <Name value="Abil/Name/TerranBuild8"/>
-        <InfoArray index="Build1" Unit="CenterofBasicOperations2" Time="60">
+        <InfoArray index="Build1" Unit="CenterofBasicOperations2" Time="84">
             <Button DefaultButtonFace="CommandCenter9" Requirements=""/>
         </InfoArray>
         <InfoArray index="Build2" Unit="SupplyDepot3" Time="20">
@@ -56529,7 +56531,7 @@
     </CAbilBuild>
     <CAbilBuild id="TerranBuild9" parent="TerranBuild">
         <Name value="Abil/Name/TerranBuild9"/>
-        <InfoArray index="Build1" Unit="CommandCenter5" Time="65">
+        <InfoArray index="Build1" Unit="CommandCenter5" Time="70">
             <Button DefaultButtonFace="CommandCenter10" Requirements=""/>
         </InfoArray>
         <InfoArray index="Build2" Unit="SupplyDepot4">
@@ -61124,8 +61126,8 @@
         <Effect index="0" value="WidowMineAttack23"/>
         <Cost index="0">
             <Charge>
-                <CountMax value="3"/>
-                <CountStart value="3"/>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
                 <CountUse value="1"/>
                 <TimeUse value="14"/>
             </Charge>

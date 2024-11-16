@@ -167,7 +167,7 @@
         <Cost>
             <Cooldown Link="Weapon/ATSLaserBattery" Location="Unit" TimeUse="0.225"/>
         </Cost>
-        <Period value="1.5"/>
+        <Period value="1.25"/>
         <Effect value="ATALaserBatteryLM32"/>
         <AllowedMovement value="Slowing"/>
         <RandomDelayMin value="0"/>
@@ -3897,7 +3897,7 @@
     <CWeaponLegacy id="PunisherGrenades434">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-ability-zeratul-disruptor-clusternova.dds"/>
-        <DisplayEffect value="PunisherGrenadesU434"/>
+        <DisplayEffect value="LegendaryWeapon2"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="9"/>
         <Period value="1.5"/>
@@ -4328,7 +4328,7 @@
         <RandomDelayMin value="-0.13"/>
         <RandomDelayMax value="0.1875"/>
         <Cost>
-            <Vital index="Energy" value="2"/>
+            <Vital index="Energy" value="6"/>
         </Cost>
     </CWeaponLegacy>
     <CWeaponLegacy id="Hyperion3322">
@@ -4371,7 +4371,7 @@
         <RangeSlop value="0"/>
         <Arc value="180"/>
         <Cost>
-            <Vital index="Energy" value="2"/>
+            <Vital index="Energy" value="3"/>
         </Cost>
         <Period value="1.2"/>
         <DamagePoint value="0"/>
@@ -4403,7 +4403,7 @@
         <RandomDelayMin value="-0.13"/>
         <RandomDelayMax value="0.1875"/>
         <Cost>
-            <Vital index="Energy" value="1"/>
+            <Vital index="Energy" value="6"/>
         </Cost>
     </CWeaponLegacy>
     <CWeaponLegacy id="HyperionAir222">
@@ -10845,6 +10845,15 @@
         <Arc value="90"/>
         <Period value="2"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="TwinIbiksCannon5">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-hisecautotracking.dds"/>
+        <TargetFilters value="Ground,Visible;Self,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Arc value="90"/>
+        <Period value="1.5"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="TyphoonMissilePod"/>
     <CWeaponLegacy id="TyphoonMissilePod2">
         <EditorCategories value="Race:Terran"/>
@@ -11627,6 +11636,16 @@
         <Backswing value="0"/>
         <Effect value="Vulture3"/>
         <AllowedMovement value="Slowing"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="VultureSpiderMines2">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-unit-terran-spidermine.dds"/>
+        <DisplayEffect value="VultureSpiderMinesDamage3"/>
+        <TargetFilters value="Ground,Visible;Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.1"/>
+        <Period value="0.833"/>
+        <Effect value="VultureSpiderMinesSet2"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="WarHound2">
         <EditorCategories value="Race:Terran"/>

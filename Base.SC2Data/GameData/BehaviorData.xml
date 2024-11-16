@@ -1049,7 +1049,7 @@
         <MaxStackCount value="7"/>
         <MaxStackCountPerCaster value="1"/>
         <Duration value="0.1875"/>
-        <Modification SightBonus="0.5" MoveSpeedMultiplier="1.1">
+        <Modification SightBonus="0.5" MoveSpeedMultiplier="1.2">
             <VitalRegenArray index="Energy" value="0.1992"/>
         </Modification>
     </CBehaviorBuff>
@@ -1463,6 +1463,25 @@
         <Modification>
             <WeaponArray Link="HighTemplarWeapon5"/>
             <WeaponDisableArray value="VoidRayVoid2922"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UnknownBehavior51">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <WeaponArray Link="VultureSpiderMines2"/>
+            <WeaponDisableArray value="VultureSpiderMines"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UnknownBehavior52">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <WeaponArray Link="TwinIbiksCannon5"/>
+            <TurretEnableArray value="PlanetaryFortress2"/>
+            <TurretDisableArray value="Nexus"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="UnmannedBuilding">
@@ -28661,7 +28680,10 @@
             <DamageDealtFraction index="Splash" value="0.25"/>
             <DamageDealtFraction index="NoProc" value="0.25"/>
             <LifeArmorBonus value="1"/>
+            <VitalMaxArray index="Shields" value="30"/>
             <VitalRegenArray index="Life" value="1"/>
+            <VitalRegenArray index="Shields" value="3"/>
+            <VitalRegenMultiplier index="Shields" value="3"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="GainedResources">
@@ -44150,7 +44172,13 @@
             <ModifyFlags index="Reveal" value="1"/>
             <ModifyFlags index="Detected" value="1"/>
             <StateFlags index="SuppressCloak" value="1"/>
+            <VitalRegenMultiplier index="Shields" value="3"/>
             <AbilLinkDisableArray value="BurrowInfestorUp"/>
+            <DeathResponse>
+                <Cost>
+                    <Vital index="Shields" value="30"/>
+                </Cost>
+            </DeathResponse>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="SwarmHostEggAnimation2" parent="SwarmHostEggAnimationDefault">
@@ -44958,7 +44986,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="CasterShieldsGE102"/>
         <Modification>
-            <VitalRegenMultiplier index="Shields" value="-5"/>
+            <VitalRegenMultiplier index="Shields" value="-10"/>
             <WeaponEnableArray value="PhotonCannon62"/>
         </Modification>
     </CBehaviorBuff>
