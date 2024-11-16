@@ -28652,7 +28652,10 @@
             <DamageDealtFraction index="Splash" value="0.25"/>
             <DamageDealtFraction index="NoProc" value="0.25"/>
             <LifeArmorBonus value="1"/>
+            <VitalMaxArray index="Shields" value="30"/>
             <VitalRegenArray index="Life" value="1"/>
+            <VitalRegenArray index="Shields" value="3"/>
+            <VitalRegenMultiplier index="Shields" value="3"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="GainedResources">
@@ -44141,7 +44144,13 @@
             <ModifyFlags index="Reveal" value="1"/>
             <ModifyFlags index="Detected" value="1"/>
             <StateFlags index="SuppressCloak" value="1"/>
+            <VitalRegenMultiplier index="Shields" value="3"/>
             <AbilLinkDisableArray value="BurrowInfestorUp"/>
+            <DeathResponse>
+                <Cost>
+                    <Vital index="Shields" value="30"/>
+                </Cost>
+            </DeathResponse>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="SwarmHostEggAnimation2" parent="SwarmHostEggAnimationDefault">

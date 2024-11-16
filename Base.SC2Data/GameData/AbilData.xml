@@ -811,6 +811,11 @@
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
     </CAbilEffectInstant>
+    <CAbilEffectTarget id="MistressSpawnMoltenTumor3">
+        <Cost index="0">
+            <Charge CountMax="1"/>
+        </Cost>
+    </CAbilEffectTarget>
     <CAbilResearch id="MoebiusZResearch">
         <InfoArray index="Research3">
             <Resource index="Minerals" value="150"/>
@@ -2394,7 +2399,7 @@
             <Button DefaultButtonFace="Goliath7" Requirements="HaveAttachedTechLab332"/>
             <Unit value="SpartanCompany3"/>
         </InfoArray>
-        <InfoArray index="Train12" Time="14">
+        <InfoArray index="Train12" Time="15.4">
             <Button DefaultButtonFace="SCV13"/>
             <Unit value="SCV11"/>
             <Unit value=""/>
@@ -3063,7 +3068,7 @@
             <Button DefaultButtonFace="SoulAbsorption2623326222223223222222222222222" Requirements="HavePsionicHeart22432322232423222322222222222222222222222222"/>
             <Unit value="Spectre3"/>
         </InfoArray>
-        <InfoArray index="Train29" Time="14">
+        <InfoArray index="Train29" Time="15.4">
             <Charge Link="Abil/BarracksTrain15"/>
             <Cooldown Link="Abil/BarracksTrain15"/>
             <Button DefaultButtonFace="Probe8"/>
@@ -3908,7 +3913,7 @@
             <Button DefaultButtonFace="Battlecruiser12" Requirements="HaveSupplyDepot422"/>
             <Unit value="Battlecruiser10"/>
         </InfoArray>
-        <InfoArray index="Train11" Time="14">
+        <InfoArray index="Train11" Time="15.4">
             <Charge Link="Abil/BarracksTrain17"/>
             <Cooldown Link="Abil/BarracksTrain17"/>
             <Button DefaultButtonFace="SCV14"/>
@@ -13194,7 +13199,7 @@
     </CAbilMorph>
     <CAbilTrain id="CommandCenterTrain10">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
-        <InfoArray index="Train1" Time="15">
+        <InfoArray index="Train1" Time="15.4">
             <Vital index="Energy" value="5"/>
             <Button DefaultButtonFace="SCV15" State="Restricted">
                 <Flags index="ToSelection" value="1"/>
@@ -13268,7 +13273,7 @@
             <Button DefaultButtonFace="Banshee10"/>
             <Unit value="Banshee6"/>
         </InfoArray>
-        <InfoArray index="Train18" Time="50" Effect="MercAirDrop2">
+        <InfoArray index="Train18" Time="70" Effect="MercAirDrop2">
             <Button DefaultButtonFace="Medivac10" Requirements="HaveBarracks722222"/>
             <Unit value="Medivac13"/>
         </InfoArray>
@@ -15962,19 +15967,19 @@
     </CAbilTrain>
     <CAbilTrain id="CommandCenterTrain9">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
-        <InfoArray index="Train1" Time="12">
+        <InfoArray index="Train1" Time="15.4">
             <Charge CountMax="20" CountStart="20" CountUse="1"/>
             <Button DefaultButtonFace="SCV112" State="Restricted">
                 <Flags index="ToSelection" value="1"/>
             </Button>
             <Unit value="SCV1032"/>
         </InfoArray>
-        <InfoArray index="Train2" Time="5">
+        <InfoArray index="Train2" Time="15.4">
             <Charge CountMax="30" CountStart="30" CountUse="1"/>
             <Button DefaultButtonFace="SCV113"/>
             <Unit value="SCV103"/>
         </InfoArray>
-        <InfoArray index="Train3" Time="14">
+        <InfoArray index="Train3" Time="15.4">
             <Button DefaultButtonFace="SCV1132"/>
             <Unit value="SCV102"/>
         </InfoArray>
@@ -21435,7 +21440,7 @@
             <Button DefaultButtonFace="BuildCyclone6" Requirements="HaveStargate2"/>
             <Unit index="0" value="DominionKillTeam32"/>
         </InfoArray>
-        <InfoArray index="Train10" Time="5">
+        <InfoArray index="Train10" Time="9.8">
             <Button DefaultButtonFace="Vulture2"/>
             <Unit index="0" value="Probe52"/>
         </InfoArray>
@@ -28628,7 +28633,7 @@
         <Flags index="AllowMovement" value="1"/>
         <Cost>
             <Charge Link="Abil/Irradiate"/>
-            <Cooldown Link="Abil/Irradiate" TimeUse="2"/>
+            <Cooldown Link="Abil/Irradiate" TimeUse="28"/>
         </Cost>
         <TargetFilters value="-;RawResource,HarvestableResource,Item,Dead,Hidden,Invulnerable"/>
         <Range value="18"/>
@@ -29401,7 +29406,7 @@
         <Flags index="AutoCastOn" value="1"/>
         <Cost>
             <Charge Link="KorhLol"/>
-            <Cooldown Link="KorhLol" TimeUse="84"/>
+            <Cooldown Link="KorhLol" TimeUse="42"/>
         </Cost>
         <Range value="500"/>
         <Arc value="360"/>
@@ -35230,7 +35235,7 @@
                 <CountMax value="5"/>
                 <CountStart value="5"/>
                 <CountUse value="1"/>
-                <TimeUse value="15"/>
+                <TimeUse value="15.4"/>
             </Charge>
             <Button DefaultButtonFace="Probe3222"/>
             <Unit value="AmerdallianMiner2"/>
@@ -38379,7 +38384,7 @@
         <Flags index="RangeUseCasterRadius" value="0"/>
         <Cost>
             <Charge Link="Abil/SpawnPhaseCannon19"/>
-            <Cooldown Link="SpawnPhaseCannonSpawnPhaseCannon19" Location="Unit" TimeUse="10"/>
+            <Cooldown Link="SpawnPhaseCannonSpawnPhaseCannon19" Location="Unit" TimeUse="30"/>
         </Cost>
         <Placeholder value="PhotonCannon12"/>
         <Range value="11"/>
@@ -41647,7 +41652,7 @@
     </CAbilBuild>
     <CAbilBuild id="ProtossBuild13" parent="ProtossBuild">
         <Name value="Abil/Name/ProtossBuild13"/>
-        <InfoArray index="Build1" Unit="Nexus10" Time="65">
+        <InfoArray index="Build1" Unit="Nexus10" Time="70">
             <Vital index="Energy" value="50"/>
             <Button DefaultButtonFace="Nexus10"/>
         </InfoArray>
@@ -41734,7 +41739,7 @@
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <FlagArray index="PeonDisableCollision" value="1"/>
         <FlagArray index="PeonMaintained" value="0"/>
-        <InfoArray index="Build1" Unit="Nexus4" Time="75">
+        <InfoArray index="Build1" Unit="Nexus4" Time="70">
             <Button DefaultButtonFace="Nexus11"/>
         </InfoArray>
         <InfoArray index="Build2" Unit="VoidPylon2" Time="25">
@@ -45204,7 +45209,7 @@
             <Charge Link="Abil/QuickMutator2" Location="Player"/>
             <Cooldown Link="Abil/QuickMutator2" Location="Player"/>
         </Cost>
-        <TargetFilters value="-;Ally,Neutral,Enemy,Massive"/>
+        <TargetFilters value="-;Ally,Neutral,Enemy"/>
         <Range value="500"/>
         <Arc value="360"/>
         <AutoCastFilters value="Visible;Neutral,Enemy"/>
@@ -45217,7 +45222,7 @@
             <Charge Link="Abil/QuickMutator2" Location="Player"/>
             <Cooldown Link="Abil/QuickMutator2" Location="Player"/>
         </Cost>
-        <TargetFilters value="-;Ally,Neutral,Enemy,Massive"/>
+        <TargetFilters value="-;Ally,Neutral,Enemy"/>
         <Range value="500"/>
         <Arc value="360"/>
         <AutoCastFilters value="Visible;Neutral,Enemy"/>
@@ -48842,7 +48847,7 @@
                 <CountUse value="1"/>
                 <Link value="Abil/SOAOrbitalStrikeExecute2"/>
                 <Location value="Player"/>
-                <TimeUse value="50"/>
+                <TimeUse value="21"/>
             </Charge>
             <Cooldown Link="Abil/SOAOrbitalStrikeExecute2" Location="Player"/>
         </Cost>
@@ -55607,7 +55612,7 @@
     </CAbilBuild>
     <CAbilBuild id="TerranBuild15" parent="TerranBuild">
         <Name value="Abil/Name/TerranBuild15"/>
-        <InfoArray index="Build1" Unit="CommandCenter9" Time="60">
+        <InfoArray index="Build1" Unit="CommandCenter9" Time="70">
             <Button DefaultButtonFace="CommandCenter17" Requirements=""/>
         </InfoArray>
         <InfoArray index="Build2" Unit="SupplyDepot7">
@@ -55949,7 +55954,7 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <FlagArray index="Interruptible" value="1"/>
         <FlagArray index="PeonDisableCollision" value="1"/>
-        <InfoArray index="Build1" Unit="CommandCenter10" Time="60">
+        <InfoArray index="Build1" Unit="CommandCenter10" Time="84">
             <Button DefaultButtonFace="CommandCenter20" State="Suppressed"/>
         </InfoArray>
         <InfoArray index="Build2" Unit="SupplyDepot10" Time="30">

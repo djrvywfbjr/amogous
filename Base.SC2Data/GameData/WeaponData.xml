@@ -4316,7 +4316,7 @@
         <RandomDelayMin value="-0.13"/>
         <RandomDelayMax value="0.1875"/>
         <Cost>
-            <Vital index="Energy" value="2"/>
+            <Vital index="Energy" value="6"/>
         </Cost>
     </CWeaponLegacy>
     <CWeaponLegacy id="Hyperion3322">
@@ -4391,7 +4391,7 @@
         <RandomDelayMin value="-0.13"/>
         <RandomDelayMax value="0.1875"/>
         <Cost>
-            <Vital index="Energy" value="1"/>
+            <Vital index="Energy" value="6"/>
         </Cost>
     </CWeaponLegacy>
     <CWeaponLegacy id="HyperionAir222">
@@ -10832,6 +10832,15 @@
         <Range value="8"/>
         <Arc value="90"/>
         <Period value="2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="TwinIbiksCannon5">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-hisecautotracking.dds"/>
+        <TargetFilters value="Ground,Visible;Self,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Arc value="90"/>
+        <Period value="1.5"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="TyphoonMissilePod"/>
     <CWeaponLegacy id="TyphoonMissilePod2">

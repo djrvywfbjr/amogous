@@ -12692,7 +12692,6 @@
         <WhichLocation Value="TargetUnitOrPoint"/>
         <SpawnEffect value="CalldownMULECreateSet5"/>
         <SpawnUnit value="OmindHunterKiller"/>
-        <SpawnCount value="2"/>
     </CEffectCreateUnit>
     <CEffectSet id="CalldownMULEFinalSet2">
         <EditorCategories value="Race:Terran"/>
@@ -41213,7 +41212,7 @@
     <CEffectDamage id="NeedleSpinesDamage10" parent="DU_WEAP">
         <EditorCategories value="Race:Zerg"/>
         <Kind value="Ranged"/>
-        <Amount value="20"/>
+        <Amount value="10"/>
     </CEffectDamage>
     <CEffectDamage id="NeedleSpinesDamage2" parent="DU_WEAP">
         <EditorCategories value="Race:Zerg"/>
@@ -41228,7 +41227,7 @@
     <CEffectDamage id="NeedleSpinesDamage222" parent="DU_WEAP">
         <EditorCategories value="Race:Zerg"/>
         <Kind value="Ranged"/>
-        <Amount value="15"/>
+        <Amount value="22"/>
     </CEffectDamage>
     <CEffectModifyUnit id="NeedleSpinesDamage2222">
         <EditorCategories value="Race:Zerg"/>
@@ -70010,6 +70009,20 @@
         <Kind value="Ranged"/>
         <KindSplash value="Splash"/>
         <Amount value="40"/>
+        <Death value="Fire"/>
+        <AreaArray Radius="0.5" Fraction="1"/>
+        <AreaArray Radius="0.8" Fraction="0.75"/>
+        <AreaArray Radius="1.25" Fraction="0.375"/>
+        <ExcludeArray Value="Outer"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFlags index="OffsetByUnitRadius" value="0"/>
+    </CEffectDamage>
+    <CEffectDamage id="TwinIbiksCannon5" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <Kind value="Ranged"/>
+        <KindSplash value="Splash"/>
+        <Amount value="20"/>
         <Death value="Fire"/>
         <AreaArray Radius="0.5" Fraction="1"/>
         <AreaArray Radius="0.8" Fraction="0.75"/>
