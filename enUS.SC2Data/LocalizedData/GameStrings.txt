@@ -14521,7 +14521,7 @@ Button/Tooltip/Forge7=Contains infantry upgrades.
 Button/Tooltip/Forge8=Contains upgrades.
 Button/Tooltip/Forge9=Contains weapon and armor upgrades for Protoss ground units and shield upgrades for all Protoss units and structures.<n/><n/><c val="ffff8a">Enables:</c><n/>- Photon Cannons from Probes
 Button/Tooltip/ForgeAiurHighOnes=Contains upgrades.
-Button/Tooltip/Frenzy2=Makes a single biological unit do 25% more damage and have 1 more armor and life regeneration.
+Button/Tooltip/Frenzy2=Makes a single biological unit do 25% more damage and have 30 shields, 1 more armor and life regeneration
 Button/Tooltip/Frenzy22=Makes a single Zerg unit do 25% more damage and have 1 more armor and life regeneration.<n/><n/>Using the same technology used in tranquilizer rounds we could have armor-piercing bullets deliver a chemical agent that forces the organizm into a short-timed passive frenzy, greatly enhancing its combat potential.
 Button/Tooltip/FungalGrowth2=Snares units in the targeted area for 4 seconds, disabling their movement, turning and causing 64 damage through it's duration.
 Button/Tooltip/FungalGrowth22=Snares units in the targeted area for 8 seconds, disabling their movement and turning. If they die while under the effect, they become an Armed Dead.
@@ -30243,6 +30243,7 @@ Effect/Name/TwinGatlingCannons2=Twin Gatling Cannon (Damage)
 Effect/Name/TwinIbiksCannon2=Twin Ibiks Cannon Copy
 Effect/Name/TwinIbiksCannon3=Twin Ibiks Cannon Copy 2
 Effect/Name/TwinIbiksCannon4=Twin Ibiks Cannon
+Effect/Name/TwinIbiksCannon5=Twin Ibiks Cannon
 Effect/Name/UEDFlagshipYamatoAoE=UEDFlagshipYamatoAoE
 Effect/Name/UltraliskBurrowChargeHold2=Ultralisk Burrow Charge Hold Copy
 Effect/Name/UltraliskBurrowChargeHold3=Ultralisk Burrow Charge Hold Copy 2
@@ -39420,6 +39421,7 @@ Weapon/Name/TwinGatlingCannon22=Gatling Cannon
 Weapon/Name/TwinIbiksCannon2=Vindigo Cannon
 Weapon/Name/TwinIbiksCannon3=Bulwark Cannon
 Weapon/Name/TwinIbiksCannon4=Infestation Cannons
+Weapon/Name/TwinIbiksCannon5=Ibiks Cannon
 Weapon/Name/TyphoonMissilePod=<c val="FFFF00">Typhoon Missile Pod</c>
 Weapon/Name/TyphoonMissilePod2=Typhoon Missiles
 Weapon/Name/TyphoonMissilePod3=Storm Missile Pod
