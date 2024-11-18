@@ -12544,6 +12544,17 @@
         <EffectArray Reference="Effect,RoachVileAcidSalivaU3,Amount" Value="3"/>
         <EffectArray Reference="Effect,RoachVileUMelee2,Amount" Value="3"/>
         <EffectArray Reference="Effect,ParticleDisruptorsU3,Amount" Value="2"/>
+        <EffectArray Reference="Effect,HydraliskMelee4,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NeedleSpinesDamage9,Amount" Value="1"/>
+        <EffectArray Reference="Effect,PhaseDisruptors,Amount" Value="2"/>
+        <EffectArray Reference="Effect,PhaseDisruptors,AttributeBonus[Armored]" Value="3"/>
+        <EffectArray Reference="Effect,HotSSwarmlingClawsDamage3,Amount" Value="1"/>
+        <EffectArray Reference="Effect,WarpBlades,Amount" Value="5"/>
+        <EffectArray Reference="Effect,ThermalLancesMU,Amount" Value="1"/>
+        <EffectArray Reference="Effect,ThermalLancesMU,AttributeBonus[Light]" Value="1"/>
+        <EffectArray Reference="Effect,ThermalBeamDamage2,Amount" Value="2"/>
+        <EffectArray Reference="Effect,HotSLeviathanAirAttackDamage3,Amount" Value="1"/>
+        <EffectArray Reference="Effect,HotSLeviathanAirAttackDamage3,AttributeBonus[Massive]" Value="1"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -12566,6 +12577,17 @@
         <EffectArray Reference="Effect,RoachVileAcidSalivaU3,Amount" Value="3"/>
         <EffectArray Reference="Effect,RoachVileUMelee2,Amount" Value="3"/>
         <EffectArray Reference="Effect,ParticleDisruptorsU3,Amount" Value="2"/>
+        <EffectArray Reference="Effect,HydraliskMelee4,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NeedleSpinesDamage9,Amount" Value="1"/>
+        <EffectArray Reference="Effect,PhaseDisruptors,Amount" Value="2"/>
+        <EffectArray Reference="Effect,PhaseDisruptors,AttributeBonus[Armored]" Value="3"/>
+        <EffectArray Reference="Effect,HotSSwarmlingClawsDamage3,Amount" Value="1"/>
+        <EffectArray Reference="Effect,WarpBlades,Amount" Value="5"/>
+        <EffectArray Reference="Effect,ThermalLancesMU,Amount" Value="1"/>
+        <EffectArray Reference="Effect,ThermalLancesMU,AttributeBonus[Light]" Value="1"/>
+        <EffectArray Reference="Effect,ThermalBeamDamage2,Amount" Value="2"/>
+        <EffectArray Reference="Effect,HotSLeviathanAirAttackDamage3,Amount" Value="1"/>
+        <EffectArray Reference="Effect,HotSLeviathanAirAttackDamage3,AttributeBonus[Massive]" Value="1"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -12588,6 +12610,17 @@
         <EffectArray Reference="Effect,RoachVileAcidSalivaU3,Amount" Value="3"/>
         <EffectArray Reference="Effect,RoachVileUMelee2,Amount" Value="3"/>
         <EffectArray Reference="Effect,ParticleDisruptorsU3,Amount" Value="2"/>
+        <EffectArray Reference="Effect,HydraliskMelee4,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NeedleSpinesDamage9,Amount" Value="1"/>
+        <EffectArray Reference="Effect,PhaseDisruptors,Amount" Value="2"/>
+        <EffectArray Reference="Effect,PhaseDisruptors,AttributeBonus[Armored]" Value="3"/>
+        <EffectArray Reference="Effect,HotSSwarmlingClawsDamage3,Amount" Value="1"/>
+        <EffectArray Reference="Effect,WarpBlades,Amount" Value="5"/>
+        <EffectArray Reference="Effect,ThermalLancesMU,Amount" Value="1"/>
+        <EffectArray Reference="Effect,ThermalLancesMU,AttributeBonus[Light]" Value="1"/>
+        <EffectArray Reference="Effect,ThermalBeamDamage2,Amount" Value="2"/>
+        <EffectArray Reference="Effect,HotSLeviathanAirAttackDamage3,Amount" Value="1"/>
+        <EffectArray Reference="Effect,HotSLeviathanAirAttackDamage3,AttributeBonus[Massive]" Value="1"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>

@@ -13826,7 +13826,7 @@ Button/Tooltip/CorsairMPDisruptionWeb3=Creates a web of energy on the ground tha
 Button/Tooltip/CorsairMPDisruptionWeb4=Creates a web of energy on the ground that prevents enemy structures and ground units from attacking for <d time="10"/>.
 Button/Tooltip/CouncilOfThePure=Unlocks basic heroes: Kuras, Alred and Tsarica
 Button/Tooltip/CouncilOfThePureeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee=Contains upgrades.
-Button/Tooltip/CreepTumor2=A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn additional Creep Tumors.<n/><n/><c val="#ColorAttackInfo">Bonus: Zerg move faster on creep.</c>
+Button/Tooltip/CreepTumor2=Summons creep generator in form of a shielded Pylon.  <n/><n/><c val="#ColorAttackInfo">Bonus: Zerg units move faster on creep.</c>
 Button/Tooltip/CreepTumor22=A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn additional Creep Tumors.<n/><n/><c val="#ColorAttackInfo">Bonus: Zerg move faster on creep.</c>
 Button/Tooltip/CreepTumor222=A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn additional Creep Tumors.<n/><n/><c val="#ColorAttackInfo">Bonus: Zerg move faster on creep.</c>
 Button/Tooltip/CreepTumor222312ge=A creep generator, detector and defensive structure. Is hidden and automatically fires missiles at nearby enemies.<n/><n/>Must be placed on creep, but will place itself as far from creep as possible on use.
@@ -14096,7 +14096,7 @@ Button/Tooltip/DeMaker=Powerful battle strider. Can walk up and down cliffs. Att
 Button/Tooltip/DeepTunnel2=The Precursor tunnels deep underground and surfaces at target friendly structure.
 Button/Tooltip/DefenderOfAncients=Ranged attack strider.
 Button/Tooltip/DefensiveBunker=Defensive structure. <n/>Infantry fights from inside. <n/><n/><c val="#ColorAttackInfo">Bonus: +2 range and 75% attack speed to units inside.</c>
-Button/Tooltip/DefensiveMatrix2=Surrounds Targeted unit with a shield that gives 200 shields, 6 life regeneration, but halfs the movement speed.<n/><n/><c val="FFFF00">Bonus: Units who gain this shield for the first time gain 200 pernament shields.</c>
+Button/Tooltip/DefensiveMatrix2=Surrounds Targeted unit with a shield that gives 300 shields, 6 life regeneration, but halves the movement speed.<n/><n/><c val="FFFF00">Bonus: Units who gain this shield for the first time gain 200 permanent shields.</c>
 Button/Tooltip/DefensiveMatrix22=Targeted unit gains 200 pernament shields. Also adds nuclear addition for 60 seconds, it will create a nuclear explosion on death.
 Button/Tooltip/DefensiveMatrix222=Targeted unit starts broadcasting Mengsk's speech, increasing everything time related of nearby units by 25% for 20 seconds.
 Button/Tooltip/DefensiveMatrix2222=Heals 100 life and 100 shields to all units in the targeted area
@@ -14411,7 +14411,7 @@ Button/Tooltip/ExpeditionaryVessel=Aerial support unit.
 Button/Tooltip/ExpeditionaryVessel2=Aerial support unit.
 Button/Tooltip/ExplodingBarrelLarge2=These barrels contain a highly volatile compound. Attack them to cause a chain reaction of explosions.
 Button/Tooltip/Exterminator=Heavy assault infantry. Part of Mengsk's elite guard.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
-Button/Tooltip/Extractor2=Mutated over a Vespene Geyser to allow harvesting of vespene gas.
+Button/Tooltip/Extractor2=Mutate over a Vespene Geyser to allow harvesting of vespene gas.
 Button/Tooltip/Extractor3=Mutated over a Vespene Geyser to allow harvesting of vespene gas.
 Button/Tooltip/Extractor4=Constructed over a Vespene Geyser to allow harvesting of vespene gas.
 Button/Tooltip/Extractor5=Gives the packs useful resources for protection and minimal feeding off nearby Crawlers.
@@ -16153,12 +16153,12 @@ Button/Tooltip/MothershipCore2222322422252=Increases life of all Dominant Strain
 Button/Tooltip/MothershipCore22223224222522=Increases life of all Dominant Strain units by 20%.
 Button/Tooltip/MothershipCore22223225=Increases damage of all Pure Born units.
 Button/Tooltip/MothershipCore222232252=Increases damage of all Pure Born units.
-Button/Tooltip/MothershipCore222233=Increases armor of all units.
-Button/Tooltip/MothershipCore2222332=Increases armor of all units.
-Button/Tooltip/MothershipCore22223322=Increases armor of all units.
-Button/Tooltip/MothershipCore222233222=Increases damage of all non-heroic units.
-Button/Tooltip/MothershipCore2222332222=Increases damage of all non-heroic units.
-Button/Tooltip/MothershipCore22223322222=Increases damage of all non-heroic units.
+Button/Tooltip/MothershipCore222233=Increases armor of all units by 1.
+Button/Tooltip/MothershipCore2222332=Further increases armor of all units by 1.
+Button/Tooltip/MothershipCore22223322=Maximizes armor of all units by 1.
+Button/Tooltip/MothershipCore222233222=Increases damage of all non-heroic units by 10%.
+Button/Tooltip/MothershipCore2222332222=Further increases damage of all non-heroic units by 10%.
+Button/Tooltip/MothershipCore22223322222=Maximizes damage of all non-heroic units by 10%.
 Button/Tooltip/MothershipCore222233223=Sets the duration of being New Born to 2 seconds.
 Button/Tooltip/MothershipCore22224=Pure Born merged into Burner have found a way to preserve their conciousness by creating an artificial vortex and storing themselfes in it, although there are many more uses for powers similar to that.<n/>Burners kill 3 nearby enemy non-massive and non-heroic units on death.
 Button/Tooltip/MothershipCore222242=Allows Warp Space Destroyers to shoot at up to 3 enemies every attack.
@@ -16770,7 +16770,7 @@ Button/Tooltip/PoisonNova5=Releases a shockwave, dealing 10 damage to enemy unit
 Button/Tooltip/PoisonNova6=Deals 20 damage and pushes ground units around Artilisk towards it.<n/><n/>We can attach an advanced device that creates earthquakes, forming shallow sinkholes that push enemies on the surface onto the beast.
 Button/Tooltip/PoisonNova7=Issues hostile units in 20 range around the caster to Stop.
 Button/Tooltip/PoisonNova8=Instantly deals 10 damage to enemy ground units nearby.
-Button/Tooltip/PortalOfHerecy=Warps in ground units.
+Button/Tooltip/PortalOfHerecy=Spawns upgradable heroes.
 Button/Tooltip/Predator2=Anti-infantry specialist that deals area damage with each attack.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/Predator3=Anti-infantry specialist that deals area damage with each attack.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/Predator3wagwagw21=Anti-mechanical specialist that deals damage in an area.<n/><n/>The old predators were so ineffective, an outdated colonial ship was the alternative for finishing their research. These mongrels are slightly different, because the zerg threat is becoming less relevant and the robot design can unleash it's true potential as an anti-mechanical attacker.
@@ -18017,7 +18017,7 @@ Button/Tooltip/SpartanCompany4=Heavy-fire support unit.<n/><n/><c val="#ColorAtt
 Button/Tooltip/SpartanCompany42=Heavy-fire support unit.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/SpartanUED=Heavy-fire support unit.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/SpawnBanelings2=This unit spawns 5 banelings in targeted location. Banelings live for 30 seconds.
-Button/Tooltip/SpawnBanelings22=This unit spawns 5 Volatile Locusts in targeted location. Volatile Locusts live for 20 seconds.
+Button/Tooltip/SpawnBanelings22=Spawns 2 Volatile Locusts in targeted location. Volatile Locusts live for 15 seconds.
 Button/Tooltip/SpawnBanelings23=This unit spawns a Baneling in targeted location. Banelings live for 30 seconds.
 Button/Tooltip/SpawnBanelings232=Allows Princesses to spawn a temporarily living baneling. Banelings last 30 seconds.
 Button/Tooltip/SpawnBanelings24=This unit spawns 7 floodlings in targeted location. Banelings live for 30 seconds.
@@ -18113,7 +18113,7 @@ Button/Tooltip/SpineCrawler52222=<c val="C0C0C0">Angelic Strain</c><n/>Bombards 
 Button/Tooltip/SpineCrawler6=Summons a gigantic spine that attacks nearby ground units.
 Button/Tooltip/SpineCrawler62=Giant anti-ground defensive structure.
 Button/Tooltip/SpineCrawler7=Anti-ground defensive structure. <n/><n/><c val="ffff8a">Can attack ground units.</c><n/><n/>Our scientists have managed to "tame" the erratic behavior of Spine Crawlers, although requiring the latter to be permanently rooted.
-Button/Tooltip/Spire2=Contains upgrades for Zerg air units. Can mutate into a Greater Spire.<n/><n/><c val="ffff8a">Enables:</c><n/>- Mutalisks from Larvae
+Button/Tooltip/Spire2=Able to spawn advanced ground units.
 Button/Tooltip/Spire3=Contains upgrades for Zerg air units. Can mutate into a Greater Spire.<n/><n/><c val="ffff8a">Enables:</c><n/>- Mutalisks from Larvae
 Button/Tooltip/Spire312eee=Air unit assembly structure.
 Button/Tooltip/Spire32=Contains upgrades for Zerg air units. Can mutate into a Greater Spire.<n/><n/><c val="ffff8a">Enables:</c><n/>- Mutalisks from Larvae
@@ -18763,7 +18763,7 @@ Button/Tooltip/UnknownButton7332222222=Allows Squadron Deltas to attack ground e
 Button/Tooltip/UnknownButton73322222222=Squadron Deltas gain a secondary missile weapon that deals more damage to single targets.
 Button/Tooltip/UnknownButton74=A list of upgrades for Squadron Delta.
 Button/Tooltip/UnknownButton75=A list of upgrades for Advanced Apparitions.
-Button/Tooltip/UnknownButton76=Attacks reduce the armor and life regeneration of the enemy for 5 seconds. Can stack up to 50 times.
+Button/Tooltip/UnknownButton76=Attacks reduce the armor and life regeneration of the enemy by 0.5 for 5 seconds. Can stack up to 50 times.
 Button/Tooltip/UnknownButton77=Attacked enemies will take 30% more damage. Stacks up to 3 times.
 Button/Tooltip/UnknownButton78=Darkness Receivers' attacks invert life and energy regenerations of the attacked units.
 Button/Tooltip/UnknownButton79=Quiet Ones' attacks reduce target unit's life by 5 for 7 seconds. Stacks up to 4 times.
@@ -19365,7 +19365,7 @@ Button/Tooltip/WarpInRoboticsWarpFacility5=Enables warp in of Protoss robotic un
 Button/Tooltip/WarpInRoboticsWarpFacility6=Enables warp in of Protoss robotic units.
 Button/Tooltip/WarpInRoboticsWarpFacility7=Enables warp in of Protoss robotic units.
 Button/Tooltip/WarpInScout2=Versatile air and ground attacker.<n/><n/><c val="00FFFF">Special Ability: </c>Shoots a powerful missile, stunning target for 4 seconds as well as dealing damage.
-Button/Tooltip/WarpInStarWarpGate2=Warps in air units.
+Button/Tooltip/WarpInStarWarpGate2=Spawns air units.
 Button/Tooltip/WarpInStarWarpGate3=Warps in legendary Pure Born heroes.
 Button/Tooltip/WarpInStarWarpGate32=Unlocks advanced heroes: Xun'Ral, Noh'Typ and Klora'Zul. 
 Button/Tooltip/WarpInStarWarpGate33=Warps in legendary Pure Born heroes.
@@ -23918,7 +23918,7 @@ Effect/Name/HotSBioPlasmidDischargeLaunchMissile22=Hot SBio Plasmid Discharge La
 Effect/Name/HotSLeviathanAirAttackCreatePersistent2=Hot SLeviathan Air Attack Create Persistent
 Effect/Name/HotSLeviathanAirAttackCreatePersistent3=Hot SLeviathan Air Attack Create Persistent
 Effect/Name/HotSLeviathanAirAttackDamage2=Hot SLeviathan Air Attack Damage
-Effect/Name/HotSLeviathanAirAttackDamage3=Hot SLeviathan Air Attack Damage
+Effect/Name/HotSLeviathanAirAttackDamage3=Bile Chambers
 Effect/Name/HotSLeviathanAirAttackLaunchMissile2=Hot SLeviathan Air Attack Launch Missile
 Effect/Name/HotSLeviathanAirAttackLaunchMissile3=Hot SLeviathan Air Attack Launch Missile
 Effect/Name/HotSRemoveBanelingExplodeLargeDeathBehavior2=Hot SRemove Baneling Explode Large Death Behavior Copy
@@ -23939,7 +23939,7 @@ Effect/Name/HotSSwarmlingClaws4=Hot SSwarmling Claws
 Effect/Name/HotSSwarmlingClaws5=Hot SSwarmling Claws
 Effect/Name/HotSSwarmlingClaws6=Hot SSwarmling Claws
 Effect/Name/HotSSwarmlingClawsDamage2=Hot SSwarmling Claws Damage Copy
-Effect/Name/HotSSwarmlingClawsDamage3=Hot SSwarmling Claws Damage
+Effect/Name/HotSSwarmlingClawsDamage3=Venomous claws
 Effect/Name/HotSSwarmlingClawsDamage4=Hot SSwarmling Claws Damage
 Effect/Name/HotSSwarmlingClawsDamage5=Hot SSwarmling Claws Damage
 Effect/Name/HotSSwarmlingClawsDamage6=Hot SSwarmling Claws Damage
@@ -25841,7 +25841,7 @@ Effect/Name/NeedleSpinesDamage72=Cut-A-Lisk Mellee Copy 2
 Effect/Name/NeedleSpinesDamage722=Cut-A-Lisk Mellee Copy 2
 Effect/Name/NeedleSpinesDamage8=Cut-A-Lisk Mellee
 Effect/Name/NeedleSpinesDamage82=Cut-A-Lisk Mellee Defender Guard
-Effect/Name/NeedleSpinesDamage9=Cut-A-Lisk Mellee
+Effect/Name/NeedleSpinesDamage9=Poisoned Needles
 Effect/Name/NeedleSpinesImpactSet2=Needle Spines Impact Set Copy
 Effect/Name/NeedleSpinesImpactSet22=Needle Spines Impact Set Copy Copy
 Effect/Name/NeedleSpinesImpactSet222=Needle Spines Impact Set Copy Copy Copy
