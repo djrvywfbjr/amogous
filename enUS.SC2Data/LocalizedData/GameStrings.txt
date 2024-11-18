@@ -19365,7 +19365,7 @@ Button/Tooltip/WarpInRoboticsWarpFacility5=Enables warp in of Protoss robotic un
 Button/Tooltip/WarpInRoboticsWarpFacility6=Enables warp in of Protoss robotic units.
 Button/Tooltip/WarpInRoboticsWarpFacility7=Enables warp in of Protoss robotic units.
 Button/Tooltip/WarpInScout2=Versatile air and ground attacker.<n/><n/><c val="00FFFF">Special Ability: </c>Shoots a powerful missile, stunning target for 4 seconds as well as dealing damage.
-Button/Tooltip/WarpInStarWarpGate2=Able to spawn advanced ground units.
+Button/Tooltip/WarpInStarWarpGate2=Spawns air units.
 Button/Tooltip/WarpInStarWarpGate3=Warps in legendary Pure Born heroes.
 Button/Tooltip/WarpInStarWarpGate32=Unlocks advanced heroes: Xun'Ral, Noh'Typ and Klora'Zul. 
 Button/Tooltip/WarpInStarWarpGate33=Warps in legendary Pure Born heroes.
