@@ -13826,7 +13826,7 @@ Button/Tooltip/CorsairMPDisruptionWeb3=Creates a web of energy on the ground tha
 Button/Tooltip/CorsairMPDisruptionWeb4=Creates a web of energy on the ground that prevents enemy structures and ground units from attacking for <d time="10"/>.
 Button/Tooltip/CouncilOfThePure=Unlocks basic heroes: Kuras, Alred and Tsarica
 Button/Tooltip/CouncilOfThePureeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee=Contains upgrades.
-Button/Tooltip/CreepTumor2=A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn additional Creep Tumors.<n/><n/><c val="#ColorAttackInfo">Bonus: Zerg move faster on creep.</c>
+Button/Tooltip/CreepTumor2=Summons creep generator in form of a shielded Pylon.  <n/><n/><c val="#ColorAttackInfo">Bonus: Zerg units move faster on creep.</c>
 Button/Tooltip/CreepTumor22=A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn additional Creep Tumors.<n/><n/><c val="#ColorAttackInfo">Bonus: Zerg move faster on creep.</c>
 Button/Tooltip/CreepTumor222=A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn additional Creep Tumors.<n/><n/><c val="#ColorAttackInfo">Bonus: Zerg move faster on creep.</c>
 Button/Tooltip/CreepTumor222312ge=A creep generator, detector and defensive structure. Is hidden and automatically fires missiles at nearby enemies.<n/><n/>Must be placed on creep, but will place itself as far from creep as possible on use.
@@ -14096,7 +14096,7 @@ Button/Tooltip/DeMaker=Powerful battle strider. Can walk up and down cliffs. Att
 Button/Tooltip/DeepTunnel2=The Precursor tunnels deep underground and surfaces at target friendly structure.
 Button/Tooltip/DefenderOfAncients=Ranged attack strider.
 Button/Tooltip/DefensiveBunker=Defensive structure. <n/>Infantry fights from inside. <n/><n/><c val="#ColorAttackInfo">Bonus: +2 range and 75% attack speed to units inside.</c>
-Button/Tooltip/DefensiveMatrix2=Surrounds Targeted unit with a shield that gives 200 shields, 6 life regeneration, but halfs the movement speed.<n/><n/><c val="FFFF00">Bonus: Units who gain this shield for the first time gain 200 pernament shields.</c>
+Button/Tooltip/DefensiveMatrix2=Surrounds Targeted unit with a shield that gives 300 shields, 6 life regeneration, but halves the movement speed.<n/><n/><c val="FFFF00">Bonus: Units who gain this shield for the first time gain 200 permanent shields.</c>
 Button/Tooltip/DefensiveMatrix22=Targeted unit gains 200 pernament shields. Also adds nuclear addition for 60 seconds, it will create a nuclear explosion on death.
 Button/Tooltip/DefensiveMatrix222=Targeted unit starts broadcasting Mengsk's speech, increasing everything time related of nearby units by 25% for 20 seconds.
 Button/Tooltip/DefensiveMatrix2222=Heals 100 life and 100 shields to all units in the targeted area
