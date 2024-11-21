@@ -11145,9 +11145,10 @@
     </CAbilArmMagazine>
     <CAbilArmMagazine id="CarrierHangar4" parent="CarrierHangar">
         <Name value="Abil/Name/CarrierHangar4"/>
-        <InfoArray index="Ammo1" Time="6" CountStart="6" Unit="Shrike">
+        <InfoArray index="Ammo1" Time="3" CountStart="12" Unit="Shrike">
             <Button DefaultButtonFace="Interceptor4"/>
         </InfoArray>
+        <MaxCount value="12"/>
     </CAbilArmMagazine>
     <CAbilArmMagazine id="CarrierHangar42" parent="CarrierHangar">
         <Name value="Abil/Name/CarrierHangar42"/>
@@ -51982,6 +51983,19 @@
         <AINotifyEffect value="ShieldUp"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield28"/>
     </CAbilEffectInstant>
+    <CAbilResearch id="XillResearch">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoArray index="Research1" Time="84" Upgrade="XillBlink">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ResearchApperance" Requirements="BlinkButton"/>
+        </InfoArray>
+        <InfoArray index="Research2" Time="84" Upgrade="Venom">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="VenomousClawsButtom" Requirements="VenomButton"/>
+        </InfoArray>
+    </CAbilResearch>
     <CAbilEffectInstant id="YamatoDefenseField">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="UnknownEffect2"/>
@@ -59733,7 +59747,7 @@
         <Arc value="360"/>
         <AutoCastFilters value="Visible;Player,Ally,Neutral,Air"/>
         <AutoCastRange value="500"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="VorazunBlink23" Requirements="UnknownRequirement111">
+        <CmdButtonArray index="Execute" DefaultButtonFace="VorazunBlink23" Requirements="AngelicFlight">
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
         <PrepTime value="4.5"/>

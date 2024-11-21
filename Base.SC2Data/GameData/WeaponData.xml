@@ -5449,7 +5449,7 @@
         <Icon value="Assets\Textures\btn-unit-protoss-interceptor.dds"/>
         <DisplayEffect value="Carrier"/>
         <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="8"/>
+        <Range value="11"/>
         <Arc value="360"/>
         <Period value="0.5"/>
         <DamagePoint value="0"/>
