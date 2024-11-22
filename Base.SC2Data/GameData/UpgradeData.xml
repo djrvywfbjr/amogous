@@ -11696,6 +11696,7 @@
         <EffectArray Operation="Subtract" Reference="Unit,PrimalTownHall222,EnergyStart" Value="1"/>
         <EffectArray Operation="Subtract" Reference="Unit,PrimalTownHall222,EnergyMax" Value="1"/>
     </CUpgrade>
+    <CUpgrade id="Venom"/>
     <CUpgrade id="VoidDarkArchonDarkAmulet22222">
         <Race value="Prot"/>
         <ScoreResult value="BuildOrder"/>
@@ -12280,6 +12281,9 @@
         <EffectArray Reference="Unit,DarkArchon2,Sight" Value="1"/>
         <EditorCategories value="Race:Protoss,UpgradeType:Talents"/>
         <LeaderAlias value="VoidDarkArchonDarkAmulet224"/>
+    </CUpgrade>
+    <CUpgrade id="XillBlink">
+        <Icon value="Assets\Textures\btn-ability-zeratul-darktemplar-blink.dds"/>
     </CUpgrade>
     <CUpgrade id="etaCrow">
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>

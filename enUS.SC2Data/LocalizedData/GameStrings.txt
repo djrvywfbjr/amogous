@@ -2776,6 +2776,7 @@ Abil/Name/XenWarrior7222222334=Range And Shadow Fury
 Abil/Name/XenWarrior7222222335=Bless
 Abil/Name/XenWarrior72222223352=Quick Reconstruction
 Abil/Name/XenWarrior8=Xen Reaper
+Abil/Name/XillResearch=Research
 Abil/Name/YagdraFireball2=Pyrokinetic Blast
 Abil/Name/YagdraFireball22=Pyrokinetic Blast Big
 Abil/Name/YagdraFireballHard2=Spit Fire
@@ -9443,6 +9444,7 @@ Button/Name/RepairDrones5=Golden Squadron Fighter
 Button/Name/ReplicantReplicate2=Shape Shift
 Button/Name/ReplicantReplicate3=Mimic
 Button/Name/ResearchAdvancedConstructionTool=Research Advanced Construction Tool
+Button/Name/ResearchApperance=Research Apperance
 Button/Name/ResearchCapitalShipCabling=Research Capital Ship Cabling
 Button/Name/ResearchCivilHousing=Research Civil Housing
 Button/Name/ResearchColonialHousing=Research Colonial Housing
@@ -10774,7 +10776,6 @@ Button/Name/UnknownButton73322222222=Sky Nemesis
 Button/Name/UnknownButton74=Squadron Delta Upgrades
 Button/Name/UnknownButton75=Advanced Apparition Upgrades
 Button/Name/UnknownButton76=Corrosive Saliva
-Button/Name/UnknownButton77=Venomous Claws
 Button/Name/UnknownButton78=Tribal Poison
 Button/Name/UnknownButton79=Tribal Poison
 Button/Name/UnknownButton8=Photon Overcharge
@@ -10817,6 +10818,8 @@ Button/Name/UpgradeOverallWeaponPerformance232=Upgrade Mech Attack Speed
 Button/Name/UpgradeOverallWeaponPerformance233=Upgrade Mech Hull
 Button/Name/UpgradeOverallWeaponPerformance2332=Gather Intel
 Button/Name/UpgradeToWarpGate2=Transform to Cybros Warp Gate
+Button/Name/VenomousClaws=Venomous Claws
+Button/Name/VenomousClawsButtom=Venomous Claws
 Button/Name/VikingFighter10=Build Rebel
 Button/Name/VikingFighter2=Build Flagship Destroyer
 Button/Name/VikingFighter3=Request And Prepare Ground Fury
@@ -17142,6 +17145,7 @@ Button/Tooltip/Replicant2=Robotic disruption unit. Can use Purification Nova to 
 Button/Tooltip/ReplicantReplicate2=Turns into a copy of the targeted unit for <d time="60"/>. If the user dies or the duration expires it will revert to its original form.<n/><n/>The copy gains 40 life, energy and shields, 4 range and 25% attack and movement speed.
 Button/Tooltip/ReplicantReplicate3=Mimic target for 43 seconds. Cannot target air and heroic units. Autocast also does not target light units.
 Button/Tooltip/ResearchAdvancedConstructionTool=Workers and additional Workers will now make structures twice faster. Reduces limit of possible bonus Workers on construction from 10 to 5.
+Button/Tooltip/ResearchApperance=Unlock Appearance for Quiet One
 Button/Tooltip/ResearchCapitalShipCabling=Increases the power distribution field of Power Hubs by 50%.
 Button/Tooltip/ResearchCivilHousing=Allows for construction of Communal, which can house up to 6 people, are more durable than Dormitories and quickly provide <c val="FFFF00">Motivation</c>.
 Button/Tooltip/ResearchColonialHousing=Allows for construction of Dormitories, which can house up to 6 people, are more durable than Tents and slowly provide <c val="FFFF00">Motivation</c>.
@@ -18188,6 +18192,7 @@ Button/Tooltip/StalkerAiur3=A massive dragoon with shield capacitor.<n/>This dra
 Button/Tooltip/StalkerAiur4=Ranged assault unit. The damage and attack speed depends on the distance the targeted enemy  is at.<n/><n/><c val="00FFFF">Special Ability: </c>Recharges all shields of Solarite Dragoon.
 Button/Tooltip/StalkerBlinkMultiple2=Teleports the user to the targeted location.
 Button/Tooltip/StalkerBlinkMultiple22=On impact, missile flies to another enemy, dealing more damage.
+Button/Tooltip/StalkerBlinkMultiple3=Teleports the Stalker to a nearby target location. Ability regains a charge every <d ref="Abil,BlinkMultiple,Cost[0].Charge.TimeUse"/> seconds. Can store a maximum of 3 charges.
 Button/Tooltip/StalkerBlinkShieldRestoreBase2=Teleports the Darkness Reciever to a nearby target location. Darkness Reciever takes 85% less damage for 2 seconds after blink.
 Button/Tooltip/StalkerBlinkShieldRestoreBase22=Teleports the Darkness Reciever to a nearby target location. Darkness Reciever has increased attack and movement speeds increased.
 Button/Tooltip/StalkerBlinkShieldRestoreBase3=Teleports the user to a nearby target location. Ability can only be used once every <d ref="Abil,Blink,Cost[0].Cooldown.TimeUse"/> seconds. Restores 20 life upon use.
@@ -18764,7 +18769,6 @@ Button/Tooltip/UnknownButton73322222222=Squadron Deltas gain a secondary missile
 Button/Tooltip/UnknownButton74=A list of upgrades for Squadron Delta.
 Button/Tooltip/UnknownButton75=A list of upgrades for Advanced Apparitions.
 Button/Tooltip/UnknownButton76=Attacks reduce the armor and life regeneration of the enemy by 0.5 for 5 seconds. Can stack up to 50 times.
-Button/Tooltip/UnknownButton77=Attacked enemies will take 30% more damage. Stacks up to 3 times.
 Button/Tooltip/UnknownButton78=Darkness Receivers' attacks invert life and energy regenerations of the attacked units.
 Button/Tooltip/UnknownButton79=Quiet Ones' attacks reduce target unit's life by 5 for 7 seconds. Stacks up to 4 times.
 Button/Tooltip/UnknownButton8=Activates the weapon on the Old Fortress, draining its shields each second.
@@ -18812,6 +18816,8 @@ Button/Tooltip/Upgrader=Robotic support unit, that can use Power Beam and Gravit
 Button/Tooltip/ValerianLab2=Renegade prince of the Terran Dominion.
 Button/Tooltip/VengeanceSeer=Deadly warrior-assassin. Permanently cloaked. <n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/VengeanceShrine=Unlocks the ability to warp in many different units.<n/>Contains weapon and armor upgrades.
+Button/Tooltip/VenomousClaws=Attacked enemies will take 30% more damage. Stacks up to 3 times.
+Button/Tooltip/VenomousClawsButtom=Unlock Venomous Claws for  infestling
 Button/Tooltip/VespeneGeyser2=Workers can harvest vespene gas from this Vespene Geyser.
 Button/Tooltip/VikingAssault2=Durable support unit. Can switch into Fighter Mode to attack air units.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/VikingFighter10=Durable support flyer. Loaded with strong anti-capital air missiles. Can switch into Assault Mode to attack ground units.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c>
@@ -38441,6 +38447,7 @@ Upgrade/Name/UnknownUpgrade82=Taken Xeno Buff
 Upgrade/Name/UnknownUpgrade83=Cloaker
 Upgrade/Name/UnknownUpgrade84=DMai Spider Mine Corrosion
 Upgrade/Name/UnknownUpgrade9=Razing Corrosion
+Upgrade/Name/Venom=Venom
 Upgrade/Name/VoidDarkArchonDarkAmulet2=Basic Energy Max Bonus
 Upgrade/Name/VoidDarkArchonDarkAmulet22=Basic Shield Bonus
 Upgrade/Name/VoidDarkArchonDarkAmulet222=Void Templar Eternity
@@ -38511,6 +38518,7 @@ Upgrade/Name/VoidDarkArchonDarkAmulet22432244=!Upgrade 4
 Upgrade/Name/VoidDarkArchonDarkAmulet22432245=!Upgrade 5
 Upgrade/Name/VoidDarkArchonDarkAmulet22432246=!Upgrade 6
 Upgrade/Name/VoidDarkArchonDarkAmulet23=Basic Energy Regen Bonus
+Upgrade/Name/XillBlink=Blink
 Upgrade/Name/ZergMissileWeapons2=Zerg Missile Weapons Copy
 Upgrade/Name/ZergMissileWeapons3=Zerg Missile Weapons Copy 2
 Upgrade/Name/ZergMissileWeaponsLevel12=Zerg Missile Attacks Level 4

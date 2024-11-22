@@ -50470,6 +50470,7 @@
     </CBehaviorBuff>
     <CBehaviorBuff id="ZerglingSunder3">
         <InfoIcon value="Assets\Textures\btn-upgrade-zergling-armorshredding.dds"/>
+        <Requirements value="Venom"/>
         <MaxStackCount value="3"/>
         <Duration value="10"/>
         <DamageResponse ModifyFraction="1.3">

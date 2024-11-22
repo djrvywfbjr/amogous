@@ -479,6 +479,11 @@
         <OperandArray value="CountBehaviorVoidSeekerDock2CompleteOnlyAtUnit"/>
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade522242242322222239CompleteOnly"/>
     </CRequirementAnd>
+    <CRequirementAnd id="AndCountBehaviorXenWarrior3CompleteOnlyAtUnitCountUpgradeXillBlinkCompleteOnly">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountBehaviorXenWarrior3CompleteOnlyAtUnit"/>
+        <OperandArray value="CountUpgradeXillBlinkCompleteOnly"/>
+    </CRequirementAnd>
     <CRequirementAnd id="AndCountBehaviorXenWarrior42CompleteOnlyAtUnit1672959022CountBehaviorXenWarrior422CompleteOnlyAtUnit4122444514CountBehaviorXenWarrior4CompleteOnlyAtUnit3368585020CountBehaviorXenWarrior423CompleteOnlyAtUnit722862465">
         <OperandArray value="CountBehaviorXenWarrior42CompleteOnlyAtUnit1672959022"/>
         <OperandArray value="CountBehaviorXenWarrior422CompleteOnlyAtUnit4122444514"/>
@@ -14733,6 +14738,16 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="UnknownUpgrade9" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeVenomCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="Venom" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeVenomQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="Venom" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeVoidDarkArchonDarkAmulet2222QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="VoidDarkArchonDarkAmulet2222" State="QueuedOrBetter"/>
@@ -15205,6 +15220,16 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Tooltip value=""/>
         <Count Link="VoidPhoenixPhasingArmor3" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeXillBlinkCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="XillBlink" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeXillBlinkQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="XillBlink" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeetaCrowCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
@@ -19249,6 +19274,10 @@
     <CRequirementNot id="NotCountUpgradeUnknownUpgrade8QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeUnknownUpgrade8QueuedOrBetter"/>
     </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeVenomQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeVenomQueuedOrBetter"/>
+    </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeVoidDarkArchonDarkAmulet2222QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeVoidDarkArchonDarkAmulet2222QueuedOrBetter"/>
     </CRequirementNot>
@@ -19326,6 +19355,10 @@
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeVoidDarkArchonDarkAmulet2QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeVoidDarkArchonDarkAmulet2QueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeXillBlinkQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeXillBlinkQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradezerglingattackspeed2222QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradezerglingattackspeed2222QueuedOrBetter"/>

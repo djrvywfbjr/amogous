@@ -4342,6 +4342,10 @@
         <Icon value="Assets\Textures\btn-ability-zerg-viper-ocularparasite.dds"/>
         <EditorCategories value="Race:Zerg"/>
     </CButton>
+    <CButton id="ResearchApperance">
+        <Icon value="Assets\Textures\btn-ability-zeratul-darktemplar-blink.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-darktemplar-blink.dds"/>
+    </CButton>
     <CButton id="ResearchMobileAutomatons">
         <Icon value="Assets\Textures\talent-raynor-level01-infantryspecialist.dds"/>
     </CButton>
@@ -29912,7 +29916,7 @@
     <CButton id="UnknownButton76">
         <Icon value="Assets\Textures\btn-ability-zerg-debilitatingbile.dds"/>
     </CButton>
-    <CButton id="UnknownButton77">
+    <CButton id="VenomousClaws">
         <Icon value="Assets\Textures\btn-upgrade-zergling-armorshredding.dds"/>
     </CButton>
     <CButton id="UnknownButton78">
@@ -30090,6 +30094,10 @@
         <Icon value="Assets\Textures\btn-unit-protoss-fenix-purifier-warpgate.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Building-Protoss-WarpGate.dds"/>
         <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="VenomousClawsButtom">
+        <Icon value="Assets\Textures\btn-upgrade-zergling-armorshredding.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-zergling-armorshredding.dds"/>
     </CButton>
     <CButton id="VikingFighter10">
         <Tooltip value="Button/Tooltip/VikingFighter10wagwagw1212"/>
