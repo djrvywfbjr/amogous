@@ -11688,6 +11688,7 @@
     <CUpgrade id="UnknownUpgrade84">
         <EffectArray Operation="Set" Reference="Effect,VultureSpiderMinesDamage,DamageInheritEffect" Value="AddCORROSION"/>
     </CUpgrade>
+    <CUpgrade id="UnknownUpgrade85"/>
     <CUpgrade id="UnknownUpgrade9">
         <EffectArray Operation="Set" Reference="Effect,AlarakPsiOrbSet2,EffectArray[3]" Value="Epilogue02VoidRiftAB223"/>
         <EffectArray Operation="Set" Reference="Effect,HotSUltraliskKaiserBlades7,EffectArray[4]" Value="Epilogue02VoidRiftAB2232"/>

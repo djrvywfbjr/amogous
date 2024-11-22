@@ -4204,7 +4204,7 @@
         <Icon value="Assets\Textures\btn-tips-credit.dds"/>
     </CButton>
     <CButton id="Firebat722">
-        <Icon value="Assets\Textures\wireframe-ghostfemale.dds"/>
+        <Icon value="Assets\Textures\btn-unit-terran-blackops-femaleghost.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-terran-firebat.dds"/>
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="Firebat"/>
@@ -29915,6 +29915,10 @@
     </CButton>
     <CButton id="UnknownButton76">
         <Icon value="Assets\Textures\btn-ability-zerg-debilitatingbile.dds"/>
+    </CButton>
+    <CButton id="UnknownButton77">
+        <Icon value="Assets\Textures\btn-upgrade-nova-equipment-plasmagun.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-nova-equipment-plasmagun.dds"/>
     </CButton>
     <CButton id="VenomousClaws">
         <Icon value="Assets\Textures\btn-upgrade-zergling-armorshredding.dds"/>

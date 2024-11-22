@@ -178,6 +178,12 @@
     <CRequirement id="BlinkButton">
         <NodeArray index="Show" Link="NotCountUpgradeXillBlinkQueuedOrBetter"/>
     </CRequirement>
+    <CRequirement id="ImplantOverrideYes">
+        <NodeArray index="Show" Link="CountUpgradeUnknownUpgrade85CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="ImplantOverrideYes2">
+        <NodeArray index="Show" Link="NotCountUpgradeUnknownUpgrade85QueuedOrBetter"/>
+    </CRequirement>
     <CRequirement id="VenomButton">
         <NodeArray index="Show" Link="NotCountUpgradeVenomQueuedOrBetter"/>
     </CRequirement>
@@ -1708,6 +1714,7 @@
         <NodeArray index="Show" Link="CountUpgradeUmojanBasicUnitUpgrade52224224232222223632232CompleteOnly"/>
     </CRequirement>
     <CRequirement id="HaveExperimentCenter223222232">
+        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade522242242322222236322322CompleteOnly"/>
         <NodeArray index="Show" Link="CountUpgradeUmojanBasicUnitUpgrade522242242322222236322322CompleteOnly"/>
     </CRequirement>
     <CRequirement id="HaveExperimentCenter2232222322">

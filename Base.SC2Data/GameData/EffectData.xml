@@ -25710,6 +25710,19 @@
         <ImpactEffect value="GlancerTorpedoesDamage"/>
         <AmmoUnit value="VikingFighterWeapon"/>
     </CEffectLaunchMissile>
+    <CEffectDamage id="KhaydarinBeamDamage2" parent="DU_WEAP">
+        <EditorCategories value="Race:Protoss"/>
+        <AttributeBonus index="Light" value="-20"/>
+        <AttributeBonus index="Massive" value="20"/>
+        <Kind value="Ranged"/>
+        <KindSplash value="Splash"/>
+        <Amount value="40"/>
+        <ExcludeArray Value="Outer"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="-;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFlags index="OffsetByUnitRadius" value="0"/>
+        <SearchFlags index="SameCliff" value="0"/>
+    </CEffectDamage>
     <CEffectDamage id="LegendaryWeapon2" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <AttributeBonus index="Light" value="15"/>
