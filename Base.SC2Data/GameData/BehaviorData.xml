@@ -15985,7 +15985,7 @@
         <InfoFlags index="Hidden" value="1"/>
         <InfoIcon value="Assets\Textures\btn-upgrade-nova-novarespawn.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Requirements value="HaveExperimentCenter222223223322222222"/>
+        <Requirements value="HaveExperimentCenter223222232"/>
         <Modification>
             <WeaponArray Link="MengskMarauder5232"/>
         </Modification>

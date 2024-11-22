@@ -742,7 +742,7 @@
         </Cost>
         <TargetFilters value="Visible;Neutral,Enemy,Robotic,Massive,Structure,Heroic,Missile,Stasis,Dead,Invulnerable"/>
         <Range value="5"/>
-        <AutoCastFilters value="Biological,Visible;Player,Ally,Neutral,Massive,Structure,Heroic,Missile,Dead"/>
+        <AutoCastFilters value="Biological,Visible;Player,Ally,Neutral,Structure,Heroic,Missile,Dead"/>
         <AutoCastRange value="7"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="DarkArchonMindControl53"/>
         <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
@@ -27699,9 +27699,12 @@
             <Cooldown Link="Abil/GhostAcademyResearch9"/>
             <Button DefaultButtonFace="CalldownMULE42332623222243222" Requirements="UnknownRequirement133"/>
         </InfoArray>
-        <InfoArray index="Research26">
+        <InfoArray index="Research26" Time="100" Upgrade="UnknownUpgrade83">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
             <Charge Link="Abil/GhostAcademyResearch9"/>
             <Cooldown Link="Abil/GhostAcademyResearch9"/>
+            <Button DefaultButtonFace="CalldownMULE4233262322224322" Requirements="UnknownRequirement1332"/>
         </InfoArray>
         <InfoArray index="Research27">
             <Charge Link="Abil/GhostAcademyResearch9"/>
@@ -29031,6 +29034,11 @@
                 <Location value="Player"/>
             </Charge>
             <Button DefaultButtonFace="Zealot226223223332323242" Requirements="HavePsionicHeart22432322232423224"/>
+        </InfoArray>
+        <InfoArray index="Research9" Time="100" Upgrade="UnknownUpgrade85">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="UnknownButton77" Requirements="ImplantOverrideYes2"/>
         </InfoArray>
     </CAbilResearch>
     <CAbilEffectTarget id="KaiserWormBanelingMissile2">
@@ -37107,7 +37115,7 @@
             <Charge Link="Abil/ObserverSquadSight"/>
             <Cooldown Link="Abil/ObserverSquadSight" TimeUse="60"/>
         </Cost>
-        <CmdButtonArray index="Execute" DefaultButtonFace="SquadSight24"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SquadSight24" Requirements="ImplantOverrideYes"/>
     </CAbilEffectInstant>
     <CAbilEffectTarget id="ObserverTargetLock2">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>

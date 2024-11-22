@@ -9444,7 +9444,7 @@ Button/Name/RepairDrones5=Golden Squadron Fighter
 Button/Name/ReplicantReplicate2=Shape Shift
 Button/Name/ReplicantReplicate3=Mimic
 Button/Name/ResearchAdvancedConstructionTool=Research Advanced Construction Tool
-Button/Name/ResearchApperance=Research Apperance
+Button/Name/ResearchApperance=Spirit Relocation
 Button/Name/ResearchCapitalShipCabling=Research Capital Ship Cabling
 Button/Name/ResearchCivilHousing=Research Civil Housing
 Button/Name/ResearchColonialHousing=Research Colonial Housing
@@ -10776,6 +10776,7 @@ Button/Name/UnknownButton73322222222=Sky Nemesis
 Button/Name/UnknownButton74=Squadron Delta Upgrades
 Button/Name/UnknownButton75=Advanced Apparition Upgrades
 Button/Name/UnknownButton76=Corrosive Saliva
+Button/Name/UnknownButton77=Research Implant Override
 Button/Name/UnknownButton78=Tribal Poison
 Button/Name/UnknownButton79=Tribal Poison
 Button/Name/UnknownButton8=Photon Overcharge
@@ -15416,7 +15417,7 @@ Button/Tooltip/Larva323232333=Allows construction of Ethereal Bunkers - structur
 Button/Tooltip/Larva3232323332=All mercenary units on creep will gain 5 life regeneration, 75% attack speed, 50% movement speed.<n/><n/>The science team has developed a special chemical which causes nearby creep to quickly spread onto a surface. By covering armor of mercenaries with it, we can make creep slightly cover and enhance them.
 Button/Tooltip/Larva32323233322=All mercenary units will grant Zerg Research on death, equal to double of their supply cost.<n/><n/>We can secretly inject some zerg genes into mercenaries and see how they will react. All the data of these suprise experiments will be gathered upon the death of the soldiers.
 Button/Tooltip/Larva323232333222=All mercenary units gain an upgraded attack:<n/>Atlas Guard rifles and Blockade Runner attacks will bounce 2 times for halved damage.<n/>Penetration Divisions, Leonidas Company anti-air weapon and Sky Watcher Sky Watch will fire 50% more missiles.<n/>Every attack, Tiangou Divisions and Mainland Hunters will gain 10% attack speed for 20 seconds, stacks up to 15 times.<n/>Saint Troopers and Ravager Gang Dropships become cloaked.<n/>Ravager Paratroopers attack 35% faster.<n/>Xeno Handlers attack and aim during Steady Targeting 25% faster.<n/><n/>We can use certain zerg offensive organs and slightly alter them to work as a replacement or addition to mercenary weapons. These guns will run on the same fuel source as the rest of troop suit and vehicle mechanisms.
-Button/Tooltip/Larva3232323332222=All mercenary units gain an upgrad to their armor:<n/>Tiangou Divisions and Blockade Runners will launch a 10 damage missile at whoever damages them.<n/>Atlas Guards, Mainland Hunters and Leonidas Companies convert 25% of dealt damage into health.<n/>Saint Troopers, Ravager Gang Dropships gain 3 armor.<n/>Sky Watchers and Penetration Divisions gain 50 energy, slow energy regeneration and will block incoming damage for 10 energy.<n/>Ravager Paratroopers will gain invulnerability for 6 seconds and doubled attack speed instead of dying and then die afterwards.<n/><n/>By incorporating tissue assimilation, spine response, heavy carapace, rapid evasion and emergency adrenaline organs into the mercenary troops, they can be significantly improved.
+Button/Tooltip/Larva3232323332222=All mercenary units gain an upgrad to their armor:<n/>Tiangou Divisions and Blockade Runners will launch a 10 damage missile at whoever damages them.<n/>Atlas Guards, Mainland Hunters and Leonidas Companies convert 25% of dealt damage into health.<n/>Saint Troopers, Ravager Gang Dropships gain 3 armor.<n/>Sky Watchers and Penetration Divisions gain 50 energy, slow energy regeneration and will block incoming damage for 10 energy.<n/>Ravager Paratroopers will gain invulnerability for 6 seconds and doubled attack speed instead of dying and then die afterwards.<n/>Xeno Handlers gain 50 starting and max energy.<n/><n/>By incorporating tissue assimilation, spine response, heavy carapace, rapid evasion and emergency adrenaline organs into the mercenary troops, they can be significantly improved.
 Button/Tooltip/Larva3232323332223=Atlas Guards, Saint Troopers, Tiangou Divisions, Mainland Hunters, Leonidas Companies and Penetration Divisions gain 50% movement speed, 1 weapon range and the ability to start flying.<n/>While flying, they are considered an air unit and can fly over cliffs.<n/>Can be toggled on and off.<n/><n/>By secretly adding certain zerg flyer genes, metabolic boosters and other substances into the supplies, we can secretly turn our troops into half-zerg flying monstrosities. The mech pilots will have to grow organs and wings into the machinery itself and become one.
 Button/Tooltip/Larva32323233322232=All mercenary production structures gain alternate unit creation ability, which will make units that will cost no minerals, vespene and will be built 20 seconds faster, but will cost 1 Zerg Research for every 10 minerals and 5 vespene they usually cost. These units also will take 25% less damage.<n/><n/>We have perfected the changeling-based ethereal substance. It can now clone any mercenary trooper perfectly and it won't fall apart over time. The only downside is that the copies are too accurate and will also need the supplies. And probably commit suicide if they learn they are copies, but that shouldn't happen.
 Button/Tooltip/Larva323232333223=Trafficked Workers gain the ability to enter any zerg tech structure. While inside, they generate 1 Zerg Research every 20 seconds.<n/>1st Operation Magnitude structures can hold up to 2 Trafficked Workers<n/>2nd Operation Magnitude structures can hold up to 3 Trafficked Workers<n/>3rd Operation Magnitude structures can hold up to 5 Trafficked Workers<n/><n/>It's fascinating how zerg swarm can assimilate and improve other creatures into itself. We have developed a similar process, involving an artifical parasite that contains exact replica of memories, knowledge and thinking of our greatest scientists. When attached to a person's head, it should assimilate the cerebral cortex and transfer a scientist mind onto it's host.
@@ -16629,7 +16630,7 @@ Button/Tooltip/PhotonCannon42=Primary defensive structure. Attacks confuse enemi
 Button/Tooltip/PhotonCannon422=Primary defensive structure.<n/><n/><c val="ffff8a">Can attack ground and air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/PhotonCannon5=Primary defensive structure.<n/><n/><c val="ffff8a">Can attack ground and air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/PhotonCannon6=The opposite of Eternity Obelisk. Debuffs nearby enemies. Does not require power field.
-Button/Tooltip/PhotonCannon7=Primary defensive structure.<n/><n/><c val="ffff8a">Can attack ground and air units.</c><n/><c val="FFE303">Detector</c>
+Button/Tooltip/PhotonCannon7=Primary defensive structure that deals more damage to non-light and massive enemies.<n/><n/><c val="ffff8a">Can attack ground and air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/PhotonCannon8=Primary defensive structure.<n/><n/><c val="ffff8a">Can attack ground and air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/PhotonCannon9=Stationary uprootable structure that attacks multiple enemies around it.
 Button/Tooltip/PhotonCannonPassive2=Forge allows you to warp in Photon Cannons.
@@ -17145,7 +17146,7 @@ Button/Tooltip/Replicant2=Robotic disruption unit. Can use Purification Nova to 
 Button/Tooltip/ReplicantReplicate2=Turns into a copy of the targeted unit for <d time="60"/>. If the user dies or the duration expires it will revert to its original form.<n/><n/>The copy gains 40 life, energy and shields, 4 range and 25% attack and movement speed.
 Button/Tooltip/ReplicantReplicate3=Mimic target for 43 seconds. Cannot target air and heroic units. Autocast also does not target light units.
 Button/Tooltip/ResearchAdvancedConstructionTool=Workers and additional Workers will now make structures twice faster. Reduces limit of possible bonus Workers on construction from 10 to 5.
-Button/Tooltip/ResearchApperance=Unlock Appearance for Quiet One
+Button/Tooltip/ResearchApperance=Makes Quiet Ones able to use Appear.
 Button/Tooltip/ResearchCapitalShipCabling=Increases the power distribution field of Power Hubs by 50%.
 Button/Tooltip/ResearchCivilHousing=Allows for construction of Communal, which can house up to 6 people, are more durable than Dormitories and quickly provide <c val="FFFF00">Motivation</c>.
 Button/Tooltip/ResearchColonialHousing=Allows for construction of Dormitories, which can house up to 6 people, are more durable than Tents and slowly provide <c val="FFFF00">Motivation</c>.
@@ -18769,6 +18770,7 @@ Button/Tooltip/UnknownButton73322222222=Squadron Deltas gain a secondary missile
 Button/Tooltip/UnknownButton74=A list of upgrades for Squadron Delta.
 Button/Tooltip/UnknownButton75=A list of upgrades for Advanced Apparitions.
 Button/Tooltip/UnknownButton76=Attacks reduce the armor and life regeneration of the enemy by 0.5 for 5 seconds. Can stack up to 50 times.
+Button/Tooltip/UnknownButton77=Forsakes the harvester safety manuals and overrides in favor of harvesting efficiency. Allows Cybernetics Centers to enhance the harvesting performance of Cyborg Scantipedes at the cost of life degeneration.
 Button/Tooltip/UnknownButton78=Darkness Receivers' attacks invert life and energy regenerations of the attacked units.
 Button/Tooltip/UnknownButton79=Quiet Ones' attacks reduce target unit's life by 5 for 7 seconds. Stacks up to 4 times.
 Button/Tooltip/UnknownButton8=Activates the weapon on the Old Fortress, draining its shields each second.
@@ -18817,7 +18819,7 @@ Button/Tooltip/ValerianLab2=Renegade prince of the Terran Dominion.
 Button/Tooltip/VengeanceSeer=Deadly warrior-assassin. Permanently cloaked. <n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/VengeanceShrine=Unlocks the ability to warp in many different units.<n/>Contains weapon and armor upgrades.
 Button/Tooltip/VenomousClaws=Attacked enemies will take 30% more damage. Stacks up to 3 times.
-Button/Tooltip/VenomousClawsButtom=Unlock Venomous Claws for  infestling
+Button/Tooltip/VenomousClawsButtom=Infestlings become able to use Venomous Claws.
 Button/Tooltip/VespeneGeyser2=Workers can harvest vespene gas from this Vespene Geyser.
 Button/Tooltip/VikingAssault2=Durable support unit. Can switch into Fighter Mode to attack air units.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/VikingFighter10=Durable support flyer. Loaded with strong anti-capital air missiles. Can switch into Assault Mode to attack ground units.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c>
@@ -24882,6 +24884,7 @@ Effect/Name/KerriganVoidUlnar02PrimalRageSwitch52=Kerrigan Void Ulnar02 Primal R
 Effect/Name/KerriganVoidUlnar02PrimalRageSwitch53=Kerrigan Void Ulnar02 Primal Rage Switch5
 Effect/Name/KerriganVoidUlnar02PrimalRageSwitch6=Kerrigan Void Ulnar02 Primal Rage Switch Copy
 Effect/Name/KerriganVoidUlnar02PrimalRageSwitch7=Kerrigan Void Ulnar02 Primal Rage Switch
+Effect/Name/KhaydarinBeamDamage2=Khaydarin Beam (Damage)
 Effect/Name/Kill2=Kill Copy
 Effect/Name/Kill22=Kill Copy
 Effect/Name/Kill3=Kill Copy 2
@@ -38446,6 +38449,7 @@ Upgrade/Name/UnknownUpgrade81=Spirit Fortitude
 Upgrade/Name/UnknownUpgrade82=Taken Xeno Buff
 Upgrade/Name/UnknownUpgrade83=Cloaker
 Upgrade/Name/UnknownUpgrade84=DMai Spider Mine Corrosion
+Upgrade/Name/UnknownUpgrade85=Jakob Implant Overrides
 Upgrade/Name/UnknownUpgrade9=Razing Corrosion
 Upgrade/Name/Venom=Venom
 Upgrade/Name/VoidDarkArchonDarkAmulet2=Basic Energy Max Bonus
@@ -39017,6 +39021,7 @@ Weapon/Name/KerriganEpilogue032=Lightning Strike Dummy
 Weapon/Name/KerriganVoidUlnar022=Energetic Blast
 Weapon/Name/KerriganVoidUlnar023=Mindstrike
 Weapon/Name/KerriganVoidUlnar024=Torrent Of Pure Void
+Weapon/Name/KhaydarinBeam2=Disruption Flare
 Weapon/Name/KorhalPalaceGate2=P-350 ''Bulker'' Round
 Weapon/Name/KorhalPalaceGate22=Coordinated Artillery Strike
 Weapon/Name/KorhalSporeCannon2=Bile Bombardment

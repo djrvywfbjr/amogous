@@ -480,7 +480,6 @@
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade522242242322222239CompleteOnly"/>
     </CRequirementAnd>
     <CRequirementAnd id="AndCountBehaviorXenWarrior3CompleteOnlyAtUnitCountUpgradeXillBlinkCompleteOnly">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray value="CountBehaviorXenWarrior3CompleteOnlyAtUnit"/>
         <OperandArray value="CountUpgradeXillBlinkCompleteOnly"/>
     </CRequirementAnd>
@@ -14726,6 +14725,16 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="UnknownUpgrade83" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeUnknownUpgrade85CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="UnknownUpgrade85" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeUnknownUpgrade85QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="UnknownUpgrade85" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUnknownUpgrade8CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="UnknownUpgrade8" State="CompleteOnly"/>
@@ -14740,12 +14749,10 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeVenomCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="Venom" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeVenomQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="Venom" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeVoidDarkArchonDarkAmulet2222QueuedOrBetter">
@@ -15223,12 +15230,10 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeXillBlinkCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="XillBlink" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeXillBlinkQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="XillBlink" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeetaCrowCompleteOnly">
@@ -19271,11 +19276,14 @@
     <CRequirementNot id="NotCountUpgradeUnknownUpgrade83QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeUnknownUpgrade83QueuedOrBetter"/>
     </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeUnknownUpgrade85QueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeUnknownUpgrade85QueuedOrBetter"/>
+    </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUnknownUpgrade8QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeUnknownUpgrade8QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeVenomQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeVenomQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeVoidDarkArchonDarkAmulet2222QueuedOrBetter">
@@ -19357,7 +19365,6 @@
         <OperandArray index="0" value="CountUpgradeVoidDarkArchonDarkAmulet2QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeXillBlinkQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeXillBlinkQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradezerglingattackspeed2222QueuedOrBetter">
