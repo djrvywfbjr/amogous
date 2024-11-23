@@ -4150,6 +4150,10 @@
         <Icon value="Assets\Textures\btn-ability-stetmann-banelingmanashield.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
+    <CButton id="ConsecratedFuelTanks">
+        <Icon value="Assets\Textures\btn-upgrade-stetmann-battlecarrierlordflyinglocusts.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-stetmann-battlecarrierlordflyinglocusts.dds"/>
+    </CButton>
     <CButton id="EquipCloakingMantle">
         <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-cloak-color.dds"/>
@@ -27950,6 +27954,12 @@
     </CButton>
     <CButton id="Stim13232">
         <Icon value="Assets\Textures\btn-upgrade-nova-tacticalstealthsuit.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-stimpack-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="Stim133">
+        <Icon value="Assets\Textures\btn-ability-mengsk-marauder-royalstimpack.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-stimpack-color.dds"/>
         <EditorCategories value="Race:Terran"/>
         <Universal value="1"/>
