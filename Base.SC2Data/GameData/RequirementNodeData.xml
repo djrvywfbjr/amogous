@@ -5744,6 +5744,11 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="ClusterBomb" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeConsecratedFuelTanksQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="ConsecratedFuelTanks" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeCorruptedPlagueSpeedDebuff22222222QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="CorruptedPlagueSpeedDebuff22222222" State="QueuedOrBetter"/>
@@ -14727,12 +14732,10 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUnknownUpgrade85CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="UnknownUpgrade85" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUnknownUpgrade85QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="UnknownUpgrade85" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUnknownUpgrade8CompleteOnly">
@@ -16539,6 +16542,10 @@
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeClusterBombQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeClusterBombQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeConsecratedFuelTanksQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeConsecratedFuelTanksQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeCorruptedPlagueSpeedDebuff22222222QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeCorruptedPlagueSpeedDebuff22222222QueuedOrBetter"/>
@@ -19277,7 +19284,6 @@
         <OperandArray index="0" value="CountUpgradeUnknownUpgrade83QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUnknownUpgrade85QueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeUnknownUpgrade85QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUnknownUpgrade8QueuedOrBetter">

@@ -184,6 +184,9 @@
     <CRequirement id="ImplantOverrideYes2">
         <NodeArray index="Show" Link="NotCountUpgradeUnknownUpgrade85QueuedOrBetter"/>
     </CRequirement>
+    <CRequirement id="ConsecratedFuelNo">
+        <NodeArray index="Show" Link="NotCountUpgradeConsecratedFuelTanksQueuedOrBetter"/>
+    </CRequirement>
     <CRequirement id="VenomButton">
         <NodeArray index="Show" Link="NotCountUpgradeVenomQueuedOrBetter"/>
     </CRequirement>

@@ -11689,6 +11689,15 @@
         <EffectArray Operation="Set" Reference="Effect,VultureSpiderMinesDamage,DamageInheritEffect" Value="AddCORROSION"/>
     </CUpgrade>
     <CUpgrade id="UnknownUpgrade85"/>
+    <CUpgrade id="ConsecratedFuelTanks">
+        <EffectArray Operation="Set" Reference="Unit,Battlecruiser52,Acceleration" Value="2.000000"/>
+        <EffectArray Operation="Set" Reference="Unit,Battlecruiser52,Speed" Value="3.500000"/>
+        <EffectArray Operation="Set" Reference="Unit,MengskVikingFighter3,Speed" Value="3.500000"/>
+        <EffectArray Operation="Set" Reference="Unit,MengskVikingFighter3,Acceleration" Value="3.000000"/>
+        <EffectArray Operation="Set" Reference="Unit,Banshee3,Speed" Value="3.351500"/>
+        <EffectArray Operation="Set" Reference="Unit,Liberator4,Speed" Value="4.000000"/>
+        <EffectArray Operation="Set" Reference="Unit,Battlecruiser5,Speed" Value="2.898400"/>
+    </CUpgrade>
     <CUpgrade id="UnknownUpgrade9">
         <EffectArray Operation="Set" Reference="Effect,AlarakPsiOrbSet2,EffectArray[3]" Value="Epilogue02VoidRiftAB223"/>
         <EffectArray Operation="Set" Reference="Effect,HotSUltraliskKaiserBlades7,EffectArray[4]" Value="Epilogue02VoidRiftAB2232"/>

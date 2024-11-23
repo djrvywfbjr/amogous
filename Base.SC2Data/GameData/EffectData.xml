@@ -67506,6 +67506,10 @@
         <EditorCategories value="Race:Terran"/>
         <Behavior value="Stimpack1122"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="Stimpack153">
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="Stimpack113"/>
+    </CEffectApplyBehavior>
     <CEffectApplyBehavior id="Stimpack16">
         <ValidatorArray index="0" value="IsTimeStopped21733222225"/>
         <EditorCategories value="Race:Terran"/>
