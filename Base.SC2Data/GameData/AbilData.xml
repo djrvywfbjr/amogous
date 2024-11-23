@@ -5775,6 +5775,7 @@
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Effect index="0" value="Blink22423"/>
         <Cost>
+            <Vital index="Energy" value="25"/>
             <Charge Link="Abil/Blink"/>
             <Cooldown Link="Blink" TimeUse="120"/>
         </Cost>

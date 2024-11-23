@@ -4257,11 +4257,11 @@
         <DisplayDuration index="Enemy" value="1"/>
         <Duration value="15"/>
         <Modification>
-            <DamageDealtScaled index="Spell" value="8"/>
-            <DamageDealtScaled index="Melee" value="8"/>
-            <DamageDealtScaled index="Ranged" value="8"/>
-            <DamageDealtScaled index="Splash" value="8"/>
-            <DamageDealtScaled index="NoProc" value="8"/>
+            <DamageDealtScaled index="Spell" value="4"/>
+            <DamageDealtScaled index="Melee" value="4"/>
+            <DamageDealtScaled index="Ranged" value="4"/>
+            <DamageDealtScaled index="Splash" value="4"/>
+            <DamageDealtScaled index="NoProc" value="4"/>
             <RateMultiplierArray index="Progress" value="4"/>
             <RateMultiplierArray index="Queueable" value="4"/>
         </Modification>
