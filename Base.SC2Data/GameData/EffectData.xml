@@ -25907,13 +25907,13 @@
         <EditorCategories value=""/>
         <ValidatorArray value="RequiresScientists"/>
         <ValidatorArray value="HasCargoSpace"/>
-        <ValidatorArray value="HasPower"/>
+        <ValidatorArray value="IsNotUnpowered"/>
     </CEffectSet>
     <CEffectSet id="SendWorker">
         <EditorCategories value=""/>
         <ValidatorArray value="RequiresWorkers"/>
         <ValidatorArray value="HasCargoSpace"/>
-        <ValidatorArray value="HasPower"/>
+        <ValidatorArray value="IsNotUnpowered"/>
     </CEffectSet>
     <CEffectApplyBehavior id="ShieldUp103622">
         <EditorCategories value=""/>

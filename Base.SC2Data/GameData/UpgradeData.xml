@@ -566,7 +566,7 @@
         <EffectArray Operation="Set" Reference="Unit,MedicalOutpost,CostResource[Vespene]" Value="0"/>
         <EffectArray Operation="Set" Reference="Unit,MedicalOutpost,CostResource[Minerals]" Value="75"/>
         <EffectArray Operation="Set" Reference="Unit,PsiwaveCommunicator,CostResource[Minerals]" Value="75"/>
-        <EffectArray Operation="Set" Reference="Unit,EngineeringBay17,CostResource[Minerals]" Value="75"/>
+        <EffectArray Operation="Set" Reference="Unit,Garden,CostResource[Minerals]" Value="75"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="AdvancedConstruction"/>
     </CUpgrade>
@@ -780,8 +780,8 @@
         <Flags index="UpgradeCheat" value="0"/>
         <EffectArray Reference="Abil,BunkerTransport53,TotalCargoSpace" Value="5"/>
         <EffectArray Reference="Abil,BunkerTransport53,MaxCargoCount" Value="5"/>
-        <EffectArray Reference="Unit,EngineeringBay17,LifeMax" Value="325"/>
-        <EffectArray Reference="Unit,EngineeringBay17,LifeStart" Value="325"/>
+        <EffectArray Reference="Unit,Garden,LifeMax" Value="325"/>
+        <EffectArray Reference="Unit,Garden,LifeStart" Value="325"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="AdvancedConstruction"/>
     </CUpgrade>

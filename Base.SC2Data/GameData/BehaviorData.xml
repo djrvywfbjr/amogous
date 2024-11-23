@@ -3343,7 +3343,7 @@
         </DamageResponse>
         <MaxStackCount value="4"/>
     </CBehaviorBuff>
-    <CBehaviorPowerUser id="PowerUserQueue4">
+    <CBehaviorPowerUser id="PowerAss">
         <InfoFlags index="Hidden" value="1"/>
         <InfoIcon value="Assets\Textures\btn-building-protoss-pylon.dds"/>
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>

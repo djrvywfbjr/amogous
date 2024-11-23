@@ -14336,7 +14336,6 @@ Button/Tooltip/EngineeringBay16=Contains upgrades for Terran infantry and struct
 Button/Tooltip/EngineeringBay162=Contains upgrades for Terran infantry and structures. <n/><n/><c val="ffff8a">Enables:</c><n/>- Missile Turrets from SCVs<n/>- Sensor Towers from SCVs<n/>- Planetary Fortresses from Command Centers
 Button/Tooltip/EngineeringBay1621321=Usual mineral field.
 Button/Tooltip/EngineeringBay16213212=Contains upgrades for heroes.
-Button/Tooltip/EngineeringBay17=Contains upgrades for Terran infantry and structures. <n/><n/><c val="ffff8a">Enables:</c><n/>- Missile Turrets from SCVs<n/>- Sensor Towers from SCVs<n/>- Planetary Fortresses from Command Centers
 Button/Tooltip/EngineeringBay172=Contains upgrades for Terran infantry and structures. <n/><n/><c val="ffff8a">Enables:</c><n/>- Missile Turrets from SCVs<n/>- Sensor Towers from SCVs<n/>- Planetary Fortresses from Command Centers
 Button/Tooltip/EngineeringBay1722=Contains upgrades for Terran infantry and structures. <n/><n/><c val="ffff8a">Enables:</c><n/>- Missile Turrets from SCVs<n/>- Sensor Towers from SCVs<n/>- Planetary Fortresses from Command Centers
 Button/Tooltip/EngineeringBay1723=Contains upgrades for Terran infantry and structures. <n/><n/><c val="ffff8a">Enables:</c><n/>- Missile Turrets from SCVs<n/>- Sensor Towers from SCVs<n/>- Planetary Fortresses from Command Centers
@@ -14579,6 +14578,7 @@ Button/Tooltip/FusionCore9=Enables Jackson's Revenge's Cruisers
 Button/Tooltip/FutureAdams=Ghost with advanced technologies.
 Button/Tooltip/GalaxyPort=Air-unit production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Vikings<n/>- Medivacs<n/>- Liberators
 Button/Tooltip/Galaxygate=Warps in Holo air units.
+Button/Tooltip/Garden=Contains upgrades for Terran infantry and structures. <n/><n/><c val="ffff8a">Enables:</c><n/>- Missile Turrets from SCVs<n/>- Sensor Towers from SCVs<n/>- Planetary Fortresses from Command Centers
 Button/Tooltip/GasCanisterProtoss502=Canister of refined vespene gas.
 Button/Tooltip/Gateway10=Bloodcalls units for resources.
 Button/Tooltip/Gateway11=Warps in Protoss ground units.
@@ -34308,7 +34308,6 @@ Unit/Name/EngineeringBay1532222222=Engineering Bay
 Unit/Name/EngineeringBay15322223=Engineering Bay
 Unit/Name/EngineeringBay153222232=Engineering Bay
 Unit/Name/EngineeringBay16=Annihilation Bay
-Unit/Name/EngineeringBay17=Garden
 Unit/Name/EngineeringBay172=Panopticon
 Unit/Name/EngineeringBay1722=Righteous Sacrificial Altar
 Unit/Name/EngineeringBay1723=Execution Stage
@@ -34456,6 +34455,7 @@ Unit/Name/FusionCore9=Fusion Core
 Unit/Name/FutureAdams=Future Adams
 Unit/Name/GalaxyPort=Galaxy Port
 Unit/Name/Galaxygate=Galaxygate
+Unit/Name/Garden=Garden
 Unit/Name/Gateway10=Gateway
 Unit/Name/Gateway11=Gateway
 Unit/Name/Gateway112=Gateway

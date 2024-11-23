@@ -869,7 +869,7 @@
     <CAbilEffectTarget id="SendWorker">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Charge CountMax="255"/>
+            <Charge CountMax="255" CountUse="1"/>
         </Cost>
         <AutoCastAcquireLevel value="Defensive"/>
         <AutoCastFilters value="Visible;Self,Ally,Neutral,Enemy,Missile,UnderConstruction,Dead"/>
@@ -882,12 +882,12 @@
         <AutoCastRange value="30"/>
         <AutoCastValidatorArray value="RequiresWorkers"/>
         <AutoCastValidatorArray value="HasCargoSpace"/>
-        <AutoCastValidatorArray value="HasPower"/>
+        <AutoCastValidatorArray value="IsNotUnpowered"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="SendScientist">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Charge CountMax="255"/>
+            <Charge CountMax="255" CountUse="1"/>
         </Cost>
         <AutoCastAcquireLevel value="Defensive"/>
         <AutoCastFilters value="Visible;Self,Ally,Neutral,Enemy,Missile,UnderConstruction,Dead"/>
@@ -900,7 +900,7 @@
         <AutoCastRange value="30"/>
         <AutoCastValidatorArray value="RequiresScientists"/>
         <AutoCastValidatorArray value="HasCargoSpace"/>
-        <AutoCastValidatorArray value="HasPower"/>
+        <AutoCastValidatorArray value="IsNotUnpowered"/>
     </CAbilEffectTarget>
     <CAbilBehavior id="ShadowShieldGenerator4">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -55755,7 +55755,7 @@
         <InfoArray index="Build4" Unit="ColonialAssembly" Time="240">
             <Button DefaultButtonFace="Barracks17" State="Suppressed"/>
         </InfoArray>
-        <InfoArray index="Build5" Unit="EngineeringBay17" Time="35">
+        <InfoArray index="Build5" Unit="Garden" Time="35">
             <Button DefaultButtonFace="EngineeringBay18" State="Suppressed"/>
         </InfoArray>
         <InfoArray index="Build6" Unit="EngineeringBay1733" Time="200">
