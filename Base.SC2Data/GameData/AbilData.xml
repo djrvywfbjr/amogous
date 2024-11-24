@@ -47767,6 +47767,7 @@
         <ProgressButtonArray index="Prep" value="SJHyperionYamato46"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="SJHyperionYamato46"/>
         <PrepTime value="15"/>
+        <RangeSlop value="100"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="SJPirateYamato342">
         <Alignment value="Negative"/>

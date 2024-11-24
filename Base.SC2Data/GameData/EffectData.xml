@@ -60973,6 +60973,7 @@
         <EditorCategories value="Race:Terran"/>
         <ImpactEffect value="SJPirateYamatoADamage34"/>
         <AmmoUnit value="SJPirateYamatoAWeapon34"/>
+        <Flags index="ValidateTeleport" value="0"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="SJPirateYamatoA342">
         <ValidatorArray value="IsNotWarpBubble"/>
