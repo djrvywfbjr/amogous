@@ -883,6 +883,12 @@
             <VitalRegenArray index="Energy" value="1"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="DriveCalibrationField">
+        <InfoIcon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="14"/>
+        <Modification MoveSpeedMultiplier="1.45" AccelerationMultiplier="1.45"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="Automated">
         <BehaviorFlags index="Permanent" value="1"/>
         <InfoFlags index="Hidden" value="1"/>
@@ -906,6 +912,14 @@
         <Duration value="27"/>
         <Modification TimeScale="1.35"/>
         <ExpireEffect value="AshNexusExhaustion"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DistortionGenerator">
+        <InfoIcon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="14"/>
+        <Modification>
+            <StateFlags index="Cloak" value="1"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="Frenzy22">
         <Alignment value="Positive"/>

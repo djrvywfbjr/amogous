@@ -4731,6 +4731,10 @@
         <EditorCategories value=""/>
         <Behavior value="ArtanisInspire3"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="CruiserSpeedApply">
+        <EditorCategories value=""/>
+        <Behavior value="DriveCalibrationField"/>
+    </CEffectApplyBehavior>
     <CEffectEnumArea id="ArtanisInspireSearch2">
         <EditorCategories value=""/>
         <SearchFilters value="Visible;Neutral,Enemy,Structure,Missile,Dead,Hidden"/>
@@ -4740,6 +4744,15 @@
         <EditorCategories value=""/>
         <SearchFilters value="Air,Visible;Neutral,Enemy,Structure,Heroic,Missile,Dead,Hidden"/>
         <AreaArray Radius="9" Effect="ArtanisInspireApply3"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="CruiserCloakApply">
+        <EditorCategories value=""/>
+        <Behavior value="DistortionGenerator"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="SpeedBuffSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="Air,Visible;Neutral,Enemy,Structure,Heroic,Missile,Dead,Hidden"/>
+        <AreaArray Radius="9" Effect="CruiserSpeedApply"/>
     </CEffectEnumArea>
     <CEffectCreatePersistent id="ArtanisLightningDash2">
         <Marker>
@@ -25935,6 +25948,11 @@
         <EditorCategories value=""/>
         <Behavior value="Shield363"/>
     </CEffectApplyBehavior>
+    <CEffectEnumArea id="CruiserCloakSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="Air,Visible;Neutral,Enemy,Structure,Heroic,Missile,Dead,Hidden"/>
+        <AreaArray Radius="9" Effect="CruiserCloakApply"/>
+    </CEffectEnumArea>
     <CEffectDamage id="StarshipRailgunDamage" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <ImpactLocation Value="TargetUnit"/>
