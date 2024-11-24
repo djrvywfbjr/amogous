@@ -694,6 +694,15 @@
         <AINotifyEffect value="ArtanisAstralWind3"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="ArtanisAstralWind4"/>
     </CAbilEffectInstant>
+    <CAbilEffectInstant id="ArtanisInspire3">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="ArtanisInspireSearch3"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="125"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ArtanisInspire3" Requirements="HaveArtanisInspire"/>
+    </CAbilEffectInstant>
     <CAbilMorph id="BarracksLiftOff52222" parent="TerranBuildingLiftOff" unit="BarracksFlying">
         <Name value="Abil/Name/BarracksLiftOff52222"/>
         <AbilSetId value="MercDown"/>
@@ -5766,7 +5775,6 @@
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Effect index="0" value="Blink22423"/>
         <Cost>
-            <Vital index="Energy" value="25"/>
             <Charge Link="Abil/Blink"/>
             <Cooldown Link="Blink" TimeUse="120"/>
         </Cost>
@@ -28134,28 +28142,31 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="HoloShipShield"/>
         <Cost>
-            <Charge Link="Abil/AiurLightBridgeNE10" Location="Player"/>
-            <Cooldown Link="Abil/AiurLightBridgeNE10" Location="Player" TimeUse="75"/>
+            <Charge Link="Abil/AiurLightBridgeNE10" Location="Unit"/>
+            <Cooldown Link="Abil/AiurLightBridgeNE10" Location="Unit" TimeUse="75"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="SJHyperionYamato462232" Requirements="HaveKhalaiEngineerTraining"/>
+        <Flags index="BestUnit" value="1"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="HoloShipShields2">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="HoloShipShield2"/>
         <Cost>
-            <Charge Link="Abil/AiurLightBridgeNE10" Location="Player"/>
-            <Cooldown Link="Abil/AiurLightBridgeNE10" Location="Player" TimeUse="75"/>
+            <Charge Link="Abil/AiurLightBridgeNE10" Location="Unit"/>
+            <Cooldown Link="Abil/AiurLightBridgeNE10" Location="Unit" TimeUse="75"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="SJHyperionYamato4622322" Requirements="HaveKhalaiEngineerTraining2"/>
+        <Flags index="BestUnit" value="1"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="HoloShipShields22">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="HoloShipShield22"/>
         <Cost>
-            <Charge Link="Abil/AiurLightBridgeNE10" Location="Player"/>
-            <Cooldown Link="Abil/AiurLightBridgeNE10" Location="Player" TimeUse="75"/>
+            <Charge Link="Abil/AiurLightBridgeNE10" Location="Unit"/>
+            <Cooldown Link="Abil/AiurLightBridgeNE10" Location="Unit" TimeUse="75"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="SJHyperionYamato46223222" Requirements="HaveKhalaiEngineerTraining22"/>
+        <Flags index="BestUnit" value="1"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="HoloShipShields222">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -30202,6 +30213,23 @@
         </Marker>
         <CmdButtonArray index="Execute" DefaultButtonFace="Snipe332422"/>
         <Arc value="360"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="TemporalField4">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="TemporalFieldGrowingBubbleCreatePersistent4"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Vital index="Energy" value="75"/>
+            <Charge Link="Abil/SOATimeWarp"/>
+            <Cooldown Link="Abil/SOATimeWarp" TimeStart="75" TimeUse="75"/>
+        </Cost>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CursorEffect value="TemporalFieldAfterBubbleSearchArea4"/>
+        <AINotifyEffect value="TemporalFieldCreatePersistent"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SOATimeWarp" Requirements="HaveHoloCore23232222"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="TemporarityCP2">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -34602,7 +34630,7 @@
             <Charge Link=""/>
             <Cooldown Link=""/>
         </Cost>
-        <TargetFilters value="-;Ally,Neutral,Enemy"/>
+        <TargetFilters value="-;Ally,Neutral,Enemy,Summoned"/>
         <Range value="500"/>
         <Arc value="360"/>
         <CursorEffect value="MothershipMassRecallSearch22"/>
@@ -38625,7 +38653,7 @@
         <Flags index="RangeUseCasterRadius" value="0"/>
         <Cost>
             <Resource index="Vespene" value="45"/>
-            <Vital index="Energy" value="3"/>
+            <Vital index="Energy" value="4"/>
             <Charge Link="Abil/SpawnPhaseCannon23"/>
             <Cooldown Link="SpawnPhaseCannonSpawnPhaseCannon23" TimeUse="10"/>
         </Cost>
@@ -38643,7 +38671,7 @@
         <Flags index="RangeUseCasterRadius" value="0"/>
         <Cost>
             <Resource index="Vespene" value="75"/>
-            <Vital index="Energy" value="4"/>
+            <Vital index="Energy" value="3"/>
             <Charge Link="Abil/SpawnPhaseCannon232"/>
             <Cooldown Link="SpawnPhaseCannonSpawnPhaseCannon23SpawnPhaseCannonSpawnPhaseCannon232" TimeUse="10"/>
         </Cost>
@@ -38660,7 +38688,7 @@
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Flags index="RangeUseCasterRadius" value="0"/>
         <Cost>
-            <Resource index="Vespene" value="125"/>
+            <Resource index="Vespene" value="150"/>
             <Vital index="Energy" value="6"/>
             <Charge Link="Abil/SpawnPhaseCannon2322"/>
             <Cooldown Link="SpawnPhaseCannonSpawnPhaseCannon23SpawnPhaseCannonSpawnPhaseCannon232SpawnPhaseCannonSpawnPhaseCannon23SpawnPhaseCannonSpawnPhaseCannon2322" TimeUse="10"/>
@@ -39534,8 +39562,9 @@
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Flags index="RangeUseCasterRadius" value="0"/>
         <Cost>
+            <Vital index="Energy" value="15"/>
             <Charge Link="Abil/330mmBarrageCannons"/>
-            <Cooldown Link="Abil/330mmBarrageCannons" Location="Unit" TimeUse="30"/>
+            <Cooldown Link="Abil/330mmBarrageCannons" Location="Unit"/>
         </Cost>
         <Placeholder value="Interceptor5"/>
         <Range value="8"/>
@@ -42770,7 +42799,7 @@
             <Cooldown TimeUse="150"/>
             <Button DefaultButtonFace="Hatchery322" Requirements="UnknownRequirement2"/>
         </InfoArray>
-        <Range value="6.5"/>
+        <Range value="500"/>
     </CAbilBuild>
     <CAbilBuild id="ProtossBuild533">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
@@ -47737,7 +47766,6 @@
         <ProgressButtonArray index="Prep" value="SJHyperionYamato46"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="SJHyperionYamato46"/>
         <PrepTime value="15"/>
-        <RangeSlop value="100"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="SJPirateYamato342">
         <Alignment value="Negative"/>
@@ -50920,7 +50948,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
             <Charge Link=""/>
-            <Cooldown Link="Abil/AlarakAvatar" TimeUse="45"/>
+            <Cooldown Link="Abil/AlarakAvatar" TimeUse="42"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield22333"/>
     </CAbilEffectInstant>

@@ -526,6 +526,9 @@
     <CButton id="ArtanisInspire2">
         <Icon value="Assets\Textures\btn-ability-protoss-confusion.dds"/>
     </CButton>
+    <CButton id="ArtanisInspire3">
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-detector.dds"/>
+    </CButton>
     <CButton id="ArtanisLightningDash2">
         <Icon value="Assets\Textures\btn-ability-protoss-lightningdash.dds"/>
         <EditorCategories value="Race:Protoss"/>
