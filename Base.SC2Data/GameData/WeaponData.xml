@@ -3905,6 +3905,9 @@
         <Backswing value="1.167"/>
         <Effect value="NovaWeaponCanisterRifleCloakedSwitch2"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="P38ScytheGuassPistol">
+        <Range value="4.5"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="PunisherGrenades434">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-ability-zeratul-disruptor-clusternova.dds"/>
@@ -4199,7 +4202,7 @@
         <Cost>
             <Cooldown Location="Unit"/>
         </Cost>
-        <Period value="1.5"/>
+        <Period value="2.38"/>
         <Effect value="HybridCDamage2"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HybridD">
@@ -4224,7 +4227,7 @@
         <Cost>
             <Cooldown Location="Unit"/>
         </Cost>
-        <Period value="1.694"/>
+        <Period value="1.26"/>
         <Effect value="HybridDLM3"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HybridE2">

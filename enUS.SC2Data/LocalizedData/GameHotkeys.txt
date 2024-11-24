@@ -96,6 +96,7 @@ Button/Hotkey/ArtanisAstralWind4=E
 Button/Hotkey/ArtanisAstralWind5=E
 Button/Hotkey/ArtanisAstralWind6=E
 Button/Hotkey/ArtanisInspire2=E
+Button/Hotkey/ArtanisInspire3=E
 Button/Hotkey/ArtanisLightningDash2=W
 Button/Hotkey/ArtanisLightningDash3=Q
 Button/Hotkey/ArtanisLightningDash4=Q
