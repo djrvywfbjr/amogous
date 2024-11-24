@@ -5793,6 +5793,7 @@
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Effect index="0" value="Blink22423"/>
         <Cost>
+            <Vital index="Energy" value="25"/>
             <Charge Link="Abil/Blink"/>
             <Cooldown Link="Blink" TimeUse="120"/>
         </Cost>
@@ -47784,6 +47785,7 @@
         <ProgressButtonArray index="Prep" value="SJHyperionYamato46"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="SJHyperionYamato46"/>
         <PrepTime value="15"/>
+        <RangeSlop value="100"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="SJPirateYamato342">
         <Alignment value="Negative"/>
