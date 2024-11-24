@@ -781,6 +781,17 @@
         <Period value="5"/>
         <Effect value="SeekerMissileLaunchMissile"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="HunterSeekerMissileAA">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-ability-terran-huntermissile-color.dds"/>
+        <DisplayEffect value="SeekerMissileDamage"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="11"/>
+        <Arc value="29.9926"/>
+        <Period value="5"/>
+        <Effect value="SeekerMissileLaunchMissile"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="Adept244">
         <EditorCategories value="Race:Protoss"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
@@ -3908,6 +3919,20 @@
     <CWeaponLegacy id="P38ScytheGuassPistol">
         <Range value="4.5"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="ArtificialShockwave">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-artanis-healingpsionicstorm.dds"/>
+        <DisplayEffect value="PsionicShockwaveDamage5"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <TeleportResetRange value="0"/>
+        <Cost>
+            <Cooldown Location="Unit"/>
+        </Cost>
+        <Period value="1.754"/>
+        <Effect value="PsionicShockwaveDamage5"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="PunisherGrenades434">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-ability-zeratul-disruptor-clusternova.dds"/>
@@ -6808,7 +6833,7 @@
         <TargetFilters value="Air,Visible;Ground,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AcquirePrioritization value="ByAngle"/>
         <Range value="8"/>
-        <Arc value="5.625"/>
+        <Arc value="29.9926"/>
         <Period value="3"/>
         <Effect value="BlackhammerAoELaunch33"/>
     </CWeaponLegacy>

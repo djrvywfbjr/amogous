@@ -529,6 +529,9 @@
     <CButton id="ArtanisInspire3">
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-detector.dds"/>
     </CButton>
+    <CButton id="DriveCalibrationField">
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
+    </CButton>
     <CButton id="ArtanisLightningDash2">
         <Icon value="Assets\Textures\btn-ability-protoss-lightningdash.dds"/>
         <EditorCategories value="Race:Protoss"/>
@@ -4156,6 +4159,9 @@
     <CButton id="ConsecratedFuelTanks">
         <Icon value="Assets\Textures\btn-upgrade-stetmann-battlecarrierlordflyinglocusts.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-stetmann-battlecarrierlordflyinglocusts.dds"/>
+    </CButton>
+    <CButton id="DistortionGenerator">
+        <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
     </CButton>
     <CButton id="EquipCloakingMantle">
         <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
@@ -33055,7 +33061,7 @@
         <EditorCategories value="Race:Terran"/>
     </CButton>
     <CButton id="Wraith22222222">
-        <Icon value="Assets\Textures\btn-tips-droppedterrazine.dds"/>
+        <Icon value="Assets\Textures\btn-upgrade-vorazun-shadowstun.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-terran-wraith.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
