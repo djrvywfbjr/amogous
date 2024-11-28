@@ -3554,6 +3554,7 @@ bool libCD55B2B5_gt_MilitaryStationWorkerConvict_Func (bool testConds, bool runA
         auto46A66CE1_var = UnitGroupUnitFromEnd(auto46A66CE1_g, auto46A66CE1_u);
         if (auto46A66CE1_var == null) { break; }
         if (((UnitGetType(auto46A66CE1_var) == "Civilian4") || (UnitGetType(auto46A66CE1_var) == "SpacePrisonerBig3"))) {
+            UnitAbilityAddChargeUsed(EventUnit(), "SendWorker", "Abil/SendWorker", -1.0);
             UnitRemove(auto46A66CE1_var);
             UnitCargoCreate(EventUnitTargetUnit(), UnitGetType(auto46A66CE1_var), 1);
             return true;
@@ -3589,6 +3590,7 @@ bool libCD55B2B5_gt_MilitaryStationScientist_Func (bool testConds, bool runActio
         auto0D31EB73_var = UnitGroupUnitFromEnd(auto0D31EB73_g, auto0D31EB73_u);
         if (auto0D31EB73_var == null) { break; }
         if (((UnitGetType(auto0D31EB73_var) == "Scientist3"))) {
+            UnitAbilityAddChargeUsed(EventUnit(), "SendScientist", "Abil/SendScientist", -1.0);
             UnitRemove(auto0D31EB73_var);
             UnitCargoCreate(EventUnitTargetUnit(), UnitGetType(auto0D31EB73_var), 1);
             return true;

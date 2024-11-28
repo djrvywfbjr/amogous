@@ -781,6 +781,17 @@
         <Period value="5"/>
         <Effect value="SeekerMissileLaunchMissile"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="HunterSeekerMissileAA">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-ability-terran-huntermissile-color.dds"/>
+        <DisplayEffect value="SeekerMissileDamage"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="11"/>
+        <Arc value="29.9926"/>
+        <Period value="5"/>
+        <Effect value="SeekerMissileLaunchMissile"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="Adept244">
         <EditorCategories value="Race:Protoss"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
@@ -3883,6 +3894,17 @@
         <Period value="1.754"/>
         <Effect value="HighTemplarWeaponLM5"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="KhaydarinBeam2">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="ContinuousScan" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-arbitersuit-weapon.dds"/>
+        <DisplayEffect value="KhaydarinBeamDamage2"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Period value="3"/>
+        <DamagePoint value="2.9"/>
+        <Effect value="KhaydarinBeamDamage2"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="NovaWeaponCanisterRifle2">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-nova-equipment-canisterrifle.dds"/>
@@ -3893,6 +3915,23 @@
         <DamagePoint value="0.083"/>
         <Backswing value="1.167"/>
         <Effect value="NovaWeaponCanisterRifleCloakedSwitch2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="P38ScytheGuassPistol">
+        <Range value="4.5"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ArtificialShockwave">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-artanis-healingpsionicstorm.dds"/>
+        <DisplayEffect value="PsionicShockwaveDamage5"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <TeleportResetRange value="0"/>
+        <Cost>
+            <Cooldown Location="Unit"/>
+        </Cost>
+        <Period value="1.754"/>
+        <Effect value="PsionicShockwaveDamage5"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PunisherGrenades434">
         <EditorCategories value="Race:Terran"/>
@@ -4188,7 +4227,7 @@
         <Cost>
             <Cooldown Location="Unit"/>
         </Cost>
-        <Period value="1.5"/>
+        <Period value="2.38"/>
         <Effect value="HybridCDamage2"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HybridD">
@@ -4213,7 +4252,7 @@
         <Cost>
             <Cooldown Location="Unit"/>
         </Cost>
-        <Period value="1.694"/>
+        <Period value="1.26"/>
         <Effect value="HybridDLM3"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HybridE2">
@@ -5449,7 +5488,7 @@
         <Icon value="Assets\Textures\btn-unit-protoss-interceptor.dds"/>
         <DisplayEffect value="Carrier"/>
         <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="8"/>
+        <Range value="11"/>
         <Arc value="360"/>
         <Period value="0.5"/>
         <DamagePoint value="0"/>
@@ -6794,7 +6833,7 @@
         <TargetFilters value="Air,Visible;Ground,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AcquirePrioritization value="ByAngle"/>
         <Range value="8"/>
-        <Arc value="5.625"/>
+        <Arc value="29.9926"/>
         <Period value="3"/>
         <Effect value="BlackhammerAoELaunch33"/>
     </CWeaponLegacy>

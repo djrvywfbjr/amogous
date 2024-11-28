@@ -175,6 +175,24 @@
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
         <NodeArray index="Use" Link="LT2533098009CountUpgradeUmojanBasicUnitUpgrade522242242322222236222322222QueuedOrBetter75"/>
     </CRequirement>
+    <CRequirement id="BlinkButton">
+        <NodeArray index="Show" Link="NotCountUpgradeXillBlinkQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="ImplantOverrideYes">
+        <NodeArray index="Show" Link="CountUpgradeUnknownUpgrade85CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="ImplantOverrideYes2">
+        <NodeArray index="Show" Link="NotCountUpgradeUnknownUpgrade85QueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="ConsecratedFuelNo">
+        <NodeArray index="Show" Link="NotCountUpgradeConsecratedFuelTanksQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="VenomButton">
+        <NodeArray index="Show" Link="NotCountUpgradeVenomQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="Venom">
+        <NodeArray index="Use" Link="CountUpgradeVenomCompleteOnly"/>
+    </CRequirement>
     <CRequirement id="Craft1FC2SF">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
         <NodeArray index="Use" Link="AndGTECountUpgradeManufactureFusionCoreCompleteOnly1GTECountUpgradeManufactureShellingFabricatorCompleteOnly2"/>
@@ -1699,6 +1717,7 @@
         <NodeArray index="Show" Link="CountUpgradeUmojanBasicUnitUpgrade52224224232222223632232CompleteOnly"/>
     </CRequirement>
     <CRequirement id="HaveExperimentCenter223222232">
+        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade522242242322222236322322CompleteOnly"/>
         <NodeArray index="Show" Link="CountUpgradeUmojanBasicUnitUpgrade522242242322222236322322CompleteOnly"/>
     </CRequirement>
     <CRequirement id="HaveExperimentCenter2232222322">
@@ -8336,7 +8355,7 @@
     <CRequirement id="UnknownRequirement110">
         <NodeArray index="Show" Link="NotCountUpgradeEvolveGroovedSpines3QueuedOrBetter"/>
     </CRequirement>
-    <CRequirement id="UnknownRequirement111">
+    <CRequirement id="AngelicFlight">
         <NodeArray index="Use" Link="CountUpgradeUnknownUpgrade69CompleteOnly"/>
         <NodeArray index="Show" Link="CountUpgradeUnknownUpgrade69CompleteOnly"/>
     </CRequirement>
@@ -8363,8 +8382,8 @@
         <NodeArray index="Show" Link="NotCountUpgradeUnknownUpgrade75QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="UnknownRequirement118">
-        <NodeArray index="Use" Link="CountBehaviorXenWarrior3CompleteOnlyAtUnit"/>
-        <NodeArray index="Show" Link="CountBehaviorXenWarrior3CompleteOnlyAtUnit"/>
+        <NodeArray index="Use" Link="AndCountBehaviorXenWarrior3CompleteOnlyAtUnitCountUpgradeXillBlinkCompleteOnly"/>
+        <NodeArray index="Show" Link="AndCountBehaviorXenWarrior3CompleteOnlyAtUnitCountUpgradeXillBlinkCompleteOnly"/>
     </CRequirement>
     <CRequirement id="UnknownRequirement119">
         <NodeArray index="Show" Link="NotCountUpgradeUnknownUpgrade77QueuedOrBetter"/>

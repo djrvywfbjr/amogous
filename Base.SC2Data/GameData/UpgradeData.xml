@@ -566,7 +566,7 @@
         <EffectArray Operation="Set" Reference="Unit,MedicalOutpost,CostResource[Vespene]" Value="0"/>
         <EffectArray Operation="Set" Reference="Unit,MedicalOutpost,CostResource[Minerals]" Value="75"/>
         <EffectArray Operation="Set" Reference="Unit,PsiwaveCommunicator,CostResource[Minerals]" Value="75"/>
-        <EffectArray Operation="Set" Reference="Unit,EngineeringBay17,CostResource[Minerals]" Value="75"/>
+        <EffectArray Operation="Set" Reference="Unit,Garden,CostResource[Minerals]" Value="75"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="AdvancedConstruction"/>
     </CUpgrade>
@@ -780,8 +780,8 @@
         <Flags index="UpgradeCheat" value="0"/>
         <EffectArray Reference="Abil,BunkerTransport53,TotalCargoSpace" Value="5"/>
         <EffectArray Reference="Abil,BunkerTransport53,MaxCargoCount" Value="5"/>
-        <EffectArray Reference="Unit,EngineeringBay17,LifeMax" Value="325"/>
-        <EffectArray Reference="Unit,EngineeringBay17,LifeStart" Value="325"/>
+        <EffectArray Reference="Unit,Garden,LifeMax" Value="325"/>
+        <EffectArray Reference="Unit,Garden,LifeStart" Value="325"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="AdvancedConstruction"/>
     </CUpgrade>
@@ -11688,6 +11688,16 @@
     <CUpgrade id="UnknownUpgrade84">
         <EffectArray Operation="Set" Reference="Effect,VultureSpiderMinesDamage,DamageInheritEffect" Value="AddCORROSION"/>
     </CUpgrade>
+    <CUpgrade id="UnknownUpgrade85"/>
+    <CUpgrade id="ConsecratedFuelTanks">
+        <EffectArray Operation="Set" Reference="Unit,Battlecruiser52,Acceleration" Value="2.000000"/>
+        <EffectArray Operation="Set" Reference="Unit,Battlecruiser52,Speed" Value="3.500000"/>
+        <EffectArray Operation="Set" Reference="Unit,MengskVikingFighter3,Speed" Value="3.500000"/>
+        <EffectArray Operation="Set" Reference="Unit,MengskVikingFighter3,Acceleration" Value="3.000000"/>
+        <EffectArray Operation="Set" Reference="Unit,Banshee3,Speed" Value="3.351500"/>
+        <EffectArray Operation="Set" Reference="Unit,Liberator4,Speed" Value="4.000000"/>
+        <EffectArray Operation="Set" Reference="Unit,Battlecruiser5,Speed" Value="2.898400"/>
+    </CUpgrade>
     <CUpgrade id="UnknownUpgrade9">
         <EffectArray Operation="Set" Reference="Effect,AlarakPsiOrbSet2,EffectArray[3]" Value="Epilogue02VoidRiftAB223"/>
         <EffectArray Operation="Set" Reference="Effect,HotSUltraliskKaiserBlades7,EffectArray[4]" Value="Epilogue02VoidRiftAB2232"/>
@@ -11696,6 +11706,7 @@
         <EffectArray Operation="Subtract" Reference="Unit,PrimalTownHall222,EnergyStart" Value="1"/>
         <EffectArray Operation="Subtract" Reference="Unit,PrimalTownHall222,EnergyMax" Value="1"/>
     </CUpgrade>
+    <CUpgrade id="Venom"/>
     <CUpgrade id="VoidDarkArchonDarkAmulet22222">
         <Race value="Prot"/>
         <ScoreResult value="BuildOrder"/>
@@ -12281,6 +12292,9 @@
         <EditorCategories value="Race:Protoss,UpgradeType:Talents"/>
         <LeaderAlias value="VoidDarkArchonDarkAmulet224"/>
     </CUpgrade>
+    <CUpgrade id="XillBlink">
+        <Icon value="Assets\Textures\btn-ability-zeratul-darktemplar-blink.dds"/>
+    </CUpgrade>
     <CUpgrade id="etaCrow">
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
@@ -12544,6 +12558,17 @@
         <EffectArray Reference="Effect,RoachVileAcidSalivaU3,Amount" Value="3"/>
         <EffectArray Reference="Effect,RoachVileUMelee2,Amount" Value="3"/>
         <EffectArray Reference="Effect,ParticleDisruptorsU3,Amount" Value="2"/>
+        <EffectArray Reference="Effect,HydraliskMelee4,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NeedleSpinesDamage9,Amount" Value="1"/>
+        <EffectArray Reference="Effect,PhaseDisruptors,Amount" Value="2"/>
+        <EffectArray Reference="Effect,PhaseDisruptors,AttributeBonus[Armored]" Value="3"/>
+        <EffectArray Reference="Effect,HotSSwarmlingClawsDamage3,Amount" Value="1"/>
+        <EffectArray Reference="Effect,WarpBlades,Amount" Value="5"/>
+        <EffectArray Reference="Effect,ThermalLancesMU,Amount" Value="1"/>
+        <EffectArray Reference="Effect,ThermalLancesMU,AttributeBonus[Light]" Value="1"/>
+        <EffectArray Reference="Effect,ThermalBeamDamage2,Amount" Value="2"/>
+        <EffectArray Reference="Effect,HotSLeviathanAirAttackDamage3,Amount" Value="1"/>
+        <EffectArray Reference="Effect,HotSLeviathanAirAttackDamage3,AttributeBonus[Massive]" Value="1"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -12566,6 +12591,17 @@
         <EffectArray Reference="Effect,RoachVileAcidSalivaU3,Amount" Value="3"/>
         <EffectArray Reference="Effect,RoachVileUMelee2,Amount" Value="3"/>
         <EffectArray Reference="Effect,ParticleDisruptorsU3,Amount" Value="2"/>
+        <EffectArray Reference="Effect,HydraliskMelee4,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NeedleSpinesDamage9,Amount" Value="1"/>
+        <EffectArray Reference="Effect,PhaseDisruptors,Amount" Value="2"/>
+        <EffectArray Reference="Effect,PhaseDisruptors,AttributeBonus[Armored]" Value="3"/>
+        <EffectArray Reference="Effect,HotSSwarmlingClawsDamage3,Amount" Value="1"/>
+        <EffectArray Reference="Effect,WarpBlades,Amount" Value="5"/>
+        <EffectArray Reference="Effect,ThermalLancesMU,Amount" Value="1"/>
+        <EffectArray Reference="Effect,ThermalLancesMU,AttributeBonus[Light]" Value="1"/>
+        <EffectArray Reference="Effect,ThermalBeamDamage2,Amount" Value="2"/>
+        <EffectArray Reference="Effect,HotSLeviathanAirAttackDamage3,Amount" Value="1"/>
+        <EffectArray Reference="Effect,HotSLeviathanAirAttackDamage3,AttributeBonus[Massive]" Value="1"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -12588,6 +12624,17 @@
         <EffectArray Reference="Effect,RoachVileAcidSalivaU3,Amount" Value="3"/>
         <EffectArray Reference="Effect,RoachVileUMelee2,Amount" Value="3"/>
         <EffectArray Reference="Effect,ParticleDisruptorsU3,Amount" Value="2"/>
+        <EffectArray Reference="Effect,HydraliskMelee4,Amount" Value="1"/>
+        <EffectArray Reference="Effect,NeedleSpinesDamage9,Amount" Value="1"/>
+        <EffectArray Reference="Effect,PhaseDisruptors,Amount" Value="2"/>
+        <EffectArray Reference="Effect,PhaseDisruptors,AttributeBonus[Armored]" Value="3"/>
+        <EffectArray Reference="Effect,HotSSwarmlingClawsDamage3,Amount" Value="1"/>
+        <EffectArray Reference="Effect,WarpBlades,Amount" Value="5"/>
+        <EffectArray Reference="Effect,ThermalLancesMU,Amount" Value="1"/>
+        <EffectArray Reference="Effect,ThermalLancesMU,AttributeBonus[Light]" Value="1"/>
+        <EffectArray Reference="Effect,ThermalBeamDamage2,Amount" Value="2"/>
+        <EffectArray Reference="Effect,HotSLeviathanAirAttackDamage3,Amount" Value="1"/>
+        <EffectArray Reference="Effect,HotSLeviathanAirAttackDamage3,AttributeBonus[Massive]" Value="1"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -12947,9 +12994,9 @@
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade652">
-        <EffectArray Reference="Unit,JakobsAngel,EnergyMax" Value="50"/>
+        <EffectArray Reference="Unit,GhostAlternate4,EnergyMax" Value="50"/>
         <EffectArray Reference="Unit,BehemothClassBattlecruiser,EnergyMax" Value="50"/>
-        <EffectArray Reference="Unit,SpecialOperative,EnergyMax" Value="50"/>
+        <EffectArray Reference="Unit,SpecialOperative,EnergyMax" Value="15"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade6522">

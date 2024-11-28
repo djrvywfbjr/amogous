@@ -874,6 +874,21 @@
             <AbilLinkDisableArray value="Ab1PortableSensorTower"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="ArtanisInspire3">
+        <InfoIcon value="Assets\Textures\btn-upgrade-terran-nova-detector.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="14"/>
+        <Modification AttackSpeedMultiplier="1.35">
+            <LifeArmorBonus value="2"/>
+            <VitalRegenArray index="Energy" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DriveCalibrationField">
+        <InfoIcon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="14"/>
+        <Modification MoveSpeedMultiplier="1.45" AccelerationMultiplier="1.45"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="Automated">
         <BehaviorFlags index="Permanent" value="1"/>
         <InfoFlags index="Hidden" value="1"/>
@@ -897,6 +912,14 @@
         <Duration value="27"/>
         <Modification TimeScale="1.35"/>
         <ExpireEffect value="AshNexusExhaustion"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DistortionGenerator">
+        <InfoIcon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="14"/>
+        <Modification>
+            <StateFlags index="Cloak" value="1"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="Frenzy22">
         <Alignment value="Positive"/>
@@ -1101,6 +1124,16 @@
         <Modification AttackSpeedMultiplier="1.5" ShieldArmorBonus="3">
             <VitalMaxArray index="Shields" value="125"/>
             <VitalRegenArray index="Life" value="20"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Stimpack113">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-stimpack.dds"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Duration value="10"/>
+        <Modification AttackSpeedMultiplier="1.35" WeaponRange="2">
+            <LifeArmorBonus value="5"/>
+            <VitalRegenArray index="Life" value="1"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="StrikeStarting">
@@ -3333,7 +3366,7 @@
         </DamageResponse>
         <MaxStackCount value="4"/>
     </CBehaviorBuff>
-    <CBehaviorPowerUser id="PowerUserQueue4">
+    <CBehaviorPowerUser id="PowerAss">
         <InfoFlags index="Hidden" value="1"/>
         <InfoIcon value="Assets\Textures\btn-building-protoss-pylon.dds"/>
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
@@ -4238,11 +4271,11 @@
         <DisplayDuration index="Enemy" value="1"/>
         <Duration value="15"/>
         <Modification>
-            <DamageDealtScaled index="Spell" value="8"/>
-            <DamageDealtScaled index="Melee" value="8"/>
-            <DamageDealtScaled index="Ranged" value="8"/>
-            <DamageDealtScaled index="Splash" value="8"/>
-            <DamageDealtScaled index="NoProc" value="8"/>
+            <DamageDealtScaled index="Spell" value="4"/>
+            <DamageDealtScaled index="Melee" value="4"/>
+            <DamageDealtScaled index="Ranged" value="4"/>
+            <DamageDealtScaled index="Splash" value="4"/>
+            <DamageDealtScaled index="NoProc" value="4"/>
             <RateMultiplierArray index="Progress" value="4"/>
             <RateMultiplierArray index="Queueable" value="4"/>
         </Modification>
@@ -15985,7 +16018,7 @@
         <InfoFlags index="Hidden" value="1"/>
         <InfoIcon value="Assets\Textures\btn-upgrade-nova-novarespawn.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Requirements value="HaveExperimentCenter222223223322222222"/>
+        <Requirements value="HaveExperimentCenter223222232"/>
         <Modification>
             <WeaponArray Link="MengskMarauder5232"/>
         </Modification>
@@ -19548,9 +19581,10 @@
     <CBehaviorBuff id="ArtanisLightningDashStun6">
         <InfoIcon value="Assets\Textures\btn-ability-protoss-confusion.dds"/>
         <BehaviorCategories index="Stun" value="1"/>
-        <Duration value="0.5"/>
+        <Duration value="0.7"/>
         <Modification>
             <StateFlags index="Stun" value="1"/>
+            <StateFlags index="SuppressCloak" value="1"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="AssimilatorMorph2">
@@ -40666,9 +40700,9 @@
         <Alignment value="Negative"/>
         <InfoIcon value="Assets\Textures\BTN-Ability-SpearOfAdun-TimeStop.dds"/>
         <BehaviorCategories index="Slow" value="1"/>
-        <DisableValidatorArray value="NoTimeStopImmune"/>
+        <DisableValidatorArray value="LifeGEOneQuarter"/>
         <TimeScaleSource Value="Global"/>
-        <Duration value="10"/>
+        <Duration value="28"/>
         <Modification TimeScale="0.01">
             <StateFlags index="Stun" value="1"/>
             <StateFlags index="SuppressAttack" value="1"/>
@@ -40677,7 +40711,7 @@
             <StateFlags index="SuppressRadar" value="1"/>
             <AbilClassDisableArray index="CAbilAttack" value="1"/>
         </Modification>
-        <DamageResponse ModifyFraction="0.6" ModifyLimit="50">
+        <DamageResponse ModifyFraction="0.9" ModifyLimit="50">
             <Chance value="1"/>
         </DamageResponse>
     </CBehaviorBuff>
@@ -50470,6 +50504,7 @@
     </CBehaviorBuff>
     <CBehaviorBuff id="ZerglingSunder3">
         <InfoIcon value="Assets\Textures\btn-upgrade-zergling-armorshredding.dds"/>
+        <Requirements value="Venom"/>
         <MaxStackCount value="3"/>
         <Duration value="10"/>
         <DamageResponse ModifyFraction="1.3">

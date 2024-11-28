@@ -526,6 +526,12 @@
     <CButton id="ArtanisInspire2">
         <Icon value="Assets\Textures\btn-ability-protoss-confusion.dds"/>
     </CButton>
+    <CButton id="ArtanisInspire3">
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-detector.dds"/>
+    </CButton>
+    <CButton id="DriveCalibrationField">
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
+    </CButton>
     <CButton id="ArtanisLightningDash2">
         <Icon value="Assets\Textures\btn-ability-protoss-lightningdash.dds"/>
         <EditorCategories value="Race:Protoss"/>
@@ -4150,6 +4156,13 @@
         <Icon value="Assets\Textures\btn-ability-stetmann-banelingmanashield.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
+    <CButton id="ConsecratedFuelTanks">
+        <Icon value="Assets\Textures\btn-upgrade-stetmann-battlecarrierlordflyinglocusts.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-stetmann-battlecarrierlordflyinglocusts.dds"/>
+    </CButton>
+    <CButton id="DistortionGenerator">
+        <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
+    </CButton>
     <CButton id="EquipCloakingMantle">
         <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-cloak-color.dds"/>
@@ -4204,7 +4217,7 @@
         <Icon value="Assets\Textures\btn-tips-credit.dds"/>
     </CButton>
     <CButton id="Firebat722">
-        <Icon value="Assets\Textures\wireframe-ghostfemale.dds"/>
+        <Icon value="Assets\Textures\btn-unit-terran-blackops-femaleghost.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-terran-firebat.dds"/>
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="Firebat"/>
@@ -4341,6 +4354,10 @@
     <CButton id="QueenClassicParasite3">
         <Icon value="Assets\Textures\btn-ability-zerg-viper-ocularparasite.dds"/>
         <EditorCategories value="Race:Zerg"/>
+    </CButton>
+    <CButton id="ResearchApperance">
+        <Icon value="Assets\Textures\btn-ability-zeratul-darktemplar-blink.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-darktemplar-blink.dds"/>
     </CButton>
     <CButton id="ResearchMobileAutomatons">
         <Icon value="Assets\Textures\talent-raynor-level01-infantryspecialist.dds"/>
@@ -27950,6 +27967,12 @@
         <EditorCategories value="Race:Terran"/>
         <Universal value="1"/>
     </CButton>
+    <CButton id="Stim133">
+        <Icon value="Assets\Textures\btn-ability-mengsk-marauder-royalstimpack.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-stimpack-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <Universal value="1"/>
+    </CButton>
     <CButton id="Stim14">
         <Tooltip value="Button/Tooltip/Stim14w121"/>
         <Icon value="Assets\Textures\btn-ability-stetmann-garyselfhealing.dds"/>
@@ -29913,6 +29936,10 @@
         <Icon value="Assets\Textures\btn-ability-zerg-debilitatingbile.dds"/>
     </CButton>
     <CButton id="UnknownButton77">
+        <Icon value="Assets\Textures\btn-upgrade-nova-equipment-plasmagun.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-nova-equipment-plasmagun.dds"/>
+    </CButton>
+    <CButton id="VenomousClaws">
         <Icon value="Assets\Textures\btn-upgrade-zergling-armorshredding.dds"/>
     </CButton>
     <CButton id="UnknownButton78">
@@ -30090,6 +30117,10 @@
         <Icon value="Assets\Textures\btn-unit-protoss-fenix-purifier-warpgate.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Building-Protoss-WarpGate.dds"/>
         <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="VenomousClawsButtom">
+        <Icon value="Assets\Textures\btn-upgrade-zergling-armorshredding.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-zergling-armorshredding.dds"/>
     </CButton>
     <CButton id="VikingFighter10">
         <Tooltip value="Button/Tooltip/VikingFighter10wagwagw1212"/>
@@ -33030,7 +33061,7 @@
         <EditorCategories value="Race:Terran"/>
     </CButton>
     <CButton id="Wraith22222222">
-        <Icon value="Assets\Textures\btn-tips-droppedterrazine.dds"/>
+        <Icon value="Assets\Textures\btn-upgrade-vorazun-shadowstun.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-terran-wraith.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>

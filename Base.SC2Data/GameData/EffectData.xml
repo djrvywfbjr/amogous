@@ -3872,6 +3872,7 @@
     </CEffectCreatePersistent>
     <CEffectDamage id="AmonTentacleBDamage2">
         <Amount value="5"/>
+        <AttributeBonus index="Structure" value="3"/>
     </CEffectDamage>
     <CEffectDamage id="AmonTentacleBDamage22">
         <Amount value="35"/>
@@ -4726,10 +4727,32 @@
         <EditorCategories value=""/>
         <Behavior value="ArtanisInspire2"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ArtanisInspireApply3">
+        <EditorCategories value=""/>
+        <Behavior value="ArtanisInspire3"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="CruiserSpeedApply">
+        <EditorCategories value=""/>
+        <Behavior value="DriveCalibrationField"/>
+    </CEffectApplyBehavior>
     <CEffectEnumArea id="ArtanisInspireSearch2">
         <EditorCategories value=""/>
         <SearchFilters value="Visible;Neutral,Enemy,Structure,Missile,Dead,Hidden"/>
         <AreaArray Radius="9" Effect="ArtanisInspireApply2"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="ArtanisInspireSearch3">
+        <EditorCategories value=""/>
+        <SearchFilters value="Air,Visible;Neutral,Enemy,Structure,Heroic,Missile,Dead,Hidden"/>
+        <AreaArray Radius="9" Effect="ArtanisInspireApply3"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="CruiserCloakApply">
+        <EditorCategories value=""/>
+        <Behavior value="DistortionGenerator"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="SpeedBuffSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="Air,Visible;Neutral,Enemy,Structure,Heroic,Missile,Dead,Hidden"/>
+        <AreaArray Radius="9" Effect="CruiserSpeedApply"/>
     </CEffectEnumArea>
     <CEffectCreatePersistent id="ArtanisLightningDash2">
         <Marker>
@@ -11209,7 +11232,7 @@
         <Behavior value="Frenzy22"/>
     </CEffectApplyBehavior>
     <CEffectLaunchMissile id="FrenzyLaunchMissile22">
-        <ValidatorArray index="0" value=""/>
+        <ValidatorArray index="0" value="IsZerg"/>
         <EditorCategories value="Race:Zerg"/>
         <LaunchEffect value="SurfaceForSpellcast22"/>
         <ImpactEffect value="FrenzyApplyBehavior22"/>
@@ -25710,6 +25733,19 @@
         <ImpactEffect value="GlancerTorpedoesDamage"/>
         <AmmoUnit value="VikingFighterWeapon"/>
     </CEffectLaunchMissile>
+    <CEffectDamage id="KhaydarinBeamDamage2" parent="DU_WEAP">
+        <EditorCategories value="Race:Protoss"/>
+        <AttributeBonus index="Light" value="-20"/>
+        <AttributeBonus index="Massive" value="20"/>
+        <Kind value="Ranged"/>
+        <KindSplash value="Splash"/>
+        <Amount value="40"/>
+        <ExcludeArray Value="Outer"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="-;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFlags index="OffsetByUnitRadius" value="0"/>
+        <SearchFlags index="SameCliff" value="0"/>
+    </CEffectDamage>
     <CEffectDamage id="LegendaryWeapon2" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <AttributeBonus index="Light" value="15"/>
@@ -25894,13 +25930,13 @@
         <EditorCategories value=""/>
         <ValidatorArray value="RequiresScientists"/>
         <ValidatorArray value="HasCargoSpace"/>
-        <ValidatorArray value="HasPower"/>
+        <ValidatorArray value="IsNotUnpowered"/>
     </CEffectSet>
     <CEffectSet id="SendWorker">
         <EditorCategories value=""/>
         <ValidatorArray value="RequiresWorkers"/>
         <ValidatorArray value="HasCargoSpace"/>
-        <ValidatorArray value="HasPower"/>
+        <ValidatorArray value="IsNotUnpowered"/>
     </CEffectSet>
     <CEffectApplyBehavior id="ShieldUp103622">
         <EditorCategories value=""/>
@@ -25912,6 +25948,11 @@
         <EditorCategories value=""/>
         <Behavior value="Shield363"/>
     </CEffectApplyBehavior>
+    <CEffectEnumArea id="CruiserCloakSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="Air,Visible;Neutral,Enemy,Structure,Heroic,Missile,Dead,Hidden"/>
+        <AreaArray Radius="9" Effect="CruiserCloakApply"/>
+    </CEffectEnumArea>
     <CEffectDamage id="StarshipRailgunDamage" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <ImpactLocation Value="TargetUnit"/>
@@ -60950,6 +60991,7 @@
         <EditorCategories value="Race:Terran"/>
         <ImpactEffect value="SJPirateYamatoADamage34"/>
         <AmmoUnit value="SJPirateYamatoAWeapon34"/>
+        <Flags index="ValidateTeleport" value="0"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="SJPirateYamatoA342">
         <ValidatorArray value="IsNotWarpBubble"/>
@@ -67493,6 +67535,10 @@
         <EditorCategories value="Race:Terran"/>
         <Behavior value="Stimpack1122"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="Stimpack153">
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="Stimpack113"/>
+    </CEffectApplyBehavior>
     <CEffectApplyBehavior id="Stimpack16">
         <ValidatorArray index="0" value="IsTimeStopped21733222225"/>
         <EditorCategories value="Race:Terran"/>
@@ -68643,6 +68689,13 @@
         <PeriodicEffectArray value="TemporalFieldAfterBubbleSearchArea32"/>
         <PeriodicPeriodArray value="0.0625"/>
     </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="TemporalFieldAfterBubbleCreatePersistent4">
+        <EditorCategories value="Race:Protoss"/>
+        <InitialEffect value="TemporalFieldSearchAreaImpactDummy4"/>
+        <PeriodCount value="160"/>
+        <PeriodicEffectArray value="TemporalFieldAfterBubbleSearchArea4"/>
+        <PeriodicPeriodArray value="0.0625"/>
+    </CEffectCreatePersistent>
     <CEffectEnumArea id="TemporalFieldAfterBubbleSearchArea2">
         <EditorCategories value="Race:Protoss"/>
         <SearchFilters value="-;Player,Ally,Neutral,Heroic,Missile,Stasis,Dead,Hidden"/>
@@ -68667,6 +68720,11 @@
         <EditorCategories value="Race:Protoss"/>
         <SearchFilters value="-;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden"/>
         <AreaArray Radius="4" Effect="TemporalFieldApplyBehavior32"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="TemporalFieldAfterBubbleSearchArea4">
+        <EditorCategories value="Race:Protoss"/>
+        <SearchFilters value="-;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden"/>
+        <AreaArray Radius="4" Effect="TemporalFieldApplyBehavior4"/>
     </CEffectEnumArea>
     <CEffectApplyBehavior id="TemporalFieldApplyBehavior2">
         <ValidatorArray value="NotFrenzied"/>
@@ -68700,6 +68758,12 @@
         <EditorCategories value="Race:Protoss"/>
         <Behavior value="TemporalRiftUnit32"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="TemporalFieldApplyBehavior4">
+        <ValidatorArray value="NotFrenzied"/>
+        <ValidatorArray value="NotFrenzied"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="SOATimeFreeze3"/>
+    </CEffectApplyBehavior>
     <CEffectDamage id="TemporalFieldDamageDummy2" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
         <ResponseFlags index="Flee" value="0"/>
@@ -68721,6 +68785,11 @@
         <Kind value="Spell"/>
     </CEffectDamage>
     <CEffectDamage id="TemporalFieldDamageDummy32" parent="DU_WEAP">
+        <EditorCategories value="Race:Protoss"/>
+        <ResponseFlags index="Flee" value="0"/>
+        <Kind value="Spell"/>
+    </CEffectDamage>
+    <CEffectDamage id="TemporalFieldDamageDummy4" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
         <ResponseFlags index="Flee" value="0"/>
         <Kind value="Spell"/>
@@ -68770,6 +68839,15 @@
         <PeriodicEffectArray value="TemporalFieldGrowingBubbleSearchArea32"/>
         <PeriodicPeriodArray value="0.0625"/>
     </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="TemporalFieldGrowingBubbleCreatePersistent4">
+        <EditorCategories value="Race:Protoss"/>
+        <OwningPlayer Value="Caster"/>
+        <InitialEffect value="TemporalFieldSearchAreaImpactDummy4"/>
+        <ExpireEffect value="TemporalFieldAfterBubbleCreatePersistent4"/>
+        <PeriodCount value="40"/>
+        <PeriodicEffectArray value="TemporalFieldGrowingBubbleSearchArea4"/>
+        <PeriodicPeriodArray value="0.0625"/>
+    </CEffectCreatePersistent>
     <CEffectEnumArea id="TemporalFieldGrowingBubbleSearchArea2">
         <EditorCategories value="Race:Protoss"/>
         <SearchFilters value="Ground;Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden"/>
@@ -68791,6 +68869,11 @@
         <AreaArray Radius="0.5" RadiusBonus="0.0437"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="TemporalFieldGrowingBubbleSearchArea32">
+        <EditorCategories value="Race:Protoss"/>
+        <SearchFilters value="Ground;Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden"/>
+        <AreaArray Radius="0.5" RadiusBonus="0.0437"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="TemporalFieldGrowingBubbleSearchArea4">
         <EditorCategories value="Race:Protoss"/>
         <SearchFilters value="Ground;Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden"/>
         <AreaArray Radius="0.5" RadiusBonus="0.0437"/>
@@ -68824,6 +68907,12 @@
         <SearchFilters value="Ground;Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AreaArray Radius="3.5" Effect="TemporalFieldDamageDummy32"/>
         <AreaArray Radius="3.5" Effect="TemporalFieldDamageDummy32"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="TemporalFieldSearchAreaImpactDummy4">
+        <EditorCategories value="Race:Protoss"/>
+        <SearchFilters value="Ground;Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="3.5" Effect="TemporalFieldDamageDummy4"/>
+        <AreaArray Radius="3.5" Effect="TemporalFieldDamageDummy4"/>
     </CEffectEnumArea>
     <CEffectDamage id="ThermalBeamDamage2" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>

@@ -734,6 +734,17 @@
         <Compare value="GE"/>
         <Range value="5"/>
     </CValidatorLocationCompareRange>
+    <CValidatorUnitCompareBehaviorCount id="DoesNotUsePower">
+        <Behavior value="PowerUserQueue"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="DoesNotUsePowerAss">
+        <Behavior value="PowerAss"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="DoesNotUsePowerOrPowerAss">
+        <CombineArray value="DoesNotUsePower"/>
+        <CombineArray value="DoesNotUsePowerAss"/>
+        <Type value="And"/>
+    </CValidatorCombine>
     <CValidatorLocationEnumArea id="EnemiesNearby2">
         <AreaArray Compare="LE" Count="1" Radius="11"/>
         <SearchFilters value="Visible;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
@@ -747,12 +758,24 @@
     <CValidatorUnitCompareCargo id="HasCargoSpace">
         <Compare value="GT"/>
     </CValidatorUnitCompareCargo>
+    <CValidatorUnitCompareChargeUsed id="CasterHasScientists">
+        <Compare value="GT"/>
+        <Ability value="SendScientist"/>
+    </CValidatorUnitCompareChargeUsed>
+    <CValidatorUnitCompareChargeUsed id="CasterHasWorkers">
+        <Compare value="GT"/>
+        <Ability value="SendWorker"/>
+    </CValidatorUnitCompareChargeUsed>
     <CValidatorUnitType id="IsAnalyzerVessel">
         <Value value="AnalyzerVessel"/>
     </CValidatorUnitType>
     <CValidatorUnitType id="IsMedicalOutpost">
         <Value value="MedicalOutpost"/>
     </CValidatorUnitType>
+    <CValidatorCombine id="IsNotUnpowered">
+        <CombineArray value="HasPower"/>
+        <CombineArray value="DoesNotUsePowerOrPowerAss"/>
+    </CValidatorCombine>
     <CValidatorUnitType id="IsWorkshop">
         <Value value="Workshop"/>
     </CValidatorUnitType>
@@ -808,6 +831,9 @@
     <CValidatorUnitType id="IsPsiwaveCommunicator">
         <Value value="PsiwaveCommunicator"/>
     </CValidatorUnitType>
+    <CValidatorUnitType id="IsGarden">
+        <Value value="Garden"/>
+    </CValidatorUnitType>
     <CValidatorUnitCompareField id="IsZerg2">
         <ResultFailed value="CantTargetThatUnit,Error/CantTargetNonTaken"/>
         <Field value="Race"/>
@@ -845,6 +871,7 @@
         <CombineArray value="IsImperialSilencer"/>
         <CombineArray value="IsMaintenanceVehicle"/>
         <CombineArray value="IsPsiwaveCommunicator"/>
+        <CombineArray value="IsGarden"/>
     </CValidatorCombine>
     <CValidatorCombine id="RequiresScientists">
         <CombineArray value="IsMedicalOutpost"/>
@@ -1608,7 +1635,7 @@
         <Behavior value="DarkTemplarRecentlyRecalled4"/>
     </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitType id="IsOverlord2">
-        <Value value="EngineeringBay17"/>
+        <Value value="Garden"/>
     </CValidatorUnitType>
     <CValidatorUnitType id="IsOverlord22">
         <Value value="VespenePacifier"/>
