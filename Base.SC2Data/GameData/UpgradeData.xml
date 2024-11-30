@@ -56,6 +56,7 @@
         <AffectedUnitArray value="RoachBurrowed"/>
         <LeaderAlias value="ZergMissileWeapons"/>
     </CUpgrade>
+    <CUpgrade id="AdvancedBionicsUpgrade"/>
     <CUpgrade id="AdvancedConstruction2">
         <Flags index="UpgradeCheat" value="0"/>
         <EffectArray Operation="Set" Reference="Abil,BuildInProgress,MaxBuilders" Value="10"/>
@@ -11697,6 +11698,16 @@
         <EffectArray Operation="Set" Reference="Unit,Banshee3,Speed" Value="3.351500"/>
         <EffectArray Operation="Set" Reference="Unit,Liberator4,Speed" Value="4.000000"/>
         <EffectArray Operation="Set" Reference="Unit,Battlecruiser5,Speed" Value="2.898400"/>
+    </CUpgrade>
+    <CUpgrade id="UnknownUpgrade86">
+        <EffectArray Operation="Set" Reference="Unit,Scourge2,CostResource[Minerals]" Value="50"/>
+        <EffectArray Operation="Set" Reference="Unit,MengskWraith22,CostResource[Minerals]" Value="225"/>
+        <EffectArray Operation="Set" Reference="Unit,MengskWraith22,CostResource[Vespene]" Value="175"/>
+        <EffectArray Operation="Set" Reference="Unit,Medivac2,CostResource[Minerals]" Value="25"/>
+        <EffectArray Operation="Set" Reference="Unit,Medivac2,CostResource[Vespene]" Value="35"/>
+        <EffectArray Operation="Set" Reference="Unit,PhoenixAiur2,CostResource[Minerals]" Value="75"/>
+        <EffectArray Operation="Set" Reference="Unit,PhoenixAiur2,CostResource[Vespene]" Value="40"/>
+        <EffectArray Operation="Set" Reference="Unit,Medivac22,CostResource[Vespene]" Value="250"/>
     </CUpgrade>
     <CUpgrade id="UnknownUpgrade9">
         <EffectArray Operation="Set" Reference="Effect,AlarakPsiOrbSet2,EffectArray[3]" Value="Epilogue02VoidRiftAB223"/>

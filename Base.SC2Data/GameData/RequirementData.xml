@@ -178,6 +178,9 @@
     <CRequirement id="BlinkButton">
         <NodeArray index="Show" Link="NotCountUpgradeXillBlinkQueuedOrBetter"/>
     </CRequirement>
+    <CRequirement id="HaveAdvancedBionics2">
+        <NodeArray index="Use" Link="CountUpgradeAdvancedBionicsUpgradeCompleteOnly"/>
+    </CRequirement>
     <CRequirement id="ImplantOverrideYes">
         <NodeArray index="Show" Link="CountUpgradeUnknownUpgrade85CompleteOnly"/>
     </CRequirement>
@@ -186,6 +189,13 @@
     </CRequirement>
     <CRequirement id="ConsecratedFuelNo">
         <NodeArray index="Show" Link="NotCountUpgradeConsecratedFuelTanksQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="DontHaveAdvancedBionics">
+        <NodeArray index="Show" Link="NotCountUpgradeAdvancedBionicsUpgradeQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="NoSymbcost"/>
+    <CRequirement id="RWERequirement2322">
+        <NodeArray index="Use" Link="And996554812CountUnitMutationChamberCompleteOnlyCountUnitIncarcerationPitCompleteOnly"/>
     </CRequirement>
     <CRequirement id="VenomButton">
         <NodeArray index="Show" Link="NotCountUpgradeVenomQueuedOrBetter"/>

@@ -697,6 +697,7 @@
     <CAbilEffectInstant id="ArtanisInspire3">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ArtanisInspireSearch3"/>
+        <Flags index="BestUnit" value="1"/>
         <Flags index="Transient" value="1"/>
         <Cost>
             <Vital index="Energy" value="125"/>
@@ -706,6 +707,7 @@
     <CAbilEffectInstant id="CorpsSpeedBurst">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="SpeedBuffSearch"/>
+        <Flags index="BestUnit" value="1"/>
         <Flags index="Transient" value="1"/>
         <Cost>
             <Vital index="Energy" value="125"/>
@@ -743,6 +745,7 @@
     <CAbilEffectInstant id="MassCloak">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="CruiserCloakSearch"/>
+        <Flags index="BestUnit" value="1"/>
         <Flags index="Transient" value="1"/>
         <Cost>
             <Vital index="Energy" value="125"/>
@@ -953,16 +956,8 @@
         <Effect index="0" value="ShieldUp23273"/>
         <Flags index="BestUnit" value="0"/>
         <Cost>
-            <Charge>
-                <CountMax value="1"/>
-                <CountStart value="1"/>
-                <CountUse value="1"/>
-                <Link value=""/>
-                <Location value="Player"/>
-                <TimeStart value="40"/>
-                <TimeUse value="40"/>
-            </Charge>
-            <Cooldown Link="Abil/AlarakAvatar" TimeUse="5"/>
+            <Charge Link="" Location="Player"/>
+            <Cooldown Link="Abil/AlarakAvatar" TimeUse="30"/>
         </Cost>
         <TargetFilters value="-;Neutral,Enemy,Heroic,Dead,Invulnerable"/>
         <Range value="40"/>
@@ -5793,7 +5788,6 @@
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Effect index="0" value="Blink22423"/>
         <Cost>
-            <Vital index="Energy" value="25"/>
             <Charge Link="Abil/Blink"/>
             <Cooldown Link="Blink" TimeUse="120"/>
         </Cost>
@@ -15467,11 +15461,11 @@
             </Button>
             <Unit value="SCV7"/>
         </InfoArray>
-        <InfoArray index="Train2" Time="20">
+        <InfoArray index="Train2" Time="35">
             <Button DefaultButtonFace="Marine12"/>
             <Unit value="MengskMarine32"/>
         </InfoArray>
-        <InfoArray index="Train3" Time="35">
+        <InfoArray index="Train3" Time="45">
             <Button DefaultButtonFace="Marauder9" Requirements="HavePartStorageDepot22"/>
             <Unit value="Marauder22"/>
         </InfoArray>
@@ -15506,6 +15500,10 @@
         <InfoArray index="Train11" Time="105">
             <Button DefaultButtonFace="BuildScienceVessel7" Requirements="HavePartStorageDepot3"/>
             <Unit value="DukesRevenge5"/>
+        </InfoArray>
+        <InfoArray index="Train12" Time="20">
+            <Button DefaultButtonFace="TrainCombatScout"/>
+            <Unit value="CombatScout"/>
         </InfoArray>
         <Alert value="TrainWorkerComplete"/>
     </CAbilTrain>
@@ -20809,6 +20807,12 @@
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Button DefaultButtonFace="DarkArchonMindControl3444322" Requirements="HaveHatchingBay223252"/>
+        </InfoArray>
+        <InfoArray index="Research20" Time="168" Upgrade="UnknownUpgrade86">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Charge Link="Abil/Ensnare"/>
+            <Button DefaultButtonFace="SymbioticPlating" Requirements="NoSymbcost"/>
         </InfoArray>
     </CAbilResearch>
     <CAbilResearch id="EngineeringBayResearch6" parent="EngineeringBayResearch">
@@ -29091,6 +29095,11 @@
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Button DefaultButtonFace="UnknownButton77" Requirements="ImplantOverrideYes2"/>
+        </InfoArray>
+        <InfoArray index="Research10" Time="140" Upgrade="AdvancedBionicsUpgrade">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="Zealot226" Requirements="DontHaveAdvancedBionics"/>
         </InfoArray>
     </CAbilResearch>
     <CAbilEffectTarget id="KaiserWormBanelingMissile2">
@@ -39579,6 +39588,8 @@
     </CAbilEffectTarget>
     <CAbilEffectTarget id="PhaseCannon934">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
         <Flags index="RangeUseCasterRadius" value="0"/>
         <Cost>
             <Vital index="Energy" value="15"/>
@@ -39590,6 +39601,7 @@
         <ProducedUnitArray value="Interceptor5"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="PhaseCannon935"/>
         <PlaceUnit value="Interceptor5"/>
+        <AutoCastFilters value="Visible;Player,Ally,Neutral,Dead,Invulnerable"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="PhaseCannon94">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
@@ -54440,7 +54452,7 @@
         <Cost>
             <Cooldown TimeUse="20"/>
         </Cost>
-        <CmdButtonArray index="Execute" DefaultButtonFace="SuperStimpackNova3" Requirements="DragoonAttack74DamageReactionShield">
+        <CmdButtonArray index="Execute" DefaultButtonFace="SuperStimpackNova3" Requirements="LearnBlink24222">
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
     </CAbilEffectInstant>
@@ -54647,7 +54659,7 @@
         <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="TempestDisruptionBlast">
-        <CastIntroTime index="0" value="3"/>
+        <CastIntroTime index="0" value="1"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="TempestDisruptionBlast2">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
@@ -60858,6 +60870,7 @@
         <TotalCargoSpace value="100"/>
         <LoadValidatorArray value="CasterNotInCombat3"/>
         <UnloadValidatorArray value="CasterNotInCombat"/>
+        <LoadCargoEffect value="AltrapolCargoStasis"/>
     </CAbilTransport>
     <CAbilTransport id="WarpPrismTransport232">
         <AbilSetId value="ULdM"/>
@@ -62991,7 +63004,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="XenWarrior63"/>
         <Cost>
-            <Resource index="Minerals" value="100"/>
+            <Resource index="Minerals" value="50"/>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
@@ -63002,8 +63015,8 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="XenWarrior632"/>
         <Cost>
-            <Resource index="Minerals" value="25"/>
-            <Resource index="Vespene" value="55"/>
+            <Resource index="Minerals" value="15"/>
+            <Resource index="Vespene" value="35"/>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
@@ -63015,7 +63028,7 @@
         <Effect index="0" value="XenWarrior6322"/>
         <Cost>
             <Resource index="Minerals" value="25"/>
-            <Resource index="Vespene" value="100"/>
+            <Resource index="Vespene" value="25"/>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>

@@ -63,6 +63,9 @@
         <AlertIcon value="Assets\Textures\btn-unit-protoss-adept-purifier.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
+    <CButton id="AdvancedBionics">
+        <Icon value="Assets\Textures\btn-research-zerg-cellularreactor.dds"/>
+    </CButton>
     <CButton id="AggressiveMutation2">
         <Icon value="Assets\Textures\btn-ability-kerrigan-wildmutation.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-kerrigan-wildmutation.dds"/>
@@ -28337,6 +28340,10 @@
         <EditorCategories value="Race:Zerg"/>
         <HotkeyAlias value="SwarmHostMP"/>
     </CButton>
+    <CButton id="SymbioticPlating">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-stukov-attackspeedmastery.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-zerg-stukov-attackspeedmastery.dds"/>
+    </CButton>
     <CButton id="TargetLock2">
         <Icon value="Assets\Textures\btn-ability-protoss-targetlock.dds"/>
         <EditorCategories value="Race:Protoss"/>
@@ -29487,6 +29494,10 @@
     </CButton>
     <CButton id="UnknownButton127">
         <Icon value="Assets\Textures\btn-ability-mengsk-topbar-dogsofwar-level04.dds"/>
+    </CButton>
+    <CButton id="TrainCombatScout">
+        <Icon value="Assets\Textures\btn-unit-terran-troopermengsk.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-troopermengsk.dds"/>
     </CButton>
     <CButton id="UnknownButton13">
         <Icon value="Assets\Textures\btn-ability-protoss-scarabshot.dds"/>
@@ -34544,7 +34555,7 @@
         <Universal value="1"/>
     </CButton>
     <CButton id="Zealot2262222">
-        <Icon value="Assets\Textures\btn-research-zerg-cellularreactor.dds"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-shadow-charge.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
         <EditorCategories value="Race:Protoss"/>
         <Universal value="1"/>
