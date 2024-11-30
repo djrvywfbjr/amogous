@@ -1517,6 +1517,15 @@
             <TurretDisableArray value="Nexus"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="AltrapolCargoStasis">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="IsHiddenSelf"/>
+        <Modification>
+            <StateFlags index="Stasis" value="1"/>
+            <StateFlags index="Stun" value="1"/>
+            <StateFlags index="Uncommandable" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="UnmannedBuilding">
         <Cost>
             <Charge Link="Behavior/AntamoAirAll"/>
@@ -47483,13 +47492,17 @@
     <CBehaviorBuff id="XenWarrior6">
         <InfoIcon value="Assets\Textures\btn-research-terran-microfiltering.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Modification SightBonus="4" MoveSpeedBonus="0.25">
+        <Modification>
+            <SightBonus value="4"/>
+            <MoveSpeedBonus value="0.25"/>
+            <AttackSpeedMultiplier value="0.75"/>
+            <WeaponRange value="4"/>
             <LifeArmorBonus value="1"/>
-            <VitalMaxArray index="Life" value="35"/>
             <AbilLinkDisableArray value="XenWarrior622"/>
             <AbilLinkDisableArray value="XenWarrior62222"/>
             <AbilLinkDisableArray value="XenWarrior6222"/>
             <AbilLinkDisableArray value="XenWarrior62"/>
+            <WeaponArray Link="LongboltMissile"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="XenWarrior62">
@@ -47519,7 +47532,7 @@
     <CBehaviorBuff id="XenWarrior64">
         <InfoIcon value="Assets\Textures\btn-research-terran-vanadiumplating.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Modification>
+        <Modification WeaponRange="2">
             <DamageDealtScaled index="Spell" value="5"/>
             <DamageDealtScaled index="Melee" value="5"/>
             <DamageDealtScaled index="Ranged" value="5"/>
@@ -47545,12 +47558,11 @@
             <AbilLinkDisableArray value="XenWarrior622"/>
             <WeaponArray Link="MengskFirebat"/>
             <WeaponArray Link="HailstormMissilePods33"/>
-            <WeaponDisableArray value="GuassRifle5"/>
-            <WeaponDisableArray value="HailstormMissilePods3"/>
+            <WeaponDisableArray value="GuassRifle58"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="XenWarrior6422">
-        <InfoIcon value="Assets\Textures\btn-research-zerg-cellularreactor.dds"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-shadow-charge.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification MoveSpeedBonus="1">
             <LifeArmorBonus value="1"/>
@@ -47560,7 +47572,7 @@
             <AbilLinkDisableArray value="XenWarrior62222"/>
             <AbilLinkDisableArray value="XenWarrior62"/>
             <WeaponArray Link="WarHoundMelee2"/>
-            <WeaponDisableArray value="GuassRifle5"/>
+            <WeaponDisableArray value="GuassRifle58"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="XenWarrior64222">

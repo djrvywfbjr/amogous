@@ -33,6 +33,14 @@
             <Borders value="0,4,2;1,0,2;2,3,2;3,7,2;4,5,2;5,2,2;6,1,2;7,6,2"/>
         </Shape>
     </CFootprint>
+    <CFootprint id="Footprint3x3AddOn2x2">
+        <Layers index="Check">
+            <Sets index="0">
+                <Negative index="Creep" value="0"/>
+            </Sets>
+        </Layers>
+        <Layers index="Pathing" removed="1"/>
+    </CFootprint>
     <CFootprint id="Footprint3x3Contour"/>
     <CFootprint id="Footprint3x3IgnoreCreepContour">
         <Layers index="Check">

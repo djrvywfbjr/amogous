@@ -3825,6 +3825,9 @@
         <SearchFilters value="-;Self,Player,Ally"/>
         <AreaArray Radius="500" Effect="NukeDamage22338"/>
     </CEffectEnumArea>
+    <CEffectApplyBehavior id="AltrapolCargoStasis">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
     <CEffectLaunchMissile id="AmonTentacleBAttackLM2">
         <LaunchLocation Value="CasterUnit"/>
         <ImpactEffect value="AmonTentacleBDamage2"/>
@@ -4749,6 +4752,12 @@
         <EditorCategories value=""/>
         <Behavior value="DistortionGenerator"/>
     </CEffectApplyBehavior>
+    <CEffectDamage id="GuassRifle58" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <ArmorReduction value="0"/>
+        <Kind value="Ranged"/>
+        <Amount value="5"/>
+    </CEffectDamage>
     <CEffectEnumArea id="SpeedBuffSearch">
         <EditorCategories value=""/>
         <SearchFilters value="Air,Visible;Neutral,Enemy,Structure,Heroic,Missile,Dead,Hidden"/>
