@@ -4105,6 +4105,7 @@
         <InfoArray index="Train6" Time="40" Effect="MercGroundDrop3">
             <Resource index="Minerals" value="-150"/>
             <Resource index="Vespene" value="-200"/>
+            <Resource index="Terrazine" value="40"/>
             <Button DefaultButtonFace="Firebat7222" State="Restricted" Requirements="UseSpectreNyxSuit2323223222"/>
             <Unit value="GhostAlternate7"/>
         </InfoArray>
