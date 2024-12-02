@@ -46785,6 +46785,8 @@
         <InfoIcon value="Assets\Textures\btn-upgrade-protoss-alarak-supplicantarmor.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification MoveSpeedMultiplier="0.8">
+            <StateFlags index="UnitAttrOnArmored" value="1"/>
+            <StateFlags index="UnitAttrOffLight" value="1"/>
             <LifeArmorBonus value="2"/>
             <WeaponArray Link="GuassRifle522222"/>
             <WeaponDisableArray value="Adept"/>
@@ -46795,6 +46797,8 @@
         <InfoIcon value="Assets\Textures\btn-upgrade-protoss-alarak-supplicantarmor.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification MoveSpeedMultiplier="1.3">
+            <StateFlags index="UnitAttrOnArmored" value="1"/>
+            <StateFlags index="UnitAttrOffLight" value="1"/>
             <VitalMaxArray index="Life" value="35"/>
             <WeaponArray Link="MutaliskGlaiveWurm2"/>
             <WeaponDisableArray value="Adept"/>
@@ -46812,7 +46816,9 @@
         <InfoFlags index="Hidden" value="1"/>
         <InfoIcon value="Assets\Textures\btn-upgrade-protoss-alarak-supplicantarmor.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Modification MoveSpeedMultiplier="1.4" AttackSpeedMultiplier="1.4"/>
+        <Modification MoveSpeedMultiplier="1.4" AttackSpeedMultiplier="1.4">
+            <StateFlags index="UnitAttrOnMassive" value="1"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="XenWarrior24232222">
         <InfoFlags index="Hidden" value="1"/>
@@ -46825,6 +46831,7 @@
         <InfoIcon value="Assets\Textures\btn-upgrade-protoss-alarak-supplicantarmor.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification>
+            <StateFlags index="UnitAttrOnMassive" value="1"/>
             <DamageDealtUnscaled index="Spell" value="15"/>
             <DamageDealtUnscaled index="Melee" value="15"/>
             <DamageDealtUnscaled index="Ranged" value="15"/>
@@ -47557,7 +47564,6 @@
             <AbilLinkDisableArray value="XenWarrior62"/>
             <AbilLinkDisableArray value="XenWarrior622"/>
             <WeaponArray Link="MengskFirebat"/>
-            <WeaponArray Link="HailstormMissilePods33"/>
             <WeaponDisableArray value="GuassRifle58"/>
         </Modification>
     </CBehaviorBuff>

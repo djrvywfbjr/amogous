@@ -29261,6 +29261,8 @@
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Effect index="0" value="KarassPlasmaSurgeSearchArea3"/>
         <Flags index="AllowMovement" value="1"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
         <Cost>
             <Vital index="Energy" value="25"/>
             <Cooldown TimeUse="2.5"/>
@@ -29269,6 +29271,9 @@
         <CastOutroTime value="0.5"/>
         <CursorEffect value="KarassPlasmaSurgeSearchArea3"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="KarassPlasmaSurge4"/>
+        <AutoCastFilters value="Visible;Self,Neutral,Enemy,Structure,Missile,Dead,Invulnerable,Summoned"/>
+        <AutoCastRange value="10"/>
+        <AutoCastValidatorArray value="TargetShieldsGE50PC"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="KaraxDisintegrationBeam2">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
@@ -62999,7 +63004,7 @@
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <AINotifyEffect value="XenWarrior6"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2262" Requirements="UnknownRequirement5"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2262"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior622">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -63010,7 +63015,7 @@
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <AINotifyEffect value="XenWarrior6"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot22622" Requirements="UnknownRequirement5"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot22622"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior6222">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -63022,7 +63027,7 @@
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <AINotifyEffect value="XenWarrior6"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot226222" Requirements="UnknownRequirement5"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot226222"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior62222">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -63034,7 +63039,7 @@
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
         <AINotifyEffect value="XenWarrior6"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2262222" Requirements="UnknownRequirement5"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2262222"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="XenWarrior622222">
         <EditorCategories value="AbilityorEffectType:Units"/>

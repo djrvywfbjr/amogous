@@ -18170,7 +18170,7 @@
         <EditorCategories value="Race:Zerg"/>
         <ImpactLocation Value="TargetUnit"/>
         <ExcludeArray Effect="DehakaHeal5" Value="Target"/>
-        <SearchFilters value="-;Enemy,Air,Structure,Missile,Stasis,Dead,Hidden"/>
+        <SearchFilters value="-;Enemy,Air,Structure,Worker,Missile,Stasis,Dead,Hidden"/>
         <AreaArray Radius="7" Effect="DehakaHealSmallSet432"/>
         <SearchFlags index="ExtendByUnitRadius" value="1"/>
     </CEffectEnumArea>
