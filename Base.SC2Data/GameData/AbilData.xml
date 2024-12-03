@@ -6628,6 +6628,7 @@
             <Button DefaultButtonFace="SpawningPool623"/>
         </InfoArray>
         <InfoArray index="Build5" Unit="Overmind2" Time="0.1">
+            <Resource index="Minerals" value="-175"/>
             <Vital index="Life" value="99"/>
             <Button DefaultButtonFace="Wraith22262"/>
         </InfoArray>
@@ -6680,14 +6681,8 @@
             <Button DefaultButtonFace="Wraith2223352"/>
         </InfoArray>
         <InfoArray index="Build17" Unit="SpineCrawler3" Time="30">
-            <Charge>
-                <CountMax value="3"/>
-                <CountStart value="3"/>
-                <CountUse value="1"/>
-                <TimeUse value="100"/>
-            </Charge>
-            <Cooldown TimeUse="1"/>
             <Button DefaultButtonFace="SpineCrawler6"/>
+            <ValidatorArray value="HasVision"/>
         </InfoArray>
         <InfoArray index="Build18" Unit="Nexus4">
             <Resource index="Minerals" value="-350"/>
@@ -10146,6 +10141,7 @@
                 <CountMax value="3"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
+                <Location value="Player"/>
                 <TimeUse value="40"/>
             </Charge>
             <Cooldown TimeStart="40" TimeUse="25"/>
@@ -27613,140 +27609,140 @@
             <Cooldown Link="Abil/GhostAcademyResearch9"/>
             <Button DefaultButtonFace="CalldownMULE42332623222243322222" Requirements="UnknownRequirement8253222322"/>
         </InfoArray>
-        <InfoArray index="Research7" Time="100" Upgrade="UmojanBasicUnitUpgrade52224224232222222222222342">
+        <InfoArray index="Research7" Time="70" Upgrade="UmojanBasicUnitUpgrade52224224232222222222222342">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Charge Link="Abil/GhostAcademyResearch9"/>
             <Cooldown Link="Abil/GhostAcademyResearch9"/>
             <Button DefaultButtonFace="CalldownMULE423326232222" Requirements="SoE4PortableHiveMind2242222222223334352"/>
         </InfoArray>
-        <InfoArray index="Research8" Time="100" Upgrade="UmojanBasicUnitUpgrade5222422423222222222222234">
+        <InfoArray index="Research8" Time="70" Upgrade="UmojanBasicUnitUpgrade5222422423222222222222234">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Charge Link="Abil/GhostAcademyResearch9"/>
             <Cooldown Link="Abil/GhostAcademyResearch9"/>
             <Button DefaultButtonFace="CalldownMULE42332623222" Requirements="SoE4PortableHiveMind224222222222333435"/>
         </InfoArray>
-        <InfoArray index="Research9" Time="100" Upgrade="UmojanBasicUnitUpgrade522242242322222222222223432223">
+        <InfoArray index="Research9" Time="70" Upgrade="UmojanBasicUnitUpgrade522242242322222222222223432223">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Charge Link="Abil/GhostAcademyResearch9"/>
             <Cooldown Link="Abil/GhostAcademyResearch9"/>
             <Button DefaultButtonFace="CalldownMULE42332623222243" Requirements="SoE4PortableHiveMind2242222222223334352222223"/>
         </InfoArray>
-        <InfoArray index="Research10" Time="100" Upgrade="UmojanBasicUnitUpgrade5222422423222222222222234322232">
+        <InfoArray index="Research10" Time="70" Upgrade="UmojanBasicUnitUpgrade5222422423222222222222234322232">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Charge Link="Abil/GhostAcademyResearch9"/>
             <Cooldown Link="Abil/GhostAcademyResearch9"/>
             <Button DefaultButtonFace="CalldownMULE423326232222432" Requirements="SoE4PortableHiveMind22422222222233343522222232"/>
         </InfoArray>
-        <InfoArray index="Research11" Time="100" Upgrade="UmojanBasicUnitUpgrade52224224232222222222222343">
+        <InfoArray index="Research11" Time="70" Upgrade="UmojanBasicUnitUpgrade52224224232222222222222343">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Charge Link="Abil/GhostAcademyResearch9"/>
             <Cooldown Link="Abil/GhostAcademyResearch9"/>
             <Button DefaultButtonFace="CalldownMULE4233262322222" Requirements="SoE4PortableHiveMind22422222222233343522"/>
         </InfoArray>
-        <InfoArray index="Research12" Time="100" Upgrade="UmojanBasicUnitUpgrade522242242322222222222223432">
+        <InfoArray index="Research12" Time="70" Upgrade="UmojanBasicUnitUpgrade522242242322222222222223432">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Charge Link="Abil/GhostAcademyResearch9"/>
             <Cooldown Link="Abil/GhostAcademyResearch9"/>
             <Button DefaultButtonFace="CalldownMULE42332623222222" Requirements="SoE4PortableHiveMind224222222222333435222"/>
         </InfoArray>
-        <InfoArray index="Research13" Time="100" Upgrade="UmojanBasicUnitUpgrade52224224232222222222222343222422">
+        <InfoArray index="Research13" Time="70" Upgrade="UmojanBasicUnitUpgrade52224224232222222222222343222422">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Charge Link="Abil/GhostAcademyResearch9"/>
             <Cooldown Link="Abil/GhostAcademyResearch9"/>
             <Button DefaultButtonFace="CalldownMULE4233262322224432" Requirements="SoE4PortableHiveMind2242222222223334352332"/>
         </InfoArray>
-        <InfoArray index="Research14" Time="100" Upgrade="UmojanBasicUnitUpgrade522242242322222222222223432224222">
+        <InfoArray index="Research14" Time="70" Upgrade="UmojanBasicUnitUpgrade522242242322222222222223432224222">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Charge Link="Abil/GhostAcademyResearch9"/>
             <Cooldown Link="Abil/GhostAcademyResearch9"/>
             <Button DefaultButtonFace="CalldownMULE423326232222443" Requirements="SoE4PortableHiveMind224222222222333435233"/>
         </InfoArray>
-        <InfoArray index="Research15" Time="100" Upgrade="UmojanBasicUnitUpgrade522242242322222222222223432222">
+        <InfoArray index="Research15" Time="70" Upgrade="UmojanBasicUnitUpgrade522242242322222222222223432222">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Charge Link="Abil/GhostAcademyResearch9"/>
             <Cooldown Link="Abil/GhostAcademyResearch9"/>
             <Button DefaultButtonFace="CalldownMULE4233262322224" Requirements="SoE4PortableHiveMind224222222222333435222222"/>
         </InfoArray>
-        <InfoArray index="Research16" Time="100" Upgrade="UmojanBasicUnitUpgrade5222422423222222222222234322222">
+        <InfoArray index="Research16" Time="70" Upgrade="UmojanBasicUnitUpgrade5222422423222222222222234322222">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Charge Link="Abil/GhostAcademyResearch9"/>
             <Cooldown Link="Abil/GhostAcademyResearch9"/>
             <Button DefaultButtonFace="CalldownMULE42332623222242" Requirements="SoE4PortableHiveMind2242222222223334352222222"/>
         </InfoArray>
-        <InfoArray index="Research17" Time="100" Upgrade="UmojanBasicUnitUpgrade522242242322222222222223432224">
+        <InfoArray index="Research17" Time="70" Upgrade="UmojanBasicUnitUpgrade522242242322222222222223432224">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Charge Link="Abil/GhostAcademyResearch9"/>
             <Cooldown Link="Abil/GhostAcademyResearch9"/>
             <Button DefaultButtonFace="CalldownMULE42332623222244" Requirements="SoE4PortableHiveMind22422222222233343523"/>
         </InfoArray>
-        <InfoArray index="Research18" Time="100" Upgrade="UmojanBasicUnitUpgrade5222422423222222222222234322242">
+        <InfoArray index="Research18" Time="70" Upgrade="UmojanBasicUnitUpgrade5222422423222222222222234322242">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Charge Link="Abil/GhostAcademyResearch9"/>
             <Cooldown Link="Abil/GhostAcademyResearch9"/>
             <Button DefaultButtonFace="CalldownMULE423326232222442" Requirements="SoE4PortableHiveMind224222222222333435232"/>
         </InfoArray>
-        <InfoArray index="Research19" Time="100" Upgrade="UmojanBasicUnitUpgrade5222422423222222222222234322223">
+        <InfoArray index="Research19" Time="70" Upgrade="UmojanBasicUnitUpgrade5222422423222222222222234322223">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Charge Link="Abil/GhostAcademyResearch9"/>
             <Cooldown Link="Abil/GhostAcademyResearch9"/>
             <Button DefaultButtonFace="CalldownMULE4233262322224422" Requirements="SoE4PortableHiveMind22422222222233343524"/>
         </InfoArray>
-        <InfoArray index="Research20" Time="100" Upgrade="UmojanBasicUnitUpgrade52224224232222222222222343222232">
+        <InfoArray index="Research20" Time="70" Upgrade="UmojanBasicUnitUpgrade52224224232222222222222343222232">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Charge Link="Abil/GhostAcademyResearch9"/>
             <Cooldown Link="Abil/GhostAcademyResearch9"/>
             <Button DefaultButtonFace="CalldownMULE42332623222244222" Requirements="SoE4PortableHiveMind224222222222333435242"/>
         </InfoArray>
-        <InfoArray index="Research21" Time="100" Upgrade="UmojanBasicUnitUpgrade522242242322222222222223422">
+        <InfoArray index="Research21" Time="70" Upgrade="UmojanBasicUnitUpgrade522242242322222222222223422">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Charge Link="Abil/GhostAcademyResearch9"/>
             <Cooldown Link="Abil/GhostAcademyResearch9"/>
             <Button DefaultButtonFace="CalldownMULE4233262322224423" Requirements="SoE4PortableHiveMind22422222222233343523222"/>
         </InfoArray>
-        <InfoArray index="Research22" Time="100" Upgrade="UmojanBasicUnitUpgrade5222422423222222222222234222">
+        <InfoArray index="Research22" Time="70" Upgrade="UmojanBasicUnitUpgrade5222422423222222222222234222">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Charge Link="Abil/GhostAcademyResearch9"/>
             <Cooldown Link="Abil/GhostAcademyResearch9"/>
             <Button DefaultButtonFace="CalldownMULE42332623222244232" Requirements="SoE4PortableHiveMind2242222222223334352322"/>
         </InfoArray>
-        <InfoArray index="Research23" Time="100" Upgrade="UmojanBasicUnitUpgrade52224224232222222222222343222">
+        <InfoArray index="Research23" Time="70" Upgrade="UmojanBasicUnitUpgrade52224224232222222222222343222">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Charge Link="Abil/GhostAcademyResearch9"/>
             <Cooldown Link="Abil/GhostAcademyResearch9"/>
             <Button DefaultButtonFace="CalldownMULE4233262322223" Requirements="SoE4PortableHiveMind22422222222233343522222"/>
         </InfoArray>
-        <InfoArray index="Research24" Time="100" Upgrade="UmojanBasicUnitUpgrade5222422423222222222222234322">
+        <InfoArray index="Research24" Time="70" Upgrade="UmojanBasicUnitUpgrade5222422423222222222222234322">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Charge Link="Abil/GhostAcademyResearch9"/>
             <Cooldown Link="Abil/GhostAcademyResearch9"/>
             <Button DefaultButtonFace="CalldownMULE42332623222232" Requirements="SoE4PortableHiveMind2242222222223334352222"/>
         </InfoArray>
-        <InfoArray index="Research25" Time="100" Upgrade="UnknownUpgrade82">
+        <InfoArray index="Research25" Time="70" Upgrade="UnknownUpgrade82">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Charge Link="Abil/GhostAcademyResearch9"/>
             <Cooldown Link="Abil/GhostAcademyResearch9"/>
             <Button DefaultButtonFace="CalldownMULE42332623222243222" Requirements="UnknownRequirement133"/>
         </InfoArray>
-        <InfoArray index="Research26" Time="100" Upgrade="UnknownUpgrade83">
+        <InfoArray index="Research26" Time="70" Upgrade="UnknownUpgrade83">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Charge Link="Abil/GhostAcademyResearch9"/>
@@ -45280,8 +45276,9 @@
         <CmdButtonArray index="Execute" DefaultButtonFace="HighArchonPsiStorm23222"/>
         <TargetFilters value="-;Massive,Heroic"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="QuickMutator22222">
+    <CAbilEffectTarget id="AbathurBehaviorBiomass">
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="QuickMutator22222"/>
         <Cost>
             <Vital index="Energy" value="25"/>
             <Charge Link="Abil/QuickMutator2" Location="Player"/>
@@ -45291,10 +45288,12 @@
         <Range value="500"/>
         <Arc value="360"/>
         <AutoCastFilters value="Visible;Neutral,Enemy"/>
+        <AINotifyEffect value="QuickMutator22222"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="HighArchonPsiStorm232222" Requirements="AbsorbedSwarm22222222"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="QuickMutator222222">
+    <CAbilEffectTarget id="AbathurBehaviorInfestation">
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="QuickMutator222222"/>
         <Cost>
             <Vital index="Energy" value="50"/>
             <Charge Link="Abil/QuickMutator" Location="Player"/>
@@ -45304,10 +45303,12 @@
         <Range value="500"/>
         <Arc value="360"/>
         <AutoCastFilters value="Visible;-"/>
+        <AINotifyEffect value="QuickMutator222222"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="HighArchonPsiStorm2322222" Requirements="AbsorbedSwarm2222"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="QuickMutator222223">
+    <CAbilEffectTarget id="AbathurBehaviorEssence">
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="QuickMutator222223"/>
         <Cost>
             <Vital index="Energy" value="20"/>
             <Charge Link="Abil/QuickMutator2" Location="Player"/>
@@ -45317,10 +45318,12 @@
         <Range value="500"/>
         <Arc value="360"/>
         <AutoCastFilters value="Visible;Neutral,Enemy"/>
+        <AINotifyEffect value="QuickMutator222223"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="HighArchonPsiStorm2322223" Requirements="AbsorbedSwarm"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="QuickMutator222224">
+    <CAbilEffectTarget id="AbathurBehaviorSymbiote">
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="QuickMutator222224"/>
         <Cost>
             <Vital index="Energy" value="15"/>
             <Charge Link="Abil/QuickMutator2" Location="Player"/>
@@ -45330,6 +45333,7 @@
         <Range value="500"/>
         <Arc value="360"/>
         <AutoCastFilters value="Visible;Neutral,Enemy"/>
+        <AINotifyEffect value="QuickMutator222224"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="HighArchonPsiStorm2322224" Requirements="AbsorbedSwarm22"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="QuickMutator222225">
@@ -63675,7 +63679,8 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="XenWarrior6332233323352335223233"/>
         <Cost>
-            <Resource index="Minerals" value="50"/>
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
@@ -63686,7 +63691,8 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="XenWarrior63322333233523352232332"/>
         <Cost>
-            <Resource index="Minerals" value="50"/>
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>

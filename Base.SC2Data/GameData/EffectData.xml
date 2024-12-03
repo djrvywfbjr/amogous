@@ -41269,7 +41269,7 @@
     <CEffectDamage id="NeedleSpinesDamage10" parent="DU_WEAP">
         <EditorCategories value="Race:Zerg"/>
         <Kind value="Ranged"/>
-        <Amount value="10"/>
+        <Amount value="15"/>
     </CEffectDamage>
     <CEffectDamage id="NeedleSpinesDamage2" parent="DU_WEAP">
         <EditorCategories value="Race:Zerg"/>
