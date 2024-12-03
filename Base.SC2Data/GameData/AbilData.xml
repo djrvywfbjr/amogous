@@ -993,8 +993,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="TakentanksAB"/>
         <Cost>
-            <Resource index="Minerals" value="75"/>
-            <Resource index="Vespene" value="50"/>
+            <Resource index="Minerals" value="50"/>
             <Cooldown TimeUse="70"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="ExpeditedTransfer"/>
@@ -3927,31 +3926,31 @@
     </CAbilTrain>
     <CAbilTrain id="BarracksTrain17" parent="BarracksTrain">
         <Name value="Abil/Name/BarracksTrain17"/>
-        <InfoArray index="Train1" Time="27">
+        <InfoArray index="Train1" Time="15.4">
             <Charge Link="Abil/BarracksTrain17"/>
             <Cooldown Link="Abil/BarracksTrain17"/>
             <Button DefaultButtonFace="Marine26"/>
             <Unit index="0" value="WarPig4"/>
         </InfoArray>
-        <InfoArray index="Train2" Time="35">
+        <InfoArray index="Train2" Time="22.4">
             <Charge Link="Abil/BarracksTrain17"/>
             <Cooldown Link="Abil/BarracksTrain17"/>
             <Button DefaultButtonFace="Medic15"/>
             <Unit index="0" value="MercMedic4"/>
         </InfoArray>
-        <InfoArray index="Train3" Time="42">
+        <InfoArray index="Train3" Time="30.8">
             <Charge Link="Abil/BarracksTrain17"/>
             <Cooldown Link="Abil/BarracksTrain17"/>
             <Button DefaultButtonFace="Firebat7" Requirements=""/>
             <Unit index="0" value="DevilDog2"/>
         </InfoArray>
-        <InfoArray index="Train4" Time="35">
+        <InfoArray index="Train4" Time="19.6">
             <Charge Link="Abil/BarracksTrain17"/>
             <Cooldown Link="Abil/BarracksTrain17"/>
             <Button DefaultButtonFace="Hellion9" Requirements=""/>
             <Unit index="0" value="Hellion5"/>
         </InfoArray>
-        <InfoArray index="Train5" Time="45">
+        <InfoArray index="Train5" Time="28">
             <Charge Link="Abil/BarracksTrain17"/>
             <Cooldown Link="Abil/BarracksTrain17"/>
             <Button DefaultButtonFace="Goliath10" Requirements=""/>
@@ -3963,7 +3962,7 @@
             <Button DefaultButtonFace="Firebat722" Requirements="HaveBarracks62"/>
             <Unit index="0" value="GhostAlternate7"/>
         </InfoArray>
-        <InfoArray index="Train7" Time="55">
+        <InfoArray index="Train7" Time="42">
             <Charge Link="Abil/BarracksTrain17"/>
             <Cooldown Link="Abil/BarracksTrain17"/>
             <Button DefaultButtonFace="WarHound3" Requirements="HaveSupplyDepot42"/>
@@ -3975,7 +3974,7 @@
             <Button DefaultButtonFace="Liberator8"/>
             <Unit value="Liberator8"/>
         </InfoArray>
-        <InfoArray index="Train9" Time="45">
+        <InfoArray index="Train9" Time="28">
             <Charge Link="Abil/BarracksTrain17"/>
             <Cooldown Link="Abil/BarracksTrain17"/>
             <Button DefaultButtonFace="Medivac9"/>
@@ -24108,23 +24107,22 @@
             <Button DefaultButtonFace="CalldownMULE42332623343" Requirements="UnknownRequirement825322"/>
         </InfoArray>
         <InfoArray index="Research27" Upgrade="UmojanBasicUnitUpgrade52224224232222222222222332222">
-            <Resource index="Minerals" value="100"/>
-            <Resource index="Vespene" value="50"/>
+            <Resource index="Minerals" value="50"/>
+            <Resource index="Vespene" value="25"/>
             <Resource index="Terrazine" value="50"/>
             <Button DefaultButtonFace="CalldownMULE42332623322" Requirements="UnknownRequirement823222"/>
         </InfoArray>
         <InfoArray index="Research28" Upgrade="UmojanBasicUnitUpgrade522242242322222222222223322">
-            <Resource index="Minerals" value="150"/>
-            <Resource index="Vespene" value="75"/>
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="25"/>
             <Button DefaultButtonFace="CalldownMULE42332623323" Requirements="UnknownRequirement82322"/>
         </InfoArray>
         <InfoArray index="Research29" Upgrade="UmojanBasicUnitUpgrade52224224232222222222222332">
-            <Resource index="Minerals" value="75"/>
+            <Resource index="Minerals" value="25"/>
             <Button DefaultButtonFace="CalldownMULE423326233" Requirements="UnknownRequirement8232"/>
         </InfoArray>
         <InfoArray index="Research30" Upgrade="UmojanBasicUnitUpgrade5222422423222222222222233222">
-            <Resource index="Minerals" value="125"/>
-            <Resource index="Vespene" value="50"/>
+            <Resource index="Minerals" value="50"/>
             <Button DefaultButtonFace="CalldownMULE4233262332" Requirements="UnknownRequirement8232222"/>
         </InfoArray>
     </CAbilResearch>
@@ -45084,7 +45082,7 @@
         <Flags index="ReExecutable" value="1"/>
         <Flags index="Smart" value="1"/>
         <Cost>
-            <Vital index="Energy" value="12"/>
+            <Vital index="Energy" value="20"/>
             <Cooldown Location="Unit" TimeUse="3"/>
         </Cost>
         <TargetFilters value="Biological,Visible;Self,Enemy,Missile,Uncommandable,UnderConstruction,Dead,Hidden,Invulnerable"/>
