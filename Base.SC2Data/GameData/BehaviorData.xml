@@ -39203,7 +39203,9 @@
         <Alignment value="Positive"/>
         <InfoIcon value="Assets\Textures\btn-tips-biosample.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Modification AttackSpeedMultiplier="1.85"/>
+        <Modification AttackSpeedMultiplier="1.85">
+            <AdditiveMoveSpeedFactor value="0.15"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="QuickMutator222224">
         <Alignment value="Positive"/>
