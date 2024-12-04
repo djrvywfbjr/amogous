@@ -9824,6 +9824,7 @@
                 <CountStart value="1"/>
                 <CountUse value="1"/>
                 <Link value="Abil/CalldownMULE"/>
+                <Location value="Player"/>
                 <TimeUse value="50"/>
             </Charge>
             <Cooldown Link="Abil/CalldownMULE" Location="Player" TimeUse="20"/>
@@ -29092,8 +29093,8 @@
             <Button DefaultButtonFace="UnknownButton77" Requirements="ImplantOverrideYes2"/>
         </InfoArray>
         <InfoArray index="Research10" Time="140" Upgrade="AdvancedBionicsUpgrade">
-            <Resource index="Minerals" value="100"/>
-            <Resource index="Vespene" value="100"/>
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
             <Button DefaultButtonFace="Zealot226" Requirements="DontHaveAdvancedBionics"/>
         </InfoArray>
     </CAbilResearch>
@@ -55409,7 +55410,7 @@
         <InfoArray index="Build5" Unit="EngineeringBay7">
             <Button DefaultButtonFace="EngineeringBay9" Requirements="HavePartStorageDepot"/>
         </InfoArray>
-        <InfoArray index="Build6" Unit="MissileTurret11">
+        <InfoArray index="Build6" Unit="MissileTurret11" Time="40">
             <Button DefaultButtonFace="MissileTurret9" Requirements="HavePartStorageDepot2"/>
         </InfoArray>
         <InfoArray index="Build7">
@@ -56653,7 +56654,7 @@
         <InfoArray index="Build3">
             <Button DefaultButtonFace="Refinery8" Requirements=""/>
         </InfoArray>
-        <InfoArray index="Build4" Unit="Barracks6">
+        <InfoArray index="Build4" Unit="Barracks6" Time="91">
             <Button DefaultButtonFace="Barracks8" Requirements="HaveEnlistmentHouse"/>
         </InfoArray>
         <InfoArray index="Build5" Unit="EngineeringBay6">
@@ -63698,8 +63699,8 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="XenWarrior6332233323352335223233"/>
         <Cost>
-            <Resource index="Minerals" value="100"/>
-            <Resource index="Vespene" value="100"/>
+            <Resource index="Minerals" value="75"/>
+            <Resource index="Vespene" value="75"/>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
@@ -63710,8 +63711,8 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="XenWarrior63322333233523352232332"/>
         <Cost>
-            <Resource index="Minerals" value="100"/>
-            <Resource index="Vespene" value="100"/>
+            <Resource index="Minerals" value="50"/>
+            <Resource index="Vespene" value="50"/>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
