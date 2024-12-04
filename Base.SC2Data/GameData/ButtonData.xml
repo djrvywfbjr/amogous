@@ -65,6 +65,7 @@
     </CButton>
     <CButton id="AdvancedBionics">
         <Icon value="Assets\Textures\btn-research-zerg-cellularreactor.dds"/>
+        <AlertIcon value="Assets\Textures\btn-research-zerg-cellularreactor.dds"/>
     </CButton>
     <CButton id="AggressiveMutation2">
         <Icon value="Assets\Textures\btn-ability-kerrigan-wildmutation.dds"/>
@@ -4261,6 +4262,9 @@
     <CButton id="PatriotReactor">
         <Icon value="Assets\Textures\btn-upgrade-terran-caduceusreactor.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-terran-caduceusreactor.dds"/>
+    </CButton>
+    <CButton id="PiercerRounds">
+        <Icon value="Assets\Textures\btn-tips-terran-penetrator.dds"/>
     </CButton>
     <CButton id="PlasmaCoater">
         <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>

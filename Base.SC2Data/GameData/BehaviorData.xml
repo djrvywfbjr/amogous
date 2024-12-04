@@ -1519,12 +1519,14 @@
     </CBehaviorBuff>
     <CBehaviorBuff id="AltrapolCargoStasis">
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <RemoveValidatorArray value="IsHiddenSelf"/>
+        <RemoveValidatorArray value="IsHidden"/>
         <Modification>
             <StateFlags index="Stasis" value="1"/>
             <StateFlags index="Stun" value="1"/>
             <StateFlags index="Uncommandable" value="1"/>
         </Modification>
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="UnmannedBuilding">
         <Cost>
@@ -39203,7 +39205,9 @@
         <Alignment value="Positive"/>
         <InfoIcon value="Assets\Textures\btn-tips-biosample.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Modification AttackSpeedMultiplier="1.85"/>
+        <Modification AttackSpeedMultiplier="1.85">
+            <AdditiveMoveSpeedFactor value="0.15"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="QuickMutator222224">
         <Alignment value="Positive"/>
@@ -47558,7 +47562,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification>
             <LifeArmorBonus value="3"/>
-            <VitalMaxArray index="Life" value="55"/>
+            <VitalMaxArray index="Life" value="95"/>
             <AbilLinkDisableArray value="XenWarrior6222"/>
             <AbilLinkDisableArray value="XenWarrior62222"/>
             <AbilLinkDisableArray value="XenWarrior62"/>
@@ -47572,12 +47576,12 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification MoveSpeedBonus="1">
             <LifeArmorBonus value="1"/>
-            <VitalMaxArray index="Life" value="55"/>
+            <VitalMaxArray index="Life" value="25"/>
             <AbilLinkDisableArray value="XenWarrior6222"/>
             <AbilLinkDisableArray value="XenWarrior622"/>
             <AbilLinkDisableArray value="XenWarrior62222"/>
             <AbilLinkDisableArray value="XenWarrior62"/>
-            <WeaponArray Link="WarHoundMelee2"/>
+            <WeaponArray Link="PUNCHINTHEFACEWEAK"/>
             <WeaponDisableArray value="GuassRifle58"/>
         </Modification>
     </CBehaviorBuff>

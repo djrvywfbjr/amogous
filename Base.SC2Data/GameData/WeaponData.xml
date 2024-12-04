@@ -11764,6 +11764,20 @@
         </Cost>
         <Period value="1.2"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="PUNCHINTHEFACEWEAK">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+        <DisplayEffect value="WarHoundMelee23"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.5"/>
+        <Marker Link="Weapon/WarHound"/>
+        <Cost>
+            <Cooldown Link="Weapon/WarHound"/>
+        </Cost>
+        <Period value="1.2"/>
+        <Effect value="WarHoundMelee23"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="WarbotB2">
         <EditorCategories value="Race:Terran"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>

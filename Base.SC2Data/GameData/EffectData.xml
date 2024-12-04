@@ -12399,6 +12399,7 @@
     </CEffectCreateUnit>
     <CEffectCreateUnit id="CalldownMULECreateUnit423222">
         <ValidatorArray value="MULETargetCheck"/>
+        <ValidatorArray value="TargetIsVisible2"/>
         <EditorCategories value="Race:Terran"/>
         <WhichLocation Value="TargetUnitOrPoint"/>
         <SpawnEffect value="CalldownMULECreateSet423222"/>
@@ -41278,7 +41279,7 @@
     <CEffectDamage id="NeedleSpinesDamage10" parent="DU_WEAP">
         <EditorCategories value="Race:Zerg"/>
         <Kind value="Ranged"/>
-        <Amount value="10"/>
+        <Amount value="15"/>
     </CEffectDamage>
     <CEffectDamage id="NeedleSpinesDamage2" parent="DU_WEAP">
         <EditorCategories value="Race:Zerg"/>
@@ -57191,11 +57192,11 @@
     </CEffectCreatePersistent>
     <CEffectDamage id="RaidFrigateLeftDamage">
         <AttributeBonus index="Light" value="2"/>
-        <Amount value="5"/>
+        <AreaArray Radius="0.4" Fraction="1"/>
     </CEffectDamage>
     <CEffectDamage id="RaidFrigateRightDamage">
         <AttributeBonus index="Light" value="2"/>
-        <Amount value="5"/>
+        <AreaArray Radius="0.4" Fraction="1"/>
     </CEffectDamage>
     <CEffectDamage id="Ram2" parent="DU_WEAP">
         <EditorCategories value="Race:Zerg"/>
@@ -76137,6 +76138,17 @@
         <ArmorReduction value="1"/>
         <Kind value="Melee"/>
         <Amount value="30"/>
+    </CEffectDamage>
+    <CEffectDamage id="WarHoundMelee23">
+        <Name value="Effect/Name/WarHound"/>
+        <EditorCategories value="Race:Terran"/>
+        <Marker Link="Effect/WarHound"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <AttributeBonus index="Light" value="25"/>
+        <ArmorReduction value="1"/>
+        <Kind value="Melee"/>
+        <Amount value="10"/>
     </CEffectDamage>
     <CEffectDamage id="WarbotBDamage2">
         <EditorCategories value="Race:Terran"/>
