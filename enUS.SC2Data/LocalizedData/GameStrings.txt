@@ -4179,6 +4179,7 @@ Behavior/Name/UnknownBehavior33232=Void Discharge
 Behavior/Name/UnknownBehavior332322=Void Discharge
 Behavior/Name/UnknownBehavior3323222=Void Discharge
 Behavior/Name/UnknownBehavior49=Binded
+Behavior/Name/UnknownBehavior53=Psionic shock
 Behavior/Name/UnknownBehavior6=Eternal Punishment
 Behavior/Name/UnknownBehavior7=Aeugh
 Behavior/Name/UnknownBehavior9=DegenDegenovy
