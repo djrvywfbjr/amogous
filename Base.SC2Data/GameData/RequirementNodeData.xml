@@ -5746,7 +5746,6 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeConsecratedFuelTanksQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="ConsecratedFuelTanks" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeCorruptedPlagueSpeedDebuff22222222QueuedOrBetter">
@@ -10329,6 +10328,11 @@
     <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade522242242322222235222222211QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="UmojanBasicUnitUpgrade522242242322222235222222211" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade522242242322222235222222212222CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="UmojanBasicUnitUpgrade522242242322222235222222212222" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade522242242322222235222222212222CompleteOnly3207786142">
         <Flags index="TechTreeCheat" value="0"/>
@@ -16544,7 +16548,6 @@
         <OperandArray index="0" value="CountUpgradeClusterBombQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeConsecratedFuelTanksQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeConsecratedFuelTanksQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeCorruptedPlagueSpeedDebuff22222222QueuedOrBetter">

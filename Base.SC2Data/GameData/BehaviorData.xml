@@ -1517,6 +1517,19 @@
             <TurretDisableArray value="Nexus"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="UnknownBehavior53">
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-psistorm-color.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.8"/>
+        <Modification MoveSpeedMultiplier="0.95"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UnknownBehavior54">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="7"/>
+        <Modification>
+            <DeathResponse Chance="1" Effect="UnknownEffect73"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="UnmannedBuilding">
         <Cost>
             <Charge Link="Behavior/AntamoAirAll"/>
@@ -2872,6 +2885,7 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <Duration value="5"/>
         <Modification MoveSpeedMultiplier="0.75" AttackSpeedMultiplier="0.75">
+            <StateFlags index="Stun" value="1"/>
             <StateFlags index="SuppressCloak" value="1"/>
             <StateFlags index="SuppressDetection" value="1"/>
         </Modification>
@@ -50569,6 +50583,20 @@
             <Kind index="Splash" value="0"/>
             <Kind index="NoProc" value="0"/>
         </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="gale1">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.7"/>
+        <Requirements value="UnknownRequirement962"/>
+        <PeriodicEffect value="UnknownEffect71"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="gale12">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Requirements value="UnknownRequirement962"/>
+        <Period value="0.35"/>
+        <PeriodicEffect value="UnknownEffect712"/>
     </CBehaviorBuff>
     <CBehaviorCreepSource id="makeCreep2x2OverlordUpgraded2">
         <InfoFlags index="Hidden" value="1"/>

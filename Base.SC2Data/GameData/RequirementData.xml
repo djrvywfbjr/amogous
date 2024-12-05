@@ -187,6 +187,9 @@
     <CRequirement id="ConsecratedFuelNo">
         <NodeArray index="Show" Link="NotCountUpgradeConsecratedFuelTanksQueuedOrBetter"/>
     </CRequirement>
+    <CRequirement id="UnknownRequirement962">
+        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade522242242322222235222222212222CompleteOnly"/>
+    </CRequirement>
     <CRequirement id="VenomButton">
         <NodeArray index="Show" Link="NotCountUpgradeVenomQueuedOrBetter"/>
     </CRequirement>
