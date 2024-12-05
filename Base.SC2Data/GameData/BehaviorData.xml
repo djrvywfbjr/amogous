@@ -1517,18 +1517,16 @@
             <TurretDisableArray value="Nexus"/>
         </Modification>
     </CBehaviorBuff>
-    <CBehaviorBuff id="UnknownBehavior53">
-        <InfoIcon value="Assets\Textures\btn-ability-protoss-psistorm-color.dds"/>
+    <CBehaviorBuff id="AltrapolCargoStasis">
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Duration value="0.8"/>
-        <Modification MoveSpeedMultiplier="0.95"/>
-    </CBehaviorBuff>
-    <CBehaviorBuff id="UnknownBehavior54">
-        <EditorCategories value="AbilityorEffectType:Units"/>
-        <Duration value="7"/>
+        <RemoveValidatorArray value="IsHidden"/>
         <Modification>
-            <DeathResponse Chance="1" Effect="UnknownEffect73"/>
+            <StateFlags index="Stasis" value="1"/>
+            <StateFlags index="Stun" value="1"/>
+            <StateFlags index="Uncommandable" value="1"/>
         </Modification>
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="UnmannedBuilding">
         <Cost>
@@ -2885,7 +2883,6 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <Duration value="5"/>
         <Modification MoveSpeedMultiplier="0.75" AttackSpeedMultiplier="0.75">
-            <StateFlags index="Stun" value="1"/>
             <StateFlags index="SuppressCloak" value="1"/>
             <StateFlags index="SuppressDetection" value="1"/>
         </Modification>
@@ -39208,7 +39205,9 @@
         <Alignment value="Positive"/>
         <InfoIcon value="Assets\Textures\btn-tips-biosample.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Modification AttackSpeedMultiplier="1.85"/>
+        <Modification AttackSpeedMultiplier="1.85">
+            <AdditiveMoveSpeedFactor value="0.15"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="QuickMutator222224">
         <Alignment value="Positive"/>
@@ -46790,6 +46789,8 @@
         <InfoIcon value="Assets\Textures\btn-upgrade-protoss-alarak-supplicantarmor.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification MoveSpeedMultiplier="0.8">
+            <StateFlags index="UnitAttrOnArmored" value="1"/>
+            <StateFlags index="UnitAttrOffLight" value="1"/>
             <LifeArmorBonus value="2"/>
             <WeaponArray Link="GuassRifle522222"/>
             <WeaponDisableArray value="Adept"/>
@@ -46800,6 +46801,8 @@
         <InfoIcon value="Assets\Textures\btn-upgrade-protoss-alarak-supplicantarmor.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification MoveSpeedMultiplier="1.3">
+            <StateFlags index="UnitAttrOnArmored" value="1"/>
+            <StateFlags index="UnitAttrOffLight" value="1"/>
             <VitalMaxArray index="Life" value="35"/>
             <WeaponArray Link="MutaliskGlaiveWurm2"/>
             <WeaponDisableArray value="Adept"/>
@@ -46817,7 +46820,9 @@
         <InfoFlags index="Hidden" value="1"/>
         <InfoIcon value="Assets\Textures\btn-upgrade-protoss-alarak-supplicantarmor.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Modification MoveSpeedMultiplier="1.4" AttackSpeedMultiplier="1.4"/>
+        <Modification MoveSpeedMultiplier="1.4" AttackSpeedMultiplier="1.4">
+            <StateFlags index="UnitAttrOnMassive" value="1"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="XenWarrior24232222">
         <InfoFlags index="Hidden" value="1"/>
@@ -46830,6 +46835,7 @@
         <InfoIcon value="Assets\Textures\btn-upgrade-protoss-alarak-supplicantarmor.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification>
+            <StateFlags index="UnitAttrOnMassive" value="1"/>
             <DamageDealtUnscaled index="Spell" value="15"/>
             <DamageDealtUnscaled index="Melee" value="15"/>
             <DamageDealtUnscaled index="Ranged" value="15"/>
@@ -47497,13 +47503,17 @@
     <CBehaviorBuff id="XenWarrior6">
         <InfoIcon value="Assets\Textures\btn-research-terran-microfiltering.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Modification SightBonus="4" MoveSpeedBonus="0.25">
+        <Modification>
+            <SightBonus value="4"/>
+            <MoveSpeedBonus value="0.25"/>
+            <AttackSpeedMultiplier value="0.75"/>
+            <WeaponRange value="4"/>
             <LifeArmorBonus value="1"/>
-            <VitalMaxArray index="Life" value="35"/>
             <AbilLinkDisableArray value="XenWarrior622"/>
             <AbilLinkDisableArray value="XenWarrior62222"/>
             <AbilLinkDisableArray value="XenWarrior6222"/>
             <AbilLinkDisableArray value="XenWarrior62"/>
+            <WeaponArray Link="LongboltMissile"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="XenWarrior62">
@@ -47533,7 +47543,7 @@
     <CBehaviorBuff id="XenWarrior64">
         <InfoIcon value="Assets\Textures\btn-research-terran-vanadiumplating.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Modification>
+        <Modification WeaponRange="2">
             <DamageDealtScaled index="Spell" value="5"/>
             <DamageDealtScaled index="Melee" value="5"/>
             <DamageDealtScaled index="Ranged" value="5"/>
@@ -47552,29 +47562,27 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification>
             <LifeArmorBonus value="3"/>
-            <VitalMaxArray index="Life" value="55"/>
+            <VitalMaxArray index="Life" value="95"/>
             <AbilLinkDisableArray value="XenWarrior6222"/>
             <AbilLinkDisableArray value="XenWarrior62222"/>
             <AbilLinkDisableArray value="XenWarrior62"/>
             <AbilLinkDisableArray value="XenWarrior622"/>
             <WeaponArray Link="MengskFirebat"/>
-            <WeaponArray Link="HailstormMissilePods33"/>
-            <WeaponDisableArray value="GuassRifle5"/>
-            <WeaponDisableArray value="HailstormMissilePods3"/>
+            <WeaponDisableArray value="GuassRifle58"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="XenWarrior6422">
-        <InfoIcon value="Assets\Textures\btn-research-zerg-cellularreactor.dds"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-shadow-charge.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification MoveSpeedBonus="1">
             <LifeArmorBonus value="1"/>
-            <VitalMaxArray index="Life" value="55"/>
+            <VitalMaxArray index="Life" value="25"/>
             <AbilLinkDisableArray value="XenWarrior6222"/>
             <AbilLinkDisableArray value="XenWarrior622"/>
             <AbilLinkDisableArray value="XenWarrior62222"/>
             <AbilLinkDisableArray value="XenWarrior62"/>
-            <WeaponArray Link="WarHoundMelee2"/>
-            <WeaponDisableArray value="GuassRifle5"/>
+            <WeaponArray Link="PUNCHINTHEFACEWEAK"/>
+            <WeaponDisableArray value="GuassRifle58"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="XenWarrior64222">
@@ -50583,20 +50591,6 @@
             <Kind index="Splash" value="0"/>
             <Kind index="NoProc" value="0"/>
         </DamageResponse>
-    </CBehaviorBuff>
-    <CBehaviorBuff id="gale1">
-        <InfoFlags index="Hidden" value="1"/>
-        <EditorCategories value="AbilityorEffectType:Units"/>
-        <Period value="0.7"/>
-        <Requirements value="UnknownRequirement962"/>
-        <PeriodicEffect value="UnknownEffect71"/>
-    </CBehaviorBuff>
-    <CBehaviorBuff id="gale12">
-        <InfoFlags index="Hidden" value="1"/>
-        <EditorCategories value="AbilityorEffectType:Units"/>
-        <Requirements value="UnknownRequirement962"/>
-        <Period value="0.35"/>
-        <PeriodicEffect value="UnknownEffect712"/>
     </CBehaviorBuff>
     <CBehaviorCreepSource id="makeCreep2x2OverlordUpgraded2">
         <InfoFlags index="Hidden" value="1"/>

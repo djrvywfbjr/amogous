@@ -3463,6 +3463,12 @@
         <CombineArray value="CasterNotDead"/>
         <CombineArray value="CasterHasTerrazineShadow23"/>
     </CValidatorCombine>
+    <CValidatorUnitCompareVital id="TargetShieldsGE50PC">
+        <Compare value="LE"/>
+        <Type value="Fraction"/>
+        <Value value="0.5"/>
+        <Vital value="Shields"/>
+    </CValidatorUnitCompareVital>
     <CValidatorUnitCompareBehaviorCount id="UnknownValidator"/>
     <CValidatorUnitCompareVeterancyLevel id="UnknownValidator2">
         <ResultFailed value="Error,Levelerror12"/>

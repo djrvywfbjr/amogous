@@ -781,6 +781,15 @@
         <Period value="5"/>
         <Effect value="SeekerMissileLaunchMissile"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="GuassRifle58">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel0.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="5.5"/>
+        <Period value="0.8608"/>
+        <DamagePoint value="0.05"/>
+        <Backswing value="0.75"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="HunterSeekerMissileAA">
         <EditorCategories value="Race:Protoss"/>
         <Options index="LinkedCooldown" value="0"/>
@@ -3924,7 +3933,7 @@
         <Options index="LinkedCooldown" value="0"/>
         <Icon value="Assets\Textures\btn-upgrade-artanis-healingpsionicstorm.dds"/>
         <DisplayEffect value="PsionicShockwaveDamage5"/>
-        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="7"/>
         <TeleportResetRange value="0"/>
         <Cost>
@@ -11754,6 +11763,20 @@
             <Cooldown Link="Weapon/WarHound"/>
         </Cost>
         <Period value="1.2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PUNCHINTHEFACEWEAK">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+        <DisplayEffect value="WarHoundMelee23"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.5"/>
+        <Marker Link="Weapon/WarHound"/>
+        <Cost>
+            <Cooldown Link="Weapon/WarHound"/>
+        </Cost>
+        <Period value="1.2"/>
+        <Effect value="WarHoundMelee23"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="WarbotB2">
         <EditorCategories value="Race:Terran"/>

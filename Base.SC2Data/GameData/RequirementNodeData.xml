@@ -471,6 +471,10 @@
         <OperandArray value="CountUnitTemplarArchive6CompleteOnly"/>
         <OperandArray value="CountUnitFleetBeacon6CompleteOnly3696862721"/>
     </CRequirementAnd>
+    <CRequirementAnd id="And996554812CountUnitMutationChamberCompleteOnlyCountUnitIncarcerationPitCompleteOnly">
+        <OperandArray value="CountUnitMutationChamberCompleteOnly"/>
+        <OperandArray value="CountUnitIncarcerationPitCompleteOnly"/>
+    </CRequirementAnd>
     <CRequirementAnd id="AndCountBehaviorVoidSeekerDock2CompleteOnlyAtUnitCountUpgradeUmojanBasicUnitUpgrade52224224232222223943CompleteOnly">
         <OperandArray value="CountBehaviorVoidSeekerDock2CompleteOnlyAtUnit"/>
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade52224224232222223943CompleteOnly"/>
@@ -5148,6 +5152,14 @@
     <CRequirementCountUpgrade id="CountUpgradeAbductQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Abduct" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeAdvancedBionicsUpgradeCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="AdvancedBionicsUpgrade" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeAdvancedBionicsUpgradeQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="AdvancedBionicsUpgrade" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeAdvancedConstruction222CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
@@ -16327,6 +16339,9 @@
     </CRequirementNot>
     <CRequirementNot id="NotCountUnitStarport8CompleteOnlyAtUnit">
         <OperandArray index="0" value="CountUnitStarport8CompleteOnlyAtUnit"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeAdvancedBionicsUpgradeQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeAdvancedBionicsUpgradeQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeAdvancedConstruction232222222CompleteOnly">
         <OperandArray index="0" value="CountUpgradeAdvancedConstruction232222222CompleteOnly"/>

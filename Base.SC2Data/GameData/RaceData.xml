@@ -37,7 +37,7 @@
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
         <StartingResource index="Vespene" value="300"/>
-        <StartingResource index="Terrazine" value="50"/>
+        <StartingResource index="Terrazine" value="75"/>
     </CRace>
     <CRace id="Terr">
         <StartingUnitArray index="0" Unit="Wraith22">
@@ -79,7 +79,7 @@
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
         <StartingResource index="Vespene" value="300"/>
-        <StartingResource index="Terrazine" value="50"/>
+        <StartingResource index="Terrazine" value="75"/>
     </CRace>
     <CRace id="Terr2">
         <AttributeId value="Terr"/>
@@ -1791,6 +1791,6 @@
         <StartingUnitArray Unit="Pylon10"/>
         <StartingResource index="Minerals" value="250"/>
         <StartingResource index="Vespene" value="300"/>
-        <StartingResource index="Terrazine" value="50"/>
+        <StartingResource index="Terrazine" value="75"/>
     </CRace>
 </Catalog>
