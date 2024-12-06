@@ -36383,7 +36383,7 @@
         <Effect index="0" value="NovaGadgetFlashBangGrenadeLaunchMissile4"/>
         <Cost>
             <Vital index="Energy" value="50"/>
-            <Cooldown TimeUse="5"/>
+            <Cooldown TimeUse="22.5"/>
         </Cost>
         <Range value="7"/>
         <Arc value="9.9975"/>
@@ -37765,14 +37765,14 @@
         <Effect index="0" value="OmegaStormCreatePersistent22"/>
         <Flags index="AllowMovement" value="1"/>
         <Cost>
-            <Vital index="Energy" value="75"/>
+            <Vital index="Energy" value="225"/>
             <Charge Link="Abil/OmegaStorm"/>
-            <Cooldown Link="Abil/OmegaStorm" TimeUse="2"/>
+            <Cooldown Link="Abil/OmegaStorm" TimeUse="127.4"/>
         </Cost>
         <Range value="10"/>
         <AutoCastFilters value="Visible;Player,Ally,Neutral,Missile,Dead"/>
         <AutoCastRange value="10"/>
-        <CastOutroTime value="0.5"/>
+        <CastOutroTime value="2.1"/>
         <CursorEffect value="OmegaStormSearchArea3"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="OmegaStorm22" Requirements="SoE4PortableHiveMind2242222222223333433222"/>
     </CAbilEffectTarget>
@@ -40528,7 +40528,7 @@
             <Charge Link="Abil/PrimalSlash"/>
             <Cooldown Link="Abil/PrimalSlash" TimeUse="70"/>
         </Cost>
-        <Range value="500"/>
+        <Range value="10"/>
         <TrackingArc value="360"/>
         <AutoCastFilters value="Ground,Visible;Player,Ally,Neutral,Missile,Stasis,Dead"/>
         <AutoCastRange value="8"/>
