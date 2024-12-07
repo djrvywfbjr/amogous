@@ -3803,6 +3803,8 @@
         <Period value="1"/>
         <Backswing value="0.25"/>
         <Effect value="LiberatorAGMissileLMSet32"/>
+        <MinScanRange value="8"/>
+        <Range value="8"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HailstormMissilePods33">
         <EditorCategories value="Race:Terran"/>
@@ -3913,6 +3915,9 @@
         <Period value="3"/>
         <DamagePoint value="2.9"/>
         <Effect value="KhaydarinBeamDamage2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MengskDiamondback">
+        <Options index="LinkedCooldown" value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="NovaWeaponCanisterRifle2">
         <EditorCategories value="Race:Terran"/>
