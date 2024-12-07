@@ -40526,7 +40526,7 @@
         <Flags index="AbortOnAllianceChange" value="0"/>
         <Cost>
             <Charge Link="Abil/PrimalSlash"/>
-            <Cooldown Link="Abil/PrimalSlash" TimeUse="70"/>
+            <Cooldown Link="Abil/PrimalSlash" TimeUse="35"/>
         </Cost>
         <Range value="10"/>
         <TrackingArc value="360"/>
@@ -50786,6 +50786,7 @@
         <Flags index="AutoCastOn" value="1"/>
         <Flags index="BestUnit" value="0"/>
         <Cost>
+            <Vital index="Energy" value="75"/>
             <Charge Link=""/>
             <Cooldown Link="Abil/AlarakAvatar" TimeUse="30"/>
         </Cost>
@@ -54341,6 +54342,7 @@
         </CmdButtonArray>
         <AutoCastFilters value="-;-"/>
         <AutoCastRange value="500"/>
+        <AutoCastValidatorArray value="SourceNotAir"/>
     </CAbilEffectInstant>
     <CAbilRedirectInstant id="StimpackRedirect2">
         <AbilSetId value="Stimpack"/>
@@ -63060,8 +63062,8 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="XenWarrior632222"/>
         <Cost>
-            <Resource index="Minerals" value="125"/>
-            <Resource index="Vespene" value="150"/>
+            <Resource index="Minerals" value="175"/>
+            <Resource index="Vespene" value="175"/>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
@@ -64181,8 +64183,8 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="XenWarrior6333"/>
         <Cost>
-            <Resource index="Minerals" value="75"/>
-            <Resource index="Vespene" value="50"/>
+            <Resource index="Minerals" value="50"/>
+            <Resource index="Vespene" value="25"/>
             <Charge Link="Abil/XenWarrior"/>
             <Cooldown Link="Abil/XenWarrior"/>
         </Cost>
