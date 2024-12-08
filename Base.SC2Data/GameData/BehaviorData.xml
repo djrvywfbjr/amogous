@@ -976,6 +976,18 @@
             <Chance value="1"/>
         </DamageResponse>
     </CBehaviorBuff>
+    <CBehaviorBuff id="HotG">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Requirements value="UnknownRequirement962"/>
+        <Period value="0.35"/>
+        <PeriodicEffect value="galearea"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HotG2">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Requirements value="UnknownRequirement962"/>
+        <Period value="0.7"/>
+        <PeriodicEffect value="galearea2"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="MohandarStickyBomb42">
         <Alignment value="Negative"/>
         <InfoIcon value="Assets\Textures\btn-ability-protoss-phaseshift2.dds"/>
@@ -1116,6 +1128,11 @@
             <StateFlags index="Stun" value="1"/>
             <StateFlags index="SuppressAttack" value="1"/>
         </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Psistim">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="7"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="Shield363">
         <InfoFlags index="Hidden" value="1"/>
@@ -1533,6 +1550,19 @@
         <MaxStackCount value="65535"/>
         <Duration value="0.8"/>
         <Modification MoveSpeedMultiplier="0.95"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ahsdfu">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="7"/>
+        <Modification>
+            <WeaponEnableArray value="CringeWeapon"/>
+            <WeaponDisableArray value="C10CanisterRifle422"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="wersfdds">
+        <BehaviorCategories index="Stun" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.4"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="UnmannedBuilding">
         <Cost>
@@ -50597,6 +50627,14 @@
             <Kind index="Splash" value="0"/>
             <Kind index="NoProc" value="0"/>
         </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="eyeing">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="7"/>
+        <Modification>
+            <DeathResponse Chance="1" Effect="eyeingspw"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorCreepSource id="makeCreep2x2OverlordUpgraded2">
         <InfoFlags index="Hidden" value="1"/>

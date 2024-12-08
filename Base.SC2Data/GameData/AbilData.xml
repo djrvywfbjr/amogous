@@ -969,6 +969,17 @@
         <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield223283"/>
         <Arc value="360"/>
     </CAbilEffectTarget>
+    <CAbilEffectInstant id="ShieldUp8222">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="ShieldUp7222"/>
+        <Cost>
+            <Vital index="Energy" value="100"/>
+            <Charge Link=""/>
+            <Cooldown Link="Abil/AlarakAvatar" TimeUse="25"/>
+        </Cost>
+        <AINotifyEffect value="ShieldUp"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield2923" Requirements="SoE4PortableHiveMind224222222222333343322"/>
+    </CAbilEffectInstant>
     <CAbilEffectInstant id="Stimpack133">
         <AbilSetId value="Aimpack"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
