@@ -533,6 +533,10 @@
     <CButton id="ArtanisInspire3">
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-detector.dds"/>
     </CButton>
+    <CButton id="CombatShield2923">
+        <Icon value="Assets\Textures\btn-upgrade-nova-equipment-ui-superstimpackeffect.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
     <CButton id="DriveCalibrationField">
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
     </CButton>

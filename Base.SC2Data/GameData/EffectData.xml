@@ -4758,6 +4758,23 @@
         <Kind value="Ranged"/>
         <Amount value="5"/>
     </CEffectDamage>
+    <CEffectDamage id="PsionicShockwaveDamage42" parent="DU_WEAP">
+        <EditorCategories value="Race:Protoss"/>
+        <Kind value="Ranged"/>
+        <KindSplash value="Splash"/>
+        <Amount value="70"/>
+        <AreaArray Radius="1.25" Fraction="0.5"/>
+        <ExcludeArray Value="Outer"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="-;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFlags index="OffsetByUnitRadius" value="0"/>
+        <SearchFlags index="SameCliff" value="0"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="ShieldUp7222">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <Behavior value="ahsdfu"/>
+    </CEffectApplyBehavior>
     <CEffectEnumArea id="SpeedBuffSearch">
         <EditorCategories value=""/>
         <SearchFilters value="Air,Visible;Neutral,Enemy,Structure,Heroic,Missile,Dead,Hidden"/>
@@ -71242,7 +71259,7 @@
     <CEffectApplyBehavior id="UnknownEffect75">
         <ValidatorArray index="0" removed="1"/>
         <EditorCategories value=""/>
-        <Behavior value="UnknownBehavior54"/>
+        <Behavior value="eyeing"/>
     </CEffectApplyBehavior>
     <CEffectModifyUnit id="UnknownEffect8">
         <EditorCategories value=""/>
@@ -80445,12 +80462,52 @@
         <EditorCategories value="Race:Terran"/>
         <Amount value="30"/>
     </CEffectDamage>
+    <CEffectSet id="asdasdwe">
+        <EditorCategories value=""/>
+        <EffectArray value="stun454"/>
+        <EffectArray value="PsionicShockwaveDamage42"/>
+    </CEffectSet>
     <CEffectEnumArea id="darkArchonServantAoE" parent="EA_WEAP">
         <EditorCategories value=""/>
         <SearchFilters value="-;Player,Ally,Air,Missile"/>
         <AreaArray Radius="2" Effect="PsiBlades"/>
         <SearchFlags index="CallForHelp" value="0"/>
     </CEffectEnumArea>
+    <CEffectCreateUnit id="eyeingspw">
+        <EditorCategories value=""/>
+        <SpawnOwner Value="Source"/>
+        <SpawnUnit value="DisruptorPhased3"/>
+    </CEffectCreateUnit>
+    <CEffectEnumArea id="galearea">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Player,Ally,Neutral,Missile,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="5" Effect="galing12"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="galearea2">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Player,Ally,Neutral,Missile,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="5" Effect="galing122"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="galing1">
+        <EditorCategories value=""/>
+        <Amount value="2"/>
+        <Death value="Fire"/>
+    </CEffectDamage>
+    <CEffectSet id="galing12">
+        <EditorCategories value=""/>
+        <EffectArray value="galing1"/>
+        <EffectArray value="UnknownEffect7232"/>
+    </CEffectSet>
+    <CEffectSet id="galing122">
+        <EditorCategories value=""/>
+        <EffectArray value="galing13"/>
+        <EffectArray value="UnknownEffect723"/>
+    </CEffectSet>
+    <CEffectDamage id="galing13">
+        <EditorCategories value=""/>
+        <Amount value="2"/>
+        <Death value="Fire"/>
+    </CEffectDamage>
     <CEffectCreateHealer id="heal2">
         <ValidatorArray value="noMarkers"/>
         <ValidatorArray value="NotWarpingIn"/>
@@ -80508,4 +80565,9 @@
         <PeriodicEffect value="PrologueVoidArmorAB23"/>
         <PeriodicPeriod value="1"/>
     </CEffectCreateHealer>
+    <CEffectApplyBehavior id="stun454">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <Behavior value="wersfdds"/>
+    </CEffectApplyBehavior>
 </Catalog>

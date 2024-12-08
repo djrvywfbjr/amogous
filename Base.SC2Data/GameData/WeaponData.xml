@@ -3942,6 +3942,20 @@
         <Period value="1.754"/>
         <Effect value="PsionicShockwaveDamage5"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="CringeWeapon">
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-immortalchampionchargeexplode.dds"/>
+        <DisplayEffect value="PsionicShockwaveDamage42"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <TeleportResetRange value="0"/>
+        <Cost>
+            <Vital index="Life" value="10"/>
+            <Cooldown Location="Unit"/>
+        </Cost>
+        <Period value="0.28"/>
+        <Effect value="asdasdwe"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="PunisherGrenades434">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-ability-zeratul-disruptor-clusternova.dds"/>

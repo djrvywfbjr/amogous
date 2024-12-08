@@ -1307,6 +1307,7 @@ Button/Hotkey/CombatShield2822=M
 Button/Hotkey/CombatShield29=B
 Button/Hotkey/CombatShield292=W
 Button/Hotkey/CombatShield2922=W
+Button/Hotkey/CombatShield2923=W
 Button/Hotkey/CombatShield293=B
 Button/Hotkey/CombatShield2932=B
 Button/Hotkey/CombatShield294=B
