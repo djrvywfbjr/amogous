@@ -1137,6 +1137,9 @@
     <CUpgrade id="MoebiusTUpgrade12232223223222424">
         <EffectArray Operation="Set" Reference="Weapon,DefragmentatorBeam,Range" Value="9"/>
     </CUpgrade>
+    <CUpgrade id="MoebiusTUpgrade12232223223222432">
+        <EffectArray Reference="Unit,SecurityCenterFlying,Speed" Value="1.781200"/>
+    </CUpgrade>
     <CUpgrade id="ParamilitaryUpgrade12">
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>

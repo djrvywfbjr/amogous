@@ -47658,8 +47658,8 @@
             <DamageDealtScaled index="Ranged" value="25"/>
             <DamageDealtScaled index="Splash" value="25"/>
             <DamageDealtScaled index="NoProc" value="25"/>
-            <LifeArmorBonus value="2"/>
-            <VitalMaxArray index="Life" value="90"/>
+            <LifeArmorBonus value="4"/>
+            <VitalMaxArray index="Life" value="35"/>
             <AbilLinkDisableArray value="XenWarrior62233"/>
             <AbilLinkDisableArray value="XenWarrior62"/>
             <AbilLinkDisableArray value="XenWarrior6222"/>
@@ -47712,12 +47712,12 @@
     <CBehaviorBuff id="XenWarrior6432">
         <InfoIcon value="Assets\Textures\btn-upgrade-terran-moebiusreactor.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Modification WeaponRange="1">
-            <DamageDealtScaled index="Spell" value="20"/>
-            <DamageDealtScaled index="Melee" value="20"/>
-            <DamageDealtScaled index="Ranged" value="20"/>
-            <DamageDealtScaled index="Splash" value="20"/>
-            <DamageDealtScaled index="NoProc" value="20"/>
+        <Modification>
+            <DamageDealtScaled index="Spell" value="10"/>
+            <DamageDealtScaled index="Melee" value="10"/>
+            <DamageDealtScaled index="Ranged" value="10"/>
+            <DamageDealtScaled index="Splash" value="10"/>
+            <DamageDealtScaled index="NoProc" value="10"/>
             <LifeArmorBonus value="2"/>
             <VitalMaxArray index="Life" value="85"/>
             <AbilLinkEnableArray value="Stimpack322"/>
