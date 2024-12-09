@@ -1138,7 +1138,7 @@
         <EffectArray Operation="Set" Reference="Weapon,DefragmentatorBeam,Range" Value="9"/>
     </CUpgrade>
     <CUpgrade id="MoebiusTUpgrade12232223223222432">
-        <EffectArray Reference="Unit,SecurityCenterFlying,Speed" Value="1.781200"/>
+        <EffectArray Operation="Set" Reference="Unit,SecurityCenterFlying,Speed" Value="1.750000"/>
     </CUpgrade>
     <CUpgrade id="ParamilitaryUpgrade12">
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
@@ -8018,43 +8018,39 @@
     <CUpgrade id="UmojanBasicUnitUpgrade522242242322222235222222212">
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
-        <EffectArray Reference="Unit,Ghost23,CostResource[Minerals]" Value="150"/>
-        <EffectArray Reference="Unit,Ghost23,CostResource[Vespene]" Value="150"/>
+        <EffectArray Operation="Set" Reference="Unit,Ghost23,CostResource[Minerals]" Value="200"/>
+        <EffectArray Operation="Set" Reference="Unit,Ghost23,CostResource[Vespene]" Value="150"/>
         <EffectArray Operation="Set" Reference="Unit,Ghost23,LifeMax" Value="225"/>
         <EffectArray Operation="Set" Reference="Unit,Ghost23,LifeStart" Value="225"/>
         <EffectArray Operation="Set" Reference="Unit,Ghost23,EnergyMax" Value="250"/>
-        <EffectArray Reference="Effect,C10CanisterRifle422,Amount" Value="25"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222352222222122">
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
-        <EffectArray Reference="Unit,Ghost23,CostResource[Minerals]" Value="150"/>
-        <EffectArray Reference="Unit,Ghost23,CostResource[Vespene]" Value="150"/>
+        <EffectArray Operation="Set" Reference="Unit,Ghost23,CostResource[Minerals]" Value="350"/>
+        <EffectArray Operation="Set" Reference="Unit,Ghost23,CostResource[Vespene]" Value="200"/>
         <EffectArray Operation="Set" Reference="Unit,Ghost23,LifeMax" Value="325"/>
         <EffectArray Operation="Set" Reference="Unit,Ghost23,LifeStart" Value="325"/>
         <EffectArray Operation="Set" Reference="Unit,Ghost23,EnergyStart" Value="150"/>
-        <EffectArray Reference="Effect,C10CanisterRifle422,Amount" Value="25"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade52224224232222223522222221222">
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
-        <EffectArray Reference="Unit,Ghost23,CostResource[Minerals]" Value="150"/>
-        <EffectArray Reference="Unit,Ghost23,CostResource[Vespene]" Value="150"/>
+        <EffectArray Operation="Set" Reference="Unit,Ghost23,CostResource[Minerals]" Value="450"/>
+        <EffectArray Operation="Set" Reference="Unit,Ghost23,CostResource[Vespene]" Value="350"/>
         <EffectArray Operation="Set" Reference="Unit,Ghost23,LifeMax" Value="475"/>
         <EffectArray Operation="Set" Reference="Unit,Ghost23,LifeStart" Value="475"/>
         <EffectArray Operation="Set" Reference="Unit,Ghost23,LifeRegenDelay" Value="15.000000"/>
         <EffectArray Operation="Set" Reference="Unit,Ghost23,LifeRegenRate" Value="15.000000"/>
-        <EffectArray Reference="Effect,C10CanisterRifle422,Amount" Value="25"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade522242242322222235222222212222">
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
-        <EffectArray Reference="Unit,Ghost23,CostResource[Minerals]" Value="150"/>
-        <EffectArray Reference="Unit,Ghost23,CostResource[Vespene]" Value="150"/>
+        <EffectArray Operation="Set" Reference="Unit,Ghost23,CostResource[Minerals]" Value="550"/>
+        <EffectArray Operation="Set" Reference="Unit,Ghost23,CostResource[Vespene]" Value="450"/>
         <EffectArray Operation="Set" Reference="Unit,Ghost23,LifeMax" Value="525"/>
         <EffectArray Operation="Set" Reference="Unit,Ghost23,LifeStart" Value="525"/>
-        <EffectArray Operation="Set" Reference="Unit,Ghost23,EnergyRegenRate" Value="4.000000"/>
-        <EffectArray Reference="Effect,C10CanisterRifle422,Amount" Value="25"/>
+        <EffectArray Operation="Set" Reference="Unit,Ghost23,EnergyRegenRate" Value="6.000000"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222352222222123">
         <EffectArray Operation="Set" Reference="Weapon,HailstormMissilePods2,Options[Hidden]" Value="0"/>

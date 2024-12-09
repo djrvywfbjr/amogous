@@ -533,10 +533,6 @@
     <CButton id="ArtanisInspire3">
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-detector.dds"/>
     </CButton>
-    <CButton id="CombatShield2923">
-        <Icon value="Assets\Textures\btn-upgrade-nova-equipment-ui-superstimpackeffect.dds"/>
-        <EditorCategories value="Race:Terran"/>
-    </CButton>
     <CButton id="DriveCalibrationField">
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
     </CButton>
@@ -29506,6 +29502,9 @@
     <CButton id="TrainCombatScout">
         <Icon value="Assets\Textures\btn-unit-terran-troopermengsk.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-terran-troopermengsk.dds"/>
+    </CButton>
+    <CButton id="GrinderDrones">
+        <Icon value="Assets\Textures\btn-ability-terran-shreddermissile-color.dds"/>
     </CButton>
     <CButton id="UnknownButton13">
         <Icon value="Assets\Textures\btn-ability-protoss-scarabshot.dds"/>

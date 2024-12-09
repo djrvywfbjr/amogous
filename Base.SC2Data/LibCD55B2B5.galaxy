@@ -1232,7 +1232,6 @@ bool libCD55B2B5_gt_InfestedChoose_Func (bool testConds, bool runActions) {
     PlayerSetConsoleSkin(EventPlayer(), "ConsoleZerg_Classic");
     libNtve_gf_UnitCreateFacingPoint(1, "Virophage2", c_unitCreateIgnorePlacement, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
     libNtve_gf_UnitCreateFacingPoint(1, "Overlord3", c_unitCreateIgnorePlacement, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
-    libNtve_gf_UnitCreateFacingPoint(1, "Queen33", c_unitCreateIgnorePlacement, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
     libNtve_gf_UnitCreateFacingPoint(13, "SCV8", c_unitCreateIgnorePlacement, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
     Wait(5.0, c_timeGame);
     auto2B30FF96_g = UnitGroup(null, c_playerAny, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32))), 0);
@@ -1278,7 +1277,6 @@ bool libCD55B2B5_gt_LastProtossChoose_Func (bool testConds, bool runActions) {
 
     PlayerSetConsoleSkin(EventPlayer(), "ConsoleProtoss_Forged");
     libNtve_gf_UnitCreateFacingPoint(1, "Nexus9", c_unitCreateIgnorePlacement, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
-    libNtve_gf_UnitCreateFacingPoint(1, "WarpPrism4", c_unitCreateIgnorePlacement, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
     libNtve_gf_UnitCreateFacingPoint(13, "Probe5", c_unitCreateIgnorePlacement, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
     return true;
 }
