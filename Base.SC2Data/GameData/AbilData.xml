@@ -60871,7 +60871,7 @@
     </CAbilWarpTrain>
     <CAbilTransport id="WarpPrismTransport2" parent="WarpPrismTransport">
         <Name value="Abil/Name/WarpPrismTransport2"/>
-        <TargetFilters value="Visible;Ally,Neutral,Enemy,Air,Heroic,Buried,UnderConstruction,Dead,Hidden"/>
+        <TargetFilters value="Visible;Ally,Neutral,Enemy,Heroic,Buried,UnderConstruction,Dead,Hidden"/>
     </CAbilTransport>
     <CAbilTransport id="WarpPrismTransport22" parent="WarpPrismTransport">
         <Name value="Abil/Name/WarpPrismTransport22"/>
