@@ -37783,9 +37783,9 @@
         <Range value="10"/>
         <AutoCastFilters value="Visible;Player,Ally,Neutral,Missile,Dead"/>
         <AutoCastRange value="10"/>
-        <CastOutroTime value="2.1"/>
         <CursorEffect value="OmegaStormSearchArea3"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="OmegaStorm22" Requirements="SoE4PortableHiveMind2242222222223333433222"/>
+        <PrepTime value="2.1"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="OracleRevelation">
         <Arc value="360"/>

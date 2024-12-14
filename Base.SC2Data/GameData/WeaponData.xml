@@ -9271,14 +9271,14 @@
         <EditorCategories value="Race:Terran"/>
         <Options index="Disabled" value="1"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
-        <DisplayEffect value="PunisherGrenadesU"/>
+        <DisplayEffect value="PunisherGrenadesU6"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="6.5"/>
         <Range value="6"/>
         <Period value="1.5"/>
         <DamagePoint value="0"/>
         <Backswing value="0"/>
-        <Effect value="PunisherGrenadesLM"/>
+        <Effect value="PunisherGrenadesLM6"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Ram2">
         <EditorCategories value="Race:Zerg"/>

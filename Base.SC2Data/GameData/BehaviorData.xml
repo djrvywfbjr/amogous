@@ -981,6 +981,7 @@
         <Requirements value="UnknownRequirement962"/>
         <Period value="0.35"/>
         <PeriodicEffect value="galearea"/>
+        <InfoFlags index="Hidden" value="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="HotG2">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -1550,19 +1551,26 @@
         <MaxStackCount value="65535"/>
         <Duration value="0.8"/>
         <Modification MoveSpeedMultiplier="0.95"/>
+        <InfoFlags index="Hidden" value="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ahsdfu">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="7"/>
         <Modification>
+            <WeaponArray Link="CringeWeapon"/>
             <WeaponEnableArray value="CringeWeapon"/>
             <WeaponDisableArray value="C10CanisterRifle422"/>
         </Modification>
+        <InfoFlags index="Hidden" value="1"/>
+        <DisplayDuration index="Self" value="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="wersfdds">
         <BehaviorCategories index="Stun" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="1.4"/>
+        <Modification>
+            <StateFlags index="Stun" value="1"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="UnmannedBuilding">
         <Cost>
@@ -2919,9 +2927,11 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <Duration value="5"/>
         <Modification MoveSpeedMultiplier="0.75" AttackSpeedMultiplier="0.75">
+            <StateFlags index="Stun" value="1"/>
             <StateFlags index="SuppressCloak" value="1"/>
             <StateFlags index="SuppressDetection" value="1"/>
         </Modification>
+        <BehaviorCategories index="Stun" value="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="FlashBangGrenade42">
         <Alignment value="Negative"/>

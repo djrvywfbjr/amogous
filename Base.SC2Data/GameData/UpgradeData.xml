@@ -8055,6 +8055,7 @@
         <EffectArray Operation="Set" Reference="Unit,Ghost23,LifeStart" Value="525"/>
         <EffectArray Operation="Set" Reference="Unit,Ghost23,EnergyRegenRate" Value="4.000000"/>
         <EffectArray Reference="Effect,C10CanisterRifle422,Amount" Value="25"/>
+        <EffectArray Reference="Effect,PsionicShockwaveDamage42,Amount" Value="30"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222352222222123">
         <EffectArray Operation="Set" Reference="Weapon,HailstormMissilePods2,Options[Hidden]" Value="0"/>
