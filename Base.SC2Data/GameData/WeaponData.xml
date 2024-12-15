@@ -3905,6 +3905,20 @@
         <Period value="1.754"/>
         <Effect value="HighTemplarWeaponLM5"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="InfernalFlameThrower6">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="5.5"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="2.5"/>
+        <DamagePoint value="0.25"/>
+        <Backswing value="0.75"/>
+        <Effect value="InfernalFlameThrowerCP6"/>
+        <LegacyOptions index="LockTurretWhileFiring" value="1"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="KhaydarinBeam2">
         <EditorCategories value="Race:Protoss"/>
         <Options index="ContinuousScan" value="1"/>
@@ -7850,7 +7864,7 @@
         <DisplayEffect value="GoliathAU2"/>
         <DisplayAttackCount value="40"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="8"/>
+        <Range value="10"/>
         <Arc value="29.9926"/>
         <Period value="6"/>
     </CWeaponLegacy>
@@ -7868,7 +7882,7 @@
         <Marker Link="GorgonCruiserGround">
             <MatchFlags index="Link" value="1"/>
         </Marker>
-        <Period value="1"/>
+        <Period value="0.6"/>
         <Effect value="GorgonCruiserGroundLaunchMissile2"/>
         <AllowedMovement value="Moving"/>
         <RandomDelayMax value="0.1875"/>
@@ -8068,7 +8082,7 @@
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="6"/>
-        <Period value="1.5"/>
+        <Period value="0.7"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="MengskDiamondback3">
         <EditorCategories value="Race:Terran"/>
@@ -9321,7 +9335,7 @@
         <DisplayEffect value="RavagerCorrosiveBileDamage32"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="7.5"/>
-        <Range value="10"/>
+        <Range value="12"/>
         <Period value="6"/>
         <DamagePoint value="0.2"/>
         <PreswingBeforeAttack value="2"/>
@@ -10467,7 +10481,7 @@
         <Cost>
             <Vital index="Energy" value="-5"/>
         </Cost>
-        <Period value="1.5"/>
+        <Period value="0.75"/>
         <Effect value="TempestLaunchMissileGround2"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="TempestGround22">
@@ -10681,7 +10695,7 @@
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AcquirePrioritization value="ByAngle"/>
         <Range value="8"/>
-        <Period value="1.28"/>
+        <Period value="0.8"/>
         <DamagePoint value="0.831"/>
         <Backswing value="0.25"/>
         <LegacyOptions index="KeepChanneling" value="1"/>
@@ -10925,8 +10939,8 @@
     <CWeaponLegacy id="TyphoonMissilePod2">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
-        <DisplayEffect value="CycloneAttackWeaponDamage2"/>
-        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <DisplayEffect value="LiberatorAttackDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="6"/>
         <Range value="6"/>
         <Period value="1"/>
