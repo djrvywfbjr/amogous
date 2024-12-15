@@ -379,6 +379,11 @@
         <AlertIcon value="Assets\Textures\btn-ability-protoss-recall.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
+    <CButton id="ArbiterMPRecall9">
+        <Icon value="Assets\Textures\btn-ability-zeratul-warpprism-autounloadoff.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-warpprism-autounloadoff.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
     <CButton id="ArbiterMPStasisField2">
         <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-stasisfield.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-stasisfield.dds"/>
@@ -4369,6 +4374,11 @@
     <CButton id="ResearchApperance">
         <Icon value="Assets\Textures\btn-ability-zeratul-darktemplar-blink.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-zeratul-darktemplar-blink.dds"/>
+    </CButton>
+    <CButton id="ResearchBansheeCloak2">
+        <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-cloak-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
     </CButton>
     <CButton id="ResearchMobileAutomatons">
         <Icon value="Assets\Textures\talent-raynor-level01-infantryspecialist.dds"/>
@@ -36601,6 +36611,9 @@
         <Icon value="Assets\Textures\btn-unit-zerg-zergling-rcz.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-zerg-zergling.dds"/>
         <EditorCategories value="Race:Zerg"/>
+    </CButton>
+    <CButton id="inspiration">
+        <Icon value="Assets\Textures\btn-ability-terran-battlefieldawareness.dds"/>
     </CButton>
     <CButton id="zerglingattackspeed2">
         <Icon value="Assets\Textures\btn-ability-zerg-dehaka-roach-glialreconstruction.dds"/>

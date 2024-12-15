@@ -883,6 +883,14 @@
             <VitalRegenArray index="Energy" value="1"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="Cloak">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Requirements value="BlueIntelUseCloak"/>
+        <Modification>
+            <StateFlags index="Cloak" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="DriveCalibrationField">
         <InfoIcon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -947,6 +955,19 @@
         <Duration value="15"/>
         <Modification MoveSpeedBonus="2.5" AccelerationBonus="500" DecelerationBonus="500"/>
         <TimeScaleSource Value="Global"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GuardianShield6">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-shieldbattery.dds"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Duration value="0.6"/>
+        <Modification>
+            <VitalMaxArray index="Shields" value="50"/>
+            <VitalRegenMultiplier index="Shields" value="2"/>
+        </Modification>
+        <DamageResponse>
+            <Chance value="1"/>
+        </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="HardenedShield10">
         <Alignment value="Positive"/>
@@ -1141,6 +1162,14 @@
         <Modification AttackSpeedMultiplier="1.5" ShieldArmorBonus="3">
             <VitalMaxArray index="Shields" value="125"/>
             <VitalRegenArray index="Life" value="20"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Sloweffect">
+        <InfoIcon value="Assets\Textures\btn-ability-hornerhan-hellion-slowbomb.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="2.8"/>
+        <Modification>
+            <AdditiveMoveSpeedFactor value="-0.5"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="Stimpack113">
@@ -1551,6 +1580,12 @@
         <Duration value="0.8"/>
         <Modification MoveSpeedMultiplier="0.95"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="WarGeneralAreaBuff">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.6"/>
+        <PeriodicEffect value="WarGeneralareainspiration"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="ahsdfu">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="7"/>
@@ -1558,6 +1593,12 @@
             <WeaponEnableArray value="CringeWeapon"/>
             <WeaponDisableArray value="C10CanisterRifle422"/>
         </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="inspiration">
+        <InfoIcon value="Assets\Textures\btn-ability-terran-battlefieldawareness.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.4"/>
+        <Modification AttackSpeedMultiplier="1.3" RangedWeaponRange="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="wersfdds">
         <BehaviorCategories index="Stun" value="1"/>
