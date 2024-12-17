@@ -406,6 +406,20 @@
         <AINotifyEffect value=""/>
         <CmdButtonArray index="Execute" DefaultButtonFace="ArbiterMPRecall"/>
     </CAbilEffectTarget>
+    <CAbilEffectTarget id="ArbiterMPRecall7">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ArbiterMPRecallSearch"/>
+        <Cost>
+            <Vital index="Energy" value="100"/>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+        </Cost>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CursorEffect value="ArbiterMPRecallSearch"/>
+        <AINotifyEffect value=""/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ArbiterMPRecall"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="ArbiterMPStasisField2">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ArbiterMPStasisFieldSearch"/>
@@ -704,6 +718,22 @@
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="ArtanisInspire3"/>
     </CAbilEffectInstant>
+    <CAbilEffectTarget id="Blink5">
+        <AbilSetId value="Blnk"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="Blink"/>
+        <Flags index="BestUnit" value="0"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Cooldown Link="BlinkBlink5" TimeUse="8"/>
+        </Cost>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <AINotifyEffect value="Blink"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Blink" State="Restricted" Requirements="StalkerUpgradeBlink">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
     <CAbilEffectInstant id="CorpsSpeedBurst">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="SpeedBuffSearch"/>
@@ -742,6 +772,23 @@
         <AutoCastFilters value="Visible;Player,Ally,Neutral,Structure,User1,Missile,Cloaked,Stasis,Dead,Hidden,MapBoss"/>
         <AutoCastRange value="5"/>
     </CAbilEffectTarget>
+    <CAbilEffectInstant id="PlasmerHighShield">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="GuardianShieldPersistent5"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="45"/>
+            <Cooldown Link="GuardianShield"/>
+        </Cost>
+        <AutoCastFilters value="Visible;Neutral,Enemy"/>
+        <AutoCastValidatorArray value="VoidSentryNearbyFriendlyUnitInCombat"/>
+        <AINotifyEffect value=""/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="GuardianShield"/>
+    </CAbilEffectInstant>
     <CAbilEffectInstant id="MassCloak">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="CruiserCloakSearch"/>
@@ -859,6 +906,36 @@
             <Resource index="Vespene" value="150"/>
         </InfoArray>
     </CAbilResearch>
+    <CAbilEffectTarget id="NanoRepair9">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Flags index="ReExecutable" value="1"/>
+        <Flags index="Smart" value="1"/>
+        <Flags index="TransportAcquirePassengers" value="1"/>
+        <TargetFilters value="Mechanical,Visible;Self,Enemy,Structure,Missile,Uncommandable,Dead,Hidden,Invulnerable"/>
+        <TargetSorts RequestCount="1">
+            <SortArray value="TSAlliancePassive"/>
+            <SortArray value="TSLifeFraction"/>
+            <SortArray value="TSDistance"/>
+        </TargetSorts>
+        <Range value="4"/>
+        <Arc value="360"/>
+        <SmartValidatorArray value="healSmartTargetFilters"/>
+        <SmartValidatorArray value="NotWarpingIn"/>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastFilters value="-;Neutral,Enemy"/>
+        <AutoCastRange value="6"/>
+        <AutoCastValidatorArray value="healCasterMinEnergy"/>
+        <AutoCastValidatorArray value="NotWarpingIn"/>
+        <UseMarkerArray index="Approach" value="0"/>
+        <UseMarkerArray index="Prep" value="0"/>
+        <DefaultError value="RequiresHealTarget"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Heal"/>
+        <AcquireAttackers value="1"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="SJPirateYamato3522">
         <Alignment value="Negative"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
@@ -2175,17 +2252,17 @@
             <Resource index="Vespene" value="200"/>
             <Button DefaultButtonFace="OdinNukeCalldown22" Requirements="LearnBlink211"/>
         </InfoArray>
-        <InfoArray index="Research12" Time="100" Upgrade="UmojanBasicUnitUpgrade522">
+        <InfoArray index="Research12" Time="84" Upgrade="UmojanBasicUnitUpgrade522">
             <Resource index="Minerals" value="150"/>
             <Resource index="Vespene" value="150"/>
             <Button DefaultButtonFace="UpgradeOverallWeaponPerformance2" Requirements="LearnBlink2122"/>
         </InfoArray>
-        <InfoArray index="Research13" Time="150" Upgrade="UmojanBasicUnitUpgrade52">
+        <InfoArray index="Research13" Time="84" Upgrade="UmojanBasicUnitUpgrade52">
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="150"/>
             <Button DefaultButtonFace="UpgradeOverallWeaponPerformance" Requirements="LearnBlink212"/>
         </InfoArray>
-        <InfoArray index="Research14" Time="200" Upgrade="UmojanBasicUnitUpgrade523">
+        <InfoArray index="Research14" Time="84" Upgrade="UmojanBasicUnitUpgrade523">
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="200"/>
             <Button DefaultButtonFace="UpgradeOverallWeaponPerformance22" Requirements="LearnBlink21222"/>
@@ -2243,6 +2320,11 @@
         <InfoArray index="Research25" Time="150" Upgrade="UmojanBasicUnitUpgrade224">
             <Vital index="Energy" value="300"/>
             <Button DefaultButtonFace="UpgradeOverallWeaponPerformance2332" Requirements="LearnBlink2122223"/>
+        </InfoArray>
+        <InfoArray index="Research26" Time="84" Upgrade="BansheeCloakingField">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ResearchBansheeCloak2" Requirements="LearnCloack"/>
         </InfoArray>
     </CAbilResearch>
     <CAbilMorph id="BarracksTechReactorMorph2">
@@ -4174,7 +4256,7 @@
             <Button DefaultButtonFace="Raven2" Requirements="HaveEngineeringBay23"/>
             <Unit index="0" value="Hail"/>
         </InfoArray>
-        <InfoArray index="Train6" Time="80">
+        <InfoArray index="Train6" Time="56">
             <Button DefaultButtonFace="Firebat2" Requirements="HaveEngineeringBay23"/>
             <Unit index="0" value="Exterminator"/>
         </InfoArray>
@@ -13401,7 +13483,7 @@
     </CAbilTrain>
     <CAbilTrain id="CommandCenterTrain2">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
-        <InfoArray index="Train1" Time="15.4">
+        <InfoArray index="Train1" Time="14">
             <Button DefaultButtonFace="SCV2" State="Restricted">
                 <Flags index="ToSelection" value="1"/>
             </Button>
@@ -22462,7 +22544,7 @@
     </CAbilEffectTarget>
     <CAbilTrain id="GatewayTrain2" parent="GatewayTrain">
         <Name value="Abil/Name/GatewayTrain2"/>
-        <InfoArray index="Train1" Time="15.4">
+        <InfoArray index="Train1" Time="14">
             <Button DefaultButtonFace="Drone2"/>
             <Unit index="0" value="ForbiddenOne"/>
         </InfoArray>
@@ -68701,6 +68783,46 @@
         <AINotifyEffect value="heal"/>
         <DefaultError value="RequiresHealTarget"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="MedicHeal"/>
+        <FollowRange value="1.5"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="heal23">
+        <Alignment value="Positive"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <DataCollection value="heal"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Flags index="ReExecutable" value="1"/>
+        <Flags index="Smart" value="1"/>
+        <Flags index="PassengerAcquirePassengers" value="1"/>
+        <InterruptCost>
+            <Charge Link="Abil/heal"/>
+            <Cooldown Link="Abil/heal"/>
+        </InterruptCost>
+        <TargetFilters value="Ground,Biological,Visible;Self,Enemy,Air,Structure,Missile,UnderConstruction,Dead,Hidden,Invulnerable"/>
+        <TargetSorts RequestCount="1">
+            <SortArray value="TSAlliancePassive"/>
+            <SortArray value="TSDistance"/>
+            <SortArray value="TSLifeFraction"/>
+        </TargetSorts>
+        <Range value="5"/>
+        <SmartValidatorArray value="healSmartTargetFilters"/>
+        <SmartValidatorArray value="NotWarpingIn"/>
+        <SmartValidatorArray value="DisableMedicHealing"/>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastFilters value="Visible;Neutral,Enemy"/>
+        <AutoCastRange value="6"/>
+        <AutoCastValidatorArray value="healCasterMinEnergy"/>
+        <AutoCastValidatorArray value="NotWarpingIn"/>
+        <AutoCastValidatorArray value="DisableMedicHealing"/>
+        <Marker Link="Abil/MedivacHeal"/>
+        <UseMarkerArray index="Approach" value="0"/>
+        <UseMarkerArray index="Prep" value="0"/>
+        <AINotifyEffect value="heal"/>
+        <DefaultError value="RequiresHealTarget"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MedicHeal"/>
+        <AcquireAttackers value="1"/>
         <FollowRange value="1.5"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="heal3" parent="heal">

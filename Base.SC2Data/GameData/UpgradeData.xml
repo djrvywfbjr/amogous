@@ -253,6 +253,9 @@
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="AdvancedConstruction"/>
     </CUpgrade>
+    <CUpgrade id="BansheeCloakingField">
+        <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
+    </CUpgrade>
     <CUpgrade id="EmergencyWeapon">
         <Flags index="UpgradeCheat" value="0"/>
         <EffectArray Operation="Set" Reference="Weapon,H1ScrapCannon,Options[Hidden]" Value="0"/>
@@ -2017,10 +2020,6 @@
         <EffectArray Operation="Set" Reference="Weapon,GuassRifle2,Period" Value="0.500000"/>
         <EffectArray Reference="Effect,GuassRifle2,Amount" Value="2"/>
         <EffectArray Operation="Set" Reference="Weapon,MengskMarauder2,Period" Value="0.700000"/>
-        <EffectArray Operation="Set" Reference="Unit,DestructorSecurity,LifeStart" Value="100"/>
-        <EffectArray Operation="Set" Reference="Unit,DestructorSecurity,LifeMax" Value="100"/>
-        <EffectArray Operation="Subtract" Reference="Unit,GuardMarine,LifeArmor" Value="4"/>
-        <EffectArray Operation="Subtract" Reference="Unit,DestructorSecurity,LifeArmor" Value="4"/>
         <EffectArray Operation="Set" Reference="Unit,DestructorSecurity,LifeRegenRate" Value="0.250000"/>
         <EffectArray Operation="Set" Reference="Unit,GuardMarine,LifeRegenRate" Value="0.250000"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>

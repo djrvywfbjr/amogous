@@ -193,12 +193,24 @@
     <CRequirement id="DontHaveAdvancedBionics">
         <NodeArray index="Show" Link="NotCountUpgradeAdvancedBionicsUpgradeQueuedOrBetter"/>
     </CRequirement>
+    <CRequirement id="LearnCloack">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Show" Link="NotCountUpgradeBansheeCloakingFieldQueuedOrBetter"/>
+    </CRequirement>
     <CRequirement id="NoSymbcost"/>
     <CRequirement id="RWERequirement2322">
         <NodeArray index="Use" Link="And996554812CountUnitMutationChamberCompleteOnlyCountUnitIncarcerationPitCompleteOnly"/>
     </CRequirement>
+    <CRequirement id="StalkerUpgradeBlink">
+        <NodeArray index="Use" Link="CountUpgradeXillBlinkCompleteOnly"/>
+        <NodeArray index="Show" Link="CountUpgradeXillBlinkCompleteOnly"/>
+    </CRequirement>
     <CRequirement id="UnknownRequirement962">
         <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade522242242322222235222222212222CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="BlueIntelUseCloak">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeBansheeCloakingFieldQueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="VenomButton">
         <NodeArray index="Show" Link="NotCountUpgradeVenomQueuedOrBetter"/>

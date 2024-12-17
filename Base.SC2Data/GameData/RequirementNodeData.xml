@@ -5749,6 +5749,11 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="AutoHarvester" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeBansheeCloakingFieldQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="BansheeCloakingField" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeBurrowCompleteOnly1687599735TechTreeCheat">
         <Count Link="Burrow" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
@@ -16557,6 +16562,10 @@
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeAdvancedConstruction24QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeAdvancedConstruction24QueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeBansheeCloakingFieldQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeBansheeCloakingFieldQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeClusterBombQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeClusterBombQueuedOrBetter"/>
