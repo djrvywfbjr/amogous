@@ -22000,7 +22000,7 @@
         <WhichLocation Value="SourcePoint"/>
         <OffsetVectorStartLocation Value="SourcePoint"/>
         <Flags index="Channeled" value="1"/>
-        <PeriodCount value="12"/>
+        <PeriodCount value="5"/>
         <PeriodicEffectArray value="DutchTurretFlameThrowerSearchArea3"/>
         <PeriodicOffsetArray value="0,-1,0"/>
         <PeriodicOffsetArray value="0,-2,0"/>
@@ -65300,7 +65300,7 @@
         <ResponseFlags index="Flee" value="1"/>
         <Visibility value="Visible"/>
         <Flags index="Notification" value="1"/>
-        <Amount value="150"/>
+        <Amount value="300"/>
         <ExcludeArray Value="Target"/>
         <ExcludeArray Value="Target"/>
         <SearchFilters value="-;Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
@@ -76179,8 +76179,8 @@
     </CEffectDamage>
     <CEffectDamage id="VultureU3" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Terran"/>
-        <AttributeBonus index="Light" value="25"/>
-        <Amount value="20"/>
+        <AttributeBonus index="Light" value="50"/>
+        <Amount value="10"/>
     </CEffectDamage>
     <CEffectDamage id="WarHound2">
         <EditorCategories value="Race:Terran"/>

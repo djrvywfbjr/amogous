@@ -11945,7 +11945,7 @@
         <Icon value="Assets\Textures\btn-upgrade-swann-improvedburstlaser.dds"/>
         <DisplayEffect value="WraithGU3"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="8"/>
+        <Range value="7"/>
         <Period value="2"/>
         <Effect value="WraithGLaunchMissile3"/>
         <AllowedMovement value="Slowing"/>

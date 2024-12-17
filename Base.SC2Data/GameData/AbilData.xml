@@ -38360,13 +38360,12 @@
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Flags index="RangeUseCasterRadius" value="0"/>
         <Cost>
-            <Vital index="Energy" value="50"/>
             <Charge>
                 <CountMax value="3"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
                 <Link value="Abil/SpawnPhaseCannon"/>
-                <TimeUse value="45"/>
+                <TimeUse value="29.4"/>
             </Charge>
             <Cooldown Link="SpawnPhaseCannon" Location="Unit"/>
         </Cost>

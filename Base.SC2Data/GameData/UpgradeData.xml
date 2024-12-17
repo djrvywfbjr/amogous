@@ -8398,11 +8398,13 @@
         <EffectArray Reference="Weapon,Vulture3,Range" Value="1.5"/>
         <EffectArray Reference="Weapon,DutchTurretFlameThrower3,Range" Value="1.5"/>
         <EffectArray Reference="Weapon,LongboltMissile4,Range" Value="1.5"/>
+        <EffectArray Operation="Set" Reference="Effect,DutchTurretFlameThrowerCreatePersistent3,PeriodCount" Value="7"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade522242242322222235222222212322232422322323">
-        <EffectArray Operation="Set" Reference="Effect,SpawnSpiderMine3,Chance" Value="0.2"/>
+        <EffectArray Operation="Set" Reference="Effect,SpawnSpiderMine3,Chance" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,Vulture3,Period" Value="5.000000"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -8447,9 +8449,9 @@
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222352222222123222324223223232222222">
         <EffectArray Operation="Set" Reference="Unit,Vulture3,Mover" Value="CliffJumper"/>
-        <EffectArray Operation="Set" Reference="Weapon,DutchTurretFlameThrower3,Period" Value="2.000000"/>
-        <EffectArray Operation="Set" Reference="Weapon,LongboltMissile4,Period" Value="4.000000"/>
-        <EffectArray Operation="Set" Reference="Weapon,Vulture3,Period" Value="1.100000"/>
+        <EffectArray Operation="Divide" Reference="Weapon,LongboltMissile4,Period" Value="1.330000"/>
+        <EffectArray Operation="Divide" Reference="Weapon,Vulture3,Period" Value="1.330000"/>
+        <EffectArray Operation="Divide" Reference="Weapon,DutchTurretFlameThrower3,Period" Value="1.330000"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
