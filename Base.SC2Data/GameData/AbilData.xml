@@ -734,6 +734,36 @@
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
     </CAbilEffectTarget>
+    <CAbilArmMagazine id="BroodLordHangar4">
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <Flags index="AutoCastOffOwnerLeave" value="0"/>
+        <Flags index="Retarget" value="1"/>
+        <Leash value="9"/>
+        <InfoArray index="Ammo1" Time="2.5" CountStart="4" Manage="Recall" Unit="GigaBitch">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+            <Button DefaultButtonFace="Broodling"/>
+            <Flags index="AutoBuild" value="1"/>
+            <Flags index="AutoBuildOn" value="1"/>
+            <Flags index="External" value="1"/>
+        </InfoArray>
+        <InfoArray index="Ammo2" Time="3" CountStart="4" Distance="9">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+            <Button DefaultButtonFace="UnknownButton" Requirements="ArmBroodlingEscort2"/>
+            <Flags index="AutoBuild" value="1"/>
+            <Flags index="External" value="1"/>
+        </InfoArray>
+        <Alert value=""/>
+        <EffectArray index="Create" value="BroodLordVoidLaunchSet"/>
+        <EffectArray index="Death" value="InterceptorFate"/>
+        <EffectArray index="Release" value="KillsToCaster"/>
+        <ExternalAngle value="-149.9853"/>
+        <ExternalAngle value="149.9853"/>
+        <ExternalAngle value="124.9914"/>
+        <ExternalAngle value="249.994"/>
+        <MaxCount value="4"/>
+    </CAbilArmMagazine>
     <CAbilEffectInstant id="CorpsSpeedBurst">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="SpeedBuffSearch"/>
@@ -1028,6 +1058,24 @@
         <AINotifyEffect value="ShieldUp"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield2143622"/>
     </CAbilEffectInstant>
+    <CAbilEffectTarget id="ShieldUp23210">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="ShieldUp23211"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="BestUnit" value="0"/>
+        <Cost>
+            <Vital index="Energy" value="25"/>
+            <Charge Link=""/>
+            <Cooldown Link="Abil/AlarakAvatar"/>
+        </Cost>
+        <Range value="8"/>
+        <AutoCastFilters value="Visible;Neutral,Enemy,Structure,Missile,Stasis,Dead"/>
+        <AutoCastRange value="8"/>
+        <AutoCastValidatorArray value="CasterLifeNotFull2"/>
+        <AutoCastValidatorArray value="IsTimeStopped2"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield223213"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="ShieldUp23283">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ShieldUp23273"/>
@@ -9920,7 +9968,7 @@
                 <Location value="Player"/>
                 <TimeUse value="50"/>
             </Charge>
-            <Cooldown Link="Abil/CalldownMULE" Location="Player" TimeUse="20"/>
+            <Cooldown Link="Abil/CalldownMULE" TimeUse="20"/>
         </Cost>
         <InterruptCost>
             <Cooldown Location="Player"/>
@@ -30336,6 +30384,21 @@
         <CmdButtonArray index="Execute" DefaultButtonFace="Snipe332422"/>
         <Arc value="360"/>
     </CAbilEffectTarget>
+    <CAbilEffectTarget id="TemporalField33">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="TemporalFieldGrowingBubbleCreatePersistent33"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Vital index="Energy" value="100"/>
+        </Cost>
+        <Range value="9"/>
+        <Arc value="360"/>
+        <CursorEffect value="TemporalFieldAfterBubbleSearchArea33"/>
+        <AINotifyEffect value="TemporalFieldCreatePersistent"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TemporalField33"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="TemporalField4">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Effect index="0" value="TemporalFieldGrowingBubbleCreatePersistent4"/>
@@ -35707,6 +35770,10 @@
         <InfoArray index="Train20" Time="35">
             <Button DefaultButtonFace="CalldownMULE42555222" Requirements="HaveRelicOfHope2222"/>
             <Unit value="Observer4"/>
+        </InfoArray>
+        <InfoArray index="Train21" Time="35">
+            <Button DefaultButtonFace="CreateCradleOfLife"/>
+            <Unit value="CradleOfLife"/>
         </InfoArray>
         <Alert value="TrainWorkerComplete"/>
     </CAbilTrain>
@@ -63926,7 +63993,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="XenWarrior63322333233523352232422322"/>
         <Cost>
-            <Resource index="Minerals" value="125"/>
+            <Resource index="Minerals" value="175"/>
             <Charge>
                 <CountMax value="5"/>
                 <CountStart value="5"/>
