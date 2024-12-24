@@ -1010,6 +1010,17 @@
         <Period value="0.7"/>
         <PeriodicEffect value="galearea2"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="MatterCondensed2">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-stasistrap.dds"/>
+        <BehaviorCategories index="Slow" value="1"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <TimeScaleSource Value="Global"/>
+        <Duration value="0.125"/>
+        <Modification MoveSpeedMultiplier="0.65" AttackSpeedMultiplier="0.65">
+            <StateFlags index="UnitAttrOnMassive" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="MohandarStickyBomb42">
         <Alignment value="Negative"/>
         <InfoIcon value="Assets\Textures\btn-ability-protoss-phaseshift2.dds"/>
@@ -1163,6 +1174,14 @@
         <Modification AttackSpeedMultiplier="1.5" ShieldArmorBonus="3">
             <VitalMaxArray index="Shields" value="125"/>
             <VitalRegenArray index="Life" value="20"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Shield39">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="10"/>
+        <Modification AttackSpeedMultiplier="1.25" ShieldArmorBonus="3">
+            <VitalMaxArray index="Shields" value="75"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="Sloweffect">
@@ -1489,6 +1508,17 @@
         <Limit value="19"/>
         <ConjoinedLink value="SpawnLarvaConjoined"/>
     </CBehaviorSpawn>
+    <CBehaviorBuff id="MatterCondensed">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-stasistrap.dds"/>
+        <BehaviorCategories index="Slow" value="1"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <TimeScaleSource Value="Global"/>
+        <Duration value="0.125"/>
+        <Modification MoveSpeedMultiplier="0.65" AttackSpeedMultiplier="0.65">
+            <StateFlags index="UnitAttrOnArmored" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="UnknownBehavior47">
         <BehaviorFlags index="Permanent" value="1"/>
         <InfoFlags index="Hidden" value="1"/>

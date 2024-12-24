@@ -538,6 +538,10 @@
     <CButton id="ArtanisInspire3">
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-detector.dds"/>
     </CButton>
+    <CButton id="CombatShield223213">
+        <Icon value="Assets\Textures\btn-ability-stetmann-banelingmanashield.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
     <CButton id="CombatShield2923">
         <Icon value="Assets\Textures\btn-upgrade-nova-equipment-ui-superstimpackeffect.dds"/>
         <EditorCategories value="Race:Terran"/>
@@ -4271,6 +4275,14 @@
     <CButton id="PatriotReactor">
         <Icon value="Assets\Textures\btn-upgrade-terran-caduceusreactor.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-terran-caduceusreactor.dds"/>
+    </CButton>
+    <CButton id="CreateCradleOfLife">
+        <Icon value="Assets\Textures\btn-unit-protoss-oracle-ihanrii.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-phoenix.dds"/>
+        <Hotkey value="Button/Hotkey/CradleOfLife"/>
+        <EditorCategories value="Race:Protoss"/>
+        <HotkeyAlias value="Phoenix"/>
+        <Universal value="1"/>
     </CButton>
     <CButton id="PiercerRounds">
         <Icon value="Assets\Textures\btn-tips-terran-penetrator.dds"/>
@@ -27025,6 +27037,9 @@
         <AlertIcon value="Assets\Textures\btn-ability-protoss-soulabsorption.dds"/>
         <HotkeyAlias value="SoulAbsorption"/>
     </CButton>
+    <CButton id="SparksOfLife">
+        <Icon value="Assets\Textures\btn-ability-spearofadun-warpharmonization.dds"/>
+    </CButton>
     <CButton id="SpawnBanelings2">
         <Icon value="Assets\Textures\abilityicon_spawnbanelings_square.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-zerg-baneling.dds"/>
@@ -28532,6 +28547,11 @@
         <EditorCategories value="Race:Protoss"/>
     </CButton>
     <CButton id="TemporalField32">
+        <Icon value="Assets\Textures\btn-ability-protoss-timewarp-red.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-timewarp-red.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="TemporalField33">
         <Icon value="Assets\Textures\btn-ability-protoss-timewarp-red.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-timewarp-red.dds"/>
         <EditorCategories value="Race:Protoss"/>
