@@ -5749,6 +5749,11 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="AutoHarvester" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeBansheeCloakingFieldCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="BansheeCloakingField" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeBansheeCloakingFieldQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Tooltip value="RequirementNode/Tooltip/##id##"/>
@@ -15259,6 +15264,26 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="XillBlink" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZealotDefCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="ZealotDef" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZealotDefQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="ZealotDef" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZealotWindCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="ZealotWind" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZealotWindQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="ZealotWind" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeetaCrowCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="etaCrow" State="CompleteOnly"/>
@@ -19398,6 +19423,14 @@
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeXillBlinkQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeXillBlinkQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeZealotDefQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeZealotDefQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeZealotWindQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeZealotWindQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradezerglingattackspeed2222QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradezerglingattackspeed2222QueuedOrBetter"/>

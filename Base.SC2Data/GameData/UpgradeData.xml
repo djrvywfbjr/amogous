@@ -4392,7 +4392,6 @@
     <CUpgrade id="UmojanBasicUnitUpgrade522242242322222222222222222322">
         <EffectArray Operation="Set" Reference="Unit,PhotonCannon8,CostResource[Minerals]" Value="325"/>
         <EffectArray Operation="Set" Reference="Unit,PhotonCannon8,CostResource[Vespene]" Value="125"/>
-        <EffectArray Operation="Set" Reference="Weapon,GuassRifle85,Period" Value="4.000000"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -12312,6 +12311,8 @@
     <CUpgrade id="XillBlink">
         <Icon value="Assets\Textures\btn-ability-zeratul-darktemplar-blink.dds"/>
     </CUpgrade>
+    <CUpgrade id="ZealotDef"/>
+    <CUpgrade id="ZealotWind"/>
     <CUpgrade id="etaCrow">
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
