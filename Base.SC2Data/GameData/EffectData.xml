@@ -4753,6 +4753,12 @@
         <AmmoUnit value="AscendantWeapon2"/>
         <Movers Link="AscendantWeapon"/>
     </CEffectLaunchMissile>
+    <CEffectSet id="ArtillerySet">
+        <EditorCategories value=""/>
+        <EffectArray value="PsiStormDamage5"/>
+        <EffectArray value="empeffect"/>
+        <EffectArray value="Stormslow"/>
+    </CEffectSet>
     <CEffectApplyBehavior id="CruiserSpeedApply">
         <EditorCategories value=""/>
         <Behavior value="DriveCalibrationField"/>
@@ -4771,6 +4777,50 @@
         <EditorCategories value=""/>
         <Behavior value="DistortionGenerator"/>
     </CEffectApplyBehavior>
+    <CEffectDamage id="DragoonDamage42" parent="DU_WEAP">
+        <EditorCategories value="Race:Protoss"/>
+        <Kind value="Ranged"/>
+        <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="DragoonLM42">
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactEffect value="DragoonDamage42"/>
+        <AmmoUnit value="DragoonWeapon4"/>
+    </CEffectLaunchMissile>
+    <CEffectEnumArea id="DragoonSearchArea">
+        <EditorCategories value="Race:Protoss"/>
+        <SearchFilters value="Visible;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden"/>
+        <AreaArray MaxCount="5" Radius="2" Effect="DragoonLM42"/>
+    </CEffectEnumArea>
+    <CEffectSet id="DragoonSet">
+        <EditorCategories value=""/>
+        <EffectArray value="DragoonSearchArea"/>
+    </CEffectSet>
+    <CEffectLaunchMissile id="EvadionistMissile">
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactEffect value="PsiBlades13"/>
+        <AmmoUnit value="DragoonWeapon72"/>
+    </CEffectLaunchMissile>
+    <CEffectCreatePersistent id="GoliathA223">
+        <ValidatorArray value="CasterIsNotHidden"/>
+        <EditorCategories value="Race:Terran"/>
+        <WhichLocation Value="TargetUnit"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="5"/>
+        <PeriodicEffectArray value="HunterKiller4"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodicPeriodArray value="0.2"/>
+    </CEffectCreatePersistent>
     <CEffectApplyBehavior id="GuardianShieldApplyBehavior6">
         <ValidatorArray index="0" value="SourceNotHidden"/>
         <EditorCategories value="Race:Protoss"/>
@@ -4799,6 +4849,21 @@
         <Kind value="Ranged"/>
         <Amount value="5"/>
     </CEffectDamage>
+    <CEffectLaunchMissile id="HunterKiller4">
+        <EditorCategories value="Race:Zerg"/>
+        <ImpactEffect value="HunterKillerU4"/>
+        <AmmoUnit value="ZHybridPlasmaWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="HunterKillerU4" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <Kind value="Ranged"/>
+        <Amount value="35"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="HybridDLM4">
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactEffect value="ShockDDamage4"/>
+        <AmmoUnit value="WeaponHybridD"/>
+    </CEffectLaunchMissile>
     <CEffectDamage id="InfernalFlameThrower6" parent="DU_WEAP">
         <ValidatorArray value="noMarkers"/>
         <EditorCategories value="Race:Terran"/>
@@ -4893,6 +4958,28 @@
         <AttributeBonus index="Armored" value="5"/>
         <AttributeBonus index="Massive" value="5"/>
     </CEffectDamage>
+    <CEffectDamage id="KhaydarinBeamDamage3" parent="DU_WEAP">
+        <EditorCategories value="Race:Protoss"/>
+        <Kind value="Ranged"/>
+        <KindSplash value="Splash"/>
+        <Amount value="20"/>
+        <ExcludeArray Value="Outer"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="-;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFlags index="OffsetByUnitRadius" value="0"/>
+        <SearchFlags index="SameCliff" value="0"/>
+    </CEffectDamage>
+    <CEffectDamage id="KhaydarinBeamDamage32" parent="DU_WEAP">
+        <EditorCategories value="Race:Protoss"/>
+        <Kind value="Ranged"/>
+        <KindSplash value="Splash"/>
+        <Amount value="18"/>
+        <ExcludeArray Value="Outer"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="-;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFlags index="OffsetByUnitRadius" value="0"/>
+        <SearchFlags index="SameCliff" value="0"/>
+    </CEffectDamage>
     <CEffectSet id="Liberatordamageslowset">
         <EditorCategories value=""/>
         <EffectArray value="LiberatorAttackDamage"/>
@@ -4911,6 +4998,22 @@
         <DrainVitalCostFactor value="0.33"/>
         <RechargeVitalRate value="18"/>
     </CEffectCreateHealer>
+    <CEffectDamage id="PsiBlades13" parent="DU_WEAP">
+        <ValidatorArray value="NotHidden"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Amount value="8"/>
+        <Death value="Eviscerate"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="PsiBladesBurst13">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="EvadionistMissile"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.28"/>
+    </CEffectCreatePersistent>
     <CEffectDamage id="PsionicShockwaveDamage42" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
         <Kind value="Ranged"/>
@@ -4969,6 +5072,13 @@
         <EditorCategories value=""/>
         <Behavior value="ahsdfu"/>
     </CEffectApplyBehavior>
+    <CEffectDamage id="ShockDDamage4" parent="DU_WEAP">
+        <Kind value="Ranged"/>
+        <Amount value="15"/>
+        <ExcludeArray Value="Outer"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="-;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectDamage>
     <CEffectApplyBehavior id="Sloweffect">
         <EditorCategories value=""/>
     </CEffectApplyBehavior>
@@ -6240,7 +6350,6 @@
         <Flags index="RandomOffset" value="1"/>
         <PeriodCount value="1"/>
         <PeriodicEffectArray value="PsiStormPersistent5"/>
-        <PeriodicOffsetArray value="20,0,0"/>
         <PeriodicOffsetArray value="1,0,0"/>
         <PeriodicOffsetArray value="1.5,0,0"/>
         <PeriodicOffsetArray value="2,0,0"/>
@@ -6259,28 +6368,7 @@
         <PeriodicOffsetArray value="8.5,0,0"/>
         <PeriodicOffsetArray value="9,0,0"/>
         <PeriodicOffsetArray value="9.5,0,0"/>
-        <PeriodicOffsetArray value="10,0,0"/>
-        <PeriodicOffsetArray value="10.5,0,0"/>
-        <PeriodicOffsetArray value="11,0,0"/>
-        <PeriodicOffsetArray value="11.5,0,0"/>
-        <PeriodicOffsetArray value="12,0,0"/>
-        <PeriodicOffsetArray value="12.5,0,0"/>
-        <PeriodicOffsetArray value="13,0,0"/>
-        <PeriodicOffsetArray value="13.5,0,0"/>
-        <PeriodicOffsetArray value="14,0,0"/>
-        <PeriodicOffsetArray value="14.5,0,0"/>
-        <PeriodicOffsetArray value="15,0,0"/>
-        <PeriodicOffsetArray value="15.5,0,0"/>
-        <PeriodicOffsetArray value="16,0,0"/>
-        <PeriodicOffsetArray value="16.5,0,0"/>
-        <PeriodicOffsetArray value="17,0,0"/>
-        <PeriodicOffsetArray value="17.5,0,0"/>
-        <PeriodicOffsetArray value="18,0,0"/>
-        <PeriodicOffsetArray value="18.5,0,0"/>
-        <PeriodicOffsetArray value="19,0,0"/>
-        <PeriodicOffsetArray value="19.5,0,0"/>
         <PeriodicOffsetArray value="0,0,0"/>
-        <PeriodicOffsetArray value="20,0,0"/>
         <PeriodicOffsetArray value="-1,0,0"/>
         <PeriodicOffsetArray value="-1.5,0,0"/>
         <PeriodicOffsetArray value="-2,0,0"/>
@@ -6299,11 +6387,6 @@
         <PeriodicOffsetArray value="-8.5,0,0"/>
         <PeriodicOffsetArray value="-9,0,0"/>
         <PeriodicOffsetArray value="-9.5,0,0"/>
-        <PeriodicOffsetArray value="-10,0,0"/>
-        <PeriodicOffsetArray value="-10.5,0,0"/>
-        <PeriodicOffsetArray value="-11,0,0"/>
-        <PeriodicOffsetArray value="-11.5,0,0"/>
-        <PeriodicOffsetArray value="-20,0,0"/>
         <HeightMap value="Ground"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="ArtilleryHighOnes232322">
@@ -6315,7 +6398,6 @@
         <Flags index="RandomOffset" value="1"/>
         <PeriodCount value="1"/>
         <PeriodicEffectArray value="SOAStrafeAttackDamage2"/>
-        <PeriodicOffsetArray value="20,0,0"/>
         <PeriodicOffsetArray value="1,0,0"/>
         <PeriodicOffsetArray value="1.5,0,0"/>
         <PeriodicOffsetArray value="2,0,0"/>
@@ -6334,28 +6416,7 @@
         <PeriodicOffsetArray value="8.5,0,0"/>
         <PeriodicOffsetArray value="9,0,0"/>
         <PeriodicOffsetArray value="9.5,0,0"/>
-        <PeriodicOffsetArray value="10,0,0"/>
-        <PeriodicOffsetArray value="10.5,0,0"/>
-        <PeriodicOffsetArray value="11,0,0"/>
-        <PeriodicOffsetArray value="11.5,0,0"/>
-        <PeriodicOffsetArray value="12,0,0"/>
-        <PeriodicOffsetArray value="12.5,0,0"/>
-        <PeriodicOffsetArray value="13,0,0"/>
-        <PeriodicOffsetArray value="13.5,0,0"/>
-        <PeriodicOffsetArray value="14,0,0"/>
-        <PeriodicOffsetArray value="14.5,0,0"/>
-        <PeriodicOffsetArray value="15,0,0"/>
-        <PeriodicOffsetArray value="15.5,0,0"/>
-        <PeriodicOffsetArray value="16,0,0"/>
-        <PeriodicOffsetArray value="16.5,0,0"/>
-        <PeriodicOffsetArray value="17,0,0"/>
-        <PeriodicOffsetArray value="17.5,0,0"/>
-        <PeriodicOffsetArray value="18,0,0"/>
-        <PeriodicOffsetArray value="18.5,0,0"/>
-        <PeriodicOffsetArray value="19,0,0"/>
-        <PeriodicOffsetArray value="19.5,0,0"/>
         <PeriodicOffsetArray value="0,0,0"/>
-        <PeriodicOffsetArray value="20,0,0"/>
         <PeriodicOffsetArray value="-1,0,0"/>
         <PeriodicOffsetArray value="-1.5,0,0"/>
         <PeriodicOffsetArray value="-2,0,0"/>
@@ -6374,11 +6435,6 @@
         <PeriodicOffsetArray value="-8.5,0,0"/>
         <PeriodicOffsetArray value="-9,0,0"/>
         <PeriodicOffsetArray value="-9.5,0,0"/>
-        <PeriodicOffsetArray value="-10,0,0"/>
-        <PeriodicOffsetArray value="-10.5,0,0"/>
-        <PeriodicOffsetArray value="-11,0,0"/>
-        <PeriodicOffsetArray value="-11.5,0,0"/>
-        <PeriodicOffsetArray value="-20,0,0"/>
         <HeightMap value="Ground"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="ArtilleryHighOnes2323222">
@@ -6390,7 +6446,6 @@
         <Flags index="RandomOffset" value="1"/>
         <PeriodCount value="1"/>
         <PeriodicEffectArray value="SOALaserAttackChannel2"/>
-        <PeriodicOffsetArray value="20,0,0"/>
         <PeriodicOffsetArray value="1,0,0"/>
         <PeriodicOffsetArray value="1.5,0,0"/>
         <PeriodicOffsetArray value="2,0,0"/>
@@ -6409,28 +6464,7 @@
         <PeriodicOffsetArray value="8.5,0,0"/>
         <PeriodicOffsetArray value="9,0,0"/>
         <PeriodicOffsetArray value="9.5,0,0"/>
-        <PeriodicOffsetArray value="10,0,0"/>
-        <PeriodicOffsetArray value="10.5,0,0"/>
-        <PeriodicOffsetArray value="11,0,0"/>
-        <PeriodicOffsetArray value="11.5,0,0"/>
-        <PeriodicOffsetArray value="12,0,0"/>
-        <PeriodicOffsetArray value="12.5,0,0"/>
-        <PeriodicOffsetArray value="13,0,0"/>
-        <PeriodicOffsetArray value="13.5,0,0"/>
-        <PeriodicOffsetArray value="14,0,0"/>
-        <PeriodicOffsetArray value="14.5,0,0"/>
-        <PeriodicOffsetArray value="15,0,0"/>
-        <PeriodicOffsetArray value="15.5,0,0"/>
-        <PeriodicOffsetArray value="16,0,0"/>
-        <PeriodicOffsetArray value="16.5,0,0"/>
-        <PeriodicOffsetArray value="17,0,0"/>
-        <PeriodicOffsetArray value="17.5,0,0"/>
-        <PeriodicOffsetArray value="18,0,0"/>
-        <PeriodicOffsetArray value="18.5,0,0"/>
-        <PeriodicOffsetArray value="19,0,0"/>
-        <PeriodicOffsetArray value="19.5,0,0"/>
         <PeriodicOffsetArray value="0,0,0"/>
-        <PeriodicOffsetArray value="20,0,0"/>
         <PeriodicOffsetArray value="-1,0,0"/>
         <PeriodicOffsetArray value="-1.5,0,0"/>
         <PeriodicOffsetArray value="-2,0,0"/>
@@ -6449,11 +6483,6 @@
         <PeriodicOffsetArray value="-8.5,0,0"/>
         <PeriodicOffsetArray value="-9,0,0"/>
         <PeriodicOffsetArray value="-9.5,0,0"/>
-        <PeriodicOffsetArray value="-10,0,0"/>
-        <PeriodicOffsetArray value="-10.5,0,0"/>
-        <PeriodicOffsetArray value="-11,0,0"/>
-        <PeriodicOffsetArray value="-11.5,0,0"/>
-        <PeriodicOffsetArray value="-20,0,0"/>
         <HeightMap value="Ground"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="ArtilleryHighOnes23232222">
@@ -7690,27 +7719,6 @@
         <PeriodCount value="1"/>
         <PeriodicEffectArray value="ArtilleryHighOnes23232"/>
         <PeriodicOffsetArray value="0,0,0"/>
-        <PeriodicOffsetArray value="0,-20,0"/>
-        <PeriodicOffsetArray value="0,-19.5,0"/>
-        <PeriodicOffsetArray value="0,-19,0"/>
-        <PeriodicOffsetArray value="0,-18.5,0"/>
-        <PeriodicOffsetArray value="0,-18,0"/>
-        <PeriodicOffsetArray value="0,-17.5,0"/>
-        <PeriodicOffsetArray value="0,-17,0"/>
-        <PeriodicOffsetArray value="0,-16.5,0"/>
-        <PeriodicOffsetArray value="0,-16,0"/>
-        <PeriodicOffsetArray value="0,-15.5,0"/>
-        <PeriodicOffsetArray value="0,-15,0"/>
-        <PeriodicOffsetArray value="0,-14.5,0"/>
-        <PeriodicOffsetArray value="0,-14,0"/>
-        <PeriodicOffsetArray value="0,-13.5,0"/>
-        <PeriodicOffsetArray value="0,-13,0"/>
-        <PeriodicOffsetArray value="0,-12.5,0"/>
-        <PeriodicOffsetArray value="0,-12,0"/>
-        <PeriodicOffsetArray value="0,-11.5,0"/>
-        <PeriodicOffsetArray value="0,-11,0"/>
-        <PeriodicOffsetArray value="0,-10.5,0"/>
-        <PeriodicOffsetArray value="0,-10,0"/>
         <PeriodicOffsetArray value="0,-9.5,0"/>
         <PeriodicOffsetArray value="0,-9,0"/>
         <PeriodicOffsetArray value="0,-8.5,0"/>
@@ -7741,18 +7749,6 @@
         <PeriodicOffsetArray value="0,7.5,0"/>
         <PeriodicOffsetArray value="0,8.5,0"/>
         <PeriodicOffsetArray value="0,9.5,0"/>
-        <PeriodicOffsetArray value="0,10.5,0"/>
-        <PeriodicOffsetArray value="0,11.5,0"/>
-        <PeriodicOffsetArray value="0,12.5,0"/>
-        <PeriodicOffsetArray value="0,13.5,0"/>
-        <PeriodicOffsetArray value="0,14.5,0"/>
-        <PeriodicOffsetArray value="0,15.5,0"/>
-        <PeriodicOffsetArray value="0,16.5,0"/>
-        <PeriodicOffsetArray value="0,17.5,0"/>
-        <PeriodicOffsetArray value="0,18.5,0"/>
-        <PeriodicOffsetArray value="0,19.5,0"/>
-        <PeriodicOffsetArray value="0,20,0"/>
-        <PeriodicOffsetArray value="0,18,0"/>
         <HeightMap value="Ground"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="ArtilleryHighOnes2342">
@@ -7765,27 +7761,6 @@
         <PeriodCount value="3"/>
         <PeriodicEffectArray value="ArtilleryHighOnes232322"/>
         <PeriodicOffsetArray value="0,0,0"/>
-        <PeriodicOffsetArray value="0,-20,0"/>
-        <PeriodicOffsetArray value="0,-19.5,0"/>
-        <PeriodicOffsetArray value="0,-19,0"/>
-        <PeriodicOffsetArray value="0,-18.5,0"/>
-        <PeriodicOffsetArray value="0,-18,0"/>
-        <PeriodicOffsetArray value="0,-17.5,0"/>
-        <PeriodicOffsetArray value="0,-17,0"/>
-        <PeriodicOffsetArray value="0,-16.5,0"/>
-        <PeriodicOffsetArray value="0,-16,0"/>
-        <PeriodicOffsetArray value="0,-15.5,0"/>
-        <PeriodicOffsetArray value="0,-15,0"/>
-        <PeriodicOffsetArray value="0,-14.5,0"/>
-        <PeriodicOffsetArray value="0,-14,0"/>
-        <PeriodicOffsetArray value="0,-13.5,0"/>
-        <PeriodicOffsetArray value="0,-13,0"/>
-        <PeriodicOffsetArray value="0,-12.5,0"/>
-        <PeriodicOffsetArray value="0,-12,0"/>
-        <PeriodicOffsetArray value="0,-11.5,0"/>
-        <PeriodicOffsetArray value="0,-11,0"/>
-        <PeriodicOffsetArray value="0,-10.5,0"/>
-        <PeriodicOffsetArray value="0,-10,0"/>
         <PeriodicOffsetArray value="0,-9.5,0"/>
         <PeriodicOffsetArray value="0,-9,0"/>
         <PeriodicOffsetArray value="0,-8.5,0"/>
@@ -7816,18 +7791,6 @@
         <PeriodicOffsetArray value="0,7.5,0"/>
         <PeriodicOffsetArray value="0,8.5,0"/>
         <PeriodicOffsetArray value="0,9.5,0"/>
-        <PeriodicOffsetArray value="0,10.5,0"/>
-        <PeriodicOffsetArray value="0,11.5,0"/>
-        <PeriodicOffsetArray value="0,12.5,0"/>
-        <PeriodicOffsetArray value="0,13.5,0"/>
-        <PeriodicOffsetArray value="0,14.5,0"/>
-        <PeriodicOffsetArray value="0,15.5,0"/>
-        <PeriodicOffsetArray value="0,16.5,0"/>
-        <PeriodicOffsetArray value="0,17.5,0"/>
-        <PeriodicOffsetArray value="0,18.5,0"/>
-        <PeriodicOffsetArray value="0,19.5,0"/>
-        <PeriodicOffsetArray value="0,20,0"/>
-        <PeriodicOffsetArray value="0,18,0"/>
         <HeightMap value="Ground"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="ArtilleryHighOnes23422">
@@ -7840,27 +7803,6 @@
         <PeriodCount value="2"/>
         <PeriodicEffectArray value="ArtilleryHighOnes2323222"/>
         <PeriodicOffsetArray value="0,0,0"/>
-        <PeriodicOffsetArray value="0,-20,0"/>
-        <PeriodicOffsetArray value="0,-19.5,0"/>
-        <PeriodicOffsetArray value="0,-19,0"/>
-        <PeriodicOffsetArray value="0,-18.5,0"/>
-        <PeriodicOffsetArray value="0,-18,0"/>
-        <PeriodicOffsetArray value="0,-17.5,0"/>
-        <PeriodicOffsetArray value="0,-17,0"/>
-        <PeriodicOffsetArray value="0,-16.5,0"/>
-        <PeriodicOffsetArray value="0,-16,0"/>
-        <PeriodicOffsetArray value="0,-15.5,0"/>
-        <PeriodicOffsetArray value="0,-15,0"/>
-        <PeriodicOffsetArray value="0,-14.5,0"/>
-        <PeriodicOffsetArray value="0,-14,0"/>
-        <PeriodicOffsetArray value="0,-13.5,0"/>
-        <PeriodicOffsetArray value="0,-13,0"/>
-        <PeriodicOffsetArray value="0,-12.5,0"/>
-        <PeriodicOffsetArray value="0,-12,0"/>
-        <PeriodicOffsetArray value="0,-11.5,0"/>
-        <PeriodicOffsetArray value="0,-11,0"/>
-        <PeriodicOffsetArray value="0,-10.5,0"/>
-        <PeriodicOffsetArray value="0,-10,0"/>
         <PeriodicOffsetArray value="0,-9.5,0"/>
         <PeriodicOffsetArray value="0,-9,0"/>
         <PeriodicOffsetArray value="0,-8.5,0"/>
@@ -7891,18 +7833,6 @@
         <PeriodicOffsetArray value="0,7.5,0"/>
         <PeriodicOffsetArray value="0,8.5,0"/>
         <PeriodicOffsetArray value="0,9.5,0"/>
-        <PeriodicOffsetArray value="0,10.5,0"/>
-        <PeriodicOffsetArray value="0,11.5,0"/>
-        <PeriodicOffsetArray value="0,12.5,0"/>
-        <PeriodicOffsetArray value="0,13.5,0"/>
-        <PeriodicOffsetArray value="0,14.5,0"/>
-        <PeriodicOffsetArray value="0,15.5,0"/>
-        <PeriodicOffsetArray value="0,16.5,0"/>
-        <PeriodicOffsetArray value="0,17.5,0"/>
-        <PeriodicOffsetArray value="0,18.5,0"/>
-        <PeriodicOffsetArray value="0,19.5,0"/>
-        <PeriodicOffsetArray value="0,20,0"/>
-        <PeriodicOffsetArray value="0,18,0"/>
         <HeightMap value="Ground"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="ArtilleryHighOnes234222">
@@ -21967,7 +21897,7 @@
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="DragoonLM4">
         <EditorCategories value="Race:Protoss"/>
-        <ImpactEffect value="DragoonDamage4"/>
+        <ImpactEffect value="DragoonSet"/>
         <AmmoUnit value="DragoonWeapon4"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="DragoonLM5">
@@ -38466,7 +38396,7 @@
         <EditorCategories value="Race:Terran"/>
         <AttributeBonus index="Armored" value="10"/>
         <Kind value="Ranged"/>
-        <Amount value="25"/>
+        <Amount value="15"/>
         <Death value="Blast"/>
     </CEffectDamage>
     <CEffectDamage id="MengskDiamondback3" parent="DU_WEAP">
@@ -53442,9 +53372,9 @@
     <CEffectDamage id="PsiStormDamage5">
         <ValidatorArray value="PsiStormUTargetFilters"/>
         <EditorCategories value="Race:Protoss"/>
+        <ShieldBonus value="3"/>
         <Visibility value="Hidden"/>
-        <Amount value="6"/>
-        <AttributeBonus index="Structure" value="10"/>
+        <Amount value="3"/>
     </CEffectDamage>
     <CEffectDamage id="PsiStormDamage6">
         <ValidatorArray value="PsiStormUTargetFilters"/>
@@ -53516,7 +53446,8 @@
         <ResponseFlags index="Acquire" value="1"/>
         <ResponseFlags index="Flee" value="1"/>
         <Flags index="Notification" value="1"/>
-        <Amount value="60"/>
+        <Amount value="30"/>
+        <ShieldBonus value="30"/>
     </CEffectDamage>
     <CEffectDamage id="PsiStormDamageInitial4">
         <ValidatorArray value="PsiStormUTargetFilters"/>
@@ -53801,7 +53732,7 @@
         <AINotifyFlags index="HurtFriend" value="1"/>
         <AINotifyFlags index="HurtEnemy" value="1"/>
         <SearchFilters value="-;Player,Ally,Neutral,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
-        <AreaArray Radius="1.5" Effect="PsiStormDamage5"/>
+        <AreaArray Radius="1.5" Effect="ArtillerySet"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="PsiStormSearch6">
@@ -63213,10 +63144,11 @@
         <EditorCategories value="Race:Protoss"/>
         <ImpactLocation Value="TargetPoint"/>
         <Kind value="Ranged"/>
-        <Amount value="45"/>
+        <Amount value="15"/>
         <AreaArray Radius="2" Fraction="1"/>
         <SearchFilters value="-;Self,Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <AttributeBonus index="Structure" value="75"/>
+        <AttributeBonus index="Massive" value="30"/>
+        <AttributeBonus index="Structure" value="30"/>
     </CEffectDamage>
     <CEffectDamage id="SOALaserAttackDamage22" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
@@ -64439,11 +64371,11 @@
     <CEffectDamage id="SOAStrafeAttackDamage2">
         <EditorCategories value="Race:Protoss"/>
         <ResponseFlags index="Flee" value="1"/>
-        <AttributeBonus index="Armored" value="15"/>
+        <AttributeBonus index="Armored" value="10"/>
         <Amount value="5"/>
         <AreaArray Radius="1" Fraction="1"/>
         <AreaArray Radius="2" Fraction="0.5"/>
-        <SearchFilters value="Visible;Self,Player,Ally,Missile,Item,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFilters value="-;Self,Player,Ally,Missile,Item,Stasis,Dead,Hidden,Invulnerable"/>
     </CEffectDamage>
     <CEffectDamage id="SOAStrafeAttackDamage22">
         <EditorCategories value="Race:Protoss"/>
@@ -67868,6 +67800,10 @@
         <WhichUnit Value="Source"/>
         <Behavior value="Stimpack72"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="Stormslow">
+        <EditorCategories value=""/>
+        <Behavior value="StormSlow"/>
+    </CEffectApplyBehavior>
     <CEffectApplyBehavior id="StukovArmorAuraTarget2">
         <ValidatorArray index="0" value="IsTimeStopped2173322222222232222325"/>
         <EditorCategories value="Race:Zerg"/>
@@ -68673,7 +68609,7 @@
     </CEffectDamage>
     <CEffectDamage id="TempestDamageGround4" parent="TempestDamageGround">
         <Name value="Effect/Name/TempestDamageGround4"/>
-        <Amount value="90"/>
+        <Amount value="30"/>
     </CEffectDamage>
     <CEffectDamage id="TempestDamageGround42" parent="TempestDamageGround">
         <Name value="Effect/Name/TempestDamageGround42"/>
@@ -74595,6 +74531,100 @@
         <SearchFilters value="Ground;Player,Ally,Neutral,Structure,Heroic,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AreaArray Radius="1.5" Effect="VoidSentryMiniTimeWarpAB2"/>
     </CEffectEnumArea>
+    <!--CEffectCreateHealer id="SentryShieldRepairDoubleHeal">-->
+    <!--        <EditorCategories value="Race:Protoss"/>-->
+    <!--        <DrainVital value="Energy"/>-->
+    <!--        <DrainVitalCostFactor value="0.33"/>-->
+    <!--        <RechargeVital value="Shields"/>-->
+    <!--        <RechargeVitalRate value="9"/>-->
+    <!--        <Marker>-->
+    <!--            <MatchFlags index="Link" value="1"/>-->
+    <!--        </Marker>-->
+    <!--        <InitialEffect value="SentryShieldRepairDoubleApplyBehavior"/>-->
+    <!--        <ExpireEffect value="SentryShieldRepairDoubleRemoveBehavior"/>-->
+    <!--        <FinalEffect value="SentryShieldRepairDoubleRemoveBehavior"/>-->
+    <!--    </CEffectCreateHealer>-->
+    <!--    <CEffectCreateHealer id="SentryShieldRepairDoubleSecondHeal">-->
+    <!--        <EditorCategories value="Race:Protoss"/>-->
+    <!--        <DrainVital value="Energy"/>-->
+    <!--        <DrainVitalCostFactor value="0.33"/>-->
+    <!--        <RechargeVital value="Shields"/>-->
+    <!--        <RechargeVitalRate value="9"/>-->
+    <!--        <Marker Link="Effect/SentryShieldRepairDoubleHeal">-->
+    <!--            <MatchFlags index="Link" value="1"/>-->
+    <!--        </Marker>-->
+    <!--        <Flags index="Channeled" value="0"/>-->
+    <!--        <PeriodCount value="4"/>-->
+    <!--    </CEffectCreateHealer>-->
+    <!--    <CEffectEnumArea id="SentryShieldRepairDoubleSearch">-->
+    <!--        <EditorCategories value="Race:Protoss"/>-->
+    <!--        <SearchFilters value="Visible;Self,Enemy,Structure,Missile,Uncommandable,UnderConstruction,Dead,Hidden,Invulnerable"/>-->
+    <!--        <AreaArray>-->
+    <!--            <Arc value="180"/>-->
+    <!--            <MaxCount value="1"/>-->
+    <!--            <Radius value="4"/>-->
+    <!--            <Effect value="SentryShieldRepairDoubleSecondPersistent"/>-->
+    <!--        </AreaArray>-->
+    <!--        <MaxCount value="1"/>-->
+    <!--        <ExcludeArray Value="Target"/>-->
+    <!--        <ImpactLocation Value="CasterUnit"/>-->
+    <!--        <LaunchLocation Value="CasterUnit"/>-->
+    <!--    </CEffectEnumArea>-->
+    <!--    <CEffectCreatePersistent id="SentryShieldRepairDoublePersistent">-->
+    <!--        <WhichLocation Value="TargetUnit"/>-->
+    <!--        <Flags index="Channeled" value="1"/>-->
+    <!--        <Flags index="PersistUntilDestroyed" value="1"/>-->
+    <!--        <InitialEffect value="SentryShieldRepairDoubleHeal"/>-->
+    <!--        <PeriodicEffectArray value="SentryShieldRepairDoubleSearch"/>-->
+    <!--        <PeriodicPeriodArray value="0.25"/>-->
+    <!--        <ValidatorArray value="ShieldsNotFull"/>-->
+    <!--        <ValidatorArray value="NotWarpingIn"/>-->
+    <!--        <ValidatorArray value="HiddenCompareAB"/>-->
+    <!--        <ValidatorArray value="HiddenCompareBA"/>-->
+    <!--        <ValidatorArray value="NotVortexd"/>-->
+    <!--        <ValidatorArray value="NotUncommandable"/>-->
+    <!--        <ValidatorArray value="SourceNotHidden"/>-->
+    <!--        <ValidatorArray value="NotInterceptor"/>-->
+    <!--        <ValidatorArray value="TargetIsNotBeingRepairedBySentry"/>-->
+    <!--        <Marker>-->
+    <!--            <MatchFlags index="Link" value="1"/>-->
+    <!--        </Marker>-->
+    <!--        <PeriodicValidator value="SentryPeriodicHealingValidator"/>-->
+    <!--    </CEffectCreatePersistent>-->
+    <!--    <CEffectCreatePersistent id="SentryShieldRepairDoubleSecondPersistent">-->
+    <!--        <ValidatorArray value="ShieldsNotFull"/>-->
+    <!--        <ValidatorArray value="NotWarpingIn"/>-->
+    <!--        <ValidatorArray value="HiddenCompareAB"/>-->
+    <!--        <ValidatorArray value="HiddenCompareBA"/>-->
+    <!--        <ValidatorArray value="NotVortexd"/>-->
+    <!--        <ValidatorArray value="NotUncommandable"/>-->
+    <!--        <ValidatorArray value="SourceNotHidden"/>-->
+    <!--        <ValidatorArray value="NotInterceptor"/>-->
+    <!--        <ValidatorArray value="TargetIsNotBeingRepairedBySentry"/>-->
+    <!--        <WhichLocation Value="TargetUnit"/>-->
+    <!--        <InitialEffect value="SentryShieldRepairDoubleSecondHeal"/>-->
+    <!--        <PeriodCount value="3"/>-->
+    <!--        <PeriodicEffectArray value="SentryShieldRepairDoubleImpactDummy"/>-->
+    <!--        <PeriodicEffectArray value="SentryShieldRepairDoubleApplyBehavior"/>-->
+    <!--        <PeriodicEffectArray value="SentryShieldRepairDoubleRemoveBehavior"/>-->
+    <!--        <PeriodicPeriodArray value="0"/>-->
+    <!--        <PeriodicPeriodArray value="0"/>-->
+    <!--        <PeriodicPeriodArray value="0.20"/>-->
+    <!--    </CEffectCreatePersistent>-->
+    <!--    <CEffectApplyBehavior id="SentryShieldRepairDoubleApplyBehavior">-->
+    <!--        <EditorCategories value="Race:Protoss"/>-->
+    <!--        <Behavior value="SentryShieldRepairDoubleHealing"/>-->
+    <!--    </CEffectApplyBehavior>-->
+    <!--    <CEffectRemoveBehavior id="SentryShieldRepairDoubleRemoveBehavior">-->
+    <!--        <EditorCategories value="Race:Protoss"/>-->
+    <!--        <BehaviorLink value="SentryShieldRepairDoubleHealing"/>-->
+    <!--    </CEffectRemoveBehavior>-->
+    <!--    <CEffectModifyUnit id="SentryShieldRepairDoubleImpactDummy"/-->
+    <CEffectCreateHealer id="VoidSentryShieldRepairDouble">
+        <DrainVitalCostFactor value="0"/>
+        <!-- cannot validate the behavior in the healer, it toggles on and off quickly as the behavior is applied and removed -->
+        <!--ValidatorArray value="TargetNotBeingHealed"/-->
+    </CEffectCreateHealer>
     <CEffectCreateHealer id="VoidSentryShieldRepairDouble2">
         <ValidatorArray value="ShieldsNotFull"/>
         <ValidatorArray value="noMarkers"/>
@@ -80519,6 +80549,10 @@
         <EditorCategories value=""/>
         <EffectArray value="PsiBladesBurst12"/>
     </CEffectSet>
+    <CEffectSet id="ZealotPsiBladesCleaveSet12">
+        <EditorCategories value=""/>
+        <EffectArray value="PsiBladesBurst13"/>
+    </CEffectSet>
     <CEffectSet id="ZealotPsiBladesCleaveSet2">
         <EditorCategories value=""/>
         <EffectArray value="PsiBladesBurst2"/>
@@ -80736,6 +80770,12 @@
         <AreaArray Radius="2" Effect="PsiBlades"/>
         <SearchFlags index="CallForHelp" value="0"/>
     </CEffectEnumArea>
+    <CEffectModifyUnit id="empeffect">
+        <EditorCategories value=""/>
+        <VitalArray index="Energy">
+            <Change value="-6"/>
+        </VitalArray>
+    </CEffectModifyUnit>
     <CEffectCreateUnit id="eyeingspw">
         <EditorCategories value=""/>
         <SpawnOwner Value="Caster"/>

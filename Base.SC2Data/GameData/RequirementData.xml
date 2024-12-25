@@ -178,6 +178,14 @@
     <CRequirement id="BlinkButton">
         <NodeArray index="Show" Link="NotCountUpgradeXillBlinkQueuedOrBetter"/>
     </CRequirement>
+    <CRequirement id="LearnDef">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Show" Link="NotCountUpgradeZealotDefQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UseWind">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeZealotWindCompleteOnly"/>
+    </CRequirement>
     <CRequirement id="HaveAdvancedBionics2">
         <NodeArray index="Use" Link="CountUpgradeAdvancedBionicsUpgradeCompleteOnly"/>
     </CRequirement>
@@ -197,6 +205,10 @@
         <EditorCategories value="Race:Protoss,TechType:Ability"/>
         <NodeArray index="Show" Link="NotCountUpgradeBansheeCloakingFieldQueuedOrBetter"/>
     </CRequirement>
+    <CRequirement id="LearnWind">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Show" Link="NotCountUpgradeZealotWindQueuedOrBetter"/>
+    </CRequirement>
     <CRequirement id="NoSymbcost"/>
     <CRequirement id="RWERequirement2322">
         <NodeArray index="Use" Link="And996554812CountUnitMutationChamberCompleteOnlyCountUnitIncarcerationPitCompleteOnly"/>
@@ -210,7 +222,11 @@
     </CRequirement>
     <CRequirement id="BlueIntelUseCloak">
         <EditorCategories value="Race:Protoss,TechType:Ability"/>
-        <NodeArray index="Use" Link="CountUpgradeBansheeCloakingFieldQueuedOrBetter"/>
+        <NodeArray index="Use" Link="CountUpgradeBansheeCloakingFieldCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UseDef">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeZealotDefCompleteOnly"/>
     </CRequirement>
     <CRequirement id="VenomButton">
         <NodeArray index="Show" Link="NotCountUpgradeVenomQueuedOrBetter"/>

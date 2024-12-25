@@ -1204,6 +1204,10 @@
     </CAbilEffectTarget>
     <CAbilEffectTarget id="ArtanisWormholeTransit">
         <Flags index="BestUnit" value="0"/>
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+            <Cooldown TimeUse="84"/>
+        </Cost>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="ArtanisWormholeTransit2">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
@@ -11009,7 +11013,8 @@
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Flags index="Retarget" value="1"/>
         <Leash value="12"/>
-        <InfoArray index="Ammo1" Time="12" CountStart="4" Manage="Recall" Unit="Interceptor">
+        <InfoArray index="Ammo1" Time="1.4" CountStart="4" Manage="Recall" Unit="Interceptor">
+            <Vital index="Shields" value="20"/>
             <Charge Link="CarrierInterceptor" Location="Unit"/>
             <Cooldown Link="Abil/##id##"/>
             <Button DefaultButtonFace="Interceptor" Requirements="ArmInterceptor">
@@ -17293,6 +17298,16 @@
             <Resource index="Vespene" value="125"/>
             <Button DefaultButtonFace="MothershipMassRecall2" Requirements="UnknownRequirement13"/>
         </InfoArray>
+        <InfoArray index="Research18" Time="98" Upgrade="ZealotWind">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="ResearchWhirlwind" Requirements="LearnWind"/>
+        </InfoArray>
+        <InfoArray index="Research19" Time="84" Upgrade="ZealotDef">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ResearchReinforcedShields" Requirements="LearnDef"/>
+        </InfoArray>
         <InfoArray index="Research29" Time="125" Upgrade="UmojanBasicUnitUpgrade522242242322222235222222272">
             <Resource index="Minerals" value="750"/>
             <Resource index="Vespene" value="125"/>
@@ -18286,7 +18301,7 @@
         <Flags index="RequireTargetVision" value="0"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Resource index="Minerals" value="100"/>
+            <Vital index="Shields" value="1000"/>
             <Charge>
                 <CountMax value="3"/>
                 <CountStart value="3"/>
@@ -28053,9 +28068,9 @@
         <Flags index="NoDeceleration" value="1"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Vital index="Energy" value="125"/>
+            <Vital index="Shields" value="300"/>
             <Charge Link="Abil/GuardianShield"/>
-            <Cooldown Link="GuardianShield"/>
+            <Cooldown Link="GuardianShield" TimeUse="84"/>
         </Cost>
         <AINotifyEffect value=""/>
         <CmdButtonArray index="Execute" DefaultButtonFace="GuardianShield2"/>
@@ -28068,7 +28083,7 @@
         <Flags index="NoDeceleration" value="1"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Vital index="Energy" value="125"/>
+            <Vital index="Shields" value="100"/>
             <Charge Link="Abil/GuardianShield"/>
             <Cooldown Link="GuardianShield" TimeUse="15.2"/>
         </Cost>
@@ -31397,7 +31412,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ApplyMedDrone23"/>
         <Cost>
-            <Vital index="Energy" value="100"/>
+            <Vital index="Shields" value="100"/>
             <Charge Link="Abil/MedDrone"/>
             <Cooldown Link="Abil/MedDrone"/>
         </Cost>
@@ -35222,9 +35237,9 @@
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Effect index="0" value="NexusPhaseShiftSearch2"/>
         <Cost>
-            <Vital index="Energy" value="150"/>
+            <Vital index="Shields" value="200"/>
             <Charge Link="Abil/AdeptPhaseShiftCancel"/>
-            <Cooldown Link="Abil/AdeptPhaseShiftCancel" TimeUse="60"/>
+            <Cooldown Link="Abil/AdeptPhaseShiftCancel" TimeUse="84"/>
         </Cost>
         <Range value="10"/>
         <Arc value="360"/>
@@ -35646,7 +35661,7 @@
             <Button DefaultButtonFace="ImmortalAiur2" Requirements="HaveOldFortress222"/>
             <Unit value="ImmortalAiur2"/>
         </InfoArray>
-        <InfoArray index="Train7" Time="75">
+        <InfoArray index="Train7" Time="49">
             <Button DefaultButtonFace="StalkerAiur3"/>
             <Unit value="Dragoon3"/>
         </InfoArray>
@@ -42412,6 +42427,10 @@
             <Cooldown Location="Player"/>
             <Button DefaultButtonFace="Nexus10" Requirements=""/>
         </InfoArray>
+        <InfoArray index="Build9" Unit="ShieldBattery5">
+            <Resource index="Minerals" value="100"/>
+            <Button DefaultButtonFace="ShieldBattery13" Requirements="HaveOldFortress222"/>
+        </InfoArray>
         <InfoArray index="Build10" Unit="Starport2">
             <Button DefaultButtonFace="Starport5" Requirements="HaveResearchBay"/>
         </InfoArray>
@@ -44556,6 +44575,9 @@
         </InfoArray>
         <InfoArray index="Build8" Unit="PhotonCannon3" Time="50">
             <Button DefaultButtonFace="PhotonCannon5" Requirements="HaveOldFortress222"/>
+        </InfoArray>
+        <InfoArray index="Build9" Unit="ShieldBattery5">
+            <Button DefaultButtonFace="ShieldBattery" Requirements="HaveOldFortress222"/>
         </InfoArray>
         <InfoArray index="Build10" Unit="Stargate3" Time="70">
             <Button DefaultButtonFace="Stargate5" Requirements="HaveOldFortress2222"/>
@@ -50588,7 +50610,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ShieldUp15"/>
         <Cost>
-            <Vital index="Energy" value="50"/>
+            <Vital index="Shields" value="50"/>
             <Charge Link=""/>
             <Cooldown Link="Abil/AlarakAvatar" TimeUse="30"/>
         </Cost>
@@ -50918,8 +50940,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ShieldUp2324"/>
         <Cost>
-            <Resource index="Minerals" value="50"/>
-            <Resource index="Vespene" value="50"/>
+            <Vital index="Shields" value="500"/>
             <Charge>
                 <CountMax value="6"/>
                 <CountStart value="6"/>
@@ -52243,6 +52264,21 @@
         </Cost>
         <AINotifyEffect value="ShieldUp"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield28"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="VoidZealotWhirlwind2">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="VoidZealotWhirlwindSet"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="TransientPreferred" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="10"/>
+        </Cost>
+        <AutoCastRange value="1.5"/>
+        <AutoCastValidatorArray value="VoidZealotWhirlwindCheck"/>
+        <CastOutroTime value="1.2"/>
+        <UninterruptibleArray index="Cast" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="VoidZealotWhirlwind" Requirements="UseWind"/>
     </CAbilEffectInstant>
     <CAbilResearch id="XillResearch">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -55337,7 +55373,7 @@
         <UseMarkerArray index="Prep" value="0"/>
         <AINotifyEffect value="VoidSentryShieldRepairDouble"/>
         <DefaultError value="RequiresHealTarget"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="VoidSentryShieldRepairDouble"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="VoidSentryShieldRepairDouble3"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="Vortex">
         <Cost index="0">
@@ -60561,12 +60597,12 @@
         <Effect index="0" value="VortexKillSet2"/>
         <Flags index="AbortOnAllianceChange" value="0"/>
         <Cost>
-            <Vital index="Energy" value="50"/>
+            <Vital index="Energy" value="100"/>
             <Charge Link="Abil/Vortex"/>
             <Cooldown Link="Vortex"/>
         </Cost>
         <TargetFilters value="Visible;Player,Ally,Massive,Structure,Heroic,Missile,Stasis,Dead,Invulnerable"/>
-        <Range value="9"/>
+        <Range value="7"/>
         <Arc value="360"/>
         <AutoCastFilters value="Visible;Self,Player,Ally"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="Vortex2"/>

@@ -4398,6 +4398,12 @@
     <CButton id="ResearchOptimizedServos">
         <Icon value="Assets\Textures\btn-upgrade-terran-transformationservos.dds"/>
     </CButton>
+    <CButton id="ResearchReinforcedShields">
+        <Icon value="Assets\Textures\btn-ability-protoss-voidarmor.dds"/>
+    </CButton>
+    <CButton id="ReinforcedShields">
+        <Icon value="Assets\Textures\btn-ability-protoss-voidarmor.dds"/>
+    </CButton>
     <CButton id="SJHyperionYamato4722">
         <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-empowermeslaves.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
@@ -25514,6 +25520,11 @@
         <EditorCategories value="Race:Protoss"/>
         <HotkeyAlias value="ShieldBattery"/>
     </CButton>
+    <CButton id="ShieldBattery13">
+        <Icon value="Assets\Textures\btn-building-protoss-shieldbattery.dds"/>
+        <AlertIcon value="Assets\Textures\btn-building-protoss-shieldbattery.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
     <CButton id="ShieldBattery2">
         <Icon value="Assets\Textures\btn-building-protoss-shieldbattery.dds"/>
         <AlertIcon value="Assets\Textures\btn-building-protoss-shieldbattery.dds"/>
@@ -32158,6 +32169,10 @@
         <Icon value="Assets\Textures\btn-ability-zeratul-sentry-reflectionshield.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
+    <CButton id="VoidSentryShieldRepairDouble3">
+        <Icon value="Assets\Textures\btn-ability-protoss-doubleshieldrecharge.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
     <CButton id="VoidShieldCapacitor2">
         <Icon value="Assets\Textures\btn-ability-protoss-shieldcapacitor.dds"/>
     </CButton>
@@ -32291,6 +32306,9 @@
         <AlertIcon value="Assets\Textures\BTN-Ability-Protoss-ShadowCharge.dds"/>
         <EditorCategories value="Race:Protoss"/>
         <HotkeyAlias value="VoidZealotShadowCharge"/>
+    </CButton>
+    <CButton id="ResearchWhirlwind">
+        <Icon value="Assets\Textures\BTN-Ability-Protoss-Whirlwind.dds"/>
     </CButton>
     <CButton id="VoodooShield2">
         <Icon value="Assets\Textures\btn-ability-terran-electricfield.dds"/>

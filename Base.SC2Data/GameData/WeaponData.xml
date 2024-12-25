@@ -784,6 +784,32 @@
         <Period value="0.75"/>
         <Effect value="AscendantWeaponLM24"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="CenturionWarpBlades6">
+        <Name value="Weapon/Name/Centurion"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="PsiBlades13"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Marker Link="Weapon/PsiBlades"/>
+        <Cost>
+            <Cooldown Link="Weapon/PsiBlades"/>
+        </Cost>
+        <Period value="1.2"/>
+        <DamagePoint value="0"/>
+        <Effect value="ZealotPsiBladesCleaveSet12"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="GoliathA223">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel3.dds"/>
+        <DisplayEffect value="HunterKillerU4"/>
+        <DisplayAttackCount value="6"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="12"/>
+        <Arc value="29.9926"/>
+        <Period value="6"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="GuassRifle58">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel0.dds"/>
@@ -1437,22 +1463,6 @@
         <DamagePoint value="0"/>
         <Effect value="ZealotPsiBladesCleaveSet8"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="CenturionWarpBlades6">
-        <Name value="Weapon/Name/Centurion"/>
-        <EditorCategories value="Race:Protoss"/>
-        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
-        <DisplayEffect value="PsiBlades"/>
-        <DisplayAttackCount value="2"/>
-        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="6"/>
-        <Marker Link="Weapon/PsiBlades"/>
-        <Cost>
-            <Cooldown Link="Weapon/PsiBlades"/>
-        </Cost>
-        <Period value="1.2"/>
-        <DamagePoint value="0"/>
-        <Effect value="ZealotPsiBladesCleaveSet"/>
-    </CWeaponLegacy>
     <CWeaponLegacy id="Chomp2">
         <EditorCategories value="Race:Zerg"/>
         <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
@@ -1960,7 +1970,7 @@
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
         <DisplayEffect value="DragoonDamage4"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="11"/>
+        <Range value="8"/>
         <Period value="3.75"/>
         <Effect value="DragoonLM4"/>
     </CWeaponLegacy>
@@ -3318,9 +3328,10 @@
         <Range value="500"/>
         <Marker Link="Weapon/GuassRifle8"/>
         <Cost>
+            <Vital index="Shields" value="40"/>
             <Cooldown Link="Weapon/GuassRifle8"/>
         </Cost>
-        <Period value="4.5"/>
+        <Period value="1.4"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0.75"/>
         <Effect value="ArtilleryHighOnes234"/>
@@ -3335,9 +3346,10 @@
         <Range value="500"/>
         <Marker Link="Weapon/GuassRifle8"/>
         <Cost>
+            <Vital index="Shields" value="60"/>
             <Cooldown Link="Weapon/GuassRifle8"/>
         </Cost>
-        <Period value="9"/>
+        <Period value="2.8"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0.75"/>
         <Effect value="ArtilleryHighOnes23422"/>
@@ -3352,9 +3364,10 @@
         <Range value="500"/>
         <Marker Link="Weapon/GuassRifle8"/>
         <Cost>
+            <Vital index="Shields" value="40"/>
             <Cooldown Link="Weapon/GuassRifle8"/>
         </Cost>
-        <Period value="4"/>
+        <Period value="1.4"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0.75"/>
         <Effect value="ArtilleryHighOnes2342"/>
@@ -3908,6 +3921,17 @@
         <Period value="1.754"/>
         <Effect value="HighTemplarWeaponLM5"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="VoidBlast">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="ShockDDamage4"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Cost>
+            <Cooldown Location="Unit"/>
+        </Cost>
+        <Period value="0.45"/>
+        <Effect value="HybridDLM4"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="InfernalFlameThrower6">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
@@ -3936,6 +3960,20 @@
         <Effect value="JavelinMissileLaunchersPersistent2"/>
         <LegacyOptions index="KeepChanneling" value="1"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="InterceptorAiurLaunch2">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="Hidden" value="1"/>
+        <Icon value="Assets\Textures\btn-unit-protoss-interceptor.dds"/>
+        <DisplayEffect value="CarrierInterceptor"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="10"/>
+        <Arc value="360"/>
+        <Period value="0.5"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="InterceptorAiurLaunchPersistent"/>
+        <AllowedMovement value="Slowing"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="KhaydarinBeam2">
         <EditorCategories value="Race:Protoss"/>
         <Options index="ContinuousScan" value="1"/>
@@ -3946,6 +3984,24 @@
         <Period value="3"/>
         <DamagePoint value="2.9"/>
         <Effect value="KhaydarinBeamDamage2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PhaseBeam">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="ContinuousScan" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="KhaydarinBeamDamage3"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Arc value="360"/>
+        <Cost>
+            <Vital index="Shields" value="10"/>
+        </Cost>
+        <Period value="0.2"/>
+        <DamagePoint value="2.9"/>
+        <Effect value="KhaydarinBeamDamage3"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MengskDiamondback">
+        <Options index="LinkedCooldown" value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="NovaWeaponCanisterRifle2">
         <EditorCategories value="Race:Terran"/>
@@ -3988,6 +4044,21 @@
         </Cost>
         <Period value="0.28"/>
         <Effect value="asdasdwe"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PhaseBeam2">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="ContinuousScan" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="KhaydarinBeamDamage32"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Arc value="9.9975"/>
+        <Cost>
+            <Vital index="Shields" value="25"/>
+        </Cost>
+        <Period value="0.4"/>
+        <DamagePoint value="2.9"/>
+        <Effect value="KhaydarinBeamDamage32"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PunisherGrenades434">
         <EditorCategories value="Race:Terran"/>
@@ -10600,6 +10671,22 @@
         </Cost>
         <Period value="2"/>
         <Effect value="TempestLaunchMissileGround423"/>
+        <AllowedMovement value="Slowing"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="TempestGround43">
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
+        <DisplayEffect value="TempestDamageGround4"/>
+        <DisplayName value="Weapon/Name/TempestGround"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="7.5"/>
+        <Range value="7"/>
+        <Marker Link="Weapon/TempestGround"/>
+        <Cost>
+            <Cooldown Link="Weapon/TempestGround"/>
+        </Cost>
+        <Period value="1.4"/>
+        <Effect value="TempestLaunchMissileGround4"/>
         <AllowedMovement value="Slowing"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="TempestGround5" parent="TempestGround">
