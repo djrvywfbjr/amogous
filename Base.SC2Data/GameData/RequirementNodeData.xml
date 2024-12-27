@@ -3995,6 +3995,9 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="InfestedAbomination3" State="QueuedOrBetterAtUnit"/>
     </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitInfestedFacilityCompleteOnly2667952670TechTreeCheat">
+        <Count Link="InfestedFacility" State="CompleteOnly"/>
+    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitInfestedStukovCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="InfestedStukov" State="CompleteOnly"/>
@@ -5751,12 +5754,10 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeBansheeCloakingFieldCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="BansheeCloakingField" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeBansheeCloakingFieldQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="BansheeCloakingField" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeBurrowCompleteOnly1687599735TechTreeCheat">
@@ -15266,22 +15267,18 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeZealotDefCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="ZealotDef" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeZealotDefQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="ZealotDef" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeZealotWindCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="ZealotWind" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeZealotWindQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="ZealotWind" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeetaCrowCompleteOnly">
@@ -16080,9 +16077,9 @@
         <OperandArray index="0" value="CountUnitZergling6QueuedOrBetterAtUnit"/>
         <OperandArray index="1" value="8"/>
     </CRequirementLT>
-    <CRequirementLTE id="LTE1255560832CountUnitNydusNetwork2QueuedOrBetter1">
+    <CRequirementLTE id="LTE2141802724CountUnitNydusNetwork2QueuedOrBetter2">
         <OperandArray index="0" value="CountUnitNydusNetwork2QueuedOrBetter"/>
-        <OperandArray index="1" value="1"/>
+        <OperandArray index="1" value="2"/>
     </CRequirementLTE>
     <CRequirementLTE id="LTE3355388469CountUnitNuke2QueuedOrBetterAtUnit3">
         <OperandArray index="0" value="CountUnitNuke2QueuedOrBetterAtUnit"/>
@@ -16589,7 +16586,6 @@
         <OperandArray index="0" value="CountUpgradeAdvancedConstruction24QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeBansheeCloakingFieldQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeBansheeCloakingFieldQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeClusterBombQueuedOrBetter">
@@ -19425,11 +19421,9 @@
         <OperandArray index="0" value="CountUpgradeXillBlinkQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeZealotDefQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeZealotDefQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeZealotWindQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeZealotWindQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradezerglingattackspeed2222QueuedOrBetter">

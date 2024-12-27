@@ -77,6 +77,10 @@
         <AlertIcon value="Assets\Textures\btn-ability-kerrigan-wildmutation.dds"/>
         <EditorCategories value="Race:Zerg"/>
     </CButton>
+    <CButton id="Aiurbarrier">
+        <Icon value="Assets\Textures\btn-ability-protoss-barrier-upgraded.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-barrier-upgraded.dds"/>
+    </CButton>
     <CButton id="AlarakKnockback2">
         <Icon value="Assets\Textures\btn-ability-protoss-destructionwave.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-destructionwave.dds"/>
@@ -4179,6 +4183,10 @@
     </CButton>
     <CButton id="DistortionGenerator">
         <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
+    </CButton>
+    <CButton id="Energyrotation">
+        <Icon value="Assets\Textures\btn-ability-protoss-astralwind.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-astralwind.dds"/>
     </CButton>
     <CButton id="EquipCloakingMantle">
         <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>

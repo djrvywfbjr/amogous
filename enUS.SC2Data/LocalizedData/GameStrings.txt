@@ -4023,6 +4023,7 @@ Behavior/Name/SeekerMissile3=Tracker Missile Target
 Behavior/Name/SelfRepair2=Self Repair
 Behavior/Name/SelfRepair3=Self Repair
 Behavior/Name/SelfRepair4=Field Repair
+Behavior/Name/ShieldBattaryAB=Shield Battary Buff
 Behavior/Name/ShieldingEngine=Strong Engine
 Behavior/Name/ShieldingEngine11=Reconstruction Protocol
 Behavior/Name/ShieldingEngine2=Magma Thrower Is Active
@@ -5166,6 +5167,7 @@ Behavior/Tooltip/SeekerMissile3=This unit is being targeted by a Tracker Missile
 Behavior/Tooltip/SelfRepair2=Repairing Damage
 Behavior/Tooltip/SelfRepair3=Repairing Damage
 Behavior/Tooltip/SelfRepair4=Repairing Damage
+Behavior/Tooltip/ShieldBattaryAB=increases the maximum number of shields and their regeneration
 Behavior/Tooltip/ShieldingEngine938=At the end of the timer, owning player team will win.
 Behavior/Tooltip/Slow2=Target's movement and attack speed is reduced for a short period of time.
 Behavior/Tooltip/Slow22=Target's movement and attack speed is reduced for a short period of time.
@@ -5365,6 +5367,7 @@ Button/Name/AdeptPassive22=Embracing One Is Summoned
 Button/Name/AdvancedBionics=Research Advanced Bionics
 Button/Name/AggressiveMutation2=Aggressive Mutators
 Button/Name/AggressiveMutation22=Fanaticism
+Button/Name/Aiurbarrier=Aiur barrier
 Button/Name/AlarakKnockback2=Destruction Wave
 Button/Name/AmonTentacleB2=Omnia Burst
 Button/Name/AmonTentacleC2=Anima Shower
@@ -7328,6 +7331,7 @@ Button/Name/EMP63=Tactical EMB
 Button/Name/EMP7=Launch EMP Round
 Button/Name/EMP72=Corrosive Bile
 Button/Name/EMPNova2=EMP Nova
+Button/Name/Energyrotation=Energy rotation
 Button/Name/EngageFusionDrive=Engage Fusion Drive
 Button/Name/EngineeringBay10=Reconstruct Agony Bay
 Button/Name/EngineeringBay11=Build Altar
@@ -12076,6 +12080,7 @@ Button/Tooltip/AggressiveMutation22=Friendly units gain 35% attack and movement 
 Button/Tooltip/AggressiveMutation3=Friendly Zerg units gain +<d ref="Behavior,AggressiveMutation,Modification.DamageDealtUnscaled[Melee]"/> attack damage for <d ref="Behavior,AggressiveMutation,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Affects ground units only.</c>
 Button/Tooltip/Agonizer=Durable anti-light support flyer.
 Button/Tooltip/AiurCOreeeee=Flying support unit. <n/>These were the first layer of planetary defense of important khalai planets. Their survival and preservation capabilities allowed them to still attack enemies even when the battle is happening on the planet itself.
+Button/Tooltip/Aiurbarrier=takes no more than 15 damage at a time
 Button/Tooltip/AlarakChampion2=Highlord of the Tal'darim. Powerful Psionic Warrior.
 Button/Tooltip/AlarakKnockback2=Unleashes a massive wave of force in a straight line, dealing <d ref="Effect,DestructionWaveDamage,Amount"/> damage (+<d ref="Effect,DestructionWaveDamageAir,Amount"/> vs Air) to enemies in its path and knocking them back.<n/><n/><c val="#ColorAttackInfo">Massive units are knocked back a shorter distance.</c>
 Button/Tooltip/Alex=One of the best spectres out there.
@@ -13575,7 +13580,7 @@ Button/Tooltip/CombatShield2232622223=Revives a hero with levels.
 Button/Tooltip/CombatShield2232622224=Revives a hero with levels.
 Button/Tooltip/CombatShield2232622225=Revives a hero with levels.
 Button/Tooltip/CombatShield22327=Targeted unit looses ability to attack, transport and use energy-based abilities for 7 seconds.<n/>Cannot target massive and heroic units.
-Button/Tooltip/CombatShield22328=Targeted unit gains 125 shields, 3 shield armor and 20 life regeneration for 8 seconds.<n/>Cannot target Plasmers.
+Button/Tooltip/CombatShield22328=Targeted unit gains 75  shields, 3 shield armor and 5  life regeneration for 8 seconds.<n/>
 Button/Tooltip/CombatShield223282=Targeted unit gains 125 shields, 3 shield armor and 20 life regeneration for 8 seconds.<n/>Cannot target Plasmers.
 Button/Tooltip/CombatShield223283=Targeted unit gains 125 shields, 3 shield armor, 50% attack speed and 20 life regeneration for 8 seconds.<n/>Cannot target heroic units.
 Button/Tooltip/CombatShield22329=Target gains 3 shield armor, 15 shield regeneration and 35 life regeneration for 10 seconds.<n/>Autocasts only units under 30% health.
@@ -14371,6 +14376,7 @@ Button/Tooltip/EMPNova2=Launches a massive electromagnetic shockwave, dealing sh
 Button/Tooltip/Egg2=Zerg units morph in the safety of these cocoons.
 Button/Tooltip/EggChamber=Specialized infestation organism. Hatches Xill units.
 Button/Tooltip/EliteArmory=Contains upgrades.
+Button/Tooltip/Energyrotation=attack spends shields
 Button/Tooltip/EngageFusionDrive=Increases the Blimp's movement speed by 2.5 for 15 seconds.
 Button/Tooltip/Engi12312312neeringBay18=Structure, where Workers periodically produce Food.
 Button/Tooltip/Engi12312312neeringBay18fwa2=Structure, where units can go to reduce to raise Hope and reduce Dissatisfaction.
@@ -16452,7 +16458,7 @@ Button/Tooltip/NydusCanalUnloadAll4=Unloads all units.
 Button/Tooltip/NydusCanalUnloadAll5=Unloads all units from the Fluke Worm Network. The unloading is slow, but multiple worms can unload at once.
 Button/Tooltip/NydusNetwork2=Friendly ground units can use the Nydus Network to instantly travel to any other Nydus Network or Nydus Worm owned by the player.<n/><n/><c val="ffff8a">Enables:</c><n/>- Nydus Worm
 Button/Tooltip/NydusNetwork3=Friendly ground units can use the Nydus Network to instantly travel to any other Nydus Network or Nydus Worm owned by the player.<n/><n/><c val="ffff8a">Enables:</c><n/>- Nydus Worm
-Button/Tooltip/NydusNetwork3123124213=Main structure building structure. Cannot be more than 2 at the same time.
+Button/Tooltip/NydusNetwork3123124213=Main structure building structure. Cannot be more than 3 at the same time.
 Button/Tooltip/NydusNetwork4=Friendly ground units can use the Nydus Network to instantly travel to any other Nydus Network or Nydus Worm owned by the player.<n/><n/><c val="ffff8a">Enables:</c><n/>- Nydus Worm
 Button/Tooltip/NydusNetwork5=Friendly ground units can use the Nydus Network to instantly travel to any other Nydus Network or Nydus Worm owned by the player.<n/><n/><c val="ffff8a">Enables:</c><n/>- Nydus Worm
 Button/Tooltip/NydusNetwork52=Friendly ground units can use the Nydus Network to instantly travel to any other Nydus Network or Nydus Worm owned by the player.<n/><n/><c val="ffff8a">Enables:</c><n/>- Nydus Worm
@@ -18600,7 +18606,7 @@ Button/Tooltip/TestLearn25=<c val="00FF00">Gain ability to cloak and create a co
 Button/Tooltip/TestLearn252=<c val="FF0000">Gain ability to create a stationary cloud, that damages enemies in it and adds status effects.</c><n/><c val="FFFF00">Level 1: Add corrosion effect to all enemies in the cloud.</c><n/>Level 2: Cloud deals additional instant corrosion damage, that does not stay after the cloud ends.<n/>Level 3: Add fire effect to all enemies in the cloud.<n/>Level 4: Cloud lasts twice as long.
 Button/Tooltip/TestLearn253=<c val="0000FF">Gain ability to create 2 Choplings to fight for the duration of the ability's cooldown.</c><n/><c val="FFFF00">Level 1: Choplings gain Catch ability.</c><n/>Level 2: Choplings gain High Grade Stimpack ability and 100 life.<n/>Level 3: Choplings gain Combat Leap ability, bonus speed and 100 life.<n/>Level 4: Choplings gain Electrorb ability, 5 armor and 100 life.
 Button/Tooltip/TestLearn254=<c val="00FF00">Gain ability to cloak and create a copy of self to distract enemies.<n/>Cloak ends if Hulter attacks, but deals bonus damage.</c><n/><c val="FFFF00">Level 1: Gain 50% move and attack speed when cloaked.</c><n/>Level 2: Gain life regeneration, 100% move and attack speed when cloaked.<n/>Level 3: Gain life regeneration, ciollisionless, bonus range, 150% move and attack speed when cloaked.<n/>Level 4: Gain life regeneration, bonus range, collisionless, 150% move and attack speed when cloaked. Also, if an enemy is killed while cloaked, create another copy and become cloaked once more.
-Button/Tooltip/TheMorosDevice2=Device that alters time. Anything trapped inside of the area will suffer penalties to its movement speed and attack speed.
+Button/Tooltip/TheMorosDevice2=Device that alters time. Anything trapped inside of the area will suffer penalties to its attack speed.
 Button/Tooltip/Thor2=Massive stealth mech. Has been constructed by Blue Intel to switch between heavy weapons or extreme stealthiness and agility through diverting power.
 Button/Tooltip/Thor3=Hybrid destabilizer.
 Button/Tooltip/Thor4=Heavy assault mech.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
@@ -27509,6 +27515,7 @@ Effect/Name/PsiBlades10=Psi Blades (Damage)
 Effect/Name/PsiBlades11=Psi Blades (Damage)
 Effect/Name/PsiBlades12=Psi Blades (Damage)
 Effect/Name/PsiBlades13=Psi Blades (Damage)
+Effect/Name/PsiBlades14=Psi Blades (Damage)
 Effect/Name/PsiBlades2=Psi Blades (Damage) Copy
 Effect/Name/PsiBlades3=Psi Blades (Damage) Copy 2
 Effect/Name/PsiBlades4=Psi Blades (Damage)
@@ -27521,6 +27528,7 @@ Effect/Name/PsiBladesBurst10=Psi Blades
 Effect/Name/PsiBladesBurst11=Psi Blades
 Effect/Name/PsiBladesBurst12=Psi Blades
 Effect/Name/PsiBladesBurst13=Psi Blades
+Effect/Name/PsiBladesBurst14=Psi Blades
 Effect/Name/PsiBladesBurst2=Psi Blades Copy
 Effect/Name/PsiBladesBurst3=Psi Blades Copy 2
 Effect/Name/PsiBladesBurst4=Psi Blades
@@ -29651,6 +29659,8 @@ Effect/Name/ShadowBladeDamage23=Shadow Blade Damage Copy Copy 2
 Effect/Name/ShadowBladeDamage24=Shadow Blade Damage Copy Copy 3
 Effect/Name/SharpenedCrystalAoE=SharpenedCrystalAoE
 Effect/Name/ShellstormChaingunDamage=Shellstorm Chaingun Damage
+Effect/Name/ShieldBattaryAB=Shield Battary AB
+Effect/Name/ShieldBattaryArea=Shield Battary Area
 Effect/Name/ShieldBatteryRechargeChanneled2=Shield Battery Recharge Channeled
 Effect/Name/ShieldUp=Shield Up
 Effect/Name/ShieldUp10=Shield Up Copy 30
@@ -31973,6 +31983,7 @@ Effect/Name/ZapperGunSlow=Zapper Gun Slow
 Effect/Name/ZealotPsiBladesCleaveSet10=Zealot Psi Blades (Cleave Set)
 Effect/Name/ZealotPsiBladesCleaveSet11=Zealot Psi Blades (Cleave Set)
 Effect/Name/ZealotPsiBladesCleaveSet12=Zealot Psi Blades (Cleave Set)
+Effect/Name/ZealotPsiBladesCleaveSet13=Zealot Psi Blades (Cleave Set)
 Effect/Name/ZealotPsiBladesCleaveSet2=Zealot Psi Blades (Cleave Set) Copy
 Effect/Name/ZealotPsiBladesCleaveSet3=Zealot Psi Blades (Cleave Set) Copy 2
 Effect/Name/ZealotPsiBladesCleaveSet4=Zealot Psi Blades (Cleave Set)
@@ -32971,6 +32982,7 @@ RequirementNode/Tooltip/CountUnitInfestationPit43CompleteOnly1626932090TechTreeC
 RequirementNode/Tooltip/CountUnitInfestationPit4CompleteOnly1003195651TechTreeCheat=Former Defiler Mound
 RequirementNode/Tooltip/CountUnitInfestationPit5CompleteOnly3492736302=Biomass Center
 RequirementNode/Tooltip/CountUnitInfestationPit5CompleteOnly3622998975=Biosteel Foundry
+RequirementNode/Tooltip/CountUnitInfestedFacilityCompleteOnly2667952670TechTreeCheat=Psi Repeater
 RequirementNode/Tooltip/CountUnitInstituteCompleteOnly2127432005=Have Institute
 RequirementNode/Tooltip/CountUnitLocustFlying262QueuedOrBetterAtUnit2584292422=
 RequirementNode/Tooltip/CountUnitLurkerDenMP2CompleteOnly2011715530=Have Corruption Den
@@ -33548,7 +33560,7 @@ RequirementNode/Tooltip/LT654778867CountUpgradeUmojanBasicUnitUpgrade52224224232
 RequirementNode/Tooltip/LT879540594CountUpgradeManufactureChemicalStationQueuedOrBetter15=Less than 50 Chemical Stations
 RequirementNode/Tooltip/LT879540594CountUpgradeManufactureChemicalStationQueuedOrBetter50=Less than 50 Chemical Stations
 RequirementNode/Tooltip/LT890753747CountUnitHydralisk6QueuedOrBetterAtUnit2=No more than 2 Kereslisks
-RequirementNode/Tooltip/LTE1255560832CountUnitNydusNetwork2QueuedOrBetter1=No More Than 2 AI Centers
+RequirementNode/Tooltip/LTE2141802724CountUnitNydusNetwork2QueuedOrBetter2=No More Than 3 AI Centers
 RequirementNode/Tooltip/LTE3355388469CountUnitNuke2QueuedOrBetterAtUnit3=No more than 3 Tactical Missiles
 RequirementNode/Tooltip/NE2274379780CountUnitPrimalTownHall3QueuedOrBetter1=No Primal Elder for this Pack
 RequirementNode/Tooltip/Not1694326951CountBehaviorAntamoAirAll25242CompleteOnlyAtUnit=No Ancient Of Wonders For This Pack
