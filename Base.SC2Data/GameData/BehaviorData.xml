@@ -1008,6 +1008,7 @@
         <DamageResponse ClampMaximum="15" Minimum="15">
             <Chance value="1"/>
         </DamageResponse>
+        <DisableValidatorArray value="hasShields"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="HotG">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -1668,6 +1669,7 @@
             <DamageTakenFraction index="Splash" value="-0.5"/>
             <DamageTakenFraction index="NoProc" value="-0.5"/>
         </Modification>
+        <DisableValidatorArray value="hasShields"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ahsdfu">
         <EditorCategories value="AbilityorEffectType:Units"/>

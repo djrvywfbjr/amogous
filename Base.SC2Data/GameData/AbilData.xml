@@ -718,6 +718,11 @@
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="ArtanisInspire3"/>
     </CAbilEffectInstant>
+    <CAbilEffectTarget id="ArtanisVortex">
+        <Cost index="0">
+            <Vital index="Energy" value="300"/>
+        </Cost>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="Blink5">
         <AbilSetId value="Blnk"/>
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
@@ -834,7 +839,7 @@
         <Effect index="0" value="SOAOrbitalStrikeCP2222"/>
         <Flags index="RequireTargetVision" value="0"/>
         <Cost>
-            <Vital index="Energy" value="125"/>
+            <Vital index="Energy" value="175"/>
             <Charge Link="Abil/DehakaRevive" Location="Unit"/>
             <Cooldown Link="Abil/SOAOrbitalStrikeExecute2" Location="Unit"/>
         </Cost>
@@ -30409,7 +30414,7 @@
         <Flags index="NoDeceleration" value="1"/>
         <Flags index="RequireTargetVision" value="0"/>
         <Cost>
-            <Vital index="Energy" value="100"/>
+            <Vital index="Energy" value="200"/>
         </Cost>
         <Range value="9"/>
         <Arc value="360"/>
@@ -35792,6 +35797,11 @@
         <InfoArray index="Train21" Time="35">
             <Button DefaultButtonFace="CreateCradleOfLife"/>
             <Unit value="CradleOfLife"/>
+        </InfoArray>
+        <InfoArray index="Train22" Time="71">
+            <Display index="Custom" value="1"/>
+            <Button DefaultButtonFace="CalldownMULE4255523" Requirements="HaveRelicOfHope22223"/>
+            <Unit value="HybridDominatorVoid223"/>
         </InfoArray>
         <Alert value="TrainWorkerComplete"/>
     </CAbilTrain>
@@ -55371,7 +55381,6 @@
         <AutoCastRange value="6"/>
         <AutoCastValidatorArray value="NotWarpingIn"/>
         <AutoCastValidatorArray value="UnitOrAttackingStructure"/>
-        <AutoCastValidatorArray value="CasterHas10Energy"/>
         <UseMarkerArray index="Approach" value="0"/>
         <UseMarkerArray index="Prep" value="0"/>
         <AINotifyEffect value="VoidSentryShieldRepairDouble"/>

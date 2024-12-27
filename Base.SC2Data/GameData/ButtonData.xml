@@ -542,6 +542,12 @@
     <CButton id="ArtanisInspire3">
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-detector.dds"/>
     </CButton>
+    <CButton id="CalldownMULE4255523">
+        <Icon value="Assets\Textures\tip_voidthrasher.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="CalldownMULE42555"/>
+    </CButton>
     <CButton id="CombatShield223213">
         <Icon value="Assets\Textures\btn-ability-stetmann-banelingmanashield.dds"/>
         <EditorCategories value="Race:Terran"/>
@@ -29555,6 +29561,9 @@
     <CButton id="TrainCombatScout">
         <Icon value="Assets\Textures\btn-unit-terran-troopermengsk.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-terran-troopermengsk.dds"/>
+    </CButton>
+    <CButton id="UnknownButton128">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-shieldslevel3.dds"/>
     </CButton>
     <CButton id="UnknownButton13">
         <Icon value="Assets\Textures\btn-ability-protoss-scarabshot.dds"/>
