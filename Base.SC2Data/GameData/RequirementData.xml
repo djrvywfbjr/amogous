@@ -189,7 +189,7 @@
     </CRequirement>
     <CRequirement id="UseWind">
         <EditorCategories value="Race:Protoss,TechType:Ability"/>
-        <NodeArray index="Use" Link="CountUpgradeZealotWindCompleteOnly"/>
+        <NodeArray index="Use" Link="CountUpgradeZealotWindCompleteOnly2123262936"/>
     </CRequirement>
     <CRequirement id="HaveAdvancedBionics2">
         <NodeArray index="Use" Link="CountUpgradeAdvancedBionicsUpgradeCompleteOnly"/>
@@ -231,7 +231,7 @@
     </CRequirement>
     <CRequirement id="UseDef">
         <EditorCategories value="Race:Protoss,TechType:Ability"/>
-        <NodeArray index="Use" Link="CountUpgradeZealotDefCompleteOnly"/>
+        <NodeArray index="Use" Link="CountUpgradeZealotDefCompleteOnly4275859580"/>
     </CRequirement>
     <CRequirement id="VenomButton">
         <NodeArray index="Show" Link="NotCountUpgradeVenomQueuedOrBetter"/>

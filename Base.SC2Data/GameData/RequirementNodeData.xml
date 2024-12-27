@@ -15265,7 +15265,7 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="XillBlink" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
-    <CRequirementCountUpgrade id="CountUpgradeZealotDefCompleteOnly">
+    <CRequirementCountUpgrade id="CountUpgradeZealotDefCompleteOnly4275859580">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="ZealotDef" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
@@ -15273,7 +15273,7 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="ZealotDef" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
-    <CRequirementCountUpgrade id="CountUpgradeZealotWindCompleteOnly">
+    <CRequirementCountUpgrade id="CountUpgradeZealotWindCompleteOnly2123262936">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="ZealotWind" State="CompleteOnly"/>
     </CRequirementCountUpgrade>

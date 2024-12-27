@@ -4023,7 +4023,7 @@ Behavior/Name/SeekerMissile3=Tracker Missile Target
 Behavior/Name/SelfRepair2=Self Repair
 Behavior/Name/SelfRepair3=Self Repair
 Behavior/Name/SelfRepair4=Field Repair
-Behavior/Name/ShieldBattaryAB=Shield Battary Buff
+Behavior/Name/ShieldBattaryAB=Shield Synchronization
 Behavior/Name/ShieldingEngine=Strong Engine
 Behavior/Name/ShieldingEngine11=Reconstruction Protocol
 Behavior/Name/ShieldingEngine2=Magma Thrower Is Active
@@ -5367,7 +5367,7 @@ Button/Name/AdeptPassive22=Embracing One Is Summoned
 Button/Name/AdvancedBionics=Research Advanced Bionics
 Button/Name/AggressiveMutation2=Aggressive Mutators
 Button/Name/AggressiveMutation22=Fanaticism
-Button/Name/Aiurbarrier=Aiur barrier
+Button/Name/Aiurbarrier=Aiur Barrier
 Button/Name/AlarakKnockback2=Destruction Wave
 Button/Name/AmonTentacleB2=Omnia Burst
 Button/Name/AmonTentacleC2=Anima Shower
@@ -6492,6 +6492,7 @@ Button/Name/CalldownMULE42555=Create Psionic Hybrid
 Button/Name/CalldownMULE425552=Create Ultimate Hybrid
 Button/Name/CalldownMULE4255522=Create Nightmare Hybrid
 Button/Name/CalldownMULE42555222=Create Phantom Hybrid
+Button/Name/CalldownMULE4255523=Create Hybrid Abolisher
 Button/Name/CalldownMULE43=Request Rifleman
 Button/Name/CalldownMULE5=Calldown: Grease Donkeys
 Button/Name/Cancel2=Cancel
@@ -7331,7 +7332,7 @@ Button/Name/EMP63=Tactical EMB
 Button/Name/EMP7=Launch EMP Round
 Button/Name/EMP72=Corrosive Bile
 Button/Name/EMPNova2=EMP Nova
-Button/Name/Energyrotation=Energy rotation
+Button/Name/Energyrotation=Energy Cycling
 Button/Name/EngageFusionDrive=Engage Fusion Drive
 Button/Name/EngineeringBay10=Reconstruct Agony Bay
 Button/Name/EngineeringBay11=Build Altar
@@ -10709,6 +10710,7 @@ Button/Name/UnknownButton125=U-238 Impaler Rounds
 Button/Name/UnknownButton126=Psionic TIssue Assimilation
 Button/Name/UnknownButton1262=Heightened Senses
 Button/Name/UnknownButton127=Controller Switch
+Button/Name/UnknownButton128=Shield Synchronization
 Button/Name/UnknownButton13=Solar Detraction
 Button/Name/UnknownButton14=Primal Discharge
 Button/Name/UnknownButton142=Primal Discharge
@@ -12080,7 +12082,7 @@ Button/Tooltip/AggressiveMutation22=Friendly units gain 35% attack and movement 
 Button/Tooltip/AggressiveMutation3=Friendly Zerg units gain +<d ref="Behavior,AggressiveMutation,Modification.DamageDealtUnscaled[Melee]"/> attack damage for <d ref="Behavior,AggressiveMutation,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Affects ground units only.</c>
 Button/Tooltip/Agonizer=Durable anti-light support flyer.
 Button/Tooltip/AiurCOreeeee=Flying support unit. <n/>These were the first layer of planetary defense of important khalai planets. Their survival and preservation capabilities allowed them to still attack enemies even when the battle is happening on the planet itself.
-Button/Tooltip/Aiurbarrier=takes no more than 15 damage at a time
+Button/Tooltip/Aiurbarrier=Blade Of Adun takes no more than 15 damage as long as it has <c val="0000FF">shields</c>.
 Button/Tooltip/AlarakChampion2=Highlord of the Tal'darim. Powerful Psionic Warrior.
 Button/Tooltip/AlarakKnockback2=Unleashes a massive wave of force in a straight line, dealing <d ref="Effect,DestructionWaveDamage,Amount"/> damage (+<d ref="Effect,DestructionWaveDamageAir,Amount"/> vs Air) to enemies in its path and knocking them back.<n/><n/><c val="#ColorAttackInfo">Massive units are knocked back a shorter distance.</c>
 Button/Tooltip/Alex=One of the best spectres out there.
@@ -12693,7 +12695,7 @@ Button/Tooltip/CalldownMULE42332233323=Increases vespene amount gathered by Impe
 Button/Tooltip/CalldownMULE4233224=Increases damage of all units by 10%.
 Button/Tooltip/CalldownMULE42332242=Increases damage of all units by 10%.
 Button/Tooltip/CalldownMULE423322422=Increases damage of all units by 10%.
-Button/Tooltip/CalldownMULE4233224222=Instantly restore shields.
+Button/Tooltip/CalldownMULE4233224222=Instantly restore 100 <c val="0000FF">shields</c>.
 Button/Tooltip/CalldownMULE42332242222=All units gain 6 sight range. Detection range of units is also increased.
 Button/Tooltip/CalldownMULE423322422222=All units cast plasma surge on death.
 Button/Tooltip/CalldownMULE4233224222222=Halfs the cooldown of all shield capacitors.
@@ -13384,6 +13386,7 @@ Button/Tooltip/CalldownMULE42555=Creates a Psionic Hybrid in targeted location a
 Button/Tooltip/CalldownMULE425552=A powerful hybrid. Has Phantom and Eternity fields.
 Button/Tooltip/CalldownMULE4255522=Powerful unit of raw force. Has a strong anti-air attack.
 Button/Tooltip/CalldownMULE42555222=Flying scout. Can Disable enemy structures. Is cloaked.
+Button/Tooltip/CalldownMULE4255523=A powerful hybrid. Has tons of area control shid.
 Button/Tooltip/CalldownMULE43=While an infantry army of mercenaries is not cheaper than a fleet, biological forces are used rarely. This are basic, cybernetics-enchanted, low-tier mercenaries and bodyguards. Good for striking down anti-air-focused targets.
 Button/Tooltip/CalldownMULE434131=Ranged unit. Is a detector, that can attack air and ground enemies.
 Button/Tooltip/CalldownMULE5=Drops 2 Grease Donkeys - mineral gatherers that collect more minerals than usual workers and are a mineral drop-off point.
@@ -14376,7 +14379,7 @@ Button/Tooltip/EMPNova2=Launches a massive electromagnetic shockwave, dealing sh
 Button/Tooltip/Egg2=Zerg units morph in the safety of these cocoons.
 Button/Tooltip/EggChamber=Specialized infestation organism. Hatches Xill units.
 Button/Tooltip/EliteArmory=Contains upgrades.
-Button/Tooltip/Energyrotation=attack spends shields
+Button/Tooltip/Energyrotation=Solar Detractor's attacks consume 25 <c val="0000FF">shields</c> every attack.
 Button/Tooltip/EngageFusionDrive=Increases the Blimp's movement speed by 2.5 for 15 seconds.
 Button/Tooltip/Engi12312312neeringBay18=Structure, where Workers periodically produce Food.
 Button/Tooltip/Engi12312312neeringBay18fwa2=Structure, where units can go to reduce to raise Hope and reduce Dissatisfaction.
@@ -17196,7 +17199,7 @@ Button/Tooltip/Refinery9=Built over a Vespene Geyser to allow harvesting of vesp
 Button/Tooltip/RefineryWorkerVehicle233222=Incarcerator attacks make enemies in an area move 55% slower and reduce their weapon range by 1 for 4 seconds, but deal damage over time and it does not stack.<n/><n/>Each attack of this zerg strain forms large fungal growths around multiple targets. While it is not highly lethal on it's own, affected units are known to experience tremendous pain during the process and become easy prey to other zerg.
 Button/Tooltip/RefineryWorkerVehicle233224=Attacks will set enemies on fire, making them take additional 20 damage over 10 seconds.<n/><n/>While originally this genetic organ code was used for creation of cheap fuel out of sheep, blazelings could use it for covering enemies in fire for far longer than their natural corrosive acid could.
 Button/Tooltip/RefineryWorkerVehicle32=This unit has a reduced cost and is morphed almost instantly.<n/><n/>A lot of parts and organs of basic attacking units are seemingly arbitrary. We are unsure as to what the possible consequences of removing them would be, but we could do it.
-Button/Tooltip/ReinforcedShields=Aiur Guard takes 50% less damage from all attacks except melee weapons.
+Button/Tooltip/ReinforcedShields=Aiur Guard takes 50% less damage from all non-melee sources as long as it has <c val="0000FF">shields</c>.
 Button/Tooltip/ReleaseDefensiveDrones=Launch all Defensive Fighters at the targeted location with a 120 second timed life. Drones cannot be ordered or moved after they leave and require vision of the target area to be active.<n/><n/>Fighters can be out in the field and aid the rest of the army with breaching defenses, clearing bases, intercepting attack waves and just simply being a distraction. All at the cost of a few pilots.
 Button/Tooltip/ReleaseInterceptors2=Launch all units from this structure to attack the targeted location, They time out 120 seconds afterwards.
 Button/Tooltip/ReleaseInterceptors22=Orders Seerlords to move to the targeted location. Seerlords expire after 120 seconds.
@@ -18100,7 +18103,7 @@ Button/Tooltip/SpaceCowSmall2=Primal Zerg ruminant omnivore. Roams in small herd
 Button/Tooltip/SpacePrisonerBig2=Captive Terran. Incarcerated for life aboard the Moros.
 Button/Tooltip/SpacePrisonerBig3=Captive Terran. Incarcerated for life aboard the Moros.
 Button/Tooltip/SpaeeewningPool4=Summons pack leaders. Only way to get supplies and unlock new units.
-Button/Tooltip/SparksOfLife=The Cradle Of Life cannot attack on its own, instead relying on Sparks Of Life to deal damage. Sparks Of Life appear every 1.7 seconds and deal 35 damage to a single target, which may be selected by the
+Button/Tooltip/SparksOfLife=The Cradle Of Life cannot attack on its own, instead relying on Sparks Of Life to deal damage. Sparks Of Life appear every 1.7 seconds and deal 35 damage to a single target, which may be selected by the Cradle Of Life.
 Button/Tooltip/SpartanCompany2=Heavy-fire support unit.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/SpartanCompany3=Heavy-fire support unit.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/SpartanCompany4=Heavy-fire support unit.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
@@ -18734,6 +18737,7 @@ Button/Tooltip/UnknownButton125=This unit's attacks deal additional 10 damage pe
 Button/Tooltip/UnknownButton126=Xeno Handlers have additional 50 starting and max energy.
 Button/Tooltip/UnknownButton1262=Xeno Handlers attack and target during Steady Targeting 25% faster.
 Button/Tooltip/UnknownButton127=Channels the user's psionic power to deactivate the controllers of one targeted Zerg unit. The target gains 50% life, 50% attack range and 50% attack speed, as well as turning hostile.<n/><n/>Xeno handlers undergo a process of memory wipe, as well as a period extensive training to ensure their psionic talent is used in the field of technopathy. They are taught to remotely detach the devices controlling our specimens.
+Button/Tooltip/UnknownButton128=Units around the Shield Battery gain 50 current and maximum shields.
 Button/Tooltip/UnknownButton13=Adds area-of-effect damage to this unit's weapon that deals increased damage to the main target. Is active until the unit loses all energy. Ignores armor.
 Button/Tooltip/UnknownButton14=Deal 325 damage to a single target.
 Button/Tooltip/UnknownButton142=Deal 95 damage to a single target.
@@ -18873,7 +18877,7 @@ Button/Tooltip/UnknownButton86=The Virtue is protected by <c val="FFFF00">Faith<
 Button/Tooltip/UnknownButton87=Reduces  the amount of supply used by Star Router units.
 Button/Tooltip/UnknownButton872=Reduces  the amount of supply used by Crimson Facility units.
 Button/Tooltip/UnknownButton8722=Reduces  the amount of supply used by Rage Gate units.
-Button/Tooltip/UnknownButton88=Every time Aiur Guard takes damage, it gains 5 shields. Stacks up to 10 times.
+Button/Tooltip/UnknownButton88=Every time Aiur Guard takes damage, it gains 5 <c val="0000FF">shields</c>. Stacks up to 10 times.
 Button/Tooltip/UnknownButton89=Increases the maximum number of Former Strain Bloodlisks' targets by 1.
 Button/Tooltip/UnknownButton9=Stops the Photon Overcharge.
 Button/Tooltip/UnknownButton90=Torrasques of this Strain gain 150 life and 3 armor.
@@ -19332,7 +19336,7 @@ Button/Tooltip/VoidSentryChronoBeam2=Friendly target gains 25% attack and 25% mo
 Button/Tooltip/VoidSentryChronoBeam3=Scans vitals of the targeted unit, healing it for 50 health after 4 seconds. Mender doesn't need to channel the ability for all 4 seconds to heal the target.
 Button/Tooltip/VoidSentryChronoBeam32=Creates a temporal warp on a unit, returning badly damaged parts of it's health and shields to a former, much more stable state. After 8 seconds, target is healed by 350 health and shields.
 Button/Tooltip/VoidSentryShieldRepairDouble2=Recharges the shields of two friendly units. <n/><n/><c val="f078ff">Restores <d ref="Effect,VoidSentryShieldRepair,RechargeVitalRate*Effect,VoidSentryShieldRepair,DrainVitalCostFactor"/> shields per 1 energy.</c>
-Button/Tooltip/VoidSentryShieldRepairDouble3=Recharges the shields of two friendly Protoss units. <n/><n/><c val="f078ff">Restores <d ref="Effect,VoidSentryShieldRepair,RechargeVitalRate*Effect,VoidSentryShieldRepair,DrainVitalCostFactor"/> shields</c>
+Button/Tooltip/VoidSentryShieldRepairDouble3=Recharges the <c val="0000FF">shields</c> of up to two friendly units. <n/><n/><c val="f078ff">Restores <d ref="Effect,VoidSentryShieldRepair,RechargeVitalRate*Effect,VoidSentryShieldRepair,DrainVitalCostFactor"/> shields</c>
 Button/Tooltip/VoidShieldCapacitor2=Fully restores Solarite Dragoons's shields
 Button/Tooltip/VoidShieldCapacitor3=Fully restores Astrakhan's shields, but reduces maximum health by 40.
 Button/Tooltip/VoidSiphon2=Siphons minerals from an enemy structure, dealing 20 damage and generating 10 minerals every second.<n/><n/>By deconstructing a building via clusters of precise beams and sending them to different scrapyards, we can quickly boost our economy.
@@ -33426,6 +33430,8 @@ RequirementNode/Tooltip/CountUpgradeVoidDarkArchonDarkAmulet22432245CompleteOnly
 RequirementNode/Tooltip/CountUpgradeVoidDarkArchonDarkAmulet22432246CompleteOnly2870194533=Connection With The Void Level 6
 RequirementNode/Tooltip/CountUpgradeVoidDarkArchonDarkAmulet2243224CompleteOnly2044665855=Connection With The Void Level 1
 RequirementNode/Tooltip/CountUpgradeVoidDarkArchonDarkAmulet2243224CompleteOnly969171298=Previous upgrade
+RequirementNode/Tooltip/CountUpgradeZealotDefCompleteOnly4275859580=Reinforced Shields
+RequirementNode/Tooltip/CountUpgradeZealotWindCompleteOnly2123262936=Whirlwind
 RequirementNode/Tooltip/CountUpgradezerglingattackspeed2222CompleteOnly1806843002=Increase power to level 3.
 RequirementNode/Tooltip/CountUpgradezerglingattackspeed2222CompleteOnly94585599=Have power increased to level 3.
 RequirementNode/Tooltip/CountUpgradezerglingattackspeed222CompleteOnly1179796127=Have power increased to level 2.
