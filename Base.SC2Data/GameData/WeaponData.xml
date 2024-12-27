@@ -800,6 +800,23 @@
         <DamagePoint value="0"/>
         <Effect value="ZealotPsiBladesCleaveSet12"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="CenturionWarpBlades7">
+        <Name value="Weapon/Name/Centurion"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="PsiBlades14"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.1"/>
+        <Marker Link="Weapon/PsiBlades"/>
+        <Cost>
+            <Cooldown Link="Weapon/PsiBlades"/>
+        </Cost>
+        <Period value="1.2"/>
+        <DamagePoint value="0"/>
+        <Effect value="ZealotPsiBladesCleaveSet13"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="GoliathA223">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel3.dds"/>
@@ -1979,7 +1996,7 @@
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
         <DisplayEffect value="DragoonDamage5"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="2"/>
+        <Range value="4"/>
         <Period value="0.5"/>
         <Effect value="DragoonLM5"/>
         <Options index="Hidden" value="1"/>
@@ -1990,7 +2007,7 @@
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
         <DisplayEffect value="DragoonDamage52"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="4"/>
+        <Range value="6"/>
         <MinimumRange value="3"/>
         <Period value="1"/>
         <Effect value="DragoonLM52"/>
@@ -2001,7 +2018,7 @@
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
         <DisplayEffect value="DragoonDamage522"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="6"/>
+        <Range value="8"/>
         <MinimumRange value="5"/>
         <Period value="1.5"/>
         <Effect value="DragoonLM522"/>
@@ -2011,7 +2028,7 @@
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
         <DisplayEffect value="DragoonDamage5222"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="8"/>
+        <Range value="10"/>
         <MinimumRange value="7"/>
         <Period value="2"/>
         <Effect value="DragoonLM5222"/>
@@ -8079,7 +8096,11 @@
         <Tip value="Weapon/Tip/IonCannons2"/>
         <DisplayEffect value="IonCannonsU2"/>
         <DisplayAttackCount value="4"/>
-        <Range value="6"/>
+        <Range value="9"/>
+        <Cost>
+            <Vital index="Shields" value="15"/>
+        </Cost>
+        <Period value="0.6"/>
         <Effect value="IonCannons2"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="KaiserBlades2" parent="KaiserBlades">

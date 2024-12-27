@@ -1201,6 +1201,21 @@
             <VitalMaxArray index="Shields" value="75"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="ShieldBattaryAB">
+        <InfoIcon value="Assets\Textures\btn-upgrade-protoss-shieldslevel3.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.9"/>
+        <Modification>
+            <VitalMaxArray index="Shields" value="50"/>
+            <VitalRegenMultiplier index="Shields" value="3"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ShieldBattaryBuff">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.7"/>
+        <PeriodicEffect value="ShieldBattaryArea"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="Sloweffect">
         <InfoIcon value="Assets\Textures\btn-ability-hornerhan-hellion-slowbomb.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -4093,7 +4108,7 @@
     <CBehaviorBuff id="Shield38">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Duration value="5"/>
+        <Duration value="28"/>
         <Modification ShieldArmorBonus="1">
             <VitalMaxArray index="Shields" value="175"/>
         </Modification>
@@ -32178,7 +32193,7 @@
         <InfoIcon value="Assets\Textures\btn-behavior-incapacitated.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="15"/>
-        <Modification MoveSpeedMultiplier="0.5"/>
+        <Modification MoveSpeedMultiplier="0.2"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="MohandarStickyBombSlow3">
         <InfoIcon value="Assets\Textures\btn-behavior-incapacitated.dds"/>
@@ -39460,7 +39475,7 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <TimeScaleSource Value="Global"/>
         <Duration value="0.125"/>
-        <Modification TimeScale="0.2"/>
+        <Modification UnifiedAttackSpeedFactor="-2"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ReactorQueue2">
         <InfoFlags index="Hidden" value="1"/>
@@ -41162,8 +41177,8 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="8"/>
         <Modification ShieldArmorBonus="3">
-            <VitalMaxArray index="Shields" value="125"/>
-            <VitalRegenArray index="Life" value="20"/>
+            <VitalMaxArray index="Shields" value="75"/>
+            <VitalRegenArray index="Life" value="5"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="Shield37">

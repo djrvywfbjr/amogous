@@ -178,6 +178,11 @@
     <CRequirement id="BlinkButton">
         <NodeArray index="Show" Link="NotCountUpgradeXillBlinkQueuedOrBetter"/>
     </CRequirement>
+    <CRequirement id="HaveBarracks324">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="CountUnitInfestedFacilityCompleteOnly2667952670TechTreeCheat"/>
+    </CRequirement>
     <CRequirement id="LearnDef">
         <EditorCategories value="Race:Protoss,TechType:Ability"/>
         <NodeArray index="Show" Link="NotCountUpgradeZealotDefQueuedOrBetter"/>
@@ -6451,7 +6456,7 @@
     </CRequirement>
     <CRequirement id="MothershipRequirements23423">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="LTE1255560832CountUnitNydusNetwork2QueuedOrBetter1"/>
+        <NodeArray index="Use" Link="LTE2141802724CountUnitNydusNetwork2QueuedOrBetter2"/>
     </CRequirement>
     <CRequirement id="MothershipRequirements234232">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>

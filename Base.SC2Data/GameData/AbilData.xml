@@ -5377,7 +5377,7 @@
         <InfoArray index="Train1" Time="0">
             <Charge>
                 <CountMax value="4"/>
-                <CountStart value="3"/>
+                <CountStart value="1"/>
                 <CountUse value="1"/>
                 <TimeUse value="14"/>
             </Charge>
@@ -5387,7 +5387,7 @@
         <InfoArray index="Train2" Time="0">
             <Charge>
                 <CountMax value="4"/>
-                <CountStart value="3"/>
+                <CountStart value="1"/>
                 <CountUse value="1"/>
                 <TimeUse value="35"/>
             </Charge>
@@ -5397,7 +5397,7 @@
         <InfoArray index="Train3" Time="0">
             <Charge>
                 <CountMax value="4"/>
-                <CountStart value="3"/>
+                <CountStart value="1"/>
                 <CountUse value="1"/>
                 <TimeUse value="100"/>
             </Charge>
@@ -5407,17 +5407,18 @@
         <InfoArray index="Train4" Time="0">
             <Charge>
                 <CountMax value="4"/>
-                <CountStart value="3"/>
+                <CountStart value="1"/>
                 <CountUse value="1"/>
                 <TimeUse value="12"/>
             </Charge>
             <Button DefaultButtonFace="Zergling3" Requirements=""/>
             <Unit index="0" value="Zergling3"/>
+            <Unit value="Zergling3"/>
         </InfoArray>
         <InfoArray index="Train5" Time="0">
             <Charge>
                 <CountMax value="4"/>
-                <CountStart value="3"/>
+                <CountStart value="1"/>
                 <CountUse value="1"/>
                 <TimeUse value="25"/>
             </Charge>
@@ -5427,7 +5428,7 @@
         <InfoArray index="Train6" Time="0">
             <Charge>
                 <CountMax value="4"/>
-                <CountStart value="3"/>
+                <CountStart value="1"/>
                 <CountUse value="1"/>
                 <TimeUse value="30"/>
             </Charge>
@@ -5437,7 +5438,7 @@
         <InfoArray index="Train7" Time="0">
             <Charge>
                 <CountMax value="4"/>
-                <CountStart value="3"/>
+                <CountStart value="1"/>
                 <CountUse value="1"/>
                 <TimeUse value="45"/>
             </Charge>
@@ -5447,7 +5448,7 @@
         <InfoArray index="Train8">
             <Charge>
                 <CountMax value="4"/>
-                <CountStart value="3"/>
+                <CountStart value="1"/>
                 <CountUse value="1"/>
                 <TimeUse value="30"/>
             </Charge>
@@ -5457,7 +5458,7 @@
         <InfoArray index="Train9">
             <Charge>
                 <CountMax value="4"/>
-                <CountStart value="3"/>
+                <CountStart value="1"/>
                 <CountUse value="1"/>
                 <TimeUse value="45"/>
             </Charge>
@@ -5467,7 +5468,7 @@
         <InfoArray index="Train10">
             <Charge>
                 <CountMax value="4"/>
-                <CountStart value="3"/>
+                <CountStart value="1"/>
                 <CountUse value="1"/>
                 <TimeUse value="60"/>
             </Charge>
@@ -5477,7 +5478,7 @@
         <InfoArray index="Train11">
             <Charge>
                 <CountMax value="4"/>
-                <CountStart value="3"/>
+                <CountStart value="1"/>
                 <CountUse value="1"/>
                 <TimeUse value="75"/>
             </Charge>
@@ -5487,7 +5488,7 @@
         <InfoArray index="Train12">
             <Charge>
                 <CountMax value="5"/>
-                <CountStart value="3"/>
+                <CountStart value="1"/>
                 <CountUse value="1"/>
                 <TimeUse value="35"/>
             </Charge>
@@ -5497,7 +5498,7 @@
         <InfoArray index="Train13">
             <Charge>
                 <CountMax value="5"/>
-                <CountStart value="3"/>
+                <CountStart value="1"/>
                 <CountUse value="1"/>
                 <TimeUse value="50"/>
             </Charge>
@@ -5507,7 +5508,7 @@
         <InfoArray index="Train14">
             <Charge>
                 <CountMax value="5"/>
-                <CountStart value="3"/>
+                <CountStart value="1"/>
                 <CountUse value="1"/>
                 <TimeUse value="40"/>
             </Charge>
@@ -5517,7 +5518,7 @@
         <InfoArray index="Train15">
             <Charge>
                 <CountMax value="4"/>
-                <CountStart value="3"/>
+                <CountStart value="1"/>
                 <CountUse value="1"/>
                 <TimeUse value="40"/>
             </Charge>
@@ -5527,7 +5528,7 @@
         <InfoArray index="Train16">
             <Charge>
                 <CountMax value="4"/>
-                <CountStart value="3"/>
+                <CountStart value="1"/>
                 <CountUse value="1"/>
                 <TimeUse value="35"/>
             </Charge>
@@ -5537,7 +5538,7 @@
         <InfoArray index="Train17">
             <Charge>
                 <CountMax value="5"/>
-                <CountStart value="3"/>
+                <CountStart value="1"/>
                 <CountUse value="1"/>
                 <TimeUse value="75"/>
             </Charge>
@@ -5547,7 +5548,7 @@
         <InfoArray index="Train18">
             <Charge>
                 <CountMax value="4"/>
-                <CountStart value="3"/>
+                <CountStart value="1"/>
                 <CountUse value="1"/>
                 <TimeUse value="55"/>
             </Charge>
@@ -18505,6 +18506,8 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <Effect index="0" value="DefensiveMatrixSet23"/>
         <Flags index="AllowMovement" value="1"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
         <Flags index="BestUnit" value="0"/>
         <Flags index="NoDeceleration" value="1"/>
         <Flags index="RequireTargetVision" value="0"/>
@@ -22687,10 +22690,10 @@
             <Charge>
                 <CountMax value="2"/>
                 <CountStart value="2"/>
-                <CountUse value="1"/>
+                <CountUse value="2"/>
                 <TimeUse value="75"/>
             </Charge>
-            <Button DefaultButtonFace="CarrierAiur4" Requirements="HaveBarracks32"/>
+            <Button DefaultButtonFace="CarrierAiur4" Requirements="HaveBarracks324"/>
             <Unit value="DarknessBringer"/>
         </InfoArray>
         <InfoArray index="Train15">
@@ -57317,7 +57320,7 @@
                 <CountUse value="1"/>
                 <Link value="RaynorTimeBomb"/>
                 <Location value="Unit"/>
-                <TimeUse value="84"/>
+                <TimeUse value="42"/>
             </Charge>
             <Cooldown Link="Abil/TheMorosDevice"/>
         </Cost>
