@@ -31611,7 +31611,7 @@
         <PeriodicPeriodArray value="0"/>
     </CEffectCreatePersistent>
     <CEffectLaunchMissile id="IonCannonsLMLeft2" parent="IonCannonsLM">
-        <ImpactEffect value="IonCannonsULeft2"/>
+        <ImpactEffect value="IonCannonsXelnaga"/>
         <AmmoUnit value="IonCannonsWeapon2"/>
         <Movers Link="MissileDefault" IfRangeLTE="1"/>
         <Movers Link="IonCannonsWeaponLeft" IfRangeLTE="6"/>
@@ -31687,7 +31687,7 @@
         <Movers Link="IonCannonsWeaponLeft" IfRangeLTE="6"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="IonCannonsLMRight2" parent="IonCannonsLM">
-        <ImpactEffect value="IonCannonsURight2"/>
+        <ImpactEffect value="IonCannonsXelnaga"/>
         <AmmoUnit value="IonCannonsWeapon2"/>
         <Movers Link="MissileDefault" IfRangeLTE="1"/>
         <Movers Link="IonCannonsWeaponRight" IfRangeLTE="6"/>
@@ -31707,7 +31707,7 @@
         <ValidatorArray index="0" value="IonCannonsLMTargetFilters"/>
         <EditorCategories value="Race:Protoss"/>
         <Marker Link="Effect/IonCannonsLM"/>
-        <ImpactEffect value="IonCannonsURight4"/>
+        <ImpactEffect value="IonCannonsXelnaga"/>
         <AmmoUnit value="IonCannonsWeapon4"/>
         <Movers Link="MissileDefault" IfRangeLTE="1"/>
         <Movers Link="IonCannonsWeaponRight" IfRangeLTE="6"/>
@@ -31910,7 +31910,7 @@
         <ExcludeArray Value="Target"/>
         <SearchFilters value="Air;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CEffectDamage>
-    <CEffectDamage id="IonCannonsURight4" parent="DU_WEAP_MISSILE">
+    <CEffectDamage id="IonCannonsXelnaga" parent="DU_WEAP_MISSILE">
         <Name value="Effect/Name/IonCannonsU"/>
         <EditorCategories value="Race:Protoss"/>
         <Marker Link="Effect/IonCannonsU"/>
