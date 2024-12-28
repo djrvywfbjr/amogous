@@ -218,6 +218,11 @@
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="PoisonNova232332" Requirements="UseSpectreNyxSuit22223322322"/>
     </CAbilEffectInstant>
+    <CAbilEffectTarget id="AmonTentacleA">
+        <Cost index="0">
+            <Cooldown TimeUse="4.5"/>
+        </Cost>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="AmonTentacleB2">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Effect index="0" value="AmonTentacleBCP2"/>
@@ -723,6 +728,27 @@
             <Vital index="Energy" value="300"/>
         </Cost>
     </CAbilEffectTarget>
+    <CAbilEffectTarget id="ArtanisWormholeTransit7">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ArtanisWormholeTransitTeleportMove7"/>
+        <Flags index="BestUnit" value="0"/>
+        <Cost>
+            <Vital index="Energy" value="50"/>
+            <Cooldown TimeUse="20"/>
+        </Cost>
+        <TargetFilters value="Structure,Visible;Self,Ally,Neutral,Enemy,UnderConstruction"/>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <PrepTime value="0.5"/>
+        <CastIntroTime value="0.5"/>
+        <FinishTime value="0.5"/>
+        <UninterruptibleArray index="Approach" value="1"/>
+        <UninterruptibleArray index="Prep" value="1"/>
+        <UninterruptibleArray index="Cast" value="1"/>
+        <UninterruptibleArray index="Channel" value="1"/>
+        <UninterruptibleArray index="Finish" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="WormholeTransit8"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="Blink5">
         <AbilSetId value="Blnk"/>
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
@@ -825,108 +851,23 @@
             <Unit value="AmerdallianMiner"/>
             <Flags index="InheritRally" value="1"/>
         </InfoArray>
-        <InfoArray index="Train2">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train3">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train4">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train5">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train6">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train7">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train8">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train9">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train10">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train11">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train12">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train13">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train14">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train15">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train16">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train17">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train18">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train19">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train24">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train25">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train26">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train27">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train28">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train29">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train30">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
         <Alert value="TrainWorkerComplete"/>
     </CAbilTrain>
+    <CAbilEffectTarget id="CallTotemOfTheVoid">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="PhaseCannon31"/>
+        <Flags index="RangeUseCasterRadius" value="0"/>
+        <Cost>
+            <Charge Link="Abil/SpawnCallTotemOfTheVoid"/>
+            <Cooldown Link="SpawnPhaseCannonSpawnPhaseCannon30SpawnPhaseCannonSpawnCallTotemOfTheVoid" Location="Unit" TimeUse="40"/>
+        </Cost>
+        <Placeholder value="TotemOfTheVoid"/>
+        <Range value="8"/>
+        <AINotifyEffect value="PhaseCannon30"/>
+        <ProducedUnitArray value="TotemOfTheVoid"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CallTotemOfTheVoid"/>
+        <PlaceUnit value="TotemOfTheVoid"/>
+    </CAbilEffectTarget>
     <CAbilEffectInstant id="PlasmerHighShield">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Effect index="0" value="GuardianShieldPersistent5"/>
@@ -22941,6 +22882,8 @@
             <Button DefaultButtonFace="DarkTemplar2"/>
             <Unit value="ShadowOne"/>
         </InfoArray>
+        <Flags index="UnitOrderQueue" value="1"/>
+        <Flags index="WaitForFood" value="0"/>
     </CAbilTrain>
     <CAbilTrain id="GatewayTrain3" parent="GatewayTrain">
         <Name value="Abil/Name/GatewayTrain3"/>

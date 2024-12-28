@@ -1,3 +1,9 @@
 after 1.229
-Starship Railgun range 9 --> 10, can now attack structures
-Foreman aura timescale 25% --> 15%
+Host Constructs now can place Totems Of The Void(Work In Progress)
+Aiur Guard cost: 160 ---> 120
+Fixed Xill charge training
+Once again changed Abolisher Hotkey + made its description more appropriate for minors
+Almost avoided crashing mid session
+Juggernaut Blast damage: 200 ---> 250
+Antamo Palace def desc is now correct
+Aegis Defense Field desc is now correct

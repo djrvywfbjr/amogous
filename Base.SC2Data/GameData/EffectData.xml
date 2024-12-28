@@ -3830,6 +3830,13 @@
     <CEffectApplyBehavior id="AltrapolCargoStasis">
         <EditorCategories value=""/>
     </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="AmonTentacleACP">
+        <PeriodicPeriodArray index="0" value="0.9"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="AmonTentacleADamage">
+        <AttributeBonus index="Massive" value="0"/>
+        <AttributeBonus index="Heroic" value="5"/>
+    </CEffectDamage>
     <CEffectLaunchMissile id="AmonTentacleBAttackLM2">
         <LaunchLocation Value="CasterUnit"/>
         <ImpactEffect value="AmonTentacleBDamage2"/>
@@ -4736,6 +4743,11 @@
         <EditorCategories value=""/>
         <Behavior value="ArtanisInspire3"/>
     </CEffectApplyBehavior>
+    <CEffectTeleport id="ArtanisWormholeTransitTeleportMove7">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Caster"/>
+        <TargetLocation Value="TargetUnit"/>
+    </CEffectTeleport>
     <CEffectSet id="AscendantWeapon24">
         <EffectArray value="AscendantWeaponDamage24"/>
     </CEffectSet>
@@ -4999,6 +5011,23 @@
         <DrainVitalCostFactor value="0.33"/>
         <RechargeVitalRate value="18"/>
     </CEffectCreateHealer>
+    <CEffectCreateUnit id="PhaseCannon31">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="TargetPoint"/>
+        <CreateFlags index="Birth" value="0"/>
+        <CreateFlags index="ProvideFood" value="0"/>
+        <CreateFlags index="UseFood" value="0"/>
+        <SpawnEffect value="PhaseCannonInitialStun37"/>
+        <SpawnUnit value="TotemOfTheVoid"/>
+    </CEffectCreateUnit>
+    <CEffectApplyBehavior id="PhaseCannonInitialStun37">
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="PhaseCannonInitialStun"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="PhaseCannonTimedLife37">
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="PhaseCannonTimedLife"/>
+    </CEffectApplyBehavior>
     <CEffectDamage id="PsiBlades13" parent="DU_WEAP">
         <ValidatorArray value="NotHidden"/>
         <EditorCategories value="Race:Protoss"/>
@@ -5031,6 +5060,16 @@
         <PeriodicPeriodArray value="0"/>
         <PeriodicPeriodArray value="0.28"/>
     </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="PsiDisruptionApplyBehavior13">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="CallOfTheVoid"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="PsiDisruptionSearchArea12">
+        <EditorCategories value="Race:Terran"/>
+        <SearchFilters value="Visible;Self,Player,Ally,Neutral,Structure,Heroic,Missile,Stasis,Dead,Hidden,Invulnerable,Benign"/>
+        <AreaArray Radius="8" Effect="PsiDisruptionApplyBehavior13"/>
+    </CEffectEnumArea>
     <CEffectDamage id="PsionicShockwaveDamage42" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
         <Kind value="Ranged"/>
@@ -79893,7 +79932,7 @@
         <ResponseFlags index="Flee" value="1"/>
         <Visibility value="Visible"/>
         <Flags index="Notification" value="1"/>
-        <Amount value="200"/>
+        <Amount value="250"/>
         <Death value="Blast"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectDamage>
