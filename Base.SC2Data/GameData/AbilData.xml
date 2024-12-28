@@ -807,6 +807,126 @@
         <AutoCastFilters value="Visible;Player,Ally,Neutral,Structure,User1,Missile,Cloaked,Stasis,Dead,Hidden,MapBoss"/>
         <AutoCastRange value="5"/>
     </CAbilEffectTarget>
+    <CAbilTrain id="NexusTrain323">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
+        <Activity value="UI/Warping"/>
+        <Flags index="UnitOrderQueue" value="1"/>
+        <Flags index="WaitForFood" value="0"/>
+        <InfoArray index="Train1">
+            <Charge>
+                <CountMax value="5"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="14"/>
+                <TimeUse value="14"/>
+            </Charge>
+            <Button DefaultButtonFace="Probe32"/>
+            <Unit value="AmerdallianMiner"/>
+            <Flags index="InheritRally" value="1"/>
+        </InfoArray>
+        <InfoArray index="Train2">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+        </InfoArray>
+        <InfoArray index="Train3">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+        </InfoArray>
+        <InfoArray index="Train4">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+        </InfoArray>
+        <InfoArray index="Train5">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+        </InfoArray>
+        <InfoArray index="Train6">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+        </InfoArray>
+        <InfoArray index="Train7">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+        </InfoArray>
+        <InfoArray index="Train8">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+        </InfoArray>
+        <InfoArray index="Train9">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+        </InfoArray>
+        <InfoArray index="Train10">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+        </InfoArray>
+        <InfoArray index="Train11">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+        </InfoArray>
+        <InfoArray index="Train12">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+        </InfoArray>
+        <InfoArray index="Train13">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+        </InfoArray>
+        <InfoArray index="Train14">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+        </InfoArray>
+        <InfoArray index="Train15">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+        </InfoArray>
+        <InfoArray index="Train16">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+        </InfoArray>
+        <InfoArray index="Train17">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+        </InfoArray>
+        <InfoArray index="Train18">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+        </InfoArray>
+        <InfoArray index="Train19">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+        </InfoArray>
+        <InfoArray index="Train24">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+        </InfoArray>
+        <InfoArray index="Train25">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+        </InfoArray>
+        <InfoArray index="Train26">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+        </InfoArray>
+        <InfoArray index="Train27">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+        </InfoArray>
+        <InfoArray index="Train28">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+        </InfoArray>
+        <InfoArray index="Train29">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+        </InfoArray>
+        <InfoArray index="Train30">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+        </InfoArray>
+        <Alert value="TrainWorkerComplete"/>
+    </CAbilTrain>
     <CAbilEffectInstant id="PlasmerHighShield">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Effect index="0" value="GuardianShieldPersistent5"/>
@@ -5384,182 +5504,240 @@
                 <CountMax value="4"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="14"/>
                 <TimeUse value="14"/>
             </Charge>
-            <Button DefaultButtonFace="Drone3"/>
+            <Button DefaultButtonFace="Drone3">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
             <Unit index="0" value="Drone3"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train2" Time="0">
             <Charge>
                 <CountMax value="4"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="35"/>
                 <TimeUse value="35"/>
             </Charge>
             <Button DefaultButtonFace="Overlord3"/>
             <Unit index="0" value="Overlord2"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train3" Time="0">
             <Charge>
                 <CountMax value="4"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="100"/>
                 <TimeUse value="100"/>
             </Charge>
             <Button DefaultButtonFace="Overlord32" Requirements="HaveCyberHatchery2222"/>
             <Unit index="0" value="Overlord22"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train4" Time="0">
             <Charge>
                 <CountMax value="4"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="12"/>
                 <TimeUse value="12"/>
             </Charge>
             <Button DefaultButtonFace="Zergling3" Requirements=""/>
             <Unit index="0" value="Zergling3"/>
             <Unit value="Zergling3"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train5" Time="0">
             <Charge>
                 <CountMax value="4"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="25"/>
                 <TimeUse value="25"/>
             </Charge>
             <Button DefaultButtonFace="Baneling3" Requirements="HaveCyberHatchery222"/>
             <Unit index="0" value="Baneling3"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train6" Time="0">
             <Charge>
                 <CountMax value="4"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="30"/>
                 <TimeUse value="30"/>
             </Charge>
             <Button DefaultButtonFace="Roach3" Requirements="HaveCyberHatchery2222"/>
             <Unit index="0" value="Roach4"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train7" Time="0">
             <Charge>
                 <CountMax value="4"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="45"/>
                 <TimeUse value="45"/>
             </Charge>
             <Button DefaultButtonFace="Ravager2" Requirements="HaveCyberHatchery2222"/>
             <Unit index="0" value="Ravager2"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train8">
             <Charge>
                 <CountMax value="4"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="30"/>
                 <TimeUse value="30"/>
             </Charge>
             <Button DefaultButtonFace="Hydralisk3" Requirements="HaveCyberHatchery22222"/>
             <Unit value="Hydralisk3"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train9">
             <Charge>
                 <CountMax value="4"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="45"/>
                 <TimeUse value="45"/>
             </Charge>
             <Button DefaultButtonFace="Lurker2" Requirements="HaveCyberHatchery2222223"/>
             <Unit value="LurkerMP2"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train10">
             <Charge>
                 <CountMax value="4"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="60"/>
                 <TimeUse value="60"/>
             </Charge>
             <Button DefaultButtonFace="Infestor2" Requirements="HaveCyberHatchery222222"/>
             <Unit value="Infestor3"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train11">
             <Charge>
                 <CountMax value="4"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="75"/>
                 <TimeUse value="75"/>
             </Charge>
             <Button DefaultButtonFace="Ultralisk2" Requirements="HaveCyberHatchery22222222"/>
             <Unit value="Ultralisk5"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train12">
             <Charge>
                 <CountMax value="5"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="35"/>
                 <TimeUse value="35"/>
             </Charge>
             <Button DefaultButtonFace="Mutalisk3"/>
             <Unit value="Mutalisk4"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train13">
             <Charge>
                 <CountMax value="5"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="50"/>
                 <TimeUse value="50"/>
             </Charge>
             <Button DefaultButtonFace="Corruptor3" Requirements="HaveCyberHatchery22222222"/>
             <Unit value="Corruptor4"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train14">
             <Charge>
                 <CountMax value="5"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="40"/>
                 <TimeUse value="40"/>
             </Charge>
             <Button DefaultButtonFace="MorphToOverseer3" Requirements="HaveCyberHatchery2222223"/>
             <Unit value="Overseer3"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train15">
             <Charge>
                 <CountMax value="4"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="40"/>
                 <TimeUse value="40"/>
             </Charge>
             <Button DefaultButtonFace="Queen4"/>
             <Unit value="Queen4"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train16">
             <Charge>
                 <CountMax value="4"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="35"/>
                 <TimeUse value="35"/>
             </Charge>
             <Button DefaultButtonFace="LocustFlyingLaunch2" Requirements="HaveCyberHatchery22222"/>
             <Unit value="LocustMP2"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train17">
             <Charge>
                 <CountMax value="5"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="75"/>
                 <TimeUse value="75"/>
             </Charge>
             <Button DefaultButtonFace="BroodLord2" Requirements="HaveCyberHatchery22222222"/>
             <Unit value="BroodLord2"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train18">
             <Charge>
                 <CountMax value="4"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="55"/>
                 <TimeUse value="55"/>
             </Charge>
             <Button DefaultButtonFace="Queen42" Requirements="HaveCyberHatchery22"/>
             <Unit value="SwarmHostMP4"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
+        <Flags index="UnitOrderQueue" value="1"/>
+        <Flags index="WaitForFood" value="0"/>
     </CAbilTrain>
     <CAbilMorph id="BlackhammerFly">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -22769,158 +22947,213 @@
         <InfoArray index="Train1" Time="0">
             <Charge>
                 <CountMax value="6"/>
-                <CountStart value="3"/>
+                <CountStart value="1"/>
                 <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="20"/>
                 <TimeUse value="20"/>
             </Charge>
             <Button DefaultButtonFace="Zealot6"/>
             <Unit index="0" value="ZealotShakuras7"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train2" Time="0">
             <Charge>
                 <CountMax value="6"/>
-                <CountStart value="3"/>
+                <CountStart value="1"/>
                 <CountUse value="2"/>
+                <Location value="Unit"/>
+                <TimeStart value="20"/>
                 <TimeUse value="20"/>
             </Charge>
             <Button DefaultButtonFace="Stalker6" Requirements="BuildingHaveArmyCore"/>
             <Unit index="0" value="Stalker3"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train3" Time="0">
-            <Charge CountMax="6" CountUse="2" TimeUse="20"/>
+            <Charge>
+                <CountMax value="6"/>
+                <CountStart value="1"/>
+                <CountUse value="2"/>
+                <Location value="Unit"/>
+                <TimeStart value="20"/>
+                <TimeUse value="20"/>
+            </Charge>
             <Button DefaultButtonFace="Stalker62" Requirements="BuildingHaveArmyCore22"/>
             <Unit index="0" value="Adept6"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train4" Time="0">
             <Charge>
                 <CountMax value="6"/>
-                <CountStart value="3"/>
+                <CountStart value="1"/>
                 <CountUse value="3"/>
+                <Location value="Unit"/>
+                <TimeStart value="20"/>
                 <TimeUse value="20"/>
             </Charge>
             <Button DefaultButtonFace="HighTemplar4" Requirements="BuildingHaveArmyCore22"/>
             <Unit index="0" value="StalkerShakuras3"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train5" Time="0">
             <Charge>
                 <CountMax value="6"/>
-                <CountStart value="3"/>
+                <CountStart value="1"/>
                 <CountUse value="3"/>
+                <Location value="Unit"/>
+                <TimeStart value="20"/>
                 <TimeUse value="20"/>
             </Charge>
             <Button DefaultButtonFace="DarkTemplar4" Requirements="BuildingHaveArmyCore222222"/>
             <Unit index="0" value="DarkTemplarTaldarim2"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train6" Time="0">
             <Charge>
                 <CountMax value="6"/>
-                <CountStart value="3"/>
+                <CountStart value="1"/>
                 <CountUse value="2"/>
+                <Location value="Unit"/>
+                <TimeStart value="20"/>
                 <TimeUse value="20"/>
             </Charge>
             <Button DefaultButtonFace="Sentry2" Requirements="BuildingHaveArmyCore"/>
             <Unit index="0" value="SentryAiur3"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train10">
             <Charge>
                 <CountMax value="6"/>
-                <CountStart value="6"/>
+                <CountStart value="1"/>
                 <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="15.6"/>
                 <TimeUse value="15.6"/>
             </Charge>
             <Button DefaultButtonFace="Probe7"/>
             <Unit value="Probe5"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train11">
             <Charge>
                 <CountMax value="6"/>
-                <CountStart value="6"/>
+                <CountStart value="1"/>
                 <CountUse value="3"/>
+                <Location value="Unit"/>
+                <TimeStart value="15.6"/>
                 <TimeUse value="15.6"/>
             </Charge>
             <Button DefaultButtonFace="Probe72"/>
             <Unit value="WarpPrism4"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train12">
             <Charge>
                 <CountMax value="6"/>
-                <CountStart value="6"/>
+                <CountStart value="1"/>
                 <CountUse value="4"/>
+                <Location value="Unit"/>
+                <TimeStart value="15.6"/>
                 <TimeUse value="15.6"/>
             </Charge>
             <Button DefaultButtonFace="Probe722" Requirements="BuildingHaveArmyCore22"/>
             <Unit value="MothershipCore5"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train13">
             <Charge>
                 <CountMax value="6"/>
-                <CountStart value="6"/>
+                <CountStart value="1"/>
                 <CountUse value="3"/>
+                <Location value="Unit"/>
+                <TimeStart value="20"/>
                 <TimeUse value="20"/>
             </Charge>
             <Button DefaultButtonFace="VoidRayTaldarim2"/>
             <Unit value="VoidRayTaldarim2"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train14">
             <Charge>
                 <CountMax value="6"/>
-                <CountStart value="6"/>
+                <CountStart value="1"/>
                 <CountUse value="2"/>
+                <Location value="Unit"/>
+                <TimeStart value="20"/>
                 <TimeUse value="20"/>
             </Charge>
             <Button DefaultButtonFace="Oracle3"/>
             <Unit value="Oracle32"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train15">
             <Charge>
                 <CountMax value="6"/>
-                <CountStart value="6"/>
+                <CountStart value="1"/>
                 <CountUse value="4"/>
+                <Location value="Unit"/>
+                <TimeStart value="20"/>
                 <TimeUse value="20"/>
             </Charge>
             <Button DefaultButtonFace="Carrier4" Requirements="BuildingHaveArmyCore22222"/>
             <Unit value="CarrierTaldarim2"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train16">
             <Charge>
                 <CountMax value="6"/>
-                <CountStart value="6"/>
+                <CountStart value="1"/>
                 <CountUse value="6"/>
+                <Location value="Unit"/>
+                <TimeStart value="20"/>
                 <TimeUse value="20"/>
             </Charge>
             <Button DefaultButtonFace="Mothership6" Requirements="MothershipRequirements23"/>
             <Unit value="SOAMothershipv43"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train17">
             <Charge>
                 <CountMax value="6"/>
-                <CountStart value="6"/>
+                <CountStart value="1"/>
                 <CountUse value="1"/>
+                <Location value="Unit"/>
+                <TimeStart value="20"/>
                 <TimeUse value="20"/>
             </Charge>
             <Button DefaultButtonFace="Observer5"/>
             <Unit value="Observer32"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train18">
             <Charge>
                 <CountMax value="6"/>
-                <CountStart value="6"/>
+                <CountStart value="1"/>
                 <CountUse value="3"/>
+                <Location value="Unit"/>
+                <TimeStart value="20"/>
                 <TimeUse value="20"/>
             </Charge>
             <Button DefaultButtonFace="Immortal4"/>
             <Unit value="ImmortalTaldarim22"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train19">
             <Charge>
                 <CountMax value="6"/>
-                <CountStart value="6"/>
+                <CountStart value="1"/>
                 <CountUse value="4"/>
+                <Location value="Unit"/>
+                <TimeStart value="20"/>
                 <TimeUse value="20"/>
             </Charge>
             <Button DefaultButtonFace="Colossus3" Requirements="BuildingHaveArmyCore222"/>
             <Unit value="ColossusTaldarim4"/>
+            <Flags index="InheritRally" value="1"/>
         </InfoArray>
+        <Flags index="UnitOrderQueue" value="1"/>
+        <Flags index="WaitForFood" value="0"/>
     </CAbilTrain>
     <CAbilResearch id="GhostAcademyResearch10" parent="GhostAcademyResearch">
         <Name value="Abil/Name/GhostAcademyResearch10"/>
@@ -54990,62 +55223,61 @@
     </CAbilEffectTarget>
     <CAbilTrain id="UnknownAbility12">
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <InfoArray index="Train1" Time="3">
-            <Resource index="Minerals" value="-7"/>
+        <InfoArray index="Train1">
             <Charge>
                 <CountMax value="5"/>
                 <CountStart value="5"/>
                 <CountUse value="1"/>
-                <TimeUse value="18"/>
+                <TimeUse value="28"/>
             </Charge>
             <Button DefaultButtonFace="Marine11"/>
             <Unit value="Marine3"/>
+            <Unit value="Marine3"/>
+            <Unit value="Marine3"/>
         </InfoArray>
-        <InfoArray index="Train2" Time="5">
-            <Resource index="Minerals" value="-15"/>
-            <Resource index="Vespene" value="-16"/>
+        <InfoArray index="Train2">
             <Charge>
                 <CountMax value="5"/>
                 <CountStart value="5"/>
                 <CountUse value="1"/>
-                <TimeUse value="18"/>
+                <TimeUse value="28"/>
             </Charge>
             <Button DefaultButtonFace="Marine112" Requirements="HaveEnlistmentHouse2"/>
             <Unit value="Marine32"/>
         </InfoArray>
-        <InfoArray index="Train3" Time="6">
-            <Resource index="Minerals" value="-10"/>
+        <InfoArray index="Train3">
             <Charge>
                 <CountMax value="5"/>
                 <CountStart value="5"/>
                 <CountUse value="1"/>
-                <TimeUse value="18"/>
+                <TimeUse value="28"/>
             </Charge>
             <Button DefaultButtonFace="Marine1122" Requirements="HaveEnlistmentHouse22"/>
             <Unit value="Marine33"/>
         </InfoArray>
-        <InfoArray index="Train4" Time="7">
-            <Resource index="Minerals" value="-15"/>
+        <InfoArray index="Train4">
             <Charge>
                 <CountMax value="5"/>
                 <CountStart value="5"/>
                 <CountUse value="1"/>
-                <TimeUse value="18"/>
+                <TimeUse value="28"/>
             </Charge>
             <Button DefaultButtonFace="Marine11222" Requirements="HaveEnlistmentHouse2232"/>
             <Unit value="Marine34"/>
         </InfoArray>
-        <InfoArray index="Train5" Time="8.5">
-            <Resource index="Minerals" value="-35"/>
+        <InfoArray index="Train5">
             <Charge>
                 <CountMax value="5"/>
                 <CountStart value="5"/>
                 <CountUse value="1"/>
-                <TimeUse value="18"/>
+                <TimeUse value="28"/>
             </Charge>
             <Button DefaultButtonFace="Marine112222" Requirements="HaveEnlistmentHouse223"/>
             <Unit value="Marine35"/>
         </InfoArray>
+        <Flags index="IgnoreUnitCost" value="1"/>
+        <Flags index="UnitOrderQueue" value="1"/>
+        <Flags index="WaitForFood" value="0"/>
     </CAbilTrain>
     <CAbilEffectInstant id="UnknownAbility13">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -67615,13 +67847,13 @@
         <InfoArray index="Build3">
             <Button DefaultButtonFace="Extractor2"/>
         </InfoArray>
-        <InfoArray index="Build4" Unit="EggChamber">
+        <InfoArray index="Build4" Unit="EggChamber" Time="56">
             <Button DefaultButtonFace="SpawningPool2" Requirements=""/>
         </InfoArray>
-        <InfoArray index="Build5" Unit="PsiRepeater">
+        <InfoArray index="Build5" Unit="PsiRepeater" Time="54.6">
             <Button DefaultButtonFace="RoachWarren2" Requirements="HaveBarracks3"/>
         </InfoArray>
-        <InfoArray index="Build6" Unit="InfestationModerator">
+        <InfoArray index="Build6" Unit="InfestationModerator" Time="54.6">
             <Button DefaultButtonFace="HydraliskDen2" Requirements="HaveBarracks3"/>
         </InfoArray>
         <InfoArray index="Build7" Unit="HereticCannon" Time="10">
@@ -67630,7 +67862,7 @@
         <InfoArray index="Build8" Unit="PortalOfHerecy" Time="100">
             <Button DefaultButtonFace="BanelingNest2" Requirements="HaveBarracks32"/>
         </InfoArray>
-        <InfoArray index="Build9" Unit="InfestedFacility">
+        <InfoArray index="Build9" Unit="InfestedFacility" Time="60.2">
             <Button DefaultButtonFace="Spire2" Requirements="HaveBarracks32"/>
         </InfoArray>
         <InfoArray index="Build11" Unit="WarpSpaceBeacon" Time="60">

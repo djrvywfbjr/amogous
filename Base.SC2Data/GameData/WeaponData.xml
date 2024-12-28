@@ -5669,7 +5669,7 @@
     <CWeaponLegacy id="IonCannons22" parent="IonCannons">
         <Name value="Weapon/Name/IonCannons22"/>
         <Tip value="Weapon/Tip/IonCannons22"/>
-        <DisplayEffect value="IonCannonsURight4"/>
+        <DisplayEffect value="IonCannonsXelnaga"/>
         <DisplayAttackCount value="4"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Effect value="IonCannons2"/>

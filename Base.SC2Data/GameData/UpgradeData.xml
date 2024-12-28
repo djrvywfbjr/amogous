@@ -11638,8 +11638,8 @@
         <EffectArray Operation="Subtract" Reference="Unit,PrimalTownHall224,EnergyMax" Value="3"/>
     </CUpgrade>
     <CUpgrade id="UnknownUpgrade73">
-        <EffectArray Operation="Set" Reference="Unit,MilitarizedColonistTransport2,LifeMax" Value="350"/>
-        <EffectArray Operation="Set" Reference="Unit,MilitarizedColonistTransport2,LifeStart" Value="350"/>
+        <EffectArray Reference="Unit,MilitarizedColonistTransport2,LifeMax" Value="200"/>
+        <EffectArray Reference="Unit,MilitarizedColonistTransport2,LifeStart" Value="200"/>
     </CUpgrade>
     <CUpgrade id="UnknownUpgrade74">
         <EffectArray Operation="Set" Reference="Abil,CommandCenterTrain5,InfoArray[Train10].Time" Value="10.000000"/>
