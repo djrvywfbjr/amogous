@@ -18371,7 +18371,7 @@
         <Duration value="12"/>
         <Period value="4"/>
         <PeriodicEffect value="SOAEnergizeSearch2233"/>
-        <Modification TimeScale="1.25"/>
+        <Modification TimeScale="1.15"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="PsiDisruption83">
         <Alignment value="Positive"/>
