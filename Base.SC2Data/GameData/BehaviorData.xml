@@ -1008,7 +1008,6 @@
         <DamageResponse ClampMaximum="15" Minimum="15">
             <Chance value="1"/>
         </DamageResponse>
-        <DisableValidatorArray value="hasShields"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="HotG">
         <EditorCategories value="AbilityorEffectType:Units"/>

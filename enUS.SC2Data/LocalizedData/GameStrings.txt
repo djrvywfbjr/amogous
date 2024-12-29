@@ -12089,7 +12089,7 @@ Button/Tooltip/AggressiveMutation22=Friendly units gain 35% attack and movement 
 Button/Tooltip/AggressiveMutation3=Friendly Zerg units gain +<d ref="Behavior,AggressiveMutation,Modification.DamageDealtUnscaled[Melee]"/> attack damage for <d ref="Behavior,AggressiveMutation,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Affects ground units only.</c>
 Button/Tooltip/Agonizer=Durable anti-light support flyer.
 Button/Tooltip/AiurCOreeeee=Flying support unit. <n/>These were the first layer of planetary defense of important khalai planets. Their survival and preservation capabilities allowed them to still attack enemies even when the battle is happening on the planet itself.
-Button/Tooltip/Aiurbarrier=Blade Of Adun takes no more than 15 damage as long as it has <c val="0000FF">shields</c>.
+Button/Tooltip/Aiurbarrier=Blade Of Adun takes no more than 15 damage
 Button/Tooltip/AlarakChampion2=Highlord of the Tal'darim. Powerful Psionic Warrior.
 Button/Tooltip/AlarakKnockback2=Unleashes a massive wave of force in a straight line, dealing <d ref="Effect,DestructionWaveDamage,Amount"/> damage (+<d ref="Effect,DestructionWaveDamageAir,Amount"/> vs Air) to enemies in its path and knocking them back.<n/><n/><c val="#ColorAttackInfo">Massive units are knocked back a shorter distance.</c>
 Button/Tooltip/Alex=One of the best spectres out there.
