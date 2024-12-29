@@ -4868,7 +4868,7 @@
     <CEffectDamage id="HunterKillerU4" parent="DU_WEAP">
         <EditorCategories value="Race:Zerg"/>
         <Kind value="Ranged"/>
-        <Amount value="35"/>
+        <Amount value="60"/>
     </CEffectDamage>
     <CEffectLaunchMissile id="HybridDLM4">
         <EditorCategories value="Race:Protoss"/>
@@ -4973,7 +4973,7 @@
         <EditorCategories value="Race:Protoss"/>
         <Kind value="Ranged"/>
         <KindSplash value="Splash"/>
-        <Amount value="20"/>
+        <Amount value="26"/>
         <ExcludeArray Value="Outer"/>
         <ExcludeArray Value="Target"/>
         <SearchFilters value="-;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
@@ -4984,7 +4984,7 @@
         <EditorCategories value="Race:Protoss"/>
         <Kind value="Ranged"/>
         <KindSplash value="Splash"/>
-        <Amount value="18"/>
+        <Amount value="22"/>
         <ExcludeArray Value="Outer"/>
         <ExcludeArray Value="Target"/>
         <SearchFilters value="-;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
@@ -5021,7 +5021,7 @@
     <CEffectDamage id="PsiBlades13" parent="DU_WEAP">
         <ValidatorArray value="NotHidden"/>
         <EditorCategories value="Race:Protoss"/>
-        <Amount value="8"/>
+        <Amount value="12"/>
         <Death value="Eviscerate"/>
     </CEffectDamage>
     <CEffectDamage id="PsiBlades14" parent="DU_WEAP">
@@ -21773,7 +21773,7 @@
     <CEffectDamage id="DragoonDamage4" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
         <Kind value="Ranged"/>
-        <Amount value="55"/>
+        <Amount value="20"/>
     </CEffectDamage>
     <CEffectDamage id="DragoonDamage5" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
@@ -68656,7 +68656,7 @@
     </CEffectDamage>
     <CEffectDamage id="TempestDamageGround4" parent="TempestDamageGround">
         <Name value="Effect/Name/TempestDamageGround4"/>
-        <Amount value="30"/>
+        <Amount value="50"/>
     </CEffectDamage>
     <CEffectDamage id="TempestDamageGround42" parent="TempestDamageGround">
         <Name value="Effect/Name/TempestDamageGround42"/>
