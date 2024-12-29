@@ -18426,7 +18426,7 @@
         <Flags index="RequireTargetVision" value="0"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Vital index="Shields" value="1000"/>
+            <Vital index="Shields" value="700"/>
             <Charge>
                 <CountMax value="3"/>
                 <CountStart value="3"/>
@@ -18440,7 +18440,7 @@
         <TargetFilters value="Visible;Neutral,Enemy,Missile"/>
         <Range value="500"/>
         <Arc value="360"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="DefensiveMatrix2222" Requirements="HaveOldFortress34"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="DefensiveMatrix2222" Requirements="HaveOldFortress2222"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="DefensiveMatrix22222">
         <AbilSetId value="dmatrix"/>
@@ -44783,7 +44783,7 @@
         <InfoArray index="Build14" Unit="RoboticsFacility2">
             <Button DefaultButtonFace="RoboticsFacility5" Requirements="HaveOldFortress2222"/>
         </InfoArray>
-        <InfoArray index="Build15" Unit="CyberneticsCore3">
+        <InfoArray index="Build15" Unit="CyberneticsCore3" Time="28">
             <Button DefaultButtonFace="CyberneticsCore6" Requirements="HaveOldFortress2"/>
         </InfoArray>
         <InfoArray index="Build16" Unit="PhotonCannon8">
@@ -51147,7 +51147,7 @@
         <AutoCastRange value="500"/>
         <AutoCastValidatorArray value="CasterLifeNotFull2"/>
         <AutoCastValidatorArray value="IsTimeStopped24"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield22324" Requirements="HaveOldFortress33"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield22324" Requirements="HaveOldFortress2222"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="ShieldUp2324">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -68794,6 +68794,21 @@
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="200"/>
             <Button DefaultButtonFace="UnknownButton912" Requirements="UnknownRequirement1022"/>
+        </InfoArray>
+        <InfoArray index="Research16" Time="84" Upgrade="OmindArmoredSkin">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="OmindArmoredSkin" Requirements="OmindZergHp"/>
+        </InfoArray>
+        <InfoArray index="Research17" Time="84" Upgrade="Bleeding">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="OmindResearchBleeding" Requirements="OMindBleeding"/>
+        </InfoArray>
+        <InfoArray index="Research18" Time="84" Upgrade="OmindStrengthenedMuscles">
+            <Resource index="Minerals" value="75"/>
+            <Resource index="Vespene" value="75"/>
+            <Button DefaultButtonFace="OmindResearchStrengthenedMuscles" Requirements="OMindStrengthenedMuscles"/>
         </InfoArray>
     </CAbilResearch>
     <CAbilResearch id="evolutionchamberresearch42" parent="evolutionchamberresearch">

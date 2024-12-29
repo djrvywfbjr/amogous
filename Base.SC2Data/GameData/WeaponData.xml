@@ -836,6 +836,16 @@
         <DamagePoint value="0.05"/>
         <Backswing value="0.75"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="OmindClawsFormer">
+        <EditorCategories value="Race:Zerg"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="OmindHotSSwarmlingClawsDamage7"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.1"/>
+        <Period value="0.696"/>
+        <Effect value="OmindHotSSwarmlingClaws7"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="HunterSeekerMissileAA">
         <EditorCategories value="Race:Protoss"/>
         <Options index="LinkedCooldown" value="0"/>
@@ -1987,8 +1997,8 @@
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
         <DisplayEffect value="DragoonDamage4"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="8"/>
-        <Period value="3.75"/>
+        <Range value="3"/>
+        <Period value="0.7"/>
         <Effect value="DragoonLM4"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Dragoon5">
@@ -4008,7 +4018,7 @@
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
         <DisplayEffect value="KhaydarinBeamDamage3"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="7"/>
+        <Range value="8"/>
         <Arc value="360"/>
         <Cost>
             <Vital index="Shields" value="10"/>
@@ -4068,7 +4078,7 @@
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
         <DisplayEffect value="KhaydarinBeamDamage32"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="6"/>
+        <Range value="8"/>
         <Arc value="9.9975"/>
         <Cost>
             <Vital index="Shields" value="25"/>
@@ -8098,7 +8108,7 @@
         <DisplayAttackCount value="4"/>
         <Range value="9"/>
         <Cost>
-            <Vital index="Shields" value="15"/>
+            <Vital index="Shields" value="10"/>
         </Cost>
         <Period value="0.6"/>
         <Effect value="IonCannons2"/>

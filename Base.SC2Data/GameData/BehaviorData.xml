@@ -1008,7 +1008,6 @@
         <DamageResponse ClampMaximum="15" Minimum="15">
             <Chance value="1"/>
         </DamageResponse>
-        <DisableValidatorArray value="hasShields"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="HotG">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -1115,6 +1114,15 @@
                 <Cooldown Link="Behavior/AntamoAirAll"/>
             </Cost>
         </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="OmindZerglingDebuff">
+        <InfoIcon value="Assets\Textures\btn-ability-zerg-slivan-disablingcloud.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Requirements value="OMindBleedingButton"/>
+        <MaxStackCount value="5"/>
+        <Duration value="7"/>
+        <Period value="1.4"/>
+        <PeriodicEffect value="OmindZerglingEffectDamage"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="PsiDisruption12">
         <Alignment value="Negative"/>

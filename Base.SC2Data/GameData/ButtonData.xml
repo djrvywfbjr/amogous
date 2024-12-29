@@ -4289,6 +4289,26 @@
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="MothershipCore2222322"/>
     </CButton>
+    <CButton id="OmindArmoredSkin">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-organiccarapace.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-zerg-organiccarapace.dds"/>
+    </CButton>
+    <CButton id="OmindBleeding">
+        <Icon value="Assets\Textures\btn-upgrade-zergling-armorshredding.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-zergling-armorshredding.dds"/>
+    </CButton>
+    <CButton id="OmindResearchBleeding">
+        <Icon value="Assets\Textures\btn-upgrade-zergling-armorshredding.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-zergling-armorshredding.dds"/>
+    </CButton>
+    <CButton id="OmindStrengthenedMuscles">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-evolvemuscularaugments.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-zerg-evolvemuscularaugments.dds"/>
+    </CButton>
+    <CButton id="OmindResearchStrengthenedMuscles">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-evolvemuscularaugments.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-zerg-evolvemuscularaugments.dds"/>
+    </CButton>
     <CButton id="PatriotReactor">
         <Icon value="Assets\Textures\btn-upgrade-terran-caduceusreactor.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-terran-caduceusreactor.dds"/>
