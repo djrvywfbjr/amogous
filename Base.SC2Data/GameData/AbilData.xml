@@ -825,106 +825,6 @@
             <Unit value="AmerdallianMiner"/>
             <Flags index="InheritRally" value="1"/>
         </InfoArray>
-        <InfoArray index="Train2">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train3">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train4">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train5">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train6">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train7">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train8">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train9">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train10">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train11">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train12">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train13">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train14">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train15">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train16">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train17">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train18">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train19">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train24">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train25">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train26">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train27">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train28">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train29">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Train30">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
         <Alert value="TrainWorkerComplete"/>
     </CAbilTrain>
     <CAbilEffectInstant id="PlasmerHighShield">
@@ -68851,6 +68751,21 @@
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="200"/>
             <Button DefaultButtonFace="UnknownButton912" Requirements="UnknownRequirement1022"/>
+        </InfoArray>
+        <InfoArray index="Research16" Time="84" Upgrade="OmindArmoredSkin">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="OmindArmoredSkin" Requirements="OmindZergHp"/>
+        </InfoArray>
+        <InfoArray index="Research17" Time="84" Upgrade="Bleeding">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="OmindResearchBleeding" Requirements="OMindBleeding"/>
+        </InfoArray>
+        <InfoArray index="Research18" Time="84" Upgrade="OmindStrengthenedMuscles">
+            <Resource index="Minerals" value="75"/>
+            <Resource index="Vespene" value="75"/>
+            <Button DefaultButtonFace="OmindResearchStrengthenedMuscles" Requirements="OMindStrengthenedMuscles"/>
         </InfoArray>
     </CAbilResearch>
     <CAbilResearch id="evolutionchamberresearch42" parent="evolutionchamberresearch">

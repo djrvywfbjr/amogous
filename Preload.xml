@@ -239,6 +239,7 @@
 <Unit id="HotSLeviathan"/>
 <Unit id="GehennaCruiser"/>
 <Unit id="CarrierAiur"/>
+<Unit id="AmerdallianMiner"/>
 <Unit id="Nexus2"/>
 <Unit id="CommandCenter13"/>
 <Unit id="Serviceman"/>
@@ -274,7 +275,6 @@
 <Unit id="Civilian4"/>
 <Unit id="SCV14"/>
 <Unit id="AdvancedMiner"/>
-<Unit id="AmerdallianMiner"/>
 <Unit id="AmerdallianMiner2"/>
 <Unit id="QuickALisk"/>
 <Unit id="Leviathan32"/>

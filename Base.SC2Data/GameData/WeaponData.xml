@@ -836,6 +836,16 @@
         <DamagePoint value="0.05"/>
         <Backswing value="0.75"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="OmindClawsFormer">
+        <EditorCategories value="Race:Zerg"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="OmindHotSSwarmlingClawsDamage7"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.1"/>
+        <Period value="0.696"/>
+        <Effect value="OmindHotSSwarmlingClaws7"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="HunterSeekerMissileAA">
         <EditorCategories value="Race:Protoss"/>
         <Options index="LinkedCooldown" value="0"/>
