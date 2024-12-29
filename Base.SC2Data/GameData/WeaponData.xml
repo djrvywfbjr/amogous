@@ -11803,7 +11803,7 @@
         <DisplayAttackCount value="4"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="13"/>
-        <Period value="1.5"/>
+        <Period value="1"/>
         <Effect value="KaiserWormScourgeMissilePersistent"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="VolatileBurstBuilding"/>

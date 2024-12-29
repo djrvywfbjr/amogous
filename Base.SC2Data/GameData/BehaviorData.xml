@@ -1147,6 +1147,20 @@
             <VitalRegenArray index="Energy" value="0.1992"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="CallOfTheVoid">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\voidrifts_coop.dds"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="HasPsiStrike"/>
+        <Duration value="0.1875"/>
+        <Modification>
+            <RateMultiplierArray index="Charge" value="0.5"/>
+            <RateMultiplierArray index="Cooldown" value="0.5"/>
+            <RateMultiplierArray index="Morph" value="0.5"/>
+            <RateMultiplierArray index="Progress" value="0.5"/>
+            <RateMultiplierArray index="Spawn" value="0.5"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="PsiDisruption32222232">
         <Alignment value="Positive"/>
         <InfoIcon value="Assets\Textures\btn-ability-terran-psidisruption.dds"/>
@@ -1172,6 +1186,13 @@
         <Modification>
             <StateFlags index="Cloak" value="1"/>
         </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="VoidCall">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+        <DisableValidatorArray value="NotDeadOrConstruction"/>
+        <Period value="0.125"/>
+        <PeriodicEffect value="PsiDisruptionSearchArea12"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="PsiDisruptionSearch32222232">
         <InfoFlags index="Hidden" value="1"/>

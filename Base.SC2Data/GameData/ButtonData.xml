@@ -85,6 +85,9 @@
         <Icon value="Assets\Textures\btn-ability-protoss-destructionwave.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-destructionwave.dds"/>
     </CButton>
+    <CButton id="AmonTentacleA">
+        <Icon value="Assets\Textures\btn-ability-protoss-thermallance.dds"/>
+    </CButton>
     <CButton id="AmonTentacleB2">
         <Icon value="Assets\Textures\btn-ability-protoss-scattercannon.dds"/>
     </CButton>
@@ -4317,6 +4320,10 @@
         <EditorCategories value="Race:Protoss"/>
         <HotkeyAlias value="Phoenix"/>
         <Universal value="1"/>
+    </CButton>
+    <CButton id="CallTotemOfTheVoid">
+        <Icon value="Assets\Textures\amonshards_weapon.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-phasecannon.dds"/>
     </CButton>
     <CButton id="PiercerRounds">
         <Icon value="Assets\Textures\btn-tips-terran-penetrator.dds"/>
@@ -29585,6 +29592,9 @@
     <CButton id="UnknownButton128">
         <Icon value="Assets\Textures\btn-upgrade-protoss-shieldslevel3.dds"/>
     </CButton>
+    <CButton id="CallOfTheVoid">
+        <Icon value="Assets\Textures\voidrifts_coop.dds"/>
+    </CButton>
     <CButton id="UnknownButton13">
         <Icon value="Assets\Textures\btn-ability-protoss-scarabshot.dds"/>
     </CButton>
@@ -33126,6 +33136,10 @@
         <EditorCategories value="Race:Protoss"/>
     </CButton>
     <CButton id="WormholeTransit7">
+        <Icon value="Assets\Textures\btn-ability-protoss-wormholetransit-color.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="WormholeTransit8">
         <Icon value="Assets\Textures\btn-ability-protoss-wormholetransit-color.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
