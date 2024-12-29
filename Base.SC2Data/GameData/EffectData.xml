@@ -4850,6 +4850,16 @@
         <Kind value="Ranged"/>
         <Amount value="5"/>
     </CEffectDamage>
+    <CEffectSet id="OmindHotSSwarmlingClaws7">
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="OmindZerglingDebuff"/>
+        <EffectArray value="OmindZerglingSunder4"/>
+        <EffectArray value="OmindHotSSwarmlingClawsDamage7"/>
+    </CEffectSet>
+    <CEffectDamage id="OmindHotSSwarmlingClawsDamage7" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <Amount value="5"/>
+    </CEffectDamage>
     <CEffectLaunchMissile id="HunterKiller4">
         <EditorCategories value="Race:Zerg"/>
         <ImpactEffect value="HunterKillerU4"/>
@@ -4999,6 +5009,15 @@
         <DrainVitalCostFactor value="0.33"/>
         <RechargeVitalRate value="18"/>
     </CEffectCreateHealer>
+    <CEffectDamage id="OmindZerglingEffectDamage">
+        <EditorCategories value=""/>
+        <Kind value="Melee"/>
+        <Amount value="1"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="OmindZerglingDebuff">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
     <CEffectDamage id="PsiBlades13" parent="DU_WEAP">
         <ValidatorArray value="NotHidden"/>
         <EditorCategories value="Race:Protoss"/>
@@ -80783,6 +80802,11 @@
     <CEffectApplyBehavior id="ZerglingSunder324">
         <ValidatorArray index="0" removed="1"/>
         <EditorCategories value="Race:Zerg"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="OmindZerglingSunder4">
+        <ValidatorArray value="HaveHotSZerglingSunder"/>
+        <EditorCategories value="Race:Zerg"/>
+        <Behavior value="ZerglingSunder"/>
     </CEffectApplyBehavior>
     <CEffectSet id="ZerusAlienTreeViper2">
         <EffectArray value="ZerusAlienTreeViperDamage2"/>

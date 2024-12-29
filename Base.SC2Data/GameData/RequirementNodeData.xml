@@ -5760,6 +5760,16 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="BansheeCloakingField" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeBleedingCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="Bleeding" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeBleedingQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="Bleeding" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeBurrowCompleteOnly1687599735TechTreeCheat">
         <Count Link="Burrow" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
@@ -6077,6 +6087,21 @@
     <CRequirementCountUpgrade id="CountUpgradeNovaGadgetPulseGrenadesQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="NovaGadgetPulseGrenades" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeOmindArmoredSkinQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="OmindArmoredSkin" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeOmindStrengthenedMusclesCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="OmindStrengthenedMuscles" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeOmindStrengthenedMusclesQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="OmindStrengthenedMuscles" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeOptimizedServosQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
@@ -16588,6 +16613,10 @@
     <CRequirementNot id="NotCountUpgradeBansheeCloakingFieldQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeBansheeCloakingFieldQueuedOrBetter"/>
     </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeBleedingQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeBleedingQueuedOrBetter"/>
+    </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeClusterBombQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeClusterBombQueuedOrBetter"/>
     </CRequirementNot>
@@ -16716,6 +16745,14 @@
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeNovaGadgetPulseGrenadesQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeNovaGadgetPulseGrenadesQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeOmindArmoredSkinQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeOmindArmoredSkinQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeOmindStrengthenedMusclesQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeOmindStrengthenedMusclesQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeOptimizedServosQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeOptimizedServosQueuedOrBetter"/>
