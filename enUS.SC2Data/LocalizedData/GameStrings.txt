@@ -946,6 +946,7 @@ Abil/Name/HerculesTransport3=Hercules Transport
 Abil/Name/HerculesTransport4=Nemesis Transport
 Abil/Name/HerdInteract2=HealLol
 Abil/Name/HighArchonPsiStorm2=Leading Storm
+Abil/Name/HighAvatar=High Avatar
 Abil/Name/HoloShipShields=Holo Ship Shields
 Abil/Name/HoloShipShields2=Holo Ship Regen
 Abil/Name/HoloShipShields22=Holo Ship Damage
@@ -3952,6 +3953,7 @@ Behavior/Name/ReleaseInterceptorsWanderDelay2=Release Interceptors Wander Delay
 Behavior/Name/ReleaseInterceptorsWanderDelay3=Release Interceptors Wander Delay3
 Behavior/Name/Replicate2=Shape Shift
 Behavior/Name/Replicate3=Replicate Copy 2
+Behavior/Name/ResurgentArchonDummy=Resurgent Archon Dummy
 Behavior/Name/RoachCorpser2=Roachling Infestation
 Behavior/Name/RoachCorpser22=Roachling Infestation
 Behavior/Name/SJHyperionLightningStormStun2=Field of Electricity
@@ -4470,7 +4472,7 @@ Behavior/Name/ZerglingSunder32=Tribal Poison
 Behavior/Name/ZerglingSunder322=Plagued
 Behavior/Name/ZerglingSunder323=Tribal Poison
 Behavior/Name/ZerglingSunder324=Ignited Shells
-Behavior/Name/inspiration=inspiration
+Behavior/Name/inspiration=SureShot Linked
 Behavior/Name/wersfdds=stun
 Behavior/Tooltip/AggressiveMutation2=This unit's attack damage has been increased.
 Behavior/Tooltip/AggressiveMutation22=This unit has adapeted to enemies and has gained increased life. Can be upgraded.<n/>
@@ -5098,6 +5100,7 @@ Behavior/Tooltip/QueenMPEnsnare32=This structure is doing everything faster.
 Behavior/Tooltip/QueenMPEnsnare4=This unit has no armor and will grant essence to it's attackers.
 Behavior/Tooltip/RavenScramblerMissile2=Weapons and abilities are disabled.
 Behavior/Tooltip/RavenShredderMissileArmorReductionUISubtruct2=This unit has reduced armor.
+Behavior/Tooltip/ResurgentArchonDummy=While active, the Defensive Matrix blocks all incoming damage, up to a maximum of 200.
 Behavior/Tooltip/RoachCorpser2=When this unit dies, it will spawn two Roachlings.
 Behavior/Tooltip/RoachCorpser22=When this unit dies, it will spawn two Roachlings.
 Behavior/Tooltip/RoachCorpser222=When this unit dies, it will spawn two Roachlings.
@@ -7205,6 +7208,7 @@ Button/Name/DefensiveMatrix5=Warrior's Matrix
 Button/Name/DefensiveMatrix52=Prototype Force Field
 Button/Name/DefensiveMatrix522=Embrace The Void
 Button/Name/DefensiveMatrix523=Forced Field
+Button/Name/DefensiveMatrix6=Astral Ascension
 Button/Name/DefilerMPDarkSwarm2=Last Swarm
 Button/Name/DehakaHeal2=Shadow Mend
 Button/Name/DehakaHeal3=Wave Of Regeneration
@@ -9509,7 +9513,7 @@ Button/Name/ReplicantReplicate2=Shape Shift
 Button/Name/ReplicantReplicate3=Mimic
 Button/Name/ResearchAdvancedConstructionTool=Research Advanced Construction Tool
 Button/Name/ResearchApperance=Spirit Relocation
-Button/Name/ResearchBansheeCloak2=Research Cloaking Field
+Button/Name/ResearchBansheeCloak2=Research Distortion Field
 Button/Name/ResearchCapitalShipCabling=Research Capital Ship Cabling
 Button/Name/ResearchCivilHousing=Research Civil Housing
 Button/Name/ResearchColonialHousing=Research Colonial Housing
@@ -12048,7 +12052,7 @@ Button/Name/Zergling42222=Morph to Smalling
 Button/Name/Zergling5=Prepare Injectling
 Button/Name/Zergling6=Morph To Swarm's Carrier
 Button/Name/Zergling7=Force Endoling Metamorphosis
-Button/Name/inspiration=inspiration
+Button/Name/inspiration=SureShot Network Linking
 Button/Name/zerglingattackspeed2=Evolve Regenerative Flesh
 Button/Name/zerglingmovementspeed2=Evolve Psionic Connection
 Button/Tooltip/250mmStrikeCannons=Fires at a single unit or structure, stunning the target and dealing 1000 damage over 2 second seconds.<n/><n/><c val="#ColorAttackInfo">Can target ground units.</c>
@@ -14223,6 +14227,7 @@ Button/Tooltip/DefensiveMatrix5=Surrounds Arto'nius in Warrior's Matrix, grantin
 Button/Tooltip/DefensiveMatrix52=Gain 300 shields for 5 seconds.
 Button/Tooltip/DefensiveMatrix522=For 7 seconds, Void Embracer blocks 15% of incoming damage, gains 1 movement speed and 3 life regeneration.<n/><n/><c val="FFFF68">Is autocasted on nearby threats, but still gives the buff to Void Embracer.</c>
 Button/Tooltip/DefensiveMatrix523=Gain 300 shields for 5 seconds
+Button/Tooltip/DefensiveMatrix6=Becomes a Resurgent Archon for 14 seconds. Gains 700 <c val="0000FF">shields</c>, a damage cap of 15 and a powerful single target attack.
 Button/Tooltip/DefilerMPConsume=Instantly kills the target unit to gain 50 energy.
 Button/Tooltip/DefilerMPDarkSwarm2=All friendly units under the cloud take 70% less damage from ranged attacks for <d ref="Effect,DefilerMPDarkSwarmCreatePersistent,PeriodCount*Effect,DefilerMPDarkSwarmCreatePersistent,PeriodicPeriodArray[0]"/> seconds.
 Button/Tooltip/Dehaka2=A Primal Pack Leader. A skilled fighter who is immune to the effects of the Psi Destroyer Field.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
@@ -17253,7 +17258,7 @@ Button/Tooltip/ReplicantReplicate2=Turns into a copy of the targeted unit for <d
 Button/Tooltip/ReplicantReplicate3=Mimic target for 43 seconds. Cannot target air and heroic units. Autocast also does not target light units.
 Button/Tooltip/ResearchAdvancedConstructionTool=Workers and additional Workers will now make structures twice faster. Reduces limit of possible bonus Workers on construction from 10 to 5.
 Button/Tooltip/ResearchApperance=Makes Quiet Ones able to use Appear.
-Button/Tooltip/ResearchBansheeCloak2=Enables <c val="ffff8a">Day Wolf</c> to use the Cloak. Cloak renders the <c val="ffff8a">Day Wolf</c> invisible to enemies unless the unit is revealed by detectors or effects.
+Button/Tooltip/ResearchBansheeCloak2=<c val="ffff8a">Day Wolves</c> become permanently cloaked.
 Button/Tooltip/ResearchCapitalShipCabling=Increases the power distribution field of Power Hubs by 50%.
 Button/Tooltip/ResearchCivilHousing=Allows for construction of Communal, which can house up to 6 people, are more durable than Dormitories and quickly provide <c val="FFFF00">Motivation</c>.
 Button/Tooltip/ResearchColonialHousing=Allows for construction of Dormitories, which can house up to 6 people, are more durable than Tents and slowly provide <c val="FFFF00">Motivation</c>.
@@ -17810,7 +17815,7 @@ Button/Tooltip/ShieldBattery10=Restores shields to nearby friendly units and str
 Button/Tooltip/ShieldBattery11=Restores shields to nearby friendly units and structures.
 Button/Tooltip/ShieldBattery12=Restores shields to nearby friendly units and structures.
 Button/Tooltip/ShieldBattery1212wafwf12=Unit production structure that can corrupt critters. Critters cost alot more minerals than vespene gas.
-Button/Tooltip/ShieldBattery13=Restores shields to nearby friendly units and structures.
+Button/Tooltip/ShieldBattery13=Passively provides 50 <c val="0000FF">shields</c> to nearby units and structures.<n/><n/>Shield Batteries' power storage was too inefficient to be used for too long. What the phase-smiths proposed was an AI-based shield optimization technology that can increase the power output of our forces' shield capacitors. Such technology only has limited range.
 Button/Tooltip/ShieldBattery2=Restores shields to nearby friendly units and structures.
 Button/Tooltip/ShieldBattery3=Restores shields to nearby friendly units and structures.
 Button/Tooltip/ShieldBattery4=Restores shields to nearby friendly units and structures.
@@ -20194,7 +20199,7 @@ Button/Tooltip/Zergling6=Fast melee creature. Can morph into a Baneling.<n/><n/>
 Button/Tooltip/Zergling6321fwa=Troop carrier. Is blind.
 Button/Tooltip/Zergling7=Fast melee creature.
 Button/Tooltip/Zergling8=Fast melee creature. Can morph into a Baneling.<n/><n/><c val="FFFF8A">Can attack ground units.</c>
-Button/Tooltip/inspiration=Increases attack speed of nearby infantry by 30%
+Button/Tooltip/inspiration=Infantry around the War General gains 30% attack speed and 1 range.
 Button/Tooltip/zerglingattackspeed2=Increase life regeneration of Last Zerglings, Banelings, Defilers, Hydralisks and Roaches by 1.
 Button/Tooltip/zerglingmovementspeed2=Increase maximum and starting energy of Last Defilers by 50 and increases their energy regeneration by 1.
 COLONYTRANSPORTLMAO=This colony transport is capable of functioning as a resource drop-off point.
@@ -28849,6 +28854,11 @@ Effect/Name/ReplicateTeleportCaster2=Replicate Teleport Caster Copy
 Effect/Name/ReplicateTeleportCaster3=Replicate Teleport Caster Copy 2
 Effect/Name/ReplicateTransferStats2=Replicate Transfer Stats Copy
 Effect/Name/ReplicateTransferStats3=Replicate Transfer Stats Copy 2
+Effect/Name/ResugMU=Resug MU
+Effect/Name/ResurgAB=Resurg AB
+Effect/Name/ResurgDummyAB=Resurg Dummy AB
+Effect/Name/ResurgDummyRB=Resurg Dummy RB
+Effect/Name/ResurgSet=Resurg Set
 Effect/Name/RetributionFieldDamage2=Retribution Field
 Effect/Name/RetributionFieldSearch2=Retribution Field
 Effect/Name/RetributionFieldSet2=Mongrel Retribution Field Set

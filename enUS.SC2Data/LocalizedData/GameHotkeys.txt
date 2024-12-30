@@ -1680,6 +1680,7 @@ Button/Hotkey/DefensiveMatrix5=W
 Button/Hotkey/DefensiveMatrix52=W
 Button/Hotkey/DefensiveMatrix522=W
 Button/Hotkey/DefensiveMatrix523=R
+Button/Hotkey/DefensiveMatrix6=R
 Button/Hotkey/DefilerMPDarkSwarm2=D
 Button/Hotkey/DehakaHeal10=E
 Button/Hotkey/DehakaHeal2=E

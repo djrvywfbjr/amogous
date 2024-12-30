@@ -222,6 +222,7 @@
         <Cost index="0">
             <Cooldown TimeUse="4.5"/>
         </Cost>
+        <Range index="0" value="9"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="AmonTentacleB2">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
@@ -833,6 +834,22 @@
         <AutoCastFilters value="Visible;Player,Ally,Neutral,Structure,User1,Missile,Cloaked,Stasis,Dead,Hidden,MapBoss"/>
         <AutoCastRange value="5"/>
     </CAbilEffectTarget>
+    <CAbilEffectInstant id="HighAvatar">
+        <AbilSetId value="dmatrix"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ResurgSet"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="100"/>
+            <Cooldown TimeUse="20"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="DefensiveMatrix6" State="Restricted">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectInstant>
     <CAbilTrain id="NexusTrain323">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
         <Activity value="UI/Warping"/>
@@ -858,8 +875,9 @@
         <Effect index="0" value="PhaseCannon31"/>
         <Flags index="RangeUseCasterRadius" value="0"/>
         <Cost>
+            <Vital index="Energy" value="70"/>
             <Charge Link="Abil/SpawnCallTotemOfTheVoid"/>
-            <Cooldown Link="SpawnPhaseCannonSpawnPhaseCannon30SpawnPhaseCannonSpawnCallTotemOfTheVoid" Location="Unit" TimeUse="40"/>
+            <Cooldown Link="SpawnPhaseCannonSpawnPhaseCannon30SpawnPhaseCannonSpawnCallTotemOfTheVoid" Location="Unit"/>
         </Cost>
         <Placeholder value="TotemOfTheVoid"/>
         <Range value="8"/>
@@ -59224,7 +59242,7 @@
         <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
         <Effect index="0" value="VoidHighTemplarPsiOrbInitialPersistent7"/>
         <Cost>
-            <Cooldown TimeUse="12"/>
+            <Vital index="Energy" value="60"/>
         </Cost>
         <Range value="13"/>
         <UninterruptibleArray index="Prep" value="1"/>
@@ -59686,7 +59704,7 @@
         <Effect index="0" value="VoidSeekerPhaseMineBlastLaunchMissile3"/>
         <Flags index="AllowMovement" value="1"/>
         <Cost>
-            <Cooldown TimeUse="40"/>
+            <Vital index="Energy" value="40"/>
         </Cost>
         <TargetFilters value="Ground,Visible;Player,Ally,Neutral,Missile,Stasis,Invulnerable"/>
         <Range value="12"/>

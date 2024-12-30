@@ -766,6 +766,10 @@
         <Compare value="GT"/>
         <Ability value="SendWorker"/>
     </CValidatorUnitCompareChargeUsed>
+    <CValidatorUnitCompareBehaviorCount id="HasSOARadar2">
+        <Compare value="GT"/>
+        <Behavior value="ResurgentArchonDummy"/>
+    </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitType id="IsAnalyzerVessel">
         <Value value="AnalyzerVessel"/>
     </CValidatorUnitType>
