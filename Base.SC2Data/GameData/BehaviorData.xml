@@ -891,6 +891,48 @@
             <StateFlags index="Cloak" value="1"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="HardenedShield82">
+        <Alignment value="Positive"/>
+        <Cost>
+            <Cooldown Link="Immortal Shield"/>
+        </Cost>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-HardenedShields.dds"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="HasSOARadar2"/>
+        <DamageResponse ClampMaximum="15" Minimum="10">
+            <Kind index="Spell" value="0"/>
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ResurgentArchonDummy">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-defensivematrix.dds"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <RemoveValidatorArray value="hasShields"/>
+        <Duration value="20"/>
+        <Modification>
+            <DamageDealtScaled index="Spell" value="1.5"/>
+            <DamageDealtScaled index="Melee" value="1.5"/>
+            <DamageDealtScaled index="Ranged" value="1.5"/>
+            <DamageDealtScaled index="Splash" value="1.5"/>
+            <DamageDealtScaled index="NoProc" value="1.5"/>
+            <VitalMaxArray index="Shields" value="350"/>
+            <WeaponArray Link="HybridNemesisWeapon"/>
+            <WeaponDisableArray value="HighTemplarWeapon3"/>
+        </Modification>
+        <DamageResponse ModifyMinimumDamage="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Dummysurgent">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Modification>
+            <VitalMaxArray index="Shields" value="350"/>
+        </Modification>
+        <Duration value="20"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="DriveCalibrationField">
         <InfoIcon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -1245,6 +1287,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Period value="0.7"/>
         <PeriodicEffect value="ShieldBattaryArea"/>
+        <DisableValidatorArray value="NotUnderConstruction"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="Sloweffect">
         <InfoIcon value="Assets\Textures\btn-ability-hornerhan-hellion-slowbomb.dds"/>

@@ -4790,6 +4790,31 @@
         <EditorCategories value=""/>
         <Behavior value="DistortionGenerator"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ResurgAB">
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="ResurgentArchonDummy"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ResurgDummyAB">
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="Dummysurgent"/>
+    </CEffectApplyBehavior>
+    <CEffectModifyUnit id="ResugMU">
+        <EditorCategories value="Race:Terran"/>
+        <VitalArray index="Shields">
+            <ChangeFraction value="1"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectRemoveBehavior id="ResurgDummyRB">
+        <EditorCategories value="Race:Terran"/>
+        <BehaviorLink value="DefensiveMatrixDummy"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="ResurgSet">
+        <EditorCategories value="Race:Terran"/>
+        <EffectArray value="ResurgDummyAB"/>
+        <EffectArray value="ResugMU"/>
+        <EffectArray value="ResurgAB"/>
+        <EffectArray value="ResurgDummyRB"/>
+    </CEffectSet>
     <CEffectDamage id="DragoonDamage42" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
         <Kind value="Ranged"/>
@@ -5037,7 +5062,7 @@
     <CEffectApplyBehavior id="PhaseCannonTimedLife37">
         <EditorCategories value="Race:Protoss"/>
         <Behavior value="PhaseCannonTimedLife"/>
-	</CEffectApplyBehavior>	
+    </CEffectApplyBehavior>
     <CEffectDamage id="OmindZerglingEffectDamage">
         <EditorCategories value=""/>
         <Kind value="Melee"/>
@@ -5045,7 +5070,7 @@
     </CEffectDamage>
     <CEffectApplyBehavior id="OmindZerglingDebuff">
         <ValidatorArray index="0" removed="1"/>
-        <EditorCategories value=""/>	
+        <EditorCategories value=""/>
     </CEffectApplyBehavior>
     <CEffectDamage id="PsiBlades13" parent="DU_WEAP">
         <ValidatorArray value="NotHidden"/>

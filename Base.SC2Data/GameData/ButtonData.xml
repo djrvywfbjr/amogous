@@ -559,6 +559,11 @@
         <Icon value="Assets\Textures\btn-upgrade-nova-equipment-ui-superstimpackeffect.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
+    <CButton id="DefensiveMatrix6">
+        <Icon value="Assets\Textures\btn-unit-protoss-archon-upgraded.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-defensivematrix.dds"/>
+        <TintRacially value="1"/>
+    </CButton>
     <CButton id="DriveCalibrationField">
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
     </CButton>
@@ -4430,7 +4435,7 @@
     </CButton>
     <CButton id="ResearchBansheeCloak2">
         <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
-        <AlertIcon value="Assets\Textures\btn-ability-terran-cloak-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
     <CButton id="ResearchMobileAutomatons">
@@ -36702,7 +36707,7 @@
         <EditorCategories value="Race:Zerg"/>
     </CButton>
     <CButton id="inspiration">
-        <Icon value="Assets\Textures\btn-ability-terran-battlefieldawareness.dds"/>
+        <Icon value="Assets\Textures\btn-upgrade-tychus-tychus-sureshotnetwork.dds"/>
     </CButton>
     <CButton id="zerglingattackspeed2">
         <Icon value="Assets\Textures\btn-ability-zerg-dehaka-roach-glialreconstruction.dds"/>
