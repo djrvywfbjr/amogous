@@ -4107,7 +4107,7 @@ Behavior/Name/Slow24=Will Spawn Energy Spark
 Behavior/Name/Slow3=Slow
 Behavior/Name/Slow4=Slow
 Behavior/Name/Slow5=Vulnerable
-Behavior/Name/Sloweffect=Slow effect
+Behavior/Name/Sloweffect=Crippled
 Behavior/Name/SpectreCloaking2=Cloak
 Behavior/Name/SpectreCloaking22=Paramiltiary Machine Stealth Mode
 Behavior/Name/SpectreCloaking3=Veil Of Shadows
@@ -8743,6 +8743,7 @@ Button/Name/MutateintoLurkerDen6=Mutate into Snarelisk Den
 Button/Name/MutateintoLurkerDen7=Set Up Remote Regulator
 Button/Name/MutateintoSporeCrawler=Mutate into Spore Crawler
 Button/Name/NanoRepair2=Mech Repair
+Button/Name/NememeSlow=Crippling Rockets
 Button/Name/NeuralParasite2=Manipulate
 Button/Name/Nexus10=Bloodsummon Bigass Pylon
 Button/Name/Nexus11=Warp In Dark Nexus
@@ -16319,6 +16320,7 @@ Button/Tooltip/MutateintoLurkerDen6=Grows and contains upgrades for Snarelisks.
 Button/Tooltip/MutateintoLurkerDen7=Contians upgrades for and enables Impelled Impalers.
 Button/Tooltip/MutateintoSporeCrawler=Anti-air defensive structure. <n/><n/><c val="ffff8a">Can attack air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/NanoRepair2=Heals a friendly mechanical unit.<n/><n/><c val="f078ff">Heals 3 life per 1 energy.</c>
+Button/Tooltip/NememeSlow=Attacks slow the target unit by 0.5.
 Button/Tooltip/NeuralParasite2=Control targeted friendly or allied unit  for 60 seconds. Manipulator controls it, reaching maximum raw potential, but slowly dying and not being able to do complex moves such as abilities or building. Target looses 6 health every second, gains 150% attack speed and 75% movement speed. Dies after 60 seconds either way.<n/><n/><c val="ffff8a">Uncancelable.
 Button/Tooltip/Nexus10=Primary structure.
 Button/Tooltip/Nexus11=Primary structure. Can receive gathered resources. Can use the Chrono Boost and Mass Recall abilities.<n/><n/><c val="ffff8a">Enables:</c><n/>- Probes<n/>- Mothership
@@ -19372,7 +19374,7 @@ Button/Tooltip/VoidSiphon2=Siphons minerals from an enemy structure, dealing 20 
 Button/Tooltip/VoidSiphon3=Sends out convicts to rob storage from a hostile structure, if it has at least 1000 health. Steals 25 minerals every second.
 Button/Tooltip/VoidSiphon32=Steal 25 vespene every 2 seconds from a hostile structure, if it has at least 1000 health
 Button/Tooltip/VoidSiphonText2=<s val="Kicker_Minerals">+<d ref="Effect,OracleVoidSiphonAddMinerals3,Resources[0]"/> </s>
-Button/Tooltip/VoidStalkerDragoonArmor2=Solarite Disruptor gains 10 damage(5 bonus to armored) For every 2 range the target is farther, but looses 0.5 attack speed.<n/>Shown variant of weapon is at max range and damage.
+Button/Tooltip/VoidStalkerDragoonArmor2=Solarite Disruptor gains additional 12/14/16/18 damage (5 bonus to armored) For every 2 range the target is farther, but looses 0.5 attack speed.<n/>Shown variant of weapon is at max range and damage.
 Button/Tooltip/VoidStalkerDragoonArmor22=The weapon of Core Vessel deals 125 damage in a radius of 2, but each point of enemy's armor blocks 25 of that damage.
 Button/Tooltip/VoidStalkerDragoonArmor222=The weapon of Instigationists deals 25 damage in a radius of 1, but ignores armor and allied/owned units.
 Button/Tooltip/VoidStalkerDragoonArmor223=Purifier Forgery generates 1 data point every 10 seconds and researches at 100% speed.<n/>Data points are used for upgrades.

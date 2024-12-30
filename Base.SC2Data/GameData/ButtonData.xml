@@ -4294,6 +4294,9 @@
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="MothershipCore2222322"/>
     </CButton>
+    <CButton id="NememeSlow">
+        <Icon value="Assets\Textures\btn-ability-terran-haywiremissile.dds"/>
+    </CButton>
     <CButton id="OmindArmoredSkin">
         <Icon value="Assets\Textures\btn-upgrade-zerg-organiccarapace.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-zerg-organiccarapace.dds"/>
