@@ -239,6 +239,8 @@
 <Unit id="HotSLeviathan"/>
 <Unit id="GehennaCruiser"/>
 <Unit id="CarrierAiur"/>
+<Unit id="ForbiddenOne"/>
+<Unit id="PsiUpgrader"/>
 <Unit id="AmerdallianMiner"/>
 <Unit id="Nexus2"/>
 <Unit id="CommandCenter13"/>
@@ -251,7 +253,6 @@
 <Unit id="SCV13"/>
 <Unit id="D4DShip"/>
 <Unit id="Collector"/>
-<Unit id="ForbiddenOne"/>
 <Unit id="Administrator"/>
 <Unit id="ControlledDrone"/>
 <Unit id="Drone2"/>
@@ -293,7 +294,6 @@
 <Unit id="MarineWarfield3"/>
 <Unit id="Ghost7"/>
 <Unit id="BarracksFlying22"/>
-<Unit id="PsiUpgrader"/>
 <Unit id="WarpPrism4"/>
 <Unit id="Overlord7"/>
 <Unit id="Burner2"/>

@@ -177,6 +177,12 @@
         <ImpactEffect value="ATALaserBatteryU322"/>
         <AmmoUnit value="ImmortalShakurasShadowCannonMissile"/>
     </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="ATALaserBatteryLM324">
+        <ValidatorArray index="0" value="BattlecruiserIsNotYamatoing"/>
+        <EditorCategories value="Race:Terran"/>
+        <ImpactEffect value="ATALaserBatteryU323"/>
+        <AmmoUnit value="HybridDominatorVoidPlasmaWeapon"/>
+    </CEffectLaunchMissile>
     <CEffectLaunchMissile id="ATALaserBatteryLM4">
         <ValidatorArray index="0" value="BattlecruiserIsNotYamatoing"/>
         <EditorCategories value="Race:Terran"/>
@@ -238,6 +244,14 @@
         <Visibility value="Visible"/>
         <Amount value="25"/>
     </CEffectDamage>
+    <CEffectModifyUnit id="ATALaserBatteryU323">
+        <EditorCategories value="Race:Terran"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <VitalArray index="Shields">
+            <Change value="50"/>
+        </VitalArray>
+    </CEffectModifyUnit>
     <CEffectDamage id="ATALaserBatteryU4" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Terran"/>
         <Visibility value="Visible"/>
@@ -4790,6 +4804,44 @@
         <EditorCategories value=""/>
         <Behavior value="DistortionGenerator"/>
     </CEffectApplyBehavior>
+    <CEffectCreateUnit id="HallucinationCreateAdept3">
+        <EditorCategories value="Race:Protoss"/>
+        <CreateFlags index="ProvideFood" value="0"/>
+        <CreateFlags index="TechComplete" value="0"/>
+        <CreateFlags index="UseFood" value="0"/>
+        <SpawnEffect value="HallucinationCreateUnitB"/>
+        <SpawnUnit value="Scout2"/>
+    </CEffectCreateUnit>
+    <CEffectDamage id="MengskSiegeTankDamage3">
+        <EditorCategories value="Race:Terran"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <AttributeBonus index="Massive" value="10"/>
+        <ArmorReduction value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="20"/>
+        <Death value="Blast"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+    </CEffectDamage>
+    <CEffectDamage id="PsiBlastDamage2">
+        <EditorCategories value="Race:Zerg"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="25"/>
+        <Death value="Eviscerate"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="PsiBlastLaunchMissile2">
+        <ValidatorArray index="0" value="PsiDischargeLaunchMissileTargetFilters"/>
+        <EditorCategories value="Race:Zerg"/>
+        <ImpactEffect value="PsiBlastDamage2"/>
+        <AmmoUnit value="KerriganWeapon"/>
+    </CEffectLaunchMissile>
     <CEffectApplyBehavior id="ResurgAB">
         <EditorCategories value="Race:Terran"/>
         <Behavior value="ResurgentArchonDummy"/>
@@ -5168,6 +5220,10 @@
         <ValidatorArray index="0" value="IsTimeStopped2"/>
         <EditorCategories value=""/>
         <Behavior value="Shield39"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ShieldUp236">
+        <EditorCategories value=""/>
+        <Behavior value="Shield8"/>
     </CEffectApplyBehavior>
     <CEffectDamage id="SuicideMissile" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
@@ -25996,11 +26052,11 @@
     </CEffectLaunchMissile>
     <CEffectDamage id="KhaydarinBeamDamage2" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
-        <AttributeBonus index="Light" value="-20"/>
+        <AttributeBonus index="Armored" value="20"/>
         <AttributeBonus index="Massive" value="20"/>
         <Kind value="Ranged"/>
         <KindSplash value="Splash"/>
-        <Amount value="40"/>
+        <Amount value="20"/>
         <ExcludeArray Value="Outer"/>
         <ExcludeArray Value="Target"/>
         <SearchFilters value="-;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
@@ -38684,7 +38740,7 @@
     <CEffectDamage id="MengskMarauderDamage3" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <Kind value="Ranged"/>
-        <Amount value="12"/>
+        <Amount value="6"/>
         <Death value="Blast"/>
         <AreaArray Radius="3" Fraction="1"/>
         <SearchFilters value="Ground;Player,Ally,Neutral,Missile,Stasis,Dead,Invulnerable"/>
@@ -47393,7 +47449,7 @@
     </CEffectDamage>
     <CEffectDamage id="ParticleDisruptorsU6" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Protoss"/>
-        <AttributeBonus index="Light" value="7"/>
+        <AttributeBonus index="Light" value="10"/>
         <Amount value="15"/>
         <DamageInheritEffect value="ZerglingSunder323"/>
     </CEffectDamage>
@@ -67529,16 +67585,21 @@
     </CEffectLaunchMissile>
     <CEffectDamage id="SporeCrawlerU">
         <DamageInheritEffect value="ZerglingSunder323"/>
+        <AttributeBonus index="Light" value="10"/>
         <AttributeBonus index="Biological" value="0"/>
-        <Amount value="20"/>
+        <Amount value="16"/>
     </CEffectDamage>
     <CEffectDamage id="SporeCrawlerU2" parent="SporeCrawlerU">
         <Name value="Effect/Name/SporeCrawlerU2"/>
         <AreaArray Radius="2" Fraction="1"/>
         <SearchFilters value="-;Player,Ally"/>
+        <AttributeBonus index="Light" value="0"/>
+        <Amount value="20"/>
     </CEffectDamage>
     <CEffectDamage id="SporeCrawlerU22" parent="SporeCrawlerU">
         <Name value="Effect/Name/SporeCrawlerU22"/>
+        <AttributeBonus index="Light" value="0"/>
+        <Amount value="20"/>
     </CEffectDamage>
     <CEffectDamage id="SporeCrawlerU3" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Zerg"/>
@@ -70777,6 +70838,14 @@
         <EffectArray value="ObserverSquadSightAB2222334"/>
         <EffectArray value="Dehaka2"/>
     </CEffectSet>
+    <CEffectEnumArea id="UnknownEffect210">
+        <ValidatorArray value="ShieldsNotFull"/>
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Neutral,Enemy"/>
+        <AreaArray Radius="15" Effect="ATALaserBatteryLM324"/>
+        <MinCount value="1"/>
+        <MaxCount value="5"/>
+    </CEffectEnumArea>
     <CEffectEnumArea id="UnknownEffect22">
         <EditorCategories value=""/>
         <SearchFilters value="Structure;-"/>
@@ -71447,7 +71516,7 @@
     </CEffectApplyBehavior>
     <CEffectDamage id="UnknownEffect62">
         <EditorCategories value=""/>
-        <Amount value="24"/>
+        <Amount value="12"/>
     </CEffectDamage>
     <CEffectApplyBehavior id="AshNexusExhaustion">
         <ValidatorArray index="0" removed="1"/>
@@ -74861,8 +74930,8 @@
     <CEffectModifyUnit id="VoidStalkerBlinkRestoreModifyUnit3">
         <EditorCategories value=""/>
         <ImpactUnit Value="Caster"/>
-        <VitalArray index="Life">
-            <Change value="1"/>
+        <VitalArray index="Shields">
+            <Change value="2.5"/>
         </VitalArray>
     </CEffectModifyUnit>
     <CEffectTeleport id="VoidStalkerBlinkShieldRestore2">
@@ -80799,7 +80868,7 @@
         <AmmoUnit value="ZergTowerArtilleryLaunchSquidMissile2"/>
     </CEffectLaunchMissile>
     <CEffectApplyBehavior id="ZerglingFrenzy2">
-        <ValidatorArray index="0" removed="1"/>
+        <ValidatorArray index="0" value="HaveStalker2"/>
         <EditorCategories value="Race:Zerg"/>
         <WhichUnit Value="Caster"/>
     </CEffectApplyBehavior>

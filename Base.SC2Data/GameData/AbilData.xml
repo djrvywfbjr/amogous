@@ -834,6 +834,247 @@
         <AutoCastFilters value="Visible;Player,Ally,Neutral,Structure,User1,Missile,Cloaked,Stasis,Dead,Hidden,MapBoss"/>
         <AutoCastRange value="5"/>
     </CAbilEffectTarget>
+    <CAbilTrain id="GatewayTrain22">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
+        <DataCollection value="GatewayTrain"/>
+        <Activity value="UI/Warping"/>
+        <Flags index="UnitOrderQueue" value="1"/>
+        <Flags index="WaitForFood" value="0"/>
+        <InfoArray index="Train1" Time="14">
+            <Charge Link="Abil/GatewayTrain"/>
+            <Cooldown Link="Abil/GatewayTrain"/>
+            <Button DefaultButtonFace="Drone2" State="Restricted"/>
+            <Unit value="ForbiddenOne"/>
+        </InfoArray>
+        <InfoArray index="Train2" Time="35">
+            <Charge Link="Abil/GatewayTrain"/>
+            <Cooldown Link="Abil/GatewayTrain"/>
+            <Button DefaultButtonFace="Zealot2" State="Restricted"/>
+            <Unit value="DarknessReciever"/>
+        </InfoArray>
+        <InfoArray index="Train3" Time="37">
+            <Charge Link="Abil/GatewayTrain"/>
+            <Cooldown Link="Abil/GatewayTrain"/>
+            <Button DefaultButtonFace="Stalker2" State="Restricted"/>
+            <Unit value="QuietOne"/>
+        </InfoArray>
+        <InfoArray index="Train4" Time="35">
+            <Charge Link="Abil/GatewayTrain"/>
+            <Cooldown Link="Abil/GatewayTrain"/>
+            <Button DefaultButtonFace="SentryAiur2" State="Restricted" Requirements="HaveBarracks32"/>
+            <Unit value="MaintanceDrone"/>
+        </InfoArray>
+        <InfoArray index="Train5" Time="10">
+            <Charge Link="Abil/GatewayTrain"/>
+            <Cooldown Link="Abil/GatewayTrain"/>
+            <Button DefaultButtonFace="Overlord2" State="Restricted"/>
+            <Unit value="PsiUpgrader"/>
+        </InfoArray>
+        <InfoArray index="Train6" Time="37">
+            <Charge Link="Abil/GatewayTrain"/>
+            <Cooldown Link="Abil/GatewayTrain"/>
+            <Button DefaultButtonFace="HighTemplarAiur2" State="Restricted" Requirements="HaveBarracks32"/>
+            <Unit value="Diplomat"/>
+        </InfoArray>
+        <InfoArray index="Train7" Time="5">
+            <Charge Link="Abil/GatewayTrain"/>
+            <Cooldown Link="Abil/GatewayTrain"/>
+            <Button DefaultButtonFace="Zergling2" State="Restricted"/>
+            <Unit value="Infestling"/>
+        </InfoArray>
+        <InfoArray index="Train8" Time="35">
+            <Charge Link="Abil/GatewayTrain"/>
+            <Cooldown Link="Abil/GatewayTrain"/>
+            <Button DefaultButtonFace="Queen2" State="Restricted" Requirements="HaveBarracks322"/>
+            <Unit value="InfestationMother"/>
+        </InfoArray>
+        <InfoArray index="Train9">
+            <Charge>
+                <CountMax value="2"/>
+                <CountStart value="2"/>
+                <CountUse value="1"/>
+                <Link value="Abil/GatewayTrain"/>
+                <TimeUse value="50"/>
+            </Charge>
+            <Cooldown Link="Abil/GatewayTrain"/>
+            <Button DefaultButtonFace="Immortal2"/>
+            <Unit value="AncientDefender"/>
+        </InfoArray>
+        <InfoArray index="Train10">
+            <Charge>
+                <CountMax value="2"/>
+                <CountStart value="2"/>
+                <CountUse value="1"/>
+                <Link value="Abil/GatewayTrain"/>
+                <TimeUse value="60"/>
+            </Charge>
+            <Cooldown Link="Abil/GatewayTrain"/>
+            <Button DefaultButtonFace="AWrp2"/>
+            <Unit value="PsiMaster"/>
+        </InfoArray>
+        <InfoArray index="Train11" Time="20">
+            <Charge Link="Abil/GatewayTrain"/>
+            <Cooldown Link="Abil/GatewayTrain"/>
+            <Button DefaultButtonFace="MorphToVile2" Requirements="HaveBarracks322"/>
+            <Unit value="Roacher"/>
+        </InfoArray>
+        <InfoArray index="Train12">
+            <Charge>
+                <CountMax value="2"/>
+                <CountStart value="2"/>
+                <CountUse value="1"/>
+                <Link value="Abil/GatewayTrain"/>
+                <TimeUse value="50"/>
+            </Charge>
+            <Cooldown Link="Abil/GatewayTrain"/>
+            <Button DefaultButtonFace="DarkTemplarShakuras2" Requirements="HaveBarracks32"/>
+            <Unit value="Warden"/>
+        </InfoArray>
+        <InfoArray index="Train13">
+            <Charge>
+                <CountMax value="2"/>
+                <CountStart value="2"/>
+                <CountUse value="1"/>
+                <Link value="Abil/GatewayTrain"/>
+                <TimeUse value="42"/>
+            </Charge>
+            <Cooldown Link="Abil/GatewayTrain"/>
+            <Button DefaultButtonFace="Queen22"/>
+            <Unit value="DaughterOfNektala"/>
+        </InfoArray>
+        <InfoArray index="Train14">
+            <Charge>
+                <CountMax value="2"/>
+                <CountStart value="2"/>
+                <CountUse value="2"/>
+                <Link value="Abil/GatewayTrain"/>
+                <TimeUse value="75"/>
+            </Charge>
+            <Cooldown Link="Abil/GatewayTrain"/>
+            <Button DefaultButtonFace="CarrierAiur4" Requirements="HaveBarracks324"/>
+            <Unit value="DarknessBringer"/>
+        </InfoArray>
+        <InfoArray index="Train15">
+            <Charge>
+                <CountMax value="2"/>
+                <CountStart value="2"/>
+                <CountUse value="1"/>
+                <Link value="Abil/GatewayTrain"/>
+                <TimeUse value="28"/>
+            </Charge>
+            <Cooldown Link="Abil/GatewayTrain"/>
+            <Button DefaultButtonFace="Observer2"/>
+            <Unit value="Seer"/>
+        </InfoArray>
+        <InfoArray index="Train16">
+            <Charge>
+                <CountMax value="2"/>
+                <CountStart value="2"/>
+                <CountUse value="1"/>
+                <Link value="Abil/GatewayTrain"/>
+                <TimeUse value="42"/>
+            </Charge>
+            <Cooldown Link="Abil/GatewayTrain"/>
+            <Button DefaultButtonFace="WarpPrism3"/>
+            <Unit value="WarpPrism22"/>
+        </InfoArray>
+        <InfoArray index="Train17">
+            <Charge>
+                <CountMax value="2"/>
+                <CountStart value="2"/>
+                <CountUse value="1"/>
+                <Link value="Abil/GatewayTrain"/>
+                <TimeUse value="63"/>
+            </Charge>
+            <Cooldown Link="Abil/GatewayTrain"/>
+            <Button DefaultButtonFace="CarrierAiur42"/>
+            <Unit value="Tempest22"/>
+        </InfoArray>
+        <InfoArray index="Train18">
+            <Charge>
+                <CountMax value="2"/>
+                <CountStart value="2"/>
+                <CountUse value="1"/>
+                <Link value="Abil/GatewayTrain"/>
+                <TimeUse value="60"/>
+            </Charge>
+            <Cooldown Link="Abil/GatewayTrain"/>
+            <Button DefaultButtonFace="DarkTemplarShakuras22" Requirements="HaveBarracks322"/>
+            <Unit value="ColossusTaldarim222"/>
+        </InfoArray>
+        <InfoArray index="Train19" Time="18">
+            <Charge Link="Abil/GatewayTrain"/>
+            <Cooldown Link="Abil/GatewayTrain"/>
+            <Button DefaultButtonFace="PrimalZergling24"/>
+            <Unit value="Hydralisk7"/>
+        </InfoArray>
+        <InfoArray index="Train20">
+            <Charge Link="Abil/GatewayTrain"/>
+            <Cooldown Link="Abil/GatewayTrain"/>
+        </InfoArray>
+        <InfoArray index="Train21">
+            <Charge Link="Abil/GatewayTrain"/>
+            <Cooldown Link="Abil/GatewayTrain"/>
+        </InfoArray>
+        <InfoArray index="Train22">
+            <Charge Link="Abil/GatewayTrain"/>
+            <Cooldown Link="Abil/GatewayTrain"/>
+        </InfoArray>
+        <InfoArray index="Train23">
+            <Charge Link="Abil/GatewayTrain"/>
+            <Cooldown Link="Abil/GatewayTrain"/>
+        </InfoArray>
+        <InfoArray index="Train24">
+            <Charge Link="Abil/GatewayTrain"/>
+            <Cooldown Link="Abil/GatewayTrain"/>
+        </InfoArray>
+        <InfoArray index="Train25">
+            <Charge Link="Abil/GatewayTrain"/>
+            <Cooldown Link="Abil/GatewayTrain"/>
+        </InfoArray>
+        <InfoArray index="Train26">
+            <Charge Link="Abil/GatewayTrain"/>
+            <Cooldown Link="Abil/GatewayTrain"/>
+        </InfoArray>
+        <InfoArray index="Train27">
+            <Charge Link="Abil/GatewayTrain"/>
+            <Cooldown Link="Abil/GatewayTrain"/>
+        </InfoArray>
+        <InfoArray index="Train28" Time="70">
+            <Charge Link="Abil/GatewayTrain" Location="Global"/>
+            <Cooldown Link="Abil/GatewayTrain" Location="Global"/>
+            <Button DefaultButtonFace="ShadowBlade33"/>
+            <Unit value="EternalOne"/>
+        </InfoArray>
+        <InfoArray index="Train29" Time="70">
+            <Charge Link="Abil/GatewayTrain" Location="Global"/>
+            <Cooldown Link="Abil/GatewayTrain" Location="Global"/>
+            <Button DefaultButtonFace="AdeptPassive2"/>
+            <Unit value="EmbracingOne"/>
+        </InfoArray>
+        <InfoArray index="Train30" Time="70">
+            <Charge Link="Abil/GatewayTrain" Location="Global"/>
+            <Cooldown Link="Abil/GatewayTrain" Location="Global"/>
+            <Button DefaultButtonFace="DarkTemplar2"/>
+            <Unit value="ShadowOne"/>
+        </InfoArray>
+    </CAbilTrain>
+    <CAbilEffectInstant id="ScoutHalluc">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="HallucinationCreateAdept3"/>
+        <Flags index="BestUnit" value="1"/>
+        <Cost>
+            <Charge>
+                <CountMax value="2"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Location value="Player"/>
+                <TimeUse value="84"/>
+            </Charge>
+            <Cooldown Location="Player" TimeUse="30"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="WarpInAdept"/>
+    </CAbilEffectInstant>
     <CAbilEffectInstant id="HighAvatar">
         <AbilSetId value="dmatrix"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
@@ -1178,6 +1419,14 @@
         <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield223283"/>
         <Arc value="360"/>
     </CAbilEffectTarget>
+    <CAbilEffectInstant id="ShieldUp236">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link="Abil/AlarakAvatar" TimeUse="80"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield2236"/>
+    </CAbilEffectInstant>
     <CAbilEffectInstant id="ShieldUp8222">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ShieldUp7222"/>
@@ -21132,10 +21381,10 @@
             <Resource index="Vespene" value="300"/>
             <Button DefaultButtonFace="CalldownMULE423222" Requirements="LearnBlink2122424333222"/>
         </InfoArray>
-        <InfoArray index="Research5" Time="120" Upgrade="UmojanBasicUnitUpgrade522242242322222233">
-            <Resource index="Minerals" value="200"/>
-            <Resource index="Vespene" value="200"/>
-            <Button DefaultButtonFace="CalldownMULE4233223" Requirements="LearnBlink212242433324"/>
+        <InfoArray index="Research5" Time="100" Upgrade="CyberFrenzySimulator">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ResearchFrenzySimulators" Requirements="CyberHaveFrenzySim2"/>
         </InfoArray>
         <InfoArray index="Research6" Upgrade="UnknownUpgrade78">
             <Resource index="Minerals" value="200"/>
@@ -22900,8 +23149,6 @@
             <Button DefaultButtonFace="DarkTemplar2"/>
             <Unit value="ShadowOne"/>
         </InfoArray>
-        <Flags index="UnitOrderQueue" value="1"/>
-        <Flags index="WaitForFood" value="0"/>
     </CAbilTrain>
     <CAbilTrain id="GatewayTrain3" parent="GatewayTrain">
         <Name value="Abil/Name/GatewayTrain3"/>
@@ -35437,15 +35684,14 @@
     </CAbilEffectTarget>
     <CAbilEffectTarget id="NexusPhaseShift2">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
-        <Effect index="0" value="NexusPhaseShiftSearch2"/>
+        <Effect index="0" value="NexusPhaseShiftApplyBehavior2"/>
         <Cost>
-            <Vital index="Shields" value="200"/>
+            <Vital index="Shields" value="150"/>
             <Charge Link="Abil/AdeptPhaseShiftCancel"/>
             <Cooldown Link="Abil/AdeptPhaseShiftCancel" TimeUse="84"/>
         </Cost>
         <Range value="10"/>
         <Arc value="360"/>
-        <CursorEffect value="NexusPhaseShiftSearch"/>
         <AINotifyEffect value=""/>
         <CmdButtonArray index="Execute" DefaultButtonFace="NexusPhaseShift2"/>
     </CAbilEffectTarget>
@@ -43217,7 +43463,7 @@
             <Cooldown TimeUse="150"/>
             <Button DefaultButtonFace="Hatchery322" Requirements="UnknownRequirement2"/>
         </InfoArray>
-        <Range value="500"/>
+        <Range value="8"/>
     </CAbilBuild>
     <CAbilBuild id="ProtossBuild533">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
@@ -62194,8 +62440,8 @@
     <CAbilEffectInstant id="XenWarrior23">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Resource index="Minerals" value="125"/>
-            <Resource index="Vespene" value="50"/>
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="75"/>
             <Charge>
                 <CountMax value="1"/>
                 <CountStart value="1"/>
@@ -62210,7 +62456,7 @@
     <CAbilEffectInstant id="XenWarrior232">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Resource index="Minerals" value="100"/>
+            <Resource index="Minerals" value="125"/>
             <Resource index="Vespene" value="25"/>
             <Charge>
                 <CountMax value="1"/>
@@ -67524,6 +67770,17 @@
         <Range value="10"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2262232233323232224"/>
     </CAbilEffectTarget>
+    <CAbilEffectInstant id="YamatoDefenseField2">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="UnknownEffect210"/>
+        <Cost>
+            <Vital index="Shields" value="200"/>
+            <Charge Link=""/>
+            <Cooldown Link="Abil/AlarakAvatar" TimeUse="30"/>
+        </Cost>
+        <AINotifyEffect value="ShieldUp"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield2823" Requirements="BeHigh"/>
+    </CAbilEffectInstant>
     <CAbilEffectTarget id="Yoink2">
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
         <Effect index="0" value="YoinkStartSwitch"/>

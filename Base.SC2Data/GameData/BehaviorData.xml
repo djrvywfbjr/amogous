@@ -891,6 +891,9 @@
             <StateFlags index="Cloak" value="1"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="HallucinationTimedLife">
+        <Duration value="90"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="HardenedShield82">
         <Alignment value="Positive"/>
         <Cost>
@@ -920,7 +923,7 @@
             <DamageDealtScaled index="Splash" value="1.5"/>
             <DamageDealtScaled index="NoProc" value="1.5"/>
             <VitalMaxArray index="Shields" value="350"/>
-            <WeaponArray Link="HybridNemesisWeapon"/>
+            <WeaponArray Link="QueenOfBladesPsiBlast2"/>
             <WeaponDisableArray value="HighTemplarWeapon3"/>
         </Modification>
         <DamageResponse ModifyMinimumDamage="1"/>
@@ -1228,6 +1231,12 @@
         <Modification>
             <StateFlags index="Cloak" value="1"/>
         </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Shield8">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="30"/>
+        <Modification TimeScale="1.4"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="VoidCall">
         <InfoFlags index="Hidden" value="1"/>
@@ -38965,6 +38974,7 @@
         <TimeScaleSource Value="Global"/>
         <Duration value="30"/>
         <Modification>
+            <StateFlags index="SuppressCloak" value="1"/>
             <AbilClassDisableArray index="CAbilAttack" value="1"/>
             <AbilClassDisableArray index="CAbilAttackModifier" value="1"/>
             <AbilClassDisableArray index="CAbilBuild" value="1"/>
@@ -38982,7 +38992,7 @@
             <WeaponDisableArray value="SJSpaceStationMercenary"/>
             <WeaponDisableArray value="SJSpaceStationValerian"/>
         </Modification>
-        <DamageResponse>
+        <DamageResponse ModifyFraction="2">
             <Cost>
                 <Charge Link="Behavior/Purify"/>
                 <Cooldown Link="Behavior/Purify"/>

@@ -259,6 +259,9 @@
     <CUpgrade id="Bleeding">
         <Icon value="Assets\Textures\btn-upgrade-zergling-armorshredding.dds"/>
     </CUpgrade>
+    <CUpgrade id="CyberFrenzySimulator">
+        <Icon value="Assets\Textures\btn-upgrade-stetmann-mechaadrenalglands.dds"/>
+    </CUpgrade>
     <CUpgrade id="EmergencyWeapon">
         <Flags index="UpgradeCheat" value="0"/>
         <EffectArray Operation="Set" Reference="Weapon,H1ScrapCannon,Options[Hidden]" Value="0"/>
@@ -10800,6 +10803,12 @@
         <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll302,Modification.VitalMaxAdditiveMultiplierArray[Shields]" Value="-0.25"/>
         <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll3022,Modification.VitalMaxAdditiveMultiplierArray[Shields]" Value="-0.25"/>
         <EffectArray Operation="Set" Reference="Abil,PhaseCannon19,Cost[0].Cooldown.TimeUse" Value="15.000000"/>
+        <EffectArray Operation="Set" Reference="Abil,ProtossBuild14,InfoArray[Build11].Time" Value="25.000000"/>
+        <EffectArray Operation="Set" Reference="Abil,ProtossBuild14,InfoArray[Build12].Time" Value="25.000000"/>
+        <EffectArray Operation="Set" Reference="Abil,ProtossBuild14,InfoArray[Build13].Time" Value="32.500000"/>
+        <EffectArray Operation="Set" Reference="Abil,ProtossBuild14,InfoArray[Build15].Time" Value="25.000000"/>
+        <EffectArray Operation="Set" Reference="Abil,ProtossBuild14,InfoArray[Build5].Time" Value="22.500000"/>
+        <EffectArray Operation="Set" Reference="Abil,ProtossBuild14,InfoArray[Build6].Time" Value="30.000000"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>

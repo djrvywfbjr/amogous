@@ -178,6 +178,12 @@
     <CRequirement id="BlinkButton">
         <NodeArray index="Show" Link="NotCountUpgradeXillBlinkQueuedOrBetter"/>
     </CRequirement>
+    <CRequirement id="CyberHaveFrenzySim">
+        <NodeArray index="Show" Link="CountUpgradeCyberFrenzySimulatorCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="CyberHaveFrenzySim2">
+        <NodeArray index="Show" Link="NotCountUpgradeCyberFrenzySimulatorQueuedOrBetter"/>
+    </CRequirement>
     <CRequirement id="OMindBleeding">
         <NodeArray index="Use" Link="CountUnitInfestationPit4CompleteOnly"/>
         <NodeArray index="Show" Link="NotCountUpgradeBleedingQueuedOrBetter"/>
@@ -202,6 +208,9 @@
     <CRequirement id="LearnDef">
         <EditorCategories value="Race:Protoss,TechType:Ability"/>
         <NodeArray index="Show" Link="NotCountUpgradeZealotDefQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="BeHigh">
+        <NodeArray index="Show" Link="CountBehaviorResurgentArchonDummyInProgressOnly"/>
     </CRequirement>
     <CRequirement id="UseWind">
         <EditorCategories value="Race:Protoss,TechType:Ability"/>
@@ -230,7 +239,9 @@
         <EditorCategories value="Race:Protoss,TechType:Ability"/>
         <NodeArray index="Show" Link="NotCountUpgradeZealotWindQueuedOrBetter"/>
     </CRequirement>
-    <CRequirement id="NoSymbcost"/>
+    <CRequirement id="NoSymbcost">
+        <NodeArray index="Show" Link="NotCountUpgradeUnknownUpgrade86QueuedOrBetter"/>
+    </CRequirement>
     <CRequirement id="RWERequirement2322">
         <NodeArray index="Use" Link="And996554812CountUnitMutationChamberCompleteOnlyCountUnitIncarcerationPitCompleteOnly"/>
     </CRequirement>

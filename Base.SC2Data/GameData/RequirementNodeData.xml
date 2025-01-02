@@ -1775,6 +1775,11 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="PsiDisruptionSearch323" State="CompleteOnlyAtUnit"/>
     </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorResurgentArchonDummyInProgressOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="ResurgentArchonDummy" State="InProgressOnly"/>
+    </CRequirementCountBehavior>
     <CRequirementCountBehavior id="CountBehaviorShieldingEngine10222CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="ShieldingEngine10222" State="CompleteOnly"/>
@@ -5762,12 +5767,10 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeBleedingCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="Bleeding" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeBleedingQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="Bleeding" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeBurrowCompleteOnly1687599735TechTreeCheat">
@@ -5916,6 +5919,15 @@
     <CRequirementCountUpgrade id="CountUpgradeCorruptedPlagueSpeedDebuffQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="CorruptedPlagueSpeedDebuff" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeCyberFrenzySimulatorCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="CyberFrenzySimulator" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeCyberFrenzySimulatorQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="CyberFrenzySimulator" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeDASCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
@@ -6090,17 +6102,14 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeOmindArmoredSkinQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="OmindArmoredSkin" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeOmindStrengthenedMusclesCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="OmindStrengthenedMuscles" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeOmindStrengthenedMusclesQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="OmindStrengthenedMuscles" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeOptimizedServosQueuedOrBetter">
@@ -14789,6 +14798,11 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="UnknownUpgrade85" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeUnknownUpgrade86QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="UnknownUpgrade86" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUnknownUpgrade8CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="UnknownUpgrade8" State="CompleteOnly"/>
@@ -16614,7 +16628,6 @@
         <OperandArray index="0" value="CountUpgradeBansheeCloakingFieldQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeBleedingQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeBleedingQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeClusterBombQueuedOrBetter">
@@ -16710,6 +16723,10 @@
     <CRequirementNot id="NotCountUpgradeCorruptedPlagueSpeedDebuffQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeCorruptedPlagueSpeedDebuffQueuedOrBetter"/>
     </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeCyberFrenzySimulatorQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeCyberFrenzySimulatorQueuedOrBetter"/>
+    </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeEmergencyWeaponCompleteOnly">
         <OperandArray index="0" value="CountUpgradeEmergencyWeaponCompleteOnly"/>
     </CRequirementNot>
@@ -16747,11 +16764,9 @@
         <OperandArray index="0" value="CountUpgradeNovaGadgetPulseGrenadesQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeOmindArmoredSkinQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeOmindArmoredSkinQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeOmindStrengthenedMusclesQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeOmindStrengthenedMusclesQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeOptimizedServosQueuedOrBetter">
@@ -19369,6 +19384,10 @@
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUnknownUpgrade85QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeUnknownUpgrade85QueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeUnknownUpgrade86QueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeUnknownUpgrade86QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUnknownUpgrade8QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeUnknownUpgrade8QueuedOrBetter"/>

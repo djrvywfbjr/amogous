@@ -836,6 +836,15 @@
         <DamagePoint value="0.05"/>
         <Backswing value="0.75"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="MengskSiegeTank3">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+        <DisplayEffect value="MengskSiegeTankDamage3"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="4"/>
+        <Period value="1.04"/>
+        <Effect value="MengskSiegeTankDamage3"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="OmindClawsFormer">
         <EditorCategories value="Race:Zerg"/>
         <Options index="Melee" value="1"/>
@@ -3948,6 +3957,17 @@
         <Period value="1.754"/>
         <Effect value="HighTemplarWeaponLM5"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="QueenOfBladesPsiBlast2">
+        <EditorCategories value="Race:Zerg"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-dragoonsolariteflare.dds"/>
+        <DisplayEffect value="PsiBlastDamage2"/>
+        <DisplayAttackCount value="1"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <MinimumRange value="2"/>
+        <Period value="1.25"/>
+        <Effect value="PsiBlastLaunchMissile2"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="VoidBlast">
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
         <DisplayEffect value="ShockDDamage4"/>
@@ -4007,8 +4027,8 @@
         <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-arbitersuit-weapon.dds"/>
         <DisplayEffect value="KhaydarinBeamDamage2"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="6"/>
-        <Period value="3"/>
+        <Range value="8"/>
+        <Period value="2"/>
         <DamagePoint value="2.9"/>
         <Effect value="KhaydarinBeamDamage2"/>
     </CWeaponLegacy>
