@@ -555,6 +555,10 @@
         <Icon value="Assets\Textures\btn-ability-stetmann-banelingmanashield.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
+    <CButton id="CombatShield2236">
+        <Icon value="Assets\Textures\btn-upgrade-karax-chronofield.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
     <CButton id="CombatShield2923">
         <Icon value="Assets\Textures\btn-upgrade-nova-equipment-ui-superstimpackeffect.dds"/>
         <EditorCategories value="Race:Terran"/>
@@ -29603,6 +29607,9 @@
     <CButton id="CallOfTheVoid">
         <Icon value="Assets\Textures\voidrifts_coop.dds"/>
     </CButton>
+    <CButton id="UnknownButton129">
+        <Icon value="Assets\Textures\btn-unit-protoss-champion-scout-purifier-active.dds"/>
+    </CButton>
     <CButton id="UnknownButton13">
         <Icon value="Assets\Textures\btn-ability-protoss-scarabshot.dds"/>
     </CButton>
@@ -29827,6 +29834,10 @@
     </CButton>
     <CButton id="UnknownButton46">
         <Icon value="Assets\Textures\btn-progression-stetmann-10-infestorupgradecache.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-stetmann-10-infestorupgradecache.dds"/>
+    </CButton>
+    <CButton id="ResearchFrenzySimulators">
+        <Icon value="Assets\Textures\btn-upgrade-stetmann-mechaadrenalglands.dds"/>
         <AlertIcon value="Assets\Textures\btn-progression-stetmann-10-infestorupgradecache.dds"/>
     </CButton>
     <CButton id="UnknownButton47">

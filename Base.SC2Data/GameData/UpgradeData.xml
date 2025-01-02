@@ -259,6 +259,9 @@
     <CUpgrade id="Bleeding">
         <Icon value="Assets\Textures\btn-upgrade-zergling-armorshredding.dds"/>
     </CUpgrade>
+    <CUpgrade id="CyberFrenzySimulator">
+        <Icon value="Assets\Textures\btn-upgrade-stetmann-mechaadrenalglands.dds"/>
+    </CUpgrade>
     <CUpgrade id="EmergencyWeapon">
         <Flags index="UpgradeCheat" value="0"/>
         <EffectArray Operation="Set" Reference="Weapon,H1ScrapCannon,Options[Hidden]" Value="0"/>

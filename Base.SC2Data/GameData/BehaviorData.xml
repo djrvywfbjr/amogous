@@ -1229,6 +1229,12 @@
             <StateFlags index="Cloak" value="1"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="Shield8">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="30"/>
+        <Modification TimeScale="1.4"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="VoidCall">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
@@ -38965,6 +38971,7 @@
         <TimeScaleSource Value="Global"/>
         <Duration value="30"/>
         <Modification>
+            <StateFlags index="SuppressCloak" value="1"/>
             <AbilClassDisableArray index="CAbilAttack" value="1"/>
             <AbilClassDisableArray index="CAbilAttackModifier" value="1"/>
             <AbilClassDisableArray index="CAbilBuild" value="1"/>
@@ -38982,7 +38989,7 @@
             <WeaponDisableArray value="SJSpaceStationMercenary"/>
             <WeaponDisableArray value="SJSpaceStationValerian"/>
         </Modification>
-        <DamageResponse>
+        <DamageResponse ModifyFraction="2">
             <Cost>
                 <Charge Link="Behavior/Purify"/>
                 <Cooldown Link="Behavior/Purify"/>

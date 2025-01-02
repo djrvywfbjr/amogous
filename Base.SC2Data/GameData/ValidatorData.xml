@@ -770,6 +770,11 @@
         <Compare value="GT"/>
         <Behavior value="ResurgentArchonDummy"/>
     </CValidatorUnitCompareBehaviorCount>
+    <CValidatorPlayerRequirement id="HaveStalker2">
+        <ResultNoPlayer value="Error"/>
+        <Find value="1"/>
+        <Value value="CyberHaveFrenzySim"/>
+    </CValidatorPlayerRequirement>
     <CValidatorUnitType id="IsAnalyzerVessel">
         <Value value="AnalyzerVessel"/>
     </CValidatorUnitType>
