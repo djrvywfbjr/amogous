@@ -3957,6 +3957,17 @@
         <Period value="1.754"/>
         <Effect value="HighTemplarWeaponLM5"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="QueenOfBladesPsiBlast2">
+        <EditorCategories value="Race:Zerg"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-dragoonsolariteflare.dds"/>
+        <DisplayEffect value="PsiBlastDamage2"/>
+        <DisplayAttackCount value="1"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <MinimumRange value="2"/>
+        <Period value="1.25"/>
+        <Effect value="PsiBlastLaunchMissile2"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="VoidBlast">
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
         <DisplayEffect value="ShockDDamage4"/>

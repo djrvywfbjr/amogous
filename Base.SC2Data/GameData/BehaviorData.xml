@@ -891,6 +891,9 @@
             <StateFlags index="Cloak" value="1"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="HallucinationTimedLife">
+        <Duration value="90"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="HardenedShield82">
         <Alignment value="Positive"/>
         <Cost>
@@ -920,7 +923,7 @@
             <DamageDealtScaled index="Splash" value="1.5"/>
             <DamageDealtScaled index="NoProc" value="1.5"/>
             <VitalMaxArray index="Shields" value="350"/>
-            <WeaponArray Link="HybridNemesisWeapon"/>
+            <WeaponArray Link="QueenOfBladesPsiBlast2"/>
             <WeaponDisableArray value="HighTemplarWeapon3"/>
         </Modification>
         <DamageResponse ModifyMinimumDamage="1"/>

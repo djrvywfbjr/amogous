@@ -559,6 +559,10 @@
         <Icon value="Assets\Textures\btn-upgrade-karax-chronofield.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
+    <CButton id="CombatShield2823">
+        <Icon value="Assets\Textures\btn-ability-mengsk-marauder-selfabsorbshield.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
     <CButton id="CombatShield2923">
         <Icon value="Assets\Textures\btn-upgrade-nova-equipment-ui-superstimpackeffect.dds"/>
         <EditorCategories value="Race:Terran"/>

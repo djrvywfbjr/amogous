@@ -177,6 +177,12 @@
         <ImpactEffect value="ATALaserBatteryU322"/>
         <AmmoUnit value="ImmortalShakurasShadowCannonMissile"/>
     </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="ATALaserBatteryLM324">
+        <ValidatorArray index="0" value="BattlecruiserIsNotYamatoing"/>
+        <EditorCategories value="Race:Terran"/>
+        <ImpactEffect value="ATALaserBatteryU323"/>
+        <AmmoUnit value="HybridDominatorVoidPlasmaWeapon"/>
+    </CEffectLaunchMissile>
     <CEffectLaunchMissile id="ATALaserBatteryLM4">
         <ValidatorArray index="0" value="BattlecruiserIsNotYamatoing"/>
         <EditorCategories value="Race:Terran"/>
@@ -238,6 +244,14 @@
         <Visibility value="Visible"/>
         <Amount value="25"/>
     </CEffectDamage>
+    <CEffectModifyUnit id="ATALaserBatteryU323">
+        <EditorCategories value="Race:Terran"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <VitalArray index="Shields">
+            <Change value="50"/>
+        </VitalArray>
+    </CEffectModifyUnit>
     <CEffectDamage id="ATALaserBatteryU4" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Terran"/>
         <Visibility value="Visible"/>
@@ -4811,6 +4825,23 @@
         <SearchFlags index="CallForHelp" value="1"/>
         <SearchFlags index="OffsetByUnitRadius" value="1"/>
     </CEffectDamage>
+    <CEffectDamage id="PsiBlastDamage2">
+        <EditorCategories value="Race:Zerg"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="25"/>
+        <Death value="Eviscerate"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="PsiBlastLaunchMissile2">
+        <ValidatorArray index="0" value="PsiDischargeLaunchMissileTargetFilters"/>
+        <EditorCategories value="Race:Zerg"/>
+        <ImpactEffect value="PsiBlastDamage2"/>
+        <AmmoUnit value="KerriganWeapon"/>
+    </CEffectLaunchMissile>
     <CEffectApplyBehavior id="ResurgAB">
         <EditorCategories value="Race:Terran"/>
         <Behavior value="ResurgentArchonDummy"/>
@@ -70807,6 +70838,14 @@
         <EffectArray value="ObserverSquadSightAB2222334"/>
         <EffectArray value="Dehaka2"/>
     </CEffectSet>
+    <CEffectEnumArea id="UnknownEffect210">
+        <ValidatorArray value="ShieldsNotFull"/>
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Neutral,Enemy"/>
+        <AreaArray Radius="15" Effect="ATALaserBatteryLM324"/>
+        <MinCount value="1"/>
+        <MaxCount value="5"/>
+    </CEffectEnumArea>
     <CEffectEnumArea id="UnknownEffect22">
         <EditorCategories value=""/>
         <SearchFilters value="Structure;-"/>

@@ -67770,6 +67770,17 @@
         <Range value="10"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2262232233323232224"/>
     </CAbilEffectTarget>
+    <CAbilEffectInstant id="YamatoDefenseField2">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="UnknownEffect210"/>
+        <Cost>
+            <Vital index="Shields" value="200"/>
+            <Charge Link=""/>
+            <Cooldown Link="Abil/AlarakAvatar" TimeUse="30"/>
+        </Cost>
+        <AINotifyEffect value="ShieldUp"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield2823" Requirements="BeHigh"/>
+    </CAbilEffectInstant>
     <CAbilEffectTarget id="Yoink2">
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
         <Effect index="0" value="YoinkStartSwitch"/>
