@@ -256,6 +256,12 @@
     <CUpgrade id="BansheeCloakingField">
         <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
     </CUpgrade>
+    <CUpgrade id="Bleeding">
+        <Icon value="Assets\Textures\btn-upgrade-zergling-armorshredding.dds"/>
+    </CUpgrade>
+    <CUpgrade id="CyberFrenzySimulator">
+        <Icon value="Assets\Textures\btn-upgrade-stetmann-mechaadrenalglands.dds"/>
+    </CUpgrade>
     <CUpgrade id="EmergencyWeapon">
         <Flags index="UpgradeCheat" value="0"/>
         <EffectArray Operation="Set" Reference="Weapon,H1ScrapCannon,Options[Hidden]" Value="0"/>
@@ -1142,6 +1148,16 @@
     </CUpgrade>
     <CUpgrade id="MoebiusTUpgrade12232223223222432">
         <EffectArray Reference="Unit,SecurityCenterFlying,Speed" Value="1.781200"/>
+    </CUpgrade>
+    <CUpgrade id="OmindArmoredSkin">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-organiccarapace.dds"/>
+        <EffectArray Reference="Unit,HotSSwarmling3,LifeMax" Value="10"/>
+        <EffectArray Reference="Unit,HotSSwarmling3,LifeStart" Value="10"/>
+    </CUpgrade>
+    <CUpgrade id="OmindStrengthenedMuscles">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-evolvemuscularaugments.dds"/>
+        <EffectArray Reference="Weapon,NeedleSpines5,Range" Value="1"/>
+        <EffectArray Reference="Unit,HydraliskLurker2,Speed" Value="0.558500"/>
     </CUpgrade>
     <CUpgrade id="ParamilitaryUpgrade12">
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
@@ -4392,7 +4408,6 @@
     <CUpgrade id="UmojanBasicUnitUpgrade522242242322222222222222222322">
         <EffectArray Operation="Set" Reference="Unit,PhotonCannon8,CostResource[Minerals]" Value="325"/>
         <EffectArray Operation="Set" Reference="Unit,PhotonCannon8,CostResource[Vespene]" Value="125"/>
-        <EffectArray Operation="Set" Reference="Weapon,GuassRifle85,Period" Value="4.000000"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -6860,11 +6875,11 @@
         <EffectArray Operation="Set" Reference="Weapon,NeedleSpines5,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level1.dds"/>
         <EffectArray Operation="Set" Reference="Weapon,GuardianMPWeapon3,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level1.dds"/>
         <EffectArray Operation="Set" Reference="Weapon,DevourerMPWeapon2,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level1.dds"/>
-        <EffectArray Operation="Set" Reference="Weapon,HotSSwarmlingClaws,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level1.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,OmindClawsFormer,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level1.dds"/>
         <EffectArray Operation="Set" Reference="Weapon,KaiserBlades9,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level1.dds"/>
         <EffectArray Reference="Effect,DevourerMPWeaponDamage2,Amount" Value="5"/>
         <EffectArray Reference="Effect,GuardianMPWeaponDamage3,Amount" Value="9"/>
-        <EffectArray Reference="Effect,HotSSwarmlingClawsDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,OmindHotSSwarmlingClawsDamage7,Amount" Value="1"/>
         <EffectArray Reference="Effect,HotSUltraliskKaiserBladesDamage9,Amount" Value="10"/>
         <EffectArray Reference="Effect,HotSUltraliskKaiserBladesSecondaryDamage9,Amount" Value="1"/>
         <EffectArray Reference="Effect,HotSUltraliskKaiserBladesSecondaryUpgradeDamage7,Amount" Value="5"/>
@@ -6881,7 +6896,7 @@
         <EffectArray Reference="Weapon,NeedleSpines5,Level" Value="1"/>
         <EffectArray Reference="Weapon,GuardianMPWeapon3,Level" Value="1"/>
         <EffectArray Reference="Weapon,DevourerMPWeapon2,Level" Value="1"/>
-        <EffectArray Reference="Weapon,HotSSwarmlingClaws,Level" Value="1"/>
+        <EffectArray Reference="Weapon,OmindClawsFormer,Level" Value="1"/>
         <EffectArray Reference="Weapon,KaiserBlades9,Level" Value="1"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
@@ -6893,11 +6908,11 @@
         <EffectArray Operation="Set" Reference="Weapon,NeedleSpines5,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level2.dds"/>
         <EffectArray Operation="Set" Reference="Weapon,GuardianMPWeapon3,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level2.dds"/>
         <EffectArray Operation="Set" Reference="Weapon,DevourerMPWeapon2,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level2.dds"/>
-        <EffectArray Operation="Set" Reference="Weapon,HotSSwarmlingClaws,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,OmindClawsFormer,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
         <EffectArray Operation="Set" Reference="Weapon,KaiserBlades9,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
         <EffectArray Reference="Effect,DevourerMPWeaponDamage2,Amount" Value="5"/>
         <EffectArray Reference="Effect,GuardianMPWeaponDamage3,Amount" Value="9"/>
-        <EffectArray Reference="Effect,HotSSwarmlingClawsDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,OmindHotSSwarmlingClawsDamage7,Amount" Value="1"/>
         <EffectArray Reference="Effect,HotSUltraliskKaiserBladesDamage9,Amount" Value="10"/>
         <EffectArray Reference="Effect,HotSUltraliskKaiserBladesSecondaryDamage9,Amount" Value="1"/>
         <EffectArray Reference="Effect,HotSUltraliskKaiserBladesSecondaryUpgradeDamage7,Amount" Value="5"/>
@@ -6914,7 +6929,7 @@
         <EffectArray Reference="Weapon,NeedleSpines5,Level" Value="1"/>
         <EffectArray Reference="Weapon,GuardianMPWeapon3,Level" Value="1"/>
         <EffectArray Reference="Weapon,DevourerMPWeapon2,Level" Value="1"/>
-        <EffectArray Reference="Weapon,HotSSwarmlingClaws,Level" Value="1"/>
+        <EffectArray Reference="Weapon,OmindClawsFormer,Level" Value="1"/>
         <EffectArray Reference="Weapon,KaiserBlades9,Level" Value="1"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
@@ -6926,11 +6941,11 @@
         <EffectArray Operation="Set" Reference="Weapon,NeedleSpines5,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
         <EffectArray Operation="Set" Reference="Weapon,GuardianMPWeapon3,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level3.dds"/>
         <EffectArray Operation="Set" Reference="Weapon,DevourerMPWeapon2,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level3.dds"/>
-        <EffectArray Operation="Set" Reference="Weapon,HotSSwarmlingClaws,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray Operation="Set" Reference="Weapon,OmindClawsFormer,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
         <EffectArray Operation="Set" Reference="Weapon,KaiserBlades9,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
         <EffectArray Reference="Effect,DevourerMPWeaponDamage2,Amount" Value="5"/>
         <EffectArray Reference="Effect,GuardianMPWeaponDamage3,Amount" Value="9"/>
-        <EffectArray Reference="Effect,HotSSwarmlingClawsDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,OmindHotSSwarmlingClawsDamage7,Amount" Value="1"/>
         <EffectArray Reference="Effect,HotSUltraliskKaiserBladesDamage9,Amount" Value="10"/>
         <EffectArray Reference="Effect,HotSUltraliskKaiserBladesSecondaryDamage9,Amount" Value="1"/>
         <EffectArray Reference="Effect,HotSUltraliskKaiserBladesSecondaryUpgradeDamage7,Amount" Value="5"/>
@@ -6947,7 +6962,7 @@
         <EffectArray Reference="Weapon,NeedleSpines5,Level" Value="1"/>
         <EffectArray Reference="Weapon,GuardianMPWeapon3,Level" Value="1"/>
         <EffectArray Reference="Weapon,DevourerMPWeapon2,Level" Value="1"/>
-        <EffectArray Reference="Weapon,HotSSwarmlingClaws,Level" Value="1"/>
+        <EffectArray Reference="Weapon,OmindClawsFormer,Level" Value="1"/>
         <EffectArray Reference="Weapon,KaiserBlades9,Level" Value="1"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
@@ -10798,6 +10813,12 @@
         <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll302,Modification.VitalMaxAdditiveMultiplierArray[Shields]" Value="-0.25"/>
         <EffectArray Operation="Set" Reference="Behavior,AntamoAirAll3022,Modification.VitalMaxAdditiveMultiplierArray[Shields]" Value="-0.25"/>
         <EffectArray Operation="Set" Reference="Abil,PhaseCannon19,Cost[0].Cooldown.TimeUse" Value="15.000000"/>
+        <EffectArray Operation="Set" Reference="Abil,ProtossBuild14,InfoArray[Build11].Time" Value="25.000000"/>
+        <EffectArray Operation="Set" Reference="Abil,ProtossBuild14,InfoArray[Build12].Time" Value="25.000000"/>
+        <EffectArray Operation="Set" Reference="Abil,ProtossBuild14,InfoArray[Build13].Time" Value="32.500000"/>
+        <EffectArray Operation="Set" Reference="Abil,ProtossBuild14,InfoArray[Build15].Time" Value="25.000000"/>
+        <EffectArray Operation="Set" Reference="Abil,ProtossBuild14,InfoArray[Build5].Time" Value="22.500000"/>
+        <EffectArray Operation="Set" Reference="Abil,ProtossBuild14,InfoArray[Build6].Time" Value="30.000000"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -11649,8 +11670,8 @@
         <EffectArray Operation="Subtract" Reference="Unit,PrimalTownHall224,EnergyMax" Value="3"/>
     </CUpgrade>
     <CUpgrade id="UnknownUpgrade73">
-        <EffectArray Operation="Set" Reference="Unit,MilitarizedColonistTransport2,LifeMax" Value="350"/>
-        <EffectArray Operation="Set" Reference="Unit,MilitarizedColonistTransport2,LifeStart" Value="350"/>
+        <EffectArray Reference="Unit,MilitarizedColonistTransport2,LifeMax" Value="200"/>
+        <EffectArray Reference="Unit,MilitarizedColonistTransport2,LifeStart" Value="200"/>
     </CUpgrade>
     <CUpgrade id="UnknownUpgrade74">
         <EffectArray Operation="Set" Reference="Abil,CommandCenterTrain5,InfoArray[Train10].Time" Value="10.000000"/>
@@ -12323,6 +12344,8 @@
     <CUpgrade id="XillBlink">
         <Icon value="Assets\Textures\btn-ability-zeratul-darktemplar-blink.dds"/>
     </CUpgrade>
+    <CUpgrade id="ZealotDef"/>
+    <CUpgrade id="ZealotWind"/>
     <CUpgrade id="etaCrow">
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>

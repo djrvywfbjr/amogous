@@ -1,0 +1,13 @@
+after 1.229
+Host Constructs now can place Totems Of The Void(Work In Progress)
+Aiur Guard cost: 160 ---> 120
+Fixed Xill charge training
+Once again changed Abolisher Hotkey + made its description more appropriate for minors
+Almost avoided crashing mid session
+Juggernaut Blast damage: 200 ---> 250
+Antamo Palace def desc is now correct
+Aegis Defense Field desc is now correct
+
+For deaad god's sake WHY WONT YOU FUCKING TYPE YOUR CHANGES IN THE DAMN PASSIVES
+WHY IS IT MY JOB
+LET ME TELL YOU HOW MUCH I WAS FORCED TO OVERDO BECAUSE YOU NEVER BOTHERED TO CHANGE SIMPLE TEXT
