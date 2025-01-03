@@ -2992,6 +2992,7 @@ Button/Hotkey/MohandarStickyBomb2=R
 Button/Hotkey/MohandarStickyBomb3=W
 Button/Hotkey/MohandarStickyBomb4=Q
 Button/Hotkey/MohandarStickyBomb5=Y
+Button/Hotkey/MohandarStickyBomb6=R
 Button/Hotkey/Morph23ToDevourerMP242=C
 Button/Hotkey/MorphBackToGateway2=M
 Button/Hotkey/MorphMorphalisk2=W

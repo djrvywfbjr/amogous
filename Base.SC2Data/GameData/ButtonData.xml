@@ -4210,6 +4210,14 @@
         <Icon value="Assets\Textures\btn-ability-protoss-astralwind.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-astralwind.dds"/>
     </CButton>
+    <CButton id="Energyrotation2">
+        <Icon value="Assets\Textures\btn-ability-protoss-astralwind.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-astralwind.dds"/>
+    </CButton>
+    <CButton id="Energyrotation22">
+        <Icon value="Assets\Textures\btn-ability-protoss-astralwind.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-astralwind.dds"/>
+    </CButton>
     <CButton id="EquipCloakingMantle">
         <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-cloak-color.dds"/>
@@ -4295,6 +4303,9 @@
     </CButton>
     <CButton id="MicrobialAgitation2">
         <Icon value="Assets\Textures\btn-ability-zerg-corruption-multi.dds"/>
+    </CButton>
+    <CButton id="MohandarStickyBomb6">
+        <Icon value="Assets\Textures\btn-ability-protoss-phaseshift2.dds"/>
     </CButton>
     <CButton id="MothershipCore2222322422243354">
         <Icon value="Assets\Textures\btn-upgrade-zerg-zagara-zerglingdodge.dds"/>
