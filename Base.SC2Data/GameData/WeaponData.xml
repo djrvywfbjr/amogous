@@ -5507,6 +5507,7 @@
         <Backswing value="0.75"/>
         <Effect value="P38ScytheGuassPistolBurst5"/>
         <DisplayEffect value="P38ScytheGuassPistolH23"/>
+	</CWeaponLegacy>
     <CWeaponLegacy id="InterceptorLaunch234">
         <EditorCategories value="Race:Protoss"/>
         <Options index="Hidden" value="1"/>
