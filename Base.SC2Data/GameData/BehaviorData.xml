@@ -1333,6 +1333,12 @@
             <VitalRegenArray index="Life" value="1"/>
         </Modification>
     </CBehaviorBuff>
+	<CBehaviorBuff id="Stimpack13">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-stimpack.dds"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Duration value="10"/>
+        <Modification MoveSpeedMultiplier="1.5" AttackSpeedMultiplier="1.5"/>
     <CBehaviorBuff id="StormSlow">
         <InfoIcon value="Assets\Textures\btn-upgrade-artanis-healingpsionicstorm.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
