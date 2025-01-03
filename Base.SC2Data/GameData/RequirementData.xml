@@ -178,6 +178,44 @@
     <CRequirement id="BlinkButton">
         <NodeArray index="Show" Link="NotCountUpgradeXillBlinkQueuedOrBetter"/>
     </CRequirement>
+    <CRequirement id="CyberHaveFrenzySim">
+        <NodeArray index="Show" Link="CountUpgradeCyberFrenzySimulatorCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="CyberHaveFrenzySim2">
+        <NodeArray index="Show" Link="NotCountUpgradeCyberFrenzySimulatorQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="OMindBleeding">
+        <NodeArray index="Use" Link="CountUnitInfestationPit4CompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeBleedingQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="OMindStrengthenedMusclesButton">
+        <NodeArray index="Use" Link="CountUpgradeOmindStrengthenedMusclesCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="OMindStrengthenedMuscles">
+        <NodeArray index="Show" Link="NotCountUpgradeOmindStrengthenedMusclesQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="OMindBleedingButton">
+        <NodeArray index="Use" Link="CountUpgradeBleedingCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="OmindZergHp">
+        <NodeArray index="Show" Link="NotCountUpgradeOmindArmoredSkinQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="HaveBarracks324">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="CountUnitInfestedFacilityCompleteOnly2667952670TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="LearnDef">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Show" Link="NotCountUpgradeZealotDefQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="BeHigh">
+        <NodeArray index="Show" Link="CountBehaviorResurgentArchonDummyInProgressOnly"/>
+    </CRequirement>
+    <CRequirement id="UseWind">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeZealotWindCompleteOnly2123262936"/>
+    </CRequirement>
     <CRequirement id="HaveAdvancedBionics2">
         <NodeArray index="Use" Link="CountUpgradeAdvancedBionicsUpgradeCompleteOnly"/>
     </CRequirement>
@@ -197,7 +235,13 @@
         <EditorCategories value="Race:Protoss,TechType:Ability"/>
         <NodeArray index="Show" Link="NotCountUpgradeBansheeCloakingFieldQueuedOrBetter"/>
     </CRequirement>
-    <CRequirement id="NoSymbcost"/>
+    <CRequirement id="LearnWind">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Show" Link="NotCountUpgradeZealotWindQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="NoSymbcost">
+        <NodeArray index="Show" Link="NotCountUpgradeUnknownUpgrade86QueuedOrBetter"/>
+    </CRequirement>
     <CRequirement id="RWERequirement2322">
         <NodeArray index="Use" Link="And996554812CountUnitMutationChamberCompleteOnlyCountUnitIncarcerationPitCompleteOnly"/>
     </CRequirement>
@@ -210,7 +254,11 @@
     </CRequirement>
     <CRequirement id="BlueIntelUseCloak">
         <EditorCategories value="Race:Protoss,TechType:Ability"/>
-        <NodeArray index="Use" Link="CountUpgradeBansheeCloakingFieldQueuedOrBetter"/>
+        <NodeArray index="Use" Link="CountUpgradeBansheeCloakingFieldCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UseDef">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeZealotDefCompleteOnly4275859580"/>
     </CRequirement>
     <CRequirement id="VenomButton">
         <NodeArray index="Show" Link="NotCountUpgradeVenomQueuedOrBetter"/>
@@ -6435,7 +6483,7 @@
     </CRequirement>
     <CRequirement id="MothershipRequirements23423">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="LTE1255560832CountUnitNydusNetwork2QueuedOrBetter1"/>
+        <NodeArray index="Use" Link="LTE2141802724CountUnitNydusNetwork2QueuedOrBetter2"/>
     </CRequirement>
     <CRequirement id="MothershipRequirements234232">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>

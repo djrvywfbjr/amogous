@@ -77,9 +77,16 @@
         <AlertIcon value="Assets\Textures\btn-ability-kerrigan-wildmutation.dds"/>
         <EditorCategories value="Race:Zerg"/>
     </CButton>
+    <CButton id="Aiurbarrier">
+        <Icon value="Assets\Textures\btn-ability-protoss-barrier-upgraded.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-barrier-upgraded.dds"/>
+    </CButton>
     <CButton id="AlarakKnockback2">
         <Icon value="Assets\Textures\btn-ability-protoss-destructionwave.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-destructionwave.dds"/>
+    </CButton>
+    <CButton id="AmonTentacleA">
+        <Icon value="Assets\Textures\btn-ability-protoss-thermallance.dds"/>
     </CButton>
     <CButton id="AmonTentacleB2">
         <Icon value="Assets\Textures\btn-ability-protoss-scattercannon.dds"/>
@@ -538,9 +545,32 @@
     <CButton id="ArtanisInspire3">
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-detector.dds"/>
     </CButton>
+    <CButton id="CalldownMULE4255523">
+        <Icon value="Assets\Textures\tip_voidthrasher.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="CalldownMULE42555"/>
+    </CButton>
+    <CButton id="CombatShield223213">
+        <Icon value="Assets\Textures\btn-ability-stetmann-banelingmanashield.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
+    <CButton id="CombatShield2236">
+        <Icon value="Assets\Textures\btn-upgrade-karax-chronofield.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
+    <CButton id="CombatShield2823">
+        <Icon value="Assets\Textures\btn-ability-mengsk-marauder-selfabsorbshield.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
     <CButton id="CombatShield2923">
         <Icon value="Assets\Textures\btn-upgrade-nova-equipment-ui-superstimpackeffect.dds"/>
         <EditorCategories value="Race:Terran"/>
+    </CButton>
+    <CButton id="DefensiveMatrix6">
+        <Icon value="Assets\Textures\btn-unit-protoss-archon-upgraded.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-defensivematrix.dds"/>
+        <TintRacially value="1"/>
     </CButton>
     <CButton id="DriveCalibrationField">
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
@@ -4176,6 +4206,10 @@
     <CButton id="DistortionGenerator">
         <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
     </CButton>
+    <CButton id="Energyrotation">
+        <Icon value="Assets\Textures\btn-ability-protoss-astralwind.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-astralwind.dds"/>
+    </CButton>
     <CButton id="EquipCloakingMantle">
         <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-cloak-color.dds"/>
@@ -4268,9 +4302,44 @@
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="MothershipCore2222322"/>
     </CButton>
+    <CButton id="NememeSlow">
+        <Icon value="Assets\Textures\btn-ability-terran-haywiremissile.dds"/>
+    </CButton>
+    <CButton id="OmindArmoredSkin">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-organiccarapace.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-zerg-organiccarapace.dds"/>
+    </CButton>
+    <CButton id="OmindBleeding">
+        <Icon value="Assets\Textures\btn-upgrade-zergling-armorshredding.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-zergling-armorshredding.dds"/>
+    </CButton>
+    <CButton id="OmindResearchBleeding">
+        <Icon value="Assets\Textures\btn-upgrade-zergling-armorshredding.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-zergling-armorshredding.dds"/>
+    </CButton>
+    <CButton id="OmindStrengthenedMuscles">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-evolvemuscularaugments.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-zerg-evolvemuscularaugments.dds"/>
+    </CButton>
+    <CButton id="OmindResearchStrengthenedMuscles">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-evolvemuscularaugments.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-zerg-evolvemuscularaugments.dds"/>
+    </CButton>
     <CButton id="PatriotReactor">
         <Icon value="Assets\Textures\btn-upgrade-terran-caduceusreactor.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-terran-caduceusreactor.dds"/>
+    </CButton>
+    <CButton id="CreateCradleOfLife">
+        <Icon value="Assets\Textures\btn-unit-protoss-oracle-ihanrii.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-phoenix.dds"/>
+        <Hotkey value="Button/Hotkey/CradleOfLife"/>
+        <EditorCategories value="Race:Protoss"/>
+        <HotkeyAlias value="Phoenix"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="CallTotemOfTheVoid">
+        <Icon value="Assets\Textures\amonshards_weapon.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-phasecannon.dds"/>
     </CButton>
     <CButton id="PiercerRounds">
         <Icon value="Assets\Textures\btn-tips-terran-penetrator.dds"/>
@@ -4377,7 +4446,7 @@
     </CButton>
     <CButton id="ResearchBansheeCloak2">
         <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
-        <AlertIcon value="Assets\Textures\btn-ability-terran-cloak-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
     <CButton id="ResearchMobileAutomatons">
@@ -4385,6 +4454,12 @@
     </CButton>
     <CButton id="ResearchOptimizedServos">
         <Icon value="Assets\Textures\btn-upgrade-terran-transformationservos.dds"/>
+    </CButton>
+    <CButton id="ResearchReinforcedShields">
+        <Icon value="Assets\Textures\btn-ability-protoss-voidarmor.dds"/>
+    </CButton>
+    <CButton id="ReinforcedShields">
+        <Icon value="Assets\Textures\btn-ability-protoss-voidarmor.dds"/>
     </CButton>
     <CButton id="SJHyperionYamato4722">
         <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-empowermeslaves.dds"/>
@@ -25502,6 +25577,11 @@
         <EditorCategories value="Race:Protoss"/>
         <HotkeyAlias value="ShieldBattery"/>
     </CButton>
+    <CButton id="ShieldBattery13">
+        <Icon value="Assets\Textures\btn-building-protoss-shieldbattery.dds"/>
+        <AlertIcon value="Assets\Textures\btn-building-protoss-shieldbattery.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
     <CButton id="ShieldBattery2">
         <Icon value="Assets\Textures\btn-building-protoss-shieldbattery.dds"/>
         <AlertIcon value="Assets\Textures\btn-building-protoss-shieldbattery.dds"/>
@@ -27025,6 +27105,9 @@
         <AlertIcon value="Assets\Textures\btn-ability-protoss-soulabsorption.dds"/>
         <HotkeyAlias value="SoulAbsorption"/>
     </CButton>
+    <CButton id="SparksOfLife">
+        <Icon value="Assets\Textures\btn-ability-spearofadun-warpharmonization.dds"/>
+    </CButton>
     <CButton id="SpawnBanelings2">
         <Icon value="Assets\Textures\abilityicon_spawnbanelings_square.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-zerg-baneling.dds"/>
@@ -28536,6 +28619,11 @@
         <AlertIcon value="Assets\Textures\btn-ability-protoss-timewarp-red.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
+    <CButton id="TemporalField33">
+        <Icon value="Assets\Textures\btn-ability-protoss-timewarp-red.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-timewarp-red.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
     <CButton id="TerranBuild2">
         <Icon value="Assets\Textures\btn-command-terran-buildstructure.dds"/>
         <AlertIcon value="Assets\Textures\btn-command-terran-buildstructure.dds"/>
@@ -29517,6 +29605,15 @@
         <Icon value="Assets\Textures\btn-unit-terran-troopermengsk.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-terran-troopermengsk.dds"/>
     </CButton>
+    <CButton id="UnknownButton128">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-shieldslevel3.dds"/>
+    </CButton>
+    <CButton id="CallOfTheVoid">
+        <Icon value="Assets\Textures\voidrifts_coop.dds"/>
+    </CButton>
+    <CButton id="UnknownButton129">
+        <Icon value="Assets\Textures\btn-unit-protoss-champion-scout-purifier-active.dds"/>
+    </CButton>
     <CButton id="UnknownButton13">
         <Icon value="Assets\Textures\btn-ability-protoss-scarabshot.dds"/>
     </CButton>
@@ -29741,6 +29838,10 @@
     </CButton>
     <CButton id="UnknownButton46">
         <Icon value="Assets\Textures\btn-progression-stetmann-10-infestorupgradecache.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-stetmann-10-infestorupgradecache.dds"/>
+    </CButton>
+    <CButton id="ResearchFrenzySimulators">
+        <Icon value="Assets\Textures\btn-upgrade-stetmann-mechaadrenalglands.dds"/>
         <AlertIcon value="Assets\Textures\btn-progression-stetmann-10-infestorupgradecache.dds"/>
     </CButton>
     <CButton id="UnknownButton47">
@@ -32138,6 +32239,10 @@
         <Icon value="Assets\Textures\btn-ability-zeratul-sentry-reflectionshield.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
+    <CButton id="VoidSentryShieldRepairDouble3">
+        <Icon value="Assets\Textures\btn-ability-protoss-doubleshieldrecharge.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
     <CButton id="VoidShieldCapacitor2">
         <Icon value="Assets\Textures\btn-ability-protoss-shieldcapacitor.dds"/>
     </CButton>
@@ -32271,6 +32376,9 @@
         <AlertIcon value="Assets\Textures\BTN-Ability-Protoss-ShadowCharge.dds"/>
         <EditorCategories value="Race:Protoss"/>
         <HotkeyAlias value="VoidZealotShadowCharge"/>
+    </CButton>
+    <CButton id="ResearchWhirlwind">
+        <Icon value="Assets\Textures\BTN-Ability-Protoss-Whirlwind.dds"/>
     </CButton>
     <CButton id="VoodooShield2">
         <Icon value="Assets\Textures\btn-ability-terran-electricfield.dds"/>
@@ -33051,6 +33159,10 @@
         <EditorCategories value="Race:Protoss"/>
     </CButton>
     <CButton id="WormholeTransit7">
+        <Icon value="Assets\Textures\btn-ability-protoss-wormholetransit-color.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="WormholeTransit8">
         <Icon value="Assets\Textures\btn-ability-protoss-wormholetransit-color.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
@@ -36613,7 +36725,7 @@
         <EditorCategories value="Race:Zerg"/>
     </CButton>
     <CButton id="inspiration">
-        <Icon value="Assets\Textures\btn-ability-terran-battlefieldawareness.dds"/>
+        <Icon value="Assets\Textures\btn-upgrade-tychus-tychus-sureshotnetwork.dds"/>
     </CButton>
     <CButton id="zerglingattackspeed2">
         <Icon value="Assets\Textures\btn-ability-zerg-dehaka-roach-glialreconstruction.dds"/>
