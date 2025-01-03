@@ -1059,6 +1059,16 @@
             <Unit value="ShadowOne"/>
         </InfoArray>
     </CAbilTrain>
+    <CAbilEffectTarget id="MohandarStickyBomb6">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="MohandarStickyBombLaunchMissile6"/>
+        <Flags index="BestUnit" value="0"/>
+        <Cost>
+            <Cooldown TimeUse="10"/>
+        </Cost>
+        <Range value="6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MohandarStickyBomb6" Requirements="HaveMohandarStickyBomb"/>
+    </CAbilEffectTarget>
     <CAbilEffectInstant id="ScoutHalluc">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Effect index="0" value="HallucinationCreateAdept3"/>

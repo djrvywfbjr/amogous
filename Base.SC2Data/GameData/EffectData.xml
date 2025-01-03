@@ -4825,6 +4825,34 @@
         <SearchFlags index="CallForHelp" value="1"/>
         <SearchFlags index="OffsetByUnitRadius" value="1"/>
     </CEffectDamage>
+    <CEffectApplyBehavior id="MohandarStickyBombApply6">
+        <EditorCategories value=""/>
+        <Behavior value="MohandarStickyBomb6"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="MohandarStickyBombApplySlow6">
+        <EditorCategories value=""/>
+        <Behavior value="MohandarStickyBombSlow6"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="MohandarStickyBombDamage6">
+        <EditorCategories value=""/>
+        <Amount value="200"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="MohandarStickyBombLaunchMissile6">
+        <ValidatorArray index="0" value="TargetIsEnemy"/>
+        <EditorCategories value=""/>
+        <ImpactEffect value="MohandarStickyBombApply6"/>
+        <AmmoUnit value="MohandarStickyBombMissile"/>
+    </CEffectLaunchMissile>
+    <CEffectEnumArea id="MohandarStickyBombSearch6">
+        <EditorCategories value=""/>
+        <SearchFilters value="Visible;Self,Player,Ally,Neutral,Missile,Item,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="2" Effect="MohandarStickyBombApplySlow6"/>
+    </CEffectEnumArea>
+    <CEffectSet id="MohandarStickyBombSet6">
+        <EditorCategories value=""/>
+        <EffectArray value="MohandarStickyBombSearch6"/>
+        <EffectArray value="MohandarStickyBombDamage6"/>
+    </CEffectSet>
     <CEffectDamage id="PsiBlastDamage2">
         <EditorCategories value="Race:Zerg"/>
         <ResponseFlags index="Acquire" value="1"/>
