@@ -8023,6 +8023,8 @@
         <EffectArray Operation="Set" Reference="Unit,Ghost23,LifeStart" Value="225"/>
         <EffectArray Operation="Set" Reference="Unit,Ghost23,EnergyMax" Value="250"/>
         <EffectArray Reference="Effect,C10CanisterRifle422,Amount" Value="25"/>
+        <EffectArray Reference="Effect,PsionicShockwaveDamage43,AttributeBonus[Psionic]" Value="30"/>
+        <EffectArray Operation="Set" Reference="Unit,SOEsuit2,Mover" Value="CliffJumper"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222352222222122">
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
@@ -8033,6 +8035,8 @@
         <EffectArray Operation="Set" Reference="Unit,Ghost23,LifeStart" Value="325"/>
         <EffectArray Operation="Set" Reference="Unit,Ghost23,EnergyStart" Value="150"/>
         <EffectArray Reference="Effect,C10CanisterRifle422,Amount" Value="25"/>
+        <EffectArray Reference="Unit,SoESuit1,LifeArmor" Value="3"/>
+        <EffectArray Operation="Set" Reference="Effect,H23multi,MaxCount" Value="3"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade52224224232222223522222221222">
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
@@ -8055,6 +8059,10 @@
         <EffectArray Operation="Set" Reference="Unit,Ghost23,EnergyRegenRate" Value="4.000000"/>
         <EffectArray Reference="Effect,C10CanisterRifle422,Amount" Value="25"/>
         <EffectArray Reference="Effect,PsionicShockwaveDamage42,Amount" Value="30"/>
+        <EffectArray Reference="Unit,SoESuit1,LifeStart" Value="125"/>
+        <EffectArray Reference="Behavior,ED15armorStack,Modification.LifeArmorBonus" Value="0.5"/>
+        <EffectArray Reference="Unit,SoESuit1,LifeMax" Value="125"/>
+        <EffectArray Reference="Unit,SOEsuit2,Speed" Value="1.789000"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222352222222123">
         <EffectArray Operation="Set" Reference="Weapon,HailstormMissilePods2,Options[Hidden]" Value="0"/>
@@ -8326,7 +8334,7 @@
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade522242242322222235222222212322232422322222">
-        <EffectArray Reference="Behavior,AntamoAirAll242,Modification.AttackSpeedMultiplier" Value="0.5"/>
+        <EffectArray Reference="Behavior,AntamoAirAll242,Modification.TimeScale" Value="0.2"/>
         <EffectArray Reference="Unit,GhostAlternate3,EnergyRegenRate" Value="1.000000"/>
         <EffectArray Reference="Behavior,AntamoAirAll242,Modification.WeaponRange" Value="1.5"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>

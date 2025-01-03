@@ -538,6 +538,21 @@
     <CButton id="ArtanisInspire3">
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-detector.dds"/>
     </CButton>
+    <CButton id="Baneling5">
+        <Icon value="Assets\Textures\btn-unit-zerg-baneling.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-zerg-baneling.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
+    <CButton id="Baneling6">
+        <Icon value="Assets\Textures\btn-unit-zerg-baneling.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-zerg-baneling.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
+    <CButton id="Suitig1">
+        <Icon value="Assets\Textures\btn-unit-terran-marauderblackops.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-zerg-baneling.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
     <CButton id="CombatShield2923">
         <Icon value="Assets\Textures\btn-upgrade-nova-equipment-ui-superstimpackeffect.dds"/>
         <EditorCategories value="Race:Terran"/>
@@ -28128,6 +28143,11 @@
         <Icon value="Assets\Textures\btn-ability-zerg-regenaura.dds"/>
         <EditorCategories value="Race:Zerg"/>
         <HotkeyAlias value="StukovRegenAura"/>
+    </CButton>
+    <CButton id="Suitig2">
+        <Icon value="Assets\Textures\btn-unit-terran-reaper.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-zerg-baneling.dds"/>
+        <EditorCategories value="Race:Zerg"/>
     </CButton>
     <CButton id="SummonGreaterNydusWorm2">
         <Icon value="Assets\Textures\Talent-Kerrigan-Level08-GreaterNydusWorm.dds"/>

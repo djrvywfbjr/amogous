@@ -929,6 +929,23 @@
             <StateFlags index="Cloak" value="1"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="ED15armor">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Requirements value="UnknownRequirement96"/>
+        <DamageResponse Handled="ED15applydef">
+            <Chance value="1"/>
+        </DamageResponse>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ED15armorStack">
+        <InfoIcon value="Assets\Textures\btn-ability-mengsk-thor-bigboycover.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="10"/>
+        <Duration value="42"/>
+        <Modification>
+            <LifeArmorBonus value="0.5"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="Frenzy22">
         <Alignment value="Positive"/>
         <InfoFlags index="Hidden" value="1"/>
@@ -968,6 +985,14 @@
         <DamageResponse>
             <Chance value="1"/>
         </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="H23Invis">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Requirements value="UnknownRequirement96"/>
+        <Modification>
+            <StateFlags index="Cloak" value="1"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="HardenedShield10">
         <Alignment value="Positive"/>
@@ -1182,6 +1207,13 @@
             <LifeArmorBonus value="5"/>
             <VitalRegenArray index="Life" value="1"/>
         </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Stimpack13">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-stimpack.dds"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Duration value="10"/>
+        <Modification MoveSpeedMultiplier="1.5" AttackSpeedMultiplier="1.5"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="StrikeStarting">
         <Cost>

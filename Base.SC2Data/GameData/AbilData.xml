@@ -772,6 +772,11 @@
         <AutoCastFilters value="Visible;Player,Ally,Neutral,Structure,User1,Missile,Cloaked,Stasis,Dead,Hidden,MapBoss"/>
         <AutoCastRange value="5"/>
     </CAbilEffectTarget>
+    <CAbilMorph id="SoeSuitMorf1">
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Suitig1"/>
+        <InfoArray Unit="SoESuit1" RandomDelayMin="10" RandomDelayMax="10"/>
+    </CAbilMorph>
     <CAbilEffectInstant id="PlasmerHighShield">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Effect index="0" value="GuardianShieldPersistent5"/>
@@ -1057,6 +1062,11 @@
         <AINotifyEffect value="ShieldUp"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield2923" Requirements="SoE4PortableHiveMind224222222222333343322"/>
     </CAbilEffectInstant>
+    <CAbilMorph id="SoeSuitMorf2">
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Suitig2"/>
+        <InfoArray Unit="SOEsuit2" RandomDelayMin="10" RandomDelayMax="10"/>
+    </CAbilMorph>
     <CAbilEffectInstant id="Stimpack133">
         <AbilSetId value="Aimpack"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
@@ -1068,6 +1078,21 @@
         </Cost>
         <AINotifyEffect value="Stimpack13"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="Stim133" Requirements="UseSpectreNyxSuit2353">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="StimpackH">
+        <AbilSetId value="Stimpack"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <InfoTooltipPriority value="1"/>
+        <Effect index="0" value="Stimpack19"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <VitalFraction index="Life" value="0.2"/>
+            <Cooldown TimeUse="21"/>
+        </Cost>
+        <AINotifyEffect value="Stimpack18"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CalldownMULE423324332222223">
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
     </CAbilEffectInstant>
@@ -34696,12 +34721,12 @@
         <ActorKey value="BanelingAspect"/>
         <Flags index="KillOnFinish" value="1"/>
         <Flags index="Select" value="1"/>
-        <MorphUnit value="BanelingCocoon2"/>
+        <MorphUnit value="BanelingCocoon"/>
         <InfoArray index="Train1" Time="10" Alert="MorphComplete_Zerg">
-            <Button DefaultButtonFace="Baneling4" Requirements="UseSpectreNyxSuit2222244">
+            <Button DefaultButtonFace="Baneling4" Requirements="HaveBanelingNest">
                 <Flags index="ShowInGlossary" value="1"/>
             </Button>
-            <Unit value="Baneling7"/>
+            <Unit value="Baneling"/>
             <Flags index="IgnorePlacement" value="1"/>
         </InfoArray>
         <Alert value="MorphComplete_Zerg"/>
