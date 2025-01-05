@@ -4804,12 +4804,6 @@
         <EditorCategories value=""/>
         <Behavior value="DistortionGenerator"/>
     </CEffectApplyBehavior>
-	<CEffectApplyBehavior id="ED15applydef">
-        <ValidatorArray index="0" removed="1"/>
-        <EditorCategories value=""/>
-        <Behavior value="ED15armorStack"/>
-        <WhichUnit Value="Caster"/>
-    </CEffectApplyBehavior>
     <CEffectCreateUnit id="HallucinationCreateAdept3">
         <EditorCategories value="Race:Protoss"/>
         <CreateFlags index="ProvideFood" value="0"/>
@@ -22306,7 +22300,7 @@
         <WhichLocation Value="SourcePoint"/>
         <OffsetVectorStartLocation Value="SourcePoint"/>
         <Flags index="Channeled" value="1"/>
-        <PeriodCount value="5"/>
+        <PeriodCount value="12"/>
         <PeriodicEffectArray value="DutchTurretFlameThrowerSearchArea3"/>
         <PeriodicOffsetArray value="0,-1,0"/>
         <PeriodicOffsetArray value="0,-2,0"/>
@@ -65616,7 +65610,7 @@
         <ResponseFlags index="Flee" value="1"/>
         <Visibility value="Visible"/>
         <Flags index="Notification" value="1"/>
-        <Amount value="300"/>
+        <Amount value="150"/>
         <ExcludeArray Value="Target"/>
         <ExcludeArray Value="Target"/>
         <SearchFilters value="-;Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
@@ -76658,8 +76652,8 @@
     </CEffectDamage>
     <CEffectDamage id="VultureU3" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Terran"/>
-        <AttributeBonus index="Light" value="50"/>
-        <Amount value="10"/>
+        <AttributeBonus index="Light" value="25"/>
+        <Amount value="20"/>
     </CEffectDamage>
     <CEffectEnumArea id="WarGeneralareainspiration">
         <EditorCategories value=""/>

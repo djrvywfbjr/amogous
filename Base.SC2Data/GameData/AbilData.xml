@@ -834,11 +834,6 @@
         <AutoCastFilters value="Visible;Player,Ally,Neutral,Structure,User1,Missile,Cloaked,Stasis,Dead,Hidden,MapBoss"/>
         <AutoCastRange value="5"/>
     </CAbilEffectTarget>
-	<CAbilMorph id="SoeSuitMorf1">
-        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Suitig1"/>
-        <InfoArray Unit="SoESuit1" RandomDelayMin="10" RandomDelayMax="10"/>
-    </CAbilMorph>
     <CAbilTrain id="GatewayTrain22">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
         <DataCollection value="GatewayTrain"/>
@@ -38992,12 +38987,13 @@
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Flags index="RangeUseCasterRadius" value="0"/>
         <Cost>
+            <Vital index="Energy" value="50"/>
             <Charge>
                 <CountMax value="3"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
                 <Link value="Abil/SpawnPhaseCannon"/>
-                <TimeUse value="29.4"/>
+                <TimeUse value="45"/>
             </Charge>
             <Cooldown Link="SpawnPhaseCannon" Location="Unit"/>
         </Cost>

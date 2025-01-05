@@ -5486,28 +5486,6 @@
         <Effect value="InterceptorLaunchPersistent"/>
         <AllowedMovement value="Slowing"/>
     </CWeaponLegacy>
-	    <CWeaponLegacy id="JupiterS">
-        <EditorCategories value="Race:Protoss"/>
-        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
-        <DisplayEffect value="PsionicShockwaveDamage43"/>
-        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="6"/>
-        <TeleportResetRange value="0"/>
-        <Period value="1.4"/>
-        <Effect value="PsionicShockwaveDamage43"/>
-    </CWeaponLegacy>
-    <CWeaponLegacy id="P38ScytheGuassPistol5">
-        <EditorCategories value="Race:Terran"/>
-        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
-        <DisplayAttackCount value="2"/>
-        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <MinScanRange value="5.5"/>
-        <Period value="1.4"/>
-        <DamagePoint value="0"/>
-        <Backswing value="0.75"/>
-        <Effect value="P38ScytheGuassPistolBurst5"/>
-        <DisplayEffect value="P38ScytheGuassPistolH23"/>
-	</CWeaponLegacy>
     <CWeaponLegacy id="InterceptorLaunch234">
         <EditorCategories value="Race:Protoss"/>
         <Options index="Hidden" value="1"/>
@@ -12161,7 +12139,7 @@
         <Icon value="Assets\Textures\btn-upgrade-swann-improvedburstlaser.dds"/>
         <DisplayEffect value="WraithGU3"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="7"/>
+        <Range value="8"/>
         <Period value="2"/>
         <Effect value="WraithGLaunchMissile3"/>
         <AllowedMovement value="Slowing"/>
