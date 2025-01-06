@@ -891,6 +891,27 @@
             <StateFlags index="Cloak" value="1"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="CrotchHealth">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="CasterLifeLT75Percent"/>
+        <Modification LifeArmorMultiplier="2"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CrotchHealth2">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="CasterLifeLT50Percent"/>
+        <Modification LifeArmorMultiplier="2"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CrotchHealth22">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="CasterLifeLT25Percent"/>
+        <Modification LifeArmorMultiplier="2"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="HallucinationTimedLife">
         <Duration value="90"/>
     </CBehaviorBuff>
@@ -34955,14 +34976,14 @@
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="PoisonBlade233">
-        <InfoIcon value="Assets\Textures\btn-upgrade-swann-improvednanorepair.dds"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-redlinereactor.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="10"/>
         <InitialEffect value="ArtanisAstralWindSelf4"/>
         <Modification>
             <StateFlags index="Cloak" value="1"/>
             <StateFlags index="SuppressCollision" value="1"/>
-            <VitalRegenArray index="Life" value="-50"/>
+            <VitalRegenArray index="Life" value="-20"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="PoisonBlade234">

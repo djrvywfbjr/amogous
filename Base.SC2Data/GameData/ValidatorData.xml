@@ -599,6 +599,10 @@
     <CValidatorUnitCompareVital id="CasterLifeLT503222222222" parent="CasterLifeLT45">
         <Value value="1000"/>
     </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareVital id="CasterLifeLT25Percent" parent="CasterLifePercent">
+        <Compare value="LT"/>
+        <Value value="0.25"/>
+    </CValidatorUnitCompareVital>
     <CValidatorUnitCompareVital id="CasterLifeLT90Percent2" parent="CasterLifeGT90Percent">
         <Compare value="LT"/>
         <Value value="0.95"/>
@@ -785,6 +789,11 @@
         <CombineArray value="HasPower"/>
         <CombineArray value="DoesNotUsePowerOrPowerAss"/>
     </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="IsTimeStopped229">
+        <Compare value="LT"/>
+        <Value value="1"/>
+        <Behavior value="DefensiveMatrix23"/>
+    </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitType id="IsWorkshop">
         <Value value="Workshop"/>
     </CValidatorUnitType>

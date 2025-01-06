@@ -357,6 +357,15 @@
         <EditorCategories value="Race:Protoss"/>
         <HotkeyAlias value="ArbiterMPRecall"/>
     </CButton>
+    <CButton id="CrotchDefense">
+        <Icon value="Assets\Textures\marauderdeluxe_static.dds"/>
+    </CButton>
+    <CButton id="TriangulatingTaretingUnit">
+        <Icon value="Assets\Textures\btn-upgrade-karax-unitybarrier.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-massrecall.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <HotkeyAlias value="ArbiterMPRecall"/>
+    </CButton>
     <CButton id="ArbiterMPRecall623223">
         <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-adeptchampionshadespawn.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-massrecall.dds"/>
@@ -17135,7 +17144,7 @@
         <HotkeyAlias value="Marauder333"/>
     </CButton>
     <CButton id="Marauder33332">
-        <Icon value="Assets\Textures\btn-upgrade-swann-improvednanorepair.dds"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-behemothreactor.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-terran-marauder.dds"/>
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="Marauder333"/>
@@ -25197,7 +25206,7 @@
         <EditorCategories value="Race:Protoss"/>
     </CButton>
     <CButton id="ShadowBlade3243">
-        <Icon value="Assets\Textures\btn-upgrade-swann-improvednanorepair.dds"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-behemothreactor.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
     <CButton id="ShadowBlade32432">

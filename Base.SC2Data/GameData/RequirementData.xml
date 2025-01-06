@@ -212,6 +212,9 @@
     <CRequirement id="BeHigh">
         <NodeArray index="Show" Link="CountBehaviorResurgentArchonDummyInProgressOnly"/>
     </CRequirement>
+    <CRequirement id="TrisensorsNo">
+        <NodeArray index="Show" Link="NotCountUpgradeTriSensorsQueuedOrBetter"/>
+    </CRequirement>
     <CRequirement id="UseWind">
         <EditorCategories value="Race:Protoss,TechType:Ability"/>
         <NodeArray index="Use" Link="CountUpgradeZealotWindCompleteOnly2123262936"/>
