@@ -4803,6 +4803,7 @@ Button/Hotkey/TossGrenadeTychus322=E
 Button/Hotkey/TrainCombatScout=S
 Button/Hotkey/TransportMode2=T
 Button/Hotkey/TransportMode3=T
+Button/Hotkey/TriangulatingTaretingUnit=R
 Button/Hotkey/TwilightCouncil2=C
 Button/Hotkey/TwilightCouncil22=C
 Button/Hotkey/TwilightCouncil23=C

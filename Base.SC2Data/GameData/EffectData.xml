@@ -4709,7 +4709,7 @@
         <Marker Link="Effect/ArtanisAstralWindSelf"/>
         <ImpactUnit Value="Caster"/>
         <VitalArray index="Life">
-            <Change value="500"/>
+            <Change value="-51"/>
         </VitalArray>
     </CEffectModifyUnit>
     <CEffectModifyUnit id="ArtanisAstralWindSelf42">
@@ -71037,14 +71037,14 @@
     <CEffectEnumArea id="UnknownEffect2322233352">
         <EditorCategories value=""/>
         <Marker Link="Effect/UnknownEffect23222"/>
-        <SearchFilters value="Air;Player,Ally,Neutral,Missile,Stasis,Dead,Invulnerable"/>
+        <SearchFilters value="Air,Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Invulnerable"/>
         <AreaArray Radius="8" Effect="GoliathALM3"/>
         <MaxCount value="1"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="UnknownEffect23222333522">
         <EditorCategories value=""/>
         <Marker Link="Effect/UnknownEffect23222"/>
-        <SearchFilters value="Ground;Player,Ally,Neutral,Missile,Stasis,Dead,Invulnerable"/>
+        <SearchFilters value="Ground,Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Invulnerable"/>
         <AreaArray Radius="7" Effect="GoliathG2"/>
         <MaxCount value="1"/>
     </CEffectEnumArea>
@@ -73841,7 +73841,7 @@
         <ExpireEffect value="Yamato"/>
         <PeriodCount value="10"/>
         <PeriodicEffectArray value="DisablingCloudSet35223524"/>
-        <PeriodicPeriodArray value="0.5"/>
+        <PeriodicPeriodArray value="0.25"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="VoidRayVoid2923">
         <EditorCategories value="Race:Protoss"/>

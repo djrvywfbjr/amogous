@@ -18928,6 +18928,8 @@
         <AutoCastAcquireLevel value="Defensive"/>
         <AutoCastFilters value="Visible;Self,Neutral,Enemy"/>
         <AutoCastRange value="9"/>
+        <AutoCastValidatorArray value="IsTimeStopped229"/>
+        <AutoCastValidatorArray value="NotUnderConstruction"/>
         <AutoCastValidatorArray value="ShieldsNotFull"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="DefensiveMatrix23"/>
     </CAbilEffectTarget>
@@ -22517,6 +22519,11 @@
             <Resource index="Vespene" value="150"/>
             <Vital index="Energy" value="40"/>
             <Button DefaultButtonFace="ArbiterMPRecall62222332" Requirements="ProtocolDamage133222"/>
+        </InfoArray>
+        <InfoArray index="Research30" Time="71" Upgrade="TriSensors">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="TriangulatingTaretingUnit" Requirements="TrisensorsNo"/>
         </InfoArray>
     </CAbilResearch>
     <CAbilResearch id="ForgeResearch5">
@@ -46692,7 +46699,7 @@
             <Cooldown Link="Abil/RaynorSnipe" TimeUse="35"/>
         </Cost>
         <Range value="12"/>
-        <CastIntroTime value="5"/>
+        <CastIntroTime value="0.3"/>
         <FinishTime value="4"/>
         <UninterruptibleArray index="Cast" value="1"/>
         <UninterruptibleArray index="Finish" value="1"/>
