@@ -834,6 +834,9 @@
         <AutoCastFilters value="Visible;Player,Ally,Neutral,Structure,User1,Missile,Cloaked,Stasis,Dead,Hidden,MapBoss"/>
         <AutoCastRange value="5"/>
     </CAbilEffectTarget>
+    <CAbilEffectTarget id="DimensionalShift">
+        <TargetFilters value="Structure,Visible;Neutral,Enemy,Psionic"/>
+    </CAbilEffectTarget>
     <CAbilTrain id="GatewayTrain22">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
         <DataCollection value="GatewayTrain"/>
@@ -1069,6 +1072,19 @@
         <Range value="6"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="MohandarStickyBomb6" Requirements="HaveMohandarStickyBomb"/>
     </CAbilEffectTarget>
+    <CAbilBuild id="RWEBuild">
+        <InfoArray index="Build1" Time="50"/>
+        <InfoArray index="Build2" Time="15"/>
+        <InfoArray index="Build3" Time="15"/>
+        <InfoArray index="Build4" Time="32.5"/>
+        <InfoArray index="Build5" Time="17.5"/>
+        <InfoArray index="Build6" Time="12.5"/>
+        <InfoArray index="Build7" Time="20"/>
+        <InfoArray index="Build10" Time="20"/>
+        <InfoArray index="Build12" Time="25"/>
+        <InfoArray index="Build14" Time="50"/>
+        <InfoArray index="Build16" Time="32.5"/>
+    </CAbilBuild>
     <CAbilEffectInstant id="ScoutHalluc">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Effect index="0" value="HallucinationCreateAdept3"/>
@@ -17617,7 +17633,7 @@
     <CAbilEffectTarget id="Creepylon22">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Vital index="Energy" value="5"/>
+            <Vital index="Energy" value="10"/>
             <Charge Link="Abil/Creepylon"/>
             <Cooldown Link="Abil/Creepylon"/>
         </Cost>
@@ -18357,7 +18373,7 @@
         <Effect index="0" value="DarkArchonMindControlSet3"/>
         <Flags index="AbortOnAllianceChange" value="0"/>
         <Cost>
-            <Vital index="Energy" value="50"/>
+            <Vital index="Energy" value="75"/>
             <Charge>
                 <CountMax value="5"/>
                 <CountStart value="1"/>
@@ -18710,7 +18726,7 @@
                 <CountUse value="1"/>
                 <Link value="Abil/DefensiveMatrix"/>
                 <Location value="Player"/>
-                <TimeUse value="20"/>
+                <TimeUse value="56"/>
             </Charge>
             <Cooldown Link="Abil/DefensiveMatrix" Location="Player" TimeUse="7"/>
         </Cost>
@@ -45044,7 +45060,7 @@
             <Button DefaultButtonFace="TwilightCouncil5" Requirements="HaveOldFortress22"/>
         </InfoArray>
         <InfoArray index="Build8" Unit="PhotonCannon3" Time="50">
-            <Button DefaultButtonFace="PhotonCannon5" Requirements="HaveOldFortress222"/>
+            <Button DefaultButtonFace="PhotonCannon5" Requirements="HaveOldFortress22"/>
         </InfoArray>
         <InfoArray index="Build9" Unit="ShieldBattery5">
             <Button DefaultButtonFace="ShieldBattery" Requirements="HaveOldFortress222"/>
@@ -49642,7 +49658,6 @@
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Effect index="0" value="SOAOrbitalStrikeCP222"/>
         <Flags index="AutoCast" value="1"/>
-        <Flags index="AutoCastOn" value="1"/>
         <Flags index="RequireTargetVision" value="0"/>
         <Cost>
             <Charge>
@@ -49653,10 +49668,10 @@
             </Charge>
             <Cooldown Link="Abil/SOAOrbitalStrikeExecute2" Location="Unit" TimeUse="5"/>
         </Cost>
-        <Range value="12"/>
+        <Range value="10"/>
         <Arc value="360"/>
-        <AutoCastFilters value="Visible;Player,Ally,Neutral"/>
-        <AutoCastRange value="12"/>
+        <AutoCastFilters value="Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AutoCastRange value="10"/>
         <PrepTime value="0.125"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="SOAOrbitalStrike222"/>
     </CAbilEffectTarget>
@@ -52735,6 +52750,14 @@
         <AINotifyEffect value="ShieldUp"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield28"/>
     </CAbilEffectInstant>
+    <CAbilEffectTarget id="UltrasonicPulse">
+        <Cost index="0">
+            <Vital index="Energy" value="150"/>
+        </Cost>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="VoidHighTemplarMindBlast">
+        <Range index="0" value="7"/>
+    </CAbilEffectTarget>
     <CAbilEffectInstant id="VoidZealotWhirlwind2">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Effect index="0" value="VoidZealotWhirlwindSet"/>

@@ -3999,7 +3999,7 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="InfestedAbomination3" State="QueuedOrBetterAtUnit"/>
     </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitInfestedFacilityCompleteOnly2667952670TechTreeCheat">
+    <CRequirementCountUnit id="CountUnitInfestedFacilityCompleteOnly2749511182TechTreeCheat">
         <Count Link="InfestedFacility" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitInfestedStukovCompleteOnly">
@@ -7207,7 +7207,6 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeTriSensorsQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="TriSensors" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade2222QueuedOrBetter">
@@ -17155,7 +17154,6 @@
         <OperandArray index="0" value="CountUpgradeSupplyDepotDropQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeTriSensorsQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeTriSensorsQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade2222QueuedOrBetter">

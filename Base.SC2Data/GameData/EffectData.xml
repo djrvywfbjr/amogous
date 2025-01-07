@@ -4812,6 +4812,17 @@
         <SpawnEffect value="HallucinationCreateUnitB"/>
         <SpawnUnit value="Scout2"/>
     </CEffectCreateUnit>
+    <CEffectDamage id="DmaiMarineDamage">
+        <EditorCategories value="Race:Terran"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ArmorReduction value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="20"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+    </CEffectDamage>
     <CEffectDamage id="MengskSiegeTankDamage3">
         <EditorCategories value="Race:Terran"/>
         <ResponseFlags index="Acquire" value="1"/>
@@ -4870,6 +4881,12 @@
         <ImpactEffect value="PsiBlastDamage2"/>
         <AmmoUnit value="KerriganWeapon"/>
     </CEffectLaunchMissile>
+    <CEffectEnumArea id="RaidFrigateLeftRandomLM">
+        <SearchFilters value="Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="RaidFrigateRightRandomLM">
+        <SearchFilters value="Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectEnumArea>
     <CEffectApplyBehavior id="ResurgAB">
         <EditorCategories value="Race:Terran"/>
         <Behavior value="ResurgentArchonDummy"/>
@@ -19705,7 +19722,7 @@
         <EditorCategories value="Race:Terran"/>
         <AttributeBonus index="Armored" value="35"/>
         <Kind value="Ranged"/>
-        <Amount value="20"/>
+        <Amount value="25"/>
         <Death value="Blast"/>
     </CEffectDamage>
     <CEffectDamage id="DiamondbackBeam62" parent="DU_WEAP">
@@ -26519,7 +26536,7 @@
     <CEffectDamage id="GuassRifle56" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <Kind value="Ranged"/>
-        <Amount value="4"/>
+        <Amount value="5"/>
     </CEffectDamage>
     <CEffectDamage id="GuassRifle57" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
@@ -34047,7 +34064,7 @@
         <ArmorReduction value="1"/>
         <Flags index="Notification" value="1"/>
         <Kind value="Ranged"/>
-        <Amount value="10"/>
+        <Amount value="15"/>
         <SearchFlags index="CallForHelp" value="1"/>
         <SearchFlags index="OffsetByUnitRadius" value="1"/>
     </CEffectDamage>
@@ -37668,7 +37685,7 @@
     </CEffectLaunchMissile>
     <CEffectDamage id="LongboltMissileU2" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Terran"/>
-        <Amount value="5"/>
+        <Amount value="8"/>
         <AttributeBonus index="Armored" value="3"/>
         <AttributeBonus index="Mechanical" value="5"/>
     </CEffectDamage>
@@ -38094,7 +38111,7 @@
         <Behavior value="PrecursorMerc2332"/>
     </CEffectApplyBehavior>
     <CEffectCreateUnit id="ManifestZealCU223">
-        <SpawnCount value="6"/>
+        <SpawnCount value="10"/>
     </CEffectCreateUnit>
     <CEffectCreateUnit id="ManifestZealCU2232">
         <SpawnCount value="7"/>
@@ -38770,7 +38787,7 @@
         <Kind value="Ranged"/>
         <Amount value="6"/>
         <Death value="Blast"/>
-        <AreaArray Radius="3" Fraction="1"/>
+        <AreaArray Radius="1.25" Fraction="1"/>
         <SearchFilters value="Ground;Player,Ally,Neutral,Missile,Stasis,Dead,Invulnerable"/>
     </CEffectDamage>
     <CEffectDamage id="MengskMarauderDamage4" parent="DU_WEAP">
@@ -45224,7 +45241,7 @@
     <CEffectEnumArea id="ObserverSquadSightSearch9">
         <EditorCategories value="Race:Protoss"/>
         <SearchFilters value="Visible;Neutral,Enemy,Structure,Missile,Stasis,Dead,Invulnerable"/>
-        <AreaArray Radius="2.35" Effect="ObserverSquadSightAB9"/>
+        <AreaArray Radius="4" Effect="ObserverSquadSightAB9"/>
     </CEffectEnumArea>
     <CEffectApplyBehavior id="ObserverTargetLockABCaster2">
         <EditorCategories value="Race:Protoss"/>
@@ -57535,10 +57552,12 @@
     <CEffectDamage id="RaidFrigateLeftDamage">
         <AttributeBonus index="Light" value="2"/>
         <AreaArray Radius="0.4" Fraction="1"/>
+        <SearchFilters value="-;Player,Ally,Missile,Stasis,Dead"/>
     </CEffectDamage>
     <CEffectDamage id="RaidFrigateRightDamage">
         <AttributeBonus index="Light" value="2"/>
         <AreaArray Radius="0.4" Fraction="1"/>
+        <SearchFilters value="-;Player,Ally,Missile,Stasis,Dead"/>
     </CEffectDamage>
     <CEffectDamage id="Ram2" parent="DU_WEAP">
         <EditorCategories value="Race:Zerg"/>
@@ -63763,7 +63782,7 @@
         <EditorCategories value="Race:Protoss"/>
         <ShieldBonus value="100"/>
         <Flags index="Notification" value="1"/>
-        <Amount value="200"/>
+        <Amount value="100"/>
         <Death value="Fire"/>
     </CEffectDamage>
     <CEffectDamage id="SOAMothershipLineAttackDamage5">
@@ -64421,7 +64440,7 @@
     </CEffectDamage>
     <CEffectDamage id="SOAOrbitalStrikeDamage222">
         <EditorCategories value="Race:Protoss"/>
-        <ShieldBonus value="70"/>
+        <ShieldBonus value="20"/>
         <Amount value="60"/>
     </CEffectDamage>
     <CEffectDamage id="SOAOrbitalStrikeDamage23">
@@ -65392,7 +65411,8 @@
         <EditorCategories value="Race:Protoss"/>
         <Visibility value="Visible"/>
         <Kind value="Ranged"/>
-        <Amount value="30"/>
+        <Amount value="35"/>
+        <AttributeBonus index="Armored" value="15"/>
     </CEffectDamage>
     <CEffectDamage id="ScoutAirU3" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
@@ -68145,7 +68165,7 @@
     </CEffectDamage>
     <CEffectDamage id="SuicideDamage4">
         <EditorCategories value="Race:Zerg"/>
-        <AttributeBonus index="Psionic" value="100"/>
+        <AttributeBonus index="Massive" value="100"/>
         <Amount value="150"/>
     </CEffectDamage>
     <CEffectDamage id="SuicideDamage42">
@@ -70385,10 +70405,9 @@
     <CEffectDamage id="TornadoMissileDamage2" parent="DU_WEAP">
         <ValidatorArray value="NotHidden"/>
         <EditorCategories value="Race:Terran"/>
-        <AttributeBonus index="Armored" value="5"/>
+        <AttributeBonus index="Armored" value="6"/>
         <Kind value="Ranged"/>
-        <Amount value="3"/>
-        <AreaArray Radius="1"/>
+        <Amount value="4"/>
         <SearchFilters value="-;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CEffectDamage>
     <CEffectDamage id="TornadoMissileDamageDummy2">
@@ -70661,7 +70680,7 @@
     <CEffectEnumArea id="UmojanDayWolfWeaponSearch2">
         <EditorCategories value=""/>
         <SearchFilters value="-;Player,Ally,Air,Missile"/>
-        <AreaArray Radius="2.5" Effect="BacklashRocketsU2"/>
+        <AreaArray Radius="1.25" Effect="BacklashRocketsU2"/>
     </CEffectEnumArea>
     <CEffectApplyBehavior id="UmojanExterminatorMarauderCompleteAnnihilation">
         <EditorCategories value=""/>
@@ -71114,7 +71133,7 @@
         <EditorCategories value=""/>
         <Marker Link="Effect/UnknownEffect23222"/>
         <SearchFilters value="-;Player,Ally,Neutral,Missile,Stasis,Dead,Invulnerable"/>
-        <AreaArray Radius="8" Effect="NeedleSpinesLaunchMissile622"/>
+        <AreaArray Radius="4" Effect="NeedleSpinesLaunchMissile622"/>
         <MaxCount value="4"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="UnknownEffect232226">
@@ -74109,10 +74128,10 @@
     <CEffectDamage id="VoidRayVoidDamage2" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
         <DamageModifierSource Value="Caster"/>
-        <AttributeBonus index="Armored" value="4"/>
+        <AttributeBonus index="Armored" value="6"/>
         <Visibility value="Visible"/>
         <Kind value="Ranged"/>
-        <Amount value="10"/>
+        <Amount value="12"/>
     </CEffectDamage>
     <CEffectDamage id="VoidRayVoidDamage210" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
@@ -74860,7 +74879,7 @@
         <EditorCategories value="Race:Protoss"/>
         <ImpactUnit Value="Caster"/>
         <VitalArray index="Shields">
-            <Change value="1000"/>
+            <Change value="100"/>
         </VitalArray>
     </CEffectModifyUnit>
     <CEffectApplyBehavior id="VoidShieldCapacitor22">
@@ -75006,12 +75025,12 @@
     </CEffectTeleport>
     <CEffectDamage id="VoidTendrilDamageFieldDamage2">
         <EditorCategories value="Race:Protoss"/>
-        <Amount value="8"/>
+        <Amount value="2"/>
         <Death value="Disintegrate"/>
     </CEffectDamage>
     <CEffectDamage id="VoidTendrilDamageFieldDamageInitial2">
         <EditorCategories value="Race:Protoss"/>
-        <Amount value="8"/>
+        <Amount value="2"/>
         <Death value="Disintegrate"/>
     </CEffectDamage>
     <CEffectApplyBehavior id="VoidTendrilDamageFieldDebuffAB2">

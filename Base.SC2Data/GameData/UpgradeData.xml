@@ -4981,10 +4981,10 @@
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222222222234">
-        <EffectArray Reference="Unit,WarPig4,ShieldsMax" Value="15"/>
-        <EffectArray Reference="Unit,WarPig4,ShieldsStart" Value="15"/>
-        <EffectArray Reference="Unit,WarPig42,ShieldsMax" Value="15"/>
-        <EffectArray Reference="Unit,WarPig42,ShieldsStart" Value="15"/>
+        <EffectArray Reference="Unit,WarPig4,ShieldsMax" Value="30"/>
+        <EffectArray Reference="Unit,WarPig4,ShieldsStart" Value="30"/>
+        <EffectArray Reference="Unit,WarPig42,ShieldsMax" Value="30"/>
+        <EffectArray Reference="Unit,WarPig42,ShieldsStart" Value="30"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -11044,8 +11044,8 @@
         <LeaderAlias value="UmojanBasicUnitUpgrade64"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade6523223">
-        <EffectArray Reference="Unit,Marine310,LifeMax" Value="7"/>
-        <EffectArray Reference="Unit,Marine310,LifeStart" Value="7"/>
+        <EffectArray Reference="Unit,Marine310,LifeMax" Value="10"/>
+        <EffectArray Reference="Unit,Marine310,LifeStart" Value="10"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade652322"/>
     </CUpgrade>
@@ -13147,7 +13147,7 @@
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade65232">
-        <EffectArray Reference="Unit,MercHellion2,Speed" Value="4.000000"/>
+        <EffectArray Reference="Unit,MercHellion2,Speed" Value="1.398400"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade652322">

@@ -817,6 +817,9 @@
         <DamagePoint value="0"/>
         <Effect value="ZealotPsiBladesCleaveSet13"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="FlamingSaliva2">
+        <Range value="8"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="GoliathA223">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel3.dds"/>
@@ -835,6 +838,17 @@
         <Period value="0.8608"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0.75"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="DmaiMarine">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
+        <DisplayEffect value="DmaiMarineDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Period value="0.8608"/>
+        <DamagePoint value="0.05"/>
+        <Backswing value="0.75"/>
+        <Effect value="DmaiMarineDamage"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="MengskSiegeTank3">
         <EditorCategories value="Race:Terran"/>
@@ -3006,7 +3020,6 @@
         <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel3.dds"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="5.5"/>
-        <Range value="3"/>
         <Period value="0.45"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0.75"/>
@@ -4042,7 +4055,7 @@
         <Range value="8"/>
         <Arc value="360"/>
         <Cost>
-            <Vital index="Shields" value="25"/>
+            <Vital index="Shields" value="10"/>
         </Cost>
         <Period value="0.2"/>
         <DamagePoint value="2.9"/>
@@ -8180,7 +8193,7 @@
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="7"/>
         <RangeSlop value="0"/>
-        <Period value="3"/>
+        <Period value="1.4"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="LongboltMissile22">
         <EditorCategories value="Race:Terran"/>
