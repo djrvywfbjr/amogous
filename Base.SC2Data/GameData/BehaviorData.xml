@@ -3507,7 +3507,7 @@
         <InfoIcon value="Assets\Textures\btn-upgrade-zagara-scourgegasreduction.dds"/>
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Duration value="1"/>
-        <Modification RangedWeaponRange="1"/>
+        <Modification RangedWeaponRange="2"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="OnHellfire">
         <Duration value="1.1"/>
@@ -17613,8 +17613,7 @@
             <ModifyFlags index="Reveal" value="1"/>
             <StateFlags index="SuppressCloak" value="1"/>
         </Modification>
-        <DamageResponse>
-            <ModifyAmount value="10"/>
+        <DamageResponse ModifyFraction="1.5">
             <Chance value="1"/>
         </DamageResponse>
     </CBehaviorBuff>
@@ -19697,7 +19696,7 @@
     <CBehaviorBuff id="ArbiterMPStasisField2">
         <InfoIcon value="Assets\Textures\btn-ability-protoss-forcefield-color.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Duration value="15"/>
+        <Duration value="7"/>
         <Modification>
             <StateFlags index="Uncommandable" value="1"/>
             <StateFlags index="Unselectable" value="1"/>
@@ -19829,7 +19828,7 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <DisplayDuration index="Enemy" value="1"/>
-        <Duration value="15"/>
+        <Duration value="7"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ArbiterMPStasisFieldTimedLife22">
         <InfoFlags index="Hidden" value="1"/>
@@ -29285,8 +29284,7 @@
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Duration value="0.6"/>
         <Modification HealTakenMultiplier="2" ShieldArmorBonus="4">
-            <VitalMaxArray index="Shields" value="150"/>
-            <VitalRegenMultiplier index="Shields" value="1"/>
+            <VitalRegenMultiplier index="Shields" value="10"/>
         </Modification>
         <DamageResponse>
             <Kind index="Spell" value="0"/>
@@ -46357,6 +46355,9 @@
         <Period value="1"/>
         <InitialEffect value="VoidTendrilDamageFieldDamageInitial2"/>
         <PeriodicEffect value="VoidTendrilDamageFieldDamage2"/>
+        <Modification SightBonus="-3" ShieldArmorBonus="-4">
+            <LifeArmorBonus value="-4"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="VoodooShield2">
         <Alignment value="Positive"/>
@@ -47279,7 +47280,6 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Requirements value="LearnCleanserUpgrade33223"/>
         <DamageResponse ModifyFraction="0.5">
-            <Kind index="Spell" value="0"/>
             <Kind index="Melee" value="0"/>
             <Kind index="Ranged" value="0"/>
             <Kind index="NoProc" value="0"/>
