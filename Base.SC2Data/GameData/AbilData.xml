@@ -63021,8 +63021,8 @@
     <CAbilEffectInstant id="XenWarrior3">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Resource index="Minerals" value="75"/>
-            <Resource index="Vespene" value="50"/>
+            <Resource index="Minerals" value="50"/>
+            <Resource index="Vespene" value="25"/>
             <Charge>
                 <CountMax value="1"/>
                 <CountStart value="1"/>
@@ -63037,7 +63037,7 @@
     <CAbilEffectInstant id="XenWarrior32">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Resource index="Minerals" value="75"/>
+            <Resource index="Minerals" value="50"/>
             <Resource index="Vespene" value="25"/>
             <Charge>
                 <CountMax value="1"/>

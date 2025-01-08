@@ -577,7 +577,7 @@
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="8"/>
         <RangeSlop value="0"/>
-        <Period value="1"/>
+        <Period value="1.4"/>
         <Effect value="SporeCrawler5"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="AcidSpines"/>
@@ -7856,7 +7856,7 @@
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="6.5"/>
         <Range value="6"/>
-        <Period value="1.4"/>
+        <Period value="0.7"/>
         <Effect value="ParticleDisruptors6"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PerditionTurretFlamethrower2">

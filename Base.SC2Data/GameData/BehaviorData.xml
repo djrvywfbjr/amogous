@@ -47588,7 +47588,7 @@
     <CBehaviorBuff id="XenWarrior3">
         <InfoIcon value="Assets\Textures\btn-ability-zeratul-topbar-voidblink.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Modification MoveSpeedMultiplier="1.35" AttackSpeedMultiplier="1.4">
+        <Modification MoveSpeedMultiplier="1.35">
             <VitalRegenArray index="Shields" value="3"/>
             <AbilLinkEnableArray value="BlinkShieldRestore3"/>
             <AbilLinkDisableArray value="Blink"/>
@@ -47601,9 +47601,9 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Period value="10"/>
         <PeriodicEffect value="PureBornDeathCReateFanatic322222223332242533522"/>
-        <Modification MoveSpeedMultiplier="0.65" AttackSpeedMultiplier="0.75">
-            <LifeArmorBonus value="2"/>
-            <VitalMaxArray index="Life" value="35"/>
+        <Modification MoveSpeedMultiplier="0.65">
+            <LifeArmorBonus value="3"/>
+            <VitalMaxArray index="Life" value="50"/>
             <WeaponArray Link="AcidSpew5"/>
             <WeaponDisableArray value="ParticleDisruptors"/>
             <RateMultiplierArray index="Cooldown" value="0.5"/>
