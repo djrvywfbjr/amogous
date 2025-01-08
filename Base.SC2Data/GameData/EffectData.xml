@@ -47494,7 +47494,7 @@
     </CEffectDamage>
     <CEffectDamage id="ParticleDisruptorsU6" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Protoss"/>
-        <AttributeBonus index="Light" value="10"/>
+        <AttributeBonus index="Light" value="20"/>
         <Amount value="15"/>
         <DamageInheritEffect value="ZerglingSunder323"/>
     </CEffectDamage>
@@ -67633,21 +67633,18 @@
     </CEffectLaunchMissile>
     <CEffectDamage id="SporeCrawlerU">
         <DamageInheritEffect value="ZerglingSunder323"/>
-        <AttributeBonus index="Light" value="10"/>
-        <AttributeBonus index="Biological" value="0"/>
-        <Amount value="16"/>
+        <AttributeBonus index="Biological" value="20"/>
+        <Amount value="20"/>
     </CEffectDamage>
     <CEffectDamage id="SporeCrawlerU2" parent="SporeCrawlerU">
         <Name value="Effect/Name/SporeCrawlerU2"/>
         <AreaArray Radius="2" Fraction="1"/>
         <SearchFilters value="-;Player,Ally"/>
-        <AttributeBonus index="Light" value="0"/>
-        <Amount value="20"/>
+        <AttributeBonus index="Biological" value="0"/>
     </CEffectDamage>
     <CEffectDamage id="SporeCrawlerU22" parent="SporeCrawlerU">
         <Name value="Effect/Name/SporeCrawlerU22"/>
-        <AttributeBonus index="Light" value="0"/>
-        <Amount value="20"/>
+        <AttributeBonus index="Biological" value="0"/>
     </CEffectDamage>
     <CEffectDamage id="SporeCrawlerU3" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Zerg"/>
@@ -74978,7 +74975,7 @@
         <EditorCategories value=""/>
         <ImpactUnit Value="Caster"/>
         <VitalArray index="Shields">
-            <Change value="2.5"/>
+            <Change value="5"/>
         </VitalArray>
     </CEffectModifyUnit>
     <CEffectTeleport id="VoidStalkerBlinkShieldRestore2">
