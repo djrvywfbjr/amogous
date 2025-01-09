@@ -57551,12 +57551,10 @@
     </CEffectCreatePersistent>
     <CEffectDamage id="RaidFrigateLeftDamage">
         <AttributeBonus index="Light" value="2"/>
-        <AreaArray Radius="0.4" Fraction="1"/>
         <SearchFilters value="-;Player,Ally,Missile,Stasis,Dead"/>
     </CEffectDamage>
     <CEffectDamage id="RaidFrigateRightDamage">
         <AttributeBonus index="Light" value="2"/>
-        <AreaArray Radius="0.4" Fraction="1"/>
         <SearchFilters value="-;Player,Ally,Missile,Stasis,Dead"/>
     </CEffectDamage>
     <CEffectDamage id="Ram2" parent="DU_WEAP">
