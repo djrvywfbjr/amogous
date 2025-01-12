@@ -6990,7 +6990,7 @@
         <NodeArray index="Show" Link="CountUnitFenixChampion2QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="RequirementsKuras22">
-        <NodeArray index="Show" Link="CountUnitMothership2QueuedOrBetter"/>
+        <NodeArray index="Use" Link="AndCountUnitFleetBeacon5CompleteOnlyTechTreeCheatEq1228785331CountUnitMothership2QueuedOrBetter0"/>
     </CRequirement>
     <CRequirement id="RequirementsKuras23">
         <NodeArray index="Show" Link="CountUnitFenixChampion2QueuedOrBetter"/>

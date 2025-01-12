@@ -724,6 +724,22 @@
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="ArtanisInspire3"/>
     </CAbilEffectInstant>
+    <CAbilEffectTarget id="ArtanisTemporalField2">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ArtanisTemporalFieldCreatePersistent2"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Charge Link="Abil/TemporalField"/>
+            <Cooldown Link="Abil/TemporalField" TimeUse="50"/>
+        </Cost>
+        <Range value="10"/>
+        <Arc value="360"/>
+        <CursorEffect value="ArtanisTemporalFieldSearchArea2"/>
+        <AINotifyEffect value="TemporalFieldCreatePersistent"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ArtanisTemporalField2"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="ArtanisVortex">
         <Cost index="0">
             <Vital index="Energy" value="300"/>
@@ -836,6 +852,23 @@
     </CAbilEffectTarget>
     <CAbilEffectTarget id="DimensionalShift">
         <TargetFilters value="Structure,Visible;Neutral,Enemy,Psionic"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="EnterWormhole322">
+        <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
+        <Effect index="0" value="EnterWormholePersistent42"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Cost>
+            <Charge>
+                <CountMax value="2"/>
+                <CountStart value="2"/>
+                <CountUse value="1"/>
+                <TimeUse value="25"/>
+            </Charge>
+            <Cooldown TimeUse="1"/>
+        </Cost>
+        <TargetFilters value="-;Neutral,Structure,Heroic,Missile,Stasis,Invulnerable"/>
+        <Range value="500"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EnterWormhole322"/>
     </CAbilEffectTarget>
     <CAbilTrain id="GatewayTrain22">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
@@ -1071,6 +1104,17 @@
         </Cost>
         <Range value="6"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="MohandarStickyBomb6" Requirements="HaveMohandarStickyBomb"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="AllStrikerPlaceTemporal">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="PlaceWormholeInitialSet22"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Cost>
+            <Charge Link="Abil/EnterWormhole"/>
+            <Cooldown Link="Abil/EnterWormhole" TimeUse="5"/>
+        </Cost>
+        <Range value="6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TemporalAnomaly"/>
     </CAbilEffectTarget>
     <CAbilBuild id="RWEBuild">
         <InfoArray index="Build1" Time="50"/>
@@ -6748,7 +6792,7 @@
         <CmdButtonArray index="Execute" DefaultButtonFace="Blink322" State="Restricted">
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
-        <PlaceUnit value="Disruptor2"/>
+        <PlaceUnit value="EternalArchon"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="Blink4">
         <AbilSetId value="Blnk"/>
@@ -18318,7 +18362,7 @@
             <Cooldown Link="Abil/DarkArchonMindControl32"/>
         </InterruptCost>
         <TargetFilters value="Heroic,Visible;Player,Ally,Neutral,Robotic,Structure,Missile,Stasis,Dead,Invulnerable"/>
-        <Range value="5"/>
+        <Range value="7"/>
         <AutoCastFilters value="Massive,Visible;Player,Ally,Neutral,Heroic,Dead"/>
         <AutoCastRange value="7"/>
         <Marker Link="Abil/DarkArchonMindControl32"/>
@@ -36399,7 +36443,7 @@
         <InfoArray index="Train19" Time="60">
             <Charge Link="Abil/NexusTrain"/>
             <Cooldown Link="Abil/NexusTrain"/>
-            <Button DefaultButtonFace="Mothership5"/>
+            <Button DefaultButtonFace="Mothership5" Requirements="RequirementsKuras22"/>
             <Unit value="Mothership2"/>
         </InfoArray>
         <InfoArray index="Train20" Time="45">
@@ -36411,8 +36455,8 @@
         <InfoArray index="Train21" Time="60">
             <Charge Link="Abil/NexusTrain"/>
             <Cooldown Link="Abil/NexusTrain"/>
-            <Button DefaultButtonFace="WarpinDisruptor2" Requirements="HaveBurningNexus2222222222"/>
-            <Unit value="Disruptor2"/>
+            <Button DefaultButtonFace="WarpInInfinite" Requirements="HaveBurningNexus2222222222"/>
+            <Unit value="EternalArchon"/>
         </InfoArray>
         <InfoArray index="Train22" Time="45">
             <Charge Link="Abil/NexusTrain"/>

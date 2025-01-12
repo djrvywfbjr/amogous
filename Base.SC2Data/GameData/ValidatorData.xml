@@ -789,6 +789,9 @@
         <CombineArray value="HasPower"/>
         <CombineArray value="DoesNotUsePowerOrPowerAss"/>
     </CValidatorCombine>
+    <CValidatorUnitType id="IsPlaceWormholeUnit2">
+        <Value value="PlaceWormholeUnit"/>
+    </CValidatorUnitType>
     <CValidatorUnitCompareBehaviorCount id="IsTimeStopped229">
         <Compare value="LT"/>
         <Value value="1"/>
