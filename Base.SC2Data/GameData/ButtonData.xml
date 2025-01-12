@@ -357,8 +357,21 @@
         <EditorCategories value="Race:Protoss"/>
         <HotkeyAlias value="ArbiterMPRecall"/>
     </CButton>
+    <CButton id="ArtanisTemporalField2">
+        <Icon value="Assets\Textures\btn-ability-protoss-timewarp.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-timewarp.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
     <CButton id="CrotchDefense">
         <Icon value="Assets\Textures\marauderdeluxe_static.dds"/>
+    </CButton>
+    <CButton id="EnterWormhole322">
+        <Icon value="Assets\Textures\btn-ability-zeratul-warpprism-transferlink.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="TemporalAnomaly">
+        <Icon value="Assets\Textures\nova coop_lvl 11_all research costs and times - 50.dds"/>
+        <EditorCategories value="Race:Protoss"/>
     </CButton>
     <CButton id="TriangulatingTaretingUnit">
         <Icon value="Assets\Textures\btn-upgrade-karax-unitybarrier.dds"/>
@@ -8027,7 +8040,7 @@
         <EditorCategories value="Race:Terran"/>
     </CButton>
     <CButton id="CombatShield2232113">
-        <Icon value="Assets\Textures\btn-progression-protoss-fenix-7-disruptor.dds"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-darkarchon-maelstrom.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
     <CButton id="CombatShield22321132">
@@ -21714,7 +21727,7 @@
         <HotkeyAlias value="PoisonNova223"/>
     </CButton>
     <CButton id="PoisonNova224">
-        <Icon value="Assets\Textures\btn-progression-protoss-fenix-15-networksuperiority.dds"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-dragoonsuit-weapon.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-zerg-poisonnova.dds"/>
         <EditorCategories value="Race:Zerg"/>
         <HotkeyAlias value="PoisonNova22"/>
@@ -32945,6 +32958,11 @@
     <CButton id="WarpinDisruptor2">
         <Icon value="Assets\Textures\btn-unit-protoss-disruptorfenix-purifier.dds"/>
         <AlertIcon value="Assets\Textures\Btn-unit-protoss-disruptor.dds"/>
+        <HotkeyAlias value="WarpinDisruptor"/>
+    </CButton>
+    <CButton id="WarpInInfinite">
+        <Icon value="Assets\Textures\btn-unit-collection-purifier-archon.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-collection-purifier-archon.dds"/>
         <HotkeyAlias value="WarpinDisruptor"/>
     </CButton>
     <CButton id="WarpinDisruptor3">

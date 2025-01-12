@@ -526,6 +526,11 @@
         <OperandArray value="CountUnitFactory3CompleteOnlyTechTreeCheat"/>
         <OperandArray value="Eq3162567323CountUnitQueen2QueuedOrBetter0"/>
     </CRequirementAnd>
+    <CRequirementAnd id="AndCountUnitFleetBeacon5CompleteOnlyTechTreeCheatEq1228785331CountUnitMothership2QueuedOrBetter0">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUnitFleetBeacon5CompleteOnlyTechTreeCheat"/>
+        <OperandArray value="Eq1228785331CountUnitMothership2QueuedOrBetter0"/>
+    </CRequirementAnd>
     <CRequirementAnd id="AndCountUnitFleetBeacon7CompleteOnlyTechTreeCheatEq1993962031CountUnitSOAMothershipv43QueuedOrBetter0">
         <OperandArray value="CountUnitFleetBeacon7CompleteOnlyTechTreeCheat"/>
         <OperandArray value="Eq1993962031CountUnitSOAMothershipv43QueuedOrBetter0"/>
@@ -3633,6 +3638,10 @@
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitFleetBeacon5CompleteOnly1132646003">
         <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="FleetBeacon5" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitFleetBeacon5CompleteOnlyTechTreeCheat">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="FleetBeacon5" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitFleetBeacon6CompleteOnly3696862721">
@@ -15439,6 +15448,10 @@
     </CRequirementEq>
     <CRequirementEq id="Eq1228785331CountUnitMercCompound3QueuedOrBetter0">
         <OperandArray index="0" value="CountUnitMercCompound3QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq1228785331CountUnitMothership2QueuedOrBetter0">
+        <OperandArray index="0" value="CountUnitMothership2QueuedOrBetter"/>
         <OperandArray index="1" value="0"/>
     </CRequirementEq>
     <CRequirementEq id="Eq1321928472CountUnitImmortal4QueuedOrBetter0">

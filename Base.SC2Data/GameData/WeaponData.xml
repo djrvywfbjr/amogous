@@ -9081,6 +9081,7 @@
         </Cost>
         <Period value="1.754"/>
         <Effect value="PsionicShockwaveDamage2"/>
+        <Range value="2"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PsionicShockwave3">
         <EditorCategories value="Race:Protoss"/>

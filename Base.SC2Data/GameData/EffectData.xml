@@ -4757,6 +4757,32 @@
         <EditorCategories value=""/>
         <Behavior value="ArtanisInspire3"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ArtanisTemporalFieldApplyBehavior2">
+        <ValidatorArray value="NotFrenzied"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="ArtanisTemporalField2"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="ArtanisTemporalFieldCreatePersistent2">
+        <EditorCategories value="Race:Protoss"/>
+        <InitialEffect value="ArtanisTemporalFieldSearchDummy2"/>
+        <PeriodCount value="320"/>
+        <PeriodicEffectArray value="ArtanisTemporalFieldSearchArea2"/>
+        <PeriodicPeriodArray value="0.0625"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="ArtanisTemporalFieldDamageDummy2" parent="DU_WEAP">
+        <EditorCategories value="Race:Protoss"/>
+        <Kind value="Spell"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="ArtanisTemporalFieldSearchArea2">
+        <EditorCategories value="Race:Protoss"/>
+        <SearchFilters value="Ground;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="4" Effect="ArtanisTemporalFieldApplyBehavior2"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="ArtanisTemporalFieldSearchDummy2">
+        <EditorCategories value="Race:Protoss"/>
+        <SearchFilters value="Ground;Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="2.5" Effect="ArtanisTemporalFieldDamageDummy2"/>
+    </CEffectEnumArea>
     <CEffectTeleport id="ArtanisWormholeTransitTeleportMove7">
         <EditorCategories value="Race:Protoss"/>
         <WhichUnit Value="Caster"/>
@@ -4804,6 +4830,39 @@
         <EditorCategories value=""/>
         <Behavior value="DistortionGenerator"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="EnterWormholeApplyBehavior22">
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="EnterWormhole22"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="EnterWormholePersistent222">
+        <ValidatorArray value="IsPlaceWormholeUnit2"/>
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="SourceUnit"/>
+        <FinalEffect value="EnterWormholeTeleport22"/>
+        <PeriodCount value="1"/>
+        <PeriodicPeriodArray value="1.5"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="EnterWormholePersistent42">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="SourceUnit"/>
+        <InitialEffect value="EnterWormholeSet22"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="EnterWormholeSearch22">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Ally,Neutral,Enemy"/>
+        <AreaArray Radius="500" Effect="EnterWormholePersistent222"/>
+    </CEffectEnumArea>
+    <CEffectSet id="EnterWormholeSet22">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="EnterWormholeApplyBehavior22"/>
+        <EffectArray value="EnterWormholeSearch22"/>
+    </CEffectSet>
+    <CEffectTeleport id="EnterWormholeTeleport22">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Effect="EnterWormholePersistent"/>
+        <SourceLocation Effect="EnterWormholePersistent" Value="TargetUnit"/>
+        <TargetLocation Effect="EnterWormholePersistent2" Value="TargetUnit"/>
+    </CEffectTeleport>
     <CEffectCreateUnit id="HallucinationCreateAdept3">
         <EditorCategories value="Race:Protoss"/>
         <CreateFlags index="ProvideFood" value="0"/>
@@ -4864,6 +4923,27 @@
         <EffectArray value="MohandarStickyBombSearch6"/>
         <EffectArray value="MohandarStickyBombDamage6"/>
     </CEffectSet>
+    <CEffectCreateUnit id="PlaceWormholeCreateUnit22">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="TargetPoint"/>
+        <SpawnUnit value="AllStrikerTemporalAnomaly"/>
+    </CEffectCreateUnit>
+    <CEffectEnumArea id="PlaceWormholeInitialSearch22">
+        <EditorCategories value="Race:Protoss"/>
+        <SearchFilters value="-;Ally,Neutral,Enemy"/>
+        <AreaArray Radius="500" Effect="PlaceWormholeKillExistingWormholes22"/>
+    </CEffectEnumArea>
+    <CEffectSet id="PlaceWormholeInitialSet22">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="PlaceWormholeInitialSearch22"/>
+        <EffectArray value="PlaceWormholeCreateUnit22"/>
+        <TargetLocationType value="Point"/>
+    </CEffectSet>
+    <CEffectDamage id="PlaceWormholeKillExistingWormholes22">
+        <ValidatorArray value="IsPlaceWormholeUnit2"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Flags index="Kill" value="1"/>
+    </CEffectDamage>
     <CEffectDamage id="PsiBlastDamage2">
         <EditorCategories value="Race:Zerg"/>
         <ResponseFlags index="Acquire" value="1"/>
@@ -54945,10 +55025,9 @@
     </CEffectCreatePersistent>
     <CEffectDamage id="PsionicShockwaveDamage2" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
-        <AttributeBonus index="Biological" value="10"/>
         <Kind value="Ranged"/>
         <KindSplash value="Splash"/>
-        <Amount value="45"/>
+        <Amount value="35"/>
         <AreaArray Radius="0.25" Fraction="1"/>
         <AreaArray Radius="0.5" Fraction="0.5"/>
         <AreaArray Radius="1" Fraction="0.25"/>
@@ -57552,10 +57631,12 @@
     <CEffectDamage id="RaidFrigateLeftDamage">
         <AttributeBonus index="Light" value="2"/>
         <SearchFilters value="-;Player,Ally,Missile,Stasis,Dead"/>
+        <Amount value="5"/>
     </CEffectDamage>
     <CEffectDamage id="RaidFrigateRightDamage">
         <AttributeBonus index="Light" value="2"/>
         <SearchFilters value="-;Player,Ally,Missile,Stasis,Dead"/>
+        <Amount value="5"/>
     </CEffectDamage>
     <CEffectDamage id="Ram2" parent="DU_WEAP">
         <EditorCategories value="Race:Zerg"/>
