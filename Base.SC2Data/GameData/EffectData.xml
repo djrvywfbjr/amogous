@@ -11,7 +11,7 @@
         <EditorCategories value="Race:Terran"/>
         <AttributeBonus index="Armored" value="15"/>
         <Kind value="Ranged"/>
-        <Amount value="15"/>
+        <Amount value="15.5"/>
         <Death value="Blast"/>
     </CEffectDamage>
     <CEffectDamage id="90mmCannons32" parent="DU_WEAP">
