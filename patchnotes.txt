@@ -1,1 +1,26 @@
-BAZINGOUS
+I think I am getting sick... These aren't all I believe, but this is as far as I remember.
+ETERNALS
+Rebalanced Infinite's hp pool
+Infinite is now able to shoot up
+Made Core Vessel life thicker
+
+OUTCASTS
+Aaron's life steal is now cancellable
+
+FOA
+Fixed the Sky Fury speed bug
+Outback Hunter now levels faster
+
+BLUE INTEL
+Fixed the plasmer shield button
+Plasmer is now more expensive
+
+CYBER ZOG
+Mecha Worms are now more spammable
+
+DMAI
+Wedevac is now able to cloak, but there's a twist
+Tornado is now hopefully more usable with selectable abilities for thy apm sinking
+
+HIGH
+Loading units now multiplies shield regen
