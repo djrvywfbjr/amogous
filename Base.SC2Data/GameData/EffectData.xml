@@ -5346,6 +5346,10 @@
         <EditorCategories value=""/>
         <Behavior value="Shield39"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="BitcoinCloak">
+        <EditorCategories value=""/>
+        <Behavior value="Cloakism"/>
+    </CEffectApplyBehavior>
     <CEffectApplyBehavior id="ShieldUp236">
         <EditorCategories value=""/>
         <Behavior value="Shield8"/>
@@ -57894,7 +57898,8 @@
         <ResponseFlags index="Acquire" value="1"/>
         <ResponseFlags index="Flee" value="1"/>
         <Flags index="Notification" value="1"/>
-        <Amount value="60"/>
+        <Amount value="5"/>
+        <DamageInheritEffect value="EnsnareApplyBehavior"/>
     </CEffectDamage>
     <CEffectDamage id="RavagerCorrosiveBileDamage3">
         <ValidatorArray value="NotInvulnerable"/>
@@ -58213,7 +58218,7 @@
         <AINotifyFlags index="HurtEnemy" value="1"/>
         <AINotifyFlags index="MajorDanger" value="1"/>
         <SearchFilters value="-;Missile,Stasis,Dead,Hidden"/>
-        <AreaArray Radius="0.5" Effect="RavagerCorrosiveBileSet2"/>
+        <AreaArray Radius="2" Effect="RavagerCorrosiveBileSet2"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="RavagerCorrosiveBileSearch3">
         <EditorCategories value="Race:Zerg"/>

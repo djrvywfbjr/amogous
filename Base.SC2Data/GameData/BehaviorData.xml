@@ -1294,6 +1294,16 @@
             <StateFlags index="Cloak" value="1"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="Cloakism">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <Duration value="10"/>
+        <Modification>
+            <StateFlags index="Cloak" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="Shield8">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -21057,7 +21067,7 @@
             </Modification>
         </VeterancyLevelArray>
         <VeterancyLevelArray MinVeterancyXP="95" LevelGainEffect="RankDummy222222">
-            <Modification TimeScale="1.5" MoveSpeedMultiplier="0.33" AttackSpeedMultiplier="0.33">
+            <Modification TimeScale="1.5" AttackSpeedMultiplier="0.33">
                 <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
@@ -24178,8 +24188,8 @@
                 <AttributeChangeArray Attribute="DamageBonus34" Points="1"/>
             </Modification>
         </VeterancyLevelArray>
-        <XPFraction index="DamageDealt" value="0.1"/>
-        <XPFraction index="Kills" value="0.8"/>
+        <XPFraction index="DamageDealt" value="0.3"/>
+        <XPFraction index="Kills" value="0.95"/>
         <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel226">
@@ -35992,7 +36002,9 @@
         <InfoIcon value="Assets\Textures\btn-ability-terran-psidisruption.dds"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <MaxStackCount value="4"/>
-        <Modification AttackSpeedMultiplier="1.75" ShieldArmorBonus="3"/>
+        <Modification ShieldArmorBonus="3">
+            <VitalRegenMultiplier index="Shields" value="1.75"/>
+        </Modification>
         <DamageResponse>
             <Cost>
                 <Charge Link="Behavior/PsiDisruption32222"/>

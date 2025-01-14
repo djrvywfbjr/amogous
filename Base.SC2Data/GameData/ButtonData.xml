@@ -362,6 +362,10 @@
         <AlertIcon value="Assets\Textures\btn-ability-protoss-timewarp.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
+    <CButton id="CombatShield223332">
+        <Icon value="Assets\Textures\btn-ability-terran-cloak-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
     <CButton id="CrotchDefense">
         <Icon value="Assets\Textures\marauderdeluxe_static.dds"/>
     </CButton>
@@ -29649,6 +29653,12 @@
     </CButton>
     <CButton id="UnknownButton13">
         <Icon value="Assets\Textures\btn-ability-protoss-scarabshot.dds"/>
+    </CButton>
+    <CButton id="ShieldEmitter">
+        <Icon value="Assets\Textures\btn-ability-protoss-shieldbattery-color.dds"/>
+    </CButton>
+    <CButton id="UnknownButton130">
+        <Icon value="Assets\Textures\btn-ability-zerg-stukov-ensnarecdr.dds"/>
     </CButton>
     <CButton id="UnknownButton14">
         <Icon value="Assets\Textures\btn-ability-zerg-dehaka-ravasaur-dissolvingacid.dds"/>
