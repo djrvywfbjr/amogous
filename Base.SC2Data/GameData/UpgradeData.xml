@@ -2103,7 +2103,7 @@
         <LeaderAlias value="UmojanBasicUnitUpgrade2"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade223">
-        <EffectArray Operation="Set" Reference="Unit,Tsunami,Speed" Value="3.250000"/>
+        <EffectArray Operation="Set" Reference="Unit,Tsunami,Speed" Value="3.449200"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade2"/>
     </CUpgrade>

@@ -742,7 +742,7 @@
     </CAbilEffectTarget>
     <CAbilEffectTarget id="ArtanisVortex">
         <Cost index="0">
-            <Vital index="Energy" value="300"/>
+            <Vital index="Energy" value="600"/>
         </Cost>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="ArtanisWormholeTransit7">
@@ -1186,9 +1186,8 @@
         <Effect index="0" value="PhaseCannon31"/>
         <Flags index="RangeUseCasterRadius" value="0"/>
         <Cost>
-            <Vital index="Energy" value="70"/>
             <Charge Link="Abil/SpawnCallTotemOfTheVoid"/>
-            <Cooldown Link="SpawnPhaseCannonSpawnPhaseCannon30SpawnPhaseCannonSpawnCallTotemOfTheVoid" Location="Unit"/>
+            <Cooldown Link="SpawnPhaseCannonSpawnPhaseCannon30SpawnPhaseCannonSpawnCallTotemOfTheVoid" Location="Unit" TimeUse="50"/>
         </Cost>
         <Placeholder value="TotemOfTheVoid"/>
         <Range value="8"/>
@@ -1390,13 +1389,20 @@
         <Flags index="RequireTargetVision" value="0"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Charge Link="Abil/ScannerSweep"/>
-            <Cooldown Link="Abil/ScannerSweep" TimeUse="29"/>
+            <Charge>
+                <CountMax value="3"/>
+                <CountStart value="2"/>
+                <CountUse value="1"/>
+                <Link value="Abil/RavagerCorrosiveBile5"/>
+                <Location value="Unit"/>
+                <TimeUse value="7"/>
+            </Charge>
+            <Cooldown Link="Abil/RavagerCorrosiveBile5"/>
         </Cost>
-        <Range value="13"/>
+        <Range value="12"/>
         <Arc value="360"/>
         <CursorEffect value="ScannerSweep32"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Scan32" Requirements="SoE4PortableHiveMind33"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Scan32"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="SendWorker">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -1489,6 +1495,17 @@
         <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield223283"/>
         <Arc value="360"/>
     </CAbilEffectTarget>
+    <CAbilEffectInstant id="BitcoinAssassinCloak">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="BitcoinCloak"/>
+        <Cost>
+            <Vital index="Energy" value="50"/>
+            <Charge Link=""/>
+            <Cooldown Link="Abil/AlarakAvatar" TimeUse="42"/>
+        </Cost>
+        <AINotifyEffect value="BitcoinCloak"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield223332"/>
+    </CAbilEffectInstant>
     <CAbilEffectInstant id="ShieldUp236">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
@@ -6109,8 +6126,9 @@
         <Flags index="BestUnit" value="0"/>
         <Flags index="RequireTargetVision" value="0"/>
         <Cost>
+            <Vital index="Energy" value="50"/>
             <Charge Link="Abil/Blink"/>
-            <Cooldown Link="Blink" TimeUse="26"/>
+            <Cooldown Link="Blink"/>
         </Cost>
         <Range value="500"/>
         <Arc value="360"/>
@@ -20558,7 +20576,7 @@
             <Charge Link="Abil/EMP"/>
             <Cooldown Link="Abil/EMP"/>
         </Cost>
-        <Range value="10"/>
+        <Range value="11"/>
         <PrepTime value="0.01"/>
         <FinishTime value="0.0625"/>
         <UninterruptibleArray index="Prep" value="1"/>
@@ -29554,7 +29572,6 @@
         <Range value="9"/>
         <Arc value="360"/>
         <PauseableArray index="Channel" value="0"/>
-        <UninterruptibleArray index="Channel" value="1"/>
         <AINotifyEffect value=""/>
         <CmdButtonArray index="Execute" DefaultButtonFace="Irradiate224" Requirements="SoE4PortableHiveMind333222224432223"/>
         <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
@@ -46274,10 +46291,17 @@
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
         <Effect index="0" value="RavagerCorrosiveBileLaunchSet2"/>
         <Cost>
-            <Charge Link="Abil/RavagerCorrosiveBile"/>
-            <Cooldown Link="Abil/RavagerCorrosiveBile" TimeUse="10"/>
+            <Charge>
+                <CountMax value="3"/>
+                <CountStart value="2"/>
+                <CountUse value="1"/>
+                <Link value="Abil/RavagerCorrosiveBile5"/>
+                <Location value="Unit"/>
+                <TimeUse value="7"/>
+            </Charge>
+            <Cooldown Link="Abil/RavagerCorrosiveBile5"/>
         </Cost>
-        <Range value="9"/>
+        <Range value="12"/>
         <CursorEffect value="RavagerCorrosiveBileCursorDummy"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="RavagerCorrosiveBile2"/>
     </CAbilEffectTarget>
@@ -46330,6 +46354,7 @@
                 <CountMax value="3"/>
                 <CountStart value="2"/>
                 <CountUse value="1"/>
+                <Location value="Unit"/>
                 <TimeUse value="7"/>
             </Charge>
         </Cost>
@@ -53558,7 +53583,7 @@
             <Vital index="Energy" value="150"/>
         </Cost>
         <TargetFilters value="Visible;Self,Structure,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="13"/>
+        <Range value="15"/>
         <CastIntroTime value="0.5"/>
         <Marker>
             <MatchFlags index="Link" value="0"/>
@@ -55659,7 +55684,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="UnknownEffect18"/>
         <Cost>
-            <Vital index="Energy" value="75"/>
+            <Vital index="Energy" value="50"/>
             <Cooldown TimeUse="21"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="UnknownButton20"/>
@@ -59572,7 +59597,7 @@
         <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
         <Effect index="0" value="VoidHighTemplarPsiOrbInitialPersistent7"/>
         <Cost>
-            <Vital index="Energy" value="60"/>
+            <Cooldown TimeUse="14"/>
         </Cost>
         <Range value="13"/>
         <UninterruptibleArray index="Prep" value="1"/>
@@ -60034,7 +60059,7 @@
         <Effect index="0" value="VoidSeekerPhaseMineBlastLaunchMissile3"/>
         <Flags index="AllowMovement" value="1"/>
         <Cost>
-            <Vital index="Energy" value="40"/>
+            <Cooldown TimeUse="14"/>
         </Cost>
         <TargetFilters value="Ground,Visible;Player,Ally,Neutral,Missile,Stasis,Invulnerable"/>
         <Range value="12"/>
