@@ -23172,7 +23172,7 @@
     <CEffectDamage id="EntropicBlastDamage22">
         <EditorCategories value=""/>
         <Amount value="40"/>
-        <VitalBonus index="Energy" value="50"/>
+        <VitalBonus index="Energy" value="-48576"/>
     </CEffectDamage>
     <CEffectDamage id="EntropicBlastDamage222">
         <EditorCategories value=""/>
@@ -25964,6 +25964,7 @@
         <Name value="Effect/Name/GuardianShieldPersistent22"/>
         <InitialEffect value="GuardianShieldSearch22"/>
         <PeriodicEffectArray index="0" value="GuardianShieldSearch22"/>
+        <PeriodCount value="60"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="GuardianShieldPersistent222" parent="GuardianShieldPersistent">
         <Name value="Effect/Name/GuardianShieldPersistent222"/>
@@ -67309,7 +67310,6 @@
         <CreateFlags index="UseFood" value="0"/>
         <SpawnEffect value="UnburrowAndFollow22"/>
         <SpawnUnit value="Baneling62"/>
-        <SpawnCount value="2"/>
         <SpawnRange value="10"/>
     </CEffectCreateUnit>
     <CEffectCreateUnit id="SpawnBanelings23">
@@ -70809,7 +70809,6 @@
         <EffectArray value="HotSSplitterlingTimedLifeCreationAB24"/>
     </CEffectSet>
     <CEffectSet id="UnburrowAndFollow25">
-        <EffectArray value="KerriganBanelingTimedLife25"/>
         <EffectArray value="GravitonBeamUnburrow35"/>
         <EffectArray value="HotSSplitterlingTimedLifeCreationAB25"/>
     </CEffectSet>

@@ -29329,7 +29329,13 @@
         <InfoIcon value="Assets\Textures\btn-ability-protoss-shieldbattery.dds"/>
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Duration value="0.6"/>
-        <Modification SightBonus="5" WeaponRange="2" ShieldArmorBonus="3"/>
+        <Modification SightBonus="5" WeaponRange="2" ShieldArmorBonus="3">
+            <DamageTakenFraction index="Spell" value="-0.3"/>
+            <DamageTakenFraction index="Melee" value="-0.3"/>
+            <DamageTakenFraction index="Ranged" value="-0.3"/>
+            <DamageTakenFraction index="Splash" value="-0.3"/>
+            <DamageTakenFraction index="NoProc" value="-0.3"/>
+        </Modification>
         <DamageResponse>
             <Kind index="Spell" value="0"/>
         </DamageResponse>
