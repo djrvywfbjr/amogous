@@ -14851,7 +14851,7 @@ Button/Tooltip/GrowHugeQueen2222=Grows Nekta'la to Level 5. Nekta'la gains:<n/>2
 Button/Tooltip/GuardMarine=General-purpose infantry.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/GuardMarine2=General-purpose infantry.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/GuardianShield2=Creates a range 4 aura that increases shield regeneration of nearby units by 10. Lasts <d time="15"/>.
-Button/Tooltip/GuardianShield22=Creates a range 7 powerful shield, that increases shield armor of all units inside by 3 and range by 2.
+Button/Tooltip/GuardianShield22=Creates a range 7 powerful shield, that increases shield armor of all units inside by 3 and range by 2, Units inside the shield take 30% less damage.
 Button/Tooltip/GuardianShield222=Creates a range 7 powerful shield, that increases shield armor of all units inside by 3 and range by 2, but halfs the movement speed for some time.
 Button/Tooltip/GuardianShield3=Creates a range <d ref="Effect,GuardianShieldSearch,AreaArray[0].Radius" precision="1"/> aura that increases shield regeneration of nearby units by 400% and range by 1. Lasts <d time="15"/>.
 Button/Tooltip/GuardianShield4=Creates a temporal disintegration field around Purification, completely stopping and slowly destroying all hostile projectiles in range of 6.75.

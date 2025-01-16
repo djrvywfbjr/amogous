@@ -27190,7 +27190,7 @@
     <CButton id="SpawnBanelings252">
         <Icon value="Assets\Textures\abathur_toxicity.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-zerg-baneling.dds"/>
-        <Hotkey value="Button/Hotkey/WildMutation333333"/>
+        <Hotkey value="Button/Hotkey/WildMutation2333"/>
         <EditorCategories value="Race:Zerg"/>
         <HotkeyAlias value="WildMutation"/>
     </CButton>
