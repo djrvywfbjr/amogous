@@ -36,7 +36,7 @@
             <Offset value="0,0"/>
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="75"/>
     </CRace>
     <CRace id="Terr">
@@ -78,7 +78,7 @@
             <Offset value="4,4"/>
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="75"/>
     </CRace>
     <CRace id="Terr2">
@@ -118,7 +118,7 @@
         <StartingUnitArray Unit="BuilderDrone"/>
         <StartingUnitArray Unit="Pylon10"/>
         <StartingResource index="Minerals" value="250"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="50"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
@@ -196,7 +196,7 @@
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="50"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
@@ -220,7 +220,7 @@
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="50"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
@@ -244,7 +244,7 @@
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="50"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
@@ -295,7 +295,7 @@
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="50"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
@@ -345,8 +345,8 @@
         <StartingUnitArray Unit="Pylon10">
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
-        <StartingResource index="Minerals" value="300"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="50"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
@@ -424,7 +424,7 @@
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="50"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
@@ -475,7 +475,7 @@
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="50"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
@@ -526,7 +526,7 @@
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="50"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
@@ -630,7 +630,7 @@
             <Offset value="-1,-3"/>
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="50"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
@@ -681,7 +681,7 @@
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="50"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
@@ -732,7 +732,7 @@
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="50"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
@@ -783,7 +783,7 @@
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="50"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
@@ -834,7 +834,7 @@
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="50"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
@@ -888,7 +888,7 @@
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="75"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
@@ -940,7 +940,7 @@
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="50"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
@@ -994,7 +994,7 @@
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="50"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
@@ -1048,7 +1048,7 @@
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="50"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
@@ -1099,7 +1099,7 @@
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="50"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
@@ -1150,7 +1150,7 @@
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="50"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
@@ -1204,7 +1204,7 @@
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="50"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
@@ -1255,7 +1255,7 @@
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="50"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
@@ -1333,7 +1333,7 @@
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="50"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
@@ -1387,7 +1387,7 @@
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="50"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
@@ -1438,7 +1438,7 @@
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="50"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
@@ -1489,7 +1489,7 @@
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="50"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
@@ -1543,7 +1543,7 @@
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="50"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
@@ -1647,8 +1647,8 @@
         <StartingUnitArray Unit="Pylon10">
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
-        <StartingResource index="Minerals" value="150"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="50"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
@@ -1671,7 +1671,7 @@
         <StartingUnitArray Unit="Collector24"/>
         <StartingUnitArray Unit="Pylon10"/>
         <StartingResource index="Minerals" value="400"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="50"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
@@ -1757,8 +1757,8 @@
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
         <DefaultConsoleSkin value="ConsoleTerran_Swann"/>
-        <StartingResource index="Minerals" value="300"/>
-        <StartingResource index="Vespene" value="200"/>
+        <StartingResource index="Minerals" value="250"/>
+        <StartingResource index="Vespene" value="150"/>
     </CRace>
     <CRace id="Zerg">
         <StartingUnitArray index="0" Unit="Wraith22">
@@ -1820,7 +1820,7 @@
         </StartingUnitArray>
         <StartingUnitArray Unit="Pylon10"/>
         <StartingResource index="Minerals" value="250"/>
-        <StartingResource index="Vespene" value="300"/>
+        <StartingResource index="Vespene" value="150"/>
         <StartingResource index="Terrazine" value="75"/>
     </CRace>
 </Catalog>

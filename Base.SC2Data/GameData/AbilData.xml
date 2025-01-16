@@ -734,7 +734,7 @@
             <Charge Link="Abil/TemporalField"/>
             <Cooldown Link="Abil/TemporalField" TimeUse="50"/>
         </Cost>
-        <Range value="10"/>
+        <Range value="13"/>
         <Arc value="360"/>
         <CursorEffect value="ArtanisTemporalFieldSearchArea2"/>
         <AINotifyEffect value="TemporalFieldCreatePersistent"/>
@@ -26254,7 +26254,7 @@
             <Button DefaultButtonFace="SJHyperionYamato46223333322222224" Requirements="LearnBlink212242433323333322222232"/>
         </InfoArray>
         <InfoArray index="Research23" Upgrade="UmojanBasicUnitUpgrade522242242322222235222222211333222222222222">
-            <Resource index="Vespene" value="300"/>
+            <Resource index="Vespene" value="150"/>
             <Button DefaultButtonFace="SJHyperionYamato46223333323" Requirements="LearnBlink2122424333233323"/>
         </InfoArray>
         <InfoArray index="Research24" Upgrade="UmojanBasicUnitUpgrade52224224232222223522222221123">
@@ -28627,9 +28627,8 @@
         <Flags index="NoDeceleration" value="1"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Vital index="Shields" value="100"/>
             <Charge Link="Abil/GuardianShield"/>
-            <Cooldown Link="GuardianShield" TimeUse="15.2"/>
+            <Cooldown Link="GuardianShield" TimeUse="84"/>
         </Cost>
         <AINotifyEffect value=""/>
         <CmdButtonArray index="Execute" DefaultButtonFace="GuardianShield22"/>
@@ -33193,7 +33192,7 @@
             <Cooldown Link="MindBoltMindBolt5MindBoltMindBolt53MindBoltMindBolt5MindBoltCannonOverchargeCP2" Location="Unit" TimeUse="5"/>
         </Cost>
         <TargetFilters value="Visible;Self,Player,Ally,Missile,Item,Dead,Hidden,Invulnerable"/>
-        <Range value="9"/>
+        <Range value="6"/>
         <RangeSlop value="7"/>
         <AutoCastFilters value="Visible;Player,Ally,Neutral,Missile,Dead,Invulnerable"/>
         <AutoCastRange value="9"/>
@@ -53648,7 +53647,7 @@
         <Cost>
             <Vital index="Energy" value="40"/>
             <Charge Link="Abil/SpawnBanelings"/>
-            <Cooldown Link="SpawnBanelings" Location="Unit" TimeUse="8"/>
+            <Cooldown Link="SpawnBanelings" Location="Unit"/>
         </Cost>
         <Range value="8"/>
         <Arc value="360"/>
@@ -53659,7 +53658,7 @@
         <Cost>
             <Vital index="Energy" value="65"/>
             <Charge Link="Abil/SpawnBanelings"/>
-            <Cooldown Link="SpawnBanelings" Location="Unit" TimeUse="8"/>
+            <Cooldown Link="SpawnBanelings" Location="Unit"/>
         </Cost>
         <Range value="8"/>
         <Arc value="360"/>
@@ -53670,7 +53669,7 @@
         <Cost>
             <Vital index="Energy" value="40"/>
             <Charge Link="Abil/SpawnBanelings"/>
-            <Cooldown Link="SpawnBanelings" Location="Unit" TimeUse="6"/>
+            <Cooldown Link="SpawnBanelings" Location="Unit"/>
         </Cost>
         <Range value="8"/>
         <Arc value="360"/>
