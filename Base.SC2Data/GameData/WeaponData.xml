@@ -11958,6 +11958,18 @@
         <Effect value="WarHoundLM2"/>
         <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="WarHound24">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+        <DisplayEffect value="WarHound23"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="10"/>
+        <Range value="7"/>
+        <Arc value="14.9963"/>
+        <Period value="1.5"/>
+        <Effect value="WarHoundLM23"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="WarHound3">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
