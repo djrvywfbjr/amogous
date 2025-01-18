@@ -7594,8 +7594,8 @@
         <EffectArray Operation="Set" Reference="Unit,Marine3,LifeStart" Value="60"/>
         <EffectArray Operation="Set" Reference="Unit,Marine33,LifeMax" Value="60"/>
         <EffectArray Operation="Set" Reference="Unit,Marine33,LifeStart" Value="60"/>
-        <EffectArray Operation="Set" Reference="Unit,Marine32,LifeMax" Value="85"/>
-        <EffectArray Operation="Set" Reference="Unit,Marine32,LifeMax" Value="85"/>
+        <EffectArray Operation="Set" Reference="Unit,Marine32,LifeMax" Value="90"/>
+        <EffectArray Operation="Set" Reference="Unit,Marine32,LifeStart" Value="90"/>
         <EffectArray Operation="Set" Reference="Unit,Marine34,LifeMax" Value="125"/>
         <EffectArray Operation="Set" Reference="Unit,Marine34,LifeStart" Value="125"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>

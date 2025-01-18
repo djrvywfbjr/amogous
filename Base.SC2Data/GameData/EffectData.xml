@@ -5012,11 +5012,27 @@
         <SearchFilters value="Ground;Player,Ally,Stasis,Invulnerable"/>
     </CEffectDamage>
     <CEffectDamage id="MengskVikingAssault">
+        <AttributeBonus index="Light" value="20"/>
+        <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectDamage id="MengskVikingAssault32" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
         <AttributeBonus index="Light" value="4"/>
+        <AttributeBonus index="Massive" value="10"/>
+        <Kind value="Ranged"/>
+        <Amount value="35"/>
+    </CEffectDamage>
+    <CEffectDamage id="MengskVikingAssault4" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <AttributeBonus index="Light" value="20"/>
+        <Kind value="Ranged"/>
+        <Amount value="20"/>
     </CEffectDamage>
     <CEffectDamage id="MengskVikingFighterDamage">
+        <AttributeBonus index="Light" value="5"/>
         <AttributeBonus index="Armored" value="0"/>
-        <Amount value="16"/>
+        <AttributeBonus index="Massive" value="10"/>
+        <Amount value="35"/>
         <AreaArray index="0" Validator=""/>
         <AreaArray index="1" Validator=""/>
         <AreaArray index="2" Validator=""/>
@@ -5557,6 +5573,20 @@
         <Death value="Squish"/>
         <SearchFilters value="-;Player,Ally,Neutral,Stasis,Invulnerable"/>
     </CEffectDamage>
+    <CEffectEnumArea id="SonOfKorhalAOE25">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/SonOfKorhalAOE"/>
+        <SearchFilters value="Ground,Visible;Self,Player,Ally,Neutral,Missile,Invulnerable"/>
+        <AreaArray Radius="3" Effect="MengskVikingAssault"/>
+        <MaxCount value="3"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="SonOfKorhalAOE252">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/SonOfKorhalAOE"/>
+        <SearchFilters value="Air,Visible;Self,Player,Ally,Neutral,Missile,Invulnerable"/>
+        <AreaArray Radius="3" Effect="MengskVikingAssault"/>
+        <MaxCount value="3"/>
+    </CEffectEnumArea>
     <CEffectCreateUnit id="SpawnSpiderMine23">
         <EditorCategories value="Race:Terran"/>
         <WhichLocation Value="TargetPoint"/>
@@ -39829,8 +39859,9 @@
     <CEffectDamage id="MengskVikingAssault3" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <Kind value="Ranged"/>
-        <Amount value="14"/>
+        <Amount value="35"/>
         <AttributeBonus index="Light" value="4"/>
+        <AttributeBonus index="Massive" value="10"/>
     </CEffectDamage>
     <CEffectCreatePersistent id="MengskVikingFighter2">
         <EditorCategories value="Race:Terran"/>
@@ -39970,12 +40001,10 @@
     <CEffectDamage id="MengskVikingFighterDamage4" parent="DU_WEAP_SPLASH">
         <EditorCategories value="Race:Terran"/>
         <AttributeBonus index="Armored" value="4"/>
+        <AttributeBonus index="Massive" value="10"/>
         <Visibility value="Visible"/>
         <Kind value="Ranged"/>
-        <Amount value="12"/>
-        <AreaArray Radius="0.3" Fraction="1" Validator="HALORocketsResearched"/>
-        <AreaArray Radius="0.6" Fraction="0.5" Validator="HALORocketsResearched"/>
-        <AreaArray Radius="1.2" Fraction="0.25" Validator="HALORocketsResearched"/>
+        <Amount value="35"/>
         <ExcludeArray Value="Target"/>
         <SearchFilters value="Air;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CEffectDamage>
@@ -80272,7 +80301,7 @@
         <ResponseFlags index="Flee" value="1"/>
         <Visibility value="Visible"/>
         <Flags index="Notification" value="1"/>
-        <Amount value="35"/>
+        <Amount value="30"/>
         <Death value="Blast"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectDamage>

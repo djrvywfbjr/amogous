@@ -892,6 +892,26 @@
     <CWeaponLegacy id="MengskVikingAssault">
         <Period value="0.8"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="MengskVikingAssault32">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Arc value="5.625"/>
+        <Period value="0.8"/>
+        <Effect value="SonOfKorhalAOE252"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MengskVikingAssault4">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Arc value="5.625"/>
+        <Period value="0.8"/>
+        <Effect value="SonOfKorhalAOE25"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="MengskVikingFighter">
         <Range value="11"/>
     </CWeaponLegacy>
@@ -1417,7 +1437,7 @@
         <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="7.5"/>
-        <Range value="7"/>
+        <Range value="7.5"/>
         <Period value="1.5"/>
         <DamagePoint value="0.083"/>
         <Backswing value="1.167"/>
@@ -10987,8 +11007,9 @@
         <Period value="1"/>
         <DamagePoint value="0.5625"/>
         <Effect value="ThrowMolotovSwitch2"/>
-        <RandomDelayMin value="1"/>
+        <RandomDelayMin value="0.5"/>
         <RandomDelayMax value="3"/>
+        <Backswing value="0.25"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ThrowMolotov32">
         <EditorCategories value="Race:Terran"/>

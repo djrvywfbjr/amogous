@@ -51295,6 +51295,7 @@
         </Cost>
         <AINotifyEffect value="ShieldUp"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield219" Requirements="HaveEnlistmentHouse22342"/>
+        <AutoCastRange value="8"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="ShieldUp2">
         <EditorCategories value="AbilityorEffectType:Units"/>

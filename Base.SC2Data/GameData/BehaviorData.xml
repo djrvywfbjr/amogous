@@ -21068,13 +21068,16 @@
             <Modification>
                 <AbilLinkDisableArray value="Yamato2422"/>
                 <AbilLinkDisableArray value="MissilePods2"/>
+                <WeaponEnableArray value="MengskVikingAssault3"/>
+                <WeaponEnableArray value="MengskVikingAssault32"/>
+                <WeaponDisableArray value="MengskVikingAssault"/>
+                <WeaponDisableArray value="MengskVikingAssault3"/>
             </Modification>
         </VeterancyLevelArray>
         <VeterancyLevelArray MinVeterancyXP="45" LevelGainEffect="RankDummy2">
             <Modification>
-                <DamageDealtScaled index="Spell" value="18"/>
                 <DamageDealtScaled index="Melee" value="18"/>
-                <DamageDealtScaled index="Ranged" value="18"/>
+                <DamageDealtScaled index="Ranged" value="10"/>
                 <DamageDealtScaled index="Splash" value="18"/>
                 <DamageDealtScaled index="NoProc" value="18"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
@@ -21120,19 +21123,19 @@
                 <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
-                <WeaponEnableArray value="MengskVikingAssault3"/>
-                <WeaponEnableArray value="MengskVikingFighter4"/>
                 <AttributeChangeArray Attribute="DamageBonus32" Points="1"/>
             </Modification>
         </VeterancyLevelArray>
         <VeterancyLevelArray MinVeterancyXP="95" LevelGainEffect="RankDummy222222">
-            <Modification TimeScale="1.5" AttackSpeedMultiplier="1.33">
+            <Modification AttackSpeedMultiplier="1.1">
                 <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
                 <VitalMaxArray index="Life" value="100"/>
-                <WeaponEnableArray value="MengskVikingAssault3"/>
-                <WeaponEnableArray value="MengskVikingFighter4"/>
+                <WeaponEnableArray value="MengskVikingAssault4"/>
+                <WeaponEnableArray value="MengskVikingAssault32"/>
+                <WeaponDisableArray value="MengskVikingAssault"/>
+                <WeaponDisableArray value="MengskVikingAssault3"/>
                 <AttributeChangeArray Attribute="DamageBonus32" Points="1"/>
             </Modification>
         </VeterancyLevelArray>
@@ -26097,7 +26100,7 @@
             <DamageDealtScaled index="Splash" value="3"/>
             <DamageDealtScaled index="NoProc" value="3"/>
             <LifeArmorBonus value="0.5"/>
-            <VitalMaxArray index="Life" value="20"/>
+            <VitalMaxArray index="Life" value="10"/>
         </Modification>
     </CBehaviorAttribute>
     <CBehaviorAttribute id="DamageBonus34">
@@ -40493,7 +40496,7 @@
         <InfoIcon value="Assets\Textures\btn-ability-terran-ultrasonicpulse.dds"/>
         <BehaviorCategories index="Stun" value="1"/>
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
-        <Duration value="1"/>
+        <Duration value="1.4"/>
         <Modification MoveSpeedMultiplier="0.5" AttackSpeedMultiplier="0.5"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="SJHyperionLightningStormStun292">
