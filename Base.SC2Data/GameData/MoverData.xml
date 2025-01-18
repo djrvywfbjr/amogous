@@ -1731,6 +1731,9 @@
         </MotionPhases>
         <MotionOverlays Type="Revolver" Axis="0.15,0.25,0"/>
     </CMoverMissile>
+    <CMoverMissile id="TossBottle">
+        <MotionPhases index="0" ThrowBandYaw="-360,-360,-360,-360" ThrowBandPitch="-360,-360,-360,-360" FlightTime="2"/>
+    </CMoverMissile>
     <CMoverMissile id="TossGrenade2">
         <MotionPhases>
             <Driver value="Ballistic"/>
@@ -2107,6 +2110,17 @@
             <Outro value="-1"/>
             <YawPitchRoll value="719.2968"/>
         </MotionPhases>
+    </CMoverMissile>
+    <CMoverMissile id="YamatoWeapon42">
+        <MotionPhases>
+            <Driver value="Guidance"/>
+            <Acceleration value="3200"/>
+            <MaxSpeed value="20"/>
+            <ClearanceAcceleration value="75"/>
+            <Outro value="-1"/>
+            <YawPitchRoll value="719.2968"/>
+        </MotionPhases>
+        <MotionPhases YawPitchRoll="MAX"/>
     </CMoverMissile>
     <CMoverMissile id="YamatoWeapon5">
         <MotionPhases>

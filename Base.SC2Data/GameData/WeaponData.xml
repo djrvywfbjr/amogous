@@ -850,6 +850,23 @@
         <Backswing value="0.75"/>
         <Effect value="DmaiMarineDamage"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="HellionTank">
+        <Range value="3"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MengskFirebat">
+        <Range value="3"/>
+        <Backswing value="0.25"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MengskHellion">
+        <AllowedMovement value="Moving"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Backswing value="0.5"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MengskMarauder">
+        <Range value="7"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="MengskSiegeTank3">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
@@ -858,6 +875,45 @@
         <Range value="4"/>
         <Period value="1.04"/>
         <Effect value="MengskSiegeTankDamage3"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MengskThorsHammer32">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+        <DisplayEffect value="MengskThorsHammerDamage32"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquirePrioritization value="ByAngle"/>
+        <Range value="7"/>
+        <Period value="1.93"/>
+        <DamagePoint value="0.831"/>
+        <Backswing value="0.25"/>
+        <LegacyOptions index="KeepChanneling" value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MengskVikingAssault">
+        <Period value="0.8"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MengskVikingAssault32">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Arc value="5.625"/>
+        <Period value="0.8"/>
+        <Effect value="SonOfKorhalAOE252"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MengskVikingAssault4">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Arc value="5.625"/>
+        <Period value="0.8"/>
+        <Effect value="SonOfKorhalAOE25"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MengskVikingFighter">
+        <Range value="11"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="OmindClawsFormer">
         <EditorCategories value="Race:Zerg"/>
@@ -1380,8 +1436,8 @@
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <MinScanRange value="6.5"/>
-        <Range value="6"/>
+        <MinScanRange value="7.5"/>
+        <Range value="7.5"/>
         <Period value="1.5"/>
         <DamagePoint value="0.083"/>
         <Backswing value="1.167"/>
@@ -3971,6 +4027,20 @@
         <Period value="1.754"/>
         <Effect value="HighTemplarWeaponLM5"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="ParticleDisruptors82">
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-techupgrade-terran-particlecannon.dds"/>
+        <DisplayEffect value="SJPirateYamatoBDamage22322"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="9"/>
+        <Range value="9"/>
+        <Period value="0.4"/>
+        <Effect value="SJPirateYamato22322"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PerditionTurretFlamethrower">
+        <MinScanRange value="5"/>
+        <Range value="5"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="QueenOfBladesPsiBlast2">
         <EditorCategories value="Race:Zerg"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-dragoonsolariteflare.dds"/>
@@ -3981,6 +4051,18 @@
         <MinimumRange value="2"/>
         <Period value="1.25"/>
         <Effect value="PsiBlastLaunchMissile2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Specter52">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel3.dds"/>
+        <DisplayEffect value="SpecterU522"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="8"/>
+        <Period value="2"/>
+        <DamagePoint value="0.083"/>
+        <Backswing value="1.167"/>
+        <Effect value="SpecterU522"/>
+        <RandomDelayMin value="-0.063"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="VoidBlast">
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
@@ -4063,6 +4145,8 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="MengskDiamondback">
         <Options index="LinkedCooldown" value="0"/>
+        <Range value="10"/>
+        <Period value="3.5"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="NovaWeaponCanisterRifle2">
         <EditorCategories value="Race:Terran"/>
@@ -6739,8 +6823,8 @@
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
         <DisplayEffect value="MengskDiamondback"/>
         <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="6"/>
-        <Period value="2"/>
+        <Range value="10"/>
+        <Period value="3.5"/>
         <Effect value="MengskDiamondback"/>
         <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
@@ -6804,7 +6888,7 @@
         <DisplayEffect value="MengskMarauderDamage5"/>
         <DisplayAttackCount value="1"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="6"/>
+        <Range value="7"/>
         <Period value="1.5"/>
         <DamagePoint value="0"/>
         <Backswing value="0"/>
@@ -6878,13 +6962,16 @@
         <DisplayEffect value="MengskMarauderDamage53"/>
         <DisplayAttackCount value="1"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="6"/>
+        <Range value="7"/>
         <Period value="1.5"/>
         <DamagePoint value="0"/>
         <Backswing value="0"/>
         <Effect value="MengskMarauderLM53"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="MengskMarine"/>
+    <CWeaponLegacy id="MengskMarine">
+        <MinScanRange value="6"/>
+        <Range value="6"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="MengskMarine3">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
@@ -7083,7 +7170,7 @@
         <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="6"/>
         <Arc value="5.625"/>
-        <Period value="1"/>
+        <Period value="0.8"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="MengskVikingFighter23">
         <EditorCategories value="Race:Terran"/>
@@ -10920,8 +11007,9 @@
         <Period value="1"/>
         <DamagePoint value="0.5625"/>
         <Effect value="ThrowMolotovSwitch2"/>
-        <RandomDelayMin value="2"/>
-        <RandomDelayMax value="5"/>
+        <RandomDelayMin value="0.5"/>
+        <RandomDelayMax value="3"/>
+        <Backswing value="0.25"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ThrowMolotov32">
         <EditorCategories value="Race:Terran"/>
@@ -11956,6 +12044,18 @@
         <Arc value="14.9963"/>
         <Period value="2"/>
         <Effect value="WarHoundLM2"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="WarHound24">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+        <DisplayEffect value="WarHound23"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="10"/>
+        <Range value="7"/>
+        <Arc value="14.9963"/>
+        <Period value="1.6"/>
+        <Effect value="WarHoundLM23"/>
         <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="WarHound3">
