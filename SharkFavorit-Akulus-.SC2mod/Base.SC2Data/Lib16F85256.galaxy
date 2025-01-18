@@ -1,0 +1,819 @@
+include "TriggerLibs/NativeLib"
+include "LibCD55B2B5_h"
+
+include "Lib16F85256_h"
+
+//--------------------------------------------------------------------------------------------------
+// Library: Selector-Utility
+//--------------------------------------------------------------------------------------------------
+// External Library Initialization
+void lib16F85256_InitLibraries () {
+    libNtve_InitVariables();
+    libCD55B2B5_InitVariables();
+}
+
+// Variable Initialization
+bool lib16F85256_InitVariables_completed = false;
+
+void lib16F85256_InitVariables () {
+    int init_i;
+
+    if (lib16F85256_InitVariables_completed) {
+        return;
+    }
+
+    lib16F85256_InitVariables_completed = true;
+
+    lib16F85256_gv_supplyIcon = DialogControlHookupStandard(c_triggerControlTypeImage, "UIContainer/FullscreenUpperContainer/ResourcePanel/ResourceFrame/SupplyIcon");
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_intel[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_outcasts[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_paramilitary[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_random[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_antamo[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_holo[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_taken[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_high[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_sMEF[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_cheesenGay[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_jr[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_xill[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_pb[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_wastacay[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_lasttoss[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_lastTerr[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_nC[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_pOZTest[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_lZ[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_lom[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_gG[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_foundation[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_nbrood[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_cBT[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_spoops[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_deepDark[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_corrupted[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_corps[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_cyber[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_dmai[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_eternal[init_i] = PlayerGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 1; init_i += 1) {
+        lib16F85256_gv_followersOfNektala[init_i] = PlayerGroupEmpty();
+    }
+}
+
+// Triggers
+//--------------------------------------------------------------------------------------------------
+// Trigger: Obs
+//--------------------------------------------------------------------------------------------------
+bool lib16F85256_gt_Obs_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    playergroup auto793A77F6_g;
+    int auto793A77F6_var;
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    auto793A77F6_g = PlayerGroupAll();
+    auto793A77F6_var = -1;
+    while (true) {
+        auto793A77F6_var = PlayerGroupNextPlayer(auto793A77F6_g, auto793A77F6_var);
+        if (auto793A77F6_var < 0) { break; }
+        if ((libNtve_gf_PlayerIsEnemy(EventPlayer(), auto793A77F6_var, libNtve_ge_PlayerRelation_Ally) == true) && (libNtve_gf_PlayerIsEnemy(EventPlayer(), auto793A77F6_var, libNtve_ge_PlayerRelation_Enemy) == true)) {
+            libNtve_gf_SetAlliance(EventPlayer(), auto793A77F6_var, libNtve_ge_AllianceSetting_EnemyWithSharedVision);
+        }
+
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib16F85256_gt_Obs_Init () {
+    lib16F85256_gt_Obs = TriggerCreate("lib16F85256_gt_Obs_Func");
+    TriggerAddEventChatMessage(lib16F85256_gt_Obs, c_playerAny, "-obs", true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: A 2
+//--------------------------------------------------------------------------------------------------
+bool lib16F85256_gt_A2_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    playergroup auto775ADB4D_g;
+    int auto775ADB4D_var;
+    playergroup autoD01D05C2_g;
+    int autoD01D05C2_var;
+    playergroup auto29B89C2C_g;
+    int auto29B89C2C_var;
+    playergroup auto57C675C7_g;
+    int auto57C675C7_var;
+    playergroup auto6A64D202_g;
+    int auto6A64D202_var;
+    playergroup auto898A6DA2_g;
+    int auto898A6DA2_var;
+    playergroup autoD3464EE1_g;
+    int autoD3464EE1_var;
+    playergroup autoFF399976_g;
+    int autoFF399976_var;
+    playergroup auto13D083C6_g;
+    int auto13D083C6_var;
+    playergroup autoB2A49E33_g;
+    int autoB2A49E33_var;
+    playergroup autoF1FA4579_g;
+    int autoF1FA4579_var;
+    playergroup auto96160FC7_g;
+    int auto96160FC7_var;
+    playergroup autoB64D4FCC_g;
+    int autoB64D4FCC_var;
+    playergroup autoD11A16F6_g;
+    int autoD11A16F6_var;
+    playergroup autoE81D7044_g;
+    int autoE81D7044_var;
+    playergroup autoA98C4CE4_g;
+    int autoA98C4CE4_var;
+    playergroup auto22B7BB1A_g;
+    int auto22B7BB1A_var;
+    playergroup auto1543D228_g;
+    int auto1543D228_var;
+    playergroup auto33F502D7_g;
+    int auto33F502D7_var;
+    playergroup autoB842D77D_g;
+    int autoB842D77D_var;
+    playergroup autoF19A22A9_g;
+    int autoF19A22A9_var;
+    playergroup auto7E0D67A1_g;
+    int auto7E0D67A1_var;
+    playergroup auto3B338D65_g;
+    int auto3B338D65_var;
+    playergroup auto32C50318_g;
+    int auto32C50318_var;
+    playergroup auto48832D0C_g;
+    int auto48832D0C_var;
+    playergroup auto6A7E4499_g;
+    int auto6A7E4499_var;
+    playergroup auto0609D112_g;
+    int auto0609D112_var;
+    playergroup auto271A7E9C_g;
+    int auto271A7E9C_var;
+    playergroup autoBAB0A72D_g;
+    int autoBAB0A72D_var;
+    playergroup auto12EC5429_g;
+    int auto12EC5429_var;
+    playergroup auto1134EB20_g;
+    int auto1134EB20_var;
+    playergroup autoE58D08D3_g;
+    int autoE58D08D3_var;
+
+    // Conditions
+    if (testConds) {
+        if (!((GameAttributeGameValue("1") != "0009"))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    auto775ADB4D_g = lib16F85256_gv_intel[0];
+    auto775ADB4D_var = -1;
+    while (true) {
+        auto775ADB4D_var = PlayerGroupNextPlayer(auto775ADB4D_g, auto775ADB4D_var);
+        if (auto775ADB4D_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-building-terran-supplydepot-covertops.dds", lib16F85256_gv_intel[0]);
+    }
+    autoD01D05C2_g = lib16F85256_gv_wastacay[0];
+    autoD01D05C2_var = -1;
+    while (true) {
+        autoD01D05C2_var = PlayerGroupNextPlayer(autoD01D05C2_g, autoD01D05C2_var);
+        if (autoD01D05C2_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-commander-artanis.dds", lib16F85256_gv_wastacay[0]);
+    }
+    auto29B89C2C_g = lib16F85256_gv_taken[0];
+    auto29B89C2C_var = -1;
+    while (true) {
+        auto29B89C2C_var = PlayerGroupNextPlayer(auto29B89C2C_g, auto29B89C2C_var);
+        if (auto29B89C2C_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-building-terran-supplydepotxpreward.dds", lib16F85256_gv_taken[0]);
+        UISetResourceVisible(lib16F85256_gv_taken[0], c_resourceTypeTerrazine, true);
+    }
+    auto57C675C7_g = lib16F85256_gv_gG[0];
+    auto57C675C7_var = -1;
+    while (true) {
+        auto57C675C7_var = PlayerGroupNextPlayer(auto57C675C7_g, auto57C675C7_var);
+        if (auto57C675C7_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-building-terran-supplybunkermengsk.dds", lib16F85256_gv_gG[0]);
+    }
+    auto6A64D202_g = lib16F85256_gv_followersOfNektala[0];
+    auto6A64D202_var = -1;
+    while (true) {
+        auto6A64D202_var = PlayerGroupNextPlayer(auto6A64D202_g, auto6A64D202_var);
+        if (auto6A64D202_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-unit-zerg-infestedcolonist.dds", lib16F85256_gv_followersOfNektala[0]);
+    }
+    auto898A6DA2_g = lib16F85256_gv_corps[0];
+    auto898A6DA2_var = -1;
+    while (true) {
+        auto898A6DA2_var = PlayerGroupNextPlayer(auto898A6DA2_g, auto898A6DA2_var);
+        if (auto898A6DA2_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-building-terran-supplydepot-silver.dds", lib16F85256_gv_corps[0]);
+    }
+    autoD3464EE1_g = lib16F85256_gv_corrupted[0];
+    autoD3464EE1_var = -1;
+    while (true) {
+        autoD3464EE1_var = PlayerGroupNextPlayer(autoD3464EE1_g, autoD3464EE1_var);
+        if (autoD3464EE1_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-building-zerg-virophage.dds", lib16F85256_gv_corrupted[0]);
+    }
+    autoFF399976_g = lib16F85256_gv_spoops[0];
+    autoFF399976_var = -1;
+    while (true) {
+        autoFF399976_var = PlayerGroupNextPlayer(autoFF399976_g, autoFF399976_var);
+        if (autoFF399976_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-building-terran-ghostacademy-covertops.dds", lib16F85256_gv_spoops[0]);
+    }
+    auto13D083C6_g = lib16F85256_gv_sMEF[0];
+    auto13D083C6_var = -1;
+    while (true) {
+        auto13D083C6_var = PlayerGroupNextPlayer(auto13D083C6_g, auto13D083C6_var);
+        if (auto13D083C6_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-building-terran-supplydepotxpreward.dds", lib16F85256_gv_sMEF[0]);
+    }
+    autoB2A49E33_g = lib16F85256_gv_cBT[0];
+    autoB2A49E33_var = -1;
+    while (true) {
+        autoB2A49E33_var = PlayerGroupNextPlayer(autoB2A49E33_g, autoB2A49E33_var);
+        if (autoB2A49E33_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-unit-collection-overlord-mutant.dds", lib16F85256_gv_cBT[0]);
+    }
+    autoF1FA4579_g = lib16F85256_gv_dmai[0];
+    autoF1FA4579_var = -1;
+    while (true) {
+        autoF1FA4579_var = PlayerGroupNextPlayer(autoF1FA4579_g, autoF1FA4579_var);
+        if (autoF1FA4579_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-building-hornerhan-engineeringbay.dds", lib16F85256_gv_dmai[0]);
+    }
+    auto96160FC7_g = lib16F85256_gv_deepDark[0];
+    auto96160FC7_var = -1;
+    while (true) {
+        auto96160FC7_var = PlayerGroupNextPlayer(auto96160FC7_g, auto96160FC7_var);
+        if (auto96160FC7_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-building-protoss-pylon-ihanrii.dds", lib16F85256_gv_deepDark[0]);
+    }
+    autoB64D4FCC_g = lib16F85256_gv_pb[0];
+    autoB64D4FCC_var = -1;
+    while (true) {
+        autoB64D4FCC_var = PlayerGroupNextPlayer(autoB64D4FCC_g, autoB64D4FCC_var);
+        if (autoB64D4FCC_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-unit-protoss-mothership-ihanrii.dds", lib16F85256_gv_pb[0]);
+    }
+    autoD11A16F6_g = lib16F85256_gv_lom[0];
+    autoD11A16F6_var = -1;
+    while (true) {
+        autoD11A16F6_var = PlayerGroupNextPlayer(autoD11A16F6_g, autoD11A16F6_var);
+        if (autoD11A16F6_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-building-protoss-pylon-forged.dds", lib16F85256_gv_lom[0]);
+    }
+    autoE81D7044_g = lib16F85256_gv_lasttoss[0];
+    autoE81D7044_var = -1;
+    while (true) {
+        autoE81D7044_var = PlayerGroupNextPlayer(autoE81D7044_g, autoE81D7044_var);
+        if (autoE81D7044_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-building-protoss-pylon-forged.dds", lib16F85256_gv_lasttoss[0]);
+    }
+    autoA98C4CE4_g = lib16F85256_gv_lastTerr[0];
+    autoA98C4CE4_var = -1;
+    while (true) {
+        autoA98C4CE4_var = PlayerGroupNextPlayer(autoA98C4CE4_g, autoA98C4CE4_var);
+        if (autoA98C4CE4_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-building-hornerhan-supplydepot.dds", lib16F85256_gv_lastTerr[0]);
+    }
+    auto22B7BB1A_g = lib16F85256_gv_high[0];
+    auto22B7BB1A_var = -1;
+    while (true) {
+        auto22B7BB1A_var = PlayerGroupNextPlayer(auto22B7BB1A_g, auto22B7BB1A_var);
+        if (auto22B7BB1A_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-upgrade-protoss-khaydarinamulet.dds", lib16F85256_gv_high[0]);
+    }
+    auto1543D228_g = lib16F85256_gv_holo[0];
+    auto1543D228_var = -1;
+    while (true) {
+        auto1543D228_var = PlayerGroupNextPlayer(auto1543D228_g, auto1543D228_var);
+        if (auto1543D228_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-ability-protoss-hallucination-color.dds", lib16F85256_gv_holo[0]);
+    }
+    auto33F502D7_g = lib16F85256_gv_nbrood[0];
+    auto33F502D7_var = -1;
+    while (true) {
+        auto33F502D7_var = PlayerGroupNextPlayer(auto33F502D7_g, auto33F502D7_var);
+        if (auto33F502D7_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-unit-collection-webby-overlord.dds", lib16F85256_gv_nbrood[0]);
+    }
+    autoB842D77D_g = lib16F85256_gv_nC[0];
+    autoB842D77D_var = -1;
+    while (true) {
+        autoB842D77D_var = PlayerGroupNextPlayer(autoB842D77D_g, autoB842D77D_var);
+        if (autoB842D77D_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-ability-mengsk-commandcenter-draftlaborers.dds", lib16F85256_gv_nC[0]);
+    }
+    autoF19A22A9_g = lib16F85256_gv_jr[0];
+    autoF19A22A9_var = -1;
+    while (true) {
+        autoF19A22A9_var = PlayerGroupNextPlayer(autoF19A22A9_g, autoF19A22A9_var);
+        if (autoF19A22A9_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-building-terran-techlab-covertops.dds", lib16F85256_gv_jr[0]);
+    }
+    auto7E0D67A1_g = lib16F85256_gv_antamo[0];
+    auto7E0D67A1_var = -1;
+    while (true) {
+        auto7E0D67A1_var = PlayerGroupNextPlayer(auto7E0D67A1_g, auto7E0D67A1_var);
+        if (auto7E0D67A1_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-unit-biomechanicaldrone.dds", lib16F85256_gv_antamo[0]);
+    }
+    auto3B338D65_g = lib16F85256_gv_eternal[0];
+    auto3B338D65_var = -1;
+    while (true) {
+        auto3B338D65_var = PlayerGroupNextPlayer(auto3B338D65_g, auto3B338D65_var);
+        if (auto3B338D65_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-unit-protoss-fenix-purifier-pylon.dds", lib16F85256_gv_eternal[0]);
+    }
+    auto32C50318_g = lib16F85256_gv_lZ[0];
+    auto32C50318_var = -1;
+    while (true) {
+        auto32C50318_var = PlayerGroupNextPlayer(auto32C50318_g, auto32C50318_var);
+        if (auto32C50318_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-unit-zerg-ultralisk-noxious.dds", lib16F85256_gv_lZ[0]);
+        libNtve_gf_SetUpgradeLevelForPlayer(auto32C50318_var, "K5AutoExtractor", 1);
+    }
+    auto48832D0C_g = lib16F85256_gv_outcasts[0];
+    auto48832D0C_var = -1;
+    while (true) {
+        auto48832D0C_var = PlayerGroupNextPlayer(auto48832D0C_g, auto48832D0C_var);
+        if (auto48832D0C_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-building-nova-supplydepot.dds", lib16F85256_gv_outcasts[0]);
+    }
+    auto6A7E4499_g = lib16F85256_gv_sMEF[0];
+    auto6A7E4499_var = -1;
+    while (true) {
+        auto6A7E4499_var = PlayerGroupNextPlayer(auto6A7E4499_g, auto6A7E4499_var);
+        if (auto6A7E4499_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-building-nova-supplydepot.dds", lib16F85256_gv_sMEF[0]);
+    }
+    auto0609D112_g = lib16F85256_gv_spoops[0];
+    auto0609D112_var = -1;
+    while (true) {
+        auto0609D112_var = PlayerGroupNextPlayer(auto0609D112_g, auto0609D112_var);
+        if (auto0609D112_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-building-nova-sciencefacility.dds", lib16F85256_gv_spoops[0]);
+    }
+    auto271A7E9C_g = lib16F85256_gv_cyber[0];
+    auto271A7E9C_var = -1;
+    while (true) {
+        auto271A7E9C_var = PlayerGroupNextPlayer(auto271A7E9C_g, auto271A7E9C_var);
+        if (auto271A7E9C_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-unit-zerg-overlord-mecha.dds", lib16F85256_gv_cyber[0]);
+    }
+    autoBAB0A72D_g = lib16F85256_gv_foundation[0];
+    autoBAB0A72D_var = -1;
+    while (true) {
+        autoBAB0A72D_var = PlayerGroupNextPlayer(autoBAB0A72D_g, autoBAB0A72D_var);
+        if (autoBAB0A72D_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-ability-mengsk-commandcenter-drafttroopers.dds", lib16F85256_gv_foundation[0]);
+    }
+    auto12EC5429_g = lib16F85256_gv_cheesenGay[0];
+    auto12EC5429_var = -1;
+    while (true) {
+        auto12EC5429_var = PlayerGroupNextPlayer(auto12EC5429_g, auto12EC5429_var);
+        if (auto12EC5429_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-building-protoss-darkpylon.dds", lib16F85256_gv_cheesenGay[0]);
+    }
+    auto1134EB20_g = lib16F85256_gv_paramilitary[0];
+    auto1134EB20_var = -1;
+    while (true) {
+        auto1134EB20_var = PlayerGroupNextPlayer(auto1134EB20_g, auto1134EB20_var);
+        if (auto1134EB20_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\btn-tips-hyperion.dds", lib16F85256_gv_paramilitary[0]);
+    }
+    autoE58D08D3_g = lib16F85256_gv_pOZTest[0];
+    autoE58D08D3_var = -1;
+    while (true) {
+        autoE58D08D3_var = PlayerGroupNextPlayer(autoE58D08D3_g, autoE58D08D3_var);
+        if (autoE58D08D3_var < 0) { break; }
+        libNtve_gf_SetDialogItemImage(lib16F85256_gv_supplyIcon, "Assets\\Textures\\ui_ingame_help_techtree_questionmark.dds", lib16F85256_gv_cheesenGay[0]);
+        UISetFrameVisible(lib16F85256_gv_pOZTest[0], c_syncFrameTypeSupply, false);
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib16F85256_gt_A2_Init () {
+    lib16F85256_gt_A2 = TriggerCreate("lib16F85256_gt_A2_Func");
+    TriggerAddEventTimeElapsed(lib16F85256_gt_A2, 0.5, c_timeGame);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: A
+//--------------------------------------------------------------------------------------------------
+bool lib16F85256_gt_A_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    playergroup auto77220539_g;
+    int auto77220539_var;
+    string autoC4B9DA32_val;
+
+    // Conditions
+    if (testConds) {
+        if (!((GameAttributeGameValue("1") != "0009"))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    auto77220539_g = PlayerGroupAll();
+    auto77220539_var = -1;
+    while (true) {
+        auto77220539_var = PlayerGroupNextPlayer(auto77220539_g, auto77220539_var);
+        if (auto77220539_var < 0) { break; }
+        autoC4B9DA32_val = GameAttributePlayerValue("3", auto77220539_var);
+        if (autoC4B9DA32_val == "0031") {
+            PlayerGroupAdd(lib16F85256_gv_random[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0001") {
+            PlayerSetRace(auto77220539_var, "Terr2");
+            PlayerGroupAdd(lib16F85256_gv_intel[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0030") {
+            PlayerSetRace(auto77220539_var, "Terr2222233");
+            PlayerGroupAdd(lib16F85256_gv_antamo[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0024") {
+            PlayerSetRace(auto77220539_var, "Terr22");
+            PlayerGroupAdd(lib16F85256_gv_wastacay[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0028") {
+            PlayerSetRace(auto77220539_var, "Terr222");
+            PlayerGroupAdd(lib16F85256_gv_cBT[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0026") {
+            PlayerSetRace(auto77220539_var, "Terr2222");
+            PlayerGroupAdd(lib16F85256_gv_deepDark[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0006") {
+            PlayerSetRace(auto77220539_var, "Terr22222");
+            PlayerGroupAdd(lib16F85256_gv_corrupted[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0029") {
+            PlayerSetRace(auto77220539_var, "Terr222222");
+            PlayerGroupAdd(lib16F85256_gv_corps[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0004") {
+            PlayerSetRace(auto77220539_var, "Terr222223");
+            PlayerGroupAdd(lib16F85256_gv_cyber[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0011") {
+            PlayerSetRace(auto77220539_var, "Terr2222232");
+            PlayerGroupAdd(lib16F85256_gv_dmai[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0007") {
+            PlayerSetRace(auto77220539_var, "Terr22222322");
+            PlayerGroupAdd(lib16F85256_gv_eternal[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0012") {
+            PlayerSetRace(auto77220539_var, "Terr222223222");
+            PlayerGroupAdd(lib16F85256_gv_followersOfNektala[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0009") {
+            PlayerSetRace(auto77220539_var, "Terr2222232222");
+            PlayerGroupAdd(lib16F85256_gv_gG[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0008") {
+            PlayerSetRace(auto77220539_var, "Terr2223");
+            PlayerGroupAdd(lib16F85256_gv_foundation[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0005") {
+            PlayerSetRace(auto77220539_var, "Terr22222323");
+            PlayerGroupAdd(lib16F85256_gv_high[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0003") {
+            PlayerSetRace(auto77220539_var, "Terr222224");
+            PlayerGroupAdd(lib16F85256_gv_holo[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0022") {
+            PlayerSetRace(auto77220539_var, "Terr2222242");
+            PlayerGroupAdd(lib16F85256_gv_jr[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0017") {
+            PlayerSetRace(auto77220539_var, "Terr22222422");
+            PlayerGroupAdd(lib16F85256_gv_lasttoss[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0016") {
+            PlayerSetRace(auto77220539_var, "Terr222224222");
+            PlayerGroupAdd(lib16F85256_gv_lastTerr[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0015") {
+            PlayerSetRace(auto77220539_var, "Terr2222242222");
+            PlayerGroupAdd(lib16F85256_gv_lZ[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0018") {
+            PlayerSetRace(auto77220539_var, "Terr222224223");
+            PlayerGroupAdd(lib16F85256_gv_lom[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0013") {
+            PlayerSetRace(auto77220539_var, "Terr2222242232");
+            PlayerGroupAdd(lib16F85256_gv_nbrood[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0020") {
+            PlayerSetRace(auto77220539_var, "Terr22222422322");
+            PlayerGroupAdd(lib16F85256_gv_nC[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0025") {
+            PlayerSetRace(auto77220539_var, "Terr22222422222");
+            PlayerGroupAdd(lib16F85256_gv_outcasts[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0027") {
+            PlayerSetRace(auto77220539_var, "Terr222224222222");
+            PlayerGroupAdd(lib16F85256_gv_pb[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0023") {
+            PlayerSetRace(auto77220539_var, "Terr222223232");
+            PlayerGroupAdd(lib16F85256_gv_sMEF[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0019") {
+            PlayerSetRace(auto77220539_var, "Terr2222232322");
+            PlayerGroupAdd(lib16F85256_gv_spoops[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0021") {
+            PlayerSetRace(auto77220539_var, "Terr22222323222");
+            PlayerGroupAdd(lib16F85256_gv_taken[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0010") {
+            PlayerSetRace(auto77220539_var, "Terr222223232222");
+            PlayerGroupAdd(lib16F85256_gv_cheesenGay[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0014") {
+            PlayerSetRace(auto77220539_var, "Terr2222232322222");
+            PlayerGroupAdd(lib16F85256_gv_xill[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0032") {
+            PlayerSetRace(auto77220539_var, "UnknownRace2");
+            PlayerGroupAdd(lib16F85256_gv_paramilitary[0], auto77220539_var);
+        }
+        else if (autoC4B9DA32_val == "0001") {
+        }
+        else {
+        }
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib16F85256_gt_A_Init () {
+    lib16F85256_gt_A = TriggerCreate("lib16F85256_gt_A_Func");
+    TriggerAddEventMapInit(lib16F85256_gt_A);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: RandomRace
+//--------------------------------------------------------------------------------------------------
+bool lib16F85256_gt_RandomRace_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    playergroup auto9FAEBD27_g;
+    int auto9FAEBD27_var;
+    int auto1B6BB91A_val;
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    libCD55B2B5_gv_apeInteger = RandomInt(1, 30);
+    auto9FAEBD27_g = lib16F85256_gv_random[0];
+    auto9FAEBD27_var = -1;
+    while (true) {
+        auto9FAEBD27_var = PlayerGroupNextPlayer(auto9FAEBD27_g, auto9FAEBD27_var);
+        if (auto9FAEBD27_var < 0) { break; }
+        auto1B6BB91A_val = libCD55B2B5_gv_apeInteger;
+        if (auto1B6BB91A_val == 1) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr2");
+            PlayerGroupAdd(lib16F85256_gv_intel[0], auto9FAEBD27_var);
+        }
+        else if (auto1B6BB91A_val == 2) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr22");
+            PlayerGroupAdd(lib16F85256_gv_wastacay[0], auto9FAEBD27_var);
+        }
+        else if (auto1B6BB91A_val == 3) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr2222233");
+            PlayerGroupAdd(lib16F85256_gv_antamo[0], auto9FAEBD27_var);
+        }
+        else if (auto1B6BB91A_val == 4) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr222223232222");
+            PlayerGroupAdd(lib16F85256_gv_cheesenGay[0], auto9FAEBD27_var);
+        }
+        else if (auto1B6BB91A_val == 5) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr222");
+            PlayerGroupAdd(lib16F85256_gv_cBT[0], auto9FAEBD27_var);
+        }
+        else if (auto1B6BB91A_val == 6) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr222222");
+            PlayerGroupAdd(lib16F85256_gv_corps[0], auto9FAEBD27_var);
+        }
+        else if (auto1B6BB91A_val == 7) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr22222");
+            PlayerGroupAdd(lib16F85256_gv_corrupted[0], auto9FAEBD27_var);
+        }
+        else if (auto1B6BB91A_val == 8) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr222223");
+            PlayerGroupAdd(lib16F85256_gv_cyber[0], auto9FAEBD27_var);
+        }
+        else if (auto1B6BB91A_val == 9) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr2222");
+            PlayerGroupAdd(lib16F85256_gv_deepDark[0], auto9FAEBD27_var);
+        }
+        else if (auto1B6BB91A_val == 10) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr2222232");
+            PlayerGroupAdd(lib16F85256_gv_dmai[0], auto9FAEBD27_var);
+        }
+        else if (auto1B6BB91A_val == 11) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr22222322");
+            PlayerGroupAdd(lib16F85256_gv_eternal[0], auto9FAEBD27_var);
+        }
+        else if (auto1B6BB91A_val == 12) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr222223222");
+            PlayerGroupAdd(lib16F85256_gv_followersOfNektala[0], auto9FAEBD27_var);
+        }
+        else if (auto1B6BB91A_val == 13) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr2222232222");
+            PlayerGroupAdd(lib16F85256_gv_gG[0], auto9FAEBD27_var);
+        }
+        else if (auto1B6BB91A_val == 14) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr2223");
+            PlayerGroupAdd(lib16F85256_gv_foundation[0], auto9FAEBD27_var);
+        }
+        else if (auto1B6BB91A_val == 15) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr2223");
+            PlayerGroupAdd(lib16F85256_gv_foundation[0], auto9FAEBD27_var);
+        }
+        else if (auto1B6BB91A_val == 16) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr22222323");
+            PlayerGroupAdd(lib16F85256_gv_high[0], auto9FAEBD27_var);
+        }
+        else if (auto1B6BB91A_val == 17) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr222224");
+            PlayerGroupAdd(lib16F85256_gv_holo[0], auto9FAEBD27_var);
+        }
+        else if (auto1B6BB91A_val == 18) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr2222242");
+            PlayerGroupAdd(lib16F85256_gv_jr[0], auto9FAEBD27_var);
+        }
+        else if (auto1B6BB91A_val == 19) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr22222422");
+            PlayerGroupAdd(lib16F85256_gv_lasttoss[0], auto9FAEBD27_var);
+        }
+        else if (auto1B6BB91A_val == 20) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr222224222");
+            PlayerGroupAdd(lib16F85256_gv_lastTerr[0], auto9FAEBD27_var);
+        }
+        else if (auto1B6BB91A_val == 21) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr2222242222");
+            PlayerGroupAdd(lib16F85256_gv_lZ[0], auto9FAEBD27_var);
+        }
+        else if (auto1B6BB91A_val == 22) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr222224223");
+            PlayerGroupAdd(lib16F85256_gv_lom[0], auto9FAEBD27_var);
+        }
+        else if (auto1B6BB91A_val == 23) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr2222242232");
+            PlayerGroupAdd(lib16F85256_gv_nbrood[0], auto9FAEBD27_var);
+        }
+        else if (auto1B6BB91A_val == 24) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr22222422322");
+            PlayerGroupAdd(lib16F85256_gv_nC[0], auto9FAEBD27_var);
+        }
+        else if (auto1B6BB91A_val == 25) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr22222422222");
+            PlayerGroupAdd(lib16F85256_gv_outcasts[0], auto9FAEBD27_var);
+        }
+        else if (auto1B6BB91A_val == 26) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr222224222222");
+            PlayerGroupAdd(lib16F85256_gv_pb[0], auto9FAEBD27_var);
+        }
+        else if (auto1B6BB91A_val == 27) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr222223232");
+            PlayerGroupAdd(lib16F85256_gv_sMEF[0], auto9FAEBD27_var);
+        }
+        else if (auto1B6BB91A_val == 28) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr2222232322");
+            PlayerGroupAdd(lib16F85256_gv_spoops[0], auto9FAEBD27_var);
+        }
+        else if (auto1B6BB91A_val == 29) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr22222323222");
+            PlayerGroupAdd(lib16F85256_gv_taken[0], auto9FAEBD27_var);
+        }
+        else if (auto1B6BB91A_val == 30) {
+            PlayerSetRace(auto9FAEBD27_var, "Terr2222232322222");
+            PlayerGroupAdd(lib16F85256_gv_xill[0], auto9FAEBD27_var);
+        }
+        else {
+        }
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib16F85256_gt_RandomRace_Init () {
+    lib16F85256_gt_RandomRace = TriggerCreate("lib16F85256_gt_RandomRace_Func");
+    TriggerAddEventMapInit(lib16F85256_gt_RandomRace);
+}
+
+void lib16F85256_InitTriggers () {
+    lib16F85256_gt_Obs_Init();
+    lib16F85256_gt_A2_Init();
+    lib16F85256_gt_A_Init();
+    lib16F85256_gt_RandomRace_Init();
+}
+
+//--------------------------------------------------------------------------------------------------
+// Library Initialization
+//--------------------------------------------------------------------------------------------------
+bool lib16F85256_InitLib_completed = false;
+
+void lib16F85256_InitLib () {
+    if (lib16F85256_InitLib_completed) {
+        return;
+    }
+
+    lib16F85256_InitLib_completed = true;
+
+    lib16F85256_InitLibraries();
+    lib16F85256_InitVariables();
+    lib16F85256_InitTriggers();
+}
+
+include "LibCD55B2B5"
+

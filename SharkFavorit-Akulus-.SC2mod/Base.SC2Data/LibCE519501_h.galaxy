@@ -1,0 +1,50 @@
+include "TriggerLibs/natives"
+
+//--------------------------------------------------------------------------------------------------
+// Library: EventMod2
+//--------------------------------------------------------------------------------------------------
+// Variable Declarations
+playergroup libCE519501_gv_activePlayer;
+unit libCE519501_gv_sparkOfExistence;
+
+// Trigger Declarations
+trigger libCE519501_gt_BDHgas;
+trigger libCE519501_gt_BDHgas2;
+trigger libCE519501_gt_BDHgas3;
+trigger libCE519501_gt_BDHgas4;
+trigger libCE519501_gt_DefundRefund;
+trigger libCE519501_gt_AlmostExtinct;
+trigger libCE519501_gt_BigDigHunters;
+trigger libCE519501_gt_ExtinctStart;
+trigger libCE519501_gt_Random;
+trigger libCE519501_gt_TheEternalRewards;
+trigger libCE519501_gt_Defund;
+trigger libCE519501_gt_Amplified;
+trigger libCE519501_gt_ToughAsNails;
+trigger libCE519501_gt_CelestialRebirth;
+trigger libCE519501_gt_ToughAsNailsADd;
+trigger libCE519501_gt_AmplifiedAdd;
+trigger libCE519501_gt_BikDigHuntersFields;
+trigger libCE519501_gt_BikDigHuntersVespene;
+trigger libCE519501_gt_BikDigHuntersVespeneBuilding;
+trigger libCE519501_gt_BikDigHuntersPeriodVEspene;
+trigger libCE519501_gt_Ref;
+trigger libCE519501_gt_Ref2;
+trigger libCE519501_gt_HalloweenCheck;
+trigger libCE519501_gt_Unstoppable;
+trigger libCE519501_gt_AddHalloween;
+trigger libCE519501_gt_HalloweenStart;
+trigger libCE519501_gt_HalloweenTriggers;
+trigger libCE519501_gt_CyrstmasStart;
+trigger libCE519501_gt_CrystmasCreate;
+trigger libCE519501_gt_CrystmasCreatePeriod;
+trigger libCE519501_gt_Timer5AltCrystmas;
+trigger libCE519501_gt_POTH;
+trigger libCE519501_gt_Timer400;
+trigger libCE519501_gt_Victory;
+trigger libCE519501_gt_VictoryPreparing;
+trigger libCE519501_gt_SparkOfExistence;
+
+// Library Initialization
+void libCE519501_InitVariables ();
+
