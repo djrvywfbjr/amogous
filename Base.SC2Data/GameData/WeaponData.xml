@@ -1436,8 +1436,8 @@
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <MinScanRange value="7.5"/>
-        <Range value="7.5"/>
+        <MinScanRange value="8"/>
+        <Range value="8"/>
         <Period value="1.5"/>
         <DamagePoint value="0.083"/>
         <Backswing value="1.167"/>
@@ -4063,6 +4063,15 @@
         <Backswing value="1.167"/>
         <Effect value="SpecterU522"/>
         <RandomDelayMin value="-0.063"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="DevastationRocket">
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-upgrade-nova-equipment-gunblade_sword.dds"/>
+        <DisplayEffect value="TempestDamageGround234"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <Period value="1.8"/>
+        <Effect value="TempestLaunchMissileGround234"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="VoidBlast">
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
@@ -11000,6 +11009,9 @@
         <EditorCategories value="Race:Terran"/>
         <Options index="Disabled" value="1"/>
         <Options index="Hidden" value="1"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
         <DisplayEffect value="ThrowMolotovDamage2"/>
         <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
@@ -11010,6 +11022,7 @@
         <RandomDelayMin value="0.5"/>
         <RandomDelayMax value="3"/>
         <Backswing value="0.25"/>
+        <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ThrowMolotov32">
         <EditorCategories value="Race:Terran"/>

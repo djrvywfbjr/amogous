@@ -362,6 +362,12 @@
         <AlertIcon value="Assets\Textures\btn-ability-protoss-timewarp.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
+    <CButton id="BuildAutoTurret33">
+        <Icon value="Assets\Textures\btn-building-terran-autoturret.dds"/>
+        <AlertIcon value="Assets\Textures\btn-building-terran-autoturret.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="BuildAutoTurret"/>
+    </CButton>
     <CButton id="CalldownMULE42332623222224">
         <Icon value="Assets\Textures\btn-research-terran-vanadiumplating.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
@@ -392,6 +398,10 @@
     </CButton>
     <CButton id="EnterWormhole322">
         <Icon value="Assets\Textures\btn-ability-zeratul-warpprism-transferlink.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="KarassPlasmaSurge332">
+        <Icon value="Assets\Textures\btn-ability-stetmann-banelingmanashield.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
     <CButton id="PointDefenseDrone32">

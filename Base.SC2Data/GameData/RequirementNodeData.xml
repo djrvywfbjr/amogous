@@ -518,6 +518,11 @@
         <OperandArray value="CountUnitCenterOfCommandsCompleteOnly3871395482"/>
         <OperandArray value="CountUnitAutomatedRefinery2CompleteOnly467777578"/>
     </CRequirementAnd>
+    <CRequirementAnd id="AndCountUnitEngineeringBay6CompleteOnlyCountUnitBarracks6CompleteOnly">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUnitEngineeringBay6CompleteOnly"/>
+        <OperandArray value="CountUnitBarracks6CompleteOnly"/>
+    </CRequirementAnd>
     <CRequirementAnd id="AndCountUnitFactory3CompleteOnlyTechTreeCheatEq1057992071CountUnitMengskMarine22QueuedOrBetter0">
         <OperandArray value="CountUnitFactory3CompleteOnlyTechTreeCheat"/>
         <OperandArray value="Eq1057992071CountUnitMengskMarine22QueuedOrBetter0"/>
@@ -3066,6 +3071,11 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Barracks5" State="CompleteOnly"/>
     </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitBarracks6CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="Barracks6" State="CompleteOnly"/>
+    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitBarracks6CompleteOnly4150837690">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Barracks6" State="CompleteOnly"/>
@@ -3456,6 +3466,11 @@
     <CRequirementCountUnit id="CountUnitEngineeringBay4CompleteOnly2862189119">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="EngineeringBay4" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitEngineeringBay6CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="EngineeringBay6" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitEngineeringBay6CompleteOnly1954741260">
         <Flags index="TechTreeCheat" value="0"/>
@@ -14741,7 +14756,6 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUnknownUpgrade732QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="UnknownUpgrade732" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUnknownUpgrade73QueuedOrBetter">
@@ -19380,7 +19394,6 @@
         <OperandArray index="0" value="CountUpgradeUnknownUpgrade72QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUnknownUpgrade732QueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeUnknownUpgrade732QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUnknownUpgrade73QueuedOrBetter">

@@ -971,6 +971,23 @@
             <Chance value="1"/>
         </DamageResponse>
     </CBehaviorBuff>
+    <CBehaviorBuff id="ImperialAdvancedPlatingTimedlife">
+        <Alignment value="Positive"/>
+        <Cost>
+            <Cooldown Link="Immortal Shield"/>
+        </Cost>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-HardenedShields.dds"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Duration value="30"/>
+        <Modification>
+            <VitalRegenArray index="Life" value="5"/>
+            <VitalRegenArray index="Shields" value="5"/>
+        </Modification>
+        <DamageResponse ClampMaximum="35" Minimum="35">
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
     <CBehaviorBuff id="HardenedShield82">
         <Alignment value="Positive"/>
         <Cost>
@@ -25654,10 +25671,12 @@
                 <AbilLinkDisableArray value="MedDrone322"/>
                 <AbilLinkDisableArray value="VoidSeekerDock224"/>
                 <AbilLinkDisableArray value="Blink22"/>
+                <AbilLinkDisableArray value="MaxCapSurge"/>
             </Modification>
         </VeterancyLevelArray>
-        <VeterancyLevelArray MinVeterancyXP="50" LevelGainEffect="RankDummy2">
+        <VeterancyLevelArray MinVeterancyXP="40" LevelGainEffect="RankDummy2">
             <Modification Detect="9" Radar="25">
+                <AbilLinkEnableArray value="MaxCapSurge"/>
                 <AbilLinkDisableArray value="MindControl2"/>
                 <AbilLinkDisableArray value="MedDrone322"/>
                 <AbilLinkDisableArray value="VoidSeekerDock224"/>
@@ -25665,9 +25684,10 @@
                 <AttributeChangeArray Attribute="DamageBonus3224" Points="1"/>
             </Modification>
         </VeterancyLevelArray>
-        <VeterancyLevelArray MinVeterancyXP="65" LevelGainEffect="RankDummy22">
+        <VeterancyLevelArray MinVeterancyXP="75" LevelGainEffect="RankDummy22">
             <Modification Detect="9" Radar="25">
                 <AbilLinkEnableArray value="Blink22"/>
+                <AbilLinkEnableArray value="MaxCapSurge"/>
                 <AbilLinkDisableArray value="MindControl2"/>
                 <AbilLinkDisableArray value="MedDrone322"/>
                 <AbilLinkDisableArray value="VoidSeekerDock224"/>

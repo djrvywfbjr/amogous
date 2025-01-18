@@ -1133,6 +1133,26 @@
             <Unit value="ShadowOne"/>
         </InfoArray>
     </CAbilTrain>
+    <CAbilEffectTarget id="MaxCapSurge">
+        <Alignment value="Negative"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="SetHardenedShieldTimeLifed"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="AutoCast" value="1"/>
+        <Cost>
+            <VitalFraction index="Energy" value="60"/>
+            <Charge Link="Abil/KarassPlasmaSurge"/>
+            <Cooldown Link="Abil/KarassPlasmaSurge"/>
+        </Cost>
+        <Range value="35"/>
+        <AutoCastFilters value="Visible;Neutral,Enemy"/>
+        <AutoCastRange value="35"/>
+        <AutoCastValidatorArray value="TargetMassiveOrHeroicOrUnstoppable"/>
+        <AutoCastValidatorArray value="LifeNotFullOrShieldsNotFull"/>
+        <CastOutroTime value="0.05"/>
+        <CursorEffect value="KarassPlasmaSurgeSearchArea"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="KarassPlasmaSurge332" Requirements="HaveEnlistmentHouse2234"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="MohandarStickyBomb6">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Effect index="0" value="MohandarStickyBombLaunchMissile6"/>
@@ -32120,11 +32140,9 @@
         <AutoCastAcquireLevel value="Defensive"/>
         <AutoCastFilters value="Visible;Ally,Neutral,Enemy,Structure"/>
         <AutoCastRange value="35"/>
-        <AutoCastValidatorArray value="IsNotHydralisk23"/>
-        <AutoCastValidatorArray value="IsNotHydralisk232"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="MedicHeal332" Requirements="HaveEnlistmentHouse22332"/>
-        <SmartValidatorArray value="IsNotHydralisk23"/>
-        <SmartValidatorArray value="IsNotHydralisk232"/>
+        <SmartValidatorArray value="UnknownValidator2"/>
+        <SmartValidatorArray value="IsHeroic"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="MedDrone322">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -32144,14 +32162,17 @@
         <AutoCastAcquireLevel value="Defensive"/>
         <AutoCastFilters value="Visible;Ally,Neutral,Enemy,Structure"/>
         <AutoCastRange value="35"/>
-        <AutoCastValidatorArray value="IsNotHydralisk23"/>
+        <AutoCastValidatorArray value="UnknownValidator2"/>
         <AutoCastValidatorArray value="IsNotHydralisk232"/>
         <AutoCastValidatorArray value="IsHeroic"/>
+        <AutoCastValidatorArray value="IsNotHydralisk23"/>
         <Marker Link="Abil/MedDrone32"/>
         <AINotifyEffect value="MedDrone32"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="MedicHeal332"/>
         <SmartValidatorArray value="IsHeroic"/>
         <SmartValidatorArray value="IsNotHydralisk232"/>
+        <SmartValidatorArray value="IsNotHydralisk23"/>
+        <SmartValidatorArray value="UnknownValidator2"/>
         <Flags index="AutoCast" value="1"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="MedDrone323">
@@ -51417,12 +51438,12 @@
             <Charge Link=""/>
             <Cooldown Link="Abil/AlarakAvatar" TimeUse="20"/>
         </Cost>
-        <Range value="8"/>
+        <Range value="9"/>
         <AutoCastFilters value="Visible;Neutral,Enemy,Structure,Missile,Stasis,Dead"/>
-        <AutoCastRange value="8"/>
+        <AutoCastRange value="9"/>
         <AutoCastValidatorArray value="CasterLifeNotFull2"/>
         <AutoCastValidatorArray value="IsTimeStopped2"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield2232"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield2232" Requirements="HaveEnlistmentHouse22342"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="CivilControlTazer">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -51582,7 +51603,7 @@
             <Cooldown Link="Abil/AlarakAvatar" TimeUse="1"/>
         </Cost>
         <Range value="6"/>
-        <AutoCastFilters value="Visible;Neutral,Enemy,Structure,Missile,Stasis,Dead"/>
+        <AutoCastFilters value="Visible;Neutral,Enemy,Missile,Stasis,Dead"/>
         <AutoCastRange value="6"/>
         <AutoCastValidatorArray value="CasterLifeNotFull2"/>
         <AutoCastValidatorArray value="IsTimeStopped22"/>
@@ -57587,6 +57608,9 @@
         </InfoArray>
         <InfoArray index="Build17" Unit="GhostAcademy10" Time="70">
             <Button DefaultButtonFace="UnknownButton15" Requirements="HaveEnlistmentHouse2"/>
+        </InfoArray>
+        <InfoArray index="Build18" Unit="ArmoredTurret" Time="28">
+            <Button DefaultButtonFace="BuildAutoTurret33" Requirements="HaveEnlistmentHouse22322"/>
         </InfoArray>
     </CAbilBuild>
     <CAbilLearn id="TestLearn2">
