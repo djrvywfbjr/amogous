@@ -4830,6 +4830,89 @@
         <EditorCategories value=""/>
         <Behavior value="DistortionGenerator"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="EMPApplyDecloakBehavior22">
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="EMPDecloak22"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="EMPApplyDecloakBehavior33">
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="EMPDecloak33"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="EMPDamage22">
+        <EditorCategories value="Race:Terran"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Flags index="Notification" value="1"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectDamage>
+    <CEffectDamage id="EMPDamage33">
+        <EditorCategories value="Race:Terran"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ShieldBonus value="100"/>
+        <Flags index="Notification" value="1"/>
+        <Amount value="50"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <DamageInheritEffect value="MindBlastStun2"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="EMPLaunchMissile22">
+        <ValidatorArray index="0" value="EMP2TargetFilters"/>
+        <EditorCategories value="Race:Terran"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <ImpactEffect value="EMPSearch22"/>
+        <AmmoUnit value="EMP2Weapon22"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="EMPLaunchMissile33">
+        <ValidatorArray index="0" value="EMP2TargetFilters"/>
+        <EditorCategories value="Race:Terran"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <ImpactEffect value="EMPSearch33"/>
+        <AmmoUnit value="EMP2Weapon33"/>
+    </CEffectLaunchMissile>
+    <CEffectModifyUnit id="EMPModifyUnit22">
+        <ValidatorArray value="empUTargetFilters"/>
+        <EditorCategories value="Race:Terran"/>
+        <VitalArray index="Shields">
+            <Change value="-100"/>
+        </VitalArray>
+        <VitalArray index="Energy">
+            <Change value="-100"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectModifyUnit id="EMPModifyUnit33">
+        <ValidatorArray value="empUTargetFilters"/>
+        <EditorCategories value="Race:Terran"/>
+        <VitalArray index="Energy">
+            <Change value="-100"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectEnumArea id="EMPSearch22">
+        <EditorCategories value="Race:Terran"/>
+        <LaunchLocation Value="TargetPoint"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <SearchFilters value="-;Hidden,Invulnerable"/>
+        <AreaArray Radius="1.5" Effect="EMPSet22"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="EMPSearch33">
+        <EditorCategories value="Race:Terran"/>
+        <LaunchLocation Value="TargetPoint"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <SearchFilters value="-;Hidden,Invulnerable"/>
+        <AreaArray Radius="1.5" Effect="EMPSet33"/>
+    </CEffectEnumArea>
+    <CEffectSet id="EMPSet22">
+        <EditorCategories value="Race:Terran"/>
+        <EffectArray value="EMPDamage22"/>
+        <EffectArray value="EMPModifyUnit22"/>
+        <EffectArray value="EMPApplyDecloakBehavior22"/>
+    </CEffectSet>
+    <CEffectSet id="EMPSet33">
+        <EditorCategories value="Race:Terran"/>
+        <EffectArray value="EMPDamage33"/>
+        <EffectArray value="EMPModifyUnit33"/>
+        <EffectArray value="EMPApplyDecloakBehavior33"/>
+        <EffectArray value="MindBlastSet2"/>
+    </CEffectSet>
     <CEffectApplyBehavior id="EnterWormholeApplyBehavior22">
         <EditorCategories value="Race:Protoss"/>
         <Behavior value="EnterWormhole22"/>
@@ -4882,6 +4965,20 @@
         <SearchFlags index="CallForHelp" value="1"/>
         <SearchFlags index="OffsetByUnitRadius" value="1"/>
     </CEffectDamage>
+    <CEffectApplyBehavior id="KillsToCaster23">
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="KillsToCaster"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="MengskDiamondback">
+        <AttributeBonus index="Armored" value="10"/>
+        <Amount value="200"/>
+    </CEffectDamage>
+    <CEffectDamage id="MengskFirebatDamage">
+        <Amount value="15"/>
+    </CEffectDamage>
+    <CEffectDamage id="MengskMarauderDamage">
+        <Amount value="20"/>
+    </CEffectDamage>
     <CEffectDamage id="MengskSiegeTankDamage3">
         <EditorCategories value="Race:Terran"/>
         <ResponseFlags index="Acquire" value="1"/>
@@ -4895,6 +4992,43 @@
         <SearchFlags index="CallForHelp" value="1"/>
         <SearchFlags index="OffsetByUnitRadius" value="1"/>
     </CEffectDamage>
+    <CEffectCreatePersistent id="MengskThorsHammer32">
+        <EditorCategories value="Race:Terran"/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="MengskThorsHammerDamage32"/>
+        <PeriodicEffectArray value="MengskThorsHammerDamage32"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.375"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="MengskThorsHammerDamage32" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <AttributeBonus index="Massive" value="40"/>
+        <Kind value="Ranged"/>
+        <Amount value="40"/>
+        <Death value="Blast"/>
+        <SearchFilters value="Ground;Player,Ally,Stasis,Invulnerable"/>
+    </CEffectDamage>
+    <CEffectDamage id="MengskVikingAssault">
+        <AttributeBonus index="Light" value="4"/>
+    </CEffectDamage>
+    <CEffectDamage id="MengskVikingFighterDamage">
+        <AttributeBonus index="Armored" value="0"/>
+        <Amount value="16"/>
+        <AreaArray index="0" Validator=""/>
+        <AreaArray index="1" Validator=""/>
+        <AreaArray index="2" Validator=""/>
+    </CEffectDamage>
+    <CEffectSet id="MindBlastSet2">
+        <EditorCategories value="Race:Terran"/>
+        <EffectArray value="MindBlastStun2"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="MindBlastStun2">
+        <ValidatorArray index="0" value="TargetIsEnemyOrNeutral"/>
+        <EditorCategories value="Race:Terran"/>
+    </CEffectApplyBehavior>
     <CEffectApplyBehavior id="MohandarStickyBombApply6">
         <EditorCategories value=""/>
         <Behavior value="MohandarStickyBomb6"/>
@@ -4923,6 +5057,19 @@
         <EffectArray value="MohandarStickyBombSearch6"/>
         <EffectArray value="MohandarStickyBombDamage6"/>
     </CEffectSet>
+    <CEffectLaunchMissile id="ParticleDisruptors62">
+        <ValidatorArray index="0" value="StalkerTargetFilters"/>
+        <ValidatorArray value=""/>
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactEffect value="StalkerEntropyLanceSearchSet62"/>
+        <AmmoUnit value="StalkerWeapon6"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="ParticleDisruptorsU62" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:Protoss"/>
+        <AttributeBonus index="Light" value="20"/>
+        <Amount value="15"/>
+        <DamageInheritEffect value="ZerglingSunder323"/>
+    </CEffectDamage>
     <CEffectCreateUnit id="PlaceWormholeCreateUnit22">
         <EditorCategories value="Race:Protoss"/>
         <WhichLocation Value="TargetPoint"/>
@@ -4967,6 +5114,10 @@
     <CEffectEnumArea id="RaidFrigateRightRandomLM">
         <SearchFilters value="Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CEffectEnumArea>
+    <CEffectModifyUnit id="ReplenishNanoConstructor23">
+        <ImpactUnit Value="Source"/>
+        <Cost Abil="MakeVultureSpiderMines,Specialize1" ChargeCountUse="-1"/>
+    </CEffectModifyUnit>
     <CEffectApplyBehavior id="ResurgAB">
         <EditorCategories value="Race:Terran"/>
         <Behavior value="ResurgentArchonDummy"/>
@@ -5333,6 +5484,45 @@
         <Amount value="30"/>
         <Death value="Blast"/>
     </CEffectDamage>
+    <CEffectSet id="SJPirateYamato22322">
+        <EditorCategories value="Race:Terran"/>
+        <EffectArray value="SJPirateYamatoA22322"/>
+        <EffectArray value="SJPirateYamatoB22322"/>
+    </CEffectSet>
+    <CEffectLaunchMissile id="SJPirateYamatoA22322">
+        <ValidatorArray value="IsNotWarpBubble"/>
+        <ValidatorArray value="YamatoTargetFilters"/>
+        <EditorCategories value="Race:Terran"/>
+        <ImpactEffect value="SJPirateYamatoADamage22322"/>
+        <AmmoUnit value="SJPirateYamatoAWeapon2322"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="SJPirateYamatoADamage22322">
+        <EditorCategories value="Race:Terran"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ArmorReduction value="0.5"/>
+        <Visibility value="Visible"/>
+        <Flags index="Notification" value="1"/>
+        <Amount value="4"/>
+        <Death value="Blast"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="SJPirateYamatoB22322">
+        <ValidatorArray value="IsNotWarpBubble"/>
+        <ValidatorArray value="YamatoTargetFilters"/>
+        <EditorCategories value="Race:Terran"/>
+        <ImpactEffect value="SJPirateYamatoBDamage22322"/>
+        <AmmoUnit value="SJPirateYamatoBWeapon2322"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="SJPirateYamatoBDamage22322">
+        <EditorCategories value="Race:Terran"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Visibility value="Visible"/>
+        <Flags index="Notification" value="1"/>
+        <Death value="Blast"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectDamage>
     <CEffectApplyBehavior id="ShieldBattaryAB">
         <EditorCategories value=""/>
     </CEffectApplyBehavior>
@@ -5350,10 +5540,72 @@
         <EditorCategories value=""/>
         <Behavior value="Cloakism"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ShieldUp2334">
+        <EditorCategories value=""/>
+        <Behavior value="Shield44"/>
+    </CEffectApplyBehavior>
     <CEffectApplyBehavior id="ShieldUp236">
         <EditorCategories value=""/>
         <Behavior value="Shield8"/>
     </CEffectApplyBehavior>
+    <CEffectDamage id="SnipeDamage33223" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <ArmorReduction value="0"/>
+        <Kind value="Spell"/>
+        <Amount value="150"/>
+        <Death value="Squish"/>
+        <SearchFilters value="-;Player,Ally,Neutral,Stasis,Invulnerable"/>
+    </CEffectDamage>
+    <CEffectCreateUnit id="SpawnSpiderMine23">
+        <EditorCategories value="Race:Terran"/>
+        <WhichLocation Value="TargetPoint"/>
+        <CreateFlags index="ProvideFood" value="0"/>
+        <CreateFlags index="UseFood" value="0"/>
+        <SpawnEffect value="KillsToCaster23"/>
+        <SpawnUnit value="SpiderMine"/>
+    </CEffectCreateUnit>
+    <CEffectSet id="SpawnSpiderMineSet23">
+        <EditorCategories value="Race:Terran"/>
+        <EffectArray value="SpawnSpiderMine23"/>
+        <EffectArray value="ReplenishNanoConstructor23"/>
+        <TargetLocationType value="UnitOrPoint"/>
+    </CEffectSet>
+    <CEffectDamage id="SpecterU522" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <Kind value="Ranged"/>
+        <Amount value="35"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="StalkerEntropyLanceSearch62">
+        <ValidatorArray value="HaveVoidStalkerMultishot"/>
+        <EditorCategories value=""/>
+        <ExcludeArray Effect="StalkerEntropyLanceSearchSet" Value="Target"/>
+        <SearchFilters value="Visible;Self,Player,Ally,Neutral,Missile,Item,Stasis,Hidden,Invulnerable"/>
+        <AreaArray MaxCount="1" Radius="3" Effect="StalkerEntropyLanceSecondaryLM62"/>
+    </CEffectEnumArea>
+    <CEffectSet id="StalkerEntropyLanceSearchSet62">
+        <EditorCategories value=""/>
+        <EffectArray value="ParticleDisruptorsU62"/>
+        <EffectArray value="StalkerEntropyLanceSearch62"/>
+    </CEffectSet>
+    <CEffectDamage id="StalkerEntropyLanceSecondaryDamage62">
+        <EditorCategories value="Race:Protoss"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <AttributeBonus index="Armored" value="3"/>
+        <ArmorReduction value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="8"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+        <SearchFlags index="OffsetAreaByAngle" value="1"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="StalkerEntropyLanceSecondaryLM62">
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactEffect value="StalkerEntropyLanceSecondaryDamage62"/>
+        <AmmoUnit value="StalkerSecondaryWeapon"/>
+    </CEffectLaunchMissile>
     <CEffectDamage id="SuicideMissile" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <Kind value="Ranged"/>
@@ -11754,6 +12006,7 @@
         <AttributeBonus index="Light" value="10"/>
         <Kind value="Ranged"/>
         <Amount value="25"/>
+        <DamageInheritEffect value="UnknownEffect602"/>
     </CEffectDamage>
     <CEffectDamage id="C10CanisterRifle8" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
@@ -28651,7 +28904,7 @@
     <CEffectCreatePersistent id="HurricaneMissileDamageDelayPersistent2">
         <EditorCategories value="Race:Terran"/>
         <Flags index="Channeled" value="1"/>
-        <ExpireDelay value="1.5"/>
+        <ExpireDelay value="0.7"/>
         <FinalEffect value="HurricaneMissileDamagePersistent2"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="HurricaneMissileDamageDelayPersistent22">
@@ -38858,7 +39111,7 @@
         <AmmoUnit value="MengskGoliathAWeapon2"/>
     </CEffectLaunchMissile>
     <CEffectDamage id="MengskHellionInfernalFlameThrower">
-        <AttributeBonus index="Light" value="12"/>
+        <AttributeBonus index="Light" value="23"/>
     </CEffectDamage>
     <CEffectDamage id="MengskMarauderDamage2" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
@@ -39562,10 +39815,11 @@
     <CEffectDamage id="MengskThorsHammerDamage3" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <Kind value="Ranged"/>
-        <Amount value="35"/>
+        <Amount value="40"/>
         <Death value="Blast"/>
         <AreaArray Radius="1.5" Fraction="0.5"/>
         <SearchFilters value="Ground;Player,Ally,Stasis,Invulnerable"/>
+        <AttributeBonus index="Massive" value="20"/>
     </CEffectDamage>
     <CEffectDamage id="MengskVikingAssault2" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
@@ -39576,6 +39830,7 @@
         <EditorCategories value="Race:Terran"/>
         <Kind value="Ranged"/>
         <Amount value="14"/>
+        <AttributeBonus index="Light" value="4"/>
     </CEffectDamage>
     <CEffectCreatePersistent id="MengskVikingFighter2">
         <EditorCategories value="Race:Terran"/>
@@ -53515,7 +53770,7 @@
     <CEffectEnumArea id="PsiDisruptionSearchArea63">
         <EditorCategories value="Race:Terran"/>
         <SearchFilters value="Visible;Player,Ally,Neutral,Air,Structure,Worker,Missile,Dead,Hidden,Invulnerable,Benign"/>
-        <AreaArray Radius="5" Effect="PsiDisruptionApplyBehavior73"/>
+        <AreaArray Radius="6" Effect="PsiDisruptionApplyBehavior73"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="PsiDisruptionSearchArea64">
         <EditorCategories value="Race:Terran"/>
@@ -61666,7 +61921,7 @@
         <ResponseFlags index="Flee" value="1"/>
         <Visibility value="Visible"/>
         <Flags index="Notification" value="1"/>
-        <Amount value="50"/>
+        <Amount value="75"/>
         <Death value="Blast"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectDamage>
@@ -61869,7 +62124,7 @@
         <ResponseFlags index="Flee" value="1"/>
         <Visibility value="Visible"/>
         <Flags index="Notification" value="1"/>
-        <Amount value="250"/>
+        <Amount value="325"/>
         <Death value="Blast"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectDamage>
@@ -61908,10 +62163,10 @@
         <EditorCategories value="Race:Terran"/>
         <ResponseFlags index="Acquire" value="1"/>
         <ResponseFlags index="Flee" value="1"/>
-        <ShieldBonus value="1000"/>
+        <ShieldBonus value="400"/>
         <Visibility value="Visible"/>
         <Flags index="Notification" value="1"/>
-        <Amount value="25"/>
+        <Amount value="500"/>
         <Death value="Blast"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectDamage>
@@ -66815,7 +67070,7 @@
         <EditorCategories value=""/>
         <Marker Link="Effect/SonOfKorhalAOE"/>
         <SearchFilters value="Visible;Self,Player,Ally,Neutral,Missile,Invulnerable"/>
-        <AreaArray Radius="6" Effect="MengskMarauderLM5"/>
+        <AreaArray Radius="7" Effect="MengskMarauderLM5"/>
         <MaxCount value="5"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="SonOfKorhalAOE22">
@@ -70007,7 +70262,6 @@
     </CEffectDamage>
     <CEffectLaunchMissile id="ThrowMolotovLaunchMissile2">
         <EditorCategories value="Race:Terran"/>
-        <ImpactLocation Value="TargetPoint"/>
         <ImpactEffect value="ThrowMolotovDamage2"/>
         <AmmoUnit value="CivilianWeapon2"/>
     </CEffectLaunchMissile>
@@ -71637,6 +71891,10 @@
             <Player Value="Target"/>
         </Cost>
     </CEffectModifyUnit>
+    <CEffectApplyBehavior id="UnknownEffect602">
+        <EditorCategories value=""/>
+        <Behavior value="PoisonBlade32223"/>
+    </CEffectApplyBehavior>
     <CEffectApplyBehavior id="UnknownEffect61">
         <EditorCategories value=""/>
         <Behavior value="UnknownBehavior48"/>
@@ -72191,9 +72449,8 @@
         <ResponseFlags index="Acquire" value="1"/>
         <ResponseFlags index="Flee" value="1"/>
         <ShieldBonus value="10"/>
-        <ArmorReduction value="1"/>
         <Flags index="Notification" value="1"/>
-        <Amount value="2"/>
+        <Amount value="4"/>
     </CEffectDamage>
     <CEffectDamage id="VoidHighTemplarPsiOrbDamage23">
         <EditorCategories value=""/>
@@ -76805,7 +77062,7 @@
         <AmmoUnit value="WarHoundWeapon23"/>
     </CEffectLaunchMissile>
     <CEffectDamage id="WarHoundMelee2" parent="WarHound">
-        <AttributeBonus index="Armored" value="10"/>
+        <AttributeBonus index="Light" value="20"/>
         <Kind value="Melee"/>
         <Amount value="30"/>
     </CEffectDamage>
@@ -80045,7 +80302,7 @@
         <ResponseFlags index="Flee" value="1"/>
         <Visibility value="Visible"/>
         <Flags index="Notification" value="1"/>
-        <Amount value="40"/>
+        <Amount value="55"/>
         <Death value="Blast"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectDamage>
@@ -80055,7 +80312,7 @@
         <ResponseFlags index="Flee" value="1"/>
         <Visibility value="Visible"/>
         <Flags index="Notification" value="1"/>
-        <Amount value="150"/>
+        <Amount value="200"/>
         <Death value="Blast"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectDamage>

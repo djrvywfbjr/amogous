@@ -362,16 +362,67 @@
         <AlertIcon value="Assets\Textures\btn-ability-protoss-timewarp.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
+    <CButton id="CalldownMULE42332623222224">
+        <Icon value="Assets\Textures\btn-research-terran-vanadiumplating.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="CalldownMULE42332"/>
+    </CButton>
+    <CButton id="AdvancedBiosteelUpgradeButton">
+        <Icon value="Assets\Textures\btn-upgrade-terran-buildingarmor.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="CalldownMULE42332"/>
+    </CButton>
     <CButton id="CombatShield223332">
         <Icon value="Assets\Textures\btn-ability-terran-cloak-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
+    <CButton id="CombatShield22334">
+        <Icon value="Assets\Textures\btn-ability-mengsk-medivac-permanentcloak.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
     <CButton id="CrotchDefense">
         <Icon value="Assets\Textures\marauderdeluxe_static.dds"/>
     </CButton>
+    <CButton id="EMP33">
+        <Icon value="Assets\Textures\btn-ability-mengsk-ghost-pyrokineticimmolation_blue.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-emp-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
     <CButton id="EnterWormhole322">
         <Icon value="Assets\Textures\btn-ability-zeratul-warpprism-transferlink.dds"/>
         <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="PointDefenseDrone32">
+        <Tooltip value="Button/Tooltip/PointDefenseDrone3244"/>
+        <Icon value="Assets\Textures\btn-unit-terran-warhound.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-targetingdrone.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="PointDefenseDrone"/>
+    </CButton>
+    <CButton id="PoisonNova32">
+        <Icon value="Assets\Textures\btn-tips-droppedterrazine.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-poisonnova.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+        <HotkeyAlias value="PoisonNova3"/>
+    </CButton>
+    <CButton id="ReinforcedSuperstructure2">
+        <Icon value="Assets\Textures\btn-techupgrade-terran-titaniumhousing.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <TintRacially value="1"/>
+    </CButton>
+    <CButton id="SJHyperionYamato4232222">
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-snipeenergyrefund.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="SJHyperionYamato4232"/>
+    </CButton>
+    <CButton id="Snipe33223">
+        <Icon value="Assets\Textures\btn-ability-terran-snipe.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-snipe-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HidesForSimpleText value="0"/>
     </CButton>
     <CButton id="TemporalAnomaly">
         <Icon value="Assets\Textures\nova coop_lvl 11_all research costs and times - 50.dds"/>
@@ -11591,7 +11642,7 @@
         <EditorCategories value="Race:Terran"/>
     </CButton>
     <CButton id="EMP2">
-        <Icon value="Assets\Textures\btn-upgrade-swann-targetingoptics.dds"/>
+        <Icon value="Assets\Textures\btn-ability-terran-emp-color.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-emp-color.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>

@@ -923,6 +923,26 @@
         <DisableValidatorArray value="CasterLifeLT25Percent"/>
         <Modification LifeArmorMultiplier="2"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="EMPDecloak22">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-emp.dds"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Duration value="15"/>
+        <Modification WeaponRange="-2">
+            <StateFlags index="SuppressCloak" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EMPDecloak33">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-emp.dds"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="IsNotBuried"/>
+        <Duration value="33"/>
+        <Modification>
+            <StateFlags index="SuppressCloak" value="1"/>
+            <VitalRegenArray index="Life" value="-3"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="EnterWormhole22">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
@@ -939,6 +959,18 @@
     <CBehaviorBuff id="HallucinationTimedLife">
         <Duration value="90"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="HardenedShield72">
+        <Alignment value="Positive"/>
+        <Cost>
+            <Cooldown Link="Immortal Shield"/>
+        </Cost>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-HardenedShields.dds"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <DamageResponse ClampMaximum="35" Minimum="35">
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
     <CBehaviorBuff id="HardenedShield82">
         <Alignment value="Positive"/>
         <Cost>
@@ -952,6 +984,20 @@
             <Kind index="Spell" value="0"/>
             <Chance value="1"/>
         </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MindBlastStun2">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-tosh-mindblast.dds"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Duration value="2"/>
+        <Modification>
+            <ModifyFlags index="DisableAbils" value="1"/>
+            <ModifyFlags index="DisableWeapons" value="1"/>
+            <ModifyFlags index="Reveal" value="1"/>
+            <ModifyFlags index="Detected" value="1"/>
+            <ModifyFlags index="SuppressMoving" value="1"/>
+            <ModifyFlags index="SuppressTurning" value="1"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="MohandarStickyBomb6">
         <Alignment value="Negative"/>
@@ -1300,6 +1346,16 @@
         <DisplayDuration index="Self" value="1"/>
         <DisplayDuration index="Ally" value="1"/>
         <Duration value="10"/>
+        <Modification>
+            <StateFlags index="Cloak" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Shield44">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <Duration value="14"/>
         <Modification>
             <StateFlags index="Cloak" value="1"/>
         </Modification>
@@ -3695,7 +3751,7 @@
         <InfoIcon value="Assets\Textures\btn-ability-terran-detectionconedebuff.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="10"/>
-        <DamageResponse ModifyFraction="1.35">
+        <DamageResponse ModifyFraction="1.3">
             <Chance value="1"/>
         </DamageResponse>
         <MaxStackCount value="4"/>
@@ -3901,7 +3957,7 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <Duration value="6"/>
         <Modification>
-            <VitalRegenArray index="Life" value="-3"/>
+            <VitalRegenArray index="Life" value="-5"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="PsiDisruption74">
@@ -20781,13 +20837,14 @@
         </VeterancyLevelArray>
         <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.55"/>
-        <SharedXPFraction index="DamageDealt" value="0.1"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel22">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <VeterancyLevelArray LevelGainEffect="RankDummy2322">
             <Modification>
                 <AbilLinkDisableArray value="Stimpack32"/>
+                <AbilLinkDisableArray value="ShieldUp2326"/>
             </Modification>
         </VeterancyLevelArray>
         <VeterancyLevelArray MinVeterancyXP="45" LevelGainEffect="RankDummy2">
@@ -20796,6 +20853,7 @@
                 <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
                 <AbilLinkDisableArray value="Stimpack32"/>
+                <AbilLinkDisableArray value="ShieldUp232"/>
                 <WeaponEnableArray value="MengskMarauder5"/>
                 <WeaponDisableArray value="MengskMarauder"/>
                 <AttributeChangeArray Attribute="DamageBonus32" Points="1"/>
@@ -20806,6 +20864,7 @@
                 <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+                <AbilLinkEnableArray value="ShieldUp232"/>
                 <AbilLinkDisableArray value="Stimpack32"/>
                 <WeaponEnableArray value="MengskMarauder5"/>
                 <WeaponDisableArray value="MengskMarauder"/>
@@ -20859,7 +20918,7 @@
         </VeterancyLevelArray>
         <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.73"/>
-        <SharedXPFraction index="DamageDealt" value="0.1"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel222">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -20926,7 +20985,7 @@
         </VeterancyLevelArray>
         <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.54"/>
-        <SharedXPFraction index="DamageDealt" value="0.1"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel223">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -21001,7 +21060,7 @@
         </VeterancyLevelArray>
         <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.73"/>
-        <SharedXPFraction index="DamageDealt" value="0.1"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel224">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -21067,7 +21126,7 @@
             </Modification>
         </VeterancyLevelArray>
         <VeterancyLevelArray MinVeterancyXP="95" LevelGainEffect="RankDummy222222">
-            <Modification TimeScale="1.5" AttackSpeedMultiplier="0.33">
+            <Modification TimeScale="1.5" AttackSpeedMultiplier="1.33">
                 <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
@@ -21079,7 +21138,7 @@
         </VeterancyLevelArray>
         <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.69"/>
-        <SharedXPFraction index="DamageDealt" value="0.1"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel2242">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -21142,7 +21201,7 @@
         </VeterancyLevelArray>
         <VeterancyLevelArray MinVeterancyXP="70" LevelGainEffect="RankDummy222222">
             <Modification Detect="8">
-                <DamageDealtAttributeMultiplier index="Mechanical" value="0.5"/>
+                <DamageDealtAttributeMultiplier index="Mechanical" value="0.37"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
@@ -21152,7 +21211,7 @@
         </VeterancyLevelArray>
         <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.69"/>
-        <SharedXPFraction index="DamageDealt" value="0.1"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel22422">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -23538,7 +23597,7 @@
         </VeterancyLevelArray>
         <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.65"/>
-        <SharedXPFraction index="DamageDealt" value="0.1"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel22432">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -23547,7 +23606,7 @@
                 <AbilLinkDisableArray value="OdinNuclearStrike4"/>
                 <AbilLinkDisableArray value="ChannelSnipe2"/>
                 <AbilLinkDisableArray value="CalldownMULE423323"/>
-                <AbilLinkDisableArray value="EMP3"/>
+                <AbilLinkDisableArray value="EMP34"/>
                 <AbilLinkDisableArray value="ChannelSnipe23"/>
             </Modification>
         </VeterancyLevelArray>
@@ -23558,7 +23617,7 @@
                 <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
                 <AbilLinkDisableArray value="OdinNuclearStrike4"/>
-                <AbilLinkDisableArray value="EMP3"/>
+                <AbilLinkDisableArray value="EMP34"/>
                 <AbilLinkDisableArray value="ChannelSnipe2"/>
                 <AbilLinkDisableArray value="CalldownMULE423323"/>
                 <AttributeChangeArray Attribute="DamageBonus33" Points="3"/>
@@ -23570,6 +23629,8 @@
                 <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+                <VitalRegenArray index="Energy" value="0.3984"/>
+                <AbilLinkEnableArray value="EMP34"/>
                 <AbilLinkDisableArray value="OdinNuclearStrike4"/>
                 <AbilLinkDisableArray value="CalldownMULE423323"/>
                 <AbilLinkDisableArray value="ChannelSnipe2"/>
@@ -23582,6 +23643,7 @@
                 <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+                <VitalMaxArray index="Energy" value="50"/>
                 <AbilLinkDisableArray value="OdinNuclearStrike4"/>
                 <AbilLinkDisableArray value="CalldownMULE423323"/>
                 <BehaviorCategoriesEnable index="Cloak" value="1"/>
@@ -23626,7 +23688,7 @@
         </VeterancyLevelArray>
         <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.59"/>
-        <SharedXPFraction index="DamageDealt" value="0.1"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel22433">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -24141,6 +24203,9 @@
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel225">
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <XPFraction index="DamageDealt" value="0.3"/>
+        <XPFraction index="Kills" value="0.95"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
         <VeterancyLevelArray LevelGainEffect="RankDummy2322">
             <Modification>
                 <AbilLinkDisableArray value="Yamato244"/>
@@ -24182,15 +24247,12 @@
             </Modification>
         </VeterancyLevelArray>
         <VeterancyLevelArray MinVeterancyXP="65" LevelGainEffect="RankDummy222222">
-            <Modification SightBonus="6" ShieldArmorBonus="3">
+            <Modification SightBonus="6" WeaponRange="1" ShieldArmorBonus="3">
                 <AbilLinkEnableArray value="Yamato244"/>
                 <WeaponEnableArray value="ThrowMolotov3"/>
                 <AttributeChangeArray Attribute="DamageBonus34" Points="1"/>
             </Modification>
         </VeterancyLevelArray>
-        <XPFraction index="DamageDealt" value="0.3"/>
-        <XPFraction index="Kills" value="0.95"/>
-        <SharedXPFraction index="DamageDealt" value="0.1"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel226">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -24212,7 +24274,7 @@
             </Modification>
         </VeterancyLevelArray>
         <VeterancyLevelArray MinVeterancyXP="150" LevelGainEffect="RankDummy222">
-            <Modification>
+            <Modification MoveSpeedBonus="1">
                 <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
@@ -24222,7 +24284,7 @@
         </VeterancyLevelArray>
         <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.5"/>
-        <SharedXPFraction index="DamageDealt" value="0.1"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel2262">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -24259,7 +24321,7 @@
         </VeterancyLevelArray>
         <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.69"/>
-        <SharedXPFraction index="DamageDealt" value="0.1"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel227">
         <Cost>
@@ -25512,7 +25574,7 @@
         </VeterancyLevelArray>
         <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.69"/>
-        <SharedXPFraction index="DamageDealt" value="0.1"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel2282">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -25579,7 +25641,7 @@
         </VeterancyLevelArray>
         <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.69"/>
-        <SharedXPFraction index="DamageDealt" value="0.1"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel2283">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -25638,7 +25700,7 @@
         </VeterancyLevelArray>
         <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.69"/>
-        <SharedXPFraction index="DamageDealt" value="0.1"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel229">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -25701,7 +25763,7 @@
         </VeterancyLevelArray>
         <XPFraction index="DamageDealt" value="0.1"/>
         <XPFraction index="Kills" value="0.69"/>
-        <SharedXPFraction index="DamageDealt" value="0.1"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorVeterancy id="CourierLevel23">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -25779,7 +25841,7 @@
                 <RateMultiplierArray index="Cooldown" value="2"/>
             </Modification>
         </VeterancyLevelArray>
-        <SharedXPFraction index="DamageDealt" value="0.1"/>
+        <SharedXPFraction index="DamageDealt" value="0.2"/>
     </CBehaviorVeterancy>
     <CBehaviorBuff id="CycloneWeaponLaunchMissileAlternate2">
         <InfoFlags index="Hidden" value="1"/>
@@ -25879,7 +25941,6 @@
         </Cost>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification ShieldArmorBonus="0.5">
-            <DamageDealtScaled index="Spell" value="3"/>
             <DamageDealtScaled index="Melee" value="3"/>
             <DamageDealtScaled index="Ranged" value="3"/>
             <DamageDealtScaled index="Splash" value="3"/>
@@ -25968,7 +26029,6 @@
         </Cost>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification ShieldArmorBonus="0.5">
-            <DamageDealtFraction index="Spell" value="0.1"/>
             <DamageDealtFraction index="Melee" value="0.1"/>
             <DamageDealtFraction index="Ranged" value="0.1"/>
             <DamageDealtFraction index="Splash" value="0.1"/>
@@ -26016,9 +26076,9 @@
         </Cost>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification ShieldArmorBonus="0.5">
-            <DamageDealtScaled index="Spell" value="3"/>
+            <DamageDealtScaled index="Spell" value="1"/>
             <DamageDealtScaled index="Melee" value="3"/>
-            <DamageDealtScaled index="Ranged" value="3"/>
+            <DamageDealtScaled index="Ranged" value="1"/>
             <DamageDealtScaled index="Splash" value="3"/>
             <DamageDealtScaled index="NoProc" value="3"/>
             <LifeArmorBonus value="0.5"/>
@@ -26032,7 +26092,6 @@
         </Cost>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification ShieldArmorBonus="0.5">
-            <DamageDealtScaled index="Spell" value="3"/>
             <DamageDealtScaled index="Melee" value="3"/>
             <DamageDealtScaled index="Ranged" value="3"/>
             <DamageDealtScaled index="Splash" value="3"/>
@@ -40131,7 +40190,12 @@
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
         <Duration value="15"/>
         <InitialEffect value="YamatoU2522"/>
-        <Modification SightBonus="-5" MoveSpeedMultiplier="0.65" RangedWeaponRange="-1"/>
+        <Modification>
+            <SightBonus value="-5"/>
+            <MoveSpeedMultiplier value="0.6"/>
+            <AttackSpeedMultiplier value="0.6"/>
+            <RangedWeaponRange value="-1"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="SJHyperionLightningStormStun2223">
         <Alignment value="Negative"/>
@@ -40175,6 +40239,7 @@
         <Modification>
             <VitalRegenArray index="Life" value="-12"/>
         </Modification>
+        <MaxStackCount value="10"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="SJHyperionLightningStormStun225">
         <Alignment value="Negative"/>
@@ -45353,8 +45418,8 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="10"/>
-        <Modification ShieldArmorBonus="-2">
-            <LifeArmorBonus value="-2"/>
+        <Modification ShieldArmorBonus="-4">
+            <LifeArmorBonus value="-4"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="UnknownBehavior5">

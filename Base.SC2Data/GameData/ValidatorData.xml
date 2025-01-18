@@ -779,6 +779,10 @@
         <Find value="1"/>
         <Value value="CyberHaveFrenzySim"/>
     </CValidatorPlayerRequirement>
+    <CValidatorLocationEnumArea id="HyperionLMUnitSearch2">
+        <AreaArray Compare="GE" Count="2" Radius="1.25"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
     <CValidatorUnitType id="IsAnalyzerVessel">
         <Value value="AnalyzerVessel"/>
     </CValidatorUnitType>
@@ -3488,6 +3492,12 @@
         <Compare value="LE"/>
         <Type value="Fraction"/>
         <Value value="0.5"/>
+        <Vital value="Shields"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareVital id="TargetShieldsGE50PC2">
+        <Compare value="LE"/>
+        <Type value="Fraction"/>
+        <Value value="0.1"/>
         <Vital value="Shields"/>
     </CValidatorUnitCompareVital>
     <CValidatorUnitCompareBehaviorCount id="UnknownValidator"/>

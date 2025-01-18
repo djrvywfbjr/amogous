@@ -7545,7 +7545,7 @@
         <AssetArray File="Assets\Sounds\Terran\Tosh\Tosh_MindBlastImpact3.wav" FacialGroup=""/>
         <AssetArray File="Assets\Sounds\Terran\Tosh\Tosh_MindBlastImpact4.wav" FacialGroup=""/>
         <DupeMaximumMethod value="Replace"/>
-        <Pitch value="-1.000000,3.000000"/>
+        <Pitch value="-4.000000,3.000000"/>
         <Volume value="-9.599999,-9.599999"/>
     </CSound>
     <CSound id="Ghost_SnipeImpact23222" parent="Spell">
@@ -7659,7 +7659,7 @@
         <EditorCategories value="Race:Terran"/>
         <AssetArray File="Assets\Sounds\Terran\Ghost\Ghost_SnipeAttackLaunch.wav"/>
         <DupeMaximumMethod value="Replace"/>
-        <Pitch value="0.000000,1.000000"/>
+        <Pitch value="-5.000000,1.000000"/>
         <Volume value="-5.000000,-2.000000"/>
     </CSound>
     <CSound id="Ghost_SnipeLaunch23222" parent="Spell">
@@ -20608,8 +20608,8 @@
     <CSound id="PirateCapitalShip_YamatoAttackLaunch222" parent="Spell">
         <EditorCategories value="Race:Terran"/>
         <AssetArray File="Assets\Sounds\Nova_PlasmaRifle_AttackImpact_01.wav" FacialGroup=""/>
-        <Pitch value="-1.000000,1.000000"/>
-        <Volume value="5.000000,6.000000"/>
+        <Pitch value="3.000000,3.000000"/>
+        <Volume value="3.000000,3.000000"/>
     </CSound>
     <CSound id="PirateCapitalShip_YamatoAttackLaunch2222" parent="Spell">
         <EditorCategories value="Race:Terran"/>
@@ -26926,7 +26926,7 @@
         <AssetArray File="Assets\Sounds\Terran\SharedEffects\BulletImpacts\Terran_SingleBulletAttackImpact3.wav"/>
         <AssetArray File="Assets\Sounds\Terran\SharedEffects\BulletImpacts\Terran_SingleBulletAttackImpact4.wav"/>
         <AssetArray File="Assets\Sounds\Terran\SharedEffects\BulletImpacts\Terran_SingleBulletAttackImpact5.wav"/>
-        <Pitch value="-1.500000,1.500000"/>
+        <Pitch value="-4.500000,-4.500000"/>
         <Volume value="-6.000000,-6.000000"/>
     </CSound>
     <CSound id="Spectre_AttackLaunch2" parent="Ghost_AttackLaunch"/>
@@ -26937,7 +26937,7 @@
         <AssetArray File="Assets\Sounds\Terran\Ghost\Ghost_AttackLaunch1.wav"/>
         <AssetArray File="Assets\Sounds\Terran\Ghost\Ghost_AttackLaunch2.wav"/>
         <DupeMaximumMethod value="Replace"/>
-        <Pitch value="-0.890000,0.840000"/>
+        <Pitch value="-3.160000,-2.160000"/>
         <Volume value="-12.000000,-10.500000"/>
     </CSound>
     <CSound id="Spectre_CloakOff2" parent="Spell">

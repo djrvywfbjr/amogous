@@ -7586,6 +7586,18 @@
         <EffectArray Reference="Unit,Marine34,LifeArmor" Value="1"/>
         <EffectArray Reference="Unit,Marine35,LifeArmor" Value="1"/>
         <EffectArray Reference="Unit,Spectre5,LifeArmor" Value="1"/>
+        <EffectArray Operation="Set" Reference="Unit,Marine35,LifeStart" Value="150"/>
+        <EffectArray Operation="Set" Reference="Unit,Marine35,LifeMax" Value="150"/>
+        <EffectArray Operation="Set" Reference="Unit,Spectre5,LifeStart" Value="125"/>
+        <EffectArray Operation="Set" Reference="Unit,Spectre5,LifeMax" Value="125"/>
+        <EffectArray Operation="Set" Reference="Unit,Marine3,LifeMax" Value="60"/>
+        <EffectArray Operation="Set" Reference="Unit,Marine3,LifeStart" Value="60"/>
+        <EffectArray Operation="Set" Reference="Unit,Marine33,LifeMax" Value="60"/>
+        <EffectArray Operation="Set" Reference="Unit,Marine33,LifeStart" Value="60"/>
+        <EffectArray Operation="Set" Reference="Unit,Marine32,LifeMax" Value="85"/>
+        <EffectArray Operation="Set" Reference="Unit,Marine32,LifeMax" Value="85"/>
+        <EffectArray Operation="Set" Reference="Unit,Marine34,LifeMax" Value="125"/>
+        <EffectArray Operation="Set" Reference="Unit,Marine34,LifeStart" Value="125"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -9482,8 +9494,9 @@
     </CUpgrade>
     <CUpgrade id="InfiltratorEnergy">
         <EffectArray Operation="Set" Reference="Unit,Spectre5,EnergyMax" Value="150"/>
-        <EffectArray Operation="Set" Reference="Unit,Spectre5,EnergyStart" Value="75"/>
+        <EffectArray Operation="Set" Reference="Unit,Spectre5,EnergyStart" Value="100"/>
         <EffectArray Operation="Set" Reference="Unit,Spectre5,Speed" Value="2.949200"/>
+        <EffectArray Operation="Set" Reference="Effect,SpecterU522,Amount" Value="50"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -11697,6 +11710,13 @@
         <EffectArray Reference="Unit,MilitarizedColonistTransport2,LifeMax" Value="200"/>
         <EffectArray Reference="Unit,MilitarizedColonistTransport2,LifeStart" Value="200"/>
     </CUpgrade>
+    <CUpgrade id="UnknownUpgrade732">
+        <EffectArray Operation="Set" Reference="Unit,SupplyDepot4,CostResource[Minerals]" Value="125"/>
+        <EffectArray Operation="Set" Reference="Unit,SupplyDepot4,LifeMax" Value="450"/>
+        <EffectArray Operation="Set" Reference="Unit,SupplyDepot4,LifeStart" Value="450"/>
+        <EffectArray Reference="Unit,SupplyDepot4,LifeArmor" Value="3"/>
+        <EffectArray Reference="Unit,MissileTurret4,LifeArmor" Value="3"/>
+    </CUpgrade>
     <CUpgrade id="UnknownUpgrade74">
         <EffectArray Operation="Set" Reference="Abil,CommandCenterTrain5,InfoArray[Train10].Time" Value="10.000000"/>
         <EffectArray Operation="Set" Reference="Abil,CommandCenterTrain5,InfoArray[Train2].Time" Value="5.000000"/>
@@ -11707,6 +11727,7 @@
         <EffectArray Operation="Set" Reference="Abil,CommandCenterTrain5,InfoArray[Train9].Time" Value="12.000000"/>
         <EffectArray Operation="Set" Reference="Abil,CommandCenterTrain5,InfoArray[Train6].Time" Value="15.000000"/>
         <EffectArray Operation="Set" Reference="Abil,CommandCenterTrain5,InfoArray[Train11].Time" Value="20.000000"/>
+        <EffectArray Operation="Set" Reference="Abil,CommandCenterTrain5,InfoArray[Train12].Time" Value="15.000000"/>
     </CUpgrade>
     <CUpgrade id="UnknownUpgrade75">
         <EffectArray Operation="Set" Reference="Unit,Ultralisk652,Speed" Value="3.101500"/>

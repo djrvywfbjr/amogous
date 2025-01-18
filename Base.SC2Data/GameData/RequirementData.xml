@@ -184,6 +184,12 @@
     <CRequirement id="CyberHaveFrenzySim2">
         <NodeArray index="Show" Link="NotCountUpgradeCyberFrenzySimulatorQueuedOrBetter"/>
     </CRequirement>
+    <CRequirement id="LearnTrooperAmmunition2222233">
+        <NodeArray index="Show" Link="NotCountUpgradeInfiltratorEnergyQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnTrooperAmmunition22222332">
+        <NodeArray index="Show" Link="NotCountUpgradeUnknownUpgrade732QueuedOrBetter"/>
+    </CRequirement>
     <CRequirement id="OMindBleeding">
         <NodeArray index="Use" Link="CountUnitInfestationPit4CompleteOnly"/>
         <NodeArray index="Show" Link="NotCountUpgradeBleedingQueuedOrBetter"/>
