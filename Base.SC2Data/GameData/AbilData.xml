@@ -882,7 +882,7 @@
             <Charge Link="Abil/EMP"/>
             <Cooldown Link="Abil/EMP"/>
         </Cost>
-        <Range value="10"/>
+        <Range value="8"/>
         <PrepTime value="0.01"/>
         <FinishTime value="0.0625"/>
         <UninterruptibleArray index="Prep" value="1"/>
@@ -890,6 +890,8 @@
         <CursorEffect value="EMPSearch"/>
         <AINotifyEffect value="EMPLaunchMissile"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="EMP33"/>
+        <AutoCastRange value="8.5"/>
+        <AutoCastValidatorArray value="LifeLTThreeQuarter2"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="EnterWormhole322">
         <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
@@ -1140,7 +1142,7 @@
         <Flags index="AllowMovement" value="1"/>
         <Flags index="AutoCast" value="1"/>
         <Cost>
-            <Vital index="Energy" value="55"/>
+            <Vital index="Energy" value="60"/>
             <Charge Link="Abil/KarassPlasmaSurge"/>
             <Cooldown Link="Abil/KarassPlasmaSurge"/>
         </Cost>
@@ -1149,12 +1151,14 @@
         <AutoCastRange value="35"/>
         <AutoCastValidatorArray value="TargetMassiveOrHeroicOrUnstoppable"/>
         <AutoCastValidatorArray value="LifeNotFullOrShieldsNotFull"/>
+        <AutoCastValidatorArray value="IsTimeStopped230"/>
         <CastOutroTime value="0.05"/>
         <CursorEffect value="KarassPlasmaSurgeSearchArea"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="KarassPlasmaSurge332" Requirements="HaveEnlistmentHouse2234"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="KarassPlasmaSurge332"/>
         <TargetFilters value="-;Neutral,Enemy"/>
         <Arc value="360"/>
         <ArcSlop value="360"/>
+        <SharedFlags index="Disabled" value="1"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="MohandarStickyBomb6">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
@@ -1176,6 +1180,38 @@
         </Cost>
         <Range value="6"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="TemporalAnomaly"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="NanoRepairBlimp">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Effect index="0" value="NanoRepairCopBlimp"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Flags index="ReExecutable" value="1"/>
+        <Flags index="Smart" value="1"/>
+        <Flags index="TransportAcquirePassengers" value="1"/>
+        <TargetFilters value="Mechanical,Visible;Self,Enemy,Structure,Missile,Uncommandable,Dead,Hidden,Invulnerable"/>
+        <TargetSorts RequestCount="1">
+            <SortArray value="TSAlliancePassive"/>
+            <SortArray value="TSLifeFraction"/>
+            <SortArray value="TSDistance"/>
+        </TargetSorts>
+        <Range value="6"/>
+        <Arc value="360"/>
+        <SmartValidatorArray value="healSmartTargetFilters"/>
+        <SmartValidatorArray value="NotWarpingIn"/>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastFilters value="-;Neutral,Enemy"/>
+        <AutoCastRange value="6"/>
+        <AutoCastValidatorArray value="healCasterMinEnergy"/>
+        <AutoCastValidatorArray value="NotWarpingIn"/>
+        <UseMarkerArray index="Approach" value="0"/>
+        <UseMarkerArray index="Prep" value="0"/>
+        <AINotifyEffect value="NanoRepairCopBlimp"/>
+        <DefaultError value="RequiresHealTarget"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Heal5"/>
+        <AcquireAttackers value="1"/>
     </CAbilEffectTarget>
     <CAbilBuild id="RWEBuild">
         <InfoArray index="Build1" Time="50"/>
@@ -38421,13 +38457,13 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <Effect index="0" value="OdinNukePersistent4"/>
         <Cost>
-            <Vital index="Energy" value="100"/>
+            <Vital index="Energy" value="75"/>
             <Charge>
-                <CountMax value="3"/>
-                <CountStart value="3"/>
+                <CountMax value="5"/>
+                <CountStart value="5"/>
                 <CountUse value="1"/>
                 <Link value="Abil/NovaNuclearStrike"/>
-                <TimeUse value="30"/>
+                <TimeUse value="15"/>
             </Charge>
             <Cooldown Link="Abil/NovaNuclearStrike"/>
         </Cost>
@@ -49049,7 +49085,7 @@
         <Flags index="NoDeceleration" value="1"/>
         <Cost>
             <Charge Link="Abil/SJPirateYamato"/>
-            <Cooldown Link="SJPirateYamato" TimeUse="40"/>
+            <Cooldown Link="SJPirateYamato" TimeUse="160"/>
         </Cost>
         <Range value="500"/>
         <Arc value="360"/>
@@ -57614,7 +57650,7 @@
             <Button DefaultButtonFace="UnknownButton15" Requirements="HaveEnlistmentHouse2"/>
         </InfoArray>
         <InfoArray index="Build18" Unit="ArmoredTurret" Time="28">
-            <Button DefaultButtonFace="BuildAutoTurret33" Requirements="HaveEnlistmentHouse22322"/>
+            <Button DefaultButtonFace="BuildArmoredTurret" Requirements="HaveEnlistmentHouse2232"/>
         </InfoArray>
     </CAbilBuild>
     <CAbilLearn id="TestLearn2">

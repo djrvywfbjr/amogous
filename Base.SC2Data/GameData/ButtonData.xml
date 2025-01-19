@@ -362,8 +362,8 @@
         <AlertIcon value="Assets\Textures\btn-ability-protoss-timewarp.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
-    <CButton id="BuildAutoTurret33">
-        <Icon value="Assets\Textures\btn-building-terran-autoturret.dds"/>
+    <CButton id="BuildArmoredTurret">
+        <Icon value="Assets\Textures\btn-tips-flamingbetty.dds"/>
         <AlertIcon value="Assets\Textures\btn-building-terran-autoturret.dds"/>
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="BuildAutoTurret"/>

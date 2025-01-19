@@ -1269,6 +1269,7 @@ Abil/Name/NanoRepair6=Medical Outpost Heal
 Abil/Name/NanoRepair7=Analyzer Heal
 Abil/Name/NanoRepair8=Mech Repair
 Abil/Name/NanoRepair9=Nano Repair
+Abil/Name/NanoRepairBlimp=Nano Repair Blimp
 Abil/Name/NanobotWindCP2=Nanobot Wind (CP2)
 Abil/Name/NeuralParasite2=Manipulate
 Abil/Name/NexusPhaseShift2=Quantum Shift
@@ -5674,11 +5675,11 @@ Button/Name/BroodLord34=Morph To Locust Lord
 Button/Name/BroodLord342=Morph To Holy Lord
 Button/Name/BroodLord4=Prepare Brooder Lord
 Button/Name/BroodLord5=Birth Plague Lord
+Button/Name/BuildArmoredTurret=Build Armored Turret
 Button/Name/BuildAutoTurret2=Build Omega Turret
 Button/Name/BuildAutoTurret3=Build Industrial Turret
 Button/Name/BuildAutoTurret32=Build Hold-Out Turret
 Button/Name/BuildAutoTurret322=Build Psionic Threat Turret
-Button/Name/BuildAutoTurret33=Build Armored Turret
 Button/Name/BuildCyclone2=Train Tsunami
 Button/Name/BuildCyclone3=Request And Prepare Artillery
 Button/Name/BuildCyclone4=Build Immortal Cyclone
@@ -12539,12 +12540,12 @@ Button/Tooltip/BroodLordCocoon2322=This cocoon contains a Mutalisk that is morph
 Button/Tooltip/Broodling2=Fast melee creature that will last for a short duration.<n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/Broodling3=Fast melee creature that will last for a short duration.<n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/Brutalisk2=Massive assault beast that dwarfs even the Ultralisk in size and strength. <n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/BuildArmoredTurret=Big and though unit with high-ranged attack with good armored damage.
 Button/Tooltip/BuildArtillery=Mobile assault vehicle. Can use Lock On to quickly fire while moving.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/BuildAutoTurret2=Automated defensive turret.
 Button/Tooltip/BuildAutoTurret3=Big and though unit with close-ranged attack with good armored damage.
 Button/Tooltip/BuildAutoTurret32=Simple turret. Attack stuns targets for 5 seconds instead of dealing damage.
 Button/Tooltip/BuildAutoTurret322=Anti-hero and psionic unit turret. Someone has a bad expirience with them to develop a turret like this.
-Button/Tooltip/BuildAutoTurret33=Big and though unit with high-ranged attack with good armored damage.
 Button/Tooltip/BuildCyclone2=Mobile assault vehicle that can attack while moving. Deals more damage to light units and structures and cannot target friendly units.<n/><n/><c val="FFFF00">Can attack air and ground enemies.</c>
 Button/Tooltip/BuildCyclone21=Mobile assault vehicle that can attack while moving and has damage absorption.<n/><n/><c val="FFFF00">Can attack ground enemies.</c>
 Button/Tooltip/BuildCyclone3=Long-ranged artillery.
@@ -13764,7 +13765,7 @@ Button/Tooltip/CombatShield3222=Shock Division level bonuses in addition to 1 po
 Button/Tooltip/CombatShield32222=Pride of Augustgrad level bonuses in addition to 1 point of power per level:<n/>Level 2: Enables Exodus Yamato Cannon and Emergency Jump.<n/>Level 3: Switches ATY Laser Battery to ATY Penetrating Battery, which deals bonus damage per points of armor.<n/>Level 4: Increases life armor by 2, refreshes Emergency Jump and adds an extra charge to it.<n/>Level 5: Upgrades Exodus Yamato Cannon to Exodus Scattershot Cannon, which fires missiles at nearby enemies on impact aswell.<n/>Level 6: Enables emergency situation state, allowing automatic firing of Pride Of Augustgrad's weapons at up to 3 additional enemies.<n/>Level 7: Doubles cooldown rate, grants 12 range detection and 450 life.
 Button/Tooltip/CombatShield322222=Field Response Theta level bonuses in addition to 1 point of power per level:<n/>Level 2: Enable Delta Cloaking Field ability<n/>Level 3: Increases healing by 200%<n/>Level 4: Become undetectable
 Button/Tooltip/CombatShield3222222=Militarized Blimp level bonuses in addition to 1 point of power per level:<n/>Level 2: Gain Propaganda Broadcast and 8 sight radius<n/>Level 3: Increases everything time related by 25%<n/>Level 4: Gain 125 life
-Button/Tooltip/CombatShield32223=Sky Fury level bonuses in addition to 1 point of power per level:<n/>Level 2: gain 2 range<n/>Level 3: Unlock Tazer Drone and Tsunami Missile Pods abilities<n/>Level 4: Gain 250 shields and 50% movement speed <n/>Level 5: Allows Gatling Cannons and Lanzer Torpeados to attack air and ground units<n/>Level 6: Increases attack speed by 55%<n/>Level 7: Increases transformation speed and ability cooldown rate by 50%, as well as gains 100 life.
+Button/Tooltip/CombatShield32223=Sky Fury level bonuses in addition to 1 point of power per level:<n/>Level 2: gain 2 range<n/>Level 3: Unlock Tazer Drone and Tsunami Missile Pods abilities<n/>Level 4: Gain 250 shields and 50% movement speed <n/>Level 5: Allows Gatling Cannons and Lanzer Torpeados to attack air and ground units<n/>Level 6: Increases attack speed by 55%<n/>Level 7: Gains multitarget in ground mode vs 3 enemies, as well as gains 100 life, and 10% attack speed.
 Button/Tooltip/CombatShield322232=Bulwark Company level bonuses in addition to 1 point of power per level:<n/>Level 2: Gain 8 range detection and Launch Point Defense Drone ability<n/>Level 3: Gain Lanzer Torpeados, which can attack at the same time as Gatling Cannons<n/>Level 4: Gain 2 range<n/>Level 5: Increases attack speed by 100% and enable Flaming Missile ability<n/>Level 6: Gain 100 additional life<n/>Level 7: Deal bonus 50% damage to mechanical units
 Button/Tooltip/CombatShield322233=Night Wolf level bonuses in addition to 1 point of power per level:<n/>Level 2: Gain abilty to Cloak<n/>Level 3: Gain 4 sight range and 2 armor.<n/>Level 4: Gain Frontlash Missiles which irradiate armor<n/>Level 5: Allows Gain 2 armor.<n/>Level 6: Periodically create a cloud that damages and debuffs enemies.<n/>Level 7: Gain Twilight Wolf escort.
 Button/Tooltip/CombatShield322234=<c val="A60000">On death, Pylonhead head heals 10 energy to all units.</c><n/>When over 10 energy, gain life regeneration<n/>When over 25 energy, gain an anti-air weapon<n/>When over 50 energy, gain 35% attack speed and double the shields and lifes.
@@ -13790,8 +13791,8 @@ Button/Tooltip/CombatShield32224=Blackhammer level bonuses in addition to 1 poin
 Button/Tooltip/CombatShield322242=Blackhammers' anti-ground weapon deals damage in an area.
 Button/Tooltip/CombatShield32225=Emperor's Shadow level bonuses in addition to 1 point of power per level:<n/>Level 2: Become permanently cloaked, grants 1 hp regeneration<n/>Level 3: increases energy regeneration by 0.4, grants 1 move speed<n/>Level 4: Enables Snipe ability, adds 50 energy to maximum amount <n/>Level 5: Gain bonus speed<n/>Level 6: Enables Tactical Strikea ability<n/>Level 7: Gain Support Drop ability and create a giant nuclear explosion on death, damaging only enemy units.
 Button/Tooltip/CombatShield322252=Last Host gains significant bonuses to life, energy and damage every level aswell as 1 supply per level and new abilities.<n/>Level 2: Gain Bio-Stasis and Psionic Move<n/>Level 3: Automatically Debuff nearby enemies.<n/>Level 4: Gain Micro-Scourge<n/>Level 5: Gain Psionic Move<n/>Level 6: Automatically buff nearby units<n/>Level 15: Gain Blight Phoenix<n/>Additionally, every upgrade of Increase Power adds 4 sight radius and increased speed.
-Button/Tooltip/CombatShield32226=Outback Hunter level bonuses in addition to 1 point of power per level:<n/>Level 2: Gain 75 shields and 5 shield regeneration<n/>Level 3: Deal double damage to structures<n/>Level 4: Gain Napalm Bomb ability<n/>Level 5: Gain an anti-air AoE weapon<n/>Level 6: Gain 50% movement speed<n/>Level 7: Gain 3 shield armor and 6 sight range, +1 weapon range
-Button/Tooltip/CombatShield3223=Red Adders level bonuses in addition to 1 point of power per level:<n/>Level 2: Enable Thunderbolt Railgun to attack air targets.<n/>Level 3: Constantly disable enemy buildings in a big radius.<n/>Level 4: Enables Electrorb<n/>Level 5: Enables Connection Cut<n/>Level 6: Enables Magnetic Aegis Cannon<n/>Level 7: Increases speed of everything by 50%.
+Button/Tooltip/CombatShield32226=Outback Hunter level bonuses in addition to 1 point of power per level:<n/>Level 2: Gain 75 shields and 5 shield regeneration<n/>Level 3: Deal double damage to structures<n/>Level 4: Gain Napalm Bomb ability<n/>Level 5: attack speed is increased by 0.1<n/>Level 6: Gain 50% movement speed<n/>Level 7: Gain 3 shield armor and 6 sight range, +1 weapon range
+Button/Tooltip/CombatShield3223=Red Adders level bonuses in addition to 1 point of power per level:<n/>Level 2: increases movement speed by 0.25.<n/>Level 3: Constantly disable enemy buildings in a big radius.<n/>Level 4: Enables Electrorb<n/>Level 5: Enables Connection Cut<n/>Level 6: Enables Magnetic Aegis Cannon<n/>Level 7: Increases speed of everything by 50%.
 Button/Tooltip/CombatShield32232=Connection Alpha level bonuses in addition to 1 point of power per level:<n/>Level 2: Gain 9 detection range and 25 range radar. also gain Hardened Barrier ability<n/>Level 3: Gain Re-Move ability<n/>Level 4: Enables Change Of Mind ability<n/>Level 5: Enables Launch Valor Of Dominion ability<n/>Level 6: Enables Orbital Missile Array<n/>Level 7: Increases enegy regeneration by 2.
 Button/Tooltip/CombatShield32233=All royal guards will warp to the nearest Statue Of The Emperor and heal 20% health instead of dying. There, they can be reanimated for a price.
 Button/Tooltip/CombatShield3224=Prometheus Company level bonuses in addition to 1 point of power per level:<n/>Level 2: Constantly burn enemies around itself.<n/>Level 3: Gain Fire weapon.<n/>Level 4: Gain 5 armor.<n/>Level 5: Enables Flamey Leap ability.<n/>Level 6: Increases attack speed by 75%<n/>Level 7: When at or lower than 300 life gain 15 life regeneration.
@@ -13804,7 +13805,7 @@ Button/Tooltip/CombatShield332222=Sky Fury now has 250 shields.
 Button/Tooltip/CombatShield3322222=Outback Hunter now has 75 shields with high shield regeneration.
 Button/Tooltip/CombatShield33222222=Blackhammer and units around Blackhammer will take 30% less damage. Effect lasts for 6 seconds after being away from the Blackhammer.
 Button/Tooltip/CombatShield33223=Emperor's Shadow is pernamently cloaked.
-Button/Tooltip/CombatShield332232=Outback Hunter has an anti-air weapon with an AoE, that also affects ground units
+Button/Tooltip/CombatShield332232=Outback Hunter has an anti-air weapon with an AoE
 Button/Tooltip/CombatShield3322322=Shoot downtime grenades at up to 5 enemies in a radius of 6 every 1.5 seconds.
 Button/Tooltip/CombatShield3322323=Unfreezes all veteran Sons Of Korhal. gunners, mechanics and pilots, bringing Pride Of Augustgrad into crisis prevention state. When in the state, up to 4 ATY Laser Batteries can be firing at once with the same fire rate as 1 did beforehand. 4 of them automatically attacking different enemies in 9 range even on the move.
 Button/Tooltip/CombatShield3322324=Militarized Blimps will increase anything speed related of nearby units by 25% when in artillery mode.
@@ -14934,7 +14935,7 @@ Button/Tooltip/Hatchery8=Primary structure. Used to spawn all Zerg units and rec
 Button/Tooltip/Heal2=Heals up to 2 mechanical units.
 Button/Tooltip/Heal3=Heals a friendly mechanical unit.
 Button/Tooltip/Heal4=Heals a friendly mechanical  target.<n/><n/><c val="f078ff">Heals <d ref="Effect,MedivacHeal,RechargeVitalRate*Effect,MedivacHeal,DrainVitalCostFactor"/> life per 1 energy.</c>
-Button/Tooltip/Heal5=Heals a friendly mechanical target. Heals 3 life for 1 energy.<n/><n/>Originally onboard scvs were the only need repair crew. It worked at first, but it turned out to be too hard to heal flying vehicles becuase the opening of hanger allowed enemies to board the ship easily, not even speaking about landing because of ground vehicles. To fix that, AHAI-5 Nanobot Distributors are attached to the vessels.<n/><n/>
+Button/Tooltip/Heal5=Heals a friendly mechanical target. Heals 3.5 life for 1 energy.
 Button/Tooltip/Heal6=Heals a friendly target.<n/><n/><c val="f078ff">Heals 30 life per 15 energy.</c>
 Button/Tooltip/Heal62=Transfers Food to the Trawler.
 Button/Tooltip/Heal622=Transfers Minerals to the Scow.
@@ -16606,7 +16607,7 @@ Button/Tooltip/OdinNukeCalldown23=Creates an atom-split, dealing 700 damage to a
 Button/Tooltip/OdinNukeCalldown24=Launch a nuke.
 Button/Tooltip/OdinNukeCalldown25=Deal 300 damage (300 bonus to structures) to all units in an area after charge up.
 Button/Tooltip/OdinNukeCalldown3=It's 'bout to hurt everyone in a giant area for 500 damage.
-Button/Tooltip/OdinNukeCalldown4=Calls down a Nuclear Strike at a target location. Nukes take time to land, but they deal up to 175 damage(+300 to structures) to enemies in a large radius.<n/>Stores up to 3 charges, current amount of them is classified.
+Button/Tooltip/OdinNukeCalldown4=Calls down a Nuclear Strike at a target location. Nukes take time to land, but they deal up to 175 damage(+300 to structures) to enemies in a large radius.<n/>Stores up to 5 charges, current amount of them is classified.
 Button/Tooltip/OdinNukeCalldown42=Calls down a Strike at a target location. Nukes take time to land, but they deal up to 125 damage(+125 to structures) to enemies in a large radius.<n/>Stores up to 3 charges, current amount of them is classified.
 Button/Tooltip/OdinNukeCalldown43=Calls down a Nuclear Strike at a target location. Nukes take time to land, but they deal up to 175 damage(+300 to structures) to enemies in a large radius.
 Button/Tooltip/OdinNukeCalldown44=Calls down a Nuclear Strike at a target location. Nuke takes time to land, but deals up to 200 damage to enemies in a large radius.<n/><n/><c val="00FF00">Passive:</c> UED Reactor has halved cooldown, increases energy by 50 and heals 150 energy in 5 seconds instead.<n/>Apollo Reactor provides 2 additional armor and 100 energy.<n/>Moebius Reactor provides additional 1.5 range, 100% attack speed and 0.5 energy regeneration.
@@ -17596,7 +17597,7 @@ Button/Tooltip/SJHyperionYamato4722=Overloads the battery's capacitor to blast t
 Button/Tooltip/SJHyperionYamato473=Overcharges the ATY laser battery to blast target with devastating plasma cannon, causing 250 damage each and also shooting 50 damage missiles at nearby enemies.
 Button/Tooltip/SJHyperionYamato4732=Fires a powerful cannon, dealing 75 damage to the main target and firing 25 damage missiles to 10 nearest enemies.
 Button/Tooltip/SJHyperionYamato474=Devastates the targeted unit, dealing 250(750 vs shields or structures) damage after the charge-up.<n/><n/>The Magni reactors accumulate some unused energy during field repairs, which there might be a use for. Wolfe Industries have developed a set of connected electric coils, that theoretically could blast a single target with concentrated power a few times stronger than a lightning. This will take a bit of coordination, but supercomputers on Magni can certainly manage it in seconds while repairs are not taking place.
-Button/Tooltip/SJHyperionYamato48=Charges up an experimental siege weapon, that can magnetize to any unit on the map. Deals 500 damage ( 400 bonus to shields).
+Button/Tooltip/SJHyperionYamato48=Charges up an experimental siege weapon, that can magnetize to any unit on the map. Deals 500 damage.
 Button/Tooltip/SJHyperionYamato49=Shoot out 4 missiles at target every 3 seconds, dealing 150 damage directly and 75 damage in an area to other units around target.
 Button/Tooltip/SJHyperionYamato492=Shoot out 5 Yamato Blasts at target over 10 seconds, deaaling 200 direct damage and 100 area damage each.
 Button/Tooltip/SJHyperionYamato493=Launch 15 damage missiles at target. Will launch a missile every 2 seconds at first, but every 10th missile will half the cooldown of all next missiles, up to 0.25 of a second.<n/>The effect will end after firing 50 missiles or loosing sight of target.
@@ -26117,6 +26118,7 @@ Effect/Name/NanoRepair6=Nano-Repair
 Effect/Name/NanoRepair7=Nano-Repair
 Effect/Name/NanoRepair8=Nano-Repair
 Effect/Name/NanoRepair9=Nano-Repair
+Effect/Name/NanoRepairCopBlimp=Nano-Repair CopBlimp
 Effect/Name/NapalmSprayer=Napalm Sprayer
 Effect/Name/NapalmSprayerDamage=Napalm Sprayer Damage
 Effect/Name/NapalmSprayerSearch=Napalm Sprayer Search

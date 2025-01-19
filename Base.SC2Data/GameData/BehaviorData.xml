@@ -21152,6 +21152,8 @@
                 <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+                <WeaponEnableArray value="MengskVikingFighter4"/>
+                <WeaponEnableArray value="MengskVikingAssault3"/>
                 <AttributeChangeArray Attribute="DamageBonus32" Points="1"/>
             </Modification>
         </VeterancyLevelArray>
@@ -21163,6 +21165,8 @@
                 <VitalMaxArray index="Life" value="100"/>
                 <WeaponEnableArray value="MengskVikingAssault4"/>
                 <WeaponEnableArray value="MengskVikingAssault32"/>
+                <WeaponEnableArray value="MengskVikingFighter"/>
+                <WeaponEnableArray value="MengskVikingFighter4"/>
                 <WeaponDisableArray value="MengskVikingAssault"/>
                 <WeaponDisableArray value="MengskVikingAssault3"/>
                 <AttributeChangeArray Attribute="DamageBonus32" Points="1"/>
@@ -24266,9 +24270,8 @@
             </Modification>
         </VeterancyLevelArray>
         <VeterancyLevelArray MinVeterancyXP="55" LevelGainEffect="RankDummy2222">
-            <Modification>
+            <Modification AttackSpeedMultiplier="1.1">
                 <AbilLinkEnableArray value="Yamato244"/>
-                <WeaponEnableArray value="ThrowMolotov3"/>
                 <AttributeChangeArray Attribute="DamageBonus34" Points="1"/>
             </Modification>
         </VeterancyLevelArray>
@@ -25619,7 +25622,7 @@
             </Modification>
         </VeterancyLevelArray>
         <VeterancyLevelArray MinVeterancyXP="65" LevelGainEffect="RankDummy2">
-            <Modification>
+            <Modification MoveSpeedBonus="0.1992">
                 <AbilLinkDisableArray value="ArbiterMPStasisField32"/>
                 <AbilLinkDisableArray value="VoidHighTemplarPsiOrb22"/>
                 <AbilLinkDisableArray value="SJPirateYamato36"/>
@@ -25710,6 +25713,7 @@
         <VeterancyLevelArray MinVeterancyXP="80" LevelGainEffect="RankDummy222">
             <Modification Detect="9" Radar="25">
                 <AbilLinkEnableArray value="MindControl2"/>
+                <AbilLinkEnableArray value="MaxCapSurge"/>
                 <AbilLinkDisableArray value="MedDrone322"/>
                 <AbilLinkDisableArray value="VoidSeekerDock224"/>
                 <AttributeChangeArray Attribute="DamageBonus3224" Points="1"/>
@@ -25718,6 +25722,7 @@
         <VeterancyLevelArray MinVeterancyXP="95" LevelGainEffect="RankDummy2222">
             <Modification Detect="9" Radar="25">
                 <AbilLinkEnableArray value="MedDrone322"/>
+                <AbilLinkEnableArray value="MaxCapSurge"/>
                 <AbilLinkDisableArray value="VoidSeekerDock224"/>
                 <AttributeChangeArray Attribute="DamageBonus3224" Points="1"/>
             </Modification>
@@ -25725,12 +25730,14 @@
         <VeterancyLevelArray MinVeterancyXP="110" LevelGainEffect="RankDummy22222">
             <Modification Detect="9" Radar="25">
                 <AbilLinkEnableArray value="VoidSeekerDock224"/>
+                <AbilLinkEnableArray value="MaxCapSurge"/>
                 <AttributeChangeArray Attribute="DamageBonus3224" Points="1"/>
             </Modification>
         </VeterancyLevelArray>
         <VeterancyLevelArray MinVeterancyXP="125" LevelGainEffect="RankDummy222222">
             <Modification Detect="9" Radar="25">
                 <VitalRegenArray index="Energy" value="2"/>
+                <AbilLinkEnableArray value="MaxCapSurge"/>
                 <AttributeChangeArray Attribute="DamageBonus3224" Points="1"/>
             </Modification>
         </VeterancyLevelArray>
@@ -25929,11 +25936,11 @@
         </Cost>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification ShieldArmorBonus="0.5">
-            <DamageDealtFraction index="Spell" value="0.08"/>
-            <DamageDealtFraction index="Melee" value="0.08"/>
-            <DamageDealtFraction index="Ranged" value="0.08"/>
-            <DamageDealtFraction index="Splash" value="0.08"/>
-            <DamageDealtFraction index="NoProc" value="0.08"/>
+            <DamageDealtFraction index="Spell" value="0.06"/>
+            <DamageDealtFraction index="Melee" value="0.06"/>
+            <DamageDealtFraction index="Ranged" value="0.06"/>
+            <DamageDealtFraction index="Splash" value="0.06"/>
+            <DamageDealtFraction index="NoProc" value="0.06"/>
             <LifeArmorBonus value="0.5"/>
             <VitalMaxArray index="Life" value="10"/>
         </Modification>
@@ -26112,11 +26119,11 @@
         </Cost>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification ShieldArmorBonus="0.5">
-            <DamageDealtScaled index="Spell" value="1"/>
-            <DamageDealtScaled index="Melee" value="3"/>
-            <DamageDealtScaled index="Ranged" value="1"/>
-            <DamageDealtScaled index="Splash" value="3"/>
-            <DamageDealtScaled index="NoProc" value="3"/>
+            <DamageDealtScaled index="Spell" value="0.5"/>
+            <DamageDealtScaled index="Melee" value="0.5"/>
+            <DamageDealtScaled index="Ranged" value="0.5"/>
+            <DamageDealtScaled index="Splash" value="0.5"/>
+            <DamageDealtScaled index="NoProc" value="0.5"/>
             <LifeArmorBonus value="0.5"/>
             <VitalMaxArray index="Life" value="30"/>
         </Modification>
@@ -26143,7 +26150,7 @@
         </Cost>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification ShieldArmorBonus="0.5">
-            <DamageDealtScaled index="Spell" value="3"/>
+            <DamageDealtScaled index="Spell" value="2"/>
             <DamageDealtScaled index="Melee" value="3"/>
             <DamageDealtScaled index="Ranged" value="3"/>
             <DamageDealtScaled index="Splash" value="3"/>

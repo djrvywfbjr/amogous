@@ -876,6 +876,9 @@
         <Period value="1.04"/>
         <Effect value="MengskSiegeTankDamage3"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="MengskSiegeTankSieged">
+        <Range value="15"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="MengskThorsHammer32">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
@@ -911,9 +914,7 @@
         <Arc value="5.625"/>
         <Period value="0.8"/>
         <Effect value="SonOfKorhalAOE25"/>
-    </CWeaponLegacy>
-    <CWeaponLegacy id="MengskVikingFighter">
-        <Range value="11"/>
+        <Options index="Disabled" value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="OmindClawsFormer">
         <EditorCategories value="Race:Zerg"/>
@@ -4155,7 +4156,7 @@
     <CWeaponLegacy id="MengskDiamondback">
         <Options index="LinkedCooldown" value="0"/>
         <Range value="10"/>
-        <Period value="3.5"/>
+        <Period value="4.9"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="NovaWeaponCanisterRifle2">
         <EditorCategories value="Race:Terran"/>
@@ -6833,7 +6834,7 @@
         <DisplayEffect value="MengskDiamondback"/>
         <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="10"/>
-        <Period value="3.5"/>
+        <Period value="4.9"/>
         <Effect value="MengskDiamondback"/>
         <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
@@ -7075,7 +7076,7 @@
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
         <DisplayEffect value="MengskSiegeTankSiegedDummy2"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="13"/>
+        <Range value="15"/>
         <MinimumRange value="2"/>
         <Period value="3"/>
         <Effect value="MengskSiegeTankSiegedSet2"/>
@@ -7202,6 +7203,7 @@
         <Range value="9"/>
         <Period value="2"/>
         <AllowedMovement value="Slowing"/>
+        <MinScanRange value="10"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="MengskWraithA3">
         <EditorCategories value="Race:Terran"/>
@@ -11007,7 +11009,6 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="ThrowMolotov3">
         <EditorCategories value="Race:Terran"/>
-        <Options index="Disabled" value="1"/>
         <Options index="Hidden" value="1"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>

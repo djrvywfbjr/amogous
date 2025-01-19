@@ -4981,7 +4981,7 @@
         <Amount value="15"/>
     </CEffectDamage>
     <CEffectDamage id="MengskMarauderDamage">
-        <Amount value="20"/>
+        <Amount value="24"/>
     </CEffectDamage>
     <CEffectDamage id="MengskSiegeTankDamage3">
         <EditorCategories value="Race:Terran"/>
@@ -5028,9 +5028,9 @@
     </CEffectDamage>
     <CEffectDamage id="MengskVikingAssault4" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
-        <AttributeBonus index="Light" value="20"/>
+        <AttributeBonus index="Light" value="18"/>
         <Kind value="Ranged"/>
-        <Amount value="20"/>
+        <Amount value="18"/>
     </CEffectDamage>
     <CEffectDamage id="MengskVikingFighterDamage">
         <AttributeBonus index="Light" value="5"/>
@@ -5082,6 +5082,19 @@
         <EffectArray value="MohandarStickyBombSearch6"/>
         <EffectArray value="MohandarStickyBombDamage6"/>
     </CEffectSet>
+    <CEffectCreateHealer id="NanoRepairCopBlimp">
+        <ValidatorArray value="noMarkers"/>
+        <ValidatorArray value="NotHidden"/>
+        <ValidatorArray value="NotWarpingIn"/>
+        <ValidatorArray value="NotThorWreckage"/>
+        <ValidatorArray value="NotOdinWreckage"/>
+        <ValidatorArray value="NotVortexd"/>
+        <ValidatorArray value="NoSOATimeFreeze"/>
+        <EditorCategories value="Race:Terran"/>
+        <DrainVital value="Energy"/>
+        <DrainVitalCostFactor value="0.33"/>
+        <RechargeVitalRate value="35"/>
+    </CEffectCreateHealer>
     <CEffectLaunchMissile id="ParticleDisruptors62">
         <ValidatorArray index="0" value="StalkerTargetFilters"/>
         <ValidatorArray value=""/>
@@ -5528,7 +5541,7 @@
         <ArmorReduction value="0.5"/>
         <Visibility value="Visible"/>
         <Flags index="Notification" value="1"/>
-        <Amount value="4"/>
+        <Amount value="3"/>
         <Death value="Blast"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectDamage>
@@ -62201,7 +62214,6 @@
         <EditorCategories value="Race:Terran"/>
         <ResponseFlags index="Acquire" value="1"/>
         <ResponseFlags index="Flee" value="1"/>
-        <ShieldBonus value="400"/>
         <Visibility value="Visible"/>
         <Flags index="Notification" value="1"/>
         <Amount value="500"/>
@@ -70206,7 +70218,7 @@
         <Kind value="Ranged"/>
         <Amount value="20"/>
         <AreaArray Radius="1.25" Fraction="1"/>
-        <SearchFilters value="-;Self,Player,Ally,Missile,Dead,Hidden,Invulnerable"/>
+        <SearchFilters value="-;Self,Player,Ally,Ground,Missile,Dead,Hidden,Invulnerable"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectDamage>
     <CEffectDamage id="ThrowMolotovDamage22">
