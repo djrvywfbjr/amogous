@@ -184,6 +184,9 @@
     <CRequirement id="CyberHaveFrenzySim2">
         <NodeArray index="Show" Link="NotCountUpgradeCyberFrenzySimulatorQueuedOrBetter"/>
     </CRequirement>
+    <CRequirement id="HaveEnlistmentHouse22322">
+        <NodeArray index="Use" Link="AndCountUnitEngineeringBay6CompleteOnlyCountUnitBarracks6CompleteOnly"/>
+    </CRequirement>
     <CRequirement id="LearnTrooperAmmunition2222233">
         <NodeArray index="Show" Link="NotCountUpgradeInfiltratorEnergyQueuedOrBetter"/>
     </CRequirement>

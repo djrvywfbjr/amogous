@@ -4094,9 +4094,8 @@
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="ApplyMedDrone33">
         <ValidatorArray index="0" value="UnknownValidator2"/>
-        <ValidatorArray value="IsNotHydralisk23"/>
         <ValidatorArray value="IsNotHydralisk232"/>
-        <ValidatorArray value="IsTimeStopped222"/>
+        <ValidatorArray value="IsNotHydralisk23"/>
         <EditorCategories value=""/>
         <Behavior value="MedDrone24"/>
     </CEffectApplyBehavior>
@@ -4110,6 +4109,11 @@
         <ValidatorArray index="0" value="250mmCannonValidators22"/>
         <EditorCategories value=""/>
         <Behavior value="Purify232322222"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ApplyMedDrone333">
+        <ValidatorArray index="0" value="UnknownValidator2"/>
+        <EditorCategories value=""/>
+        <Behavior value="MedDrone24"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="ApplyMedDrone34">
         <EditorCategories value=""/>
@@ -4977,7 +4981,7 @@
         <Amount value="15"/>
     </CEffectDamage>
     <CEffectDamage id="MengskMarauderDamage">
-        <Amount value="20"/>
+        <Amount value="24"/>
     </CEffectDamage>
     <CEffectDamage id="MengskSiegeTankDamage3">
         <EditorCategories value="Race:Terran"/>
@@ -5005,7 +5009,7 @@
     </CEffectCreatePersistent>
     <CEffectDamage id="MengskThorsHammerDamage32" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
-        <AttributeBonus index="Massive" value="40"/>
+        <AttributeBonus index="Massive" value="30"/>
         <Kind value="Ranged"/>
         <Amount value="40"/>
         <Death value="Blast"/>
@@ -5024,9 +5028,9 @@
     </CEffectDamage>
     <CEffectDamage id="MengskVikingAssault4" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
-        <AttributeBonus index="Light" value="20"/>
+        <AttributeBonus index="Light" value="18"/>
         <Kind value="Ranged"/>
-        <Amount value="20"/>
+        <Amount value="18"/>
     </CEffectDamage>
     <CEffectDamage id="MengskVikingFighterDamage">
         <AttributeBonus index="Light" value="5"/>
@@ -5044,6 +5048,11 @@
     <CEffectApplyBehavior id="MindBlastStun2">
         <ValidatorArray index="0" value="TargetIsEnemyOrNeutral"/>
         <EditorCategories value="Race:Terran"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ApplyHardenedTimeLifeBarrier">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="ImperialAdvancedBarrierTimedlife"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="MohandarStickyBombApply6">
         <EditorCategories value=""/>
@@ -5073,6 +5082,19 @@
         <EffectArray value="MohandarStickyBombSearch6"/>
         <EffectArray value="MohandarStickyBombDamage6"/>
     </CEffectSet>
+    <CEffectCreateHealer id="NanoRepairCopBlimp">
+        <ValidatorArray value="noMarkers"/>
+        <ValidatorArray value="NotHidden"/>
+        <ValidatorArray value="NotWarpingIn"/>
+        <ValidatorArray value="NotThorWreckage"/>
+        <ValidatorArray value="NotOdinWreckage"/>
+        <ValidatorArray value="NotVortexd"/>
+        <ValidatorArray value="NoSOATimeFreeze"/>
+        <EditorCategories value="Race:Terran"/>
+        <DrainVital value="Energy"/>
+        <DrainVitalCostFactor value="0.33"/>
+        <RechargeVitalRate value="35"/>
+    </CEffectCreateHealer>
     <CEffectLaunchMissile id="ParticleDisruptors62">
         <ValidatorArray index="0" value="StalkerTargetFilters"/>
         <ValidatorArray value=""/>
@@ -5519,7 +5541,7 @@
         <ArmorReduction value="0.5"/>
         <Visibility value="Visible"/>
         <Flags index="Notification" value="1"/>
-        <Amount value="4"/>
+        <Amount value="3"/>
         <Death value="Blast"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectDamage>
@@ -39670,9 +39692,9 @@
     </CEffectDamage>
     <CEffectDamage id="MengskThorJavelinMissileLaunchersDamage3" parent="DU_WEAP_SPLASH">
         <EditorCategories value="Race:Terran"/>
-        <AttributeBonus index="Light" value="12"/>
+        <AttributeBonus index="Light" value="5"/>
         <Kind value="Ranged"/>
-        <Amount value="8"/>
+        <Amount value="15"/>
         <Death value="Blast"/>
         <AreaArray Radius="0.5" Fraction="1"/>
         <ExcludeArray Value="Target"/>
@@ -62192,7 +62214,6 @@
         <EditorCategories value="Race:Terran"/>
         <ResponseFlags index="Acquire" value="1"/>
         <ResponseFlags index="Flee" value="1"/>
-        <ShieldBonus value="400"/>
         <Visibility value="Visible"/>
         <Flags index="Notification" value="1"/>
         <Amount value="500"/>
@@ -69167,6 +69188,32 @@
         <Amount value="15"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectDamage>
+    <CEffectDamage id="TempestDamageGround233">
+        <EditorCategories value="Race:Protoss"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <AttributeBonus index="Armored" value="10"/>
+        <ArmorReduction value="1"/>
+        <Visibility value="Visible"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="15"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectDamage>
+    <CEffectDamage id="TempestDamageGround234">
+        <EditorCategories value="Race:Protoss"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <AttributeBonus index="Armored" value="15"/>
+        <ArmorReduction value="1"/>
+        <Visibility value="Visible"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="30"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectDamage>
     <CEffectDamage id="TempestDamageGround3" parent="TempestDamageGround">
         <Name value="Effect/Name/TempestDamageGround3"/>
         <Amount value="20"/>
@@ -69339,6 +69386,16 @@
         <EditorCategories value="Race:Protoss"/>
         <ImpactEffect value="RefugeCannonDamage"/>
         <AmmoUnit value="RefugeCannonMissile"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="TempestLaunchMissileGround233">
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactEffect value="TempestDamageGround233"/>
+        <AmmoUnit value="TempestWeaponGround233"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="TempestLaunchMissileGround234">
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactEffect value="TempestDamageGround234"/>
+        <AmmoUnit value="TempestWeaponGround234"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="TempestLaunchMissileGround3">
         <EditorCategories value="Race:Protoss"/>
@@ -70161,7 +70218,7 @@
         <Kind value="Ranged"/>
         <Amount value="20"/>
         <AreaArray Radius="1.25" Fraction="1"/>
-        <SearchFilters value="-;Self,Player,Ally,Missile,Dead,Hidden,Invulnerable"/>
+        <SearchFilters value="-;Self,Player,Ally,Ground,Missile,Dead,Hidden,Invulnerable"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectDamage>
     <CEffectDamage id="ThrowMolotovDamage22">
@@ -81506,6 +81563,10 @@
         <PeriodicEffect value="PrologueVoidArmorAB23"/>
         <PeriodicPeriod value="1"/>
     </CEffectCreateHealer>
+    <CEffectSet id="SetHardenedShieldTimeLifed">
+        <EditorCategories value=""/>
+        <EffectArray value="ApplyHardenedTimeLifeBarrier"/>
+    </CEffectSet>
     <CEffectApplyBehavior id="stun454">
         <ValidatorArray index="0" value="NotHeroic"/>
         <EditorCategories value=""/>
