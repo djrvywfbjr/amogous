@@ -2043,16 +2043,16 @@
     </CUpgrade>
     <CUpgrade id="TriSensors">
         <Icon value="Assets\Textures\btn-upgrade-karax-unitybarrier.dds"/>
-        <EffectArray Operation="Set" Reference="Weapon,Dragoon5222,Range" Value="10"/>
-        <EffectArray Operation="Set" Reference="Weapon,Dragoon5222,MinimumRange" Value="8"/>
-        <EffectArray Operation="Set" Reference="Weapon,Dragoon5,Range" Value="3"/>
-        <EffectArray Operation="Set" Reference="Weapon,Dragoon52,Range" Value="5"/>
-        <EffectArray Operation="Set" Reference="Weapon,Dragoon52,MinimumRange" Value="4"/>
-        <EffectArray Operation="Set" Reference="Weapon,Dragoon522,Range" Value="7"/>
-        <EffectArray Operation="Set" Reference="Weapon,Dragoon522,MinimumRange" Value="6"/>
-        <EffectArray Operation="Set" Reference="Weapon,Adept4,Range" Value="5"/>
-        <EffectArray Operation="Set" Reference="Weapon,ScoutGround2,Range" Value="8"/>
-        <EffectArray Operation="Set" Reference="Weapon,ScoutAir2,Range" Value="10"/>
+        <EffectArray Reference="Weapon,Dragoon5222,Range" Value="2"/>
+        <EffectArray Reference="Weapon,Dragoon5222,MinimumRange" Value="2"/>
+        <EffectArray Reference="Weapon,Dragoon5,Range" Value="2"/>
+        <EffectArray Reference="Weapon,Dragoon52,Range" Value="2"/>
+        <EffectArray Reference="Weapon,Dragoon52,MinimumRange" Value="2"/>
+        <EffectArray Reference="Weapon,Dragoon522,Range" Value="2"/>
+        <EffectArray Reference="Weapon,Dragoon522,MinimumRange" Value="2"/>
+        <EffectArray Reference="Weapon,Adept4,Range" Value="1"/>
+        <EffectArray Reference="Weapon,ScoutGround2,Range" Value="3"/>
+        <EffectArray Reference="Weapon,ScoutAir2,Range" Value="3"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade">
         <EffectArray Operation="Set" Reference="Weapon,GuassRifle2,Period" Value="0.500000"/>
@@ -9259,9 +9259,9 @@
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade522242242322222235222222252222">
-        <EffectArray Reference="Unit,Phoenix3,LifeMax" Value="50"/>
-        <EffectArray Reference="Unit,Phoenix3,LifeStart" Value="50"/>
-        <EffectArray Reference="Unit,Phoenix3,Speed" Value="0.500000"/>
+        <EffectArray Reference="Unit,Corsionist,LifeMax" Value="50"/>
+        <EffectArray Reference="Unit,Corsionist,LifeStart" Value="50"/>
+        <EffectArray Reference="Unit,Corsionist,Speed" Value="0.500000"/>
         <EffectArray Reference="Unit,Scout2,LifeStart" Value="50"/>
         <EffectArray Reference="Unit,Scout2,LifeMax" Value="50"/>
         <EffectArray Reference="Unit,Scout2,Speed" Value="0.500000"/>

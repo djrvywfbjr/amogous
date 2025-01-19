@@ -797,8 +797,8 @@
     </CEffectDamage>
     <CEffectDamage id="AcidSalivaU4" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Zerg"/>
-        <AttributeBonus index="Heroic" value="20"/>
-        <Amount value="20"/>
+        <AttributeBonus index="Heroic" value="15"/>
+        <Amount value="25"/>
         <Death value="Fire"/>
     </CEffectDamage>
     <CEffectDamage id="AcidSalivaU42" parent="DU_WEAP_MISSILE">
@@ -47885,8 +47885,8 @@
     </CEffectDamage>
     <CEffectDamage id="ParticleDisruptorsU6" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Protoss"/>
-        <AttributeBonus index="Light" value="20"/>
-        <Amount value="15"/>
+        <AttributeBonus index="Light" value="8"/>
+        <Amount value="10"/>
         <DamageInheritEffect value="ZerglingSunder323"/>
     </CEffectDamage>
     <CEffectIssueOrder id="PerditionTurretBurrowOrder2">
@@ -65827,8 +65827,7 @@
     </CEffectDamage>
     <CEffectDamage id="ScoutGround22" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
-        <AttributeBonus index="Light" value="12"/>
-        <AttributeBonus index="Armored" value="8"/>
+        <AttributeBonus index="Light" value="20"/>
         <Visibility value="Visible"/>
         <Kind value="Ranged"/>
         <Amount value="10"/>
