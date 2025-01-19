@@ -2099,7 +2099,7 @@
         <DisplayEffect value="DragoonDamage52"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="4"/>
-        <MinimumRange value="3"/>
+        <MinimumRange value="2"/>
         <Period value="1"/>
         <Effect value="DragoonLM52"/>
     </CWeaponLegacy>
@@ -2110,7 +2110,7 @@
         <DisplayEffect value="DragoonDamage522"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="6"/>
-        <MinimumRange value="5"/>
+        <MinimumRange value="4"/>
         <Period value="1.5"/>
         <Effect value="DragoonLM522"/>
     </CWeaponLegacy>
@@ -2120,7 +2120,7 @@
         <DisplayEffect value="DragoonDamage5222"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="8"/>
-        <MinimumRange value="7"/>
+        <MinimumRange value="6"/>
         <Period value="2"/>
         <Effect value="DragoonLM5222"/>
     </CWeaponLegacy>

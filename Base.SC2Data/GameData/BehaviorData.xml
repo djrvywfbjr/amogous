@@ -4368,7 +4368,7 @@
         <InfoIcon value="Assets\Textures\btn-research-zerg-fortifiedbunker.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="20"/>
-        <Modification MoveSpeedMultiplier="0.75" LifeArmorMultiplier="3">
+        <Modification MoveSpeedMultiplier="1.25" LifeArmorMultiplier="3">
             <VitalRegenArray index="Life" value="3"/>
         </Modification>
     </CBehaviorBuff>
@@ -47738,7 +47738,7 @@
     <CBehaviorBuff id="XenWarrior3">
         <InfoIcon value="Assets\Textures\btn-ability-zeratul-topbar-voidblink.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Modification MoveSpeedMultiplier="1.35">
+        <Modification MoveSpeedMultiplier="1.2">
             <VitalRegenArray index="Shields" value="3"/>
             <AbilLinkEnableArray value="BlinkShieldRestore3"/>
             <AbilLinkDisableArray value="Blink"/>
