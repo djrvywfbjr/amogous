@@ -35528,6 +35528,12 @@
         <EditorCategories value="Race:Protoss"/>
         <Universal value="1"/>
     </CButton>
+    <CButton id="Zealot22623">
+        <Icon value="Assets\Textures\btn-research-terran-microfiltering.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Universal value="1"/>
+    </CButton>
     <CButton id="Zealot2263">
         <Icon value="Assets\Textures\btn-techupgrade-terran-immortalityprotocol.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>

@@ -5653,6 +5653,7 @@ Button/Hotkey/Zealot22622322335433=
 Button/Hotkey/Zealot2262232233544=
 Button/Hotkey/Zealot2262233=R
 Button/Hotkey/Zealot22622332=Y
+Button/Hotkey/Zealot22623=V
 Button/Hotkey/Zealot2263=R
 Button/Hotkey/Zealot2264=G
 Button/Hotkey/Zealot227=Q

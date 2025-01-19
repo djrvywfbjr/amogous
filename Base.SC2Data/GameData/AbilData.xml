@@ -1138,6 +1138,7 @@
     <CAbilEffectTarget id="MaxCapSurge">
         <Alignment value="Positive"/>
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <SharedFlags index="Disabled" value="1"/>
         <Effect index="0" value="SetHardenedShieldTimeLifed"/>
         <Flags index="AllowMovement" value="1"/>
         <Flags index="AutoCast" value="1"/>
@@ -1146,7 +1147,10 @@
             <Charge Link="Abil/KarassPlasmaSurge"/>
             <Cooldown Link="Abil/KarassPlasmaSurge"/>
         </Cost>
+        <TargetFilters value="-;Neutral,Enemy"/>
         <Range value="35"/>
+        <Arc value="360"/>
+        <ArcSlop value="360"/>
         <AutoCastFilters value="Visible;Neutral,Enemy"/>
         <AutoCastRange value="35"/>
         <AutoCastValidatorArray value="TargetMassiveOrHeroicOrUnstoppable"/>
@@ -1155,10 +1159,6 @@
         <CastOutroTime value="0.05"/>
         <CursorEffect value="KarassPlasmaSurgeSearchArea"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="KarassPlasmaSurge332"/>
-        <TargetFilters value="-;Neutral,Enemy"/>
-        <Arc value="360"/>
-        <ArcSlop value="360"/>
-        <SharedFlags index="Disabled" value="1"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="MohandarStickyBomb6">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
@@ -53036,6 +53036,30 @@
         <Range value="3"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="SpiderMine2"/>
     </CAbilEffectTarget>
+    <CAbilEffectInstant id="XenWarrior623">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="XenWarrior6"/>
+        <Cost>
+            <Resource index="Minerals" value="35"/>
+            <Resource index="Vespene" value="35"/>
+            <Charge Link="Abil/XenWarrior"/>
+            <Cooldown Link="Abil/XenWarrior"/>
+        </Cost>
+        <AINotifyEffect value="XenWarrior6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2262"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="PacifierArmory">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="XenWarrior64"/>
+        <Cost>
+            <Resource index="Minerals" value="50"/>
+            <Resource index="Vespene" value="50"/>
+            <Charge Link="Abil/XenWarrior"/>
+            <Cooldown Link="Abil/XenWarrior"/>
+        </Cost>
+        <AINotifyEffect value="XenWarrior6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Zealot22623"/>
+    </CAbilEffectInstant>
     <CAbilResearch id="XillResearch">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <InfoArray index="Research1" Time="84" Upgrade="XillBlink">

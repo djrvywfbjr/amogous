@@ -1897,6 +1897,15 @@
         <Period value="0.6"/>
         <PeriodicEffect value="WarGeneralareainspiration"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="PacifierQuarters">
+        <InfoIcon value="Assets\Textures\btn-research-terran-microfiltering.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <LifeArmorBonus value="1"/>
+            <VitalMaxArray index="Life" value="500"/>
+            <AbilLinkDisableArray value="PacifierArmory"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="ZealotDef">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>

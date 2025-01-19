@@ -519,7 +519,6 @@
         <OperandArray value="CountUnitAutomatedRefinery2CompleteOnly467777578"/>
     </CRequirementAnd>
     <CRequirementAnd id="AndCountUnitEngineeringBay6CompleteOnlyCountUnitBarracks6CompleteOnly">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray value="CountUnitEngineeringBay6CompleteOnly"/>
         <OperandArray value="CountUnitBarracks6CompleteOnly"/>
     </CRequirementAnd>
@@ -1751,6 +1750,10 @@
     <CRequirementCountBehavior id="CountBehaviorObserverSquadSight4CompleteOnlyAtUnit">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="ObserverSquadSight4" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorPacifierQuartersInProgressOnlyAtUnit927967646">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="PacifierQuarters" State="InProgressOnlyAtUnit"/>
     </CRequirementCountBehavior>
     <CRequirementCountBehavior id="CountBehaviorPrimalistEssenceCompleteOnlyAtUnit">
         <Flags index="TechTreeCheat" value="0"/>
@@ -3073,7 +3076,6 @@
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitBarracks6CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="Barracks6" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitBarracks6CompleteOnly4150837690">
@@ -3469,7 +3471,6 @@
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitEngineeringBay6CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="EngineeringBay6" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitEngineeringBay6CompleteOnly1954741260">
