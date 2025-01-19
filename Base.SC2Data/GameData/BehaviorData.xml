@@ -971,7 +971,19 @@
             <Chance value="1"/>
         </DamageResponse>
     </CBehaviorBuff>
-    <CBehaviorBuff id="ImperialAdvancedPlatingTimedlife">
+    <CBehaviorBuff id="HardenedShield722">
+        <Alignment value="Positive"/>
+        <Cost>
+            <Cooldown Link="Immortal Shield"/>
+        </Cost>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-HardenedShields.dds"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <DamageResponse ClampMaximum="120" Minimum="120">
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ImperialAdvancedBarrierTimedlife">
         <Alignment value="Positive"/>
         <Cost>
             <Cooldown Link="Immortal Shield"/>
@@ -984,7 +996,7 @@
             <VitalRegenArray index="Life" value="5"/>
             <VitalRegenArray index="Shields" value="5"/>
         </Modification>
-        <DamageResponse ClampMaximum="35" Minimum="35">
+        <DamageResponse ClampMaximum="35" Minimum="1">
             <Chance value="1"/>
         </DamageResponse>
     </CBehaviorBuff>
@@ -23636,6 +23648,7 @@
                 <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+                <VitalRegenArray index="Life" value="1"/>
                 <AbilLinkDisableArray value="OdinNuclearStrike4"/>
                 <AbilLinkDisableArray value="EMP34"/>
                 <AbilLinkDisableArray value="ChannelSnipe2"/>
@@ -23644,7 +23657,7 @@
             </Modification>
         </VeterancyLevelArray>
         <VeterancyLevelArray MinVeterancyXP="70" LevelGainEffect="RankDummy22">
-            <Modification>
+            <Modification MoveSpeedBonus="1">
                 <StateFlags index="Cloak" value="1"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>

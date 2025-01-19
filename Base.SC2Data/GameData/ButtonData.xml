@@ -380,6 +380,12 @@
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="CalldownMULE42332"/>
     </CButton>
+    <CButton id="CalldownMULE423326232222242">
+        <Icon value="Assets\Textures\btn-research-zerg-cellularreactor.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="CalldownMULE42332"/>
+    </CButton>
     <CButton id="CombatShield223332">
         <Icon value="Assets\Textures\btn-ability-terran-cloak-color.dds"/>
         <EditorCategories value="Race:Terran"/>

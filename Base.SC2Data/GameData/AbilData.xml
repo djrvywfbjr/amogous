@@ -1134,13 +1134,13 @@
         </InfoArray>
     </CAbilTrain>
     <CAbilEffectTarget id="MaxCapSurge">
-        <Alignment value="Negative"/>
+        <Alignment value="Positive"/>
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Effect index="0" value="SetHardenedShieldTimeLifed"/>
         <Flags index="AllowMovement" value="1"/>
         <Flags index="AutoCast" value="1"/>
         <Cost>
-            <VitalFraction index="Energy" value="60"/>
+            <Vital index="Energy" value="55"/>
             <Charge Link="Abil/KarassPlasmaSurge"/>
             <Cooldown Link="Abil/KarassPlasmaSurge"/>
         </Cost>
@@ -1152,6 +1152,9 @@
         <CastOutroTime value="0.05"/>
         <CursorEffect value="KarassPlasmaSurgeSearchArea"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="KarassPlasmaSurge332" Requirements="HaveEnlistmentHouse2234"/>
+        <TargetFilters value="-;Neutral,Enemy"/>
+        <Arc value="360"/>
+        <ArcSlop value="360"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="MohandarStickyBomb6">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
@@ -32121,7 +32124,7 @@
     </CAbilEffectTarget>
     <CAbilEffectTarget id="MedDrone32">
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Effect index="0" value="ApplyMedDrone33"/>
+        <Effect index="0" value="ApplyMedDrone333"/>
         <Cost>
             <Resource index="Minerals" value="225"/>
             <Resource index="Vespene" value="150"/>
@@ -51317,6 +51320,7 @@
         <AINotifyEffect value="ShieldUp"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield219" Requirements="HaveEnlistmentHouse22342"/>
         <AutoCastRange value="8"/>
+        <AutoCastValidatorArray value="CasterIsAttacking"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="ShieldUp2">
         <EditorCategories value="AbilityorEffectType:Units"/>

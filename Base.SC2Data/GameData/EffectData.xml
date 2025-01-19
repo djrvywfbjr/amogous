@@ -4093,7 +4093,9 @@
         <Behavior value="MedDrone22"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="ApplyMedDrone33">
-        <ValidatorArray index="0" removed="1"/>
+        <ValidatorArray index="0" value="UnknownValidator2"/>
+        <ValidatorArray value="IsNotHydralisk232"/>
+        <ValidatorArray value="IsNotHydralisk23"/>
         <EditorCategories value=""/>
         <Behavior value="MedDrone24"/>
     </CEffectApplyBehavior>
@@ -4107,6 +4109,11 @@
         <ValidatorArray index="0" value="250mmCannonValidators22"/>
         <EditorCategories value=""/>
         <Behavior value="Purify232322222"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ApplyMedDrone333">
+        <ValidatorArray index="0" value="UnknownValidator2"/>
+        <EditorCategories value=""/>
+        <Behavior value="MedDrone24"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="ApplyMedDrone34">
         <EditorCategories value=""/>
@@ -5043,9 +5050,9 @@
         <EditorCategories value="Race:Terran"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="ApplyHardenedTimeLifeBarrier">
-        <ValidatorArray index="0" value="TargetIsEnemyOrNeutral"/>
+        <ValidatorArray index="0" removed="1"/>
         <EditorCategories value="Race:Terran"/>
-        <Behavior value="ImperialAdvancedPlatingTimedlife"/>
+        <Behavior value="ImperialAdvancedBarrierTimedlife"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="MohandarStickyBombApply6">
         <EditorCategories value=""/>

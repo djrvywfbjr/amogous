@@ -801,6 +801,11 @@
         <Value value="1"/>
         <Behavior value="DefensiveMatrix23"/>
     </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="IsTimeStopped230">
+        <Compare value="LT"/>
+        <Value value="1"/>
+        <Behavior value="ImperialAdvancedBarrierTimedlife"/>
+    </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitType id="IsWorkshop">
         <Value value="Workshop"/>
     </CValidatorUnitType>
