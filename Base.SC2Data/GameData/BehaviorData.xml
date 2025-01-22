@@ -36356,7 +36356,7 @@
         <Duration value="0.1875"/>
         <InitialEffect value="PsiDisruptionSearchArea322322"/>
         <RefreshEffect value="PsiDisruptionSearchArea322322"/>
-        <DamageResponse ModifyFraction="1.3">
+        <DamageResponse>
             <Chance value="1"/>
         </DamageResponse>
     </CBehaviorBuff>
@@ -42637,7 +42637,7 @@
         <DisplayDuration index="Ally" value="1"/>
         <DisplayDuration index="Neutral" value="1"/>
         <DisplayDuration index="Enemy" value="1"/>
-        <Duration value="350"/>
+        <Duration value="126"/>
         <Period value="1"/>
         <Modification MoveSpeedMultiplier="0.01" LifeArmorMultiplier="0">
             <VitalRegenArray index="Life" value="30"/>

@@ -51174,7 +51174,7 @@
         <PrepTime value="5"/>
         <AINotifyEffect value="ShieldUp"/>
         <ProgressButtonArray index="Prep" value="CombatShield21438"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield21438"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield21438" Requirements="HavePlagueCenter233223"/>
         <ShowProgressArray index="Approach" value="1"/>
         <ShowProgressArray index="Wait" value="1"/>
         <ShowProgressArray index="Prep" value="1"/>
@@ -51182,6 +51182,12 @@
         <ShowProgressArray index="Channel" value="1"/>
         <ShowProgressArray index="Finish" value="1"/>
         <ShowProgressArray index="Bail" value="1"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Flags index="WaitToSpend" value="1"/>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastRange value="15"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="ShieldUp1339">
         <EditorCategories value="AbilityorEffectType:Units"/>
