@@ -4361,7 +4361,7 @@
         <EditorCategories value="Race:PrimalZerg"/>
         <ImpactLocation Value="TargetPoint"/>
         <SearchFilters value="-;Self,Structure,Heroic,Missile,Item,Dead,Hidden"/>
-        <AreaArray Radius="5" Effect="ArbiterMPStasisFieldSet22"/>
+        <AreaArray Radius="2.5" Effect="ArbiterMPStasisFieldSet22"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="ArbiterMPStasisFieldSearch23">
         <EditorCategories value="Race:PrimalZerg"/>
@@ -14657,6 +14657,7 @@
         <EditorCategories value="Race:Terran"/>
         <WhichUnit Value="Caster"/>
         <Behavior value="ChannelSnipeCombat"/>
+        <ValidatorArray index="0" removed="1"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="ChannelSnipeCombat22">
         <EditorCategories value="Race:Terran"/>
@@ -14777,7 +14778,7 @@
         <EditorCategories value="Race:Terran"/>
         <ResponseFlags index="Acquire" value="1"/>
         <ResponseFlags index="Flee" value="1"/>
-        <Amount value="75"/>
+        <Amount value="100"/>
     </CEffectDamage>
     <CEffectDamage id="ChannelSnipeDamage22">
         <EditorCategories value="Race:Terran"/>
@@ -45868,7 +45869,7 @@
     </CEffectDamage>
     <CEffectDamage id="OdinNukeDamage4">
         <EditorCategories value="Race:Terran"/>
-        <AttributeBonus index="Structure" value="300"/>
+        <AttributeBonus index="Structure" value="175"/>
         <Amount value="175"/>
         <AreaArray Radius="2" Fraction="1"/>
         <AreaArray Radius="3" Fraction="0.5"/>
@@ -61640,7 +61641,6 @@
     <CEffectSet id="SJPirateYamato36">
         <EditorCategories value="Race:Terran"/>
         <EffectArray value="SJPirateYamatoA36"/>
-        <EffectArray value="SJPirateYamatoB36"/>
     </CEffectSet>
     <CEffectSet id="SJPirateYamato37">
         <EditorCategories value="Race:Terran"/>

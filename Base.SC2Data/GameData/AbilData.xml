@@ -452,7 +452,7 @@
         <CursorEffect value="ArbiterMPStasisFieldSearch"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="ArbiterMPStasisField2"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="ArbiterMPStasisField32">
+    <CAbilEffectTarget id="ConnectionCUt">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ArbiterMPStasisFieldSearch22"/>
         <Flags index="AllowMovement" value="1"/>
@@ -872,7 +872,7 @@
         <AINotifyEffect value="EMPLaunchMissile"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="EMP2"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="EMP34">
+    <CAbilEffectTarget id="ImmolationRound">
         <Alignment value="Negative"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <Effect index="0" value="EMPLaunchMissile33"/>
@@ -882,7 +882,9 @@
             <Charge Link="Abil/EMP"/>
             <Cooldown Link="Abil/EMP"/>
         </Cost>
-        <Range value="8"/>
+        <Range value="7"/>
+        <AutoCastRange value="8.5"/>
+        <AutoCastValidatorArray value="LifeLTThreeQuarter2"/>
         <PrepTime value="0.01"/>
         <FinishTime value="0.0625"/>
         <UninterruptibleArray index="Prep" value="1"/>
@@ -890,8 +892,6 @@
         <CursorEffect value="EMPSearch"/>
         <AINotifyEffect value="EMPLaunchMissile"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="EMP33"/>
-        <AutoCastRange value="8.5"/>
-        <AutoCastValidatorArray value="LifeLTThreeQuarter2"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="EnterWormhole322">
         <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
@@ -5136,7 +5136,7 @@
             <Resource index="Minerals" value="-50"/>
             <Vital index="Life" value="99"/>
             <Button DefaultButtonFace="Wraith2222224"/>
-            <Unit value="SCV6"/>
+            <Unit value="ImperialLaborer"/>
         </InfoArray>
         <InfoArray index="Train18">
             <Resource index="Minerals" value="-50"/>
@@ -5330,7 +5330,7 @@
             <Resource index="Minerals" value="-50"/>
             <Vital index="Life" value="99"/>
             <Button DefaultButtonFace="Wraith2222224"/>
-            <Unit value="SCV6"/>
+            <Unit value="ImperialLaborer"/>
         </InfoArray>
         <InfoArray index="Train18">
             <Resource index="Minerals" value="-50"/>
@@ -5617,7 +5617,7 @@
             </Charge>
             <Cooldown Location="Player"/>
             <Button DefaultButtonFace="SCV5"/>
-            <Unit value="SCV6"/>
+            <Unit value="ImperialLaborer"/>
         </InfoArray>
         <InfoArray index="Train17" Time="1">
             <Resource index="Minerals" value="-50"/>
@@ -5933,7 +5933,7 @@
     <CAbilTrain id="BarracksTrain8" parent="BarracksTrain">
         <Name value="Abil/Name/BarracksTrain8"/>
         <InfoArray index="Train1" Time="50" Effect="MercGroundDrop">
-            <Unit index="0" value="MengskMarine4"/>
+            <Unit index="0" value="SonofKorhal"/>
         </InfoArray>
         <InfoArray index="Train2" Time="75" Effect="MercGroundDrop">
             <Button Requirements="HaveEnlistmentHouse222"/>
@@ -5941,7 +5941,7 @@
         </InfoArray>
         <InfoArray index="Train3" Time="75" Effect="MercGroundDrop">
             <Button Requirements="HaveEnlistmentHouse22"/>
-            <Unit index="0" value="Ghost5"/>
+            <Unit index="0" value="EmperorsShadow"/>
         </InfoArray>
         <InfoArray index="Train4" Time="60" Effect="MercGroundDrop">
             <Button Requirements="HaveEnlistmentHouse222"/>
@@ -16171,7 +16171,7 @@
             <Button DefaultButtonFace="SCV" State="Restricted">
                 <Flags index="ToSelection" value="1"/>
             </Button>
-            <Unit value="SCV6"/>
+            <Unit value="ImperialLaborer"/>
         </InfoArray>
         <InfoArray index="Train2" Time="10">
             <Button DefaultButtonFace="Marine11"/>
@@ -16219,7 +16219,7 @@
         </InfoArray>
         <InfoArray index="Train26" Time="60" Effect="MercAirDrop">
             <Button DefaultButtonFace="Banshee7"/>
-            <Unit value="MengskBanshee3"/>
+            <Unit value="NightWolf"/>
         </InfoArray>
         <InfoArray index="Train27" Time="80" Effect="MercAirDrop">
             <Button DefaultButtonFace="Battlecruiser6" Requirements="HaveEnlistmentHouse22332"/>
@@ -16231,7 +16231,7 @@
         </InfoArray>
         <InfoArray index="Train29" Time="45" Effect="MercAirDrop">
             <Button DefaultButtonFace="BuildScienceVessel4"/>
-            <Unit value="Blimp2"/>
+            <Unit value="MilitarizedBlimp"/>
         </InfoArray>
         <InfoArray index="Train30" Time="35" Effect="MercAirDrop">
             <Button DefaultButtonFace="Medivac5"/>
@@ -20685,7 +20685,7 @@
             <Charge Link="Abil/EMP"/>
             <Cooldown Link="Abil/EMP"/>
         </Cost>
-        <Range value="10"/>
+        <Range value="7"/>
         <PrepTime value="0.01"/>
         <FinishTime value="0.0625"/>
         <UninterruptibleArray index="Prep" value="1"/>
@@ -22014,7 +22014,9 @@
             <Resource index="Vespene" value="100"/>
             <Button DefaultButtonFace="UnknownButton105" Requirements="UnknownRequirement116"/>
         </InfoArray>
-        <InfoArray index="Research15" Time="70" Upgrade="InfiltratorEnergy">
+        <InfoArray index="Research15" Time="84" Upgrade="InfiltratorEnergy">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
             <Button DefaultButtonFace="PoisonNova32" Requirements="LearnTrooperAmmunition2222233"/>
         </InfoArray>
         <InfoArray index="Research16" Time="120" Upgrade="UnknownUpgrade732">
@@ -32940,7 +32942,7 @@
         </InfoArray>
         <InfoArray index="Train18" Time="80" Effect="MercGroundDrop">
             <Button DefaultButtonFace="Thor5" Requirements="HaveEnlistmentHouse223"/>
-            <Unit value="MengskThor4"/>
+            <Unit value="Blackhammer"/>
         </InfoArray>
         <InfoArray index="Train19" Time="60" Effect="MercGroundDrop">
             <Button DefaultButtonFace="MercHellion2"/>
@@ -32948,7 +32950,7 @@
         </InfoArray>
         <InfoArray index="Train20" Time="70" Effect="MercGroundDrop">
             <Button DefaultButtonFace="Diamondback5" Requirements="HaveEnlistmentHouse223"/>
-            <Unit value="MengskDiamondback2"/>
+            <Unit value="RedAdder"/>
         </InfoArray>
         <InfoArray index="Train21" Time="70" Effect="MercGroundDrop">
             <Button DefaultButtonFace="WidowMine5" Requirements="HaveEnlistmentHouse22332"/>
@@ -52078,12 +52080,12 @@
         <AINotifyEffect value="ShieldUp4"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield25232222" Requirements="HavePsionicHeart2232"/>
     </CAbilEffectInstant>
-    <CAbilEffectInstant id="ShieldUp42322222">
+    <CAbilEffectInstant id="ReviveSmallunit">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ShieldUp52223222"/>
         <Cost>
-            <Resource index="Minerals" value="75"/>
-            <Resource index="Vespene" value="150"/>
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="200"/>
             <Charge Link=""/>
             <Cooldown Link="Abil/AlarakAvatar"/>
         </Cost>
@@ -52095,12 +52097,12 @@
         <AINotifyEffect value="ShieldUp4"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield252322222" Requirements="HavePsionicHeart2232"/>
     </CAbilEffectInstant>
-    <CAbilEffectInstant id="ShieldUp423222222">
+    <CAbilEffectInstant id="ReviveMidUnit">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ShieldUp52223222"/>
         <Cost>
-            <Resource index="Minerals" value="150"/>
-            <Resource index="Vespene" value="325"/>
+            <Resource index="Minerals" value="250"/>
+            <Resource index="Vespene" value="475"/>
             <Charge Link=""/>
             <Cooldown Link="Abil/AlarakAvatar"/>
         </Cost>
@@ -52112,12 +52114,12 @@
         <AINotifyEffect value="ShieldUp4"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield2523222222" Requirements="HavePsionicHeart2232"/>
     </CAbilEffectInstant>
-    <CAbilEffectInstant id="ShieldUp4232222222">
+    <CAbilEffectInstant id="ReviveLargeUnit">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ShieldUp52223222"/>
         <Cost>
-            <Resource index="Minerals" value="225"/>
-            <Resource index="Vespene" value="600"/>
+            <Resource index="Minerals" value="400"/>
+            <Resource index="Vespene" value="825"/>
             <Charge Link=""/>
             <Cooldown Link="Abil/AlarakAvatar"/>
         </Cost>
@@ -55734,54 +55736,29 @@
     <CAbilTrain id="UnknownAbility12">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <InfoArray index="Train1">
-            <Charge>
-                <CountMax value="5"/>
-                <CountStart value="5"/>
-                <CountUse value="1"/>
-                <TimeUse value="28"/>
-            </Charge>
+            <Charge CountMax="5" CountUse="1" TimeUse="28"/>
             <Button DefaultButtonFace="Marine11"/>
             <Unit value="Marine3"/>
             <Unit value="Marine3"/>
             <Unit value="Marine3"/>
         </InfoArray>
         <InfoArray index="Train2">
-            <Charge>
-                <CountMax value="5"/>
-                <CountStart value="5"/>
-                <CountUse value="1"/>
-                <TimeUse value="28"/>
-            </Charge>
+            <Charge CountMax="5" CountUse="1" TimeUse="28"/>
             <Button DefaultButtonFace="Marine112" Requirements="HaveEnlistmentHouse2"/>
             <Unit value="Marine32"/>
         </InfoArray>
         <InfoArray index="Train3">
-            <Charge>
-                <CountMax value="5"/>
-                <CountStart value="5"/>
-                <CountUse value="1"/>
-                <TimeUse value="28"/>
-            </Charge>
+            <Charge CountMax="5" CountUse="1" TimeUse="28"/>
             <Button DefaultButtonFace="Marine1122" Requirements="HaveEnlistmentHouse22"/>
             <Unit value="Marine33"/>
         </InfoArray>
         <InfoArray index="Train4">
-            <Charge>
-                <CountMax value="5"/>
-                <CountStart value="5"/>
-                <CountUse value="1"/>
-                <TimeUse value="28"/>
-            </Charge>
+            <Charge CountMax="5" CountUse="1" TimeUse="28"/>
             <Button DefaultButtonFace="Marine11222" Requirements="HaveEnlistmentHouse2232"/>
             <Unit value="Marine34"/>
         </InfoArray>
         <InfoArray index="Train5">
-            <Charge>
-                <CountMax value="5"/>
-                <CountStart value="5"/>
-                <CountUse value="1"/>
-                <TimeUse value="28"/>
-            </Charge>
+            <Charge CountMax="5" CountUse="1" TimeUse="28"/>
             <Button DefaultButtonFace="Marine112222" Requirements="HaveEnlistmentHouse223"/>
             <Unit value="Marine35"/>
         </InfoArray>

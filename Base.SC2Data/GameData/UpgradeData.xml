@@ -7613,8 +7613,8 @@
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade522242242322222235222">
-        <EffectArray Reference="Unit,Ghost5,LifeMax" Value="150"/>
-        <EffectArray Reference="Unit,Ghost5,LifeStart" Value="150"/>
+        <EffectArray Reference="Unit,EmperorsShadow,LifeMax" Value="150"/>
+        <EffectArray Reference="Unit,EmperorsShadow,LifeStart" Value="150"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -7630,12 +7630,12 @@
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
     <CUpgrade id="UmojanBasicUnitUpgrade522242242322222235222222">
-        <EffectArray Operation="Subtract" Reference="Abil,ShieldUp4232222222,Cost[0].Resource[Minerals]" Value="75"/>
-        <EffectArray Operation="Subtract" Reference="Abil,ShieldUp423222222,Cost[0].Resource[Minerals]" Value="75"/>
-        <EffectArray Operation="Subtract" Reference="Abil,ShieldUp42322222,Cost[0].Resource[Minerals]" Value="75"/>
-        <EffectArray Operation="Subtract" Reference="Abil,ShieldUp42322222,Cost[0].Resource[Vespene]" Value="75"/>
-        <EffectArray Operation="Subtract" Reference="Abil,ShieldUp423222222,Cost[0].Resource[Vespene]" Value="75"/>
-        <EffectArray Operation="Subtract" Reference="Abil,ShieldUp4232222222,Cost[0].Resource[Vespene]" Value="75"/>
+        <EffectArray Operation="Subtract" Reference="Abil,ReviveLargeUnit,Cost[0].Resource[Minerals]" Value="75"/>
+        <EffectArray Operation="Subtract" Reference="Abil,ReviveMidUnit,Cost[0].Resource[Minerals]" Value="75"/>
+        <EffectArray Operation="Subtract" Reference="Abil,ReviveSmallunit,Cost[0].Resource[Minerals]" Value="75"/>
+        <EffectArray Operation="Subtract" Reference="Abil,ReviveSmallunit,Cost[0].Resource[Vespene]" Value="75"/>
+        <EffectArray Operation="Subtract" Reference="Abil,ReviveMidUnit,Cost[0].Resource[Vespene]" Value="75"/>
+        <EffectArray Operation="Subtract" Reference="Abil,ReviveLargeUnit,Cost[0].Resource[Vespene]" Value="75"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>

@@ -793,7 +793,7 @@ bool libCD55B2B5_gt_ForcesofAugustgradChoose_Func (bool testConds, bool runActio
     libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "UmojanBasicUnitUpgrade522242242322222235222222214", 1);
     PlayerSetConsoleSkin(EventPlayer(), "ConsoleTerran_Imperial");
     libNtve_gf_UnitCreateFacingPoint(1, "CommandCenter5", c_unitCreateIgnorePlacement, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
-    libNtve_gf_UnitCreateFacingPoint(13, "SCV6", c_unitCreateIgnorePlacement, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
+    libNtve_gf_UnitCreateFacingPoint(13, "ImperialLaborer", c_unitCreateIgnorePlacement, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
     return true;
 }
 
