@@ -698,6 +698,9 @@
         <CombineArray value="ShieldsNotFull"/>
         <CombineArray value="CasterLifeNotFull2"/>
     </CValidatorCombine>
+    <CValidatorUnitFilters id="ChannelSnipeTargetFilters">
+        <Filters value="Visible;Structure,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorUnitFilters>
     <CValidatorCombine id="DarkTemplarVoidStasis2">
         <CombineArray value="HasDetector8"/>
         <CombineArray value="HasDetector9"/>

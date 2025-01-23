@@ -197,6 +197,9 @@
         <NodeArray index="Use" Link="CountUnitInfestationPit4CompleteOnly"/>
         <NodeArray index="Show" Link="NotCountUpgradeBleedingQueuedOrBetter"/>
     </CRequirement>
+    <CRequirement id="OMindLightenedLimbs">
+        <NodeArray index="Show" Link="NotCountUpgradeLightenedLimbsQueuedOrBetter"/>
+    </CRequirement>
     <CRequirement id="OMindStrengthenedMusclesButton">
         <NodeArray index="Use" Link="CountUpgradeOmindStrengthenedMusclesCompleteOnly"/>
     </CRequirement>
@@ -575,7 +578,7 @@
     </CRequirement>
     <CRequirement id="Damage1343333">
         <NodeArray index="Use" Link="CountUnitInfestationPit4222CompleteOnly"/>
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222422233234223222QueuedOrBetter"/>
+        <NodeArray index="Show" Link="NotCountUpgradeAngelicSmallingSynapticDischargeQueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage13433332">
         <NodeArray index="Use" Link="CountUnitInfestationPit4CompleteOnly"/>
@@ -583,11 +586,10 @@
     </CRequirement>
     <CRequirement id="Damage134333322">
         <NodeArray index="Use" Link="CountUnitInfestationPit43CompleteOnly"/>
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222224222332342232222222QueuedOrBetter"/>
+        <NodeArray index="Show" Link="NotCountUpgradeDominantSmallingAtomShiftQueuedOrBetter"/>
     </CRequirement>
-    <CRequirement id="Damage1343333222">
-        <NodeArray index="Use" Link="CountUnitInfestationPit42CompleteOnly"/>
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222224222332342232222QueuedOrBetter"/>
+    <CRequirement id="NoxiousSmallingSpeed">
+        <NodeArray index="Show" Link="NotCountUpgradeNoxiousSmallingSpeedQueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage13433332222">
         <NodeArray index="Use" Link="CountUnitInfestationPit422CompleteOnly"/>
@@ -600,6 +602,7 @@
         <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222422234QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage13433332223">
+        <NodeArray index="Use" Link="CountUnitInfestationPit42CompleteOnly"/>
         <NodeArray index="Show" Link="NotCountUpgradeUnknownUpgrade58QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage134333322232">
@@ -8438,7 +8441,7 @@
         <NodeArray index="Use" Link="CountUpgradeUnknownUpgrade67CompleteOnly"/>
     </CRequirement>
     <CRequirement id="UnknownRequirement11">
-        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade522242242322222222422233234223222CompleteOnly"/>
+        <NodeArray index="Use" Link="CountUpgradeAngelicSmallingSynapticDischargeCompleteOnly"/>
     </CRequirement>
     <CRequirement id="UnknownRequirement110">
         <NodeArray index="Show" Link="NotCountUpgradeEvolveGroovedSpines3QueuedOrBetter"/>
