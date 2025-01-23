@@ -224,6 +224,9 @@
     <CRequirement id="BeHigh">
         <NodeArray index="Show" Link="CountBehaviorResurgentArchonDummyInProgressOnly"/>
     </CRequirement>
+    <CRequirement id="PacifierArmoryInstalled">
+        <NodeArray index="Use" Link="CountBehaviorPacifierQuartersInProgressOnlyAtUnit927967646"/>
+    </CRequirement>
     <CRequirement id="TrisensorsNo">
         <NodeArray index="Show" Link="NotCountUpgradeTriSensorsQueuedOrBetter"/>
     </CRequirement>

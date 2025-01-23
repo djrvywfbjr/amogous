@@ -79251,6 +79251,11 @@
         <WhichUnit Value="Caster"/>
         <Behavior value="XenWarrior64332"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="XenWarrior64">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="PacifierQuarters"/>
+    </CEffectApplyBehavior>
     <CEffectApplyBehavior id="XenWarrior7">
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>

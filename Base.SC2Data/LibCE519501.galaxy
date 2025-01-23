@@ -1126,7 +1126,6 @@ bool libCE519501_gt_POTH_Func (bool testConds, bool runActions) {
         libNtve_gf_SetUpgradeLevelForPlayer(7, "CorruptedPlagueSpeedDebuff232222222222", 1);
         libNtve_gf_SetUpgradeLevelForPlayer(8, "CorruptedPlagueSpeedDebuff232222222222", 1);
         HelpPanelAddTip(PlayerGroupAll(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/lib_CE519501_D6F32717"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/lib_CE519501_9AACC247"), StringExternal("Param/Value/lib_CE519501_18348770"), "Assets\\Textures\\btn-ability-zeratul-chargedcrystal-psionicwinds.dds");
-        HelpPanelAddTip(PlayerGroupAll(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/lib_CE519501_4775DF33"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/lib_CE519501_65DF154C"), StringExternal("Param/Value/lib_CE519501_C35383FF"), "Assets\\Textures\\btn-ability-spearofadun-temporalfield.dds");
     }
 
     return true;

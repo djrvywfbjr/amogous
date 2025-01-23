@@ -1751,6 +1751,10 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="ObserverSquadSight4" State="CompleteOnlyAtUnit"/>
     </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorPacifierQuartersInProgressOnlyAtUnit927967646">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="PacifierQuarters" State="InProgressOnlyAtUnit"/>
+    </CRequirementCountBehavior>
     <CRequirementCountBehavior id="CountBehaviorPrimalistEssenceCompleteOnlyAtUnit">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="PrimalistEssence" State="CompleteOnlyAtUnit"/>
