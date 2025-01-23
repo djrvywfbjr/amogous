@@ -367,5 +367,6 @@
 <Unit id="Scientist222"/>
 <Unit id="SensorTower42"/>
 <Unit id="Queen5"/>
+<Unit id="ImperialLaborer"/>
 <Weapon id="RavasaurAir3"/>
 </Preload>

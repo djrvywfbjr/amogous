@@ -11717,10 +11717,10 @@
         <EffectArray Reference="Unit,MilitarizedColonistTransport2,LifeStart" Value="200"/>
     </CUpgrade>
     <CUpgrade id="UnknownUpgrade732">
-        <EffectArray Operation="Set" Reference="Unit,SupplyDepot4,CostResource[Minerals]" Value="125"/>
-        <EffectArray Operation="Set" Reference="Unit,SupplyDepot4,LifeMax" Value="450"/>
-        <EffectArray Operation="Set" Reference="Unit,SupplyDepot4,LifeStart" Value="450"/>
-        <EffectArray Reference="Unit,SupplyDepot4,LifeArmor" Value="3"/>
+        <EffectArray Operation="Set" Reference="Unit,EnlistmentHouse,CostResource[Minerals]" Value="125"/>
+        <EffectArray Operation="Set" Reference="Unit,EnlistmentHouse,LifeMax" Value="450"/>
+        <EffectArray Operation="Set" Reference="Unit,EnlistmentHouse,LifeStart" Value="450"/>
+        <EffectArray Reference="Unit,EnlistmentHouse,LifeArmor" Value="3"/>
         <EffectArray Reference="Unit,MissileTurret4,LifeArmor" Value="3"/>
     </CUpgrade>
     <CUpgrade id="UnknownUpgrade74">
