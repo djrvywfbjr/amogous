@@ -1555,7 +1555,7 @@
         <NodeArray index="Use" Link="CountUnitEngineeringBayCompleteOnlyTechTreeCheat"/>
     </CRequirement>
     <CRequirement id="HaveEnlistmentHouse">
-        <NodeArray index="Use" Link="CountUnitSupplyDepot4CompleteOnly523211830"/>
+        <NodeArray index="Use" Link="CountUnitEnlistmentHouseCompleteOnly523211830"/>
     </CRequirement>
     <CRequirement id="HaveEnlistmentHouse2">
         <NodeArray index="Use" Link="CountUnitBarracks6CompleteOnly4150837690"/>

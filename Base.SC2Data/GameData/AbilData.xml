@@ -16173,7 +16173,7 @@
             </Button>
             <Unit value="ImperialLaborer"/>
         </InfoArray>
-        <InfoArray index="Train2" Time="10">
+        <InfoArray index="Train2" Time="14">
             <Button DefaultButtonFace="Marine11"/>
             <Unit value="Marine3"/>
         </InfoArray>
@@ -57577,7 +57577,7 @@
         <InfoArray index="Build1" Unit="CommandCenter5" Time="70">
             <Button DefaultButtonFace="CommandCenter10" Requirements=""/>
         </InfoArray>
-        <InfoArray index="Build2" Unit="SupplyDepot4">
+        <InfoArray index="Build2" Unit="EnlistmentHouse">
             <Button DefaultButtonFace="SupplyDepot8" Requirements=""/>
         </InfoArray>
         <InfoArray index="Build3">
