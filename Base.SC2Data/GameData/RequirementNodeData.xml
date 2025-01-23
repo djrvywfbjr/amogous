@@ -3987,6 +3987,7 @@
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitInfestationPit42CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="InfestationPit42" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitInfestationPit42CompleteOnly706965576TechTreeCheat">
@@ -5775,6 +5776,16 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="AdvancedConstruction24" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeAngelicSmallingSynapticDischargeCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="AngelicSmallingSynapticDischarge" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeAngelicSmallingSynapticDischargeQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="AngelicSmallingSynapticDischarge" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeAutoHarvesterQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="AutoHarvester" State="QueuedOrBetter"/>
@@ -5958,6 +5969,11 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="DAS" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeDominantSmallingAtomShiftQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="DominantSmallingAtomShift" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeEmergencyWeaponCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="EmergencyWeapon" State="CompleteOnly"/>
@@ -6009,6 +6025,11 @@
     <CRequirementCountUpgrade id="CountUpgradeInfiltratorEnergyQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="InfiltratorEnergy" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeLightenedLimbsQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="LightenedLimbs" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeManufactureChemicalStationCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
@@ -6124,6 +6145,11 @@
     <CRequirementCountUpgrade id="CountUpgradeNovaGadgetPulseGrenadesQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="NovaGadgetPulseGrenades" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeNoxiousSmallingSpeedQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="NoxiousSmallingSpeed" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeOmindArmoredSkinQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
@@ -9527,10 +9553,6 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="UmojanBasicUnitUpgrade5222422423222222224222332342223" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
-    <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade5222422423222222224222332342232222222QueuedOrBetter">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="UmojanBasicUnitUpgrade5222422423222222224222332342232222222" State="QueuedOrBetter"/>
-    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade522242242322222222422233234223222222QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="UmojanBasicUnitUpgrade522242242322222222422233234223222222" State="QueuedOrBetter"/>
@@ -9542,18 +9564,6 @@
     <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade52224224232222222242223323422322222QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="UmojanBasicUnitUpgrade52224224232222222242223323422322222" State="QueuedOrBetter"/>
-    </CRequirementCountUpgrade>
-    <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade5222422423222222224222332342232222QueuedOrBetter">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="UmojanBasicUnitUpgrade5222422423222222224222332342232222" State="QueuedOrBetter"/>
-    </CRequirementCountUpgrade>
-    <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade522242242322222222422233234223222CompleteOnly">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="UmojanBasicUnitUpgrade522242242322222222422233234223222" State="CompleteOnly"/>
-    </CRequirementCountUpgrade>
-    <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade522242242322222222422233234223222QueuedOrBetter">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="UmojanBasicUnitUpgrade522242242322222222422233234223222" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade52224224232222222242223323422322QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
@@ -16664,6 +16674,10 @@
     <CRequirementNot id="NotCountUpgradeAdvancedConstruction24QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeAdvancedConstruction24QueuedOrBetter"/>
     </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeAngelicSmallingSynapticDischargeQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeAngelicSmallingSynapticDischargeQueuedOrBetter"/>
+    </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeBansheeCloakingFieldQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeBansheeCloakingFieldQueuedOrBetter"/>
     </CRequirementNot>
@@ -16766,6 +16780,10 @@
     <CRequirementNot id="NotCountUpgradeCyberFrenzySimulatorQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeCyberFrenzySimulatorQueuedOrBetter"/>
     </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeDominantSmallingAtomShiftQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeDominantSmallingAtomShiftQueuedOrBetter"/>
+    </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeEmergencyWeaponCompleteOnly">
         <OperandArray index="0" value="CountUpgradeEmergencyWeaponCompleteOnly"/>
     </CRequirementNot>
@@ -16790,6 +16808,10 @@
     <CRequirementNot id="NotCountUpgradeInfiltratorEnergyQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeInfiltratorEnergyQueuedOrBetter"/>
     </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeLightenedLimbsQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeLightenedLimbsQueuedOrBetter"/>
+    </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeMicroFiltering3QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeMicroFiltering3QueuedOrBetter"/>
     </CRequirementNot>
@@ -16804,6 +16826,10 @@
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeNovaGadgetPulseGrenadesQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeNovaGadgetPulseGrenadesQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeNoxiousSmallingSpeedQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeNoxiousSmallingSpeedQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeOmindArmoredSkinQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeOmindArmoredSkinQueuedOrBetter"/>
@@ -17873,9 +17899,6 @@
     <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222224222332342223QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade5222422423222222224222332342223QueuedOrBetter"/>
     </CRequirementNot>
-    <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222224222332342232222222QueuedOrBetter">
-        <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade5222422423222222224222332342232222222QueuedOrBetter"/>
-    </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222422233234223222222QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade522242242322222222422233234223222222QueuedOrBetter"/>
     </CRequirementNot>
@@ -17884,12 +17907,6 @@
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222242223323422322222QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade52224224232222222242223323422322222QueuedOrBetter"/>
-    </CRequirementNot>
-    <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222224222332342232222QueuedOrBetter">
-        <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade5222422423222222224222332342232222QueuedOrBetter"/>
-    </CRequirementNot>
-    <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222422233234223222QueuedOrBetter">
-        <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade522242242322222222422233234223222QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222242223323422322QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade52224224232222222242223323422322QueuedOrBetter"/>

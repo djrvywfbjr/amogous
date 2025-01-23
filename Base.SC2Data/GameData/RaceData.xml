@@ -619,7 +619,7 @@
         <StartingUnitArray Unit="CommandCenter5">
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
-        <StartingUnitArray Count="14" Unit="SCV6">
+        <StartingUnitArray Count="14" Unit="ImperialLaborer">
             <Flags index="ResourceRally" value="1"/>
             <Offset value="0,-3"/>
             <Offset value="1,-3"/>

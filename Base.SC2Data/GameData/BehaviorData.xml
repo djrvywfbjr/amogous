@@ -1395,6 +1395,12 @@
         <Duration value="30"/>
         <Modification TimeScale="1.4"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="SpeedBoost">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.4"/>
+        <Modification MoveSpeedBonus="4"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="VoidCall">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
@@ -23651,7 +23657,7 @@
                 <AbilLinkDisableArray value="OdinNuclearStrike4"/>
                 <AbilLinkDisableArray value="ChannelSnipe2"/>
                 <AbilLinkDisableArray value="CalldownMULE423323"/>
-                <AbilLinkDisableArray value="EMP34"/>
+                <AbilLinkDisableArray value="ImmolationRound"/>
                 <AbilLinkDisableArray value="ChannelSnipe23"/>
             </Modification>
         </VeterancyLevelArray>
@@ -23663,7 +23669,7 @@
                 <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
                 <VitalRegenArray index="Life" value="1"/>
                 <AbilLinkDisableArray value="OdinNuclearStrike4"/>
-                <AbilLinkDisableArray value="EMP34"/>
+                <AbilLinkDisableArray value="ImmolationRound"/>
                 <AbilLinkDisableArray value="ChannelSnipe2"/>
                 <AbilLinkDisableArray value="CalldownMULE423323"/>
                 <AttributeChangeArray Attribute="DamageBonus33" Points="3"/>
@@ -23676,7 +23682,7 @@
                 <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
                 <VitalRegenArray index="Energy" value="0.3984"/>
-                <AbilLinkEnableArray value="EMP34"/>
+                <AbilLinkEnableArray value="ImmolationRound"/>
                 <AbilLinkDisableArray value="OdinNuclearStrike4"/>
                 <AbilLinkDisableArray value="CalldownMULE423323"/>
                 <AbilLinkDisableArray value="ChannelSnipe2"/>
@@ -25625,14 +25631,14 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <VeterancyLevelArray LevelGainEffect="RankDummy2322">
             <Modification>
-                <AbilLinkDisableArray value="ArbiterMPStasisField32"/>
+                <AbilLinkDisableArray value="ConnectionCUt"/>
                 <AbilLinkDisableArray value="VoidHighTemplarPsiOrb22"/>
                 <AbilLinkDisableArray value="SJPirateYamato36"/>
             </Modification>
         </VeterancyLevelArray>
         <VeterancyLevelArray MinVeterancyXP="65" LevelGainEffect="RankDummy2">
             <Modification MoveSpeedBonus="0.1992">
-                <AbilLinkDisableArray value="ArbiterMPStasisField32"/>
+                <AbilLinkDisableArray value="ConnectionCUt"/>
                 <AbilLinkDisableArray value="VoidHighTemplarPsiOrb22"/>
                 <AbilLinkDisableArray value="SJPirateYamato36"/>
                 <WeaponEnableArray value="MengskDiamondback4"/>
@@ -25642,7 +25648,7 @@
         </VeterancyLevelArray>
         <VeterancyLevelArray MinVeterancyXP="80" LevelGainEffect="RankDummy22">
             <Modification>
-                <AbilLinkDisableArray value="ArbiterMPStasisField32"/>
+                <AbilLinkDisableArray value="ConnectionCUt"/>
                 <AbilLinkDisableArray value="VoidHighTemplarPsiOrb22"/>
                 <AbilLinkDisableArray value="SJPirateYamato36"/>
                 <WeaponEnableArray value="MengskDiamondback4"/>
@@ -25653,7 +25659,7 @@
         <VeterancyLevelArray MinVeterancyXP="95" LevelGainEffect="RankDummy222">
             <Modification>
                 <AbilLinkEnableArray value="VoidHighTemplarPsiOrb22"/>
-                <AbilLinkDisableArray value="ArbiterMPStasisField32"/>
+                <AbilLinkDisableArray value="ConnectionCUt"/>
                 <AbilLinkDisableArray value="SJPirateYamato36"/>
                 <WeaponEnableArray value="MengskDiamondback4"/>
                 <AttributeChangeArray/>
@@ -25662,7 +25668,7 @@
         </VeterancyLevelArray>
         <VeterancyLevelArray MinVeterancyXP="110" LevelGainEffect="RankDummy2222">
             <Modification>
-                <AbilLinkEnableArray value="ArbiterMPStasisField32"/>
+                <AbilLinkEnableArray value="ConnectionCUt"/>
                 <AbilLinkDisableArray value="SJPirateYamato36"/>
                 <WeaponEnableArray value="MengskDiamondback4"/>
                 <AttributeChangeArray/>
