@@ -4059,7 +4059,7 @@
         <DisplayEffect value="SpecterU522"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="8"/>
-        <Period value="2"/>
+        <Period value="4.2"/>
         <DamagePoint value="0.083"/>
         <Backswing value="1.167"/>
         <Effect value="SpecterU522"/>
@@ -4156,7 +4156,7 @@
     <CWeaponLegacy id="MengskDiamondback">
         <Options index="LinkedCooldown" value="0"/>
         <Range value="10"/>
-        <Period value="4.9"/>
+        <Period value="7"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="NovaWeaponCanisterRifle2">
         <EditorCategories value="Race:Terran"/>
@@ -6834,7 +6834,7 @@
         <DisplayEffect value="MengskDiamondback"/>
         <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="10"/>
-        <Period value="4.9"/>
+        <Period value="7"/>
         <Effect value="MengskDiamondback"/>
         <AllowedMovement value="Moving"/>
     </CWeaponLegacy>

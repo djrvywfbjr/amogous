@@ -261,7 +261,6 @@
 <Unit id="SCV4"/>
 <Unit id="Collector2"/>
 <Unit id="Probe3"/>
-<Unit id="SCV6"/>
 <Unit id="SCV7"/>
 <Unit id="Collector23"/>
 <Unit id="Probe4"/>
@@ -367,5 +366,6 @@
 <Unit id="Scientist222"/>
 <Unit id="SensorTower42"/>
 <Unit id="Queen5"/>
+<Unit id="ImperialLaborer"/>
 <Weapon id="RavasaurAir3"/>
 </Preload>
