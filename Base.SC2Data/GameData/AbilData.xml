@@ -6097,7 +6097,7 @@
                 <TimeUse value="75"/>
             </Charge>
             <Button DefaultButtonFace="Ultralisk2" Requirements="HaveCyberHatchery22222222"/>
-            <Unit value="Ultralisk5"/>
+            <Unit value="UltrasonicMachine"/>
             <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train12">
@@ -50868,7 +50868,7 @@
             <Cooldown Link="Abil/AlarakAvatar" TimeUse="40"/>
         </Cost>
         <AINotifyEffect value="ShieldUp"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield211"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="AtomShift"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="ShieldUp11">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -69412,10 +69412,10 @@
         <InfoArray index="Research6" Time="330" Upgrade="UmojanBasicUnitUpgrade52224224232222222243332">
             <Button DefaultButtonFace="MothershipCore22223224222322" Requirements="Damage13222"/>
         </InfoArray>
-        <InfoArray index="Research7" Time="150" Upgrade="UmojanBasicUnitUpgrade5222422423222222224222332342232222">
+        <InfoArray index="Research7" Time="150" Upgrade="NoxiousSmallingSpeed">
             <Resource index="Minerals" value="125"/>
             <Resource index="Vespene" value="125"/>
-            <Button DefaultButtonFace="MothershipCore222232242224335" Requirements="Damage1343333222"/>
+            <Button DefaultButtonFace="AcceleratedReflexes" Requirements="NoxiousSmallingSpeed"/>
         </InfoArray>
         <InfoArray index="Research8" Time="150" Upgrade="UmojanBasicUnitUpgrade52224224232222222243322223">
             <Button DefaultButtonFace="MothershipCore22223224222333" Requirements="Damage13232"/>
@@ -69468,10 +69468,10 @@
         <InfoArray index="Research6" Time="330" Upgrade="UmojanBasicUnitUpgrade522242242322222222422236">
             <Button DefaultButtonFace="MothershipCore22223224222522" Requirements="Damage133232"/>
         </InfoArray>
-        <InfoArray index="Research7" Time="150" Upgrade="UmojanBasicUnitUpgrade5222422423222222224222332342232222222">
+        <InfoArray index="Research7" Time="150" Upgrade="DominantSmallingAtomShift">
             <Resource index="Minerals" value="125"/>
             <Resource index="Vespene" value="125"/>
-            <Button DefaultButtonFace="MothershipCore222232242224335" Requirements="Damage134333322"/>
+            <Button DefaultButtonFace="AtomicBalance" Requirements="Damage134333322"/>
         </InfoArray>
         <InfoArray index="Research8" Time="285"/>
         <InfoArray index="Research9" Time="330"/>
@@ -69548,6 +69548,11 @@
             <Resource index="Vespene" value="75"/>
             <Button DefaultButtonFace="UnknownButton99" Requirements="LearnDamageLvl14222"/>
         </InfoArray>
+        <InfoArray index="Research14" Time="84" Upgrade="LightenedLimbs">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="LightenedLimbs" Requirements="OMindLightenedLimbs"/>
+        </InfoArray>
         <InfoArray index="Research21" Upgrade="UmojanBasicUnitUpgrade522242242322222222433222222222222">
             <Button DefaultButtonFace="PhaseCannon1122" Requirements="UnknownRequirement722"/>
         </InfoArray>
@@ -69607,10 +69612,10 @@
         <InfoArray index="Research8" Time="450" Upgrade="UmojanBasicUnitUpgrade522242242322222222422233234223">
             <Button DefaultButtonFace="MothershipCore22223224222433433" Requirements="Damage1352"/>
         </InfoArray>
-        <InfoArray index="Research9" Time="150" Upgrade="UmojanBasicUnitUpgrade522242242322222222422233234223222">
+        <InfoArray index="Research9" Time="150" Upgrade="AngelicSmallingSynapticDischarge">
             <Resource index="Minerals" value="125"/>
             <Resource index="Vespene" value="125"/>
-            <Button DefaultButtonFace="MothershipCore222232242224335" Requirements="Damage1343333"/>
+            <Button DefaultButtonFace="HeavenlyEnergies" Requirements="Damage1343333"/>
         </InfoArray>
         <InfoArray index="Research10" Time="220" Upgrade="UmojanBasicUnitUpgrade52224224232222222242223323422322">
             <Resource index="Minerals" value="200"/>

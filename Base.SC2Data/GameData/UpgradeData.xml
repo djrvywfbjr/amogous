@@ -417,6 +417,10 @@
         <MaxLevel value="30"/>
         <LeaderAlias value="AdvancedConstruction"/>
     </CUpgrade>
+    <CUpgrade id="LightenedLimbs">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-hotsmetabolicboost.dds"/>
+        <EffectArray Reference="Unit,HotSSwarmling34,Speed" Value="1.429600"/>
+    </CUpgrade>
     <CUpgrade id="MobileAutomatons">
         <Flags index="UpgradeCheat" value="0"/>
         <EffectArray Operation="Set" Reference="Behavior,Unmanned,Modification.StateFlags[SuppressDetection]" Value="0"/>
@@ -5577,15 +5581,13 @@
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
-    <CUpgrade id="UmojanBasicUnitUpgrade522242242322222222422233234223222">
-        <EffectArray Operation="Set" Reference="Unit,HotSSwarmling342,CostResource[Minerals]" Value="35"/>
-        <EffectArray Operation="Set" Reference="Weapon,HotSSwarmlingClaws2,Cost.Vital[Shields]" Value="-18"/>
+    <CUpgrade id="AngelicSmallingSynapticDischarge">
+        <EffectArray Operation="Set" Reference="Weapon,HotSSwarmlingClaws2,Cost.Vital[Shields]" Value="-20"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
-    <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222224222332342232222">
-        <EffectArray Operation="Set" Reference="Unit,HotSSwarmling32,CostResource[Minerals]" Value="0"/>
-        <EffectArray Operation="Set" Reference="Unit,HotSSwarmling32,CostResource[Vespene]" Value="10"/>
+    <CUpgrade id="NoxiousSmallingSpeed">
+        <EffectArray Reference="Unit,HotSSwarmling32,Speed" Value="1.429600"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -5601,8 +5603,8 @@
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
-    <CUpgrade id="UmojanBasicUnitUpgrade5222422423222222224222332342232222222">
-        <EffectArray Operation="Set" Reference="Unit,HotSSwarmling33,CostResource[Minerals]" Value="50"/>
+    <CUpgrade id="DominantSmallingAtomShift">
+        <EffectArray Operation="Set" Reference="Behavior,MedDrone23,Modification.VitalRegenArray[Shields]" Value="-15.000000"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>
@@ -11641,10 +11643,12 @@
         <EffectArray Operation="Set" Reference="Weapon,GuardianMPWeapon3,Range" Value="13"/>
     </CUpgrade>
     <CUpgrade id="UnknownUpgrade58">
-        <EffectArray Reference="Effect,VolatileBurstUCorrosive3,Amount" Value="10"/>
-        <EffectArray Reference="Effect,VolatileBurstU2Corrosive3,Amount" Value="10"/>
-        <EffectArray Reference="Effect,VolatileBurstUCorrosive3,AttributeBonus[Light]" Value="5"/>
-        <EffectArray Reference="Effect,VolatileBurstU2Corrosive3,AttributeBonus[Light]" Value="5"/>
+        <EffectArray Reference="Effect,VolatileBurstUCorrosive3,Amount" Value="5"/>
+        <EffectArray Reference="Effect,VolatileBurstU2Corrosive3,Amount" Value="5"/>
+        <EffectArray Reference="Effect,VolatileBurstUCorrosive3,AttributeBonus[Light]" Value="20"/>
+        <EffectArray Reference="Effect,VolatileBurstU2Corrosive3,AttributeBonus[Light]" Value="20"/>
+        <EffectArray Reference="Effect,VolatileBurstU4,AttributeBonus[Light]" Value="20"/>
+        <EffectArray Reference="Effect,VolatileBurstU4,Amount" Value="5"/>
     </CUpgrade>
     <CUpgrade id="UnknownUpgrade59"/>
     <CUpgrade id="UnknownUpgrade592">
@@ -11675,6 +11679,8 @@
     <CUpgrade id="UnknownUpgrade63">
         <EffectArray Reference="Unit,HotSSwarmling33,ShieldsMax" Value="50"/>
         <EffectArray Reference="Unit,HotSSwarmling33,ShieldsStart" Value="50"/>
+        <EffectArray Reference="Unit,HotSSwarmling33,ShieldArmor" Value="3"/>
+        <EffectArray Reference="Unit,HotSSwarmling33,LifeArmor" Value="3"/>
     </CUpgrade>
     <CUpgrade id="UnknownUpgrade64">
         <EffectArray Operation="Set" Reference="Weapon,GoliathA22,Range" Value="9"/>

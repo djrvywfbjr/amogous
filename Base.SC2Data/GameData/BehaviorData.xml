@@ -1395,6 +1395,12 @@
         <Duration value="30"/>
         <Modification TimeScale="1.4"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="SpeedBoost">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.4"/>
+        <Modification MoveSpeedBonus="4"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="VoidCall">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>

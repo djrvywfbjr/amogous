@@ -34,6 +34,10 @@
         <EditorCategories value="Race:Zerg"/>
         <HotkeyAlias value="AberrationTowering2"/>
     </CButton>
+    <CButton id="AcceleratedReflexes">
+        <Icon value="Assets\Textures\btn-ability-zerg-dehaka-roach-glialreconstruction.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-dehaka-roach-glialreconstruction.dds"/>
+    </CButton>
     <CButton id="ActivateCompleteAnnihilation">
         <Icon value="Assets\Textures\btn-unit-terran-tychusmarauder-holo.dds"/>
     </CButton>
@@ -362,6 +366,10 @@
         <AlertIcon value="Assets\Textures\btn-ability-protoss-timewarp.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
+    <CButton id="AtomicBalance">
+        <Icon value="Assets\Textures\btn-ability-zerg-viper-ocularparasite.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-viper-ocularparasite.dds"/>
+    </CButton>
     <CButton id="BuildArmoredTurret">
         <Icon value="Assets\Textures\btn-tips-flamingbetty.dds"/>
         <AlertIcon value="Assets\Textures\btn-building-terran-autoturret.dds"/>
@@ -410,6 +418,10 @@
         <Icon value="Assets\Textures\btn-ability-stetmann-banelingmanashield.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
+    <CButton id="LightenedLimbs">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-hotsmetabolicboost.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-zerg-hotsmetabolicboost.dds"/>
+    </CButton>
     <CButton id="PointDefenseDrone32">
         <Tooltip value="Button/Tooltip/PointDefenseDrone3244"/>
         <Icon value="Assets\Textures\btn-unit-terran-warhound.dds"/>
@@ -439,6 +451,10 @@
         <AlertIcon value="Assets\Textures\btn-ability-terran-snipe-color.dds"/>
         <EditorCategories value="Race:Terran"/>
         <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="SynapticSpike">
+        <Icon value="Assets\Textures\btn-ability-zerg-dehaka-ultralisk-brutalcharge.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-dehaka-ultralisk-brutalcharge.dds"/>
     </CButton>
     <CButton id="TemporalAnomaly">
         <Icon value="Assets\Textures\nova coop_lvl 11_all research costs and times - 50.dds"/>
@@ -7878,8 +7894,9 @@
         <Icon value="Assets\Textures\btn-upgrade-karax-orbitalassault_stun.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
-    <CButton id="CombatShield211">
+    <CButton id="AtomShift">
         <Icon value="Assets\Textures\btn-ability-zerg-viper-ocularparasite.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-viper-ocularparasite.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
     <CButton id="CombatShield212">
@@ -31270,6 +31287,12 @@
     </CButton>
     <CButton id="VoidColossusFireBeam24323432">
         <Icon value="Assets\Textures\btn-ability-zeratul-warpprism-transferlink.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <HotkeyAlias value="VoidColossusFireBeam"/>
+    </CButton>
+    <CButton id="HeavenlyEnergies">
+        <Icon value="Assets\Textures\btn-ability-zeratul-warpprism-transferlink.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-warpprism-transferlink.dds"/>
         <EditorCategories value="Race:Protoss"/>
         <HotkeyAlias value="VoidColossusFireBeam"/>
     </CButton>

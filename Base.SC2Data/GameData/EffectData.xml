@@ -5628,6 +5628,10 @@
         <Kind value="Ranged"/>
         <Amount value="35"/>
     </CEffectDamage>
+    <CEffectApplyBehavior id="SpeedBoost">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Source"/>
+    </CEffectApplyBehavior>
     <CEffectEnumArea id="StalkerEntropyLanceSearch62">
         <ValidatorArray value="HaveVoidStalkerMultishot"/>
         <EditorCategories value=""/>
@@ -28181,6 +28185,7 @@
         <EffectArray value="ZerglingFrenzy"/>
         <EffectArray value="ZerglingSunder"/>
         <EffectArray value="HotSSwarmlingClawsDamage2"/>
+        <EffectArray value="SpeedBoost"/>
     </CEffectSet>
     <CEffectSet id="HotSSwarmlingClaws3">
         <EditorCategories value="Race:Zerg"/>
