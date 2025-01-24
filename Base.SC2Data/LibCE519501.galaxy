@@ -23,6 +23,8 @@ void libCE519501_InitVariables () {
     libCE519501_InitVariables_completed = true;
 
     libCE519501_gv_activePlayer = PlayerGroupEmpty();
+    libCE519501_gv_KOTH_TIMER = TimerCreate();
+    libCE519501_gv_KOTH_TIMER2 = TimerWindowLastCreated();
 }
 
 // Triggers
@@ -1107,14 +1109,26 @@ void libCE519501_gt_Timer5AltCrystmas_Init () {
 //--------------------------------------------------------------------------------------------------
 bool libCE519501_gt_POTH_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
+    unitgroup auto1B87646F_g;
+    int auto1B87646F_u;
+    unit auto1B87646F_var;
+
     // Actions
     if (!runActions) {
         return true;
     }
 
     if ((GameAttributeGameValue("2") == "0002")) {
+        auto1B87646F_g = UnitGroup("Pylon10", c_playerAny, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
+        auto1B87646F_u = UnitGroupCount(auto1B87646F_g, c_unitCountAll);
+        for (;; auto1B87646F_u -= 1) {
+            auto1B87646F_var = UnitGroupUnitFromEnd(auto1B87646F_g, auto1B87646F_u);
+            if (auto1B87646F_var == null) { break; }
+            UnitRemove(auto1B87646F_var);
+        }
         TriggerEnable(libCE519501_gt_SparkOfExistence, false);
         TriggerEnable(libCD55B2B5_gt_Timer5Alt, false);
+        libNtve_gf_UnitCreateFacingPoint(1, "GuardMarine22", 0, 15, RegionGetCenter(RegionPlayableMap()), UnitGetPosition(EventUnit()));
         libNtve_gf_UnitCreateFacingPoint(1, "SacredCore3", 0, 15, RegionGetCenter(RegionPlayableMap()), UnitGetPosition(EventUnit()));
         libCE519501_gv_sparkOfExistence = UnitLastCreated();
         libNtve_gf_SetUpgradeLevelForPlayer(2, "CorruptedPlagueSpeedDebuff232222222222", 1);
@@ -1155,6 +1169,7 @@ bool libCE519501_gt_Timer400_Func (bool testConds, bool runActions) {
     }
 
     TriggerEnable(libCE519501_gt_SparkOfExistence, true);
+    TimerWindowCreate(libCE519501_gv_KOTH_TIMER, StringExternal("Param/Value/lib_CE519501_9C6C455D"), true, false);
     libCD55B2B5_gv_randomPythonLook = RandomInt(1, 5);
     if ((libCD55B2B5_gv_randomPythonLook == 1)) {
         TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCE519501_gv_sparkOfExistence, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_A8CFEC8E"), StringExternal("Param/Value/lib_CE519501_8ACF277A"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
@@ -1182,7 +1197,7 @@ bool libCE519501_gt_Timer400_Func (bool testConds, bool runActions) {
 //--------------------------------------------------------------------------------------------------
 void libCE519501_gt_Timer400_Init () {
     libCE519501_gt_Timer400 = TriggerCreate("libCE519501_gt_Timer400_Func");
-    TriggerAddEventTimeElapsed(libCE519501_gt_Timer400, 400.0, c_timeGame);
+    TriggerAddEventTimeElapsed(libCE519501_gt_Timer400, 420.0, c_timeGame);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -1200,15 +1215,15 @@ bool libCE519501_gt_Victory_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    auto4C873882_g = PlayerGroupAlliance(c_playerGroupAlly, UnitGetOwner(EventUnit()));
+    auto4C873882_g = PlayerGroupAlliance(c_playerGroupAlly, UnitGetOwner(libCE519501_gv_sparkOfExistence));
     auto4C873882_var = -1;
     while (true) {
         auto4C873882_var = PlayerGroupNextPlayer(auto4C873882_g, auto4C873882_var);
         if (auto4C873882_var < 0) { break; }
         GameOver(auto4C873882_var, c_gameOverVictory, true, true);
     }
-    GameOver(UnitGetOwner(EventUnit()), c_gameOverVictory, true, true);
-    auto1B2ACFB8_g = PlayerGroupAlliance(c_playerGroupEnemy, UnitGetOwner(EventUnit()));
+    GameOver(UnitGetOwner(libCE519501_gv_sparkOfExistence), c_gameOverVictory, true, true);
+    auto1B2ACFB8_g = PlayerGroupAlliance(c_playerGroupEnemy, UnitGetOwner(libCE519501_gv_sparkOfExistence));
     auto1B2ACFB8_var = -1;
     while (true) {
         auto1B2ACFB8_var = PlayerGroupNextPlayer(auto1B2ACFB8_g, auto1B2ACFB8_var);
@@ -1221,46 +1236,7 @@ bool libCE519501_gt_Victory_Func (bool testConds, bool runActions) {
 //--------------------------------------------------------------------------------------------------
 void libCE519501_gt_Victory_Init () {
     libCE519501_gt_Victory = TriggerCreate("libCE519501_gt_Victory_Func");
-    TriggerAddEventUnitBehaviorChange(libCE519501_gt_Victory, null, "GlazeHolo2243", c_unitBehaviorChangeCreate);
-}
-
-//--------------------------------------------------------------------------------------------------
-// Trigger: VictoryPreparing
-//--------------------------------------------------------------------------------------------------
-bool libCE519501_gt_VictoryPreparing_Func (bool testConds, bool runActions) {
-    // Automatic Variable Declarations
-    // Actions
-    if (!runActions) {
-        return true;
-    }
-
-    if ((libCD55B2B5_gv_randomPythonLook == 1)) {
-        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCE519501_gv_sparkOfExistence, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_DDEC7747"), StringExternal("Param/Value/lib_CE519501_856F940F"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
-    }
-
-    if ((libCD55B2B5_gv_randomPythonLook == 2)) {
-        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCE519501_gv_sparkOfExistence, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_861FD5E4"), StringExternal("Param/Value/lib_CE519501_0B6A809F"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
-    }
-
-    if ((libCD55B2B5_gv_randomPythonLook == 3)) {
-        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCE519501_gv_sparkOfExistence, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_C60AEBB5"), StringExternal("Param/Value/lib_CE519501_E5B699FA"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
-    }
-
-    if ((libCD55B2B5_gv_randomPythonLook == 4)) {
-        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCE519501_gv_sparkOfExistence, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_0925A690"), StringExternal("Param/Value/lib_CE519501_8CBAB3C6"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
-    }
-
-    if ((libCD55B2B5_gv_randomPythonLook == 5)) {
-        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCE519501_gv_sparkOfExistence, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_2BC69150"), StringExternal("Param/Value/lib_CE519501_BB7A2A36"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
-    }
-
-    return true;
-}
-
-//--------------------------------------------------------------------------------------------------
-void libCE519501_gt_VictoryPreparing_Init () {
-    libCE519501_gt_VictoryPreparing = TriggerCreate("libCE519501_gt_VictoryPreparing_Func");
-    TriggerAddEventUnitAbility(libCE519501_gt_VictoryPreparing, null, AbilityCommand("ShieldUp1338", 0), c_abilEffectStagePrep, false);
+    TriggerAddEventTimer(libCE519501_gt_Victory, libCE519501_gv_KOTH_TIMER);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -1283,26 +1259,6 @@ bool libCE519501_gt_SparkOfExistence_Func (bool testConds, bool runActions) {
     UnitSetOwner(EventUnit(), EventUnitDamageSourcePlayer(), true);
     UnitBehaviorRemove(EventUnit(), "ShieldingEngine938", 1);
     libCD55B2B5_gv_randomPythonLook = RandomInt(1, 5);
-    if ((libCD55B2B5_gv_randomPythonLook == 1)) {
-        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCE519501_gv_sparkOfExistence, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_6E0314A5"), StringExternal("Param/Value/lib_CE519501_099E643C"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
-    }
-
-    if ((libCD55B2B5_gv_randomPythonLook == 2)) {
-        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCE519501_gv_sparkOfExistence, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_4DAB1E7F"), StringExternal("Param/Value/lib_CE519501_21269752"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
-    }
-
-    if ((libCD55B2B5_gv_randomPythonLook == 3)) {
-        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCE519501_gv_sparkOfExistence, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_E46E4783"), StringExternal("Param/Value/lib_CE519501_232F1A34"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
-    }
-
-    if ((libCD55B2B5_gv_randomPythonLook == 4)) {
-        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCE519501_gv_sparkOfExistence, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_692EB2C4"), StringExternal("Param/Value/lib_CE519501_91CECFC6"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
-    }
-
-    if ((libCD55B2B5_gv_randomPythonLook == 5)) {
-        TransmissionSendForPlayerSelect(PlayerGroupAll(), TransmissionSourceFromUnit(libCE519501_gv_sparkOfExistence, true, false, "Talk"), libNtve_gf_CinematicPortrait(libNtve_ge_CinematicPortraitPosition_CenterLeft), "", "Talk", null, StringExternal("Param/Value/lib_CE519501_BB181153"), StringExternal("Param/Value/lib_CE519501_EA34EBBC"), 5.0, c_transmissionDurationAdd, true, c_maxPlayers, false);
-    }
-
     return true;
 }
 
@@ -1310,6 +1266,86 @@ bool libCE519501_gt_SparkOfExistence_Func (bool testConds, bool runActions) {
 void libCE519501_gt_SparkOfExistence_Init () {
     libCE519501_gt_SparkOfExistence = TriggerCreate("libCE519501_gt_SparkOfExistence_Func");
     TriggerAddEventUnitDamaged(libCE519501_gt_SparkOfExistence, null, c_unitDamageTypeAny, c_unitDamageEither, null);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Timer Start
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_TimerStart_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TimerStart(libCE519501_gv_KOTH_TIMER, 90.0, false, c_timeGame);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_TimerStart_Init () {
+    libCE519501_gt_TimerStart = TriggerCreate("libCE519501_gt_TimerStart_Func");
+    TriggerAddEventUnitBehaviorChange(libCE519501_gt_TimerStart, null, "ShieldingEngine938", c_unitBehaviorChangeCreate);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Timer Pause
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_TimerPause_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TimerPause(libCE519501_gv_KOTH_TIMER, true);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_TimerPause_Init () {
+    libCE519501_gt_TimerPause = TriggerCreate("libCE519501_gt_TimerPause_Func");
+    TriggerAddEventUnitBehaviorChange(libCE519501_gt_TimerPause, null, "PsiDisruption3223222", c_unitBehaviorChangeActivate);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Timer Unpause
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_TimerUnpause_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TimerPause(libCE519501_gv_KOTH_TIMER, false);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_TimerUnpause_Init () {
+    libCE519501_gt_TimerUnpause = TriggerCreate("libCE519501_gt_TimerUnpause_Func");
+    TriggerAddEventUnitBehaviorChange(libCE519501_gt_TimerUnpause, null, "PsiDisruption3223222", c_unitBehaviorChangeDestroy);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Timer Kill
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_TimerKill_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    libNtve_gf_StopTimer(libCE519501_gv_KOTH_TIMER);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_TimerKill_Init () {
+    libCE519501_gt_TimerKill = TriggerCreate("libCE519501_gt_TimerKill_Func");
+    TriggerAddEventUnitBehaviorChange(libCE519501_gt_TimerKill, null, "ShieldingEngine938", c_unitBehaviorChangeDestroy);
 }
 
 void libCE519501_InitTriggers () {
@@ -1347,8 +1383,11 @@ void libCE519501_InitTriggers () {
     libCE519501_gt_POTH_Init();
     libCE519501_gt_Timer400_Init();
     libCE519501_gt_Victory_Init();
-    libCE519501_gt_VictoryPreparing_Init();
     libCE519501_gt_SparkOfExistence_Init();
+    libCE519501_gt_TimerStart_Init();
+    libCE519501_gt_TimerPause_Init();
+    libCE519501_gt_TimerUnpause_Init();
+    libCE519501_gt_TimerKill_Init();
 }
 
 //--------------------------------------------------------------------------------------------------

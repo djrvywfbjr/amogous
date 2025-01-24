@@ -5181,6 +5181,27 @@
         <ImpactEffect value="PsiBlastDamage2"/>
         <AmmoUnit value="KerriganWeapon"/>
     </CEffectLaunchMissile>
+    <CEffectApplyBehavior id="PsiDisruptionApplyBehavior32232222">
+        <ValidatorArray index="0" value="IsWidowMine222"/>
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="PsiDisruption32232222"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="PsiDisruptionApplyBehavior3223232">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="PsiDisruption3223232"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="PsiDisruptionSearchArea32232222">
+        <EditorCategories value="Race:Terran"/>
+        <SearchFilters value="-;Missile"/>
+        <AreaArray Radius="14" Effect="PsiDisruptionApplyBehavior32232222"/>
+        <MaxCount value="5"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="PsiDisruptionSearchArea3223232">
+        <EditorCategories value="Race:Terran"/>
+        <SearchFilters value="-;Self,Player,Ally,Neutral,Dead,Invulnerable,Benign"/>
+        <AreaArray Radius="14" Effect="PsiDisruptionApplyBehavior3223232"/>
+    </CEffectEnumArea>
     <CEffectEnumArea id="RaidFrigateLeftRandomLM">
         <SearchFilters value="Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CEffectEnumArea>
