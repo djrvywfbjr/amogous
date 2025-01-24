@@ -3496,10 +3496,6 @@
     <CRequirementCountUnit id="CountUnitEngineeringBay9CompleteOnly2884205370TechTreeCheat">
         <Count Link="EngineeringBay9" State="CompleteOnly"/>
     </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitEnlistmentHouseCompleteOnly523211830">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="EnlistmentHouse" State="CompleteOnly"/>
-    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitEternalOneQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="EternalOne" State="QueuedOrBetter"/>
@@ -4964,6 +4960,10 @@
     <CRequirementCountUnit id="CountUnitSupplyDepot3CompleteOnly2850905601">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="SupplyDepot3" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitSupplyDepot4CompleteOnly523211830">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="SupplyDepot4" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitSupplyDepot6CompleteOnly2582190245">
         <Flags index="TechTreeCheat" value="0"/>

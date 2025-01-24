@@ -12135,7 +12135,7 @@ Button/Tooltip/AberrationTowering2=Defects can walk over smaller units.
 Button/Tooltip/AberrationTowering22=Instead of dealing damage directly, each attack of Parasitic Cruisers deploys either Cruiser Crew or Bridge Crew depending whether enemies are ground or air.
 Button/Tooltip/Aberrationewfqwfsq21=Flying unit transport. Is also a detector.
 Button/Tooltip/Aberrationgw2112wv221f21=Big anti-air and anti-ground unit. Has close range.
-Button/Tooltip/AcceleratedReflexes=Increases Smalling's movement speed by 2
+Button/Tooltip/AcceleratedReflexes=Increases this strain's Smallings' movement speed by 2.
 Button/Tooltip/ActivateCompleteAnnihilation=Upgrades this exterminator to have 50 more hp, 2 more life armor, 50% increased attack speed and 25% movement speed.
 Button/Tooltip/ActivateStasisWard2=Traps nearby non-heroic enemies in stun for 15 seconds. Trapped units cannot be attacked or affected by abilities.
 Button/Tooltip/ActivateStasisWard3=Traps nearby enemies in stasis for <d ref="Behavior,OracleStasisTrapTarget,Duration"/> seconds. Trapped units cannot be attacked or affected by abilities.
@@ -12352,7 +12352,7 @@ Button/Tooltip/Assimilator7=Summoned in over a Vespene Geyser to allow automatic
 Button/Tooltip/Assimilator8=Warped in over a Vespene Geyser to allow harvesting of vespene gas.
 Button/Tooltip/Assimilator9=Warped in over a Vespene Geyser to allow harvesting of vespene gas.
 Button/Tooltip/AtomShift=Increase speed by 200%, attack speed by 75%, but start to quickly loose shields.<n/>Orders Nano-Symbiotes to sacrifice themselfes for energy. They quickly stop chaning atom structure of Smalling and start to improve each muslce in it's body.
-Button/Tooltip/AtomicBalance=Reduces shield cost for Atom Shift by 20
+Button/Tooltip/AtomicBalance=Reduces the shield cost of Atom Shift by 20
 Button/Tooltip/AttackDroneUnit=Combat drones that automatically strafe their Carrier's target. Carriers may not attack without Interceptors.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/AttackHeal=Orders selected units to move to the target point, fighting nearby allies along the way. Targeting a unit with the Heal Move command orders that it be attacked until it is destroyed or fully healed, depending on dealt attack..
 Button/Tooltip/AttackRedirect2=Orders Close Projection to move to the targeted location.
@@ -15689,7 +15689,7 @@ Button/Tooltip/Lift4=Flies up.
 Button/Tooltip/Lift42=Flies down.
 Button/Tooltip/Lift5=Start slowly flying.
 Button/Tooltip/Lift6=Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed.
-Button/Tooltip/LightenedLimbs=Increases Smalling's movement speed by 2
+Button/Tooltip/LightenedLimbs=Increases this strain's Smallings' movement speed by 2
 Button/Tooltip/LightningBomb2=Deals 100 damage to target over 10 seconds. Targets also take 30% more damage during that time.
 Button/Tooltip/LightningBomb22=Deals 46 damage over 7 seconds to target enemy unit or structure.
 Button/Tooltip/Locust2=Spawns from Swarm Hosts. Locusts last <d ref="Behavior,LocustTimedLife,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
