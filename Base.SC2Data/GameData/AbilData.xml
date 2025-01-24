@@ -51175,9 +51175,9 @@
         <Effect index="0" value="ShieldUp1038"/>
         <Cost>
             <Charge Link=""/>
-            <Cooldown Link="Abil/AlarakAvatar" TimeUse="35"/>
+            <Cooldown Link="Abil/AlarakAvatar"/>
         </Cost>
-        <PrepTime value="5"/>
+        <PrepTime value="0"/>
         <AINotifyEffect value="ShieldUp"/>
         <ProgressButtonArray index="Prep" value="CombatShield21438"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield21438" Requirements="HavePlagueCenter233223"/>

@@ -2565,11 +2565,14 @@
     <CWeaponLegacy id="GuassRifle2222">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
-        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetFilters value="User1;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="7"/>
-        <Period value="0.8608"/>
-        <DamagePoint value="0.05"/>
-        <Backswing value="0.75"/>
+        <Period value="9"/>
+        <DamagePoint value="9"/>
+        <Backswing value="9"/>
+        <Arc value="360"/>
+        <PreswingBeforeAttack value="9"/>
+        <PreswingBetweenAttacks value="9"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GuassRifle23">
         <EditorCategories value="Race:Terran"/>

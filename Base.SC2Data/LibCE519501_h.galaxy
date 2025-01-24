@@ -6,6 +6,8 @@ include "TriggerLibs/natives"
 // Variable Declarations
 playergroup libCE519501_gv_activePlayer;
 unit libCE519501_gv_sparkOfExistence;
+timer libCE519501_gv_KOTH_TIMER;
+int libCE519501_gv_KOTH_TIMER2;
 
 // Trigger Declarations
 trigger libCE519501_gt_BDHgas;
@@ -42,8 +44,11 @@ trigger libCE519501_gt_Timer5AltCrystmas;
 trigger libCE519501_gt_POTH;
 trigger libCE519501_gt_Timer400;
 trigger libCE519501_gt_Victory;
-trigger libCE519501_gt_VictoryPreparing;
 trigger libCE519501_gt_SparkOfExistence;
+trigger libCE519501_gt_TimerStart;
+trigger libCE519501_gt_TimerPause;
+trigger libCE519501_gt_TimerUnpause;
+trigger libCE519501_gt_TimerKill;
 
 // Library Initialization
 void libCE519501_InitVariables ();

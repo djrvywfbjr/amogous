@@ -1049,6 +1049,38 @@
         <Duration value="5"/>
         <Modification MoveSpeedMultiplier="0.5"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="PsiDisruption32232222">
+        <Alignment value="Negative"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-psidisruption.dds"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="HasPsiStrike"/>
+        <Duration value="3"/>
+        <Modification SightBonus="-32" AttackSpeedMultiplier="0.01">
+            <StateFlags index="SuppressAttack" value="1"/>
+            <WeaponDisableArray value="GuassRifle2222"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PsiDisruption3223232">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-psidisruption.dds"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="HasPsiStrike"/>
+        <Duration value="3"/>
+        <InitialEffect value="PsiDisruptionSearchArea32232222"/>
+        <RefreshEffect value="PsiDisruptionSearchArea32232222"/>
+        <DamageResponse>
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PsiDisruptionSearch3223232">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+        <DisableValidatorArray value="NotDeadOrConstruction"/>
+        <Period value="0.125"/>
+        <PeriodicEffect value="PsiDisruptionSearchArea3223232"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="ResurgentArchonDummy">
         <Alignment value="Positive"/>
         <InfoIcon value="Assets\Textures\btn-ability-terran-defensivematrix.dds"/>
@@ -36388,7 +36420,6 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="HasPsiStrike"/>
         <Duration value="0.1875"/>
-        <Modification TimeScale="0.01"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="PsiDisruption322323">
         <Alignment value="Positive"/>

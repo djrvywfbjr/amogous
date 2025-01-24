@@ -27814,7 +27814,9 @@ Effect/Name/PsiDisruptionApplyBehavior3223=Psi Disruption (Apply Behavior) Copy 
 Effect/Name/PsiDisruptionApplyBehavior32232=Psi Disruption (Apply Behavior) Copy 27
 Effect/Name/PsiDisruptionApplyBehavior322322=Psi Disruption (Apply Behavior) Copy 28
 Effect/Name/PsiDisruptionApplyBehavior3223222=Psi Disruption (Apply Behavior) Copy 29
+Effect/Name/PsiDisruptionApplyBehavior32232222=Psi Disruption (Apply Behavior) Copy 29
 Effect/Name/PsiDisruptionApplyBehavior322323=Psi Disruption (Apply Behavior) Copy 29
+Effect/Name/PsiDisruptionApplyBehavior3223232=Psi Disruption (Apply Behavior) Copy 29
 Effect/Name/PsiDisruptionApplyBehavior323=Psi Disruption (Apply Behavior) Copy 23
 Effect/Name/PsiDisruptionApplyBehavior324=Psi Disruption (Apply Behavior) Copy 35
 Effect/Name/PsiDisruptionApplyBehavior3242=Psi Disruption (Apply Behavior) Copy 35
@@ -27960,7 +27962,9 @@ Effect/Name/PsiDisruptionSearchArea3223=Psi Disruption (Search Area) Copy 24
 Effect/Name/PsiDisruptionSearchArea32232=Psi Disruption (Search Area) Copy 26
 Effect/Name/PsiDisruptionSearchArea322322=Psi Disruption (Search Area) Copy 27
 Effect/Name/PsiDisruptionSearchArea3223222=Psi Disruption (Search Area) Copy 28
+Effect/Name/PsiDisruptionSearchArea32232222=Psi Disruption (Search Area) Copy 28
 Effect/Name/PsiDisruptionSearchArea322323=Psi Disruption (Search Area) Copy 28
+Effect/Name/PsiDisruptionSearchArea3223232=Psi Disruption (Search Area) Copy 28
 Effect/Name/PsiDisruptionSearchArea323=Psi Disruption (Search Area) Copy 23
 Effect/Name/PsiDisruptionSearchArea324=Psi Disruption (Search Area) Copy 31
 Effect/Name/PsiDisruptionSearchArea3242=Psi Disruption (Search Area) Copy 31
@@ -32649,15 +32653,12 @@ Param/Value/lib_CD55B2B5_FF421038=<c val="80FFFF">Python The Pylon</c>
 Param/Value/lib_CD55B2B5_FF79F602=<c val="80FFFF">Python The Pylon</c>
 Param/Value/lib_CE519501_0721B637=<c val="00FFFF">Python</c>
 Param/Value/lib_CE519501_0925A690=<c val="008000">Hulduris</c>
-Param/Value/lib_CE519501_099E643C=Someone has captured Spark Of Existence
 Param/Value/lib_CE519501_0B6A809F=I don't want to leave any of you behind, but last thing i need in my place is inner conflict. You can still prevent the gate from being opened and open it for yourself.
 Param/Value/lib_CE519501_0D89EE02=Glory Field
 Param/Value/lib_CE519501_18348770=<c val="008000">Time has come, our only way of surviving this.</c>
 Param/Value/lib_CE519501_1923E847=<c val="00FFFF">Python</c>
 Param/Value/lib_CE519501_1ED143EF=Warning: Crystmas season incoming in PW Calendar
-Param/Value/lib_CE519501_21269752=Spark Of Existence now serves someone else.
 Param/Value/lib_CE519501_214B2248=Mal'tanis' Dark Archons and other followers are testing you for will and dignity. The ritual consists of  multiple mind controlled armies set to attack each other. Every kill matters. Dark Archons rendered themselfes invisible all around the field and are increasing strength of the best Mal'tanis' servants. Most forces don't even know they are under control and think that they're just very skilled.<n/>All untis gain powerful, stacking buffs on kills.<n/>The buff is weaker if kill is gained by a massive unti and even more weaker if it is gained by a heroic one.
-Param/Value/lib_CE519501_232F1A34=Spark Of Existence now belongs to the other group.
 Param/Value/lib_CE519501_244C2440=Glory Field
 Param/Value/lib_CE519501_2BC69150=<c val="008000">Hulduris</c>
 Param/Value/lib_CE519501_2E65E2BD=<c val="FF8000">Warning: You have been reborn.</c>
@@ -32675,7 +32676,6 @@ Param/Value/lib_CE519501_3F209CB1=I have enabled Spark Of Existence. We need you
 Param/Value/lib_CE519501_42C41DE2=Spark Of Existence is ready. Now capture it.
 Param/Value/lib_CE519501_492A58C5=<c val="008000">Hulduris</c>
 Param/Value/lib_CE519501_4B557283=Don't like these ones, have countless soldiers die for some more soon.
-Param/Value/lib_CE519501_4DAB1E7F=<c val="008000">Hulduris</c>
 Param/Value/lib_CE519501_4F94DBE8=<c val="00FFFF">Python</c>
 Param/Value/lib_CE519501_51E14343=<c val="FF8000">Celestial Rebirth</c>
 Param/Value/lib_CE519501_558898C7=Stay mad cuz bad.
@@ -32689,9 +32689,7 @@ Param/Value/lib_CE519501_653EF14B=From now on, I present to you: endless tide of
 Param/Value/lib_CE519501_66A04DF5=<c val="FFFF00">Warning: Class 35x celestial energies detected.</c>
 Param/Value/lib_CE519501_6800B8C2=Gifts have arrived!
 Param/Value/lib_CE519501_6869CF6E=<c val="0000FF">Bik Dig Hunters</c>
-Param/Value/lib_CE519501_692EB2C4=<c val="008000">Hulduris</c>
 Param/Value/lib_CE519501_6C08C230=Every couple of decades, an event happens in every single mineral field and vesepne geyser, making them quickly regenerate until point of pure ridicilousness. <n/>Many terrans. are also deciding to join the military, hoping for a possible increase in payment.<n/>Zerg see this as prime time to expand the temporary hive minds, making half way controlled armies, but having enough resources to sustain them. <n/>Most protoss tribe traditions have a giant hunt for this event, in which every cast must participate.<n/>All mineral fields give twice as much resources and are increased to contian 10000 each.<n/>All players gain additional vespene from time to time.<n/>Supply maximum is trippled.
-Param/Value/lib_CE519501_6E0314A5=<c val="008000">Hulduris</c>
 Param/Value/lib_CE519501_6F8324EF=Defund
 Param/Value/lib_CE519501_83703477=<c val="00FFFF">Python</c>
 Param/Value/lib_CE519501_856F940F=The gates are slowly opening. Others still have time to prevent that.
@@ -32699,7 +32697,6 @@ Param/Value/lib_CE519501_861FD5E4=<c val="008000">Hulduris</c>
 Param/Value/lib_CE519501_8ACF277A=Spark Of Existence is now available for capture.
 Param/Value/lib_CE519501_8BEE05AD=<c val="FF8000">Warning: Easy resource extraction methods found.</c>
 Param/Value/lib_CE519501_8CBAB3C6=I can barely maintain a single force to be here, but i will try. Unless someone else has second thoughts and wants to capture the gate instead.
-Param/Value/lib_CE519501_91CECFC6=Spark Of Existence now belongs to the other faction,
 Param/Value/lib_CE519501_9208F0F8=3 mroe gifts just for you!
 Param/Value/lib_CE519501_92D88C89=<c val="000000">Warning: Black hole detected. Evacuation is recommended.</c>
 Param/Value/lib_CE519501_9530E930=<c val="FF0000">The Eternal Rewards</c>
@@ -32707,6 +32704,7 @@ Param/Value/lib_CE519501_95FD0E81=Python is willing to save you from his butcher
 Param/Value/lib_CE519501_971F37DF=Glory Field
 Param/Value/lib_CE519501_9966EB0E=<c val="00FF00">Crystmas</c>
 Param/Value/lib_CE519501_9AACC247=<c val="008000">Peasants Of The Hole</c><n/><n/>The world is slowly falling apart. No matter what caused it, you must get out. Xel'naga have created a powerful gate that could possibly take your forces to a parallel dimension if charged long enough.<n/>Even if all previous conflicts seem pointless, you all know that this is the only time one side will find it's peace with all others and not cause any further wars between the factions. Gate cannot be activated twice until this universe ends. Your opponents or you will see it slowly burn while the opposing side will live.<n/>It also seems like (possibly) a Xel'naga is supporting the gate from the other side. He is willing to open it as soon as you help him defeat ''Amall'' in his dimension.<n/><n/><n/><c val="008000"></s>Spark Of Existence<n/></c><n/>Spark Of Existence is spawned in the middle of the map. It is the gate to another world one team must activate. <n/>To make it fight for you, attack it. In 90 seconds, the gate will activate, winning the game.<n/>If Spark Of Existence is attacked again, it will switch it's side to attacker and reset Win wait time.<n/><n/><c val="008000">Peasants and the hole</c><n/><n/>All allied or owned units around a friendly Spark Of Existence will constantly make it untargetable and invulnerable.<n/>Enemy units around it will slow it down by 99%.
+Param/Value/lib_CE519501_9C6C455D=<c val="FF0000">Victory In:</c>
 Param/Value/lib_CE519501_9CAD3BA8=Spark Of Existence has been prepared for capture.
 Param/Value/lib_CE519501_A2220A00=<c val="00FFFF">Python</c>
 Param/Value/lib_CE519501_A2FD1339=Warning: Python's prime ascendand detected.
@@ -32715,7 +32713,6 @@ Param/Value/lib_CE519501_A6F2DD26=Glory Field
 Param/Value/lib_CE519501_A8CFEC8E=<c val="008000">Hulduris</c>
 Param/Value/lib_CE519501_B716ABB2=Constant gifts all day long, here and now!
 Param/Value/lib_CE519501_B86335F7=Python is willing to have peace and friendly fun for Crystmas. Then he gets bored of it in 10 minutes. Enemies around him will take damage and allies become invulnerable for the first 10 minutes.
-Param/Value/lib_CE519501_BB181153=<c val="008000">Hulduris</c>
 Param/Value/lib_CE519501_BB41B5B9=<c val="008000">Hulduris</c>
 Param/Value/lib_CE519501_BB7A2A36=Can't just let anyone steal the Spark Of Existence, although it is still a possibilty. We need the strongest warriors possible here.
 Param/Value/lib_CE519501_C2B18256=<c val="00FFFF">Python</c>
@@ -32735,10 +32732,8 @@ Param/Value/lib_CE519501_DEE97871=Not 1, not 2 but all 3 gifts have arrived!
 Param/Value/lib_CE519501_E028ED3D=<c val="00FFFF">Python</c>
 Param/Value/lib_CE519501_E0AE9757=Thousands of Void Rifts are opening across all sectors to provide you with gifts!
 Param/Value/lib_CE519501_E38655C5=Every so often the entire galaxy gets overflooded with special type of celestial energies, all coming from one direction. Many suspect that location to be the Void, but even the best technologies detect nothing there. Celestial energies augment everything in their way, making it harder to destroy, without changing most of the other properties of an object.<n/>All untis have 3 times the life.
-Param/Value/lib_CE519501_E46E4783=<c val="008000">Hulduris</c>
 Param/Value/lib_CE519501_E5B699FA=Spark Of Existence has not done this for a couple of millenias. Might take some time, especially if someone else will try to open it for themselves.
 Param/Value/lib_CE519501_E6D44455=Gifts incoming!
-Param/Value/lib_CE519501_EA34EBBC=Spark Of Existence has changed it's master.
 Param/Value/lib_CE519501_EDB72A28=Bonus gifts!
 Param/Value/lib_CE519501_F2CF90D7=<c val="008000">Hulduris</c>
 Param/Value/lib_CE519501_F359D308=<c val="00FFFF">Python</c>
@@ -33415,7 +33410,6 @@ RequirementNode/Tooltip/CountUpgradeParamilitaryUpgrade143234332222CompleteOnly4
 RequirementNode/Tooltip/CountUpgradeParamilitaryUpgrade143234332CompleteOnly4256853171=Previous Upgrade
 RequirementNode/Tooltip/CountUpgradeParamilitaryUpgrade1432343CompleteOnly4256853171=Previous Upgrade
 RequirementNode/Tooltip/CountUpgradeScoutingProtocolCompleteOnly2584292422=
-
 RequirementNode/Tooltip/CountUpgradeUmojanBasicUnitUpgrade2223CompleteOnly3101955088TechTreeCheat=Research Suprise Party at Science Core
 RequirementNode/Tooltip/CountUpgradeUmojanBasicUnitUpgrade222CompleteOnly915548990TechTreeCheat=Research Simple Singularity Change at Singularity Controller
 RequirementNode/Tooltip/CountUpgradeUmojanBasicUnitUpgrade22323CompleteOnly2203287192TechTreeCheat=Have Aegis System
@@ -34975,7 +34969,7 @@ Unit/Name/GroundFury2=Torpedo Fury
 Unit/Name/GroundFury22=Laser Lancer
 Unit/Name/GuardMarine=Guard Marine
 Unit/Name/GuardMarine2=Assault Marine
-Unit/Name/GuardMarine22=Kas Smith
+Unit/Name/GuardMarine22=Evil Kas Smith
 Unit/Name/GuardianMP2=Hive Guardian
 Unit/Name/GuardianMP3=Guardian
 Unit/Name/GuardianMPWeapon2=Guardian MP Weapon Copy
