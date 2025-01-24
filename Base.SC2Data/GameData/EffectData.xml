@@ -5054,6 +5054,41 @@
         <EditorCategories value="Race:Terran"/>
         <Behavior value="ImperialAdvancedBarrierTimedlife"/>
     </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="MitosaurusBSplit222222">
+        <EditorCategories value="Race:Zerg"/>
+        <Flags index="RandomOffset" value="1"/>
+        <PeriodCount value="3"/>
+        <PeriodicEffectArray value="MitosaurusBSplitCreateUnit2222"/>
+        <PeriodicPeriodArray value="0.01"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="MitosaurusBSplitCreateSet2222">
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="MitosaurusBSplitLM2222"/>
+    </CEffectSet>
+    <CEffectCreateUnit id="MitosaurusBSplitCreateUnit2222">
+        <EditorCategories value="Race:Zerg"/>
+        <WhichLocation Value="TargetPoint"/>
+        <CreateFlags index="Birth" value="0"/>
+        <SpawnOwner Value="Caster"/>
+        <SpawnEffect value="MitosaurusBSplitCreateSet2222"/>
+        <SpawnUnit value="StukovInfestedTerran23"/>
+        <SpawnRange value="15"/>
+    </CEffectCreateUnit>
+    <CEffectSet id="MitosaurusBSplitImpactSet2222">
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="MitosaurusEggAB2222"/>
+    </CEffectSet>
+    <CEffectLaunchMissile id="MitosaurusBSplitLM2222">
+        <EditorCategories value="Race:Zerg"/>
+        <LaunchLocation Value="TargetUnit"/>
+        <ImpactEffect value="MitosaurusBSplitImpactSet2222"/>
+        <AmmoUnit value="MitosaurusBSplitWeapon222"/>
+        <Movers Link="MitosaurusSplit"/>
+    </CEffectLaunchMissile>
+    <CEffectApplyBehavior id="MitosaurusEggAB2222">
+        <EditorCategories value="Race:Zerg"/>
+        <Behavior value="MitosaurusEgg22"/>
+    </CEffectApplyBehavior>
     <CEffectApplyBehavior id="MohandarStickyBombApply6">
         <EditorCategories value=""/>
         <Behavior value="MohandarStickyBomb6"/>
@@ -10096,7 +10131,7 @@
         <Flags index="Channeled" value="1"/>
         <PeriodCount value="65535"/>
         <PeriodicEffectArray value="BarrageSearchArea52"/>
-        <PeriodicPeriodArray value="1"/>
+        <PeriodicPeriodArray value="3"/>
         <RevealRadius value="4.4"/>
         <RevealFlags index="Unfog" value="1"/>
     </CEffectCreatePersistent>
@@ -16894,7 +16929,7 @@
         <EffectArray value="DarkArchonMindControlRemoveTargetLock62"/>
     </CEffectSet>
     <CEffectSet id="DarkArchonMindControlSet63">
-        <ValidatorArray value="CasterLifeLT10Percent22223"/>
+        <ValidatorArray value="CasterLifeLT10Percent2222"/>
         <EditorCategories value=""/>
         <EffectArray value="DarkArchonMindControlApply643"/>
         <EffectArray value="DarkArchonMindControlApply9"/>
@@ -37996,10 +38031,12 @@
         <WhichLocation Value="TargetUnit"/>
         <TimeScaleSource Value="Caster"/>
         <Flags index="Channeled" value="1"/>
-        <PeriodCount value="2"/>
+        <PeriodCount value="4"/>
         <PeriodicEffectArray value="LongboltMissileLM8"/>
         <PeriodicPeriodArray value="0"/>
         <PeriodicPeriodArray value="0.1"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <PeriodicPeriodArray value="0.3"/>
     </CEffectCreatePersistent>
     <CEffectLaunchMissile id="LongboltMissileLM2">
         <ValidatorArray index="0" value="RangeCheckLE15"/>
@@ -38134,8 +38171,8 @@
     </CEffectDamage>
     <CEffectDamage id="LongboltMissileU8" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Terran"/>
-        <AttributeBonus index="Massive" value="4"/>
-        <Amount value="12"/>
+        <AttributeBonus index="Massive" value="2"/>
+        <Amount value="6"/>
     </CEffectDamage>
     <CEffectCreatePersistent id="LurkerMP2">
         <EditorCategories value="Race:Zerg"/>
@@ -56996,7 +57033,7 @@
     <CEffectCreateUnit id="PureBornDeathCReateFanatic322222223332363">
         <EditorCategories value=""/>
         <Marker Link="Effect/PureBornDeathCReateFanatic32222222333"/>
-        <SpawnUnit value="Firebat4"/>
+        <SpawnUnit value="StukovInfestedTerran23"/>
     </CEffectCreateUnit>
     <CEffectCreateUnit id="PureBornDeathCReateFanatic32222222333237">
         <EditorCategories value=""/>
@@ -77134,7 +77171,7 @@
         <AttributeBonus index="Armored" value="10"/>
         <ArmorReduction value="1"/>
         <Kind value="Ranged"/>
-        <Amount value="30"/>
+        <Amount value="15"/>
     </CEffectDamage>
     <CEffectLaunchMissile id="WarHoundLM2">
         <EditorCategories value="Race:Terran"/>

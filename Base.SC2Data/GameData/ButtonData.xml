@@ -430,7 +430,7 @@
         <HotkeyAlias value="PointDefenseDrone"/>
     </CButton>
     <CButton id="PoisonNova32">
-        <Icon value="Assets\Textures\btn-tips-droppedterrazine.dds"/>
+        <Icon value="Assets\Textures\btn-upgrade-tychus-herc-malice.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-zerg-poisonnova.dds"/>
         <EditorCategories value="Race:Zerg"/>
         <HotkeyAlias value="PoisonNova3"/>
@@ -445,6 +445,9 @@
         <AlertIcon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="SJHyperionYamato4232"/>
+    </CButton>
+    <CButton id="ScoutingProtocol">
+        <Icon value="Assets\Textures\btn-unit-protoss-champion-scout-purifier-active.dds"/>
     </CButton>
     <CButton id="Snipe33223">
         <Icon value="Assets\Textures\btn-ability-terran-snipe.dds"/>

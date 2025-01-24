@@ -958,6 +958,10 @@
     </CBehaviorBuff>
     <CBehaviorBuff id="HallucinationTimedLife">
         <Duration value="90"/>
+        <Modification>
+            <WeaponDisableArray value="ScoutAir2"/>
+            <WeaponDisableArray value="ScoutGround2"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="HardenedShield72">
         <Alignment value="Positive"/>
@@ -1325,7 +1329,7 @@
         <MaxStackCount value="7"/>
         <MaxStackCountPerCaster value="1"/>
         <Duration value="0.1875"/>
-        <Modification SightBonus="0.5" MoveSpeedMultiplier="1.2">
+        <Modification SightBonus="0.5" MoveSpeedBonus="0.1992">
             <VitalRegenArray index="Energy" value="0.1992"/>
         </Modification>
     </CBehaviorBuff>
@@ -2788,7 +2792,7 @@
         <DisplayDuration index="Self" value="1"/>
         <DisplayDuration index="Ally" value="1"/>
         <Duration value="420"/>
-        <Modification MoveSpeedMultiplier="0.2"/>
+        <Modification MoveSpeedMultiplier="0.1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="AntamoAirAll43423">
         <InfoFlags index="Hidden" value="1"/>
@@ -3795,7 +3799,7 @@
         <InfoIcon value="Assets\Textures\btn-ability-terran-detectionconedebuff.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="10"/>
-        <DamageResponse ModifyFraction="1.3">
+        <DamageResponse ModifyFraction="1.15">
             <Chance value="1"/>
         </DamageResponse>
         <MaxStackCount value="4"/>
@@ -13298,7 +13302,7 @@
                 <Cooldown Link="Behavior/AntamoAirAll"/>
             </Cost>
         </DamageResponse>
-        <Period value="60"/>
+        <Period value="84"/>
         <PeriodicEffect value="Stimpack10"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="AntamoAirAll8222">
@@ -14266,7 +14270,7 @@
         <Player Value="Caster"/>
         <Modification>
             <StateFlags index="SuppressRequirements" value="1"/>
-            <VitalRegenArray index="Life" value="5"/>
+            <VitalRegenArray index="Life" value="2"/>
             <AbilClassDisableArray index="CAbil" value="1"/>
             <AbilClassDisableArray index="CAbilProgress" value="1"/>
             <AbilClassDisableArray index="CAbilEffect" value="1"/>
@@ -14306,7 +14310,7 @@
             <AbilClassDisableArray index="CAbilWarpable" value="1"/>
             <AbilClassDisableArray index="CAbilWarpTrain" value="1"/>
         </Modification>
-        <Period value="2"/>
+        <Period value="4.9"/>
         <InitialEffect value="PureBornDeathCReateFanatic322222223332362"/>
         <PeriodicEffect value="MitosaurusBSplit222"/>
     </CBehaviorBuff>
@@ -28336,6 +28340,7 @@
         <Modification>
             <DeathResponse Chance="1" Effect="PureBornDeathCReateFanatic5"/>
         </Modification>
+        <DisableValidatorArray value="NotHallucination"/>
         <DisableValidatorArray value="NotWarpingIn"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="Evacuation62">
@@ -42081,7 +42086,7 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Requirements value="HaveExperimentCenter2222232233222"/>
-        <Period value="0.25"/>
+        <Period value="2.1"/>
         <PeriodicEffect value="UnknownEffect23222333533"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ShieldingEngine53252335322">
@@ -44005,7 +44010,7 @@
             <DamageDealtFraction index="Ranged" value="0.1"/>
             <DamageDealtFraction index="Splash" value="0.1"/>
             <DamageDealtFraction index="NoProc" value="0.1"/>
-            <VitalMaxAdditiveMultiplierArray index="Life" value="0.25"/>
+            <VitalMaxAdditiveMultiplierArray index="Life" value="0.15"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="Stimpack82">
