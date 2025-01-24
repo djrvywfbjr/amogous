@@ -178,6 +178,12 @@
     <CRequirement id="BlinkButton">
         <NodeArray index="Show" Link="NotCountUpgradeXillBlinkQueuedOrBetter"/>
     </CRequirement>
+    <CRequirement id="CtossNoScoutHalluc">
+        <NodeArray index="Show" Link="NotCountUpgradeScoutingProtocolQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="CtossScoutHalluc">
+        <NodeArray index="Show" Link="CountUpgradeScoutingProtocolCompleteOnly2584292422"/>
+    </CRequirement>
     <CRequirement id="CyberHaveFrenzySim">
         <NodeArray index="Show" Link="CountUpgradeCyberFrenzySimulatorCompleteOnly"/>
     </CRequirement>

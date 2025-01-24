@@ -7216,6 +7216,15 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="SVVoidSeeker" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeScoutingProtocolCompleteOnly2584292422">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ScoutingProtocol" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeScoutingProtocolQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="ScoutingProtocol" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeShieldWall2222QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="ShieldWall2222" State="QueuedOrBetter"/>
@@ -17183,6 +17192,10 @@
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeParamilitaryUpgrade1QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeParamilitaryUpgrade1QueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeScoutingProtocolQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeScoutingProtocolQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeShieldWall2222QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeShieldWall2222QueuedOrBetter"/>

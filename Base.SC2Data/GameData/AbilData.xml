@@ -1273,7 +1273,7 @@
             </Charge>
             <Cooldown Location="Player" TimeUse="30"/>
         </Cost>
-        <CmdButtonArray index="Execute" DefaultButtonFace="WarpInAdept"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="WarpInAdept" Requirements="CtossScoutHalluc"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="HighAvatar">
         <AbilSetId value="dmatrix"/>
@@ -18698,7 +18698,7 @@
         <AutoCastRange value="15"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="DarkArchonMindControl83"/>
         <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
-        <AutoCastValidatorArray value="CasterLifeLT10Percent22223"/>
+        <AutoCastValidatorArray value="CasterLifeLT10Percent2222"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="DarkArchonMindControl64">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
@@ -22708,8 +22708,10 @@
             <Resource index="Vespene" value="500"/>
             <Button DefaultButtonFace="ArbiterMPRecall622222222" Requirements="ProtocolDamage152222"/>
         </InfoArray>
-        <InfoArray index="Research19">
-            <Button DefaultButtonFace="ArbiterMPRecall6222" Requirements="HaveBurningNexus"/>
+        <InfoArray index="Research19" Time="30" Upgrade="ScoutingProtocol">
+            <Resource index="Minerals" value="50"/>
+            <Resource index="Vespene" value="50"/>
+            <Button DefaultButtonFace="ScoutingProtocol" Requirements="HaveBurningNexus"/>
         </InfoArray>
         <InfoArray index="Research20" Time="50" Upgrade="UmojanBasicUnitUpgrade5222422423222222352222222543">
             <Resource index="Minerals" value="100"/>
@@ -31009,13 +31011,15 @@
         <FlagArray index="IgnoreUnitCost" value="1"/>
         <FlagArray index="PeonMaintained" value="0"/>
         <InfoArray index="Build1" Unit="Pylon2" Time="3">
+            <Vital index="Life" value="150"/>
             <Charge>
                 <CountMax value="1"/>
                 <CountStart value="1"/>
                 <CountUse value="1"/>
                 <Location value="Player"/>
+                <TimeUse value="60"/>
             </Charge>
-            <Cooldown Location="Player" TimeUse="60"/>
+            <Cooldown Location="Player"/>
             <Button DefaultButtonFace="SOAProxyPylon"/>
             <ValidatorArray value="HasVisionOfTarget"/>
         </InfoArray>

@@ -4070,7 +4070,7 @@
         <Icon value="Assets\Textures\btn-upgrade-nova-equipment-gunblade_sword.dds"/>
         <DisplayEffect value="TempestDamageGround234"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="9"/>
+        <Range value="7"/>
         <Period value="1.8"/>
         <Effect value="TempestLaunchMissileGround234"/>
     </CWeaponLegacy>
@@ -6733,11 +6733,11 @@
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-hisecautotracking.dds"/>
         <DisplayEffect value="LongboltMissileU8"/>
-        <DisplayAttackCount value="2"/>
+        <DisplayAttackCount value="4"/>
         <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="10"/>
         <RangeSlop value="0"/>
-        <Period value="0.8608"/>
+        <Period value="2"/>
         <Effect value="LongboltMissile8"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="LurkerMP2">
@@ -12066,7 +12066,7 @@
         <DisplayEffect value="WarHound23"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="10"/>
-        <Range value="7"/>
+        <Range value="4"/>
         <Arc value="14.9963"/>
         <Period value="1.6"/>
         <Effect value="WarHoundLM23"/>
