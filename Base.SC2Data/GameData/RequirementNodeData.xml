@@ -3987,7 +3987,6 @@
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitInfestationPit42CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="InfestationPit42" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitInfestationPit42CompleteOnly706965576TechTreeCheat">
@@ -5778,12 +5777,10 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeAngelicSmallingSynapticDischargeCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="AngelicSmallingSynapticDischarge" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeAngelicSmallingSynapticDischargeQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="AngelicSmallingSynapticDischarge" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeAutoHarvesterQueuedOrBetter">
@@ -5971,7 +5968,6 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeDominantSmallingAtomShiftQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="DominantSmallingAtomShift" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeEmergencyWeaponCompleteOnly">
@@ -6028,7 +6024,6 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeLightenedLimbsQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="LightenedLimbs" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeManufactureChemicalStationCompleteOnly">
@@ -6148,7 +6143,6 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeNoxiousSmallingSpeedQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="NoxiousSmallingSpeed" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeOmindArmoredSkinQueuedOrBetter">
@@ -16675,7 +16669,6 @@
         <OperandArray index="0" value="CountUpgradeAdvancedConstruction24QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeAngelicSmallingSynapticDischargeQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeAngelicSmallingSynapticDischargeQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeBansheeCloakingFieldQueuedOrBetter">
@@ -16781,7 +16774,6 @@
         <OperandArray index="0" value="CountUpgradeCyberFrenzySimulatorQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeDominantSmallingAtomShiftQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeDominantSmallingAtomShiftQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeEmergencyWeaponCompleteOnly">
@@ -16809,7 +16801,6 @@
         <OperandArray index="0" value="CountUpgradeInfiltratorEnergyQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeLightenedLimbsQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeLightenedLimbsQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeMicroFiltering3QueuedOrBetter">
@@ -16828,7 +16819,6 @@
         <OperandArray index="0" value="CountUpgradeNovaGadgetPulseGrenadesQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeNoxiousSmallingSpeedQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeNoxiousSmallingSpeedQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeOmindArmoredSkinQueuedOrBetter">
