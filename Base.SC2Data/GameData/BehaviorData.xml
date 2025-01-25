@@ -4450,7 +4450,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="28"/>
         <Modification ShieldArmorBonus="1">
-            <VitalMaxArray index="Shields" value="175"/>
+            <VitalMaxArray index="Shields" value="100"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="Shield43">
@@ -12197,7 +12197,6 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="0.1"/>
         <InitialEffect value="PureBornDeathCReateFanatic3222222422222"/>
-        <ExpireEffect value="PureBornDeathCReateFanatic32222222322"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="AntamoAirAll43422222">
         <InfoFlags index="Hidden" value="1"/>
@@ -41840,6 +41839,7 @@
             <HeightTime index="Start" value="10"/>
             <HeightTime index="Stop" value="10"/>
             <VitalRegenArray index="Life" value="3"/>
+            <VitalRegenMultiplier index="Energy" value="-1"/>
             <AbilClassDisableArray index="CAbilMove" value="1"/>
         </Modification>
     </CBehaviorBuff>

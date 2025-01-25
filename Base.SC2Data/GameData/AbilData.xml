@@ -1684,6 +1684,8 @@
             <MatchFlags index="CasterUnit" value="1"/>
         </Marker>
         <CmdButtonArray index="Execute" DefaultButtonFace="Snipe33223"/>
+        <AutoCastFilters value="Visible;Self,Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AutoCastRange value="8"/>
     </CAbilEffectTarget>
     <CAbilEffectInstant id="Stimpack133">
         <AbilSetId value="Aimpack"/>
@@ -5932,22 +5934,22 @@
     </CAbilTrain>
     <CAbilTrain id="BarracksTrain8" parent="BarracksTrain">
         <Name value="Abil/Name/BarracksTrain8"/>
-        <InfoArray index="Train1" Time="50" Effect="MercGroundDrop">
+        <InfoArray index="Train1" Time="42.86" Effect="MercGroundDrop">
             <Unit index="0" value="SonofKorhal"/>
         </InfoArray>
-        <InfoArray index="Train2" Time="75" Effect="MercGroundDrop">
+        <InfoArray index="Train2" Time="64.29" Effect="MercGroundDrop">
             <Button Requirements="HaveEnlistmentHouse222"/>
             <Unit index="0" value="MengskReaper2"/>
         </InfoArray>
-        <InfoArray index="Train3" Time="75" Effect="MercGroundDrop">
+        <InfoArray index="Train3" Time="64.29" Effect="MercGroundDrop">
             <Button Requirements="HaveEnlistmentHouse22"/>
             <Unit index="0" value="EmperorsShadow"/>
         </InfoArray>
-        <InfoArray index="Train4" Time="60" Effect="MercGroundDrop">
+        <InfoArray index="Train4" Time="51.43" Effect="MercGroundDrop">
             <Button Requirements="HaveEnlistmentHouse222"/>
             <Unit index="0" value="MengskMarauder2"/>
         </InfoArray>
-        <InfoArray index="Train5" Time="60" Effect="MercGroundDrop">
+        <InfoArray index="Train5" Time="51.43" Effect="MercGroundDrop">
             <Button DefaultButtonFace="Firebat5" Requirements="HaveEnlistmentHouse222"/>
             <Unit index="0" value="MengskFirebat5"/>
         </InfoArray>
@@ -10856,7 +10858,7 @@
         <Effect index="0" value="CalldownMULECreateUnit423"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Resource index="Minerals" value="450"/>
+            <Resource index="Minerals" value="420"/>
             <Charge>
                 <CountMax value="4"/>
                 <CountStart value="4"/>
@@ -10867,7 +10869,7 @@
             </Charge>
             <Cooldown Link="Abil/CalldownMULE" Location="Player" TimeUse="2"/>
         </Cost>
-        <Range value="50"/>
+        <Range value="15"/>
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CalldownMULE425"/>
     </CAbilEffectTarget>
@@ -10876,8 +10878,8 @@
         <Effect index="0" value="CalldownMULECreateUnit4232"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Resource index="Minerals" value="300"/>
-            <Resource index="Vespene" value="200"/>
+            <Resource index="Minerals" value="440"/>
+            <Resource index="Vespene" value="120"/>
             <Charge>
                 <CountMax value="4"/>
                 <CountStart value="4"/>
@@ -10888,7 +10890,7 @@
             </Charge>
             <Cooldown Link="Abil/CalldownMULE" Location="Player" TimeUse="2"/>
         </Cost>
-        <Range value="50"/>
+        <Range value="15"/>
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CalldownMULE4252"/>
     </CAbilEffectTarget>
@@ -10909,7 +10911,7 @@
             </Charge>
             <Cooldown Link="Abil/CalldownMULE" TimeUse="2"/>
         </Cost>
-        <Range value="100"/>
+        <Range value="15"/>
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CalldownMULE42522" Requirements="UnknownRequirement"/>
     </CAbilEffectTarget>
@@ -10954,7 +10956,7 @@
             <Charge Link="Abil/CalldownMULE"/>
             <Cooldown Link="Abil/CalldownMULE" TimeUse="120"/>
         </Cost>
-        <Range value="100"/>
+        <Range value="15"/>
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="DevastatingShot3" Requirements="UnknownRequirement4"/>
     </CAbilEffectTarget>
@@ -10968,7 +10970,7 @@
             <Charge Link="Abil/CalldownMULE"/>
             <Cooldown Link="Abil/CalldownMULE" TimeUse="200"/>
         </Cost>
-        <Range value="100"/>
+        <Range value="15"/>
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="DevastatingShot32" Requirements="UnknownRequirement42"/>
     </CAbilEffectTarget>
@@ -11015,7 +11017,7 @@
             </Charge>
             <Cooldown Link="Abil/CalldownMULE32" Location="Player" TimeStart="240"/>
         </Cost>
-        <Range value="50"/>
+        <Range value="15"/>
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CalldownMULE42525"/>
     </CAbilEffectTarget>
@@ -11210,8 +11212,8 @@
         <Effect index="0" value="CalldownMULECreateUnit4233"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Resource index="Minerals" value="575"/>
-            <Resource index="Vespene" value="165"/>
+            <Resource index="Minerals" value="450"/>
+            <Resource index="Vespene" value="50"/>
             <Charge>
                 <CountMax value="4"/>
                 <CountStart value="4"/>
@@ -11222,7 +11224,7 @@
             </Charge>
             <Cooldown Link="Abil/CalldownMULE" Location="Player" TimeUse="2"/>
         </Cost>
-        <Range value="50"/>
+        <Range value="15"/>
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CalldownMULE4253"/>
     </CAbilEffectTarget>
@@ -11286,7 +11288,7 @@
         <Effect index="0" value="CalldownMULECreateUnit4234"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Resource index="Minerals" value="200"/>
+            <Resource index="Minerals" value="500"/>
             <Resource index="Vespene" value="400"/>
             <Charge>
                 <CountMax value="4"/>
@@ -11298,7 +11300,7 @@
             </Charge>
             <Cooldown Link="Abil/CalldownMULE" Location="Player" TimeUse="2"/>
         </Cost>
-        <Range value="100"/>
+        <Range value="15"/>
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CalldownMULE4254"/>
     </CAbilEffectTarget>
@@ -11315,7 +11317,7 @@
             </Charge>
             <Cooldown Link="Abil/CalldownMULE" Location="Player"/>
         </Cost>
-        <Range value="25"/>
+        <Range value="15"/>
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CalldownMULE42542" Requirements="UnknownRequirement"/>
     </CAbilEffectTarget>
@@ -11324,8 +11326,8 @@
         <Effect index="0" value="CalldownMULECreateUnit423422"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Resource index="Minerals" value="1000"/>
-            <Resource index="Vespene" value="400"/>
+            <Resource index="Minerals" value="825"/>
+            <Resource index="Vespene" value="475"/>
             <Charge>
                 <CountMax value="4"/>
                 <CountStart value="4"/>
@@ -11336,7 +11338,7 @@
             </Charge>
             <Cooldown Link="Abil/CalldownMULE" Location="Player" TimeUse="2"/>
         </Cost>
-        <Range value="100"/>
+        <Range value="15"/>
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CalldownMULE425422" Requirements="UnknownRequirement"/>
     </CAbilEffectTarget>
@@ -11345,8 +11347,8 @@
         <Effect index="0" value="CalldownMULECreateUnit4234222"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Resource index="Minerals" value="800"/>
-            <Resource index="Vespene" value="500"/>
+            <Resource index="Minerals" value="825"/>
+            <Resource index="Vespene" value="225"/>
             <Charge>
                 <CountMax value="4"/>
                 <CountStart value="4"/>
@@ -11357,7 +11359,7 @@
             </Charge>
             <Cooldown Link="Abil/CalldownMULE" Location="Player" TimeUse="2"/>
         </Cost>
-        <Range value="100"/>
+        <Range value="15"/>
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CalldownMULE4254222" Requirements="UnknownRequirement"/>
     </CAbilEffectTarget>
@@ -11366,8 +11368,8 @@
         <Effect index="0" value="CalldownMULECreateUnit42342222"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Resource index="Minerals" value="1100"/>
-            <Resource index="Vespene" value="750"/>
+            <Resource index="Minerals" value="800"/>
+            <Resource index="Vespene" value="700"/>
             <Charge>
                 <CountMax value="4"/>
                 <CountStart value="4"/>
@@ -11378,7 +11380,7 @@
             </Charge>
             <Cooldown Link="Abil/CalldownMULE" Location="Player" TimeUse="2"/>
         </Cost>
-        <Range value="50"/>
+        <Range value="15"/>
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CalldownMULE42542222" Requirements="UnknownRequirement"/>
     </CAbilEffectTarget>
@@ -11387,8 +11389,8 @@
         <Effect index="0" value="CalldownMULECreateUnit423422222"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Resource index="Minerals" value="700"/>
-            <Resource index="Vespene" value="550"/>
+            <Resource index="Minerals" value="840"/>
+            <Resource index="Vespene" value="690"/>
             <Charge>
                 <CountMax value="4"/>
                 <CountStart value="4"/>
@@ -11399,7 +11401,7 @@
             </Charge>
             <Cooldown Link="Abil/CalldownMULE" Location="Player" TimeUse="2"/>
         </Cost>
-        <Range value="100"/>
+        <Range value="15"/>
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CalldownMULE425422222" Requirements="UnknownRequirement4"/>
     </CAbilEffectTarget>
@@ -11420,7 +11422,7 @@
             </Charge>
             <Cooldown Link="Abil/CalldownMULE" Location="Player" TimeUse="2"/>
         </Cost>
-        <Range value="100"/>
+        <Range value="15"/>
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CalldownMULE4254222222" Requirements="UnknownRequirement4"/>
     </CAbilEffectTarget>
@@ -11560,7 +11562,7 @@
             <Charge Link="Abil/CalldownMULE"/>
             <Cooldown Link="Abil/CalldownMULE" Location="Player" TimeUse="7"/>
         </Cost>
-        <Range value="100"/>
+        <Range value="15"/>
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CalldownMULE4255" Requirements="UnknownRequirement"/>
     </CAbilEffectTarget>
@@ -11574,7 +11576,7 @@
             <Charge Link="Abil/CalldownMULE"/>
             <Cooldown Link="Abil/CalldownMULE" Location="Player" TimeUse="7"/>
         </Cost>
-        <Range value="100"/>
+        <Range value="15"/>
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CalldownMULE42552" Requirements="UnknownRequirement"/>
     </CAbilEffectTarget>
@@ -11588,7 +11590,7 @@
             <Charge Link="Abil/CalldownMULE"/>
             <Cooldown Link="Abil/CalldownMULE" Location="Player" TimeUse="7"/>
         </Cost>
-        <Range value="100"/>
+        <Range value="15"/>
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CalldownMULE42553" Requirements="UnknownRequirement"/>
     </CAbilEffectTarget>
@@ -11602,7 +11604,7 @@
             <Charge Link="Abil/CalldownMULE"/>
             <Cooldown Link="Abil/CalldownMULE" Location="Player" TimeUse="7"/>
         </Cost>
-        <Range value="100"/>
+        <Range value="15"/>
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CalldownMULE425532" Requirements="UnknownRequirement42"/>
     </CAbilEffectTarget>
@@ -11616,7 +11618,7 @@
             <Charge Link="Abil/CalldownMULE"/>
             <Cooldown Link="Abil/CalldownMULE" Location="Player" TimeUse="7"/>
         </Cost>
-        <Range value="100"/>
+        <Range value="15"/>
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CalldownMULE42554" Requirements="UnknownRequirement4"/>
     </CAbilEffectTarget>
@@ -11644,7 +11646,7 @@
             <Charge Link="Abil/CalldownMULE"/>
             <Cooldown Link="Abil/CalldownMULE" TimeUse="7"/>
         </Cost>
-        <Range value="100"/>
+        <Range value="15"/>
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CalldownMULE42555" Requirements="UnknownRequirement4"/>
     </CAbilEffectTarget>
@@ -11654,7 +11656,7 @@
         <Flags index="Retarget" value="1"/>
         <Leash value="12"/>
         <InfoArray index="Ammo1" Time="1.4" CountStart="4" Manage="Recall" Unit="Interceptor">
-            <Vital index="Shields" value="20"/>
+            <Vital index="Shields" value="40"/>
             <Charge Link="CarrierInterceptor" Location="Unit"/>
             <Cooldown Link="Abil/##id##"/>
             <Button DefaultButtonFace="Interceptor" Requirements="ArmInterceptor">
@@ -32936,27 +32938,27 @@
             <Button DefaultButtonFace="BuildWraith" State="Restricted"/>
             <Unit value="MengskWraith"/>
         </InfoArray>
-        <InfoArray index="Train16" Time="70" Effect="MercGroundDrop">
+        <InfoArray index="Train16" Time="60" Effect="MercGroundDrop">
             <Button DefaultButtonFace="Goliath4"/>
             <Unit value="MengskGoliath2"/>
         </InfoArray>
-        <InfoArray index="Train17" Time="80" Effect="MercGroundDrop">
+        <InfoArray index="Train17" Time="68.57" Effect="MercGroundDrop">
             <Button DefaultButtonFace="SiegeTank2"/>
             <Unit value="MengskSiegeTank2"/>
         </InfoArray>
-        <InfoArray index="Train18" Time="80" Effect="MercGroundDrop">
+        <InfoArray index="Train18" Time="68.57" Effect="MercGroundDrop">
             <Button DefaultButtonFace="Thor5" Requirements="HaveEnlistmentHouse223"/>
             <Unit value="Blackhammer"/>
         </InfoArray>
-        <InfoArray index="Train19" Time="60" Effect="MercGroundDrop">
+        <InfoArray index="Train19" Time="51.43" Effect="MercGroundDrop">
             <Button DefaultButtonFace="MercHellion2"/>
             <Unit value="MengskHellion2"/>
         </InfoArray>
-        <InfoArray index="Train20" Time="70" Effect="MercGroundDrop">
+        <InfoArray index="Train20" Time="60" Effect="MercGroundDrop">
             <Button DefaultButtonFace="Diamondback5" Requirements="HaveEnlistmentHouse223"/>
             <Unit value="RedAdder"/>
         </InfoArray>
-        <InfoArray index="Train21" Time="70" Effect="MercGroundDrop">
+        <InfoArray index="Train21" Time="60" Effect="MercGroundDrop">
             <Button DefaultButtonFace="WidowMine5" Requirements="HaveEnlistmentHouse22332"/>
             <Unit value="WidowMine4"/>
         </InfoArray>
@@ -39581,7 +39583,7 @@
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Flags index="RangeUseCasterRadius" value="0"/>
         <Cost>
-            <Resource index="Vespene" value="45"/>
+            <Resource index="Vespene" value="80"/>
             <Vital index="Energy" value="4"/>
             <Charge Link="Abil/SpawnPhaseCannon23"/>
             <Cooldown Link="SpawnPhaseCannonSpawnPhaseCannon23" TimeUse="10"/>
@@ -39635,7 +39637,7 @@
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Flags index="RangeUseCasterRadius" value="0"/>
         <Cost>
-            <Resource index="Vespene" value="125"/>
+            <Resource index="Vespene" value="175"/>
             <Vital index="Energy" value="6"/>
             <Charge Link="Abil/SpawnPhaseCannon23222"/>
             <Cooldown Link="SpawnPhaseCannonSpawnPhaseCannon23SpawnPhaseCannonSpawnPhaseCannon232SpawnPhaseCannonSpawnPhaseCannon23SpawnPhaseCannonSpawnPhaseCannon2322SpawnPhaseCannonSpawnPhaseCannon23SpawnPhaseCannonSpawnPhaseCannon232SpawnPhaseCannonSpawnPhaseCannon23SpawnPhaseCannonSpawnPhaseCannon23222" TimeUse="10"/>
@@ -39653,7 +39655,7 @@
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Flags index="RangeUseCasterRadius" value="0"/>
         <Cost>
-            <Resource index="Vespene" value="225"/>
+            <Resource index="Vespene" value="300"/>
             <Vital index="Energy" value="10"/>
             <Charge Link="Abil/SpawnPhaseCannon232222"/>
             <Cooldown Link="SpawnPhaseCannonSpawnPhaseCannon23SpawnPhaseCannonSpawnPhaseCannon232SpawnPhaseCannonSpawnPhaseCannon23SpawnPhaseCannonSpawnPhaseCannon2322SpawnPhaseCannonSpawnPhaseCannon23SpawnPhaseCannonSpawnPhaseCannon232SpawnPhaseCannonSpawnPhaseCannon23SpawnPhaseCannonSpawnPhaseCannon23222" TimeUse="10"/>
@@ -43248,7 +43250,7 @@
             <Button DefaultButtonFace="SpineCrawler6"/>
         </InfoArray>
         <InfoArray index="Build30" Unit="Hatchery3">
-            <Cooldown TimeUse="200"/>
+            <Cooldown TimeUse="84"/>
             <Button DefaultButtonFace="Hatchery32" Requirements="UnknownRequirement2"/>
         </InfoArray>
         <Range value="36"/>
@@ -50777,7 +50779,7 @@
     <CAbilAugment id="ShadowCharge2">
         <Alignment value="Negative"/>
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="VoidZealotShadowCharge" Requirements="Damage134333322232"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="VoidZealotShadowCharge"/>
         <Flags index="AutoCast" value="1"/>
         <Flags index="AutoCastOn" value="1"/>
         <AbilCmd value="attack,Execute"/>
@@ -53898,7 +53900,7 @@
     <CAbilEffectTarget id="SpawnBanelings2522">
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
         <Cost>
-            <Vital index="Energy" value="40"/>
+            <Vital index="Energy" value="80"/>
             <Charge Link="Abil/SpawnBanelings"/>
             <Cooldown Link="SpawnBanelings" Location="Unit"/>
         </Cost>
@@ -53952,13 +53954,13 @@
         <Flags index="AutoCastOn" value="1"/>
         <Cost>
             <Charge Link="Abil/SpawnMutantLarva"/>
-            <Cooldown Link="Abil/SpawnMutantLarva" TimeUse="4"/>
+            <Cooldown Link="Abil/SpawnMutantLarva" TimeUse="28"/>
         </Cost>
         <TargetFilters value="Structure,Visible;Neutral,Enemy,UnderConstruction"/>
-        <Range value="17"/>
+        <Range value="10"/>
         <Arc value="360"/>
         <AutoCastFilters value="Structure,Visible;Neutral,Enemy"/>
-        <AutoCastRange value="17"/>
+        <AutoCastRange value="10"/>
         <AutoCastValidatorArray value="HasDetector222"/>
         <Marker Link="Abil/SpawnMutantLarva"/>
         <UninterruptibleArray index="Prep" value="1"/>
@@ -54158,18 +54160,18 @@
             <Button DefaultButtonFace="zerglingmovementspeed2" State="Restricted" Requirements="LearnMetabolicBoost2"/>
         </InfoArray>
         <InfoArray index="Research3" Time="160" Upgrade="zerglingattackspeed22">
-            <Resource index="Minerals" value="125"/>
-            <Resource index="Vespene" value="125"/>
+            <Resource index="Minerals" value="400"/>
+            <Resource index="Vespene" value="200"/>
             <Button DefaultButtonFace="ProtossBuildAdvanced242" Requirements="LearnMetabolicBoost22"/>
         </InfoArray>
         <InfoArray index="Research4" Time="210" Upgrade="zerglingattackspeed222">
-            <Resource index="Minerals" value="200"/>
-            <Resource index="Vespene" value="200"/>
+            <Resource index="Minerals" value="600"/>
+            <Resource index="Vespene" value="300"/>
             <Button DefaultButtonFace="ProtossBuildAdvanced2422" Requirements="LearnMetabolicBoost222"/>
         </InfoArray>
-        <InfoArray index="Research5" Time="100" Upgrade="zerglingattackspeed223">
+        <InfoArray index="Research5" Time="84" Upgrade="zerglingattackspeed223">
             <Resource index="Minerals" value="300"/>
-            <Resource index="Vespene" value="300"/>
+            <Resource index="Vespene" value="150"/>
             <Button DefaultButtonFace="ProtossBuildAdvanced2423" Requirements="LearnMetabolicBoost223"/>
         </InfoArray>
         <InfoArray index="Research6" Time="75" Upgrade="zerglingattackspeed232">
@@ -54183,8 +54185,8 @@
             <Button DefaultButtonFace="ProtossBuildAdvanced222222" Requirements="LearnAdrenalGlands222"/>
         </InfoArray>
         <InfoArray index="Research8" Time="260" Upgrade="zerglingattackspeed2222">
-            <Resource index="Minerals" value="300"/>
-            <Resource index="Vespene" value="300"/>
+            <Resource index="Minerals" value="800"/>
+            <Resource index="Vespene" value="400"/>
             <Button DefaultButtonFace="ProtossBuildAdvanced24222" Requirements="LearnMetabolicBoost2222"/>
         </InfoArray>
         <InfoArray index="Research9" Time="125" Upgrade="zerglingattackspeed242">
@@ -55770,29 +55772,29 @@
     <CAbilTrain id="UnknownAbility12">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <InfoArray index="Train1">
-            <Charge CountMax="5" CountUse="1" TimeUse="28"/>
+            <Charge CountMax="5" CountUse="1" TimeUse="84"/>
             <Button DefaultButtonFace="Marine11"/>
             <Unit value="Marine3"/>
             <Unit value="Marine3"/>
             <Unit value="Marine3"/>
         </InfoArray>
         <InfoArray index="Train2">
-            <Charge CountMax="5" CountUse="1" TimeUse="28"/>
+            <Charge CountMax="5" CountUse="1" TimeUse="84"/>
             <Button DefaultButtonFace="Marine112" Requirements="HaveEnlistmentHouse2"/>
             <Unit value="Marine32"/>
         </InfoArray>
         <InfoArray index="Train3">
-            <Charge CountMax="5" CountUse="1" TimeUse="28"/>
+            <Charge CountMax="5" CountUse="1" TimeUse="84"/>
             <Button DefaultButtonFace="Marine1122" Requirements="HaveEnlistmentHouse22"/>
             <Unit value="Marine33"/>
         </InfoArray>
         <InfoArray index="Train4">
-            <Charge CountMax="5" CountUse="1" TimeUse="28"/>
+            <Charge CountMax="5" CountUse="1" TimeUse="84"/>
             <Button DefaultButtonFace="Marine11222" Requirements="HaveEnlistmentHouse2232"/>
             <Unit value="Marine34"/>
         </InfoArray>
         <InfoArray index="Train5">
-            <Charge CountMax="5" CountUse="1" TimeUse="28"/>
+            <Charge CountMax="5" CountUse="1" TimeUse="84"/>
             <Button DefaultButtonFace="Marine112222" Requirements="HaveEnlistmentHouse223"/>
             <Unit value="Marine35"/>
         </InfoArray>
@@ -57260,7 +57262,7 @@
         </InfoArray>
         <InfoArray index="Build28" Unit="Extractor" Time="14">
             <Charge Location="Player"/>
-            <Cooldown Location="Player" TimeUse="75"/>
+            <Cooldown Location="Player" TimeUse="42"/>
             <Button DefaultButtonFace="Extractor"/>
             <ValidatorArray value="HasVespene"/>
         </InfoArray>
@@ -57611,13 +57613,13 @@
         <InfoArray index="Build1" Unit="CommandCenter5" Time="70">
             <Button DefaultButtonFace="CommandCenter10" Requirements=""/>
         </InfoArray>
-        <InfoArray index="Build2" Unit="EnlistmentHouse">
+        <InfoArray index="Build2" Unit="EnlistmentHouse" Time="58">
             <Button DefaultButtonFace="SupplyDepot8" Requirements=""/>
         </InfoArray>
         <InfoArray index="Build3">
             <Button DefaultButtonFace="Refinery8" Requirements=""/>
         </InfoArray>
-        <InfoArray index="Build4" Unit="Barracks6" Time="70">
+        <InfoArray index="Build4" Unit="Barracks6" Time="42">
             <Button DefaultButtonFace="Barracks8" Requirements="HaveEnlistmentHouse"/>
         </InfoArray>
         <InfoArray index="Build5" Unit="EngineeringBay6" Time="28">
@@ -68124,6 +68126,11 @@
         <UninterruptibleArray index="Finish" value="1"/>
         <AINotifyEffect value="FaceEmbrace"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="FaceEmbrace2"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ZHybridPlasmaBlast">
+        <Cost index="0">
+            <Cooldown TimeUse="84"/>
+        </Cost>
     </CAbilEffectTarget>
     <CAbilEffectInstant id="ZHybridPsionicShockwave2">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>

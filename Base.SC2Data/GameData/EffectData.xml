@@ -4816,6 +4816,11 @@
         <EffectArray value="empeffect"/>
         <EffectArray value="Stormslow"/>
     </CEffectSet>
+    <CEffectModifyUnit id="ConsumeDNAImpact">
+        <VitalArray index="Life">
+            <Change value="15"/>
+        </VitalArray>
+    </CEffectModifyUnit>
     <CEffectApplyBehavior id="CruiserSpeedApply">
         <EditorCategories value=""/>
         <Behavior value="DriveCalibrationField"/>
@@ -4834,6 +4839,9 @@
         <EditorCategories value=""/>
         <Behavior value="DistortionGenerator"/>
     </CEffectApplyBehavior>
+    <CEffectDamage id="DiamondbackBeam">
+        <AttributeBonus index="Armored" value="0"/>
+    </CEffectDamage>
     <CEffectApplyBehavior id="EMPApplyDecloakBehavior22">
         <EditorCategories value="Race:Terran"/>
         <Behavior value="EMPDecloak22"/>
@@ -13961,7 +13969,6 @@
     <CEffectSet id="CalldownMULEFinalSet4235">
         <EditorCategories value="Race:Terran"/>
         <EffectArray value="RemovePrecursor"/>
-        <EffectArray value="CalldownMULETimedLife4235"/>
         <EffectArray value="CalldownMULEIssueOrder4235"/>
     </CEffectSet>
     <CEffectSet id="CalldownMULEFinalSet42352">
@@ -13985,13 +13992,11 @@
     <CEffectSet id="CalldownMULEFinalSet42354">
         <EditorCategories value="Race:Terran"/>
         <EffectArray value="RemovePrecursor"/>
-        <EffectArray value="CalldownMULETimedLife42354"/>
         <EffectArray value="CalldownMULEIssueOrder42354"/>
     </CEffectSet>
     <CEffectSet id="CalldownMULEFinalSet42355">
         <EditorCategories value="Race:Terran"/>
         <EffectArray value="RemovePrecursor"/>
-        <EffectArray value="CalldownMULETimedLife42355"/>
         <EffectArray value="CalldownMULEIssueOrder42355"/>
     </CEffectSet>
     <CEffectSet id="CalldownMULEFinalSet5">
@@ -22974,9 +22979,8 @@
         <EditorCategories value="Race:Terran"/>
         <ResponseFlags index="Acquire" value="1"/>
         <ResponseFlags index="Flee" value="1"/>
-        <ShieldBonus value="100"/>
         <Flags index="Notification" value="1"/>
-        <Amount value="35"/>
+        <Amount value="25"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectDamage>
     <CEffectDamage id="EMPDamage32">
@@ -28414,7 +28418,7 @@
     </CEffectDamage>
     <CEffectDamage id="HotSUltraliskKaiserBladesDamage6" parent="DU_WEAP">
         <KindSplash value="Melee"/>
-        <Amount value="60"/>
+        <Amount value="50"/>
         <Death value="Eviscerate"/>
     </CEffectDamage>
     <CEffectDamage id="HotSUltraliskKaiserBladesDamage7" parent="DU_WEAP">
@@ -28544,7 +28548,7 @@
     </CEffectDamage>
     <CEffectDamage id="HotSUltraliskKaiserBladesSecondaryDamage6" parent="DU_WEAP">
         <ValidatorArray value="NotHaveHotSMonarchBlades"/>
-        <Amount value="30"/>
+        <Amount value="20"/>
         <Death value="Eviscerate"/>
     </CEffectDamage>
     <CEffectDamage id="HotSUltraliskKaiserBladesSecondaryDamage7" parent="DU_WEAP">
@@ -29358,7 +29362,7 @@
         <Behavior value="HydraliskFrenzy"/>
     </CEffectApplyBehavior>
     <CEffectDamage id="HydraliskMelee2" parent="NeedleSpinesDamage">
-        <AttributeBonus index="Light" value="15"/>
+        <AttributeBonus index="Light" value="25"/>
         <Kind value="Melee"/>
         <Amount value="20"/>
         <Death value="Eviscerate"/>
@@ -51050,7 +51054,7 @@
         <Amount value="60"/>
         <Death value="Eviscerate"/>
         <AreaArray Radius="1.3" Fraction="1"/>
-        <SearchFilters value="Ground;Player,Ally,Neutral"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Stasis,Hidden,Invulnerable"/>
     </CEffectDamage>
     <CEffectDamage id="PrimalSlash2232">
         <EditorCategories value="Race:Zerg"/>
@@ -53166,11 +53170,10 @@
         <EditorCategories value="Race:Terran"/>
         <Behavior value="PsiDisruption722"/>
     </CEffectApplyBehavior>
-    <CEffectApplyBehavior id="PsiDisruptionApplyBehavior73">
-        <ValidatorArray index="0" removed="1"/>
+    <CEffectDamage id="PsiDisruptionApplyBehavior73">
         <EditorCategories value="Race:Terran"/>
-        <Behavior value="PsiDisruption73"/>
-    </CEffectApplyBehavior>
+        <Amount value="1"/>
+    </CEffectDamage>
     <CEffectApplyBehavior id="PsiDisruptionApplyBehavior74">
         <ValidatorArray index="0" removed="1"/>
         <EditorCategories value="Race:Terran"/>
@@ -53906,7 +53909,7 @@
     <CEffectEnumArea id="PsiDisruptionSearchArea63">
         <EditorCategories value="Race:Terran"/>
         <SearchFilters value="Visible;Player,Ally,Neutral,Air,Structure,Worker,Missile,Dead,Hidden,Invulnerable,Benign"/>
-        <AreaArray Radius="6" Effect="PsiDisruptionApplyBehavior73"/>
+        <AreaArray Radius="4" Effect="PsiDisruptionApplyBehavior73"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="PsiDisruptionSearchArea64">
         <EditorCategories value="Race:Terran"/>
@@ -56336,12 +56339,12 @@
     <CEffectCreateUnit id="PureBornDeathCReateFanatic3222222">
         <EditorCategories value=""/>
         <SpawnUnit value="Zergling2"/>
-        <SpawnCount value="5"/>
+        <SpawnCount value="8"/>
     </CEffectCreateUnit>
     <CEffectCreateUnit id="PureBornDeathCReateFanatic32222222">
         <EditorCategories value=""/>
         <SpawnUnit value="Roach2"/>
-        <SpawnCount value="3"/>
+        <SpawnCount value="4"/>
     </CEffectCreateUnit>
     <CEffectCreateUnit id="PureBornDeathCReateFanatic322222222">
         <EditorCategories value=""/>
@@ -56383,7 +56386,7 @@
     <CEffectCreateUnit id="PureBornDeathCReateFanatic322222223222">
         <EditorCategories value=""/>
         <SpawnUnit value="Corruptor3"/>
-        <SpawnCount value="3"/>
+        <SpawnCount value="6"/>
     </CEffectCreateUnit>
     <CEffectCreateUnit id="PureBornDeathCReateFanatic3222222233">
         <EditorCategories value=""/>
@@ -57284,12 +57287,12 @@
     <CEffectCreateUnit id="PureBornDeathCReateFanatic32222224">
         <EditorCategories value=""/>
         <SpawnUnit value="Zergling2"/>
-        <SpawnCount value="7"/>
+        <SpawnCount value="26"/>
     </CEffectCreateUnit>
     <CEffectCreateUnit id="PureBornDeathCReateFanatic322222242">
         <EditorCategories value=""/>
         <SpawnUnit value="Baneling2"/>
-        <SpawnCount value="5"/>
+        <SpawnCount value="4"/>
     </CEffectCreateUnit>
     <CEffectCreateUnit id="PureBornDeathCReateFanatic3222222422">
         <EditorCategories value=""/>
@@ -57304,17 +57307,17 @@
     <CEffectCreateUnit id="PureBornDeathCReateFanatic322222242222">
         <EditorCategories value=""/>
         <SpawnUnit value="Queen3"/>
-        <SpawnCount value="3"/>
+        <SpawnCount value="6"/>
     </CEffectCreateUnit>
     <CEffectCreateUnit id="PureBornDeathCReateFanatic3222222422222">
         <EditorCategories value=""/>
         <SpawnUnit value="Mutalisk3"/>
-        <SpawnCount value="4"/>
+        <SpawnCount value="10"/>
     </CEffectCreateUnit>
     <CEffectCreateUnit id="PureBornDeathCReateFanatic32222224222222">
         <EditorCategories value=""/>
         <SpawnUnit value="Mutalisk3"/>
-        <SpawnCount value="2"/>
+        <SpawnCount value="3"/>
     </CEffectCreateUnit>
     <CEffectCreateUnit id="PureBornDeathCReateFanatic32222224223">
         <EditorCategories value=""/>
@@ -57427,7 +57430,7 @@
     <CEffectCreateUnit id="PureBornDeathCReateFanatic322222245">
         <EditorCategories value=""/>
         <SpawnUnit value="Zergling2"/>
-        <SpawnCount value="2"/>
+        <SpawnCount value="5"/>
     </CEffectCreateUnit>
     <CEffectCreateUnit id="PureBornDeathCReateFanatic3222222452">
         <EditorCategories value=""/>
@@ -67001,7 +67004,7 @@
     </CEffectDamage>
     <CEffectDamage id="ShockDDamage3" parent="DU_WEAP">
         <Kind value="Ranged"/>
-        <Amount value="25"/>
+        <Amount value="18"/>
         <ExcludeArray Value="Outer"/>
         <ExcludeArray Value="Target"/>
         <SearchFilters value="-;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
@@ -68113,6 +68116,7 @@
         <AreaArray Radius="2" Fraction="1"/>
         <SearchFilters value="-;Player,Ally"/>
         <AttributeBonus index="Biological" value="0"/>
+        <Amount value="10"/>
     </CEffectDamage>
     <CEffectDamage id="SporeCrawlerU22" parent="SporeCrawlerU">
         <Name value="Effect/Name/SporeCrawlerU22"/>
@@ -69392,6 +69396,9 @@
         <ImpactLocation Value="TargetUnit"/>
         <Flags index="Notification" value="1"/>
     </CEffectDamage>
+    <CEffectEnumArea id="TempestDisruptionBlastInitialWarningSearch">
+        <SearchFilters value="Ground;Player,Ally,Neutral,Heroic,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectEnumArea>
     <CEffectEnumArea id="TempestDisruptionBlastInitialWarningSearch2">
         <EditorCategories value="Race:Terran"/>
         <ImpactLocation Value="TargetPoint"/>
@@ -69412,6 +69419,9 @@
         <ImpactLocation Value="TargetUnit"/>
         <Flags index="Notification" value="1"/>
     </CEffectDamage>
+    <CEffectEnumArea id="TempestDisruptionBlastSecondaryWarningSearch">
+        <SearchFilters value="Ground;Player,Ally,Neutral,Heroic,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectEnumArea>
     <CEffectEnumArea id="TempestDisruptionBlastSecondaryWarningSearch2">
         <EditorCategories value="Race:Terran"/>
         <ImpactLocation Value="TargetPoint"/>
@@ -77210,6 +77220,7 @@
         <EditorCategories value="Race:Terran"/>
         <ResponseFlags index="Acquire" value="1"/>
         <ResponseFlags index="Flee" value="1"/>
+        <AttributeBonus index="Light" value="15"/>
         <AttributeBonus index="Armored" value="10"/>
         <ArmorReduction value="1"/>
         <Kind value="Ranged"/>
@@ -80658,6 +80669,9 @@
     </CEffectDamage>
     <CEffectDamage id="ZHybridPlasmaBlastDamage">
         <Amount value="450"/>
+        <Kind value="Spell"/>
+        <AreaArray index="0" removed="1"/>
+        <AreaArray index="1" removed="1"/>
     </CEffectDamage>
     <CEffectApplyBehavior id="ZHybridPsionicShockwaveApplyControllerBehavior2">
         <ValidatorArray index="0" value="ZHybridDoesNotHaveControllerBehavior"/>
