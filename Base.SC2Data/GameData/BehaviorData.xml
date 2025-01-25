@@ -1061,6 +1061,18 @@
             <WeaponDisableArray value="GuassRifle2222"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="PsiDisruption322322222">
+        <Alignment value="Negative"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-psidisruption.dds"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="HasPsiStrike"/>
+        <Duration value="3"/>
+        <Modification SightBonus="-32" AttackSpeedMultiplier="0.01">
+            <StateFlags index="SuppressAttack" value="1"/>
+            <WeaponDisableArray value="GuassRifle2222"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="PsiDisruption3223232">
         <Alignment value="Positive"/>
         <InfoFlags index="Hidden" value="1"/>
@@ -1074,12 +1086,32 @@
             <Chance value="1"/>
         </DamageResponse>
     </CBehaviorBuff>
+    <CBehaviorBuff id="PsiDisruption32232322">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-psidisruption.dds"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="HasPsiStrike"/>
+        <Duration value="3"/>
+        <InitialEffect value="PsiDisruptionSearchArea322322222"/>
+        <RefreshEffect value="PsiDisruptionSearchArea322322222"/>
+        <DamageResponse>
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
     <CBehaviorBuff id="PsiDisruptionSearch3223232">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <DisableValidatorArray value="NotDeadOrConstruction"/>
         <Period value="0.125"/>
         <PeriodicEffect value="PsiDisruptionSearchArea3223232"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PsiDisruptionSearch32232322">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+        <DisableValidatorArray value="NotDeadOrConstruction"/>
+        <Period value="0.125"/>
+        <PeriodicEffect value="PsiDisruptionSearchArea32232322"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ResurgentArchonDummy">
         <Alignment value="Positive"/>
@@ -1415,6 +1447,14 @@
             <StateFlags index="Cloak" value="1"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="ExistenceRadar">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-status-radar.dds"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+        <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
+        <Modification Radar="13" RadarFilters="-;Neutral,RawResource,HarvestableResource,Missile,Destructible,Buried"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="Shield44">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -1436,6 +1476,15 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="1.4"/>
         <Modification MoveSpeedBonus="4"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UnknownBehavior54">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="420"/>
+        <Modification>
+            <StateFlags index="Invulnerable" value="1"/>
+            <StateFlags index="Unselectable" value="1"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="VoidCall">
         <InfoFlags index="Hidden" value="1"/>

@@ -5186,10 +5186,20 @@
         <EditorCategories value="Race:Terran"/>
         <Behavior value="PsiDisruption32232222"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="PsiDisruptionApplyBehavior322322222">
+        <ValidatorArray index="0" value="IsWidowMine222"/>
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="PsiDisruption322322222"/>
+    </CEffectApplyBehavior>
     <CEffectApplyBehavior id="PsiDisruptionApplyBehavior3223232">
         <ValidatorArray index="0" removed="1"/>
         <EditorCategories value="Race:Terran"/>
         <Behavior value="PsiDisruption3223232"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="PsiDisruptionApplyBehavior32232322">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="PsiDisruption32232322"/>
     </CEffectApplyBehavior>
     <CEffectEnumArea id="PsiDisruptionSearchArea32232222">
         <EditorCategories value="Race:Terran"/>
@@ -5197,10 +5207,21 @@
         <AreaArray Radius="14" Effect="PsiDisruptionApplyBehavior32232222"/>
         <MaxCount value="5"/>
     </CEffectEnumArea>
+    <CEffectEnumArea id="PsiDisruptionSearchArea322322222">
+        <EditorCategories value="Race:Terran"/>
+        <SearchFilters value="-;Missile,Invulnerable"/>
+        <AreaArray Radius="13" Effect="PsiDisruptionApplyBehavior322322222"/>
+        <MaxCount value="5"/>
+    </CEffectEnumArea>
     <CEffectEnumArea id="PsiDisruptionSearchArea3223232">
         <EditorCategories value="Race:Terran"/>
         <SearchFilters value="-;Self,Player,Ally,Neutral,Dead,Invulnerable,Benign"/>
         <AreaArray Radius="14" Effect="PsiDisruptionApplyBehavior3223232"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="PsiDisruptionSearchArea32232322">
+        <EditorCategories value="Race:Terran"/>
+        <SearchFilters value="-;Self,Ally,Neutral,Enemy,Dead,Invulnerable,Benign"/>
+        <AreaArray Radius="13" Effect="PsiDisruptionApplyBehavior32232322"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="RaidFrigateLeftRandomLM">
         <SearchFilters value="Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
