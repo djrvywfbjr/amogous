@@ -1128,7 +1128,6 @@ bool libCE519501_gt_POTH_Func (bool testConds, bool runActions) {
         }
         TriggerEnable(libCE519501_gt_SparkOfExistence, false);
         TriggerEnable(libCD55B2B5_gt_Timer5Alt, false);
-        libNtve_gf_UnitCreateFacingPoint(1, "GuardMarine22", 0, 15, RegionGetCenter(RegionPlayableMap()), UnitGetPosition(EventUnit()));
         libNtve_gf_UnitCreateFacingPoint(1, "SacredCore3", 0, 15, RegionGetCenter(RegionPlayableMap()), UnitGetPosition(EventUnit()));
         libCE519501_gv_sparkOfExistence = UnitLastCreated();
         libNtve_gf_SetUpgradeLevelForPlayer(2, "CorruptedPlagueSpeedDebuff232222222222", 1);
@@ -1139,6 +1138,7 @@ bool libCE519501_gt_POTH_Func (bool testConds, bool runActions) {
         libNtve_gf_SetUpgradeLevelForPlayer(6, "CorruptedPlagueSpeedDebuff232222222222", 1);
         libNtve_gf_SetUpgradeLevelForPlayer(7, "CorruptedPlagueSpeedDebuff232222222222", 1);
         libNtve_gf_SetUpgradeLevelForPlayer(8, "CorruptedPlagueSpeedDebuff232222222222", 1);
+        TechTreeAbilityAllow(15, AbilityCommand("ShieldUp1338", 0), true);
         HelpPanelAddTip(PlayerGroupAll(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/lib_CE519501_D6F32717"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/lib_CE519501_9AACC247"), StringExternal("Param/Value/lib_CE519501_18348770"), "Assets\\Textures\\btn-ability-zeratul-chargedcrystal-psionicwinds.dds");
     }
 
@@ -1169,6 +1169,7 @@ bool libCE519501_gt_Timer400_Func (bool testConds, bool runActions) {
     }
 
     TriggerEnable(libCE519501_gt_SparkOfExistence, true);
+    TriggerEnable(libCE519501_gt_Victory, true);
     TimerWindowCreate(libCE519501_gv_KOTH_TIMER, StringExternal("Param/Value/lib_CE519501_9C6C455D"), true, false);
     libCD55B2B5_gv_randomPythonLook = RandomInt(1, 5);
     if ((libCD55B2B5_gv_randomPythonLook == 1)) {
@@ -1236,6 +1237,7 @@ bool libCE519501_gt_Victory_Func (bool testConds, bool runActions) {
 //--------------------------------------------------------------------------------------------------
 void libCE519501_gt_Victory_Init () {
     libCE519501_gt_Victory = TriggerCreate("libCE519501_gt_Victory_Func");
+    TriggerEnable(libCE519501_gt_Victory, false);
     TriggerAddEventTimer(libCE519501_gt_Victory, libCE519501_gv_KOTH_TIMER);
 }
 
@@ -1269,10 +1271,49 @@ void libCE519501_gt_SparkOfExistence_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
+// Trigger: SrakIfStance
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_SrakIfStance_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((UnitGetType(EventUnit()) == "SacredCore3"))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TimerStart(libCE519501_gv_KOTH_TIMER, 90.0, false, c_timeGame);
+    TimerPause(libCE519501_gv_KOTH_TIMER, true);
+    UnitSetOwner(EventUnit(), 15, true);
+    TimerPause(libCE519501_gv_KOTH_TIMER, true);
+    Wait(0.1, c_timeGame);
+    TimerPause(libCE519501_gv_KOTH_TIMER, true);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_SrakIfStance_Init () {
+    libCE519501_gt_SrakIfStance = TriggerCreate("libCE519501_gt_SrakIfStance_Func");
+    TriggerAddEventUnitBehaviorChange(libCE519501_gt_SrakIfStance, null, "PsiDisruption322322", c_unitBehaviorChangeDestroy);
+}
+
+//--------------------------------------------------------------------------------------------------
 // Trigger: Timer Start
 //--------------------------------------------------------------------------------------------------
 bool libCE519501_gt_TimerStart_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((UnitGetOwner(EventUnit()) != 15))) {
+            return false;
+        }
+    }
+
     // Actions
     if (!runActions) {
         return true;
@@ -1286,6 +1327,33 @@ bool libCE519501_gt_TimerStart_Func (bool testConds, bool runActions) {
 void libCE519501_gt_TimerStart_Init () {
     libCE519501_gt_TimerStart = TriggerCreate("libCE519501_gt_TimerStart_Func");
     TriggerAddEventUnitBehaviorChange(libCE519501_gt_TimerStart, null, "ShieldingEngine938", c_unitBehaviorChangeCreate);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Timer Start 2
+//--------------------------------------------------------------------------------------------------
+bool libCE519501_gt_TimerStart2_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((UnitGetOwner(EventUnit()) == 15))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TimerPause(libCE519501_gv_KOTH_TIMER, true);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCE519501_gt_TimerStart2_Init () {
+    libCE519501_gt_TimerStart2 = TriggerCreate("libCE519501_gt_TimerStart2_Func");
+    TriggerAddEventUnitBehaviorChange(libCE519501_gt_TimerStart2, null, "ShieldingEngine938", c_unitBehaviorChangeAny);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -1338,7 +1406,7 @@ bool libCE519501_gt_TimerKill_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    libNtve_gf_StopTimer(libCE519501_gv_KOTH_TIMER);
+    TimerRestart(libCE519501_gv_KOTH_TIMER);
     return true;
 }
 
@@ -1384,7 +1452,9 @@ void libCE519501_InitTriggers () {
     libCE519501_gt_Timer400_Init();
     libCE519501_gt_Victory_Init();
     libCE519501_gt_SparkOfExistence_Init();
+    libCE519501_gt_SrakIfStance_Init();
     libCE519501_gt_TimerStart_Init();
+    libCE519501_gt_TimerStart2_Init();
     libCE519501_gt_TimerPause_Init();
     libCE519501_gt_TimerUnpause_Init();
     libCE519501_gt_TimerKill_Init();

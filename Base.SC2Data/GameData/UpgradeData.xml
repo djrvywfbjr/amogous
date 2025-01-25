@@ -11813,6 +11813,9 @@
         <EffectArray Operation="Set" Reference="Unit,Medivac22,CostResource[Vespene]" Value="250"/>
     </CUpgrade>
     <CUpgrade id="ScoutingProtocol"/>
+    <CUpgrade id="CloakingField">
+        <Icon value="Assets\Textures\btn-ability-mengsk-ghost-supercloak.dds"/>
+    </CUpgrade>
     <CUpgrade id="UnknownUpgrade9">
         <EffectArray Operation="Set" Reference="Effect,AlarakPsiOrbSet2,EffectArray[3]" Value="Epilogue02VoidRiftAB223"/>
         <EffectArray Operation="Set" Reference="Effect,HotSUltraliskKaiserBlades7,EffectArray[4]" Value="Epilogue02VoidRiftAB2232"/>
