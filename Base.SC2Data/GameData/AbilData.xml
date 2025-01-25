@@ -1160,6 +1160,22 @@
         <CursorEffect value="KarassPlasmaSurgeSearchArea"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="KarassPlasmaSurge332"/>
     </CAbilEffectTarget>
+    <CAbilBehavior id="AsterianCloak">
+        <AbilSetId value="Clok"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="On" DefaultButtonFace="WraithCloakOn" Requirements="CloakingFIeld">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="Off" DefaultButtonFace="CloakOff">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <Flags index="Toggle" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="25"/>
+        </Cost>
+        <BehaviorArray value="MengskWraithCloak"/>
+    </CAbilBehavior>
     <CAbilEffectTarget id="MohandarStickyBomb6">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Effect index="0" value="MohandarStickyBombLaunchMissile6"/>
@@ -2959,6 +2975,11 @@
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Button DefaultButtonFace="ResearchBansheeCloak2" Requirements="LearnCloack"/>
+        </InfoArray>
+        <InfoArray index="Research27" Time="71" Upgrade="CloakingField">
+            <Resource index="Minerals" value="75"/>
+            <Resource index="Vespene" value="75"/>
+            <Button DefaultButtonFace="CloakingField2" Requirements="CloakingFIeld2"/>
         </InfoArray>
     </CAbilResearch>
     <CAbilMorph id="BarracksTechReactorMorph2">
@@ -21531,6 +21552,11 @@
             <Resource index="Vespene" value="300"/>
             <Button DefaultButtonFace="UnknownButton2" Requirements="UnknownRequirement19"/>
         </InfoArray>
+        <InfoArray index="Research26" Time="60" Upgrade="CloakingField">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="CloakingField22"/>
+        </InfoArray>
     </CAbilResearch>
     <CAbilResearch id="EngineeringBayResearch5" parent="EngineeringBayResearch">
         <Name value="Abil/Name/EngineeringBayResearch5"/>
@@ -22713,7 +22739,7 @@
         <InfoArray index="Research19" Time="30" Upgrade="ScoutingProtocol">
             <Resource index="Minerals" value="50"/>
             <Resource index="Vespene" value="50"/>
-            <Button DefaultButtonFace="ScoutingProtocol" Requirements="HaveBurningNexus"/>
+            <Button DefaultButtonFace="ScoutingProtocol" Requirements="CtossNoScoutHalluc"/>
         </InfoArray>
         <InfoArray index="Research20" Time="50" Upgrade="UmojanBasicUnitUpgrade5222422423222222352222222543">
             <Resource index="Minerals" value="100"/>
@@ -31119,6 +31145,27 @@
         <CmdButtonArray index="Execute" DefaultButtonFace="Snipe332422"/>
         <Arc value="360"/>
     </CAbilEffectTarget>
+    <CAbilEffectTarget id="MassPsychosis">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <PrepEffect value="TempestDisruptionBlastInitialWarningSearch22"/>
+        <Effect index="0" value="TempestDisruptionBlastSet22"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="30"/>
+        </Cost>
+        <CancelCost>
+            <Cooldown TimeUse="60"/>
+        </CancelCost>
+        <Range value="12"/>
+        <CastIntroTime value="4"/>
+        <ShowProgressArray index="Cast" value="1"/>
+        <CancelableArray index="Cast" value="1"/>
+        <UninterruptibleArray index="Cast" value="1"/>
+        <CursorEffect value="TempestDisruptionBlastSearch22"/>
+        <ProgressButtonArray index="Cast" value="TempestDisruptionBlast"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TempestDisruptionBlast22"/>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="TemporalField33">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Effect index="0" value="TemporalFieldGrowingBubbleCreatePersistent33"/>
@@ -31128,7 +31175,7 @@
         <Cost>
             <Vital index="Energy" value="200"/>
         </Cost>
-        <Range value="9"/>
+        <Range value="12"/>
         <Arc value="360"/>
         <CursorEffect value="TemporalFieldAfterBubbleSearchArea33"/>
         <AINotifyEffect value="TemporalFieldCreatePersistent"/>
@@ -68221,7 +68268,7 @@
         <Effect index="0" value="ZHybridPsionicShockwaveCreatePersistent233"/>
         <Cost>
             <Vital index="Energy" value="75"/>
-            <Charge Link=""/>
+            <Charge Link="Abil/Blink"/>
             <Cooldown Link="Abil/ZHybridPsionicShockwave" TimeUse="20"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="PsionicShockwave232"/>

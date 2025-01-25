@@ -178,6 +178,12 @@
     <CRequirement id="BlinkButton">
         <NodeArray index="Show" Link="NotCountUpgradeXillBlinkQueuedOrBetter"/>
     </CRequirement>
+    <CRequirement id="CloakingFIeld">
+        <NodeArray index="Show" Link="CountUpgradeCloakingFieldCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="CloakingFIeld2">
+        <NodeArray index="Show" Link="NotCountUpgradeCloakingFieldQueuedOrBetter"/>
+    </CRequirement>
     <CRequirement id="CtossNoScoutHalluc">
         <NodeArray index="Show" Link="NotCountUpgradeScoutingProtocolQueuedOrBetter"/>
     </CRequirement>

@@ -394,6 +394,13 @@
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="CalldownMULE42332"/>
     </CButton>
+    <CButton id="CloakingField2">
+        <Icon value="Assets\Textures\btn-ability-mengsk-ghost-supercloak.dds"/>
+    </CButton>
+    <CButton id="CloakingField22">
+        <Icon value="Assets\Textures\btn-ability-mengsk-ghost-supercloak.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-mengsk-ghost-supercloak.dds"/>
+    </CButton>
     <CButton id="CombatShield223332">
         <Icon value="Assets\Textures\btn-ability-terran-cloak-color.dds"/>
         <EditorCategories value="Race:Terran"/>
@@ -458,6 +465,11 @@
     <CButton id="SynapticSpike">
         <Icon value="Assets\Textures\btn-ability-zerg-dehaka-ultralisk-brutalcharge.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-zerg-dehaka-ultralisk-brutalcharge.dds"/>
+    </CButton>
+    <CButton id="TempestDisruptionBlast22">
+        <Icon value="Assets\Textures\btn-ability-protoss-mindblast.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-disruptionblast.dds"/>
+        <EditorCategories value="Race:Protoss"/>
     </CButton>
     <CButton id="TemporalAnomaly">
         <Icon value="Assets\Textures\nova coop_lvl 11_all research costs and times - 50.dds"/>

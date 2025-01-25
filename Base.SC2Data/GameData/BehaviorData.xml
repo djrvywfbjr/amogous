@@ -1477,6 +1477,16 @@
         <Duration value="1.4"/>
         <Modification MoveSpeedBonus="4"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="TempestDisruptionBlastStunBehavior22">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\stunswirl1_orange.dds"/>
+        <Duration value="6"/>
+        <Modification MoveSpeedMultiplier="0.75">
+            <StateFlags index="SuppressEnergy" value="1"/>
+            <StateFlags index="SuppressEnergyRegen" value="1"/>
+            <VitalRegenArray index="Energy" value="-15"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="UnknownBehavior54">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -42724,10 +42734,6 @@
     <CBehaviorBuff id="ShieldingEngine938">
         <InfoIcon value="Assets\Textures\btn-ability-terran-electricfield.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <DisplayDuration index="Self" value="1"/>
-        <DisplayDuration index="Ally" value="1"/>
-        <DisplayDuration index="Neutral" value="1"/>
-        <DisplayDuration index="Enemy" value="1"/>
         <Duration value="126"/>
         <Period value="1"/>
         <Modification MoveSpeedMultiplier="0.01" LifeArmorMultiplier="0">
@@ -42735,6 +42741,7 @@
             <AbilLinkDisableArray value="ShieldUp1338"/>
         </Modification>
         <ExpireEffect value="NovaHolographicDecoyGlazeAB2233"/>
+        <BuffFlags index="Countdown" value="0"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ShieldingEngine939">
         <InfoIcon value="Assets\Textures\btn-ability-terran-electricfield.dds"/>

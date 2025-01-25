@@ -1290,6 +1290,9 @@ bool libCE519501_gt_SrakIfStance_Func (bool testConds, bool runActions) {
     TimerStart(libCE519501_gv_KOTH_TIMER, 90.0, false, c_timeGame);
     TimerPause(libCE519501_gv_KOTH_TIMER, true);
     UnitSetOwner(EventUnit(), 15, true);
+    TimerPause(libCE519501_gv_KOTH_TIMER, true);
+    Wait(0.1, c_timeGame);
+    TimerPause(libCE519501_gv_KOTH_TIMER, true);
     return true;
 }
 

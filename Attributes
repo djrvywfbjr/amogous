@@ -104,7 +104,7 @@
         </Value>
         <Default>
             <Slot Id="Global"/>
-            <Value Id="2"/>
+            <Value Id="6"/>
         </Default>
     </Attribute>
     <Attribute>

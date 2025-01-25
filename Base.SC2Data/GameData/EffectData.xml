@@ -5680,6 +5680,17 @@
         <Death value="Squish"/>
         <SearchFilters value="-;Player,Ally,Neutral,Stasis,Invulnerable"/>
     </CEffectDamage>
+    <CEffectDamage id="SnipeDamage33224" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <AttributeBonus index="Armored" value="10"/>
+        <ArmorReduction value="0"/>
+        <Kind value="Spell"/>
+        <Amount value="20"/>
+        <Death value="Squish"/>
+        <AreaArray Radius="0.5" Fraction="1"/>
+        <SearchFilters value="-;Player,Ally,Neutral,Stasis,Invulnerable"/>
+    </CEffectDamage>
     <CEffectEnumArea id="SonOfKorhalAOE25">
         <EditorCategories value=""/>
         <Marker Link="Effect/SonOfKorhalAOE"/>
@@ -69390,7 +69401,18 @@
         <EditorCategories value="Race:Protoss"/>
         <Behavior value="TempestDisruptionBlastStunBehavior2"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="TempestDisruptionBlastAB22">
+        <ValidatorArray index="0" value="NotFrenzied"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="TempestDisruptionBlastStunBehavior22"/>
+    </CEffectApplyBehavior>
     <CEffectDamage id="TempestDisruptionBlastInitialWarningDamage2">
+        <ValidatorArray value="NotFrenzied"/>
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <Flags index="Notification" value="1"/>
+    </CEffectDamage>
+    <CEffectDamage id="TempestDisruptionBlastInitialWarningDamage22">
         <ValidatorArray value="NotFrenzied"/>
         <EditorCategories value="Race:Protoss"/>
         <ImpactLocation Value="TargetUnit"/>
@@ -69406,6 +69428,13 @@
         <AreaArray Radius="1.95" Effect="TempestDisruptionBlastInitialWarningDamage2"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectEnumArea>
+    <CEffectEnumArea id="TempestDisruptionBlastInitialWarningSearch22">
+        <EditorCategories value="Race:Terran"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <SearchFilters value="Ground;Player,Ally,Neutral,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="1.95" Effect="TempestDisruptionBlastInitialWarningDamage22"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectEnumArea>
     <CEffectEnumArea id="TempestDisruptionBlastSearch2">
         <EditorCategories value="Race:Terran"/>
         <ImpactLocation Value="TargetPoint"/>
@@ -69413,7 +69442,20 @@
         <AreaArray Radius="1.95" Effect="TempestDisruptionBlastAB2"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectEnumArea>
+    <CEffectEnumArea id="TempestDisruptionBlastSearch22">
+        <EditorCategories value="Race:Terran"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <SearchFilters value="Ground;Player,Ally,Neutral,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="5" Effect="TempestDisruptionBlastAB22"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectEnumArea>
     <CEffectDamage id="TempestDisruptionBlastSecondaryWarningDamage2">
+        <ValidatorArray value="NotFrenzied"/>
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <Flags index="Notification" value="1"/>
+    </CEffectDamage>
+    <CEffectDamage id="TempestDisruptionBlastSecondaryWarningDamage22">
         <ValidatorArray value="NotFrenzied"/>
         <EditorCategories value="Race:Protoss"/>
         <ImpactLocation Value="TargetUnit"/>
@@ -69429,10 +69471,23 @@
         <AreaArray Radius="1.95" Effect="TempestDisruptionBlastSecondaryWarningDamage2"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectEnumArea>
+    <CEffectEnumArea id="TempestDisruptionBlastSecondaryWarningSearch22">
+        <EditorCategories value="Race:Terran"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <SearchFilters value="Ground;Player,Ally,Neutral,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="1.95" Effect="TempestDisruptionBlastSecondaryWarningDamage22"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectEnumArea>
     <CEffectSet id="TempestDisruptionBlastSet2">
         <EditorCategories value=""/>
         <EffectArray value="TempestDisruptionBlastSearch2"/>
         <EffectArray value="TempestDisruptionBlastSecondaryWarningSearch2"/>
+        <TargetLocationType value="Point"/>
+    </CEffectSet>
+    <CEffectSet id="TempestDisruptionBlastSet22">
+        <EditorCategories value=""/>
+        <EffectArray value="TempestDisruptionBlastSearch22"/>
+        <EffectArray value="TempestDisruptionBlastSecondaryWarningSearch22"/>
         <TargetLocationType value="Point"/>
     </CEffectSet>
     <CEffectLaunchMissile id="TempestLaunchMissile2">
