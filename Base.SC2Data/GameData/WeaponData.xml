@@ -853,6 +853,9 @@
     <CWeaponLegacy id="HellionTank">
         <Range value="3"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="HybridNemesisWeapon">
+        <Period value="0.7"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="MengskFirebat">
         <Range value="3"/>
         <Backswing value="0.25"/>
@@ -4520,7 +4523,6 @@
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
         <DisplayEffect value="HybridCDamage2"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="8"/>
         <Cost>
             <Cooldown Location="Unit"/>
         </Cost>
@@ -6740,7 +6742,7 @@
         <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="10"/>
         <RangeSlop value="0"/>
-        <Period value="2"/>
+        <Period value="3.5"/>
         <Effect value="LongboltMissile8"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="LurkerMP2">
@@ -6792,6 +6794,9 @@
         <Effect value="MengskBansheeCP32"/>
         <LegacyOptions index="KeepChanneling" value="1"/>
         <AllowedMovement value="Slowing"/>
+        <Cost>
+            <Vital index="Energy" value="2"/>
+        </Cost>
     </CWeaponLegacy>
     <CWeaponLegacy id="MengskBanshee4">
         <EditorCategories value="Race:Terran"/>
@@ -12071,7 +12076,7 @@
         <MinScanRange value="10"/>
         <Range value="4"/>
         <Arc value="14.9963"/>
-        <Period value="1.6"/>
+        <Period value="1.4"/>
         <Effect value="WarHoundLM23"/>
         <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
@@ -12088,6 +12093,7 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="WarHoundMelee2">
         <EditorCategories value="Race:Terran"/>
+        <Options index="Hidden" value="1"/>
         <Options index="Melee" value="1"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
