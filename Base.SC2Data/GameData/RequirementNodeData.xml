@@ -3496,6 +3496,10 @@
     <CRequirementCountUnit id="CountUnitEngineeringBay9CompleteOnly2884205370TechTreeCheat">
         <Count Link="EngineeringBay9" State="CompleteOnly"/>
     </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitEnlistmentHouseCompleteOnly453452523">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="EnlistmentHouse" State="CompleteOnly"/>
+    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitEternalOneQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="EternalOne" State="QueuedOrBetter"/>
@@ -5808,12 +5812,10 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeCloakingFieldCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="CloakingField" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeCloakingFieldQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="CloakingField" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeClusterBombQueuedOrBetter">
@@ -16696,7 +16698,6 @@
         <OperandArray index="0" value="CountUpgradeBleedingQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeCloakingFieldQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeCloakingFieldQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeClusterBombQueuedOrBetter">
