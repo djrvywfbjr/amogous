@@ -4373,7 +4373,7 @@
         <EditorCategories value="Race:PrimalZerg"/>
         <ImpactLocation Value="TargetPoint"/>
         <SearchFilters value="-;Self,Heroic,Missile,Item,Dead,Hidden"/>
-        <AreaArray Radius="1.7" Effect="ArbiterMPStasisFieldSet3"/>
+        <AreaArray Radius="2.5" Effect="ArbiterMPStasisFieldSet3"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="ArbiterMPStasisFieldSearch32">
         <EditorCategories value="Race:PrimalZerg"/>
@@ -4816,9 +4816,6 @@
         <EffectArray value="empeffect"/>
         <EffectArray value="Stormslow"/>
     </CEffectSet>
-    <CEffectDamage id="BarrageDamage">
-        <Amount value="90"/>
-    </CEffectDamage>
     <CEffectModifyUnit id="ConsumeDNAImpact">
         <VitalArray index="Life">
             <Change value="15"/>
@@ -4980,33 +4977,6 @@
         <SearchFlags index="CallForHelp" value="1"/>
         <SearchFlags index="OffsetByUnitRadius" value="1"/>
     </CEffectDamage>
-    <CEffectSet id="HellionTank6">
-        <EditorCategories value="Race:Zerg"/>
-        <EffectArray value="HellionTankDamage6"/>
-        <EffectArray value="HellionTankSearch6"/>
-    </CEffectSet>
-    <CEffectDamage id="HellionTankDamage6">
-        <EditorCategories value="Race:Terran"/>
-        <ResponseFlags index="Acquire" value="1"/>
-        <ResponseFlags index="Flee" value="1"/>
-        <AttributeBonus index="Light" value="12"/>
-        <ArmorReduction value="1"/>
-        <Flags index="Notification" value="1"/>
-        <Kind value="Ranged"/>
-        <KindSplash value="Ranged"/>
-        <Amount value="18"/>
-        <Death value="Fire"/>
-        <SearchFlags index="CallForHelp" value="1"/>
-    </CEffectDamage>
-    <CEffectEnumArea id="HellionTankSearch6">
-        <EditorCategories value="Race:Terran"/>
-        <ImpactLocation Value="SourceUnit"/>
-        <ExcludeArray Effect="HellionTank" Value="Target"/>
-        <SearchFilters value="Ground;Self,Player,Ally,Missile,Dead,Hidden,Invulnerable"/>
-        <AreaArray Arc="45" Radius="2" Effect="HellionTankDamage6"/>
-        <SearchFlags index="ExtendByUnitRadius" value="1"/>
-        <SearchFlags index="OffsetByUnitRadius" value="1"/>
-    </CEffectEnumArea>
     <CEffectApplyBehavior id="KillsToCaster23">
         <EditorCategories value="Race:Terran"/>
         <Behavior value="KillsToCaster"/>
@@ -5706,7 +5676,7 @@
         <ImpactLocation Value="TargetUnit"/>
         <ArmorReduction value="0"/>
         <Kind value="Spell"/>
-        <Amount value="100"/>
+        <Amount value="150"/>
         <Death value="Squish"/>
         <SearchFilters value="-;Player,Ally,Neutral,Stasis,Invulnerable"/>
     </CEffectDamage>
@@ -30674,7 +30644,7 @@
         <Amount value="2"/>
     </CEffectDamage>
     <CEffectTeleport id="InescapableBlink2">
-        <ValidatorArray value="TargetIsVisible2"/>
+        <ValidatorArray index="0" value="TargetIsVisible2"/>
         <ValidatorArray value="CasterNotFungalGrowthed"/>
     </CEffectTeleport>
     <CEffectDamage id="InfernalFlameThrower2" parent="DU_WEAP">
@@ -41245,7 +41215,9 @@
     <CEffectDamage id="MoebiusPConstructDamage2">
         <Amount value="3"/>
     </CEffectDamage>
-    <CEffectCreateUnit id="MoebiusZSpawnSparklings"/>
+    <CEffectCreateUnit id="MoebiusZSpawnSparklings">
+        <SpawnCount value="1"/>
+    </CEffectCreateUnit>
     <CEffectApplyBehavior id="MohandarStickyBombApply2">
         <EditorCategories value=""/>
         <Behavior value="MohandarStickyBomb2"/>
@@ -53902,7 +53874,7 @@
     </CEffectEnumArea>
     <CEffectEnumArea id="PsiDisruptionSearchArea42">
         <EditorCategories value="Race:Terran"/>
-        <SearchFilters value="Visible;Self,Neutral,Enemy,Structure,Missile,Stasis,Dead,Hidden,Benign"/>
+        <SearchFilters value="Visible;Neutral,Enemy,Missile,Stasis,Dead,Hidden,Benign"/>
         <AreaArray Radius="9" Effect="PsiDisruptionApplyBehavior42"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="PsiDisruptionSearchArea422">
@@ -64296,6 +64268,7 @@
     <CEffectDamage id="SOAMothershipLineAttackDamage46">
         <ValidatorArray value="noMarkers"/>
         <EditorCategories value="Race:Protoss"/>
+        <ShieldBonus value="100"/>
         <Flags index="Notification" value="1"/>
         <Amount value="100"/>
         <Death value="Fire"/>
@@ -74971,7 +74944,7 @@
         <DamageModifierSource Value="Caster"/>
         <Visibility value="Visible"/>
         <Kind value="Ranged"/>
-        <AreaArray Radius="1.7" Fraction="0.5"/>
+        <AreaArray Radius="2" Fraction="0.5"/>
         <SearchFilters value="-;Player,Ally,Neutral,Stasis,Dead,Invulnerable"/>
     </CEffectDamage>
     <CEffectDamage id="VoidRayVoidDamage292522" parent="DU_WEAP">
@@ -77303,6 +77276,7 @@
         <ResponseFlags index="Acquire" value="1"/>
         <ResponseFlags index="Flee" value="1"/>
         <AttributeBonus index="Light" value="15"/>
+        <AttributeBonus index="Armored" value="10"/>
         <ArmorReduction value="1"/>
         <Kind value="Ranged"/>
         <Amount value="15"/>
@@ -77359,17 +77333,6 @@
         <ArmorReduction value="1"/>
         <Kind value="Melee"/>
         <Amount value="30"/>
-    </CEffectDamage>
-    <CEffectDamage id="WarHoundMelee25">
-        <Name value="Effect/Name/WarHound"/>
-        <EditorCategories value="Race:Terran"/>
-        <Marker Link="Effect/WarHound"/>
-        <ResponseFlags index="Acquire" value="1"/>
-        <ResponseFlags index="Flee" value="1"/>
-        <AttributeBonus index="Light" value="10"/>
-        <ArmorReduction value="1"/>
-        <Kind value="Melee"/>
-        <Amount value="15"/>
     </CEffectDamage>
     <CEffectDamage id="WarbotBDamage2">
         <EditorCategories value="Race:Terran"/>

@@ -7589,18 +7589,18 @@
         <EffectArray Reference="Unit,Marine34,LifeArmor" Value="1"/>
         <EffectArray Reference="Unit,Marine35,LifeArmor" Value="1"/>
         <EffectArray Reference="Unit,Spectre5,LifeArmor" Value="1"/>
-        <EffectArray Reference="Unit,Marine35,LifeStart" Value="68"/>
-        <EffectArray Reference="Unit,Marine35,LifeMax" Value="68"/>
-        <EffectArray Reference="Unit,Spectre5,LifeStart" Value="30"/>
-        <EffectArray Reference="Unit,Spectre5,LifeMax" Value="30"/>
-        <EffectArray Reference="Unit,Marine3,LifeMax" Value="14"/>
-        <EffectArray Reference="Unit,Marine3,LifeStart" Value="14"/>
-        <EffectArray Reference="Unit,Marine33,LifeMax" Value="14"/>
-        <EffectArray Reference="Unit,Marine33,LifeStart" Value="14"/>
-        <EffectArray Reference="Unit,Marine32,LifeMax" Value="17"/>
-        <EffectArray Reference="Unit,Marine32,LifeStart" Value="17"/>
-        <EffectArray Reference="Unit,Marine34,LifeMax" Value="30"/>
-        <EffectArray Reference="Unit,Marine34,LifeStart" Value="30"/>
+        <EffectArray Operation="Set" Reference="Unit,Marine35,LifeStart" Value="150"/>
+        <EffectArray Operation="Set" Reference="Unit,Marine35,LifeMax" Value="150"/>
+        <EffectArray Operation="Set" Reference="Unit,Spectre5,LifeStart" Value="125"/>
+        <EffectArray Operation="Set" Reference="Unit,Spectre5,LifeMax" Value="125"/>
+        <EffectArray Operation="Set" Reference="Unit,Marine3,LifeMax" Value="60"/>
+        <EffectArray Operation="Set" Reference="Unit,Marine3,LifeStart" Value="60"/>
+        <EffectArray Operation="Set" Reference="Unit,Marine33,LifeMax" Value="60"/>
+        <EffectArray Operation="Set" Reference="Unit,Marine33,LifeStart" Value="60"/>
+        <EffectArray Operation="Set" Reference="Unit,Marine32,LifeMax" Value="90"/>
+        <EffectArray Operation="Set" Reference="Unit,Marine32,LifeStart" Value="90"/>
+        <EffectArray Operation="Set" Reference="Unit,Marine34,LifeMax" Value="125"/>
+        <EffectArray Operation="Set" Reference="Unit,Marine34,LifeStart" Value="125"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
         <Icon value="Assets\Textures\btn-ability-mengsk-thor-bigboycover.dds"/>
@@ -10178,7 +10178,7 @@
         <EffectArray Reference="Behavior,AntamoAirAll3022225,Modification.RateMultiplierArray[Queueable]" Value="0.03"/>
         <EffectArray Reference="Behavior,SOAHeroicShieldImmunity232,Duration" Value="1.500000"/>
         <EffectArray Reference="Unit,MegalithCutter2,LifeStart" Value="150"/>
-        <EffectArray Reference="Unit,MegalithCutter2,LifeMax" Value="150"/>
+        <EffectArray Operation="Set" Reference="Unit,MegalithCutter2,LifeMax" Value="150"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <LeaderAlias value="UmojanBasicUnitUpgrade5"/>
     </CUpgrade>

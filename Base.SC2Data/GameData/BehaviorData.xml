@@ -40940,11 +40940,11 @@
         <DisplayDuration index="Enemy" value="1"/>
         <Duration value="3"/>
         <Period value="0.1"/>
-        <InitialEffect value="UnknownEffect40"/>
         <ExpireEffect value="KillCaster2"/>
         <Modification MoveSpeedMultiplier="1.75" AttackSpeedMultiplier="1.35">
             <VitalRegenArray index="Life" value="7.5"/>
         </Modification>
+        <InitialEffect value="UnknownEffect40"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="SOAHeroicShieldImmunity233">
         <Alignment value="Positive"/>
@@ -45277,7 +45277,6 @@
         <Modification>
             <StateFlags index="Invulnerable" value="1"/>
         </Modification>
-        <RemoveValidatorArray value="NotStructure"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="UnknownBehavior25">
         <InfoIcon value="Assets\Textures\btn-upgrade-zerg-dehaka-tenderize.dds"/>
