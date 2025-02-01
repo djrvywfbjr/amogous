@@ -1229,9 +1229,6 @@
         <CmdButtonArray index="Execute" DefaultButtonFace="Heal5"/>
         <AcquireAttackers value="1"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="OdinBarrage">
-        <Range index="0" value="8"/>
-    </CAbilEffectTarget>
     <CAbilBuild id="RWEBuild">
         <InfoArray index="Build1" Time="50"/>
         <InfoArray index="Build2" Time="15"/>
@@ -22812,13 +22809,13 @@
     <CAbilResearch id="ForgeResearch5">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
         <InfoArray index="Research1" Time="75" Upgrade="UmojanBasicUnitUpgrade52224224232222223944">
-            <Resource index="Minerals" value="90"/>
-            <Resource index="Vespene" value="90"/>
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
             <Button DefaultButtonFace="ProtossGroundWeaponsLevel12" State="Restricted" Requirements="HavePsionicHeart22432322232423223"/>
         </InfoArray>
         <InfoArray index="Research2" Time="150" Upgrade="UmojanBasicUnitUpgrade522242242322222239442">
-            <Resource index="Minerals" value="160"/>
-            <Resource index="Vespene" value="160"/>
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
             <Button DefaultButtonFace="ProtossGroundWeaponsLevel122" State="Restricted" Requirements="HavePsionicHeart224323222324232232"/>
         </InfoArray>
         <InfoArray index="Research3" Time="225" Upgrade="UmojanBasicUnitUpgrade522242242322222239443">
@@ -22827,13 +22824,13 @@
             <Button DefaultButtonFace="ProtossGroundWeaponsLevel1222" State="Restricted" Requirements="HavePsionicHeart2243232223242322322"/>
         </InfoArray>
         <InfoArray index="Research4" Time="75" Upgrade="UmojanBasicUnitUpgrade5222422423222222394">
-            <Resource index="Minerals" value="90"/>
-            <Resource index="Vespene" value="90"/>
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
             <Button DefaultButtonFace="ProtossGroundWeaponsLevel12222" State="Restricted" Requirements="HavePsionicHeart224323222324232233"/>
         </InfoArray>
         <InfoArray index="Research5" Time="150" Upgrade="UmojanBasicUnitUpgrade52224224232222223942">
-            <Resource index="Minerals" value="160"/>
-            <Resource index="Vespene" value="160"/>
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
             <Button DefaultButtonFace="ProtossGroundWeaponsLevel122222" State="Restricted" Requirements="HavePsionicHeart2243232223242322323"/>
         </InfoArray>
         <InfoArray index="Research6" Time="225" Upgrade="UmojanBasicUnitUpgrade52224224232222223943">
@@ -22842,13 +22839,13 @@
             <Button DefaultButtonFace="ProtossGroundWeaponsLevel1222222" State="Restricted" Requirements="HavePsionicHeart22432322232423223232"/>
         </InfoArray>
         <InfoArray index="Research7" Time="75" Upgrade="UmojanBasicUnitUpgrade522242242322222239">
-            <Resource index="Minerals" value="90"/>
-            <Resource index="Vespene" value="90"/>
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
             <Button DefaultButtonFace="ProtossGroundWeaponsLevel12222222" State="Restricted" Requirements="HavePsionicHeart2243232223242322332"/>
         </InfoArray>
         <InfoArray index="Research8" Time="150" Upgrade="UmojanBasicUnitUpgrade5222422423222222392">
-            <Resource index="Minerals" value="160"/>
-            <Resource index="Vespene" value="160"/>
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
             <Button DefaultButtonFace="ProtossGroundWeaponsLevel122222222" State="Restricted" Requirements="HavePsionicHeart22432322232423223233"/>
         </InfoArray>
         <InfoArray index="Research9" Time="225" Upgrade="UmojanBasicUnitUpgrade5222422423222222393">
@@ -35583,11 +35580,11 @@
         <Effect index="0" value="MothershipMassRecallPrepare2"/>
         <Flags index="AllowMovement" value="1"/>
         <Cost>
-            <Vital index="Energy" value="150"/>
+            <Vital index="Energy" value="100"/>
             <Charge Link=""/>
             <Cooldown Link=""/>
         </Cost>
-        <TargetFilters value="Structure,Visible;Ally,Neutral,Enemy,Missile,Dead,Summoned"/>
+        <TargetFilters value="-;Ally,Neutral,Enemy"/>
         <Range value="500"/>
         <Arc value="360"/>
         <CursorEffect value="MothershipMassRecallSearch2"/>
@@ -49873,11 +49870,11 @@
         <Flags index="AllowMovement" value="1"/>
         <Cost>
             <Charge>
-                <CountMax value="2"/>
-                <CountStart value="2"/>
+                <CountMax value="3"/>
+                <CountStart value="3"/>
                 <CountUse value="1"/>
                 <Link value="Abil/SOAMothershipLineAttack"/>
-                <TimeUse value="126"/>
+                <TimeUse value="50"/>
             </Charge>
             <Cooldown Link="Abil/SOAMothershipLineAttack" TimeUse="3"/>
         </Cost>
@@ -55822,66 +55819,31 @@
     <CAbilTrain id="UnknownAbility12">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <InfoArray index="Train1">
-            <Charge>
-                <CountMax value="5"/>
-                <CountUse value="1"/>
-                <Location value="Unit"/>
-                <TimeStart value="84"/>
-                <TimeUse value="84"/>
-            </Charge>
+            <Charge CountMax="5" CountUse="1" TimeUse="84"/>
             <Button DefaultButtonFace="Marine11"/>
             <Unit value="Marine3"/>
             <Unit value="Marine3"/>
             <Unit value="Marine3"/>
-            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train2">
-            <Charge>
-                <CountMax value="5"/>
-                <CountUse value="1"/>
-                <Location value="Unit"/>
-                <TimeStart value="84"/>
-                <TimeUse value="84"/>
-            </Charge>
+            <Charge CountMax="5" CountUse="1" TimeUse="84"/>
             <Button DefaultButtonFace="Marine112" Requirements="HaveEnlistmentHouse2"/>
             <Unit value="Marine32"/>
-            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train3">
-            <Charge>
-                <CountMax value="5"/>
-                <CountUse value="1"/>
-                <Location value="Unit"/>
-                <TimeStart value="84"/>
-                <TimeUse value="84"/>
-            </Charge>
+            <Charge CountMax="5" CountUse="1" TimeUse="84"/>
             <Button DefaultButtonFace="Marine1122" Requirements="HaveEnlistmentHouse22"/>
             <Unit value="Marine33"/>
-            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train4">
-            <Charge>
-                <CountMax value="5"/>
-                <CountUse value="1"/>
-                <Location value="Unit"/>
-                <TimeStart value="84"/>
-                <TimeUse value="84"/>
-            </Charge>
+            <Charge CountMax="5" CountUse="1" TimeUse="84"/>
             <Button DefaultButtonFace="Marine11222" Requirements="HaveEnlistmentHouse2232"/>
             <Unit value="Marine34"/>
-            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <InfoArray index="Train5">
-            <Charge>
-                <CountMax value="5"/>
-                <CountUse value="1"/>
-                <Location value="Unit"/>
-                <TimeStart value="84"/>
-                <TimeUse value="84"/>
-            </Charge>
+            <Charge CountMax="5" CountUse="1" TimeUse="84"/>
             <Button DefaultButtonFace="Marine112222" Requirements="HaveEnlistmentHouse223"/>
             <Unit value="Marine35"/>
-            <Flags index="InheritRally" value="1"/>
         </InfoArray>
         <Flags index="IgnoreUnitCost" value="1"/>
         <Flags index="UnitOrderQueue" value="1"/>
@@ -61559,7 +61521,7 @@
             <Charge Link="Abil/Vortex"/>
             <Cooldown Link="Abil/Vortex"/>
         </InterruptCost>
-        <Range value="8"/>
+        <Range value="15"/>
         <Arc value="360"/>
         <AutoCastFilters value="Visible;Self,Player,Ally"/>
         <Marker Link="Abil/Vortex"/>
@@ -68700,7 +68662,7 @@
         <InfoArray index="Build2">
             <Button DefaultButtonFace="CreepTumor42"/>
         </InfoArray>
-        <InfoArray index="Build3" Unit="OmindExtractor">
+        <InfoArray index="Build3">
             <Button DefaultButtonFace="Extractor62" Requirements="HideExtractor22"/>
         </InfoArray>
         <InfoArray index="Build4" Unit="SpawningPool42">
