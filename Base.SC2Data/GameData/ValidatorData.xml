@@ -24,12 +24,6 @@
         <CombineArray value="TargetHasBuildable"/>
         <CombineArray value="NotHaveque5Addon"/>
     </CValidatorCombine>
-    <CValidatorCombine id="AdvancedConstructionAutoTarget2">
-        <ResultFailed value="BuildingIsUnderConstruction,Error/CannotAdvancedConstruction"/>
-        <Type value="And"/>
-        <CombineArray value="IsTimeStopped21733222232"/>
-        <CombineArray value="IsTimeStopped217332222233"/>
-    </CValidatorCombine>
     <CValidatorCombine id="AirIdleGE2AndGroundLE22">
         <Type value="And"/>
         <CombineArray value="CasterLifeGE602222"/>
@@ -52,20 +46,10 @@
         <CombineArray value="IsMarine2"/>
         <CombineArray value="IsMarine22"/>
     </CValidatorCombine>
-    <CValidatorUnitCompareResourceContents id="AutoHarvesterFinish2">
-        <WhichUnit Value="Caster"/>
-        <Compare value="GT"/>
-        <Behavior value="AutomaticHarvestableVespene3"/>
-    </CValidatorUnitCompareResourceContents>
     <CValidatorLocationCompareRange id="BurrowChargeMinimumRange2">
         <ResultFailed value="TargetIsTooClose"/>
         <Compare value="GT"/>
         <Range value="5"/>
-    </CValidatorLocationCompareRange>
-    <CValidatorLocationCompareRange id="BurrowChargeRevEMinDistance2">
-        <ResultFailed value="TargetIsTooClose"/>
-        <Compare value="LE"/>
-        <Range value="10"/>
     </CValidatorLocationCompareRange>
     <CValidatorUnitCompareVital id="CasterEnergyGE1002" parent="CasterEnergyLT100">
         <Compare value="GE"/>
@@ -434,10 +418,6 @@
         <Value value="7"/>
         <Behavior value="AntamoAirAll2122225"/>
     </CValidatorUnitCompareBehaviorCount>
-    <CValidatorUnitCompareBehaviorCount id="CasterIsNotStasisWarded3">
-        <WhichUnit Value="Caster"/>
-        <Behavior value="HardenedShield222"/>
-    </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitCompareVital id="CasterLifeGE602" parent="CasterLifeGE50">
         <Value value="130"/>
     </CValidatorUnitCompareVital>
@@ -525,11 +505,6 @@
         <WhichUnit Value="Target"/>
         <Compare value="LT"/>
         <Value value="0.5"/>
-    </CValidatorUnitCompareVital>
-    <CValidatorUnitCompareVital id="CasterLifeLT10Percent222232" parent="CasterLifePercent">
-        <WhichUnit Value="Target"/>
-        <Compare value="LT"/>
-        <Value value="0.4"/>
     </CValidatorUnitCompareVital>
     <CValidatorUnitCompareVital id="CasterLifeLT10Percent23" parent="CasterLifePercent">
         <WhichUnit Value="Target"/>
@@ -814,15 +789,6 @@
     <CValidatorUnitType id="IsAnalyzerVessel">
         <Value value="AnalyzerVessel"/>
     </CValidatorUnitType>
-    <CValidatorUnitType id="IsMarine4">
-        <WhichUnit Value="Caster"/>
-        <Value value="MengskVikingFighter2"/>
-    </CValidatorUnitType>
-    <CValidatorUnitType id="IsMarine42">
-        <WhichUnit Value="Caster"/>
-        <Value value="LurkerMP4"/>
-        <Find value="0"/>
-    </CValidatorUnitType>
     <CValidatorUnitType id="IsMedicalOutpost">
         <Value value="MedicalOutpost"/>
     </CValidatorUnitType>
@@ -833,11 +799,6 @@
     <CValidatorUnitType id="IsPlaceWormholeUnit2">
         <Value value="PlaceWormholeUnit"/>
     </CValidatorUnitType>
-    <CValidatorUnitCompareBehaviorCount id="IsTimeStopped217332222326">
-        <ResultFailed value="Error,EssencePrimalist"/>
-        <Value value="1"/>
-        <Behavior value="AntamoAirAll292"/>
-    </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitCompareBehaviorCount id="IsTimeStopped229">
         <Compare value="LT"/>
         <Value value="1"/>
@@ -847,11 +808,6 @@
         <Compare value="LT"/>
         <Value value="1"/>
         <Behavior value="ImperialAdvancedBarrierTimedlife"/>
-    </CValidatorUnitCompareBehaviorCount>
-    <CValidatorUnitCompareBehaviorCount id="IsTimeStopped231">
-        <Compare value="LT"/>
-        <Value value="1"/>
-        <Behavior value="Shield39"/>
     </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitType id="IsWorkshop">
         <Value value="Workshop"/>
@@ -925,24 +881,6 @@
     <CValidatorUnitType id="IsZergling23">
         <Value value="Mutalisk5"/>
     </CValidatorUnitType>
-    <CValidatorUnitCompareVital id="LifeLTThreeQuarter245">
-        <ResultFailed value="TooMuchLife"/>
-        <Compare value="GE"/>
-        <Type value="Fraction"/>
-        <Value value="0.01"/>
-        <Vital value="Energy"/>
-    </CValidatorUnitCompareVital>
-    <CValidatorPlayerRequirement id="NoMarineShield2">
-        <Find value="1"/>
-        <Value value="UseShieldWall3"/>
-    </CValidatorPlayerRequirement>
-    <CValidatorPlayerRequirement id="NoMarineShield3">
-        <Find value="1"/>
-        <Value value="UseShieldWall4"/>
-    </CValidatorPlayerRequirement>
-    <CValidatorPlayerRequirement id="NoSilentBastion">
-        <Value value="UseShieldWall2"/>
-    </CValidatorPlayerRequirement>
     <CValidatorCombine id="RefugeeValidatorAnyWorkerOrScientist">
         <CombineArray value="RequiresCivilian2"/>
         <CombineArray value="RequiresCivilian24"/>
@@ -2264,7 +2202,7 @@
     </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitCompareBehaviorCount id="IsTimeStopped217332222233">
         <Compare value="LT"/>
-        <Value value="300"/>
+        <Value value="100"/>
         <Behavior value="PrimalistEssence"/>
     </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitCompareBehaviorCount id="IsTimeStopped21733222224">

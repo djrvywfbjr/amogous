@@ -644,44 +644,6 @@
             <RevolverAccelRange value="337.5"/>
         </MotionOverlays>
     </CMoverMissile>
-    <CMoverMissile id="HurricaneMissile4">
-        <MotionPhases>
-            <Driver value="Throw"/>
-            <Acceleration value="15"/>
-            <AccelerationRange value="20"/>
-            <Speed value="1"/>
-            <MaxSpeed value="8"/>
-            <Outro value="2.5,3.5"/>
-            <ThrowRotationType value="ThrowForward"/>
-            <ThrowVector value="0,-1,0"/>
-            <ThrowBandYaw value="74.9816,-74.9816,64.995,-64.995"/>
-            <ThrowBandPitch value="45,-45,4.9987,-4.9987"/>
-        </MotionPhases>
-        <MotionPhases>
-            <Driver value="Guidance"/>
-            <Acceleration value="25"/>
-            <AccelerationRange value="30"/>
-            <MaxSpeed value="16"/>
-            <ActorTracking value="Actual"/>
-            <Outro value="-2.5,-1.5"/>
-            <ThrowBandYaw value="-360,-360,-360,-360"/>
-            <ThrowBandPitch value="-360,-360,-360,-360"/>
-            <YawPitchRoll value="359.2968"/>
-            <Overlays Scale="1,1"/>
-        </MotionPhases>
-        <MotionPhases YawPitchRoll="MAX">
-            <Overlays Scale="0.15,0.15"/>
-        </MotionPhases>
-        <MotionOverlays>
-            <Type value="Revolver"/>
-            <RevolverSpeed value="119.5312"/>
-            <RevolverSpeedRange value="119.5312"/>
-            <RevolverMaxSpeed value="719.2968"/>
-            <RevolverMaxSpeedRange value="719.2968"/>
-            <RevolverAccel value="90"/>
-            <RevolverAccelRange value="337.5"/>
-        </MotionOverlays>
-    </CMoverMissile>
     <CMoverMissile id="HyperionALMWeapon2">
         <MotionPhases>
             <Driver value="Guidance"/>

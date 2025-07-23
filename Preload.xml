@@ -21,8 +21,8 @@
 <Asset path="assets\textures\btn-hero-kerriganascended.dds" Type="Image"/>
 <Asset path="assets\textures\btn-unit-collection-overlord-mutant.dds" Type="Image"/>
 <Asset path="assets\textures\btn-tips-researchunlocked.dds" Type="Image"/>
-<Asset path="assets\textures\btn-ability-zerg-debilitatingbile.dds" Type="Image"/>
 <Asset path="assets\textures\btn-ability-mengsk-ghost-pyrokineticimmolation_orange.dds" Type="Image"/>
+<Asset path="assets\textures\btn-ability-zerg-debilitatingbile.dds" Type="Image"/>
 <Asset path="assets\textures\btn-building-hornerhan-supplydepot.dds" Type="Image"/>
 <Asset path="assets\textures\btn-building-protoss-pylon-forged.dds" Type="Image"/>
 <Asset path="assets\textures\fearex3_coop.dds" Type="Image"/>
@@ -279,7 +279,6 @@
 <Unit id="AmerdallianMiner2"/>
 <Unit id="QuickALisk"/>
 <Unit id="Leviathan32"/>
-<Unit id="Overseer2"/>
 <Unit id="HotSNoxious2"/>
 <Unit id="Hatchery4"/>
 <Unit id="Dehaka2"/>
@@ -316,7 +315,6 @@
 <Unit id="Nexus3"/>
 <Unit id="HoloNexus"/>
 <Unit id="OldFortress"/>
-<Unit id="Hatchery3"/>
 <Unit id="Nexus8"/>
 <Unit id="CenterOfCommands2"/>
 <Unit id="Hatchery2"/>
@@ -338,9 +336,9 @@
 <Unit id="NexusofAncients"/>
 <Unit id="Hatchery7"/>
 <Unit id="CommandCenter12"/>
-<Unit id="SJPickupHealth500222224"/>
 <Unit id="SmallARES"/>
 <Unit id="Odin2"/>
+<Unit id="SJPickupHealth500222224"/>
 <Unit id="Scientist3"/>
 <Unit id="Wraith22"/>
 <Unit id="RoachWarren2224"/>
