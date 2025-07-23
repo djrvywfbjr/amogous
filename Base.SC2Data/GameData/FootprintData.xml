@@ -77,4 +77,41 @@
             <Borders value="0,4,2;1,0,2;2,3,2;3,7,2;4,5,2;5,2,2;6,1,2;7,6,2"/>
         </Shape>
     </CFootprint>
+    <CFootprint id="FootprintMineralsRounded2">
+        <Layers index="Check" Area="-4,-3,4,4">
+            <Sets index="0">
+                <Negative index="DropOff" value="1"/>
+            </Sets>
+            <Sets Character="o">
+                <Negative index="DropOff" value="1"/>
+            </Sets>
+            <Rows value=".oooooo."/>
+            <Rows value="oooooooo"/>
+            <Rows value="oooooooo"/>
+            <Rows value="oooxxooo"/>
+            <Rows value="oooooooo"/>
+            <Rows value="oooooooo"/>
+            <Rows value=".oooooo."/>
+        </Layers>
+        <Layers index="Place" Area="-4,-3,4,4">
+            <Sets index="0">
+                <Positive index="NearResources" value="1"/>
+            </Sets>
+            <Sets Character="o">
+                <Positive index="NearResources" value="1"/>
+            </Sets>
+            <Rows value=".oooooo."/>
+            <Rows value="oooooooo"/>
+            <Rows value="oooooooo"/>
+            <Rows value="oooxxooo"/>
+            <Rows value="oooooooo"/>
+            <Rows value="oooooooo"/>
+            <Rows value=".oooooo."/>
+        </Layers>
+        <Shape>
+            <Radius value="1.1181"/>
+            <Offsets value="-1,-0.5;-1,0.5;1,0.5;1,-0.5"/>
+            <Borders value="3,0,2;0,1,2;1,2,2;2,3,2"/>
+        </Shape>
+    </CFootprint>
 </Catalog>
