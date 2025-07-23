@@ -43,6 +43,9 @@
         <Period value="1.04"/>
         <Effect value="90mmCannonsDummy2"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="ATALaserBattery">
+        <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel2.dds"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="ATALaserBattery2">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
@@ -203,6 +206,9 @@
         <AllowedMovement value="Moving"/>
         <RandomDelayMin value="0"/>
         <RandomDelayMax value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ATSLaserBattery">
+        <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel2.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ATSLaserBattery2">
         <EditorCategories value="Race:Terran"/>
@@ -774,6 +780,27 @@
         <Period value="5"/>
         <Effect value="SeekerMissileLaunchMissile"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="AnvilGuardPunisherGrenades">
+        <DisplayAttackCount value="2"/>
+        <Period value="1.85"/>
+        <PreswingBeforeAttack value="0.4"/>
+        <Effect value="BacklashRockets22"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ArtanisBeam2">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-immortal-forcecannon.dds"/>
+        <DisplayEffect value="ArtanisBeamDamage2"/>
+        <DisplayAttackCount value="8"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Arc value="360"/>
+        <Period value="1.68"/>
+        <DamagePoint value="0"/>
+        <Effect value="ArtanisBeamSet2"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="AscendantWeapon24">
         <Name value="Weapon/Name/Ascendant"/>
         <EditorCategories value="Race:Protoss"/>
@@ -783,6 +810,46 @@
         <Range value="7"/>
         <Period value="0.75"/>
         <Effect value="AscendantWeaponLM24"/>
+    </CWeaponLegacy>
+    <CWeaponStrafe id="BombBay2">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-recalibratedexplosives.dds"/>
+        <DisplayEffect value="KaiserWormBanelingMissileDamage2432"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="10"/>
+        <Range value="4"/>
+        <Arc value="34.9914"/>
+        <Period value="2.4"/>
+        <Effect value="KaiserWormBanelingMissileLaunch2432"/>
+    </CWeaponStrafe>
+    <CWeaponLegacy id="Brutalize2">
+        <EditorCategories value="Race:Zerg"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <DisplayEffect value="BrutalizeDamage2"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquirePrioritization value="ByAngle"/>
+        <Range value="1"/>
+        <Period value="1.6"/>
+        <DamagePoint value="0.95"/>
+        <Effect value="BrutalizeCreatePersistent2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Brutalize3">
+        <EditorCategories value="Race:Zerg"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="BrutalizeDamage3"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquirePrioritization value="ByAngle"/>
+        <Range value="1"/>
+        <Period value="1.4"/>
+        <DamagePoint value="0.95"/>
+        <Effect value="BrutalizeCreatePersistent3"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="CenturionWarpBlades6">
         <Name value="Weapon/Name/Centurion"/>
@@ -817,8 +884,50 @@
         <DamagePoint value="0"/>
         <Effect value="ZealotPsiBladesCleaveSet13"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="ColossusTaldarimChargedBeam3">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="ColossusTaldarimDamage"/>
+        <DisplayAttackCount value="1"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquirePrioritization value="ByDistanceFromTarget"/>
+        <Range value="10"/>
+        <RangeSlop value="0"/>
+        <Arc value="90"/>
+        <Period value="3"/>
+        <DamagePoint value="1.25"/>
+        <Effect value="ColossusTaldarimLM"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="EKL">
+        <MinScanRange value="7"/>
+        <Range value="7"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="FerociousSpew2">
+        <EditorCategories value="Race:Zerg"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-missileattacks-level0.dds"/>
+        <DisplayEffect value="FerociousSpewDamage"/>
+        <DisplayAttackCount value="1"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="8"/>
+        <Period value="2.1"/>
+        <DamagePoint value="0.3"/>
+        <Backswing value="0.25"/>
+        <Effect value="FerociousSpewLaunchMissile"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="FlamingSaliva2">
         <Range value="8"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="FlocklingClaws">
+        <Period value="0.35"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="GhostlyRifle">
+        <Range value="7"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="GhostlyRifle2">
+        <Range value="9"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GoliathA223">
         <EditorCategories value="Race:Terran"/>
@@ -853,8 +962,221 @@
     <CWeaponLegacy id="HellionTank">
         <Range value="3"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="HotSLeviathanAir4">
+        <EditorCategories value="Race:Zerg"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-airattacks-level0.dds"/>
+        <DisplayEffect value="AmonTentacleBDamage24"/>
+        <DisplayAttackCount value="4"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <Arc value="180"/>
+        <Period value="1.5"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="HotSLeviathanAirAttackCreatePersistent4"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="HybridNemesisWeapon">
         <Period value="0.7"/>
+    </CWeaponLegacy>
+    <CWeaponStrafe id="InterceptorBeam15">
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
+        <DisplayEffect value="InterceptorBeamDamage15"/>
+        <DisplayAttackCount value="3"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="6"/>
+        <Range value="3"/>
+        <TeleportResetRange value="0"/>
+        <Arc value="19.6875"/>
+        <Period value="3"/>
+        <Effect value="InterceptorBeamPersistent15"/>
+    </CWeaponStrafe>
+    <CWeaponLegacy id="InterceptorLaunch">
+        <Range value="7"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="KelmorianMinerGaussRifle">
+        <Period value="0.68"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="KhaydarinBeam22">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="ContinuousScan" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
+        <DisplayEffect value="KhaydarinBeamDamage22"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <Period value="2"/>
+        <DamagePoint value="1"/>
+        <Effect value="KhaydarinBeamDamage22"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CosmicBeam">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="ContinuousScan" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
+        <DisplayEffect value="KhaydarinBeamDamage4"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Arc value="360"/>
+        <Period value="1.7"/>
+        <DamagePoint value="1"/>
+        <Effect value="KhaydarinBeamDamage4"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="LaunchDefensiveFighters3">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="Hidden" value="1"/>
+        <Icon value="Assets\Textures\btn-unit-protoss-interceptor.dds"/>
+        <DisplayEffect value="Carrier"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="12"/>
+        <Arc value="360"/>
+        <Period value="0.2"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="InterceptorLaunchPersistent"/>
+        <AllowedMovement value="Slowing"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="LongboltMissile10">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-hisecautotracking.dds"/>
+        <DisplayEffect value="LongboltMissileU9"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <RangeSlop value="0"/>
+        <Period value="2"/>
+        <Effect value="LongboltMissile9"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="LongboltMissile102">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-hisecautotracking.dds"/>
+        <DisplayEffect value="LongboltMissileU92"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="4"/>
+        <RangeSlop value="0"/>
+        <Period value="1.4"/>
+        <Effect value="LongboltMissile92"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="LurkerMP32">
+        <EditorCategories value="Race:Zerg"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-missileattacks-level0.dds"/>
+        <DisplayEffect value="LurkerMPDamage3"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="11"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="1.4"/>
+        <DamagePoint value="0"/>
+        <Effect value="LurkerMP3"/>
+        <LegacyOptions index="KeepChanneling" value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="LurkerMP33">
+        <EditorCategories value="Race:Zerg"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-missileattacks-level0.dds"/>
+        <DisplayEffect value="LurkerMPDamage4"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="13"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="2"/>
+        <DamagePoint value="0"/>
+        <Effect value="LurkerMP4"/>
+        <LegacyOptions index="KeepChanneling" value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MagmaBolt4">
+        <Range value="7"/>
+        <Effect value="MBSearch"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MengskDiamondback42">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+        <DisplayEffect value="MengskDiamondback5"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="10"/>
+        <Period value="6"/>
+        <Effect value="MengskDiamondback5"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MengskDiamondback5">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+        <DisplayEffect value="MengskDiamondback4"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="10"/>
+        <Period value="6"/>
+        <Effect value="MengskDiamondback4"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MengskDiamondback6">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="4.62"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MutaliskGlaiveWurm43">
+        <EditorCategories value="Race:Zerg"/>
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-airattacks-level0.dds"/>
+        <DisplayEffect value="MutaliskGlaiveWurmDamage43"/>
+        <DisplayAttackCount value="3"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <ArcSlop value="45"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="0.8605"/>
+        <DamagePoint value="0.05"/>
+        <Backswing value="0.75"/>
+        <Effect value="MutaliskGlaiveWurmLaunchMissile43"/>
+        <LegacyOptions index="NoDeceleration" value="1"/>
+        <AllowedMovement value="Slowing"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="P38ScytheGuassPistol22">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
+        <DisplayAttackCount value="2"/>
+        <DisplayName value="Weapon/Name/P38ScytheGuassPistol"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="6.5"/>
+        <Range value="5.5"/>
+        <Marker Link="Weapon/P38ScytheGuassPistol"/>
+        <Cost>
+            <Cooldown Link="Weapon/P38ScytheGuassPistol"/>
+        </Cost>
+        <Period value="1.1"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0.75"/>
+        <Effect value="P38ScytheGuassPistolBurst22"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="RavagerWeapon">
+        <Range value="3"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ThunderheadAccelerator">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel3.dds"/>
+        <DisplayEffect value="MengskDiamondback7"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="8"/>
+        <Period value="2.1"/>
+        <Effect value="MengskDiamondback7"/>
+        <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="MengskFirebat">
         <Range value="3"/>
@@ -869,6 +1191,18 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="MengskMarauder">
         <Range value="7"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MengskReaperP38ScytheGuassPistol32">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
+        <DisplayEffect value="MengskReaperP38ScytheGuassPistol3"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Ground,Structure,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="5.5"/>
+        <Period value="0.75"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0.75"/>
+        <Effect value="MengskReaperP38ScytheGuassPistolBurst3"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="MengskSiegeTank3">
         <EditorCategories value="Race:Terran"/>
@@ -913,12 +1247,13 @@
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="7"/>
+        <Range value="6"/>
         <Arc value="5.625"/>
         <Period value="0.8"/>
-        <Effect value="SonOfKorhalAOE25"/>
+        <Effect value="RaynorSnipeCreatePersistent62"/>
         <Options index="Disabled" value="1"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="MengskWraithG"/>
     <CWeaponLegacy id="OmindClawsFormer">
         <EditorCategories value="Race:Zerg"/>
         <Options index="Melee" value="1"/>
@@ -946,7 +1281,7 @@
         <DisplayEffect value="AdeptDamage242"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="8"/>
-        <Period value="1.25"/>
+        <Period value="1"/>
         <Effect value="AdeptLM242"/>
         <CriticalChance value="0.1"/>
         <CriticalEffect value="SJPirateYamato342"/>
@@ -1189,7 +1524,7 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="BacklashRockets2">
         <EditorCategories value="Race:Terran"/>
-        <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel2.dds"/>
         <DisplayEffect value="BacklashRocketsU2"/>
         <DisplayAttackCount value="2"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
@@ -1846,7 +2181,7 @@
         <Icon value="Assets\Textures\btn-upgrade-zerg-airattacks-level0.dds"/>
         <DisplayEffect value="DevourerMPWeaponDamage2"/>
         <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Period value="2"/>
+        <Period value="1.4"/>
         <Effect value="DevourerMPWeaponLaunch2"/>
         <AllowedMovement value="Slowing"/>
     </CWeaponLegacy>
@@ -1909,10 +2244,12 @@
         <EditorCategories value="Race:Terran"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
         <Icon value="Assets\Textures\btn-ability-concentratedbeam.dds"/>
         <DisplayEffect value="DiamondbackBeam6"/>
         <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="9"/>
+        <Arc value="14.9963"/>
         <Period value="2"/>
         <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
@@ -1922,8 +2259,8 @@
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
         <DisplayEffect value="DiamondbackBeam62"/>
-        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="6"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
         <Period value="0.5"/>
         <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
@@ -2736,15 +3073,16 @@
         <DisplayEffect value="VoidHighTemplarPsiOrbDamage2"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="7.5"/>
-        <Range value="13"/>
+        <Range value="4"/>
         <Marker Link="Weapon/GuassRifle52"/>
         <Cost>
             <Cooldown Link="Weapon/GuassRifle52"/>
         </Cost>
-        <Period value="9"/>
-        <DamagePoint value="0.05"/>
-        <Backswing value="0.75"/>
+        <Period value="2.5"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
         <Effect value="VoidHighTemplarPsiOrbInitialPersistent2"/>
+        <AllowedMovement value="Slowing"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GuassRifle52232">
         <EditorCategories value="Race:Terran"/>
@@ -2769,7 +3107,7 @@
         <DisplayEffect value="OdinNukeDamage22"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="7.5"/>
-        <Range value="11"/>
+        <Range value="15"/>
         <Marker Link="Weapon/GuassRifle52"/>
         <Cost>
             <Cooldown Link="Weapon/GuassRifle52"/>
@@ -2887,7 +3225,7 @@
             <Cooldown Link="Weapon/GuassRifle52"/>
         </Cost>
         <Period value="3"/>
-        <DamagePoint value="1.5"/>
+        <DamagePoint value="0.75"/>
         <Backswing value="0.75"/>
         <Effect value="AlarakKnockbackInitialCP"/>
     </CWeaponLegacy>
@@ -2945,14 +3283,14 @@
         <DisplayEffect value="HurricaneMissileDamage42"/>
         <DisplayAttackCount value="10"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <MinScanRange value="7.5"/>
-        <Range value="7"/>
+        <MinScanRange value="12"/>
+        <Range value="9"/>
         <Marker Link="Weapon/GuassRifle52"/>
         <Cost>
             <Vital index="Energy" value="10"/>
             <Cooldown Link="Weapon/GuassRifle52"/>
         </Cost>
-        <Period value="3"/>
+        <Period value="2"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0.75"/>
         <Effect value="HurricaneMissile42"/>
@@ -3086,6 +3424,8 @@
         <Period value="0.45"/>
         <DamagePoint value="0.05"/>
         <Backswing value="0.75"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Range value="4"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GuassRifle57">
         <EditorCategories value="Race:Terran"/>
@@ -4048,6 +4388,41 @@
         <MinScanRange value="5"/>
         <Range value="5"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="PhaseDisruptors8">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-immortal-forcecannon.dds"/>
+        <DisplayEffect value="PhaseDisruptors7"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="7.5"/>
+        <Range value="7"/>
+        <Period value="1.45"/>
+        <Effect value="ImmortalSplashSet7"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PhotonCannon7">
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-photoncannon-shadeprojection.dds"/>
+        <DisplayEffect value="PhotonCannonU7"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <RangeSlop value="0"/>
+        <Period value="1.25"/>
+        <Effect value="PhotonCannonLM7"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PunisherGrenades732">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
+        <DisplayEffect value="SuicideMissile2"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="6.5"/>
+        <Range value="7"/>
+        <Period value="1.5"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="FFFFFF2"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="QueenOfBladesPsiBlast2">
         <EditorCategories value="Race:Zerg"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-dragoonsolariteflare.dds"/>
@@ -4058,6 +4433,27 @@
         <MinimumRange value="2"/>
         <Period value="1.25"/>
         <Effect value="PsiBlastLaunchMissile2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ScourgeSwarm22">
+        <EditorCategories value="Race:Zerg"/>
+        <Options index="Disabled" value="1"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-airattacks-level0.dds"/>
+        <DisplayEffect value="LeviathanAirAttackDamage2"/>
+        <DisplayAttackCount value="12"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="12"/>
+        <Arc value="360"/>
+        <Period value="10"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="LeviathanAirAttackCreatePersistent2"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Sec4GaussRifle">
+        <Backswing value="0.65"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Specter52">
         <EditorCategories value="Race:Terran"/>
@@ -4079,6 +4475,51 @@
         <Range value="7"/>
         <Period value="1.8"/>
         <Effect value="TempestLaunchMissileGround234"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="TempestPurifierGround">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-stunnonheroicenemies.dds"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="BombBay">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-recalibratedexplosives.dds"/>
+        <DisplayEffect value="KaiserWormBanelingMissileDamage243"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="10"/>
+        <Range value="4"/>
+        <Arc value="34.9914"/>
+        <Period value="5"/>
+        <Effect value="KaiserWormBanelingMissileLaunch243"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ThorsHammer4">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel2.dds"/>
+        <DisplayEffect value="ThorsHammerDamage4"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquirePrioritization value="ByAngle"/>
+        <MinScanRange value="7.5"/>
+        <Range value="8"/>
+        <Period value="1.28"/>
+        <DamagePoint value="0.831"/>
+        <Backswing value="0.25"/>
+        <LegacyOptions index="KeepChanneling" value="1"/>
+        <Options index="LinkedCooldown" value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Ziggurat">
+        <EditorCategories value=""/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-rangeincrease.dds"/>
+        <DisplayEffect value="AmonTentacleBDamage24"/>
+        <DisplayAttackCount value="20"/>
+        <Range value="7"/>
+        <Period value="4.2"/>
+        <Effect value="HotSLeviathanAirAttackCreatePersistent4"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="VoidBlast">
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
@@ -4160,7 +4601,8 @@
         <Effect value="KhaydarinBeamDamage3"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="MengskDiamondback">
-        <Options index="LinkedCooldown" value="0"/>
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
         <Range value="10"/>
         <Period value="7"/>
     </CWeaponLegacy>
@@ -4177,6 +4619,7 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="P38ScytheGuassPistol">
         <Range value="4.5"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ArtificialShockwave">
         <EditorCategories value="Race:Protoss"/>
@@ -4239,7 +4682,7 @@
         <DisplayEffect value="SuicideMissile"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="6.5"/>
-        <Range value="8"/>
+        <Range value="6"/>
         <Period value="1.5"/>
         <DamagePoint value="0"/>
         <Backswing value="0"/>
@@ -5501,9 +5944,6 @@
         <Effect value="InterceptorBeamPersistent9"/>
         <MinScanRange value="12"/>
     </CWeaponStrafe>
-    <CWeaponLegacy id="InterceptorLaunch">
-        <Range value="11"/>
-    </CWeaponLegacy>
     <CWeaponLegacy id="InterceptorLaunch2">
         <EditorCategories value="Race:Protoss"/>
         <Options index="Hidden" value="1"/>
@@ -5801,7 +6241,7 @@
         <Icon value="Assets\Textures\btn-unit-protoss-interceptor.dds"/>
         <DisplayEffect value="Carrier"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="8"/>
+        <Range value="15"/>
         <Arc value="360"/>
         <Period value="0.5"/>
         <DamagePoint value="0"/>
@@ -6941,7 +7381,7 @@
         <Icon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>
         <DisplayEffect value="MengskMarauderDamage523"/>
         <DisplayAttackCount value="1"/>
-        <TargetFilters value="Visible;Player,Ally,Neutral,Structure,Heroic,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetFilters value="Visible;Player,Ally,Neutral,Massive,Structure,Heroic,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="1"/>
         <Period value="3"/>
         <DamagePoint value="0"/>
@@ -7241,7 +7681,9 @@
         <Effect value="DarkArchonMindControlSet633222"/>
         <AllowedMovement value="Slowing"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="MercHellionInfernalFlameThrower"/>
+    <CWeaponLegacy id="MercHellionInfernalFlameThrower">
+        <Options index="LinkedCooldown" value="0"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="MercReaperD8Charge3">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
@@ -7453,7 +7895,8 @@
         <Range value="7"/>
         <Marker Link="Weapon/NeedleSpines2"/>
         <Cost>
-            <Vital index="Energy" value="-15"/>
+            <Vital index="Life" value="-10"/>
+            <Vital index="Energy" value="-10"/>
             <Cooldown Link="Weapon/NeedleSpines2"/>
         </Cost>
         <Period value="1.2"/>
@@ -7523,7 +7966,7 @@
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="5.5"/>
         <Range value="6"/>
-        <Period value="0.825"/>
+        <Period value="0.99"/>
         <DamagePoint value="0.208"/>
         <Effect value="BlackhammerAoELaunch7"/>
     </CWeaponLegacy>
@@ -8059,7 +8502,7 @@
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="8"/>
         <RangeSlop value="0"/>
-        <Period value="1"/>
+        <Period value="1.1"/>
         <Effect value="PhotonCannonLM5"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PhotonCannon6">
@@ -8390,7 +8833,7 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="MengskMarauder3">
         <EditorCategories value="Race:Terran"/>
-        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds"/>
         <DisplayEffect value="UnknownEffect62"/>
         <DisplayAttackCount value="1"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
@@ -8402,7 +8845,7 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="MengskMarauder4">
         <EditorCategories value="Race:Terran"/>
-        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds"/>
         <DisplayEffect value="MengskMarauderDamage4"/>
         <DisplayAttackCount value="1"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
@@ -8414,6 +8857,7 @@
         <DamagePoint value="0"/>
         <Backswing value="0"/>
         <Effect value="MengskMarauderLM4"/>
+        <Options index="Disabled" value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="MengskMarine2">
         <EditorCategories value="Race:Terran"/>
@@ -8616,6 +9060,7 @@
         <Tip value="Weapon/Tip/P38ScytheGuassPistol2"/>
         <DisplayEffect value="P38ScytheGuassPistol2"/>
         <Effect value="P38ScytheGuassPistolBurst2"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ParasiteSpore2">
         <EditorCategories value="Race:Zerg"/>
@@ -8666,7 +9111,7 @@
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="8"/>
         <RangeSlop value="0"/>
-        <Period value="5"/>
+        <Period value="4"/>
         <Effect value="PhotonCannonLM322"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Predator2">
@@ -8829,7 +9274,7 @@
         <EditorCategories value="Race:Zerg"/>
         <Icon value="Assets\Textures\btn-upgrade-zerg-missileattacks-level0.dds"/>
         <DisplayEffect value="NukeDamage2233114"/>
-        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetFilters value="Ground,Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="11"/>
         <Period value="3.25"/>
         <Effect value="AdeptPiercingSet24"/>
@@ -10507,7 +10952,7 @@
         <DisplayEffect value="DragoonDamage64"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AcquireFilters value="Air,Visible;Self,Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <MinScanRange value="10"/>
+        <MinScanRange value="18"/>
         <Range value="0.25"/>
         <Period value="0.833"/>
         <DamagePoint value="0"/>
@@ -10750,7 +11195,7 @@
         <Cost>
             <Vital index="Energy" value="-5"/>
         </Cost>
-        <Period value="0.75"/>
+        <Period value="1.5"/>
         <Effect value="TempestLaunchMissileGround2"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="TempestGround22">
@@ -11024,8 +11469,8 @@
         <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
         <DisplayEffect value="ThrowMolotovDamage2"/>
         <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="9"/>
-        <Period value="1"/>
+        <Range value="7"/>
+        <Period value="2"/>
         <DamagePoint value="0.5625"/>
         <Effect value="ThrowMolotovSwitch2"/>
         <RandomDelayMin value="0.5"/>
@@ -11208,12 +11653,15 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="TwinIbiksCannon4">
         <EditorCategories value="Race:Terran"/>
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-hisecautotracking.dds"/>
         <TargetFilters value="Ground,Visible;Self,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="8"/>
         <Arc value="90"/>
-        <Period value="2"/>
+        <Period value="10"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="TwinIbiksCannon5">
         <EditorCategories value="Race:Terran"/>
@@ -11237,7 +11685,7 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="TyphoonMissilePod3">
         <EditorCategories value="Race:Terran"/>
-        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel2.dds"/>
         <DisplayEffect value="CycloneAttackWeaponDamage3"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="5.5"/>
@@ -11310,7 +11758,7 @@
         <Options index="LinkedCooldown" value="0"/>
         <Icon value="Assets\Textures\btn-ability-spearofadun-warpharmonization.dds"/>
         <DisplayEffect value="SuicideMissile"/>
-        <Range value="8"/>
+        <Range value="7"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="UrunEnergyBeam2">
         <EditorCategories value="Race:Protoss"/>
@@ -11915,6 +12363,7 @@
         <Period value="0.2"/>
         <Effect value="VoidSeekerLM3"/>
         <AllowedMovement value="Moving"/>
+        <Arc value="360"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="VoidSeeker32">
         <EditorCategories value="Race:Protoss"/>
@@ -12093,7 +12542,6 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="WarHoundMelee2">
         <EditorCategories value="Race:Terran"/>
-        <Options index="Hidden" value="1"/>
         <Options index="Melee" value="1"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
@@ -12336,9 +12784,9 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="WreckingCrewFighter2">
         <EditorCategories value="Race:Terran"/>
-        <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel2.dds"/>
         <DisplayEffect value="WreckingCrewFighterU2"/>
-        <DisplayAttackCount value="8"/>
+        <DisplayAttackCount value="4"/>
         <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="8"/>
         <Period value="3"/>
@@ -12391,7 +12839,7 @@
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
         <DisplayEffect value="XelNagaChargedCrystalDamage2"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="3"/>
+        <Range value="7"/>
         <Cost>
             <Cooldown Location="Unit"/>
         </Cost>

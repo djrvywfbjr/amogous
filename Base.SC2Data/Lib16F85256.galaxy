@@ -746,6 +746,11 @@ bool lib16F85256_gt_RandomRace_Func (bool testConds, bool runActions) {
         else if (auto1B6BB91A_val == 22) {
             PlayerSetRace(auto9FAEBD27_var, "Terr222224223");
             PlayerGroupAdd(lib16F85256_gv_lom[0], auto9FAEBD27_var);
+            TechTreeUpgradeAddLevel(auto9FAEBD27_var, "VoidDarkArchonDarkAmulet2242222", 1);
+            TechTreeUpgradeAddLevel(auto9FAEBD27_var, "VoidDarkArchonDarkAmulet22422222", 1);
+            TechTreeUpgradeAddLevel(auto9FAEBD27_var, "VoidDarkArchonDarkAmulet224222222", 1);
+            TechTreeUpgradeAddLevel(auto9FAEBD27_var, "VoidDarkArchonDarkAmulet2242222222", 1);
+            TechTreeUpgradeAddLevel(auto9FAEBD27_var, "VoidDarkArchonDarkAmulet22422222222", 1);
         }
         else if (auto1B6BB91A_val == 23) {
             PlayerSetRace(auto9FAEBD27_var, "Terr2222242232");

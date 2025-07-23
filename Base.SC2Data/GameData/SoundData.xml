@@ -21070,6 +21070,9 @@
         <AssetArray File="Assets\Sounds\PrimalLocustFlying_Birth_09.wav" FacialGroup=""/>
         <Chance value="35"/>
     </CSound>
+    <CSound id="PrimalLocustFlying_BuzzLoop">
+        <DupeMuteCount value="2"/>
+    </CSound>
     <CSound id="PrimalLocustFlying_Explode2" parent="Death">
         <EditorCategories value="Race:Zerg"/>
         <AssetArray File="Assets\Sounds\Zerg\SharedEffects\Explosions\Zerg_ExplosionSmall0.wav" Pitch="-3.000000,6.000000" Volume="-3.000000,0.000000"/>
