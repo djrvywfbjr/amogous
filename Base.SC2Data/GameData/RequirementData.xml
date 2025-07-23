@@ -196,60 +196,14 @@
     <CRequirement id="CyberHaveFrenzySim2">
         <NodeArray index="Show" Link="NotCountUpgradeCyberFrenzySimulatorQueuedOrBetter"/>
     </CRequirement>
-    <CRequirement id="DontHaveHatchery">
-        <NodeArray index="Use" Link="NotOr3846943109TechTreeCheatCountUnitAlias_HatcheryCompleteOnlyCountUnitOvermind2CompleteOnly"/>
-    </CRequirement>
     <CRequirement id="HaveEnlistmentHouse22322">
         <NodeArray index="Use" Link="AndCountUnitEngineeringBay6CompleteOnlyCountUnitBarracks6CompleteOnly"/>
-    </CRequirement>
-    <CRequirement id="HaveExperimentCenter222223223223">
-        <NodeArray index="Show" Link="CountUpgradeSwollenGlands2CompleteOnly"/>
-    </CRequirement>
-    <CRequirement id="HaveExperimentCenter2222232232232">
-        <NodeArray index="Show" Link="CountUpgradeSwollenGlandsCompleteOnly"/>
-    </CRequirement>
-    <CRequirement id="HaveExperimentCenter223222233">
-        <NodeArray index="Use" Link="AndCountUpgradeUmojanBasicUnitUpgrade52224224232222223632232CompleteOnlyCountUpgradeUmojanBasicUnitUpgrade52224224232222223636222CompleteOnly"/>
-        <NodeArray index="Show" Link="CountUpgradeUmojanBasicUnitUpgrade52224224232222223632232CompleteOnly"/>
-    </CRequirement>
-    <CRequirement id="HaveExperimentCenter2232223">
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222236322CompleteOnly"/>
-    </CRequirement>
-    <CRequirement id="LearnDamageLvl132223">
-        <NodeArray index="Show" Link="NotCountUpgradeSwollenGlands2QueuedOrBetter"/>
-    </CRequirement>
-    <CRequirement id="LearnDamageLvl1322232">
-        <NodeArray index="Show" Link="NotCountUpgradeSwollenGlandsQueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="LearnTrooperAmmunition2222233">
         <NodeArray index="Show" Link="NotCountUpgradeInfiltratorEnergyQueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="LearnTrooperAmmunition22222332">
         <NodeArray index="Show" Link="NotCountUpgradeUnknownUpgrade732QueuedOrBetter"/>
-    </CRequirement>
-    <CRequirement id="MoebiusTLearn1432223">
-        <EditorCategories value="Race:Terran,TechType:Ability"/>
-        <NodeArray index="Show" Link="NotCountUpgradeMoebiusTUpgrade1223222322322222222QueuedOrBetter"/>
-    </CRequirement>
-    <CRequirement id="MoebiusTLearn16">
-        <EditorCategories value="Race:Terran,TechType:Ability"/>
-        <NodeArray index="Show" Link="NotCountUpgradeMoebiusTUpgrade1224222QueuedOrBetter"/>
-    </CRequirement>
-    <CRequirement id="MoebiusTUpgradeNeed123222222224">
-        <EditorCategories value="Race:Terran,TechType:Ability"/>
-        <NodeArray index="Show" Link="CountUpgradeMoebiusTUpgrade1223222322322222222CompleteOnly"/>
-    </CRequirement>
-    <CRequirement id="MoebiusTUpgradeNeed12323222">
-        <EditorCategories value="Race:Terran,TechType:Ability"/>
-        <NodeArray index="Show" Link="CountUpgradeMoebiusTUpgrade1224222CompleteOnly"/>
-    </CRequirement>
-    <CRequirement id="NoCompacts">
-        <NodeArray index="Use" Link="CountUnitStarport3CompleteOnly"/>
-        <NodeArray index="Show" Link="NotCountUpgradeCompactLaunchersQueuedOrBetter"/>
-    </CRequirement>
-    <CRequirement id="NoHazStor">
-        <NodeArray index="Use" Link="CountUnitBarracks4CompleteOnly"/>
-        <NodeArray index="Show" Link="NotCountUpgradeHazardousMunitionsQueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="OMindBleeding">
         <NodeArray index="Use" Link="CountUnitInfestationPit4CompleteOnly"/>
@@ -285,38 +239,8 @@
     <CRequirement id="PacifierArmoryInstalled">
         <NodeArray index="Use" Link="CountBehaviorPacifierQuartersInProgressOnlyAtUnit927967646"/>
     </CRequirement>
-    <CRequirement id="SoE4PortableHiveMind22422222222233334334">
-        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade522242242322222235222222212CompleteOnly1125706114"/>
-    </CRequirement>
-    <CRequirement id="SoE4PortableHiveMind224222222222333343342">
-        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade5222422423222222352222222122CompleteOnly4289704256"/>
-    </CRequirement>
-    <CRequirement id="SoE4PortableHiveMind2242222222223333433422">
-        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade52224224232222223522222221222CompleteOnly3604015190"/>
-    </CRequirement>
-    <CRequirement id="SoE4PortableHiveMind22422222222233334334222">
-        <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade522242242322222235222222212222CompleteOnly3207786142"/>
-    </CRequirement>
     <CRequirement id="TrisensorsNo">
         <NodeArray index="Show" Link="NotCountUpgradeTriSensorsQueuedOrBetter"/>
-    </CRequirement>
-    <CRequirement id="UnknownRequirement111">
-        <NodeArray index="Show" Link="NotCountUpgradePureConduitsQueuedOrBetter"/>
-    </CRequirement>
-    <CRequirement id="UnknownRequirement134">
-        <NodeArray index="Use" Link="CountUpgradeCompactLaunchersCompleteOnly"/>
-    </CRequirement>
-    <CRequirement id="UseShieldWall2">
-        <EditorCategories value="Race:Terran,TechType:Ability"/>
-        <NodeArray index="Use" Link="OrCountUpgradeUmojanBasicUnitUpgrade52224224232222223637CompleteOnly"/>
-    </CRequirement>
-    <CRequirement id="UseShieldWall3">
-        <EditorCategories value="Race:Terran,TechType:Ability"/>
-        <NodeArray index="Use" Link="CountUpgradePureConduitsCompleteOnly"/>
-    </CRequirement>
-    <CRequirement id="UseShieldWall4">
-        <EditorCategories value="Race:Terran,TechType:Ability"/>
-        <NodeArray index="Use" Link="CountUpgradeHazardousMunitionsCompleteOnly2584292422"/>
     </CRequirement>
     <CRequirement id="UseWind">
         <EditorCategories value="Race:Protoss,TechType:Ability"/>
@@ -704,7 +628,6 @@
         <NodeArray index="Show" Link="NotCountUpgradeUnknownUpgrade592QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage13433332224">
-        <NodeArray index="Use" Link="CountUnitUltraliskCavern43CompleteOnly"/>
         <NodeArray index="Show" Link="NotCountUpgradeUnknownUpgrade63QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="Damage1343333223">
@@ -9502,7 +9425,7 @@
     </CRequirement>
     <CRequirement id="UnknownRequirement823222322222">
         <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233223232322232222222222CompleteOnly3220429081"/>
-        <NodeArray index="Show" Link="NotOrCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322323222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322323QueuedOrBetterCountUpgradeUmojanBasicUni707650239"/>
+        <NodeArray index="Show" Link="NotOrCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233223232QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322323QueuedOrBetterCountUpgradeUmojanBasicUnitU3031181856"/>
     </CRequirement>
     <CRequirement id="UnknownRequirement8232223222222">
         <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233223232322232222222222CompleteOnly3220429081"/>
@@ -9528,7 +9451,7 @@
         <NodeArray index="Show" Link="NotOrCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233223223QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332232232QueuedOrBetterCountUpgradeUmojanBasicUni3660993633"/>
     </CRequirement>
     <CRequirement id="UnknownRequirement82322232232">
-        <NodeArray index="Show" Link="NotOrCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332232322222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233223232222QueuedOrBetterCountUpgradeUmojanBa891112517"/>
+        <NodeArray index="Show" Link="NotOrCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332232322222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233223232222QueuedOrBetterCountUpgradeUmojanBa1411353316"/>
     </CRequirement>
     <CRequirement id="UnknownRequirement823222322322">
         <NodeArray index="Show" Link="NotOrCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322323222222322QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332232322222232QueuedOrBetterCountUpgrade682985543"/>
