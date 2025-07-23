@@ -1263,7 +1263,7 @@
         <UninterruptibleArray index="Channel" value="1"/>
         <UninterruptibleArray index="Finish" value="1"/>
         <ProducedUnitArray value="InfestedTerran"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="InfestedTerrans3" Requirements="UnknownRequirement82322222332352">
+        <CmdButtonArray index="Execute" DefaultButtonFace="InfestedTerrans3" Requirements="UnknownRequirement823222223323522222">
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
     </CAbilEffectTarget>
@@ -1620,19 +1620,7 @@
         <DefaultError value="RequiresHealTarget"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="QueenBurstHeal23"/>
     </CAbilEffectTarget>
-    <CAbilBuild id="RWEBuild">
-        <InfoArray index="Build1" Time="50"/>
-        <InfoArray index="Build2" Time="15"/>
-        <InfoArray index="Build3" Time="15"/>
-        <InfoArray index="Build4" Time="32.5"/>
-        <InfoArray index="Build5" Time="17.5"/>
-        <InfoArray index="Build6" Time="12.5"/>
-        <InfoArray index="Build7" Time="20"/>
-        <InfoArray index="Build10" Time="20"/>
-        <InfoArray index="Build12" Time="25"/>
-        <InfoArray index="Build14" Time="50"/>
-        <InfoArray index="Build16" Time="32.5"/>
-    </CAbilBuild>
+    <CAbilBuild id="RWEBuild"/>
     <CAbilEffectTarget id="ReleaseDefensiveDrones3">
         <AbilSetId value="Release"/>
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
@@ -26736,21 +26724,21 @@
             <Cooldown Link="Abil/GhostAcademyResearch"/>
             <Button DefaultButtonFace="CalldownMULE4233262332332222322" Requirements="UnknownRequirement82332222222"/>
         </InfoArray>
-        <InfoArray index="Research10" Time="30" Upgrade="UmojanBasicUnitUpgrade52224224232222222222222332223322323232223222222222">
+        <InfoArray index="Research10" Time="42" Upgrade="UmojanBasicUnitUpgrade52224224232222222222222332223322323232223222222222">
             <Resource index="Minerals" value="125"/>
             <Resource index="Vespene" value="50"/>
             <Charge Link="Abil/GhostAcademyResearch"/>
             <Cooldown Link="Abil/GhostAcademyResearch"/>
             <Button DefaultButtonFace="CalldownMULE42332623323322223222" Requirements="UnknownRequirement825"/>
         </InfoArray>
-        <InfoArray index="Research11" Time="60" Upgrade="UmojanBasicUnitUpgrade522242242322222222222223322233223232322232222222222">
+        <InfoArray index="Research11" Time="70" Upgrade="UmojanBasicUnitUpgrade522242242322222222222223322233223232322232222222222">
             <Resource index="Minerals" value="300"/>
             <Resource index="Vespene" value="200"/>
             <Charge Link="Abil/GhostAcademyResearch"/>
             <Cooldown Link="Abil/GhostAcademyResearch"/>
             <Button DefaultButtonFace="CalldownMULE423326233233222232222" Requirements="UnknownRequirement8252"/>
         </InfoArray>
-        <InfoArray index="Research12" Time="90" Upgrade="UmojanBasicUnitUpgrade5222422423222222222222233222332232323222322222222222">
+        <InfoArray index="Research12" Time="98" Upgrade="UmojanBasicUnitUpgrade5222422423222222222222233222332232323222322222222222">
             <Resource index="Minerals" value="400"/>
             <Resource index="Vespene" value="300"/>
             <Charge Link="Abil/GhostAcademyResearch"/>

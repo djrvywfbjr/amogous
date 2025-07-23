@@ -19759,7 +19759,7 @@
         </Cost>
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
-        <Requirements value="HaveDehaka42223222322222"/>
+        <Requirements value="UnknownRequirement82322222332352"/>
         <DisableValidatorArray value="NotDeadOrConstruction"/>
         <Period value="1"/>
         <PeriodicEffect value="UnknownEffect2322263"/>

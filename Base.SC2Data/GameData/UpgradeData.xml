@@ -1181,7 +1181,7 @@
         <EffectArray index="4" Value="12"/>
         <EffectArray Operation="Set" Reference="Effect,MoebiusZOrganicRecyclingMoney1,Resources[Minerals]" Value="5"/>
         <EffectArray Operation="Set" Reference="Effect,MoebiusZOrganicRecyclingMoney12,Resources[Minerals]" Value="9"/>
-        <EffectArray Operation="Set" Reference="Effect,MoebiusZOrganicRecyclingMoney1,Resources[Minerals]" Value="5"/>
+        <EffectArray Operation="Set" Reference="Effect,MoebiusZOrganicRecyclingMoney12,Resources[Vespene]" Value="5"/>
     </CUpgrade>
     <CUpgrade id="MoebiusTUpgrade1223222322322222222" parent="Research">
         <Icon value="Assets\Textures\tip_terrazinefog.dds"/>
@@ -1203,12 +1203,9 @@
         <EffectArray Operation="Set" Reference="Weapon,DefragmentatorBeam,Range" Value="9"/>
     </CUpgrade>
     <CUpgrade id="MoebiusTUpgrade12232223223222425">
-        <EffectArray index="0" Value="150"/>
-        <EffectArray index="1" Value="50"/>
-        <EffectArray index="2" Value="50"/>
-        <EffectArray index="3" Value="50"/>
-        <EffectArray index="4" Value="150"/>
-        <EffectArray index="5" Value="150"/>
+        <EffectArray index="0" Value="225"/>
+        <EffectArray index="4" Value="225"/>
+        <EffectArray index="5" Value="225"/>
         <MaxLevel value="15"/>
     </CUpgrade>
     <CUpgrade id="MoebiusTUpgrade12232223223222432">

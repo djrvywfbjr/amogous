@@ -34,7 +34,7 @@
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
         <StartingResource index="Vespene" value="150"/>
-        <StartingResource index="Terrazine" value="75"/>
+        <StartingResource index="Terrazine" value="25"/>
     </CRace>
     <CRace id="Terr">
         <StartingUnitArray index="0" Unit="Wraith22">
@@ -76,7 +76,7 @@
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
         <StartingResource index="Vespene" value="150"/>
-        <StartingResource index="Terrazine" value="75"/>
+        <StartingResource index="Terrazine" value="25"/>
     </CRace>
     <CRace id="Terr2">
         <AttributeId value="Terr"/>
@@ -805,9 +805,11 @@
     </CRace>
     <CRace id="Terr22222323222">
         <AttributeId value="Terr"/>
+        <Icon value="Assets\Textures\btn-ability-mengsk-topbar-dogsofwar-level04.dds"/>
         <RaceIcon value="@UI/RaceIcon/Terr2"/>
         <GameMusic value="Music_TerrLow"/>
         <Flags index="TrialAllowed" value="1"/>
+        <ShowResource index="Terrazine" value="1"/>
         <StartingUnitArray Unit="CommandCenter10">
             <Flags index="ResourceSetRally" value="1"/>
         </StartingUnitArray>
@@ -843,7 +845,7 @@
         </StartingUnitArray>
         <StartingResource index="Minerals" value="250"/>
         <StartingResource index="Vespene" value="150"/>
-        <StartingResource index="Terrazine" value="75"/>
+        <StartingResource index="Terrazine" value="25"/>
         <GlossaryTeamColorIndex value="1"/>
         <MiniMapBorderColor value="100,40,172,68"/>
         <PlacementGridColorBlindColor value="255,90,255,133"/>
@@ -852,8 +854,6 @@
         <ExpansionOrder value="1"/>
         <LevelAchievementId value="91475320767753"/>
         <DefaultConsoleSkin value="ConsoleZerg_RCZ"/>
-        <Icon value="Assets\Textures\btn-ability-mengsk-topbar-dogsofwar-level04.dds"/>
-        <ShowResource index="Terrazine" value="1"/>
     </CRace>
     <CRace id="Terr222223232222">
         <AttributeId value="Terr"/>
@@ -1733,6 +1733,6 @@
         <StartingUnitArray Unit="Pylon10"/>
         <StartingResource index="Minerals" value="250"/>
         <StartingResource index="Vespene" value="150"/>
-        <StartingResource index="Terrazine" value="75"/>
+        <StartingResource index="Terrazine" value="25"/>
     </CRace>
 </Catalog>

@@ -58374,7 +58374,7 @@
         <SpawnUnit value="PukePuddle4"/>
     </CEffectCreateUnit>
     <CEffectCreateUnit id="PureBornDeathCReateFanatic322222223332342">
-        <ValidatorArray value="HaveHotSViciousGlaive2222237242"/>
+        <ValidatorArray value="SFAutocast"/>
         <EditorCategories value=""/>
         <Marker Link="Effect/PureBornDeathCReateFanatic32222222333"/>
         <SpawnUnit value="PukePuddle4"/>
