@@ -723,6 +723,7 @@ bool libCD55B2B5_gt_DarkLegionChoose_Func (bool testConds, bool runActions) {
     TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet22422222", 1);
     TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet224222222", 1);
     TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet2242222222", 1);
+    TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet22422222222", 1);
     libNtve_gf_UnitCreateFacingPoint(1, "Nexus3", c_unitCreateIgnorePlacement, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
     libNtve_gf_UnitCreateFacingPoint(13, "Probe2", c_unitCreateIgnorePlacement, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
     return true;
@@ -1311,6 +1312,8 @@ bool libCD55B2B5_gt_LastZergChoose_Func (bool testConds, bool runActions) {
     libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "K5SpawnBanelings", 1);
     libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "K5DropPods", 1);
     libNtve_gf_UnitCreateFacingPoint(1, "HotSNoxious2", c_unitCreateIgnorePlacement, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
+    libNtve_gf_UnitCreateFacingPoint(1, "Overseer2", c_unitCreateIgnorePlacement, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
+    libNtve_gf_UnitCreateFacingPoint(1, "Hatchery3", c_unitCreateIgnorePlacement, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
     return true;
 }
 
@@ -1643,6 +1646,9 @@ bool libCD55B2B5_gt_InstantUproot_Func (bool testConds, bool runActions) {
     unitgroup autoCED80BAD_g;
     int autoCED80BAD_u;
     unit autoCED80BAD_var;
+    unitgroup autoE11675B6_g;
+    int autoE11675B6_u;
+    unit autoE11675B6_var;
 
     // Actions
     if (!runActions) {
@@ -1654,8 +1660,19 @@ bool libCD55B2B5_gt_InstantUproot_Func (bool testConds, bool runActions) {
     for (;; autoCED80BAD_u -= 1) {
         autoCED80BAD_var = UnitGroupUnitFromEnd(autoCED80BAD_g, autoCED80BAD_u);
         if (autoCED80BAD_var == null) { break; }
-        if ((UnitHasBehavior2(EventUnit(), UnitBehaviorGet(autoCED80BAD_var, 1)) == true)) {
+        if (true) {
             UnitIssueOrder(autoCED80BAD_var, Order(AbilityCommand("PrimalTownHallUproot42", 0)), c_orderQueueReplace);
+            UnitIssueOrder(autoCED80BAD_var, OrderTargetingPoint(AbilityCommand("AshWormBurrowMove224", 0), EventUnitTargetPoint()), c_orderQueueAddToEnd);
+        }
+
+    }
+    autoE11675B6_g = UnitGroup("PrimalTownHallUprooted222", EventPlayer(), RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
+    autoE11675B6_u = UnitGroupCount(autoE11675B6_g, c_unitCountAll);
+    for (;; autoE11675B6_u -= 1) {
+        autoE11675B6_var = UnitGroupUnitFromEnd(autoE11675B6_g, autoE11675B6_u);
+        if (autoE11675B6_var == null) { break; }
+        if (true) {
+            UnitIssueOrder(autoE11675B6_var, OrderTargetingPoint(AbilityCommand("AshWormBurrowMove224", 0), EventUnitTargetPoint()), c_orderQueueAddToEnd);
         }
 
     }
@@ -1666,6 +1683,39 @@ bool libCD55B2B5_gt_InstantUproot_Func (bool testConds, bool runActions) {
 void libCD55B2B5_gt_InstantUproot_Init () {
     libCD55B2B5_gt_InstantUproot = TriggerCreate("libCD55B2B5_gt_InstantUproot_Func");
     TriggerAddEventUnitAbility(libCD55B2B5_gt_InstantUproot, null, AbilityCommand("OdinBarrage72", 0), c_unitAbilStageAll, false);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: InstantUprootn't
+//--------------------------------------------------------------------------------------------------
+bool libCD55B2B5_gt_InstantUprootnt_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    unitgroup auto1AA5FD94_g;
+    int auto1AA5FD94_u;
+    unit auto1AA5FD94_var;
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    auto1AA5FD94_g = UnitGroup("PrimalTownHall222", UnitGetOwner(EventUnit()), RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
+    auto1AA5FD94_u = UnitGroupCount(auto1AA5FD94_g, c_unitCountAll);
+    for (;; auto1AA5FD94_u -= 1) {
+        auto1AA5FD94_var = UnitGroupUnitFromEnd(auto1AA5FD94_g, auto1AA5FD94_u);
+        if (auto1AA5FD94_var == null) { break; }
+        if (true) {
+            UnitIssueOrder(auto1AA5FD94_var, OrderTargetingPoint(AbilityCommand("AshWormBurrowMove22", 0), PlayerStartLocation(UnitGetOwner(EventUnit()))), c_orderQueueReplace);
+        }
+
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCD55B2B5_gt_InstantUprootnt_Init () {
+    libCD55B2B5_gt_InstantUprootnt = TriggerCreate("libCD55B2B5_gt_InstantUprootnt_Func");
+    TriggerAddEventUnitBehaviorChange(libCD55B2B5_gt_InstantUprootnt, null, "AggressiveMutation5", c_unitBehaviorChangeDestroy);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -6369,6 +6419,208 @@ void libCD55B2B5_gt_MaltanisAddoOrderBit_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
+// Trigger: MaltanisAddoOrderBitRift
+//--------------------------------------------------------------------------------------------------
+bool libCD55B2B5_gt_MaltanisAddoOrderBitRift_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((UnitTypeTestAttribute(UnitGetType(EventUnit()), c_unitAttributeStructure) != true))) {
+            return false;
+        }
+
+        if (!((UnitBehaviorEnabled(EventUnit(), "VoidShade2") == true))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropNormal) == 1.0)) {
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 2);
+    }
+
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropNormal) == 2.0)) {
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 4);
+    }
+
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropNormal) == 3.0)) {
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 6);
+    }
+
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropNormal) == 4.0)) {
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 8);
+    }
+
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropNormal) == 5.0)) {
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 10);
+    }
+
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropNormal) == 6.0)) {
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 12);
+    }
+
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropNormal) == 7.0)) {
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 14);
+    }
+
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropNormal) == 8.0)) {
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 16);
+    }
+
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropNormal) == 9.0)) {
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 18);
+    }
+
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropNormal) == 10.0)) {
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 20);
+    }
+
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropNormal) == 11.0)) {
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 22);
+    }
+
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropNormal) == 12.0)) {
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 24);
+    }
+
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropNormal) == 13.0)) {
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 26);
+    }
+
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropNormal) == 14.0)) {
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 28);
+    }
+
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropNormal) == 15.0)) {
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 30);
+    }
+
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropNormal) == 16.0)) {
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 32);
+    }
+
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropNormal) == 17.0)) {
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 34);
+    }
+
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropNormal) == 18.0)) {
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 36);
+    }
+
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropNormal) == 19.0)) {
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 38);
+    }
+
+    if ((UnitGetPropertyFixed(EventUnit(), c_unitPropSuppliesUsed, c_unitPropNormal) == 20.0)) {
+        TechTreeUpgradeAddLevel(EventPlayer(), "VoidDarkArchonDarkAmulet222222", 40);
+    }
+
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCD55B2B5_gt_MaltanisAddoOrderBitRift_Init () {
+    libCD55B2B5_gt_MaltanisAddoOrderBitRift = TriggerCreate("libCD55B2B5_gt_MaltanisAddoOrderBitRift_Func");
+    TriggerAddEventUnitDied(libCD55B2B5_gt_MaltanisAddoOrderBitRift, null);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: NihilityAddBit
+//--------------------------------------------------------------------------------------------------
+bool libCD55B2B5_gt_NihilityAddBit_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    playergroup auto904DD696_g;
+    int auto904DD696_var;
+    playergroup auto2A2D6E71_g;
+    int auto2A2D6E71_var;
+    playergroup auto3228157D_g;
+    int auto3228157D_var;
+
+    // Conditions
+    if (testConds) {
+        if (!((UnitTypeTestAttribute(UnitGetType(EventUnit()), c_unitAttributeStructure) != true))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    if ((UnitTypeTestAttribute(UnitGetType(EventUnit()), c_unitAttributeArmored) == true)) {
+        auto904DD696_g = PlayerGroupAll();
+        auto904DD696_var = -1;
+        while (true) {
+            auto904DD696_var = PlayerGroupNextPlayer(auto904DD696_g, auto904DD696_var);
+            if (auto904DD696_var < 0) { break; }
+            TechTreeUpgradeAddLevel(auto904DD696_var, "NihilityBit", 5);
+        }
+    }
+
+    if ((UnitTypeTestAttribute(UnitGetType(EventUnit()), c_unitAttributeLight) == true)) {
+        auto2A2D6E71_g = PlayerGroupAll();
+        auto2A2D6E71_var = -1;
+        while (true) {
+            auto2A2D6E71_var = PlayerGroupNextPlayer(auto2A2D6E71_g, auto2A2D6E71_var);
+            if (auto2A2D6E71_var < 0) { break; }
+            TechTreeUpgradeAddLevel(auto2A2D6E71_var, "NihilityBit", 1);
+        }
+    }
+
+    if ((UnitTypeTestAttribute(UnitGetType(EventUnit()), c_unitAttributeHeroic) == true)) {
+        auto3228157D_g = PlayerGroupAll();
+        auto3228157D_var = -1;
+        while (true) {
+            auto3228157D_var = PlayerGroupNextPlayer(auto3228157D_g, auto3228157D_var);
+            if (auto3228157D_var < 0) { break; }
+            TechTreeUpgradeAddLevel(auto3228157D_var, "NihilityBit", 15);
+        }
+    }
+
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCD55B2B5_gt_NihilityAddBit_Init () {
+    libCD55B2B5_gt_NihilityAddBit = TriggerCreate("libCD55B2B5_gt_NihilityAddBit_Func");
+    TriggerEnable(libCD55B2B5_gt_NihilityAddBit, false);
+    TriggerAddEventUnitDied(libCD55B2B5_gt_NihilityAddBit, null);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: NihilityAddBit 2
+//--------------------------------------------------------------------------------------------------
+bool libCD55B2B5_gt_NihilityAddBit2_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((UnitGetType(EventUnit()) == "Carrier7"))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerEnable(libCD55B2B5_gt_NihilityAddBit, true);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libCD55B2B5_gt_NihilityAddBit2_Init () {
+    libCD55B2B5_gt_NihilityAddBit2 = TriggerCreate("libCD55B2B5_gt_NihilityAddBit2_Func");
+    TriggerEnable(libCD55B2B5_gt_NihilityAddBit2, false);
+    TriggerAddEventUnitRegion(libCD55B2B5_gt_NihilityAddBit2, null, RegionEntireMap(), true);
+}
+
+//--------------------------------------------------------------------------------------------------
 // Trigger: freemind
 //--------------------------------------------------------------------------------------------------
 bool libCD55B2B5_gt_freemind_Func (bool testConds, bool runActions) {
@@ -8988,7 +9240,7 @@ bool libCD55B2B5_gt_Timer30_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    UISetResourceTradeCountdownTime(650);
+    UISetResourceTradeCountdownTime(360);
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_CD55B2B5_7DC7D0ED"));
     HelpPanelAddTip(PlayerGroupAll(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/lib_CD55B2B5_D3ED3A83"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/lib_CD55B2B5_998C8762"), StringExternal("Param/Value/lib_CD55B2B5_C51970D0"), "Assets\\Textures\\btn-sc2-temp.dds");
     return true;
@@ -9887,6 +10139,7 @@ void libCD55B2B5_InitTriggers () {
     libCD55B2B5_gt_removeallactors_Init();
     libCD55B2B5_gt_EssenceDie_Init();
     libCD55B2B5_gt_InstantUproot_Init();
+    libCD55B2B5_gt_InstantUprootnt_Init();
     libCD55B2B5_gt_CreeperAttakc_Init();
     libCD55B2B5_gt_PrimalCarrion_Init();
     libCD55B2B5_gt_Essence_Init();
@@ -10016,6 +10269,9 @@ void libCD55B2B5_InitTriggers () {
     libCD55B2B5_gt_UntitledTrigger001_Init();
     libCD55B2B5_gt_MaltanisAddChaosBit2_Init();
     libCD55B2B5_gt_MaltanisAddoOrderBit_Init();
+    libCD55B2B5_gt_MaltanisAddoOrderBitRift_Init();
+    libCD55B2B5_gt_NihilityAddBit_Init();
+    libCD55B2B5_gt_NihilityAddBit2_Init();
     libCD55B2B5_gt_freemind_Init();
     libCD55B2B5_gt_safetywarp_Init();
     libCD55B2B5_gt_malfunction_Init();
