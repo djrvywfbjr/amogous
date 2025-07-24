@@ -5169,7 +5169,7 @@
             <Resource index="Minerals" value="-35"/>
             <Vital index="Life" value="99"/>
             <Button DefaultButtonFace="Wraith222325"/>
-            <Unit value="Probe3"/>
+            <Unit value="AiurProbe"/>
         </InfoArray>
         <InfoArray index="Train17">
             <Resource index="Minerals" value="-50"/>
@@ -5363,7 +5363,7 @@
             <Resource index="Minerals" value="-35"/>
             <Vital index="Life" value="99"/>
             <Button DefaultButtonFace="Wraith222325"/>
-            <Unit value="Probe3"/>
+            <Unit value="AiurProbe"/>
         </InfoArray>
         <InfoArray index="Train17">
             <Resource index="Minerals" value="-50"/>
@@ -5644,7 +5644,7 @@
             </Charge>
             <Cooldown Location="Player"/>
             <Button DefaultButtonFace="Probe4"/>
-            <Unit value="Probe3"/>
+            <Unit value="AiurProbe"/>
         </InfoArray>
         <InfoArray index="Train16" Time="1">
             <Resource index="Minerals" value="-50"/>
@@ -11692,7 +11692,7 @@
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Flags index="Retarget" value="1"/>
         <Leash value="12"/>
-        <InfoArray index="Ammo1" Time="1.4" CountStart="4" Manage="Recall" Unit="Interceptor">
+        <InfoArray index="Ammo1" Time="1.4" CountStart="4" Manage="Recall" Unit="AzureInterceptor">
             <Vital index="Shields" value="40"/>
             <Charge Link="CarrierInterceptor" Location="Unit"/>
             <Cooldown Link="Abil/##id##"/>
@@ -11930,7 +11930,7 @@
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Flags index="Retarget" value="1"/>
         <Leash value="25"/>
-        <InfoArray index="Ammo1" Time="10" CountStart="14" Manage="Recall" Unit="Interceptor12">
+        <InfoArray index="Ammo1" Time="10" CountStart="14" Manage="Recall" Unit="AzureInterceptor">
             <Charge Link="CarrierInterceptor" Location="Unit"/>
             <Cooldown Link="CarrierTrainInterceptor" TimeUse="0.01"/>
             <Button DefaultButtonFace="Interceptor19" Requirements="ArmInterceptor8">
@@ -11949,7 +11949,7 @@
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Flags index="Retarget" value="1"/>
         <Leash value="20"/>
-        <InfoArray index="Ammo1" Time="10" CountStart="6" Manage="Recall" Unit="Interceptor12">
+        <InfoArray index="Ammo1" Time="10" CountStart="6" Manage="Recall" Unit="AzureInterceptor">
             <Charge Link="CarrierInterceptor" Location="Unit"/>
             <Cooldown Link="CarrierTrainInterceptor" TimeUse="0.01"/>
             <Button DefaultButtonFace="Interceptor19" Requirements="ArmInterceptor82">
@@ -36424,7 +36424,7 @@
         <Activity value="UI/Warping"/>
         <InfoArray index="Train1" Time="15.4">
             <Button DefaultButtonFace="Probe4"/>
-            <Unit value="Probe3"/>
+            <Unit value="AiurProbe"/>
         </InfoArray>
         <InfoArray index="Train2" Time="30">
             <Button DefaultButtonFace="ZealotAiur2"/>
@@ -36472,7 +36472,7 @@
         </InfoArray>
         <InfoArray index="Train13" Time="65">
             <Button DefaultButtonFace="Tempest3" Requirements="HaveOldFortress33"/>
-            <Unit value="Tempest2"/>
+            <Unit value="Storm"/>
         </InfoArray>
         <InfoArray index="Train14" Time="60">
             <Button DefaultButtonFace="Stalker5" Requirements="HaveOldFortress34"/>
@@ -45345,49 +45345,49 @@
             <Resource index="Minerals" value="-75"/>
             <Button DefaultButtonFace="Nexus6"/>
         </InfoArray>
-        <InfoArray index="Build2" Unit="Pylon4">
+        <InfoArray index="Build2" Unit="KhalaiPylon">
             <Button DefaultButtonFace="Pylon5"/>
         </InfoArray>
         <InfoArray index="Build3">
             <Button DefaultButtonFace="Assimilator6"/>
         </InfoArray>
-        <InfoArray index="Build4" Unit="Gateway3" Time="55">
+        <InfoArray index="Build4" Unit="KhalaiGateway" Time="55">
             <Button DefaultButtonFace="Gateway6" Requirements="HaveOldFortress"/>
         </InfoArray>
-        <InfoArray index="Build5" Unit="Forge3" Time="70">
+        <InfoArray index="Build5" Unit="PhaseForge" Time="70">
             <Button DefaultButtonFace="Forge4" Requirements="HaveOldFortress"/>
         </InfoArray>
-        <InfoArray index="Build6" Unit="FleetBeacon3">
+        <InfoArray index="Build6" Unit="SolarBeacon">
             <Button DefaultButtonFace="FleetBeacon6" Requirements="HaveOldFortress322"/>
         </InfoArray>
-        <InfoArray index="Build7" Unit="TwilightCouncil3" Time="40">
+        <InfoArray index="Build7" Unit="HighlightCouncil" Time="40">
             <Button DefaultButtonFace="TwilightCouncil5" Requirements="HaveOldFortress22"/>
         </InfoArray>
-        <InfoArray index="Build8" Unit="PhotonCannon3" Time="50">
+        <InfoArray index="Build8" Unit="PhaseCannon" Time="50">
             <Button DefaultButtonFace="PhotonCannon5" Requirements="HaveOldFortress22"/>
         </InfoArray>
         <InfoArray index="Build9" Unit="ShieldOvercharger">
             <Button DefaultButtonFace="ShieldBattery" Requirements="HaveOldFortress222"/>
         </InfoArray>
-        <InfoArray index="Build10" Unit="Stargate3" Time="70">
+        <InfoArray index="Build10" Unit="Planetgate" Time="70">
             <Button DefaultButtonFace="Stargate5" Requirements="HaveOldFortress2222"/>
         </InfoArray>
-        <InfoArray index="Build11" Unit="TemplarArchive3">
+        <InfoArray index="Build11" Unit="TemplarLibrary">
             <Button DefaultButtonFace="TemplarArchive5" Requirements="HaveOldFortress2222"/>
         </InfoArray>
         <InfoArray index="Build12">
             <Button DefaultButtonFace="DarkShrine6"/>
         </InfoArray>
-        <InfoArray index="Build13" Unit="RoboticsBay3">
+        <InfoArray index="Build13" Unit="PowerBay">
             <Button DefaultButtonFace="RoboticsBay5" Requirements="HaveOldFortress3"/>
         </InfoArray>
-        <InfoArray index="Build14" Unit="RoboticsFacility2">
+        <InfoArray index="Build14" Unit="MechFacility">
             <Button DefaultButtonFace="RoboticsFacility5" Requirements="HaveOldFortress2222"/>
         </InfoArray>
         <InfoArray index="Build15" Unit="AiurSanctum" Time="28">
             <Button DefaultButtonFace="CyberneticsCore6" Requirements="HaveOldFortress2"/>
         </InfoArray>
-        <InfoArray index="Build16" Unit="PhotonCannon8">
+        <InfoArray index="Build16" Unit="PsionicConcentrator">
             <Button DefaultButtonFace="ShieldBattery5" Requirements="MothershipRequirements232"/>
         </InfoArray>
         <InfoArray index="Build20">

@@ -54,20 +54,20 @@
         <OperandArray value="Eq3523259510CountUnitMedicalOutpostQueuedOrBetter0"/>
         <OperandArray value="CountUpgradeAdvancedConstruction232CompleteOnly"/>
     </CRequirementAnd>
-    <CRequirementAnd id="And1476756178CountUnitTwilightCouncil3CompleteOnly1213073564CountUpgradeUmojanBasicUnitUpgrade522242242322222222222222CompleteOnly4256853171">
-        <OperandArray value="CountUnitTwilightCouncil3CompleteOnly1213073564"/>
+    <CRequirementAnd id="And1476756178CountUnitHighlightCouncilCompleteOnly1213073564CountUpgradeUmojanBasicUnitUpgrade522242242322222222222222CompleteOnly4256853171">
+        <OperandArray value="CountUnitHighlightCouncilCompleteOnly1213073564"/>
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade522242242322222222222222CompleteOnly4256853171"/>
     </CRequirementAnd>
-    <CRequirementAnd id="And1476756178CountUnitTwilightCouncil3CompleteOnly1213073564CountUpgradeUmojanBasicUnitUpgrade5222422423222222222223CompleteOnly4256853171">
-        <OperandArray value="CountUnitTwilightCouncil3CompleteOnly1213073564"/>
+    <CRequirementAnd id="And1476756178CountUnitHighlightCouncilCompleteOnly1213073564CountUpgradeUmojanBasicUnitUpgrade5222422423222222222223CompleteOnly4256853171">
+        <OperandArray value="CountUnitHighlightCouncilCompleteOnly1213073564"/>
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade5222422423222222222223CompleteOnly4256853171"/>
     </CRequirementAnd>
-    <CRequirementAnd id="And1476756178CountUnitTwilightCouncil3CompleteOnly1213073564CountUpgradeUmojanBasicUnitUpgrade52224224232222222223CompleteOnly4256853171">
-        <OperandArray value="CountUnitTwilightCouncil3CompleteOnly1213073564"/>
+    <CRequirementAnd id="And1476756178CountUnitHighlightCouncilCompleteOnly1213073564CountUpgradeUmojanBasicUnitUpgrade52224224232222222223CompleteOnly4256853171">
+        <OperandArray value="CountUnitHighlightCouncilCompleteOnly1213073564"/>
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade52224224232222222223CompleteOnly4256853171"/>
     </CRequirementAnd>
-    <CRequirementAnd id="And1476756178CountUnitTwilightCouncil3CompleteOnly1213073564CountUpgradeUmojanBasicUnitUpgrade5222422423222222223CompleteOnly4256853171">
-        <OperandArray value="CountUnitTwilightCouncil3CompleteOnly1213073564"/>
+    <CRequirementAnd id="And1476756178CountUnitHighlightCouncilCompleteOnly1213073564CountUpgradeUmojanBasicUnitUpgrade5222422423222222223CompleteOnly4256853171">
+        <OperandArray value="CountUnitHighlightCouncilCompleteOnly1213073564"/>
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade5222422423222222223CompleteOnly4256853171"/>
     </CRequirementAnd>
     <CRequirementAnd id="And1524450401CountUpgradeAdvancedConstruction2422332222222222322CompleteOnly943849952CountUpgradeAdvancedConstruction222CompleteOnly">
@@ -446,9 +446,9 @@
         <OperandArray value="CountUnitForge8CompleteOnly879748732TechTreeCheat"/>
         <OperandArray value="Eq3741959435CountUnitDarkShrine3QueuedOrBetter0"/>
     </CRequirementAnd>
-    <CRequirementAnd id="And867912010CountUnitTwilightCouncil3CompleteOnlyTechTreeCheatLTECountUnitPhotonCannon8QueuedOrBetter2">
-        <OperandArray value="CountUnitTwilightCouncil3CompleteOnlyTechTreeCheat"/>
-        <OperandArray value="LTECountUnitPhotonCannon8QueuedOrBetter2"/>
+    <CRequirementAnd id="And867912010CountUnitHighlightCouncilCompleteOnlyTechTreeCheatLTECountUnitPsionicConcentratorQueuedOrBetter2">
+        <OperandArray value="CountUnitHighlightCouncilCompleteOnlyTechTreeCheat"/>
+        <OperandArray value="LTECountUnitPsionicConcentratorQueuedOrBetter2"/>
     </CRequirementAnd>
     <CRequirementAnd id="And908630672CountUpgradeAdvancedConstruction24223322222222223232CompleteOnly1964497010CountUpgradeAdvancedConstruction222CompleteOnlyCountUnitMissileTurret1322CompleteOnly">
         <OperandArray value="CountUpgradeAdvancedConstruction24223322222222223232CompleteOnly1964497010"/>
@@ -2967,6 +2967,11 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="AutomatedRefinery2" State="CompleteOnly"/>
     </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitAzureInterceptorQueuedOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="AzureInterceptor" State="QueuedOrBetterAtUnit"/>
+    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitBadgerQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Badger" State="QueuedOrBetter"/>
@@ -3643,10 +3648,6 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="FleetBeacon2" State="CompleteOnly"/>
     </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitFleetBeacon3CompleteOnly1921691246">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="FleetBeacon3" State="CompleteOnly"/>
-    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitFleetBeacon4CompleteOnly3405927650">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="FleetBeacon4" State="CompleteOnly"/>
@@ -3676,10 +3677,6 @@
     <CRequirementCountUnit id="CountUnitForge2CompleteOnly2002308695">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Forge2" State="CompleteOnly"/>
-    </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitForge3CompleteOnly1011346628">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="Forge3" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitForge4CompleteOnly340084523">
         <Flags index="TechTreeCheat" value="0"/>
@@ -3741,10 +3738,6 @@
     <CRequirementCountUnit id="CountUnitGateway2CompleteOnly348525313">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Gateway2" State="CompleteOnly"/>
-    </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitGateway3CompleteOnly3668052699">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="Gateway3" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitGateway4CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
@@ -3849,6 +3842,14 @@
     <CRequirementCountUnit id="CountUnitHatchery6CompleteOnly2785476418">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Hatchery6" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitHighlightCouncilCompleteOnly1213073564">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="HighlightCouncil" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitHighlightCouncilCompleteOnlyTechTreeCheat">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="HighlightCouncil" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitHive2CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
@@ -4037,10 +4038,6 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Interceptor122" State="QueuedOrBetterAtUnit"/>
     </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitInterceptor12QueuedOrBetterAtUnit">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="Interceptor12" State="QueuedOrBetterAtUnit"/>
-    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitInterceptor9QueuedOrBetterAtUnit">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Interceptor9" State="QueuedOrBetterAtUnit"/>
@@ -4060,6 +4057,10 @@
     <CRequirementCountUnit id="CountUnitKarass2QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Karass2" State="QueuedOrBetter"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitKhalaiGatewayCompleteOnly3668052699">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="KhalaiGateway" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitLair2CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
@@ -4152,6 +4153,10 @@
     <CRequirementCountUnit id="CountUnitMarine5QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Marine5" State="QueuedOrBetter"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitMechFacilityCompleteOnly920558968">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MechFacility" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitMechTestingFacilityCompleteOnlyTechTreeCheat">
         <Count Link="MechTestingFacility" State="CompleteOnly"/>
@@ -4346,17 +4351,21 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="OverseerTower" State="CompleteOnly"/>
     </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitPhaseForgeCompleteOnly1011346628">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="PhaseForge" State="CompleteOnly"/>
+    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitPhotonCannon6CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="PhotonCannon6" State="CompleteOnly"/>
     </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitPhotonCannon8QueuedOrBetter">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="PhotonCannon8" State="QueuedOrBetter"/>
-    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitPirateBayCompleteOnly1609407400">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="PirateBay" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitPlanetgateCompleteOnly2981895052">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="Planetgate" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitPointDefenseDrone22CompleteOnly3393635091">
         <Flags index="TechTreeCheat" value="0"/>
@@ -4365,6 +4374,10 @@
     <CRequirementCountUnit id="CountUnitPointDefenseDrone262CompleteOnly757322852">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="PointDefenseDrone262" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitPowerBayCompleteOnly3257387171">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="PowerBay" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitPrimalHydralisk22CompleteOnly1151506261">
         <Flags index="TechTreeCheat" value="0"/>
@@ -4484,6 +4497,11 @@
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitPsiRepeaterCompleteOnly2667952670TechTreeCheat">
         <Count Link="PsiRepeater" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitPsionicConcentratorQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="PsionicConcentrator" State="QueuedOrBetter"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitPsiwaveCommunicatorCompleteOnly1851208886">
         <Flags index="TechTreeCheat" value="0"/>
@@ -4640,10 +4658,6 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="RoachWarren7" State="CompleteOnly"/>
     </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitRoboticsBay3CompleteOnly3257387171">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="RoboticsBay3" State="CompleteOnly"/>
-    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitRoboticsBay4CompleteOnly3044499941">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="RoboticsBay4" State="CompleteOnly"/>
@@ -4651,10 +4665,6 @@
     <CRequirementCountUnit id="CountUnitRoboticsBay6CompleteOnly3172141559">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="RoboticsBay6" State="CompleteOnly"/>
-    </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitRoboticsFacility2CompleteOnly920558968">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="RoboticsFacility2" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitRoboticsFacility3CompleteOnly3346404317">
         <Flags index="TechTreeCheat" value="0"/>
@@ -4720,6 +4730,10 @@
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitSingularityControllerCompleteOnly381557053TechTreeCheat">
         <Count Link="SingularityController" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitSolarBeaconCompleteOnly1921691246">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="SolarBeacon" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitSpawningPool2232222QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
@@ -4829,10 +4843,6 @@
     <CRequirementCountUnit id="CountUnitStargate2CompleteOnly636691716">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Stargate2" State="CompleteOnly"/>
-    </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitStargate3CompleteOnly2981895052">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="Stargate3" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitStargate4CompleteOnly285524553">
         <Flags index="TechTreeCheat" value="0"/>
@@ -4997,10 +5007,6 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="TemplarArchive2" State="CompleteOnly"/>
     </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitTemplarArchive3CompleteOnly3824459697">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="TemplarArchive3" State="CompleteOnly"/>
-    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitTemplarArchive4CompleteOnly2328706706">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="TemplarArchive4" State="CompleteOnly"/>
@@ -5028,6 +5034,10 @@
     <CRequirementCountUnit id="CountUnitTemplarArchive6CompleteOnlyTechTreeCheat">
         <Count Link="TemplarArchive6" State="CompleteOnly"/>
     </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitTemplarLibraryCompleteOnly3824459697">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="TemplarLibrary" State="CompleteOnly"/>
+    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitTribesmanHallCompleteOnly2576107301">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="TribesmanHall" State="CompleteOnly"/>
@@ -5035,13 +5045,6 @@
     <CRequirementCountUnit id="CountUnitTribesmanTotemCompleteOnly3704507359">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="TribesmanTotem" State="CompleteOnly"/>
-    </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitTwilightCouncil3CompleteOnly1213073564">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="TwilightCouncil3" State="CompleteOnly"/>
-    </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitTwilightCouncil3CompleteOnlyTechTreeCheat">
-        <Count Link="TwilightCouncil3" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitTwilightCouncil4CompleteOnly1868702021">
         <Flags index="TechTreeCheat" value="0"/>
@@ -16040,8 +16043,8 @@
         <OperandArray index="0" value="CountUnitAttackDroneQueuedOrBetterAtUnit"/>
         <OperandArray index="1" value="10"/>
     </CRequirementLT>
-    <CRequirementLT id="LT2408570435CountUnitInterceptor12QueuedOrBetterAtUnit6">
-        <OperandArray index="0" value="CountUnitInterceptor12QueuedOrBetterAtUnit"/>
+    <CRequirementLT id="LT2408570435CountUnitAzureInterceptorQueuedOrBetterAtUnit6">
+        <OperandArray index="0" value="CountUnitAzureInterceptorQueuedOrBetterAtUnit"/>
         <OperandArray index="1" value="6"/>
     </CRequirementLT>
     <CRequirementLT id="LT2472108284CountUnitBaneling7QueuedOrBetterAtUnit6">
@@ -16080,8 +16083,8 @@
         <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade5222422423222222362223QueuedOrBetter"/>
         <OperandArray index="1" value="75"/>
     </CRequirementLT>
-    <CRequirementLT id="LT3530165603CountUnitInterceptor12QueuedOrBetterAtUnit14">
-        <OperandArray index="0" value="CountUnitInterceptor12QueuedOrBetterAtUnit"/>
+    <CRequirementLT id="LT3530165603CountUnitAzureInterceptorQueuedOrBetterAtUnit14">
+        <OperandArray index="0" value="CountUnitAzureInterceptorQueuedOrBetterAtUnit"/>
         <OperandArray index="1" value="14"/>
     </CRequirementLT>
     <CRequirementLT id="LT3611948901CountUnitLurker2QueuedOrBetterAtUnit4">
@@ -16216,8 +16219,9 @@
         <OperandArray index="0" value="CountUnitMedicalOutpostQueuedOrBetter"/>
         <OperandArray index="1" value="2"/>
     </CRequirementLTE>
-    <CRequirementLTE id="LTECountUnitPhotonCannon8QueuedOrBetter2">
-        <OperandArray index="0" value="CountUnitPhotonCannon8QueuedOrBetter"/>
+    <CRequirementLTE id="LTECountUnitPsionicConcentratorQueuedOrBetter2">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUnitPsionicConcentratorQueuedOrBetter"/>
         <OperandArray index="1" value="2"/>
     </CRequirementLTE>
     <CRequirementLTE id="LTECountUnitTemplarArchive52QueuedOrBetter2">

@@ -31362,7 +31362,7 @@
         <EditorCategories value="Race:Protoss"/>
         <Visibility value="Visible"/>
         <Kind value="Ranged"/>
-        <Amount value="15"/>
+        <Amount value="5"/>
     </CEffectDamage>
     <CEffectDamage id="InterceptorBeamDamage142" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
@@ -75660,7 +75660,8 @@
     <CEffectModifyUnit id="VoidThrasherLightningAoESearchDummy2"/>
     <CEffectModifyUnit id="VoidZealotShieldRestore">
         <VitalArray index="Shields">
-            <Change value="100"/>
+            <Change value="1"/>
+            <ChangeFraction value="1"/>
         </VitalArray>
     </CEffectModifyUnit>
     <CEffectDamage id="VoidZealotWhirlwindDamage2" parent="DU_WEAP">

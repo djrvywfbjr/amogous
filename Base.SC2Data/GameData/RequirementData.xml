@@ -385,11 +385,11 @@
     </CRequirement>
     <CRequirement id="ArmInterceptor8">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="LT3530165603CountUnitInterceptor12QueuedOrBetterAtUnit14"/>
+        <NodeArray index="Use" Link="LT3530165603CountUnitAzureInterceptorQueuedOrBetterAtUnit14"/>
     </CRequirement>
     <CRequirement id="ArmInterceptor82">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="LT2408570435CountUnitInterceptor12QueuedOrBetterAtUnit6"/>
+        <NodeArray index="Use" Link="LT2408570435CountUnitAzureInterceptorQueuedOrBetterAtUnit6"/>
     </CRequirement>
     <CRequirement id="ArmInterceptor822">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
@@ -2503,31 +2503,31 @@
         <NodeArray index="Use" Link="CountUnitOldFortressCompleteOnly2158532138"/>
     </CRequirement>
     <CRequirement id="HaveOldFortress2">
-        <NodeArray index="Use" Link="CountUnitGateway3CompleteOnly3668052699"/>
+        <NodeArray index="Use" Link="CountUnitKhalaiGatewayCompleteOnly3668052699"/>
     </CRequirement>
     <CRequirement id="HaveOldFortress22">
         <NodeArray index="Use" Link="CountUnitAiurSanctumCompleteOnly3215160904"/>
     </CRequirement>
     <CRequirement id="HaveOldFortress222">
-        <NodeArray index="Use" Link="CountUnitForge3CompleteOnly1011346628"/>
+        <NodeArray index="Use" Link="CountUnitPhaseForgeCompleteOnly1011346628"/>
     </CRequirement>
     <CRequirement id="HaveOldFortress2222">
-        <NodeArray index="Use" Link="CountUnitTwilightCouncil3CompleteOnly1213073564"/>
+        <NodeArray index="Use" Link="CountUnitHighlightCouncilCompleteOnly1213073564"/>
     </CRequirement>
     <CRequirement id="HaveOldFortress3">
-        <NodeArray index="Use" Link="CountUnitRoboticsFacility2CompleteOnly920558968"/>
+        <NodeArray index="Use" Link="CountUnitMechFacilityCompleteOnly920558968"/>
     </CRequirement>
     <CRequirement id="HaveOldFortress32">
-        <NodeArray index="Use" Link="CountUnitRoboticsBay3CompleteOnly3257387171"/>
+        <NodeArray index="Use" Link="CountUnitPowerBayCompleteOnly3257387171"/>
     </CRequirement>
     <CRequirement id="HaveOldFortress322">
-        <NodeArray index="Use" Link="CountUnitStargate3CompleteOnly2981895052"/>
+        <NodeArray index="Use" Link="CountUnitPlanetgateCompleteOnly2981895052"/>
     </CRequirement>
     <CRequirement id="HaveOldFortress33">
-        <NodeArray index="Use" Link="CountUnitFleetBeacon3CompleteOnly1921691246"/>
+        <NodeArray index="Use" Link="CountUnitSolarBeaconCompleteOnly1921691246"/>
     </CRequirement>
     <CRequirement id="HaveOldFortress34">
-        <NodeArray index="Use" Link="CountUnitTemplarArchive3CompleteOnly3824459697"/>
+        <NodeArray index="Use" Link="CountUnitTemplarLibraryCompleteOnly3824459697"/>
     </CRequirement>
     <CRequirement id="HavePartStorageDepot">
         <NodeArray index="Use" Link="CountUnitSupplyDepot22CompleteOnly2570405686"/>
@@ -5554,19 +5554,19 @@
         <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222223QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="LearnDamage12">
-        <NodeArray index="Use" Link="And1476756178CountUnitTwilightCouncil3CompleteOnly1213073564CountUpgradeUmojanBasicUnitUpgrade52224224232222222223CompleteOnly4256853171"/>
+        <NodeArray index="Use" Link="And1476756178CountUnitHighlightCouncilCompleteOnly1213073564CountUpgradeUmojanBasicUnitUpgrade52224224232222222223CompleteOnly4256853171"/>
         <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222223QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="LearnDamage122">
-        <NodeArray index="Use" Link="And1476756178CountUnitTwilightCouncil3CompleteOnly1213073564CountUpgradeUmojanBasicUnitUpgrade5222422423222222223CompleteOnly4256853171"/>
+        <NodeArray index="Use" Link="And1476756178CountUnitHighlightCouncilCompleteOnly1213073564CountUpgradeUmojanBasicUnitUpgrade5222422423222222223CompleteOnly4256853171"/>
         <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222223QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="LearnDamage123">
-        <NodeArray index="Use" Link="And1476756178CountUnitTwilightCouncil3CompleteOnly1213073564CountUpgradeUmojanBasicUnitUpgrade522242242322222222222222CompleteOnly4256853171"/>
+        <NodeArray index="Use" Link="And1476756178CountUnitHighlightCouncilCompleteOnly1213073564CountUpgradeUmojanBasicUnitUpgrade522242242322222222222222CompleteOnly4256853171"/>
         <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222222223QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="LearnDamage1232">
-        <NodeArray index="Use" Link="And1476756178CountUnitTwilightCouncil3CompleteOnly1213073564CountUpgradeUmojanBasicUnitUpgrade5222422423222222222223CompleteOnly4256853171"/>
+        <NodeArray index="Use" Link="And1476756178CountUnitHighlightCouncilCompleteOnly1213073564CountUpgradeUmojanBasicUnitUpgrade5222422423222222222223CompleteOnly4256853171"/>
         <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222222223QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="LearnDamage1233">
@@ -6388,7 +6388,7 @@
     </CRequirement>
     <CRequirement id="MothershipRequirements232">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
-        <NodeArray index="Use" Link="And867912010CountUnitTwilightCouncil3CompleteOnlyTechTreeCheatLTECountUnitPhotonCannon8QueuedOrBetter2"/>
+        <NodeArray index="Use" Link="And867912010CountUnitHighlightCouncilCompleteOnlyTechTreeCheatLTECountUnitPsionicConcentratorQueuedOrBetter2"/>
     </CRequirement>
     <CRequirement id="MothershipRequirements2322">
         <EditorCategories value="Race:Protoss,TechType:Unit"/>
