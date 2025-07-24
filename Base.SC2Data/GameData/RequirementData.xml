@@ -2506,7 +2506,7 @@
         <NodeArray index="Use" Link="CountUnitGateway3CompleteOnly3668052699"/>
     </CRequirement>
     <CRequirement id="HaveOldFortress22">
-        <NodeArray index="Use" Link="CountUnitCyberneticsCore3CompleteOnly3215160904"/>
+        <NodeArray index="Use" Link="CountUnitAiurSanctumCompleteOnly3215160904"/>
     </CRequirement>
     <CRequirement id="HaveOldFortress222">
         <NodeArray index="Use" Link="CountUnitForge3CompleteOnly1011346628"/>

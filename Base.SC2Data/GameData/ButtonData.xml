@@ -29741,8 +29741,8 @@
         <Icon value="Assets\Textures\btn-unit-terran-troopermengsk.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-terran-troopermengsk.dds"/>
     </CButton>
-    <CButton id="UnknownButton128">
-        <Icon value="Assets\Textures\btn-upgrade-protoss-shieldslevel3.dds"/>
+    <CButton id="ShieldOvercharge">
+        <Icon value="Assets\Textures\btn-ability-spearofadun-shieldovercharge.dds"/>
     </CButton>
     <CButton id="CallOfTheVoid">
         <Icon value="Assets\Textures\voidrifts_coop.dds"/>

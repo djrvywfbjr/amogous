@@ -2805,6 +2805,10 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Adept5" State="QueuedOrBetter"/>
     </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitAiurSanctumCompleteOnly3215160904">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="AiurSanctum" State="CompleteOnly"/>
+    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitAlexQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Alex" State="QueuedOrBetter"/>
@@ -3229,10 +3233,6 @@
     <CRequirementCountUnit id="CountUnitCyberneticsCore2CompleteOnly3570426006">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="CyberneticsCore2" State="CompleteOnly"/>
-    </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitCyberneticsCore3CompleteOnly3215160904">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="CyberneticsCore3" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitCyberneticsCore4CompleteOnly1115678049">
         <Flags index="TechTreeCheat" value="0"/>
@@ -5808,12 +5808,10 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeCloakingFieldCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="CloakingField" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeCloakingFieldQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="CloakingField" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeClusterBombQueuedOrBetter">
@@ -16696,7 +16694,6 @@
         <OperandArray index="0" value="CountUpgradeBleedingQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeCloakingFieldQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeCloakingFieldQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeClusterBombQueuedOrBetter">

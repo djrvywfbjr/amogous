@@ -1594,6 +1594,22 @@
         <Flags index="Transient" value="1"/>
         <BehaviorArray value="UnknownBehavior50"/>
     </CAbilBehavior>
+    <CAbilEffectTarget id="ShieldOvercharge">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="25"/>
+        </Cost>
+        <TargetFilters value="Visible;Self,Neutral,Enemy,Missile,Dead"/>
+        <Range value="7"/>
+        <Arc value="360"/>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastFilters value="Visible;Self,Neutral,Enemy,Missile,Dead"/>
+        <AutoCastRange value="7"/>
+        <AutoCastValidatorArray value="TargetInCombat"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ShieldOvercharge"/>
+    </CAbilEffectTarget>
     <CAbilEffectInstant id="ShieldUp133622">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ShieldUp103622"/>
@@ -36412,47 +36428,47 @@
         </InfoArray>
         <InfoArray index="Train2" Time="30">
             <Button DefaultButtonFace="ZealotAiur2"/>
-            <Unit value="ZealotAiur2"/>
+            <Unit value="AiurGuard"/>
         </InfoArray>
         <InfoArray index="Train3" Time="45">
             <Button DefaultButtonFace="HighTemplarAiur3" Requirements="HaveOldFortress222"/>
-            <Unit value="HighTemplar2"/>
+            <Unit value="Shielder"/>
         </InfoArray>
         <InfoArray index="Train4" Time="60">
             <Button DefaultButtonFace="DarkTemplarAiur3" Requirements="HaveOldFortress22"/>
-            <Unit value="ZealotShakuras4"/>
+            <Unit value="Evasionist"/>
         </InfoArray>
         <InfoArray index="Train5" Time="50">
             <Button DefaultButtonFace="SentryAiur3" Requirements="HaveOldFortress22"/>
-            <Unit value="SentryAiur2"/>
+            <Unit value="SolarDetractor"/>
         </InfoArray>
         <InfoArray index="Train6" Time="45">
             <Button DefaultButtonFace="ImmortalAiur2" Requirements="HaveOldFortress222"/>
-            <Unit value="ImmortalAiur2"/>
+            <Unit value="BladeOfAdun"/>
         </InfoArray>
         <InfoArray index="Train7" Time="49">
             <Button DefaultButtonFace="StalkerAiur3"/>
-            <Unit value="Dragoon3"/>
+            <Unit value="AncientDragoon"/>
         </InfoArray>
         <InfoArray index="Train8" Time="55">
             <Button DefaultButtonFace="Carrier3" Requirements="HaveOldFortress32"/>
-            <Unit value="CarrierAiur2"/>
+            <Unit value="Carriership"/>
         </InfoArray>
         <InfoArray index="Train9" Time="90">
             <Button DefaultButtonFace="WarpInReaver2" Requirements="HaveOldFortress32"/>
-            <Unit value="Reaver2"/>
+            <Unit value="Artillery2"/>
         </InfoArray>
         <InfoArray index="Train10" Time="45">
             <Button DefaultButtonFace="PhoenixAiur2"/>
-            <Unit value="PhoenixAiur3"/>
+            <Unit value="Surfer"/>
         </InfoArray>
         <InfoArray index="Train11" Time="65">
             <Button DefaultButtonFace="VoidRayShakuras2" Requirements="HaveOldFortress34"/>
-            <Unit value="PhoenixPurifier2"/>
+            <Unit value="EliteHunter"/>
         </InfoArray>
         <InfoArray index="Train12" Time="70">
             <Button DefaultButtonFace="CarrierAiur5" Requirements="HaveOldFortress33"/>
-            <Unit value="Carrier2"/>
+            <Unit value="Shieldship"/>
         </InfoArray>
         <InfoArray index="Train13" Time="65">
             <Button DefaultButtonFace="Tempest3" Requirements="HaveOldFortress33"/>
@@ -36460,15 +36476,15 @@
         </InfoArray>
         <InfoArray index="Train14" Time="60">
             <Button DefaultButtonFace="Stalker5" Requirements="HaveOldFortress34"/>
-            <Unit value="HighTemplar3"/>
+            <Unit value="ElderTemplar"/>
         </InfoArray>
         <InfoArray index="Train15" Time="60">
             <Button DefaultButtonFace="MothershipCore4" Requirements="HaveOldFortress34"/>
-            <Unit value="MothershipCore3"/>
+            <Unit value="AiurCore"/>
         </InfoArray>
         <InfoArray index="Train16" Time="45">
             <Button DefaultButtonFace="Arbiter2" Requirements="HaveOldFortress33"/>
-            <Unit value="ArbiterMP2"/>
+            <Unit value="JudicatorArbiter"/>
         </InfoArray>
         <Alert value="TrainWorkerComplete"/>
     </CAbilTrain>
@@ -43201,7 +43217,7 @@
             <Cooldown Location="Player"/>
             <Button DefaultButtonFace="Nexus10" Requirements=""/>
         </InfoArray>
-        <InfoArray index="Build9" Unit="ShieldBattery5">
+        <InfoArray index="Build9" Unit="ShieldOvercharger">
             <Resource index="Minerals" value="100"/>
             <Button DefaultButtonFace="ShieldBattery13" Requirements="HaveOldFortress222"/>
         </InfoArray>
@@ -45350,7 +45366,7 @@
         <InfoArray index="Build8" Unit="PhotonCannon3" Time="50">
             <Button DefaultButtonFace="PhotonCannon5" Requirements="HaveOldFortress22"/>
         </InfoArray>
-        <InfoArray index="Build9" Unit="ShieldBattery5">
+        <InfoArray index="Build9" Unit="ShieldOvercharger">
             <Button DefaultButtonFace="ShieldBattery" Requirements="HaveOldFortress222"/>
         </InfoArray>
         <InfoArray index="Build10" Unit="Stargate3" Time="70">
@@ -45368,7 +45384,7 @@
         <InfoArray index="Build14" Unit="RoboticsFacility2">
             <Button DefaultButtonFace="RoboticsFacility5" Requirements="HaveOldFortress2222"/>
         </InfoArray>
-        <InfoArray index="Build15" Unit="CyberneticsCore3" Time="28">
+        <InfoArray index="Build15" Unit="AiurSanctum" Time="28">
             <Button DefaultButtonFace="CyberneticsCore6" Requirements="HaveOldFortress2"/>
         </InfoArray>
         <InfoArray index="Build16" Unit="PhotonCannon8">
@@ -59975,7 +59991,7 @@
         </InfoArray>
         <InfoArray index="Train16" Time="10" Effect="VoidRiftTrainSet2">
             <Button DefaultButtonFace="Phoenix"/>
-            <Unit value="PhoenixAiur3"/>
+            <Unit value="Surfer"/>
         </InfoArray>
         <InfoArray index="Train17" Time="6" Effect="VoidRiftTrainSet2">
             <Button DefaultButtonFace="Oracle"/>

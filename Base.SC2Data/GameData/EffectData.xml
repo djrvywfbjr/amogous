@@ -5646,6 +5646,9 @@
         <Death value="Blast"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectDamage>
+    <CEffectApplyBehavior id="ShieldOvercharge">
+        <ValidatorArray index="0" value="NoShieldOvercharge"/>
+    </CEffectApplyBehavior>
     <CEffectApplyBehavior id="ShieldBattaryAB">
         <EditorCategories value=""/>
     </CEffectApplyBehavior>
@@ -13272,7 +13275,7 @@
         <EditorCategories value="Race:Terran"/>
         <WhichLocation Value="TargetUnitOrPoint"/>
         <SpawnEffect value="CalldownMULECreateSet42324"/>
-        <SpawnUnit value="ZealotAiur2"/>
+        <SpawnUnit value="AiurGuard"/>
     </CEffectCreateUnit>
     <CEffectCreateUnit id="CalldownMULECreateUnit42325">
         <ValidatorArray value="MULETargetCheck"/>
@@ -57397,7 +57400,7 @@
     </CEffectCreateUnit>
     <CEffectCreateUnit id="PureBornDeathCReateFanatic3222222425">
         <EditorCategories value=""/>
-        <SpawnUnit value="ZealotAiur2"/>
+        <SpawnUnit value="AiurGuard"/>
         <SpawnCount value="3"/>
     </CEffectCreateUnit>
     <CEffectCreateUnit id="PureBornDeathCReateFanatic3222222426">
@@ -57435,7 +57438,7 @@
     </CEffectCreateUnit>
     <CEffectCreateUnit id="PureBornDeathCReateFanatic322222244">
         <EditorCategories value=""/>
-        <SpawnUnit value="SentryAiur2"/>
+        <SpawnUnit value="SolarDetractor"/>
         <SpawnCount value="3"/>
     </CEffectCreateUnit>
     <CEffectCreateUnit id="PureBornDeathCReateFanatic322222245">

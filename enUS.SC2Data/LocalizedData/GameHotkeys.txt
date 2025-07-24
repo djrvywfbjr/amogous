@@ -4272,6 +4272,7 @@ Button/Hotkey/ShieldBattery8=B
 Button/Hotkey/ShieldBattery9=B
 Button/Hotkey/ShieldBatteryRecharge2=R
 Button/Hotkey/ShieldEmitter=D
+Button/Hotkey/ShieldOvercharge=R
 Button/Hotkey/SiegeMode2=D
 Button/Hotkey/SiegeMode3=E
 Button/Hotkey/SiegeMode4=E

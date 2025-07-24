@@ -881,6 +881,9 @@
     <CValidatorUnitType id="IsZergling23">
         <Value value="Mutalisk5"/>
     </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="NoShieldOvercharge">
+        <Behavior value="ShieldOvercharge"/>
+    </CValidatorUnitCompareBehaviorCount>
     <CValidatorCombine id="RefugeeValidatorAnyWorkerOrScientist">
         <CombineArray value="RequiresCivilian2"/>
         <CombineArray value="RequiresCivilian24"/>
