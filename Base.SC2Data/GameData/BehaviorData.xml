@@ -2019,6 +2019,7 @@
             <VitalMaxArray index="Shields" value="100"/>
             <VitalRegenArray index="Shields" value="5"/>
         </Modification>
+	</CBehaviorBuff>
     <CBehaviorBuff id="Shield23">
         <BehaviorFlags index="Permanent" value="1"/>
         <InfoFlags index="Hidden" value="1"/>
