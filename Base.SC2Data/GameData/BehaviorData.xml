@@ -1459,9 +1459,9 @@
         <InfoIcon value="Assets\Textures\btn-ability-spearofadun-shieldovercharge.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <TimeScaleSource Value="Global"/>
-        <Duration value="60"/>
+        <Duration value="30"/>
         <Modification>
-            <VitalMaxArray index="Shields" value="200"/>
+            <VitalMaxArray index="Shields" value="100"/>
             <VitalRegenArray index="Shields" value="5"/>
         </Modification>
     </CBehaviorBuff>
