@@ -851,7 +851,7 @@
         <DamagePoint value="0.95"/>
         <Effect value="BrutalizeCreatePersistent3"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="CenturionWarpBlades6">
+    <CWeaponLegacy id="WarpingBlades">
         <Name value="Weapon/Name/Centurion"/>
         <EditorCategories value="Race:Protoss"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>

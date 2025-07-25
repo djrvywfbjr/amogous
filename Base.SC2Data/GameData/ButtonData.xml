@@ -18338,8 +18338,8 @@
         <AlertIcon value="Assets\Textures\btn-ability-terran-heal-color.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
-    <CButton id="MedicHeal323">
-        <Icon value="Assets\Textures\btn-ability-spearofadun-shieldovercharge.dds"/>
+    <CButton id="ShroudofTwilight">
+        <Icon value="Assets\Textures\Talent-Vorazun-Level01-ShadowStalk.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-heal-color.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
@@ -32579,6 +32579,11 @@
     </CButton>
     <CButton id="VoidPhoenixPhasingArmor3222">
         <Icon value="Assets\Textures\btn-ability-stetmann-infestorrecharge.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Ability-Protoss-PhasingArmor.dds"/>
+        <HotkeyAlias value="VoidPhoenixPhasingArmor"/>
+    </CButton>
+    <CButton id="PhasingArmor">
+        <Icon value="Assets\Textures\btn-ability-protoss-veilofshadowsvorazun.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Ability-Protoss-PhasingArmor.dds"/>
         <HotkeyAlias value="VoidPhoenixPhasingArmor"/>
     </CButton>

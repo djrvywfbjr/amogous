@@ -32777,7 +32777,6 @@
     </CAbilEffectTarget>
     <CAbilEffectTarget id="ShroudofTwilight">
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Effect index="0" value="ApplyMedDrone23"/>
         <Cost>
             <Vital index="Shields" value="100"/>
             <Charge Link="Abil/MedDrone"/>
@@ -32789,7 +32788,7 @@
         <AutoCastAcquireLevel value="Defensive"/>
         <AutoCastFilters value="Visible;Neutral,Enemy,Structure"/>
         <AutoCastRange value="5"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="MedicHeal323"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ShroudofTwilight"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="MedDrone3">
         <EditorCategories value="AbilityorEffectType:Units"/>

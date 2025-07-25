@@ -5091,9 +5091,8 @@
         <EditorCategories value=""/>
         <Behavior value="HighEnergyRegeneration352222"/>
     </CEffectApplyBehavior>
-    <CEffectApplyBehavior id="ApplyMedDrone23">
+    <CEffectApplyBehavior id="ShroudofTwilight">
         <EditorCategories value=""/>
-        <Behavior value="Detector1023"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="ApplyMedDrone3">
         <EditorCategories value=""/>
@@ -6960,7 +6959,7 @@
     <CEffectDamage id="PsiBlades13" parent="DU_WEAP">
         <ValidatorArray value="NotHidden"/>
         <EditorCategories value="Race:Protoss"/>
-        <Amount value="12"/>
+        <Amount value="8"/>
         <Death value="Eviscerate"/>
     </CEffectDamage>
     <CEffectDamage id="PsiBlades14" parent="DU_WEAP">

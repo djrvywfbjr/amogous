@@ -4063,12 +4063,15 @@
             <LifeArmorBonus value="3"/>
         </Modification>
     </CBehaviorBuff>
-    <CBehaviorBuff id="Detector1023" parent="Detector">
+    <CBehaviorBuff id="ShroudofTwilight">
         <Alignment value="Positive"/>
-        <InfoIcon value="Assets\Textures\btn-ability-protoss-phaseshift2.dds"/>
-        <Duration value="21"/>
-        <DamageResponse ModifyFraction="0.4">
-            <Chance value="1"/>
+        <InfoIcon value="Assets\Textures\Talent-Vorazun-Level01-ShadowStalk.dds"/>
+        <Duration value="30"/>
+        <Modification>
+            <StateFlags index="Cloak" value="1"/>
+        </Modification>
+        <DamageResponse ClampMaximum="0" Evade="1" ModifyMinimumDamage="1">
+            <Chance value="0.3"/>
         </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="Detector1222" parent="Detector">

@@ -3420,7 +3420,6 @@ Behavior/Name/DehakaHealSmall82=Psi-Empowered
 Behavior/Name/Detector102=Detector
 Behavior/Name/Detector1022=Shadow Veil
 Behavior/Name/Detector10224=Hallucinator
-Behavior/Name/Detector1023=Damage Reduction
 Behavior/Name/DevastatingShotExtraDamage2=Corrosive Acid
 Behavior/Name/DevastatingShotExtraDamage3=Corrosive Blast Copy
 Behavior/Name/DevastatingShotExtraDamage32=EMP Missile
@@ -4142,6 +4141,7 @@ Behavior/Name/ShieldingEngine939=Pure Energy Form Level 1
 Behavior/Name/ShieldingEngine94=Escape
 Behavior/Name/ShieldingEngine942=Escape Level 2
 Behavior/Name/ShieldingEngine9422=Escape Level 3
+Behavior/Name/ShroudofTwilight=Shroud of Twilight
 Behavior/Name/Slow2=Downtime
 Behavior/Name/Slow22=Enslaved
 Behavior/Name/Slow222=Slow Impacted
@@ -4717,7 +4717,6 @@ Behavior/Tooltip/DehakaHealSmall82=This unit is faster.
 Behavior/Tooltip/Detector102=This unit can detect cloaked or burrowed units within its sight range.
 Behavior/Tooltip/Detector1022=This unit is cloaked and has extra armor for some time.
 Behavior/Tooltip/Detector10224=This unit has a 20% chance of ignoring damage.
-Behavior/Tooltip/Detector1023=This unit has increased shield and life armor.
 Behavior/Tooltip/DevastatingShotExtraDamage2=Is slower.
 Behavior/Tooltip/DevastatingShotExtraDamage3=Looses all armor.
 Behavior/Tooltip/DevastatingShotExtraDamage32=Looses all armor.
@@ -5263,6 +5262,7 @@ Behavior/Tooltip/ShieldOfTassadar=Healing received is increased.
 Behavior/Tooltip/ShieldOfZeratul=Shield regeneration is  increased.
 Behavior/Tooltip/ShieldOvercharge=This unit or structure is absorbing damage.
 Behavior/Tooltip/ShieldingEngine938=At the end of the timer, owning player team will win.
+Behavior/Tooltip/ShroudofTwilight=Targeted unit gains cloak and a 30% chance to dodge incoming damage.
 Behavior/Tooltip/Slow2=Target's movement and attack speed is reduced for a short period of time.
 Behavior/Tooltip/Slow22=Target's movement and attack speed is reduced for a short period of time.
 Behavior/Tooltip/Slow222=Target's movement and attack speed is reduced for a short period of time.
@@ -8608,7 +8608,6 @@ Button/Name/MedicHeal3222=Lazarus Liquid
 Button/Name/MedicHeal3223=Solar Battery
 Button/Name/MedicHeal3224=Hallucinator
 Button/Name/MedicHeal3225=Sacrifice
-Button/Name/MedicHeal323=Shield Of Tassadar
 Button/Name/MedicHeal33=Launch Restoring Pack
 Button/Name/MedicHeal332=Launch Valor Of Dominion
 Button/Name/MedicHeal3322=Celestial Energy
@@ -9204,6 +9203,7 @@ Button/Name/PhaseCannon94322=Summon Leech Hive Level 3
 Button/Name/PhaseCannon943222=Summon Leech Hive Level 4
 Button/Name/PhaseMineBlast2=Launch Void Spheres
 Button/Name/PhaseMineBlast3=Amon's Barrage
+Button/Name/PhasingArmor=Phasing Armor
 Button/Name/PhasingMode2=Stationary Mode
 Button/Name/PhasingMode22=Set All Pieces Together
 Button/Name/PhasingMode222=Rebuild Void Seeker
@@ -10126,6 +10126,7 @@ Button/Name/ShieldofTassadar=Shield of Tassadar
 Button/Name/ShieldofZeratul=Shield of Zeratul
 Button/Name/ShredderPayload=Shredder Payload
 Button/Name/ShrikeTurret2=Hidden Suprise
+Button/Name/ShroudofTwilight=Shroud of Twilight
 Button/Name/SiegeMode2=Siege Mode
 Button/Name/SiegeMode3=Siege Mode
 Button/Name/SiegeMode4=Artillery Mode
@@ -16181,7 +16182,6 @@ Button/Tooltip/MedicHeal3222=Targeted unit gains alot of healt and shield regene
 Button/Tooltip/MedicHeal3223=Targeted unit becomes a power field.
 Button/Tooltip/MedicHeal3224=Targeted unit gets a 20% chance to not take damage.
 Button/Tooltip/MedicHeal3225=Completely kill the targeted unit, but all other units gain 100% speed and damage for 30 seconds.<n/><c val="FF0000">The blood is on your hands. Nothing can return to being what it used to.</c><n/>
-Button/Tooltip/MedicHeal323=Targeted unit gains 60% damage reduction against any source.
 Button/Tooltip/MedicHeal33=Drops down supplies including fuel and energy to the targeted unit, healing it completely after 3 seconds.<n/>Auto-cast will target units with 1% or less energy.
 Button/Tooltip/MedicHeal332=Drop down a supply pack, granting epxerience.<n/>
 Button/Tooltip/MedicHeal3322=Target gains 40 expirience instantly.
@@ -16967,6 +16967,7 @@ Button/Tooltip/PhaseCannon943222=Summon a Leech Hive, that will send healing Sup
 Button/Tooltip/PhaseMine=Uses a laser to shoot down enemy missiles.  <n/>Cannot target special attacks. <n/>Times out after <d ref="Behavior,PointDefenseDroneTimedLife,Duration"/> seconds.<n/><n/><c val="f078ff">Each shot consumes 10 energy.</c>
 Button/Tooltip/PhaseMineBlast2=Launch 10 Void Spheres at target, each one dealing 10 damage in an area.
 Button/Tooltip/PhaseMineBlast3=After 4 second charge up, barrage target with 20 missiles, each dealing damage in an area.
+Button/Tooltip/PhasingArmor=Prevents the Evasionist from taking damage for <d ref="Behavior,VoidPhoenixPhasingArmorBuff,Duration"/> seconds after being attacked. Cannot occur more than once every <d ref="Behavior,VoidPhoenixPhasingArmor,DamageResponse.Cost.Cooldown.TimeUse"/> seconds.
 Button/Tooltip/PhasingMode2=Transforms the Stationary Mode.
 Button/Tooltip/PhasingMode22=Gather all main parts of the Void Seeker.
 Button/Tooltip/PhasingMode222=Rebuild the Void Seeker.
@@ -17371,7 +17372,7 @@ Button/Tooltip/Pylon8=Provides supply.<n/>Supply allows you to warp in more unit
 Button/Tooltip/Pylon9=Provides supply.<n/>Supply allows you to warp in more units.<n/>Creates power for nearby structures.
 Button/Tooltip/Pylon92=Provides supply.<n/>Supply allows you to warp in more units.<n/>Creates power for nearby structures.
 Button/Tooltip/Pyloneeeeeeeeeeeeeee9=Is warped in instantly with full hp and shields, but cannot provide powerfield and supplies for 30 seconds.<n/>Don't you know what a pylon does?
-Button/Tooltip/QuantumShift=Target units are shifted out of existence for <d time=15/>  seconds. Units are invulnerable, and cannot use abilities or attack.
+Button/Tooltip/QuantumShift=Target units are shifted out of existence for <d time="15"/>. Units are invulnerable, and cannot use abilities or attack.
 Button/Tooltip/Queen2=Support unit. Can use Spawn Creep Tumor and Rapid Transfusion.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
 Button/Tooltip/Queen22=Support unit. After hunting pure born for years in warpspace, is excellent against many types of units.
 Button/Tooltip/Queen3=Support unit. Can use Spawn Creep Tumor and Rapid Transfusion.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
@@ -18135,6 +18136,7 @@ Button/Tooltip/ShieldofZeratul=Creates a range 4 aura that increases shield rege
 Button/Tooltip/ShredderPayload=Attacks during Sky Watch deal 5 additional damage per point of armor.<n/><n/>"Commissioned" from ATVX, smart shrapnel missiels represent the peak of anti capital warfare, punching trough weak points in armor and driving neosteel shards deeper into difficult to reach areas, making immediate field repairs and healing almost impossible.
 Button/Tooltip/Shrike=Flying suicide unit. Scourge hatch in pairs from a single Larva.<n/><n/><c val="ffff8a">Can attack air units.</c>
 Button/Tooltip/ShrikeTurret2=Flaming Turrets are invisible when not attacking and regenerate 10 life per second.
+Button/Tooltip/ShroudofTwilight=Targeted unit gains cloak and a 30% chance to dodge incoming damage for <d time="30"/>.
 Button/Tooltip/SiegeBlimp=Air transport. Heals nearby biological units. Can use Afterburners.
 Button/Tooltip/SiegeBreaker2=Heavy tank. Long-range artillery in Siege Mode.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/SiegeBreaker3=Heavy tank. Long-range artillery in Siege Mode.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
@@ -21235,7 +21237,6 @@ Effect/Name/ApplyMedDrone224=Apply Med Drone Copy Copy Copy 3
 Effect/Name/ApplyMedDrone225=Apply Med Drone Copy Copy Copy 4
 Effect/Name/ApplyMedDrone226=Paramilitary CAMA Warp In
 Effect/Name/ApplyMedDrone2262=Paramilitary CAMA Warp In
-Effect/Name/ApplyMedDrone23=Apply Med Drone Copy
 Effect/Name/ApplyMedDrone3=Apply Med Drone Copy 2
 Effect/Name/ApplyMedDrone32=Apply Phantom Regen
 Effect/Name/ApplyMedDrone33=Apply Med Drone Copy 3
@@ -30442,6 +30443,7 @@ Effect/Name/ShockDDamage2=ShockD Damage Copy
 Effect/Name/ShockDDamage3=ShockD Damage
 Effect/Name/ShockDDamage4=ShockD Damage
 Effect/Name/ShrikeTurretDamage2=Shrike Turret (Damage)
+Effect/Name/ShroudofTwilight=Shroud of Twilight
 Effect/Name/SlivanPukeCP2=Slivan Puke CP Copy
 Effect/Name/SlivanPukeImpact2=Slivan Puke Impact Copy
 Effect/Name/SlivanPukeInitialSet2=Slivan Puke Initial Set Copy
@@ -39632,6 +39634,7 @@ Weapon/Name/C10CanisterRifle82=C-19 Canister Rifle Copy
 Weapon/Name/C10CanisterRifle9=C-8 Rifle
 Weapon/Name/C10CanisterRifle92=C-9 Immolation Round Rifle
 Weapon/Name/C10CanisterRifle93=C-8 Rifle
+Weapon/Name/Centurion=Warping Blades
 Weapon/Name/Centurion321312312=Dust Blades
 Weapon/Name/Chomp2=Apex Claws
 Weapon/Name/Chomp22=Apex Claws
