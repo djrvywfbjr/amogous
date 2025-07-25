@@ -2187,7 +2187,7 @@
         <EffectArray Reference="Unit,ElderTemplar,ShieldArmor" Value="2"/>
         <EffectArray Reference="Unit,BladeOfAdun,ShieldArmor" Value="2"/>
         <EffectArray Reference="Unit,AncientDragoon,ShieldArmor" Value="2"/>
-        <EffectArray Reference="Unit,Artillery2,ShieldArmor" Value="2"/>
+        <EffectArray Reference="Unit,MobileSupercapacitor,ShieldArmor" Value="2"/>
         <EffectArray Reference="Unit,Carriership,ShieldArmor" Value="2"/>
         <EffectArray Reference="Unit,Surfer,ShieldArmor" Value="2"/>
         <EffectArray Reference="Unit,EliteHunter,ShieldArmor" Value="2"/>
@@ -2216,7 +2216,7 @@
         <EffectArray Operation="AddBaseMultiply" Reference="Unit,ElderTemplar,ShieldsMax" Value="0.15"/>
         <EffectArray Operation="AddBaseMultiply" Reference="Unit,BladeOfAdun,ShieldsMax" Value="0.15"/>
         <EffectArray Operation="AddBaseMultiply" Reference="Unit,AncientDragoon,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Artillery2,ShieldsMax" Value="0.15"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,MobileSupercapacitor,ShieldsMax" Value="0.15"/>
         <EffectArray Operation="AddBaseMultiply" Reference="Unit,Carriership,ShieldsMax" Value="0.15"/>
         <EffectArray Operation="AddBaseMultiply" Reference="Unit,Surfer,ShieldsMax" Value="0.15"/>
         <EffectArray Operation="AddBaseMultiply" Reference="Unit,EliteHunter,ShieldsMax" Value="0.15"/>
@@ -2245,7 +2245,7 @@
         <EffectArray Operation="AddBaseMultiply" Reference="Unit,ElderTemplar,ShieldsStart" Value="0.15"/>
         <EffectArray Operation="AddBaseMultiply" Reference="Unit,BladeOfAdun,ShieldsStart" Value="0.15"/>
         <EffectArray Operation="AddBaseMultiply" Reference="Unit,AncientDragoon,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Artillery2,ShieldsStart" Value="0.15"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,MobileSupercapacitor,ShieldsStart" Value="0.15"/>
         <EffectArray Operation="AddBaseMultiply" Reference="Unit,Carriership,ShieldsStart" Value="0.15"/>
         <EffectArray Operation="AddBaseMultiply" Reference="Unit,Surfer,ShieldsStart" Value="0.15"/>
         <EffectArray Operation="AddBaseMultiply" Reference="Unit,EliteHunter,ShieldsStart" Value="0.15"/>
@@ -2276,7 +2276,7 @@
         <EffectArray Operation="Subtract" Reference="Unit,ElderTemplar,ShieldRegenDelay" Value="3.000000"/>
         <EffectArray Operation="Subtract" Reference="Unit,BladeOfAdun,ShieldRegenDelay" Value="3.000000"/>
         <EffectArray Operation="Subtract" Reference="Unit,AncientDragoon,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,Artillery2,ShieldRegenDelay" Value="3.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,MobileSupercapacitor,ShieldRegenDelay" Value="3.000000"/>
         <EffectArray Operation="Subtract" Reference="Unit,Carriership,ShieldRegenDelay" Value="3.000000"/>
         <EffectArray Operation="Subtract" Reference="Unit,Surfer,ShieldRegenDelay" Value="3.000000"/>
         <EffectArray Operation="Subtract" Reference="Unit,EliteHunter,ShieldRegenDelay" Value="3.000000"/>
@@ -2305,7 +2305,7 @@
         <EffectArray Reference="Unit,ElderTemplar,ShieldRegenRate" Value="1.000000"/>
         <EffectArray Reference="Unit,BladeOfAdun,ShieldRegenRate" Value="1.000000"/>
         <EffectArray Reference="Unit,AncientDragoon,ShieldRegenRate" Value="1.000000"/>
-        <EffectArray Reference="Unit,Artillery2,ShieldRegenRate" Value="1.000000"/>
+        <EffectArray Reference="Unit,MobileSupercapacitor,ShieldRegenRate" Value="1.000000"/>
         <EffectArray Reference="Unit,Carriership,ShieldRegenRate" Value="1.000000"/>
         <EffectArray Reference="Unit,Surfer,ShieldRegenRate" Value="1.000000"/>
         <EffectArray Reference="Unit,EliteHunter,ShieldRegenRate" Value="1.000000"/>
@@ -2336,7 +2336,7 @@
         <EffectArray Reference="Unit,ElderTemplar,Sight" Value="6"/>
         <EffectArray Reference="Unit,BladeOfAdun,Sight" Value="6"/>
         <EffectArray Reference="Unit,AncientDragoon,Sight" Value="6"/>
-        <EffectArray Reference="Unit,Artillery2,Sight" Value="6"/>
+        <EffectArray Reference="Unit,MobileSupercapacitor,Sight" Value="6"/>
         <EffectArray Reference="Unit,Carriership,Sight" Value="6"/>
         <EffectArray Reference="Unit,Surfer,Sight" Value="6"/>
         <EffectArray Reference="Unit,EliteHunter,Sight" Value="6"/>
@@ -2367,7 +2367,7 @@
         <EffectArray Reference="Unit,ElderTemplar,Speed" Value="0.750000"/>
         <EffectArray Reference="Unit,BladeOfAdun,Speed" Value="0.750000"/>
         <EffectArray Reference="Unit,AncientDragoon,Speed" Value="0.750000"/>
-        <EffectArray Reference="Unit,Artillery2,Speed" Value="0.750000"/>
+        <EffectArray Reference="Unit,MobileSupercapacitor,Speed" Value="0.750000"/>
         <EffectArray Reference="Unit,Carriership,Speed" Value="0.750000"/>
         <EffectArray Reference="Unit,Surfer,Speed" Value="0.750000"/>
         <EffectArray Reference="Unit,EliteHunter,Speed" Value="0.750000"/>

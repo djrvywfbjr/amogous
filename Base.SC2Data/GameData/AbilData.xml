@@ -1284,6 +1284,19 @@
         <CmdButtonArray index="Execute" DefaultButtonFace="Irradiate22352"/>
         <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
     </CAbilEffectTarget>
+    <CAbilEffectTarget id="PlasmaSurge">
+        <Alignment value="Negative"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="50"/>
+            <Cooldown TimeUse="5"/>
+        </Cost>
+        <Range value="10"/>
+        <CastOutroTime value="0.5"/>
+        <CursorEffect value="PlasmaSurge"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PlasmaSurge"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="LaunchPsionicMissile354">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ColossusTaldarimLM254"/>
@@ -30859,25 +30872,21 @@
         <ExternalAngle value="135"/>
         <MaxCount value="2"/>
     </CAbilArmMagazine>
-    <CAbilEffectTarget id="KerriganVoidApocalypse2">
+    <CAbilEffectTarget id="DisurptionBlast">
         <Alignment value="Negative"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
-        <Effect index="0" value="KerriganVoidApocalypseInitialSet2"/>
         <Cost>
+            <Vital index="Energy" value="150"/>
             <Charge Link="Abil/KerriganVoidApocalypse"/>
-            <Cooldown>
-                <Link value="KerriganVoidApocalypse"/>
-                <Location value="Unit"/>
-                <TimeStart value="120"/>
-                <TimeUse value="120"/>
-            </Cooldown>
+            <Cooldown Link="KerriganVoidApocalypse" Location="Unit" TimeUse="30"/>
         </Cost>
-        <Range value="20"/>
-        <PrepTime value="6"/>
+        <Range value="15"/>
+        <PrepTime value="3"/>
         <ShowProgressArray index="Prep" value="1"/>
         <CursorEffect value="KerriganVoidApocalypse"/>
+        <AINotifyEffect value="DisurptionBlastSA"/>
         <ProgressButtonArray index="Prep" value="KerriganVoidApocalypse"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="KerriganVoidApocalypse2"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="DisurptionBlast"/>
         <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="KerriganVoidApocalypse22">
@@ -37045,7 +37054,7 @@
         </InfoArray>
         <InfoArray index="Train9" Time="90">
             <Button DefaultButtonFace="WarpInReaver2" Requirements="HaveOldFortress32"/>
-            <Unit value="Artillery2"/>
+            <Unit value="MobileSupercapacitor"/>
         </InfoArray>
         <InfoArray index="Train10" Time="45">
             <Button DefaultButtonFace="PhoenixAiur2"/>

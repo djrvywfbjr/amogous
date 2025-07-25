@@ -8575,12 +8575,13 @@
         <RandomDelayMin value="0"/>
         <RandomDelayMax value="0"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="PooPoo">
+    <CWeaponLegacy id="SanitizationBeam">
         <Name value="Weapon/Name/Energizer"/>
         <EditorCategories value="Race:Protoss"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
         <DisplayEffect value="SanitizationBeamDamage2"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="11"/>
         <TeleportResetRange value="0"/>
         <Period value="1"/>
         <Effect value="SanitizationBeam2"/>

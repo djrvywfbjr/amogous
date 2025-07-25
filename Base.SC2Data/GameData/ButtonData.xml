@@ -87,6 +87,11 @@
         <AlertIcon value="Assets\Textures\btn-ability-kerrigan-wildmutation.dds"/>
         <EditorCategories value="Race:Zerg"/>
     </CButton>
+    <CButton id="PlasmaSurge">
+        <Icon value="Assets\Textures\btn-shield-protoss-plasmashields.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <TintRacially value="1"/>
+    </CButton>
     <CButton id="ShieldofTassadar">
         <Icon value="Assets\Textures\BTN-Upgrade-Protoss-ShieldsLevel1.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-shieldbattery-color.dds"/>
@@ -15808,7 +15813,7 @@
         <EditorCategories value="Race:Zerg"/>
         <HotkeyAlias value="KerriganEpilogue03QuantumRay"/>
     </CButton>
-    <CButton id="KerriganVoidApocalypse2">
+    <CButton id="DisurptionBlast">
         <Icon value="Assets\Textures\btn-ability-protoss-carrierrepairdrones.dds"/>
         <EditorCategories value="Race:Zerg"/>
     </CButton>

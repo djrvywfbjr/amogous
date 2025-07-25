@@ -1632,6 +1632,18 @@
         <PeriodicPeriodArray value="0.0625"/>
         <PeriodicPeriodArray value="0.0625"/>
     </CEffectCreatePersistent>
+    <CEffectModifyUnit id="PlasmaSurgeModifyUnit">
+        <EditorCategories value="Race:Protoss"/>
+        <VitalArray index="Shields">
+            <Change value="50"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectEnumArea id="PlasmaSurge">
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <SearchFilters value="Visible;Neutral,Enemy,Structure,Missile,Item,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="3" Effect="PlasmaSurgeModifyUnit"/>
+    </CEffectEnumArea>
     <CEffectEnumArea id="PhaseScatterersSearch">
         <EditorCategories value="Race:Protoss"/>
         <IncludeArray Effect="ImmortalTaldarimWeaponRandomLarge" Value="Target"/>
@@ -36593,11 +36605,11 @@
         <EditorCategories value="Race:Zerg"/>
         <Behavior value="KerriganPsiStrikeDamaged3"/>
     </CEffectApplyBehavior>
-    <CEffectEnumArea id="KerriganVoidApocalypse2">
+    <CEffectEnumArea id="DisurptionBlastSA">
         <EditorCategories value="Race:Zerg"/>
         <ImpactLocation Value="TargetPoint"/>
-        <SearchFilters value="-;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <AreaArray Radius="8" Effect="KerriganVoidApocalypseDamage2"/>
+        <SearchFilters value="-;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="8" Effect="DisurptionBlastAB"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="KerriganVoidApocalypse22">
         <EditorCategories value="Race:Zerg"/>
@@ -36629,15 +36641,12 @@
         <SearchFilters value="-;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AreaArray Radius="8" Effect="KerriganVoidApocalypseDamage2322"/>
     </CEffectEnumArea>
-    <CEffectDamage id="KerriganVoidApocalypseDamage2" parent="DU_WEAP">
+    <CEffectApplyBehavior id="DisurptionBlastAB">
         <EditorCategories value="Race:Zerg"/>
-        <AttributeBonus index="Structure" value="400"/>
-        <ArmorReduction value="0"/>
-        <Kind value="Spell"/>
-        <KindSplash value="Splash"/>
-        <Amount value="200"/>
-        <Death value="Fire"/>
-    </CEffectDamage>
+        <Behavior value="DehakaLeapStun"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="2"/>
+    </CEffectApplyBehavior>
     <CEffectDamage id="KerriganVoidApocalypseDamage22" parent="DU_WEAP">
         <EditorCategories value="Race:Zerg"/>
         <ArmorReduction value="0"/>
@@ -36681,8 +36690,8 @@
         <Amount value="200"/>
         <Death value="Fire"/>
     </CEffectDamage>
-    <CEffectSet id="KerriganVoidApocalypseInitialSet2">
-        <EffectArray value="KerriganVoidApocalypse2"/>
+    <CEffectSet id="DisurptionBlast">
+        <EffectArray value="DisurptionBlastSA"/>
         <TargetLocationType value="UnitOrPoint"/>
     </CEffectSet>
     <CEffectSet id="KerriganVoidApocalypseInitialSet22">
