@@ -1584,6 +1584,60 @@
         <EditorCategories value="Race:Zerg"/>
         <Behavior value="BanelingTimedLifeHiddenBuff"/>
     </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="ImmortalTaldarimMissileSpeedStackRB6">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="ImmortalTaldarimMissileSpeedStack"/>
+        <Count value="16"/>
+    </CEffectRemoveBehavior>
+    <CEffectDamage id="ImmortalTaldarimWeaponDamage6" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:Protoss"/>
+        <Amount value="6"/>
+    </CEffectDamage>
+    <CEffectSet id="ImmortalTaldarimWeaponDamageSet7">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="ImmortalTaldarimWeaponDamage6"/>
+    </CEffectSet>
+    <CEffectLaunchMissile id="ImmortalTaldarimWeaponLM6">
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <ImpactEffect value="PhaseScatterersSearch"/>
+        <AmmoUnit value="PhaseScattererMissile"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="ImmortalTaldarimWeaponLMNoSearch6">
+        <ValidatorArray value="TargetRadiusLE0Dot125"/>
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactEffect value="ImmortalTaldarimWeaponDamage6"/>
+        <AmmoUnit value="PhaseScattererMissile"/>
+        <Movers Link="ImmortalTaldarimWeaponMover" IfRangeLTE="500"/>
+    </CEffectLaunchMissile>
+    <CEffectSet id="ImmortalTaldarimWeaponLMSet6">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="ImmortalTaldarimWeaponLM6"/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="ImmortalTaldarimWeaponRandomLarge6">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="TargetUnit"/>
+        <InitialEffect value="ImmortalTaldarimWeaponLMNoSearch6"/>
+        <ExpireEffect value="ImmortalTaldarimMissileSpeedStackRB6"/>
+        <FinalEffect value="ImmortalTaldarimMissileSpeedStackRB6"/>
+        <PeriodCount value="4"/>
+        <PeriodicEffectArray value="ImmortalTaldarimWeaponLMSet6"/>
+        <PeriodicOffsetArray value="-1,0,0"/>
+        <PeriodicOffsetArray value="1,0,0"/>
+        <PeriodicOffsetArray value="0,-1,0"/>
+        <PeriodicOffsetArray value="0,1,0"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.0625"/>
+        <PeriodicPeriodArray value="0.0625"/>
+        <PeriodicPeriodArray value="0.0625"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="PhaseScatterersSearch">
+        <EditorCategories value="Race:Protoss"/>
+        <IncludeArray Effect="ImmortalTaldarimWeaponRandomLarge" Value="Target"/>
+        <SearchFilters value="Ground;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="1" Effect="ImmortalTaldarimWeaponDamageSet7"/>
+    </CEffectEnumArea>
     <CEffectCreateUnit id="InfestedTerransCreateEgg32">
         <EditorCategories value="Race:Zerg"/>
         <WhichLocation Value="TargetPoint"/>

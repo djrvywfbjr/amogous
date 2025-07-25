@@ -982,6 +982,16 @@
     <CWeaponLegacy id="HybridNemesisWeapon">
         <Period value="0.7"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="PhaseScatterers">
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="ImmortalTaldarimWeaponDamage6"/>
+        <DisplayAttackCount value="4"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="3"/>
+        <Period value="2.5"/>
+        <Effect value="ImmortalTaldarimWeaponRandomLarge6"/>
+    </CWeaponLegacy>
     <CWeaponStrafe id="InterceptorBeam15">
         <EditorCategories value="Race:Protoss"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
@@ -8389,7 +8399,7 @@
         <Period value="1.87"/>
         <Effect value="ParticleDisruptors5"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="ParticleDisruptors7">
+    <CWeaponLegacy id="SolarDisruptor">
         <EditorCategories value="Race:Protoss"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
         <DisplayEffect value="ParticleDisruptorsU"/>

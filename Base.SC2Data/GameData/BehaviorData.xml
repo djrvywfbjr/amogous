@@ -243,6 +243,16 @@
             </Cost>
         </DamageResponse>
     </CBehaviorBuff>
+    <CBehaviorBuff id="ShieldOfAiur">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-HardenedShields.dds"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="CasterShieldsGE1"/>
+        <DamageResponse ClampMaximum="15" Minimum="15">
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
     <CBehaviorBuff id="HardenedShield723">
         <Alignment value="Positive"/>
         <Cost>
@@ -1802,18 +1812,6 @@
             <Chance value="1"/>
         </DamageResponse>
     </CBehaviorBuff>
-    <CBehaviorBuff id="HardenedShieldImmortalMelee2">
-        <Alignment value="Positive"/>
-        <Cost>
-            <Cooldown Link="Immortal Shield"/>
-        </Cost>
-        <InfoFlags index="Hidden" value="1"/>
-        <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-HardenedShields.dds"/>
-        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
-        <DamageResponse ClampMaximum="15" Minimum="15">
-            <Chance value="1"/>
-        </DamageResponse>
-    </CBehaviorBuff>
     <CBehaviorBuff id="HotG">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Requirements value="UnknownRequirement962"/>
@@ -2019,7 +2017,7 @@
             <VitalMaxArray index="Shields" value="100"/>
             <VitalRegenArray index="Shields" value="5"/>
         </Modification>
-	</CBehaviorBuff>
+    </CBehaviorBuff>
     <CBehaviorBuff id="Shield23">
         <BehaviorFlags index="Permanent" value="1"/>
         <InfoFlags index="Hidden" value="1"/>
@@ -46445,7 +46443,7 @@
         <Modification>
             <VitalRegenArray index="Energy" value="-3"/>
             <WeaponArray Link="Dragoon82"/>
-            <WeaponDisableArray value="ParticleDisruptors7"/>
+            <WeaponDisableArray value="SolarDisruptor"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="UnknownBehavior8">
