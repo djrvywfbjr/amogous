@@ -2327,6 +2327,68 @@
         <EffectArray Reference="Unit,SolarBeacon,ShieldRegenRate" Value="1.000000"/>
         <EffectArray Reference="Unit,PhaseForge,ShieldRegenRate" Value="1.000000"/>
     </CUpgrade>
+    <CUpgrade id="PsionicSight">
+        <EffectArray Reference="Unit,AiurGuard,Sight" Value="6"/>
+        <EffectArray Reference="Unit,AiurProbe,Sight" Value="6"/>
+        <EffectArray Reference="Unit,Shielder,Sight" Value="6"/>
+        <EffectArray Reference="Unit,SolarDetractor,Sight" Value="6"/>
+        <EffectArray Reference="Unit,Evasionist,Sight" Value="6"/>
+        <EffectArray Reference="Unit,ElderTemplar,Sight" Value="6"/>
+        <EffectArray Reference="Unit,BladeOfAdun,Sight" Value="6"/>
+        <EffectArray Reference="Unit,AncientDragoon,Sight" Value="6"/>
+        <EffectArray Reference="Unit,Artillery2,Sight" Value="6"/>
+        <EffectArray Reference="Unit,Carriership,Sight" Value="6"/>
+        <EffectArray Reference="Unit,Surfer,Sight" Value="6"/>
+        <EffectArray Reference="Unit,EliteHunter,Sight" Value="6"/>
+        <EffectArray Reference="Unit,AiurCore,Sight" Value="6"/>
+        <EffectArray Reference="Unit,JudicatorArbiter,Sight" Value="6"/>
+        <EffectArray Reference="Unit,Shieldship,Sight" Value="6"/>
+        <EffectArray Reference="Unit,Storm,Sight" Value="6"/>
+        <EffectArray Reference="Unit,KhalaiPylon,Sight" Value="6"/>
+        <EffectArray Reference="Unit,OldFortress,Sight" Value="6"/>
+        <EffectArray Reference="Unit,KhalaiGateway,Sight" Value="6"/>
+        <EffectArray Reference="Unit,AiurSanctum,Sight" Value="6"/>
+        <EffectArray Reference="Unit,HighlightCouncil,Sight" Value="6"/>
+        <EffectArray Reference="Unit,ShieldOvercharger,Sight" Value="6"/>
+        <EffectArray Reference="Unit,PhaseCannon,Sight" Value="6"/>
+        <EffectArray Reference="Unit,MechFacility,Sight" Value="6"/>
+        <EffectArray Reference="Unit,PowerBay,Sight" Value="6"/>
+        <EffectArray Reference="Unit,TemplarLibrary,Sight" Value="6"/>
+        <EffectArray Reference="Unit,Planetgate,Sight" Value="6"/>
+        <EffectArray Reference="Unit,SolarBeacon,Sight" Value="6"/>
+        <EffectArray Reference="Unit,PhaseForge,Sight" Value="6"/>
+    </CUpgrade>
+    <CUpgrade id="PsionicMovement">
+        <EffectArray Reference="Unit,AiurGuard,Speed" Value="0.750000"/>
+        <EffectArray Reference="Unit,AiurProbe,Speed" Value="0.750000"/>
+        <EffectArray Reference="Unit,Shielder,Speed" Value="0.750000"/>
+        <EffectArray Reference="Unit,SolarDetractor,Speed" Value="0.750000"/>
+        <EffectArray Reference="Unit,Evasionist,Speed" Value="0.750000"/>
+        <EffectArray Reference="Unit,ElderTemplar,Speed" Value="0.750000"/>
+        <EffectArray Reference="Unit,BladeOfAdun,Speed" Value="0.750000"/>
+        <EffectArray Reference="Unit,AncientDragoon,Speed" Value="0.750000"/>
+        <EffectArray Reference="Unit,Artillery2,Speed" Value="0.750000"/>
+        <EffectArray Reference="Unit,Carriership,Speed" Value="0.750000"/>
+        <EffectArray Reference="Unit,Surfer,Speed" Value="0.750000"/>
+        <EffectArray Reference="Unit,EliteHunter,Speed" Value="0.750000"/>
+        <EffectArray Reference="Unit,AiurCore,Speed" Value="0.750000"/>
+        <EffectArray Reference="Unit,JudicatorArbiter,Speed" Value="0.750000"/>
+        <EffectArray Reference="Unit,Shieldship,Speed" Value="0.750000"/>
+        <EffectArray Reference="Unit,Storm,Speed" Value="0.750000"/>
+        <EffectArray Reference="Unit,KhalaiPylon,Speed" Value="0.750000"/>
+        <EffectArray Reference="Unit,OldFortress,Speed" Value="0.750000"/>
+        <EffectArray Reference="Unit,KhalaiGateway,Speed" Value="0.750000"/>
+        <EffectArray Reference="Unit,AiurSanctum,Speed" Value="0.750000"/>
+        <EffectArray Reference="Unit,HighlightCouncil,Speed" Value="0.750000"/>
+        <EffectArray Reference="Unit,ShieldOvercharger,Speed" Value="0.750000"/>
+        <EffectArray Reference="Unit,PhaseCannon,Speed" Value="0.750000"/>
+        <EffectArray Reference="Unit,MechFacility,Speed" Value="0.750000"/>
+        <EffectArray Reference="Unit,PowerBay,Speed" Value="0.750000"/>
+        <EffectArray Reference="Unit,TemplarLibrary,Speed" Value="0.750000"/>
+        <EffectArray Reference="Unit,Planetgate,Speed" Value="0.750000"/>
+        <EffectArray Reference="Unit,SolarBeacon,Speed" Value="0.750000"/>
+        <EffectArray Reference="Unit,PhaseForge,Speed" Value="0.750000"/>
+    </CUpgrade>
     <CUpgrade id="SwollenGlands">
         <Icon value="Assets\Textures\btn-upgrade-zerg-abathur-abduct.dds"/>
         <EffectArray Reference="Weapon,FerociousSpew2,Range" Value="3"/>
