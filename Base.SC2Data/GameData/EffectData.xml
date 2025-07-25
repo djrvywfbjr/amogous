@@ -2140,6 +2140,11 @@
         <SearchFilters value="Structure;Player,Ally,Neutral,Heroic,Missile,Stasis,Dead,Hidden,Invulnerable,Benign"/>
         <AreaArray Radius="14" Effect="PsiDisruptionApplyBehavior3232"/>
     </CEffectEnumArea>
+    <CEffectEnumArea id="QuantumShift">
+        <EditorCategories value=""/>
+        <ImpactLocation Value="TargetPoint"/>
+        <AreaArray Radius="1" Effect="QuantumShiftAB"/>
+    </CEffectEnumArea>
     <CEffectModifyUnit id="QueenBurstHeal23">
         <EditorCategories value="Race:Zerg"/>
         <VitalArray index="Life">
@@ -44043,15 +44048,15 @@
         <ExcludeArray Value="Target"/>
         <SearchFilters value="Air,Visible;Player,Ally,Neutral"/>
     </CEffectDamage>
-    <CEffectApplyBehavior id="NexusPhaseShiftApplyBehavior2">
+    <CEffectApplyBehavior id="QuantumShiftAB">
         <EditorCategories value="Race:Protoss"/>
-        <Behavior value="NexusPhaseShift2"/>
+        <Behavior value="QuantumShift"/>
     </CEffectApplyBehavior>
     <CEffectEnumArea id="NexusPhaseShiftSearch2">
         <EditorCategories value="Race:Protoss"/>
         <ImpactLocation Value="TargetPoint"/>
         <SearchFilters value="-;Structure,Missile,Item,Dead,Hidden,Invulnerable"/>
-        <AreaArray Radius="1.5" Effect="NexusPhaseShiftApplyBehavior2"/>
+        <AreaArray Radius="1.5" Effect="QuantumShiftAB"/>
         <MinCount value="1"/>
     </CEffectEnumArea>
     <CEffectApplyBehavior id="NovaApolloCloakAB2">

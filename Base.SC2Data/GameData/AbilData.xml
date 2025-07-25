@@ -32775,7 +32775,7 @@
         <CmdButtonArray index="Execute" DefaultButtonFace="MedicHeal3225"/>
         <TargetFilters value="Heroic;Neutral,Enemy,Structure"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="MedDrone23">
+    <CAbilEffectTarget id="ShroudofTwilight">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ApplyMedDrone23"/>
         <Cost>
@@ -36606,9 +36606,8 @@
             <Vital index="Energy" value="0"/>
         </Cost>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="NexusPhaseShift2">
+    <CAbilEffectTarget id="QuantumShift">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
-        <Effect index="0" value="NexusPhaseShiftApplyBehavior2"/>
         <Cost>
             <Vital index="Shields" value="150"/>
             <Charge Link="Abil/AdeptPhaseShiftCancel"/>
@@ -36617,7 +36616,7 @@
         <Range value="10"/>
         <Arc value="360"/>
         <AINotifyEffect value=""/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="NexusPhaseShift2"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="QuantumShift"/>
     </CAbilEffectTarget>
     <CAbilTrain id="NexusTrain2">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>

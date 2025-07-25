@@ -19914,7 +19914,7 @@
         <AlertIcon value="Assets\Textures\btn-building-protoss-nexus.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
-    <CButton id="NexusPhaseShift2">
+    <CButton id="QuantumShift">
         <Icon value="Assets\Textures\btn-ability-protoss-cloakfield-color.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-cloakfield-color.dds"/>
     </CButton>

@@ -33522,19 +33522,18 @@
             <AbilLinkDisableArray value="ArchonWarp"/>
         </Modification>
     </CBehaviorBuff>
-    <CBehaviorBuff id="NexusPhaseShift2">
+    <CBehaviorBuff id="QuantumShift">
         <Alignment value="Positive"/>
         <InfoIcon value="Assets\Textures\btn-ability-protoss-cloakfield.dds"/>
         <DisplayDuration index="Self" value="1"/>
         <TimeScaleSource Value="Global"/>
-        <Duration value="16"/>
+        <Duration value="15"/>
         <Modification>
             <ModifyFlags index="DisableAbils" value="1"/>
             <ModifyFlags index="EnableMove" value="1"/>
             <StateFlags index="Invulnerable" value="1"/>
             <StateFlags index="SuppressAttack" value="1"/>
         </Modification>
-        <ExpireEffect value="PhaseCannonInitialStun722425"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="NovaApolloCloak2">
         <Alignment value="Positive"/>
