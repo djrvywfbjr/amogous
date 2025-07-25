@@ -851,6 +851,17 @@
         <DamagePoint value="0.95"/>
         <Effect value="BrutalizeCreatePersistent3"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="PsionicLightning">
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="3"/>
+        <TeleportResetRange value="0"/>
+        <Cost>
+            <Cooldown Location="Unit"/>
+        </Cost>
+        <Period value="1.754"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="WarpingBlades">
         <Name value="Weapon/Name/Centurion"/>
         <EditorCategories value="Race:Protoss"/>
