@@ -87,6 +87,11 @@
         <AlertIcon value="Assets\Textures\btn-ability-kerrigan-wildmutation.dds"/>
         <EditorCategories value="Race:Zerg"/>
     </CButton>
+    <CButton id="ShieldofTassadar">
+        <Icon value="Assets\Textures\BTN-Upgrade-Protoss-ShieldsLevel1.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-shieldbattery-color.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
     <CButton id="ShieldofAiur">
         <Icon value="Assets\Textures\btn-ability-protoss-barrier-upgraded.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-barrier-upgraded.dds"/>
@@ -673,6 +678,11 @@
     </CButton>
     <CButton id="ScoutingProtocol">
         <Icon value="Assets\Textures\btn-unit-protoss-champion-scout-purifier-active.dds"/>
+    </CButton>
+    <CButton id="ShieldofZeratul">
+        <Icon value="Assets\Textures\BTN-Upgrade-Protoss-ShieldsLevel2.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-shieldbattery-color.dds"/>
+        <EditorCategories value="Race:Protoss"/>
     </CButton>
     <CButton id="ShredderPayload">
         <Icon value="Assets\Textures\btn-techupgrade-terran-seekermissile.dds"/>
@@ -13396,8 +13406,8 @@
         <Icon value="Assets\Textures\btn-upgrade-zerg-abathur-mutagenicpotential.dds"/>
         <EditorCategories value="Race:Zerg"/>
     </CButton>
-    <CButton id="GuardianShield2">
-        <Icon value="Assets\Textures\btn-ability-protoss-shieldbattery-color.dds"/>
+    <CButton id="ShieldofAdun">
+        <Icon value="Assets\Textures\BTN-Upgrade-Protoss-ShieldsLevel3.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-shieldbattery-color.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>

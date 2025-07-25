@@ -243,6 +243,16 @@
             </Cost>
         </DamageResponse>
     </CBehaviorBuff>
+    <CBehaviorBuff id="ShieldOfTassadar">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\BTN-Upgrade-Protoss-ShieldsLevel1.dds"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Duration value="0.6"/>
+        <Modification HealTakenMultiplier="1.5"/>
+        <DamageResponse>
+            <Kind index="Spell" value="0"/>
+        </DamageResponse>
+    </CBehaviorBuff>
     <CBehaviorBuff id="ShieldOfAiur">
         <Alignment value="Positive"/>
         <InfoFlags index="Hidden" value="1"/>
@@ -2007,6 +2017,18 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
         <Modification Radar="13" RadarFilters="-;Neutral,RawResource,HarvestableResource,Missile,Destructible,Buried"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ShieldOfZeratul">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\BTN-Upgrade-Protoss-ShieldsLevel2.dds"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Duration value="0.6"/>
+        <Modification>
+            <VitalRegenArray index="Shields" value="10"/>
+        </Modification>
+        <DamageResponse>
+            <Kind index="Spell" value="0"/>
+        </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="ShieldOvercharge">
         <InfoIcon value="Assets\Textures\btn-ability-spearofadun-shieldovercharge.dds"/>
@@ -30354,17 +30376,14 @@
             <StateFlags index="Stasis" value="1"/>
         </Modification>
     </CBehaviorBuff>
-    <CBehaviorBuff id="GuardianShield2">
+    <CBehaviorBuff id="ShieldOfAdun">
         <Alignment value="Positive"/>
-        <InfoIcon value="Assets\Textures\btn-ability-protoss-shieldbattery.dds"/>
+        <InfoIcon value="Assets\Textures\BTN-Upgrade-Protoss-ShieldsLevel3.dds"/>
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Duration value="0.6"/>
-        <Modification HealTakenMultiplier="2" ShieldArmorBonus="4">
-            <VitalRegenMultiplier index="Shields" value="10"/>
+        <Modification ShieldArmorBonus="2">
+            <VitalMaxArray index="Shields" value="50"/>
         </Modification>
-        <DamageResponse>
-            <Kind index="Spell" value="0"/>
-        </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="GuardianShield22">
         <Alignment value="Positive"/>

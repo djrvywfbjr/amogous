@@ -2208,6 +2208,52 @@
         <CaseArray Validator="HighYield" Effect="HarvestingBeamRichMineralsAB2"/>
         <CaseArray Validator="HasVespene" Effect="HarvestingBeamVespeneAB2"/>
     </CEffectSwitch>
+    <CEffectApplyBehavior id="ShieldOfTassadarAB">
+        <ValidatorArray index="0" value="SourceNotHidden"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="ShieldOfTassadar"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ShieldOfZeratulAB">
+        <ValidatorArray index="0" value="SourceNotHidden"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="ShieldOfZeratul"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="ShieldOfTassadarCP">
+        <EditorCategories value="Race:Protoss"/>
+        <Marker Link="Effect/GuardianShieldPersistent"/>
+        <WhichLocation Value="SourceUnit"/>
+        <InitialEffect value="ShieldOfTassadarSA"/>
+        <PeriodCount value="30"/>
+        <PeriodicValidator value="NotHaveScramblerMissileBehavior"/>
+        <PeriodicEffectArray value="ShieldOfTassadarSA"/>
+        <PeriodicPeriodArray value="0.5"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="ShieldOfZeratulCP">
+        <EditorCategories value="Race:Protoss"/>
+        <Marker Link="Effect/GuardianShieldPersistent"/>
+        <WhichLocation Value="SourceUnit"/>
+        <InitialEffect value="ShieldOfZeratulSA"/>
+        <PeriodCount value="30"/>
+        <PeriodicValidator value="NotHaveScramblerMissileBehavior"/>
+        <PeriodicEffectArray value="ShieldOfZeratulSA"/>
+        <PeriodicPeriodArray value="0.5"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="ShieldOfTassadarSA">
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <SearchFilters value="-;Neutral,Enemy,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="4.5" Effect="ShieldOfTassadarAB"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+        <SearchFlags index="SameCliff" value="1"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="ShieldOfZeratulSA">
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <SearchFilters value="-;Neutral,Enemy,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="4.5" Effect="ShieldOfZeratulAB"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+        <SearchFlags index="SameCliff" value="1"/>
+    </CEffectEnumArea>
     <CEffectCreateUnit id="SpawnBanelings4">
         <EditorCategories value="Race:Zerg"/>
         <WhichLocation Value="TargetPoint"/>
@@ -27731,10 +27777,10 @@
         <ImpactEffect value="GuardianMPWeaponDamage3"/>
         <AmmoUnit value="GuardianMPWeapon3"/>
     </CEffectLaunchMissile>
-    <CEffectApplyBehavior id="GuardianShieldApplyBehavior2">
+    <CEffectApplyBehavior id="ShieldOfAdunAB">
         <ValidatorArray index="0" value="SourceNotHidden"/>
         <EditorCategories value="Race:Protoss"/>
-        <Behavior value="GuardianShield2"/>
+        <Behavior value="ShieldOfAdun"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="GuardianShieldApplyBehavior22">
         <ValidatorArray index="0" value="SourceNotHidden"/>
@@ -27761,10 +27807,10 @@
         <EditorCategories value="Race:Protoss"/>
         <Behavior value="GuardianShield5"/>
     </CEffectApplyBehavior>
-    <CEffectCreatePersistent id="GuardianShieldPersistent2" parent="GuardianShieldPersistent">
-        <Name value="Effect/Name/GuardianShieldPersistent2"/>
-        <InitialEffect value="GuardianShieldSearch2"/>
-        <PeriodicEffectArray index="0" value="GuardianShieldSearch2"/>
+    <CEffectCreatePersistent id="ShieldOfAdunCP" parent="GuardianShieldPersistent">
+        <Name value="Effect/Name/ShieldOfAdunCP"/>
+        <InitialEffect value="ShieldOfAdunSA"/>
+        <PeriodicEffectArray index="0" value="ShieldOfAdunSA"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="GuardianShieldPersistent22" parent="GuardianShieldPersistent">
         <Name value="Effect/Name/GuardianShieldPersistent22"/>
@@ -27795,11 +27841,11 @@
         <PeriodicEffectArray value="GuardianShieldSearch4"/>
         <PeriodicPeriodArray value="0.5"/>
     </CEffectCreatePersistent>
-    <CEffectEnumArea id="GuardianShieldSearch2">
+    <CEffectEnumArea id="ShieldOfAdunSA">
         <EditorCategories value="Race:Protoss"/>
         <ImpactLocation Value="TargetUnit"/>
         <SearchFilters value="-;Neutral,Enemy,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <AreaArray Radius="4.5" Effect="GuardianShieldApplyBehavior2"/>
+        <AreaArray Radius="4.5" Effect="ShieldOfAdunAB"/>
         <SearchFlags index="ExtendByUnitRadius" value="1"/>
         <SearchFlags index="SameCliff" value="1"/>
     </CEffectEnumArea>

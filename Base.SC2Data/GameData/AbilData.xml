@@ -2058,6 +2058,36 @@
         <Flags index="Transient" value="1"/>
         <BehaviorArray value="UnknownBehavior50"/>
     </CAbilBehavior>
+    <CAbilEffectInstant id="ShieldOfTassadar">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ShieldOfTassadarCP"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="125"/>
+            <Charge Link="Abil/GuardianShield"/>
+            <Cooldown Link="GuardianShield" Location="Unit" TimeUse="15"/>
+        </Cost>
+        <AINotifyEffect value=""/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ShieldofTassadar"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="ShieldOfZeratul">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ShieldOfZeratulCP"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="125"/>
+            <Charge Link="Abil/GuardianShield"/>
+            <Cooldown Link="GuardianShield" Location="Unit" TimeUse="15"/>
+        </Cost>
+        <AINotifyEffect value=""/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ShieldofZeratul"/>
+    </CAbilEffectInstant>
     <CAbilEffectTarget id="ShieldOvercharge">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Flags index="AutoCast" value="1"/>
@@ -29372,20 +29402,20 @@
     <CAbilTransport id="GreaterNydusWormTransport">
         <UnloadPeriod value="0.25"/>
     </CAbilTransport>
-    <CAbilEffectInstant id="GuardianShield2">
+    <CAbilEffectInstant id="ShieldOfAdun">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
-        <Effect index="0" value="GuardianShieldPersistent2"/>
+        <Effect index="0" value="ShieldOfAdunCP"/>
         <Flags index="AllowMovement" value="1"/>
         <Flags index="BestUnit" value="1"/>
         <Flags index="NoDeceleration" value="1"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Vital index="Shields" value="300"/>
+            <Vital index="Energy" value="125"/>
             <Charge Link="Abil/GuardianShield"/>
-            <Cooldown Link="GuardianShield" TimeUse="84"/>
+            <Cooldown Link="GuardianShield" Location="Unit" TimeUse="15"/>
         </Cost>
         <AINotifyEffect value=""/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="GuardianShield2"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ShieldofAdun"/>
     </CAbilEffectInstant>
     <CAbilEffectInstant id="GuardianShield22">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
