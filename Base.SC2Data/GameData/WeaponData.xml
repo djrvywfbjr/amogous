@@ -855,12 +855,12 @@
         <EditorCategories value="Race:Protoss"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="3"/>
+        <Range value="9"/>
         <TeleportResetRange value="0"/>
         <Cost>
             <Cooldown Location="Unit"/>
         </Cost>
-        <Period value="1.754"/>
+        <Period value="2"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="WarpingBlades">
         <Name value="Weapon/Name/Centurion"/>
