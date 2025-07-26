@@ -243,14 +243,6 @@
             </Cost>
         </DamageResponse>
     </CBehaviorBuff>
-    <CBehaviorBuff id="PoweringModeHealing">
-        <EditorCategories value="AbilityorEffectType:Units"/>
-        <MaxStackCount value="65535"/>
-        <Duration value="0.5"/>
-        <Modification>
-            <VitalRegenArray index="Energy" value="-3"/>
-        </Modification>
-    </CBehaviorBuff>
     <CBehaviorBuff id="PoweringModeHealed">
         <BehaviorFlags index="Permanent" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -2110,7 +2102,7 @@
     </CBehaviorBuff>
     <CBehaviorBuff id="PoweringMode">
         <Alignment value="Positive"/>
-        <InfoIcon value="Assets\Textures\btn-ability-terran-cloak.dds"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-energize.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="CanSpendEnergy"/>
         <RemoveValidatorArray value="hasEnergy"/>

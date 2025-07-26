@@ -3776,7 +3776,6 @@ Behavior/Name/Poisoned5=Tribal Poison
 Behavior/Name/PowerUserWarpable2=Warping In Copy
 Behavior/Name/PoweringMode=Powering Mode
 Behavior/Name/PoweringModeHealed=Powering Mode Healed
-Behavior/Name/PoweringModeHealing=Powering Mode Healing
 Behavior/Name/PreserveSelf=Preserve Self
 Behavior/Name/PreserveSelf2=Phasing Mode
 Behavior/Name/PreserveSelf3=Void Embraced
@@ -5000,7 +4999,7 @@ Behavior/Tooltip/Poisoned4=This unit is poisoned by Eternal Hunter.
 Behavior/Tooltip/Poisoned42=This unit is being attacked by Spared, even if he isn't attacking it directly.
 Behavior/Tooltip/Poisoned5=This unit has been poisoned. It moves and attacks 50% slower now and it's life regeneration is reduced by 6.
 Behavior/Tooltip/PowerUserWarpable2=This unit is being materialized.
-Behavior/Tooltip/PoweringMode=This unit or structure is absorbing damage.
+Behavior/Tooltip/PoweringMode=This unit is distributing energy to nearby units.
 Behavior/Tooltip/PrimalistEssence=
 Behavior/Tooltip/PrimalistEssence2=
 Behavior/Tooltip/PrimalistEssence3=
@@ -14599,7 +14598,7 @@ Button/Tooltip/Disruptor4=Robotic disruption unit. Can use Purification Nova to 
 Button/Tooltip/Disruptor5=Robotic disruption unit. Can use Purification Nova to deal heavy area damage.
 Button/Tooltip/DisruptorPhased3=Концентрированная солнечная энергия. Взрывается через <d ref="Behavior,PurificationNovaTargettedTarget,Duration"/> сек., нанося урон в области поражения.
 Button/Tooltip/DistortionGenerator=All non-heroic allied air units around the caster become cloaked. Lasts 10 seconds.
-Button/Tooltip/DisurptionBlast=Stun all units in a large area for <d time="2"/>after <d time="2"/>.
+Button/Tooltip/DisurptionBlast=Stun all units in a large area for <d time="2"/> after <d time="3"/>.
 Button/Tooltip/DivineIntervention=Calls down a lightning bolt, dealing 150 damage in a small area and stunning enemies for 1.5 seconds.
 Button/Tooltip/DominionKillTeam2=Marauder kill team.
 Button/Tooltip/DominionKillTeam3=Marauder kill team.
