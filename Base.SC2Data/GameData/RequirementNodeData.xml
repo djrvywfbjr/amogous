@@ -2977,7 +2977,6 @@
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitAzureInterceptorQueuedOrBetterAtUnit">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="AzureInterceptor" State="QueuedOrBetterAtUnit"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitBadgerQueuedOrBetter">
@@ -3860,7 +3859,6 @@
         <Count Link="HighlightCouncil" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitHighlightCouncilCompleteOnlyTechTreeCheat">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="HighlightCouncil" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitHive2CompleteOnly">
@@ -4516,7 +4514,6 @@
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitPsionicConcentratorQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="PsionicConcentrator" State="QueuedOrBetter"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitPsiwaveCommunicatorCompleteOnly1851208886">
@@ -6068,6 +6065,11 @@
     <CRequirementCountUpgrade id="CountUpgradeInfiltratorEnergyQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="InfiltratorEnergy" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeJoriumBatteriesQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="JoriumBatteries" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeLightenedLimbsQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
@@ -8680,6 +8682,7 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="UmojanBasicUnitUpgrade522242242322222222222223322232" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322222CompleteOnly">
@@ -8988,7 +8991,6 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233223232QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="UmojanBasicUnitUpgrade522242242322222222222223322233223232" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322323CompleteOnly">
@@ -16297,7 +16299,6 @@
         <OperandArray index="1" value="2"/>
     </CRequirementLTE>
     <CRequirementLTE id="LTECountUnitPsionicConcentratorQueuedOrBetter2">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUnitPsionicConcentratorQueuedOrBetter"/>
         <OperandArray index="1" value="2"/>
     </CRequirementLTE>
@@ -16905,6 +16906,10 @@
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeInfiltratorEnergyQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeInfiltratorEnergyQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeJoriumBatteriesQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeJoriumBatteriesQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeLightenedLimbsQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeLightenedLimbsQueuedOrBetter"/>
@@ -19819,8 +19824,9 @@
     <CRequirementNot id="NotOrCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222232233QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222322332QueuedOrBetter">
         <OperandArray index="0" value="OrCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222232233QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222322332QueuedOrBetter"/>
     </CRequirementNot>
-    <CRequirementNot id="NotOrCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322222QueuedOrBetter">
-        <OperandArray index="0" value="OrCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322222QueuedOrBetter"/>
+    <CRequirementNot id="NotOrCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322222QueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="OrCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322222QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotOrCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233222QueuedOrBetter">
         <OperandArray index="0" value="OrCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233222QueuedOrBetter"/>
@@ -19835,11 +19841,9 @@
         <OperandArray index="0" value="OrCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322323222222322QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332232322222232QueuedOrBetterCountUpgradeUmo3077467427"/>
     </CRequirementNot>
     <CRequirementNot id="NotOrCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332232322222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233223232222QueuedOrBetterCountUpgradeUmojanBa891112517">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="OrCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332232322222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233223232222QueuedOrBetterCountUpgradeUmojanBasic4187789177"/>
     </CRequirementNot>
     <CRequirementNot id="NotOrCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322323222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322323QueuedOrBetterCountUpgradeUmojanBasicUni707650239">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="OrCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322323222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322323QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332232322QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotOrCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332232323222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233223232322222QueuedOrBetterCountUpgradeUmoja4102582656">
@@ -19872,8 +19876,9 @@
     <CRequirementNot id="NotOrCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332QueuedOrBetter">
         <OperandArray index="0" value="OrCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332QueuedOrBetter"/>
     </CRequirementNot>
-    <CRequirementNot id="NotOrCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322QueuedOrBetter">
-        <OperandArray index="0" value="OrCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322QueuedOrBetter"/>
+    <CRequirementNot id="NotOrCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322QueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="OrCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotOrCountUpgradeUmojanBasicUnitUpgrade522242242322222235222222212322222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222352222222123222222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgra4276618461">
         <OperandArray index="0" value="OrCountUpgradeUmojanBasicUnitUpgrade522242242322222235222222212322222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222352222222123222222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade53533411780"/>
@@ -20554,9 +20559,10 @@
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade5222422423222222222222232233QueuedOrBetter"/>
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade52224224232222222222222322332QueuedOrBetter"/>
     </CRequirementOr>
-    <CRequirementOr id="OrCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322222QueuedOrBetter">
+    <CRequirementOr id="OrCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322222QueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232222QueuedOrBetter"/>
-        <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223222QueuedOrBetter"/>
+        <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232QueuedOrBetter"/>
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322222QueuedOrBetter"/>
     </CRequirementOr>
     <CRequirementOr id="OrCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233222QueuedOrBetter">
@@ -20580,13 +20586,11 @@
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233223232222223QueuedOrBetter"/>
     </CRequirementOr>
     <CRequirementOr id="OrCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332232322222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233223232222QueuedOrBetterCountUpgradeUmojanBasic4187789177">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332232322222QueuedOrBetter"/>
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233223232222QueuedOrBetter"/>
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233223232QueuedOrBetter"/>
     </CRequirementOr>
     <CRequirementOr id="OrCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322323222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322323QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332232322QueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322323222QueuedOrBetter"/>
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322323QueuedOrBetter"/>
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332232322QueuedOrBetter"/>
@@ -20641,9 +20645,10 @@
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233QueuedOrBetter"/>
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332QueuedOrBetter"/>
     </CRequirementOr>
-    <CRequirementOr id="OrCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322QueuedOrBetter">
+    <CRequirementOr id="OrCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322QueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223QueuedOrBetter"/>
-        <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232QueuedOrBetter"/>
+        <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223222QueuedOrBetter"/>
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322QueuedOrBetter"/>
     </CRequirementOr>
     <CRequirementOr id="OrCountUpgradeUmojanBasicUnitUpgrade522242242322222235222222212322222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222352222222123222222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade53533411780">

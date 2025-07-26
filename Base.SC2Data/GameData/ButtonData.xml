@@ -87,6 +87,14 @@
         <AlertIcon value="Assets\Textures\btn-ability-kerrigan-wildmutation.dds"/>
         <EditorCategories value="Race:Zerg"/>
     </CButton>
+    <CButton id="JoriumBatteries">
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-personaldefensivematrix.dds"/>
+    </CButton>
+    <CButton id="StandupEndoskeletonCloak">
+        <Tooltip value="Button/Tooltip/Endocloak"/>
+        <Icon value="Assets\Textures\btn-progression-zerg-dehaka-15-genemutation.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
     <CButton id="DisablePoweringMode">
         <Icon value="Assets\Textures\btn-command-cancel.dds"/>
         <AlertIcon value="Assets\Textures\btn-command-cancel.dds"/>
@@ -716,6 +724,12 @@
         <Icon value="Assets\Textures\btn-ability-zeratul-immortal-enternitybarrier.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-soulabsorption.dds"/>
         <HotkeyAlias value="SoulAbsorption"/>
+    </CButton>
+    <CButton id="SuppressHuntingInstincts">
+        <Icon value="Assets\Textures\ui_tipicon_campaign_attack.dds"/>
+    </CButton>
+    <CButton id="SuppressHuntingInstincts2">
+        <Icon value="Assets\Textures\ui_tipicon_campaign_defend.dds"/>
     </CButton>
     <CButton id="SwitchToTectoincDisruptors">
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel2.dds"/>

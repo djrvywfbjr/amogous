@@ -107,6 +107,7 @@ Abil/Name/AttackRedirect3=Frag Grenade Redirect
 Abil/Name/Avatar=Avatar
 Abil/Name/Avatar2=Expand Void
 Abil/Name/BadCloakingField=Bad Cloaking Field
+Abil/Name/BadCloakingFieldEndo=Endo Cloaking Field
 Abil/Name/BansheeCloak2=Cloaking Mantle
 Abil/Name/BarracksAddOns2=AddOns Defiled
 Abil/Name/BarracksAddOns3=Add-Ons Garrison
@@ -993,6 +994,7 @@ Abil/Name/InfestedTerrans32=Launch Puddle
 Abil/Name/InfestorEnsnare2=Mingled Muscle Mass
 Abil/Name/InitiatorCombatProtocol=Initiator Combat Protocol
 Abil/Name/InstantWarpCP2=Instant Warp (CP2)
+Abil/Name/InstinctToggle=Instinct Toggle
 Abil/Name/Irradiate2=Irradiation
 Abil/Name/Irradiate22=Thermonuclear Beam
 Abil/Name/Irradiate222=Yamato Beam
@@ -8167,6 +8169,7 @@ Button/Name/Irradiate3=Cellular Degradation Virus
 Button/Name/JRUpgrades=Upgrades
 Button/Name/JetPack2=Jet Pack Copy
 Button/Name/JetPack3=Raider Jet Pack
+Button/Name/JoriumBatteries=Upgrade Jorium Batteries
 Button/Name/JuggernautPlating2=Juggernaut Plating
 Button/Name/JumperServos=Jumper Servos
 Button/Name/KaiserWormBanelingMissile2=Bombard
@@ -10554,6 +10557,7 @@ Button/Name/StalkerBlinkShieldRestoreBase2=Evasive Blink
 Button/Name/StalkerBlinkShieldRestoreBase22=Aggressive Blink
 Button/Name/StalkerBlinkShieldRestoreBase3=Appearance
 Button/Name/StalkerPurifier2=Warp In Instigationist
+Button/Name/StandupEndoskeletonCloak=Standup Endoskeleton Cloak
 Button/Name/Stargate10=Warp In Fleetgate
 Button/Name/Stargate2=Warp In Galaxygate
 Button/Name/Stargate3=Call Flyer Mound
@@ -10651,6 +10655,8 @@ Button/Name/SupplyDepotDrop3=Calldown: Supply Depot Copy 2
 Button/Name/SupplyDepotDrop4=Calldown: Supply Depot Copy 3
 Button/Name/SupplyDepotDrop5=Calldown: Supply Depot Copy 4
 Button/Name/SupplyDepotDrop6=Calldown: Supply Depot Copy 5
+Button/Name/SuppressHuntingInstincts=Instigate Hunting Instinct
+Button/Name/SuppressHuntingInstincts2=Suppress Hunting Instinct
 Button/Name/SwarmHost2=Force Output Host Metamorphosis
 Button/Name/SwarmHostMP2=Prepare Cerebral Host
 Button/Name/SwarmHostMP3=Prepare Enhanced Host
@@ -14649,6 +14655,7 @@ Button/Tooltip/EMPNova2=Launches a massive electromagnetic shockwave, dealing sh
 Button/Tooltip/Egg2=Zerg units morph in the safety of these cocoons.
 Button/Tooltip/EggChamber=Specialized infestation organism. Hatches Xill units.
 Button/Tooltip/EliteArmory=Contains upgrades.
+Button/Tooltip/Endocloak=Endoling becomes cloaked for 10 seconds.<n/><n/>While the original zerglings are quite fast, it's possible to change the endoskeletons to be quite a lot sneakier, agile and able to hit enemies farther away through different movement capabilities. Of course, the actual body isn't meant to move or bend or extend the way endoskeletons can be made to, but it can still slowly regenerate tissue and function as armor for the mechanisms inside.
 Button/Tooltip/Energyrotation=Solar Detractor's and Phase Cannon's attacks consume 25 <c val="0000FF">shields</c> every attack.
 Button/Tooltip/Energyrotation2=Phase Cannon's attacks consume 10 <c val="0000FF">shields</c> every attack.
 Button/Tooltip/Energyrotation22=Surfer's attacks consume 10 <c val="0000FF">shields</c> every attack.
@@ -14702,7 +14709,7 @@ Button/Tooltip/EngineeringBay20=Contains upgrades for Terran infantry and struct
 Button/Tooltip/EngineeringBay201g3baebe12=Contains upgrades for infantry and structures.
 Button/Tooltip/EngineeringBay3=Contains upgrades for Terran infantry and structures. <n/><n/><c val="ffff8a">Enables:</c><n/>- Missile Turrets from SCVs<n/>- Sensor Towers from SCVs<n/>- Planetary Fortresses from Command Centers
 Button/Tooltip/EngineeringBay4=Contains upgrades.
-Button/Tooltip/EngineeringBay5=Contains upgrades for heroes.
+Button/Tooltip/EngineeringBay5=Contains upgrades.
 Button/Tooltip/EngineeringBay6=Contains upgrades for Terran infantry and structures. <n/><n/><c val="ffff8a">Enables:</c><n/>- Missile Turrets from SCVs<n/>- Sensor Towers from SCVs<n/>- Planetary Fortresses from Command Centers
 Button/Tooltip/EngineeringBay7=Vehicle construction facility.
 Button/Tooltip/EngineeringBay8=Contains upgrades.
@@ -15461,7 +15468,7 @@ Button/Tooltip/Infestor2=System corruption specialist. Can use building control 
 Button/Tooltip/Infestor3=Specialist that can bring air enemies to the ground.
 Button/Tooltip/Infestor32=Obligatory specialist.
 Button/Tooltip/Infestor4=Infestation specialist. Can use Invasive Growth, Infest Structure and Acidic Nest.
-Button/Tooltip/Infestor42=Durable anti-air fighter. Has a melee attack. Follows to the closest enemy like infested infantry.
+Button/Tooltip/Infestor42=Durable anti-air fighter. Has a melee attack. May be ordered to follow to the closest enemy like infested infantry.
 Button/Tooltip/Infestor5=<c val="FF8000">Former Strain</c><n/>Powerful caster.
 Button/Tooltip/Infestor52=<c val="00FF00">Noxious Strain</c><n/>Support caster. Can spawn banelings and autocast transfusion.
 Button/Tooltip/Infestor522=<c val="00FFFF">Dominant Strain</c><n/>Supportive ground specialist. Can autocast Passive Frenzy, use Supportive Cloud and Drag.
@@ -15632,6 +15639,7 @@ Button/Tooltip/JasonAntamo=Elite Antamo Merc.
 Button/Tooltip/JasonAntamo2=Elite Antamo Merc.
 Button/Tooltip/JetPack2=Reapers can jump up and down cliffs.  
 Button/Tooltip/JetPack3=Raiders can jump up and down cliffs.  
+Button/Tooltip/JoriumBatteries=Increases the maximum energy of Gatherers by 50 and increases their energy regeneration by 30%.
 Button/Tooltip/JuggernautPlating2=Increases the Warrior's armor by 3.
 Button/Tooltip/JumperServos=Each weapon of Jumper has 50% increased attack speed, but deals 30% less damage and has 1 less range.<n/><n/>Jumper is also a detector.
 Button/Tooltip/K5Kerrigan2=Kerrigan is a powerful hero. She has a large amount of life, strong attacks, and devastating psionic abilities.
@@ -15756,8 +15764,8 @@ Button/Tooltip/Larva22222=Morphs into units.
 Button/Tooltip/Larva3=Morphs into Zerg units.
 Button/Tooltip/Larva32=Instead of taking damage, if Endolings have atleast 10 energy, they will ignore incoming damage, become stunned and invulnerable for 0.5 seconds. Endolings gain 50 energy and 1 energy regeneration.<n/><n/>Most of the endoling energy is wasted, as slight adjustments to the endoskeletons can make them just as efficient, without the need of use of creature's muscles. The energy generated for muscles can instead power a large battery, that will provide a powerful shield shroud for a short period of time if the creature senses incoming danger. It's notable that the battery shrouds the endoling, making it unable to move for it's short duration aswell.
 Button/Tooltip/Larva322=On death, Endolings refund their cost.<n/><n/>It is possible to regain the research needed to produce Endolings by transmitting all a log of all of the expiriences their organism had while alive. While creating a new cerebrum to record all of them would be an obvious idea, a much simpler way is to redirect sensory neurons to an outside add-on, sending all the gathered data when no more data is being sent. The original cerebrum will be able to do bare minimum and keep the body from decaying.
-Button/Tooltip/Larva3222=Endolings gain pernament cloak, can walk through non-Endoling units and gain 1 weapon range.<n/><n/>While the original zerglings are quite fast, it's possible to change the endoskeletons to be quite a lot sneakier, agile and able to hit enemies farther away through different movement capabilities. Of course, the actual body isn't meant to move or bend or extend the way endoskeletons can be made to, but it can still slowly regenerate tissue and function as armor for the mechanisms inside.
-Button/Tooltip/Larva3223=Endolings gain 75% increased movement speed and 25% attack speed. Each attack further increases their attack speed further by 15% for 5 seconds, up to 5 times.<n/><n/>It is possible for servos to manipulate the endoling into performing attacks and movement alongside the endoskeleton, performing actions at optimal speeds.
+Button/Tooltip/Larva3222=Endolings gain timed cloak, can walk through non-Endoling units and gain 1 weapon range.<n/><n/>While the original zerglings are quite fast, it's possible to change the endoskeletons to be quite a lot sneakier, agile and able to hit enemies farther away through different movement capabilities. Of course, the actual body isn't meant to move or bend or extend the way endoskeletons can be made to, but it can still slowly regenerate tissue and function as armor for the mechanisms inside.
+Button/Tooltip/Larva3223=Endolings gain 25% increased movement and attack speed. Each attack further increases their attack speed further by 15% for 5 seconds, up to 5 times.<n/><n/>It is possible for servos to manipulate the endoling into performing attacks and movement alongside the endoskeleton, performing actions at optimal speeds.
 Button/Tooltip/Larva32232=Endolings gain 50 health and 3 more armor.<n/><n/>If the right chemicals are injected into the right parts of Endoling veins, it is possible to inflate the armor and flesh at certain parts for additional protection.
 Button/Tooltip/Larva322322=Endolings cost 1/3 less and morph in pairs.<n/><n/>The zerglings typically already morph in groups of  2, however it was previously too difficult to manipulate Artifical Larvae into morphing more than one. This can be undone by simplifying the creatures.
 Button/Tooltip/Larva323=Contrived Queens' Quick Fix will heal additional 90 health over additional 15 seconds and it's healing will stack with itself indefinitely. Quick Fix and Contrived Queen attacks also will gain 3 range.<n/><n/>While Quick Fix already sends out smalll bots that will repair and heal detected damages and wounds, their design and AI is limiting. A new design has been proposed, based on how zerg creep works and spreads. The drones will be much smaller and more agile, allowing them to fly and heal for longer, as well as complete their tasks alongside other nanobots from another batch. Fitting Contrived Queens with the more compact drones will make space for precision improvements as well.
@@ -15816,7 +15824,7 @@ Button/Tooltip/Larva3232342=When not burrowed, Impelled Impaler attacks will lau
 Button/Tooltip/Larva32323422=Impelled Impaler burrow is replaced by flight. While flying, Impelled Impalers cannot move and gain a longer range Mass Resurface which occurs instantly.<n/><n/>The tentacles already are remote controlled, so if we allow them to completely seperate from an Impaler nothing much would change, however the blades would still need to be near the creature as the central data reciever won't fit in the assault organ. We can utilize this to allow Impelled Impalers to fly through addition of a basic symbiotic organism that can produce gases to lift both creatures in the air.
 Button/Tooltip/Larva32323423=Every time Impelled Impalers damage a unit, they get their attack and movement speed slowed by 25% for 1 second. Does not affect heroic units and structres<n/><n/>Through drug injection, Impaler tentacles become capable of using much heavier blades that are designed to penetrate and impale enemies completely.
 Button/Tooltip/Larva323234232=Impelled Impalers will attack in a straight line and deal more damage to light units instead of armored. All of Impelled Impaler attacks also will deal double damage to Massive units.<n/><n/>Using the few Hydralisk samples we have, it's possible to enhance Impelled Impalers by adding a spine-generating organ that will replace some of the tentacle blade generation. The spines will now be launched in a straight line instead of a large area and the thinned structure will deal more damage to lighter or more complex armors.
-Button/Tooltip/Larva3232342322=Impelled Impalers attack 45% faster.<n/><n/>We can overclock the muscle controllers without dealing any significant damage to the Impaler capabilities, although a thin endoskeleton will be inserted in case something goes haywire because of it.
+Button/Tooltip/Larva3232342322=Impelled Impalers attack and switch forms 45% faster.<n/><n/>We can overclock the muscle controllers without dealing any significant damage to the Impaler capabilities, although a thin endoskeleton will be inserted in case something goes haywire because of it.
 Button/Tooltip/Larva323234233=Every attack, Impelled Impalers send out an underground tentacle that eventually reaches the original position of their targets, dealing damage in an area.<n/><n/>While burrowed, tentacles travel faster and deal damage in a large area.<n/><n/>There are no reasons to believe that a zerg brood has ever used both Impalers and Lurkers. For shame, as forcing a little combination of the two is quite lethal.
 Button/Tooltip/Larva32323424=Output Hosts will spawn Blisters instead of Keds. Blisters are extremely similar to Keds, until they suffer critical damage. Once fatal damage is taken, the creature will gain a 30 health shield, 50% movement speed buff and an anti-ground 15 damage suicide melee attack. <n/>On time out or death, Blisters deal 25 damage to ground units in a large radius.<n/><n/>We have found samples of a peculiar zerg creature in a traveling brood. It was similar to locusts, but would've produced deadly acid by melting all of it's muscles and bones, then explode and spray it to nearby creatures. The weird thing is, genetic structure of that one sample was nothing swarm-like: it was a lot more rapid and chaotic, as if designed on "the fly". We can easily improve on the concept, allowing it to attack normally until death, only then quickly turn most of organs into acid. At that point, the flesh will also get artificially inflated for extra protection and acid-resistant endoskeleton will become the independant way of movement.
 Button/Tooltip/Larva323234242=Output Hosts will spawn Bombardiers instead of Keds. They are similar to Keds, however Bombardiers gain 5 attack range against ground and 8 against air enemies, deal 15 more damage against ground, 5 against air and their attacks splash(splash radius is heavily increased for anti-air attacks), but attack cooldown is increased by 50%(100% for air attacks), movement speed is reduced by 0.5 and all of their projectiles are dodgeable.<n/><n/>This one is based on a locust strain that seemed abstract. One of our sponsors in the Dominion has provided us with a peculiar Locust sample from the chamber of zerg Swarm's Evolution Master. It's been designed to automatically go for nearest enemy bases and was only adapted for Earth-like gravity. A miniature bile launcher was added to it at some point, granting a powerful siege option. We can easily grant this feature to current Keds, as well as use some genetic code from original Bile Launcher samples to make them ever stronger against air targets.
@@ -18641,6 +18649,7 @@ Button/Tooltip/StalkerPurifier3=Purifier Faction<n/>Ranged support strider. Can 
 Button/Tooltip/StalkerShakuras2=Nerazim Faction<n/>Ranged attack strider. Shields are restored after using Blink.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
 Button/Tooltip/StalkerShakuras3=Nerazim Faction<n/>Ranged attack strider. Shields are restored after using Blink.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
 Button/Tooltip/StalkerShakuras4=Nerazim Faction<n/>Ranged attack strider. Shields are restored after using Blink.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
+Button/Tooltip/StandupEndoskeletonCloak=Become cloaked for 10 seconds
 Button/Tooltip/StarShower=After 3 seconds, launch an orb and concealing enemies in celestial energy. Reduces attack speed by 30% and movement speed by 65% of non-heroic and non-massive units for 5 seconds and deals 30 damage over the duration.<n/><n/>While we aren't sure about what the orbs actually consist of, they seem to cover hostiles in a thick layer of the substance that immobilize and chip away chunks of enemies.
 Button/Tooltip/StarStation=Air-unit production facility.
 Button/Tooltip/Stargate10=Warps in Protoss air units.
@@ -18763,6 +18772,8 @@ Button/Tooltip/SupplyDepotDrop4=Improved Supply Depot. Can be instantly deployed
 Button/Tooltip/SupplyDepotDrop5=Improved Supply Depot. Can be instantly deployed from orbit. Eliminates the time required for an SCV to assemble a standard Supply Depot.
 Button/Tooltip/SupplyDepotDrop6=Improved Supply Depot. Can be instantly deployed from orbit. Eliminates the time required for an SCV to assemble a standard Supply Depot.
 Button/Tooltip/SupplyDepotLowered2=Provides supply.<n/>Supply allows you to create more units.<n/>Supply Depots can be lowered to allow units to walk over them.
+Button/Tooltip/SuppressHuntingInstincts=Forces the unit to constantly pursue the nearest enemy, regardless of if it can be attacked or not.
+Button/Tooltip/SuppressHuntingInstincts2=Stops the unit from pursuing enemies on its own.
 Button/Tooltip/Swann2=Swann can place a flame turret that he lovingly calls "Flaming Betty." <n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c><n/>
 Button/Tooltip/SwarmHost2=Unit that sends out waves of minions rather than attacking itself.
 Button/Tooltip/SwarmHostGenerateCreep2=Generates creep while Swarm Host is burrowed or rooted.
@@ -23845,6 +23856,7 @@ Effect/Name/EMPSet72=EMP Copy 7
 Effect/Name/EMPSet73=EMP Copy 7
 Effect/Name/EMPSet8=EMP
 Effect/Name/EMPSet82=EMP
+Effect/Name/Endocloak=Endocloak
 Effect/Name/EnergyBeamCreatePersistent2=Energy Beam (Create Persistent) Copy
 Effect/Name/EnergyBeamCreatePersistent22=Energy Beam (Create Persistent) Copy
 Effect/Name/EngageFusionDrive=Engage Fusion Drive
@@ -38063,6 +38075,7 @@ Upgrade/Name/HotSGroovedSpines2=Grooved Spines Copy
 Upgrade/Name/HotSSerratedSpines2=Hot SSerrated Spines Copy
 Upgrade/Name/IndustrialAutomatons=Industrial Automatons
 Upgrade/Name/InfiltratorEnergy=Terrazine Supplies
+Upgrade/Name/JoriumBatteries=Jorium Batteries
 Upgrade/Name/LightenedLimbs=Lightened Limbs
 Upgrade/Name/ManufactureChemicalStation=Manufacture Chemical Station
 Upgrade/Name/ManufactureFusionCore=Manufacture Fusion Core
@@ -39555,7 +39568,7 @@ Weapon/Name/ATALaserBattery4=Eject Bridge Crew
 Weapon/Name/ATALaserBattery42=Eject Cruiser Crew
 Weapon/Name/ATSLaserBattery2=ATS Laser Battery Copy
 Weapon/Name/ATSLaserBattery3=ATV Laser Battery
-Weapon/Name/ATSLaserBattery4=Tsar Laser Battery
+Weapon/Name/ATSLaserBattery4=Quasar Laser Battery
 Weapon/Name/ATSLaserBattery42=<c val="FFFF00">Rapid Yamato</c>
 Weapon/Name/ATSLaserBattery422=Burning Plasma Launcher
 Weapon/Name/ATSLaserBattery43=Bio-Mechanical Plasma Missile Battery

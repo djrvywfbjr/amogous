@@ -236,17 +236,26 @@
         <AllowedMovement value="Moving"/>
         <RandomDelayMax value="0.1875"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="ATSLaserBattery4" parent="ATSLaserBattery">
-        <Name value="Weapon/Name/ATSLaserBattery4"/>
-        <Tip value="Weapon/Tip/ATSLaserBattery4"/>
+    <CWeaponLegacy id="ATSLaserBattery4">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel2.dds"/>
         <DisplayEffect value="ATSLaserBatteryU4"/>
-        <Range value="7"/>
-        <Cost>
-            <Cooldown TimeUse="0.5"/>
-        </Cost>
-        <Effect value="ATSLaserBatteryLM4"/>
-        <AllowedMovement value="Slowing"/>
+        <DisplayName value="Weapon/Name/ATSLaserBattery"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquirePrioritization value="ByAngle"/>
+        <Range value="9"/>
+        <Arc value="360"/>
+        <Marker Link="Weapon/ATSLaserBattery"/>
+        <Cost>
+            <Cooldown Link="Weapon/ATSLaserBattery" Location="Unit" TimeUse="0.5"/>
+        </Cost>
+        <Period value="0.2856"/>
+        <Effect value="ATSLaserBatteryLM4"/>
+        <LegacyOptions index="FaceTargetWhileInCooldown" value="1"/>
+        <AllowedMovement value="Slowing"/>
+        <UninterruptibleDuration value="32767.9997"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ATSLaserBattery42" parent="ATSLaserBattery">
         <Name value="Weapon/Name/ATSLaserBattery42"/>

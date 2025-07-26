@@ -435,6 +435,11 @@
         <LeaderAlias value="AdvancedConstruction"/>
     </CUpgrade>
     <CUpgrade id="HazardousMunitions"/>
+    <CUpgrade id="JoriumBatteries">
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-personaldefensivematrix.dds"/>
+        <EffectArray Operation="Set" Reference="Unit,SCV22,EnergyMax" Value="100"/>
+        <EffectArray Operation="Multiply" Reference="Unit,SCV22,EnergyRegenRate" Value="1.300700"/>
+    </CUpgrade>
     <CUpgrade id="LightenedLimbs">
         <Icon value="Assets\Textures\btn-upgrade-zerg-hotsmetabolicboost.dds"/>
         <EffectArray Reference="Unit,HotSSwarmling34,Speed" Value="1.429600"/>
