@@ -25390,13 +25390,6 @@
         <SpeakerMix index="SideRight" value="0.500000"/>
         <Volume value="-18.000000,-18.000000"/>
     </CSound>
-    <CSound id="Sanitization_WeaponEnd2" parent="Combat">
-        <EditorCategories value="Race:Protoss"/>
-        <AssetArray File="Assets\Sounds\Protoss\Sentry\Sentry_WeaponEnd.wav"/>
-        <DupeDestroyCount value="4"/>
-        <Pitch value="-1.000000,-1.000000"/>
-        <Volume value="-3.000000,-3.000000"/>
-    </CSound>
     <CSound id="Sanitization_WeaponEnd3" parent="Combat">
         <EditorCategories value="Race:Protoss"/>
         <AssetArray File="Assets\Sounds\Protoss\Sentry\Sentry_WeaponEnd.wav"/>
@@ -25423,20 +25416,6 @@
         <AssetArray File="Assets\Sounds\Protoss\Sentry\Sentry_WeaponEnd.wav"/>
         <DupeDestroyCount value="4"/>
         <Pitch value="-1.000000,-1.000000"/>
-        <Volume value="-3.000000,-3.000000"/>
-    </CSound>
-    <CSound id="Sanitization_WeaponLoop2" parent="Combat">
-        <EditorCategories value="Race:Protoss"/>
-        <AssetArray File="Assets\Sounds\Protoss\Sentry\Sentry_WeaponLoop.wav"/>
-        <DupeMuteCount value="4"/>
-        <LoopCount value="-1"/>
-        <OffsetFadeIn Volume="-96.000000"/>
-        <OffsetFadeIn Time="100"/>
-        <OffsetFadeOut/>
-        <OffsetFadeOut Time="100" Volume="-96.000000"/>
-        <OverlapTimeDelta value="100"/>
-        <Pitch value="-1.000000,0.000000"/>
-        <SustainFade index="1" Time="100"/>
         <Volume value="-3.000000,-3.000000"/>
     </CSound>
     <CSound id="Sanitization_WeaponLoop3" parent="Combat">
@@ -25493,13 +25472,6 @@
         <OverlapTimeDelta value="100"/>
         <Pitch value="-1.000000,0.000000"/>
         <SustainFade index="1" Time="100"/>
-        <Volume value="-3.000000,-3.000000"/>
-    </CSound>
-    <CSound id="Sanitization_WeaponStart2" parent="Combat">
-        <EditorCategories value="Race:Protoss"/>
-        <AssetArray File="Assets\Sounds\Protoss\Sentry\Sentry_WeaponStart.wav"/>
-        <DupeDestroyCount value="4"/>
-        <Pitch value="-1.000000,1.640000"/>
         <Volume value="-3.000000,-3.000000"/>
     </CSound>
     <CSound id="Sanitization_WeaponStart3" parent="Combat">

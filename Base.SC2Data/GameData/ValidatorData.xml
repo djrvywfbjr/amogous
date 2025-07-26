@@ -946,6 +946,20 @@
     <CValidatorPlayerRequirement id="NoSilentBastion">
         <Value value="UseShieldWall2"/>
     </CValidatorPlayerRequirement>
+    <CValidatorUnitType id="NotMobileSupercapacitor">
+        <Value value="MobileSupercapacitor"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasPoweringMode">
+        <WhichUnit Value="Source"/>
+        <Value value="1"/>
+        <Behavior value="PoweringMode"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="PoweringModeCP">
+        <Type value="And"/>
+        <CombineArray value="CasterHasPoweringMode"/>
+        <CombineArray value="CasterWithin4Range"/>
+    </CValidatorCombine>
     <CValidatorCombine id="RefugeeValidatorAnyWorkerOrScientist">
         <CombineArray value="RequiresCivilian2"/>
         <CombineArray value="RequiresCivilian24"/>
@@ -3541,6 +3555,9 @@
         <WhichUnit Value="Target"/>
         <Value value="100"/>
     </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareBehaviorCount id="PoweringModeTargetNotBeingHealed">
+        <Behavior value="PoweringModeHealed"/>
+    </CValidatorUnitCompareBehaviorCount>
     <CValidatorCombine id="TargetNotDeadAndCasterNotDead2">
         <Type value="And"/>
         <CombineArray value="TargetLifeGE2002"/>
@@ -3573,6 +3590,10 @@
         <Value value="0.1"/>
         <Vital value="Shields"/>
     </CValidatorUnitCompareVital>
+    <CValidatorLocationCompareRange id="CasterWithin4Range">
+        <Compare value="LE"/>
+        <Range value="4"/>
+    </CValidatorLocationCompareRange>
     <CValidatorUnitCompareBehaviorCount id="UnknownValidator"/>
     <CValidatorUnitCompareVeterancyLevel id="UnknownValidator2">
         <ResultFailed value="Error,Levelerror12"/>

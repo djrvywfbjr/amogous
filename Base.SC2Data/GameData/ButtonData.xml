@@ -87,6 +87,20 @@
         <AlertIcon value="Assets\Textures\btn-ability-kerrigan-wildmutation.dds"/>
         <EditorCategories value="Race:Zerg"/>
     </CButton>
+    <CButton id="DisablePoweringMode">
+        <Icon value="Assets\Textures\btn-command-cancel.dds"/>
+        <AlertIcon value="Assets\Textures\btn-command-cancel.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeySet value="Cloak"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="PoweringMode">
+        <Icon value="Assets\Textures\btn-ability-protoss-energize.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-energize.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="CloakOnBanshee"/>
+        <HotkeySet value="Cloak"/>
+    </CButton>
     <CButton id="PlasmaSurge">
         <Icon value="Assets\Textures\btn-shield-protoss-plasmashields.dds"/>
         <EditorCategories value="Race:Protoss"/>
@@ -15814,7 +15828,7 @@
         <HotkeyAlias value="KerriganEpilogue03QuantumRay"/>
     </CButton>
     <CButton id="DisurptionBlast">
-        <Icon value="Assets\Textures\btn-ability-protoss-carrierrepairdrones.dds"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-mindblast.dds"/>
         <EditorCategories value="Race:Zerg"/>
     </CButton>
     <CButton id="KerriganVoidApocalypse22">

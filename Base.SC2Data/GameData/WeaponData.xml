@@ -851,6 +851,17 @@
         <DamagePoint value="0.95"/>
         <Effect value="BrutalizeCreatePersistent3"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="SanitizationBeam">
+        <Name value="Weapon/Name/Energizer"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="SanitizationBeamDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="11"/>
+        <TeleportResetRange value="0"/>
+        <Period value="1"/>
+        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="PsionicLightning">
         <EditorCategories value="Race:Protoss"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
@@ -8574,18 +8585,6 @@
         <AllowedMovement value="Moving"/>
         <RandomDelayMin value="0"/>
         <RandomDelayMax value="0"/>
-    </CWeaponLegacy>
-    <CWeaponLegacy id="SanitizationBeam">
-        <Name value="Weapon/Name/Energizer"/>
-        <EditorCategories value="Race:Protoss"/>
-        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
-        <DisplayEffect value="SanitizationBeamDamage2"/>
-        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="11"/>
-        <TeleportResetRange value="0"/>
-        <Period value="1"/>
-        <Effect value="SanitizationBeam2"/>
-        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GoliathA2">
         <EditorCategories value="Race:Terran"/>

@@ -243,6 +243,18 @@
             </Cost>
         </DamageResponse>
     </CBehaviorBuff>
+    <CBehaviorBuff id="PoweringModeHealing">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="65535"/>
+        <Duration value="0.5"/>
+        <Modification>
+            <VitalRegenArray index="Energy" value="-3"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PoweringModeHealed">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="ShieldOfTassadar">
         <Alignment value="Positive"/>
         <InfoIcon value="Assets\Textures\BTN-Upgrade-Protoss-ShieldsLevel1.dds"/>
@@ -2085,6 +2097,15 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="30"/>
         <Modification TimeScale="1.4"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PoweringMode">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-cloak.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="CanSpendEnergy"/>
+        <RemoveValidatorArray value="hasEnergy"/>
+        <Period value="0.33"/>
+        <PeriodicEffect value="PoweringModeSA"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="SilentBastion">
         <BehaviorFlags index="Permanent" value="1"/>

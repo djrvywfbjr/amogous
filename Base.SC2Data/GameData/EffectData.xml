@@ -1632,6 +1632,56 @@
         <PeriodicPeriodArray value="0.0625"/>
         <PeriodicPeriodArray value="0.0625"/>
     </CEffectCreatePersistent>
+    <CEffectSwitch id="MedivacHealInitialSwitch3">
+        <ValidatorArray value="NotMaxHP"/>
+        <ValidatorArray value="NotWarpingIn"/>
+        <ValidatorArray value="TargetNotBeingHealed"/>
+        <EditorCategories value="Race:Terran"/>
+        <CaseArray Validator="HealBeamAvailable" Effect="MedivacHealInitialSet3"/>
+        <CaseDefault value="MedivacHealIssueOrderSet3"/>
+    </CEffectSwitch>
+    <CEffectIssueOrder id="MedivacHealIssueHealOrder3">
+        <EditorCategories value="Race:Terran"/>
+        <WhichUnit Value="Caster"/>
+        <Abil value="MedivacDoubleBeamHeal"/>
+        <Player Value="Caster"/>
+        <Target Value="TargetUnit"/>
+    </CEffectIssueOrder>
+    <CEffectCreatePersistent id="MedivacHealIssueHealOrderDelay3">
+        <EditorCategories value="Race:Terran"/>
+        <WhichLocation Value="TargetUnit"/>
+        <InitialDelay value="0.125"/>
+        <InitialEffect value="MedivacHealIssueHealOrder3"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="MedivacHealIssueOrderSet3">
+        <EditorCategories value="Race:Terran"/>
+        <EffectArray value="MedivacHealIssueStopOrder3"/>
+        <EffectArray value="MedivacHealIssueHealOrderDelay3"/>
+    </CEffectSet>
+    <CEffectIssueOrder id="MedivacHealIssueStopOrder3">
+        <EditorCategories value="Race:Terran"/>
+        <WhichUnit Value="Caster"/>
+        <Abil value="stop"/>
+        <Player Value="Caster"/>
+    </CEffectIssueOrder>
+    <CEffectApplyBehavior id="PoweringModeABTarget">
+        <EditorCategories value=""/>
+        <Behavior value="PoweringModeHealed"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="PoweringModeModifySet">
+        <EditorCategories value="Race:Terran"/>
+        <EffectArray value="PoweringModeModifyTarget"/>
+        <EffectArray value="PoweringModeModifyCaster"/>
+    </CEffectSet>
+    <CEffectRemoveBehavior id="PoweringModeRBTarget">
+        <EditorCategories value=""/>
+        <BehaviorLink value="PoweringModeHealed"/>
+    </CEffectRemoveBehavior>
+    <CEffectEnumArea id="PoweringModeSA">
+        <EditorCategories value="Race:Terran"/>
+        <SearchFilters value="-;Self,Neutral,Enemy,Missile,Dead,Hidden"/>
+        <AreaArray Radius="4" Effect="PoweringModeCP"/>
+    </CEffectEnumArea>
     <CEffectModifyUnit id="PlasmaSurgeModifyUnit">
         <EditorCategories value="Race:Protoss"/>
         <VitalArray index="Shields">
@@ -2142,6 +2192,32 @@
         <CreateFlags index="UseFood" value="0"/>
         <SpawnUnit value="SJPickupHealth500222224"/>
     </CEffectCreateUnit>
+    <CEffectCreatePersistent id="PoweringModeCP">
+        <EditorCategories value="Race:Terran"/>
+        <Flags index="PersistUntilDestroyed" value="1"/>
+        <PeriodicValidator value="PoweringModeCP"/>
+        <PeriodicEffectArray value="PoweringModeModifySet"/>
+        <PeriodicPeriodArray value="0.33"/>
+        <ValidatorArray value="NotMaxEnergy"/>
+        <ValidatorArray value="CasterHasPoweringMode"/>
+        <ValidatorArray value="PoweringModeTargetNotBeingHealed"/>
+        <WhichLocation Value="TargetUnit"/>
+        <InitialEffect value="PoweringModeABTarget"/>
+        <FinalEffect value="PoweringModeRBTarget"/>
+    </CEffectCreatePersistent>
+    <CEffectModifyUnit id="PoweringModeModifyTarget">
+        <EditorCategories value="Race:Terran"/>
+        <VitalArray index="Energy">
+            <Change value="1"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectModifyUnit id="PoweringModeModifyCaster">
+        <EditorCategories value="Race:Terran"/>
+        <ImpactUnit Value="Source"/>
+        <VitalArray index="Energy">
+            <Change value="-1"/>
+        </VitalArray>
+    </CEffectModifyUnit>
     <CEffectApplyBehavior id="PsiDisruptionApplyBehavior3232">
         <ValidatorArray index="0" removed="1"/>
         <EditorCategories value="Race:Terran"/>
@@ -67057,16 +67133,6 @@
         <Flags index="Kill" value="1"/>
         <Death value="Salvage"/>
     </CEffectDamage>
-    <CEffectCreatePersistent id="SanitizationBeam2">
-        <EditorCategories value="Race:Protoss"/>
-        <WhichLocation Value="TargetUnit"/>
-        <TimeScaleSource Value="Caster"/>
-        <Flags index="Channeled" value="1"/>
-        <Flags index="PersistUntilDestroyed" value="1"/>
-        <InitialEffect value="SanitizationBeamDamage2"/>
-        <PeriodicEffectArray value="SanitizationBeamDamage2"/>
-        <PeriodicPeriodArray value="1"/>
-    </CEffectCreatePersistent>
     <CEffectCreatePersistent id="SanitizationBeam3">
         <EditorCategories value="Race:Protoss"/>
         <WhichLocation Value="TargetUnit"/>
@@ -67156,12 +67222,6 @@
         <PeriodicEffectArray value="SanitizationBeamDamage42"/>
         <PeriodicPeriodArray value="1"/>
     </CEffectCreatePersistent>
-    <CEffectDamage id="SanitizationBeamDamage2" parent="DU_WEAP">
-        <EditorCategories value="Race:Protoss"/>
-        <AttributeBonus index="Armored" value="4"/>
-        <Kind value="Ranged"/>
-        <Amount value="10"/>
-    </CEffectDamage>
     <CEffectDamage id="SanitizationBeamDamage3" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
         <Kind value="Ranged"/>
