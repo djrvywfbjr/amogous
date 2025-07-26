@@ -251,6 +251,9 @@
         <NodeArray index="Use" Link="CountUnitBarracks4CompleteOnly"/>
         <NodeArray index="Show" Link="NotCountUpgradeHazardousMunitionsQueuedOrBetter"/>
     </CRequirement>
+    <CRequirement id="NoJorCap">
+        <NodeArray index="Show" Link="NotCountUpgradeJoriumBatteriesQueuedOrBetter"/>
+    </CRequirement>
     <CRequirement id="OMindBleeding">
         <NodeArray index="Use" Link="CountUnitInfestationPit4CompleteOnly"/>
         <NodeArray index="Show" Link="NotCountUpgradeBleedingQueuedOrBetter"/>
@@ -9484,10 +9487,10 @@
     </CRequirement>
     <CRequirement id="UnknownRequirement8232223">
         <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322323232223222222222CompleteOnly3753974816"/>
-        <NodeArray index="Show" Link="NotOrCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322QueuedOrBetter"/>
+        <NodeArray index="Show" Link="NotOrCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="UnknownRequirement82322232">
-        <NodeArray index="Show" Link="NotOrCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322222QueuedOrBetter"/>
+        <NodeArray index="Show" Link="NotOrCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322222QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="UnknownRequirement823222322">
         <NodeArray index="Show" Link="NotOrCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233222QueuedOrBetter"/>

@@ -255,6 +255,16 @@
         <BehaviorFlags index="Permanent" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="EndoCloak">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <Duration value="14"/>
+        <Modification>
+            <StateFlags index="Cloak" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="ShieldOfTassadar">
         <Alignment value="Positive"/>
         <InfoIcon value="Assets\Textures\BTN-Upgrade-Protoss-ShieldsLevel1.dds"/>
@@ -8366,7 +8376,9 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Requirements value="UnknownRequirement82322222332332222"/>
-        <Modification AttackSpeedMultiplier="1.45"/>
+        <Modification AttackSpeedMultiplier="1.45">
+            <RateMultiplierArray index="Morph" value="1.45"/>
+        </Modification>
         <DamageResponse>
             <Cost>
                 <Charge Link="Behavior/AntamoAirAll2" TimeUse="5"/>
@@ -16891,9 +16903,7 @@
         <InfoIcon value="Assets\Textures\btn-progression-zerg-dehaka-15-genemutation.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Requirements value="UnknownRequirement82322222322"/>
-        <Modification WeaponRange="1">
-            <StateFlags index="Cloak" value="1"/>
-        </Modification>
+        <Modification WeaponRange="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="Evacuation103">
         <InfoIcon value="Assets\Textures\btn-upgrade-zerg-hotstunnelingclaws.dds"/>
@@ -16908,7 +16918,7 @@
         <InfoIcon value="Assets\Textures\btn-upgrade-zerg-adrenalglands.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Requirements value="UnknownRequirement82322222322222"/>
-        <Modification MoveSpeedMultiplier="1.75" AttackSpeedMultiplier="1.25"/>
+        <Modification MoveSpeedMultiplier="1.25" AttackSpeedMultiplier="1.25"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="Evacuation10322">
         <InfoIcon value="Assets\Textures\talent-zagara-level12-unlockswarmling.dds"/>

@@ -488,6 +488,16 @@
         <Flags index="Transient" value="1"/>
         <BehaviorArray value="ArmyUnselectable"/>
     </CAbilBehavior>
+    <CAbilEffectInstant id="BadCloakingFieldEndo">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="Endocloak"/>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link="Abil/AlarakAvatar" TimeUse="28"/>
+        </Cost>
+        <AINotifyEffect value="ShieldUp2332"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="StandupEndoskeletonCloak" Requirements="UnknownRequirement82322222322"/>
+    </CAbilEffectInstant>
     <CAbilEffectTarget id="Cauterization">
         <Flags index="AutoCast" value="1"/>
         <Flags index="AutoCastOn" value="1"/>
@@ -1267,6 +1277,13 @@
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
     </CAbilEffectTarget>
+    <CAbilBehavior id="InstinctToggle">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <CmdButtonArray index="On" DefaultButtonFace="SuppressHuntingInstincts"/>
+        <CmdButtonArray index="Off" DefaultButtonFace="SuppressHuntingInstincts2"/>
+        <Flags index="Toggle" value="1"/>
+        <BehaviorArray value="PhaseCannonTimedLife312"/>
+    </CAbilBehavior>
     <CAbilEffectTarget id="Irradiate223522">
         <EditorCategories value="AbilityorEffectType:Units,Race:Terran"/>
         <Effect index="0" value="VoidRayVoid2923522"/>
@@ -22145,6 +22162,11 @@
             <Resource index="Vespene" value="75"/>
             <Button DefaultButtonFace="CommanderTraitNovaStealthMode226242" Requirements="LearnBlink2426225"/>
         </InfoArray>
+        <InfoArray index="Research20" Time="71" Upgrade="JoriumBatteries">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="JoriumBatteries" Requirements="NoJorCap"/>
+        </InfoArray>
         <InfoArray index="Research22" Time="140" Upgrade="UmojanBasicUnitUpgrade35">
             <Resource index="Minerals" value="200"/>
             <Resource index="Vespene" value="150"/>
@@ -25665,7 +25687,7 @@
         <InfoArray index="Research2" Time="0" Upgrade="UmojanBasicUnitUpgrade52224224232222222222222332223222">
             <Resource index="Minerals" value="0"/>
             <Resource index="Vespene" value="0"/>
-            <Resource index="Terrazine" value="25"/>
+            <Resource index="Terrazine" value="45"/>
             <Button DefaultButtonFace="Larva3223" Requirements="UnknownRequirement82322232"/>
         </InfoArray>
         <InfoArray index="Research3" Time="0" Upgrade="UmojanBasicUnitUpgrade5222422423222222222222233222322222">
@@ -25679,7 +25701,7 @@
             <Button DefaultButtonFace="Larva32" Requirements="UnknownRequirement8232223"/>
         </InfoArray>
         <InfoArray index="Research5" Upgrade="UmojanBasicUnitUpgrade522242242322222222222223322232">
-            <Resource index="Terrazine" value="45"/>
+            <Resource index="Terrazine" value="25"/>
             <Button DefaultButtonFace="Larva322" Requirements="UnknownRequirement8232223"/>
         </InfoArray>
         <InfoArray index="Research6" Upgrade="UmojanBasicUnitUpgrade5222422423222222222222233222322">
@@ -51501,7 +51523,7 @@
     </CAbilBehavior>
     <CAbilEffectTarget id="ShadowYamato">
         <Cost index="0">
-            <Vital index="Energy" value="200"/>
+            <Vital index="Energy" value="150"/>
         </Cost>
         <Range index="0" value="30"/>
     </CAbilEffectTarget>
@@ -68815,7 +68837,7 @@
             <Charge Link="Abil/YamatoBurst"/>
             <Cooldown Link="Abil/YamatoBurst" TimeUse="3"/>
         </Cost>
-        <Range value="9"/>
+        <Range value="14"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="Zealot2262232233323232222"/>
         <CmdButtonArray index="Cancel" Requirements="UnknownRequirement5222233222"/>
         <Arc value="360"/>

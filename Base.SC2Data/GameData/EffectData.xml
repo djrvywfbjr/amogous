@@ -2355,6 +2355,10 @@
         <SearchFlags index="ExtendByUnitRadius" value="1"/>
         <SearchFlags index="SameCliff" value="1"/>
     </CEffectEnumArea>
+    <CEffectApplyBehavior id="Endocloak">
+        <EditorCategories value=""/>
+        <Behavior value="EndoCloak"/>
+    </CEffectApplyBehavior>
     <CEffectCreateUnit id="SpawnBanelings4">
         <EditorCategories value="Race:Zerg"/>
         <WhichLocation Value="TargetPoint"/>
