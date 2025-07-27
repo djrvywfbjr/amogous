@@ -39565,15 +39565,15 @@
         <InitialEffect value="PsiStormDamageInitial3"/>
         <PeriodicEffect value="PsiStormDamage3"/>
     </CBehaviorBuff>
-    <CBehaviorBuff id="PsiStorm4">
-        <Alignment value="Negative"/>
+    <CBehaviorBuff id="PlasmaStorm">
+        <Alignment value="Positive"/>
         <InfoIcon value="Assets\Textures\btn-ability-protoss-psistorm.dds"/>
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <TimeScaleSource Value="Global"/>
-        <Duration value="1.1"/>
-        <Period value="1"/>
-        <PeriodicEffect value="PsiStormDamageInitial4"/>
-        <InitialEffect value="PsiStormDamageInitial4"/>
+        <Duration value="0.6"/>
+        <Period value="0.5"/>
+        <InitialEffect value="PlasmaStorm"/>
+        <PeriodicEffect value="PlasmaStorm"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="PsiStorm5">
         <Alignment value="Negative"/>

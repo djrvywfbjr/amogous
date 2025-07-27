@@ -222,9 +222,6 @@
         <EditorCategories value="Race:Protoss"/>
         <HotkeyAlias value="ArbiterCloakField"/>
     </CButton>
-    <CButton id="ArbiterMPRecall">
-        <Icon value="Assets\Textures\btn-ability-protoss-massrecall.dds"/>
-    </CButton>
     <CButton id="ArbiterMPRecall2">
         <Icon value="Assets\Textures\btn-progression-zeratul-10-chronometry.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-recall.dds"/>
@@ -22955,7 +22952,7 @@
         <AlertIcon value="Assets\Textures\btn-ability-protoss-psistorm-color.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
-    <CButton id="PsiStorm3">
+    <CButton id="PlasmaStorm">
         <Icon value="Assets\Textures\btn-upgrade-artanis-healingpsionicstorm.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-psistorm-color.dds"/>
         <EditorCategories value="Race:Protoss"/>

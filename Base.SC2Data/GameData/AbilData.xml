@@ -2399,13 +2399,6 @@
         <CursorEffect value="ArtanisLightningDashSearch5"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="ArtanisLightningDash6"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="ArtanisWormholeTransit">
-        <Flags index="BestUnit" value="0"/>
-        <Cost index="0">
-            <Vital index="Energy" value="0"/>
-            <Cooldown TimeUse="84"/>
-        </Cost>
-    </CAbilEffectTarget>
     <CAbilEffectTarget id="ArtanisWormholeTransit2">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Effect index="0" value="ArtanisWormholeTransitTeleportMove2"/>
@@ -46122,15 +46115,18 @@
         <AINotifyEffect value="PsiStorm"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="PsiStorm2"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="PsiStorm3" parent="PsiStorm">
-        <Name value="Abil/Name/PsiStorm3"/>
-        <Effect index="0" value="PsiStormPersistent4"/>
-        <Cost index="0">
-            <Vital index="Energy" value="100"/>
-            <Cooldown TimeUse="30"/>
+    <CAbilEffectTarget id="PlasmaStorm">
+        <Alignment value="Positive"/>
+        <Effect index="0" value="PlasmaStormCP"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="150"/>
+            <Cooldown Link="Abil/PsiStorm" TimeUse="30"/>
         </Cost>
-        <Range index="0" value="14"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="PsiStorm3"/>
+        <Range value="14"/>
+        <CastOutroTime value="0.5"/>
+        <CursorEffect value="PlasmaStormSA"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PlasmaStorm"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="PsiStorm4" parent="PsiStorm">
         <Name value="Abil/Name/PsiStorm4"/>

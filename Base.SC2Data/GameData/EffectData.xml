@@ -55568,9 +55568,9 @@
         <EditorCategories value="Race:Protoss"/>
         <Behavior value="PsiStorm3"/>
     </CEffectApplyBehavior>
-    <CEffectApplyBehavior id="PsiStormApplyBehavior4">
+    <CEffectApplyBehavior id="PlasmaStormAB">
         <EditorCategories value="Race:Protoss"/>
-        <Behavior value="PsiStorm4"/>
+        <Behavior value="PlasmaStorm"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="PsiStormApplyBehavior5">
         <EditorCategories value="Race:Protoss"/>
@@ -55711,15 +55711,12 @@
         <Amount value="30"/>
         <ShieldBonus value="30"/>
     </CEffectDamage>
-    <CEffectDamage id="PsiStormDamageInitial4">
-        <ValidatorArray value="PsiStormUTargetFilters"/>
+    <CEffectModifyUnit id="PlasmaStorm">
         <EditorCategories value="Race:Protoss"/>
-        <ResponseFlags index="Acquire" value="1"/>
-        <ResponseFlags index="Flee" value="1"/>
-        <AttributeBonus index="Massive" value="3"/>
-        <Flags index="Notification" value="1"/>
-        <Amount value="2"/>
-    </CEffectDamage>
+        <VitalArray index="Shields">
+            <Change value="5"/>
+        </VitalArray>
+    </CEffectModifyUnit>
     <CEffectDamage id="PsiStormDamageInitial5">
         <ValidatorArray value="PsiStormUTargetFilters"/>
         <EditorCategories value="Race:Protoss"/>
@@ -55876,11 +55873,11 @@
         <PeriodicOffsetArray value="0,20,0"/>
         <PeriodicOffsetArray value="0,18,0"/>
     </CEffectCreatePersistent>
-    <CEffectCreatePersistent id="PsiStormPersistent4">
+    <CEffectCreatePersistent id="PlasmaStormCP">
         <EditorCategories value="Race:Protoss"/>
-        <InitialEffect value="PsiStormSearch4"/>
+        <InitialEffect value="PlasmaStormSA"/>
         <PeriodCount value="60"/>
-        <PeriodicEffectArray value="PsiStormSearch4"/>
+        <PeriodicEffectArray value="PlasmaStormSA"/>
         <PeriodicPeriodArray value="0.75"/>
         <AINotifyEffect value="PsiStormSearch"/>
     </CEffectCreatePersistent>
@@ -55981,12 +55978,12 @@
         <SearchFlags index="CallForHelp" value="1"/>
         <ImpactLocation Value="TargetPoint"/>
     </CEffectEnumArea>
-    <CEffectEnumArea id="PsiStormSearch4">
+    <CEffectEnumArea id="PlasmaStormSA">
         <EditorCategories value="Race:Protoss"/>
         <AINotifyFlags index="HurtFriend" value="1"/>
         <AINotifyFlags index="HurtEnemy" value="1"/>
         <SearchFilters value="-;Neutral,Enemy,Structure,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
-        <AreaArray Radius="6" Effect="PsiStormApplyBehavior4"/>
+        <AreaArray Radius="6" Effect="PlasmaStormAB"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="PsiStormSearch5">
