@@ -925,6 +925,20 @@
     <CValidatorUnitType id="IsZergling23">
         <Value value="Mutalisk5"/>
     </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="SolarBeamDoubleDamage">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="SolarBeamDoubleDamage"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="SolarBeamQuadDamage">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="SolarBeamQuadDamage"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="SolarBeamQuadOrDoubleDamage">
+        <CombineArray value="SolarBeamQuadDamage"/>
+        <CombineArray value="SolarBeamDoubleDamage"/>
+    </CValidatorCombine>
     <CValidatorUnitCompareBehaviorCount id="NoGuardianShell">
         <Behavior value="GuardianShell"/>
     </CValidatorUnitCompareBehaviorCount>
@@ -957,6 +971,23 @@
         <WhichUnit Value="Source"/>
         <Value value="1"/>
         <Behavior value="PoweringMode"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="NotSolarBeamDoubleDamage">
+        <WhichUnit Value="Caster"/>
+        <Compare value="NE"/>
+        <Value value="1"/>
+        <Behavior value="SolarBeamDoubleDamage"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="NotSolarBeamQuadAndNotDoubleDamage">
+        <Type value="And"/>
+        <CombineArray value="NotSolarBeamDoubleDamage"/>
+        <CombineArray value="NotSolarBeamQuadDamage"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="NotSolarBeamQuadDamage">
+        <WhichUnit Value="Caster"/>
+        <Compare value="NE"/>
+        <Value value="1"/>
+        <Behavior value="SolarBeamQuadDamage"/>
     </CValidatorUnitCompareBehaviorCount>
     <CValidatorCombine id="PoweringModeCP">
         <Type value="And"/>

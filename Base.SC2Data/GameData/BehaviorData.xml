@@ -243,6 +243,17 @@
             </Cost>
         </DamageResponse>
     </CBehaviorBuff>
+    <CBehaviorBuff id="SolarBeamDoubleDamage">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="NotMohandarQuadDamage"/>
+        <Duration value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SolarBeamQuadDamage">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Duration value="1"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="PoweringModeHealed">
         <BehaviorFlags index="Permanent" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
