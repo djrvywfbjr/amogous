@@ -253,9 +253,7 @@
         </Cost>
         <Period value="0.2856"/>
         <Effect value="ATSLaserBatteryLM4"/>
-        <LegacyOptions index="FaceTargetWhileInCooldown" value="1"/>
         <AllowedMovement value="Slowing"/>
-        <UninterruptibleDuration value="32767.9997"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ATSLaserBattery42" parent="ATSLaserBattery">
         <Name value="Weapon/Name/ATSLaserBattery42"/>
@@ -8714,16 +8712,12 @@
         <Period value="3"/>
         <Effect value="InterceptorBeamPersistent3"/>
     </CWeaponStrafe>
-    <CWeaponLegacy id="IonCannons2" parent="IonCannons">
-        <Name value="Weapon/Name/IonCannons2"/>
-        <Tip value="Weapon/Tip/IonCannons2"/>
+    <CWeaponLegacy id="PlasmaCannons" parent="IonCannons">
+        <Name value="Weapon/Name/PlasmaCannons"/>
         <DisplayEffect value="IonCannonsU2"/>
         <DisplayAttackCount value="4"/>
-        <Range value="9"/>
-        <Cost>
-            <Vital index="Shields" value="10"/>
-        </Cost>
-        <Period value="0.6"/>
+        <Range value="6"/>
+        <Period value="1"/>
         <Effect value="IonCannons2"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="KaiserBlades2" parent="KaiserBlades">

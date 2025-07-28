@@ -925,6 +925,9 @@
     <CValidatorUnitType id="IsZergling23">
         <Value value="Mutalisk5"/>
     </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="NoGuardianShell">
+        <Behavior value="GuardianShell"/>
+    </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitCompareBehaviorCount id="NoShieldOvercharge">
         <Behavior value="ShieldOvercharge"/>
     </CValidatorUnitCompareBehaviorCount>

@@ -257,6 +257,15 @@
             <StateFlags index="Cloak" value="1"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="GuardianShell">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-spearofadun-guardianshell.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+        <DamageResponse ClampMaximum="0" ModifyMinimumDamage="1">
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
     <CBehaviorBuff id="ShieldOfTassadar">
         <Alignment value="Positive"/>
         <InfoIcon value="Assets\Textures\BTN-Upgrade-Protoss-ShieldsLevel1.dds"/>
@@ -2050,8 +2059,8 @@
         <TimeScaleSource Value="Global"/>
         <Duration value="30"/>
         <Modification>
-            <VitalMaxArray index="Shields" value="100"/>
-            <VitalRegenArray index="Shields" value="5"/>
+            <VitalMaxArray index="Shields" value="150"/>
+            <VitalRegenArray index="Shields" value="10"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="Shield23">

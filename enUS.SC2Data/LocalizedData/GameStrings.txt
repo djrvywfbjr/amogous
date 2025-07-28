@@ -943,6 +943,7 @@ Abil/Name/GravitonBeamUrun2=Feed The Hounds
 Abil/Name/GravitonBeamUrun22=Airborne
 Abil/Name/GravitonBeamUrun222=Airborne Remove
 Abil/Name/GravitonPrison2=Graviton Prison
+Abil/Name/GuardianShell=Guardian Shell
 Abil/Name/GuardianShield22=Unity
 Abil/Name/GuardianShield222=Glory Field
 Abil/Name/GuardianShieldVoid2=Guardian Shield
@@ -960,6 +961,7 @@ Abil/Name/HerculesTransport4=Nemesis Transport
 Abil/Name/HerdInteract2=HealLol
 Abil/Name/HighArchonPsiStorm2=Leading Storm
 Abil/Name/HighAvatar=High Avatar
+Abil/Name/HighOnes_WormholeTransit=High Ones_ Wormhole Transit
 Abil/Name/HoloShipShields=Holo Ship Shields
 Abil/Name/HoloShipShields2=Holo Ship Regen
 Abil/Name/HoloShipShields22=Holo Ship Damage
@@ -3552,6 +3554,7 @@ Behavior/Name/GlazeHolo22522=Preserved
 Behavior/Name/GravitonBeamUrun2=Feed The Hounds
 Behavior/Name/GravitonBeamUrun22=Airborne
 Behavior/Name/GravitonPrison2=Graviton Prison
+Behavior/Name/GuardianShell=Guardian Shell
 Behavior/Name/GuardianShield22=Unity
 Behavior/Name/GuardianShield222=Unity Copy
 Behavior/Name/GuardianShield3=Xel'naga Shield
@@ -4832,6 +4835,7 @@ Behavior/Tooltip/GlazeHolo22522=This unit blocks fatal damage.
 Behavior/Tooltip/GravitonBeamUrun2=This unit is able to be hit by air units instead of ground.
 Behavior/Tooltip/GravitonBeamUrun22=This unit is able to be hit by air units instead of ground.
 Behavior/Tooltip/GravitonPrison2=This unit is being lifted in the air and is taking damage. It cannot attack or use abilities until the Graviton Prison ends.
+Behavior/Tooltip/GuardianShell=This unit ignores incoming damage.
 Behavior/Tooltip/GuardianShield22=Maximum shields are increased.
 Behavior/Tooltip/GuardianShield222=Maximum shields are increased.
 Behavior/Tooltip/GuardianShield3=Incoming attack damage reduced by 2.
@@ -7755,6 +7759,7 @@ Button/Name/GrowHugeQueen2=Grow Stronger
 Button/Name/GrowHugeQueen22=Grow Stronger
 Button/Name/GrowHugeQueen222=Grow Stronger
 Button/Name/GrowHugeQueen2222=Grow Stronger
+Button/Name/GuardianShell=Guardian Shell
 Button/Name/GuardianShield22=Unity
 Button/Name/GuardianShield222=Unity Copy
 Button/Name/GuardianShield3=Xel'naga Shield
@@ -7845,6 +7850,7 @@ Button/Name/HighArchonPsiStorm2322232=Rapid Mutation
 Button/Name/HighArchonPsiStorm24=Birth Of The Savior
 Button/Name/HighArchonPsiStorm25=Quick Mutator
 Button/Name/HighArchonPsiStorm256=Bless Tools
+Button/Name/HighOnes_WormholeTransit=Wormhole Transit
 Button/Name/HighTemplar2=Warp In Engineer
 Button/Name/HighTemplar22=Warp In Discharger
 Button/Name/HighTemplar3=Warp In Fallen
@@ -15068,6 +15074,7 @@ Button/Tooltip/GrowHugeQueen222=Grows Nekta'la to Level 4. Nekta'la gains:<n/>17
 Button/Tooltip/GrowHugeQueen2222=Grows Nekta'la to Level 5. Nekta'la gains:<n/>200 health<n/>7 damage<n/>50 energy<n/>Stronger allies<n/>Choosable Ultimate Ability at Nekta'la's Chamber
 Button/Tooltip/GuardMarine=General-purpose infantry.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/GuardMarine2=General-purpose infantry.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/GuardianShell=Target unit ignores incoming damage for <d time="5"/> seconds.
 Button/Tooltip/GuardianShield22=Creates a range 7 powerful shield, that increases shield armor of all units inside by 3 and range by 2, Units inside the shield take 30% less damage.
 Button/Tooltip/GuardianShield222=Creates a range 7 powerful shield, that increases shield armor of all units inside by 3 and range by 2, but halfs the movement speed for some time.
 Button/Tooltip/GuardianShield3=Creates a range <d ref="Effect,GuardianShieldSearch,AreaArray[0].Radius" precision="1"/> aura that increases shield regeneration of nearby units by 400% and range by 1. Lasts <d time="15"/>.
@@ -15181,6 +15188,7 @@ Button/Tooltip/HighArchonPsiStorm2322225222dwa1=A wide-spread weapon, originally
 Button/Tooltip/HighArchonPsiStorm232222523=Terminate targeted unit's weapons<n/>Burns any weapons.
 Button/Tooltip/HighArchonPsiStorm2322225wa21aw=Heavily simplified weapon design used by the royal guard. Attacks up to 3 targets each shot.
 Button/Tooltip/HighArchonPsiStorm2322226=Choose a unit to adapt into this pack's leader.<n/>Leaders have an increased limit on <c val="FFFF00">Essence</c> they can have and are capable of powerful abilities.<n/>Each pack can only have 1 leader.<n/><n/>Primal Hosts, Igniters, Essence Manipulators and Evolved units cannot become leaders.
+Button/Tooltip/HighOnes_WormholeTransit=Creates an artificial Wormhole allowing the Mothership to instantly travel to the target owned structure.
 Button/Tooltip/HighTemplar2=Potent psionic master. Can use Feedback and be upgraded to use Psionic Storm. Can transform into an Archon.<n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/HighTemplar22=Potent psionic master. Can use Feedback.
 Button/Tooltip/HighTemplar3=Potent robotic master. Can use Concussion and Take.<n/><n/><c val="00FFFF">Special Ability: </c>Creates a storm that deals triple damage to massive units.
@@ -16983,7 +16991,7 @@ Button/Tooltip/PhaseCannon943222=Summon a Leech Hive, that will send healing Sup
 Button/Tooltip/PhaseMine=Uses a laser to shoot down enemy missiles.  <n/>Cannot target special attacks. <n/>Times out after <d ref="Behavior,PointDefenseDroneTimedLife,Duration"/> seconds.<n/><n/><c val="f078ff">Each shot consumes 10 energy.</c>
 Button/Tooltip/PhaseMineBlast2=Launch 10 Void Spheres at target, each one dealing 10 damage in an area.
 Button/Tooltip/PhaseMineBlast3=After 4 second charge up, barrage target with 20 missiles, each dealing damage in an area.
-Button/Tooltip/PhasingArmor=Prevents the Evasionist from taking damage for <d ref="Behavior,VoidPhoenixPhasingArmorBuff,Duration"/> seconds after being attacked. Cannot occur more than once every <d ref="Behavior,VoidPhoenixPhasingArmor,DamageResponse.Cost.Cooldown.TimeUse"/> seconds.
+Button/Tooltip/PhasingArmor=Prevents the unit from taking damage for <d ref="Behavior,VoidPhoenixPhasingArmorBuff,Duration"/> seconds after being attacked. Cannot occur more than once every <d ref="Behavior,VoidPhoenixPhasingArmor,DamageResponse.Cost.Cooldown.TimeUse"/> seconds.
 Button/Tooltip/PhasingMode2=Transforms the Stationary Mode.
 Button/Tooltip/PhasingMode22=Gather all main parts of the Void Seeker.
 Button/Tooltip/PhasingMode222=Rebuild the Void Seeker.
@@ -18145,7 +18153,7 @@ Button/Tooltip/ShieldBatteryRecharge2NotOvercharged=<n/><n/><c val="f078ff">Rest
 Button/Tooltip/ShieldBatteryRecharge2NotOverchargedConstantText=<n/><n/><c val="#ColorAttackInfo">Autocasting targets units and defensive structures only.</c>
 Button/Tooltip/ShieldBatteryRecharge2Overcharged=<n/><n/><c val="f078ff">Restores up to 36 shields per second. Every 3 shields restored drains 1 energy from the Battery.</c>
 Button/Tooltip/ShieldEmitter=Emits a shield that covers a small area around the Plasmer. Units inside the shield gain 50 shields and 2 shield regeneration.
-Button/Tooltip/ShieldOvercharge=Target unit gains 200 shields and 5 shield regeneration for 60 seconds.
+Button/Tooltip/ShieldOvercharge=Target unit gains 150 shields and 10 shield regeneration for 30 seconds.
 Button/Tooltip/ShieldOvercharger=Restores shields to nearby friendly units and structures.
 Button/Tooltip/ShieldofAdun=Creates a range 4 aura that increases maximum shields of nearby units by 50 and shield armor by 2. Lasts <d time="15"/>.
 Button/Tooltip/ShieldofAiur=Blade Of Adun's shields take no more than 15 damage.
@@ -24286,6 +24294,7 @@ Effect/Name/GuardianMPWeaponDamage2=Guardian MP Weapon Damage Copy
 Effect/Name/GuardianMPWeaponDamage3=Guardian MP Weapon Damage Copy 2
 Effect/Name/GuardianMPWeaponLM2=Guardian MP Weapon LM Copy
 Effect/Name/GuardianMPWeaponLM3=Guardian MP Weapon LM Copy 2
+Effect/Name/GuardianShell=Guardian Shell
 Effect/Name/GuardianShieldApplyBehavior22=Guardian Shield Copy Copy
 Effect/Name/GuardianShieldApplyBehavior222=Guardian Shield Copy Copy Copy
 Effect/Name/GuardianShieldApplyBehavior3=Guardian Shield
@@ -24413,6 +24422,7 @@ Effect/Name/HighArchonPsiStormPersistent2=Psi Storm
 Effect/Name/HighArchonPsiStormPersistent3=Hazardous Wave
 Effect/Name/HighArchonPsiStormSearch2=Psi Storm
 Effect/Name/HighArchonPsiStormSearch3=Psi Storm
+Effect/Name/HighOnes_WormholeTransit=High Ones_ Wormhole Transit
 Effect/Name/HighTemplarWeaponDamage2=High Templar Weapon Damage Copy
 Effect/Name/HighTemplarWeaponDamage22=High Templar Weapon Damage Copy Copy
 Effect/Name/HighTemplarWeaponDamage222=High Templar Weapon Damage Copy Copy Copy
@@ -34605,6 +34615,7 @@ Unit/Name/Armory8=Ambulatory
 Unit/Name/Armory9=Militia Armory
 Unit/Name/Arnold=Arnold
 Unit/Name/Artanis2=Artanis
+Unit/Name/Artanis3=Artanis
 Unit/Name/ArtanisVoid2=Alred
 Unit/Name/ArtanisVoid22=Klora'Zul
 Unit/Name/ArtanisVoid222=Noh'Typ
@@ -37848,6 +37859,7 @@ Unit/ShieldArmorName/ProtossPlasmaShields21waf21=P3D Concentrated Plasma Shield
 Unit/ShieldArmorName/Tosh2Shields=Psi Shield
 Unit/ShieldArmorName/ZergWildMutation55=Protonic Shielding
 UnitKillRank/Artanis2=Hierarch
+UnitKillRank/Artanis3=Hierarch
 UnitKillRank/Ash=Betrayer
 UnitKillRank/AshWorm2=Subterranean Monster
 UnitKillRank/Barns=Truth Seeker
@@ -40008,7 +40020,6 @@ Weapon/Name/InterceptorLaunch5=Interceptor Launch range 20
 Weapon/Name/InterceptorLaunch6=Interceptor Launch
 Weapon/Name/InterceptorLaunch7=Shrek Launch
 Weapon/Name/InterceptorTaldarimLaunch2=Shards Of Apocalypse
-Weapon/Name/IonCannons2=Plasma Cannons
 Weapon/Name/IonCannons22=Xel'naga Blasters
 Weapon/Name/IonCannons3=Ion Fists
 Weapon/Name/IonCannons4=Ancient Cannons
@@ -40266,6 +40277,7 @@ Weapon/Name/PhotonCannon6=Photon Cannon
 Weapon/Name/PhotonCannon62=Photon Overload
 Weapon/Name/PhotonCannon7=Nullifier Array
 Weapon/Name/PlaguedBile=Plagued Bile
+Weapon/Name/PlasmaCannons=Plasma Cannons
 Weapon/Name/PointDefenseLaser2=Point Defense Array
 Weapon/Name/Predator2=Mechpiercer Claws
 Weapon/Name/PrimalBaseWeapon2=Master's Call

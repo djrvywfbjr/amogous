@@ -488,6 +488,25 @@
         <Flags index="Transient" value="1"/>
         <BehaviorArray value="ArmyUnselectable"/>
     </CAbilBehavior>
+    <CAbilEffectTarget id="HighOnes_WormholeTransit">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Cost>
+            <Vital index="Energy" value="25"/>
+            <Cooldown TimeUse="5"/>
+        </Cost>
+        <TargetFilters value="Structure,Visible;Self,Ally,Neutral,Enemy,UnderConstruction"/>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <PrepTime value="0.5"/>
+        <CastIntroTime value="0.5"/>
+        <FinishTime value="0.5"/>
+        <UninterruptibleArray index="Approach" value="1"/>
+        <UninterruptibleArray index="Prep" value="1"/>
+        <UninterruptibleArray index="Cast" value="1"/>
+        <UninterruptibleArray index="Channel" value="1"/>
+        <UninterruptibleArray index="Finish" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="HighOnes_WormholeTransit"/>
+    </CAbilEffectTarget>
     <CAbilEffectInstant id="BadCloakingFieldEndo">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="Endocloak"/>
@@ -2138,7 +2157,7 @@
         <Flags index="AutoCast" value="1"/>
         <Flags index="AutoCastOn" value="1"/>
         <Cost>
-            <Vital index="Energy" value="25"/>
+            <Vital index="Energy" value="50"/>
         </Cost>
         <TargetFilters value="Visible;Self,Neutral,Enemy,Missile,Dead"/>
         <Range value="7"/>
@@ -2147,7 +2166,26 @@
         <AutoCastFilters value="Visible;Self,Neutral,Enemy,Missile,Dead"/>
         <AutoCastRange value="7"/>
         <AutoCastValidatorArray value="TargetInCombat"/>
+        <AutoCastValidatorArray value="NoShieldOvercharge"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="ShieldOvercharge"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="GuardianShell">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="125"/>
+        </Cost>
+        <TargetFilters value="Visible;Neutral,Enemy,Missile,Dead"/>
+        <Range value="7"/>
+        <Arc value="360"/>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastFilters value="Visible;Self,Neutral,Enemy,Missile,Dead"/>
+        <AutoCastRange value="7"/>
+        <AutoCastValidatorArray value="TargetInCombat"/>
+        <AutoCastValidatorArray value="TargetShieldsGE50PC2"/>
+        <AINotifyEffect value="ShieldOvercharge"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="GuardianShell"/>
     </CAbilEffectTarget>
     <CAbilEffectInstant id="ShieldUp133622">
         <EditorCategories value="AbilityorEffectType:Units"/>

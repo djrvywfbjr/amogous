@@ -90,6 +90,9 @@
     <CButton id="JoriumBatteries">
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-personaldefensivematrix.dds"/>
     </CButton>
+    <CButton id="GuardianShell">
+        <Icon value="Assets\Textures\btn-ability-spearofadun-guardianshell.dds"/>
+    </CButton>
     <CButton id="StandupEndoskeletonCloak">
         <Tooltip value="Button/Tooltip/Endocloak"/>
         <Icon value="Assets\Textures\btn-progression-zerg-dehaka-15-genemutation.dds"/>
@@ -33656,6 +33659,10 @@
         <EditorCategories value="Race:Protoss"/>
     </CButton>
     <CButton id="WormholeTransit8">
+        <Icon value="Assets\Textures\btn-ability-protoss-wormholetransit-color.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="HighOnes_WormholeTransit">
         <Icon value="Assets\Textures\btn-ability-protoss-wormholetransit-color.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>

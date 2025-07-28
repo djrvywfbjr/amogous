@@ -1495,6 +1495,11 @@
         <EditorCategories value="Race:Protoss"/>
         <EffectArray value="ArbiterMPStasisFieldApply52"/>
     </CEffectSet>
+    <CEffectTeleport id="HighOnes_WormholeTransit">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Caster"/>
+        <TargetLocation Value="TargetUnit"/>
+    </CEffectTeleport>
     <CEffectCreatePersistent id="BacklashRockets22">
         <EditorCategories value="Race:Terran"/>
         <WhichLocation Value="TargetUnit"/>
@@ -2309,6 +2314,11 @@
         <CaseArray Validator="HighYield" Effect="HarvestingBeamRichMineralsAB2"/>
         <CaseArray Validator="HasVespene" Effect="HarvestingBeamVespeneAB2"/>
     </CEffectSwitch>
+    <CEffectApplyBehavior id="GuardianShell">
+        <ValidatorArray index="0" value="NoGuardianShell"/>
+        <ValidatorArray value="NotHallucination"/>
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
     <CEffectApplyBehavior id="ShieldOfTassadarAB">
         <ValidatorArray index="0" value="SourceNotHidden"/>
         <EditorCategories value="Race:Protoss"/>
@@ -7179,9 +7189,7 @@
         <Death value="Blast"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectDamage>
-    <CEffectApplyBehavior id="ShieldOvercharge">
-        <ValidatorArray index="0" value="NoShieldOvercharge"/>
-    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ShieldOvercharge"/>
     <CEffectApplyBehavior id="ShieldBattaryAB">
         <EditorCategories value=""/>
     </CEffectApplyBehavior>
@@ -33770,7 +33778,7 @@
     <CEffectCreatePersistent id="IonCannons2">
         <EditorCategories value="Race:Protoss"/>
         <WhichLocation Value="TargetUnit"/>
-        <PeriodCount value="4"/>
+        <PeriodCount value="2"/>
         <PeriodicEffectArray value="IonCannonsLMLeft2"/>
         <PeriodicEffectArray value="IonCannonsLMRight2"/>
         <PeriodicPeriodArray value="0"/>
@@ -33994,7 +34002,7 @@
     <CEffectDamage id="IonCannonsU2" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Protoss"/>
         <Visibility value="Visible"/>
-        <Amount value="15"/>
+        <Amount value="7"/>
     </CEffectDamage>
     <CEffectDamage id="IonCannonsU3" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Protoss"/>
@@ -42964,10 +42972,9 @@
     </CEffectDamage>
     <CEffectDamage id="MothershipCoreRepulsorCannonDamage3" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
-        <AttributeBonus index="Light" value="20"/>
         <Visibility value="Visible"/>
         <Kind value="Ranged"/>
-        <Amount value="20"/>
+        <Amount value="10"/>
     </CEffectDamage>
     <CEffectDamage id="MothershipCoreRepulsorCannonDamage32" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
