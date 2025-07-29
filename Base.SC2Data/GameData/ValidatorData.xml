@@ -993,6 +993,7 @@
         <Type value="And"/>
         <CombineArray value="CasterHasPoweringMode"/>
         <CombineArray value="CasterWithin4Range"/>
+        <CombineArray value="NotMaxEnergy"/>
     </CValidatorCombine>
     <CValidatorCombine id="RefugeeValidatorAnyWorkerOrScientist">
         <CombineArray value="RequiresCivilian2"/>

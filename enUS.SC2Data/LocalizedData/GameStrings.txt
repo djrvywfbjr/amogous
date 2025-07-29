@@ -3780,7 +3780,6 @@ Behavior/Name/Poisoned42=Afterstrike
 Behavior/Name/Poisoned5=Tribal Poison
 Behavior/Name/PowerUserWarpable2=Warping In Copy
 Behavior/Name/PoweringMode=Powering Mode
-Behavior/Name/PoweringModeHealed=Powering Mode Healed
 Behavior/Name/PreserveSelf=Preserve Self
 Behavior/Name/PreserveSelf2=Phasing Mode
 Behavior/Name/PreserveSelf3=Void Embraced
@@ -39923,6 +39922,7 @@ Weapon/Name/HellionTank2=Hell Spray
 Weapon/Name/HellionTank3=Napalm Spray Copy
 Weapon/Name/HellionTank4=Inferno Spray
 Weapon/Name/HellionTank5=Napalm Jet Spray
+Weapon/Name/HighOnes_SolariteReaper=Solarite Reaper
 Weapon/Name/HotSBanelingDummy=<c val="FFFFFF">Volatile Burst</c>
 Weapon/Name/HotSBanelingDummySmall2=Phase Burst
 Weapon/Name/HotSBanelingExplode2=Explode

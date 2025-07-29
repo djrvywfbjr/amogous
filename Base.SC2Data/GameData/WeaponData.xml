@@ -893,6 +893,22 @@
         </Cost>
         <Period value="2"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="HighOnes_SolariteReaper">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="ZealotAiurWeapon2"/>
+        <DisplayAttackCount value="1"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.1"/>
+        <Marker Link="Weapon/PsiBlades"/>
+        <Cost>
+            <Cooldown Link="Weapon/PsiBlades"/>
+        </Cost>
+        <Period value="1.2"/>
+        <DamagePoint value="0"/>
+        <Effect value="ZealotAiurWeaponCleaveSet2"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="WarpingBlades">
         <Name value="Weapon/Name/Centurion"/>
         <EditorCategories value="Race:Protoss"/>

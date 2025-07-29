@@ -2353,7 +2353,7 @@
         <EditorCategories value="Race:Protoss"/>
         <Kind value="Ranged"/>
         <KindSplash value="Splash"/>
-        <Amount value="25"/>
+        <Amount value="30"/>
         <SearchFlags index="OffsetByUnitRadius" value="0"/>
         <SearchFlags index="SameCliff" value="0"/>
     </CEffectDamage>
@@ -83139,6 +83139,25 @@
     <CEffectApplyBehavior id="HellRifleIgnite">
         <EditorCategories value=""/>
     </CEffectApplyBehavior>
+    <CEffectDamage id="ZealotAiurWeapon2" parent="DU_WEAP">
+        <EditorCategories value="Race:Protoss"/>
+        <Amount value="12"/>
+        <Death value="Eviscerate"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="ZealotAiurWeaponBurst2">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="ZealotAiurWeapon2"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.28"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="ZealotAiurWeaponCleaveSet2">
+        <EditorCategories value=""/>
+        <EffectArray value="ZealotAiurWeaponBurst2"/>
+    </CEffectSet>
     <CEffectSet id="ZealotPsiBladesCleaveSet10">
         <EditorCategories value=""/>
         <EffectArray value="PsiBladesBurst11"/>

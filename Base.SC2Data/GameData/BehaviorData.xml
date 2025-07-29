@@ -257,6 +257,7 @@
     <CBehaviorBuff id="PoweringModeHealed">
         <BehaviorFlags index="Permanent" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoFlags index="Hidden" value="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="EndoCloak">
         <InfoFlags index="Hidden" value="1"/>
