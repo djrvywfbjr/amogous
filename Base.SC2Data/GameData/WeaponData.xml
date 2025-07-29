@@ -863,13 +863,13 @@
         <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
         <DisplayEffect value="MohandarMUx12"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Arc value="360"/>
+        <Arc value="29.9926"/>
         <Period value="3"/>
         <Effect value="Mohandar2"/>
         <AllowedMovement value="Moving"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
-        <RangeSlop value="2"/>
+        <RangeSlop value="3"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="SanitizationBeam">
         <Name value="Weapon/Name/Energizer"/>

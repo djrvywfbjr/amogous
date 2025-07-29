@@ -18572,28 +18572,36 @@
     </CAbilEffectTarget>
     <CAbilResearch id="CyberneticsCoreResearch2" parent="CyberneticsCoreResearch">
         <Name value="Abil/Name/CyberneticsCoreResearch2"/>
-        <InfoArray index="Research1" Upgrade="UmojanBasicUnitUpgrade52224224232222222223">
-            <Button DefaultButtonFace="CalldownMULE4233224" Requirements="LearnDamage1"/>
+        <InfoArray index="Research1" Time="100" Upgrade="AcceleratedShieldsLevel1">
+            <Button DefaultButtonFace="AcceleratedShieldsLevel1" Requirements="LearnAccel1"/>
         </InfoArray>
-        <InfoArray index="Research2" Upgrade="UmojanBasicUnitUpgrade5222422423222222223">
-            <Button DefaultButtonFace="CalldownMULE42332242" Requirements="LearnDamage12"/>
-        </InfoArray>
-        <InfoArray index="Research3" Upgrade="UmojanBasicUnitUpgrade522242242322222222223">
-            <Button DefaultButtonFace="CalldownMULE423322422" Requirements="LearnDamage122"/>
-        </InfoArray>
-        <InfoArray index="Research4" Upgrade="UmojanBasicUnitUpgrade522242242322222222222222">
-            <Button DefaultButtonFace="CalldownMULE423322423" Requirements="LearnDamage13"/>
-        </InfoArray>
-        <InfoArray index="Research5" Upgrade="UmojanBasicUnitUpgrade5222422423222222222223">
-            <Button DefaultButtonFace="CalldownMULE4233224232" Requirements="LearnDamage123"/>
-        </InfoArray>
-        <InfoArray index="Research6" Upgrade="UmojanBasicUnitUpgrade52224224232222222222223">
-            <Button DefaultButtonFace="CalldownMULE42332242322" Requirements="LearnDamage1232"/>
-        </InfoArray>
-        <InfoArray index="Research7" Upgrade="UmojanBasicUnitUpgrade5222422423222222222222222">
+        <InfoArray index="Research2" Time="175" Upgrade="AcceleratedShieldsLevel2">
             <Resource index="Minerals" value="150"/>
             <Resource index="Vespene" value="150"/>
-            <Button DefaultButtonFace="CalldownMULE42332242222" Requirements="LearnPsionicSight"/>
+            <Button DefaultButtonFace="AcceleratedShieldsLevel2" Requirements="LearnAccel2"/>
+        </InfoArray>
+        <InfoArray index="Research3" Upgrade="AcceleratedShieldsLevel3">
+            <Button DefaultButtonFace="AcceleratedShieldsLevel3" Requirements="LearnAccel3"/>
+        </InfoArray>
+        <InfoArray index="Research4" Time="100" Upgrade="StrengthenedShieldsLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="StrengthenedShieldsLevel1" Requirements="LearnShield1"/>
+        </InfoArray>
+        <InfoArray index="Research5" Time="175" Upgrade="StrengthenedShieldsLevel2">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="StrengthenedShieldsLevel2" Requirements="LearnShield2"/>
+        </InfoArray>
+        <InfoArray index="Research6" Upgrade="StrengthenedShieldsLevel3">
+            <Resource index="Minerals" value="250"/>
+            <Resource index="Vespene" value="250"/>
+            <Button DefaultButtonFace="StrengthenedShieldsLevel3" Requirements="LearnShield3"/>
+        </InfoArray>
+        <InfoArray index="Research7" Time="120" Upgrade="PsionicSight">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="PsionicSight" Requirements="LearnPsionicSight"/>
         </InfoArray>
         <InfoArray index="Research8" Time="100" Upgrade="UmojanBasicUnitUpgrade522242242322222222222222222">
             <Resource index="Minerals" value="200"/>
@@ -18633,10 +18641,10 @@
             <Resource index="Vespene" value="200"/>
             <Button DefaultButtonFace="CalldownMULE4233224222422" Requirements="LearnPsionicSight2222224"/>
         </InfoArray>
-        <InfoArray index="Research16" Time="125" Upgrade="UmojanBasicUnitUpgrade52224224232222222222222223">
+        <InfoArray index="Research16" Time="150" Upgrade="PsionicMovement">
             <Resource index="Minerals" value="225"/>
             <Resource index="Vespene" value="225"/>
-            <Button DefaultButtonFace="CalldownMULE423322422223" Requirements="LearnPsionicSight3"/>
+            <Button DefaultButtonFace="PsionicMovement" Requirements="LearnPsionicMovement"/>
         </InfoArray>
         <InfoArray index="Research17" Time="200" Upgrade="UnknownUpgrade3">
             <Resource index="Minerals" value="750"/>
@@ -18652,6 +18660,11 @@
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Button DefaultButtonFace="ResearchReinforcedShields" Requirements="LearnDef"/>
+        </InfoArray>
+        <InfoArray index="Research20" Time="150" Upgrade="PsionicPower">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="PsionicPower" Requirements="LearnPsionicPower"/>
         </InfoArray>
         <InfoArray index="Research29" Time="125" Upgrade="UmojanBasicUnitUpgrade522242242322222235222222272">
             <Resource index="Minerals" value="750"/>
@@ -56973,11 +56986,11 @@
             <SortArray value="TSShieldsFraction"/>
             <SortArray value="TSDistance"/>
         </TargetSorts>
-        <Range value="6"/>
+        <Range value="5"/>
         <Arc value="4.9987"/>
         <SmartValidatorArray value="NotWarpingIn"/>
         <AutoCastAcquireLevel value="Defensive"/>
-        <AutoCastFilters value="Visible;Neutral,Enemy,Missile,Stasis,Dead,Hallucination,Invulnerable"/>
+        <AutoCastFilters value="Visible;Neutral,Enemy,Missile,Stasis,Dead,Hallucination"/>
         <AutoCastRange value="6"/>
         <AutoCastValidatorArray value="NotWarpingIn"/>
         <AutoCastValidatorArray value="UnitOrAttackingStructure"/>

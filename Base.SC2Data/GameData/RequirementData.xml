@@ -221,6 +221,12 @@
     <CRequirement id="LearnDamageLvl1322232">
         <NodeArray index="Show" Link="NotCountUpgradeSwollenGlandsQueuedOrBetter"/>
     </CRequirement>
+    <CRequirement id="LearnPsionicPower">
+        <NodeArray index="Show" Link="NotCountUpgradePsionicPowerQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnPsionicMovement">
+        <NodeArray index="Show" Link="NotCountUpgradePsionicMovementQueuedOrBetter"/>
+    </CRequirement>
     <CRequirement id="LearnTrooperAmmunition2222233">
         <NodeArray index="Show" Link="NotCountUpgradeInfiltratorEnergyQueuedOrBetter"/>
     </CRequirement>
@@ -5630,24 +5636,24 @@
     <CRequirement id="LearnCleanserUpgrade4222">
         <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422522435QueuedOrBetter"/>
     </CRequirement>
-    <CRequirement id="LearnDamage1">
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222223QueuedOrBetter"/>
+    <CRequirement id="LearnAccel1">
+        <NodeArray index="Show" Link="NotCountUpgradeAcceleratedShieldsLevel1QueuedOrBetter"/>
     </CRequirement>
-    <CRequirement id="LearnDamage12">
-        <NodeArray index="Use" Link="And1476756178CountUnitHighlightCouncilCompleteOnly1213073564CountUpgradeUmojanBasicUnitUpgrade52224224232222222223CompleteOnly4256853171"/>
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222223QueuedOrBetter"/>
+    <CRequirement id="LearnAccel2">
+        <NodeArray index="Use" Link="And1476756178CountUnitHighlightCouncilCompleteOnly1213073564CountUpgradeAcceleratedShieldsLevel1CompleteOnly4256853171"/>
+        <NodeArray index="Show" Link="NotCountUpgradeAcceleratedShieldsLevel2QueuedOrBetter"/>
     </CRequirement>
-    <CRequirement id="LearnDamage122">
-        <NodeArray index="Use" Link="And1476756178CountUnitHighlightCouncilCompleteOnly1213073564CountUpgradeUmojanBasicUnitUpgrade5222422423222222223CompleteOnly4256853171"/>
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222223QueuedOrBetter"/>
+    <CRequirement id="LearnAccel3">
+        <NodeArray index="Use" Link="And1476756178CountUnitHighlightCouncilCompleteOnly1213073564CountUpgradeAcceleratedShieldsLevel2CompleteOnly4256853171"/>
+        <NodeArray index="Show" Link="NotCountUpgradeAcceleratedShieldsLevel3QueuedOrBetter"/>
     </CRequirement>
-    <CRequirement id="LearnDamage123">
-        <NodeArray index="Use" Link="And1476756178CountUnitHighlightCouncilCompleteOnly1213073564CountUpgradeUmojanBasicUnitUpgrade522242242322222222222222CompleteOnly4256853171"/>
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222222223QueuedOrBetter"/>
+    <CRequirement id="LearnShield2">
+        <NodeArray index="Use" Link="And1476756178CountUnitHighlightCouncilCompleteOnly1213073564CountUpgradeStrengthenedShieldsLevel1CompleteOnly4256853171"/>
+        <NodeArray index="Show" Link="NotCountUpgradeStrengthenedShieldsLevel2QueuedOrBetter"/>
     </CRequirement>
-    <CRequirement id="LearnDamage1232">
-        <NodeArray index="Use" Link="And1476756178CountUnitHighlightCouncilCompleteOnly1213073564CountUpgradeUmojanBasicUnitUpgrade5222422423222222222223CompleteOnly4256853171"/>
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222222223QueuedOrBetter"/>
+    <CRequirement id="LearnShield3">
+        <NodeArray index="Use" Link="And1476756178CountUnitHighlightCouncilCompleteOnly1213073564CountUpgradeStrengthenedShieldsLevel2CompleteOnly4256853171"/>
+        <NodeArray index="Show" Link="NotCountUpgradeStrengthenedShieldsLevel3QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="LearnDamage1233">
         <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade522242242322222222532CompleteOnly969171298"/>
@@ -5697,8 +5703,8 @@
         <NodeArray index="Use" Link="CountUpgradeUmojanBasicUnitUpgrade522242242322222222532322CompleteOnly969171298"/>
         <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222532323QueuedOrBetter"/>
     </CRequirement>
-    <CRequirement id="LearnDamage13">
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222222222QueuedOrBetter"/>
+    <CRequirement id="LearnShield1">
+        <NodeArray index="Show" Link="NotCountUpgradeStrengthenedShieldsLevel1QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="LearnDamage132">
         <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222532QueuedOrBetter"/>
@@ -5958,7 +5964,7 @@
         <NodeArray index="Show" Link="NotCountUpgradezerglingattackspeed223QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="LearnPsionicSight">
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222222QueuedOrBetter"/>
+        <NodeArray index="Show" Link="NotCountUpgradePsionicSightQueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="LearnPsionicSight2">
         <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222222QueuedOrBetter"/>
@@ -6001,9 +6007,6 @@
     </CRequirement>
     <CRequirement id="LearnPsionicSight2222232">
         <NodeArray index="Show" Link="NotCountUpgradeHighOnes12QueuedOrBetter"/>
-    </CRequirement>
-    <CRequirement id="LearnPsionicSight3">
-        <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222223QueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="LearnPylonSpeed">
         <NodeArray index="Show" Link="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222352222222222QueuedOrBetter"/>
