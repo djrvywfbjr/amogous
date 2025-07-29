@@ -386,6 +386,12 @@
     <CUpgrade id="Bleeding">
         <Icon value="Assets\Textures\btn-upgrade-zergling-armorshredding.dds"/>
     </CUpgrade>
+    <CUpgrade id="CapacitorOvercharge">
+        <EffectArray Reference="Effect,PoweringModeSA,AreaArray[0].Radius" Value="3"/>
+        <EffectArray Operation="Set" Reference="Effect,PoweringModeCP,PeriodicValidator" Value="PoweringModeCPUpgraded"/>
+        <EffectArray Operation="Set" Reference="Effect,PoweringModeCP,PeriodicPeriodArray[0]" Value="0.200000"/>
+        <EffectArray Reference="Unit,MobileSupercapacitor,EnergyRegenRate" Value="5"/>
+    </CUpgrade>
     <CUpgrade id="CerebrateUpgrade">
         <EffectArray Operation="Subtract" Reference="Effect,PureBornDeathCReateFanatic42,SpawnCount" Value="3"/>
         <EffectArray Operation="Subtract" Reference="Effect,PureBornDeathCReateFanatic422,SpawnCount" Value="2"/>
@@ -12619,6 +12625,14 @@
         <EffectArray Operation="Set" Reference="Effect,DisablingCloudSet35223215,EffectArray[3]" Value="Epilogue02VoidRiftAB22"/>
         <EffectArray Operation="Subtract" Reference="Unit,PrimalTownHall222,EnergyStart" Value="1"/>
         <EffectArray Operation="Subtract" Reference="Unit,PrimalTownHall222,EnergyMax" Value="1"/>
+    </CUpgrade>
+    <CUpgrade id="ValorMyShield">
+        <EffectArray Reference="Effect,ShieldOfAdunSA,AreaArray[0].Radius" Value="2.5"/>
+        <EffectArray Reference="Effect,ShieldOfTassadarSA,AreaArray[0].Radius" Value="2.5"/>
+        <EffectArray Reference="Effect,ShieldOfZeratulSA,AreaArray[0].Radius" Value="2.5"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Actor,ShieldOfAdun,Scale" Value="0.440000"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Actor,ShieldOfTassadar,Scale" Value="0.440000"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Actor,ShieldOfZeratul,Scale" Value="0.440000"/>
     </CUpgrade>
     <CUpgrade id="Venom"/>
     <CUpgrade id="VoidDarkArchonDarkAmulet22222">

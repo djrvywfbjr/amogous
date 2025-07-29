@@ -2127,7 +2127,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="CanSpendEnergy"/>
         <RemoveValidatorArray value="hasEnergy"/>
-        <Period value="0.33"/>
+        <Period value="0.75"/>
         <PeriodicEffect value="PoweringModeSA"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="SilentBastion">

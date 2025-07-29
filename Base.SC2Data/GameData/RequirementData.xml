@@ -227,6 +227,12 @@
     <CRequirement id="LearnPsionicMovement">
         <NodeArray index="Show" Link="NotCountUpgradePsionicMovementQueuedOrBetter"/>
     </CRequirement>
+    <CRequirement id="LearnCapacitorOvercharge">
+        <NodeArray index="Show" Link="NotCountUpgradeCapacitorOverchargeQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnValorMyShield">
+        <NodeArray index="Show" Link="NotCountUpgradeValorMyShieldQueuedOrBetter"/>
+    </CRequirement>
     <CRequirement id="LearnTrooperAmmunition2222233">
         <NodeArray index="Show" Link="NotCountUpgradeInfiltratorEnergyQueuedOrBetter"/>
     </CRequirement>

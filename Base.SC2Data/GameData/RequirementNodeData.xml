@@ -5209,7 +5209,6 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeAcceleratedShieldsLevel1QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="AcceleratedShieldsLevel1" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeAcceleratedShieldsLevel2CompleteOnly4256853171">
@@ -5218,12 +5217,10 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeAcceleratedShieldsLevel2QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="AcceleratedShieldsLevel2" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeAcceleratedShieldsLevel3QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="AcceleratedShieldsLevel3" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeAdvancedBionicsUpgradeCompleteOnly">
@@ -5848,6 +5845,11 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeBurrowCompleteOnly1687599735TechTreeCheat">
         <Count Link="Burrow" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeCapacitorOverchargeQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="CapacitorOvercharge" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeCloakingFieldCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
@@ -7258,17 +7260,14 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradePsionicMovementQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="PsionicMovement" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradePsionicPowerQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="PsionicPower" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradePsionicSightQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="PsionicSight" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradePureConduitsCompleteOnly">
@@ -7368,7 +7367,6 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeStrengthenedShieldsLevel1QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="StrengthenedShieldsLevel1" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeStrengthenedShieldsLevel2CompleteOnly4256853171">
@@ -7377,12 +7375,10 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeStrengthenedShieldsLevel2QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="StrengthenedShieldsLevel2" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeStrengthenedShieldsLevel3QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="StrengthenedShieldsLevel3" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeSuperStimpackNovaQueuedOrBetter">
@@ -14964,6 +14960,11 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="UnknownUpgrade9" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeValorMyShieldQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="ValorMyShield" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeVenomCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Venom" State="CompleteOnly"/>
@@ -16559,15 +16560,12 @@
         <OperandArray index="0" value="CountUnitStarport8CompleteOnlyAtUnit"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeAcceleratedShieldsLevel1QueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeAcceleratedShieldsLevel1QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeAcceleratedShieldsLevel2QueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeAcceleratedShieldsLevel2QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeAcceleratedShieldsLevel3QueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeAcceleratedShieldsLevel3QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeAdvancedBionicsUpgradeQueuedOrBetter">
@@ -16797,6 +16795,10 @@
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeBleedingQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeBleedingQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeCapacitorOverchargeQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeCapacitorOverchargeQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeCloakingFieldQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeCloakingFieldQueuedOrBetter"/>
@@ -17324,15 +17326,12 @@
         <OperandArray index="0" value="CountUpgradeParamilitaryUpgrade1QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradePsionicMovementQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradePsionicMovementQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradePsionicPowerQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradePsionicPowerQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradePsionicSightQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradePsionicSightQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradePureConduitsQueuedOrBetter">
@@ -17363,15 +17362,12 @@
         <OperandArray index="0" value="CountUpgradeShieldWall2QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeStrengthenedShieldsLevel1QueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeStrengthenedShieldsLevel1QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeStrengthenedShieldsLevel2QueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeStrengthenedShieldsLevel2QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeStrengthenedShieldsLevel3QueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeStrengthenedShieldsLevel3QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeSuperStimpackNovaQueuedOrBetter">
@@ -19599,6 +19595,10 @@
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUnknownUpgrade8QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeUnknownUpgrade8QueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeValorMyShieldQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeValorMyShieldQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeVenomQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeVenomQueuedOrBetter"/>

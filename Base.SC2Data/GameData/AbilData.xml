@@ -6286,7 +6286,7 @@
                 <Location value="Player"/>
             </Charge>
             <Cooldown Location="Player"/>
-            <Button DefaultButtonFace="Probe4"/>
+            <Button DefaultButtonFace="WarpInAiurProbe"/>
             <Unit value="AiurProbe"/>
         </InfoArray>
         <InfoArray index="Train16" Time="1">
@@ -18651,15 +18651,15 @@
             <Resource index="Vespene" value="125"/>
             <Button DefaultButtonFace="MothershipMassRecall2" Requirements="UnknownRequirement13"/>
         </InfoArray>
-        <InfoArray index="Research18" Time="98" Upgrade="ZealotWind">
-            <Resource index="Minerals" value="200"/>
-            <Resource index="Vespene" value="200"/>
-            <Button DefaultButtonFace="ResearchWhirlwind" Requirements="LearnWind"/>
-        </InfoArray>
-        <InfoArray index="Research19" Time="84" Upgrade="ZealotDef">
+        <InfoArray index="Research18" Time="120" Upgrade="CapacitorOvercharge">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
-            <Button DefaultButtonFace="ResearchReinforcedShields" Requirements="LearnDef"/>
+            <Button DefaultButtonFace="CapacitorOvercharge" Requirements="LearnCapacitorOvercharge"/>
+        </InfoArray>
+        <InfoArray index="Research19" Time="150" Upgrade="ValorMyShield">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="ValorMyShield" Requirements="LearnValorMyShield"/>
         </InfoArray>
         <InfoArray index="Research20" Time="150" Upgrade="PsionicPower">
             <Resource index="Minerals" value="150"/>
@@ -32897,7 +32897,7 @@
     <CAbilEffectTarget id="ShroudofTwilight">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Vital index="Shields" value="100"/>
+            <Vital index="Energy" value="75"/>
             <Charge Link="Abil/MedDrone"/>
             <Cooldown Link="Abil/MedDrone"/>
         </Cost>
@@ -36727,7 +36727,7 @@
     <CAbilEffectTarget id="QuantumShift">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Cost>
-            <Vital index="Shields" value="150"/>
+            <Vital index="Energy" value="150"/>
             <Charge Link="Abil/AdeptPhaseShiftCancel"/>
             <Cooldown Link="Abil/AdeptPhaseShiftCancel" TimeUse="84"/>
         </Cost>
@@ -37131,67 +37131,67 @@
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
         <Activity value="UI/Warping"/>
         <InfoArray index="Train1" Time="15.4">
-            <Button DefaultButtonFace="Probe4"/>
+            <Button DefaultButtonFace="WarpInAiurProbe"/>
             <Unit value="AiurProbe"/>
         </InfoArray>
         <InfoArray index="Train2" Time="30">
-            <Button DefaultButtonFace="ZealotAiur2"/>
+            <Button DefaultButtonFace="WarpInAiurGuard"/>
             <Unit value="AiurGuard"/>
         </InfoArray>
         <InfoArray index="Train3" Time="45">
-            <Button DefaultButtonFace="HighTemplarAiur3" Requirements="HaveOldFortress222"/>
+            <Button DefaultButtonFace="WarpInShielder" Requirements="HaveOldFortress222"/>
             <Unit value="Shielder"/>
         </InfoArray>
         <InfoArray index="Train4" Time="60">
-            <Button DefaultButtonFace="DarkTemplarAiur3" Requirements="HaveOldFortress22"/>
+            <Button DefaultButtonFace="WarpInEvasionist" Requirements="HaveOldFortress22"/>
             <Unit value="Evasionist"/>
         </InfoArray>
         <InfoArray index="Train5" Time="50">
-            <Button DefaultButtonFace="SentryAiur3" Requirements="HaveOldFortress22"/>
+            <Button DefaultButtonFace="WarpInSolarDetractor" Requirements="HaveOldFortress22"/>
             <Unit value="SolarDetractor"/>
         </InfoArray>
         <InfoArray index="Train6" Time="45">
-            <Button DefaultButtonFace="ImmortalAiur2" Requirements="HaveOldFortress222"/>
+            <Button DefaultButtonFace="WarpInBladeOfAdun" Requirements="HaveOldFortress222"/>
             <Unit value="BladeOfAdun"/>
         </InfoArray>
         <InfoArray index="Train7" Time="49">
-            <Button DefaultButtonFace="StalkerAiur3"/>
+            <Button DefaultButtonFace="WarpInAncientDragoon"/>
             <Unit value="AncientDragoon"/>
         </InfoArray>
         <InfoArray index="Train8" Time="55">
-            <Button DefaultButtonFace="Carrier3" Requirements="HaveOldFortress32"/>
+            <Button DefaultButtonFace="WarpInCarriership" Requirements="HaveOldFortress32"/>
             <Unit value="Carriership"/>
         </InfoArray>
         <InfoArray index="Train9" Time="90">
-            <Button DefaultButtonFace="WarpInReaver2" Requirements="HaveOldFortress32"/>
+            <Button DefaultButtonFace="WarpInMobileSupercapacitor" Requirements="HaveOldFortress32"/>
             <Unit value="MobileSupercapacitor"/>
         </InfoArray>
         <InfoArray index="Train10" Time="45">
-            <Button DefaultButtonFace="PhoenixAiur2"/>
+            <Button DefaultButtonFace="WarpInSurfer"/>
             <Unit value="Surfer"/>
         </InfoArray>
         <InfoArray index="Train11" Time="65">
-            <Button DefaultButtonFace="VoidRayShakuras2" Requirements="HaveOldFortress34"/>
+            <Button DefaultButtonFace="WarpInEliteHunter" Requirements="HaveOldFortress34"/>
             <Unit value="EliteHunter"/>
         </InfoArray>
         <InfoArray index="Train12" Time="70">
-            <Button DefaultButtonFace="CarrierAiur5" Requirements="HaveOldFortress33"/>
+            <Button DefaultButtonFace="WarpInShieldship" Requirements="HaveOldFortress33"/>
             <Unit value="Shieldship"/>
         </InfoArray>
         <InfoArray index="Train13" Time="65">
-            <Button DefaultButtonFace="Tempest3" Requirements="HaveOldFortress33"/>
+            <Button DefaultButtonFace="WarpInStorm" Requirements="HaveOldFortress33"/>
             <Unit value="Storm"/>
         </InfoArray>
         <InfoArray index="Train14" Time="60">
-            <Button DefaultButtonFace="Stalker5" Requirements="HaveOldFortress34"/>
+            <Button DefaultButtonFace="WarpInElderTemplar" Requirements="HaveOldFortress34"/>
             <Unit value="ElderTemplar"/>
         </InfoArray>
         <InfoArray index="Train15" Time="60">
-            <Button DefaultButtonFace="MothershipCore4" Requirements="HaveOldFortress34"/>
+            <Button DefaultButtonFace="WarpInAiurCore" Requirements="HaveOldFortress34"/>
             <Unit value="AiurCore"/>
         </InfoArray>
         <InfoArray index="Train16" Time="45">
-            <Button DefaultButtonFace="Arbiter2" Requirements="HaveOldFortress33"/>
+            <Button DefaultButtonFace="WarpInJudicatorArbiter" Requirements="HaveOldFortress33"/>
             <Unit value="JudicatorArbiter"/>
         </InfoArray>
         <Alert value="TrainWorkerComplete"/>
@@ -46080,7 +46080,7 @@
             <Button DefaultButtonFace="ShieldBattery" Requirements="HaveOldFortress222"/>
         </InfoArray>
         <InfoArray index="Build10" Unit="Planetgate" Time="70">
-            <Button DefaultButtonFace="Stargate5" Requirements="HaveOldFortress2222"/>
+            <Button DefaultButtonFace="Stargate5" Requirements="HaveOldFortress22"/>
         </InfoArray>
         <InfoArray index="Build11" Unit="TemplarLibrary">
             <Button DefaultButtonFace="TemplarArchive5" Requirements="HaveOldFortress2222"/>
@@ -46092,7 +46092,7 @@
             <Button DefaultButtonFace="RoboticsBay5" Requirements="HaveOldFortress3"/>
         </InfoArray>
         <InfoArray index="Build14" Unit="MechFacility">
-            <Button DefaultButtonFace="RoboticsFacility5" Requirements="HaveOldFortress2222"/>
+            <Button DefaultButtonFace="RoboticsFacility5" Requirements="HaveOldFortress22"/>
         </InfoArray>
         <InfoArray index="Build15" Unit="AiurSanctum" Time="28">
             <Button DefaultButtonFace="CyberneticsCore6" Requirements="HaveOldFortress2"/>

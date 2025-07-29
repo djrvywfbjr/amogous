@@ -5494,7 +5494,6 @@ Button/Name/ApolloCloakOnNova3=Close Combat Mode
 Button/Name/ApolloCloakOnNova32=General Purpose Mode
 Button/Name/ApolloCloakOnNova33=Ranged Missile Mode
 Button/Name/ApolloCloakOnNova332=Emergency Repair Mode
-Button/Name/Arbiter2=Warp In Judicator Arbiter
 Button/Name/Arbiter3=Warp In Cybros Arbiter
 Button/Name/Arbiter32=Warp In Revelationist
 Button/Name/ArbiterCloakField2=Falsesight Field
@@ -5972,9 +5971,6 @@ Button/Name/CalldownMULE4233224222422=Psionic Engineering
 Button/Name/CalldownMULE423322424=Energy Concentration
 Button/Name/CalldownMULE4233224242=Sacred Powers
 Button/Name/CalldownMULE423322425=Warpbeam
-Button/Name/CalldownMULE4233224252=Azure Bombers
-Button/Name/CalldownMULE4233224253=Phase Shield Matrix
-Button/Name/CalldownMULE42332242532=Flyer Sweeper
 Button/Name/CalldownMULE423323=Purchase Shielding Update
 Button/Name/CalldownMULE4233232=Purchase Plating Update
 Button/Name/CalldownMULE42332322=Purchase Main Hull Update
@@ -6617,16 +6613,15 @@ Button/Name/CalldownMULE43=Request Rifleman
 Button/Name/CalldownMULE5=Calldown: Grease Donkeys
 Button/Name/Cancel2=Cancel
 Button/Name/CancelUpgradeMorph2=Cancel
+Button/Name/CapacitorOvercharge=Capacitor Overcharge
 Button/Name/Carrier2=Warp In Antis Pusher
 Button/Name/Carrier22=Antis Pusher Is Out Of The Warp-Space
-Button/Name/Carrier3=Warp In Carriership
 Button/Name/Carrier4=Summon Worldlord
 Button/Name/CarrierAiur2=Warp In Glory
 Button/Name/CarrierAiur22=Warp In Glory Copy
 Button/Name/CarrierAiur3=Warp In Pusher
 Button/Name/CarrierAiur4=Call In Darkness Bringer
 Button/Name/CarrierAiur42=Call In Eclipse Guardian
-Button/Name/CarrierAiur5=Warp In Shieldship
 Button/Name/CarrierAiur6=Warp In Solarite Carrier
 Button/Name/ChainDisintegration=Chain Disintegration
 Button/Name/ChainDisintegration2=Chain Disintegration
@@ -7284,7 +7279,6 @@ Button/Name/DarkTemplar3=Warp In Kuras
 Button/Name/DarkTemplar4=Summon Flesh Hunter
 Button/Name/DarkTemplarAiur2=Warp In Vengeance Seer
 Button/Name/DarkTemplarAiur22=Warp In Huntsman
-Button/Name/DarkTemplarAiur3=Warp In Evasionist
 Button/Name/DarkTemplarBlink2=Shadow Step
 Button/Name/DarkTemplarCliffBlink2=Focus
 Button/Name/DarkTemplarRecall2=Emergency Recall
@@ -7476,8 +7470,6 @@ Button/Name/EMP7=Launch EMP Round
 Button/Name/EMP72=Corrosive Bile
 Button/Name/EMPNova2=EMP Nova
 Button/Name/Energyrotation=Energy Cycling
-Button/Name/Energyrotation2=Energy Cycling
-Button/Name/Energyrotation22=Energy Cycling
 Button/Name/EngageFusionDrive=Engage Fusion Drive
 Button/Name/EngineeringBay10=Reconstruct Agony Bay
 Button/Name/EngineeringBay11=Build Altar
@@ -7852,7 +7844,6 @@ Button/Name/HighTemplar22=Warp In Discharger
 Button/Name/HighTemplar3=Warp In Fallen
 Button/Name/HighTemplar4=Summon Void Concentrator
 Button/Name/HighTemplarAiur2=Hatch Diplomat
-Button/Name/HighTemplarAiur3=Warp In Shielder
 Button/Name/HighTemplarAiur4=Create Darkness Master
 Button/Name/HighTemplarAiur42=Create Enhanced Hybrid
 Button/Name/HighTemplarAiur43=Create Elder Master
@@ -7992,7 +7983,6 @@ Button/Name/Immortal22=Create Psi Machine
 Button/Name/Immortal3=Warp In Obstructor
 Button/Name/Immortal32=Warp In Obstructor Copy
 Button/Name/Immortal4=Summon Bloodshed Artillery
-Button/Name/ImmortalAiur2=Warp In Blade Of Adun
 Button/Name/ImmortalAiur3=Warp In Eternal
 Button/Name/ImmortalOverload2=Ultrasonic Missile
 Button/Name/ImmortalOverload3=Bloodshed Barrier
@@ -8869,7 +8859,6 @@ Button/Name/MothershipCore2224=Khaydarin Gravity Controllers
 Button/Name/MothershipCore22242=Micro Revealing Drones
 Button/Name/MothershipCore3=Assemble Gatherer
 Button/Name/MothershipCore32=Assemble Gatherer Copy
-Button/Name/MothershipCore4=Warp In Aiur Core
 Button/Name/MothershipCoreTeleport2=Last Hope
 Button/Name/MothershipMassRecall2=Agressive Recall
 Button/Name/MothershipMassRecall22=Mass Upcall
@@ -9228,7 +9217,6 @@ Button/Name/PhasingMode3=Stationary Mode
 Button/Name/Phoenix2=Build Interceptioner
 Button/Name/Phoenix3=Resurrect Escorter
 Button/Name/Phoenix32=Resurrect Hungerer
-Button/Name/PhoenixAiur2=Warp In Surfer
 Button/Name/PhoenixAiur3=Warp In Corsionist
 Button/Name/PhoenixAiur4=Create Superior Fighter
 Button/Name/PhotonCannon10=Warp In Photon Cannon
@@ -9434,7 +9422,6 @@ Button/Name/Probe32=Warp In Amer'dallian Miner
 Button/Name/Probe322=Deploy Amer'dallian Miner
 Button/Name/Probe3222=Deploy Phase Miner
 Button/Name/Probe323=Warp In Amer'dallian Miner Copy
-Button/Name/Probe4=Warp In Aiur Probe
 Button/Name/Probe5=Create Greed Totem
 Button/Name/Probe6=Warp In Solarite Probe
 Button/Name/Probe7=Summon Abducted Miner
@@ -9723,7 +9710,6 @@ Button/Name/ResearchSecondaryMedicalOutpost=Research Secondary Medical Outpost
 Button/Name/ResearchStrikeCannons2=Research Internal Reactors
 Button/Name/ResearchThermoelectricGenerators=Research Thermoelectric Generators
 Button/Name/ResearchThirdMedicalOutpost=Research Third Medical Outpost
-Button/Name/ResearchWhirlwind=Research Whirlwind
 Button/Name/RetributionField2=EMW
 Button/Name/ReturnCargo2=Return Cargo
 Button/Name/Roach2=Prepare Cerberus Roach
@@ -10032,7 +10018,6 @@ Button/Name/SensorTower8=Build Sensor Tower Copy 3
 Button/Name/SensorTower9=Build Sensor Tower Copy 4
 Button/Name/Sentry2=Summon Monitor
 Button/Name/SentryAiur2=Hatch Maintance Drone
-Button/Name/SentryAiur3=Warp In Solar Detractor
 Button/Name/SentryMiniTimeWarp2=Nullification Field
 Button/Name/SentryPurifier2=Warp In Upgrader
 Button/Name/SentryPurifier22=Warp In Upgrader Copy
@@ -10548,13 +10533,11 @@ Button/Name/SquadSight5=Efficient Commanding
 Button/Name/Stalker2=Hatch Quiet One
 Button/Name/Stalker3=Warp In Eternal One
 Button/Name/Stalker4=Resurrect Dark Minion
-Button/Name/Stalker5=Warp In Elder Templar
 Button/Name/Stalker6=Summon Enemy Slayer
 Button/Name/Stalker62=Summon Bloodletter
 Button/Name/StalkerAiur2=Recruit Arto'nius
 Button/Name/StalkerAiur22=Arto'nius Is Hired
 Button/Name/StalkerAiur222=Protector Of Aiur
-Button/Name/StalkerAiur3=Warp In Ancient Dragoon
 Button/Name/StalkerAiur4=Warp In Solarite Dragoon
 Button/Name/StalkerBlinkMultiple2=Short Blink
 Button/Name/StalkerBlinkMultiple22=Vengeance
@@ -10683,7 +10666,6 @@ Button/Name/Tempest2=Warp In Hunter
 Button/Name/Tempest22=Warp In Eternal Hunter
 Button/Name/Tempest222=Eternal Hunter Is Out Of The Warp-Space
 Button/Name/Tempest23=Warp In Amer'dall Hunter
-Button/Name/Tempest3=Warp In Storm
 Button/Name/Tempest4=Warp In Guardian
 Button/Name/TempestDisruptionBlast2=Chrono Disruption
 Button/Name/TempestDisruptionBlast22=Psychic Disruption
@@ -10871,7 +10853,7 @@ Button/Name/TwilightCouncil22=Warp In Aiur Beacon
 Button/Name/TwilightCouncil23=Warp In Council Of The Pure Copy
 Button/Name/TwilightCouncil3=Call Massive Cavern
 Button/Name/TwilightCouncil4=Warp In Life Spreader
-Button/Name/TwilightCouncil5=Warp In Twilight Council
+Button/Name/TwilightCouncil5=Warp In Highlight Council
 Button/Name/TwilightCouncil6=Warp In Twilight Council Copy
 Button/Name/TwilightCouncil7=Deploy Crimson Council
 Button/Name/TwilightCouncil8=Warp In Twilight Council Copy 2
@@ -11115,6 +11097,7 @@ Button/Name/UpgradeOverallWeaponPerformance232=Upgrade Mech Attack Speed
 Button/Name/UpgradeOverallWeaponPerformance233=Upgrade Mech Hull
 Button/Name/UpgradeOverallWeaponPerformance2332=Gather Intel
 Button/Name/UpgradeToWarpGate2=Transform to Cybros Warp Gate
+Button/Name/ValorMyShield=Valor My Shield
 Button/Name/VenomousClaws=Venomous Claws
 Button/Name/VenomousClawsButtom=Venomous Claws
 Button/Name/VikingFighter10=Build Rebel
@@ -11504,7 +11487,6 @@ Button/Name/VoidPylon8=Warp in Void Pylon Copy 6
 Button/Name/VoidRay2=Warp In Warp Ray
 Button/Name/VoidRay22=Warp In Destructive Ray
 Button/Name/VoidRayPrismaticAlignmentBase2=Prismatic Alignment
-Button/Name/VoidRayShakuras2=Warp In Elite Hunter
 Button/Name/VoidRayShakuras3=Warp In Optic Ray
 Button/Name/VoidRayTaldarim2=Summon God Destroyer
 Button/Name/VoidRayTaldarim3=Resurrect Destroyed
@@ -11608,13 +11590,23 @@ Button/Name/WarpInAdept322=Resurrect Death Embracer
 Button/Name/WarpInAdept4=Warp In Initiator
 Button/Name/WarpInAdept5=Remember Praetor Guard
 Button/Name/WarpInAdept52=Arise Distraction
+Button/Name/WarpInAiurCore=Warp In Aiur Core
+Button/Name/WarpInAiurGuard=Warp In Aiur Guard
+Button/Name/WarpInAiurProbe=Warp In Aiur Probe
+Button/Name/WarpInAncientDragoon=Warp In Ancient Dragoon
+Button/Name/WarpInBladeOfAdun=Warp In Blade Of Adun
+Button/Name/WarpInCarriership=Warp In Carriership
+Button/Name/WarpInElderTemplar=Warp In Elder Templar
+Button/Name/WarpInEliteHunter=Warp In Elite Hunter
+Button/Name/WarpInEvasionist=Warp In Evasionist
 Button/Name/WarpInInfinite=Warp In Infinite
+Button/Name/WarpInJudicatorArbiter=Warp In Judicator Arbiter
+Button/Name/WarpInMobileSupercapacitor=Warp In Mobile Supercapacitor
 Button/Name/WarpInPhotonTower2=Transform Into Heretic Cannon
 Button/Name/WarpInPhotonTower3=Warp In Warp Cannon
 Button/Name/WarpInPhotonTower32=Warp In Warp Cannon Copy
 Button/Name/WarpInPreserver=Warp In Preserver
 Button/Name/WarpInPureOracle=Warp In Pure Oracle
-Button/Name/WarpInReaver2=Warp In Artillery
 Button/Name/WarpInReplicant2=Resurrect Formless
 Button/Name/WarpInRoboticsWarpFacility2=Warp In Summoner
 Button/Name/WarpInRoboticsWarpFacility22=Warp In Divine Shrine
@@ -11625,6 +11617,9 @@ Button/Name/WarpInRoboticsWarpFacility5=Warp In Warp Robotics Facility Copy 3
 Button/Name/WarpInRoboticsWarpFacility6=Warp In Warp Robotics Facility Copy 4
 Button/Name/WarpInRoboticsWarpFacility7=Warp In Warp Robotics Facility Copy 5
 Button/Name/WarpInScout2=Warp In Purified Scout
+Button/Name/WarpInShielder=Warp In Shielder
+Button/Name/WarpInShieldship=Warp In Shieldship
+Button/Name/WarpInSolarDetractor=Warp In Solar Detractor
 Button/Name/WarpInStarWarpGate2=Transform Into Warp-Space Beacon
 Button/Name/WarpInStarWarpGate3=Warp In Legend Gate
 Button/Name/WarpInStarWarpGate32=Warp In Dealaam Beacon
@@ -11634,6 +11629,8 @@ Button/Name/WarpInStarWarpGate5=Warp In Warp Stargate Copy 2
 Button/Name/WarpInStarWarpGate6=Warp In Warp Stargate Copy 3
 Button/Name/WarpInStarWarpGate7=Warp In Warp Stargate Copy 4
 Button/Name/WarpInStarWarpGate8=Warp In Warp Stargate Copy 5
+Button/Name/WarpInStorm=Warp In Storm
+Button/Name/WarpInSurfer=Warp In Surfer
 Button/Name/WarpInWarpGate2=Warp In Warp Gate Copy
 Button/Name/WarpInWarpGate3=Warp In Warp Gate Copy 2
 Button/Name/WarpInWarpGate4=Warp In Warp Gate Copy 3
@@ -12233,7 +12230,6 @@ Button/Name/Zealot7=Summon Confronting One
 Button/Name/Zealot72=Summon Preserving One
 Button/Name/Zealot722=Summon Mastering One
 Button/Name/Zealot7222=Summon Understanding One
-Button/Name/ZealotAiur2=Warp In Aiur Guard
 Button/Name/ZealotAiur3=Summon Kuras
 Button/Name/ZealotAiur32=Summon Alred
 Button/Name/ZealotAiur322=Summon Tsarica
@@ -12331,7 +12327,7 @@ Button/Tooltip/AggressiveMutation2=Friendly units gain 50% attack and movement s
 Button/Tooltip/AggressiveMutation22=Friendly units gain 35% attack and movement speed bonus for <d ref="Behavior,AggressiveMutation,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Affects ground units only.</c>
 Button/Tooltip/AggressiveMutation3=Friendly Zerg units gain +<d ref="Behavior,AggressiveMutation,Modification.DamageDealtUnscaled[Melee]"/> attack damage for <d ref="Behavior,AggressiveMutation,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Affects ground units only.</c>
 Button/Tooltip/Agonizer=Durable anti-light support flyer.
-Button/Tooltip/AiurCOreeeee=Flying support unit. <n/>These were the first layer of planetary defense of important khalai planets. Their survival and preservation capabilities allowed them to still attack enemies even when the battle is happening on the planet itself.
+Button/Tooltip/AiurCOreeeee=Flying support unit. Can use Guardian Shell. <n/>These were the first layer of planetary defense of important khalai planets. Their survival and preservation capabilities allowed them to still attack enemies even when the battle is happening on the planet itself.
 Button/Tooltip/AlarakChampion2=Highlord of the Tal'darim. Powerful Psionic Warrior.
 Button/Tooltip/AlarakKnockback2=Unleashes a massive wave of force in a straight line, dealing <d ref="Effect,DestructionWaveDamage,Amount"/> damage (+<d ref="Effect,DestructionWaveDamageAir,Amount"/> vs Air) to enemies in its path and knocking them back.<n/><n/><c val="#ColorAttackInfo">Massive units are knocked back a shorter distance.</c>
 Button/Tooltip/Alex=One of the best spectres out there.
@@ -12369,8 +12365,6 @@ Button/Tooltip/ApolloCloakOnNova3=Switches into close combat mode, where this un
 Button/Tooltip/ApolloCloakOnNova32=Switches into general purpose mode, where this unit gains a 6 range instant damage cannos that can attack both ground and air targets.<n/><n/>The multi-purpose cannos are not famous for their damage, or range, or speed, or any particular strength, However, that means there is nothing particular that would be effective against them.
 Button/Tooltip/ApolloCloakOnNova33=Switches into ranged missile mode, where this unit gains a 10 range missile barrage that deals increased damage to armored targets and has a long cooldown.<n/><n/>By buying a modern compact navigation system, the old warbots will free up some space because the clunky sensors would be unnecessary anymore. Two custom missile launchers could be inserted in their place.
 Button/Tooltip/ApolloCloakOnNova332=Switches into emergency rrepair mode, where this unit becomes immobile, gains 15 health regeneration and will take 65% less damage.<n/><n/>The warbot's idle mode has a rather interesting unintended feature. It folds itself into a more structurally stable and durable form. A lot of parts that previously were exposed to incoming attacks also become hidden by other mechanical limbs, theoretically allowing for repair welder arms to deploy and repair damaged plating while it is safe from harm. Some funds will be needed for researching these emergency repairs. 
-Button/Tooltip/Arbiter2=Army support craft. Has Stasis Field, Recall and Cloak Field abilities.<n/><n/><c val="ffff8a">Can attack ground and air units.</c><n/><c val="FFFF00">Is a detector.</c>
-Button/Tooltip/Arbiter2eeeeeeeeeeeeeeeeee=Support vessel. Has Psi Wind, Cloak Field and Recall.<n/><n/><c val="FFFF00">Is a detector.</c>
 Button/Tooltip/Arbiter3=Army support craft. Can use Recall and Cut Connection. Creates power field.<n/><n/><c val="00FFFF">Special Ability: </c>Heals units in a large area around Cybros Arbiter.
 Button/Tooltip/Arbiter32=Light support attacker. Can use Revelation and spread Combat Protocol.<n/><n/><c val="00FFFF">Special Ability: </c>Becomes invisible for a short amount of time.
 Button/Tooltip/ArbiterCloakField2=Cloaks friendly units in a radius of a few light years. Allows gives them a 75% chance of escaping fatal damage.
@@ -12964,9 +12958,6 @@ Button/Tooltip/CalldownMULE4233224222422=Psionic Concentrators will cost 100 les
 Button/Tooltip/CalldownMULE423322424=Psionic Concentrators can load in biological units to increase it's attack speed.<n/>The attack speed is based on the amount of units, not the type or cargo space.<n/>Each unit provides 75% increased shield regeneration .<n/><n/>Amount of cargo space all biological units take:<n/>Aiur Guards - 4<n/>Evadionists - 2<n/>Shielders - 2<n/>Elder Templar - 1
 Button/Tooltip/CalldownMULE4233224242=Each attack of Elder templars create a small yet long lasting psi storm. Does stack.
 Button/Tooltip/CalldownMULE423322425=High Carriers receive a powerful anti-air beam that has 15 range and deals immense damage every 3 seconds.<n/><n/>When they were first engineered, warp engines were found to release devastating bursts of energy when reversing. A lot of resources are required to precisely wield such power, but carriers may just barely be able to do so.
-Button/Tooltip/CalldownMULE4233224252=High Carriers gain the ability to create up to 2 Azure Bombers, which deal damage in an area.<n/><n/>Old reaver scarabs can be redesigned to fire explosive blasts rather than detonate themselves and fly higher than before.
-Button/Tooltip/CalldownMULE4233224253=Harpies will heal 20 shields every second if they haven't taken damage in 3 seconds.<n/><n/>These shields, despite their ability to regenerate incredibly quickly even after being damaged, are extremely hazardous and used to often cause the destruction of the ships they surrounded. This model was carefully engineered to fit the structure of Harpies and be safe to use.
-Button/Tooltip/CalldownMULE42332242532=Harpy attacks will deal 50% of their damage in an area to air targets.<n/><n/>
 Button/Tooltip/CalldownMULE423323=Increases armor and shield armor of all flying units by 1.
 Button/Tooltip/CalldownMULE4233232=Increases armor and shield armor of all flying units by 1.
 Button/Tooltip/CalldownMULE42332322=Increases armor and shield armor of all flying units by 1.
@@ -13648,9 +13639,9 @@ Button/Tooltip/CalldownMULE5=Drops 2 Grease Donkeys - mineral gatherers that col
 Button/Tooltip/CalledDownGuardMarine=General-purpose infantry.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/Cancel2=Drops the current order without performing it, and allows you to select a different order.
 Button/Tooltip/CancelUpgradeMorph2=Cancels the upgrade order, returning the structure to its original state.
+Button/Tooltip/CapacitorOvercharge=Increases range of Powering Mode by 3, energy distribution rate by 2, and energy regeneration of Mobile Supercapacitor by 5.
 Button/Tooltip/Carrier2=Capital ship. Builds and launches Interceptors that attack enemy targets.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
 Button/Tooltip/Carrier22=Legendary Pusher with longer range and increased attack speed.
-Button/Tooltip/Carrier3=Capital ship. Builds and launches Interceptors that attack enemy targets.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
 Button/Tooltip/Carrier4=Capital ship. Builds and launches Shards Of Apocalypse that are invulnerable.<n/>Costs 4 charges.
 Button/Tooltip/CarrierAiur2=Aiur Faction<n/>Capital ship. Builds and launches Interceptors that attack enemy targets. Repair Drones heal nearby mechanical units.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
 Button/Tooltip/CarrierAiur22=Capital ship. Has less interceptors than carrier, but they are stronger.
@@ -13659,7 +13650,6 @@ Button/Tooltip/CarrierAiur4=Aiur Faction<n/>Capital ship. Builds and launches In
 Button/Tooltip/CarrierAiur42=Aiur Faction<n/>Capital ship. Builds and launches Interceptors that attack enemy targets. Repair Drones heal nearby mechanical units.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
 Button/Tooltip/CarrierAiur42wagwga21gwa=Capital ship that launches high damage anti-ground missiles. Gains attack speed and speed on creep.
 Button/Tooltip/CarrierAiur4wagwga21gwa=Capital ship that launches suicide units.
-Button/Tooltip/CarrierAiur5=Capital transport ship with thermal lance.<n/>Old shuttles were weak and overlooked by most of phase smiths in previous eras. Warping units straight through to the battlefield seemed like a better option. But what if there is nothing to warp them from?
 Button/Tooltip/CarrierAiur6=Capital ship. Builds Shiners to attack.<n/><n/><c val="00FFFF">Special Ability: </c>Concentrates a beam on a target, dealing 90 damage every second but also taking damage to vessel's shields.
 Button/Tooltip/CarrierRepairDrone2=Flying spy. Cloak renders the unit invisible to enemies without detection.<n/><n/><c val="FFE303">Detector</c>
 Button/Tooltip/CarrierTaldarim2=Tal'darim Faction<n/>Ultimate Protoss vessel. Can use Black Hole, Blink, and Thermal Lance.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
@@ -14410,8 +14400,6 @@ Button/Tooltip/DarkTemplar3=A memory of everyone who knew Kuras combined with a 
 Button/Tooltip/DarkTemplar4=Deadly warrior-assassin. Permanently cloaked. Can use Fleshless Hunter and Void Stasis <n/><n/><c val="ffff8a">Can attack ground units.</c><n/>Costs 3 charges.
 Button/Tooltip/DarkTemplarAiur2=Cloaked deadly warrior-assasin with life regen.
 Button/Tooltip/DarkTemplarAiur22=Cloaked deadly warrior-assasin with life regen.
-Button/Tooltip/DarkTemplarAiur3=Aiur Faction<n/>Deadly warrior-assassin. Permanently cloaked. Can use Recall on Death.<n/><n/><c val="ffff8a">Can attack ground units.</c>
-Button/Tooltip/DarkTemplarAiur3eeeeeeeeeeeeeeeee=Caster, that focus on escaping and avoiding combat. Can use Veil Of Shadows, Shield Of Adun and Quantum Shift.<n/><n/><n/><c val="FFFF00">Is a detector</c><n/>Cloaked warriors such as dark templars were too useful back in the Dealam days. The closest thing possible to replicate that is the evasionist.
 Button/Tooltip/DarkTemplarAiur4=Aiur Faction<n/>Deadly warrior-assassin. Permanently cloaked. Can use Recall on Death.<n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/DarkTemplarBlink2=Teleports the High Absentee to the targeted location.
 Button/Tooltip/DarkTemplarCliffBlink2=This unit has passive life regen, but it has delay of it.
@@ -14659,8 +14647,6 @@ Button/Tooltip/EggChamber=Specialized infestation organism. Hatches Xill units.
 Button/Tooltip/EliteArmory=Contains upgrades.
 Button/Tooltip/Endocloak=Endoling becomes cloaked for 10 seconds.<n/><n/>While the original zerglings are quite fast, it's possible to change the endoskeletons to be quite a lot sneakier, agile and able to hit enemies farther away through different movement capabilities. Of course, the actual body isn't meant to move or bend or extend the way endoskeletons can be made to, but it can still slowly regenerate tissue and function as armor for the mechanisms inside.
 Button/Tooltip/Energyrotation=Solar Detractor's and Phase Cannon's attacks consume 25 <c val="0000FF">shields</c> every attack.
-Button/Tooltip/Energyrotation2=Phase Cannon's attacks consume 10 <c val="0000FF">shields</c> every attack.
-Button/Tooltip/Energyrotation22=Surfer's attacks consume 10 <c val="0000FF">shields</c> every attack.
 Button/Tooltip/EngageFusionDrive=Increases the Blimp's movement speed by 2.5 for 15 seconds.
 Button/Tooltip/Engi12312312neeringBay18=Structure, where Workers periodically produce Food.
 Button/Tooltip/Engi12312312neeringBay18fwa2=Structure, where units can go to reduce to raise Hope and reduce Dissatisfaction.
@@ -15195,7 +15181,6 @@ Button/Tooltip/HighTemplar4=Potent psionic master. Can use Crimson Shield and Co
 Button/Tooltip/HighTemplar5=Potent psionic master. Can use Feedback and be upgraded to use Psionic Storm. Can transform into an Archon.<n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/HighTemplar6=Potent psionic master. Can use Feedback and be upgraded to use Psionic Storm. Can transform into an Archon.<n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/HighTemplarAiur2=Psionic master. Can advance into ascended one.<n/><n/><c val="FFFF00">Can attack ground, later also air units.</c>
-Button/Tooltip/HighTemplarAiur3=Supprot caster. Can use double shield repair, plasma surge and adun's shield.<n/>Storms and feedbacks are no use and are easy to be turned on against us. Only thing the templar can focus upon right now is help of their brethren.
 Button/Tooltip/HighTemplarAiur4=Psionic master with a dead hybrid empowering him.
 Button/Tooltip/HighTemplarAiur42=Powerful melee hybrid, empowered by Xel'naga technology.
 Button/Tooltip/HighTemplarAiur43=Psionic master with Amon empowering him.
@@ -15407,7 +15392,6 @@ Button/Tooltip/Immortal32=Assault strider. Can use shadow cannon.
 Button/Tooltip/Immortal4=Assault strider. Deals damage in an area from a long range.<n/><n/><c val="ffff8a">Can attack ground units.</c><n/><n/>Costs 3 charges.
 Button/Tooltip/Immortal5=Assault strider. Can use Barrier to absorb damage.<n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/Immortal6=Assault strider. Can use Barrier to absorb damage.<n/><n/><c val="ffff8a">Can attack ground units.</c>
-Button/Tooltip/ImmortalAiur2=Heavy strider with a high chance to reduce incoming damage.<n/>Reversed engineered from our last hardened shield modules, guardian's shield one can partially stop incoming. It will be useful in case of minor conflicts, against other races.
 Button/Tooltip/ImmortalAiur3=Assault strider. Deals significantly more damage to structures,<n/><n/><c val="00FFFF">Special Ability: </c>Becomes immobile, but gains singificant range and attack speed bonuses.
 Button/Tooltip/ImmortalAiur4=Aiur Faction<n/>Assault strider. Can use Barrier to absorb damage.<n/><n/><c val="FFFF8A">Can attack ground units.</c>
 Button/Tooltip/ImmortalOverload2=Launch a missile at the nearest air enemy. Deals 5 damage, 10 bonus to light.
@@ -16564,7 +16548,6 @@ Button/Tooltip/MothershipCore2224=Increases movement speed of Sacred Core by 1.
 Button/Tooltip/MothershipCore22242=Increases sight radius of Sacred Core by 12.
 Button/Tooltip/MothershipCore3=Mobile flying caster. Can use Photon Overcharge, Mass Recall, and Time Warp abilities. Can upgrade into the Mothership.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/MothershipCore32=Mobile flying caster. Can use Photon Overcharge, Mass Recall, and Time Warp abilities. Can upgrade into the Mothership.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
-Button/Tooltip/MothershipCore4=''Aiur Core''<n/>A flying support unit, which can spawn stationary defense offensively.<n/>Is great at:<n/><c val="00FF00">Creating Powerfield<n/>Self-Mobility<n/>Regeneration Friendly Shields</c><n/>Is bad at:<n/><c val="FF0000">Fighting Anti-Air Units<n/>Solo Survival<n/>Attacking Giant Armies</c><n/>A vessel meant to defend multiple bases on less defended planets or orbit of aiur. AI had to turn off to not be destroyed and was awakened only after the loss of Aiur. The programming didn't allow it to count Shakuras as the new home, and now actively takes part in fleet battles in Koprulu Sector.
 Button/Tooltip/MothershipCore42=''Member Of The Shadow Council''<n/>A flying assault unit.<n/>Is great at:<n/><c val="00FF00">Ground Army Mobility<n/>Auto-Casting<n/>Survival</c><n/>Is bad at:<n/><c val="FF0000">Long-Term Combat<n/>Area Damage<n/>Escaping</c><n/>After loss of Aiur, some high nerazim authorities decided to not take part in the unification and make their own planet. X'Zal is one of the wisest and most expirienced members of the newly forged Shadow Council. Was part of an elite nerazim squadron.
 Button/Tooltip/MothershipCore422=''Captain Of The Aiur II''<n/>A giant carrier with ability to create different units and warp-in ground units from anywhere on the map. Is also a resource drop-off point and prevents reveal and defeat.<n/>Is great at:<n/><c val="00FF00">Saving units, that are far away.<n/>Preparing flyer armies.<n/>Surviving without a base</c><n/>Is bad at:<n/><c val="FF0000">Fighting with empty hangars<n/>Mobility<n/>Area damage</c><n/>Leader of the Aiur II, ship that was supposed to be remade into a base on the other side of the galaxy and use new warp technology, to instantly warp units from everywhere. After decades of staying in orbit and not seeing the reason of not being able to warp in more units, noticed increasing amount of void energies and finally retreated back to Koprulu. If only they knew, that the problem was in black hole between the ship and Aiur.
 Button/Tooltip/MothershipCore5=Mobile flying caster. Can use Photon Overcharge, Mass Recall, and Time Warp abilities. Can upgrade into the Mothership.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
@@ -17009,7 +16992,6 @@ Button/Tooltip/Phoenix5=Air superiority starfighter. Can use Graviton Beam.<n/><
 Button/Tooltip/Phoenix6=Air superiority starfighter. Can use Graviton Beam.<n/><n/><c val="ffff8a">Can attack air units.</c>
 Button/Tooltip/Phoenix7=Air superiority starfighter. Can use Graviton Beam.<n/><n/><c val="ffff8a">Can attack air units.</c>
 Button/Tooltip/Phoenix8=Air superiority starfighter. Can use Graviton Beam.<n/><n/><c val="ffff8a">Can attack air units.</c>
-Button/Tooltip/PhoenixAiur2=Air superiority starfighter. Can use Graviton Beam on two enemy units simultaneously.<n/>Improved phoenix with the ability to devastate enemy mutalisks.
 Button/Tooltip/PhoenixAiur3=Air fighter with anti-air splash damage.<n/><n/><c val="00FFFF">Special Ability: </c>Creates a web that disallows ground enemies to attack while they stand in it.
 Button/Tooltip/PhoenixAiur32=Air fighter with anti-air splash damage. Can use disruption web.
 Button/Tooltip/PhoenixAiur4=Fragile air superiority fighter. Deals high damage at long range, but only relies on its speed to outrun enemies.<n/><n/><c val="ffff8a">Can attack air and ground units.</c>
@@ -17256,7 +17238,6 @@ Button/Tooltip/Probe32=Basic worker unit.
 Button/Tooltip/Probe322=Basic worker unit.
 Button/Tooltip/Probe3222=Basic worker unit.
 Button/Tooltip/Probe323=Basic worker unit.
-Button/Tooltip/Probe4=Basic worker unit. Can gather resources and warp in Protoss structures.<n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/Probe5=Basic worker unit. Can gather resources and warp in Protoss structures.<n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/Probe6=Basic worker unit. Can gather resources and warp in Protoss structures.<n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/Probe7=Basic worker unit. Can gather resources and warp in Protoss structures.<n/><n/><c val="ffff8a">Can attack ground units.</c>
@@ -17612,7 +17593,6 @@ Button/Tooltip/ResearchSecondaryMedicalOutpost=Allows construction of a secondar
 Button/Tooltip/ResearchStrikeCannons2=Increases production speed of <c val="FFFF00">infantry and air units</c> and adds a second production slot to <c val="FFFF00">all</c> structures.
 Button/Tooltip/ResearchThermoelectricGenerators=Titans will now be equipped with thermoelectric generators. They will not completely compensate for how much power they take from the Construction Site, but it will reduce Power Supply they take by 2.
 Button/Tooltip/ResearchThirdMedicalOutpost=Allows construction of a third Medical Outpost
-Button/Tooltip/ResearchWhirlwind=Research Whirlwind
 Button/Tooltip/RetributionField2=The Mongrel deals 40 vs mechanical and 60 vs shields area damage each attack.
 Button/Tooltip/ReturnCargo2=Returns the carried resources to the nearest drop-off point.
 Button/Tooltip/Revive=Revives the hero.
@@ -18041,7 +18021,6 @@ Button/Tooltip/SensorTower9=Reveals the locations of enemy units at long range. 
 Button/Tooltip/Sentry2=Robotic support unit. Can use Shield Recharge, Force Field and Quick Orb.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c><n/><n/>Costs 2 charges.
 Button/Tooltip/Sentry3=Robotic support unit. Can use Shield Recharge and Guardian Shield.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/SentryAiur2=Aiur Faction<n/>Robotic support unit. Can use Double Shield Recharge and Guardian Shield.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
-Button/Tooltip/SentryAiur3=Aiur Faction<n/>Robotic support unit. Can use Double Shield Recharge and Guardian Shield.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/SentryAiur4=Aiur Faction<n/>Robotic support unit. Can use Double Shield Recharge and Guardian Shield.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/SentryMiniTimeWarp2=All units in the target area are slowed by 25% and cannot use active abilities. Does not affect heroes.<n/><n/><c val="00FF80">Nihility hides in all. Death is, but the simplest form of it. To channel its strength is the least a novice Artificer must learn.</c>
 Button/Tooltip/SentryPurifier=Robotic support unit. Can increase speed of units and grant them a shield.<n/><n/><c val="FFFF00">Is a detector</c><n/><n/><c val="00FFFF">Special Ability:</c> Heavily increases shield amount of a friendly unit.
@@ -18639,13 +18618,11 @@ Button/Tooltip/SquadSight5=All nearby friendly units gain 1 range, 2 life armor 
 Button/Tooltip/Stalker2=Ranged attack strider. Can use Blink.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
 Button/Tooltip/Stalker3=Ranged attack strider. Can use Irradiate and lock onto a visible target, dealing damage until it disappears from sight.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
 Button/Tooltip/Stalker4=Ranged attack strider. Can use Blink.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
-Button/Tooltip/Stalker5=Ranged unit that creates a psionic storm with every attack. Can cast Psionic Blizzard.
 Button/Tooltip/Stalker6=Ranged attack strider. <n/><n/><c val="ffff8a">Can attack ground and air units.</c><n/>Costs 2 charges.
 Button/Tooltip/Stalker62=Ranged warrior. Can execute owned units for short timed buffs. <n/><n/><c val="ffff8a">Can attack ground and air units.</c><n/>Costs 2 charges.
 Button/Tooltip/StalkerAiur2=A protoss warrior in a terran-made dragoon.
 Button/Tooltip/StalkerAiur22=A protoss warrior in a terran-made dragoon.
 Button/Tooltip/StalkerAiur222=Vionasa has massive shield regeneration, but has less health as long as this structure is alive.
-Button/Tooltip/StalkerAiur3=A massive dragoon with shield capacitor.<n/>This dragoon was made in primitive days, some say, before the transportation between stars was invented. It's simpleness and brute force is just what's needed against the hybrid.
 Button/Tooltip/StalkerAiur4=Ranged assault unit. The damage and attack speed depends on the distance the targeted enemy  is at.<n/><n/><c val="00FFFF">Special Ability: </c>Recharges all shields of Solarite Dragoon.
 Button/Tooltip/StalkerBlinkMultiple2=Teleports the user to the targeted location.
 Button/Tooltip/StalkerBlinkMultiple22=On impact, missile flies to another enemy, dealing more damage.
@@ -18820,7 +18797,6 @@ Button/Tooltip/TechLabStarport23wwwwwwwwwwwwwwwww=Angel Of Death upgrade structu
 Button/Tooltip/TechReactor2=Increases queue size, allows for 2 units to be created simultaneously with a 100% production speed bonus.<n/><n/>This reactor can power improved logistical systems, an automated maintenance protocol the construction systems can perform on themselves and still have enough power for splitting production lines. It's also extremely durable as a side effect to isolating the fusion plant inside of it with thick plating.
 Button/Tooltip/Tempest2=Siege artillery craft. Attacks from long range.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
 Button/Tooltip/Tempest23=Siege artillery craft. Attacks from long range.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
-Button/Tooltip/Tempest3=Siege artillery craft. Attacks from long range.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
 Button/Tooltip/Tempest4=Siege artillery craft. Attacks from long range.<n/><n/><c val="ffff8a">Can attack ground and air units.</c><n/><n/><c val="00FFFF">Special Ability: </c>Becomes undetecable for a short period of time.
 Button/Tooltip/Tempest5=Siege artillery craft. Attacks from long range.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
 Button/Tooltip/TempestDisruptionBlast2=Charges up for <d ref="Abil,TempestDisruptionBlast2,CastIntroTime[0]"/> seconds, and then stuns enemy ground units and ground structures in the target area for <d ref="Behavior,TempestDisruptionBlastStunBehavior,Duration"/> seconds.
@@ -19303,6 +19279,7 @@ Button/Tooltip/UpgradeToWarpGate2=Upgrades this Cybros Gate to a Warp Cybros Gat
 Button/Tooltip/UpgradedBarracks=Infantry-production facility. Also contains basic upgrades.
 Button/Tooltip/Upgrader=Robotic support unit, that can use Power Beam and Graviton Beam.<n/><n/><c val="FFFF00">Can detect cloaked and burrowed units.</c>
 Button/Tooltip/ValerianLab2=Renegade prince of the Terran Dominion.
+Button/Tooltip/ValorMyShield=Increases the radius of Shielder's Shields by 2.5.
 Button/Tooltip/VengeanceSeer=Deadly warrior-assassin. Permanently cloaked. <n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/VengeanceShrine=Unlocks the ability to warp in many different units.<n/>Contains weapon and armor upgrades.
 Button/Tooltip/VenomousClaws=Attacked enemies will take 30% more damage. Stacks up to 3 times.
@@ -19717,7 +19694,6 @@ Button/Tooltip/VoidRay3=Surgical strike craft. Deals increased damage with prolo
 Button/Tooltip/VoidRay4=Surgical strike craft. Deals increased damage with prolonged attacks.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/VoidRay5=Surgical strike craft. Deals increased damage with prolonged attacks.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/VoidRayPrismaticAlignmentBase2=Increases damage dealt by the Destructive Ray as it continues to attack, up to a maximum of +<d ref="Effect,VoidRayVoidEnhancedDamage,AttributeBonus[Armored]"/> damage to Armored units and structures.
-Button/Tooltip/VoidRayShakuras2=Surgical strike craft. Becomes invulnerable upon taking damage.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/VoidRayShakuras3=Nerazim Faction<n/>Surgical strike craft. Has Prismatic Alignment and Prismatic Range abilities.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/VoidRayShakuras3312321fwa=Anti-armored vessel. Has low health, but becomes invulnerable for a long time after taking damage.<n/><n/><c val="00FFFF">Special Ability: </c>Calls down a strike from orbit, dealing area damage.
 Button/Tooltip/VoidRayTaldarim2=Area assault craft. Can use Destruction Beam to attack multiple units.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c><n/>Costs 3 charges.
@@ -19845,18 +19821,30 @@ Button/Tooltip/WarpInAdept42=Ranged specialist. The cheapest unit, that can spre
 Button/Tooltip/WarpInAdept422=Ranged specialist. The cheapest unit, that can spread combat protocol.
 Button/Tooltip/WarpInAdept5=Creates 2 Praetor Guards that last 30 seconds. Praetor Guards have no abilities, but their attacks ricochet from target to target and deal half of Kryana's damage.
 Button/Tooltip/WarpInAdept52=Creates 4 Shadow Figures with 45 second timed life - melee warriors with a weak attack and a dash.
+Button/Tooltip/WarpInAiurCore=''Aiur Core''<n/>A flying support unit, which can spawn stationary defense offensively.<n/>Is great at:<n/><c val="00FF00">Creating Powerfield<n/>Self-Mobility<n/>Regeneration Friendly Shields</c><n/>Is bad at:<n/><c val="FF0000">Fighting Anti-Air Units<n/>Solo Survival<n/>Attacking Giant Armies</c><n/>A vessel meant to defend multiple bases on less defended planets or orbit of aiur. AI had to turn off to not be destroyed and was awakened only after the loss of Aiur. The programming didn't allow it to count Shakuras as the new home, and now actively takes part in fleet battles in Koprulu Sector.
+Button/Tooltip/WarpInAiurGuard=Powerful melee warrior. Has Charge Of Thunder and Shield Capacitor.<n/>Main forces of simple zealots could not survive for too long against hybrid. The only action we could take is to free these legendary warriors from stasis. Thousands of years have passed, but their shield restoring and old charge technics have still proven to be useful.
+Button/Tooltip/WarpInAiurProbe=Basic worker unit. Can gather resources and warp in Protoss structures.<n/><n/><c val="ffff8a">Can attack ground units.</c>
+Button/Tooltip/WarpInAncientDragoon=A massive dragoon with shield capacitor.<n/>This dragoon was made in primitive days, some say, before the transportation between stars was invented. It's simpleness and brute force is just what's needed against the hybrid.
+Button/Tooltip/WarpInBladeOfAdun=Heavy strider with a high chance to reduce incoming damage.<n/>Reversed engineered from our last hardened shield modules, guardian's shield one can partially stop incoming. It will be useful in case of minor conflicts, against other races.
+Button/Tooltip/WarpInCarriership=Capital ship. Builds and launches Interceptors that attack enemy targets.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
 Button/Tooltip/WarpInCleanser=Has a strong ranged attack. Can use disintegration and move in shadows.<n/><n/><c val="FFFF00">Can attack air and ground units.</c><n/><c val="FFFF00">Is a detector.</c>
 Button/Tooltip/WarpInCleanser2=Has a strong ranged attack. Can use disintegration and move in shadows.<n/><n/><c val="FFFF00">Can attack air and ground units.</c><n/><c val="FFFF00">Is a detector.</c>
+Button/Tooltip/WarpInElderTemplar=Ranged unit that creates a psionic storm with every attack. Can cast Psionic Blizzard.
+Button/Tooltip/WarpInEliteHunter=Hunter strike craft. Deals increasing damage over time.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/WarpInEmbracingOne=Disables weapons, increases shield and life regeneration by 10, speed by 75% and makes this unit invulnerable.
 Button/Tooltip/WarpInEmbracingOne22=''Former Executor''<n/>A ranged spawner.<n/>Is great at:<n/><c val="00FF00">Long-Term Combat<n/>Overwhelming Enemies<n/>Survival</c><n/>Is bad at:<n/><c val="FF0000">Army Mobility<n/>Splash Damage<n/>Fighting Air Units</c><n/>An executor since the unification of protoss. After fleeing the Shakuras for trying to reactivate the purifiers, Has gained many contacts, allies and technology over time.
+Button/Tooltip/WarpInEvasionist=Aiur Faction<n/>Deadly warrior-assassin. Permanently cloaked. Can use Recall on Death.<n/><n/><c val="ffff8a">Can attack ground units.</c>
+Button/Tooltip/WarpInEvasionisteeeeeeeeeeeeeeeee=Caster, that focus on escaping and avoiding combat. Can use Shroud of Twilight and Quantum Shift.<n/><n/><n/><c val="FFFF00">Is a detector</c><n/>Cloaked warriors such as dark templars were too useful back in the Daelaam days. The closest thing possible to replicate that is the evasionist.
 Button/Tooltip/WarpInInfinite=Robotic frontline unit. Has immense amounts of shields.<n/><n/><c val="00FFFF">Special Ability: </c>Teleports to any visible location on the map.
+Button/Tooltip/WarpInJudicatorArbiter=Army support craft. Has Stasis Field, Recall and Cloak Field abilities.<n/><n/><c val="ffff8a">Can attack ground and air units.</c><n/><c val="FFFF00">Is a detector.</c>
+Button/Tooltip/WarpInJudicatorArbitereeeeeeeeeeeeeeeeee=Support vessel. Has Plasma Storm, Cloak Field and Recall.<n/><n/><c val="FFFF00">Is a detector.</c>
 Button/Tooltip/WarpInMiscCultistAdept=Purifier Faction<n/>Ranged specialist. Can use Psionic Transfer.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/WarpInMobileSupercapacitor=Spellcaster support unit. Can use Disruption Blast, Plasma Surge and Powering Mode.
 Button/Tooltip/WarpInPhotonTower2=Defensive Tower.
 Button/Tooltip/WarpInPhotonTower32eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee=Cannon that can disassemble itself to move to a different location.
 Button/Tooltip/WarpInPhotonTower3eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee=Cannon that can disassemble itself to move to a different location.
 Button/Tooltip/WarpInPreserver=Ranged unit with the ability to preserve self.
 Button/Tooltip/WarpInPureOracle=Scout ship. Can be upgraded to have area-of-effect attacks. Can deploy Stasis Wards.
-Button/Tooltip/WarpInReaver2=Big artillery unit with repair drones and phase removal.<n/>Rebuilding scarabs cost too much resources and time. Carrier repair drones with added-on phase removal modules were a better addition to the hangars than explosives.
 Button/Tooltip/WarpInReplicant2=Mimic unit. Can turn into a copy of an allied or enemy unit.
 Button/Tooltip/WarpInRoboticsWarpFacility2=Summons Sacred Cores.
 Button/Tooltip/WarpInRoboticsWarpFacility22=Creates workers and is a resource drop-ff point.
@@ -19867,6 +19855,9 @@ Button/Tooltip/WarpInRoboticsWarpFacility5=Enables warp in of Protoss robotic un
 Button/Tooltip/WarpInRoboticsWarpFacility6=Enables warp in of Protoss robotic units.
 Button/Tooltip/WarpInRoboticsWarpFacility7=Enables warp in of Protoss robotic units.
 Button/Tooltip/WarpInScout2=Versatile air and ground attacker.<n/><n/><c val="00FFFF">Special Ability: </c>Shoots a powerful missile, stunning target for 4 seconds as well as dealing damage.
+Button/Tooltip/WarpInShielder=Support caster. Can use double shield repair and a variety of support auras.
+Button/Tooltip/WarpInShieldship=Capital transport ship with thermal lance.<n/>Old shuttles were weak and overlooked by most of phase smiths in previous eras. Warping units straight through to the battlefield seemed like a better option. But what if there is nothing to warp them from?
+Button/Tooltip/WarpInSolarDetractor=Robotic skirmish unit. Can use Force Field.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/WarpInStarWarpGate2=Spawns air units.
 Button/Tooltip/WarpInStarWarpGate3=Warps in legendary Pure Born heroes.
 Button/Tooltip/WarpInStarWarpGate32=Unlocks advanced heroes: Xun'Ral, Noh'Typ and Klora'Zul. 
@@ -19876,6 +19867,8 @@ Button/Tooltip/WarpInStarWarpGate5=Enables warp in of Protoss air units.
 Button/Tooltip/WarpInStarWarpGate6=Enables warp in of Protoss air units.
 Button/Tooltip/WarpInStarWarpGate7=Enables warp in of Protoss air units.
 Button/Tooltip/WarpInStarWarpGate8=Enables warp in of Protoss air units.
+Button/Tooltip/WarpInStorm=Siege artillery craft. Attacks from long range.<n/><n/><c val="ffff8a">Can attack ground and air units.</c>
+Button/Tooltip/WarpInSurfer=Air superiority starfighter. Can use Graviton Beam and Wormhole Transit.
 Button/Tooltip/WarpInWarpGate2=Enables warp in of Protoss ground units.
 Button/Tooltip/WarpInWarpGate3=Enables warp in of Protoss ground units.
 Button/Tooltip/WarpInWarpGate4=Enables warp in of Protoss ground units.
@@ -20509,7 +20502,6 @@ Button/Tooltip/Zealot7=Powerful melee warrior. Can use Charge.<n/><n/><c val="ff
 Button/Tooltip/Zealot72=Xel'naga device specialist.<n/>All abilities are focused on Advanced Projections. Preserving One uses energy and has a high regeneration of it.
 Button/Tooltip/Zealot722=Strong burner.<n/>Each attack, offensive ability degenerates shields, that already burn off passively. The only way to heal them is to use Sustain Merge, which kills a friendly unit, but restores shields.
 Button/Tooltip/Zealot7222=Ranged specialist.<n/>All abilities use charges instead of any other costs.
-Button/Tooltip/ZealotAiur2=Powerful melee warrior. Has Charge Of Thunder and Shield Capacitor.<n/>Main forces of simple zealots could not survive for too long against hybrid. The only action we could take is to free these legendary warriors from stasis. Thousands of years have passed, but their shield restoring and old charge technics have still proven to be useful.
 Button/Tooltip/ZealotAiur3=''Young Thruth Seeker''<n/>Power templar with basic, supportive abilities.<n/>Is great at:<n/><c val="00FF00">Healing</c><n/><c val="00FF00">Mobility</c><n/><c val="00FF00">Auto-casting single abilities</c><n/>Is bad at:<n/><c val="FF0000">Long-Term Combat</c><n/><c val="FF0000">Solo Combat</c><n/><c val="FF0000">Multi-Tasking</c><n/>A templar, who aided Tassadar himself during the fall of Aiur. Seeing lies and failures of the Khalai, Kuras did not want to stay with the Dealaam and became outcasted.
 Button/Tooltip/ZealotAiur32=''Glory Of The Firstborn''<n/>A melee warrior with powerful melee abilities.<n/>Is great at:<n/><c val="00FF00">Auto-casting<n/>Splash Damage<n/>Escaping</c><n/>Is bad at:<n/><c val="FF0000">Lower level combat<n/>Fighting artilleries<n/>Being allied with slow heroes<n/></c>One of the leaders of distant fleets around the galaxy. After loss of Aiur, had no interest of coming to Shakuras. Solved minor conflicts around the Koprulu Sector until meeting a young templar, trying to find truth about the attacks of the hybrid.
 Button/Tooltip/ZealotAiur322=''Former Executor''<n/>A ranged spawner.<n/>Is great at:<n/><c val="00FF00">Long-Term Combat<n/>Overwhelming Enemies<n/>Survival</c><n/>Is bad at:<n/><c val="FF0000">Army Mobility<n/>Splash Damage<n/>Fighting Air Units</c><n/>An executor since the unification of protoss. After fleeing the Shakuras for trying to reactivate the purifiers, Has gained many contacts, allies and technology over time.
@@ -38055,6 +38047,7 @@ Upgrade/Name/AdvancedConstruction242332=Industrial Thermoelectric Station
 Upgrade/Name/AngelicSmallingSynapticDischarge=Angelic Smalling Synaptic Discharge
 Upgrade/Name/BansheeCloakingField=Banshee Cloaking Field
 Upgrade/Name/Bleeding=Bleeding
+Upgrade/Name/CapacitorOvercharge=Capacitor Overcharge
 Upgrade/Name/CerebrateUpgrade=Cerebrate Restrictions
 Upgrade/Name/CloakingField=Cloaking Field
 Upgrade/Name/CompactLaunchers=Compact Launchers
@@ -39484,6 +39477,7 @@ Upgrade/Name/UnknownUpgrade84=DMai Spider Mine Corrosion
 Upgrade/Name/UnknownUpgrade85=Jakob Implant Overrides
 Upgrade/Name/UnknownUpgrade86=Grown Materials
 Upgrade/Name/UnknownUpgrade9=Razing Corrosion
+Upgrade/Name/ValorMyShield=Valor My Shield
 Upgrade/Name/Venom=Venom
 Upgrade/Name/VoidDarkArchonDarkAmulet2=Basic Energy Max Bonus
 Upgrade/Name/VoidDarkArchonDarkAmulet22=Basic Shield Bonus

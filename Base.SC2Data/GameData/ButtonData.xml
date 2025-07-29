@@ -87,6 +87,10 @@
         <AlertIcon value="Assets\Textures\btn-ability-kerrigan-wildmutation.dds"/>
         <EditorCategories value="Race:Zerg"/>
     </CButton>
+    <CButton id="CapacitorOvercharge">
+        <Icon value="Assets\Textures\btn-ability-stetmann-garystetelliteovercharge-energy.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-stetmann-garystetelliteovercharge-energy.dds"/>
+    </CButton>
     <CButton id="HighOnes_GravitonBeam">
         <Icon value="Assets\Textures\btn-ability-protoss-gravitonbeam-color.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-gravitonbeam-color.dds"/>
@@ -192,11 +196,11 @@
         <EditorCategories value="Race:Terran"/>
         <HidesForSimpleText value="0"/>
     </CButton>
-    <CButton id="Arbiter2">
+    <CButton id="WarpInJudicatorArbiter">
+        <Tooltip value="Button/Tooltip/WarpInJudicatorArbitereeeeeeeeeeeeeeeeee"/>
         <Icon value="Assets\Textures\btn-unit-protoss-arbiter.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-arbiter.dds"/>
         <HotkeyAlias value="VoidRay"/>
-        <Tooltip value="Button/Tooltip/Arbiter2eeeeeeeeeeeeeeeeee"/>
     </CButton>
     <CButton id="Arbiter3">
         <Icon value="Assets\Textures\btn-unit-protoss-arbiter-purifier.dds"/>
@@ -3411,24 +3415,6 @@
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="AcceleratedShieldsLevel1"/>
     </CButton>
-    <CButton id="CalldownMULE4233224252">
-        <Icon value="Assets\Textures\btn-upgrade-artanis-scarabsplashradius.dds"/>
-        <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
-        <EditorCategories value="Race:Terran"/>
-        <HotkeyAlias value="AcceleratedShieldsLevel1"/>
-    </CButton>
-    <CButton id="CalldownMULE4233224253">
-        <Icon value="Assets\Textures\btn-ability-protoss-blinkshieldrestore.dds"/>
-        <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
-        <EditorCategories value="Race:Terran"/>
-        <HotkeyAlias value="AcceleratedShieldsLevel1"/>
-    </CButton>
-    <CButton id="CalldownMULE42332242532">
-        <Icon value="Assets\Textures\btn-upgrade-protoss-phoenixrange.dds"/>
-        <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
-        <EditorCategories value="Race:Terran"/>
-        <HotkeyAlias value="AcceleratedShieldsLevel1"/>
-    </CButton>
     <CButton id="CalldownMULE423323">
         <Icon value="Assets\Textures\btn-ability-terran-emp.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Terran-mule.dds"/>
@@ -4619,14 +4605,6 @@
         <Icon value="Assets\Textures\btn-ability-hornerhan-wraith-permanentcloak.dds"/>
     </CButton>
     <CButton id="Energyrotation">
-        <Icon value="Assets\Textures\btn-ability-protoss-astralwind.dds"/>
-        <AlertIcon value="Assets\Textures\btn-ability-protoss-astralwind.dds"/>
-    </CButton>
-    <CButton id="Energyrotation2">
-        <Icon value="Assets\Textures\btn-ability-protoss-astralwind.dds"/>
-        <AlertIcon value="Assets\Textures\btn-ability-protoss-astralwind.dds"/>
-    </CButton>
-    <CButton id="Energyrotation22">
         <Icon value="Assets\Textures\btn-ability-protoss-astralwind.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-astralwind.dds"/>
     </CButton>
@@ -7771,7 +7749,7 @@
         <AlertIcon value="Assets\Textures\btn-unit-protoss-carrier.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
-    <CButton id="Carrier3">
+    <CButton id="WarpInCarriership">
         <Icon value="Assets\Textures\btn-unit-collection-carrier-golden.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-carrier.dds"/>
         <EditorCategories value="Race:Protoss"/>
@@ -7824,7 +7802,7 @@
         <HotkeyAlias value="Carrier"/>
         <Universal value="1"/>
     </CButton>
-    <CButton id="CarrierAiur5">
+    <CButton id="WarpInShieldship">
         <Icon value="Assets\Textures\btn-unit-protoss-frigate.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-carrier.dds"/>
         <Hotkey value="Button/Hotkey/Carrier"/>
@@ -11161,14 +11139,14 @@
         <HotkeyAlias value="DarkTemplar"/>
         <Universal value="1"/>
     </CButton>
-    <CButton id="DarkTemplarAiur3">
+    <CButton id="WarpInEvasionist">
+        <Tooltip value="Button/Tooltip/WarpInEvasionisteeeeeeeeeeeeeeeee"/>
         <Icon value="Assets\Textures\btn-unit-protoss-zealotnocord.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-darktemplar-aiur.dds"/>
         <Hotkey value="Button/Hotkey/DarkTemplar"/>
         <EditorCategories value="Race:Protoss"/>
         <HotkeyAlias value="DarkTemplar"/>
         <Universal value="1"/>
-        <Tooltip value="Button/Tooltip/DarkTemplarAiur3eeeeeeeeeeeeeeeee"/>
     </CButton>
     <CButton id="DarkTemplarBlink2">
         <Icon value="Assets\Textures\btn-ability-protoss-stealth-blink.dds"/>
@@ -14004,7 +13982,7 @@
         <HotkeyAlias value="HighTemplar"/>
         <Universal value="1"/>
     </CButton>
-    <CButton id="HighTemplarAiur3">
+    <CButton id="WarpInShielder">
         <Icon value="Assets\Textures\btn-unit-protoss-hightemplar.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-hightemplar.dds"/>
         <Hotkey value="Button/Hotkey/HighTemplar"/>
@@ -14846,7 +14824,7 @@
         <EditorCategories value="Race:Protoss"/>
         <HotkeyAlias value="Immortal"/>
     </CButton>
-    <CButton id="ImmortalAiur2">
+    <CButton id="WarpInBladeOfAdun">
         <Icon value="Assets\Textures\btn-unit-collection-adun-immortal.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Protoss-Immortal.dds"/>
         <Hotkey value="Button/Hotkey/Immortal"/>
@@ -19743,11 +19721,11 @@
         <AlertIcon value="Assets\Textures\btn-unit-protoss-mothership.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
-    <CButton id="MothershipCore4">
+    <CButton id="WarpInAiurCore">
+        <Tooltip value="Button/Tooltip/AiurCOreeeee"/>
         <Icon value="Assets\Textures\btn-unit-protoss-mothershipcore.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-mothership.dds"/>
         <EditorCategories value="Race:Terran"/>
-        <Tooltip value="Button/Tooltip/AiurCOreeeee"/>
     </CButton>
     <CButton id="MothershipCoreAttack2" parent="Attack">
         <Name value="Button/Name/AttackHeal"/>
@@ -21511,7 +21489,7 @@
         <AlertIcon value="Assets\Textures\btn-unit-protoss-phoenix.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
-    <CButton id="PhoenixAiur2">
+    <CButton id="WarpInSurfer">
         <Icon value="Assets\Textures\btn-unit-protoss-phoenix-golden.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-phoenix.dds"/>
         <Hotkey value="Button/Hotkey/Phoenix"/>
@@ -22568,7 +22546,7 @@
         <AlertIcon value="Assets\Textures\btn-unit-protoss-probe.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
-    <CButton id="Probe4">
+    <CButton id="WarpInAiurProbe">
         <Icon value="Assets\Textures\btn-unit-collection-probe-remastered.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-probe.dds"/>
         <EditorCategories value="Race:Protoss"/>
@@ -25519,7 +25497,7 @@
         <Universal value="1"/>
         <Tooltip value="Button/Tooltip/MaintanceDrone"/>
     </CButton>
-    <CButton id="SentryAiur3">
+    <CButton id="WarpInSolarDetractor">
         <Icon value="Assets\Textures\btn-unit-protoss-sentry.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-sentry.dds"/>
         <Hotkey value="Button/Hotkey/Sentry"/>
@@ -28197,7 +28175,7 @@
         <EditorCategories value="Race:Protoss"/>
         <Universal value="1"/>
     </CButton>
-    <CButton id="Stalker5">
+    <CButton id="WarpInElderTemplar">
         <Icon value="Assets\Textures\btn-unit-collection-hightemplar-golden.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-stalker.dds"/>
         <EditorCategories value="Race:Protoss"/>
@@ -28239,7 +28217,7 @@
         <HotkeyAlias value="Stalker"/>
         <Universal value="1"/>
     </CButton>
-    <CButton id="StalkerAiur3">
+    <CButton id="WarpInAncientDragoon">
         <Icon value="Assets\Textures\btn-unit-protoss-dragoon-void.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-dragoon-void.dds"/>
         <Hotkey value="Button/Hotkey/Stalker464"/>
@@ -28943,7 +28921,7 @@
         <EditorCategories value="Race:Protoss"/>
         <HotkeyAlias value="Carrier"/>
     </CButton>
-    <CButton id="Tempest3">
+    <CButton id="WarpInStorm">
         <Icon value="Assets\Textures\btn-unit-protoss-tempest-golden.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-tempest.dds"/>
         <Hotkey value="Button/Hotkey/Carrier555555"/>
@@ -29760,10 +29738,10 @@
         <Tooltip value="Button/Tooltip/TwilightCouncil4eeeeeeeeeeeeoppppppppppp"/>
     </CButton>
     <CButton id="TwilightCouncil5">
+        <Tooltip value="Button/Tooltip/TwilightCouncil5eeeeeeeeeeeeeeeeeeeeeeeeeeee"/>
         <Icon value="Assets\Textures\btn-building-protoss-twilightcouncil.dds"/>
         <AlertIcon value="Assets\Textures\btn-building-protoss-twilightcouncil.dds"/>
         <EditorCategories value="Race:Protoss"/>
-        <Tooltip value="Button/Tooltip/TwilightCouncil5eeeeeeeeeeeeeeeeeeeeeeeeeeee"/>
     </CButton>
     <CButton id="TwilightCouncil6">
         <Icon value="Assets\Textures\btn-building-protoss-twilightcouncil.dds"/>
@@ -30542,6 +30520,10 @@
     <CButton id="UnknownButton77">
         <Icon value="Assets\Textures\btn-upgrade-nova-equipment-plasmagun.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-nova-equipment-plasmagun.dds"/>
+    </CButton>
+    <CButton id="ValorMyShield">
+        <Icon value="Assets\Textures\btn-ability-spearofadun-massrecall.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-spearofadun-massrecall.dds"/>
     </CButton>
     <CButton id="VenomousClaws">
         <Icon value="Assets\Textures\btn-upgrade-zergling-armorshredding.dds"/>
@@ -32683,7 +32665,7 @@
         <AlertIcon value="Assets\Textures\BTN-Ability-Protoss-VoidRayPrismaticAlignment.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
-    <CButton id="VoidRayShakuras2">
+    <CButton id="WarpInEliteHunter">
         <Icon value="Assets\Textures\btn-unit-protoss-phoenix-urun.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Unit-Protoss-VoidRay-Nerazim.dds"/>
         <Hotkey value="Button/Hotkey/VoidRay555555"/>
@@ -32876,9 +32858,6 @@
         <AlertIcon value="Assets\Textures\BTN-Ability-Protoss-ShadowCharge.dds"/>
         <EditorCategories value="Race:Protoss"/>
         <HotkeyAlias value="VoidZealotShadowCharge"/>
-    </CButton>
-    <CButton id="ResearchWhirlwind">
-        <Icon value="Assets\Textures\BTN-Ability-Protoss-Whirlwind.dds"/>
     </CButton>
     <CButton id="VoodooShield2">
         <Icon value="Assets\Textures\btn-ability-terran-electricfield.dds"/>
@@ -33212,7 +33191,7 @@
         <Icon value="Assets\Textures\btn-unit-protoss-oracle-ihanrii.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-oracle-ihanrii.dds"/>
     </CButton>
-    <CButton id="WarpInReaver2">
+    <CButton id="WarpInMobileSupercapacitor">
         <Icon value="Assets\Textures\btn-unit-protoss-reaver.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-reaver.dds"/>
         <EditorCategories value="Race:Protoss"/>
@@ -36960,7 +36939,7 @@
         <HotkeyAlias value="Zealot"/>
         <Universal value="1"/>
     </CButton>
-    <CButton id="ZealotAiur2">
+    <CButton id="WarpInAiurGuard">
         <Icon value="Assets\Textures\btn-unit-protoss-zealot-aiur.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-protoss-zealot-aiur.dds"/>
         <Hotkey value="Button/Hotkey/Zealot"/>
