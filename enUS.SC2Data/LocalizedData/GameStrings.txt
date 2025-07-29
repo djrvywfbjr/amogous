@@ -17032,7 +17032,7 @@ Button/Tooltip/PlanetaryFortress4=Defensive stronghold. <n/>Used to receive gath
 Button/Tooltip/PlanetaryFortress5=Defensive stronghold. <n/>Used to receive gathered resources. <n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/PlantC4Charge2=Plants an explosive charge on a structure, which deals 500(500 bonus to structures) in 2.5 radius after 11 seconds.
 Button/Tooltip/PlasmaCoater=Gain 125 shields, 3 shield armor, and 8 life regeneration for 10 seconds. Melee attackers are inflicted 10 damage.
-Button/Tooltip/PlasmaStorm=Creates a giant storm of psionic energy that lasts a long time. Heals 5 shields every 0.75 seconds.
+Button/Tooltip/PlasmaStorm=Creates a giant storm of psionic energy that lasts a long time. Heals 10 shields per second.
 Button/Tooltip/PlasmaSurge=Recharges 50 shield points for all friendly Protoss units in the target area.
 Button/Tooltip/Plasmer=Close range combat unit. Good against armor.
 Button/Tooltip/PointDefense2=Units around Masking Drone heal 5 health every second and are cloaked.

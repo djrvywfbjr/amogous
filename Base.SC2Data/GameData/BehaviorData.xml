@@ -4821,11 +4821,11 @@
     <CBehaviorBuff id="PsiDisruption11">
         <InfoIcon value="Assets\Textures\btn-ability-spearofadun-deploypylon.dds"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
-        <RemoveValidatorArray value="HasPsiStrike"/>
         <MaxStackCount value="3"/>
         <MaxStackCountPerCaster value="1"/>
         <Duration value="0.1875"/>
         <Modification TimeScale="1.15"/>
+        <TimeScaleSource Value="Global"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="PsiDisruption112">
         <InfoIcon value="Assets\Textures\btn-ability-protoss-voidarmor.dds"/>
@@ -42435,6 +42435,7 @@
             <VitalRegenArray index="Life" value="2"/>
         </Modification>
         <PeriodCount value="50"/>
+        <TimeScaleSource Value="Global"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="Shield34">
         <InfoFlags index="Hidden" value="1"/>
