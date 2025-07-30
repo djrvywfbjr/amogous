@@ -260,7 +260,7 @@
 <Unit id="Probe2"/>
 <Unit id="SCV4"/>
 <Unit id="Collector2"/>
-<Unit id="Probe3"/>
+<Unit id="AiurProbe"/>
 <Unit id="ImperialLaborer"/>
 <Unit id="SCV7"/>
 <Unit id="Collector23"/>

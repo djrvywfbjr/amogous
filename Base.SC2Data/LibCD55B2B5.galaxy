@@ -1358,7 +1358,7 @@ bool libCD55B2B5_gt_HighOnesChoose_Func (bool testConds, bool runActions) {
     libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "UmojanBasicUnitUpgrade522242242322222235222222214", 1);
     PlayerSetConsoleSkin(EventPlayer(), "ConsoleZerg_Zagara");
     libNtve_gf_UnitCreateFacingPoint(1, "OldFortress", c_unitCreateIgnorePlacement, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
-    libNtve_gf_UnitCreateFacingPoint(13, "Probe3", c_unitCreateIgnorePlacement, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
+    libNtve_gf_UnitCreateFacingPoint(13, "AiurProbe", c_unitCreateIgnorePlacement, EventPlayer(), PlayerStartLocation(EventPlayer()), UnitGetPosition(EventUnit()));
     return true;
 }
 

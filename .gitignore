@@ -2,3 +2,5 @@
 DocumentHeader
 PreloadAssetDB.txt
 *.tga
+*.dds
+Preload.xml

@@ -723,6 +723,10 @@
         <CombineArray value="ShieldsNotFull"/>
         <CombineArray value="CasterLifeNotFull2"/>
     </CValidatorCombine>
+    <CValidatorLocationCompareRange id="Within7Range">
+        <Compare value="LE"/>
+        <Range value="7"/>
+    </CValidatorLocationCompareRange>
     <CValidatorUnitFilters id="ChannelSnipeTargetFilters">
         <Filters value="Visible;Structure,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
     </CValidatorUnitFilters>
@@ -925,6 +929,32 @@
     <CValidatorUnitType id="IsZergling23">
         <Value value="Mutalisk5"/>
     </CValidatorUnitType>
+    <CValidatorCombine id="PoweringModeCPUpgraded">
+        <Type value="And"/>
+        <CombineArray value="CasterHasPoweringMode"/>
+        <CombineArray value="Within7Range"/>
+        <CombineArray value="NotMaxEnergy"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="SolarBeamDoubleDamage">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="SolarBeamDoubleDamage"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="SolarBeamQuadDamage">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="SolarBeamQuadDamage"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="SolarBeamQuadOrDoubleDamage">
+        <CombineArray value="SolarBeamQuadDamage"/>
+        <CombineArray value="SolarBeamDoubleDamage"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="NoGuardianShell">
+        <Behavior value="GuardianShell"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="NoShieldOvercharge">
+        <Behavior value="ShieldOvercharge"/>
+    </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitCompareVital id="LifeLTThreeQuarter245">
         <ResultFailed value="TooMuchLife"/>
         <Compare value="GE"/>
@@ -943,6 +973,38 @@
     <CValidatorPlayerRequirement id="NoSilentBastion">
         <Value value="UseShieldWall2"/>
     </CValidatorPlayerRequirement>
+    <CValidatorUnitType id="NotMobileSupercapacitor">
+        <Value value="MobileSupercapacitor"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasPoweringMode">
+        <WhichUnit Value="Source"/>
+        <Value value="1"/>
+        <Behavior value="PoweringMode"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="NotSolarBeamDoubleDamage">
+        <WhichUnit Value="Caster"/>
+        <Compare value="NE"/>
+        <Value value="1"/>
+        <Behavior value="SolarBeamDoubleDamage"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="NotSolarBeamQuadAndNotDoubleDamage">
+        <Type value="And"/>
+        <CombineArray value="NotSolarBeamDoubleDamage"/>
+        <CombineArray value="NotSolarBeamQuadDamage"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="NotSolarBeamQuadDamage">
+        <WhichUnit Value="Caster"/>
+        <Compare value="NE"/>
+        <Value value="1"/>
+        <Behavior value="SolarBeamQuadDamage"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="PoweringModeCP">
+        <Type value="And"/>
+        <CombineArray value="CasterHasPoweringMode"/>
+        <CombineArray value="Within4Range"/>
+        <CombineArray value="NotMaxEnergy"/>
+    </CValidatorCombine>
     <CValidatorCombine id="RefugeeValidatorAnyWorkerOrScientist">
         <CombineArray value="RequiresCivilian2"/>
         <CombineArray value="RequiresCivilian24"/>
@@ -3538,6 +3600,9 @@
         <WhichUnit Value="Target"/>
         <Value value="100"/>
     </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareBehaviorCount id="PoweringModeTargetNotBeingHealed">
+        <Behavior value="PoweringModeHealed"/>
+    </CValidatorUnitCompareBehaviorCount>
     <CValidatorCombine id="TargetNotDeadAndCasterNotDead2">
         <Type value="And"/>
         <CombineArray value="TargetLifeGE2002"/>
@@ -3570,6 +3635,10 @@
         <Value value="0.1"/>
         <Vital value="Shields"/>
     </CValidatorUnitCompareVital>
+    <CValidatorLocationCompareRange id="Within4Range">
+        <Compare value="LE"/>
+        <Range value="4"/>
+    </CValidatorLocationCompareRange>
     <CValidatorUnitCompareBehaviorCount id="UnknownValidator"/>
     <CValidatorUnitCompareVeterancyLevel id="UnknownValidator2">
         <ResultFailed value="Error,Levelerror12"/>

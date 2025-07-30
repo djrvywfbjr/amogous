@@ -54,21 +54,21 @@
         <OperandArray value="Eq3523259510CountUnitMedicalOutpostQueuedOrBetter0"/>
         <OperandArray value="CountUpgradeAdvancedConstruction232CompleteOnly"/>
     </CRequirementAnd>
-    <CRequirementAnd id="And1476756178CountUnitTwilightCouncil3CompleteOnly1213073564CountUpgradeUmojanBasicUnitUpgrade522242242322222222222222CompleteOnly4256853171">
-        <OperandArray value="CountUnitTwilightCouncil3CompleteOnly1213073564"/>
-        <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade522242242322222222222222CompleteOnly4256853171"/>
+    <CRequirementAnd id="And1476756178CountUnitHighlightCouncilCompleteOnly1213073564CountUpgradeAcceleratedShieldsLevel1CompleteOnly4256853171">
+        <OperandArray value="CountUnitHighlightCouncilCompleteOnly1213073564"/>
+        <OperandArray value="CountUpgradeAcceleratedShieldsLevel1CompleteOnly4256853171"/>
     </CRequirementAnd>
-    <CRequirementAnd id="And1476756178CountUnitTwilightCouncil3CompleteOnly1213073564CountUpgradeUmojanBasicUnitUpgrade5222422423222222222223CompleteOnly4256853171">
-        <OperandArray value="CountUnitTwilightCouncil3CompleteOnly1213073564"/>
-        <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade5222422423222222222223CompleteOnly4256853171"/>
+    <CRequirementAnd id="And1476756178CountUnitHighlightCouncilCompleteOnly1213073564CountUpgradeAcceleratedShieldsLevel2CompleteOnly4256853171">
+        <OperandArray value="CountUnitHighlightCouncilCompleteOnly1213073564"/>
+        <OperandArray value="CountUpgradeAcceleratedShieldsLevel2CompleteOnly4256853171"/>
     </CRequirementAnd>
-    <CRequirementAnd id="And1476756178CountUnitTwilightCouncil3CompleteOnly1213073564CountUpgradeUmojanBasicUnitUpgrade52224224232222222223CompleteOnly4256853171">
-        <OperandArray value="CountUnitTwilightCouncil3CompleteOnly1213073564"/>
-        <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade52224224232222222223CompleteOnly4256853171"/>
+    <CRequirementAnd id="And1476756178CountUnitHighlightCouncilCompleteOnly1213073564CountUpgradeStrengthenedShieldsLevel1CompleteOnly4256853171">
+        <OperandArray value="CountUnitHighlightCouncilCompleteOnly1213073564"/>
+        <OperandArray value="CountUpgradeStrengthenedShieldsLevel1CompleteOnly4256853171"/>
     </CRequirementAnd>
-    <CRequirementAnd id="And1476756178CountUnitTwilightCouncil3CompleteOnly1213073564CountUpgradeUmojanBasicUnitUpgrade5222422423222222223CompleteOnly4256853171">
-        <OperandArray value="CountUnitTwilightCouncil3CompleteOnly1213073564"/>
-        <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade5222422423222222223CompleteOnly4256853171"/>
+    <CRequirementAnd id="And1476756178CountUnitHighlightCouncilCompleteOnly1213073564CountUpgradeStrengthenedShieldsLevel2CompleteOnly4256853171">
+        <OperandArray value="CountUnitHighlightCouncilCompleteOnly1213073564"/>
+        <OperandArray value="CountUpgradeStrengthenedShieldsLevel2CompleteOnly4256853171"/>
     </CRequirementAnd>
     <CRequirementAnd id="And1524450401CountUpgradeAdvancedConstruction2422332222222222322CompleteOnly943849952CountUpgradeAdvancedConstruction222CompleteOnly">
         <OperandArray value="CountUpgradeAdvancedConstruction2422332222222222322CompleteOnly943849952"/>
@@ -446,9 +446,9 @@
         <OperandArray value="CountUnitForge8CompleteOnly879748732TechTreeCheat"/>
         <OperandArray value="Eq3741959435CountUnitDarkShrine3QueuedOrBetter0"/>
     </CRequirementAnd>
-    <CRequirementAnd id="And867912010CountUnitTwilightCouncil3CompleteOnlyTechTreeCheatLTECountUnitPhotonCannon8QueuedOrBetter2">
-        <OperandArray value="CountUnitTwilightCouncil3CompleteOnlyTechTreeCheat"/>
-        <OperandArray value="LTECountUnitPhotonCannon8QueuedOrBetter2"/>
+    <CRequirementAnd id="And867912010CountUnitHighlightCouncilCompleteOnlyTechTreeCheatLTECountUnitPsionicConcentratorQueuedOrBetter2">
+        <OperandArray value="CountUnitHighlightCouncilCompleteOnlyTechTreeCheat"/>
+        <OperandArray value="LTECountUnitPsionicConcentratorQueuedOrBetter2"/>
     </CRequirementAnd>
     <CRequirementAnd id="And908630672CountUpgradeAdvancedConstruction24223322222222223232CompleteOnly1964497010CountUpgradeAdvancedConstruction222CompleteOnlyCountUnitMissileTurret1322CompleteOnly">
         <OperandArray value="CountUpgradeAdvancedConstruction24223322222222223232CompleteOnly1964497010"/>
@@ -2809,6 +2809,10 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Adept5" State="QueuedOrBetter"/>
     </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitAiurSanctumCompleteOnly3215160904">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="AiurSanctum" State="CompleteOnly"/>
+    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitAlexQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Alex" State="QueuedOrBetter"/>
@@ -2970,6 +2974,10 @@
     <CRequirementCountUnit id="CountUnitAutomatedRefinery2CompleteOnly467777578">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="AutomatedRefinery2" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitAzureInterceptorQueuedOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="AzureInterceptor" State="QueuedOrBetterAtUnit"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitBadgerQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
@@ -3241,10 +3249,6 @@
     <CRequirementCountUnit id="CountUnitCyberneticsCore2CompleteOnly3570426006">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="CyberneticsCore2" State="CompleteOnly"/>
-    </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitCyberneticsCore3CompleteOnly3215160904">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="CyberneticsCore3" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitCyberneticsCore4CompleteOnly1115678049">
         <Flags index="TechTreeCheat" value="0"/>
@@ -3655,10 +3659,6 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="FleetBeacon2" State="CompleteOnly"/>
     </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitFleetBeacon3CompleteOnly1921691246">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="FleetBeacon3" State="CompleteOnly"/>
-    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitFleetBeacon4CompleteOnly3405927650">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="FleetBeacon4" State="CompleteOnly"/>
@@ -3688,10 +3688,6 @@
     <CRequirementCountUnit id="CountUnitForge2CompleteOnly2002308695">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Forge2" State="CompleteOnly"/>
-    </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitForge3CompleteOnly1011346628">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="Forge3" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitForge4CompleteOnly340084523">
         <Flags index="TechTreeCheat" value="0"/>
@@ -3753,10 +3749,6 @@
     <CRequirementCountUnit id="CountUnitGateway2CompleteOnly348525313">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Gateway2" State="CompleteOnly"/>
-    </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitGateway3CompleteOnly3668052699">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="Gateway3" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitGateway4CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
@@ -3861,6 +3853,13 @@
     <CRequirementCountUnit id="CountUnitHatchery6CompleteOnly2785476418">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Hatchery6" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitHighlightCouncilCompleteOnly1213073564">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="HighlightCouncil" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitHighlightCouncilCompleteOnlyTechTreeCheat">
+        <Count Link="HighlightCouncil" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitHive2CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
@@ -4049,10 +4048,6 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Interceptor122" State="QueuedOrBetterAtUnit"/>
     </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitInterceptor12QueuedOrBetterAtUnit">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="Interceptor12" State="QueuedOrBetterAtUnit"/>
-    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitInterceptor9QueuedOrBetterAtUnit">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Interceptor9" State="QueuedOrBetterAtUnit"/>
@@ -4072,6 +4067,10 @@
     <CRequirementCountUnit id="CountUnitKarass2QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Karass2" State="QueuedOrBetter"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitKhalaiGatewayCompleteOnly3668052699">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="KhalaiGateway" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitLair2CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
@@ -4164,6 +4163,10 @@
     <CRequirementCountUnit id="CountUnitMarine5QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Marine5" State="QueuedOrBetter"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitMechFacilityCompleteOnly920558968">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MechFacility" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitMechTestingFacilityCompleteOnlyTechTreeCheat">
         <Count Link="MechTestingFacility" State="CompleteOnly"/>
@@ -4362,17 +4365,21 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="OverseerTower" State="CompleteOnly"/>
     </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitPhaseForgeCompleteOnly1011346628">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="PhaseForge" State="CompleteOnly"/>
+    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitPhotonCannon6CompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="PhotonCannon6" State="CompleteOnly"/>
     </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitPhotonCannon8QueuedOrBetter">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="PhotonCannon8" State="QueuedOrBetter"/>
-    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitPirateBayCompleteOnly1609407400">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="PirateBay" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitPlanetgateCompleteOnly2981895052">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="Planetgate" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitPointDefenseDrone22CompleteOnly3393635091">
         <Flags index="TechTreeCheat" value="0"/>
@@ -4381,6 +4388,10 @@
     <CRequirementCountUnit id="CountUnitPointDefenseDrone262CompleteOnly757322852">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="PointDefenseDrone262" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitPowerBayCompleteOnly3257387171">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="PowerBay" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitPrimalHydralisk22CompleteOnly1151506261">
         <Flags index="TechTreeCheat" value="0"/>
@@ -4500,6 +4511,10 @@
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitPsiRepeaterCompleteOnly2667952670TechTreeCheat">
         <Count Link="PsiRepeater" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitPsionicConcentratorQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="PsionicConcentrator" State="QueuedOrBetter"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitPsiwaveCommunicatorCompleteOnly1851208886">
         <Flags index="TechTreeCheat" value="0"/>
@@ -4656,10 +4671,6 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="RoachWarren7" State="CompleteOnly"/>
     </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitRoboticsBay3CompleteOnly3257387171">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="RoboticsBay3" State="CompleteOnly"/>
-    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitRoboticsBay4CompleteOnly3044499941">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="RoboticsBay4" State="CompleteOnly"/>
@@ -4667,10 +4678,6 @@
     <CRequirementCountUnit id="CountUnitRoboticsBay6CompleteOnly3172141559">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="RoboticsBay6" State="CompleteOnly"/>
-    </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitRoboticsFacility2CompleteOnly920558968">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="RoboticsFacility2" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitRoboticsFacility3CompleteOnly3346404317">
         <Flags index="TechTreeCheat" value="0"/>
@@ -4736,6 +4743,10 @@
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitSingularityControllerCompleteOnly381557053TechTreeCheat">
         <Count Link="SingularityController" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitSolarBeaconCompleteOnly1921691246">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="SolarBeacon" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitSpawningPool2232222QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
@@ -4845,10 +4856,6 @@
     <CRequirementCountUnit id="CountUnitStargate2CompleteOnly636691716">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Stargate2" State="CompleteOnly"/>
-    </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitStargate3CompleteOnly2981895052">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="Stargate3" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitStargate4CompleteOnly285524553">
         <Flags index="TechTreeCheat" value="0"/>
@@ -5013,10 +5020,6 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="TemplarArchive2" State="CompleteOnly"/>
     </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitTemplarArchive3CompleteOnly3824459697">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="TemplarArchive3" State="CompleteOnly"/>
-    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitTemplarArchive4CompleteOnly2328706706">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="TemplarArchive4" State="CompleteOnly"/>
@@ -5044,6 +5047,10 @@
     <CRequirementCountUnit id="CountUnitTemplarArchive6CompleteOnlyTechTreeCheat">
         <Count Link="TemplarArchive6" State="CompleteOnly"/>
     </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitTemplarLibraryCompleteOnly3824459697">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="TemplarLibrary" State="CompleteOnly"/>
+    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitTribesmanHallCompleteOnly2576107301">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="TribesmanHall" State="CompleteOnly"/>
@@ -5051,13 +5058,6 @@
     <CRequirementCountUnit id="CountUnitTribesmanTotemCompleteOnly3704507359">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="TribesmanTotem" State="CompleteOnly"/>
-    </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitTwilightCouncil3CompleteOnly1213073564">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="TwilightCouncil3" State="CompleteOnly"/>
-    </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitTwilightCouncil3CompleteOnlyTechTreeCheat">
-        <Count Link="TwilightCouncil3" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitTwilightCouncil4CompleteOnly1868702021">
         <Flags index="TechTreeCheat" value="0"/>
@@ -5202,6 +5202,26 @@
     <CRequirementCountUpgrade id="CountUpgradeAbductQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Abduct" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeAcceleratedShieldsLevel1CompleteOnly4256853171">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="AcceleratedShieldsLevel1" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeAcceleratedShieldsLevel1QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="AcceleratedShieldsLevel1" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeAcceleratedShieldsLevel2CompleteOnly4256853171">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="AcceleratedShieldsLevel2" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeAcceleratedShieldsLevel2QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="AcceleratedShieldsLevel2" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeAcceleratedShieldsLevel3QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="AcceleratedShieldsLevel3" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeAdvancedBionicsUpgradeCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
@@ -5826,6 +5846,11 @@
     <CRequirementCountUpgrade id="CountUpgradeBurrowCompleteOnly1687599735TechTreeCheat">
         <Count Link="Burrow" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeCapacitorOverchargeQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="CapacitorOvercharge" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeCloakingFieldCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="CloakingField" State="CompleteOnly"/>
@@ -6065,6 +6090,10 @@
     <CRequirementCountUpgrade id="CountUpgradeInfiltratorEnergyQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="InfiltratorEnergy" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeJoriumBatteriesQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="JoriumBatteries" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeLightenedLimbsQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
@@ -7229,6 +7258,18 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="ParamilitaryUpgrade1" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradePsionicMovementQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="PsionicMovement" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradePsionicPowerQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="PsionicPower" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradePsionicSightQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="PsionicSight" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradePureConduitsCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="PureConduits" State="CompleteOnly"/>
@@ -7319,6 +7360,26 @@
     <CRequirementCountUpgrade id="CountUpgradeShieldWall2QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="ShieldWall2" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeStrengthenedShieldsLevel1CompleteOnly4256853171">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="StrengthenedShieldsLevel1" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeStrengthenedShieldsLevel1QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="StrengthenedShieldsLevel1" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeStrengthenedShieldsLevel2CompleteOnly4256853171">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="StrengthenedShieldsLevel2" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeStrengthenedShieldsLevel2QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="StrengthenedShieldsLevel2" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeStrengthenedShieldsLevel3QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="StrengthenedShieldsLevel3" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeSuperStimpackNovaQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
@@ -8471,22 +8532,6 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="UmojanBasicUnitUpgrade52224224232222222222222222" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
-    <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade52224224232222222222222223QueuedOrBetter">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="UmojanBasicUnitUpgrade52224224232222222222222223" State="QueuedOrBetter"/>
-    </CRequirementCountUpgrade>
-    <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade5222422423222222222222222QueuedOrBetter">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="UmojanBasicUnitUpgrade5222422423222222222222222" State="QueuedOrBetter"/>
-    </CRequirementCountUpgrade>
-    <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade522242242322222222222222CompleteOnly4256853171">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="UmojanBasicUnitUpgrade522242242322222222222222" State="CompleteOnly"/>
-    </CRequirementCountUpgrade>
-    <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade522242242322222222222222QueuedOrBetter">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="UmojanBasicUnitUpgrade522242242322222222222222" State="QueuedOrBetter"/>
-    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade522242242322222222222223222QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="UmojanBasicUnitUpgrade522242242322222222222223222" State="QueuedOrBetter"/>
@@ -8985,7 +9030,6 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233223232QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="UmojanBasicUnitUpgrade522242242322222222222223322233223232" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322323CompleteOnly">
@@ -9472,10 +9516,6 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="UmojanBasicUnitUpgrade52224224232222222222222" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
-    <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade52224224232222222222223QueuedOrBetter">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="UmojanBasicUnitUpgrade52224224232222222222223" State="QueuedOrBetter"/>
-    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade5222422423222222222222CompleteOnly4256853171">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="UmojanBasicUnitUpgrade5222422423222222222222" State="CompleteOnly"/>
@@ -9483,14 +9523,6 @@
     <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade5222422423222222222222QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="UmojanBasicUnitUpgrade5222422423222222222222" State="QueuedOrBetter"/>
-    </CRequirementCountUpgrade>
-    <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade5222422423222222222223CompleteOnly4256853171">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="UmojanBasicUnitUpgrade5222422423222222222223" State="CompleteOnly"/>
-    </CRequirementCountUpgrade>
-    <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade5222422423222222222223QueuedOrBetter">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="UmojanBasicUnitUpgrade5222422423222222222223" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade5222422423222222222224222QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
@@ -9576,21 +9608,9 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="UmojanBasicUnitUpgrade522242242322222222222" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
-    <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade522242242322222222223QueuedOrBetter">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="UmojanBasicUnitUpgrade522242242322222222223" State="QueuedOrBetter"/>
-    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade52224224232222222222QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="UmojanBasicUnitUpgrade52224224232222222222" State="QueuedOrBetter"/>
-    </CRequirementCountUpgrade>
-    <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade52224224232222222223CompleteOnly4256853171">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="UmojanBasicUnitUpgrade52224224232222222223" State="CompleteOnly"/>
-    </CRequirementCountUpgrade>
-    <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade52224224232222222223QueuedOrBetter">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="UmojanBasicUnitUpgrade52224224232222222223" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade5222422423222222222CompleteOnly4256853171">
         <Flags index="TechTreeCheat" value="0"/>
@@ -9599,14 +9619,6 @@
     <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade5222422423222222222QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="UmojanBasicUnitUpgrade5222422423222222222" State="QueuedOrBetter"/>
-    </CRequirementCountUpgrade>
-    <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade5222422423222222223CompleteOnly4256853171">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="UmojanBasicUnitUpgrade5222422423222222223" State="CompleteOnly"/>
-    </CRequirementCountUpgrade>
-    <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade5222422423222222223QueuedOrBetter">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="UmojanBasicUnitUpgrade5222422423222222223" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUmojanBasicUnitUpgrade5222422423222222224222332332QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
@@ -14948,6 +14960,11 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="UnknownUpgrade9" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeValorMyShieldQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="ValorMyShield" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeVenomCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Venom" State="CompleteOnly"/>
@@ -16117,8 +16134,8 @@
         <OperandArray index="0" value="CountUnitAttackDroneQueuedOrBetterAtUnit"/>
         <OperandArray index="1" value="10"/>
     </CRequirementLT>
-    <CRequirementLT id="LT2408570435CountUnitInterceptor12QueuedOrBetterAtUnit6">
-        <OperandArray index="0" value="CountUnitInterceptor12QueuedOrBetterAtUnit"/>
+    <CRequirementLT id="LT2408570435CountUnitAzureInterceptorQueuedOrBetterAtUnit6">
+        <OperandArray index="0" value="CountUnitAzureInterceptorQueuedOrBetterAtUnit"/>
         <OperandArray index="1" value="6"/>
     </CRequirementLT>
     <CRequirementLT id="LT2472108284CountUnitBaneling7QueuedOrBetterAtUnit6">
@@ -16157,8 +16174,8 @@
         <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade5222422423222222362223QueuedOrBetter"/>
         <OperandArray index="1" value="75"/>
     </CRequirementLT>
-    <CRequirementLT id="LT3530165603CountUnitInterceptor12QueuedOrBetterAtUnit14">
-        <OperandArray index="0" value="CountUnitInterceptor12QueuedOrBetterAtUnit"/>
+    <CRequirementLT id="LT3530165603CountUnitAzureInterceptorQueuedOrBetterAtUnit14">
+        <OperandArray index="0" value="CountUnitAzureInterceptorQueuedOrBetterAtUnit"/>
         <OperandArray index="1" value="14"/>
     </CRequirementLT>
     <CRequirementLT id="LT3611948901CountUnitLurker2QueuedOrBetterAtUnit4">
@@ -16293,8 +16310,8 @@
         <OperandArray index="0" value="CountUnitMedicalOutpostQueuedOrBetter"/>
         <OperandArray index="1" value="2"/>
     </CRequirementLTE>
-    <CRequirementLTE id="LTECountUnitPhotonCannon8QueuedOrBetter2">
-        <OperandArray index="0" value="CountUnitPhotonCannon8QueuedOrBetter"/>
+    <CRequirementLTE id="LTECountUnitPsionicConcentratorQueuedOrBetter2">
+        <OperandArray index="0" value="CountUnitPsionicConcentratorQueuedOrBetter"/>
         <OperandArray index="1" value="2"/>
     </CRequirementLTE>
     <CRequirementLTE id="LTECountUnitTemplarArchive52QueuedOrBetter2">
@@ -16542,6 +16559,15 @@
     <CRequirementNot id="NotCountUnitStarport8CompleteOnlyAtUnit">
         <OperandArray index="0" value="CountUnitStarport8CompleteOnlyAtUnit"/>
     </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeAcceleratedShieldsLevel1QueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeAcceleratedShieldsLevel1QueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeAcceleratedShieldsLevel2QueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeAcceleratedShieldsLevel2QueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeAcceleratedShieldsLevel3QueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeAcceleratedShieldsLevel3QueuedOrBetter"/>
+    </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeAdvancedBionicsUpgradeQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeAdvancedBionicsUpgradeQueuedOrBetter"/>
     </CRequirementNot>
@@ -16770,6 +16796,10 @@
     <CRequirementNot id="NotCountUpgradeBleedingQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeBleedingQueuedOrBetter"/>
     </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeCapacitorOverchargeQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeCapacitorOverchargeQueuedOrBetter"/>
+    </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeCloakingFieldQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeCloakingFieldQueuedOrBetter"/>
     </CRequirementNot>
@@ -16901,6 +16931,9 @@
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeInfiltratorEnergyQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeInfiltratorEnergyQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeJoriumBatteriesQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeJoriumBatteriesQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeLightenedLimbsQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeLightenedLimbsQueuedOrBetter"/>
@@ -17292,6 +17325,15 @@
     <CRequirementNot id="NotCountUpgradeParamilitaryUpgrade1QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeParamilitaryUpgrade1QueuedOrBetter"/>
     </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradePsionicMovementQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradePsionicMovementQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradePsionicPowerQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradePsionicPowerQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradePsionicSightQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradePsionicSightQueuedOrBetter"/>
+    </CRequirementNot>
     <CRequirementNot id="NotCountUpgradePureConduitsQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradePureConduitsQueuedOrBetter"/>
     </CRequirementNot>
@@ -17318,6 +17360,15 @@
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeShieldWall2QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeShieldWall2QueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeStrengthenedShieldsLevel1QueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeStrengthenedShieldsLevel1QueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeStrengthenedShieldsLevel2QueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeStrengthenedShieldsLevel2QueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeStrengthenedShieldsLevel3QueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeStrengthenedShieldsLevel3QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeSuperStimpackNovaQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeSuperStimpackNovaQueuedOrBetter"/>
@@ -17757,15 +17808,6 @@
     <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222222QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade52224224232222222222222222QueuedOrBetter"/>
     </CRequirementNot>
-    <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222223QueuedOrBetter">
-        <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade52224224232222222222222223QueuedOrBetter"/>
-    </CRequirementNot>
-    <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222222QueuedOrBetter">
-        <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade5222422423222222222222222QueuedOrBetter"/>
-    </CRequirementNot>
-    <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222222222QueuedOrBetter">
-        <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade522242242322222222222222QueuedOrBetter"/>
-    </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223222QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade522242242322222222222223222QueuedOrBetter"/>
     </CRequirementNot>
@@ -17928,14 +17970,8 @@
     <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade52224224232222222222222QueuedOrBetter"/>
     </CRequirementNot>
-    <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222222223QueuedOrBetter">
-        <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade52224224232222222222223QueuedOrBetter"/>
-    </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade5222422423222222222222QueuedOrBetter"/>
-    </CRequirementNot>
-    <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222222223QueuedOrBetter">
-        <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade5222422423222222222223QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222222224222QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade5222422423222222222224222QueuedOrBetter"/>
@@ -17979,20 +18015,11 @@
     <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222222QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade522242242322222222222QueuedOrBetter"/>
     </CRequirementNot>
-    <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade522242242322222222223QueuedOrBetter">
-        <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade522242242322222222223QueuedOrBetter"/>
-    </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222222QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade52224224232222222222QueuedOrBetter"/>
     </CRequirementNot>
-    <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade52224224232222222223QueuedOrBetter">
-        <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade52224224232222222223QueuedOrBetter"/>
-    </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222222QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade5222422423222222222QueuedOrBetter"/>
-    </CRequirementNot>
-    <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222223QueuedOrBetter">
-        <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade5222422423222222223QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUmojanBasicUnitUpgrade5222422423222222224222332332QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeUmojanBasicUnitUpgrade5222422423222222224222332332QueuedOrBetter"/>
@@ -19569,6 +19596,10 @@
     <CRequirementNot id="NotCountUpgradeUnknownUpgrade8QueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeUnknownUpgrade8QueuedOrBetter"/>
     </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeValorMyShieldQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeValorMyShieldQueuedOrBetter"/>
+    </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeVenomQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeVenomQueuedOrBetter"/>
     </CRequirementNot>
@@ -19815,8 +19846,8 @@
     <CRequirementNot id="NotOrCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222232233QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222322332QueuedOrBetter">
         <OperandArray index="0" value="OrCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222232233QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222322332QueuedOrBetter"/>
     </CRequirementNot>
-    <CRequirementNot id="NotOrCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322222QueuedOrBetter">
-        <OperandArray index="0" value="OrCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322222QueuedOrBetter"/>
+    <CRequirementNot id="NotOrCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322222QueuedOrBetter">
+        <OperandArray index="0" value="OrCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322222QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotOrCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233222QueuedOrBetter">
         <OperandArray index="0" value="OrCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233222QueuedOrBetter"/>
@@ -19831,11 +19862,9 @@
         <OperandArray index="0" value="OrCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322323222222322QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332232322222232QueuedOrBetterCountUpgradeUmo3077467427"/>
     </CRequirementNot>
     <CRequirementNot id="NotOrCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332232322222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233223232222QueuedOrBetterCountUpgradeUmojanBa891112517">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="OrCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332232322222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233223232222QueuedOrBetterCountUpgradeUmojanBasic4187789177"/>
     </CRequirementNot>
     <CRequirementNot id="NotOrCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322323222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322323QueuedOrBetterCountUpgradeUmojanBasicUni707650239">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="OrCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322323222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322323QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332232322QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotOrCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332232323222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233223232322222QueuedOrBetterCountUpgradeUmoja4102582656">
@@ -19868,8 +19897,8 @@
     <CRequirementNot id="NotOrCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332QueuedOrBetter">
         <OperandArray index="0" value="OrCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332QueuedOrBetter"/>
     </CRequirementNot>
-    <CRequirementNot id="NotOrCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322QueuedOrBetter">
-        <OperandArray index="0" value="OrCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322QueuedOrBetter"/>
+    <CRequirementNot id="NotOrCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322QueuedOrBetter">
+        <OperandArray index="0" value="OrCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotOrCountUpgradeUmojanBasicUnitUpgrade522242242322222235222222212322222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222352222222123222222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgra4276618461">
         <OperandArray index="0" value="OrCountUpgradeUmojanBasicUnitUpgrade522242242322222235222222212322222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222352222222123222222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade53533411780"/>
@@ -20550,9 +20579,9 @@
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade5222422423222222222222232233QueuedOrBetter"/>
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade52224224232222222222222322332QueuedOrBetter"/>
     </CRequirementOr>
-    <CRequirementOr id="OrCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322222QueuedOrBetter">
+    <CRequirementOr id="OrCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322222QueuedOrBetter">
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232222QueuedOrBetter"/>
-        <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223222QueuedOrBetter"/>
+        <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232QueuedOrBetter"/>
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322222QueuedOrBetter"/>
     </CRequirementOr>
     <CRequirementOr id="OrCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233222QueuedOrBetter">
@@ -20576,13 +20605,11 @@
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233223232222223QueuedOrBetter"/>
     </CRequirementOr>
     <CRequirementOr id="OrCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332232322222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233223232222QueuedOrBetterCountUpgradeUmojanBasic4187789177">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332232322222QueuedOrBetter"/>
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233223232222QueuedOrBetter"/>
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233223232QueuedOrBetter"/>
     </CRequirementOr>
     <CRequirementOr id="OrCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322323222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322323QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332232322QueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322323222QueuedOrBetter"/>
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223322323QueuedOrBetter"/>
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332232322QueuedOrBetter"/>
@@ -20637,9 +20664,9 @@
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322233QueuedOrBetter"/>
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222332QueuedOrBetter"/>
     </CRequirementOr>
-    <CRequirementOr id="OrCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322QueuedOrBetter">
+    <CRequirementOr id="OrCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322QueuedOrBetter">
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223QueuedOrBetter"/>
-        <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade522242242322222222222223322232QueuedOrBetter"/>
+        <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade52224224232222222222222332223222QueuedOrBetter"/>
         <OperandArray value="CountUpgradeUmojanBasicUnitUpgrade5222422423222222222222233222322QueuedOrBetter"/>
     </CRequirementOr>
     <CRequirementOr id="OrCountUpgradeUmojanBasicUnitUpgrade522242242322222235222222212322222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade5222422423222222352222222123222222QueuedOrBetterCountUpgradeUmojanBasicUnitUpgrade53533411780">

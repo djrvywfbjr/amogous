@@ -243,6 +243,61 @@
             </Cost>
         </DamageResponse>
     </CBehaviorBuff>
+    <CBehaviorBuff id="SolarBeamDoubleDamage">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="NotMohandarQuadDamage"/>
+        <Duration value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SolarBeamQuadDamage">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Duration value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PoweringModeHealed">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EndoCloak">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <Duration value="14"/>
+        <Modification>
+            <StateFlags index="Cloak" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GuardianShell">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-spearofadun-guardianshell.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+        <DamageResponse ClampMaximum="0" ModifyMinimumDamage="1">
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ShieldOfTassadar">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\BTN-Upgrade-Protoss-ShieldsLevel1.dds"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Duration value="0.6"/>
+        <Modification HealTakenMultiplier="1.5"/>
+        <DamageResponse>
+            <Kind index="Spell" value="0"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ShieldOfAiur">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-HardenedShields.dds"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="CasterShieldsGE1"/>
+        <DamageResponse ClampMaximum="15" Minimum="15">
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
     <CBehaviorBuff id="HardenedShield723">
         <Alignment value="Positive"/>
         <Cost>
@@ -1802,18 +1857,6 @@
             <Chance value="1"/>
         </DamageResponse>
     </CBehaviorBuff>
-    <CBehaviorBuff id="HardenedShieldImmortalMelee2">
-        <Alignment value="Positive"/>
-        <Cost>
-            <Cooldown Link="Immortal Shield"/>
-        </Cost>
-        <InfoFlags index="Hidden" value="1"/>
-        <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-HardenedShields.dds"/>
-        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
-        <DamageResponse ClampMaximum="15" Minimum="15">
-            <Chance value="1"/>
-        </DamageResponse>
-    </CBehaviorBuff>
     <CBehaviorBuff id="HotG">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Requirements value="UnknownRequirement962"/>
@@ -2010,6 +2053,28 @@
         <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
         <Modification Radar="13" RadarFilters="-;Neutral,RawResource,HarvestableResource,Missile,Destructible,Buried"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="ShieldOfZeratul">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\BTN-Upgrade-Protoss-ShieldsLevel2.dds"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Duration value="0.6"/>
+        <Modification>
+            <VitalRegenArray index="Shields" value="10"/>
+        </Modification>
+        <DamageResponse>
+            <Kind index="Spell" value="0"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ShieldOvercharge">
+        <InfoIcon value="Assets\Textures\btn-ability-spearofadun-shieldovercharge.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <TimeScaleSource Value="Global"/>
+        <Duration value="30"/>
+        <Modification>
+            <VitalMaxArray index="Shields" value="150"/>
+            <VitalRegenArray index="Shields" value="10"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="Shield23">
         <BehaviorFlags index="Permanent" value="1"/>
         <InfoFlags index="Hidden" value="1"/>
@@ -2055,6 +2120,15 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="30"/>
         <Modification TimeScale="1.4"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PoweringMode">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-energize.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="CanSpendEnergy"/>
+        <RemoveValidatorArray value="hasEnergy"/>
+        <Period value="0.75"/>
+        <PeriodicEffect value="PoweringModeSA"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="SilentBastion">
         <BehaviorFlags index="Permanent" value="1"/>
@@ -4033,12 +4107,15 @@
             <LifeArmorBonus value="3"/>
         </Modification>
     </CBehaviorBuff>
-    <CBehaviorBuff id="Detector1023" parent="Detector">
+    <CBehaviorBuff id="ShroudofTwilight">
         <Alignment value="Positive"/>
-        <InfoIcon value="Assets\Textures\btn-ability-protoss-phaseshift2.dds"/>
-        <Duration value="21"/>
-        <DamageResponse ModifyFraction="0.4">
-            <Chance value="1"/>
+        <InfoIcon value="Assets\Textures\Talent-Vorazun-Level01-ShadowStalk.dds"/>
+        <Duration value="30"/>
+        <Modification>
+            <StateFlags index="Cloak" value="1"/>
+        </Modification>
+        <DamageResponse ClampMaximum="0" Evade="1" ModifyMinimumDamage="1">
+            <Chance value="0.3"/>
         </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="Detector1222" parent="Detector">
@@ -4744,11 +4821,11 @@
     <CBehaviorBuff id="PsiDisruption11">
         <InfoIcon value="Assets\Textures\btn-ability-spearofadun-deploypylon.dds"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
-        <RemoveValidatorArray value="HasPsiStrike"/>
         <MaxStackCount value="3"/>
         <MaxStackCountPerCaster value="1"/>
         <Duration value="0.1875"/>
         <Modification TimeScale="1.15"/>
+        <TimeScaleSource Value="Global"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="PsiDisruption112">
         <InfoIcon value="Assets\Textures\btn-ability-protoss-voidarmor.dds"/>
@@ -8312,7 +8389,9 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Requirements value="UnknownRequirement82322222332332222"/>
-        <Modification AttackSpeedMultiplier="1.45"/>
+        <Modification AttackSpeedMultiplier="1.45">
+            <RateMultiplierArray index="Morph" value="1.45"/>
+        </Modification>
         <DamageResponse>
             <Cost>
                 <Charge Link="Behavior/AntamoAirAll2" TimeUse="5"/>
@@ -16837,9 +16916,7 @@
         <InfoIcon value="Assets\Textures\btn-progression-zerg-dehaka-15-genemutation.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Requirements value="UnknownRequirement82322222322"/>
-        <Modification WeaponRange="1">
-            <StateFlags index="Cloak" value="1"/>
-        </Modification>
+        <Modification WeaponRange="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="Evacuation103">
         <InfoIcon value="Assets\Textures\btn-upgrade-zerg-hotstunnelingclaws.dds"/>
@@ -16854,7 +16931,7 @@
         <InfoIcon value="Assets\Textures\btn-upgrade-zerg-adrenalglands.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Requirements value="UnknownRequirement82322222322222"/>
-        <Modification MoveSpeedMultiplier="1.75" AttackSpeedMultiplier="1.25"/>
+        <Modification MoveSpeedMultiplier="1.25" AttackSpeedMultiplier="1.25"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="Evacuation10322">
         <InfoIcon value="Assets\Textures\talent-zagara-level12-unlockswarmling.dds"/>
@@ -30346,17 +30423,14 @@
             <StateFlags index="Stasis" value="1"/>
         </Modification>
     </CBehaviorBuff>
-    <CBehaviorBuff id="GuardianShield2">
+    <CBehaviorBuff id="ShieldOfAdun">
         <Alignment value="Positive"/>
-        <InfoIcon value="Assets\Textures\btn-ability-protoss-shieldbattery.dds"/>
+        <InfoIcon value="Assets\Textures\BTN-Upgrade-Protoss-ShieldsLevel3.dds"/>
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Duration value="0.6"/>
-        <Modification HealTakenMultiplier="2" ShieldArmorBonus="4">
-            <VitalRegenMultiplier index="Shields" value="10"/>
+        <Modification ShieldArmorBonus="2">
+            <VitalMaxArray index="Shields" value="50"/>
         </Modification>
-        <DamageResponse>
-            <Kind index="Spell" value="0"/>
-        </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="GuardianShield22">
         <Alignment value="Positive"/>
@@ -33495,19 +33569,18 @@
             <AbilLinkDisableArray value="ArchonWarp"/>
         </Modification>
     </CBehaviorBuff>
-    <CBehaviorBuff id="NexusPhaseShift2">
+    <CBehaviorBuff id="QuantumShift">
         <Alignment value="Positive"/>
         <InfoIcon value="Assets\Textures\btn-ability-protoss-cloakfield.dds"/>
         <DisplayDuration index="Self" value="1"/>
         <TimeScaleSource Value="Global"/>
-        <Duration value="16"/>
+        <Duration value="15"/>
         <Modification>
             <ModifyFlags index="DisableAbils" value="1"/>
             <ModifyFlags index="EnableMove" value="1"/>
             <StateFlags index="Invulnerable" value="1"/>
             <StateFlags index="SuppressAttack" value="1"/>
         </Modification>
-        <ExpireEffect value="PhaseCannonInitialStun722425"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="NovaApolloCloak2">
         <Alignment value="Positive"/>
@@ -39513,15 +39586,15 @@
         <InitialEffect value="PsiStormDamageInitial3"/>
         <PeriodicEffect value="PsiStormDamage3"/>
     </CBehaviorBuff>
-    <CBehaviorBuff id="PsiStorm4">
-        <Alignment value="Negative"/>
+    <CBehaviorBuff id="PlasmaStorm">
+        <Alignment value="Positive"/>
         <InfoIcon value="Assets\Textures\btn-ability-protoss-psistorm.dds"/>
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <TimeScaleSource Value="Global"/>
-        <Duration value="1.1"/>
-        <Period value="1"/>
-        <PeriodicEffect value="PsiStormDamageInitial4"/>
-        <InitialEffect value="PsiStormDamageInitial4"/>
+        <Duration value="0.6"/>
+        <Period value="0.5"/>
+        <InitialEffect value="PlasmaStorm"/>
+        <PeriodicEffect value="PlasmaStorm"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="PsiStorm5">
         <Alignment value="Negative"/>
@@ -42362,6 +42435,7 @@
             <VitalRegenArray index="Life" value="2"/>
         </Modification>
         <PeriodCount value="50"/>
+        <TimeScaleSource Value="Global"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="Shield34">
         <InfoFlags index="Hidden" value="1"/>
@@ -46435,7 +46509,7 @@
         <Modification>
             <VitalRegenArray index="Energy" value="-3"/>
             <WeaponArray Link="Dragoon82"/>
-            <WeaponDisableArray value="ParticleDisruptors7"/>
+            <WeaponDisableArray value="SolarDisruptor"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="UnknownBehavior8">

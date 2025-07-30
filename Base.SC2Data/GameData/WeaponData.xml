@@ -236,17 +236,24 @@
         <AllowedMovement value="Moving"/>
         <RandomDelayMax value="0.1875"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="ATSLaserBattery4" parent="ATSLaserBattery">
-        <Name value="Weapon/Name/ATSLaserBattery4"/>
-        <Tip value="Weapon/Tip/ATSLaserBattery4"/>
+    <CWeaponLegacy id="ATSLaserBattery4">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel2.dds"/>
         <DisplayEffect value="ATSLaserBatteryU4"/>
-        <Range value="7"/>
+        <DisplayName value="Weapon/Name/ATSLaserBattery"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquirePrioritization value="ByAngle"/>
+        <Range value="9"/>
+        <Arc value="360"/>
+        <Marker Link="Weapon/ATSLaserBattery"/>
         <Cost>
-            <Cooldown TimeUse="0.5"/>
+            <Cooldown Link="Weapon/ATSLaserBattery" Location="Unit" TimeUse="0.5"/>
         </Cost>
+        <Period value="0.2856"/>
         <Effect value="ATSLaserBatteryLM4"/>
         <AllowedMovement value="Slowing"/>
-        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ATSLaserBattery42" parent="ATSLaserBattery">
         <Name value="Weapon/Name/ATSLaserBattery42"/>
@@ -851,7 +858,58 @@
         <DamagePoint value="0.95"/>
         <Effect value="BrutalizeCreatePersistent3"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="CenturionWarpBlades6">
+    <CWeaponLegacy id="SolarBeam">
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
+        <DisplayEffect value="MohandarMUx12"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Arc value="29.9926"/>
+        <Period value="3"/>
+        <Effect value="Mohandar2"/>
+        <AllowedMovement value="Moving"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <RangeSlop value="3"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="SanitizationBeam">
+        <Name value="Weapon/Name/Energizer"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="SanitizationBeamDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="11"/>
+        <TeleportResetRange value="0"/>
+        <Period value="1"/>
+        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PsionicLightning">
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <TeleportResetRange value="0"/>
+        <Cost>
+            <Cooldown Location="Unit"/>
+        </Cost>
+        <Period value="2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="HighOnes_SolariteReaper">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="ZealotAiurWeapon2"/>
+        <DisplayAttackCount value="1"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.1"/>
+        <Marker Link="Weapon/PsiBlades"/>
+        <Cost>
+            <Cooldown Link="Weapon/PsiBlades"/>
+        </Cost>
+        <Period value="1.2"/>
+        <DamagePoint value="0"/>
+        <Effect value="ZealotAiurWeaponCleaveSet2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="WarpingBlades">
         <Name value="Weapon/Name/Centurion"/>
         <EditorCategories value="Race:Protoss"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
@@ -981,6 +1039,16 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="HybridNemesisWeapon">
         <Period value="0.7"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PhaseScatterers">
+        <EditorCategories value="Race:Protoss"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="ImmortalTaldarimWeaponDamage6"/>
+        <DisplayAttackCount value="4"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="3"/>
+        <Period value="2.5"/>
+        <Effect value="ImmortalTaldarimWeaponRandomLarge6"/>
     </CWeaponLegacy>
     <CWeaponStrafe id="InterceptorBeam15">
         <EditorCategories value="Race:Protoss"/>
@@ -8389,7 +8457,7 @@
         <Period value="1.87"/>
         <Effect value="ParticleDisruptors5"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="ParticleDisruptors7">
+    <CWeaponLegacy id="SolarDisruptor">
         <EditorCategories value="Race:Protoss"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
         <DisplayEffect value="ParticleDisruptorsU"/>
@@ -8554,17 +8622,6 @@
         <RandomDelayMin value="0"/>
         <RandomDelayMax value="0"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="PooPoo">
-        <Name value="Weapon/Name/Energizer"/>
-        <EditorCategories value="Race:Protoss"/>
-        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
-        <DisplayEffect value="SanitizationBeamDamage2"/>
-        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <TeleportResetRange value="0"/>
-        <Period value="1"/>
-        <Effect value="SanitizationBeam2"/>
-        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
-    </CWeaponLegacy>
     <CWeaponLegacy id="GoliathA2">
         <EditorCategories value="Race:Terran"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
@@ -8684,16 +8741,12 @@
         <Period value="3"/>
         <Effect value="InterceptorBeamPersistent3"/>
     </CWeaponStrafe>
-    <CWeaponLegacy id="IonCannons2" parent="IonCannons">
-        <Name value="Weapon/Name/IonCannons2"/>
-        <Tip value="Weapon/Tip/IonCannons2"/>
+    <CWeaponLegacy id="PlasmaCannons" parent="IonCannons">
+        <Name value="Weapon/Name/PlasmaCannons"/>
         <DisplayEffect value="IonCannonsU2"/>
         <DisplayAttackCount value="4"/>
-        <Range value="9"/>
-        <Cost>
-            <Vital index="Shields" value="10"/>
-        </Cost>
-        <Period value="0.6"/>
+        <Range value="6"/>
+        <Period value="1"/>
         <Effect value="IonCannons2"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="KaiserBlades2" parent="KaiserBlades">
