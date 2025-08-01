@@ -1450,6 +1450,13 @@
         <EditorCategories value="Race:Zerg"/>
         <Behavior value="AggressiveMutation24"/>
     </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="AkilaeHopeMineralAB">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="AkilaeHopeMineralRichAB">
+        <EditorCategories value=""/>
+        <Behavior value="AkilaeHopeMineralAB"/>
+    </CEffectApplyBehavior>
     <CEffectDamage id="AnvilGuardPunisherGrenades2">
         <AttributeBonus index="Armored" value="0"/>
         <AttributeBonus index="Massive" value="10"/>
@@ -1595,13 +1602,13 @@
         <BehaviorLink value="ImmortalTaldarimMissileSpeedStack"/>
         <Count value="16"/>
     </CEffectRemoveBehavior>
-    <CEffectDamage id="ImmortalTaldarimWeaponDamage6" parent="DU_WEAP_MISSILE">
+    <CEffectDamage id="HighOnes_ImmortalTaldarimWeaponDamage6" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Protoss"/>
-        <Amount value="6"/>
+        <Amount value="10"/>
     </CEffectDamage>
     <CEffectSet id="ImmortalTaldarimWeaponDamageSet7">
         <EditorCategories value="Race:Protoss"/>
-        <EffectArray value="ImmortalTaldarimWeaponDamage6"/>
+        <EffectArray value="HighOnes_ImmortalTaldarimWeaponDamage6"/>
     </CEffectSet>
     <CEffectLaunchMissile id="ImmortalTaldarimWeaponLM6">
         <EditorCategories value="Race:Protoss"/>
@@ -1612,7 +1619,7 @@
     <CEffectLaunchMissile id="ImmortalTaldarimWeaponLMNoSearch6">
         <ValidatorArray value="TargetRadiusLE0Dot125"/>
         <EditorCategories value="Race:Protoss"/>
-        <ImpactEffect value="ImmortalTaldarimWeaponDamage6"/>
+        <ImpactEffect value="HighOnes_ImmortalTaldarimWeaponDamage6"/>
         <AmmoUnit value="PhaseScattererMissile"/>
         <Movers Link="ImmortalTaldarimWeaponMover" IfRangeLTE="500"/>
     </CEffectLaunchMissile>
@@ -1699,10 +1706,10 @@
         <WhichLocation Value="TargetUnit"/>
         <TimeScaleSource Value="Caster"/>
         <Flags index="Channeled" value="1"/>
-        <InitialEffect value="MohandarMUx12"/>
+        <InitialEffect value="HighOnes_MohandarMUx12"/>
         <ExpireEffect value="MohandarChainSet22"/>
-        <PeriodCount value="5"/>
-        <PeriodicEffectArray value="MohandarMUx12"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="HighOnes_MohandarMUx12"/>
         <PeriodicPeriodArray value="0.6"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="MohandarChargeEffect022">
@@ -1713,7 +1720,7 @@
         <Flags index="Channeled" value="1"/>
         <InitialEffect value="MohandarDoubleDamage2"/>
         <ExpireEffect value="MohandarChainSet32"/>
-        <PeriodCount value="5"/>
+        <PeriodCount value="3"/>
         <PeriodicEffectArray value="MohandarDamageSet22"/>
         <PeriodicPeriodArray value="0.6"/>
     </CEffectCreatePersistent>
@@ -1741,12 +1748,12 @@
     <CEffectSet id="MohandarDamageSet22">
         <EditorCategories value="Race:Protoss"/>
         <EffectArray value="MohandarDoubleDamage2"/>
-        <EffectArray value="MohandarMUx22"/>
+        <EffectArray value="HighOnes_MohandarMUx22"/>
     </CEffectSet>
     <CEffectSet id="MohandarDamageSet32">
         <EditorCategories value="Race:Protoss"/>
         <EffectArray value="MohandarQuadDamage2"/>
-        <EffectArray value="MohandarMUx32"/>
+        <EffectArray value="HighOnes_MohandarMUx32"/>
     </CEffectSet>
     <CEffectApplyBehavior id="MohandarDoubleDamage2">
         <ValidatorArray index="0" value=""/>
@@ -1761,19 +1768,19 @@
         <EffectArray value="MohandarChargeEffect032"/>
     </CEffectSet>
     <CEffectDamage id="MohandarMUInitial2" parent="PrismaticBeamMUBase"/>
-    <CEffectDamage id="MohandarMUx12" parent="PrismaticBeamMUBase">
+    <CEffectDamage id="HighOnes_MohandarMUx12" parent="PrismaticBeamMUBase">
         <Name value="Effect/Name/MohandarMUInitial"/>
         <Marker Link="Effect/MohandarMUInitial"/>
         <ArmorReduction value="1"/>
         <Amount value="6"/>
     </CEffectDamage>
-    <CEffectDamage id="MohandarMUx22" parent="PrismaticBeamMUBase">
+    <CEffectDamage id="HighOnes_MohandarMUx22" parent="PrismaticBeamMUBase">
         <Name value="Effect/Name/MohandarMUInitial"/>
         <Marker Link="Effect/MohandarMUInitial"/>
         <ArmorReduction value="1"/>
         <Amount value="12"/>
     </CEffectDamage>
-    <CEffectDamage id="MohandarMUx32" parent="PrismaticBeamMUBase">
+    <CEffectDamage id="HighOnes_MohandarMUx32" parent="PrismaticBeamMUBase">
         <Name value="Effect/Name/MohandarMUInitial"/>
         <Marker Link="Effect/MohandarMUInitial"/>
         <ArmorReduction value="1"/>
@@ -2349,7 +2356,7 @@
         <SearchFilters value="Structure;Player,Ally,Neutral,Heroic,Missile,Stasis,Dead,Hidden,Invulnerable,Benign"/>
         <AreaArray Radius="14" Effect="PsiDisruptionApplyBehavior3232"/>
     </CEffectEnumArea>
-    <CEffectDamage id="PsionicLightning" parent="DU_WEAP">
+    <CEffectDamage id="HighOnes_PsionicLightning" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
         <Kind value="Ranged"/>
         <KindSplash value="Splash"/>
@@ -6946,7 +6953,7 @@
     </CEffectSet>
     <CEffectLaunchMissile id="EvadionistMissile">
         <EditorCategories value="Race:Protoss"/>
-        <ImpactEffect value="PsiBlades13"/>
+        <ImpactEffect value="HighOnes_PsiBlades"/>
         <AmmoUnit value="DragoonWeapon72"/>
     </CEffectLaunchMissile>
     <CEffectCreatePersistent id="GoliathA223">
@@ -7116,7 +7123,7 @@
         <AttributeBonus index="Armored" value="5"/>
         <AttributeBonus index="Massive" value="5"/>
     </CEffectDamage>
-    <CEffectDamage id="KhaydarinBeamDamage3" parent="DU_WEAP">
+    <CEffectDamage id="HighOnes_KhaydarinBeamDamage" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
         <Kind value="Ranged"/>
         <KindSplash value="Splash"/>
@@ -7182,7 +7189,7 @@
         <ValidatorArray index="0" removed="1"/>
         <EditorCategories value=""/>
     </CEffectApplyBehavior>
-    <CEffectDamage id="PsiBlades13" parent="DU_WEAP">
+    <CEffectDamage id="HighOnes_PsiBlades" parent="DU_WEAP">
         <ValidatorArray value="NotHidden"/>
         <EditorCategories value="Race:Protoss"/>
         <Amount value="8"/>
@@ -8420,7 +8427,7 @@
         <OffsetVectorEndLocation Value="TargetUnitOrPoint"/>
         <Flags index="RandomOffset" value="1"/>
         <PeriodCount value="3"/>
-        <PeriodicEffectArray value="SOAStrafeAttackDamage23"/>
+        <PeriodicEffectArray value="HighOnes_SOAStrafeAttackDamage23"/>
         <PeriodicPeriodArray value="0.1"/>
         <PeriodicPeriodArray value="0.1"/>
         <HeightMap value="Ground"/>
@@ -33036,7 +33043,7 @@
         <Kind value="Ranged"/>
         <Amount value="6"/>
     </CEffectDamage>
-    <CEffectDamage id="InterceptorBeamDamage14" parent="DU_WEAP">
+    <CEffectDamage id="HighOnes_InterceptorBeamDamage" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
         <Visibility value="Visible"/>
         <Kind value="Ranged"/>
@@ -33271,9 +33278,9 @@
         <EditorCategories value="Race:Protoss"/>
         <WhichLocation Value="TargetUnit"/>
         <TimeScaleSource Value="Caster"/>
-        <InitialEffect value="InterceptorBeamDamage14"/>
+        <InitialEffect value="HighOnes_InterceptorBeamDamage"/>
         <PeriodCount value="1"/>
-        <PeriodicEffectArray value="InterceptorBeamDamage14"/>
+        <PeriodicEffectArray value="HighOnes_InterceptorBeamDamage"/>
         <PeriodicPeriodArray value="0"/>
         <PeriodicPeriodArray value="0"/>
     </CEffectCreatePersistent>
@@ -33964,7 +33971,7 @@
         <PeriodicPeriodArray value="0"/>
     </CEffectCreatePersistent>
     <CEffectLaunchMissile id="IonCannonsLMLeft2" parent="IonCannonsLM">
-        <ImpactEffect value="IonCannonsXelnaga"/>
+        <ImpactEffect value="HighOnes_IonCannonsU2"/>
         <AmmoUnit value="IonCannonsWeapon2"/>
         <Movers Link="MissileDefault" IfRangeLTE="1"/>
         <Movers Link="IonCannonsWeaponLeft" IfRangeLTE="6"/>
@@ -34040,7 +34047,7 @@
         <Movers Link="IonCannonsWeaponLeft" IfRangeLTE="6"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="IonCannonsLMRight2" parent="IonCannonsLM">
-        <ImpactEffect value="IonCannonsXelnaga"/>
+        <ImpactEffect value="HighOnes_IonCannonsU2"/>
         <AmmoUnit value="IonCannonsWeapon2"/>
         <Movers Link="MissileDefault" IfRangeLTE="1"/>
         <Movers Link="IonCannonsWeaponRight" IfRangeLTE="6"/>
@@ -34115,7 +34122,7 @@
         <Movers Link="MissileDefault" IfRangeLTE="1"/>
         <Movers Link="IonCannonsWeaponRight" IfRangeLTE="6"/>
     </CEffectLaunchMissile>
-    <CEffectDamage id="IonCannonsU2" parent="DU_WEAP_MISSILE">
+    <CEffectDamage id="HighOnes_IonCannonsU2" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Protoss"/>
         <Visibility value="Visible"/>
         <Amount value="7"/>
@@ -43051,7 +43058,7 @@
     <CEffectLaunchMissile id="MothershipCorePlasmaDisruptorLaunchMissile3">
         <ValidatorArray index="0" value="PhotonCannonTargetFilters"/>
         <EditorCategories value="Race:Protoss"/>
-        <ImpactEffect value="MothershipCoreRepulsorCannonDamage3"/>
+        <ImpactEffect value="HighOnes_MothershipCoreRepulsorCannonDamage3"/>
         <AmmoUnit value="RepulsorCannonWeapon3"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="MothershipCorePlasmaDisruptorLaunchMissile32">
@@ -43086,7 +43093,7 @@
         <Kind value="Ranged"/>
         <Amount value="25"/>
     </CEffectDamage>
-    <CEffectDamage id="MothershipCoreRepulsorCannonDamage3" parent="DU_WEAP">
+    <CEffectDamage id="HighOnes_MothershipCoreRepulsorCannonDamage3" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
         <Visibility value="Visible"/>
         <Kind value="Ranged"/>
@@ -49642,9 +49649,6 @@
         <ImpactEffect value="StalkerEntropyLanceSearchSet6"/>
         <AmmoUnit value="StalkerWeapon6"/>
     </CEffectLaunchMissile>
-    <CEffectDamage id="ParticleDisruptorsU">
-        <DamageInheritEffect value="ZerglingSunder323"/>
-    </CEffectDamage>
     <CEffectDamage id="ParticleDisruptorsU2" parent="DU_WEAP_MISSILE">
         <EditorCategories value="Race:Protoss"/>
         <AttributeBonus index="Armored" value="10"/>
@@ -66773,7 +66777,7 @@
         <AreaArray Radius="2" Fraction="0.5"/>
         <SearchFilters value="Visible;Self,Player,Ally,Missile,Item,Stasis,Dead,Hidden,Invulnerable"/>
     </CEffectDamage>
-    <CEffectDamage id="SOAStrafeAttackDamage23">
+    <CEffectDamage id="HighOnes_SOAStrafeAttackDamage23">
         <EditorCategories value="Race:Protoss"/>
         <ResponseFlags index="Flee" value="1"/>
         <AttributeBonus index="Armored" value="7"/>
@@ -68386,10 +68390,9 @@
         <EditorCategories value=""/>
         <Behavior value="Shield322"/>
     </CEffectApplyBehavior>
-    <CEffectApplyBehavior id="ShieldUp2324">
-        <ValidatorArray index="0" value="IsTimeStopped2"/>
+    <CEffectApplyBehavior id="AkilaeHope">
+        <ValidatorArray index="0" value="NoAkilaeHope"/>
         <EditorCategories value=""/>
-        <Behavior value="Shield33"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="ShieldUp2325">
         <ValidatorArray index="0" value="IsTimeStopped2"/>
@@ -71005,8 +71008,8 @@
         <Kind value="Ranged"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectDamage>
-    <CEffectDamage id="TempestDamageGround4" parent="TempestDamageGround">
-        <Name value="Effect/Name/TempestDamageGround4"/>
+    <CEffectDamage id="HighOnes_TempestDamageGround" parent="TempestDamageGround">
+        <Name value="Effect/Name/HighOnes_TempestDamageGround"/>
         <Amount value="50"/>
     </CEffectDamage>
     <CEffectDamage id="TempestDamageGround42" parent="TempestDamageGround">
@@ -71220,7 +71223,7 @@
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="TempestLaunchMissileGround4">
         <EditorCategories value="Race:Protoss"/>
-        <ImpactEffect value="TempestDamageGround4"/>
+        <ImpactEffect value="HighOnes_TempestDamageGround"/>
         <AmmoUnit value="TempestWeaponGround4"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="TempestLaunchMissileGround42">
@@ -83139,9 +83142,9 @@
     <CEffectApplyBehavior id="HellRifleIgnite">
         <EditorCategories value=""/>
     </CEffectApplyBehavior>
-    <CEffectDamage id="ZealotAiurWeapon2" parent="DU_WEAP">
+    <CEffectDamage id="HighOnes_ZealotAiurWeapon2" parent="DU_WEAP">
         <EditorCategories value="Race:Protoss"/>
-        <Amount value="12"/>
+        <Amount value="16"/>
         <Death value="Eviscerate"/>
     </CEffectDamage>
     <CEffectCreatePersistent id="ZealotAiurWeaponBurst2">
@@ -83150,7 +83153,7 @@
         <TimeScaleSource Value="Caster"/>
         <Flags index="Channeled" value="1"/>
         <PeriodCount value="1"/>
-        <PeriodicEffectArray value="ZealotAiurWeapon2"/>
+        <PeriodicEffectArray value="HighOnes_ZealotAiurWeapon2"/>
         <PeriodicPeriodArray value="0"/>
         <PeriodicPeriodArray value="0.28"/>
     </CEffectCreatePersistent>

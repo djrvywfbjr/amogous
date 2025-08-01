@@ -3116,10 +3116,8 @@
         <Value value="1"/>
         <Behavior value="SJHyperionLightningStormStun211"/>
     </CValidatorUnitCompareBehaviorCount>
-    <CValidatorUnitCompareBehaviorCount id="IsTimeStopped24">
-        <Compare value="LT"/>
-        <Value value="1"/>
-        <Behavior value="Shield33"/>
+    <CValidatorUnitCompareBehaviorCount id="NoAkilaeHope">
+        <Behavior value="AkilaeHope"/>
     </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitCompareBehaviorCount id="IsTimeStopped25">
         <Compare value="LT"/>

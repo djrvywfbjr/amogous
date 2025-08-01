@@ -2186,7 +2186,7 @@
         <Flags index="AutoCast" value="1"/>
         <Flags index="AutoCastOn" value="1"/>
         <Cost>
-            <Vital index="Energy" value="50"/>
+            <Vital index="Energy" value="25"/>
         </Cost>
         <TargetFilters value="Visible;Self,Neutral,Enemy,Missile,Dead"/>
         <Range value="7"/>
@@ -18665,6 +18665,11 @@
             <Resource index="Minerals" value="150"/>
             <Resource index="Vespene" value="150"/>
             <Button DefaultButtonFace="PsionicPower" Requirements="LearnPsionicPower"/>
+        </InfoArray>
+        <InfoArray index="Research21" Time="100" Upgrade="PsionicWrath">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="PsionicWrath" Requirements="LearnPsionicWrath"/>
         </InfoArray>
         <InfoArray index="Research29" Time="125" Upgrade="UmojanBasicUnitUpgrade522242242322222235222222272">
             <Resource index="Minerals" value="750"/>
@@ -46058,8 +46063,8 @@
         <InfoArray index="Build2" Unit="KhalaiPylon">
             <Button DefaultButtonFace="Pylon5"/>
         </InfoArray>
-        <InfoArray index="Build3">
-            <Button DefaultButtonFace="Assimilator6"/>
+        <InfoArray index="Build3" Unit="AutonomousAssimilator">
+            <Button DefaultButtonFace="AutomatedAssimilator" Requirements=""/>
         </InfoArray>
         <InfoArray index="Build4" Unit="KhalaiGateway" Time="55">
             <Button DefaultButtonFace="Gateway6" Requirements="HaveOldFortress"/>
@@ -52459,29 +52464,15 @@
         <AutoCastValidatorArray value="IsTimeStopped227"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield223232" Requirements="UnknownRequirement8232222233222"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="ShieldUp2323">
+    <CAbilEffectTarget id="AkilaeHope">
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Effect index="0" value="ShieldUp2324"/>
         <Cost>
-            <Vital index="Shields" value="500"/>
-            <Charge>
-                <CountMax value="6"/>
-                <CountStart value="6"/>
-                <CountUse value="1"/>
-                <Link value=""/>
-                <Location value="Player"/>
-                <TimeUse value="50"/>
-            </Charge>
-            <Cooldown Link="Abil/AlarakAvatar" Location="Player"/>
+            <Vital index="Shields" value="700"/>
         </Cost>
         <TargetFilters value="Structure;Neutral,Enemy"/>
         <Range value="500"/>
         <Arc value="360"/>
-        <AutoCastFilters value="Structure,Visible;Neutral,Enemy,Missile,Stasis,Dead"/>
-        <AutoCastRange value="500"/>
-        <AutoCastValidatorArray value="CasterLifeNotFull2"/>
-        <AutoCastValidatorArray value="IsTimeStopped24"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield22324" Requirements="HaveOldFortress2222"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="AkilaeHope"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="ShieldUp2324">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -52500,6 +52491,7 @@
         <AutoCastValidatorArray value="CasterLifeNotFull2"/>
         <AutoCastValidatorArray value="IsTimeStopped26"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CombatShield22325" Requirements="UnknownRequirement522222"/>
+        <AINotifyEffect value="AkilaeHope"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="ShieldUp2325">
         <EditorCategories value="AbilityorEffectType:Units"/>

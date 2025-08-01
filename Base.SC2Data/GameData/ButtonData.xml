@@ -110,6 +110,10 @@
     <CButton id="PsionicPower">
         <Icon value="Assets\Textures\btn-ability-protoss-forceofwill.dds"/>
     </CButton>
+    <CButton id="PsionicWrath">
+        <Icon value="Assets\Textures\btn-ability-protoss-resurgence.dds"/>
+        <HotkeyAlias value="PsionicPower"/>
+    </CButton>
     <CButton id="StandupEndoskeletonCloak">
         <Tooltip value="Button/Tooltip/Endocloak"/>
         <Icon value="Assets\Textures\btn-progression-zerg-dehaka-15-genemutation.dds"/>
@@ -8457,8 +8461,8 @@
         <Icon value="Assets\Textures\btn-ability-zerg-growth.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
-    <CButton id="CombatShield22324">
-        <Icon value="Assets\Textures\btn-upgrade-karax-fortificationbarrier.dds"/>
+    <CButton id="AkilaeHope">
+        <Icon value="Assets\Textures\btn-upgrade-karax-chronofield.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
     <CButton id="CombatShield22325">

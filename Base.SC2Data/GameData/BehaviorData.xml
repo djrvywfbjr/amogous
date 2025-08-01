@@ -162,6 +162,15 @@
             <StateFlags index="SuppressArmySelect" value="1"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="AutoHarvestVespeneProtoss2">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="HaveCinematicModeDisabled"/>
+        <RemoveValidatorArray value="AutoHarvesterFinish"/>
+        <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
+        <Period value="2.1"/>
+        <PeriodicEffect value="AutoHarvestVespene4"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="CarrierInterceptorBombs2224">
         <InfoFlags index="Hidden" value="1"/>
         <DamageResponse Fatal="1" Handled="AdeptPhaseShiftInitialSet23" ModifyFraction="0">
@@ -1739,7 +1748,7 @@
             <DamageDealtScaled index="NoProc" value="1.5"/>
             <VitalMaxArray index="Shields" value="350"/>
             <WeaponArray Link="QueenOfBladesPsiBlast2"/>
-            <WeaponDisableArray value="HighTemplarWeapon3"/>
+            <WeaponDisableArray value="HighOnes_PsionicFlare"/>
         </Modification>
         <DamageResponse ModifyMinimumDamage="1"/>
     </CBehaviorBuff>
@@ -1883,7 +1892,7 @@
     </CBehaviorBuff>
     <CBehaviorBuff id="KhaydarinBeamRetarget">
         <Modification>
-            <WeaponDisableArray index="1" value="PhaseBeam"/>
+            <WeaponDisableArray index="1" value="HighOnes_PhaseBeam"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="MohandarStickyBomb42">
@@ -42427,15 +42436,11 @@
             <Chance value="1"/>
         </DamageResponse>
     </CBehaviorBuff>
-    <CBehaviorBuff id="Shield33">
-        <InfoFlags index="Hidden" value="1"/>
+    <CBehaviorBuff id="AkilaeHope">
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Duration value="25"/>
-        <Modification TimeScale="1.5">
-            <VitalRegenArray index="Life" value="2"/>
-        </Modification>
-        <PeriodCount value="50"/>
         <TimeScaleSource Value="Global"/>
+        <Duration value="30"/>
+        <Modification TimeScale="1.75"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="Shield34">
         <InfoFlags index="Hidden" value="1"/>
@@ -46509,7 +46514,7 @@
         <Modification>
             <VitalRegenArray index="Energy" value="-3"/>
             <WeaponArray Link="Dragoon82"/>
-            <WeaponDisableArray value="SolarDisruptor"/>
+            <WeaponDisableArray value="HighOnes_SolarDisruptor"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="UnknownBehavior8">

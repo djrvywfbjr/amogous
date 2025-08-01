@@ -858,20 +858,20 @@
         <DamagePoint value="0.95"/>
         <Effect value="BrutalizeCreatePersistent3"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="SolarBeam">
+    <CWeaponLegacy id="HighOnes_SolarBeam">
         <EditorCategories value="Race:Protoss"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
-        <DisplayEffect value="MohandarMUx12"/>
+        <DisplayEffect value="HighOnes_MohandarMUx12"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <RangeSlop value="3"/>
         <Arc value="29.9926"/>
         <Period value="3"/>
         <Effect value="Mohandar2"/>
         <AllowedMovement value="Moving"/>
-        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
-        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
-        <RangeSlop value="3"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="SanitizationBeam">
+    <CWeaponLegacy id="HighOnes_SanitizationBeam">
         <Name value="Weapon/Name/Energizer"/>
         <EditorCategories value="Race:Protoss"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
@@ -880,9 +880,10 @@
         <Range value="11"/>
         <TeleportResetRange value="0"/>
         <Period value="1"/>
+        <Effect value="SanitizationBeam"/>
         <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="PsionicLightning">
+    <CWeaponLegacy id="HighOnes_PsionicLightning">
         <EditorCategories value="Race:Protoss"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
@@ -897,7 +898,7 @@
         <EditorCategories value="Race:Protoss"/>
         <Options index="Melee" value="1"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
-        <DisplayEffect value="ZealotAiurWeapon2"/>
+        <DisplayEffect value="HighOnes_ZealotAiurWeapon2"/>
         <DisplayAttackCount value="1"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="0.1"/>
@@ -909,11 +910,11 @@
         <DamagePoint value="0"/>
         <Effect value="ZealotAiurWeaponCleaveSet2"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="WarpingBlades">
+    <CWeaponLegacy id="HighOnes_WarpingBlades">
         <Name value="Weapon/Name/Centurion"/>
         <EditorCategories value="Race:Protoss"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
-        <DisplayEffect value="PsiBlades13"/>
+        <DisplayEffect value="HighOnes_PsiBlades"/>
         <DisplayAttackCount value="2"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="6"/>
@@ -1040,10 +1041,10 @@
     <CWeaponLegacy id="HybridNemesisWeapon">
         <Period value="0.7"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="PhaseScatterers">
+    <CWeaponLegacy id="HighOnes_PhaseScatterers">
         <EditorCategories value="Race:Protoss"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
-        <DisplayEffect value="ImmortalTaldarimWeaponDamage6"/>
+        <DisplayEffect value="HighOnes_ImmortalTaldarimWeaponDamage6"/>
         <DisplayAttackCount value="4"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="3"/>
@@ -4653,11 +4654,11 @@
         <DamagePoint value="2.9"/>
         <Effect value="KhaydarinBeamDamage2"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="PhaseBeam">
+    <CWeaponLegacy id="HighOnes_PhaseBeam">
         <EditorCategories value="Race:Protoss"/>
         <Options index="ContinuousScan" value="1"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
-        <DisplayEffect value="KhaydarinBeamDamage3"/>
+        <DisplayEffect value="HighOnes_KhaydarinBeamDamage"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="8"/>
         <Arc value="360"/>
@@ -4666,7 +4667,7 @@
         </Cost>
         <Period value="0.2"/>
         <DamagePoint value="2.9"/>
-        <Effect value="KhaydarinBeamDamage3"/>
+        <Effect value="HighOnes_KhaydarinBeamDamage"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="MengskDiamondback">
         <Options index="Disabled" value="1"/>
@@ -4819,17 +4820,17 @@
         <Period value="1.7"/>
         <Effect value="HighTemplarWeaponLM222"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="HighTemplarWeapon3">
+    <CWeaponLegacy id="HighOnes_PsionicFlare">
         <Name value="Weapon/Name/ElderBlast"/>
         <EditorCategories value="Race:Protoss"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
-        <DisplayEffect value="SOAStrafeAttackDamage23"/>
+        <DisplayEffect value="HighOnes_SOAStrafeAttackDamage23"/>
+        <DisplayAttackCount value="2"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="6.5"/>
         <Range value="7"/>
         <Period value="1.15"/>
-        <Effect value="SOAStrafeAttackDamage23"/>
-        <DisplayAttackCount value="2"/>
+        <Effect value="HighOnes_SOAStrafeAttackDamage23"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HighTemplarWeapon4">
         <Name value="Weapon/Name/PsiExplosion"/>
@@ -5755,10 +5756,10 @@
         <Period value="3"/>
         <Effect value="RoachCorpserAcidSalivaLM42"/>
     </CWeaponStrafe>
-    <CWeaponStrafe id="InterceptorBeam14">
+    <CWeaponStrafe id="HighOnes_InterceptorBeam">
         <EditorCategories value="Race:Protoss"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
-        <DisplayEffect value="InterceptorBeamDamage14"/>
+        <DisplayEffect value="HighOnes_InterceptorBeamDamage"/>
         <DisplayAttackCount value="2"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="2"/>
@@ -8457,7 +8458,7 @@
         <Period value="1.87"/>
         <Effect value="ParticleDisruptors5"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="SolarDisruptor">
+    <CWeaponLegacy id="HighOnes_SolarDisruptor">
         <EditorCategories value="Race:Protoss"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
         <DisplayEffect value="ParticleDisruptorsU"/>
@@ -8741,9 +8742,9 @@
         <Period value="3"/>
         <Effect value="InterceptorBeamPersistent3"/>
     </CWeaponStrafe>
-    <CWeaponLegacy id="PlasmaCannons" parent="IonCannons">
-        <Name value="Weapon/Name/PlasmaCannons"/>
-        <DisplayEffect value="IonCannonsU2"/>
+    <CWeaponLegacy id="HighOnes_PlasmaCannons" parent="IonCannons">
+        <Name value="Weapon/Name/HighOnes_PlasmaCannons"/>
+        <DisplayEffect value="HighOnes_IonCannonsU2"/>
         <DisplayAttackCount value="4"/>
         <Range value="6"/>
         <Period value="1"/>
@@ -10182,10 +10183,10 @@
         <LegacyOptions index="NoDeceleration" value="1"/>
         <AllowedMovement value="Slowing"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="RepulsorCannon3">
+    <CWeaponLegacy id="HighOnes_RepulsorCannon">
         <EditorCategories value="Race:Protoss"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
-        <DisplayEffect value="MothershipCoreRepulsorCannonDamage3"/>
+        <DisplayEffect value="HighOnes_MothershipCoreRepulsorCannonDamage3"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <RangeSlop value="0"/>
         <Period value="1.25"/>
@@ -11297,7 +11298,7 @@
     <CWeaponLegacy id="TempestGround4" parent="TempestGround">
         <Name value="Weapon/Name/TempestGround4"/>
         <Tip value="Weapon/Tip/TempestGround4"/>
-        <DisplayEffect value="TempestDamageGround4"/>
+        <DisplayEffect value="HighOnes_TempestDamageGround"/>
         <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="11"/>
         <Effect value="TempestLaunchMissileGround4"/>
@@ -11343,10 +11344,10 @@
         <Effect value="TempestLaunchMissileGround423"/>
         <AllowedMovement value="Slowing"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="TempestGround43">
+    <CWeaponLegacy id="HighOnes_LastCoil">
         <EditorCategories value="Race:Protoss"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
-        <DisplayEffect value="TempestDamageGround4"/>
+        <DisplayEffect value="HighOnes_TempestDamageGround"/>
         <DisplayName value="Weapon/Name/TempestGround"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="7.5"/>

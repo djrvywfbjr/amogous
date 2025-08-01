@@ -239,6 +239,9 @@
     <CRequirement id="LearnTrooperAmmunition22222332">
         <NodeArray index="Show" Link="NotCountUpgradeUnknownUpgrade732QueuedOrBetter"/>
     </CRequirement>
+    <CRequirement id="LearnPsionicWrath">
+        <NodeArray index="Show" Link="NotCountUpgradePsionicWrathQueuedOrBetter"/>
+    </CRequirement>
     <CRequirement id="MoebiusTLearn1432223">
         <EditorCategories value="Race:Terran,TechType:Ability"/>
         <NodeArray index="Show" Link="NotCountUpgradeMoebiusTUpgrade1223222322322222222QueuedOrBetter"/>

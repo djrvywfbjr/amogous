@@ -5848,7 +5848,6 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeCapacitorOverchargeQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="CapacitorOvercharge" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeCloakingFieldCompleteOnly">
@@ -7269,6 +7268,11 @@
     <CRequirementCountUpgrade id="CountUpgradePsionicSightQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="PsionicSight" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradePsionicWrathQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="PsionicWrath" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradePureConduitsCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
@@ -14962,7 +14966,6 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeValorMyShieldQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="ValorMyShield" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeVenomCompleteOnly">
@@ -16797,7 +16800,6 @@
         <OperandArray index="0" value="CountUpgradeBleedingQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeCapacitorOverchargeQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeCapacitorOverchargeQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeCloakingFieldQueuedOrBetter">
@@ -17333,6 +17335,10 @@
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradePsionicSightQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradePsionicSightQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradePsionicWrathQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradePsionicWrathQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradePureConduitsQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradePureConduitsQueuedOrBetter"/>
@@ -19597,7 +19603,6 @@
         <OperandArray index="0" value="CountUpgradeUnknownUpgrade8QueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeValorMyShieldQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeValorMyShieldQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeVenomQueuedOrBetter">

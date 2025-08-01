@@ -62,124 +62,66 @@
         <MaxLevel value="100"/>
     </CUpgrade>
     <CUpgrade id="AcceleratedShieldsLevel2">
-        <EffectArray Operation="Subtract" Reference="Unit,AiurGuard,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,AiurProbe,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,Shielder,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,SolarDetractor,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,Evasionist,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,ElderTemplar,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,BladeOfAdun,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,AncientDragoon,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,MobileSupercapacitor,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,Carriership,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,Surfer,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,EliteHunter,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,AiurCore,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,JudicatorArbiter,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,Shieldship,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,Storm,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,KhalaiPylon,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,OldFortress,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,KhalaiGateway,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,AiurSanctum,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,HighlightCouncil,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,ShieldOvercharger,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,PhaseCannon,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,MechFacility,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,PowerBay,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,TemplarLibrary,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,Planetgate,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,SolarBeacon,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,PhaseForge,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Reference="Unit,AiurGuard,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,AiurProbe,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,Shielder,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,SolarDetractor,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,Evasionist,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,ElderTemplar,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,BladeOfAdun,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,AncientDragoon,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,MobileSupercapacitor,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,Carriership,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,Surfer,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,EliteHunter,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,AiurCore,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,JudicatorArbiter,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,Shieldship,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,Storm,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,KhalaiPylon,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,OldFortress,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,KhalaiGateway,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,AiurSanctum,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,HighlightCouncil,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,ShieldOvercharger,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,PhaseCannon,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,MechFacility,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,PowerBay,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,TemplarLibrary,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,Planetgate,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,SolarBeacon,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,PhaseForge,ShieldRegenRate" Value="2.000000"/>
+        <EffectArray Reference="Unit,AiurGuard,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,AiurProbe,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,Shielder,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,SolarDetractor,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,Evasionist,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,ElderTemplar,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,BladeOfAdun,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,AncientDragoon,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,MobileSupercapacitor,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,Carriership,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,Surfer,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,EliteHunter,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,AiurCore,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,JudicatorArbiter,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,Shieldship,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,Storm,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,KhalaiPylon,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,OldFortress,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,KhalaiGateway,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,AiurSanctum,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,HighlightCouncil,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,ShieldOvercharger,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,PhaseCannon,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,MechFacility,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,PowerBay,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,TemplarLibrary,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,Planetgate,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,SolarBeacon,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,PhaseForge,ShieldRegenRate" Value="4.000000"/>
     </CUpgrade>
     <CUpgrade id="AcceleratedShieldsLevel3">
-        <EffectArray Operation="Subtract" Reference="Unit,AiurGuard,ShieldRegenDelay" Value="4.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,AiurProbe,ShieldRegenDelay" Value="4.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,Shielder,ShieldRegenDelay" Value="4.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,SolarDetractor,ShieldRegenDelay" Value="4.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,Evasionist,ShieldRegenDelay" Value="4.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,ElderTemplar,ShieldRegenDelay" Value="4.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,BladeOfAdun,ShieldRegenDelay" Value="4.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,AncientDragoon,ShieldRegenDelay" Value="4.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,MobileSupercapacitor,ShieldRegenDelay" Value="4.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,Carriership,ShieldRegenDelay" Value="4.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,Surfer,ShieldRegenDelay" Value="4.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,EliteHunter,ShieldRegenDelay" Value="4.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,AiurCore,ShieldRegenDelay" Value="4.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,JudicatorArbiter,ShieldRegenDelay" Value="4.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,Shieldship,ShieldRegenDelay" Value="4.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,Storm,ShieldRegenDelay" Value="4.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,KhalaiPylon,ShieldRegenDelay" Value="4.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,OldFortress,ShieldRegenDelay" Value="4.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,KhalaiGateway,ShieldRegenDelay" Value="4.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,AiurSanctum,ShieldRegenDelay" Value="4.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,HighlightCouncil,ShieldRegenDelay" Value="4.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,ShieldOvercharger,ShieldRegenDelay" Value="4.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,PhaseCannon,ShieldRegenDelay" Value="4.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,MechFacility,ShieldRegenDelay" Value="4.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,PowerBay,ShieldRegenDelay" Value="4.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,TemplarLibrary,ShieldRegenDelay" Value="4.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,Planetgate,ShieldRegenDelay" Value="4.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,SolarBeacon,ShieldRegenDelay" Value="4.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,PhaseForge,ShieldRegenDelay" Value="4.000000"/>
-        <EffectArray Reference="Unit,AiurGuard,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,AiurProbe,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,Shielder,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,SolarDetractor,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,Evasionist,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,ElderTemplar,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,BladeOfAdun,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,AncientDragoon,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,MobileSupercapacitor,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,Carriership,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,Surfer,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,EliteHunter,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,AiurCore,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,JudicatorArbiter,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,Shieldship,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,Storm,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,KhalaiPylon,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,OldFortress,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,KhalaiGateway,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,AiurSanctum,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,HighlightCouncil,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,ShieldOvercharger,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,PhaseCannon,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,MechFacility,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,PowerBay,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,TemplarLibrary,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,Planetgate,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,SolarBeacon,ShieldRegenRate" Value="2.000000"/>
-        <EffectArray Reference="Unit,PhaseForge,ShieldRegenRate" Value="2.000000"/>
+        <EffectArray Reference="Unit,AiurGuard,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,AiurProbe,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,Shielder,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,SolarDetractor,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,Evasionist,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,ElderTemplar,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,BladeOfAdun,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,AncientDragoon,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,MobileSupercapacitor,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,Carriership,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,Surfer,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,EliteHunter,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,AiurCore,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,JudicatorArbiter,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,Shieldship,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,Storm,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,KhalaiPylon,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,OldFortress,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,KhalaiGateway,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,AiurSanctum,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,HighlightCouncil,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,ShieldOvercharger,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,PhaseCannon,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,MechFacility,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,PowerBay,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,TemplarLibrary,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,Planetgate,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,SolarBeacon,ShieldRegenRate" Value="4.000000"/>
+        <EffectArray Reference="Unit,PhaseForge,ShieldRegenRate" Value="4.000000"/>
     </CUpgrade>
     <CUpgrade id="AdvancedBionicsUpgrade">
         <Icon value="Assets\Textures\btn-research-zerg-cellularreactor.dds"/>
@@ -2054,6 +1996,21 @@
         <EffectArray Reference="Unit,MilitiaTrooper,Speed" Value="0.300700"/>
         <EffectArray Reference="Unit,Jumper,Speed" Value="0.500000"/>
     </CUpgrade>
+    <CUpgrade id="PsionicWrath">
+        <EffectArray Operation="Set" Reference="Effect,HighOnes_KhaydarinBeamDamage,ArmorReduction" Value="0.25"/>
+        <EffectArray Operation="Set" Reference="Effect,HighOnes_MothershipCoreRepulsorCannonDamage3,ArmorReduction" Value="0.25"/>
+        <EffectArray Operation="Set" Reference="Effect,HighOnes_IonCannonsU2,ArmorReduction" Value="0.25"/>
+        <EffectArray Operation="Set" Reference="Effect,HighOnes_ImmortalTaldarimWeaponDamage6,ArmorReduction" Value="0.25"/>
+        <EffectArray Operation="Set" Reference="Effect,HighOnes_PsiBlades,ArmorReduction" Value="0.25"/>
+        <EffectArray Operation="Set" Reference="Effect,HighOnes_PsionicLightning,ArmorReduction" Value="0.25"/>
+        <EffectArray Operation="Set" Reference="Effect,HighOnes_InterceptorBeamDamage,ArmorReduction" Value="0.25"/>
+        <EffectArray Operation="Set" Reference="Effect,HighOnes_TempestDamageGround,ArmorReduction" Value="0.25"/>
+        <EffectArray Operation="Set" Reference="Effect,HighOnes_ZealotAiurWeapon2,ArmorReduction" Value="0.25"/>
+        <EffectArray Operation="Set" Reference="Effect,HighOnes_MohandarMUx12,ArmorReduction" Value="0.25"/>
+        <EffectArray Operation="Set" Reference="Effect,HighOnes_MohandarMUx32,ArmorReduction" Value="0.25"/>
+        <EffectArray Operation="Set" Reference="Effect,HighOnes_MohandarMUx22,ArmorReduction" Value="0.25"/>
+        <LeaderAlias value="PsionicMovement"/>
+    </CUpgrade>
     <CUpgrade id="PureConduits">
         <Icon value="Assets\Textures\btn-ability-zeratul-sentry-reflectionshield.dds"/>
         <EffectArray Operation="Set" Reference="Effect,LegendaryWeapon2,AreaArray[0].Radius" Value="2.5"/>
@@ -2339,95 +2296,95 @@
         <EffectArray Reference="Unit,Planetgate,ShieldArmor" Value="2"/>
         <EffectArray Reference="Unit,SolarBeacon,ShieldArmor" Value="2"/>
         <EffectArray Reference="Unit,PhaseForge,ShieldArmor" Value="2"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurGuard,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurProbe,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Shielder,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SolarDetractor,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Evasionist,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,ElderTemplar,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,BladeOfAdun,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AncientDragoon,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,MobileSupercapacitor,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Carriership,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Surfer,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,EliteHunter,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurCore,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,JudicatorArbiter,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Shieldship,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Storm,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,OldFortress,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,KhalaiPylon,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,KhalaiGateway,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurSanctum,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,HighlightCouncil,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,ShieldOvercharger,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PhaseCannon,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,MechFacility,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PowerBay,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,TemplarLibrary,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Planetgate,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SolarBeacon,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PhaseForge,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurGuard,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurProbe,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Shielder,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SolarDetractor,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Evasionist,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,ElderTemplar,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,BladeOfAdun,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AncientDragoon,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,MobileSupercapacitor,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Carriership,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Surfer,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,EliteHunter,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurCore,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,JudicatorArbiter,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Shieldship,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Storm,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,OldFortress,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,KhalaiPylon,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,KhalaiGateway,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurSanctum,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,HighlightCouncil,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,ShieldOvercharger,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PhaseCannon,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,MechFacility,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PowerBay,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,TemplarLibrary,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Planetgate,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SolarBeacon,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PhaseForge,ShieldsStart" Value="0.15"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurGuard,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurProbe,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Shielder,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SolarDetractor,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Evasionist,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,ElderTemplar,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,BladeOfAdun,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AncientDragoon,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,MobileSupercapacitor,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Carriership,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Surfer,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,EliteHunter,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurCore,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,JudicatorArbiter,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Shieldship,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Storm,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,OldFortress,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,KhalaiPylon,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,KhalaiGateway,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurSanctum,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,HighlightCouncil,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,ShieldOvercharger,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PhaseCannon,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,MechFacility,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PowerBay,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,TemplarLibrary,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Planetgate,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SolarBeacon,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PhaseForge,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurGuard,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurProbe,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Shielder,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SolarDetractor,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Evasionist,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,ElderTemplar,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,BladeOfAdun,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AncientDragoon,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,MobileSupercapacitor,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Carriership,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Surfer,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,EliteHunter,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurCore,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,JudicatorArbiter,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Shieldship,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Storm,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,OldFortress,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,KhalaiPylon,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,KhalaiGateway,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurSanctum,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,HighlightCouncil,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,ShieldOvercharger,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PhaseCannon,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,MechFacility,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PowerBay,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,TemplarLibrary,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Planetgate,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SolarBeacon,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PhaseForge,ShieldsStart" Value="0.25"/>
     </CUpgrade>
     <CUpgrade id="AcceleratedShieldsLevel1">
-        <EffectArray Operation="Subtract" Reference="Unit,AiurGuard,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,AiurProbe,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,Shielder,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,SolarDetractor,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,Evasionist,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,ElderTemplar,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,BladeOfAdun,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,AncientDragoon,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,MobileSupercapacitor,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,Carriership,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,Surfer,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,EliteHunter,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,AiurCore,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,JudicatorArbiter,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,Shieldship,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,Storm,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,KhalaiPylon,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,OldFortress,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,KhalaiGateway,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,AiurSanctum,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,HighlightCouncil,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,ShieldOvercharger,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,PhaseCannon,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,MechFacility,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,PowerBay,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,TemplarLibrary,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,Planetgate,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,SolarBeacon,ShieldRegenDelay" Value="3.000000"/>
-        <EffectArray Operation="Subtract" Reference="Unit,PhaseForge,ShieldRegenDelay" Value="3.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,AiurGuard,ShieldRegenDelay" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,AiurProbe,ShieldRegenDelay" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,Shielder,ShieldRegenDelay" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,SolarDetractor,ShieldRegenDelay" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,Evasionist,ShieldRegenDelay" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,ElderTemplar,ShieldRegenDelay" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,BladeOfAdun,ShieldRegenDelay" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,AncientDragoon,ShieldRegenDelay" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,MobileSupercapacitor,ShieldRegenDelay" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,Carriership,ShieldRegenDelay" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,Surfer,ShieldRegenDelay" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,EliteHunter,ShieldRegenDelay" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,AiurCore,ShieldRegenDelay" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,JudicatorArbiter,ShieldRegenDelay" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,Shieldship,ShieldRegenDelay" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,Storm,ShieldRegenDelay" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,KhalaiPylon,ShieldRegenDelay" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,OldFortress,ShieldRegenDelay" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,KhalaiGateway,ShieldRegenDelay" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,AiurSanctum,ShieldRegenDelay" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,HighlightCouncil,ShieldRegenDelay" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,ShieldOvercharger,ShieldRegenDelay" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,PhaseCannon,ShieldRegenDelay" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,MechFacility,ShieldRegenDelay" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,PowerBay,ShieldRegenDelay" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,TemplarLibrary,ShieldRegenDelay" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,Planetgate,ShieldRegenDelay" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,SolarBeacon,ShieldRegenDelay" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Unit,PhaseForge,ShieldRegenDelay" Value="10.000000"/>
         <EffectArray Reference="Unit,AiurGuard,ShieldRegenRate" Value="2.000000"/>
         <EffectArray Reference="Unit,AiurProbe,ShieldRegenRate" Value="2.000000"/>
         <EffectArray Reference="Unit,Shielder,ShieldRegenRate" Value="2.000000"/>
@@ -2566,65 +2523,64 @@
         <EffectArray Reference="Unit,Planetgate,ShieldArmor" Value="2"/>
         <EffectArray Reference="Unit,SolarBeacon,ShieldArmor" Value="2"/>
         <EffectArray Reference="Unit,PhaseForge,ShieldArmor" Value="2"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurGuard,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurProbe,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Shielder,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SolarDetractor,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Evasionist,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,ElderTemplar,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,BladeOfAdun,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AncientDragoon,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,MobileSupercapacitor,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Carriership,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Surfer,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,EliteHunter,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurCore,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,JudicatorArbiter,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Shieldship,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Storm,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,OldFortress,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,KhalaiPylon,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,KhalaiGateway,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurSanctum,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,HighlightCouncil,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,ShieldOvercharger,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PhaseCannon,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,MechFacility,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PowerBay,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,TemplarLibrary,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Planetgate,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SolarBeacon,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PhaseForge,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurGuard,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurProbe,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Shielder,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SolarDetractor,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Evasionist,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,ElderTemplar,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,BladeOfAdun,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AncientDragoon,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,MobileSupercapacitor,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Carriership,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Surfer,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,EliteHunter,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurCore,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,JudicatorArbiter,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Shieldship,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Storm,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,OldFortress,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,KhalaiPylon,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,KhalaiGateway,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurSanctum,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,HighlightCouncil,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,ShieldOvercharger,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PhaseCannon,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,MechFacility,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PowerBay,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,TemplarLibrary,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Planetgate,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SolarBeacon,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PhaseForge,ShieldsStart" Value="0.15"/>
-        <LeaderAlias value="StrengthenedShieldsLevel1"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurGuard,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurProbe,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Shielder,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SolarDetractor,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Evasionist,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,ElderTemplar,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,BladeOfAdun,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AncientDragoon,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,MobileSupercapacitor,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Carriership,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Surfer,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,EliteHunter,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurCore,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,JudicatorArbiter,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Shieldship,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Storm,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,OldFortress,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,KhalaiPylon,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,KhalaiGateway,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurSanctum,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,HighlightCouncil,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,ShieldOvercharger,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PhaseCannon,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,MechFacility,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PowerBay,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,TemplarLibrary,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Planetgate,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SolarBeacon,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PhaseForge,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurGuard,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurProbe,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Shielder,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SolarDetractor,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Evasionist,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,ElderTemplar,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,BladeOfAdun,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AncientDragoon,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,MobileSupercapacitor,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Carriership,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Surfer,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,EliteHunter,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurCore,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,JudicatorArbiter,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Shieldship,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Storm,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,OldFortress,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,KhalaiPylon,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,KhalaiGateway,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurSanctum,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,HighlightCouncil,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,ShieldOvercharger,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PhaseCannon,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,MechFacility,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PowerBay,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,TemplarLibrary,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Planetgate,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SolarBeacon,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PhaseForge,ShieldsStart" Value="0.25"/>
     </CUpgrade>
     <CUpgrade id="StrengthenedShieldsLevel3">
         <EffectArray Reference="Unit,AiurGuard,ShieldArmor" Value="2"/>
@@ -2656,65 +2612,64 @@
         <EffectArray Reference="Unit,Planetgate,ShieldArmor" Value="2"/>
         <EffectArray Reference="Unit,SolarBeacon,ShieldArmor" Value="2"/>
         <EffectArray Reference="Unit,PhaseForge,ShieldArmor" Value="2"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurGuard,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurProbe,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Shielder,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SolarDetractor,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Evasionist,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,ElderTemplar,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,BladeOfAdun,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AncientDragoon,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,MobileSupercapacitor,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Carriership,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Surfer,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,EliteHunter,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurCore,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,JudicatorArbiter,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Shieldship,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Storm,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,OldFortress,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,KhalaiPylon,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,KhalaiGateway,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurSanctum,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,HighlightCouncil,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,ShieldOvercharger,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PhaseCannon,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,MechFacility,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PowerBay,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,TemplarLibrary,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Planetgate,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SolarBeacon,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PhaseForge,ShieldsMax" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurGuard,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurProbe,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Shielder,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SolarDetractor,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Evasionist,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,ElderTemplar,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,BladeOfAdun,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AncientDragoon,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,MobileSupercapacitor,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Carriership,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Surfer,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,EliteHunter,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurCore,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,JudicatorArbiter,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Shieldship,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Storm,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,OldFortress,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,KhalaiPylon,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,KhalaiGateway,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurSanctum,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,HighlightCouncil,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,ShieldOvercharger,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PhaseCannon,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,MechFacility,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PowerBay,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,TemplarLibrary,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Planetgate,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SolarBeacon,ShieldsStart" Value="0.15"/>
-        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PhaseForge,ShieldsStart" Value="0.15"/>
-        <LeaderAlias value="StrengthenedShieldsLevel1"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurGuard,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurProbe,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Shielder,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SolarDetractor,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Evasionist,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,ElderTemplar,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,BladeOfAdun,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AncientDragoon,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,MobileSupercapacitor,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Carriership,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Surfer,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,EliteHunter,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurCore,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,JudicatorArbiter,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Shieldship,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Storm,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,OldFortress,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,KhalaiPylon,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,KhalaiGateway,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurSanctum,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,HighlightCouncil,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,ShieldOvercharger,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PhaseCannon,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,MechFacility,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PowerBay,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,TemplarLibrary,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Planetgate,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SolarBeacon,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PhaseForge,ShieldsMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurGuard,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurProbe,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Shielder,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SolarDetractor,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Evasionist,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,ElderTemplar,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,BladeOfAdun,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AncientDragoon,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,MobileSupercapacitor,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Carriership,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Surfer,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,EliteHunter,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurCore,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,JudicatorArbiter,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Shieldship,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Storm,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,OldFortress,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,KhalaiPylon,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,KhalaiGateway,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,AiurSanctum,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,HighlightCouncil,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,ShieldOvercharger,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PhaseCannon,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,MechFacility,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PowerBay,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,TemplarLibrary,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Planetgate,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SolarBeacon,ShieldsStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,PhaseForge,ShieldsStart" Value="0.25"/>
     </CUpgrade>
     <CUpgrade id="SwollenGlands">
         <Icon value="Assets\Textures\btn-upgrade-zerg-abathur-abduct.dds"/>
