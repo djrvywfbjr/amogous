@@ -46200,9 +46200,9 @@
         <AINotifyEffect value="PsiStorm"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="PsiStorm2"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="PlasmaStorm">
+    <CAbilEffectTarget id="JudicatorsScorn">
         <Alignment value="Positive"/>
-        <Effect index="0" value="PlasmaStormCP"/>
+        <Effect index="0" value="JudicatorsScornCP"/>
         <Flags index="AllowMovement" value="1"/>
         <Cost>
             <Vital index="Energy" value="150"/>
@@ -46210,8 +46210,8 @@
         </Cost>
         <Range value="14"/>
         <CastOutroTime value="0.5"/>
-        <CursorEffect value="PlasmaStormSA"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="PlasmaStorm"/>
+        <CursorEffect value="JudicatorsScornSA"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="JudicatorsScorn"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="PsiStorm4" parent="PsiStorm">
         <Name value="Abil/Name/PsiStorm4"/>

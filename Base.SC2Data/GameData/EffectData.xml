@@ -1644,6 +1644,10 @@
         <PeriodicPeriodArray value="0.0625"/>
         <PeriodicPeriodArray value="0.0625"/>
     </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="JudicatorsScornLastingAB">
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="JudicatorsScornLasting"/>
+    </CEffectApplyBehavior>
     <CEffectSwitch id="MedivacHealInitialSwitch3">
         <ValidatorArray value="NotMaxHP"/>
         <ValidatorArray value="NotWarpingIn"/>
@@ -55695,9 +55699,10 @@
         <EditorCategories value="Race:Protoss"/>
         <Behavior value="PsiStorm3"/>
     </CEffectApplyBehavior>
-    <CEffectApplyBehavior id="PlasmaStormAB">
+    <CEffectApplyBehavior id="JudicatorsScornAB">
         <EditorCategories value="Race:Protoss"/>
-        <Behavior value="PlasmaStorm"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Behavior value="JudicatorsScorn"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="PsiStormApplyBehavior5">
         <EditorCategories value="Race:Protoss"/>
@@ -55838,12 +55843,6 @@
         <Amount value="30"/>
         <ShieldBonus value="30"/>
     </CEffectDamage>
-    <CEffectModifyUnit id="PlasmaStorm">
-        <EditorCategories value="Race:Protoss"/>
-        <VitalArray index="Shields">
-            <Change value="5"/>
-        </VitalArray>
-    </CEffectModifyUnit>
     <CEffectDamage id="PsiStormDamageInitial5">
         <ValidatorArray value="PsiStormUTargetFilters"/>
         <EditorCategories value="Race:Protoss"/>
@@ -56000,12 +55999,12 @@
         <PeriodicOffsetArray value="0,20,0"/>
         <PeriodicOffsetArray value="0,18,0"/>
     </CEffectCreatePersistent>
-    <CEffectCreatePersistent id="PlasmaStormCP">
+    <CEffectCreatePersistent id="JudicatorsScornCP">
         <EditorCategories value="Race:Protoss"/>
-        <InitialEffect value="PlasmaStormSA"/>
+        <InitialEffect value="JudicatorsScornSA"/>
         <PeriodCount value="60"/>
-        <PeriodicEffectArray value="PlasmaStormSA"/>
-        <PeriodicPeriodArray value="0.75"/>
+        <PeriodicEffectArray value="JudicatorsScornSA"/>
+        <PeriodicPeriodArray value="1"/>
         <AINotifyEffect value="PsiStormSearch"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="PsiStormPersistent5">
@@ -56105,12 +56104,10 @@
         <SearchFlags index="CallForHelp" value="1"/>
         <ImpactLocation Value="TargetPoint"/>
     </CEffectEnumArea>
-    <CEffectEnumArea id="PlasmaStormSA">
+    <CEffectEnumArea id="JudicatorsScornSA">
         <EditorCategories value="Race:Protoss"/>
-        <AINotifyFlags index="HurtFriend" value="1"/>
-        <AINotifyFlags index="HurtEnemy" value="1"/>
-        <SearchFilters value="-;Neutral,Enemy,Structure,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
-        <AreaArray Radius="6" Effect="PlasmaStormAB"/>
+        <SearchFilters value="-;Player,Ally,Neutral,Structure,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="6" Effect="JudicatorsScornAB"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="PsiStormSearch5">

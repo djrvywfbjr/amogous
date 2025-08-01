@@ -252,6 +252,21 @@
             </Cost>
         </DamageResponse>
     </CBehaviorBuff>
+    <CBehaviorBuff id="JudicatorsScornLasting">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-psistorm.dds"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <MaxStackCount value="65535"/>
+        <TimeScaleSource Value="Global"/>
+        <Duration value="30"/>
+        <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+            <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            <VitalMaxAdditiveMultiplierArray index="Life" value="-0.02"/>
+            <VitalMaxAdditiveMultiplierArray index="Shields" value="-0.02"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="SolarBeamDoubleDamage">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
@@ -39595,15 +39610,19 @@
         <InitialEffect value="PsiStormDamageInitial3"/>
         <PeriodicEffect value="PsiStormDamage3"/>
     </CBehaviorBuff>
-    <CBehaviorBuff id="PlasmaStorm">
-        <Alignment value="Positive"/>
+    <CBehaviorBuff id="JudicatorsScorn">
+        <Alignment value="Negative"/>
         <InfoIcon value="Assets\Textures\btn-ability-protoss-psistorm.dds"/>
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <TimeScaleSource Value="Global"/>
-        <Duration value="0.6"/>
-        <Period value="0.5"/>
-        <InitialEffect value="PlasmaStorm"/>
-        <PeriodicEffect value="PlasmaStorm"/>
+        <Duration value="1.1"/>
+        <Period value="1"/>
+        <InitialEffect value="JudicatorsScornLastingAB"/>
+        <PeriodicEffect value="JudicatorsScornLastingAB"/>
+        <Modification>
+            <VitalRegenMultiplier index="Life" value="-1"/>
+            <VitalRegenMultiplier index="Shields" value="-1"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="PsiStorm5">
         <Alignment value="Negative"/>
