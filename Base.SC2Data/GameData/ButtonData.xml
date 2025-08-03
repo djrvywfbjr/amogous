@@ -91,6 +91,9 @@
         <Icon value="Assets\Textures\btn-ability-stetmann-garystetelliteovercharge-energy.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-stetmann-garystetelliteovercharge-energy.dds"/>
     </CButton>
+    <CButton id="EnergyShielding">
+        <Icon value="Assets\Textures\btn-ability-stetmann-garypersonalstetzone-energy.dds"/>
+    </CButton>
     <CButton id="Unity">
         <Icon value="Assets\Textures\btn-upgrade-karax-unitybarrier.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-karax-unitybarrier.dds"/>

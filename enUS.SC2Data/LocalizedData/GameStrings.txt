@@ -7475,6 +7475,7 @@ Button/Name/EMP63=Tactical EMB
 Button/Name/EMP7=Launch EMP Round
 Button/Name/EMP72=Corrosive Bile
 Button/Name/EMPNova2=EMP Nova
+Button/Name/EnergyShielding=Energy Shielding
 Button/Name/Energyrotation=Energy Cycling
 Button/Name/EngageFusionDrive=Engage Fusion Drive
 Button/Name/EngineeringBay10=Reconstruct Agony Bay
@@ -14654,6 +14655,7 @@ Button/Tooltip/Egg2=Zerg units morph in the safety of these cocoons.
 Button/Tooltip/EggChamber=Specialized infestation organism. Hatches Xill units.
 Button/Tooltip/EliteArmory=Contains upgrades.
 Button/Tooltip/Endocloak=Endoling becomes cloaked for 10 seconds.<n/><n/>While the original zerglings are quite fast, it's possible to change the endoskeletons to be quite a lot sneakier, agile and able to hit enemies farther away through different movement capabilities. Of course, the actual body isn't meant to move or bend or extend the way endoskeletons can be made to, but it can still slowly regenerate tissue and function as armor for the mechanisms inside.
+Button/Tooltip/EnergyShielding=Damage taken is applied to energy before life. Each point of energy can absorb 10 damage.
 Button/Tooltip/Energyrotation=Solar Detractor's and Phase Cannon's attacks consume 25 <c val="0000FF">shields</c> every attack.
 Button/Tooltip/EngageFusionDrive=Increases the Blimp's movement speed by 2.5 for 15 seconds.
 Button/Tooltip/Engi12312312neeringBay18=Structure, where Workers periodically produce Food.
@@ -19866,7 +19868,7 @@ Button/Tooltip/WarpInRoboticsWarpFacility6=Enables warp in of Protoss robotic un
 Button/Tooltip/WarpInRoboticsWarpFacility7=Enables warp in of Protoss robotic units.
 Button/Tooltip/WarpInScout2=Versatile air and ground attacker.<n/><n/><c val="00FFFF">Special Ability: </c>Shoots a powerful missile, stunning target for 4 seconds as well as dealing damage.
 Button/Tooltip/WarpInShielder=Support caster. Can use double shield repair and a variety of support auras.
-Button/Tooltip/WarpInShieldship=Capital transport ship with thermal lance.<n/>Old shuttles were weak and overlooked by most of phase smiths in previous eras. Warping units straight through to the battlefield seemed like a better option. But what if there is nothing to warp them from?
+Button/Tooltip/WarpInShieldship=Extremely durable support vessel. Can absorb damage taken by nearby units.
 Button/Tooltip/WarpInSolarDetractor=Robotic skirmish unit. Can use Force Field.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/WarpInStarWarpGate2=Spawns air units.
 Button/Tooltip/WarpInStarWarpGate3=Warps in legendary Pure Born heroes.
