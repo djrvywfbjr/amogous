@@ -5385,7 +5385,7 @@ Behavior/Tooltip/TemporalRiftUnit222=Can't use abilities.
 Behavior/Tooltip/TemporalRiftUnit3=<n/>
 Behavior/Tooltip/TemporalRiftUnit32=<n/>
 Behavior/Tooltip/TemporalRiftUnit4=Target's movement speed, attack speed, and ability usage times are slowed by two-thirds.
-Behavior/Tooltip/Unity=Maximum shields are increased.
+Behavior/Tooltip/Unity=Damage taken is transferred to the Shieldship.
 Behavior/Tooltip/UnknownBehavior10=This unit's range and sight range are increased.
 Behavior/Tooltip/UnknownBehavior25=This unit has just been created and won't be able to restore blood upon dying.
 Behavior/Tooltip/VileAcidSlowFlatAmount2=This unit has 30% lower attack, movement, creep spread, cooldown and charge cooldown rates.
@@ -19071,7 +19071,7 @@ Button/Tooltip/UltraliskCavern8=Contains upgrades for and enables Vanadium Machi
 Button/Tooltip/UltrasonicPulse2=Stuns enemy units in target area for a short time.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
 Button/Tooltip/UmojanLabWarbot2=Large warbot built to pacify uncontrolled Zerg experiments.
 Button/Tooltip/UnbuildableRocksDestructible2=Prevents placement of buildings. Can be destroyed to allow placement.
-Button/Tooltip/Unity=Creates a range 7 powerful shield, that increases shield armor of all units inside by 3 and range by 2, Units inside the shield take 30% less damage.
+Button/Tooltip/Unity=Creates a range 7 powerful shield, that transfers all damage taken by units inside to the Shieldship. Lasts <d time="30">.
 Button/Tooltip/UnknownButton100=Increases the attack and heal range of this strain's Bloodlisks by 1.
 Button/Tooltip/UnknownButton101=Allows Angels to teleport anywhere on the map with a delay.
 Button/Tooltip/UnknownButton102=Triples angelic Vipers' energy regeneration.

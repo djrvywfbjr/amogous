@@ -73097,9 +73097,7 @@
     <CEffectDamage id="UnityTransfer">
         <EditorCategories value=""/>
         <ImpactLocation Effect="UnityAB" Value="SourceUnit"/>
-        <Amount value="0">
-            <AccumulatorArray value="UnityTransfer"/>
-        </Amount>
+        <ArmorReduction value="1"/>
     </CEffectDamage>
     <CEffectApplyBehavior id="UnknownEffect">
         <EditorCategories value=""/>

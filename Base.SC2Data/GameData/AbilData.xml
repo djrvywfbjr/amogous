@@ -496,8 +496,9 @@
         <Flags index="NoDeceleration" value="1"/>
         <Flags index="Transient" value="1"/>
         <Cost>
+            <Vital index="Energy" value="150"/>
             <Charge Link="Abil/GuardianShield"/>
-            <Cooldown Link="GuardianShield"/>
+            <Cooldown Link="GuardianShield" TimeUse="30"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="Unity"/>
     </CAbilEffectInstant>
