@@ -91,6 +91,11 @@
         <Icon value="Assets\Textures\btn-ability-stetmann-garystetelliteovercharge-energy.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-stetmann-garystetelliteovercharge-energy.dds"/>
     </CButton>
+    <CButton id="Unity">
+        <Icon value="Assets\Textures\btn-upgrade-karax-unitybarrier.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-karax-unitybarrier.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
     <CButton id="HighOnes_GravitonBeam">
         <Icon value="Assets\Textures\btn-ability-protoss-gravitonbeam-color.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-gravitonbeam-color.dds"/>

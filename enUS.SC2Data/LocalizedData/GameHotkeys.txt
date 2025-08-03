@@ -4909,6 +4909,7 @@ Button/Hotkey/UltraliskCavern6=U
 Button/Hotkey/UltraliskCavern7=U
 Button/Hotkey/UltraliskCavern8=U
 Button/Hotkey/UltrasonicPulse2=Z
+Button/Hotkey/Unity=G
 Button/Hotkey/UnknownButton100=A
 Button/Hotkey/UnknownButton101=G
 Button/Hotkey/UnknownButton102=R

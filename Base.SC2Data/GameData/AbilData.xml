@@ -488,6 +488,19 @@
         <Flags index="Transient" value="1"/>
         <BehaviorArray value="ArmyUnselectable"/>
     </CAbilBehavior>
+    <CAbilEffectInstant id="Unity">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="UnityCP"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge Link="Abil/GuardianShield"/>
+            <Cooldown Link="GuardianShield"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Unity"/>
+    </CAbilEffectInstant>
     <CAbilEffectTarget id="HighOnes_WormholeTransit">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Cost>

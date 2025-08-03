@@ -862,14 +862,16 @@
         <EditorCategories value="Race:Protoss"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="DisplayCooldown" value="1"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
-        <DisplayEffect value="HighOnes_MohandarMUx12"/>
+        <DisplayEffect value="HighOnes_SolarBeam1"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <RangeSlop value="3"/>
         <Arc value="29.9926"/>
-        <Period value="3"/>
+        <Period value="1"/>
         <Effect value="Mohandar2"/>
         <AllowedMovement value="Moving"/>
+        <DamagePoint value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HighOnes_SanitizationBeam">
         <Name value="Weapon/Name/Energizer"/>

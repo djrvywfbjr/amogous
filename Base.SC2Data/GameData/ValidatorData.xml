@@ -723,6 +723,13 @@
         <CombineArray value="ShieldsNotFull"/>
         <CombineArray value="CasterLifeNotFull2"/>
     </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="NoUnity">
+        <Behavior value="Unity"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="NotShieldship">
+        <Value value="Shieldship"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
     <CValidatorLocationCompareRange id="Within7Range">
         <Compare value="LE"/>
         <Range value="7"/>

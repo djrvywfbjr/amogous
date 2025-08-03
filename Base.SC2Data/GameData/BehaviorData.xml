@@ -252,6 +252,16 @@
             </Cost>
         </DamageResponse>
     </CBehaviorBuff>
+    <CBehaviorBuff id="Unity">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-shieldbattery.dds"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Duration value="0.6"/>
+        <DamageResponse Handled="UnityTransfer" Priority="-1" HandledValue="Absorbed">
+            <Ignore index="Life" value="1"/>
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
     <CBehaviorBuff id="JudicatorsScornLasting">
         <Alignment value="Negative"/>
         <InfoIcon value="Assets\Textures\btn-ability-protoss-psistorm.dds"/>
@@ -271,12 +281,12 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <RemoveValidatorArray value="NotMohandarQuadDamage"/>
-        <Duration value="1"/>
+        <Duration value="0.9"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="SolarBeamQuadDamage">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
-        <Duration value="1"/>
+        <Duration value="0.9"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="PoweringModeHealed">
         <BehaviorFlags index="Permanent" value="1"/>

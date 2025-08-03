@@ -1502,6 +1502,27 @@
         <EditorCategories value="Race:Protoss"/>
         <EffectArray value="ArbiterMPStasisFieldApply52"/>
     </CEffectSet>
+    <CEffectApplyBehavior id="UnityAB">
+        <ValidatorArray index="0" value="NotShieldship"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="Unity"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="UnityCP">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="SourceUnit"/>
+        <InitialEffect value="UnitySA"/>
+        <PeriodCount value="60"/>
+        <PeriodicEffectArray value="UnitySA"/>
+        <PeriodicPeriodArray value="0.5"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="UnitySA">
+        <EditorCategories value="Race:Protoss"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <SearchFilters value="-;Neutral,Enemy,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="7" Effect="UnityAB"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+        <SearchFlags index="SameCliff" value="1"/>
+    </CEffectEnumArea>
     <CEffectTeleport id="HighOnes_WormholeTransit">
         <EditorCategories value="Race:Protoss"/>
         <WhichUnit Value="Caster"/>
@@ -1686,12 +1707,12 @@
     </CEffectSet>
     <CEffectSet id="MohandarChainSet22">
         <EditorCategories value="Race:Protoss"/>
-        <EffectArray value="MohandarDoubleDamage2"/>
+        <EffectArray value="SolarBeamDoubleDamage"/>
         <EffectArray value="MohandarChargeEffect022"/>
     </CEffectSet>
     <CEffectSet id="MohandarChainSet32">
         <EditorCategories value="Race:Protoss"/>
-        <EffectArray value="MohandarQuadDamage2"/>
+        <EffectArray value="SolarBeamQuadDamage"/>
         <EffectArray value="MohandarChargeEffect032"/>
     </CEffectSet>
     <CEffectCreatePersistent id="MohandarChargeChain2">
@@ -1702,6 +1723,7 @@
         <InitialEffect value="MohandarChargeInitial2"/>
         <PeriodicValidator value="CasterNotDead"/>
         <PeriodicPeriodArray value="0.6"/>
+        <FinalEffect value="SolarBeamCooldown"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="MohandarChargeEffect012">
         <ValidatorArray value="NotSolarBeamDoubleDamage"/>
@@ -1710,11 +1732,11 @@
         <WhichLocation Value="TargetUnit"/>
         <TimeScaleSource Value="Caster"/>
         <Flags index="Channeled" value="1"/>
-        <InitialEffect value="HighOnes_MohandarMUx12"/>
+        <InitialEffect value="HighOnes_SolarBeam1"/>
         <ExpireEffect value="MohandarChainSet22"/>
         <PeriodCount value="2"/>
-        <PeriodicEffectArray value="HighOnes_MohandarMUx12"/>
-        <PeriodicPeriodArray value="0.6"/>
+        <PeriodicEffectArray value="HighOnes_SolarBeam1"/>
+        <PeriodicPeriodArray value="0.5"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="MohandarChargeEffect022">
         <ValidatorArray value="SolarBeamDoubleDamage"/>
@@ -1722,11 +1744,11 @@
         <WhichLocation Value="TargetUnit"/>
         <TimeScaleSource Value="Caster"/>
         <Flags index="Channeled" value="1"/>
-        <InitialEffect value="MohandarDoubleDamage2"/>
+        <InitialEffect value="SolarBeamDoubleDamage"/>
         <ExpireEffect value="MohandarChainSet32"/>
         <PeriodCount value="3"/>
         <PeriodicEffectArray value="MohandarDamageSet22"/>
-        <PeriodicPeriodArray value="0.6"/>
+        <PeriodicPeriodArray value="0.5"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="MohandarChargeEffect032">
         <ValidatorArray value="SolarBeamQuadDamage"/>
@@ -1735,9 +1757,9 @@
         <TimeScaleSource Value="Caster"/>
         <Flags index="Channeled" value="1"/>
         <Flags index="PersistUntilDestroyed" value="1"/>
-        <InitialEffect value="MohandarQuadDamage2"/>
+        <InitialEffect value="SolarBeamQuadDamage"/>
         <PeriodicEffectArray value="MohandarDamageSet32"/>
-        <PeriodicPeriodArray value="0.6"/>
+        <PeriodicPeriodArray value="0.5"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="MohandarChargeInitial2">
         <EditorCategories value="Race:Protoss"/>
@@ -1747,23 +1769,26 @@
         <ExpireEffect value="MohandarInitialSet2"/>
         <PeriodCount value="1"/>
         <PeriodicEffectArray value="MohandarMUInitial2"/>
-        <PeriodicPeriodArray value="0.6"/>
+        <PeriodicPeriodArray value="0.5"/>
     </CEffectCreatePersistent>
     <CEffectSet id="MohandarDamageSet22">
         <EditorCategories value="Race:Protoss"/>
-        <EffectArray value="MohandarDoubleDamage2"/>
-        <EffectArray value="HighOnes_MohandarMUx22"/>
+        <EffectArray value="SolarBeamDoubleDamage"/>
+        <EffectArray value="HighOnes_SolarBeam2"/>
     </CEffectSet>
     <CEffectSet id="MohandarDamageSet32">
         <EditorCategories value="Race:Protoss"/>
-        <EffectArray value="MohandarQuadDamage2"/>
-        <EffectArray value="HighOnes_MohandarMUx32"/>
+        <EffectArray value="SolarBeamQuadDamage"/>
+        <EffectArray value="HighOnes_SolarBeam3"/>
     </CEffectSet>
-    <CEffectApplyBehavior id="MohandarDoubleDamage2">
-        <ValidatorArray index="0" value=""/>
+    <CEffectModifyUnit id="SolarBeamCooldown">
+        <EditorCategories value=""/>
+        <ImpactUnit Value="Source"/>
+        <Weapon Weapon="HighOnes_SolarBeam" CooldownFraction="1"/>
+    </CEffectModifyUnit>
+    <CEffectApplyBehavior id="SolarBeamDoubleDamage">
         <EditorCategories value="Race:Protoss"/>
         <WhichUnit Value="Caster"/>
-        <Behavior value="SolarBeamDoubleDamage"/>
     </CEffectApplyBehavior>
     <CEffectSet id="MohandarInitialSet2">
         <EditorCategories value="Race:Protoss"/>
@@ -1772,29 +1797,40 @@
         <EffectArray value="MohandarChargeEffect032"/>
     </CEffectSet>
     <CEffectDamage id="MohandarMUInitial2" parent="PrismaticBeamMUBase"/>
-    <CEffectDamage id="HighOnes_MohandarMUx12" parent="PrismaticBeamMUBase">
-        <Name value="Effect/Name/MohandarMUInitial"/>
-        <Marker Link="Effect/MohandarMUInitial"/>
+    <CEffectDamage id="HighOnes_SolarBeam1">
+        <EditorCategories value="Race:Protoss"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
         <ArmorReduction value="1"/>
+        <Visibility value="Visible"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
         <Amount value="6"/>
     </CEffectDamage>
-    <CEffectDamage id="HighOnes_MohandarMUx22" parent="PrismaticBeamMUBase">
-        <Name value="Effect/Name/MohandarMUInitial"/>
-        <Marker Link="Effect/MohandarMUInitial"/>
+    <CEffectDamage id="HighOnes_SolarBeam2">
+        <EditorCategories value="Race:Protoss"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
         <ArmorReduction value="1"/>
+        <Visibility value="Visible"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
         <Amount value="12"/>
     </CEffectDamage>
-    <CEffectDamage id="HighOnes_MohandarMUx32" parent="PrismaticBeamMUBase">
-        <Name value="Effect/Name/MohandarMUInitial"/>
-        <Marker Link="Effect/MohandarMUInitial"/>
+    <CEffectDamage id="HighOnes_SolarBeam3">
+        <EditorCategories value="Race:Protoss"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
         <ArmorReduction value="1"/>
+        <Visibility value="Visible"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
         <Amount value="24"/>
     </CEffectDamage>
-    <CEffectApplyBehavior id="MohandarQuadDamage2">
+    <CEffectApplyBehavior id="SolarBeamQuadDamage">
         <ValidatorArray index="0" value=""/>
         <EditorCategories value="Race:Protoss"/>
         <WhichUnit Value="Caster"/>
-        <Behavior value="SolarBeamQuadDamage"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="PoweringModeABTarget">
         <EditorCategories value=""/>
@@ -2330,7 +2366,7 @@
         <PeriodicValidator value="PoweringModeCP"/>
         <PeriodicEffectArray value="PoweringModeModifySet"/>
         <PeriodicPeriodArray value="0.33"/>
-        <ValidatorArray value="NotMaxEnergy"/>
+        <ValidatorArray value="NotMobileSupercapacitor"/>
         <ValidatorArray value="CasterHasPoweringMode"/>
         <ValidatorArray value="PoweringModeTargetNotBeingHealed"/>
         <WhichLocation Value="TargetUnit"/>
@@ -2371,7 +2407,7 @@
     <CEffectEnumArea id="QuantumShift">
         <EditorCategories value=""/>
         <ImpactLocation Value="TargetPoint"/>
-        <AreaArray Radius="1" Effect="QuantumShiftAB"/>
+        <AreaArray Radius="0.75" Effect="QuantumShiftAB"/>
     </CEffectEnumArea>
     <CEffectModifyUnit id="QueenBurstHeal23">
         <EditorCategories value="Race:Zerg"/>
@@ -73058,6 +73094,13 @@
         <BehaviorLink value="UnitKnockback2"/>
         <Count value="1"/>
     </CEffectRemoveBehavior>
+    <CEffectDamage id="UnityTransfer">
+        <EditorCategories value=""/>
+        <ImpactLocation Effect="UnityAB" Value="SourceUnit"/>
+        <Amount value="0">
+            <AccumulatorArray value="UnityTransfer"/>
+        </Amount>
+    </CEffectDamage>
     <CEffectApplyBehavior id="UnknownEffect">
         <EditorCategories value=""/>
         <Behavior value="GainedResources"/>
