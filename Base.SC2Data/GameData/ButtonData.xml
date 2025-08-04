@@ -91,7 +91,7 @@
         <Icon value="Assets\Textures\btn-ability-stetmann-garystetelliteovercharge-energy.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-stetmann-garystetelliteovercharge-energy.dds"/>
     </CButton>
-    <CButton id="EnergyShielding">
+    <CButton id="TheShieldofAiur">
         <Icon value="Assets\Textures\btn-ability-stetmann-garypersonalstetzone-energy.dds"/>
     </CButton>
     <CButton id="Unity">
@@ -151,7 +151,7 @@
         <AlertIcon value="Assets\Textures\btn-ability-protoss-shieldbattery-color.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
-    <CButton id="ShieldofAiur">
+    <CButton id="HardenedShields">
         <Icon value="Assets\Textures\btn-ability-protoss-barrier-upgraded.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-barrier-upgraded.dds"/>
     </CButton>

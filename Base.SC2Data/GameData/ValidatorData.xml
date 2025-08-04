@@ -723,6 +723,10 @@
         <CombineArray value="ShieldsNotFull"/>
         <CombineArray value="CasterLifeNotFull2"/>
     </CValidatorCombine>
+    <CValidatorCombine id="MineralFieldOrAlly">
+        <CombineArray value="Minerals"/>
+        <CombineArray value="TargetIsAllyorPlayer"/>
+    </CValidatorCombine>
     <CValidatorUnitCompareBehaviorCount id="NoUnity">
         <Behavior value="Unity"/>
     </CValidatorUnitCompareBehaviorCount>

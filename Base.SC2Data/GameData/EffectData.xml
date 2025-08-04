@@ -68425,6 +68425,7 @@
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="AkilaeHope">
         <ValidatorArray index="0" value="NoAkilaeHope"/>
+        <ValidatorArray value="MineralFieldOrAlly"/>
         <EditorCategories value=""/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="ShieldUp2325">

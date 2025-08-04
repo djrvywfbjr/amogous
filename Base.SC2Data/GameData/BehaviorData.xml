@@ -2110,7 +2110,7 @@
         <Duration value="30"/>
         <Modification>
             <VitalMaxArray index="Shields" value="150"/>
-            <VitalRegenArray index="Shields" value="10"/>
+            <VitalRegenArray index="Shields" value="15"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="Shield23">
@@ -42473,7 +42473,9 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <TimeScaleSource Value="Global"/>
         <Duration value="30"/>
-        <Modification TimeScale="1.75"/>
+        <Modification TimeScale="1.75">
+            <ResourceHarvestAmountMultiplier index="Minerals" value="2"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="Shield34">
         <InfoFlags index="Hidden" value="1"/>

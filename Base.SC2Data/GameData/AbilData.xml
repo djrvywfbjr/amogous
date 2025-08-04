@@ -46071,7 +46071,6 @@
     <CAbilBuild id="ProtossBuild9" parent="ProtossBuild">
         <Name value="Abil/Name/ProtossBuild9"/>
         <InfoArray index="Build1" Unit="OldFortress" Time="70">
-            <Resource index="Minerals" value="-75"/>
             <Button DefaultButtonFace="Nexus6"/>
         </InfoArray>
         <InfoArray index="Build2" Unit="KhalaiPylon">
@@ -52483,7 +52482,7 @@
         <Cost>
             <Vital index="Shields" value="700"/>
         </Cost>
-        <TargetFilters value="Structure;Neutral,Enemy"/>
+        <TargetFilters value="Structure;Enemy"/>
         <Range value="500"/>
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="AkilaeHope"/>

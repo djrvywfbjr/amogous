@@ -7475,7 +7475,6 @@ Button/Name/EMP63=Tactical EMB
 Button/Name/EMP7=Launch EMP Round
 Button/Name/EMP72=Corrosive Bile
 Button/Name/EMPNova2=EMP Nova
-Button/Name/EnergyShielding=Energy Shielding
 Button/Name/Energyrotation=Energy Cycling
 Button/Name/EngageFusionDrive=Engage Fusion Drive
 Button/Name/EngineeringBay10=Reconstruct Agony Bay
@@ -7769,6 +7768,7 @@ Button/Name/HardenedShield43=Projection Particle
 Button/Name/HardenedShield44=Hazardous Burst
 Button/Name/HardenedShield442=Hazardous Wave
 Button/Name/HardenedShield4422=Hazardous Force
+Button/Name/HardenedShields=Hardened Shields
 Button/Name/Hatchery2=Transform Into Nexus Of Ancients
 Button/Name/Hatchery22=Quick Nexus Of Ancients
 Button/Name/Hatchery3=Quick Hatchery
@@ -10131,7 +10131,6 @@ Button/Name/ShieldBatteryRecharge2=Recharge
 Button/Name/ShieldEmitter=Plasma Field
 Button/Name/ShieldOvercharge=Shield Overcharge
 Button/Name/ShieldofAdun=Shield of Adun
-Button/Name/ShieldofAiur=Shield of Aiur
 Button/Name/ShieldofTassadar=Shield of Tassadar
 Button/Name/ShieldofZeratul=Shield of Zeratul
 Button/Name/ShredderPayload=Shredder Payload
@@ -10832,6 +10831,7 @@ Button/Name/TestLearn252=Learn Cloud Kill Level 1
 Button/Name/TestLearn253=Learn Choplings Level 1
 Button/Name/TestLearn254=Learn Deception Level 5
 Button/Name/TheMorosDevice2=Chrono Rift Generator
+Button/Name/TheShieldofAiur=The Shield of Aiur
 Button/Name/Thor2=Build God Hammer
 Button/Name/Thor3=Request And Prepare Reployer
 Button/Name/Thor4=Build Thoreaver
@@ -12337,7 +12337,7 @@ Button/Tooltip/AggressiveMutation22=Friendly units gain 35% attack and movement 
 Button/Tooltip/AggressiveMutation3=Friendly Zerg units gain +<d ref="Behavior,AggressiveMutation,Modification.DamageDealtUnscaled[Melee]"/> attack damage for <d ref="Behavior,AggressiveMutation,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Affects ground units only.</c>
 Button/Tooltip/Agonizer=Durable anti-light support flyer.
 Button/Tooltip/AiurCOreeeee=Flying support unit. Can use Guardian Shell. <n/>These were the first layer of planetary defense of important khalai planets. Their survival and preservation capabilities allowed them to still attack enemies even when the battle is happening on the planet itself.
-Button/Tooltip/AkilaeHope=Speeds up target structure by 75% for <d time="30"/>.
+Button/Tooltip/AkilaeHope=Speeds up target structure by 75% for <d time="30"/>. Can be cast on mineral fields, tripling the amount gathered from them.
 Button/Tooltip/AlarakChampion2=Highlord of the Tal'darim. Powerful Psionic Warrior.
 Button/Tooltip/AlarakKnockback2=Unleashes a massive wave of force in a straight line, dealing <d ref="Effect,DestructionWaveDamage,Amount"/> damage (+<d ref="Effect,DestructionWaveDamageAir,Amount"/> vs Air) to enemies in its path and knocking them back.<n/><n/><c val="#ColorAttackInfo">Massive units are knocked back a shorter distance.</c>
 Button/Tooltip/Alex=One of the best spectres out there.
@@ -14655,7 +14655,6 @@ Button/Tooltip/Egg2=Zerg units morph in the safety of these cocoons.
 Button/Tooltip/EggChamber=Specialized infestation organism. Hatches Xill units.
 Button/Tooltip/EliteArmory=Contains upgrades.
 Button/Tooltip/Endocloak=Endoling becomes cloaked for 10 seconds.<n/><n/>While the original zerglings are quite fast, it's possible to change the endoskeletons to be quite a lot sneakier, agile and able to hit enemies farther away through different movement capabilities. Of course, the actual body isn't meant to move or bend or extend the way endoskeletons can be made to, but it can still slowly regenerate tissue and function as armor for the mechanisms inside.
-Button/Tooltip/EnergyShielding=Damage taken is applied to energy before life. Each point of energy can absorb 10 damage.
 Button/Tooltip/Energyrotation=Solar Detractor's and Phase Cannon's attacks consume 25 <c val="0000FF">shields</c> every attack.
 Button/Tooltip/EngageFusionDrive=Increases the Blimp's movement speed by 2.5 for 15 seconds.
 Button/Tooltip/Engi12312312neeringBay18=Structure, where Workers periodically produce Food.
@@ -15090,6 +15089,7 @@ Button/Tooltip/HardenedShield43=All Projected units spawn a Projection Particle 
 Button/Tooltip/HardenedShield44=On death deals 15 damage to the nearest enemy.
 Button/Tooltip/HardenedShield442=On death deals 5 damage in an area over a second.
 Button/Tooltip/HardenedShield4422=On death, fires a 15 damage missile at the nearest enemy.<n/><n/>Both Projection Particle and the fired missile deal 5 damage over a second in a large around around themselves
+Button/Tooltip/HardenedShields=Blade Of Adun's shields take no more than 15 damage.
 Button/Tooltip/Hatchery2=Primary Corrupted building.
 Button/Tooltip/Hatchery22=Primary structure. Builds in 5 seconds.
 Button/Tooltip/Hatchery3=Primary structure. Used to spawn all Zerg units and receive gathered resources. Grows creep used to feed nearby Zerg structures. Can mutate into a Lair.<n/><n/><c val="#ColorAttackInfo">Bonus: Zerg move faster on creep.</c>
@@ -18146,10 +18146,9 @@ Button/Tooltip/ShieldBatteryRecharge2NotOvercharged=<n/><n/><c val="f078ff">Rest
 Button/Tooltip/ShieldBatteryRecharge2NotOverchargedConstantText=<n/><n/><c val="#ColorAttackInfo">Autocasting targets units and defensive structures only.</c>
 Button/Tooltip/ShieldBatteryRecharge2Overcharged=<n/><n/><c val="f078ff">Restores up to 36 shields per second. Every 3 shields restored drains 1 energy from the Battery.</c>
 Button/Tooltip/ShieldEmitter=Emits a shield that covers a small area around the Plasmer. Units inside the shield gain 50 shields and 2 shield regeneration.
-Button/Tooltip/ShieldOvercharge=Target unit gains 150 shields and 10 shield regeneration for 30 seconds.
+Button/Tooltip/ShieldOvercharge=Target unit gains 150 shields and 15 shield regeneration for <d time="30"/>.
 Button/Tooltip/ShieldOvercharger=Restores shields to nearby friendly units and structures.
 Button/Tooltip/ShieldofAdun=Creates a range 4 aura that increases maximum shields of nearby units by 50 and shield armor by 2. Lasts <d time="15"/>.
-Button/Tooltip/ShieldofAiur=Blade Of Adun's shields take no more than 15 damage.
 Button/Tooltip/ShieldofTassadar=Creates a range 4 aura that increases healing received by nearby units by 50%. Lasts <d time="15"/>.
 Button/Tooltip/ShieldofZeratul=Creates a range 4 aura that increases shield regeneration of nearby units by 10. Lasts <d time="15"/>.
 Button/Tooltip/ShredderPayload=Attacks during Sky Watch deal 5 additional damage per point of armor.<n/><n/>"Commissioned" from ATVX, smart shrapnel missiels represent the peak of anti capital warfare, punching trough weak points in armor and driving neosteel shards deeper into difficult to reach areas, making immediate field repairs and healing almost impossible.
@@ -18976,6 +18975,7 @@ Button/Tooltip/TestLearn252=<c val="FF0000">Gain ability to create a stationary 
 Button/Tooltip/TestLearn253=<c val="0000FF">Gain ability to create 2 Choplings to fight for the duration of the ability's cooldown.</c><n/><c val="FFFF00">Level 1: Choplings gain Catch ability.</c><n/>Level 2: Choplings gain High Grade Stimpack ability and 100 life.<n/>Level 3: Choplings gain Combat Leap ability, bonus speed and 100 life.<n/>Level 4: Choplings gain Electrorb ability, 5 armor and 100 life.
 Button/Tooltip/TestLearn254=<c val="00FF00">Gain ability to cloak and create a copy of self to distract enemies.<n/>Cloak ends if Hulter attacks, but deals bonus damage.</c><n/><c val="FFFF00">Level 1: Gain 50% move and attack speed when cloaked.</c><n/>Level 2: Gain life regeneration, 100% move and attack speed when cloaked.<n/>Level 3: Gain life regeneration, ciollisionless, bonus range, 150% move and attack speed when cloaked.<n/>Level 4: Gain life regeneration, bonus range, collisionless, 150% move and attack speed when cloaked. Also, if an enemy is killed while cloaked, create another copy and become cloaked once more.
 Button/Tooltip/TheMorosDevice2=Device that alters time. Anything trapped inside of the area will suffer penalties to its attack speed.
+Button/Tooltip/TheShieldofAiur=Damage taken is applied to energy before life. Each point of energy can absorb 10 damage.
 Button/Tooltip/Thor2=Massive stealth mech. Has been constructed by Blue Intel to switch between heavy weapons or extreme stealthiness and agility through diverting power.
 Button/Tooltip/Thor3=Hybrid destabilizer.
 Button/Tooltip/Thor4=Heavy assault mech.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
