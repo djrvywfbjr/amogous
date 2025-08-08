@@ -1502,6 +1502,30 @@
         <EditorCategories value="Race:Protoss"/>
         <EffectArray value="ArbiterMPStasisFieldApply52"/>
     </CEffectSet>
+    <CEffectApplyBehavior id="LastCoilAB">
+        <EditorCategories value=""/>
+        <Behavior value="PsionicTempest"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="LastCoilSet">
+        <EditorCategories value=""/>
+        <EffectArray value="LastCoilDamage"/>
+        <EffectArray value="LastCoilAB"/>
+    </CEffectSet>
+    <CEffectEnumArea id="PsionicTempestSA">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Player,Ally,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="1" Effect="PsionicTempestTornadoSet"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="PsionicTempestTornadoDamage">
+        <EditorCategories value=""/>
+        <Amount value="5"/>
+    </CEffectDamage>
+    <CEffectSet id="PsionicTempestTornadoSet">
+        <EditorCategories value=""/>
+        <EffectArray value="PsionicTempestTornadoDamage"/>
+        <EffectArray value="PsionicTempestTornadoAB"/>
+    </CEffectSet>
     <CEffectApplyBehavior id="UnityAB">
         <ValidatorArray index="0" value="NotShieldship"/>
         <EditorCategories value="Race:Protoss"/>
@@ -1855,6 +1879,7 @@
         <VitalArray index="Shields">
             <Change value="50"/>
         </VitalArray>
+        <ModifyFlags index="IsHeal" value="1"/>
     </CEffectModifyUnit>
     <CEffectEnumArea id="PlasmaSurge">
         <EditorCategories value="Race:Protoss"/>
@@ -7352,7 +7377,9 @@
         <Death value="Blast"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectDamage>
-    <CEffectApplyBehavior id="ShieldOvercharge"/>
+    <CEffectApplyBehavior id="ShieldOvercharge">
+        <ValidatorArray index="0" value="NoShieldOvercharge"/>
+    </CEffectApplyBehavior>
     <CEffectApplyBehavior id="ShieldBattaryAB">
         <EditorCategories value=""/>
     </CEffectApplyBehavior>
@@ -28086,6 +28113,7 @@
         <Name value="Effect/Name/ShieldOfAdunCP"/>
         <InitialEffect value="ShieldOfAdunSA"/>
         <PeriodicEffectArray index="0" value="ShieldOfAdunSA"/>
+        <PeriodCount value="40"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="GuardianShieldPersistent22" parent="GuardianShieldPersistent">
         <Name value="Effect/Name/GuardianShieldPersistent22"/>
@@ -71042,9 +71070,18 @@
         <Kind value="Ranged"/>
         <SearchFlags index="CallForHelp" value="1"/>
     </CEffectDamage>
-    <CEffectDamage id="HighOnes_TempestDamageGround" parent="TempestDamageGround">
-        <Name value="Effect/Name/HighOnes_TempestDamageGround"/>
-        <Amount value="50"/>
+    <CEffectDamage id="LastCoilDamage">
+        <EditorCategories value="Race:Protoss"/>
+        <Marker Link="Effect/TempestDamageGround"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <ArmorReduction value="1"/>
+        <Visibility value="Visible"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="40"/>
+        <SearchFlags index="CallForHelp" value="1"/>
     </CEffectDamage>
     <CEffectDamage id="TempestDamageGround42" parent="TempestDamageGround">
         <Name value="Effect/Name/TempestDamageGround42"/>
@@ -71255,9 +71292,9 @@
         <ImpactEffect value="PureBornTempestHunterAddPoison"/>
         <AmmoUnit value="TempestWeaponGround3"/>
     </CEffectLaunchMissile>
-    <CEffectLaunchMissile id="TempestLaunchMissileGround4">
+    <CEffectLaunchMissile id="LastCoilLM">
         <EditorCategories value="Race:Protoss"/>
-        <ImpactEffect value="HighOnes_TempestDamageGround"/>
+        <ImpactEffect value="LastCoilSet"/>
         <AmmoUnit value="TempestWeaponGround4"/>
     </CEffectLaunchMissile>
     <CEffectLaunchMissile id="TempestLaunchMissileGround42">
@@ -73098,7 +73135,12 @@
     <CEffectDamage id="UnityTransfer">
         <EditorCategories value=""/>
         <ImpactLocation Effect="UnityAB" Value="SourceUnit"/>
-        <ArmorReduction value="1"/>
+        <Flags index="NoScaledTakenBonus" value="1"/>
+        <Flags index="NoFractionTakenBonus" value="1"/>
+        <Flags index="NoUnscaledTakenBonus" value="1"/>
+        <Flags index="NoTakenMaximum" value="1"/>
+        <Flags index="NoTakenMinimum" value="1"/>
+        <Flags index="NoBehaviorResponse" value="1"/>
     </CEffectDamage>
     <CEffectApplyBehavior id="UnknownEffect">
         <EditorCategories value=""/>
@@ -74006,6 +74048,10 @@
         <EffectArray value="DarkTemplarRecallSearch3"/>
         <EffectArray value="ArtanisAstralWindSearch"/>
     </CEffectSet>
+    <CEffectApplyBehavior id="PsionicTempestTornadoAB">
+        <EditorCategories value=""/>
+        <Behavior value="PsionicTempestTornadoSlow"/>
+    </CEffectApplyBehavior>
     <CEffectModifyUnit id="UnknownEffect8">
         <EditorCategories value=""/>
         <Resources value="120"/>

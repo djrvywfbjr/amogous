@@ -91,6 +91,10 @@
         <Icon value="Assets\Textures\btn-ability-stetmann-garystetelliteovercharge-energy.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-stetmann-garystetelliteovercharge-energy.dds"/>
     </CButton>
+    <CButton id="PsionicTempest">
+        <Icon value="Assets\Textures\talent-vorazun-level08-improvedblackhole.dds"/>
+        <AlertIcon value="Assets\Textures\talent-vorazun-level08-improvedblackhole.dds"/>
+    </CButton>
     <CButton id="TheShieldofAiur">
         <Icon value="Assets\Textures\btn-ability-stetmann-garypersonalstetzone-energy.dds"/>
     </CButton>

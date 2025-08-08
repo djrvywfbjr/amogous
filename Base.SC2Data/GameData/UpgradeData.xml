@@ -2004,7 +2004,7 @@
         <EffectArray Operation="Set" Reference="Effect,HighOnes_PsiBlades,ArmorReduction" Value="0.25"/>
         <EffectArray Operation="Set" Reference="Effect,HighOnes_PsionicLightning,ArmorReduction" Value="0.25"/>
         <EffectArray Operation="Set" Reference="Effect,HighOnes_InterceptorBeamDamage,ArmorReduction" Value="0.25"/>
-        <EffectArray Operation="Set" Reference="Effect,HighOnes_TempestDamageGround,ArmorReduction" Value="0.25"/>
+        <EffectArray Operation="Set" Reference="Effect,LastCoilDamage,ArmorReduction" Value="0.25"/>
         <EffectArray Operation="Set" Reference="Effect,HighOnes_ZealotAiurWeapon2,ArmorReduction" Value="0.25"/>
         <EffectArray Operation="Set" Reference="Effect,HighOnes_SolarBeam1,ArmorReduction" Value="0.25"/>
         <EffectArray Operation="Set" Reference="Effect,HighOnes_SolarBeam3,ArmorReduction" Value="0.25"/>

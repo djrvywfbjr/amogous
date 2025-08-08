@@ -962,6 +962,7 @@ Abil/Name/HerculesTransport4=Nemesis Transport
 Abil/Name/HerdInteract2=HealLol
 Abil/Name/HighArchonPsiStorm2=Leading Storm
 Abil/Name/HighAvatar=High Avatar
+Abil/Name/HighOnes_ForceField=Force Field
 Abil/Name/HighOnes_GravitonBeam=Graviton Beam
 Abil/Name/HighOnes_WormholeTransit=High Ones_ Wormhole Transit
 Abil/Name/HoloShipShields=Holo Ship Shields
@@ -3952,6 +3953,8 @@ Behavior/Name/PsionicLiftRaise4=Tight Grip
 Behavior/Name/PsionicLiftRaise5=Crushing Grip
 Behavior/Name/PsionicLiftRaise6=Crushing Grip
 Behavior/Name/PsionicShockwaveHeightAndStun2=Psionic Shockwave Height And Stun
+Behavior/Name/PsionicTempest=Psionic Tempest
+Behavior/Name/PsionicTempestTornadoSlow=Psionic Tempest Tornado Slow
 Behavior/Name/PsytrousOxide2=Void Seeker - Psitrous Oxide Enabled
 Behavior/Name/PsytrousOxide3=Mobile Mode
 Behavior/Name/PukePuddleSearch12=Puke Puddle Search4
@@ -5158,6 +5161,7 @@ Behavior/Tooltip/PsionicLiftRaise3=This unit is stunned and taking damage over t
 Behavior/Tooltip/PsionicLiftRaise4=This unit is stunned and taking damage over time.
 Behavior/Tooltip/PsionicLiftRaise5=This unit is stunned and taking damage over time.
 Behavior/Tooltip/PsionicLiftRaise6=This unit is stunned and taking damage over time.
+Behavior/Tooltip/PsionicTempest=This unit slows and damages units around it.
 Behavior/Tooltip/PukePuddleSlow2=Slowed and taking damage.
 Behavior/Tooltip/PukePuddleSlow22=Slowed and taking damage.
 Behavior/Tooltip/PukePuddleSlow23=Slowed and taking damage.
@@ -9540,6 +9544,7 @@ Button/Name/PsionicShockwave3=Apex Shockwave
 Button/Name/PsionicShockwave4=Radiate Energy
 Button/Name/PsionicShockwave5=Psionic Shockwave
 Button/Name/PsionicSight=Psionic Sight
+Button/Name/PsionicTempest=Psionic Tempest
 Button/Name/PsionicWrath=Psionic Wrath
 Button/Name/PsytrousOxideOff2=Disable Psitrous Oxide
 Button/Name/PsytrousOxideOff22=Enable Pickup Radar
@@ -17358,6 +17363,7 @@ Button/Tooltip/PsionicShockwave3=Releases a burst of psionic energy radiating ou
 Button/Tooltip/PsionicShockwave4=Enemies in a large radius around Imposed Adder get knocked away, take 40 damage and stunned for 3 seconds.<n/><n/>The crew has recently developed a design for a custom doomsday device. It would release psionic energy and kinetic force, radiating towards a surface. The result would be massive earthquakes and flattening of anything on the planet or space station. If designed, a smaller version of it could be attached to Imposed Adders.
 Button/Tooltip/PsionicShockwave5=Releases a burst of psionic energy radiating outward from the Hybrid, knocking away all units and stunning them momentarily.
 Button/Tooltip/PsionicSight=All units gain 6 sight range.
+Button/Tooltip/PsionicTempest=The Storm's attacks create a tornado around the target unit, dealing 5 damage per second to nearby units and slowing them by 25%.
 Button/Tooltip/PsionicWrath=All weapons now ignore 75% of armor.
 Button/Tooltip/PsiwaveCommunicator=Contains upgrades for Terran infantry and structures. <n/><n/><c val="ffff8a">Enables:</c><n/>- Missile Turrets from SCVs<n/>- Sensor Towers from SCVs<n/>- Planetary Fortresses from Command Centers
 Button/Tooltip/PsytrousOxideOff2=Reduces speed to normal.
@@ -18146,7 +18152,7 @@ Button/Tooltip/ShieldBatteryRecharge2NotOvercharged=<n/><n/><c val="f078ff">Rest
 Button/Tooltip/ShieldBatteryRecharge2NotOverchargedConstantText=<n/><n/><c val="#ColorAttackInfo">Autocasting targets units and defensive structures only.</c>
 Button/Tooltip/ShieldBatteryRecharge2Overcharged=<n/><n/><c val="f078ff">Restores up to 36 shields per second. Every 3 shields restored drains 1 energy from the Battery.</c>
 Button/Tooltip/ShieldEmitter=Emits a shield that covers a small area around the Plasmer. Units inside the shield gain 50 shields and 2 shield regeneration.
-Button/Tooltip/ShieldOvercharge=Target unit gains 150 shields and 15 shield regeneration for <d time="30"/>.
+Button/Tooltip/ShieldOvercharge=Target unit gains 150 maximum shields and 10 shield regeneration for <d time="40"/>.
 Button/Tooltip/ShieldOvercharger=Restores shields to nearby friendly units and structures.
 Button/Tooltip/ShieldofAdun=Creates a range 4 aura that increases maximum shields of nearby units by 50 and shield armor by 2. Lasts <d time="15"/>.
 Button/Tooltip/ShieldofTassadar=Creates a range 4 aura that increases healing received by nearby units by 50%. Lasts <d time="15"/>.
@@ -18975,7 +18981,7 @@ Button/Tooltip/TestLearn252=<c val="FF0000">Gain ability to create a stationary 
 Button/Tooltip/TestLearn253=<c val="0000FF">Gain ability to create 2 Choplings to fight for the duration of the ability's cooldown.</c><n/><c val="FFFF00">Level 1: Choplings gain Catch ability.</c><n/>Level 2: Choplings gain High Grade Stimpack ability and 100 life.<n/>Level 3: Choplings gain Combat Leap ability, bonus speed and 100 life.<n/>Level 4: Choplings gain Electrorb ability, 5 armor and 100 life.
 Button/Tooltip/TestLearn254=<c val="00FF00">Gain ability to cloak and create a copy of self to distract enemies.<n/>Cloak ends if Hulter attacks, but deals bonus damage.</c><n/><c val="FFFF00">Level 1: Gain 50% move and attack speed when cloaked.</c><n/>Level 2: Gain life regeneration, 100% move and attack speed when cloaked.<n/>Level 3: Gain life regeneration, ciollisionless, bonus range, 150% move and attack speed when cloaked.<n/>Level 4: Gain life regeneration, bonus range, collisionless, 150% move and attack speed when cloaked. Also, if an enemy is killed while cloaked, create another copy and become cloaked once more.
 Button/Tooltip/TheMorosDevice2=Device that alters time. Anything trapped inside of the area will suffer penalties to its attack speed.
-Button/Tooltip/TheShieldofAiur=Damage taken is applied to energy before life. Each point of energy can absorb 10 damage.
+Button/Tooltip/TheShieldofAiur=Damage taken is applied to energy before life. Each point of energy can absorb 5 damage.
 Button/Tooltip/Thor2=Massive stealth mech. Has been constructed by Blue Intel to switch between heavy weapons or extreme stealthiness and agility through diverting power.
 Button/Tooltip/Thor3=Hybrid destabilizer.
 Button/Tooltip/Thor4=Heavy assault mech.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
@@ -24446,7 +24452,6 @@ Effect/Name/HighOnes_SOAStrafeAttackDamage23=Cringe Fall
 Effect/Name/HighOnes_SolarBeam1=Solar Beam 1
 Effect/Name/HighOnes_SolarBeam2=Solar Beam 2
 Effect/Name/HighOnes_SolarBeam3=Solar Beam 3
-Effect/Name/HighOnes_TempestDamageGround=Tempest Damage (Ground) Copy 4
 Effect/Name/HighOnes_WormholeTransit=High Ones_ Wormhole Transit
 Effect/Name/HighTemplarWeaponDamage2=High Templar Weapon Damage Copy
 Effect/Name/HighTemplarWeaponDamage22=High Templar Weapon Damage Copy Copy
@@ -25611,6 +25616,10 @@ Effect/Name/LaserBeamFinalPersistant2=Laser Beam (Final Persistant)
 Effect/Name/LaserBeamTripodInitialDamage2=Laser Beam (Initial Damage)
 Effect/Name/LaserDrillTripodCreatePersistent2=Laser Beam (Initial Persistant)
 Effect/Name/LaserDrillTripodDamage2=Laser Beam (Final Damage)
+Effect/Name/LastCoilAB=Last Coil AB
+Effect/Name/LastCoilDamage=Last Coil Damage
+Effect/Name/LastCoilLM=Last Coil LM
+Effect/Name/LastCoilSet=Last Coil Set
 Effect/Name/LaunchMissiler=Launch Missiler
 Effect/Name/LaunchMissiler2=Launch Missiler
 Effect/Name/LeapingCritterDamage2=Leaping Critter Damage
@@ -28705,6 +28714,10 @@ Effect/Name/PsionicShockwaveRaise2=Psionic Shockwave (Raise)
 Effect/Name/PsionicShockwaveSearchArea2=Psionic Shockwave (Search Area)
 Effect/Name/PsionicShockwaveSearchSet2=Psionic Shockwave (Search Set)
 Effect/Name/PsionicShockwaveSpellDamage2=Psionic Shockwave Spell Damage
+Effect/Name/PsionicTempestSA=Psionic Tempest SA
+Effect/Name/PsionicTempestTornadoAB=Psionic Tempest Tornado AB
+Effect/Name/PsionicTempestTornadoDamage=Psionic Tempest Tornado Damage
+Effect/Name/PsionicTempestTornadoSet=Psionic Tempest Tornado Set
 Effect/Name/PukePuddleDamage2=Puke Puddle Damage Copy
 Effect/Name/PukePuddleDamage22=Puke Puddle Damage Copy Copy
 Effect/Name/PukePuddleDamage222=Puke Puddle Damage Copy Copy
@@ -30973,7 +30986,6 @@ Effect/Name/TempestLaunchMissileGround232=Tempest Launch Missile (Ground) Copy C
 Effect/Name/TempestLaunchMissileGround233=Tempest Launch Missile (Ground) Copy Copy 2
 Effect/Name/TempestLaunchMissileGround234=Tempest Launch Missile (Ground) Copy Copy 2
 Effect/Name/TempestLaunchMissileGround3=Tempest Launch Missile (Ground) Copy 2
-Effect/Name/TempestLaunchMissileGround4=Tempest Launch Missile (Ground) Copy 3
 Effect/Name/TempestLaunchMissileGround42=Tempest Launch Missile (Ground) Copy 4
 Effect/Name/TempestLaunchMissileGround422=Tempest Launch Missile (Ground) Copy 4
 Effect/Name/TempestLaunchMissileGround423=Tempest Launch Missile (Ground) Copy 4

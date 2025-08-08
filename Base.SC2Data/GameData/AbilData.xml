@@ -488,6 +488,24 @@
         <Flags index="Transient" value="1"/>
         <BehaviorArray value="ArmyUnselectable"/>
     </CAbilBehavior>
+    <CAbilEffectTarget id="HighOnes_ForceField">
+        <AbilSetId value="ForceField"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ForceField"/>
+        <Cost>
+            <Cooldown TimeUse="40"/>
+        </Cost>
+        <Range value="9"/>
+        <Marker>
+            <MatchFlags index="Link" value="0"/>
+            <MatchFlags index="CasterUnit" value="1"/>
+        </Marker>
+        <CursorEffect value="ForceFieldPlacement"/>
+        <AINotifyEffect value="ForceField2"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ForceField" State="Restricted"/>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+        <PlaceUnit value="ForceField"/>
+    </CAbilEffectTarget>
     <CAbilEffectInstant id="Unity">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Effect index="0" value="UnityCP"/>
@@ -496,7 +514,7 @@
         <Flags index="NoDeceleration" value="1"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Vital index="Energy" value="150"/>
+            <Vital index="Energy" value="200"/>
             <Charge Link="Abil/GuardianShield"/>
             <Cooldown Link="GuardianShield" TimeUse="30"/>
         </Cost>
@@ -2209,7 +2227,6 @@
         <AutoCastFilters value="Visible;Self,Neutral,Enemy,Missile,Dead"/>
         <AutoCastRange value="7"/>
         <AutoCastValidatorArray value="TargetInCombat"/>
-        <AutoCastValidatorArray value="NoShieldOvercharge"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="ShieldOvercharge"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="GuardianShell">
@@ -37190,7 +37207,7 @@
             <Unit value="Surfer"/>
         </InfoArray>
         <InfoArray index="Train11" Time="65">
-            <Button DefaultButtonFace="WarpInEliteHunter" Requirements="HaveOldFortress34"/>
+            <Button DefaultButtonFace="WarpInEliteHunter" Requirements="HaveOldFortress33"/>
             <Unit value="EliteHunter"/>
         </InfoArray>
         <InfoArray index="Train12" Time="70">
@@ -37206,7 +37223,7 @@
             <Unit value="ElderTemplar"/>
         </InfoArray>
         <InfoArray index="Train15" Time="60">
-            <Button DefaultButtonFace="WarpInAiurCore" Requirements="HaveOldFortress34"/>
+            <Button DefaultButtonFace="WarpInAiurCore"/>
             <Unit value="AiurCore"/>
         </InfoArray>
         <InfoArray index="Train16" Time="45">
@@ -52480,12 +52497,12 @@
     <CAbilEffectTarget id="AkilaeHope">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
-            <Vital index="Shields" value="700"/>
+            <VitalFraction index="Shields" value="0.7"/>
         </Cost>
         <TargetFilters value="Structure;Enemy"/>
         <Range value="500"/>
         <Arc value="360"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="AkilaeHope"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="AkilaeHope" Requirements="HaveOldFortress22"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="ShieldUp2324">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -56521,9 +56538,6 @@
         <AINotifyEffect value="Nuke"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="NukeCalldown3" Requirements="HaveNuke3"/>
         <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
-    </CAbilEffectTarget>
-    <CAbilEffectTarget id="TempestDisruptionBlast">
-        <CastIntroTime index="0" value="1"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="TempestDisruptionBlast2">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>

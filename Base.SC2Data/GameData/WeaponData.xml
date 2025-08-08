@@ -919,7 +919,7 @@
         <DisplayEffect value="HighOnes_PsiBlades"/>
         <DisplayAttackCount value="2"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="6"/>
+        <Range value="7"/>
         <Marker Link="Weapon/PsiBlades"/>
         <Cost>
             <Cooldown Link="Weapon/PsiBlades"/>
@@ -8747,9 +8747,8 @@
     <CWeaponLegacy id="HighOnes_PlasmaCannons" parent="IonCannons">
         <Name value="Weapon/Name/HighOnes_PlasmaCannons"/>
         <DisplayEffect value="HighOnes_IonCannonsU2"/>
-        <DisplayAttackCount value="4"/>
         <Range value="6"/>
-        <Period value="1"/>
+        <Period value="1.25"/>
         <Effect value="IonCannons2"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="KaiserBlades2" parent="KaiserBlades">
@@ -11300,10 +11299,10 @@
     <CWeaponLegacy id="TempestGround4" parent="TempestGround">
         <Name value="Weapon/Name/TempestGround4"/>
         <Tip value="Weapon/Tip/TempestGround4"/>
-        <DisplayEffect value="HighOnes_TempestDamageGround"/>
+        <DisplayEffect value="LastCoilDamage"/>
         <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="11"/>
-        <Effect value="TempestLaunchMissileGround4"/>
+        <Effect value="LastCoilLM"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="TempestGround42" parent="TempestGround">
         <Name value="Weapon/Name/TempestGround42"/>
@@ -11349,17 +11348,16 @@
     <CWeaponLegacy id="HighOnes_LastCoil">
         <EditorCategories value="Race:Protoss"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds"/>
-        <DisplayEffect value="HighOnes_TempestDamageGround"/>
-        <DisplayName value="Weapon/Name/TempestGround"/>
+        <DisplayEffect value="LastCoilDamage"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <MinScanRange value="7.5"/>
-        <Range value="7"/>
+        <MinScanRange value="10"/>
+        <Range value="10"/>
         <Marker Link="Weapon/TempestGround"/>
         <Cost>
             <Cooldown Link="Weapon/TempestGround"/>
         </Cost>
-        <Period value="1.4"/>
-        <Effect value="TempestLaunchMissileGround4"/>
+        <Period value="3"/>
+        <Effect value="LastCoilLM"/>
         <AllowedMovement value="Slowing"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="TempestGround5" parent="TempestGround">

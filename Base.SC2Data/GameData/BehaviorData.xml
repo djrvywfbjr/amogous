@@ -252,6 +252,20 @@
             </Cost>
         </DamageResponse>
     </CBehaviorBuff>
+    <CBehaviorBuff id="PsionicTempest">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\talent-vorazun-level08-improvedblackhole.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+        <Period value="0.5"/>
+        <PeriodicEffect value="PsionicTempestSA"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PsionicTempestTornadoSlow">
+        <Alignment value="Negative"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.6"/>
+        <Modification MoveSpeedMultiplier="0.75"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="Unity">
         <Alignment value="Positive"/>
         <InfoIcon value="Assets\Textures\btn-ability-protoss-shieldbattery.dds"/>
@@ -2107,10 +2121,11 @@
         <InfoIcon value="Assets\Textures\btn-ability-spearofadun-shieldovercharge.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <TimeScaleSource Value="Global"/>
-        <Duration value="30"/>
+        <Duration value="40"/>
         <Modification>
+            <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
             <VitalMaxArray index="Shields" value="150"/>
-            <VitalRegenArray index="Shields" value="15"/>
+            <VitalRegenArray index="Shields" value="10"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="Shield23">
